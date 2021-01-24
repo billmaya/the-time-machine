@@ -2,7 +2,12 @@
 
 Table 0.1 - Word Count
 Words	
-2195
+2345
+
+Table 0.2 - To Dos
+topic	todo
+--	"Woking Street - Working on Dr Humboldt's responses to your Asking About"
+--	"Woking Street - Getting Humboldt into the ambulence and having the ambulence travel away"
 
 Part 1 - Beginning The Story
 
@@ -12,13 +17,16 @@ The player is in Woking Street.
 
 When play begins: say "'Let me go!'
 
-Wells struggles against the orderlies dragging him into the horse-drawn ambulence parked in the street before the door. With strength born of desperation he breaks free and falls to the ground, off balance by the straightjacket binding his arms to his sides. You kneel down and help him off the snow-covered bitumen, your eyes meeting.
+Wells struggles against the orderlies attempting to drag him into the horse-drawn ambulence parked in the street before the door. With strength born of desperation he breaks free and falls to the ground, thrown off balance by the straightjacket that binds his arms to his sides. You kneel down and help Wells up off the snow-covered bitumen. As Wells struggles to his feet your eyes meeting.
 
 'Save her,' he says, voice ragged and hoarse, eyes hopeful and pleading. 'Save Weena for me, my old friend'
 
-Dr. Humbolt intervenes, placing himself between you and Wells. 'There my friend. First thing is to get you the help you need. Then we can help this 'Wanna' your obsessing about.'
+Dr. Humbolt intervenes, placing himself between you and Wells. 'There, there Wells. First thing to do is get you the help you need. Then we can help this 'Wanna' you're talking about.'
 
-'Weena, you fool! Weena! The Morlocks are going to kill her...' The rest of his sentence is cut off as the orderlies roughtly hoist Wells to his feet, gag him, and drag him into the ambulence.'"
+'Weena, you fool! Weena! The Morlocks are going to kill her...' The rest of his sentence is cut off as the orderlies gag Wells and roughhouse him into the ambulence."
+
+[DELETE Humbolt stands beside you, shaking his head, muttering to himself. 'Time travel,...Morlocks...' "]
+[DELETE drag Wells to his feet, gag him, and drag him into the ambulence.'"]
 
 [When play begins: say "'No! Let me go!'
 
@@ -258,7 +266,27 @@ Instead of examining Dr Humboldt: say "Gort Kaatu Barada Nikto TBD"
 
 [You are going to be able to ask Dr Humboldt about Wells.]
 
+[DELETE After asking Dr Humboldt about "wells": say "'Off his fucking nut, I would say.' Humboldt tilts his head apologeticaly. 'Medically speaking.'"]
 
+After asking Dr Humboldt about a topic listed in Table of Dr Humboldt's Responses, say "[reply entry]."
+
+[16.13 - Topic columns]
+Table of Dr Humboldt's Responses
+topic	reply
+"wells"	"Worst break with reality I've ever seen to date."
+"condition"	"Could be permanent. Won't know for sure until we get to the hospital and I get him sedated."
+"condition"	"I'll return as soon as I can with a diagnosis. We can decide what future actions are necesary at that time."
+"wells"	"An avoidable shame. I told him those obsessive theories of him might lead to this."
+"wells"	"You should stay here. Search around, see if there's any proof to back up this fantastic story of his." 
+
+[Also see 16.15 - Varying which table to look at]
+[Also see 17.1 - Understanding]
+
+[ choose a/the/-- random row in/from (table name) ]
+
+[DELETE Table of Dr Humbolt's Replies
+topic			reply
+wells			"Off his fucking nut I would say, medically speaking"]
 
 
 Part 5 - Things

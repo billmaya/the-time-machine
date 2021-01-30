@@ -2,7 +2,7 @@
 
 Table 0.1 - Word Count
 Words	
-2345
+2427
 
 Table 0.2 - To Dos
 topic	todo
@@ -21,34 +21,9 @@ Wells struggles against the orderlies attempting to drag him into the horse-draw
 
 'Save her,' he says, voice ragged and hoarse, eyes hopeful and pleading. 'Save Weena for me, my old friend'
 
-Dr. Humbolt intervenes, placing himself between you and Wells. 'There, there Wells. First thing to do is get you the help you need. Then we can help this 'Wanna' you're talking about.'
+Dr. Humbolt intervenes, placing himself between you and Wells. 'There, there Wells. First thing to do is get you the help you need. Then we can help this 'Wanna' you're going on about.'
 
-'Weena, you fool! Weena! The Morlocks are going to kill her...' The rest of his sentence is cut off as the orderlies gag Wells and roughhouse him into the ambulence."
-
-[DELETE Humbolt stands beside you, shaking his head, muttering to himself. 'Time travel,...Morlocks...' "]
-[DELETE drag Wells to his feet, gag him, and drag him into the ambulence.'"]
-
-[When play begins: say "'No! Let me go!'
-
-Wells struggles against the two constables dragging him towards the ambulence parked in the street.  With strength born of desperation he breaks free and stumbles towards you, his balance affected by the straightjacket that binds his arms to his sides. He falls. You kneel down on the snow-covered cobblestones and grab Wells[apostrophe] shoulders. Your eyes meet.
-
-'Save her,' Wells says, his voice ragged and hoarse, his eyes hopeful and pleading.
-
-'Wells,' you say, 'you need help.' You look away from your friend's face, embarressed and ashamed.
-
-'No!' he yells, struggling again as the constables drag him back to his feet and back towards the parked ambulance. As they begin hoisting him up the steps into the cab's interior he struggles weaken. Resigned to his fate, Wells finds your eyes one last time. His scream rents the crisp December night air. 
-
-'You must save her! Save Weena! For the love of God...' The rest of Wells[apostrophe] cries are muffled as the two officers drag him into the dark interior of the ambulance. 
-
-You make a move towards the ambulence but are stopped by Doctor Humboldt, the noted physician. 'Worst break with reality I've ever seen to date,' he says, his hand on your arm. 'Could be permanent but we won't know for sure until we get to the hospital and I get him sedated.'
-
-Humboldt begins hoisting himself up into the ambulence after Wells and the constables. He turns back towards you. 'You should stay here. Search around, see if there's any proof to back up this fantastic story of his. I'll return as soon as I can and we can decide what future actions are necesary at that time.'
-
-He shakes his head sadly, muttering to himself as he disappears inside the ambulence. 'Time travel, Morlocks...'
-
-The ambulence door shuts. The driver cracks his whip and the vehicle pulls away from the curb. It makes are right turn at the end of the street, merges with the evening traffic, and disappears.
-
-[paragraph break]"]
+'Weena, you fool! Weena! I'm not crazy. He twists towards you. 'Filby, the Morlocks are going to kill her...' The rest of Wells' sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
 
 Part 2 - Mechanics
 
@@ -204,6 +179,9 @@ Mrs Watchett is a person.
 Mrs Watchett is a female. 
 Mrs Watchett is fixed.
 
+The printed name of Mrs Watchett is "Mrs. Watchett" 
+[INFO Reading Recipe 7.1 - Getting Acquainted led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
+
 Instead of examining Mrs Watchett: say "Gort Klaatu Barada Nikto TBD"
 
 [INFO One line doesn't seem to work]
@@ -217,6 +195,8 @@ Understand "cook" as Mrs Watchett.]
 
 [INFO This seems to work]
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Mrs Watchett.
+
+[INFO See Writing 17.13 New tokens for ^]
 
 Every turn:
 	if Mrs Watchett is mobile:
@@ -236,6 +216,7 @@ Dining Room
 Kitchen
 
 [TODO Mrs Watchett should linger in rooms along the way to the Kitchen. Give her table of things to do.]
+[? Maybe make it a task table for each room (so I can choose a random column).]
 
 Table of Mrs Watchett's Room Tasks
 room			task
@@ -253,40 +234,45 @@ After asking Mrs Watchett about "wells": say "Working too hard on his experiment
 
 [See Chapter 7.6 - Reading and Talking]
 
-Chapter 2 - Dr Humboldt
+Chapter 2 - Dr Humboldt 
 
 Dr Humboldt is in Woking Street.
 Dr Humboldt is a person.
 Dr Humboldt is a male.
 Dr Humboldt is fixed.
 
+The printed name of Dr Humboldt is "Dr. Humboldt"
+
+
 Understand "doctor" or "physician" as Dr Humboldt.
 
 Instead of examining Dr Humboldt: say "Gort Kaatu Barada Nikto TBD"
 
-[You are going to be able to ask Dr Humboldt about Wells.]
+[TBD You are going to be able to ask Dr Humboldt about Wells.]
 
-[DELETE After asking Dr Humboldt about "wells": say "'Off his fucking nut, I would say.' Humboldt tilts his head apologeticaly. 'Medically speaking.'"]
+[? Remove -> ]Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
 
 After asking Dr Humboldt about a topic listed in Table of Dr Humboldt's Responses, say "[reply entry]."
+
+[NOTE What do I want to do with this conversation? I want you to get some backstory from Humboldt and some actions to pursue. Ideally I would like you be able to have a single response for topic synonyms, i.e. "ASK Humbold ABOUT examination/physical/interrogatory/investigation" -> "ASK Humboldt ABOUT exam". Instead of having to have "exam" and "examination" in the table as topics with the same reply.]
 
 [16.13 - Topic columns]
 Table of Dr Humboldt's Responses
 topic	reply
-"wells"	"Worst break with reality I've ever seen to date."
-"condition"	"Could be permanent. Won't know for sure until we get to the hospital and I get him sedated."
-"condition"	"I'll return as soon as I can with a diagnosis. We can decide what future actions are necesary at that time."
-"wells"	"An avoidable shame. I told him those obsessive theories of him might lead to this."
-"wells"	"You should stay here. Search around, see if there's any proof to back up this fantastic story of his." 
+"wells"	"Don't know enough to make a proper diagnosis right now. I'll know more after a proper examination."
+"exam"	"Probably won't be able to do a proper examination until the morning. First thing to do is get him to the hospital Get him admitted and sedated."
+"examination"	"Probably won't be able to do a proper examination until the morning. First thing to do is get him to the hospital Get him admitted and sedated."
+"sedation"	"TBD"
+"morning"	"I'll be back in a few hours after he's settled. Maybe we can get into that workshop of his and see what brought him to this state."
+"workshop"	"I know you've never been inside. None of us has. But you're his soliciter, closest thing to a friend he has. If anyone can find a way in you can."
+"next steps"	"I'll be back in a few hours. If you haven't figured a way in by then we have to break the door down. Mrs. Watchett wouldn't be pleased with that."
 
-[Also see 16.15 - Varying which table to look at]
-[Also see 17.1 - Understanding]
+[Also see Writing 16.15 - Varying which table to look at]
+[Also see Writing 17.1 - Understanding]
+
+[See Recipe 7.6-7.8 ]
 
 [ choose a/the/-- random row in/from (table name) ]
-
-[DELETE Table of Dr Humbolt's Replies
-topic			reply
-wells			"Off his fucking nut I would say, medically speaking"]
 
 
 Part 5 - Things

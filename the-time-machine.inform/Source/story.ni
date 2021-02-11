@@ -2,10 +2,12 @@
 
 Table 0.1 - Word Count
 Words	
-2427
+2577
 
 Table 0.2 - To Dos
 topic	todo
+--	"Custom action - use gnomon, knock - and result of action (Mrs. Watchett opens door?)"
+--	"Finish Woking Street objects/descriptions"
 --	"Woking Street - Working on Dr Humboldt's responses to your Asking About"
 --	"Woking Street - Getting Humboldt into the ambulence and having the ambulence travel away"
 
@@ -31,11 +33,16 @@ Chapter 1 - Instead-Of Rules
 
 Section 1 - Waiting
 
-Instead of waiting: say "[if location is Woking Street]You shiver in the cold wind, drawing your light jacket closer around you. You really should get inside since you're not dressed appropriately for this winter weather[otherwise]Time passes."
+Instead of waiting: say 
+	"[if location is Woking Street]You shiver in the cold wind, drawing your light jacket closer around you. You really should get inside since you're not dressed appropriately for this winter weather
+	[otherwise]Time passes."
 
 Section 2 - Up
 
-Instead of going up: say "[if location is Woking Street]You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside.[else if location is Entryway]You wander around upstairs for a few minutes but find nothing of interest and return downstairs.[otherwise]You can't go that way."
+Instead of going up: say 
+	"[if location is Woking Street]You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside.
+	[else if location is Entryway]You wander around upstairs for a few minutes but find nothing of interest and return downstairs.
+	[otherwise]You can't go that way."
 
 [TBD - Mrs. Watchett should wander away if you go "up" in the Reception Room.]
 
@@ -98,21 +105,75 @@ Woking Street is a room. The description is "You're standing halfway down the st
 			You really should get inside since you're not dress appropriately for this winter weather."
 			
 	[TBD Describe "other houses|houses|dark houses"]
+	The houses are scenery in Woking Street.
+	The description of houses are "TBD."
+	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "residences" as houses.
 
-The front door is north of Woking Street and south of the Entryway. The front door is a door. It is openable and lockable. It is unlocked.
+The front door is north of Woking Street and south of the Entryway. 
+The front door is a door. 
+It is openable and lockable. 
+It is unlocked.
 
-	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker] in the shape of a [sundial].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
-	
-	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains on either side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
-	
-	The knocker is scenery in Woking Street. [no "in Woking Street". Probably should be supported by front door]
-	The description of the knocker is "TBD - knock, knock, who[apostrophe]s there?"
-	
-	The sundial is scenery in Woking Street. [no "in Woking Street". Probably should be supported by front door]
-	The description of the sundial is "TBD - what light upon yonder window breaks?"
-	
-	["68 Woking Street" in front door description. What about the number "68" as scenery?]
+	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
 
+	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains to one side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
+	
+	The knocker is scenery in Woking Street.
+	The description of the knocker is "Made of brass, this knocker is in the shape of a sundial. By virtue of its unique design is stands out among all the unexceptional, cast iron lions heads, faces, or simple rings that adorn every other door on the street. It is unique, custom made, the only one of its kind in the entire city, probably the world, and always brings a smile to your face since it reflects the temporal obsessions of your friend who lives at this address."
+	
+	The sundial is scenery in Woking Street.
+	The sundial is a supporter.
+	The description of the sundial is "Octogon shaped, this custom-made timekeeper is attached vertically to the door. While it has all of the components of it’s horizontal cousins, these componens are arranged in a slightly different configuration to account for its vertical nature and the surrounding buildings.[paragraph break]Roman [numerals] from one to twelve surround a stylized [sun] at the center. A hinged gnomon, which would normally cast a shadow during daylight hours, serves as the knocker. Underneath the sun and gnomon is the [motto] 'Sine Umbra Nihil' (Without shadow there is nothing). Lightly etched complementary [Babylonian] and [Italian] hour lines, indicate the hours until sunrise and sunset."
+	Understand "timekeeper" as sundial.
+	
+		The numerals are a thing.
+		The numerals are on the sundial.
+		The numerals are fixed in place.
+		The numerals are undescribed.
+		Understand "numbers" as numerals.
+	
+		The sun is a thing.
+		The sun is on the sundial.
+		The sun is fixed in place.
+		The sun is undescribed.
+	
+		The motto is a thing.
+		The motto is on the sundial.
+		The motto is fixed in place.
+		The motto is undescribed.
+	
+		The babylonian line is a thing.
+		The babylonian line is on the sundial.
+		The babylonian line is fixed in place.
+		The babylonian line is undescribed.
+		Understand "babylonian line" as babylonian line.
+	
+		The italian line is a thing.
+		The italian line is on the sundial.
+		The italian line is fixed in place.
+		The italian line is undescribed.
+		Understand "italian line" as italian line.
+	
+		The gnomon is a thing.
+		The gnomon is on the sundial.
+		The gnomon is fixed in place.
+		The gnomon is undescribed.
+		The description of the gnomon is "An triangular piece of metal, ornately engraved and hinged at the isosceles' apex."
+		Understand "triangular" or "triangle" or "isosceles" or "piece" or "metal" as gnomon.
+	
+[Instead of examining the "numerals" say: "Roman numerals from 1 to 12."]
+
+[TBD - Using gnomon]
+	
+Table 3.1.1.a - Sundial Links
+topic	link
+"victorian"	"https://bit.ly/3tP1ssg"
+"image"	"https://bit.ly/371QTYW"
+"mottos"	"https://bit.ly/2Z7bRS4"
+"parts-of"	"https://bit.ly/3p83dwZ"
+
+["68 Woking Street" in front door description. What about the number "68" as scenery?]
+	
 Chapter 2 - Inside
 
 Section 1 - Entryway
@@ -236,44 +297,24 @@ After asking Mrs Watchett about "wells": say "Working too hard on his experiment
 
 Chapter 2 - Dr Humboldt 
 
-Dr Humboldt is in Woking Street.
-Dr Humboldt is a person.
-Dr Humboldt is a male.
-Dr Humboldt is fixed.
+Humboldt is a person.
+Humboldt is a male.
+Humboldt is fixed.
+Humboldt is in Woking Street.
 
-The printed name of Dr Humboldt is "Dr. Humboldt"
+The printed name of Humboldt is "Dr. Humboldt"
 
+Understand "doctor" or "physician" or "dr" as Humboldt.
 
-Understand "doctor" or "physician" as Dr Humboldt.
+Instead of examining Humboldt: say "Dr Gort Kaatu Barada Nikto TBD"
 
-Instead of examining Dr Humboldt: say "Gort Kaatu Barada Nikto TBD"
-
-[TBD You are going to be able to ask Dr Humboldt about Wells.]
-
-[? Remove -> ]Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
-
-After asking Dr Humboldt about a topic listed in Table of Dr Humboldt's Responses, say "[reply entry]."
-
-[NOTE What do I want to do with this conversation? I want you to get some backstory from Humboldt and some actions to pursue. Ideally I would like you be able to have a single response for topic synonyms, i.e. "ASK Humbold ABOUT examination/physical/interrogatory/investigation" -> "ASK Humboldt ABOUT exam". Instead of having to have "exam" and "examination" in the table as topics with the same reply.]
-
-[16.13 - Topic columns]
-Table of Dr Humboldt's Responses
-topic	reply
-"wells"	"Don't know enough to make a proper diagnosis right now. I'll know more after a proper examination."
-"exam"	"Probably won't be able to do a proper examination until the morning. First thing to do is get him to the hospital Get him admitted and sedated."
-"examination"	"Probably won't be able to do a proper examination until the morning. First thing to do is get him to the hospital Get him admitted and sedated."
-"sedation"	"TBD"
-"morning"	"I'll be back in a few hours after he's settled. Maybe we can get into that workshop of his and see what brought him to this state."
-"workshop"	"I know you've never been inside. None of us has. But you're his soliciter, closest thing to a friend he has. If anyone can find a way in you can."
-"next steps"	"I'll be back in a few hours. If you haven't figured a way in by then we have to break the door down. Mrs. Watchett wouldn't be pleased with that."
-
-[Also see Writing 16.15 - Varying which table to look at]
-[Also see Writing 17.1 - Understanding]
-
-[See Recipe 7.6-7.8 ]
-
-[ choose a/the/-- random row in/from (table name) ]
-
+Instead of asking Humboldt about "wells/madman/patient/lunatic": say "I don't know enought to make a proper diagnosis right now. I'll know more after a proper examination."
+Instead of asking Humboldt about "exam/examination": say "First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down."
+Instead of asking Humboldt about "sedation": say "TBD - Just a seven percent solution. Something to calm him down and clear his mind."
+Instead of asking Humboldt about "morning/tomorrow": say "I'll be back in a few hours after some observation. Maybe then we can get into that workshop of his and see what brought him to this state."
+Instead of asking Humboldt about "workshop/shop": say "I know you've never been inside. None of us has." 
+Instead of asking Humboldt about "self/myself/me": say "But you're his soliciter, closest thing to a friend he has. If anyone can find a way in you can."
+Instead of asking Humboldt about "next steps": say "I'll be back in a few hours. If you haven't figured a way in by then we'll have to break the door down. Mrs. Watchett won't be pleased with that."
 
 Part 5 - Things
 

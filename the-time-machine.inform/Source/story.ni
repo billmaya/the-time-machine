@@ -2,12 +2,11 @@
 
 Table 0.1 - Word Count
 Words	
-2917
+3065
 
 Table 0.2 - To Dos
 topic	todo
 --	"Result of using gnomon - Mrs. Watchett opens door? Carriage drives away?"
---	"Finish Woking Street objects/descriptions"
 --	"Woking Street - Working on Dr Humboldt's responses to your Asking About"
 --	"Woking Street - Getting Humboldt into the ambulence and having the ambulence travel away" [Maybe happens when you enter house.]
 
@@ -60,7 +59,7 @@ Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they s
 
 Section 1 - Woking Street
 
-Woking Street is a room. The description is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you.[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small cul-de-sac.[only]"
+Woking Street is a room. The description is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you.[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
 
 	The area of the street is scenery in Woking Street.
 	The description of the area of the street is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago."
@@ -110,9 +109,8 @@ Woking Street is a room. The description is "You're standing halfway down the st
 			[line break]
 			You really should get inside since you're not dress appropriately for this winter weather."
 			
-	[TBD Describe "other houses|houses|dark houses"]
 	The houses are scenery in Woking Street.
-	The description of houses are "TBD."
+	The description of houses are "Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion."
 	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "residences" as houses.
 
 The front door is north of Woking Street and south of the Entryway. 
@@ -121,8 +119,19 @@ It is openable and lockable.
 It is unlocked.
 
 	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
+	
+	[TBD - More detailed description of front door? See Victorian doors https://bit.ly/3rOzQkZ and https://bit.ly/3b0ymNP]
 
 	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains to one side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
+	
+	The address is a thing.
+	The address is scenery in Woking Street.
+	The address is fixed in place.
+	The description of address is "Two brass numbers, a 6 and an 8, fastened to the door underneath the door knocker." 
+	Understand "68" or "street address" or "numbers" or "door address" as address.
+
+	[TBD Would like to make text conditional? - "...[if knocker examined]sundial[otherwise]knocker."]
+	[TBD How do you make a door a supporter, i.e. The address is on the front door. "If a supporter were a kind of a door or vice versa there'd be no problem, but they aren't." See Writing 3.5]
 	
 	The knocker is scenery in Woking Street.
 	The description of the knocker is "Made of brass, this door knocker is in the shape of a sundial. By virtue of its unique design is stands out among all the unexceptional, cast iron lions heads, faces, or simple rings that adorn every other door on the street. It is unique, custom made, the only one of its kind in the entire city, probably the world, and always brings a smile to your face since it reflects the temporal obsessions of your friend who lives at this address."
@@ -137,7 +146,7 @@ It is unlocked.
 		The numerals are fixed in place.
 		The numerals are undescribed.
 		The description of the numerals are "Etched Roman numerals from I to XII encircle the stylized sun in a Copernican fashion."
-		Understand "numbers" as numerals.
+		Understand "roman numerals" as numerals.
 	
 		The sun is a thing.
 		The sun is on the sundial.
@@ -190,8 +199,6 @@ topic	link
 "image"	"https://bit.ly/371QTYW"
 "mottos"	"https://bit.ly/2Z7bRS4"
 "parts-of"	"https://bit.ly/3p83dwZ"
-
-["68 Woking Street" in front door description. What about the number "68" as scenery?]
 	
 Chapter 2 - Inside
 

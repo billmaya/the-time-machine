@@ -110,8 +110,11 @@ Woking Street is a room. The description is "You're standing halfway down the st
 			You really should get inside since you're not dress appropriately for this winter weather."
 			
 	The houses are scenery in Woking Street.
-	The description of houses are "Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion."
+	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights has gone off as those residents have gone back to sleep.[only]"
+	
 	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "residences" as houses.
+	
+	Test house-look with "x other houses / x residences".
 
 The front door is north of Woking Street and south of the Entryway. 
 The front door is a door. 

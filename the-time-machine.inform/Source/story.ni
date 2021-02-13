@@ -2,14 +2,14 @@
 
 Table 0.1 - Word Count
 Words	
-2577
+2917
 
 Table 0.2 - To Dos
 topic	todo
---	"Custom action - use gnomon, knock - and result of action (Mrs. Watchett opens door?)"
+--	"Result of using gnomon - Mrs. Watchett opens door? Carriage drives away?"
 --	"Finish Woking Street objects/descriptions"
 --	"Woking Street - Working on Dr Humboldt's responses to your Asking About"
---	"Woking Street - Getting Humboldt into the ambulence and having the ambulence travel away"
+--	"Woking Street - Getting Humboldt into the ambulence and having the ambulence travel away" [Maybe happens when you enter house.]
 
 Part 1 - Beginning The Story
 
@@ -51,6 +51,12 @@ Part 3 - Setting
 Chapter 1 - Outside on the Street
 
 [You start on the street. The hospital ambulence has left, the disturbed snow the only evidence that it's been here. You go inside. Mrs. Watcheet gives you backstory. ['Is Mr. Well's going to be alright?] Has Dr. Humbolt told you anything? Is Mr. Well's going to be alright?' "]
+
+The ambulence is a thing in Woking Street.
+The ambulence is fixed in place.
+The ambulence is undescribed.
+
+Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out another straightjacket."
 
 Section 1 - Woking Street
 
@@ -119,17 +125,18 @@ It is unlocked.
 	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains to one side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
 	
 	The knocker is scenery in Woking Street.
-	The description of the knocker is "Made of brass, this knocker is in the shape of a sundial. By virtue of its unique design is stands out among all the unexceptional, cast iron lions heads, faces, or simple rings that adorn every other door on the street. It is unique, custom made, the only one of its kind in the entire city, probably the world, and always brings a smile to your face since it reflects the temporal obsessions of your friend who lives at this address."
+	The description of the knocker is "Made of brass, this door knocker is in the shape of a sundial. By virtue of its unique design is stands out among all the unexceptional, cast iron lions heads, faces, or simple rings that adorn every other door on the street. It is unique, custom made, the only one of its kind in the entire city, probably the world, and always brings a smile to your face since it reflects the temporal obsessions of your friend who lives at this address."
 	
 	The sundial is scenery in Woking Street.
 	The sundial is a supporter.
-	The description of the sundial is "Octogon shaped, this custom-made timekeeper is attached vertically to the door. While it has all of the components of it’s horizontal cousins, these componens are arranged in a slightly different configuration to account for its vertical nature and the surrounding buildings.[paragraph break]Roman [numerals] from one to twelve surround a stylized [sun] at the center. A hinged gnomon, which would normally cast a shadow during daylight hours, serves as the knocker. Underneath the sun and gnomon is the [motto] 'Sine Umbra Nihil' (Without shadow there is nothing). Lightly etched complementary [Babylonian] and [Italian] hour lines, indicate the hours until sunrise and sunset."
-	Understand "timekeeper" as sundial.
+	The description of the sundial is "Octogon shaped, this custom-made timekeeper is attached vertically to the door. While it has all of the components of it’s horizontal cousins, these componens are arranged in a slightly different configuration to account for its vertical nature and the surrounding buildings.[paragraph break]Roman [numerals] from one to twelve surround a stylized [sun] at the center. A hinged gnomon, which would normally cast a shadow during daylight hours, serves as the knocker. Underneath the sun and gnomon is the [motto] 'Sine Umbra Nihil'. Lightly etched complementary [Babylonian] and [Italian] hour lines cross the sundial's face."
+	Understand "timekeeper" or "timepiece" or "watch" as sundial.
 	
 		The numerals are a thing.
 		The numerals are on the sundial.
 		The numerals are fixed in place.
 		The numerals are undescribed.
+		The description of the numerals are "Etched Roman numerals from I to XII encircle the stylized sun in a Copernican fashion."
 		Understand "numbers" as numerals.
 	
 		The sun is a thing.
@@ -141,17 +148,20 @@ It is unlocked.
 		The motto is on the sundial.
 		The motto is fixed in place.
 		The motto is undescribed.
+		The description of the motto is "If you remember your school Latin, 'Sine Umbra Nihil' loosely translates into 'Without shadow there is nothing.'"
 	
 		The babylonian line is a thing.
 		The babylonian line is on the sundial.
 		The babylonian line is fixed in place.
 		The babylonian line is undescribed.
+		The description of babylonian is "A sundial's Babylonian line is used to indicate the hours of sunrise."
 		Understand "babylonian line" as babylonian line.
 	
 		The italian line is a thing.
 		The italian line is on the sundial.
 		The italian line is fixed in place.
 		The italian line is undescribed.
+		The description of italian is "A sundial's Italian line is used to indicate the hours of sunset."
 		Understand "italian line" as italian line.
 	
 		The gnomon is a thing.
@@ -159,11 +169,20 @@ It is unlocked.
 		The gnomon is fixed in place.
 		The gnomon is undescribed.
 		The description of the gnomon is "An triangular piece of metal, ornately engraved and hinged at the isosceles' apex."
-		Understand "triangular" or "triangle" or "isosceles" or "piece" or "metal" as gnomon.
+		Understand "triangular" or "triangle" or "isosceles" or "piece" or "metal" or "knocker" as gnomon.
 	
-[Instead of examining the "numerals" say: "Roman numerals from 1 to 12."]
-
-[TBD - Using gnomon]
+	Knocking is an action applying to one touchable thing.
+	Understand "knock on [something]" as knocking.
+	Understand "knock [something]" as knocking.
+	
+	Instead of knocking front door: try using gnomon.
+	
+	Using is an action applying to one touchable thing. [see Writing 17.1]
+	Understand "use [something]" as using.	
+	
+	Instead of using the knocker: try using gnomon.	
+	
+	Instead of using the gnomon: say "You reach out and raise the hinged gnomon several times and tap on the brass base underneath. The gentle 'tap, tap, tap' sound is almost lost in the wind but you are sure it is being heard clearly inside."
 	
 Table 3.1.1.a - Sundial Links
 topic	link

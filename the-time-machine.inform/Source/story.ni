@@ -2,7 +2,7 @@
 
 Table 0.1 - Word Count
 Words	
-3065
+3126
 
 Table 0.2 - To Dos
 topic	todo
@@ -239,6 +239,7 @@ Section 4 - The Dining Room
 The Dining Room is a room. The Dining Room is north of the Parlor.
 
 The Bathroom Door is east of the Dining Room and west of the Bathroom. It is a door. It is openable and lockable.
+The Kitchen Door is north of the Dining Room and south of the Kitchen. It is a door. It is openable.
 
 Section 5 - The Bathroom
 
@@ -246,7 +247,7 @@ The Bathroom is a room. The Bathroom is east of the Bathroom Door.
 
 Section 6 - The Kitchen
 
-The Kitchen is a room. The Kitchen is north of the Dining Room
+The Kitchen is a room. The Kitchen is north of the Kitchen Door.
 
 Chapter 3 - Outside
 
@@ -347,7 +348,7 @@ Instead of asking Humboldt about "next steps": say "I'll be back in a few hours.
 
 Part 5 - Things
 
-Chapter 1 - Key
+Chapter 1 - Workshop Key
 
 Chapter 2 - Blueprints
 

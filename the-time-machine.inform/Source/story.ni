@@ -265,10 +265,10 @@ A person can be either fixed or mobile.
 
 Chapter 1 - Mrs Watchett
 
-Mrs Watchett is in the Entryway. 
 Mrs Watchett is a person. 
 Mrs Watchett is a female. 
 Mrs Watchett is fixed.
+Mrs Watchett is in the Entryway. 
 
 The printed name of Mrs Watchett is "Mrs. Watchett" 
 [INFO Reading Recipe 7.1 - Getting Acquainted led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
@@ -345,6 +345,16 @@ Instead of asking Humboldt about "morning/tomorrow": say "I'll be back in a few 
 Instead of asking Humboldt about "workshop/shop": say "I know you've never been inside. None of us has." 
 Instead of asking Humboldt about "self/myself/me": say "But you're his soliciter, closest thing to a friend he has. If anyone can find a way in you can."
 Instead of asking Humboldt about "next steps": say "I'll be back in a few hours. If you haven't figured a way in by then we'll have to break the door down. Mrs. Watchett won't be pleased with that."
+
+Chapter 3 - Gernsback 
+[https://bit.ly/3rYUPl8]
+
+Gernsback is a person.
+Gernsback is a male.
+Gernsback is fixed.
+Gernsback is in the Entryway.
+
+[The printed name of Gernsback is "TBD."]
 
 Part 5 - Things
 

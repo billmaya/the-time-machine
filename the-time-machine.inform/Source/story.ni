@@ -13,6 +13,7 @@ topic	todo
 Part 1 - Beginning The Story
 
 The player is in Woking Street.
+[The player is in the Clearing.]
 
 [TBD Describe yourself when you "x self"]
 
@@ -45,7 +46,7 @@ Instead of going up: say
 
 [TBD - Mrs. Watchett should wander away if you go "up" in the Reception Room.]
 
-Part 3 - Setting
+Part 3 - 1895
 
 Chapter 1 - Outside on the Street
 
@@ -259,7 +260,40 @@ Section 1 - The Workshop
 
 The workshop is a room. The Workshop is north of the Workshop Door. The description is "TBD"
 
-Part 4 - Characters
+Part 4 - 802,701
+
+Chapter 1
+
+Section 1 - Clearing
+
+The Clearing is a room. 
+
+The Clearing is east of the Bathroom. [TEMPORARY]
+
+Section 2 - Top of Sphinx Steps
+
+The Sphinx Steps are up from the Clearing.
+The printed name of Sphinx Steps are "Top of Sphinx Steps"
+
+Section 3 - Bottom of the Shaft
+
+The Bottom Shaft is down from the Clearing.
+The printed name of Bottom Shaft is "Bottom of the Shaft"
+
+Section 4 - Domed Building
+
+The Domed Building is east of the Clearing.
+
+Section 5 - Inside the Domed Building
+
+The Inside Dome is inside the Domed Building.
+The printed name of Inside Dome is "Inside the Domed Building"
+
+Section 6 - River
+
+The River is southeast of the Clearing.
+
+Part 5 - 1895 Characters
 
 A person can be either fixed or mobile. 
 
@@ -356,7 +390,11 @@ Gernsback is in the Entryway.
 
 [The printed name of Gernsback is "TBD."]
 
-Part 5 - Things
+Part 6 - 802,701 Characters
+
+
+
+Part 7 - 1895 Things
 
 Chapter 1 - Workshop Key
 

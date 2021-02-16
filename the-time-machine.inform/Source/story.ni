@@ -1,8 +1,9 @@
 "The Time Machine" by Billy Tenenbaum
+"[line break]First time players should type 'about' or 'help'and then hit the Enter/Return key."
 
 Table 0.1 - Word Count
 Words	
-3126
+3285
 
 Table 0.2 - To Dos
 topic	todo
@@ -29,7 +30,11 @@ Dr. Humbolt intervenes, placing himself between you and Wells. 'There, there Wel
 
 Part 2 - Mechanics
 
-Chapter 1 - Instead-Of Rules
+Chapter 1 - Extensions
+
+Include Basic Help Menu by Emily Short.
+
+Chapter 2 - Instead-Of Rules
 
 Section 1 - Waiting
 

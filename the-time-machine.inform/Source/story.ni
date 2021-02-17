@@ -3,7 +3,7 @@
 
 Table 0.1 - Word Count
 Words	
-3285
+3470
 
 Table 0.2 - To Dos
 topic	todo
@@ -236,11 +236,25 @@ Section 2 - The Library
 
 The Library is a room. The Library is west of the Entryway.
 
+[The Library is a room. The Library is west of the Entry Hall. The description is "The south end of a large, multi-purpose drawing room extending to the north.
+
+On three sides, [shelves] of [books] on a variety of subjects rise to the ceiling, taking up a majority of space in this part of the room. The remaining free space not devoted to books, [journals], and [encyclopaedia] is taken up by a few pieces of [furniture].
+
+Against one wall is a [small desk] used for notetaking, correspondence, and household accounts. A [small leather chair] is positioned near drawn [floor-to-ceiling curtains] for more contemplative research and relaxation."
+
+	The shelves, books, journals, encyclopaedia, furniture, small desk, small leather chair, and floor-to-ceiling curtains are scenery in the Library.
+	
+		Understand "encyclopedia" as encyclopaedia.]
+
 Section 3 - The Parlor
 
 The Parlor is a room. The Parlor is north of the Library.
 
 The Garden Door is east of the Parlor and west of the Garden. It is a door. It is openable and lockable.
+
+[The Fireplace is a room. The Fireplace is north of the Library. The description is "Midway between the north and sourth walls of the drawing room is a large fireplace set into the west wall. An elaborate pendulum timepiece and a single photo grace the fireplace mantle.
+
+Two leather armchairs, larger than the one in the library, are positioned diagonally in front of the hearth to offer advantageous view of the coal flames while relaxing, drinking, or smoking. Between the two chairs is a small table to hold cigars and snifters while in the midst of conversation."]
 
 Section 4 - The Dining Room
 
@@ -249,6 +263,10 @@ The Dining Room is a room. The Dining Room is north of the Parlor.
 The Bathroom Door is east of the Dining Room and west of the Bathroom. It is a door. It is openable and lockable.
 The Kitchen Door is north of the Dining Room and south of the Kitchen. It is a door. It is openable.
 
+[The Dining Room is a room. The Dining Room is north of the Fireplace. The description is "The house's center for multi-course dining and entertainment, dominated by a dark walnut dining table that seats ten. A clockwork orrery of brass, gears, and polish sits in the center of the table, reflecting the gaslights that ring the wainscotted and wallpapered walls.
+
+To the north through an open door is the kitchen. To the right of the kitchen door is a sideboard used to hold food, cutlery, and tableware during meals."]
+
 Section 5 - The Bathroom
 
 The Bathroom is a room. The Bathroom is east of the Bathroom Door.
@@ -256,6 +274,8 @@ The Bathroom is a room. The Bathroom is east of the Bathroom Door.
 Section 6 - The Kitchen
 
 The Kitchen is a room. The Kitchen is north of the Kitchen Door.
+
+["This is where Mrs. Watchett prepares all those meals she's so famous for."]
 
 Chapter 3 - Outside
 
@@ -386,6 +406,8 @@ Instead of asking Humboldt about "morning/tomorrow": say "I'll be back in a few 
 Instead of asking Humboldt about "workshop/shop": say "I know you've never been inside. None of us has." 
 Instead of asking Humboldt about "self/myself/me": say "But you're his soliciter, closest thing to a friend he has. If anyone can find a way in you can."
 Instead of asking Humboldt about "next steps": say "I'll be back in a few hours. If you haven't figured a way in by then we'll have to break the door down. Mrs. Watchett won't be pleased with that."
+
+[Humboldt will give you flower petal and backstory about before he leaves]
 
 Chapter 3 - Gernsback 
 [https://bit.ly/3rYUPl8]

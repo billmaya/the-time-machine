@@ -7,6 +7,8 @@ Words
 
 Table 0.2 - To Dos
 topic	todo
+--	"Humboldt description"
+--	"Watchett description"
 --	"Result of using gnomon - Mrs. Watchett opens door? Carriage drives away?"
 --	"Woking Street - Working on Dr Humboldt's responses to your Asking About"
 --	"Woking Street - Getting Humboldt into the ambulence and having the ambulence travel away" [Maybe happens when you enter house.]
@@ -51,7 +53,7 @@ Instead of going up: say
 
 [TBD - Mrs. Watchett should wander away if you go "up" in the Reception Room.]
 
-Part 3 - 1895
+Part 3 - Settings - 1895
 
 Chapter 1 - Outside on the Street
 
@@ -265,7 +267,7 @@ Section 1 - The Workshop
 
 The workshop is a room. The Workshop is north of the Workshop Door. The description is "TBD"
 
-Part 4 - 802,701
+Part 4 - Setting - 802,701
 
 Chapter 1
 
@@ -298,7 +300,7 @@ Section 6 - River
 
 The River is southeast of the Clearing.
 
-Part 5 - 1895 Characters
+Part 5 - Characters - 1895
 
 A person can be either fixed or mobile. 
 
@@ -395,11 +397,14 @@ Gernsback is in the Entryway.
 
 [The printed name of Gernsback is "TBD."]
 
-Part 6 - 802,701 Characters
+Part 6 - Characters - 802,701
+
+Chapter 1 - Eloi
+
+Chapter 2 - Weena
 
 
-
-Part 7 - 1895 Things
+Part 7 - Objects - 1895
 
 Chapter 1 - Workshop Key
 
@@ -407,11 +412,48 @@ Chapter 2 - Blueprints
 
 Chapter 3 - Orrery
 
-Chapter 4 - Time Machine
+Chapter 4 - Fuse
+[The Fuse makes the Orrery move. Same type as used in Time Machine.]
 
-Chapter 5 - Flower Petal
+Chapter 5 - Time Machine
 
-Chapter 6 - Flower
+Chapter 6 - Flower Petal
+
+Part 8 - Objects - 802,701
+
+Chapter 1 - Flower
+
+Part 9 - Help
+
+Table of Basic Help Options (continued)
+title		subtable		description
+"Contact the author"		--		"If you have any difficulties with [story title], please contact me at..."
+"Hints"		Table of Hints		--
+"Settings"		Table of Setting Options		--
+
+Table of Hints
+title		subtable		description		toggle
+"Key Hints"		Table of Key Hints		""		hint toggle rule
+"Workshop Hints"		Table of Workshop Hints		""		hint toggle rule
+"Time Machine Hints"		Table of Time Machine Hints		""		hint toggle rule
+
+Table of Key Hints
+hint		used
+"key-hint-1"		a number
+"key-hint-2"		
+"key-hint-3"		
+
+Table of Workshop Hints
+hint		used
+"workshop-hint-1"		a number
+"workshop-hint-2"		
+"workshop-hint-3"		
+
+Table of Time Machine Hints
+hint		used
+"time-machine-hint-1"		a number
+"time-machine-hint-2"		
+"time-machine-hint-3"		
 
 
 

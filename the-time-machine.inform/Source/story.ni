@@ -230,7 +230,10 @@ The Entryway is a room. The description is "From here you can reach all other pa
 	The description of the banister is "Just a normal handhold for going up and down the steps."
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
 	
-The Workshop Door is north of the Entryway and south of the Workshop. The workshop door is a door. It is lockable. [It is locked.] It is undescribed. [undescribed, what does that do?]
+The Workshop Door is north of the Entryway and south of the Workshop. 
+The workshop door is a door. 
+It is lockable. [It is locked.] 
+It is undescribed. [undescribed, what does that do?]
 
 	Understand "workshop" or "door" as Workshop Door. 
 

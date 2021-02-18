@@ -3,7 +3,7 @@
 
 Table 0.1 - Word Count
 Words	
-3470
+3842
 
 Table 0.2 - To Dos
 topic	todo
@@ -37,6 +37,11 @@ Chapter 1 - Extensions
 Include Basic Help Menu by Emily Short.
 
 Chapter 2 - Instead-Of Rules
+
+Chapter 3 - Tests
+
+Test goto-eloi with "north / west / north / north / east / east"
+
 
 Section 1 - Waiting
 
@@ -232,21 +237,18 @@ The Workshop Door is north of the Entryway and south of the Workshop. The worksh
 	Instead of examining the workshop door:
 		Say "No one you know has ever been inside, not even Mrs. Watchett."
 
-Section 2 - The Library
+Section 2 - Library
 
-The Library is a room. The Library is west of the Entryway.
+The Library is a room. The Library is west of the Entryway. 
+The description is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [journals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
 
-[The Library is a room. The Library is west of the Entry Hall. The description is "The south end of a large, multi-purpose drawing room extending to the north.
+Against one wall is a small [desk] for notetaking, correspondence, and rectifying household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation."
 
-On three sides, [shelves] of [books] on a variety of subjects rise to the ceiling, taking up a majority of space in this part of the room. The remaining free space not devoted to books, [journals], and [encyclopaedia] is taken up by a few pieces of [furniture].
+The shelves, books, journals, encyclopaedia, furniture, desk, chair, and curtains are scenery in the Library.
 
-Against one wall is a [small desk] used for notetaking, correspondence, and household accounts. A [small leather chair] is positioned near drawn [floor-to-ceiling curtains] for more contemplative research and relaxation."
+Understand "encyclopedia" as encyclopaedia.
 
-	The shelves, books, journals, encyclopaedia, furniture, small desk, small leather chair, and floor-to-ceiling curtains are scenery in the Library.
-	
-		Understand "encyclopedia" as encyclopaedia.]
-
-Section 3 - The Parlor
+Section 3 - Parlor
 
 The Parlor is a room. The Parlor is north of the Library.
 
@@ -256,7 +258,7 @@ The Garden Door is east of the Parlor and west of the Garden. It is a door. It i
 
 Two leather armchairs, larger than the one in the library, are positioned diagonally in front of the hearth to offer advantageous view of the coal flames while relaxing, drinking, or smoking. Between the two chairs is a small table to hold cigars and snifters while in the midst of conversation."]
 
-Section 4 - The Dining Room
+Section 4 - Dining Room
 
 The Dining Room is a room. The Dining Room is north of the Parlor.
 
@@ -267,11 +269,11 @@ The Kitchen Door is north of the Dining Room and south of the Kitchen. It is a d
 
 To the north through an open door is the kitchen. To the right of the kitchen door is a sideboard used to hold food, cutlery, and tableware during meals."]
 
-Section 5 - The Bathroom
+Section 5 - Bathroom
 
 The Bathroom is a room. The Bathroom is east of the Bathroom Door.
 
-Section 6 - The Kitchen
+Section 6 - Kitchen
 
 The Kitchen is a room. The Kitchen is north of the Kitchen Door.
 
@@ -279,11 +281,11 @@ The Kitchen is a room. The Kitchen is north of the Kitchen Door.
 
 Chapter 3 - Outside
 
-Section 1 - The Garden
+Section 1 - Garden
 
 Chapter 4 - Inside the Workshop
 
-Section 1 - The Workshop  
+Section 1 - Workshop  
 
 The workshop is a room. The Workshop is north of the Workshop Door. The description is "TBD"
 
@@ -296,28 +298,40 @@ Section 1 - Clearing
 The Clearing is a room. 
 
 The Clearing is east of the Bathroom. [TEMPORARY]
+Inside from the Clearing is Top Shaft.
 
-Section 2 - Top of Sphinx Steps
+Section 2 - Sphinx Steps
 
+The Sphinx Steps are a room.
 The Sphinx Steps are up from the Clearing.
 The printed name of Sphinx Steps are "Top of Sphinx Steps"
 
-Section 3 - Bottom of the Shaft
+Section 3 - Top Shaft
 
-The Bottom Shaft is down from the Clearing.
+The Top Shaft is a room.
+Down from the Top Shaft is Bottom Shaft.
+The printed name of Top Shaft is "Top of the Shaft"
+
+Section 4 - Bottom Shaft
+
+The Bottom Shaft is a room.
+[Up from the Bottom Shaft is Top Shaft.]
 The printed name of Bottom Shaft is "Bottom of the Shaft"
 
-Section 4 - Domed Building
+Section 5 - Domed Building
 
+The Domed Building is a room.
 The Domed Building is east of the Clearing.
+Inside from the Domed Building is Inside Dome.
 
-Section 5 - Inside the Domed Building
+Section 6 - Inside Dome
 
-The Inside Dome is inside the Domed Building.
+The Inside Dome is a room.
 The printed name of Inside Dome is "Inside the Domed Building"
 
-Section 6 - River
+Section 7 - River
 
+The River is a room.
 The River is southeast of the Clearing.
 
 Part 5 - Characters - 1895

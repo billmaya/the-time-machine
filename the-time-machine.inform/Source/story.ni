@@ -2,12 +2,10 @@
 
 Table 0.1 - Word Count
 Words	
-4381-4433
+4376
 
 Table 0.2 - To Dos
 topic	todo
--- 	"Fix doors - kitchen, workshop, etc."
--- 	"Fix 'The player is in...' "
 --	"Humboldt description"
 --	"Watchett description"
 --	"Result of using gnomon - Mrs. Watchett opens door? Carriage drives away?"
@@ -17,7 +15,7 @@ topic	todo
 Part 1 - Beginning The Story
 
 The player is in Woking Street.
-[The player is in the Clearing.] [When this is uncommented and the previous line is commented I get errors trying to generate the story.]
+[The player is in the Clearing.]
 
 The watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
 The watch is carried.
@@ -46,10 +44,7 @@ Chapter 2 - Instead-Of Rules
 
 Chapter 3 - Tests
 
-[Test goto-eloi with "north / west / north / north / east / east."]
-[Test goto-eloi with "now the player is in the Clearing."]
 Test goto-kitchen with "north / west/ north / north / north."
-
 
 Section 1 - Waiting
 
@@ -59,24 +54,16 @@ Instead of waiting: say
 
 Section 2 - Up
 
-Instead of going up: say 
-	"[if location is Woking Street]You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside.
-	[else if location is Entryway]You wander around upstairs for a few minutes but find nothing of interest and return downstairs.
-	[otherwise]You can't go that way."
+Instead of going up in Woking Street: say "You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside."
+Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
 
-[TBD - Mrs. Watchett should wander away if you go "up" in the Reception Room.]
+[TBD - Mrs. Watchett should wander away if you go "up" in the Entryway.]
 
 Part 3 - Settings - 1895
 
 Chapter 1 - Outside on the Street
 
 [You start on the street. The hospital ambulence has left, the disturbed snow the only evidence that it's been here. You go inside. Mrs. Watcheet gives you backstory. ['Is Mr. Well's going to be alright?] Has Dr. Humbolt told you anything? Is Mr. Well's going to be alright?' "]
-
-The ambulence is a thing in Woking Street.
-The ambulence is fixed in place.
-The ambulence is undescribed.
-
-Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out another straightjacket."
 
 Section 1 - Woking Street
 
@@ -217,6 +204,12 @@ It is unlocked.
 	
 	Instead of using the gnomon: say "You reach out and raise the hinged gnomon several times and tap on the brass base underneath. The gentle 'tap, tap, tap' sound is almost lost in the wind but you are sure it is being heard clearly inside."
 	
+The ambulence is a thing in Woking Street.
+The ambulence is fixed in place.
+The ambulence is undescribed.
+
+Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out another straightjacket."
+	
 Table 3.1.1.a - Sundial Links
 topic	link
 "victorian"	"https://bit.ly/3tP1ssg"
@@ -240,13 +233,11 @@ The Entryway is a room. The description is "From here you can reach all other pa
 	
 The Workshop Door is north of the Entryway and south of the Workshop. 
 The Workshop Door is a door. 
-It is lockable. [It is locked.] 
-[It is undescribed.] [If this is uncommented then you can't go "N"]
+The Workshop Door is lockable. [It is locked.] 
+The Workshop Door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed."]
+Understand "workshop" or "door" as Workshop Door. 
 
-	Understand "workshop" or "door" as Workshop Door. 
-
-	Instead of examining the workshop door:
-		Say "No one you know has ever been inside, not even Mrs. Watchett."
+Instead of examining the workshop door: say "No one you know has ever been inside, not even Mrs. Watchett."
 
 Section 2 - Library
 
@@ -290,7 +281,7 @@ The description is "A large [fireplace] is set into the west wall and a coal [fi
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
-It is openable and lockable.
+The Garden Door is openable and lockable.
 
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
@@ -335,9 +326,8 @@ The description is "The house's centerpiece for dining and entertainment, domina
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
-It is openable.
-[It is unlocked.]
-[It is undescribed.] [If this is uncommented you can't walk through the kitchen door.]
+The Kitchen Door is openable.
+The Kitchen Door is scenery.
 
 The walls are a thing.
 The walls are scenery in the Dining Room.
@@ -413,13 +403,14 @@ The printed name of Sphinx Steps are "Top of Sphinx Steps"
 Section 3 - Top Shaft
 
 The Top Shaft is a room.
-Down from the Top Shaft is Bottom Shaft.
+Down from Top Shaft is the Bottom Shaft.
+
 The printed name of Top Shaft is "Top of the Shaft"
 
 Section 4 - Bottom Shaft
 
 The Bottom Shaft is a room.
-[Up from the Bottom Shaft is Top Shaft.]
+Up from the Bottom Shaft is the Top Shaft.
 The printed name of Bottom Shaft is "Bottom of the Shaft"
 
 Section 5 - Domed Building

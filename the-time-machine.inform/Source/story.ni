@@ -1,12 +1,13 @@
 "The Time Machine" by Billy Tenenbaum
-"[line break]First time players should type 'about' or 'help'and then hit the Enter/Return key."
 
 Table 0.1 - Word Count
 Words	
-3842
+4381-4433
 
 Table 0.2 - To Dos
 topic	todo
+-- 	"Fix doors - kitchen, workshop, etc."
+-- 	"Fix 'The player is in...' "
 --	"Humboldt description"
 --	"Watchett description"
 --	"Result of using gnomon - Mrs. Watchett opens door? Carriage drives away?"
@@ -16,7 +17,10 @@ topic	todo
 Part 1 - Beginning The Story
 
 The player is in Woking Street.
-[The player is in the Clearing.]
+[The player is in the Clearing.] [When this is uncommented and the previous line is commented I get errors trying to generate the story.]
+
+The watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
+The watch is carried.
 
 [TBD Describe yourself when you "x self"]
 
@@ -30,6 +34,8 @@ Dr. Humbolt intervenes, placing himself between you and Wells. 'There, there Wel
 
 'Weena, you fool! Weena! I'm not crazy. He twists towards you. 'Filby, the Morlocks are going to kill her...' The rest of Wells' sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
 
+After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
+
 Part 2 - Mechanics
 
 Chapter 1 - Extensions
@@ -40,7 +46,9 @@ Chapter 2 - Instead-Of Rules
 
 Chapter 3 - Tests
 
-Test goto-eloi with "north / west / north / north / east / east"
+[Test goto-eloi with "north / west / north / north / east / east."]
+[Test goto-eloi with "now the player is in the Clearing."]
+Test goto-kitchen with "north / west/ north / north / north."
 
 
 Section 1 - Waiting
@@ -231,9 +239,9 @@ The Entryway is a room. The description is "From here you can reach all other pa
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
 	
 The Workshop Door is north of the Entryway and south of the Workshop. 
-The workshop door is a door. 
+The Workshop Door is a door. 
 It is lockable. [It is locked.] 
-It is undescribed. [undescribed, what does that do?]
+[It is undescribed.] [If this is uncommented then you can't go "N"]
 
 	Understand "workshop" or "door" as Workshop Door. 
 
@@ -245,38 +253,132 @@ Section 2 - Library
 The Library is a room. The Library is west of the Entryway. 
 The description is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [journals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
 
-Against one wall is a small [desk] for notetaking, correspondence, and rectifying household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation."
+Against one wall is a small [desk] for notetaking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation."
 
-The shelves, books, journals, encyclopaedia, furniture, desk, chair, and curtains are scenery in the Library.
+The shelves are a thing.
+The shelves are scenery in the Library.
+The shelves are a supporter.
 
+The books are a thing. [What if some of the books are from the future?]
+The books are scenery on the shelves.
+
+The journals are a thing.
+The journals are scenery on the shelves.
+
+The encyclopaedia are a thing.
+The encyclopaedia are scenery on the shelves.
 Understand "encyclopedia" as encyclopaedia.
+
+The furniture is a thing.
+The furniture is scenery in the Library.
+
+The desk is a thing.
+The desk is scenery in the LIbrary.
+The desk is a supporter.
+
+The chair is a thing.
+The chair is scenery in the Library.
+The chair is a supporter.
+
+The curtains are a thing.
+The curtains are scenery in the Library.
 
 Section 3 - Parlor
 
 The Parlor is a room. The Parlor is north of the Library.
+The description is "A large [fireplace] is set into the west wall and a coal [fire] is blazing away in it to ward off the cold. On the [mantle] above sits a small mechanical [clock]. Centered above the mantle is a framed [painting]. Directly in front of the hearth is a small [table] with two leather [armchairs] flanking it on either side, positioned advantageously to view the coal flames while conversing, drinking, or smoking. On the table is a brandy [decanter] and two [snifters]. A [newspaper] sits on one of the armchairs."
 
-The Garden Door is east of the Parlor and west of the Garden. It is a door. It is openable and lockable.
+The Garden Door is east of the Parlor and west of the Garden. 
+The Garden Door is a door. 
+It is openable and lockable.
 
-[The Fireplace is a room. The Fireplace is north of the Library. The description is "Midway between the north and sourth walls of the drawing room is a large fireplace set into the west wall. An elaborate pendulum timepiece and a single photo grace the fireplace mantle.
+The fireplace is a thing.
+The fireplace is scenery in the Parlor.
 
-Two leather armchairs, larger than the one in the library, are positioned diagonally in front of the hearth to offer advantageous view of the coal flames while relaxing, drinking, or smoking. Between the two chairs is a small table to hold cigars and snifters while in the midst of conversation."]
+The fire is a thing.
+The fire is scenery in the Parlor.
+
+The fire iron is a thing. [https://bit.ly/3sczKUx]
+The fire iron is scenery in the Parlor.
+
+The mantle is a thing.
+The mantle is scenery in the Parlor.
+The mantle is a supporter.
+
+The clock is a thing. [https://bit.ly/37AqP7s]
+The clock is scenery on the mantle.
+
+The painting is a thing. [Casper David Friedrich's "Wanderer above the Sea of Fog" - https://bit.ly/3aEJKQo]
+The painting is scenery in the Parlor.
+
+The armchairs are things.
+The armchairs are scenery in the Parlor.
+The armchairs are supporters.
+
+The newspaper is a thing.
+The newspaper is scenery on the armchairs.
+
+The table is a thing.
+The table is scenery in the Parlor.
+The table is a supporter.
+
+The decanter is a thing.
+The decanter is scenery on the table.
+
+The snifters are things.
+The snifters are scenery on the table.
 
 Section 4 - Dining Room
 
 The Dining Room is a room. The Dining Room is north of the Parlor.
+The description is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of it's kind in the entire city, fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals." [if Watchett in the kitchen, kitchen sounds]
 
-The Bathroom Door is east of the Dining Room and west of the Bathroom. It is a door. It is openable and lockable.
-The Kitchen Door is north of the Dining Room and south of the Kitchen. It is a door. It is openable.
+The Kitchen Door is north of the Dining Room and south of the Kitchen. 
+The Kitchen Door is a door. 
+It is openable.
+[It is unlocked.]
+[It is undescribed.] [If this is uncommented you can't walk through the kitchen door.]
 
-[The Dining Room is a room. The Dining Room is north of the Fireplace. The description is "The house's center for multi-course dining and entertainment, dominated by a dark walnut dining table that seats ten. A clockwork orrery of brass, gears, and polish sits in the center of the table, reflecting the gaslights that ring the wainscotted and wallpapered walls.
+The walls are a thing.
+The walls are scenery in the Dining Room.
+Instead of examining the walls, say "You'll have to be more specific. Are you interested in the wainscot or the wallpaper?"
 
-To the north through an open door is the kitchen. To the right of the kitchen door is a sideboard used to hold food, cutlery, and tableware during meals."]
+The wainscot is a thing. [https://bit.ly/3qTcueh]
+The wainscot is scenery in the Dining Room.
+Understand "wainscotting" or "wainscott" or "wainscoting" or "wainscotted" or "wainscoted" as wainscot
 
-Section 5 - Bathroom
+The wallpaper is a thing.
+The wallpaper is scenery in the Dining Room.
 
-The Bathroom is a room. The Bathroom is east of the Bathroom Door.
+The dining table is a thing.
+The dining table is scenery in the Dining Room.
+The dining table is a supporter.
 
-Section 6 - Kitchen
+The place settings is a thing. [https://bit.ly/2P0Izmb]
+The place settings is scenery on the dining table.
+
+The sideboard is a thing.
+The sideboard is scenery in the Dining Room.
+The sideboard is a supporter.
+
+The tableware is a thing. [https://bit.ly/3dBRN2q]
+The tableware is scenery in the Dining Room.
+Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" as tableware.
+Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks" or "spoon" or "spoons" as tableware.
+
+The chandelier is a thing.
+The chandelier is scenery in the Dining Room.
+
+The orrery is a thing. [https://bit.ly/3s8YLzS]
+The orrery is scenery on the dining table.
+The orrery is a device.
+The description is "A clockwork of brass, gears, and polish reflecting and lensflaring the chandelier light..."
+
+The fuse is a thing.
+[The fuse is hidden.] [How do you hide something until you search for it?]
+The fuse is scenery in the Dining Room.
+
+Section 5 - Kitchen
 
 The Kitchen is a room. The Kitchen is north of the Kitchen Door.
 
@@ -300,7 +402,6 @@ Section 1 - Clearing
 
 The Clearing is a room. 
 
-The Clearing is east of the Bathroom. [TEMPORARY]
 Inside from the Clearing is Top Shaft.
 
 Section 2 - Sphinx Steps
@@ -343,15 +444,15 @@ A person can be either fixed or mobile.
 
 Chapter 1 - Mrs Watchett
 
-Mrs Watchett is a person. 
-Mrs Watchett is a female. 
-Mrs Watchett is fixed.
-Mrs Watchett is in the Entryway. 
+Watchett is a person. 
+Watchett is a female. 
+Watchett is fixed.
+Watchett is in the Entryway. 
 
-The printed name of Mrs Watchett is "Mrs. Watchett" 
+The printed name of Watchett is "Mrs. Watchett" 
 [INFO Reading Recipe 7.1 - Getting Acquainted led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
 
-Instead of examining Mrs Watchett: say "Gort Klaatu Barada Nikto TBD"
+Instead of examining Watchett: say "Gort Klaatu Barada Nikto TBD"
 
 [INFO One line doesn't seem to work]
 [Understand "mrs/watchett/cook/maid/housekeeper/old lady" as Mrs Watchett.]
@@ -363,21 +464,21 @@ Understand "housekeeper" as Mrs Watchett.
 Understand "cook" as Mrs Watchett.]
 
 [INFO This seems to work]
-Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Mrs Watchett.
+Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 
 [INFO See Writing 17.13 New tokens for ^]
 
 Every turn:
-	if Mrs Watchett is mobile:
-		repeat through the Table of Mrs Watchett's Movement:
-			let the last space be the location of Mrs Watchett;
-			if Mrs Watchett can be seen by the player, say "Mrs Watchett heads to [the destination entry].";
-			move Mrs Watchett to destination entry;
-			if Mrs Watchett can be seen by the player, say "Mrs Watchett arrives from [the last space].";
+	if Watchett is mobile:
+		repeat through the Table of Watchett's Movement:
+			let the last space be the location of Watchett;
+			if Watchett can be seen by the player, say "Mrs. Watchett heads to [the destination entry].";
+			move Watchett to destination entry;
+			if Watchett can be seen by the player, say "Mrs. Watchett arrives from [the last space].";
 			blank out the whole row;
 			break.
 
-Table of Mrs Watchett's Movement
+Table of Watchett's Movement
 destination
 Library
 Parlor
@@ -387,7 +488,7 @@ Kitchen
 [TODO Mrs Watchett should linger in rooms along the way to the Kitchen. Give her table of things to do.]
 [? Maybe make it a task table for each room (so I can choose a random column).]
 
-Table of Mrs Watchett's Room Tasks
+Table of Watchett's Room Tasks
 room			task
 Library			"reshelves some books"
 Library			"rearranges the chairs"
@@ -395,11 +496,11 @@ Library			"looks out the windows"
 Library			"draws the curtains closed"
 
 
-[After asking Mrs Watchett about the "front door": say "TBD."]
+[After asking Watchett about the "front door": say "TBD."]
 
-After asking Mrs Watchett about "workshop door": say "Locked. Always locked. Only Mr. Wells has the key."
+After asking Watchett about "workshop door": say "Locked. Always locked. Only Mr. Wells has the key."
 
-After asking Mrs Watchett about "wells": say "Working too hard on his experiments, he is."	
+After asking Watchett about "wells": say "Working too hard on his experiments, he is."	
 
 [See Chapter 7.6 - Reading and Talking]
 

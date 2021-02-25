@@ -2,10 +2,11 @@
 
 Table 0.1 - Word Count
 Words	
-4376
+4886
 
 Table 0.2 - To Dos
 topic	todo
+--  	"Conditional text if Watchett in Kitchen"
 --	"Humboldt description"
 --	"Watchett description"
 --	"Result of using gnomon - Mrs. Watchett opens door? Carriage drives away?"
@@ -30,7 +31,7 @@ Wells struggles against the orderlies attempting to drag him into the horse-draw
 
 Dr. Humbolt intervenes, placing himself between you and Wells. 'There, there Wells. First thing to do is get you the help you need. Then we can help this 'Wanna' you're going on about.'
 
-'Weena, you fool! Weena! I'm not crazy. He twists towards you. 'Filby, the Morlocks are going to kill her...' The rest of Wells' sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
+'Weena, you fool! Weena! I'm not crazy. He twists towards you. 'Filby, the Morlocks are going to kill her...' The rest of Wells's sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
 
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 
@@ -221,7 +222,8 @@ Chapter 2 - Inside
 
 Section 1 - Entryway
 
-The Entryway is a room. The description is "From here you can reach all other parts of the house. To your right, an ornately carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear low sounds of conversation under a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
+The Entryway is a room. 
+The description is "From here you can reach all other parts of the house. To your right, an ornately carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear low sounds of conversation under a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells's[apostrophe] workshop."
 	
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor. You have to admit, you haven't ever been up there."
@@ -241,14 +243,15 @@ Instead of examining the workshop door: say "No one you know has ever been insid
 
 Section 2 - Library
 
-The Library is a room. The Library is west of the Entryway. 
-The description is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [journals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
+The Library is a room. 
+The Library is west of the Entryway. 
+The description is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [book shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [journals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
 
 Against one wall is a small [desk] for notetaking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation."
 
-The shelves are a thing.
-The shelves are scenery in the Library.
-The shelves are a supporter.
+The book shelves are a thing.
+The book shelves are scenery in the Library.
+The book shelves are a supporter.
 
 The books are a thing. [What if some of the books are from the future?]
 The books are scenery on the shelves.
@@ -276,8 +279,9 @@ The curtains are scenery in the Library.
 
 Section 3 - Parlor
 
-The Parlor is a room. The Parlor is north of the Library.
-The description is "A large [fireplace] is set into the west wall and a coal [fire] is blazing away in it to ward off the cold. On the [mantle] above sits a small mechanical [clock]. Centered above the mantle is a framed [painting]. Directly in front of the hearth is a small [table] with two leather [armchairs] flanking it on either side, positioned advantageously to view the coal flames while conversing, drinking, or smoking. On the table is a brandy [decanter] and two [snifters]. A [newspaper] sits on one of the armchairs."
+The Parlor is a room. 
+The Parlor is north of the Library.
+The description is "A large [fireplace] is set into the west wall and a coal [fire] is blazing away in it to ward off the cold. On the [mantle] above sits a small mechanical [clock]. Centered above the mantle is a framed [painting]. Directly in front of the hearth is a [small table] with two leather [armchairs] flanking it on either side, positioned advantageously to view the coal flames while conversing, drinking, or smoking. On the table is a brandy [decanter] and two [snifters]. A [newspaper] sits on one of the armchairs."
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
@@ -309,9 +313,9 @@ The armchairs are supporters.
 The newspaper is a thing.
 The newspaper is scenery on the armchairs.
 
-The table is a thing.
-The table is scenery in the Parlor.
-The table is a supporter.
+The small table is a thing.
+The small table is scenery in the Parlor.
+The small table is a supporter.
 
 The decanter is a thing.
 The decanter is scenery on the table.
@@ -321,8 +325,25 @@ The snifters are scenery on the table.
 
 Section 4 - Dining Room
 
-The Dining Room is a room. The Dining Room is north of the Parlor.
-The description is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of it's kind in the entire city, fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals." [if Watchett in the kitchen, kitchen sounds]
+The Dining Room is a room. 
+The Dining Room is north of the Parlor.
+The description is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of it's kind in the entire city, fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals."
+
+[Is there a better way to do this?]
+Every turn:
+	if the location of the player is the Dining Room:
+		if the location of Watchett is the Kitchen:
+			say "[bold type]If Mrs. Watchett in Kitchen, you should hear Kitchen sounds-cutting, stirring, mixing, etc. through the kitchen door to north"
+
+[DELETE say "Here you are."]
+
+[DELETE [if the location of Watchet is the Kitchen] SOUNDS.[otherwise] NO SOUNDS." ]
+
+[DELETE if Watchett in the kitchen, kitchen sounds]
+
+[DELETE If Watchett is in the Kitchen, say: "Kitchen sounds-cutting, stirring, mixing, etc."]
+[DELETE If the location of Watchett is the Kitchen: 
+	Say "Kitchen sounds-cutting, stirring, mixing, etc."]
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
@@ -370,19 +391,63 @@ The fuse is scenery in the Dining Room.
 
 Section 5 - Kitchen
 
-The Kitchen is a room. The Kitchen is north of the Kitchen Door.
+The Kitchen is a room. 
+The Kitchen is north of the Kitchen Door.
+The description is "[first time]The large room where Mrs. Watchett prepares all those [meals] that you enjoy so much. [only]With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area]."
 
-["This is where Mrs. Watchett prepares all those meals she's so famous for."]
+[DELETE The description is "[first time]The large room where Mrs. Watchett prepares all those meals they you enjoy so much. [only]With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden table in the center of the room. All around the circumference of the room are the cooking stove, a copper sink and free-standing cabinets and shelves for storage, all designed or modified along Wells’ 'scientific' lines."]
+[DELETE The description is "The room where Mrs. Watchett prepares all those meals she's so famous for. Every thing about the room—the X, the Y, the Z—is designed towards that single purpose."]
+
+[+ conditional text to description if Watchett in room]
+
+[DELETE "This is where Mrs. Watchett prepares all those meals she's so famous for."]
+
+The meals are a thing.
+The meals are scenery in the Kitchen.
+
+The work table is a thing.
+The work table is scenery in the Kitchen.
+The work table is a supporter.
+
+The cabinets are a thing.
+The cabinets are scenery in the Kitchen.
+The cabinets are a container.
+
+The kitchen shelves are a thing.
+The kitchen shelves are scenery in the Kitchen.
+The kitchen shelves are a supporter.
+
+The stove is a thing.
+The stove is scenery in the Kitchen.
+The stove is a supporter.
+[The stove is a device.] [Can't be container and device]
+
+The sink is a thing.
+The sink is scenery in the Kitchen.
+The sink is a container.
+[The sink is a device.] [Can't be container and device]
+
+The work area is a thing.
+The work area is scenery in the Kitchen.
+The work area is a supporter.
+
+[Instead [object] description - "There’s nothing special about the [object] except that it has been extensively modified by Wells’ along ‘scientific’ best practices and the source of several of his patents."]
 
 Chapter 3 - Outside
 
 Section 1 - Garden
 
+The Garden is a room.
+The Garden is east of the Garden Door.
+the description is "TBD."
+
 Chapter 4 - Inside the Workshop
 
 Section 1 - Workshop  
 
-The workshop is a room. The Workshop is north of the Workshop Door. The description is "TBD"
+The workshop is a room. 
+The Workshop is north of the Workshop Door. 
+The description is "TBD"
 
 Part 4 - Setting - 802,701
 
@@ -438,7 +503,8 @@ Chapter 1 - Mrs Watchett
 Watchett is a person. 
 Watchett is a female. 
 Watchett is fixed.
-Watchett is in the Entryway. 
+[Watchett is in the Entryway.]
+Watchett is in the Kitchen.
 
 The printed name of Watchett is "Mrs. Watchett" 
 [INFO Reading Recipe 7.1 - Getting Acquainted led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]

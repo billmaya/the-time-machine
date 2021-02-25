@@ -31,7 +31,7 @@ Wells struggles against the orderlies attempting to drag him into the horse-draw
 
 Dr. Humbolt intervenes, placing himself between you and Wells. 'There, there Wells. First thing to do is get you the help you need. Then we can help this 'Wanna' you're going on about.'
 
-'Weena, you fool! Weena! I'm not crazy. He twists towards you. 'Filby, the Morlocks are going to kill her...' The rest of Wells's sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
+'Weena, you fool! Weena! I'm not crazy. He twists towards you. 'Filby, the Morlocks are going to kill her...' The rest of Wells' sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
 
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 
@@ -223,7 +223,7 @@ Chapter 2 - Inside
 Section 1 - Entryway
 
 The Entryway is a room. 
-The description is "From here you can reach all other parts of the house. To your right, an ornately carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear low sounds of conversation under a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells's[apostrophe] workshop."
+The description is "From here you can reach all other parts of the house. To your right, an ornately carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear low sounds of conversation under a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
 	
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor. You have to admit, you haven't ever been up there."

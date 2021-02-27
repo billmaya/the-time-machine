@@ -2,7 +2,7 @@
 
 Table 0.1 - Word Count
 Words	
-4886
+4976
 
 Table 0.2 - To Dos
 topic	todo
@@ -43,10 +43,6 @@ Include Basic Help Menu by Emily Short.
 
 Chapter 2 - Instead-Of Rules
 
-Chapter 3 - Tests
-
-Test goto-kitchen with "north / west/ north / north / north."
-
 Section 1 - Waiting
 
 Instead of waiting: say 
@@ -59,6 +55,10 @@ Instead of going up in Woking Street: say "You jump up and down a few times, try
 Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
 
 [TBD - Mrs. Watchett should wander away if you go "up" in the Entryway.]
+
+Chapter 3 - Tests
+
+Test goto-kitchen with "north / west/ north / north / north."
 
 Part 3 - Settings - 1895
 
@@ -125,10 +125,10 @@ Woking Street is a room. The description is "You're standing halfway down the st
 	
 	Test house-look with "x other houses / x residences".
 
-The front door is north of Woking Street and south of the Entryway. 
-The front door is a door. 
-It is openable and lockable. 
-It is unlocked.
+	The front door is north of Woking Street and south of the Entryway. 
+	The front door is a door. 
+	It is openable and lockable. 
+	It is unlocked.
 
 	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
 	
@@ -281,11 +281,14 @@ Section 3 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description is "A large [fireplace] is set into the west wall and a coal [fire] is blazing away in it to ward off the cold. On the [mantle] above sits a small mechanical [clock]. Centered above the mantle is a framed [painting]. Directly in front of the hearth is a [small table] with two leather [armchairs] flanking it on either side, positioned advantageously to view the coal flames while conversing, drinking, or smoking. On the table is a brandy [decanter] and two [snifters]. A [newspaper] sits on one of the armchairs."
+The description is "A large [fireplace] is set into the west wall and a coal [fire] is blazing away in it to ward off the cold. On the [mantle] above sits a small mechanical [clock]. Centered above the mantle is a framed [painting]. Directly in front of the hearth is a [small table] with two leather [armchairs] flanking it on either side, positioned advantageously to view the coal flames while conversing, drinking, or smoking. On the table is a brandy [decanter] and two [snifters]. A [newspaper] sits on one of the armchairs. A set of glass doors leads outside to the garden."
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
 The Garden Door is openable and lockable.
+The Garden Door is scenery.
+Understand "glass" or "glass door" or "glass doors" as Garden Door.
+The description of Garden Door is "[if location is Parlor]A set of glass doors and stone steps lead down into a snow-covered garden.[otherwise]A set up stone steps lead up to glass doors and the inside of the house."
 
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
@@ -334,16 +337,6 @@ Every turn:
 	if the location of the player is the Dining Room:
 		if the location of Watchett is the Kitchen:
 			say "[bold type]If Mrs. Watchett in Kitchen, you should hear Kitchen sounds-cutting, stirring, mixing, etc. through the kitchen door to north"
-
-[DELETE say "Here you are."]
-
-[DELETE [if the location of Watchet is the Kitchen] SOUNDS.[otherwise] NO SOUNDS." ]
-
-[DELETE if Watchett in the kitchen, kitchen sounds]
-
-[DELETE If Watchett is in the Kitchen, say: "Kitchen sounds-cutting, stirring, mixing, etc."]
-[DELETE If the location of Watchett is the Kitchen: 
-	Say "Kitchen sounds-cutting, stirring, mixing, etc."]
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
@@ -395,12 +388,7 @@ The Kitchen is a room.
 The Kitchen is north of the Kitchen Door.
 The description is "[first time]The large room where Mrs. Watchett prepares all those [meals] that you enjoy so much. [only]With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area]."
 
-[DELETE The description is "[first time]The large room where Mrs. Watchett prepares all those meals they you enjoy so much. [only]With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden table in the center of the room. All around the circumference of the room are the cooking stove, a copper sink and free-standing cabinets and shelves for storage, all designed or modified along Wells’ 'scientific' lines."]
-[DELETE The description is "The room where Mrs. Watchett prepares all those meals she's so famous for. Every thing about the room—the X, the Y, the Z—is designed towards that single purpose."]
-
 [+ conditional text to description if Watchett in room]
-
-[DELETE "This is where Mrs. Watchett prepares all those meals she's so famous for."]
 
 The meals are a thing.
 The meals are scenery in the Kitchen.
@@ -431,7 +419,7 @@ The work area is a thing.
 The work area is scenery in the Kitchen.
 The work area is a supporter.
 
-[Instead [object] description - "There’s nothing special about the [object] except that it has been extensively modified by Wells’ along ‘scientific’ best practices and the source of several of his patents."]
+[Instead [object] description - "There’s nothing special about the [object] except that it has been extensively modified by Wells’ along ‘scientific’ best practices and the source of several of his patents." OR "You know nothing about kitchen work so all you can tell about the [object] is that it has been extensively modified by Wells according to his 'scientific' best practices. Tinkerer that he is, you know that some of these modifications are the genesis of several of his patents" / "...as his attorney, you know that several of these modifications are the genesis of several of the patents he holds."]
 
 Chapter 3 - Outside
 
@@ -439,7 +427,11 @@ Section 1 - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
-the description is "TBD."
+The description is "Set below the level of the road and shielded from the city outside by second floor walls to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed snow that continues to fall from the sky.
+
+From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration. The hibernating dunes of vegetation continue to the north.
+
+To the north, a gate set into that wall looks out onto the snow-covered street beyond. To the south, the dark panes of the windows of Wells workshop stare silently down on the snow-covered bench nestled among some ornamental rhododendron bushes. The parlor doors are to the west."
 
 Chapter 4 - Inside the Workshop
 

@@ -527,7 +527,7 @@ The clearing bushes are a thing.
 The clearing bushes are scenery in the Clearing.
 
 The treetops are a thing.
-The treetops are backdrop. They are in the Clearing and the Sphinx Steps.
+The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
 
 The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
@@ -628,6 +628,7 @@ Section 7 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
+The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the sourth. To the northwest you can see the head and wings of the sphinx poking through the treetops."
 
 Section 8 - River
 

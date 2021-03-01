@@ -2,7 +2,7 @@
 
 Table 0.1 - Word Count
 Words	
-4976
+6004
 
 Table 0.2 - To Dos
 topic	todo
@@ -15,8 +15,8 @@ topic	todo
 
 Part 1 - Beginning The Story
 
-The player is in Woking Street.
-[The player is in the Clearing.]
+[The player is in Woking Street.]
+The player is in the Clearing.
 
 The watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
 The watch is carried.
@@ -58,7 +58,8 @@ Instead of going up in the Entryway: say "You wander around upstairs for a few m
 
 Chapter 3 - Tests
 
-Test goto-kitchen with "north / west/ north / north / north."
+Test goto-kitchen with "north / west/ north / north / north." [from Woking Street]
+Test house-look with "x other houses / x residences". [from Woking Street]
 
 Part 3 - Settings - 1895
 
@@ -122,8 +123,6 @@ Woking Street is a room. The description is "You're standing halfway down the st
 	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights has gone off as those residents have gone back to sleep.[only]"
 	
 	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "residences" as houses.
-	
-	Test house-look with "x other houses / x residences".
 
 	The front door is north of Woking Street and south of the Entryway. 
 	The front door is a door. 
@@ -151,6 +150,7 @@ Woking Street is a room. The description is "You're standing halfway down the st
 	The sundial is scenery in Woking Street.
 	The sundial is a supporter.
 	The description of the sundial is "Octogon shaped, this custom-made timekeeper is attached vertically to the door. While it has all of the components of it’s horizontal cousins, these componens are arranged in a slightly different configuration to account for its vertical nature and the surrounding buildings.[paragraph break]Roman [numerals] from one to twelve surround a stylized [sun] at the center. A hinged gnomon, which would normally cast a shadow during daylight hours, serves as the knocker. Underneath the sun and gnomon is the [motto] 'Sine Umbra Nihil'. Lightly etched complementary [Babylonian] and [Italian] hour lines cross the sundial's face."
+	
 	Understand "timekeeper" or "timepiece" or "watch" as sundial.
 	
 		The numerals are a thing.
@@ -231,6 +231,7 @@ The description is "From here you can reach all other parts of the house. To you
 	
 	The banister is fixed in place in the Entryway.
 	The description of the banister is "Just a normal handhold for going up and down the steps."
+	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
 	
 The Workshop Door is north of the Entryway and south of the Workshop. 
@@ -287,8 +288,9 @@ The Garden Door is east of the Parlor and west of the Garden.
 The Garden Door is a door. 
 The Garden Door is openable and lockable.
 The Garden Door is scenery.
-Understand "glass" or "glass door" or "glass doors" as Garden Door.
 The description of Garden Door is "[if location is Parlor]A set of glass doors and stone steps lead down into a snow-covered garden.[otherwise]A set up stone steps lead up to glass doors and the inside of the house."
+
+Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
@@ -343,9 +345,9 @@ The Kitchen Door is a door.
 The Kitchen Door is openable.
 The Kitchen Door is scenery.
 
-The walls are a thing.
-The walls are scenery in the Dining Room.
-Instead of examining the walls, say "You'll have to be more specific. Are you interested in the wainscot or the wallpaper?"
+The dining room walls are a thing.
+The dining room walls are scenery in the Dining Room.
+Instead of examining the dining room walls, say "You'll have to be more specific. Are you interested in the wainscot or the wallpaper?"
 
 The wainscot is a thing. [https://bit.ly/3qTcueh]
 The wainscot is scenery in the Dining Room.
@@ -427,11 +429,35 @@ Section 1 - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
-The description is "Set below the level of the road and shielded from the city outside by second floor walls to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed snow that continues to fall from the sky.
+The description is "Set below the level of the road and shielded from the city outside by second floor [walls] to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.
 
 From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration. The hibernating dunes of vegetation continue to the north.
 
-To the north, a gate set into that wall looks out onto the snow-covered street beyond. To the south, the dark panes of the windows of Wells workshop stare silently down on the snow-covered bench nestled among some ornamental rhododendron bushes. The parlor doors are to the west."
+To the north, a [gate] set into that wall looks out onto the snow-covered street beyond. To the south, the dark panes of Wells' [workshop windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
+
+Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
+
+The garden walls are a thing.
+The garden walls are scenery in the Garden.
+Understand "walls" as garden walls.
+
+The snow is a thing.
+The snow is scenery in the Garden.
+
+The gate is a thing.
+The gate is scenery in the Garden.
+
+The workshop windows are a thing.
+The workshop windows are scenery in the Garden.
+[DESC - [if in Garden] description from in Garden [otherwise] description from in Workshop]
+
+The bench is a thing.
+The bench is scenery in the Garden.
+The bench is a supporter.
+
+The garden bushes are a thing.
+The garden bushes are scenery in the Garden.
+Understand "wilderness" or "hollyhocks" or "larkspurs" or "snapdragons" or "rhododendrons" or "tree" or "trees" or "vegetation" as bushes.
 
 Chapter 4 - Inside the Workshop
 
@@ -439,7 +465,49 @@ Section 1 - Workshop
 
 The workshop is a room. 
 The Workshop is north of the Workshop Door. 
-The description is "TBD"
+The description is "Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].
+
+Midway down the room, closer to the west wall, is a mechanical device that resembles nothing you have ever seen before anywhere in your entire life."
+
+The workbench is a thing.
+The workbench is scenery in the Workshop.
+
+The tools are a thing.
+The tools are scenery in the Workshop.
+
+The papers are a thing.
+The papers are scenery in the Workshop.
+
+The materials are a thing.
+The materials are scenery in the Workshop.
+
+The blackboard is a thing.
+The blackboard is scenery in the Workshop.
+
+The equations are a thing.
+The equations are scenery in the Workshop.
+
+The diagrams are a thing.
+The diagrams are scenery in the Workshop.
+
+The chalk is a thing.
+The chalk is scenery in the Workshop.
+
+The eraser is a thing.
+The eraser is scenery in the Workshop.
+
+The lights are a thing.
+The lights are scenery in the Workshop.
+
+The light switch is a device.
+The light switch is scenery in the Workshop.
+
+The time machine is a device.
+The time machine is scenery in the Workshop.
+[The time machine is a container.]
+
+The blueprints are a thing.
+The blueprints are scenery on the workbench.
 
 Part 4 - Setting - 802,701
 
@@ -447,15 +515,59 @@ Chapter 1
 
 Section 1 - Clearing
 
+[TBD Figure out how to move the time machine with player from workshop to this room (as part of scene?) ]
+[TBD Substituting different article in clearing description first time or when player in time machine - The time macine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
+
 The Clearing is a room. 
+The description is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but your not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
 
 Inside from the Clearing is Top Shaft.
+
+The clearing bushes are a thing.
+The clearing bushes are scenery in the Clearing.
+
+The treetops are a thing.
+The treetops are backdrop. They are in the Clearing and the Sphinx Steps.
+
+The undergrowth is a thing.
+The undergrowth is scenery in the Clearing.
+
+The circular shaft is a thing.
+The circular shaft is scenery in the Clearing.
+The circular shaft is a supporter.
+
+The circular grate is a thing.
+The circular grate is scenery on the circular shaft.
+The circular grate is a supporter.
 
 Section 2 - Sphinx Steps
 
 The Sphinx Steps are a room.
 The Sphinx Steps are up from the Clearing.
+The description is "The set of stone steps winds its way around the [ziggurat] and through the treetops, ending at the top of a [plateau] in front of a set of large closed [stone doors] set into a [pedestal]. There is an [sacrificial alter] in the center of the plateau. On the pedestal is a carved [statue] of a sphinx, its impassive face surveying a countryside you cannot see, its outstreached wings poised to take flight against some unknown prey.[paragraph break] At this height, you can see a path down below winding its way southeast from the clearing to some water in the distance."
+
 The printed name of Sphinx Steps are "Top of Sphinx Steps"
+
+The ziggurat is a thing.
+The ziggurat is scenery in the Sphinx Steps.
+
+The plateau is a thing.
+The plateau is scenery in the Sphinx Steps.
+
+The stone doors are a thing.
+The stone doors are scenery in the Sphinx Steps.
+
+The sacrificial alter is a thing.
+The sacrificial alter is scenery in the Sphinx Steps.
+The sacrificial alter is a supporter.
+
+The pedestal is a thing.
+The pedestal is scenery in the Sphinx Steps.
+
+The statue is a thing.
+The statue is scenery in the Sphinx Steps.
+Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
+
 
 Section 3 - Top Shaft
 
@@ -474,14 +586,50 @@ Section 5 - Domed Building
 
 The Domed Building is a room.
 The Domed Building is east of the Clearing.
+The Domed Building is west of the Inside Dome.
 Inside from the Domed Building is Inside Dome.
+
+Understand "concrete" or "pantheon" or "columned" or "columns" or "portico" or "entrance" as Domed Building.
+
+The description is "Before you is a weathered concrete building built along the lines of the Pantheon in Rome. A columned portico to the east provides entrance to the inside of the domed building behind it."
+
+[Pantheon
+https://bit.ly/3bQq6jS (wikipedia) 
+https://bit.ly/2NLr9tv (google images)
+https://bit.ly/37WsJPZ
+https://bit.ly/3q3aAq6
+]
 
 Section 6 - Inside Dome
 
 The Inside Dome is a room.
+The Inside Dome is north of the Balcony.
+
+The description is "Sunlight streams through the dome's [oculus] illuminating the room below. Low stone [tables] are scattered throughout the room, surrounding a central [well] that bubbles up fresh [water] from an unknown source[first time] (Wells would undoubtable know the engineering behind such a feat)[only]. Mosaic [murals] surround the walls."
+	
 The printed name of Inside Dome is "Inside the Domed Building"
 
-Section 7 - River
+The oculus is a thing.
+The oculus is scenery in the Inside Dome.
+
+The tables are a thing.
+The tables are scenery in the Inside Dome.
+
+The well is a thing.
+The well is scenery in the Inside Dome.
+
+The water is a thing.
+The water is scenery in the Inside Dome.
+
+The murals are a thing.
+The murals are scenery in the Inside Dome.
+
+Section 7 - Balcony
+
+The Balcony is a room.
+The Balcony is south of Inside Dome.
+
+Section 8 - River
 
 The River is a room.
 The River is southeast of the Clearing.

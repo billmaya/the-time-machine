@@ -69,7 +69,8 @@ Chapter 1 - Outside on the Street
 
 Section 1 - Woking Street
 
-Woking Street is a room. The description is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you.[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
+Woking Street is a room. 
+The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you.[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
 
 	The area of the street is scenery in Woking Street.
 	The description of the area of the street is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago."
@@ -230,7 +231,7 @@ Chapter 2 - Inside
 Section 1 - Entryway
 
 The Entryway is a room. 
-The description is "From here you can reach all other parts of the house. To your right, an ornately carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear low sounds of conversation under a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
+The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear low sounds of conversation under a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
 	
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor. You have to admit, you haven't ever been up there."
@@ -253,7 +254,7 @@ Section 2 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [book shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [journals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
+The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [book shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [journals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
 
 Against one wall is a small [desk] for notetaking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation."
 
@@ -289,7 +290,7 @@ Section 3 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description is "A large [fireplace] is set into the west wall and a coal [fire] is blazing away in it to ward off the cold. On the [mantle] above sits a small mechanical [clock]. Centered above the mantle is a framed [painting]. Directly in front of the hearth is a [small table] with two leather [armchairs] flanking it on either side, positioned advantageously to view the coal flames while conversing, drinking, or smoking. On the table is a brandy [decanter] and two [snifters]. A [newspaper] sits on one of the armchairs. A set of glass doors leads outside to the garden."
+The description of the Parlor is "A large [fireplace] is set into the west wall and a coal [fire] is blazing away in it to ward off the cold. On the [mantle] above sits a small mechanical [clock]. Centered above the mantle is a framed [painting]. Directly in front of the hearth is a [small table] with two leather [armchairs] flanking it on either side, positioned advantageously to view the coal flames while conversing, drinking, or smoking. On the table is a brandy [decanter] and two [snifters]. A [newspaper] sits on one of the armchairs. A set of glass doors leads outside to the garden."
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
@@ -339,7 +340,7 @@ Section 4 - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of it's kind in the entire city, fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals."
+The description of the Dining Room is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of it's kind in the entire city, fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals."
 
 [Is there a better way to do this?]
 Every turn:
@@ -385,7 +386,7 @@ The chandelier is scenery in the Dining Room.
 The orrery is a thing. [https://bit.ly/3s8YLzS]
 The orrery is scenery on the dining table.
 The orrery is a device.
-The description is "A clockwork of brass, gears, and polish reflecting and lensflaring the chandelier light..."
+The description of the orrery is "A clockwork of brass, gears, and polish reflecting and lensflaring the chandelier light..."
 
 The fuse is a thing.
 [The fuse is hidden.] [How do you hide something until you search for it?]
@@ -395,7 +396,7 @@ Section 5 - Kitchen
 
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
-The description is "[first time]The large room where Mrs. Watchett prepares all those [meals] that you enjoy so much. [only]With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area]."
+The description of the Kitchen is "[first time]The large room where Mrs. Watchett prepares all those [meals] that you enjoy so much. [only]With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area]."
 
 [+ conditional text to description if Watchett in room]
 
@@ -436,7 +437,7 @@ Section 1 - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
-The description is "Set below the level of the road and shielded from the city outside by second floor [walls] to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.
+The description of the Garden is "Set below the level of the road and shielded from the city outside by second floor [walls] to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.
 
 From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration. The hibernating dunes of vegetation continue to the north.
 
@@ -472,7 +473,7 @@ Section 1 - Workshop
 
 The workshop is a room. 
 The Workshop is north of the Workshop Door. 
-The description is "Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].
+The description of the Workshop is "Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].
 
 Midway down the room, closer to the west wall, is a mechanical device that resembles nothing you have ever seen before anywhere in your entire life."
 
@@ -526,7 +527,7 @@ Section 1 - Clearing
 [TBD Substituting different article in clearing description first time or when player in time machine - The time macine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
 
 The Clearing is a room. 
-The description is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but your not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
+The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but your not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
 
 Inside from the Clearing is Top Shaft.
 
@@ -551,7 +552,7 @@ Section 2 - Sphinx Steps
 
 The Sphinx Steps are a room.
 The Sphinx Steps are up from the Clearing.
-The description is "The set of stone steps winds its way around the [ziggurat] and through the treetops, ending at the top of a [plateau] in front of a set of large closed [stone doors] set into a [pedestal]. There is an [sacrificial alter] in the center of the plateau. On the pedestal is a carved [statue] of a sphinx, its impassive face surveying a countryside you cannot see, its outstreached wings poised to take flight against some unknown prey.[paragraph break] At this height, you can see a path down below winding its way southeast from the clearing to some water in the distance."
+The description of the Sphinx Steps is "The set of stone steps winds its way around the [ziggurat] and through the treetops, ending at the top of a [plateau] in front of a set of large closed [stone doors] set into a [pedestal]. There is an [sacrificial alter] in the center of the plateau. On the pedestal is a carved [statue] of a sphinx, its impassive face surveying a countryside you cannot see, its outstreached wings poised to take flight against some unknown prey.[paragraph break] At this height, you can see a path down below winding its way southeast from the clearing to some water in the distance."
 
 The printed name of Sphinx Steps are "Top of Sphinx Steps"
 

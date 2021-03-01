@@ -211,12 +211,19 @@ The ambulence is undescribed.
 
 Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out another straightjacket."
 	
-Table 3.1.1.a - Sundial Links
+[DELETE Table 3.1.1.a - Sundial Links
 topic	link
 "victorian"	"https://bit.ly/3tP1ssg"
 "image"	"https://bit.ly/371QTYW"
 "mottos"	"https://bit.ly/2Z7bRS4"
-"parts-of"	"https://bit.ly/3p83dwZ"
+"parts-of"	"https://bit.ly/3p83dwZ"]
+
+[Sundial
+victorian	https://bit.ly/3tP1ssg
+image	https://bit.ly/371QTYW
+mottos	https://bit.ly/2Z7bRS4
+parts-of	https://bit.ly/3p83dwZ
+]
 	
 Chapter 2 - Inside
 
@@ -591,7 +598,7 @@ Inside from the Domed Building is Inside Dome.
 
 Understand "concrete" or "pantheon" or "columned" or "columns" or "portico" or "entrance" as Domed Building.
 
-The description is "Before you is a weathered concrete building built along the lines of the Pantheon in Rome. A columned portico to the east provides entrance to the inside of the domed building behind it."
+The description of the Domed Building is "Before you is a weathered concrete building built along the lines of the Pantheon in Rome. A columned portico to the east provides entrance to the inside of the domed building behind it."
 
 [Pantheon
 https://bit.ly/3bQq6jS (wikipedia) 
@@ -605,7 +612,7 @@ Section 6 - Inside Dome
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 
-The description is "Sunlight streams through the dome's [oculus] illuminating the room below. Low stone [tables] are scattered throughout the room, surrounding a central [well] that bubbles up fresh [water] from an unknown source[first time] (Wells would undoubtable know the engineering behind such a feat)[only]. Mosaic [murals] surround the walls."
+The description of Inside Dome is "Sunlight streams through the dome's [oculus] illuminating the room below. Low stone [tables] are scattered throughout the room, surrounding a central [well] that bubbles up fresh [water] from an unknown source[first time] (Wells would undoubtable know the engineering behind such a feat)[only]. Mosaic [murals] surround the walls."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 
@@ -634,6 +641,9 @@ Section 8 - River
 
 The River is a room.
 The River is southeast of the Clearing.
+The description of the River is "[first time]You pull yourself free of the underbrush on the northwest bank of a small river. [only]The river meanders its way from the southwest to the northeast, curving to avoid the large cliffs to the southeast. Though it appears quite deep in places, at some points it rushes quickly over rocks and changes elevation." 
+
+[DELETE to the northeast and southwest, this water "]
 
 Part 5 - Characters - 1895
 
@@ -738,6 +748,9 @@ Gernsback is in the Entryway.
 Part 6 - Characters - 802,701
 
 Chapter 1 - Eloi
+
+The Eloi are people.
+The Eloi are in the River.
 
 Chapter 2 - Weena
 

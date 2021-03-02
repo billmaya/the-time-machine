@@ -2,7 +2,7 @@
 
 Table 0.1 - Word Count
 Words	
-6004
+6166
 
 Table 0.2 - To Dos
 topic	todo
@@ -211,13 +211,6 @@ The ambulence is fixed in place.
 The ambulence is undescribed.
 
 Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out another straightjacket."
-	
-[DELETE Table 3.1.1.a - Sundial Links
-topic	link
-"victorian"	"https://bit.ly/3tP1ssg"
-"image"	"https://bit.ly/371QTYW"
-"mottos"	"https://bit.ly/2Z7bRS4"
-"parts-of"	"https://bit.ly/3p83dwZ"]
 
 [Sundial
 victorian	https://bit.ly/3tP1ssg
@@ -643,8 +636,6 @@ Section 8 - River
 The River is a room.
 The River is southeast of the Clearing.
 The description of the River is "[first time]You pull yourself free of the underbrush on the northwest bank of a small river. [only]The river meanders its way from the southwest to the northeast, curving to avoid the large cliffs to the southeast. Though it appears quite deep in places, at some points it rushes quickly over rocks and changes elevation." 
-
-[DELETE to the northeast and southwest, this water "]
 
 Part 5 - Characters - 1895
 

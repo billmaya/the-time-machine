@@ -2,7 +2,7 @@
 
 Table 0.1 - Word Count
 Words	
-6166
+6247
 
 Table 0.2 - To Dos
 topic	todo
@@ -520,7 +520,7 @@ Section 1 - Clearing
 [TBD Substituting different article in clearing description first time or when player in time machine - The time macine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
 
 The Clearing is a room. 
-The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but your not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
+The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but you aretake not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
 
 Inside from the Clearing is Top Shaft.
 
@@ -536,10 +536,30 @@ The undergrowth is scenery in the Clearing.
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
+[The circular shaft is enterable.]
+Instead of examining the circular shaft: say "On the circular shaft is a circular grate."
 
 The circular grate is a thing.
-The circular grate is scenery on the circular shaft.
+The circular grate is portable.
+The circular grate is [scenery] on the circular shaft.
 The circular grate is a supporter.
+The circular grate is undescribed.
+
+[if you remove the circular grate from the circular shaft it is now enterable]
+
+Before entering the circular shaft: [say "NO GO."]
+	if the circular grate is on the circular shaft, say "No Go.";
+	otherwise:
+		now the circular shaft is enterable;
+		say "Go Ahead."
+		
+
+[say "No Go."
+	otherwise:
+		say "Go Ahead."]
+	
+
+
 
 Section 2 - Sphinx Steps
 

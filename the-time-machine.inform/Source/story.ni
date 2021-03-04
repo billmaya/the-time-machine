@@ -2,7 +2,7 @@
 
 Table 0.1 - Word Count
 Words	
-6247
+6430
 
 Table 0.2 - To Dos
 topic	todo
@@ -18,9 +18,8 @@ Part 1 - Beginning The Story
 [The player is in Woking Street.]
 The player is in the Clearing.
 
-The watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
-The watch is carried.
-
+The pocket watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
+The pocket watch is carried.
 [TBD Describe yourself when you "x self"]
 
 When play begins: say "'Let me go!'
@@ -537,7 +536,7 @@ The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
 [The circular shaft is enterable.]
-Instead of examining the circular shaft: say "On the circular shaft is a circular grate."
+Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. On the shaft a circular grate rests on lip, flush with the surface. Through the grate you can see the rungs of a ladder going down."
 
 The circular grate is a thing.
 The circular grate is portable.
@@ -547,11 +546,22 @@ The circular grate is undescribed.
 
 [if you remove the circular grate from the circular shaft it is now enterable]
 
-Before entering the circular shaft: [say "NO GO."]
-	if the circular grate is on the circular shaft, say "No Go.";
+[DELETE Knocking is an action applying to one touchable thing.
+Understand "knock on [something]" as knocking.
+Understand "knock [something]" as knocking.]
+
+[DELETE Understand the command "climb" as something new.]
+Climbing into is an action applying to one touchable thing.
+Understand "climb in [something]" as climbing into.
+Understand "climb into [something]" as climbing into.
+Instead of climbing into the circular shaft: try entering the circular shaft.
+
+Instead of entering the circular shaft: [say "NO GO."]
+	if the circular grate is on the circular shaft, say "If the grate wasn't there you might be able to." [DELETE No Go."];
 	otherwise:
-		now the circular shaft is enterable;
-		say "Go Ahead."
+		[now the circular shaft is enterable;]
+		say "Carefully you climb over the lip of the shaft and onto the ladder.[line break]";
+		now the player is in the Top Shaft.
 		
 
 [say "No Go."
@@ -596,6 +606,13 @@ The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
 
 The printed name of Top Shaft is "Top of the Shaft"
+
+Climbing out is an action applying to one touchable thing.
+Understand "climb out [something]" as climbing out.
+Understand "climb out of [something]" as climbing out.
+Instead of climbing out the Top Shaft: try exiting. [the Top Shaft.]
+
+[Instead of exiting the Top Shaft: say "You carefully climb out of the shaft."]
 
 Section 4 - Bottom Shaft
 

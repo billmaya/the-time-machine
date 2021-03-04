@@ -1,8 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-Table 0.1 - Word Count
-Words	
-6430
+[WORDS - 6516 ]
 
 Table 0.2 - To Dos
 topic	todo
@@ -20,6 +18,7 @@ The player is in the Clearing.
 
 The pocket watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
 The pocket watch is carried.
+
 [TBD Describe yourself when you "x self"]
 
 When play begins: say "'Let me go!'
@@ -211,7 +210,7 @@ The ambulence is undescribed.
 
 Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out another straightjacket."
 
-[Sundial
+[Sundial links
 victorian	https://bit.ly/3tP1ssg
 image	https://bit.ly/371QTYW
 mottos	https://bit.ly/2Z7bRS4
@@ -254,7 +253,7 @@ The book shelves are a thing.
 The book shelves are scenery in the Library.
 The book shelves are a supporter.
 
-The books are a thing. [What if some of the books are from the future?]
+The books are a thing. [TBD What if some of the books are from the future?]
 The books are scenery on the shelves.
 
 The journals are a thing.
@@ -421,7 +420,7 @@ The work area is a thing.
 The work area is scenery in the Kitchen.
 The work area is a supporter.
 
-[Instead [object] description - "There’s nothing special about the [object] except that it has been extensively modified by Wells’ along ‘scientific’ best practices and the source of several of his patents." OR "You know nothing about kitchen work so all you can tell about the [object] is that it has been extensively modified by Wells according to his 'scientific' best practices. Tinkerer that he is, you know that some of these modifications are the genesis of several of his patents" / "...as his attorney, you know that several of these modifications are the genesis of several of the patents he holds."]
+[TBD Instead [object] description - "There’s nothing special about the [object] except that it has been extensively modified by Wells’ along ‘scientific’ best practices and the source of several of his patents." OR "You know nothing about kitchen work so all you can tell about the [object] is that it has been extensively modified by Wells according to his 'scientific' best practices. Tinkerer that he is, you know that some of these modifications are the genesis of several of his patents" / "...as his attorney, you know that several of these modifications are the genesis of several of the patents he holds."]
 
 Chapter 3 - Outside
 
@@ -449,7 +448,7 @@ The gate is scenery in the Garden.
 
 The workshop windows are a thing.
 The workshop windows are scenery in the Garden.
-[DESC - [if in Garden] description from in Garden [otherwise] description from in Workshop]
+[TBD - [if in Garden] description from in Garden [otherwise] description from in Workshop]
 
 The bench is a thing.
 The bench is scenery in the Garden.
@@ -535,41 +534,38 @@ The undergrowth is scenery in the Clearing.
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
-[The circular shaft is enterable.]
-Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. On the shaft a circular grate rests on lip, flush with the surface. Through the grate you can see the rungs of a ladder going down."
+Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. On the shaft a circular grate rests on lip, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness." [TBD + conditional text if grate on shaft or in Clearing]
 
-The circular grate is a thing.
-The circular grate is portable.
-The circular grate is [scenery] on the circular shaft.
-The circular grate is a supporter.
-The circular grate is undescribed.
+The metal grate is a thing.
+The metal grate is portable.
+The metal grate is [scenery] on the circular shaft.
+The metal grate is a supporter.
+The metal grate is undescribed.
 
-[if you remove the circular grate from the circular shaft it is now enterable]
+[ > Remove grate ]
+Understand the command "remove" as something new.
+Understand the command "remove" as "take".
 
-[DELETE Knocking is an action applying to one touchable thing.
-Understand "knock on [something]" as knocking.
-Understand "knock [something]" as knocking.]
+Instead of taking the metal grate:
+	if the metal grate is on the circular shaft:
+		say "Interlacing your fingers into the grate openings and bracing yourself against the side of the concrete shaft, you manage to slowly leverage it up and out of its resting position. Carefully you work it off the top of the shaft and manage to drop it with a thud onto the ground without smashing your toes or scuffing your Northampton Barkers. Blazes, that was heavy.";
+		move the metal grate to the Clearing;
+		now the metal grate is described.
+	[otherwise:
+		say "No way, it is way too bloody heavy to try and move again."]
 
-[DELETE Understand the command "climb" as something new.]
 Climbing into is an action applying to one touchable thing.
 Understand "climb in [something]" as climbing into.
 Understand "climb into [something]" as climbing into.
 Instead of climbing into the circular shaft: try entering the circular shaft.
 
-Instead of entering the circular shaft: [say "NO GO."]
-	if the circular grate is on the circular shaft, say "If the grate wasn't there you might be able to." [DELETE No Go."];
+[If you remove the circular grate from the circular shaft you can climb into it]
+Instead of entering the circular shaft:
+	if the metal grate is on the circular shaft:
+		say "If the grate wasn't on top of it you might be able to.";
 	otherwise:
-		[now the circular shaft is enterable;]
 		say "Carefully you climb over the lip of the shaft and onto the ladder.[line break]";
 		now the player is in the Top Shaft.
-		
-
-[say "No Go."
-	otherwise:
-		say "Go Ahead."]
-	
-
-
 
 Section 2 - Sphinx Steps
 
@@ -610,9 +606,9 @@ The printed name of Top Shaft is "Top of the Shaft"
 Climbing out is an action applying to one touchable thing.
 Understand "climb out [something]" as climbing out.
 Understand "climb out of [something]" as climbing out.
-Instead of climbing out the Top Shaft: try exiting. [the Top Shaft.]
+Instead of climbing out the Top Shaft: try exiting.
 
-[Instead of exiting the Top Shaft: say "You carefully climb out of the shaft."]
+[TBD Instead of exiting the Top Shaft: say "You carefully climb out of the shaft."]
 
 Section 4 - Bottom Shaft
 
@@ -722,7 +718,7 @@ Parlor
 Dining Room
 Kitchen
 
-[TODO Mrs Watchett should linger in rooms along the way to the Kitchen. Give her table of things to do.]
+[TBD Mrs Watchett should linger in rooms along the way to the Kitchen. Give her table of things to do.]
 [? Maybe make it a task table for each room (so I can choose a random column).]
 
 Table of Watchett's Room Tasks
@@ -762,7 +758,7 @@ Instead of asking Humboldt about "workshop/shop": say "I know you've never been 
 Instead of asking Humboldt about "self/myself/me": say "But you're his soliciter, closest thing to a friend he has. If anyone can find a way in you can."
 Instead of asking Humboldt about "next steps": say "I'll be back in a few hours. If you haven't figured a way in by then we'll have to break the door down. Mrs. Watchett won't be pleased with that."
 
-[Humboldt will give you flower petal and backstory about before he leaves]
+[TBD Humboldt will give you flower petal and backstory about before he leaves]
 
 Chapter 3 - Gernsback 
 [https://bit.ly/3rYUPl8]

@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 6516 ]
+[WORDS - 6977 ]
 
 Table 0.2 - To Dos
 topic	todo
@@ -13,11 +13,12 @@ topic	todo
 
 Part 1 - Beginning The Story
 
-[The player is in Woking Street.]
-The player is in the Clearing.
+The player is in Woking Street.
+[The player is in the Clearing.]
 
 The pocket watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
 The pocket watch is carried.
+[The description of pocket watch is "Tick tock. Tick tock."]
 
 [TBD Describe yourself when you "x self"]
 
@@ -56,8 +57,17 @@ Instead of going up in the Entryway: say "You wander around upstairs for a few m
 
 Chapter 3 - Tests
 
+[Type "> test" to see all tests available]
 Test goto-kitchen with "north / west/ north / north / north." [from Woking Street]
 Test house-look with "x other houses / x residences". [from Woking Street]
+Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove / x sink / x work area." [from Kitchen]
+
+Chapter 4 - Missing Item Descriptions
+
+[When play begins (this is the run property checks at the start of play rule): 
+	repeat with item running through things: 
+		if description of the item is "":
+			say "[item] has no description."]
 
 Part 3 - Settings - 1895
 
@@ -141,7 +151,7 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	Understand "68" or "street address" or "numbers" or "door address" as address.
 
 	[TBD Would like to make text conditional? - "...[if knocker examined]sundial[otherwise]knocker."]
-	[TBD How do you make a door a supporter, i.e. The address is on the front door. "If a supporter were a kind of a door or vice versa there'd be no problem, but they aren't." See Writing 3.5]
+	[TBD How do you make a door a supporter, i.e. The address is on the front door. "If a supporter were a kind of a door or vice versa there'd be no problem, but they aren't." See Writing §3.5]
 	
 	The knocker is scenery in Woking Street.
 	The description of the knocker is "Made of brass, this door knocker is in the shape of a sundial. By virtue of its unique design is stands out among all the unexceptional, cast iron lions heads, faces, or simple rings that adorn every other door on the street. It is unique, custom made, the only one of its kind in the entire city, probably the world, and always brings a smile to your face since it reflects the temporal obsessions of your friend who lives at this address."
@@ -397,30 +407,35 @@ The meals are scenery in the Kitchen.
 The work table is a thing.
 The work table is scenery in the Kitchen.
 The work table is a supporter.
+The description of the work table is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] it that it has been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
+[§14.5. Adapting text referring to other things - "...is that it has been..." vs. "...are that they have been..."]
 
 The cabinets are a thing.
 The cabinets are scenery in the Kitchen.
 The cabinets are a container.
+The description of the cabinets is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] are that they have been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
 
 The kitchen shelves are a thing.
 The kitchen shelves are scenery in the Kitchen.
 The kitchen shelves are a supporter.
+The description of the kitchen shelves is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] are that they have been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
 
 The stove is a thing.
 The stove is scenery in the Kitchen.
 The stove is a supporter.
 [The stove is a device.] [Can't be container and device]
+The description of the stove is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] is that it has been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
 
 The sink is a thing.
 The sink is scenery in the Kitchen.
 The sink is a container.
 [The sink is a device.] [Can't be container and device]
+The description of the sink is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] is that is has been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
 
 The work area is a thing.
 The work area is scenery in the Kitchen.
 The work area is a supporter.
-
-[TBD Instead [object] description - "There’s nothing special about the [object] except that it has been extensively modified by Wells’ along ‘scientific’ best practices and the source of several of his patents." OR "You know nothing about kitchen work so all you can tell about the [object] is that it has been extensively modified by Wells according to his 'scientific' best practices. Tinkerer that he is, you know that some of these modifications are the genesis of several of his patents" / "...as his attorney, you know that several of these modifications are the genesis of several of the patents he holds."]
+The description of the work area is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] is that it has been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
 
 Chapter 3 - Outside
 
@@ -501,6 +516,9 @@ The lights are scenery in the Workshop.
 The light switch is a device.
 The light switch is scenery in the Workshop.
 
+The lights are a thing.
+The lights are scenery in the Workshop.
+
 The time machine is a device.
 The time machine is scenery in the Workshop.
 [The time machine is a container.]
@@ -515,10 +533,10 @@ Chapter 1
 Section 1 - Clearing
 
 [TBD Figure out how to move the time machine with player from workshop to this room (as part of scene?) ]
-[TBD Substituting different article in clearing description first time or when player in time machine - The time macine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
+[TBD Substituting different article in clearing description first time or when player in time machine - The time machine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
 
 The Clearing is a room. 
-The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but you aretake not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
+The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but you are not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
 
 Inside from the Clearing is Top Shaft.
 
@@ -534,25 +552,26 @@ The undergrowth is scenery in the Clearing.
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
-Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. On the shaft a circular grate rests on lip, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness." [TBD + conditional text if grate on shaft or in Clearing]
+Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. On the shaft a circular grate rests on the top, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness." [TBD + conditional text if grate on shaft or in Clearing]
 
 The metal grate is a thing.
 The metal grate is portable.
-The metal grate is [scenery] on the circular shaft.
+The metal grate is on the circular shaft.
 The metal grate is a supporter.
 The metal grate is undescribed.
+[TBD Description of grate]
 
 [ > Remove grate ]
 Understand the command "remove" as something new.
 Understand the command "remove" as "take".
 
 Instead of taking the metal grate:
-	if the metal grate is on the circular shaft:
+	if the metal grate is on the circular shaft in the Clearing:
 		say "Interlacing your fingers into the grate openings and bracing yourself against the side of the concrete shaft, you manage to slowly leverage it up and out of its resting position. Carefully you work it off the top of the shaft and manage to drop it with a thud onto the ground without smashing your toes or scuffing your Northampton Barkers. Blazes, that was heavy.";
 		move the metal grate to the Clearing;
-		now the metal grate is described.
-	[otherwise:
-		say "No way, it is way too bloody heavy to try and move again."]
+		now the metal grate is described;
+	otherwise:
+		say "No way, it is way too bloody heavy to try and move again."
 
 Climbing into is an action applying to one touchable thing.
 Understand "climb in [something]" as climbing into.
@@ -562,7 +581,7 @@ Instead of climbing into the circular shaft: try entering the circular shaft.
 [If you remove the circular grate from the circular shaft you can climb into it]
 Instead of entering the circular shaft:
 	if the metal grate is on the circular shaft:
-		say "If the grate wasn't on top of it you might be able to.";
+		say "If the grate wasn't on top of the shaft you might be able to.";
 	otherwise:
 		say "Carefully you climb over the lip of the shaft and onto the ladder.[line break]";
 		now the player is in the Top Shaft.
@@ -600,15 +619,23 @@ Section 3 - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
+The description of Top Shaft is "You're perched at the the top of the shaft on the ladder leading down. Exiting the shaft will put you back in the Clearing."
 
 The printed name of Top Shaft is "Top of the Shaft"
 
-Climbing out is an action applying to one touchable thing.
-Understand "climb out [something]" as climbing out.
-Understand "climb out of [something]" as climbing out.
-Instead of climbing out the Top Shaft: try exiting.
+[This doesn't work, probably because there is no "shaft" thing like there is in the Clearing.]
+[Climbing out is an action applying to one thing.
+Understand "climb out [room]" as climbing out.
+Understand "climb out of [room]" as climbing out.
+Instead of climbing out: try exiting.]
 
-[TBD Instead of exiting the Top Shaft: say "You carefully climb out of the shaft."]
+Instead of exiting: 
+	say "You carefully climb out of the shaft.";
+	now the player is in the Clearing.
+	
+The ladder is a thing.
+The ladder is a backdrop. It is in the Top Shaft and Bottom Shaft.
+The description of the ladder is "LADDER TBD."
 
 Section 4 - Bottom Shaft
 
@@ -683,7 +710,7 @@ Watchett is fixed.
 Watchett is in the Kitchen.
 
 The printed name of Watchett is "Mrs. Watchett" 
-[INFO Reading Recipe 7.1 - Getting Acquainted led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
+[INFO §7.1. Getting Acquainted led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
 
 Instead of examining Watchett: say "Gort Klaatu Barada Nikto TBD"
 
@@ -699,7 +726,7 @@ Understand "cook" as Mrs Watchett.]
 [INFO This seems to work]
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 
-[INFO See Writing 17.13 New tokens for ^]
+[INFO See §17.13. Overriding existing commands - New tokens for ^]
 
 Every turn:
 	if Watchett is mobile:
@@ -735,7 +762,7 @@ After asking Watchett about "workshop door": say "Locked. Always locked. Only Mr
 
 After asking Watchett about "wells": say "Working too hard on his experiments, he is."	
 
-[See Chapter 7.6 - Reading and Talking]
+[See §7.6. Reading and Talking]
 
 Chapter 2 - Dr Humboldt 
 

@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 6977 ]
+[WORDS - 7437-6977 ]
 
 Table 0.2 - To Dos
 topic	todo
@@ -407,35 +407,40 @@ The meals are scenery in the Kitchen.
 The work table is a thing.
 The work table is scenery in the Kitchen.
 The work table is a supporter.
-The description of the work table is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] it that it has been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
-[§14.5. Adapting text referring to other things - "...is that it has been..." vs. "...are that they have been..."]
+The description of the work table is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
 The cabinets are a thing.
 The cabinets are scenery in the Kitchen.
 The cabinets are a container.
-The description of the cabinets is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] are that they have been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
+The description of the cabinets is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+
+Understand "cabinet" or "storage" as cabinets.
 
 The kitchen shelves are a thing.
 The kitchen shelves are scenery in the Kitchen.
 The kitchen shelves are a supporter.
-The description of the kitchen shelves is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] are that they have been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
+The description of the kitchen shelves is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+	
+Understand "shelf" as kitchen shelves.
 
 The stove is a thing.
 The stove is scenery in the Kitchen.
 The stove is a supporter.
 [The stove is a device.] [Can't be container and device]
-The description of the stove is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] is that it has been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
+The description of the stove is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
 The sink is a thing.
 The sink is scenery in the Kitchen.
 The sink is a container.
 [The sink is a device.] [Can't be container and device]
-The description of the sink is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] is that is has been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
+The description of the sink is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
 The work area is a thing.
 The work area is scenery in the Kitchen.
 The work area is a supporter.
-The description of the work area is "You are unfamiliar with kitchen work in general so all you can tell about the [noun] is that it has been extensively modified by Wells according to his 'scientific' best practices, tinkerer that he is. As his attorney, you know that several of these kitchen modifications are the genesis of several ot the patents he holds."
+The description of the work area is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+
+
 
 Chapter 3 - Outside
 

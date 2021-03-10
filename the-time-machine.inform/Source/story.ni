@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7437-6977 ]
+[WORDS - 7242-6977 ]
 
 Table 0.2 - To Dos
 topic	todo
@@ -397,12 +397,14 @@ Section 5 - Kitchen
 
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
-The description of the Kitchen is "[first time]The large room where Mrs. Watchett prepares all those [meals] that you enjoy so much. [only]With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area]."
 
-[+ conditional text to description if Watchett in room]
+The description of the Kitchen is "With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area].[if the location of Watchett is the Kitchen] Mrs. Watchett is in the midst of preparing another one those meals you enjoy so much.[otherwise] You can see the evening meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"
 
 The meals are a thing.
 The meals are scenery in the Kitchen.
+The description of meals is "[if the location of Watchett is the Kitchen] [Watchett] doesn't look like she needs any help right now but she might be able to answer a quesion or two.[otherwise]Best to leave that to Mrs. Watchett.[end if]"
+
+Understand "meal" or "dinner" or "food" as meals.
 
 The work table is a thing.
 The work table is scenery in the Kitchen.
@@ -414,7 +416,7 @@ The cabinets are scenery in the Kitchen.
 The cabinets are a container.
 The description of the cabinets is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
-Understand "cabinet" or "storage" as cabinets.
+Understand "cabinet" or "storage" or "free-standing" or "free standing" or "standing" as cabinets.
 
 The kitchen shelves are a thing.
 The kitchen shelves are scenery in the Kitchen.
@@ -426,7 +428,7 @@ Understand "shelf" as kitchen shelves.
 The stove is a thing.
 The stove is scenery in the Kitchen.
 The stove is a supporter.
-[The stove is a device.] [Can't be container and device]
+[The stove is a device.] [Can't be supporter and device]
 The description of the stove is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
 The sink is a thing.
@@ -435,12 +437,14 @@ The sink is a container.
 [The sink is a device.] [Can't be container and device]
 The description of the sink is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
+Understand "copper" as sink.
+
 The work area is a thing.
 The work area is scenery in the Kitchen.
 The work area is a supporter.
 The description of the work area is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
-
+Instead of using [things in the Kitchen]: say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with here preparations."
 
 Chapter 3 - Outside
 

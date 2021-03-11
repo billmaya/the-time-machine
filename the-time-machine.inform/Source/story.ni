@@ -812,8 +812,13 @@ Chapter 1 - Eloi
 
 The Eloi are people.
 The Eloi are in the River.
+The Eloi are fixed.
 
 Chapter 2 - Weena
+
+Weena is a person.
+Weena is in the River.
+Weena is fixed.
 
 
 Part 7 - Objects - 1895

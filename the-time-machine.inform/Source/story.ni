@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7134 ]
+[WORDS - 7133 ]
 
 Table 0.2 - To Dos
 topic	todo
@@ -59,6 +59,8 @@ Chapter 3 - Tests
 
 [Type "> test" to see all tests available]
 Test goto-kitchen with "north / west/ north / north / north." [from Woking Street]
+Test goto-dining with "north / west / north / north." [from Woking Street]
+
 Test house-look with "x other houses / x residences". [from Woking Street]
 Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove / x sink / x work area." [from Kitchen]
 
@@ -341,13 +343,7 @@ Section 4 - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description of the Dining Room is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of it's kind in the entire city, fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals."
-
-[Is there a better way to do this?]
-Every turn:
-	if the location of the player is the Dining Room:
-		if the location of Watchett is the Kitchen:
-			say "[bold type]If Mrs. Watchett in Kitchen, you should hear Kitchen sounds-cutting, stirring, mixing, etc. through the kitchen door to north"
+The description of the Dining Room is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of it's kind in the entire city, fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals.[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[end if]"
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 

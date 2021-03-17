@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7133 ]
+[WORDS - 7145 ]
 
 Table 0.2 - To Dos
 topic	todo
@@ -380,10 +380,14 @@ Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks"
 The chandelier is a thing.
 The chandelier is scenery in the Dining Room.
 
-The orrery is a thing. [https://bit.ly/3s8YLzS]
+The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
 The orrery is scenery on the dining table.
 The orrery is a device.
 The description of the orrery is "A clockwork of brass, gears, and polish reflecting and lensflaring the chandelier light..."
+
+[
+
+]
 
 The fuse is a thing.
 [The fuse is hidden.] [How do you hide something until you search for it?]

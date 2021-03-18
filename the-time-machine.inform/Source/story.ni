@@ -1,15 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7145 ]
-
-Table 0.2 - To Dos
-topic	todo
---  	"Conditional text if Watchett in Kitchen"
---	"Humboldt description"
---	"Watchett description"
---	"Result of using gnomon - Mrs. Watchett opens door? Carriage drives away?"
---	"Woking Street - Working on Dr Humboldt's responses to your Asking About"
---	"Woking Street - Getting Humboldt into the ambulence and having the ambulence travel away" [Maybe happens when you enter house.]
+[WORDS - 7090 ]
 
 Part 1 - Beginning The Story
 
@@ -28,9 +19,9 @@ Wells struggles against the orderlies attempting to drag him into the horse-draw
 
 'Save her,' he says, voice ragged and hoarse, eyes hopeful and pleading. 'Save Weena for me, my old friend'
 
-Dr. Humbolt intervenes, placing himself between you and Wells. 'There, there Wells. First thing to do is get you the help you need. Then we can help this 'Wanna' you're going on about.'
+Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there Wells. First thing to do is get you the help you need. Then we can help this 'Wanna' you're going on about.'
 
-'Weena, you fool! Weena! I'm not crazy. He twists towards you. 'Filby, the Morlocks are going to kill her...' The rest of Wells' sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
+'Weena, you fool! Weena! I'm not crazy...' He twists towards you. 'Filby, the Morlocks are going to kill her. You must...' The rest of Wells' sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
 
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 

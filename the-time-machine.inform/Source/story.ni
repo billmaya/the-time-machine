@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7090 ]
+[WORDS - 7134 ]
 
 Part 1 - Beginning The Story
 
@@ -15,13 +15,17 @@ The pocket watch is carried.
 
 When play begins: say "'Let me go!'
 
-Wells struggles against the orderlies attempting to drag him into the horse-drawn ambulence parked in the street before the door. With strength born of desperation he breaks free and falls to the ground, thrown off balance by the straightjacket that binds his arms to his sides. You kneel down and help Wells up off the snow-covered bitumen. As Wells struggles to his feet your eyes meeting.
+Wells struggles against the two burly orderlies who try and drag him into the horse-drawn ambulence parked in the street. With a strength born of desperation he breaks free and crashes into you, almost dragging both of you to the ground. 
 
-'Save her,' he says, voice ragged and hoarse, eyes hopeful and pleading. 'Save Weena for me, my old friend'
+'Save her,' he says, his voice hoarse, his eyes pleading. 'Save Weena for me. You're my only hope.'
 
-Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there Wells. First thing to do is get you the help you need. Then we can help this 'Wanna' you're going on about.'
+Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there Wells. Of course we'll help this 'Wanna.' But first you need to get some rest. Clear your head. Get some perspective on the situation.'
 
-'Weena, you fool! Weena! I'm not crazy...' He twists towards you. 'Filby, the Morlocks are going to kill her. You must...' The rest of Wells' sentence is cut off as the orderlies gag him and roughhouse him into the ambulence."
+'Weena, you fool! Weena!' He twists towards you, attempting to get away from Humboldt. 'I'm not crazy. The Morlocks are going to try and kill her. Use the time machine in my workshop to save her. I've got the key...'
+
+Wells starts fumbling in one of his vest pockets as Humboldt nods to the two orderlies behind Wells. Grabbing Wells, they overpower him and manhandle the flailing man into the dark recesses of the ambulence. If you're totally honest, it appears they relish using more force than necessary. Humboldt notices your concerned look.
+
+'Don't worry,' he says, consulting his pocket watch. 'They're professionals. Used to this kind of stuff all the time. They're not as rough as they look.'"
 
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 
@@ -54,6 +58,8 @@ Test goto-dining with "north / west / north / north." [from Woking Street]
 
 Test house-look with "x other houses / x residences". [from Woking Street]
 Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove / x sink / x work area." [from Kitchen]
+
+Test humboldt-woking-talk with "ask humboldt about wells / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about workshop / ask humboldt about time machine"
 
 Chapter 4 - Missing Item Descriptions
 
@@ -777,13 +783,15 @@ Understand "doctor" or "physician" or "dr" as Humboldt.
 
 Instead of examining Humboldt: say "Dr Gort Kaatu Barada Nikto TBD"
 
-Instead of asking Humboldt about "wells/madman/patient/lunatic": say "I don't know enought to make a proper diagnosis right now. I'll know more after a proper examination."
-Instead of asking Humboldt about "exam/examination": say "First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down."
-Instead of asking Humboldt about "sedation": say "TBD - Just a seven percent solution. Something to calm him down and clear his mind."
-Instead of asking Humboldt about "morning/tomorrow": say "I'll be back in a few hours after some observation. Maybe then we can get into that workshop of his and see what brought him to this state."
-Instead of asking Humboldt about "workshop/shop": say "I know you've never been inside. None of us has." 
-Instead of asking Humboldt about "self/myself/me": say "But you're his soliciter, closest thing to a friend he has. If anyone can find a way in you can."
-Instead of asking Humboldt about "next steps": say "I'll be back in a few hours. If you haven't figured a way in by then we'll have to break the door down. Mrs. Watchett won't be pleased with that."
+Instead of asking Humboldt about "wells/madman/patient/lunatic": say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'"
+
+Instead of asking Humboldt about "diagnosis": say "'Too early to tell.'"
+
+Instead of asking Humboldt about "examination": say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'"
+
+Instead of asking Humboldt about "workshop/shop": say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'"
+
+Instead of asking Humboldt about "time machine": say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'"
 
 [TBD Humboldt will give you flower petal and backstory about before he leaves]
 

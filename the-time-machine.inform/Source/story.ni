@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7134 ]
+[WORDS - 7343-7148 ]
 
 Part 1 - Beginning The Story
 
@@ -142,8 +142,10 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	[TBD - More detailed description of front door? See Victorian doors https://bit.ly/3rOzQkZ and https://bit.ly/3b0ymNP]
 	
 	Before going north: 
-		say "HUMBOLDT ACTIONS.";
-		[TBD - Add text, move Humboldt and ambulance offscreen.]
+		say "Humboldt snaps his pocket watch shut and starts getting into the ambulence. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulence door shut. With the crack of the reins the ambulence starts off down the street, turns the corner, and disappears into the evening traffic.";
+		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
+		now the ambulence is nowhere;
+		now the player is carrying the Petal.	
 
 	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains to one side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
 	
@@ -837,7 +839,10 @@ Chapter 4 - Fuse
 
 Chapter 5 - Time Machine
 
-Chapter 6 - Flower Petal
+Chapter 6 - Petal
+
+The Petal is a thing.
+The Petal is nowhere.
 
 Part 8 - Objects - 802,701
 

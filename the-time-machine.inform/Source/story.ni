@@ -140,6 +140,10 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
 	
 	[TBD - More detailed description of front door? See Victorian doors https://bit.ly/3rOzQkZ and https://bit.ly/3b0ymNP]
+	
+	Before going north: 
+		say "HUMBOLDT ACTIONS.";
+		[TBD - Add text, move Humboldt and ambulance offscreen.]
 
 	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains to one side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
 	

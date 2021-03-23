@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7343-7148 ]
+[WORDS - 7476 ]
 
 Part 1 - Beginning The Story
 
@@ -80,7 +80,8 @@ Woking Street is a room.
 The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you.[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
 
 	The area of the street is scenery in Woking Street.
-	The description of the area of the street is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago."
+	The description of the area of the street is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago.[if watchett-key is true] KEY SEARCHABLE.[otherwise] KEY UN-SEARCHABLE.[end if]"
+
 	Understand "footsteps" or "carriage tracks" or "area" or "street area" as area of the street.
 	[TBD There needs to be a key here. Should it be hinted at in the description - "a slight glint in the snow catches your eye but you're not sure if it's actually something or a reflection off the falling snow." and found if you search the area.]
 
@@ -248,10 +249,10 @@ The description of the Entryway is "From here you can reach all other parts of t
 	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
 	
-The Workshop Door is north of the Entryway and south of the Workshop. 
-The Workshop Door is a door. 
-The Workshop Door is lockable. [It is locked.] 
-The Workshop Door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed."]
+The workshop door is north of the Entryway and south of the Workshop. 
+The workshop door is a door. 
+The workshop door is lockable. [It is locked.] 
+The workshop door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed." See https://bit.ly/3rdieyO ]
 Understand "workshop" or "door" as Workshop Door. 
 
 Instead of examining the workshop door: say "No one you know has ever been inside, not even Mrs. Watchett."
@@ -713,16 +714,16 @@ Part 5 - Characters - 1895
 
 A person can be either fixed or mobile. 
 
-Chapter 1 - Mrs Watchett
+Chapter 1 - Watchett
 
 Watchett is a person. 
 Watchett is a female. 
 Watchett is fixed.
-[Watchett is in the Entryway.]
-Watchett is in the Kitchen.
+Watchett is in the Entryway.
+[Watchett is in the Kitchen.]
 
 The printed name of Watchett is "Mrs. Watchett" 
-[INFO §7.1. Getting Acquainted led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
+[See Recipe §7.1. Getting Acquainted -> led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
 
 Instead of examining Watchett: say "Gort Klaatu Barada Nikto TBD"
 
@@ -737,8 +738,22 @@ Understand "cook" as Mrs Watchett.]
 
 [INFO This seems to work]
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
+[See §17.3. Overriding existing commands - New tokens for ^]
 
-[INFO See §17.13. Overriding existing commands - New tokens for ^]
+[See Writing §7.6. Reading and talking]
+Instead of asking Watchett about "wells": say "Working too hard on his experiments, he is."
+Instead of asking Watchett about "experiments": say "'Everything that was done was behind that door.' She points to the workshop door."
+Instead of asking Watchett about "workshop door": say "Locked. Always locked. Only Mr. Wells has the key."
+Instead of asking Watchett about "front door": say "Much too cold to be outside the way you're dressed. Best you warm up by the fire first."
+Instead of asking Watchett about "door": say "A puzzled look on her face, Mrs. Watchett looks from both the front door and the workshop door, trying to understand which door you're asking about."
+
+[See Writing §11.5. Conditions and question ]
+watchett-key is a truth state that varies.
+watchett-key is false.
+
+Instead of asking Watchett about "key": 
+	say "Always kept it on his person. That's where it still must be.";
+	now watchett-key is true.
 
 Every turn:
 	if Watchett is mobile:
@@ -767,16 +782,7 @@ Library			"rearranges the chairs"
 Library			"looks out the windows"
 Library			"draws the curtains closed"
 
-
-[After asking Watchett about the "front door": say "TBD."]
-
-After asking Watchett about "workshop door": say "Locked. Always locked. Only Mr. Wells has the key."
-
-After asking Watchett about "wells": say "Working too hard on his experiments, he is."	
-
-[See §7.6. Reading and Talking]
-
-Chapter 2 - Dr Humboldt 
+Chapter 2 - Humboldt 
 
 Humboldt is a person.
 Humboldt is a male.
@@ -830,6 +836,9 @@ Part 7 - Objects - 1895
 
 Chapter 1 - Workshop Key
 
+The workshop key is a thing.
+The workshop key is nowhere.
+
 Chapter 2 - Blueprints
 
 Chapter 3 - Orrery
@@ -841,8 +850,8 @@ Chapter 5 - Time Machine
 
 Chapter 6 - Petal
 
-The Petal is a thing.
-The Petal is nowhere.
+The petal is a thing.
+The petal is nowhere.
 
 Part 8 - Objects - 802,701
 

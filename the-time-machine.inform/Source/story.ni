@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7476 ]
+[WORDS - 7593 ]
 
 Part 1 - Beginning The Story
 
@@ -72,18 +72,15 @@ Part 3 - Settings - 1895
 
 Chapter 1 - Outside on the Street
 
-[You start on the street. The hospital ambulence has left, the disturbed snow the only evidence that it's been here. You go inside. Mrs. Watcheet gives you backstory. ['Is Mr. Well's going to be alright?] Has Dr. Humbolt told you anything? Is Mr. Well's going to be alright?' "]
-
 Section 1 - Woking Street
 
 Woking Street is a room. 
-The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you.[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
+The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you[if ambulence is in Woking Street] where the ambulence is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
 
 	The area of the street is scenery in Woking Street.
-	The description of the area of the street is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago.[if watchett-key is true] KEY SEARCHABLE.[otherwise] KEY UN-SEARCHABLE.[end if]"
+	The description of the area of the street is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago.[if watchett-key is true][paragraph break]Something metallic catches your eye, almost buried under the rapidly falling snow.[otherwise][paragraph break]As you survey the area nothing catches your eye. Of course, it would help if you knew what you were looking for.[end if]"
 
 	Understand "footsteps" or "carriage tracks" or "area" or "street area" as area of the street.
-	[TBD There needs to be a key here. Should it be hinted at in the description - "a slight glint in the snow catches your eye but you're not sure if it's actually something or a reflection off the falling snow." and found if you search the area.]
 
 	The gaslights are scenery in Woking Street. [coal gas https://bit.ly/3ijMeoV ] 
 	The description of the gaslights are "Incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which could be product of his overactive intellect, but you would miss the soft green glow of gassified coal that lights your nightime steps."
@@ -221,10 +218,13 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	Instead of using the gnomon: say "You reach out and raise the hinged gnomon several times and tap on the brass base underneath. The gentle 'tap, tap, tap' sound is almost lost in the wind but you are sure it is being heard clearly inside."
 	
 The ambulence is a thing in Woking Street.
+The description of the ambulence is "Horse-drawn, the ambulence resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, attendents, and doctor."
 The ambulence is fixed in place.
 The ambulence is undescribed.
 
-Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out another straightjacket."
+Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
+
+Instead of entering the ambulence: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
 
 [Sundial links
 victorian	https://bit.ly/3tP1ssg
@@ -232,6 +232,16 @@ image	https://bit.ly/371QTYW
 mottos	https://bit.ly/2Z7bRS4
 parts-of	https://bit.ly/3p83dwZ
 ]
+
+Section 2 - Getting The Key
+
+Understand "glint" or "key" or "metallic" or "metallic object" as workshop key.
+Instead of examining the workshop key: 
+	if watchett-key is true: 
+		say "Bending down you brush the snow away to reveal a small metallic key. Picking it up you put it in your pocket.";
+		now the player is carrying the workshop key;
+	otherwise: 
+		say "Perhaps the extreme cold is affecting your mental faculties. You can't see anything like that in front of you."
 	
 Chapter 2 - Inside
 
@@ -741,11 +751,11 @@ Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper"
 [See §17.3. Overriding existing commands - New tokens for ^]
 
 [See Writing §7.6. Reading and talking]
-Instead of asking Watchett about "wells": say "Working too hard on his experiments, he is."
+Instead of asking Watchett about "wells": say "Working too hard on his experiments, he is. Did the doctor say he would be all right."
 Instead of asking Watchett about "experiments": say "'Everything that was done was behind that door.' She points to the workshop door."
 Instead of asking Watchett about "workshop door": say "Locked. Always locked. Only Mr. Wells has the key."
 Instead of asking Watchett about "front door": say "Much too cold to be outside the way you're dressed. Best you warm up by the fire first."
-Instead of asking Watchett about "door": say "A puzzled look on her face, Mrs. Watchett looks from both the front door and the workshop door, trying to understand which door you're asking about."
+Instead of asking Watchett about "door": say "A puzzled look on her face, Mrs. Watchett looks at both the front door and the workshop door, trying to understand which door you're asking about."
 
 [See Writing §11.5. Conditions and question ]
 watchett-key is a truth state that varies.
@@ -837,7 +847,8 @@ Part 7 - Objects - 1895
 Chapter 1 - Workshop Key
 
 The workshop key is a thing.
-The workshop key is nowhere.
+The workshop key is in Woking Street.
+The workshop key is undescribed.
 
 Chapter 2 - Blueprints
 

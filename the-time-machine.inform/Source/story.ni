@@ -261,7 +261,7 @@ The description of the Entryway is "From here you can reach all other parts of t
 	
 The workshop door is north of the Entryway and south of the Workshop. 
 The workshop door is a door. 
-The workshop door is lockable. [It is locked.] 
+The workshop door is lockable. The workshop door is locked.
 The workshop door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed." See https://bit.ly/3rdieyO ]
 Understand "workshop" or "door" as Workshop Door. 
 
@@ -849,6 +849,8 @@ Chapter 1 - Workshop Key
 The workshop key is a thing.
 The workshop key is in Woking Street.
 The workshop key is undescribed.
+
+The workshop key unlocks the workshop door.
 
 Chapter 2 - Blueprints
 

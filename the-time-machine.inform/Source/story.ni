@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 8001-7887 ]
+[WORDS - 8321 ]
 
 Part 1 - Beginning The Story
 
@@ -52,7 +52,9 @@ Instead of going up in the Entryway: say "You wander around upstairs for a few m
 
 Chapter 3 - Tests
 
-[Type "> test" to see all tests available]
+[There might be other tests scattered throughout the code.
+ Type "> test" to see all tests available]
+
 Test goto-kitchen with "north / west/ north / north / north." [from Woking Street]
 Test goto-dining with "north / west / north / north." [from Woking Street]
 
@@ -139,7 +141,7 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	
 	[TBD - More detailed description of front door? See Victorian doors https://bit.ly/3rOzQkZ and https://bit.ly/3b0ymNP]
 	
-	Before going north: 
+	Before going north in Woking Street: 
 		say "Humboldt snaps his pocket watch shut and starts getting into the ambulence. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulence door shut. With the crack of the reins the ambulence starts off down the street, turns the corner, and disappears into the evening traffic.";
 		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
 		now the ambulence is nowhere;
@@ -396,10 +398,11 @@ The chandelier is scenery in the Dining Room.
 
 The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
 The orrery is scenery on the dining table.
-Understand "planetarium" or "device" or "mechanism" or "box" or "solar system" as orrery.
 The orrery is a device.
 The orrery is switched off.
-The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only] On it’s flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[paragraph break]There is a switch on the long side of the box and, next to it, a small sliding panel." 
+The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only][paragraph break]On it’s flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[paragraph break]There is a switch on the long side of the box and, next to it, [if the sliding panel is closed]a small sliding panel.[otherwise] the inner mechanisms of the box are on display.[end if]" 
+
+Understand "planetarium" or "device" or "mechanism" or "box" or "solar system" as orrery.
 
 The sliding panel is a thing.
 The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
@@ -422,22 +425,33 @@ Instead of closing the sliding panel:
 
 [> flip switch]
 	
-An orrery switch is a thing.
-An orrery switch is scenery in the Dining Room.
-An orrery switch is a device.
-An orrery switch is switched off.
+An orrery's switch is a thing.
+An orrery's switch is scenery in the Dining Room.
+An orrery's switch is a device.
+An orrery's switch is switched off.
+Understand "orrery switch" as orrery's switch.
+	
+Instead of examining the orrery's switch:
+	say "There is nothing special about the orrery's switch except the fact that it can be turned on and off."
 
 Understand "flip [a switched off device]" as switching on.
 Understand "flip [a switched on device]" as switching off.
 	
-Instead of switching on the orrery switch:
-	say "ORRERY SWITCH ON.";
-	now the orrery switch is switched on;
-	now the orrery is switched on.
+Instead of switching on the orrery's switch:
+	if the fuse is in the sliding panel in the Dining Room: [<- DOESN'T WORK]
+		if the sliding panel is open: 
+			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital postion around the Sun on the surface display.";
+		otherwise:
+			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptabley, the planets on the surface begin their endless journey around the Sun.";
+		now the orrery's switch is switched on;
+		now the orrery is switched on.
 	
-Instead of switching off the orrery switch:
-	say "ORRERY SWITCH OFF.";
-	now the orrery switch is switched off;
+Instead of switching off the orrery's switch:
+	if the sliding panel is open:
+		say "The gears inside stop moving and the planet's halt in their orbits.";
+	otherwise:
+		say "The box is silent and the planet's stop their movements around the Sun.";
+	now the orrery's switch is switched off;
 	now the orrery is switched off.
 
 The fuse is a thing.
@@ -445,9 +459,23 @@ The fuse is in the sliding panel.
 
 Instead of examining the fuse:
 	if the sliding panel is open: 
-		say "YOU SEE THE FUSE.";
+		say "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end. Each of the metal caps is held in a metal clip.";
 	otherwise: 
 		say "YOU DON'T SEE THE FUSE."
+	
+[> take fuse]
+	
+After taking the fuse:
+	if the orrery is switched on:
+		now the orrery's switch is switched off;
+		now the orrery is switched off.
+
+Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."	
+Test orrery-on-off with "turn orrery on / turn orrery off."
+Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."
+Test switch-examine with " examine orrery's switch / examine orrery switch."
+Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
+
 
 Section 5 - Kitchen
 

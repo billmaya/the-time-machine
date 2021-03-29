@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 8321 ]
+[WORDS - 8402 ]
 
 Part 1 - Beginning The Story
 
@@ -400,7 +400,9 @@ The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tb
 The orrery is scenery on the dining table.
 The orrery is a device.
 The orrery is switched off.
-The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only][paragraph break]On it’s flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[paragraph break]There is a switch on the long side of the box and, next to it, [if the sliding panel is closed]a small sliding panel.[otherwise] the inner mechanisms of the box are on display.[end if]" 
+The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs.On it’s flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only][paragraph break]There is a switch on the long side of the box and, next to it,[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanisms of the box are on display.[end if]" 
+
+[^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
 
 Understand "planetarium" or "device" or "mechanism" or "box" or "solar system" as orrery.
 
@@ -421,7 +423,8 @@ Instead of opening the sliding panel:
 Instead of closing the sliding panel: 
 	say "You slide the panel shut, hiding the inner workings of the device.";
 	now the sliding panel is closed;
-	now the fuse is nowhere.
+	if the fuse is in the sliding panel in the Dining Room:
+		now the fuse is nowhere.
 
 [> flip switch]
 	
@@ -438,13 +441,15 @@ Understand "flip [a switched off device]" as switching on.
 Understand "flip [a switched on device]" as switching off.
 	
 Instead of switching on the orrery's switch:
-	if the fuse is in the sliding panel in the Dining Room: [<- DOESN'T WORK]
+	if the fuse is in the sliding panel in the Dining Room:
 		if the sliding panel is open: 
 			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital postion around the Sun on the surface display.";
 		otherwise:
 			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptabley, the planets on the surface begin their endless journey around the Sun.";
 		now the orrery's switch is switched on;
-		now the orrery is switched on.
+		now the orrery is switched on;
+	otherwise:
+		say "It looks like the orrery won't function unless you put the fuse in the sliding panel.".
 	
 Instead of switching off the orrery's switch:
 	if the sliding panel is open:
@@ -455,7 +460,7 @@ Instead of switching off the orrery's switch:
 	now the orrery is switched off.
 
 The fuse is a thing.
-The fuse is in the sliding panel.
+The fuse is nowhere.
 
 Instead of examining the fuse:
 	if the sliding panel is open: 
@@ -467,6 +472,7 @@ Instead of examining the fuse:
 	
 After taking the fuse:
 	if the orrery is switched on:
+		say "The minute you remove the fuse the orrery shuts off and stops its calculations.";
 		now the orrery's switch is switched off;
 		now the orrery is switched off.
 
@@ -926,7 +932,20 @@ Chapter 2 - Blueprints
 
 Chapter 3 - Orrery
 
+[ See 
+ • Part 3 - Settings - 1895
+ • Chapter 2 - Inside 
+ • Section 4 - Dining Room
+]
+
 Chapter 4 - Fuse
+
+[ See 
+ • Part 3 - Settings - 1895
+ • Chapter 2 - Inside 
+ • Section 4 - Dining Room
+]
+
 [The Fuse makes the Orrery move. Same type as used in Time Machine.]
 
 Chapter 5 - Time Machine

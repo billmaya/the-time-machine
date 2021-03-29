@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 7887 ]
+[WORDS - 8001-7887 ]
 
 Part 1 - Beginning The Story
 
@@ -398,7 +398,8 @@ The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tb
 The orrery is scenery on the dining table.
 Understand "planetarium" or "device" or "mechanism" or "box" or "solar system" as orrery.
 The orrery is a device.
-The description of the orrery is "A heliocentroc mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only] On it’s flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[paragraph break]There is a switch on the long side of the box and, next to it, a small sliding panel." 
+The orrery is switched off.
+The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only] On it’s flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[paragraph break]There is a switch on the long side of the box and, next to it, a small sliding panel." 
 
 The sliding panel is a thing.
 The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
@@ -410,15 +411,34 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
-	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollowshafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than than one item, it's all one big mysterious conglomoration to you[first time], probably like one of legal documents you usually write up for your clients[only].";
+	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than than one item, it's all one big mysterious conglomoration to you[first time], probably like one of legal documents you usually write up for your clients[only].";
 	now the sliding panel is open;
 	now the fuse is in the sliding panel.
 
 Instead of closing the sliding panel: 
-	say "TBD.";
-	now the sliding panel is closed.
+	say "You slide the panel shut, hiding the inner workings of the device.";
+	now the sliding panel is closed;
+	now the fuse is nowhere.
 
 [> flip switch]
+	
+An orrery switch is a thing.
+An orrery switch is scenery in the Dining Room.
+An orrery switch is a device.
+An orrery switch is switched off.
+
+Understand "flip [a switched off device]" as switching on.
+Understand "flip [a switched on device]" as switching off.
+	
+Instead of switching on the orrery switch:
+	say "ORRERY SWITCH ON.";
+	now the orrery switch is switched on;
+	now the orrery is switched on.
+	
+Instead of switching off the orrery switch:
+	say "ORRERY SWITCH OFF.";
+	now the orrery switch is switched off;
+	now the orrery is switched off.
 
 The fuse is a thing.
 The fuse is in the sliding panel.

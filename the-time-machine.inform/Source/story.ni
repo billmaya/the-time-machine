@@ -301,9 +301,12 @@ The desk is a supporter.
 The chair is a thing.
 The chair is scenery in the Library.
 The chair is a supporter.
+The chair is enterable.
 
 The curtains are a thing.
 The curtains are scenery in the Library.
+
+[Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 
 Section 3 - Parlor
 
@@ -567,6 +570,7 @@ The workshop windows are scenery in the Garden.
 The bench is a thing.
 The bench is scenery in the Garden.
 The bench is a supporter.
+The bench is enterable.
 
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
@@ -728,7 +732,7 @@ Understand "climb out [room]" as climbing out.
 Understand "climb out of [room]" as climbing out.
 Instead of climbing out: try exiting.]
 
-Instead of exiting: 
+Instead of exiting in the Top Shaft: 
 	say "You carefully climb out of the shaft.";
 	now the player is in the Clearing.
 	

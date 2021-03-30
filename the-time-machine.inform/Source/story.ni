@@ -618,6 +618,7 @@ The lights are scenery in the Workshop.
 
 The light switch is a device.
 The light switch is scenery in the Workshop.
+The light switch is switched off.
 
 The lights are a thing.
 The lights are scenery in the Workshop.
@@ -631,6 +632,12 @@ The time machine is enterable.
 
 The blueprints are a thing.
 The blueprints are scenery on the workbench.
+
+Every turn when the player is in the Workshop:
+	if light switch is switched on:
+		say "WORKSHOP DESC WITH LIGHT.";
+	otherwise:
+		say "WORKSHOP DESC WITHOUT LIGHT.".
 
 Part 4 - Setting - 802,701
 
@@ -833,6 +840,8 @@ Understand "cook" as Mrs Watchett.]
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 [See §17.3. Overriding existing commands - New tokens for ^]
 
+Section 1 - Conversation
+
 [See Writing §7.6. Reading and talking]
 Instead of asking Watchett about "wells": say "Working too hard on his experiments, he is. Did the doctor say he would be all right."
 Instead of asking Watchett about "experiments": say "'Everything that was done was behind that door.' She points to the workshop door."
@@ -847,6 +856,8 @@ watchett-key is false.
 Instead of asking Watchett about "key": 
 	say "Always kept it on his person. That's where it still must be.";
 	now watchett-key is true.
+
+Section 2 - Movement
 
 Every turn:
 	if Watchett is mobile:
@@ -887,6 +898,8 @@ The printed name of Humboldt is "Dr. Humboldt"
 Understand "doctor" or "physician" or "dr" as Humboldt.
 
 Instead of examining Humboldt: say "Dr Gort Kaatu Barada Nikto TBD"
+
+Section 1 - Conversation
 
 Instead of asking Humboldt about "wells/madman/patient/lunatic": say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'"
 

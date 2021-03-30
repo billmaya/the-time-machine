@@ -622,9 +622,12 @@ The light switch is scenery in the Workshop.
 The lights are a thing.
 The lights are scenery in the Workshop.
 
-The time machine is a device.
+The time machine is a thing.
+[The time machine is a device.]
 The time machine is scenery in the Workshop.
 [The time machine is a container.]
+The time machine is a supporter.
+The time machine is enterable. 
 
 The blueprints are a thing.
 The blueprints are scenery on the workbench.

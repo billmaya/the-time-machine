@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 8426 ]
+[WORDS - 8872 ]
 
 Part 1 - Beginning The Story
 
@@ -338,7 +338,7 @@ The mantle is a supporter.
 The clock is a thing. [https://bit.ly/37AqP7s]
 The clock is scenery on the mantle.
 
-The painting is a thing. [https://bit.ly/3aEJKQo - Casper David Friedrich's "Wanderer above the Sea of Fog"]
+The painting is a thing. [Casper David Friedrich's "Wanderer above the Sea of Fog" https://bit.ly/3aEJKQo]
 The painting is scenery in the Parlor.
 
 The armchairs are things.
@@ -521,13 +521,11 @@ Understand "shelf" as kitchen shelves.
 The stove is a thing.
 The stove is scenery in the Kitchen.
 The stove is a supporter.
-[The stove is a device.] [Can't be supporter and device]
 The description of the stove is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
 The sink is a thing.
 The sink is scenery in the Kitchen.
 The sink is a container.
-[The sink is a device.] [Can't be container and device]
 The description of the sink is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
 Understand "copper" as sink.
@@ -549,7 +547,7 @@ The description of the Garden is "Set below the level of the road and shielded f
 
 From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration. The hibernating dunes of vegetation continue to the north.
 
-To the north, a [gate] set into that wall looks out onto the snow-covered street beyond. To the south, the dark panes of Wells' [workshop windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
+To the north, a [gate] set into that wall looks out onto the snow-covered street beyond. To the south, the dark panes of Wells' workshop [windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 
@@ -562,10 +560,6 @@ The snow is scenery in the Garden.
 
 The gate is a thing.
 The gate is scenery in the Garden.
-
-The workshop windows are a thing.
-The workshop windows are scenery in the Garden.
-[TBD - [if in Garden] description from in Garden [otherwise] description from in Workshop]
 
 The bench is a thing.
 The bench is scenery in the Garden.
@@ -582,9 +576,53 @@ Section 1 - Workshop
 
 The workshop is a room. 
 The Workshop is north of the Workshop Door. 
-The description of the Workshop is "Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].
+The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].[paragraph break]Midway down the room, closer to the west wall, is a mechanical device that resembles nothing you have ever seen before anywhere in your entire life.[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."
 
-Midway down the room, closer to the west wall, is a mechanical device that resembles nothing you have ever seen before anywhere in your entire life."
+The windows are a thing.
+The windows are a backdrop. They are in the Workshop and the Garden.
+Understand "workshop windows" or "window" as windows.
+
+[> look through windows]
+
+Instead of searching the windows: [Recipe §3.6 Windows]
+	if light switch is switched on:
+		if the player is in the Garden:
+			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down the east side of the room, a large blackboard covereed the entire west wall, and a strange mechanical device in the center of the room.";
+			now the player is on the bench;
+			stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]
+		if the player is in the Workshop:
+			say "The workshop lights cast a warm glow onto the snow-covered garden outside.";
+	else if light switch is switched off:
+		if the player is in the Garden:
+			say "Climbing onto the bench, you peer through the glass into the darkened workshop.";
+			now the player is on the bench;
+			stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]
+		else if the player is in the Workshop:
+			say "Through the windows you can see down into the snow-covered garden outside.".
+
+	
+[ With code below, in Garden with lights off, > look through windows says [A].
+  But when you get on the bench and type > look through window [B] is not said.
+  Went with simpler code above, debug below later.
+
+Instead of searching the windows: [Recipe §3.6 Windows]
+	if light switch is switched on:
+		if the player is in the Garden:
+			if the player is on the bench:
+				say "GARDEN -> WORKSHOP, ON BENCH, LIGHTS ON."; 
+			otherwise:
+				say "GARDEN -> WORKSHOP, OFF BENCH, LIGHTS ON.";
+		if the player is in the Workshop:
+			say "WORKSHOP -> GARDEN, LIGHTS ON.";
+	else if light switch is switched off:
+		if the player is in the Garden:
+			if the player is on the bench:
+				say "GARDEN -> WORKSHOP, ON BENCH, LIGHTS OFF."; [B]
+			otherwise:
+				say "GARDEN -> WORKSHOP, OFF BENCH, LIGHTS OFF."; [A]
+		else if the player is in the Workshop:
+			say "WORKSHOP -> GARDEN, LIGHTS OFF.".
+]
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.
@@ -624,20 +662,12 @@ The lights are a thing.
 The lights are scenery in the Workshop.
 
 The time machine is a thing.
-[The time machine is a device.]
 The time machine is scenery in the Workshop.
-[The time machine is a container.]
 The time machine is a supporter.
 The time machine is enterable. 
 
 The blueprints are a thing.
 The blueprints are scenery on the workbench.
-
-Every turn when the player is in the Workshop:
-	if light switch is switched on:
-		say "WORKSHOP DESC WITH LIGHT.";
-	otherwise:
-		say "WORKSHOP DESC WITHOUT LIGHT.".
 
 Part 4 - Setting - 802,701
 

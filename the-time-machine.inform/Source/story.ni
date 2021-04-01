@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 9022 ]
+[WORDS - 9232 ]
 
 Part 1 - Beginning The Story
 
@@ -273,7 +273,7 @@ Section 2 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [book shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [journals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
+The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [book shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [periodicals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
 
 Against the south wall is a small [desk] for notetaking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. A doorway leads north."
 
@@ -284,8 +284,8 @@ The book shelves are a supporter.
 The books are a thing. [TBD What if some of the books are from the future?]
 The books are scenery on the shelves.
 
-The journals are a thing.
-The journals are scenery on the shelves.
+The periodicals are a thing.
+The periodicals are scenery on the shelves.
 
 The encyclopaedia are a thing.
 The encyclopaedia are scenery on the shelves.
@@ -305,6 +305,12 @@ The chair is enterable.
 
 The curtains are a thing.
 The curtains are scenery in the Library.
+
+["Bookness" - attribute of encyclopaedia, peridicals, and books?]
+
+Instead of taking the encyclopaedia: say "READING ENCYCLOPAEDIA."
+[Instead of reading the encyclopaedia: say "STILL READING."]
+
 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 
@@ -335,6 +341,27 @@ Volume	Label 	Start	End	Date
 23	"T-UPS"	"T"	"Upsala"	1888
 24	"URA-ZYM"	"Ural-Altaic"	"Zymotic"	1888
 25	"Index"	--	--	1889
+
+Table of Periodicals [https://bit.ly/3sJ5Fwv https://bit.ly/3ftZQiV https://bit.ly/3cIvlnE]
+Name	Start-Date	End-Date	Note
+"Chemist + Druggist"	1859	2016	"publication for pharmacists and pharmacy staff." [https://bit.ly/3doBN2a]
+"The New Age"	1894	1983	"inspired by Fabian socialism." [https://bit.ly/2QSXEHj]
+"The Strand Magazine"	1891	1950	"short fiction and general interest articles." [https://bit.ly/39AXM4W]
+"The Ludgate Monthly"	1891	1901	"short fiction and articles of general interest." [https://bit.ly/2R13qqF]
+"The Observatory"	1877	--	"devoted to astronomy." [https://bit.ly/3djX5Oo]
+"Mind"	1876	--	"analytic philosophy and psychology." [https://bit.ly/39ymVNx 1895 Lewis Carroll's "What the Tortoise Said to Achilles"]
+"Amateur Photographer"	1884	--	"like the title says, amateur photography." [https://bit.ly/3wkC92z]
+"The Railway Magazine"	1897	--	"the railway enthusiast." [https://bit.ly/39AX2fU]
+"The Dome"	1987 	1900	"the 'decadent' visual and verbal arts." [https://bit.ly/2PhTzfD]
+"Model Engineer"	1898	--	"model construction and experimental engineering." [https://bit.ly/2PoC11f]
+"Geological Magazine"	1864	--	"observational geology, mineralogy, and palaeontology." [https://bit.ly/3fETb5g]
+"Scientific American"	1845	--	"patents and popular science." [https://bit.ly/2PsChwf]
+"Nature"	1869	--	"a variety of academic disciplines, mainly science and technology." [https://bit.ly/3duivbP]
+
+
+
+
+
 
 
 Section 3 - Parlor

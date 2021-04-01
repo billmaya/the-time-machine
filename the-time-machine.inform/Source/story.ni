@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 8872 ]
+[WORDS - 9022 ]
 
 Part 1 - Beginning The Story
 
@@ -275,7 +275,7 @@ The Library is a room.
 The Library is west of the Entryway. 
 The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [book shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [journals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
 
-Against one wall is a small [desk] for notetaking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation."
+Against the south wall is a small [desk] for notetaking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. A doorway leads north."
 
 The book shelves are a thing.
 The book shelves are scenery in the Library.
@@ -307,6 +307,35 @@ The curtains are a thing.
 The curtains are scenery in the Library.
 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
+
+Table of Encyclopaedia Volumes [https://bit.ly/2PQqQyo https://bit.ly/31CR89W]
+Volume	Label 	Start	End	Date
+1	"A-Anatomy"	"A"	"Anatomy"	1875
+2	"Anaxagoras-ATH"	"Anaxagoras"	"Athenry"	1875
+3	"Athens-BOI"	"Athens"	"Boissonade"	1875
+4	"BOK-CAN"	"Bokhara"	"Canoe"	1876
+5	"Canon-Cleves"	"Canon"	"Cleves"	1876
+6	"CLI-DAY"	"Clichy"	"Dayton"	1877
+7	"DEA-ELD"	"Deacon"	"El Dorado"	1877
+8	"ELE-FAI"	"Eleanor"	"Fakir"	1878
+9	"FAL-FYZ"	"Falaba"	"Fyzabad"	1879
+10	"G-GOT"	"G"	"Gotz"	1879
+11	"GOU-Hippopotamus"	"Gouda"	"Hippopotamus"	1880
+12	"HIR-IND"	"Hiring"	"Indus"	1881
+13	"Infant-Kant"	"Infant"	"Kant"	1881
+14	"Kaolin-LON"	"Kaolin"	"Lons-Le-Saulnier"	1882
+15	"Loo-Memphis"	"Loo"	"Memphis"	1883
+16	"MEN-MOS"	"Mena"	"Mosul"	1883
+17	"MOT-ORM"	"Motanabbi"	"Ormuzd"	1884
+18	"Orne-Phthisis"	"Orne"	"Phthisis"	1885
+19	"PHY-PRO"	"Phylactery"	"Provins"	1885
+20	"PRU-ROS"	"Prudentius"	"Rostoff"	1886
+21	"ROT-Siam"	"Rothe"	"Siam"	1886
+22	"SIB-SZO"	"Sibbald"	"Szolnok"	1887
+23	"T-UPS"	"T"	"Upsala"	1888
+24	"URA-ZYM"	"Ural-Altaic"	"Zymotic"	1888
+25	"Index"	--	--	1889
+
 
 Section 3 - Parlor
 

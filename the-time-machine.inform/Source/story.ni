@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 9232 ]
+[WORDS - 9337 ]
 
 Part 1 - Beginning The Story
 
@@ -273,21 +273,31 @@ Section 2 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [book shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [periodicals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
+The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [periodicals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
 
 Against the south wall is a small [desk] for notetaking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. A doorway leads north."
 
-The book shelves are a thing.
-The book shelves are scenery in the Library.
-The book shelves are a supporter.
+The shelves are a thing.
+The shelves are scenery in the Library.
+The shelves are a supporter.
 
-The books are a thing. [TBD What if some of the books are from the future?]
+[Writing §4.5. Kinds of value]
+[Writing §4.8. New value properties, Example 48]
+[Writing §4.9. Using new kinds of value in properties]
+
+Bookness is a kind of value. The booknesses are reference, magazine, and volume.
+
+The books are a thing. [What if some of the books are from the future?]
+The books have a bookness called type. The type of the books is volume.
 The books are scenery on the shelves.
+Understand "book" as books.
 
 The periodicals are a thing.
+The periodicals have a bookness called type. The type of the periodicals is magazine.
 The periodicals are scenery on the shelves.
 
 The encyclopaedia are a thing.
+The encyclopaedia has a bookness called type. The type of the encyclopaedia is reference.
 The encyclopaedia are scenery on the shelves.
 Understand "encyclopedia" as encyclopaedia.
 
@@ -306,16 +316,20 @@ The chair is enterable.
 The curtains are a thing.
 The curtains are scenery in the Library.
 
-["Bookness" - attribute of encyclopaedia, peridicals, and books?]
-
-Instead of taking the encyclopaedia: say "READING ENCYCLOPAEDIA."
-[Instead of reading the encyclopaedia: say "STILL READING."]
-
-
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
+[Writing §7.1. Actions]
+
+Instead of taking something in the Library:
+	if the noun provides the property type:
+		 say "READING [the type of the noun].";
+	otherwise:
+		say "That's hardly portable.".
+
+[> read book / read periodical / read encyclopaedia ]
+
 
 Table of Encyclopaedia Volumes [https://bit.ly/2PQqQyo https://bit.ly/31CR89W]
-Volume	Label 	Start	End	Date
+Volume	Label 	Start	End	Publish-Date
 1	"A-Anatomy"	"A"	"Anatomy"	1875
 2	"Anaxagoras-ATH"	"Anaxagoras"	"Athenry"	1875
 3	"Athens-BOI"	"Athens"	"Boissonade"	1875
@@ -357,6 +371,14 @@ Name	Start-Date	End-Date	Note
 "Geological Magazine"	1864	--	"observational geology, mineralogy, and palaeontology." [https://bit.ly/3fETb5g]
 "Scientific American"	1845	--	"patents and popular science." [https://bit.ly/2PsChwf]
 "Nature"	1869	--	"a variety of academic disciplines, mainly science and technology." [https://bit.ly/3duivbP]
+
+Table of Books
+Name	Publish-Date
+"Book 1"	1890
+"Book 2"	1891
+"Book 3"	1892
+"Book 4"	1893
+"Book 5" 	1895
 
 
 

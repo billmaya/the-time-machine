@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 9337 ]
+[WORDS - 10354 ]
 
 Part 1 - Beginning The Story
 
@@ -8,7 +8,7 @@ The player is in Woking Street.
 [The player is in the Clearing.]
 
 The pocket watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
-The pocket watch is carried.
+The pocket watch is carried. [It's Wells' pocket watch. You don't have it on you at the start, you find it in one of the rooms (which one?)]
 [The description of pocket watch is "Tick tock. Tick tock."]
 
 [TBD Describe yourself when you "x self"]
@@ -285,51 +285,92 @@ The shelves are a supporter.
 [Writing §4.8. New value properties, Example 48]
 [Writing §4.9. Using new kinds of value in properties]
 
-Bookness is a kind of value. The booknesses are reference, magazine, and volume.
+Bookness is a kind of value. The booknesses are reference, magazine, and hardcover.
 
 The books are a thing. [What if some of the books are from the future?]
-The books have a bookness called type. The type of the books is volume.
+The books have a bookness called type. The type of the books is hardcover.
 The books are scenery on the shelves.
 Understand "book" as books.
 
 The periodicals are a thing.
 The periodicals have a bookness called type. The type of the periodicals is magazine.
 The periodicals are scenery on the shelves.
+Understand "magazine" or "magazines" as periodicals.
 
 The encyclopaedia are a thing.
-The encyclopaedia has a bookness called type. The type of the encyclopaedia is reference.
 The encyclopaedia are scenery on the shelves.
+The encyclopaedia has a bookness called type. The type of the encyclopaedia is reference.
 Understand "encyclopedia" as encyclopaedia.
+
+[Writing §16.16. Defining things with tables - Thought I had to use this but didn't have to]
+[The encyclopaedia has a number called Volume.
+The encyclopaedia has a text called Label.
+The encyclopaedia has a text called Start-Word.
+The encyclopaedia has a text called End-Word.
+The encyclopaedia has a number called Publish-Date.
+The encyclopaedia in the Library are defined by the Table of Encyclopaedia Volumes.]
 
 The furniture is a thing.
 The furniture is scenery in the Library.
+Instead of examining the furniture, say "You'll have to be more specific about what you're interested in examining."
 
 The desk is a thing.
 The desk is scenery in the LIbrary.
 The desk is a supporter.
+The description of the desk is "A standing rolltop desk with a few handwritten papers on it."
+Instead of searching the desk, say "You quickly shuffle through the papers but find nothing of interest."
+	
+The library papers are a thing.
+The library papers are scenery on the desk.
+The printed name of library papers is "papers".
 
 The chair is a thing.
 The chair is scenery in the Library.
 The chair is a supporter.
 The chair is enterable.
+The description of the chair is "Covered in worn leather it looks very comfortable and inviting, angled like it is against the curtained window.[first time] But you cannot rest, you have a key to find.[only]"
 
 The curtains are a thing.
 The curtains are scenery in the Library.
+The curtains are a container.
+The description of the curtains is "Pulled shut, the floor-to-ceiling dark fabric shields the room from the cold weather outside."
+Understand "curtain" as curtains.
+Instead of opening the curtains, say "Pulling a curtain aside, you briefly look at the snow-covered street outside. The continuously falling snow is rapidly covering the disturbed area where the ambulence was a few minutes ago. You let the fabric drop back into place and look around the room."
+
+Instead of pushing the curtains, try opening the curtains.
 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
 
+[Maybe don't make it random but chose a new one each time and never choose the same one twice?]
 Instead of taking something in the Library:
 	if the noun provides the property type:
-		 say "READING [the type of the noun].";
+		if the type of the noun is reference:
+			choose a random row from Table of Encyclopaedia Volumes; 
+			say "You take the volume labeled '[Label entry]' and leaf through the pages from '[Start-Word entry]' to '[End-Word entry]' until you get bored and place the volume back on the shelf.";
+		else if the type of the noun is magazine:
+			choose a random row from Table of Periodicals;
+			say "You take a copy of '[Name entry]' off the shelf and leaf through [Note entry] before placing it back with the other issues.";
+		else if the type of the noun is hardcover:
+			choose a random row from Table of Books;
+			say "You take a copy of '[Name entry]' off the shelf and leaf through a few pages before placing it back on the shelf.";
+		otherwise:
+		 	say "READING [the type of the noun].";
 	otherwise:
 		say "That's hardly portable.".
+		
+Test take-encyc with "take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia."
+Test take-book with "take book / take book / take book / take book / take book / take book."
+Test take-mag with "take periodical / take periodical / take periodical / take periodical / take periodical."  
 
 [> read book / read periodical / read encyclopaedia ]
-
+[Recipe §9.6. Reading Matter]
+		
+Understand the command "read" as something new.
+Understand "read [something]" as taking.
 
 Table of Encyclopaedia Volumes [https://bit.ly/2PQqQyo https://bit.ly/31CR89W]
-Volume	Label 	Start	End	Publish-Date
+Volume	Label 	Start-Word	End-Word	Publish-Date
 1	"A-Anatomy"	"A"	"Anatomy"	1875
 2	"Anaxagoras-ATH"	"Anaxagoras"	"Athenry"	1875
 3	"Athens-BOI"	"Athens"	"Boissonade"	1875
@@ -354,37 +395,87 @@ Volume	Label 	Start	End	Publish-Date
 22	"SIB-SZO"	"Sibbald"	"Szolnok"	1887
 23	"T-UPS"	"T"	"Upsala"	1888
 24	"URA-ZYM"	"Ural-Altaic"	"Zymotic"	1888
-25	"Index"	--	--	1889
+[25	"Index"	--	--	1889]
 
 Table of Periodicals [https://bit.ly/3sJ5Fwv https://bit.ly/3ftZQiV https://bit.ly/3cIvlnE]
 Name	Start-Date	End-Date	Note
-"Chemist + Druggist"	1859	2016	"publication for pharmacists and pharmacy staff." [https://bit.ly/3doBN2a]
-"The New Age"	1894	1983	"inspired by Fabian socialism." [https://bit.ly/2QSXEHj]
-"The Strand Magazine"	1891	1950	"short fiction and general interest articles." [https://bit.ly/39AXM4W]
-"The Ludgate Monthly"	1891	1901	"short fiction and articles of general interest." [https://bit.ly/2R13qqF]
-"The Observatory"	1877	--	"devoted to astronomy." [https://bit.ly/3djX5Oo]
-"Mind"	1876	--	"analytic philosophy and psychology." [https://bit.ly/39ymVNx 1895 Lewis Carroll's "What the Tortoise Said to Achilles"]
-"Amateur Photographer"	1884	--	"like the title says, amateur photography." [https://bit.ly/3wkC92z]
-"The Railway Magazine"	1897	--	"the railway enthusiast." [https://bit.ly/39AX2fU]
-"The Dome"	1987 	1900	"the 'decadent' visual and verbal arts." [https://bit.ly/2PhTzfD]
-"Model Engineer"	1898	--	"model construction and experimental engineering." [https://bit.ly/2PoC11f]
-"Geological Magazine"	1864	--	"observational geology, mineralogy, and palaeontology." [https://bit.ly/3fETb5g]
-"Scientific American"	1845	--	"patents and popular science." [https://bit.ly/2PsChwf]
-"Nature"	1869	--	"a variety of academic disciplines, mainly science and technology." [https://bit.ly/3duivbP]
+"Chemist + Druggist"	1859	2016	"articles about pharmacists and pharmacology" [https://bit.ly/3doBN2a]
+"The New Age"	1894	1983	"articles inspired by Fabian socialism" [https://bit.ly/2QSXEHj]
+"The Strand Magazine"	1891	1950	"some short fiction and general interest articles" [https://bit.ly/39AXM4W]
+"The Ludgate Monthly"	1891	1901	"some short fiction and articles of general interest" [https://bit.ly/2R13qqF]
+"The Observatory"	1877	--	"articles devoted to astronomy" [https://bit.ly/3djX5Oo]
+"Mind"	1876	--	"articles about analytic philosophy and psychology" [https://bit.ly/39ymVNx 1895]
+"Amateur Photographer"	1884	--	"articles, like the title says, about amateur photography" [https://bit.ly/3wkC92z]
+"The Railway Magazine"	1897	--	"articles for the railway enthusiast" [https://bit.ly/39AX2fU]
+"The Dome"	1987 	1900	"articles about the 'decadent' visual and verbal arts" [https://bit.ly/2PhTzfD]
+"Model Engineer"	1898	--	"articles about model construction and experimental engineering" [https://bit.ly/2PoC11f]
+"Geological Magazine"	1864	--	"articles on observational geology, mineralogy, and palaeontology" [https://bit.ly/3fETb5g]
+"Scientific American"	1845	--	"articles about patents and popular science" [https://bit.ly/2PsChwf]
+"Nature"	1869	--	"articles about a variety of academic disciplines, mainly science and technology" [https://bit.ly/3duivbP]
+"Philosophical Transactions of the Royal Society: Mathematical, Physical, and Engineering Sciences"	1887	--	"articles focusing on the physical sciences" [https://bit.ly/3sLTaQX]
+"Philosophical Transactions of the Royal Society B: Biological Sciences"	1887	--	"articles focusing on the life sciences" [https://bit.ly/3sLTaQX]
 
 Table of Books
-Name	Publish-Date
-"Book 1"	1890
-"Book 2"	1891
-"Book 3"	1892
-"Book 4"	1893
-"Book 5" 	1895
-
-
-
-
-
-
+Name	Author	Publish-Date
+"The Voyage of the Beagle"	"Charles Darwin"	1845
+"The Origin of Species"	"Charles Darwin"	1859
+"Mathimatical Pinciples of Natural Philosophy"	"Isaac Newton"	1687
+"Dialogue Concerning the Two Chief World Systems"	"Galileo Galilei"	1632
+"Physica"	"Aristotle" 	300
+"On the Revolutions of Heavenly Spheres"	"Nicolause Copernicus"	1543
+"The Insect Societies"	"Edward O. Wilson"	1971
+"Relativity: The Special and General Theory"	"Albert Einstein"	1916
+"The Selfish Gene"	"Richard Dawkins"	1976
+"Vestiges of the Natural History of Creation"	"Robert Chambers"	1844
+"The Principles of Geology: Being an Attempt to Explain the Former Changes of the Earth's Surface"	"Charles Lyell"	1833
+"The Student's Elements of Geology"	"Charles Lyell"	1870
+"Travels in North America, Canada, and Nova Scotia: With Geological Observations"	"Charles Lyell"	1855
+"On the Connexion of the Physical Sciences"	"Mary Somerville"	1834
+"Preliminary Discourse on the Study of Natural Philosophy"	"John F.W. Herschel"	1851
+"The Science of Life: An Outline of the History of Biology and its Recent Advances"	"J. Arthur Thomson"	1899
+"Sea-Side Studies at Ilfracombe, Tenby, the Scilly Isles, & Jersey"	"George Henry Lewes"	1858
+"The Warden"	"Anthony Trollope"	1855
+"North and South"	"Elizabeth Gaskell"	1855
+"Jane Eyre"	"Charlotte Brontë"	1847
+"The Tenant of Wildfell Hall"	"Anne Brontë"	1848
+"The Moonstone"	"Wilkie Collins"	1868
+"Vanity Fair"	"William Makepeace Thackeray"	1848
+"Wuthering Heights"	"Emily Brontë"	1847
+"Bleak House"	"Charles Dickens"	1853
+"Tess of the d'Urbervilles"	"Thomas Hardy"	1891
+"Middlemarch"	"George Eliot"	1872
+"Erewhon"	"Samuel Butler"	1872
+"The Coming Race"	"Edward Bulwer-Lytton"	1871
+"The Fixed Period"	"Anthony Trollope"	1882
+"The Land of Darkness"	"Margaret Oliphant"	1887
+"The Old Nurse's Story"	"Elizabeth Gaskell"	1852
+"An Account of Some Strange Disturbances in Aungier Street"	"Sheridan Le Fanu"	1853
+"The Signal-Man"	"Charles Dickens"	1866
+"Was It An Illusion?"	"Amelia B. Edwards"	1881
+"The Open Door"	"Charlotte Riddell"	1882
+"The Body Snatcher"	"Robert Louis Stevenson"	1884
+"The Canterville Ghost"	"Oscar Wilde"	1887
+"At the End of the Passage"	"Rudyard Kipling"	1890
+"The Turn of the Screw"	"Henry James"	1988
+"A Tale of Two Cities"	"Charles Dickens"	1859
+"Our Mutual Friend"	"Charles Dickens"	1865
+"The Pickwick Papers"	"Charles Dickens"	1837
+"A Christmas Carol"	"Charles Dickens"	1843
+"Great Expectations"	"Charles Dickens"	1861
+"David Copperfield"	"Charles Dickens"	1850
+"Rip Van Winkle"	"Washington Irving"	1819
+"A Tale of the Ragged Mountains"	"Edgar Allen Poe"	1844
+"A Connecticut Yankee In King Arthur's Court"	"Mark Twain"	1889
+"Sylvie and Bruno"	"Lewis Carroll"	1889
+"Sylvie and Bruno Concluded"	"Lewis Carroll"	1893
+"Alice's Adventures in Wonderland"	"Lewis Carroll"	1865
+"Through the Looking-Glass"	"Lewis Carroll"	1871
+"The Hunting of the Snark"	"Lewis Carroll"	1876
+"What the Tortoise Said to Achilles"	"Lewis Carroll"	1895
+"Euclid and his Modern Rivals"	"Lewis Carroll"	1979
+"The Game of Logic"	"Lewis Carroll"	1887
+"Phantasmagoria and Other Poems"	"Lewis Carroll"	1869
+"The Life of George Washington"	"Washington Irving"	1859
 
 Section 3 - Parlor
 
@@ -708,8 +799,9 @@ The workbench is scenery in the Workshop.
 The tools are a thing.
 The tools are scenery in the Workshop.
 
-The papers are a thing.
-The papers are scenery in the Workshop.
+The workshop papers are a thing.
+The workshop papers are scenery in the Workshop.
+The printed name of workshop papers is "papers".
 
 The materials are a thing.
 The materials are scenery in the Workshop.

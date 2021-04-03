@@ -1,15 +1,11 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 10354 ]
+[WORDS - 10355 ]
 
 Part 1 - Beginning The Story
 
 The player is in Woking Street.
 [The player is in the Clearing.]
-
-The pocket watch is a thing. [This is just a temporary object to test supporters and containers. Or maybe not (see 'Weena' entry in design notebook).]
-The pocket watch is carried. [It's Wells' pocket watch. You don't have it on you at the start, you find it in one of the rooms (which one?)]
-[The description of pocket watch is "Tick tock. Tick tock."]
 
 [TBD Describe yourself when you "x self"]
 
@@ -481,7 +477,7 @@ Section 3 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A large [fireplace] is set into the west wall and a coal [fire] is blazing away in it to ward off the cold. On the [mantle] above sits a small mechanical [clock]. Centered above the mantle is a framed [painting]. Directly in front of the hearth is a [small table] with two leather [armchairs] flanking it on either side, positioned advantageously to view the coal flames while conversing, drinking, or smoking. On the table is a brandy [decanter] and two [snifters]. A [newspaper] sits on one of the armchairs. A set of glass doors leads outside to the garden."
+The description of the Parlor is "A coal [fire] blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking. Today's [newspaper] sits on one of the armchairs. On top of a small table against the east wall is a [pocket watch]. A set of glass doors to the east lead outside to the garden."
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
@@ -493,39 +489,52 @@ Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
+Understand "hearth" as fireplace.
 
 The fire is a thing.
 The fire is scenery in the Parlor.
+Understand "coal" or "flames" as fire.
 
 The fire iron is a thing. [https://bit.ly/3sczKUx]
-The fire iron is scenery in the Parlor.
+The fire iron is undescribed in the Parlor.
+The description of the fire iron is "TBD."
 
 The mantle is a thing.
 The mantle is scenery in the Parlor.
 The mantle is a supporter.
 
-The clock is a thing. [https://bit.ly/37AqP7s]
-The clock is scenery on the mantle.
+The pocket watch is a thing.
+The pocket watch is undescribed on the mantle.
+Understand "timepiece" or "chronometer" as pocket watch.
+The description of the pocket watch is "TBD."
 
-The painting is a thing. [Casper David Friedrich's "Wanderer above the Sea of Fog" https://bit.ly/3aEJKQo]
-The painting is scenery in the Parlor.
+[The clock is a thing. [https://bit.ly/37AqP7s]
+The clock is scenery on the mantle.]
+
+[The painting is a thing. [Casper David Friedrich's "Wanderer above the Sea of Fog" https://bit.ly/3aEJKQo]
+The painting is scenery in the Parlor.]
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.
 The armchairs are supporters.
 
 The newspaper is a thing.
-The newspaper is scenery on the armchairs.
+The newspaper is undescribed on the armchairs.
+Understand "news" or "paper" as newspaper.
+[> examine newspaper vs. > read newspaper]
 
 The small table is a thing.
 The small table is scenery in the Parlor.
 The small table is a supporter.
+The description of the small table is "Nothing out of the ordinary, just a small wooden table to the left of the garden doors."
 
-The decanter is a thing.
-The decanter is scenery on the table.
+[The decanter is a thing.
+The decanter is undescribed on the table.
+Understand "brandy" as decanter.
 
-The snifters are things.
-The snifters are scenery on the table.
+The snifter is a thing.
+The snifter is a container.
+The snifter is undescribed on the table.]
 
 Section 4 - Dining Room
 

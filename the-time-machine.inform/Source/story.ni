@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 10355 ]
+[WORDS - 10556 ]
 
 Part 1 - Beginning The Story
 
@@ -324,7 +324,7 @@ The chair is a thing.
 The chair is scenery in the Library.
 The chair is a supporter.
 The chair is enterable.
-The description of the chair is "Covered in worn leather it looks very comfortable and inviting, angled like it is against the curtained window.[first time] But you cannot rest, you have a key to find.[only]"
+The description of the chair is "Covered in worn leather it looks very comfortable and inviting, angled like it is against the curtained window.[first time] But you don't have time to rest, you have a key to find.[only]"
 
 The curtains are a thing.
 The curtains are scenery in the Library.
@@ -477,7 +477,7 @@ Section 3 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal [fire] blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking. Today's [newspaper] sits on one of the armchairs. On top of a small table against the east wall is a [pocket watch]. A set of glass doors to the east lead outside to the garden."
+The description of the Parlor is "A coal [fire] blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking. Leaning against the fireplace is a [fire iron]. Today's [newspaper] sits on one of the armchairs. On top of a small table against the east wall is a [pocket watch]. A set of glass doors to the east lead outside to the garden."
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
@@ -489,22 +489,27 @@ Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
-Understand "hearth" as fireplace.
+Understand "hearth" and "mantle" or "damper" or "flue" or "surround" or "ash dump" as fireplace.
+The description of the fireplace is "The fire burns in an inner hearth of bricks, protected by a wooden surround that is topped with a decorative wooden mantle painted to look like marble."
 
 The fire is a thing.
 The fire is scenery in the Parlor.
 Understand "coal" or "flames" as fire.
+The description of the fire is "Hot, the flames reflect off of the hearth brick back into the room. As the coals burn, the embers fall through the grate onto the ash dump."
 
 The fire iron is a thing. [https://bit.ly/3sczKUx]
 The fire iron is undescribed in the Parlor.
-The description of the fire iron is "TBD."
+The description of the fire iron is "Pointed and hooked at one end, the weighted implement is used to stir up the coal embers to achieve even burning."
 
-The mantle is a thing.
+[> tend the fire]
+
+[The mantle is a thing.
 The mantle is scenery in the Parlor.
-The mantle is a supporter.
+The mantle is a supporter.]
 
 The pocket watch is a thing.
-The pocket watch is undescribed on the mantle.
+The pocket watch is on the small table.
+The pocket watch is undescribed.
 Understand "timepiece" or "chronometer" as pocket watch.
 The description of the pocket watch is "TBD."
 
@@ -517,10 +522,17 @@ The painting is scenery in the Parlor.]
 The armchairs are things.
 The armchairs are scenery in the Parlor.
 The armchairs are supporters.
+The armchairs are enterable.
+Understand "armchair" or "chair" as armchairs.
+The description of the armchairs are "Like the library chair they are convered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especial positioned as they are in front of the fire.[first time] But you don't have time to rest, you have a key to find.[only]."
+
+[> sit in armchair (Which armchair will you sit in? Random?)]
 
 The newspaper is a thing.
 The newspaper is undescribed on the armchairs.
 Understand "news" or "paper" as newspaper.
+The description of the newspaper is "Today's newspaper, already read."
+
 [> examine newspaper vs. > read newspaper]
 
 The small table is a thing.

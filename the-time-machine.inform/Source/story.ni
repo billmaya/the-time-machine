@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 10849 ]
+[WORDS - 10854 ]
 
 Part 1 - Beginning The Story
 
@@ -885,9 +885,6 @@ The light switch is a device.
 The light switch is scenery in the Workshop.
 The light switch is switched off.
 
-The lights are a thing.
-The lights are scenery in the Workshop.
-
 The time machine is a thing.
 The time machine is scenery in the Workshop.
 The time machine is a supporter.
@@ -1036,7 +1033,7 @@ Section 6 - Inside Dome
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 
-The description of Inside Dome is "Sunlight streams through the dome's [oculus] illuminating the room below. Low stone [tables] are scattered throughout the room, surrounding a central [well] that bubbles up fresh [water] from an unknown source[first time] (Wells would undoubtable know the engineering behind such a feat)[only]. Mosaic [murals] surround the walls."
+The description of Inside Dome is "Sunlight streams through the dome's [oculus] illuminating the room below. Low stone [tables] are scattered throughout the room, surrounding a central [well] that bubbles up fresh [water] from an unknown source[first time] (Wells would undoubtable know the engineering behind such a feat)[only]. Mosaic [murals] surround the walls. Sunlight streams through an archway to the south."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 
@@ -1054,12 +1051,15 @@ The water is scenery in the Inside Dome.
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
+Understand "mosaic" or "mosaics" as murals.
 
 Section 7 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
 The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the sourth. To the northwest you can see the head and wings of the sphinx poking through the treetops."
+
+[Add variable so now you can go southeast from Clearing to River. Also update Balcony description."]
 
 Section 8 - River
 
@@ -1167,8 +1167,6 @@ Instead of asking Humboldt about "examination": say "'First thing to do is get h
 Instead of asking Humboldt about "workshop/shop": say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'"
 
 Instead of asking Humboldt about "time machine": say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'"
-
-[TBD Humboldt will give you flower petal and backstory about before he leaves]
 
 Chapter 3 - Gernsback 
 [https://bit.ly/3rYUPl8]

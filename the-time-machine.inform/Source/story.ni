@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 10556 ]
+[WORDS - 10849 ]
 
 Part 1 - Beginning The Story
 
@@ -298,7 +298,7 @@ The encyclopaedia are scenery on the shelves.
 The encyclopaedia has a bookness called type. The type of the encyclopaedia is reference.
 Understand "encyclopedia" as encyclopaedia.
 
-[Writing §16.16. Defining things with tables - Thought I had to use this but didn't have to]
+[Writing §16.16. Defining things with tables - Thought I had to use this code but didn't have to]
 [The encyclopaedia has a number called Volume.
 The encyclopaedia has a text called Label.
 The encyclopaedia has a text called Start-Word.
@@ -360,7 +360,6 @@ Test take-book with "take book / take book / take book / take book / take book /
 Test take-mag with "take periodical / take periodical / take periodical / take periodical / take periodical."  
 
 [> read book / read periodical / read encyclopaedia ]
-[Recipe §9.6. Reading Matter]
 		
 Understand the command "read" as something new.
 Understand "read [something]" as taking.
@@ -477,7 +476,7 @@ Section 3 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal [fire] blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking. Leaning against the fireplace is a [fire iron]. Today's [newspaper] sits on one of the armchairs. On top of a small table against the east wall is a [pocket watch]. A set of glass doors to the east lead outside to the garden."
+The description of the Parlor is "A coal [fire] blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking. Leaning against the fireplace is a [poker]. Today's [newspaper] sits on one of the armchairs. On top of a small table against the east wall is a [pocket watch]. A set of glass doors to the east lead outside to the garden."
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
@@ -492,16 +491,42 @@ The fireplace is scenery in the Parlor.
 Understand "hearth" and "mantle" or "damper" or "flue" or "surround" or "ash dump" as fireplace.
 The description of the fireplace is "The fire burns in an inner hearth of bricks, protected by a wooden surround that is topped with a decorative wooden mantle painted to look like marble."
 
+Instead of using the fireplace, say "That's not something you can use, but just enjoy."
+
 The fire is a thing.
 The fire is scenery in the Parlor.
 Understand "coal" or "flames" as fire.
 The description of the fire is "Hot, the flames reflect off of the hearth brick back into the room. As the coals burn, the embers fall through the grate onto the ash dump."
 
-The fire iron is a thing. [https://bit.ly/3sczKUx]
-The fire iron is undescribed in the Parlor.
-The description of the fire iron is "Pointed and hooked at one end, the weighted implement is used to stir up the coal embers to achieve even burning."
-
 [> tend the fire]
+
+Understand the command "tend" as something new.
+Understand "tend [something]" as using.
+
+Instead of using the fire:
+	if the player has the poker:
+		say "A few sparks rise up the flue and things warm up a bit as you spread the coals a bit more evenly around the grate.";
+	otherwise:
+		say "You will need something to do that with since your bare hands won't suffice.".
+
+Test tend-fire with "tend fire / take poker / tend fire / drop poker / tend fire."
+
+The poker is a thing. [https://bit.ly/3sczKUx]
+The poker is undescribed in the Parlor.
+Understand "fire iron" or "fire hook" as poker.
+The description of the poker is "About three feet long, pointed and hooked at one end, this weighted implement is used to stir up the coal embers to achieve even burning."
+
+[> use poker]
+
+Instead of using the poker:
+	say "Taking the poker, you stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
+	now the player is carrying the poker.
+
+[> use poker on fire]
+[Writing §12.7. New actions
+ Writing §17.1. Understand]
+	
+[Understand "use [something] on [something]" as using.]
 
 [The mantle is a thing.
 The mantle is scenery in the Parlor.
@@ -511,7 +536,11 @@ The pocket watch is a thing.
 The pocket watch is on the small table.
 The pocket watch is undescribed.
 Understand "timepiece" or "chronometer" as pocket watch.
-The description of the pocket watch is "TBD."
+The description of the pocket watch is "Wells' pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanged with the moving hands and it's winding mechanism."
+
+[DEL him placing it here before telling his amazing tale. "]
+
+Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"
 
 [The clock is a thing. [https://bit.ly/37AqP7s]
 The clock is scenery on the mantle.]
@@ -524,9 +553,12 @@ The armchairs are scenery in the Parlor.
 The armchairs are supporters.
 The armchairs are enterable.
 Understand "armchair" or "chair" as armchairs.
-The description of the armchairs are "Like the library chair they are convered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especial positioned as they are in front of the fire.[first time] But you don't have time to rest, you have a key to find.[only]."
+The description of the armchairs are "Like the library chair they are covered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especial positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]."
 
 [> sit in armchair (Which armchair will you sit in? Random?)]
+Instead of entering the armchairs:
+	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
+	now the player is in the armchairs.
 
 The newspaper is a thing.
 The newspaper is undescribed on the armchairs.
@@ -534,6 +566,10 @@ Understand "news" or "paper" as newspaper.
 The description of the newspaper is "Today's newspaper, already read."
 
 [> examine newspaper vs. > read newspaper]
+[Recipe §9.6. Reading Matter]
+	
+[DEL Instead of reading the newspaper, say "You've already read it."]
+Instead of taking the newspaper, say "You've already read it."
 
 The small table is a thing.
 The small table is scenery in the Parlor.

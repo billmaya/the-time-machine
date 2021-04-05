@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 10854 ]
+[WORDS - 11217 ]
 
 Part 1 - Beginning The Story
 
@@ -902,6 +902,12 @@ Section 1 - Clearing
 [TBD Figure out how to move the time machine with player from workshop to this room (as part of scene?) ]
 [TBD Substituting different article in clearing description first time or when player in time machine - The time machine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
 
+togo-clearing-to-river is a truth state that varies.
+togo-clearing-to-river is false.
+
+Every turn: 
+	if the player is in the Sphinx Steps, now togo-clearing-to-river is true.
+
 The Clearing is a room. 
 The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but you are not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
 
@@ -912,6 +918,7 @@ The clearing bushes are scenery in the Clearing.
 
 The treetops are a thing.
 The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
+Understand "forest" as treetops.
 
 The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
@@ -953,32 +960,51 @@ Instead of entering the circular shaft:
 		say "Carefully you climb over the lip of the shaft and onto the ladder.[line break]";
 		now the player is in the Top Shaft.
 
+Going north in the Clearing is wandering.
+Going northeast in the Clearing is wandering.
+Going south in the Clearing is wandering.
+Going southwest in the Clearing is wandering.
+Going west in the Clearing is wandering.
+Going northwest in the Clearing is wandering.
+
+
+Instead of wandering in the Clearing:
+	say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.".		
+						
+Before going southeast:
+	if togo-clearing-to-river is false:
+		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
+		stop the action.
+	
+Test se-from-clearing with "go southeast / go up / go down / go southeast."
+
 Section 2 - Sphinx Steps
 
 The Sphinx Steps are a room.
 The Sphinx Steps are up from the Clearing.
-The description of the Sphinx Steps is "The set of stone steps winds its way around the [ziggurat] and through the treetops, ending at the top of a [plateau] in front of a set of large closed [stone doors] set into a [pedestal]. There is an [sacrificial alter] in the center of the plateau. On the pedestal is a carved [statue] of a sphinx, its impassive face surveying a countryside you cannot see, its outstreached wings poised to take flight against some unknown prey.[paragraph break] At this height, you can see a path down below winding its way southeast from the clearing to some water in the distance."
+The description of the Sphinx Steps is "The set of stone steps winds its way around the [ziggurat] until you are above the treetops, plateauing  in front of a two large closed [stone doors] set into a [pedestal]. On the pedestal is a carved [statue] of a sphinx, its impassive face surveying a countryside you cannot see, its outstreatched wings poised to take flight against some unknown prey.[paragraph break]In the distance you can see a domed building to the east and, beyond it, other gagantuan buildings of stone. Also at this height, you can see a path down below winding its way southeast to a river in the distance."
 
 The printed name of Sphinx Steps are "Top of Sphinx Steps"
 
 The ziggurat is a thing.
 The ziggurat is scenery in the Sphinx Steps.
-
-The plateau is a thing.
-The plateau is scenery in the Sphinx Steps.
+The description of the ziggurat is "A rectangular stepped tower built in successive stages with an outside staircase that winds its way around the sides to forest below. First seeen in ancient Mesopotamia, they usually have some shrine at the top."
 
 The stone doors are a thing.
 The stone doors are scenery in the Sphinx Steps.
+The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The door themselves are carved with line after line of mechanical ruins and bas relief ape-like figures marching down a successive set of ramps to an unpictured subterranean destination."
 
-The sacrificial alter is a thing.
+[The sacrificial alter is a thing.
 The sacrificial alter is scenery in the Sphinx Steps.
-The sacrificial alter is a supporter.
+The sacrificial alter is a supporter.]
 
 The pedestal is a thing.
 The pedestal is scenery in the Sphinx Steps.
+The description of the pedestal is "Made of bronze and thick with verdigris, it is the columnar base that supports the statue above."
 
 The statue is a thing.
 The statue is scenery in the Sphinx Steps.
+The description of the statue is "A gigantic reclining sphinx made of white marble. Its weather-worn surface carries the unpleasant suggestion of disease and its sightless eyes seem to watch everything. The wings, instead of being carried vertically at the sides spread out so the entire figure seems to hover. You are not sure, but you think you can see the faint shadow of a smile on the lips. It is inhuman, unsympathetic, and overwhelmingly powerful."
 Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
 
 

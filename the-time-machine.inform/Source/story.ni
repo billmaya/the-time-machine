@@ -991,6 +991,7 @@ The printed name of Sphinx Steps are "Top of Sphinx Steps"
 The ziggurat is a thing.
 The ziggurat is scenery in the Sphinx Steps.
 The description of the ziggurat is "A rectangular stepped tower built in successive stages with an outside staircase that winds its way around the sides to forest below. First seeen in ancient Mesopotamia, they usually have some shrine at the top."
+Understand "pyramid" as ziggurat.
 
 The stone doors are a thing.
 The stone doors are scenery in the Sphinx Steps.

@@ -906,7 +906,8 @@ togo-clearing-to-river is a truth state that varies.
 togo-clearing-to-river is false.
 
 Every turn: 
-	if the player is in the Sphinx Steps, now togo-clearing-to-river is true.
+	if the player is in the Sphinx Steps, now togo-clearing-to-river is true;
+	if the player is in the Balcony, now togo-clearing-to-river is true.
 
 The Clearing is a room. 
 The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but you are not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
@@ -976,7 +977,8 @@ Before going southeast:
 		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
 		stop the action.
 	
-Test se-from-clearing with "go southeast / go up / go down / go southeast."
+Test se-sphinx-clearing with "go southeast / go up / go down / go southeast."
+Test se-balcony-clearing with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
 Section 2 - Sphinx Steps
 

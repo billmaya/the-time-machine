@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 11251 ]
+[WORDS - 11666 ]
 
 Part 1 - Beginning The Story
 
@@ -995,7 +995,7 @@ Understand "pyramid" as ziggurat.
 
 The stone doors are a thing.
 The stone doors are scenery in the Sphinx Steps.
-The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The door themselves are carved with line after line of mechanical ruins and bas relief ape-like figures marching down a successive set of ramps to an unpictured subterranean destination."
+The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The door themselves are carved with line after line of mechanical cuneiform and bas relief mongoloid figures marching down a successive set of ramps to an unpictured subterranean destination."
 
 [The sacrificial alter is a thing.
 The sacrificial alter is scenery in the Sphinx Steps.
@@ -1062,25 +1062,45 @@ Section 6 - Inside Dome
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 
-The description of Inside Dome is "Sunlight streams through the dome's [oculus] illuminating the room below. Low stone [tables] are scattered throughout the room, surrounding a central [well] that bubbles up fresh [water] from an unknown source[first time] (Wells would undoubtable know the engineering behind such a feat)[only]. Mosaic [murals] surround the walls. Sunlight streams through an archway to the south."
+The description of Inside Dome is "Sunlight streams through the dome's [oculus], illuminating the room below. Low stone [tables] are arranged symmetrically throughout the room, surround a central [well] underneath the dome's apex. Mosaic [murals] cover the walls. Sunlight streams through an archway to the south and the exit of the building is to the west."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 
 The oculus is a thing.
 The oculus is scenery in the Inside Dome.
+The description of oculus is "A circular opening at the apex of the dome, it allows sunlight and rain to enter. From this distance it looks small but given the size of the dome it is probably thirty or forty feet in diameter."
+Understand "apex" as oculus.
 
 The tables are a thing.
 The tables are scenery in the Inside Dome.
+The description of the tables are "The low-slung metal tables are arranged in a circular pattern around the well, designed for kneeling or sitting. It looks like each circular table can seat eight or twelve people. A slight circular depresssion in the center of each table about four feet in diameter looks like it serves as a container for something."
+Understand "circular" or "container" or "depression" as tables.
 
 The well is a thing.
 The well is scenery in the Inside Dome.
+The description of the well is "Mirroring the oculus diameter, this circular pool of water ripples, reflecting a slightly distorted image of the room around you."
 
 The water is a thing.
 The water is scenery in the Inside Dome.
+The water is edible.
+The description of the water is "The water seems fresh, replenished and circulated by some unseen mechanism far below. [first time] (Undoubtably, Wells would be able to elucidate the engineering behind such a feat but you can only wonder at its execution.)[only]."
+
+Instead of eating the water:
+	say "You cup some water in your hand and take a quick drink.";
+	stop the action.
+
+[Writing §10.2. Liquids]
+Instead of drinking the water, say "You cup some water in your hand and take a quick drink."
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
-Understand "mosaic" or "mosaics" as murals.
+The description of the murals are "Circling the entire dome wall except for the entrances and exists, the pictorial cyclorama displays a day-to-night series of idealized pastoral scenes of a leisurely life. In the various [mosaics], tunicked figures gather fruit, bath in the river, pick flowers, wander the countryside, and eat, dance, and play in the sunlight. In the dusk scenes you can make out shadowy figures in the background spying on the childish figures in the foreground, hidden in the undergrowth and shadow. Each mural has a title, written in a strange Arabic script that you cannot decipher."
+Understand "cyclorama" or "mural" as murals.
+
+The mosaics are a thing.
+The mosaics are scenery in the Inside Dome.
+The description of the mosaics are "On closer examination it appears that each mural is made up of thousands of small colored pieces of square stone, tile, and glass. However, gaps in sections where the pieces have fallen out show that the original work has not been maintained as it should have been by future generations."
+Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored pieces" or "pieces" as mosaics.
 
 Section 7 - Balcony
 

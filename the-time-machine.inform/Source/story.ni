@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 11733 ]
+[WORDS - 11756 ]
 
 Part 1 - Beginning The Story
 
@@ -927,14 +927,16 @@ The undergrowth is scenery in the Clearing.
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
-Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. On the shaft a circular grate rests on the top, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness." [TBD + conditional text if grate on shaft or in Clearing]
+Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. [if metal grate is on circular shaft]On the shaft a circular grate rests on the top, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]Through the open shaft you can see the rungs of a ladder going down into darkness.[end if]"
+	
+Test circular-shaft-look with "x shaft / take grate / x shaft."
 
 The metal grate is a thing.
 The metal grate is portable.
 The metal grate is on the circular shaft.
 The metal grate is a supporter.
 The metal grate is undescribed.
-[TBD Description of grate]
+
 
 [ > Remove grate ]
 Understand the command "remove" as something new.

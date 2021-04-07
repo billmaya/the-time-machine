@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 11666 ]
+[WORDS - 11680 ]
 
 Part 1 - Beginning The Story
 
@@ -902,12 +902,12 @@ Section 1 - Clearing
 [TBD Figure out how to move the time machine with player from workshop to this room (as part of scene?) ]
 [TBD Substituting different article in clearing description first time or when player in time machine - The time machine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
 
-togo-clearing-to-river is a truth state that varies.
-togo-clearing-to-river is false.
+can-go-clearing-to-river is a truth state that varies.
+can-go-clearing-to-river is false.
 
 Every turn: 
-	if the player is in the Sphinx Steps, now togo-clearing-to-river is true;
-	if the player is in the Balcony, now togo-clearing-to-river is true.
+	if the player is in the Sphinx Steps, now can-go-clearing-to-river is true;
+	if the player is in the Balcony, now can-go-clearing-to-river is true.
 
 The Clearing is a room. 
 The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but you are not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
@@ -973,7 +973,7 @@ Instead of wandering in the Clearing:
 	say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.".		
 						
 Before going southeast:
-	if togo-clearing-to-river is false:
+	if can-go-clearing-to-river is false:
 		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
 		stop the action.
 	
@@ -1106,9 +1106,7 @@ Section 7 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the sourth. To the northwest you can see the head and wings of the sphinx poking through the treetops."
-
-[Add variable so now you can go southeast from Clearing to River. Also update Balcony description."]
+The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the sourh and a path winding its way southeast from the clearing where you arrived to the river. To the northwest you can see the head and wings of [if sphinx steps is visited]the[otherwise]a[end if] sphinx poking through the treetops."
 
 Section 8 - River
 

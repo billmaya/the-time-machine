@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 11885 ]
+[WORDS - 11922 ]
 
 Part 1 - Beginning The Story
 
@@ -1042,6 +1042,8 @@ Section 4 - Bottom Shaft
 
 The Bottom Shaft is a room.
 Up from the Bottom Shaft is the Top Shaft.
+The description of Bottom Shaft is "A small amount of light from above filters down, allowing you to see tunnels sloping down in every direction. The sound of machinery is louder now and seems to come from everywhere."
+
 The printed name of Bottom Shaft is "Bottom of the Shaft"
 
 Section 5 - Domed Building

@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 11680 ]
+[WORDS - 11733 ]
 
 Part 1 - Beginning The Story
 
@@ -1112,7 +1112,7 @@ Section 8 - River
 
 The River is a room.
 The River is southeast of the Clearing.
-The description of the River is "[first time]You pull yourself free of the underbrush on the northwest bank of a small river. [only]The river meanders its way from the southwest to the northeast, curving to avoid the large cliffs to the southeast. Though it appears quite deep in places, at some points it rushes quickly over rocks and changes elevation." 
+The description of the River is "[first time]The path southeast winds its way left and right through dense undergrowth. Finally you pull yourself free from the tangled underbrush into the northwest bank of a sizeable river.[paragraph break][only]The river curves its way from the northeast to the southwest, bisected in its journey by a twelve-foot high stone dam upstream. The water gushes through a open sluice gate next to what looks like a ruined paddle wheel, crashing down to the river below. Moving rapidly away from the dam, the water loses speed until it flows sluggishly to where you stand on the northwest bank, the path back to the clearing behind you."
 
 Part 5 - Characters - 1895
 

@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 11922 ]
+[WORDS - 12416 ]
 
 Part 1 - Beginning The Story
 
@@ -1046,6 +1046,9 @@ The description of Bottom Shaft is "A small amount of light from above filters d
 
 The printed name of Bottom Shaft is "Bottom of the Shaft"
 
+encounter-morlocks is a truth state that varies.
+encounter-morlocks is false.
+
 Going north in the Bottom Shaft is wandering.
 Going northeast in the Bottom Shaft is wandering.
 Going east in the Bottom Shaft is wandering.
@@ -1055,18 +1058,30 @@ Going southwest in the Bottom Shaft is wandering.
 Going west in the Bottom Shaft is wandering.
 Going northwest in the Bottom is wandering.
 
-[Small percentage of the time you encounter Morlocks in your wandering. If you have poker you fight them off. If not, captured."]
-[Once you fight off Morlocks the first time you can't wander anymore - "You barely escaped those creatures the last time. I don't fancy you would want to try your luck a second time."]
+[Writing §8.18. Randomness]
+[Writing §9.4. When play ends]
 
 Instead of wandering in the Bottom Shaft:
-	if the player has the poker:
-		say "You start down the [noun] tunnel and FIGHT OFF MORLOCKS.";
+	if encounter-morlocks is true:
+		if the player has the poker:
+			say "Even with a weapon you shouldn't try your luck, especially without a source of light and possibly some allies. I mean, you barely escaped from your first encounter with these brutish savages.";
+		otherwise:
+			say "I don't fancy you would want to try your luck a second time in that darkness, especially without a weapon. I mean, you barely escaped from your first encounter with those mongoloid underdwellers.";
 	otherwise:
-		say "You start down the [noun] tunnel and CAPTURED BY MORLOCKS.".
-		
-
-[say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness and return to where you started."]
-[say "BOTTOM SHAFT WANDERING".]		
+		if a random chance of 1 in 3 succeeds:
+			if the player has the poker:
+				say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and attempt to grab you. With a strength born of desperation and fear, you flail at them with the poker and drive what must be Morlocks off into the darkness. Retreating in what you hope is the correct direction, you find yourself back at the bottom of the shaft.";
+				now encounter-morlocks is true;
+			otherwise:
+				if a random chance of 2 in 3 succeeds:
+					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
+				otherwise:
+					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but without a weapon you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold. Shivering, you look around in horror at the naked bodies of Eloi, male and female, suspended on meat hooks, future Morlock meals. As you succumb to the numbing cold your multiple failures, both here in 802,701 and back in 1895, drives you to madness.";
+					end the story finally;
+				now encounter-morlocks is true;
+		otherwise:
+			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
+	
 
 Section 5 - Domed Building
 

@@ -977,7 +977,7 @@ Going northwest in the Clearing is wandering.
 Instead of wandering in the Clearing:
 	say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.".		
 						
-Before going southeast:
+Before going southeast in the Clearing:
 	if can-go-clearing-to-river is false:
 		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
 		stop the action.
@@ -1045,6 +1045,28 @@ Up from the Bottom Shaft is the Top Shaft.
 The description of Bottom Shaft is "A small amount of light from above filters down, allowing you to see tunnels sloping down in every direction. The sound of machinery is louder now and seems to come from everywhere."
 
 The printed name of Bottom Shaft is "Bottom of the Shaft"
+
+Going north in the Bottom Shaft is wandering.
+Going northeast in the Bottom Shaft is wandering.
+Going east in the Bottom Shaft is wandering.
+Going southeast in the Bottom Shaft is wandering.
+Going south in the Bottom Shaft is wandering.
+Going southwest in the Bottom Shaft is wandering.
+Going west in the Bottom Shaft is wandering.
+Going northwest in the Bottom is wandering.
+
+[Small percentage of the time you encounter Morlocks in your wandering. If you have poker you fight them off. If not, captured."]
+[Once you fight off Morlocks the first time you can't wander anymore - "You barely escaped those creatures the last time. I don't fancy you would want to try your luck a second time."]
+
+Instead of wandering in the Bottom Shaft:
+	if the player has the poker:
+		say "You start down the [noun] tunnel and FIGHT OFF MORLOCKS.";
+	otherwise:
+		say "You start down the [noun] tunnel and CAPTURED BY MORLOCKS.".
+		
+
+[say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness and return to where you started."]
+[say "BOTTOM SHAFT WANDERING".]		
 
 Section 5 - Domed Building
 

@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 11756 ]
+[WORDS - 11858 ]
 
 Part 1 - Beginning The Story
 
@@ -916,13 +916,16 @@ Inside from the Clearing is Top Shaft.
 
 The clearing bushes are a thing.
 The clearing bushes are scenery in the Clearing.
+The description of clearing bushes is "A tangle of bushes on all sides almost obscures the paths leading off in all directions."
 
 The treetops are a thing.
 The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
-Understand "forest" as treetops.
+Understand "forest" and "trees" as treetops.
+The description of treetops is "Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight."
 
 The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
+The description of undergrowth is "Along with the ungroomed bushes, the tangle of undergrowth helps obscure the few paths you can see."
 
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
@@ -936,7 +939,7 @@ The metal grate is portable.
 The metal grate is on the circular shaft.
 The metal grate is a supporter.
 The metal grate is undescribed.
-
+The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of rusted metal welded together in a waffle pattern. Despite the rust, it looks extremely sturdy and heavy."
 
 [ > Remove grate ]
 Understand the command "remove" as something new.

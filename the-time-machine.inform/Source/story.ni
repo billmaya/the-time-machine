@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 11858 ]
+[WORDS - 11885 ]
 
 Part 1 - Beginning The Story
 
@@ -1020,7 +1020,7 @@ Section 3 - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
-The description of Top Shaft is "You're perched at the the top of the shaft on the ladder leading down. Exiting the shaft will put you back in the Clearing."
+The description of Top Shaft is "You're perched at the the top of the shaft on the ladder leading down. Exiting the shaft will put you back in the Clearing. The faint sound of machinery rises from the darkness below."
 
 The printed name of Top Shaft is "Top of the Shaft"
 
@@ -1036,7 +1036,7 @@ Instead of exiting in the Top Shaft:
 	
 The ladder is a thing.
 The ladder is a backdrop. It is in the Top Shaft and Bottom Shaft.
-The description of the ladder is "LADDER TBD."
+The description of the ladder is "Sunk into the side of the shaft, the series of rusting iron bars lead down into the darkness."
 
 Section 4 - Bottom Shaft
 

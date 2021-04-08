@@ -778,6 +778,7 @@ The work area is scenery in the Kitchen.
 The work area is a supporter.
 The description of the work area is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
+[TBD - This rule is triggered by > use switch in the Workshop]
 Instead of using [things in the Kitchen]: say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with here preparations."
 
 Chapter 3 - Outside
@@ -869,43 +870,57 @@ Instead of searching the windows: [Recipe §3.6 Windows]
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.
+The description of the workbench is "You see nothing special about the workbench."
+Understand "bench" as workbench.
 
 The tools are a thing.
 The tools are scenery in the Workshop.
+The description of tools is "Enough equipment for any crazy experiment Wells could dream up. Hand tools of all types and function scattered across the workbench or handging on the wall. What appears to be a very complicated lathe sits next to a forge for smelting metals."
 
 The workshop-papers are a thing.
 The workshop-papers are scenery in the Workshop.
 The printed name of workshop-papers is "papers".
+The description of workshop-paper is "You look through the handwritten pages scattered across or stacked on the workbench but find no useful information."
 
 The materials are a thing.
 The materials are scenery in the Workshop.
+[The description of materials is "Pieces of metal in all shapes and sizes stacked throughout the room,  - all raw material for Wells' experiments."]
+The description of materials is "Raw materials for Wells' 'experiments' stacked throughout the room and piled on and under the workbench. Metal plates, rods, and alloys in all shape and sizes. A huge supply of chemicals and minerals, enough to stock a pharmacist's shop. Hundreds of connectors and screws and fasteners. Batteries and wires and power sources you can't even begin to fathom how they are used."
 
 The blackboard is a thing.
 The blackboard is scenery in the Workshop.
+The description of the blackboard is "Spanning the entire west wall, it is covered with equations and diagrams of increasing complexity."
 
 The equations are a thing.
 The equations are scenery in the Workshop.
+The description of equations are "You honestly don't know where to start. The writing starts at the left and get increasing complex as you move to the right, but,  quite frankly, it's all Greek to you (you never had much of a head for Hellenic Indo-European languages, you're a Latin man)."
 
 The diagrams are a thing.
 The diagrams are scenery in the Workshop.
+The description of the diagrams are "It looks like the preliminary sketches on the blackboard are the first inklings of the mechanical device in the center of the room."
+Understand "sketch" or "sketches" as diagrams.
 
 The chalk is a thing.
 The chalk is scenery in the Workshop.
+The description of the chalk is "It is white and chalky."
 
 The eraser is a thing.
 The eraser is scenery in the Workshop.
+The description of eraser is "Rectangular and covered in chalk dust you could erase the blackboard if you dared."
 
 The lights are a thing.
 The lights are scenery in the Workshop.
+The description of the lights is "You see nothing special about the lights except [if light switch is switched off]they are turned off (perhaps there's a switch here somewhere)[otherwise]they are turned on[end if]."
 
 The light switch is a device.
 The light switch is scenery in the Workshop.
 The light switch is switched off.
+	
+	
+Section 2 - The Blueprints
 
 The blueprints are a thing.
 The blueprints are scenery on the workbench.
-	
-Section 2 - The Blueprints
 
 Section 3 - The Time Machine
 	
@@ -1079,7 +1094,7 @@ Going southwest in the Bottom Shaft is wandering.
 Going west in the Bottom Shaft is wandering.
 Going northwest in the Bottom is wandering.
 
-Section 5 - Morlock Endgame
+[Section 5 - Morlock Endgame
 
 [Writing §8.18. Randomness]
 [Writing §9.4. When play ends]
@@ -1103,7 +1118,7 @@ Instead of wandering in the Bottom Shaft:
 					end the story finally;
 				now encounter-morlocks is true;
 		otherwise:
-			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
+			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".]
 	
 
 Section 6 - Domed Building
@@ -1308,7 +1323,35 @@ Weena is fixed.
 
 Section 1 - Flower
 
-Part 7 - Help
+Part 7 - Ending The Story
+
+Section 1 - Morlock Endgame
+
+[Writing §8.18. Randomness]
+[Writing §9.4. When play ends]
+
+Instead of wandering in the Bottom Shaft:
+	if encounter-morlocks is true:
+		if the player has the poker:
+			say "Even with a weapon you shouldn't try your luck, especially without a source of light and possibly some allies. I mean, you barely escaped from your first encounter with these brutish savages.";
+		otherwise:
+			say "I don't fancy you would want to try your luck a second time in that darkness, especially without a weapon. I mean, you barely escaped from your first encounter with those mongoloid underdwellers.";
+	otherwise:
+		if a random chance of 1 in 3 succeeds:
+			if the player has the poker:
+				say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and attempt to grab you. With a strength born of desperation and fear, you flail at them with the poker and drive what must be Morlocks off into the darkness. Retreating in what you hope is the correct direction, you find yourself back at the bottom of the shaft.";
+				now encounter-morlocks is true;
+			otherwise:
+				if a random chance of 2 in 3 succeeds:
+					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
+				otherwise:
+					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but without a weapon you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold. Shivering, you look around in horror at the naked bodies of Eloi, male and female, suspended on meat hooks, future Morlock meals. As you succumb to the numbing cold your multiple failures, both here in 802,701 and back in 1895, drives you to madness.";
+					end the story finally;
+				now encounter-morlocks is true;
+		otherwise:
+			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
+
+Part 8 - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description

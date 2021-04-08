@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 12416 ]
+[WORDS - 12385 ]
 
 Part 1 - Beginning The Story
 
@@ -231,15 +231,28 @@ mottos	https://bit.ly/2Z7bRS4
 parts-of	https://bit.ly/3p83dwZ
 ]
 
-Section 2 - Getting The Key
 
-Understand "glint" or "key" or "metallic" or "metallic object" as workshop key.
-Instead of examining the workshop key: 
+Section 2 - The Workshop Key
+
+The workshop-key is a thing.
+The workshop-key is in Woking Street.
+The workshop-key is undescribed.
+Understand "glint" or "key" or "metallic" or "metallic object" as workshop-key.
+
+The printed name of workshop-key is "workshop key".
+The workshop-key unlocks the workshop-door.
+
+Instead of examining the workshop-key: 
 	if watchett-key is true: 
 		say "Bending down you brush the snow away to reveal a small metallic key. Picking it up you put it in your pocket.";
-		now the player is carrying the workshop key;
+		now the player is carrying the workshop-key;
 	otherwise: 
 		say "Perhaps the extreme cold is affecting your mental faculties. You can't see anything like that in front of you."
+		
+Section 3 - The Petal
+	
+The petal is a thing.
+The petal is nowhere.
 	
 Chapter 2 - Inside
 
@@ -257,13 +270,13 @@ The description of the Entryway is "From here you can reach all other parts of t
 	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
 	
-The workshop door is north of the Entryway and south of the Workshop. 
-The workshop door is a door. 
-The workshop door is lockable. The workshop door is locked.
-The workshop door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed." See https://bit.ly/3rdieyO ]
-Understand "workshop" or "door" as Workshop Door. 
+The workshop-door is north of the Entryway and south of the Workshop. 
+The workshop-door is a door. 
+The workshop-door is lockable. The workshop-door is locked.
+The workshop-door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed." See https://bit.ly/3rdieyO ]
+Understand "workshop" or "door" as workshop-door. 
 
-Instead of examining the workshop door: say "No one you know has ever been inside, not even Mrs. Watchett."
+Instead of examining the workshop-door: say "No one you know has ever been inside, not even Mrs. Watchett."
 
 Section 2 - Library
 
@@ -625,6 +638,8 @@ Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks"
 The chandelier is a thing.
 The chandelier is scenery in the Dining Room.
 
+Section 5 - The Orrery
+
 The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
 The orrery is scenery on the dining table.
 The orrery is a device.
@@ -688,6 +703,8 @@ Instead of switching off the orrery's switch:
 	now the orrery's switch is switched off;
 	now the orrery is switched off.
 
+Section 6 - The Fuse
+	
 The fuse is a thing.
 The fuse is nowhere.
 
@@ -712,7 +729,7 @@ Test switch-examine with " examine orrery's switch / examine orrery switch."
 Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
 
 
-Section 5 - Kitchen
+Section 6 - Kitchen
 
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
@@ -856,9 +873,9 @@ The workbench is scenery in the Workshop.
 The tools are a thing.
 The tools are scenery in the Workshop.
 
-The workshop papers are a thing.
-The workshop papers are scenery in the Workshop.
-The printed name of workshop papers is "papers".
+The workshop-papers are a thing.
+The workshop-papers are scenery in the Workshop.
+The printed name of workshop-papers is "papers".
 
 The materials are a thing.
 The materials are scenery in the Workshop.
@@ -885,13 +902,17 @@ The light switch is a device.
 The light switch is scenery in the Workshop.
 The light switch is switched off.
 
+The blueprints are a thing.
+The blueprints are scenery on the workbench.
+	
+Section 2 - The Blueprints
+
+Section 3 - The Time Machine
+	
 The time machine is a thing.
 The time machine is scenery in the Workshop.
 The time machine is a supporter.
 The time machine is enterable. 
-
-The blueprints are a thing.
-The blueprints are scenery on the workbench.
 
 Part 4 - Setting - 802,701
 
@@ -1058,6 +1079,8 @@ Going southwest in the Bottom Shaft is wandering.
 Going west in the Bottom Shaft is wandering.
 Going northwest in the Bottom is wandering.
 
+Section 5 - Morlock Endgame
+
 [Writing §8.18. Randomness]
 [Writing §9.4. When play ends]
 
@@ -1083,7 +1106,7 @@ Instead of wandering in the Bottom Shaft:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 	
 
-Section 5 - Domed Building
+Section 6 - Domed Building
 
 The Domed Building is a room.
 The Domed Building is east of the Clearing.
@@ -1101,7 +1124,7 @@ https://bit.ly/37WsJPZ
 https://bit.ly/3q3aAq6
 ]
 
-Section 6 - Inside Dome
+Section 7 - Inside Dome
 
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
@@ -1146,13 +1169,13 @@ The mosaics are scenery in the Inside Dome.
 The description of the mosaics are "On closer examination it appears that each mural is made up of thousands of small colored pieces of square stone, tile, and glass. However, gaps in sections where the pieces have fallen out show that the original work has not been maintained as it should have been by future generations."
 Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored pieces" or "pieces" as mosaics.
 
-Section 7 - Balcony
+Section 8 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
 The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the sourh and a path winding its way southeast from the clearing where you arrived to the river. To the northwest you can see the head and wings of [if sphinx steps is visited]the[otherwise]a[end if] sphinx poking through the treetops."
 
-Section 8 - River
+Section 9 - River
 
 The River is a room.
 The River is southeast of the Clearing.
@@ -1170,7 +1193,7 @@ Watchett is fixed.
 Watchett is in the Entryway.
 [Watchett is in the Kitchen.]
 
-The printed name of Watchett is "Mrs. Watchett" 
+The printed name of Watchett is "Mrs. Watchett". 
 [See Recipe §7.1. Getting Acquainted -> led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
 
 Instead of examining Watchett: say "Gort Klaatu Barada Nikto TBD"
@@ -1283,49 +1306,9 @@ Weena is a person.
 Weena is in the River.
 Weena is fixed.
 
+Section 1 - Flower
 
-Part 7 - Objects - 1895
-
-Chapter 1 - Workshop Key
-
-The workshop key is a thing.
-The workshop key is in Woking Street.
-The workshop key is undescribed.
-
-The workshop key unlocks the workshop door.
-
-Chapter 2 - Blueprints
-
-Chapter 3 - Orrery
-
-[ See 
- • Part 3 - Settings - 1895
- • Chapter 2 - Inside 
- • Section 4 - Dining Room
-]
-
-Chapter 4 - Fuse
-
-[ See 
- • Part 3 - Settings - 1895
- • Chapter 2 - Inside 
- • Section 4 - Dining Room
-]
-
-[The Fuse makes the Orrery move. Same type as used in Time Machine.]
-
-Chapter 5 - Time Machine
-
-Chapter 6 - Petal
-
-The petal is a thing.
-The petal is nowhere.
-
-Part 8 - Objects - 802,701
-
-Chapter 1 - Flower
-
-Part 9 - Help
+Part 7 - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description

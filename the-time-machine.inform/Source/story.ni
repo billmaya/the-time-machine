@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 12385 ]
+[WORDS - 13151 ]
 
 Part 1 - Beginning The Story
 
@@ -884,7 +884,6 @@ The description of workshop-paper is "You look through the handwritten pages sca
 
 The materials are a thing.
 The materials are scenery in the Workshop.
-[The description of materials is "Pieces of metal in all shapes and sizes stacked throughout the room,  - all raw material for Wells' experiments."]
 The description of materials is "Raw materials for Wells' 'experiments' stacked throughout the room and piled on and under the workbench. Metal plates, rods, and alloys in all shape and sizes. A huge supply of chemicals and minerals, enough to stock a pharmacist's shop. Hundreds of connectors and screws and fasteners. Batteries and wires and power sources you can't even begin to fathom how they are used."
 
 The blackboard is a thing.

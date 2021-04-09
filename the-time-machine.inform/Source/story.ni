@@ -1120,8 +1120,8 @@ Before going southeast in the Clearing:
 		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
 		stop the action.
 	
-Test se-sphinx-clearing with "go southeast / go up / go down / go southeast."
-Test se-balcony-clearing with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
+Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
+Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
 Chapter 2 - Sphinx Steps
 

@@ -2,7 +2,7 @@
 
 [WORDS - 13151 ]
 
-Part 1 - Beginning The Story
+Book 1 - Beginning The Story
 
 The player is in Woking Street.
 [The player is in the Clearing.]
@@ -25,28 +25,28 @@ Wells starts fumbling in one of his vest pockets as Humboldt nods to the two ord
 
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 
-Part 2 - Mechanics
+Book 2 - Mechanics
 
-Chapter 1 - Extensions
+Part 1 - Extensions
 
 Include Basic Help Menu by Emily Short.
 
-Chapter 2 - Instead-Of Rules
+Part 2 - Instead-Of Rules
 
-Section 1 - Waiting
+Chapter 1 - Waiting
 
 Instead of waiting: say 
 	"[if location is Woking Street]You shiver in the cold wind, drawing your light jacket closer around you. You really should get inside since you're not dressed appropriately for this winter weather
 	[otherwise]Time passes."
 
-Section 2 - Up
+Chapter 2 - Up
 
 Instead of going up in Woking Street: say "You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside."
 Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
 
 [TBD - Mrs. Watchett should wander away if you go "up" in the Entryway.]
 
-Chapter 3 - Tests
+Part 3 - Tests
 
 [There might be other tests scattered throughout the code.
  Type "> test" to see all tests available]
@@ -59,18 +59,18 @@ Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove 
 
 Test humboldt-woking-talk with "ask humboldt about wells / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about workshop / ask humboldt about time machine"
 
-Chapter 4 - Missing Item Descriptions
+Part 4 - Missing Item Descriptions
 
 [When play begins (this is the run property checks at the start of play rule): 
 	repeat with item running through things: 
 		if description of the item is "":
 			say "[item] has no description."]
 
-Part 3 - Settings - 1895
+Book 3 - 1895
 
-Chapter 1 - Outside on the Street
+Part 1 - Outside
 
-Section 1 - Woking Street
+Chapter 1 - Woking Street
 
 Woking Street is a room. 
 The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you[if ambulence is in Woking Street] where the ambulence is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
@@ -232,7 +232,7 @@ parts-of	https://bit.ly/3p83dwZ
 ]
 
 
-Section 2 - The Workshop Key
+Section 1 - The Workshop Key
 
 The workshop-key is a thing.
 The workshop-key is in Woking Street.
@@ -249,14 +249,14 @@ Instead of examining the workshop-key:
 	otherwise: 
 		say "Perhaps the extreme cold is affecting your mental faculties. You can't see anything like that in front of you."
 		
-Section 3 - The Petal
+Section 2 - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
 	
-Chapter 2 - Inside
+Part 2 - Inside
 
-Section 1 - Entryway
+Chapter 1 - Entryway
 
 The Entryway is a room. 
 The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear low sounds of conversation under a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
@@ -278,7 +278,7 @@ Understand "workshop" or "door" as workshop-door.
 
 Instead of examining the workshop-door: say "No one you know has ever been inside, not even Mrs. Watchett."
 
-Section 2 - Library
+Chapter 2 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
@@ -485,7 +485,7 @@ Name	Author	Publish-Date
 "Phantasmagoria and Other Poems"	"Lewis Carroll"	1869
 "The Life of George Washington"	"Washington Irving"	1859
 
-Section 3 - Parlor
+Chapter 3 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
@@ -597,7 +597,7 @@ The snifter is a thing.
 The snifter is a container.
 The snifter is undescribed on the table.]
 
-Section 4 - Dining Room
+Chapter 4 - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
@@ -638,7 +638,7 @@ Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks"
 The chandelier is a thing.
 The chandelier is scenery in the Dining Room.
 
-Section 5 - The Orrery
+Section 1 - The Orrery
 
 The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
 The orrery is scenery on the dining table.
@@ -703,7 +703,7 @@ Instead of switching off the orrery's switch:
 	now the orrery's switch is switched off;
 	now the orrery is switched off.
 
-Section 6 - The Fuse
+Section 2 - The Fuse
 	
 The fuse is a thing.
 The fuse is nowhere.
@@ -729,7 +729,7 @@ Test switch-examine with " examine orrery's switch / examine orrery switch."
 Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
 
 
-Section 6 - Kitchen
+Chapter 6 - Kitchen
 
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
@@ -781,9 +781,9 @@ The description of the work area is "It has been modified extensively by Wells a
 [TBD - This rule is triggered by > use switch in the Workshop]
 Instead of using [things in the Kitchen]: say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with here preparations."
 
-Chapter 3 - Outside
+Part 3 - Outside
 
-Section 1 - Garden
+Chapter 1 - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
@@ -814,9 +814,9 @@ The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
 Understand "wilderness" or "hollyhocks" or "larkspurs" or "snapdragons" or "rhododendrons" or "tree" or "trees" or "vegetation" as bushes.
 
-Chapter 4 - Inside the Workshop
+Part 4 
 
-Section 1 - Workshop  
+Chapter 1 - Workshop  
 
 The workshop is a room. 
 The Workshop is north of the Workshop Door. 
@@ -916,23 +916,23 @@ The light switch is scenery in the Workshop.
 The light switch is switched off.
 	
 	
-Section 2 - The Blueprints
+Section 1 - The Blueprints
 
 The blueprints are a thing.
 The blueprints are scenery on the workbench.
 
-Section 3 - The Time Machine
+Section 2 - The Time Machine
 	
 The time machine is a thing.
 The time machine is scenery in the Workshop.
 The time machine is a supporter.
 The time machine is enterable. 
 
-Part 4 - Setting - 802,701
+Book 4 - 802,701
 
-Chapter 1
+Part 1
 
-Section 1 - Clearing
+Chapter 1 - Clearing
 
 [TBD Figure out how to move the time machine with player from workshop to this room (as part of scene?) ]
 [TBD Substituting different article in clearing description first time or when player in time machine - The time machine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
@@ -1020,7 +1020,7 @@ Before going southeast in the Clearing:
 Test se-sphinx-clearing with "go southeast / go up / go down / go southeast."
 Test se-balcony-clearing with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
-Section 2 - Sphinx Steps
+Chapter 2 - Sphinx Steps
 
 The Sphinx Steps are a room.
 The Sphinx Steps are up from the Clearing.
@@ -1051,7 +1051,7 @@ The description of the statue is "A gigantic reclining sphinx made of white marb
 Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
 
 
-Section 3 - Top Shaft
+Chapter 3 - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
@@ -1073,7 +1073,7 @@ The ladder is a thing.
 The ladder is a backdrop. It is in the Top Shaft and Bottom Shaft.
 The description of the ladder is "Sunk into the side of the shaft, the series of rusting iron bars lead down into the darkness."
 
-Section 4 - Bottom Shaft
+Chapter 4 - Bottom Shaft
 
 The Bottom Shaft is a room.
 Up from the Bottom Shaft is the Top Shaft.
@@ -1093,34 +1093,7 @@ Going southwest in the Bottom Shaft is wandering.
 Going west in the Bottom Shaft is wandering.
 Going northwest in the Bottom is wandering.
 
-[Section 5 - Morlock Endgame
-
-[Writing §8.18. Randomness]
-[Writing §9.4. When play ends]
-
-Instead of wandering in the Bottom Shaft:
-	if encounter-morlocks is true:
-		if the player has the poker:
-			say "Even with a weapon you shouldn't try your luck, especially without a source of light and possibly some allies. I mean, you barely escaped from your first encounter with these brutish savages.";
-		otherwise:
-			say "I don't fancy you would want to try your luck a second time in that darkness, especially without a weapon. I mean, you barely escaped from your first encounter with those mongoloid underdwellers.";
-	otherwise:
-		if a random chance of 1 in 3 succeeds:
-			if the player has the poker:
-				say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and attempt to grab you. With a strength born of desperation and fear, you flail at them with the poker and drive what must be Morlocks off into the darkness. Retreating in what you hope is the correct direction, you find yourself back at the bottom of the shaft.";
-				now encounter-morlocks is true;
-			otherwise:
-				if a random chance of 2 in 3 succeeds:
-					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
-				otherwise:
-					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but without a weapon you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold. Shivering, you look around in horror at the naked bodies of Eloi, male and female, suspended on meat hooks, future Morlock meals. As you succumb to the numbing cold your multiple failures, both here in 802,701 and back in 1895, drives you to madness.";
-					end the story finally;
-				now encounter-morlocks is true;
-		otherwise:
-			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".]
-	
-
-Section 6 - Domed Building
+Chapter 5 - Domed Building
 
 The Domed Building is a room.
 The Domed Building is east of the Clearing.
@@ -1138,7 +1111,7 @@ https://bit.ly/37WsJPZ
 https://bit.ly/3q3aAq6
 ]
 
-Section 7 - Inside Dome
+Chapter 6 - Inside Dome
 
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
@@ -1183,23 +1156,23 @@ The mosaics are scenery in the Inside Dome.
 The description of the mosaics are "On closer examination it appears that each mural is made up of thousands of small colored pieces of square stone, tile, and glass. However, gaps in sections where the pieces have fallen out show that the original work has not been maintained as it should have been by future generations."
 Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored pieces" or "pieces" as mosaics.
 
-Section 8 - Balcony
+Chapter 7 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
 The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the sourh and a path winding its way southeast from the clearing where you arrived to the river. To the northwest you can see the head and wings of [if sphinx steps is visited]the[otherwise]a[end if] sphinx poking through the treetops."
 
-Section 9 - River
+Chapter 8 - River
 
 The River is a room.
 The River is southeast of the Clearing.
 The description of the River is "[first time]The path southeast winds its way left and right through dense undergrowth. Finally you pull yourself free from the tangled underbrush into the northwest bank of a sizeable river.[paragraph break][only]The river curves its way from the northeast to the southwest, bisected in its journey by a twelve-foot high stone dam upstream. The water gushes through a open sluice gate next to what looks like a ruined paddle wheel, crashing down to the river below. Moving rapidly away from the dam, the water loses speed until it flows sluggishly to where you stand on the northwest bank, the path back to the clearing behind you."
 
-Part 5 - Characters - 1895
+Book 5 - Characters - 1895
 
 A person can be either fixed or mobile. 
 
-Chapter 1 - Watchett
+Part 1 - Watchett
 
 Watchett is a person. 
 Watchett is a female. 
@@ -1225,7 +1198,7 @@ Understand "cook" as Mrs Watchett.]
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 [See §17.3. Overriding existing commands - New tokens for ^]
 
-Section 1 - Conversation
+Chapter 1 - Conversation
 
 [See Writing §7.6. Reading and talking]
 Instead of asking Watchett about "wells": say "Working too hard on his experiments, he is. Did the doctor say he would be all right."
@@ -1242,7 +1215,7 @@ Instead of asking Watchett about "key":
 	say "Always kept it on his person. That's where it still must be.";
 	now watchett-key is true.
 
-Section 2 - Movement
+Chapter 2 - Movement
 
 Every turn:
 	if Watchett is mobile:
@@ -1271,7 +1244,7 @@ Library			"rearranges the chairs"
 Library			"looks out the windows"
 Library			"draws the curtains closed"
 
-Chapter 2 - Humboldt 
+Part 2 - Humboldt 
 
 Humboldt is a person.
 Humboldt is a male.
@@ -1284,7 +1257,7 @@ Understand "doctor" or "physician" or "dr" as Humboldt.
 
 Instead of examining Humboldt: say "Dr Gort Kaatu Barada Nikto TBD"
 
-Section 1 - Conversation
+Chapter 1 - Conversation
 
 Instead of asking Humboldt about "wells/madman/patient/lunatic": say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'"
 
@@ -1296,7 +1269,7 @@ Instead of asking Humboldt about "workshop/shop": say "'Never seen the inside of
 
 Instead of asking Humboldt about "time machine": say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'"
 
-Chapter 3 - Gernsback 
+Part 3 - Gernsback 
 [https://bit.ly/3rYUPl8]
 
 Gernsback is a person.
@@ -1306,15 +1279,15 @@ Gernsback is in the Entryway.
 
 [The printed name of Gernsback is "TBD."]
 
-Part 6 - Characters - 802,701
+Book 6 - Characters - 802,701
 
-Chapter 1 - Eloi
+Part 1 - Eloi
 
 The Eloi are people.
 The Eloi are in the River.
 The Eloi are fixed.
 
-Chapter 2 - Weena
+Part 2 - Weena
 
 Weena is a person.
 Weena is in the River.
@@ -1322,9 +1295,9 @@ Weena is fixed.
 
 Section 1 - Flower
 
-Part 7 - Ending The Story
+Book 7 - Ending The Story
 
-Section 1 - Morlock Endgame
+Part 1 - Morlock Endgame
 
 [Writing §8.18. Randomness]
 [Writing §9.4. When play ends]
@@ -1350,7 +1323,7 @@ Instead of wandering in the Bottom Shaft:
 		otherwise:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 
-Part 8 - Help
+Book 8 - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description

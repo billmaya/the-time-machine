@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 12712 ]
+[WORDS - 12853 ]
 
 Book 1 - Beginning The Story
 
@@ -1275,14 +1275,20 @@ Part 2 - Characters
 
 Chapter 1 - Eloi
 
-The Eloi are people.
+The Eloi are people. The indefinite article is "the".
 The Eloi are in the River.
 The Eloi are fixed.
+The description of the Eloi is "Just as Wells described them, the Eloi are short, about four feet high, slight, and dressed in tunics belted at the waist and wearing buskins on their feet. The similarity of their features and builds makes it hard to determine individual gender but with some effort you can tell the men from the women. Actually, boys from girls would be better terms to use given their apparent stature, age, and demeanor. 
+
+The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  If you try you can even see a few couples of both genders in the bushes involved in purient matters."
+
+
 
 Chapter 2 - Weena
 
 Weena is a person.
-Weena is in the River.
+[Weena is in the River.]
+Weena is nowhere.
 Weena is fixed.
 
 Section 1 - Flower
@@ -1314,6 +1320,8 @@ Instead of wandering in the Bottom Shaft:
 				now encounter-morlocks is true;
 		otherwise:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
+
+Chapter 2 - Humboldt Endgame
 
 Book 6 - Help
 

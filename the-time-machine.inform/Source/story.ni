@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 12859 ]
+[WORDS - 13127 ]
 
 Book 1 - Beginning The Story
 
@@ -24,10 +24,19 @@ Wells starts fumbling in one of his vest pockets as Humboldt nods to the two ord
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 
 [Checks for missing item descriptions]
-[When play begins (this is the run property checks at the start of play rule): 
+[
+When play begins (this is the run property checks at the start of play rule): 
 	repeat with item running through things: 
 		if description of the item is "":
-			say "[item] has no description."]
+			say "[item] has no description."
+
+[Writing §20.5. Matching and exact matching]	
+[Writing §20.6. Regular expresssion matching]					
+When play begins (this is the run TBD checks at the start of play rule):
+	repeat with item running through things:
+		if description of item matches the text "TBD":
+			say "[item] description TBD."
+]
 
 Book 2 - Mechanics
 
@@ -327,9 +336,9 @@ The desk is a supporter.
 The description of the desk is "A standing rolltop desk with a few handwritten papers on it."
 Instead of searching the desk, say "You quickly shuffle through the papers but find nothing of interest."
 	
-The library papers are a thing.
+[The library papers are a thing.
 The library papers are scenery on the desk.
-The printed name of library papers is "papers".
+The printed name of library papers is "papers".]
 
 The chair is a thing.
 The chair is scenery in the Library.
@@ -867,18 +876,22 @@ The workbench is scenery in the Workshop.
 The description of the workbench is "You see nothing special about the workbench."
 Understand "bench" as workbench.
 
+[ > search workbench ?]
+
 The tools are a thing.
 The tools are scenery in the Workshop.
 The description of tools is "Enough equipment for any crazy experiment Wells could dream up. Hand tools of all types and function scattered across the workbench or handging on the wall. What appears to be a very complicated lathe sits next to a forge for smelting metals."
-
-The workshop-papers are a thing.
-The workshop-papers are scenery in the Workshop.
-The printed name of workshop-papers is "papers".
-The description of workshop-paper is "You look through the handwritten pages scattered across or stacked on the workbench but find no useful information."
+	
+The papers are a thing.
+The papers are scenery in the Workshop.
+The description of papers is "You look through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"
+	
+[ > search papers ?]
 
 The materials are a thing.
 The materials are scenery in the Workshop.
 The description of materials is "Raw materials for Wells' 'experiments' stacked throughout the room and piled on and under the workbench. Metal plates, rods, and alloys in all shape and sizes. A huge supply of chemicals and minerals, enough to stock a pharmacist's shop. Hundreds of connectors and screws and fasteners. Batteries and wires and power sources you can't even begin to fathom how they are used."
+Understand "battery" or "batteries" or "wires" or "connectors" or "screws" or "fasteners" or "plates" or "rods" or "alloys" or "chemicals" or "minerals" as materials.
 
 The blackboard is a thing.
 The blackboard is scenery in the Workshop.
@@ -909,11 +922,17 @@ The light switch is a device.
 The light switch is scenery in the Workshop.
 The light switch is switched off.
 	
-	
 Section 1 - The Blueprints
 
 The blueprints are a thing.
 The blueprints are scenery on the workbench.
+Understand "plans" or "sheets" as blueprints.
+
+Instead of examining the blueprints:
+	if the player does not have the fuse:
+		say "Spreading out the individual sheets you see that these plans are a one-to-one match for Wells' time machine in the center of the room. While you can identify each actual assemblage to its blueprint counterpart, the names associated with them on the blueprints—plattnerite rods, chronometric dials—make no sense. In fact, the only object you can identify with any surety is the bicycle saddle in the center of the machine where the operator sits. ";
+	if the player has the fuse:
+		say "Spreading out the individual sheets you see the plans mirror Wells' time machine in the center of the room. While you cannot fathom the function of some of the components—chronometric dials, plattnerite rods—one item stands out, the fuse you took from the orrery.".
 
 Section 2 - The Time Machine
 	
@@ -921,6 +940,8 @@ The time machine is a thing.
 The time machine is scenery in the Workshop.
 The time machine is a supporter.
 The time machine is enterable. 
+The description of time machine is "TBD-Time Machine."
+Understand "mechanism" or "device" or "temporal" as time machine.
 				
 Part 2 - Characters
 

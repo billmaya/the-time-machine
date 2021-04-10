@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 12853 ]
+[WORDS - 12859 ]
 
 Book 1 - Beginning The Story
 
@@ -232,20 +232,22 @@ parts-of	https://bit.ly/3p83dwZ ]
 
 Section 1 - The Workshop Key
 
-The workshop-key is a thing.
-The workshop-key is in Woking Street.
-The workshop-key is undescribed.
-Understand "glint" or "key" or "metallic" or "metallic object" as workshop-key.
+The metal key is a thing.
+The metal key is in Woking Street.
+The metal key is undescribed.
+Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
-The printed name of workshop-key is "workshop key".
-The workshop-key unlocks the workshop-door.
+[The printed name of metal key is "workshop key".]
+The metal key unlocks the workshop-door.
 
-Instead of examining the workshop-key: 
+Instead of examining the metal key: 
 	if watchett-key is true: 
 		say "Bending down you brush the snow away to reveal a small metallic key. Picking it up you put it in your pocket.";
-		now the player is carrying the workshop-key;
+		now the player is carrying the metal key;
 	otherwise: 
 		say "Perhaps the extreme cold is affecting your mental faculties. You can't see anything like that in front of you."
+
+[What about handling > search area ?]
 		
 Section 2 - The Petal
 	
@@ -1282,6 +1284,7 @@ The description of the Eloi is "Just as Wells described them, the Eloi are short
 
 The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  If you try you can even see a few couples of both genders in the bushes involved in purient matters."
 
+["As you move among them, your clothes and your height bring attention to yourself..."]
 
 
 Chapter 2 - Weena

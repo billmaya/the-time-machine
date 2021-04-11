@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 13612 ]
+[WORDS - 13679 ]
 
 Book 1 - Beginning The Story
 
@@ -964,8 +964,19 @@ Instead of examining the control panel:
 	rule succeeds.
 
 [> activate control panel
- > activate time machine
- > push button ?]
+ > activate time machine]
+
+Activating is an action applying to one touchable thing.
+Understand "activate [something]" as activating.
+
+Instead of activating the time machine:
+	try activating the control panel.
+
+Instead of activating the control panel:
+	if the player is in the time machine:
+		say "YOU AND THE TIME MACHINE TRAVEL TO 802,701.";
+	otherwise:
+		say "THE TIME MACHINE TRAVELS TO 802,701. YOU STAY IN 1895. BEGIN HUMBOLDT ENDGAME.".
 
 The saddle is a thing.
 The saddle is in the time machine.
@@ -973,6 +984,7 @@ The saddle is undescribed.
 Understand "bicycle" and "seat" as saddle.
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
+
 [3.1.8.2-A - Using a boolean examined-blueprints to determine if blueprint has been examined.] 
 [See Section 1 - Blueprints to see where boolean is set.]
 
@@ -1010,7 +1022,7 @@ Instead of examining the time machine:
 Instead of inserting the fuse into the time machine:
 	if the player has the fuse:
 		if examined-blueprints is true:
-			say "You snap the fuse into it appointed slot. With an imperceptable hum the time machine powers up, lights appearing on the control panel.";
+			say "You snap the fuse into its appointed slot. With an imperceptable hum the time machine powers up. Lights appear on the control panel, probably indicating that it is ready to activate.";
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";

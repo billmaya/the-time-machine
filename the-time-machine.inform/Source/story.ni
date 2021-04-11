@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 13679 ]
+[WORDS - 13802 ]
 
 Book 1 - Beginning The Story
 
@@ -958,9 +958,9 @@ Understand "controls" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "CONTROL PANEL DESCRIPTION FROM INSIDE. 'correctly configured from Wells last trip' ";
+		say "A cursory glance at the two sets of chronometric dials shows them configured for two dates, one today and one far in the future. From the status of the various lights it looks like the control panel is ready to be activated.";
 	otherwise:
-		say "CONTROL PANEL DESCRIPTION FROM OUTSIDE.";
+		say "From the outside you can see the control panel is composed of various dials, switches, and lights but you can't make out any greater detail.";
 	rule succeeds.
 
 [> activate control panel
@@ -974,9 +974,9 @@ Instead of activating the time machine:
 
 Instead of activating the control panel:
 	if the player is in the time machine:
-		say "YOU AND THE TIME MACHINE TRAVEL TO 802,701.";
+		say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.[paragraph break]YOU AND THE TIME MACHINE TRAVEL TO 802,701. BEGIN TRAVEL TO 802,701 SCENE.";
 	otherwise:
-		say "THE TIME MACHINE TRAVELS TO 802,701. YOU STAY IN 1895. BEGIN HUMBOLDT ENDGAME.".
+		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.[paragraph break]THE TIME MACHINE TRAVELS TO 802,701. YOU STAY IN 1895. BEGIN HUMBOLDT ENDGAME.".
 
 The saddle is a thing.
 The saddle is in the time machine.
@@ -1027,7 +1027,7 @@ Instead of inserting the fuse into the time machine:
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 
-
+Test prepare-time-machine with "purloin fuse / examine blueprints / put fuse in time machine."
 				
 Part 2 - Characters
 

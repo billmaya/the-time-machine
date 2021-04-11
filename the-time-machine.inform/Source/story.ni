@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 13504 350 ]
+[WORDS - 13612 ]
 
 Book 1 - Beginning The Story
 
@@ -946,7 +946,6 @@ Section 2 - The Time Machine
 	
 The time machine is a thing.
 The time machine is scenery in the Workshop.
-[The time machine is a supporter.]
 The time machine is enterable. 
 The description of time machine is "TBD-Time Machine."
 Understand "mechanism" or "device" or "temporal" as time machine.
@@ -955,13 +954,22 @@ The control panel is a device.
 The control panel is in the time machine.
 The control panel is switched off.
 The control panel is undescribed.
-The description of the control panel is "TBD."
 Understand "controls" as control panel.
 
-The saddle is a supporter.
+Instead of examining the control panel:
+	if the player is in the time machine:
+		say "CONTROL PANEL DESCRIPTION FROM INSIDE. 'correctly configured from Wells last trip' ";
+	otherwise:
+		say "CONTROL PANEL DESCRIPTION FROM OUTSIDE.";
+	rule succeeds.
+
+[> activate control panel
+ > activate time machine
+ > push button ?]
+
+The saddle is a thing.
 The saddle is in the time machine.
 The saddle is undescribed.
-The description of the saddle is "TBD."
 Understand "bicycle" and "seat" as saddle.
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
@@ -969,16 +977,18 @@ Understand "bicycle" and "seat" as saddle.
 [See Section 1 - Blueprints to see where boolean is set.]
 
 Instead of examining the time machine:
-	if the player has the fuse:
-		if examined-blueprints is true:
-			say "With what you now know you can see exactly where the fuse needs to go in Wells' time machine.";
-		otherwise:
-			say "Looking at the fuse you can't help but deduce that it should go somewhere in the time machine but you don't have the first clue where that would be.";
+	if the fuse is in the time machine, say "EVERYTHING LOOKS GOOD TO GO.";
 	otherwise:
-		if examined-blueprints is true:
-			say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
+		if the player has the fuse:
+			if examined-blueprints is true:
+				say "With what you now know you can see exactly where the fuse needs to go in Wells' time machine.";
+			otherwise:
+				say "Looking at the fuse you can't help but deduce that it should go somewhere in the time machine but you don't have the first clue where that would be.";
 		otherwise:
-			say "According to the blueprints and Wells' statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens, you have no clue about how to activate it or what the next steps might be.".
+			if examined-blueprints is true:
+				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
+			otherwise:
+				say "According to the blueprints and Wells' statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens, you have no clue about how to activate it or what the next steps might be.".
 
 [Writing §9.13. The past and perfect tenses]
 
@@ -997,13 +1007,14 @@ Instead of examining the time machine:
 		otherwise:
 			say "DOES NOT HAVE FUSE; HAS NOT EXAMINED BLUEPRINTS.";]
 			
-[Instead of inserting the fuse into the time machine:
+Instead of inserting the fuse into the time machine:
 	if the player has the fuse:
 		if examined-blueprints is true:
-			say "FUSE INSERTED; TIME MACHINE ACTIVATES.";
+			say "You snap the fuse into it appointed slot. With an imperceptable hum the time machine powers up, lights appearing on the control panel.";
+			now the fuse is in the time machine;
 		otherwise:
-			say "CAN'T INSERT FUSE."]
-		
+			say "Despite your best efforts you don't know where the fuse belongs.";
+
 
 				
 Part 2 - Characters

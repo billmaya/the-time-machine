@@ -946,10 +946,23 @@ Section 2 - The Time Machine
 	
 The time machine is a thing.
 The time machine is scenery in the Workshop.
-The time machine is a supporter.
+[The time machine is a supporter.]
 The time machine is enterable. 
 The description of time machine is "TBD-Time Machine."
 Understand "mechanism" or "device" or "temporal" as time machine.
+
+The control panel is a device.
+The control panel is in the time machine.
+The control panel is switched off.
+The control panel is undescribed.
+The description of the control panel is "TBD."
+Understand "controls" as control panel.
+
+The saddle is a supporter.
+The saddle is in the time machine.
+The saddle is undescribed.
+The description of the saddle is "TBD."
+Understand "bicycle" and "seat" as saddle.
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
 [3.1.8.2-A - Using a boolean examined-blueprints to determine if blueprint has been examined.] 
@@ -984,7 +997,13 @@ Instead of examining the time machine:
 		otherwise:
 			say "DOES NOT HAVE FUSE; HAS NOT EXAMINED BLUEPRINTS.";]
 			
-
+[Instead of inserting the fuse into the time machine:
+	if the player has the fuse:
+		if examined-blueprints is true:
+			say "FUSE INSERTED; TIME MACHINE ACTIVATES.";
+		otherwise:
+			say "CAN'T INSERT FUSE."]
+		
 
 				
 Part 2 - Characters

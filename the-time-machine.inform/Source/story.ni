@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 13127 ]
+[WORDS - 13350 ]
 
 Book 1 - Beginning The Story
 
@@ -31,7 +31,8 @@ When play begins (this is the run property checks at the start of play rule):
 			say "[item] has no description."
 
 [Writing §20.5. Matching and exact matching]	
-[Writing §20.6. Regular expresssion matching]					
+[Writing §20.6. Regular expresssion matching]		
+			
 When play begins (this is the run TBD checks at the start of play rule):
 	repeat with item running through things:
 		if description of item matches the text "TBD":
@@ -925,14 +926,21 @@ The light switch is switched off.
 Section 1 - The Blueprints
 
 The blueprints are a thing.
-The blueprints are scenery on the workbench.
+The blueprints are on the workbench.
+The blueprints are undescribed.
 Understand "plans" or "sheets" as blueprints.
+
+examined-blueprints is a truth state that varies.
+examined-blueprints is false.
 
 Instead of examining the blueprints:
 	if the player does not have the fuse:
 		say "Spreading out the individual sheets you see that these plans are a one-to-one match for Wells' time machine in the center of the room. While you can identify each actual assemblage to its blueprint counterpart, the names associated with them on the blueprints—plattnerite rods, chronometric dials—make no sense. In fact, the only object you can identify with any surety is the bicycle saddle in the center of the machine where the operator sits. ";
 	if the player has the fuse:
-		say "Spreading out the individual sheets you see the plans mirror Wells' time machine in the center of the room. While you cannot fathom the function of some of the components—chronometric dials, plattnerite rods—one item stands out, the fuse you took from the orrery.".
+		say "Spreading out the individual sheets you see the plans mirror Wells' time machine in the center of the room. While you cannot fathom the function of some of the components—chronometric dials, plattnerite rods—one item stands out, the fuse you took from the orrery.";
+	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
+	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
+
 
 Section 2 - The Time Machine
 	
@@ -942,6 +950,38 @@ The time machine is a supporter.
 The time machine is enterable. 
 The description of time machine is "TBD-Time Machine."
 Understand "mechanism" or "device" or "temporal" as time machine.
+
+[Two different ways to implement. See See https://bit.ly/320owaO]
+[3.1.8.2-A - Using a boolean examined-blueprints to determine if blueprint has been examined.] 
+[See Section 1 - Blueprints to see where boolean is set.]
+Instead of examining the time machine:
+	if the player has the fuse:
+		if examined-blueprints is true:
+			say "HAS FUSE; HAS EXAMINED BLUEPRINTS.";
+		otherwise:
+			say "HAS FUSE; HAS NOT EXAMINED BLUEPRINTS.";
+	otherwise:
+		if examined-blueprints is true:
+			say "DOES NOT HAVE FUSE; HAS EXAMINED BLUEPRINTS.";
+		otherwise:
+ 	 		say "DOES NOT HAVE FUSE; HAS NOT EXAMINED BLUEPRINTS.".
+
+[Writing §9.13. The past and perfect tenses]
+
+[3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]
+[See Section 1 - Blueprints to see where the blueprint examining is handled.]
+[Instead of examining the time machine:
+	if the player has the fuse:
+		if we have examined the blueprints:
+			say "HAS FUSE; HAS EXAMINED BLUEPRINTS.";
+		otherwise:
+			say "HAS FUSE; HAS NOT EXAMINED BLUEPRINTS.";
+	otherwise:
+		if we have examined the blueprints:
+			say "DOES NOT HAVE FUSE; HAS EXAMINED BLUEPRINTS.";
+		otherwise:
+			say "DOES NOT HAVE FUSE; HAS NOT EXAMINED BLUEPRINTS.";]
+
 				
 Part 2 - Characters
 

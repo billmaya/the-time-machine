@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 13831 ]
+[WORDS - 13907 ]
 
 Book 1 - Beginning The Story
 
@@ -975,9 +975,11 @@ Instead of activating the time machine:
 
 Instead of activating the control panel:
 	if the player is in the time machine:
-		say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.[paragraph break]YOU AND THE TIME MACHINE TRAVEL TO 802,701. BEGIN TRAVEL TO 802,701 SCENE.";
+		say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
+		[Travel To 802,701 scene will start]
 	otherwise:
-		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.[paragraph break]THE TIME MACHINE TRAVELS TO 802,701. YOU STAY IN 1895. BEGIN HUMBOLDT ENDGAME.".
+		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.[paragraph break]THE TIME MACHINE TRAVELS TO 802,701. YOU STAY IN 1895.[paragraph break]BEGIN HUMBOLDT ENDGAME.";
+	now the control panel is switched on.
 
 The saddle is a thing.
 The saddle is in the time machine.
@@ -1141,7 +1143,28 @@ Gernsback is in the Entryway.
 
 [The printed name of Gernsback is "TBD."]
 
-Book 4 - 802,701
+Book 4 - Traveling In Time
+
+Part 1 - Travel To 802,701
+
+Travel To 802,701 is a scene.
+
+Travel To 802,701 begins when the player is in the time machine and the control panel is switched on.
+
+When Travel To 802,701 begins:
+	say "TRAVELING TO 802,701 STARTS.";
+	now the time machine is in the Clearing.
+
+Travel to 802,701 ends when the time machine is in the Clearing.
+
+When Travel To 802,701 ends:
+	say "TRAVELING TO 802,701 ENDS."
+
+Part 2 - Travel to 1895
+
+
+
+Book 5 - 802,701
 
 Part 1 - Settings
 
@@ -1404,7 +1427,7 @@ Weena is fixed.
 
 Section 1 - Flower
 
-Book 5 - Ending The Story
+Book 6 - Ending The Story
 
 Chapter 1 - Morlock Endgame
 
@@ -1434,7 +1457,7 @@ Instead of wandering in the Bottom Shaft:
 
 Chapter 2 - Humboldt Endgame
 
-Book 6 - Help
+Book 7 - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description

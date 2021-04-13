@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 13802 ]
+[WORDS - 13831 ]
 
 Book 1 - Beginning The Story
 
@@ -263,6 +263,7 @@ Section 2 - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
+The description of the petal is "You can't tell much from a single petal except that it came from a flower. Perhaps the rest of the blossom is inside somewhere."
 
 Chapter 2 - Entryway
 

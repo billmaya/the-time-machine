@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 15289 ]
+[WORDS - 15365 ]
 
 Book 1 - Beginning The Story
 
@@ -1041,15 +1041,12 @@ Chapter 1 - Watchett
 Watchett is a person. 
 Watchett is a female. 
 Watchett is fixed.
-[Watchett is in the Entryway.]
+[Watchett is in the Entryway.] [Put her in Kitchen at start. Will use movement after Humboldt returns.]
 Watchett is in the Kitchen.
 The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal here away from Wells you would in a heartbeat, but she would never leave him in a million years."
 
 The printed name of Watchett is "Mrs. Watchett". 
 [See Recipe §7.1. Getting Acquainted -> led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
-
-[DEL Instead of examining Watchett: say "Gort Klaatu Barada Nikto TBD"]
-
 
 [INFO One line doesn't seem to work]
 [Understand "mrs/watchett/cook/maid/housekeeper/old lady" as Mrs Watchett.]
@@ -1116,12 +1113,11 @@ Humboldt is a person.
 Humboldt is a male.
 Humboldt is fixed.
 Humboldt is in Woking Street.
+The description of Humboldt is "A reputable physician and alienist, he has known Wells for years. You are confident that his methodical nature and his diagnostic ability will get to the bottom of what ails Wells."
 
 The printed name of Humboldt is "Dr. Humboldt"
 
-Understand "doctor" or "physician" or "dr" as Humboldt.
-
-Instead of examining Humboldt: say "Dr Gort Kaatu Barada Nikto TBD"
+Understand "doctor" or "physician" or "dr" or "psychologist" or "alienist" as Humboldt.
 
 Section 1 - Conversation
 

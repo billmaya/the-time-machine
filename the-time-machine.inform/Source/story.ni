@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 15365 ]
+[WORDS - 15366 ]
 
 Book 1 - Beginning The Story
 
@@ -1437,6 +1437,10 @@ Weena is nowhere.
 Weena is fixed.
 
 Section 1 - Flower
+
+The flower is a thing.
+The flower is nowhere.
+The description of the flower is "Unlike any blossom or vegetation you've ever seen. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
 
 Book 6 - Ending The Story
 

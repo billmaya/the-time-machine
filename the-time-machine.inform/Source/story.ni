@@ -1041,13 +1041,15 @@ Chapter 1 - Watchett
 Watchett is a person. 
 Watchett is a female. 
 Watchett is fixed.
-Watchett is in the Entryway.
-[Watchett is in the Kitchen.]
+[Watchett is in the Entryway.]
+Watchett is in the Kitchen.
+The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal here away from Wells you would in a heartbeat, but she would never leave him in a million years."
 
 The printed name of Watchett is "Mrs. Watchett". 
 [See Recipe §7.1. Getting Acquainted -> led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
 
-Instead of examining Watchett: say "Gort Klaatu Barada Nikto TBD"
+[DEL Instead of examining Watchett: say "Gort Klaatu Barada Nikto TBD"]
+
 
 [INFO One line doesn't seem to work]
 [Understand "mrs/watchett/cook/maid/housekeeper/old lady" as Mrs Watchett.]

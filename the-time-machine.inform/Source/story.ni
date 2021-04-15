@@ -1435,6 +1435,7 @@ Weena is a person.
 [Weena is in the River.]
 Weena is nowhere.
 Weena is fixed.
+The description of Weena is "Slightly taller than the other Eloi but dressed as they are and with the same similarity of features and build, this is clearly the girl Wells described."
 
 Section 1 - Flower
 

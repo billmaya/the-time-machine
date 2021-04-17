@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 15435 ] 
+[WORDS - 15598 ] 
 
 Book 1 - Beginning The Story
 
@@ -73,7 +73,7 @@ Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove 
 
 Test humboldt-woking-talk with "ask humboldt about wells / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about workshop / ask humboldt about time machine"
 
-
+Test eloi-ask-show with "purloin watch / purloin poker / purloin fuse / purloin key / gonear river."
 
 
 Book 3 - 1895
@@ -171,7 +171,8 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	The sundial is a supporter.
 	The description of the sundial is "Octogon shaped, this custom-made timekeeper is attached vertically to the door. While it has all of the components of it’s horizontal cousins, these componens are arranged in a slightly different configuration to account for its vertical nature and the surrounding buildings.[paragraph break]Roman [numerals] from one to twelve surround a stylized [sun] at the center. A hinged gnomon, which would normally cast a shadow during daylight hours, serves as the knocker. Underneath the sun and gnomon is the [motto] 'Sine Umbra Nihil'. Lightly etched complementary [Babylonian] and [Italian] hour lines cross the sundial's face."
 	
-	Understand "timekeeper" or "timepiece" or "watch" as sundial.
+	[Understand "timekeeper" or "timepiece" or "watch" as sundial.]
+	Understand "timekeeper" or "timepiece" as sundial.
 	
 		The numerals are a thing.
 		The numerals are on the sundial.
@@ -1134,10 +1135,10 @@ Instead of asking Humboldt about "time machine": say "'Nonsense,' Humboldt says.
 Chapter 3 - Gernsback 
 [https://bit.ly/3rYUPl8]
 
-Gernsback is a person.
+[Gernsback is a person.
 Gernsback is a male.
 Gernsback is fixed.
-Gernsback is in the Entryway.
+Gernsback is in the Entryway.]
 
 [The printed name of Gernsback is "TBD."]
 
@@ -1407,7 +1408,7 @@ Chapter 7 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the sourh and a path winding its way southeast from the clearing where you arrived to the river. To the northwest you can see the head and wings of [if sphinx steps is visited]the[otherwise]a[end if] sphinx poking through the treetops."
+The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the south and a path winding its way southeast from the clearing where you arrived to the river. To the northwest you can see the head and wings of [if sphinx steps is visited]the[otherwise]a[end if] sphinx poking through the treetops."
 
 Chapter 8 - River
 
@@ -1427,6 +1428,19 @@ The description of the Eloi is "Just as Wells described them, the Eloi are short
 The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  If you try you can even see a few couples of both genders in the bushes involved in purient matters."
 
 ["As you move among them, your clothes and your height bring attention to yourself..."]
+
+[
+The Eloi notice you standing there in your drag nineteenth century clothing. In small groups they approach and circle you, cooing softly in their singsong language that Wells described earlier. They're don't appear afraid, merely curious, 
+]
+
+Instead of asking the Eloi about something:
+	say "Try as you might you can't make the the Eloi understand what you are asking about. Some of them laugh at your strange pronunciations while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits. But you are never without a group of them around you."
+	[say "ASKING [noun] about [second noun]." [second noun = nothing because it is not an object Writing §12.20. Stored actions]]
+
+[Handles both > show fuse to eloi and > show eloi the fuse]
+Instead of showing something to the Eloi:
+	say "SHOWING [noun] TO [second noun]."
+
 
 
 Chapter 2 - Weena

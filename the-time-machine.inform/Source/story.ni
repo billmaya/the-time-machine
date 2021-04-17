@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 15589 ] 
+[WORDS - 15722 ] 
 
 Book 1 - Beginning The Story
 
@@ -73,7 +73,7 @@ Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove 
 
 Test humboldt-woking-talk with "ask humboldt about wells / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about workshop / ask humboldt about time machine"
 
-Test eloi-ask-show with "purloin watch / purloin poker / purloin fuse / purloin key / gonear river."
+Test eloi-ask-show-give with "purloin watch / purloin poker / purloin fuse / purloin key / gonear river."
 
 
 Book 3 - 1895
@@ -1424,7 +1424,7 @@ The Eloi are in the River.
 The Eloi are fixed.
 The description of the Eloi is "Just as Wells described them, the Eloi are short, about four feet high, slight, and dressed in tunics belted at the waist and wearing buskins on their feet. The similarity of their features and builds makes it hard to determine individual gender but with some effort you can tell the men from the women. Actually, boys from girls would be better terms to use given their apparent stature, age, and demeanor. 
 
-The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  If you try you can even see a few couples of both genders in the bushes involved in purient matters."
+The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  You can even see, to your horror, a few couples of both genders in the bushes involved in purient matters."
 
 ["As you move among them, your clothes and your height bring attention to yourself..."]
 
@@ -1433,19 +1433,34 @@ The Eloi notice you standing there in your drag nineteenth century clothing. In 
 ]
 
 Instead of asking the Eloi about something:
-	say "Try as you might you can't make the the Eloi understand what you are asking about. Some of them laugh at your strange pronunciations while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits. But you are never without a group of them around you."
-	[say "ASKING [noun] about [second noun]." [second noun = nothing because it is not an object Writing §12.20. Stored actions]]
+	say "Try as you might you can't make the the Eloi understand what you are asking about. Some of them laugh at your strange pronunciations while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
+	[say "ASKING [noun] about [second noun]." [second noun = nothing because it is not an object. See Writing §12.20. Stored actions]]
 
-[Handles both > show fuse to eloi and > show eloi the fuse]
-Instead of showing something to the Eloi:
-	say "SHOWING [noun] TO [second noun]."
+Instead of giving something to the Eloi:
+	[say "GIVE [noun] TO [second noun]."]
+	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few second and, unable to discern its purpose, pass it around the small group gathered until the [noun] is returned to you."	
+		
+Instead of giving the watch to the Eloi:
+	say "GIVE WATCH TO ELOI.";
+	say "WEENA APPEARS.";
+	say "WEENA OPENS WATCH.";
+	say "WEENA GIVES YOU FLOWER."
+	
+Instead of showing something to the Eloi: [Handles both > show fuse to eloi and > show eloi the fuse]
+	[say "SHOWING [noun] TO [second noun]."]
+	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
+
+Instead of showing the watch to the Eloi:
+	say "SHOWING WATCH TO ELOI.";
+	say "WEENA APPEARS.";
+	say "WEENA OPENS WATCH.";
+	say "WEENA GIVES YOU THE FLOWER."
 
 
 
 Chapter 2 - Weena
 
 Weena is a person.
-[Weena is in the River.]
 Weena is nowhere.
 Weena is fixed.
 The description of Weena is "Slightly taller than the other Eloi but dressed as they are and with the same similarity of features and build, this is clearly the girl Wells described."

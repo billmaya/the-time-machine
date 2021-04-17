@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 15598 ] 
+[WORDS - 15589 ] 
 
 Book 1 - Beginning The Story
 
@@ -171,7 +171,6 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	The sundial is a supporter.
 	The description of the sundial is "Octogon shaped, this custom-made timekeeper is attached vertically to the door. While it has all of the components of it’s horizontal cousins, these componens are arranged in a slightly different configuration to account for its vertical nature and the surrounding buildings.[paragraph break]Roman [numerals] from one to twelve surround a stylized [sun] at the center. A hinged gnomon, which would normally cast a shadow during daylight hours, serves as the knocker. Underneath the sun and gnomon is the [motto] 'Sine Umbra Nihil'. Lightly etched complementary [Babylonian] and [Italian] hour lines cross the sundial's face."
 	
-	[Understand "timekeeper" or "timepiece" or "watch" as sundial.]
 	Understand "timekeeper" or "timepiece" as sundial.
 	
 		The numerals are a thing.

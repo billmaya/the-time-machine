@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 15722 ] 
+[WORDS - 16237 ] 
 
 Book 1 - Beginning The Story
 
@@ -557,6 +557,7 @@ The mantle is a supporter.]
 The pocket watch is a thing.
 The pocket watch is on the small table.
 The pocket watch is undescribed.
+The pocket watch can be open or closed. The pocket watch is closed.
 Understand "timepiece" or "chronometer" as pocket watch.
 The description of the pocket watch is "Wells' pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanged with the moving hands and it's winding mechanism."
 
@@ -1030,7 +1031,7 @@ Instead of inserting the fuse into the time machine:
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 
-Test prepare-time-machine with "purloin fuse / examine blueprints / put fuse in time machine."
+Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."
 				
 Part 2 - Characters
 
@@ -1150,11 +1151,13 @@ Travel To 802,701 is a scene.
 Travel To 802,701 begins when the player is in the time machine and the control panel is switched on.
 
 When Travel To 802,701 begins:
-	[say "TRAVELING TO 802,701 STARTS.";]
-	say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.[paragraph break]Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.[paragraph break]The pecurliar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merges into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.[paragraph break]After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replace by what appears to be an eternal spring as the machine slows even more. 'he earth seems very fair' is the first conscious thought that your remember thinking as the machine slows down further and comes to a stop.[paragraph break]You have arrived.";
+	[say "TRAVELING TO 802,701 BEGINS.";]
+	say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.[paragraph break]Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.[paragraph break]The pecurliar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merges into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.[paragraph break]After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replace by what appears to be an eternal spring as the machine slows even more. 'The earth seems very fair' is the first conscious thought that your remember thinking as the machine slows down further and comes to a stop.[paragraph break]You have arrived.";
+	[now the player is in the time machine;]
 	now the time machine is in the Clearing.
+	[now the player is in the Clearing.]
 
-Travel to 802,701 ends when the time machine is in the Clearing.
+Travel To 802,701 ends when the time machine is in the Clearing.
 
 [When Travel To 802,701 ends:
 	say "TRAVELING TO 802,701 ENDS."]
@@ -1171,7 +1174,20 @@ Travel to 802,701 ends when the time machine is in the Clearing.
 “The peculiar risk lay in the possibility of my finding some substance in the space which I, or the machine, occupied. So long as I travelled at a high velocity through time, this scarcely mattered: I was, so to speak, attenuated—was slipping like a vapour through the interstices of intervening substances! But to come to a stop involved the jamming of myself, molecule by molecule, into whatever lay in my way; meant bringing my atoms into such intimate contact with those of the obstacle that a profound chemical reaction—possibly a far-reaching explosion—would result, and blow myself and my apparatus out of all possible dimensions—into the Unknown. This possibility had occurred to me again and again while I was making the machine; but then I had cheerfully accepted it as an unavoidable risk—one of the risks a man has got to take! Now the risk was inevitable, I no longer saw it in the same cheerful light. The fact is that, insensibly, the absolute strangeness of everything, the sickly jarring and swaying of the machine, above all, the feeling of prolonged falling, had absolutely upset my nerves. I told myself that I could never stop, and with a gust of petulance I resolved to stop forthwith. Like an impatient fool, I lugged over the lever, and incontinently the thing went reeling over, and I was flung headlong through the air. 
 ]
 
-Part 2 - Travel to 1895
+Part 2 - Travel To 1895
+
+Travel To 1895 is a scene.
+
+Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the control panel is switched on.
+
+When Travel To 1895 begins:
+	say "TRAVEL TO 1895 BEGINS.";
+	now the time machine is in the Workshop.
+
+Travel To 1895 ends when the time machine is in the Workshop.
+
+When Travel To 1895 ends:
+	say "TRAVEL TO 1895 ENDS.";
 
 
 
@@ -1434,27 +1450,24 @@ The Eloi notice you standing there in your drag nineteenth century clothing. In 
 
 Instead of asking the Eloi about something:
 	say "Try as you might you can't make the the Eloi understand what you are asking about. Some of them laugh at your strange pronunciations while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
-	[say "ASKING [noun] about [second noun]." [second noun = nothing because it is not an object. See Writing §12.20. Stored actions]]
+	[say "ASKING [noun] about [second noun]." [second noun = nothing in this example because it is not an object. See Writing §12.20. Stored actions]]
 
 Instead of giving something to the Eloi:
 	[say "GIVE [noun] TO [second noun]."]
 	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few second and, unable to discern its purpose, pass it around the small group gathered until the [noun] is returned to you."	
 		
-Instead of giving the watch to the Eloi:
-	say "GIVE WATCH TO ELOI.";
-	say "WEENA APPEARS.";
-	say "WEENA OPENS WATCH.";
-	say "WEENA GIVES YOU FLOWER."
+Instead of giving the pocket watch to the Eloi:
+	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. The one with the watch turns it over in their hands before another grabs it away from them.[paragraph break]";
+	now the Eloi is carrying the pocket watch.
 	
 Instead of showing something to the Eloi: [Handles both > show fuse to eloi and > show eloi the fuse]
 	[say "SHOWING [noun] TO [second noun]."]
 	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
 
-Instead of showing the watch to the Eloi:
-	say "SHOWING WATCH TO ELOI.";
-	say "WEENA APPEARS.";
-	say "WEENA OPENS WATCH.";
-	say "WEENA GIVES YOU THE FLOWER."
+Instead of showing the pocket watch to the Eloi:
+	[say "SHOWING WATCH TO ELOI. ONE OF THEM GRABS IT FROM YOU";]
+	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
+	now the Eloi is carrying the pocket watch.
 
 
 
@@ -1469,7 +1482,45 @@ Section 1 - Flower
 
 The flower is a thing.
 The flower is nowhere.
-The description of the flower is "Unlike any blossom or vegetation you've ever seen. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
+The description of the flower is "Unlike any vegetation you've ever seen, the petal the Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
+
+Section 2 - Introduction Of Weena
+
+Introduction Of Weena is a scene.
+
+Introduction Of Weena begins when the Eloi is carrying the pocket watch. [or the player gives the Eloi the pocket watch.]
+
+When Introduction Of Weena begins:
+	[say "INTRODUCTION TO WEENA BEGINS.";]
+	say "Suddenly a young girl appears, differing from the other Eloi in demanor. She seems older though she looks to be the same age as the others and carries herself with a bit more bearing. This must be Wells[apostrophe] Weena.[paragraph break]She gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, remembering.";
+	now Weena is in the River;
+	now Weena is carrying the pocket watch;
+	now the pocket watch is open.
+
+Introduction Of Weena ends when Weena has the pocket watch.
+
+[When Introduction Of Weena ends:
+	say "INTRODUCTION TO WEENA ENDS."]
+
+Section 3 - Weena Gives You Flower
+
+Weena Gives You Flower is a scene.
+
+Weena Gives You Flower begins when the pocket watch is open.
+
+When Weena Gives You Flower begins:
+	[say "WEENA GIVES YOU FLOWER BEGINS.";]
+	say "Suddenly, Weena presses the watch's fob and the cover springs open, revealing the hands within. She stares at the second hand making its way arond the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers.[paragraph break]Snapping the watch shut she hands it back to you and nods her head. She looks at the petal in your hand and, reaching up into her hair she removes a single flower and hands it to you before running off. The rest of the Eloi follow her and soon you are alone again.";
+	now the Eloi are nowhere;
+	now Weena is nowhere;
+	now the player is carrying the pocket watch;
+	now the player is carrying the flower.
+
+Weena Gives You Flower ends when the player has the flower.
+
+[When Weena Gives You Flower ends:
+	say "WEENA GIVES YOU FLOWER ENDS."]
+
 
 Book 6 - Ending The Story
 

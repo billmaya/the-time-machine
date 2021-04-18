@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 16236 ] 
+[WORDS - 16445 ] 
 
 Book 1 - Beginning The Story
 
@@ -1565,7 +1565,7 @@ Chapter 2 - Humboldt's Return
 
 Humboldt's Return is a scene.
 
-Humbolt's Return begins when humboldt-should-return is true.
+Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	say "HUMBOLDT'S RETURN BEGINS."

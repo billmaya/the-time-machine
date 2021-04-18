@@ -947,7 +947,9 @@ Instead of examining the blueprints:
 Section 2 - The Time Machine
 	
 The time machine is a thing.
-The time machine is scenery in the Workshop.
+[The time machine is scenery in the Workshop.]
+The time machine is undescribed in the Workshop.
+The time machine is fixed in place.
 The time machine is enterable. 
 The description of time machine is "TBD-Time Machine."
 Understand "mechanism" or "device" or "temporal" as time machine.
@@ -1154,6 +1156,7 @@ When Travel To 802,701 begins:
 	[say "TRAVELING TO 802,701 BEGINS.";]
 	say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.[paragraph break]Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.[paragraph break]The pecurliar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merges into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.[paragraph break]After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replace by what appears to be an eternal spring as the machine slows even more. 'The earth seems very fair' is the first conscious thought that your remember thinking as the machine slows down further and comes to a stop.[paragraph break]You have arrived.";
 	now the time machine is in the Clearing;
+	now the time machine is described;
 	now the control panel is switched off.
 
 Travel To 802,701 ends when the time machine is in the Clearing.
@@ -1181,12 +1184,14 @@ Travel To 1895 begins when the time machine is in the Clearing and the player is
 
 When Travel To 1895 begins:
 	say "TRAVEL TO 1895 BEGINS.";
-	now the time machine is in the Workshop.
+	say "The clearing becomes hazy and dark and the rapidly alternating cycle of night and day becomes a continuous greyness as the machine hurtles back in time. The murmer in your ears and the confusedness in your mind are not as bad as the last time. The dials spin backwards, years melting away in seconds as the machine's operation reaches a crescendo and slows down as you approach your starting point.[paragraph break]You are back.";
+	now the time machine is in the Workshop;
+	now the control panel is switched off.
 
 Travel To 1895 ends when the time machine is in the Workshop.
 
-When Travel To 1895 ends:
-	say "TRAVEL TO 1895 ENDS.";
+[When Travel To 1895 ends:
+	say "TRAVEL TO 1895 ENDS.";]
 
 
 
@@ -1550,6 +1555,19 @@ Instead of wandering in the Bottom Shaft:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 
 Chapter 2 - Humboldt Endgame
+
+Humboldt's Return is a scene.
+
+[Humbolt's Return begins when XYZ.]
+
+When Humboldt's Return begins:
+	say "HUMBOLDT'S RETURN BEGINS.";
+
+[Humboldt's Return ends when ABC.]
+
+When Humboldt's Return ends:
+	say "HUMBOLDT'S RETURN ENDS.";
+
 
 Book 7 - Help
 

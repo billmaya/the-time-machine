@@ -982,6 +982,7 @@ Instead of activating the control panel:
 		[Travel To 802,701 scene will start]
 	otherwise:
 		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.[paragraph break]THE TIME MACHINE TRAVELS TO 802,701. YOU STAY IN 1895.[paragraph break]BEGIN HUMBOLDT ENDGAME.";
+		now the time machine is nowhere;
 	now the control panel is switched on.
 
 The saddle is a thing.
@@ -1121,6 +1122,12 @@ The description of Humboldt is "A reputable physician and alienist, he has known
 The printed name of Humboldt is "Dr. Humboldt"
 
 Understand "doctor" or "physician" or "dr" or "psychologist" or "alienist" as Humboldt.
+
+humboldt-should-return is a truth state that varies.
+humboldt-should-return is false.
+
+ABC is a truth state that varies.
+ABC is false.
 
 Section 1 - Conversation
 
@@ -1554,19 +1561,33 @@ Instead of wandering in the Bottom Shaft:
 		otherwise:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 
-Chapter 2 - Humboldt Endgame
+Chapter 2 - Humboldt's Return
 
 Humboldt's Return is a scene.
 
-[Humbolt's Return begins when XYZ.]
+Humbolt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
-	say "HUMBOLDT'S RETURN BEGINS.";
+	say "HUMBOLDT'S RETURN BEGINS."
 
 [Humboldt's Return ends when ABC.]
 
 When Humboldt's Return ends:
 	say "HUMBOLDT'S RETURN ENDS.";
+
+Chapter 3 - Humbolt Endgame
+
+Humboldt Endgame is a scene.
+
+[Humboldt Endgame begins when humboldt-endgame-begins is true.]
+
+When Humboldt Endgame begins:
+	say "HUMBOLDT ENDGAME BEGINS."
+
+[Humboldt Endgame ends when ABC.]
+
+When Humboldt Endgame ends:
+	say "HUMBOLDT ENDGAME ENDS."
 
 
 Book 7 - Help

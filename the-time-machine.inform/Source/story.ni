@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 16470 ] 
+[WORDS - 16544 ] 
 
 Book 1 - Beginning The Story
 
@@ -98,7 +98,7 @@ Test circular-shaft-look with "x shaft / take grate / x shaft."
 Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
 Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
-Test eloi-ask-show-give with "purloin watch / purloin poker / purloin fuse / purloin key / gonear river."
+Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / gonear river."
 
 
 Book 3 - 1895
@@ -1573,15 +1573,17 @@ Humboldt's Return is a scene.
 Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
-	say "HUMBOLDT'S RETURN BEGINS.";
-	now Humboldt is in the Workshop.
+	[say "HUMBOLDT'S RETURN BEGINS.";]
+	say "The door to the workshop opens and Mrs. Watchett enters followed by Dr. Humboldt. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. Was afraid something had happened.' His attention is drawn to the time machine behind you. 'Is that the contraption Wells was going on about?'";
+	now Humboldt is in the Workshop;
+	now Watchett is in the Workshop.
 
 Humboldt's Return ends when Humboldt is in the Workshop.
 
 When Humboldt's Return ends:
-	say "HUMBOLDT APPEARS IN THE WORKSHOP.";
+	[say "HUMBOLDT APPEARS IN THE WORKSHOP.";]
 	now humboldt-endgame-begins is true;
-	say "HUMBOLDT'S RETURN ENDS."
+	[say "HUMBOLDT'S RETURN ENDS."]
 
 Chapter 3 - Humbolt Endgame
 

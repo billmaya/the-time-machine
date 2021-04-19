@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 16445 ] 
+[WORDS - 16470 ] 
 
 Book 1 - Beginning The Story
 
@@ -60,10 +60,15 @@ Instead of going up in the Entryway: say "You wander around upstairs for a few m
 
 [TBD - Mrs. Watchett should wander away if you go "up" in the Entryway.]
 
-Chapter 3 - Tests
+Chapter 3 - Every Turn Rules
 
-[There might be other tests scattered throughout the code.
- Type "> test" to see all tests available]
+Every turn:
+	if the player is in the Workshop and the player has the flower:
+		now humboldt-should-return is true.
+
+Chapter 4 - Tests
+
+[In the game type "> test" to see a list of all the available tests]
 
 Test goto-kitchen with "north / west/ north / north / north." [from Woking Street]
 Test goto-dining with "north / west / north / north." [from Woking Street]
@@ -72,6 +77,26 @@ Test house-look with "x other houses / x residences". [from Woking Street]
 Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove / x sink / x work area." [from Kitchen]
 
 Test humboldt-woking-talk with "ask humboldt about wells / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about workshop / ask humboldt about time machine"
+
+Test take-encyc with "take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia."
+Test take-book with "take book / take book / take book / take book / take book / take book."
+Test take-mag with "take periodical / take periodical / take periodical / take periodical / take periodical."  
+
+Test tend-fire with "tend fire / take poker / tend fire / drop poker / tend fire."
+
+Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
+Test orrery-on-off with "turn orrery on / turn orrery off."
+Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."
+
+Test switch-examine with " examine orrery's switch / examine orrery switch."
+Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
+
+Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."
+
+Test circular-shaft-look with "x shaft / take grate / x shaft."
+
+Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
+Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
 Test eloi-ask-show-give with "purloin watch / purloin poker / purloin fuse / purloin key / gonear river."
 
@@ -376,10 +401,6 @@ Instead of taking something in the Library:
 		 	say "READING [the type of the noun].";
 	otherwise:
 		say "That's hardly portable.".
-		
-Test take-encyc with "take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia."
-Test take-book with "take book / take book / take book / take book / take book / take book."
-Test take-mag with "take periodical / take periodical / take periodical / take periodical / take periodical."  
 
 [> read book / read periodical / read encyclopaedia ]
 		
@@ -530,8 +551,6 @@ Instead of using the fire:
 		say "A few sparks rise up the flue and things warm up a bit as you spread the coals a bit more evenly around the grate.";
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
-
-Test tend-fire with "tend fire / take poker / tend fire / drop poker / tend fire."
 
 The poker is a thing. [https://bit.ly/3sczKUx]
 The poker is undescribed in the Parlor.
@@ -763,12 +782,6 @@ After taking the fuse:
 		now the orrery's switch is switched off;
 		now the orrery is switched off.
 
-Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."	
-Test orrery-on-off with "turn orrery on / turn orrery off."
-Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."
-Test switch-examine with " examine orrery's switch / examine orrery switch."
-Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
-
 
 Chapter 7 - Kitchen
 
@@ -947,7 +960,6 @@ Instead of examining the blueprints:
 Section 2 - The Time Machine
 	
 The time machine is a thing.
-[The time machine is scenery in the Workshop.]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place.
 The time machine is enterable. 
@@ -979,10 +991,10 @@ Instead of activating the time machine:
 Instead of activating the control panel:
 	if the player is in the time machine:
 		say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
-		[Travel To 802,701 scene will start]
 	otherwise:
-		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.[paragraph break]THE TIME MACHINE TRAVELS TO 802,701. YOU STAY IN 1895.[paragraph break]BEGIN HUMBOLDT ENDGAME.";
+		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";
 		now the time machine is nowhere;
+		now humboldt-should-return is true;
 	now the control panel is switched on.
 
 The saddle is a thing.
@@ -1033,8 +1045,6 @@ Instead of inserting the fuse into the time machine:
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
-
-Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."
 				
 Part 2 - Characters
 
@@ -1126,8 +1136,8 @@ Understand "doctor" or "physician" or "dr" or "psychologist" or "alienist" as Hu
 humboldt-should-return is a truth state that varies.
 humboldt-should-return is false.
 
-ABC is a truth state that varies.
-ABC is false.
+humboldt-endgame-begins is a truth state that varies.
+humboldt-endgame-begins is false.
 
 Section 1 - Conversation
 
@@ -1240,8 +1250,6 @@ The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
 Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. [if metal grate is on circular shaft]On the shaft a circular grate rests on the top, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]Through the open shaft you can see the rungs of a ladder going down into darkness.[end if]"
-	
-Test circular-shaft-look with "x shaft / take grate / x shaft."
 
 The metal grate is a thing.
 The metal grate is portable.
@@ -1290,9 +1298,6 @@ Before going southeast in the Clearing:
 	if can-go-clearing-to-river is false:
 		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
 		stop the action.
-	
-Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
-Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
 Chapter 2 - Sphinx Steps
 
@@ -1568,18 +1573,21 @@ Humboldt's Return is a scene.
 Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
-	say "HUMBOLDT'S RETURN BEGINS."
+	say "HUMBOLDT'S RETURN BEGINS.";
+	now Humboldt is in the Workshop.
 
-[Humboldt's Return ends when ABC.]
+Humboldt's Return ends when Humboldt is in the Workshop.
 
 When Humboldt's Return ends:
-	say "HUMBOLDT'S RETURN ENDS.";
+	say "HUMBOLDT APPEARS IN THE WORKSHOP.";
+	now humboldt-endgame-begins is true;
+	say "HUMBOLDT'S RETURN ENDS."
 
 Chapter 3 - Humbolt Endgame
 
 Humboldt Endgame is a scene.
 
-[Humboldt Endgame begins when humboldt-endgame-begins is true.]
+Humboldt Endgame begins when humboldt-endgame-begins is true.
 
 When Humboldt Endgame begins:
 	say "HUMBOLDT ENDGAME BEGINS."

@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 16624 ] 
+[WORDS - 16802 ] 
 
 Book 1 - Beginning The Story
 
@@ -102,6 +102,7 @@ Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / gone
 			
 Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / up / down / test eloi-ask-show-give."
 Test travel-1895 with "go northwest / enter / activate panel."
+Test endgame-humboldt with "test travel-802701 / show eloi watch / test travel-1895 / exit."
 
 
 Book 3 - 1895
@@ -1603,6 +1604,21 @@ When Humboldt Endgame begins:
 
 After telling Humboldt about "time travel":
 	say "Humboldt listens to your story of time travel with the same skepticism that he gave Wells. You realize that some proof is needed."
+
+[Writing §7.6. Reading and talking]
+Instead of showing something to Humboldt, try asking Humboldt about it.
+After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry]."
+
+[16.13 - Topic columns]
+Table of Humboldt Endgame Responses
+topic	reply
+"key"	"'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
+"blueprints"	"'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
+"time machine"	"'What a waste. No proof that it works. Lit up like that I bet it's just a useful as some mechanical Christmas tree.'"
+"petal"	"Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
+"fuse"	"Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
+"workshop"	"Humboldt looks around the chaotic space. 'Yes, I've seen this [quotation mark]workshop[quotation mark].'"
+
 
 [Humboldt Endgame ends when ABC.]
 

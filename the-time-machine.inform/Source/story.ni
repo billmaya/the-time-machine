@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 16544 ] 
+[WORDS - 16624 ] 
 
 Book 1 - Beginning The Story
 
@@ -99,6 +99,9 @@ Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
 Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
 Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / gonear river."
+			
+Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / up / down / test eloi-ask-show-give."
+Test travel-1895 with "go northwest / enter / activate panel."
 
 
 Book 3 - 1895
@@ -1141,7 +1144,11 @@ humboldt-endgame-begins is false.
 
 Section 1 - Conversation
 
-Instead of asking Humboldt about "wells/madman/patient/lunatic": say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'"
+Instead of asking Humboldt about "wells/madman/patient/lunatic": 
+	if humboldt-endgame-begins is false:
+		say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'";
+	otherwise:
+		say "'He's sedated and resting. I see you managed to find that key. Any luck?'".
 
 Instead of asking Humboldt about "diagnosis": say "'Too early to tell.'"
 
@@ -1593,6 +1600,9 @@ Humboldt Endgame begins when humboldt-endgame-begins is true.
 
 When Humboldt Endgame begins:
 	say "HUMBOLDT ENDGAME BEGINS."
+
+After telling Humboldt about "time travel":
+	say "Humboldt listens to your story of time travel with the same skepticism that he gave Wells. You realize that some proof is needed."
 
 [Humboldt Endgame ends when ABC.]
 

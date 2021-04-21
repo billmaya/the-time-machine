@@ -1596,6 +1596,7 @@ When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
 	say "The door to the workshop opens and Mrs. Watchett enters followed by Dr. Humboldt. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. Was afraid something had happened.' His attention is drawn to the time machine behind you. 'Is that the contraption Wells was going on about?'";
 	now Humboldt is in the Workshop;
+	now Humboldt is mobile;
 	now Watchett is in the Workshop.
 
 Humboldt's Return ends when Humboldt is in the Workshop.
@@ -1613,6 +1614,15 @@ Humboldt Endgame begins when humboldt-endgame-begins is true.
 
 When Humboldt Endgame begins:
 	say "HUMBOLDT ENDGAME BEGINS."
+
+[Recipe §7.13. Traveling Characters, Van Helsing example]
+Every turn:
+	if Humboldt is mobile:
+		if the location of Humboldt is not the location of the player:
+			let the way be the best route from the location of Humboldt to the location of the player, using doors;
+			try Humboldt going the way;
+		otherwise:
+			say "HUMBOLDT WATCHES YOU IMPATIENTLY."
 
 Instead of showing the key to Humboldt, say "'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
 Instead of showing the blueprints to Humboldt, say "'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
@@ -1645,7 +1655,7 @@ After telling Humboldt about "time travel":
 After telling Humboldt about "802701":
 	say "TELL 802,701."
 
-Understand "eloi" or "the eloi" as Eloi.
+Understand "eloi" or "the eloi" as Eloi. ["the eloi" doesn't work and "eloi" might be unnecessary]
 After telling Humboldt about "Eloi":
 	say "TELL ELOI."
 

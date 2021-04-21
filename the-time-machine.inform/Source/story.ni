@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 16802 ] 
+[WORDS - 17087 16802 ] 
 
 Book 1 - Beginning The Story
 
@@ -1153,11 +1153,23 @@ Instead of asking Humboldt about "wells/madman/patient/lunatic":
 
 Instead of asking Humboldt about "diagnosis": say "'Too early to tell.'"
 
-Instead of asking Humboldt about "examination": say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'"
+Instead of asking Humboldt about "examination": 
+	if humboldt-endgame-begins is false:
+		say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'";
+	otherwise:
+		say "Already been done."
 
-Instead of asking Humboldt about "workshop/shop": say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'"
+Instead of asking Humboldt about "workshop/shop": 
+	if humboldt-endgame-begins is false:
+		say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'";
+	otherwise:
+		say "Humboldt looks around the chaotic space. 'Yes, I've seen this [quotation mark]workshop[quotation mark].'"
 
-Instead of asking Humboldt about "time machine": say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'"
+Instead of asking Humboldt about "time machine": 
+	if humboldt-endgame-begins is false:
+		say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
+	otherwise:
+		say "'What a waste. No proof that it works. Lit up like that I bet it's just a useful as some mechanical Christmas tree.'"
 
 Chapter 3 - Gernsback 
 [https://bit.ly/3rYUPl8]
@@ -1602,28 +1614,53 @@ Humboldt Endgame begins when humboldt-endgame-begins is true.
 When Humboldt Endgame begins:
 	say "HUMBOLDT ENDGAME BEGINS."
 
-After telling Humboldt about "time travel":
-	say "Humboldt listens to your story of time travel with the same skepticism that he gave Wells. You realize that some proof is needed."
+Instead of showing the key to Humboldt, say "'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
+Instead of showing the blueprints to Humboldt, say "'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
+Instead of showing the petal to Humboldt, say "'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
+Instead of showing the fuse to Humboldt, say "Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
+
+[Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses but it didn't work]
+[Instead of showing something to Humboldt, try asking Humboldt about something.]
+[Second attempt that also didn't work]
+[Before an actor showing something to Humboldt:
+	[try the second noun examining the noun instead.]
+	[try asking noun about second noun.]]
 
 [Writing §7.6. Reading and talking]
-Instead of showing something to Humboldt, try asking Humboldt about it.
-After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry]."
+After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry]"
 
 [16.13 - Topic columns]
 Table of Humboldt Endgame Responses
 topic	reply
+"petal"	"'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
+"fuse"	"Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
 "key"	"'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
 "blueprints"	"'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
-"time machine"	"'What a waste. No proof that it works. Lit up like that I bet it's just a useful as some mechanical Christmas tree.'"
-"petal"	"Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
-"fuse"	"Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
-"workshop"	"Humboldt looks around the chaotic space. 'Yes, I've seen this [quotation mark]workshop[quotation mark].'"
+		
+[Ask and Show for the following topics handled in Book 3: 1895, Part 2: Characters, Chapter 2: Humboldt, Section 1: Conversation - time machine, workshop, wells, examination, diagnosis]
+		
+After telling Humboldt about "time travel":
+	say "Humboldt listens to your story of time travel with the same skepticism that he gave Wells. You realize that some proof is needed."
 
+After telling Humboldt about "802701":
+	say "TELL 802,701."
+
+Understand "eloi" or "the eloi" as Eloi.
+After telling Humboldt about "Eloi":
+	say "TELL ELOI."
+
+After telling Humboldt about "Weena":
+	say "TELL WEENA."
+	
+After telling Humboldt about "Morlocks":
+	say "TELL MORLOCKS."
 
 [Humboldt Endgame ends when ABC.]
 
 When Humboldt Endgame ends:
 	say "HUMBOLDT ENDGAME ENDS."
+	
+
 
 
 Book 7 - Help

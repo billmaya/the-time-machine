@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 17087 16802 ] 
+[WORDS - 17217 ] 
 
 Book 1 - Beginning The Story
 
@@ -1172,6 +1172,14 @@ Instead of asking Humboldt about "time machine":
 	otherwise:
 		say "'What a waste. No proof that it works. Lit up like that I bet it's just a useful as some mechanical Christmas tree.'"
 
+Section 2 - Patience
+
+[Writing §4.9. Using new kinds of value in properties]
+patience is a kind of a value.
+The patiences are accepting, tolerant, impatient, frustrated, angry. 
+	
+Humboldt has patience. Humboldt is accepting.
+
 Chapter 3 - Gernsback 
 [https://bit.ly/3rYUPl8]
 
@@ -1624,7 +1632,22 @@ Every turn:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
 			try Humboldt going the way;
 		otherwise:
-			say "HUMBOLDT WATCHES YOU IMPATIENTLY."
+			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."
+
+[Test changing Humbolt's patience each turn]
+Every turn:
+	if humboldt-endgame-begins is true:
+		if the patience of Humboldt is:
+			-- accepting:
+				now the patience of Humboldt is tolerant;
+			-- tolerant:
+				now the patience of Humboldt is impatient;
+			-- impatient:
+				now the patience of Humboldt is frustrated;
+			-- frustrated:
+				now the patience of Humboldt is angry;
+			-- angry:
+				say "YOU ARE DRAGGED OFF TO THE ASYLUM."
 
 Instead of showing the key to Humboldt, say "'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
 Instead of showing the blueprints to Humboldt, say "'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"

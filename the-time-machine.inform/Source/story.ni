@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 17217 ] 
+[WORDS - 17259 ] 
 
 Book 1 - Beginning The Story
 
@@ -1634,7 +1634,7 @@ Every turn:
 		otherwise:
 			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."
 
-[Test changing Humbolt's patience each turn]
+[Test for changing Humbolt's patience each turn (replace before release)]
 Every turn:
 	if humboldt-endgame-begins is true:
 		if the patience of Humboldt is:
@@ -1647,16 +1647,17 @@ Every turn:
 			-- frustrated:
 				now the patience of Humboldt is angry;
 			-- angry:
-				say "YOU ARE DRAGGED OFF TO THE ASYLUM."
+				say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."
 
 Instead of showing the key to Humboldt, say "'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
 Instead of showing the blueprints to Humboldt, say "'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
 Instead of showing the petal to Humboldt, say "'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
 Instead of showing the fuse to Humboldt, say "Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
 
-[Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses but it didn't work]
+[Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
 [Instead of showing something to Humboldt, try asking Humboldt about something.]
-[Second attempt that also didn't work]
+
+			[Second attempt that also didn't work]
 [Before an actor showing something to Humboldt:
 	[try the second noun examining the noun instead.]
 	[try asking noun about second noun.]]
@@ -1690,7 +1691,14 @@ After telling Humboldt about "Weena":
 After telling Humboldt about "Morlocks":
 	say "TELL MORLOCKS."
 
-[Humboldt Endgame ends when ABC.]
+endgame-success is a truth state that varies.
+endgame-success is false. 
+
+Instead of showing the flower to Humboldt:
+	now endgame-success is true;
+	say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE."
+
+Humboldt Endgame ends when endgame-success is true.
 
 When Humboldt Endgame ends:
 	say "HUMBOLDT ENDGAME ENDS."

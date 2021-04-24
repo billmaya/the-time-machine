@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 17259 ] 
+[WORDS - 17269 ] 
 
 Book 1 - Beginning The Story
 
@@ -1152,13 +1152,17 @@ Instead of asking Humboldt about "wells/madman/patient/lunatic":
 	otherwise:
 		say "'He's sedated and resting. I see you managed to find that key. Any luck?'".
 
-Instead of asking Humboldt about "diagnosis": say "'Too early to tell.'"
+Instead of asking Humboldt about "diagnosis": 
+	if humboldt-endgame-begins is false:
+		say "'Too early to tell.'";
+	otherwise:
+		say "TBD."
 
 Instead of asking Humboldt about "examination": 
 	if humboldt-endgame-begins is false:
 		say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'";
 	otherwise:
-		say "Already been done."
+		say "Already been done. I want to see what you've found here before writing up my final report."
 
 Instead of asking Humboldt about "workshop/shop": 
 	if humboldt-endgame-begins is false:
@@ -1170,7 +1174,49 @@ Instead of asking Humboldt about "time machine":
 	if humboldt-endgame-begins is false:
 		say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
 	otherwise:
-		say "'What a waste. No proof that it works. Lit up like that I bet it's just a useful as some mechanical Christmas tree.'"
+		say "'What a waste. No proof that this mechanical boondoggle even works. No more useful thatn some mechanical Christmas tree.'"
+
+Instead of showing the key to Humboldt, say "'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
+Instead of showing the blueprints to Humboldt, say "'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
+Instead of showing the petal to Humboldt, say "'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
+Instead of showing the fuse to Humboldt, say "Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
+
+[Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
+[Instead of showing something to Humboldt, try asking Humboldt about something.]
+
+[Second attempt that also didn't work]
+[Before an actor showing something to Humboldt:
+	[try the second noun examining the noun instead.]
+	[try asking noun about second noun.]]
+
+[Writing §7.6. Reading and talking]
+After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry]"
+
+[16.13 - Topic columns]
+Table of Humboldt Endgame Responses
+topic	reply
+"petal"	"'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
+"fuse"	"Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
+"key"	"'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
+"blueprints"	"'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
+		
+After telling Humboldt about "time travel":
+	say "Humboldt listens to your story of time travel with the same skepticism that he gave Wells. You realize that some proof is needed when a frown briefly crosses his face."
+
+After telling Humboldt about "802701":
+	say "TELL 802,701."
+
+Understand "eloi" or "the eloi" as Eloi. ["the eloi" doesn't work and "eloi" might be unnecessary]
+After telling Humboldt about "Eloi":
+	say "TELL ELOI."
+
+After telling Humboldt about "Weena":
+	say "TELL WEENA.";
+	follow patience rules.
+	
+	
+After telling Humboldt about "Morlocks":
+	say "TELL MORLOCKS."
 
 Section 2 - Patience
 
@@ -1634,62 +1680,21 @@ Every turn:
 		otherwise:
 			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."
 
-[Test for changing Humbolt's patience each turn (replace before release)]
-Every turn:
-	if humboldt-endgame-begins is true:
-		if the patience of Humboldt is:
-			-- accepting:
-				now the patience of Humboldt is tolerant;
-			-- tolerant:
-				now the patience of Humboldt is impatient;
-			-- impatient:
-				now the patience of Humboldt is frustrated;
-			-- frustrated:
-				now the patience of Humboldt is angry;
-			-- angry:
-				say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."
-
-Instead of showing the key to Humboldt, say "'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
-Instead of showing the blueprints to Humboldt, say "'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
-Instead of showing the petal to Humboldt, say "'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
-Instead of showing the fuse to Humboldt, say "Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
-
-[Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
-[Instead of showing something to Humboldt, try asking Humboldt about something.]
-
-			[Second attempt that also didn't work]
-[Before an actor showing something to Humboldt:
-	[try the second noun examining the noun instead.]
-	[try asking noun about second noun.]]
-
-[Writing §7.6. Reading and talking]
-After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry]"
-
-[16.13 - Topic columns]
-Table of Humboldt Endgame Responses
-topic	reply
-"petal"	"'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
-"fuse"	"Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
-"key"	"'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
-"blueprints"	"'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
-		
-[Ask and Show for the following topics handled in Book 3: 1895, Part 2: Characters, Chapter 2: Humboldt, Section 1: Conversation - time machine, workshop, wells, examination, diagnosis]
-		
-After telling Humboldt about "time travel":
-	say "Humboldt listens to your story of time travel with the same skepticism that he gave Wells. You realize that some proof is needed."
-
-After telling Humboldt about "802701":
-	say "TELL 802,701."
-
-Understand "eloi" or "the eloi" as Eloi. ["the eloi" doesn't work and "eloi" might be unnecessary]
-After telling Humboldt about "Eloi":
-	say "TELL ELOI."
-
-After telling Humboldt about "Weena":
-	say "TELL WEENA."
-	
-After telling Humboldt about "Morlocks":
-	say "TELL MORLOCKS."
+Patience rules is a rulebook. [Writing §19. Rulebooks - §19.2, §19.3, §19.8]
+[This is the increment patience by one rule: ] [Why doesn't this work?]
+[This is the increment patience rule:] [Why doesn't this work?]
+A patience rule:
+	if the patience of Humboldt is:
+		-- accepting:
+			now the patience of Humboldt is tolerant;
+		-- tolerant:
+			now the patience of Humboldt is impatient;
+		-- impatient:
+			now the patience of Humboldt is frustrated;
+		-- frustrated:
+			now the patience of Humboldt is angry;
+		-- angry:
+			say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."
 
 endgame-success is a truth state that varies.
 endgame-success is false. 

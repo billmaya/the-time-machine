@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 17428 ] 
+[WORDS - 17749 428 ] 
 
 Book 1 - Beginning The Story
 
@@ -1178,13 +1178,6 @@ Instead of asking Humboldt about "time machine":
 
 Instead of showing the time machine to Humboldt: [This doesn't work because the time machine is fixed in place]
 	say "SHOW HUMBOLDT TIME MACHINE."
-		
-[DEL now the time machine is portable;
-	say "SHOWING TIME MACHINE TO HUMBOLDT.";
-	now the time machine is fixed in place.
-say "As he surveys XYZ No proof that this mechanical boondoggle even works."
-
-]
 
 Instead of showing the petal to Humboldt:
 	say "'You were supposed to find the rest of it so we could convince Wells that his story was nonsense, a figment of his imagination. Did you find it?'"
@@ -1197,19 +1190,6 @@ Instead of showing the blueprints to Humboldt:
 
 Instead of showing the fuse to Humboldt:
 		say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
-
-[DEL
-Instead of showing the blueprints to Humboldt, say "'SHOW Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
-After a comprehensive survey he returns the blueprints to you. 'Seems to be built according to what's on those papers,' he says."
-He pages through the blueprints and identifies each diagram or mechanism
- the physical manifestation of each item on the blueprint.
-identifies each
-After a comprehensive survey he returns the blueprints to you. 'Seems to be built according to what's on those papers,' he says."
-say "'SHOW Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
-turns the fuse over in his hands.he returns it to you."
-
-]
-
 		
 [Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
 [Instead of showing something to Humboldt, try asking Humboldt about something.]
@@ -1232,11 +1212,6 @@ topic	reply
 "weena"	"Figment of Wells[apostrophe] imagination I assume."
 "eloi"	"Figment of Wells[apostrophe] imagination I assume."
 "morlocks"	"Figment of Wells[apostrophe] imagination I assume."
-
-[DEL 
-"blueprints"	"'TABLE Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
-TABLE Humbold turns the fuse over in his hands. Puzzled, he returns it to you.
-]
 
 After telling Humboldt about "petal":
 	say "'I know all that. But did you find the rest of the flower?'"

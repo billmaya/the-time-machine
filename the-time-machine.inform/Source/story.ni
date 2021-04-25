@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 17269 ] 
+[WORDS - 17428 ] 
 
 Book 1 - Beginning The Story
 
@@ -965,9 +965,9 @@ Section 2 - The Time Machine
 	
 The time machine is a thing.
 The time machine is undescribed in the Workshop.
-The time machine is fixed in place.
+The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-The description of time machine is "TBD-Time Machine."
+The description of time machine is "TBD-TIME MACHINE DESCRIPTION."
 Understand "mechanism" or "device" or "temporal" as time machine.
 
 The control panel is a device.
@@ -1150,37 +1150,67 @@ Instead of asking Humboldt about "wells/madman/patient/lunatic":
 	if humboldt-endgame-begins is false:
 		say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'";
 	otherwise:
-		say "'He's sedated and resting. I see you managed to find that key. Any luck?'".
+		say "'He's sedated and resting."
 
 Instead of asking Humboldt about "diagnosis": 
 	if humboldt-endgame-begins is false:
 		say "'Too early to tell.'";
 	otherwise:
-		say "TBD."
+		say "Unless you found some new evidence it doesn't look good for Wells. He still believes he travelled to the year 802701."
 
 Instead of asking Humboldt about "examination": 
 	if humboldt-endgame-begins is false:
 		say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'";
 	otherwise:
-		say "Already been done. I want to see what you've found here before writing up my final report."
+		say "'The preliminaries are already completed. I'll write my summary after you tell me what you found here."
 
 Instead of asking Humboldt about "workshop/shop": 
 	if humboldt-endgame-begins is false:
 		say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'";
 	otherwise:
-		say "Humboldt looks around the chaotic space. 'Yes, I've seen this [quotation mark]workshop[quotation mark].'"
+		say "Humboldt looks around the workshop, poking into odd corners. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]some papers on the workbench[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."
 
 Instead of asking Humboldt about "time machine": 
 	if humboldt-endgame-begins is false:
 		say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
 	otherwise:
-		say "'What a waste. No proof that this mechanical boondoggle even works. No more useful thatn some mechanical Christmas tree.'"
+		say "'Outside my area of expertise, I'm afraid.'"
 
-Instead of showing the key to Humboldt, say "'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
-Instead of showing the blueprints to Humboldt, say "'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
-Instead of showing the petal to Humboldt, say "'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
-Instead of showing the fuse to Humboldt, say "Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
+Instead of showing the time machine to Humboldt: [This doesn't work because the time machine is fixed in place]
+	say "SHOW HUMBOLDT TIME MACHINE."
+		
+[DEL now the time machine is portable;
+	say "SHOWING TIME MACHINE TO HUMBOLDT.";
+	now the time machine is fixed in place.
+say "As he surveys XYZ No proof that this mechanical boondoggle even works."
 
+]
+
+Instead of showing the petal to Humboldt:
+	say "'You were supposed to find the rest of it so we could convince Wells that his story was nonsense, a figment of his imagination. Did you find it?'"
+	
+Instead of showing the key to Humboldt:
+	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [at random]What have you found?'"
+
+Instead of showing the blueprints to Humboldt:
+	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its conterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
+
+Instead of showing the fuse to Humboldt:
+		say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
+
+[DEL
+Instead of showing the blueprints to Humboldt, say "'SHOW Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
+After a comprehensive survey he returns the blueprints to you. 'Seems to be built according to what's on those papers,' he says."
+He pages through the blueprints and identifies each diagram or mechanism
+ the physical manifestation of each item on the blueprint.
+identifies each
+After a comprehensive survey he returns the blueprints to you. 'Seems to be built according to what's on those papers,' he says."
+say "'SHOW Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
+turns the fuse over in his hands.he returns it to you."
+
+]
+
+		
 [Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
 [Instead of showing something to Humboldt, try asking Humboldt about something.]
 
@@ -1195,28 +1225,54 @@ After asking Humboldt about a topic listed in Table of Humboldt Endgame Response
 [16.13 - Topic columns]
 Table of Humboldt Endgame Responses
 topic	reply
-"petal"	"'Yes, I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that figment of his imagination was just a delusion.'"
-"fuse"	"Humbold turns the fuse over in his hands. Puzzled, he returns it to you."
-"key"	"'Yes, I've seen the workshop so obviousl you found the way in. But what did you discover?'"
-"blueprints"	"'Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
+"petal"	"'I gave that to you earlier.'"
+"key"	"'Obviously it's the workshop key since we're standing in the bloody place.'"
+"blueprints"	"'Your guess is as good as mine.'"
+"fuse"	"'Looks like it fits into that contraption Wells has constructed.'"
+"weena"	"Figment of Wells[apostrophe] imagination I assume."
+"eloi"	"Figment of Wells[apostrophe] imagination I assume."
+"morlocks"	"Figment of Wells[apostrophe] imagination I assume."
+
+[DEL 
+"blueprints"	"'TABLE Anyone can draw up some doodles to support their fantastical imaginings. Just lines on the page.'"
+TABLE Humbold turns the fuse over in his hands. Puzzled, he returns it to you.
+]
+
+After telling Humboldt about "petal":
+	say "'I know all that. But did you find the rest of the flower?'"
+
+After telling Humboldt about "time machine":
+	say "'I'd like to believe that it does what you say it does but we've no proof.'"
+
+After telling Humboldt about "workshop":
+	say "Humboldt listens dispassionately as you enthusiastically point out various areas of the workshop, a nonplussed look on his face."
+
+After telling Humboldt about "fuse":
+	say "Humboldt nods slightly as you explain how the fuse is necessary for the time machine[apostrophe]s operation."
+
+[Each of the following rules will increase Humboldt's patience by one step]
 		
 After telling Humboldt about "time travel":
-	say "Humboldt listens to your story of time travel with the same skepticism that he gave Wells. You realize that some proof is needed when a frown briefly crosses his face."
+	say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
 
+Understand "the future" as 802701. [This doesn't work]
 After telling Humboldt about "802701":
-	say "TELL 802,701."
+	say "Humboldt listens about your adventures in the year 802,701 with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
 
 Understand "eloi" or "the eloi" as Eloi. ["the eloi" doesn't work and "eloi" might be unnecessary]
 After telling Humboldt about "Eloi":
-	say "TELL ELOI."
+	say "Humboldt listens as you recount your experience with the Eloi with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
 
 After telling Humboldt about "Weena":
-	say "TELL WEENA.";
-	follow patience rules.
-	
+	say "Humboldt listens to you recount your experience with Weena with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
 	
 After telling Humboldt about "Morlocks":
-	say "TELL MORLOCKS."
+	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
 
 Section 2 - Patience
 
@@ -1556,7 +1612,6 @@ Instead of showing something to the Eloi: [Handles both > show fuse to eloi and 
 	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
 
 Instead of showing the pocket watch to the Eloi:
-	[say "SHOWING WATCH TO ELOI. ONE OF THEM GRABS IT FROM YOU";]
 	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
 	now the Eloi is carrying the pocket watch.
 
@@ -1680,6 +1735,7 @@ Every turn:
 		otherwise:
 			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."
 
+[Humboldt's patience is changed by various conversation topics (see 1895 • Characters • Humboldt • Conversation)]
 Patience rules is a rulebook. [Writing §19. Rulebooks - §19.2, §19.3, §19.8]
 [This is the increment patience by one rule: ] [Why doesn't this work?]
 [This is the increment patience rule:] [Why doesn't this work?]

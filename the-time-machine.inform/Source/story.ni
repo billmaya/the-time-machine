@@ -1,6 +1,6 @@
 "The Time Machine" by Billy Tenenbaum
 
-[WORDS - 17749 428 ] 
+[WORDS - 17758 ] 
 
 Book 1 - Beginning The Story
 
@@ -1189,7 +1189,7 @@ Instead of showing the blueprints to Humboldt:
 	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its conterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
 
 Instead of showing the fuse to Humboldt:
-		say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
+	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
 		
 [Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
 [Instead of showing something to Humboldt, try asking Humboldt about something.]
@@ -1198,6 +1198,10 @@ Instead of showing the fuse to Humboldt:
 [Before an actor showing something to Humboldt:
 	[try the second noun examining the noun instead.]
 	[try asking noun about second noun.]]
+
+[This rule triggers a successful endgame]
+Instead of asking Humboldt about "flower":
+	now endgame-success is true.
 
 [Writing §7.6. Reading and talking]
 After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry]"
@@ -1212,6 +1216,7 @@ topic	reply
 "weena"	"Figment of Wells[apostrophe] imagination I assume."
 "eloi"	"Figment of Wells[apostrophe] imagination I assume."
 "morlocks"	"Figment of Wells[apostrophe] imagination I assume."
+"time travel"	"Science fiction if you ask me."
 
 After telling Humboldt about "petal":
 	say "'I know all that. But did you find the rest of the flower?'"
@@ -1224,6 +1229,10 @@ After telling Humboldt about "workshop":
 
 After telling Humboldt about "fuse":
 	say "Humboldt nods slightly as you explain how the fuse is necessary for the time machine[apostrophe]s operation."
+
+[This rule triggers a successful endgame]
+After telling Humboldt about "flower":
+	now endgame-success is true.
 
 [Each of the following rules will increase Humboldt's patience by one step]
 		
@@ -1698,8 +1707,8 @@ Humboldt Endgame is a scene.
 
 Humboldt Endgame begins when humboldt-endgame-begins is true.
 
-When Humboldt Endgame begins:
-	say "HUMBOLDT ENDGAME BEGINS."
+[When Humboldt Endgame begins:
+	say "HUMBOLDT ENDGAME BEGINS."]
 
 [Recipe §7.13. Traveling Characters, Van Helsing example]
 Every turn:
@@ -1707,8 +1716,9 @@ Every turn:
 		if the location of Humboldt is not the location of the player:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
 			try Humboldt going the way;
-		otherwise:
-			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."
+			[Should Humboldt get annoyed if you walk around and don't tell him what you discovered?]
+		[otherwise:
+			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."]
 
 [Humboldt's patience is changed by various conversation topics (see 1895 • Characters • Humboldt • Conversation)]
 Patience rules is a rulebook. [Writing §19. Rulebooks - §19.2, §19.3, §19.8]
@@ -1725,19 +1735,28 @@ A patience rule:
 		-- frustrated:
 			now the patience of Humboldt is angry;
 		-- angry:
-			say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."
+			now endgame-failure is true.
 
 endgame-success is a truth state that varies.
 endgame-success is false. 
 
-Instead of showing the flower to Humboldt:
-	now endgame-success is true;
-	say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE."
+endgame-failure is a truth state that varies.
+endgame-failure is false.
 
-Humboldt Endgame ends when endgame-success is true.
+Instead of showing the flower to Humboldt:
+	now endgame-success is true.
+
+Humboldt Endgame ends when endgame-success is true or endgame-failure is true.
 
 When Humboldt Endgame ends:
-	say "HUMBOLDT ENDGAME ENDS."
+	[say "HUMBOLDT ENDGAME ENDS."]
+	if endgame-success is true:
+		[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
+		say "Humboldt studies the flower in amazement. 'I'm just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story. You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
+	if endgame-failure is true:
+		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
+		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulence outside and cart you off to the hospital to share a ward with Wells.";
+	end the story finally.
 	
 
 

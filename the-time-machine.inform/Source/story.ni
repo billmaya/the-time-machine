@@ -8,7 +8,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 17839 ] 
+[WORDS - 17844 ] 
 
 Book 1 - Beginning The Story
 
@@ -792,7 +792,9 @@ After taking the fuse:
 	if the orrery is switched on:
 		say "The minute you remove the fuse the orrery shuts off and stops its calculations.";
 		now the orrery's switch is switched off;
-		now the orrery is switched off.
+		now the orrery is switched off;
+	otherwise:
+		say "Taken[paragraph break]".
 
 
 Chapter 7 - Kitchen

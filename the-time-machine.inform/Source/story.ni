@@ -1,6 +1,14 @@
-"The Time Machine" by Billy Tenenbaum
+["The Time Machine" by Billy Tenenbaum]
 
-[WORDS - 17758 ] 
+The story title is "The Time Machine".
+The story author is "Billy Tenenbaum".
+The story headline is "A Temporal Investigation".
+The story genre is "Science Fiction".
+The release number is 1.
+The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
+The story creation year is 2021.
+
+[WORDS - 17839 ] 
 
 Book 1 - Beginning The Story
 

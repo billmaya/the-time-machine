@@ -106,7 +106,7 @@ Test circular-shaft-look with "x shaft / take grate / x shaft."
 Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
 Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
-Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / gonear river."
+Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / gonear river."
 			
 Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / up / down / test eloi-ask-show-give."
 Test travel-1895 with "go northwest / enter / activate panel."
@@ -1590,7 +1590,7 @@ The Eloi notice you standing there in your drag nineteenth century clothing. In 
 ]
 
 Instead of asking the Eloi about something:
-	say "Try as you might you can't make the the Eloi understand what you are asking about. Some of them laugh at your strange pronunciations while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
+	say "Try as you might you can't make the Eloi understand what you are asking about. Some of them laugh at your strange pronunciations while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
 	[say "ASKING [noun] about [second noun]." [second noun = nothing in this example because it is not an object. See Writing §12.20. Stored actions]]
 
 Instead of giving something to the Eloi:
@@ -1650,11 +1650,33 @@ Weena Gives You Flower begins when the pocket watch is open.
 
 When Weena Gives You Flower begins:
 	[say "WEENA GIVES YOU FLOWER BEGINS.";]
-	say "Suddenly, Weena presses the watch's fob and the cover springs open, revealing the hands within. She stares at the second hand making its way arond the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers.[paragraph break]Snapping the watch shut she hands it back to you and nods her head. She looks at the petal in your hand and, reaching up into her hair she removes a single flower and hands it to you before running off. The rest of the Eloi follow her and soon you are alone again.";
+	say "Suddenly, Weena presses the watch's fob and the cover springs open, revealing the hands within. She stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers.[paragraph break]Snapping the watch shut she hands it back to you and nods her head."; 
+	[She looks at the petal in your hand and, reaching up into her hair she removes a single flower and hands it to you before running off. The rest of the Eloi follow her and soon you are alone again.";]
+	[now the Eloi are nowhere;
+	now Weena is nowhere;]
+	now the player is carrying the pocket watch.
+	[now the player is carrying the flower.]
+
+Instead of asking Weena about something:
+	say "Try as you might you can't make Weena understand what you are asking about. At times she laughs at your strange pronunciations." 
+
+Instead of giving something to Weena:
+	say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, passes it around the small group gathered until the [noun] is returned to you."
+
+Instead of giving the pocket watch to Weena:
+	say "She looks at the pocket watch, smiles, and then returns it to you."
+
+Instead of showing something to Weena: [Handles both > show fuse to eloi and > show eloi the fuse]
+	say "Weena looks at the [noun] with a degree of puzzlement on her face but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
+
+Instead of showing the pocket watch to Weena:
+	say "She cocks her head and smiles back at you, waiting."
+
+Instead of showing the petal to Weena:
+	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. The rest of the Eloi follow her and soon you are alone by the river.";
+	now the player is carrying the flower;
 	now the Eloi are nowhere;
-	now Weena is nowhere;
-	now the player is carrying the pocket watch;
-	now the player is carrying the flower.
+	now Weena is nowhere.
 
 Weena Gives You Flower ends when the player has the flower.
 

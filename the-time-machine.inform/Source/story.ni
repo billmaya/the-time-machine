@@ -8,7 +8,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 17844 ] 
+[WORDS - 18216 ] 
 
 Book 1 - Beginning The Story
 
@@ -151,9 +151,12 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	Going south in Woking Street is wandering.
 	Going southwest in Woking Street is wandering.
 	
-	[TBD Put all this on one line before release]
-	[TBD Change the [purely at random]s to something else?]
 	Instead of wandering:
+		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider.[line break][line break]You really should get inside since you're not dress appropriately for this winter weather."
+		
+	[TBD Put all this on one line before release]	
+	[TBD Change the [purely at random]s to something else?]
+	[Instead of wandering:
 		say "You start walking away from the front door towards 
 			[if the noun is west]the intersection
 			[else if the noun is east]
@@ -169,7 +172,8 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 			[line break]
 			[line break]
 			You really should get inside since you're not dress appropriately for this winter weather."
-			
+	]
+	
 	The houses are scenery in Woking Street.
 	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights has gone off as those residents have gone back to sleep.[only]"
 	
@@ -977,7 +981,7 @@ The time machine is a thing.
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-The description of time machine is "TBD-TIME MACHINE DESCRIPTION."
+The description of time machine is "Approximately the size of the the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a simple bicycle saddle for the occupant to sit on and a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
 Understand "mechanism" or "device" or "temporal" as time machine.
 
 The control panel is a device.
@@ -1250,7 +1254,7 @@ After telling Humboldt about "time travel":
 	say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";
 	follow Patience rules.
 
-Understand "the future" as 802701. [This doesn't work]
+[Understand "the future" as 802701. [This doesn't work]]
 After telling Humboldt about "802701":
 	say "Humboldt listens about your adventures in the year 802,701 with a [patience of Humboldt] look on his face.";
 	follow Patience rules.
@@ -1651,11 +1655,7 @@ Weena Gives You Flower begins when the pocket watch is open.
 When Weena Gives You Flower begins:
 	[say "WEENA GIVES YOU FLOWER BEGINS.";]
 	say "Suddenly, Weena presses the watch's fob and the cover springs open, revealing the hands within. She stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers.[paragraph break]Snapping the watch shut she hands it back to you and nods her head."; 
-	[She looks at the petal in your hand and, reaching up into her hair she removes a single flower and hands it to you before running off. The rest of the Eloi follow her and soon you are alone again.";]
-	[now the Eloi are nowhere;
-	now Weena is nowhere;]
 	now the player is carrying the pocket watch.
-	[now the player is carrying the flower.]
 
 Instead of asking Weena about something:
 	say "Try as you might you can't make Weena understand what you are asking about. At times she laughs at your strange pronunciations." 
@@ -1666,7 +1666,7 @@ Instead of giving something to Weena:
 Instead of giving the pocket watch to Weena:
 	say "She looks at the pocket watch, smiles, and then returns it to you."
 
-Instead of showing something to Weena: [Handles both > show fuse to eloi and > show eloi the fuse]
+Instead of showing something to Weena: [Handles both > show fuse to weena and > show weena the fuse]
 	say "Weena looks at the [noun] with a degree of puzzlement on her face but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
 
 Instead of showing the pocket watch to Weena:

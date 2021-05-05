@@ -21,7 +21,7 @@ Wells struggles against the two burly orderlies who try and drag him into the ho
 
 'Save her,' he says, his voice hoarse, his eyes pleading. 'Save Weena for me. You're my only hope.'
 
-Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there Wells. Of course we'll help this 'Wanna.' But first you need to get some rest. Clear your head. Get some perspective on the situation.'
+Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we'll help this 'Wanna.' But first you need to get some rest. Clear your head. Get some perspective on the situation.'
 
 'Weena, you fool! Weena!' He twists towards you, attempting to get away from Humboldt. 'I'm not crazy. The Morlocks are going to try and kill her. Use the time machine in my workshop to save her. I've got the key...'
 
@@ -58,12 +58,13 @@ Chapter 2 - Instead-Of Rules
 Section 1 - Waiting
 
 Instead of waiting: say 
-	"[if location is Woking Street]You shiver in the cold wind, drawing your light jacket closer around you. You really should get inside since you're not dressed appropriately for this winter weather
+	"[if location is Woking Street]You shiver in the cold wind, drawing your light jacket closer around you. You really should get inside since you're not dressed appropriately for this winter weather.
 	[otherwise]Time passes."
 
 Section 2 - Up
 
 Instead of going up in Woking Street: say "You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside."
+
 Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
 
 [TBD - Mrs. Watchett should wander away if you go "up" in the Entryway.]
@@ -152,7 +153,7 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	Going southwest in Woking Street is wandering.
 	
 	Instead of wandering:
-		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider.[line break][line break]You really should get inside since you're not dress appropriately for this winter weather."
+		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider.[line break][line break]You really should get inside since you're not dressed appropriately for this winter weather."
 		
 	[TBD Put all this on one line before release]	
 	[TBD Change the [purely at random]s to something else?]
@@ -171,7 +172,7 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 				makes you reconsider.
 			[line break]
 			[line break]
-			You really should get inside since you're not dress appropriately for this winter weather."
+			You really should get inside since you're not dressed appropriately for this winter weather."
 	]
 	
 	The houses are scenery in Woking Street.
@@ -206,7 +207,7 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	[TBD How do you make a door a supporter, i.e. The address is on the front door. "If a supporter were a kind of a door or vice versa there'd be no problem, but they aren't." See Writing §3.5]
 	
 	The knocker is scenery in Woking Street.
-	The description of the knocker is "Made of brass, this door knocker is in the shape of a sundial. By virtue of its unique design is stands out among all the unexceptional, cast iron lions heads, faces, or simple rings that adorn every other door on the street. It is unique, custom made, the only one of its kind in the entire city, probably the world, and always brings a smile to your face since it reflects the temporal obsessions of your friend who lives at this address."
+	The description of the knocker is "Made of brass, this door knocker is in the shape of a sundial. By virtue of its unique design it stands out among all the unexceptional, cast iron lions heads, faces, or simple rings that adorn every other door on the street. It is unique, custom-made, the only one of its kind in the entire city, probably the world, and always brings a smile to your face since it reflects the temporal obsessions of your friend who lives at this address."
 	
 	The sundial is scenery in Woking Street.
 	The sundial is a supporter.
@@ -270,6 +271,7 @@ The ambulence is a thing in Woking Street.
 The description of the ambulence is "Horse-drawn, the ambulence resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, attendents, and doctor."
 The ambulence is fixed in place.
 The ambulence is undescribed.
+Understand "ambulance" as ambulence.
 
 Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
 
@@ -293,7 +295,7 @@ The metal key unlocks the workshop-door.
 
 Instead of examining the metal key: 
 	if watchett-key is true: 
-		say "Bending down you brush the snow away to reveal a small metallic key. Picking it up you put it in your pocket.";
+		say "Bending down, you brush the snow away to reveal a small metallic key. Picking it up, you put it in your pocket.";
 		now the player is carrying the metal key;
 	otherwise: 
 		say "Perhaps the extreme cold is affecting your mental faculties. You can't see anything like that in front of you."
@@ -309,7 +311,7 @@ The description of the petal is "You can't tell much from a single petal except 
 Chapter 2 - Entryway
 
 The Entryway is a room. 
-The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear low sounds of conversation under a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
+The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear sounds a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
 	
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor. You have to admit, you haven't ever been up there."
@@ -334,7 +336,7 @@ The Library is a room.
 The Library is west of the Entryway. 
 The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [periodicals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
 
-Against the south wall is a small [desk] for notetaking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. A doorway leads north."
+Against the south wall is a small [desk] for note-taking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. A doorway leads north."
 
 The shelves are a thing.
 The shelves are scenery in the Library.
@@ -541,7 +543,7 @@ The Garden Door is east of the Parlor and west of the Garden.
 The Garden Door is a door. 
 The Garden Door is openable and lockable.
 The Garden Door is scenery.
-The description of Garden Door is "[if location is Parlor]A set of glass doors and stone steps lead down into a snow-covered garden.[otherwise]A set up stone steps lead up to glass doors and the inside of the house."
+The description of Garden Door is "[if location is Parlor]A set of glass doors and stone steps lead down into a snow-covered garden.[otherwise]A set of stone steps lead up to glass doors and the inside of the house."
 
 Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
@@ -594,7 +596,7 @@ The pocket watch is on the small table.
 The pocket watch is undescribed.
 The pocket watch can be open or closed. The pocket watch is closed.
 Understand "timepiece" or "chronometer" as pocket watch.
-The description of the pocket watch is "Wells' pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanged with the moving hands and it's winding mechanism."
+The description of the pocket watch is "Wells[apostrophe] pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanted with the moving hands and its winding mechanism."
 
 [DEL him placing it here before telling his amazing tale. "]
 
@@ -610,8 +612,8 @@ The armchairs are things.
 The armchairs are scenery in the Parlor.
 The armchairs are supporters.
 The armchairs are enterable.
-Understand "armchair" or "chair" as armchairs.
-The description of the armchairs are "Like the library chair they are covered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especial positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]."
+Understand "armchair" or "chair"  or "chairs" as armchairs.
+The description of the armchairs are "Like the library chair they are covered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especially positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]"
 
 [> sit in armchair (Which armchair will you sit in? Random?)]
 Instead of entering the armchairs:
@@ -677,7 +679,7 @@ Chapter 6 - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description of the Dining Room is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of it's kind in the entire city, fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals.[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[end if]"
+The description of the Dining Room is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of its kind in the entire city, which fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals.[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[end if]"
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
@@ -720,7 +722,7 @@ The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tb
 The orrery is scenery on the dining table.
 The orrery is a device.
 The orrery is switched off.
-The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs.On it’s flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only][paragraph break]There is a switch on the long side of the box and, next to it,[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanisms of the box are on display.[end if]" 
+The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs. On its flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only][paragraph break]There is a switch on the long side of the box and, next to it,[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanisms of the box are on display.[end if]" 
 
 [^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
 
@@ -736,7 +738,7 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
-	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than than one item, it's all one big mysterious conglomoration to you[first time], probably like one of legal documents you usually write up for your clients[only].";
+	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than one item, it's all one big mysterious conglomeration to you[first time], probably like one of legal documents you usually write up for your clients[only].";
 	now the sliding panel is open;
 	now the fuse is in the sliding panel.
 
@@ -763,7 +765,7 @@ Understand "flip [a switched on device]" as switching off.
 Instead of switching on the orrery's switch:
 	if the fuse is in the sliding panel in the Dining Room:
 		if the sliding panel is open: 
-			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital postion around the Sun on the surface display.";
+			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
 		otherwise:
 			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptabley, the planets on the surface begin their endless journey around the Sun.";
 		now the orrery's switch is switched on;
@@ -868,7 +870,7 @@ Understand "workshop windows" or "window" as windows.
 Instead of searching the windows: [Recipe §3.6 Windows]
 	if light switch is switched on:
 		if the player is in the Garden:
-			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down the east side of the room, a large blackboard covereed the entire west wall, and a strange mechanical device in the center of the room.";
+			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down the east side of the room, a large blackboard covers the entire west wall, and a strange mechanical device is in the center of the room.";
 			now the player is on the bench;
 			stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]
 		if the player is in the Workshop:
@@ -914,7 +916,7 @@ Understand "bench" as workbench.
 
 The tools are a thing.
 The tools are scenery in the Workshop.
-The description of tools is "Enough equipment for any crazy experiment Wells could dream up. Hand tools of all types and function scattered across the workbench or handging on the wall. What appears to be a very complicated lathe sits next to a forge for smelting metals."
+The description of tools is "Enough equipment for any crazy experiment Wells could dream up. Hand tools of all types and various functions scattered across the workbench or hanging on the wall. What appears to be a very complicated lathe sits next to a forge for smelting metals."
 	
 The papers are a thing.
 The papers are scenery in the Workshop.
@@ -924,7 +926,7 @@ The description of papers is "You look through the handwritten pages scattered a
 
 The materials are a thing.
 The materials are scenery in the Workshop.
-The description of materials is "Raw materials for Wells' 'experiments' stacked throughout the room and piled on and under the workbench. Metal plates, rods, and alloys in all shape and sizes. A huge supply of chemicals and minerals, enough to stock a pharmacist's shop. Hundreds of connectors and screws and fasteners. Batteries and wires and power sources you can't even begin to fathom how they are used."
+The description of materials is "Raw materials for Wells[apostrophe] 'experiments' stacked throughout the room and piled on and under the workbench. Metal plates, rods, and alloys in all shapes and sizes. A huge supply of chemicals and minerals, enough to stock a pharmacist's shop. Hundreds of connectors and screws and fasteners. Batteries and wires and power sources you can't even begin to fathom how they are used."
 Understand "battery" or "batteries" or "wires" or "connectors" or "screws" or "fasteners" or "plates" or "rods" or "alloys" or "chemicals" or "minerals" as materials.
 
 The blackboard is a thing.
@@ -933,7 +935,7 @@ The description of the blackboard is "Spanning the entire west wall, it is cover
 
 The equations are a thing.
 The equations are scenery in the Workshop.
-The description of equations are "You honestly don't know where to start. The writing starts at the left and get increasing complex as you move to the right, but,  quite frankly, it's all Greek to you (you never had much of a head for Hellenic Indo-European languages, you're a Latin man)."
+The description of equations are "You honestly don't know where to start. The writing starts at the left and get increasing complex as you move to the right, but, quite frankly, it's all Greek to you (you never had much of a head for Hellenic Indo-European languages, you're a Latin man)."
 
 The diagrams are a thing.
 The diagrams are scenery in the Workshop.
@@ -965,10 +967,11 @@ Understand "plans" or "sheets" as blueprints.
 
 examined-blueprints is a truth state that varies.
 examined-blueprints is false.
-
+[TBD Missing blank line after paragraph below?]
+[TBD is [em] not valid for em-dashes?]
 Instead of examining the blueprints:
 	if the player does not have the fuse:
-		say "Spreading out the individual sheets you see that these plans are a one-to-one match for Wells' time machine in the center of the room. While you can identify each actual assemblage to its blueprint counterpart, the names associated with them on the blueprints—plattnerite rods, chronometric dials—make no sense. In fact, the only object you can identify with any surety is the bicycle saddle in the center of the machine where the operator sits. ";
+		say "Spreading out the individual sheets you see that these plans are a one-to-one match for Wells[apostrophe] time machine in the center of the room. While you can identify each actual assemblage to its blueprint counterpart, the names associated with them on the blueprints—plattnerite rods, chronometric dials—make no sense. In fact, the only object you can identify with any surety is the bicycle saddle in the center of the machine where the operator sits. ";
 	if the player has the fuse:
 		say "Spreading out the individual sheets you see the plans mirror Wells' time machine in the center of the room. While you cannot fathom the function of some of the components—chronometric dials, plattnerite rods—one item stands out, the fuse you took from the orrery.";
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
@@ -1037,7 +1040,7 @@ Instead of examining the time machine:
 			if examined-blueprints is true:
 				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
 			otherwise:
-				say "According to the blueprints and Wells' statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens, you have no clue about how to activate it or what the next steps might be.".
+				say "According to the blueprints and Wells' statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens; you have no clue about how to activate it or what the next steps might be.".
 
 [Writing §9.13. The past and perfect tenses]
 
@@ -1059,7 +1062,7 @@ Instead of examining the time machine:
 Instead of inserting the fuse into the time machine:
 	if the player has the fuse:
 		if examined-blueprints is true:
-			say "You snap the fuse into its appointed slot. With an imperceptable hum the time machine powers up. Lights appear on the control panel, probably indicating that it is ready to activate.";
+			say "You snap the fuse into its appointed slot. With an imperceptible hum, the time machine powers up. Lights appear on the control panel, probably indicating that it is ready to activate.";
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
@@ -1096,10 +1099,12 @@ Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper"
 Section 1 - Conversation
 
 [See Writing §7.6. Reading and talking]
-Instead of asking Watchett about "wells": say "Working too hard on his experiments, he is. Did the doctor say he would be all right."
+Instead of asking Watchett about "wells": say "Always working too hard on his experiments, he is. Did the doctor say he would be all right?"
+[TBD asking Watchett about "experiments" - don't mention the "workshop door" or change reply]
 Instead of asking Watchett about "experiments": say "'Everything that was done was behind that door.' She points to the workshop door."
 Instead of asking Watchett about "workshop door": say "Locked. Always locked. Only Mr. Wells has the key."
 Instead of asking Watchett about "front door": say "Much too cold to be outside the way you're dressed. Best you warm up by the fire first."
+[TBD - Modify or remove?]
 Instead of asking Watchett about "door": say "A puzzled look on her face, Mrs. Watchett looks at both the front door and the workshop door, trying to understand which door you're asking about."
 
 [See Writing §11.5. Conditions and question ]
@@ -1107,7 +1112,7 @@ watchett-key is a truth state that varies.
 watchett-key is false.
 
 Instead of asking Watchett about "key": 
-	say "Always kept it on his person. That's where it still must be.";
+	say "'Mr. Wells always kept it on his person. That's where it still must be.'";
 	now watchett-key is true.
 
 Section 2 - Movement
@@ -1300,7 +1305,7 @@ Travel To 802,701 begins when the time machine is in the Workshop and player is 
 
 When Travel To 802,701 begins:
 	[say "TRAVELING TO 802,701 BEGINS.";]
-	say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.[paragraph break]Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.[paragraph break]The pecurliar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merges into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.[paragraph break]After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replace by what appears to be an eternal spring as the machine slows even more. 'The earth seems very fair' is the first conscious thought that your remember thinking as the machine slows down further and comes to a stop.[paragraph break]You have arrived.";
+	say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.[paragraph break]Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.[paragraph break]The peculiar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merge into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.[paragraph break]After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replaced by what appears to be an eternal spring as the machine slows even more. 'The earth seems very fair' is the first conscious thought that you remember thinking as the machine slows down further and comes to a stop.[paragraph break]You have arrived.";
 	now the time machine is in the Clearing;
 	now the time machine is described;
 	now the control panel is switched off.
@@ -1329,8 +1334,8 @@ Travel To 1895 is a scene.
 Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the control panel is switched on.
 
 When Travel To 1895 begins:
-	say "TRAVEL TO 1895 BEGINS.";
-	say "The clearing becomes hazy and dark and the rapidly alternating cycle of night and day becomes a continuous greyness as the machine hurtles back in time. The murmer in your ears and the confusedness in your mind are not as bad as the last time. The dials spin backwards, years melting away in seconds as the machine's operation reaches a crescendo and slows down as you approach your starting point.[paragraph break]You are back.";
+	[say "TRAVEL TO 1895 BEGINS.";]
+	say "The clearing becomes hazy and dark and the rapidly alternating cycle of night and day becomes a continuous greyness as the machine hurtles back in time. The murmur in your ears and the confusedness in your mind are not as bad as the last time. The dials spin backwards, years melting away in seconds as the machine's operation reaches a crescendo and slows down as you approach your starting point.[paragraph break]You are back.";
 	now the time machine is in the Workshop;
 	now the control panel is switched off.
 
@@ -1432,7 +1437,7 @@ Chapter 2 - Sphinx Steps
 
 The Sphinx Steps are a room.
 The Sphinx Steps are up from the Clearing.
-The description of the Sphinx Steps is "The set of stone steps winds its way around the [ziggurat] until you are above the treetops, plateauing  in front of a two large closed [stone doors] set into a [pedestal]. On the pedestal is a carved [statue] of a sphinx, its impassive face surveying a countryside you cannot see, its outstreatched wings poised to take flight against some unknown prey.[paragraph break]In the distance you can see a domed building to the east and, beyond it, other gagantuan buildings of stone. Also at this height, you can see a path down below winding its way southeast to a river in the distance."
+The description of the Sphinx Steps is "The set of stone steps winds its way around the [ziggurat] until you are above the treetops, plateauing  in front of two large closed [stone doors] set into a [pedestal]. On the pedestal is a carved [statue] of a sphinx, its impassive face surveying a countryside you cannot see, its outstretched wings poised to take flight against some unknown prey.[paragraph break]In the distance you can see a domed building to the east far below and, beyond it, other gargantuan buildings of stone. Also at this height, you can see a path down below winding its way southeast to a river in the distance."
 
 The printed name of Sphinx Steps are "Top of Sphinx Steps"
 
@@ -1443,7 +1448,7 @@ Understand "pyramid" as ziggurat.
 
 The stone doors are a thing.
 The stone doors are scenery in the Sphinx Steps.
-The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The door themselves are carved with line after line of mechanical cuneiform and bas relief mongoloid figures marching down a successive set of ramps to an unpictured subterranean destination."
+The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The doors themselves are carved with line after line of mechanical cuneiform and bas relief mongoloid figures marching down a successive set of ramps to an unpictured subterranean destination."
 
 [The sacrificial alter is a thing.
 The sacrificial alter is scenery in the Sphinx Steps.
@@ -1524,7 +1529,7 @@ Chapter 6 - Inside Dome
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 
-The description of Inside Dome is "Sunlight streams through the dome's [oculus], illuminating the room below. Low stone [tables] are arranged symmetrically throughout the room, surround a central [well] underneath the dome's apex. Mosaic [murals] cover the walls. Sunlight streams through an archway to the south and the exit of the building is to the west."
+The description of Inside Dome is "Sunlight streams through the dome's [oculus], illuminating the room below. Low stone [tables] are arranged symmetrically throughout the room, surrounding a central [well] underneath the dome's apex. Mosaic [murals] cover the walls. Sunlight streams through an archway to the south and the exit of the building is to the west."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 
@@ -1535,7 +1540,7 @@ Understand "apex" as oculus.
 
 The tables are a thing.
 The tables are scenery in the Inside Dome.
-The description of the tables are "The low-slung metal tables are arranged in a circular pattern around the well, designed for kneeling or sitting. It looks like each circular table can seat eight or twelve people. A slight circular depresssion in the center of each table about four feet in diameter looks like it serves as a container for something."
+The description of the tables are "The low-slung metal tables are arranged in a circular pattern around the well, designed for kneeling or sitting. It looks like each circular table can seat eight or twelve people. A slight circular depression in the center of each table about four feet in diameter looks like it serves as a container for something."
 Understand "circular" or "container" or "depression" as tables.
 
 The well is a thing.
@@ -1556,7 +1561,7 @@ Instead of drinking the water, say "You cup some water in your hand and take a q
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
-The description of the murals are "Circling the entire dome wall except for the entrances and exists, the pictorial cyclorama displays a day-to-night series of idealized pastoral scenes of a leisurely life. In the various [mosaics], tunicked figures gather fruit, bath in the river, pick flowers, wander the countryside, and eat, dance, and play in the sunlight. In the dusk scenes you can make out shadowy figures in the background spying on the childish figures in the foreground, hidden in the undergrowth and shadow. Each mural has a title, written in a strange Arabic script that you cannot decipher."
+The description of the murals are "Circling the entire dome wall except for the entrances and exits, the pictorial cyclorama displays a day-to-night series of idealized pastoral scenes of a leisurely life. In the various [mosaics], tunicked figures gather fruit, bathe in the river, pick flowers, wander the countryside, and eat, dance, and play in the sunlight. In the dusk scenes you can make out shadowy figures in the background spying on the childish figures in the foreground, hidden in the undergrowth and shadow. Each mural has a title, written in a strange Arabic script that you cannot decipher."
 Understand "cyclorama" or "mural" as murals.
 
 The mosaics are a thing.
@@ -1585,7 +1590,7 @@ The Eloi are in the River.
 The Eloi are fixed.
 The description of the Eloi is "Just as Wells described them, the Eloi are short, about four feet high, slight, and dressed in tunics belted at the waist and wearing buskins on their feet. The similarity of their features and builds makes it hard to determine individual gender but with some effort you can tell the men from the women. Actually, boys from girls would be better terms to use given their apparent stature, age, and demeanor. 
 
-The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  You can even see, to your horror, a few couples of both genders in the bushes involved in purient matters."
+The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  You can even see, to your horror, a few couples of both genders in the bushes involved in prurient matters."
 
 ["As you move among them, your clothes and your height bring attention to yourself..."]
 
@@ -1626,7 +1631,7 @@ Section 1 - Flower
 
 The flower is a thing.
 The flower is nowhere.
-The description of the flower is "Unlike any vegetation you've ever seen, the petal the Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
+The description of the flower is "Unlike any vegetation you've ever seen, the petal that Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
 
 Section 2 - Introduction Of Weena
 
@@ -1636,7 +1641,7 @@ Introduction Of Weena begins when the Eloi is carrying the pocket watch. [or the
 
 When Introduction Of Weena begins:
 	[say "INTRODUCTION TO WEENA BEGINS.";]
-	say "Suddenly a young girl appears, differing from the other Eloi in demanor. She seems older though she looks to be the same age as the others and carries herself with a bit more bearing. This must be Wells[apostrophe] Weena.[paragraph break]She gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, remembering.";
+	say "Suddenly a young girl appears, differing from the other Eloi in demeanor. She seems older though she looks to be the same age as the others and carries herself with a bit more bearing. This must be Wells[apostrophe] Weena.[paragraph break]She gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, remembering.";
 	now Weena is in the River;
 	now Weena is carrying the pocket watch;
 	now the pocket watch is open.

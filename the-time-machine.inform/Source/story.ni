@@ -84,8 +84,13 @@ Chapter 4 - Conversation
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
 
 [Understand "talk to [someone] about [something]" as a mistake ("AUTOMATICALLY TRY THIS AS 'ask someone about something'").]
+[The "talk to [someone] about [something] as a mistake" line above doesn't work like I I want it to.
 
-[Instead of telling someone about something, try asking someone about it.] [<- "asking someone about it" is too vague to describe a specific action, according to compiler]
+ > talk to humboldt about wells returns "You can't see any such thing."
+ > talk to humboldt about ambulance returns the "AUTOMATICALLY TRY..." text
+
+The [something] has to exist for the 2nd part of the Understand/as a mistake statement to be reached. Wells doesn't exist in the game but the ambulence does.]
+
 
 Chapter 5 - Tests
 
@@ -201,7 +206,8 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	
 	[TBD - More detailed description of front door? See Victorian doors https://bit.ly/3rOzQkZ and https://bit.ly/3b0ymNP]
 	
-	Before going north in Woking Street: 
+Before going north in Woking Street: 
+	if Humboldt is not nowhere:
 		say "Humboldt snaps his pocket watch shut and starts getting into the ambulence. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulence door shut. With the crack of the reins the ambulence starts off down the street, turns the corner, and disappears into the evening traffic.";
 		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
 		now the ambulence is nowhere;
@@ -992,7 +998,7 @@ Instead of examining the blueprints:
 
 Section 2 - The Time Machine
 	
-The time machine is a thing.
+The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
@@ -1180,9 +1186,15 @@ humboldt-endgame-begins is false.
 
 Section 1 - Conversation
 
-Instead of telling humboldt about something: [Writing §7.6. Reading and talking]
+[Instead of telling someone about something, try asking someone about it.] 
+[According to the compiler, "asking someone about it" is too vague to describe a specific action]
+
+Instead of telling Humboldt about something: [Writing §7.6. Reading and talking]
 	try asking humboldt about it.
 
+[DEL Instead of asking Humboldt about something:
+	say "THERE IS NO REPLY."]
+	
 Instead of asking Humboldt about "wells/madman/patient/lunatic": 
 	if humboldt-endgame-begins is false:
 		say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'";

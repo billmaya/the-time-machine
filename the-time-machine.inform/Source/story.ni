@@ -8,7 +8,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18216 ] 
+[WORDS - 18259 ] 
 
 Book 1 - Beginning The Story
 
@@ -52,6 +52,10 @@ Book 2 - Mechanics
 Chapter 1 - Extensions
 
 Include Basic Help Menu by Emily Short.
+Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
+
+After reading a command:
+resolve punctuated titles.
 
 Chapter 2 - Instead-Of Rules
 
@@ -75,7 +79,15 @@ Every turn:
 	if the player is in the Workshop and the player has the flower:
 		now humboldt-should-return is true.
 
-Chapter 4 - Tests
+Chapter 4 - Conversation
+
+Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
+
+[Understand "talk to [someone] about [something]" as a mistake ("AUTOMATICALLY TRY THIS AS 'ask someone about something'").]
+
+[Instead of telling someone about something, try asking someone about it.] [<- "asking someone about it" is too vague to describe a specific action, according to compiler]
+
+Chapter 5 - Tests
 
 [In the game type "> test" to see a list of all the available tests]
 
@@ -1098,6 +1110,9 @@ Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper"
 
 Section 1 - Conversation
 
+Instead of telling watchett about something: [Writing §7.6. Reading and talking]
+	try asking watchett about it.
+
 [See Writing §7.6. Reading and talking]
 Instead of asking Watchett about "wells": say "Always working too hard on his experiments, he is. Did the doctor say he would be all right?"
 [TBD asking Watchett about "experiments" - don't mention the "workshop door" or change reply]
@@ -1151,11 +1166,11 @@ Humboldt is a person.
 Humboldt is a male.
 Humboldt is fixed.
 Humboldt is in Woking Street.
-The description of Humboldt is "A reputable physician and alienist, he has known Wells for years. You are confident that his methodical nature and his diagnostic ability will get to the bottom of what ails Wells."
+The description of Humboldt is "A reputable physician and alienist, he has known Wells for years. You are confident that his methodical nature, combined with his diagnostic skills, will enable him to determine what ails your friend."
 
 The printed name of Humboldt is "Dr. Humboldt"
 
-Understand "doctor" or "physician" or "dr" or "psychologist" or "alienist" as Humboldt.
+Understand "doctor" or "physician" or "dr" or "psychologist" or "alienist" or "dr humboldt" as Humboldt.
 
 humboldt-should-return is a truth state that varies.
 humboldt-should-return is false.
@@ -1164,6 +1179,9 @@ humboldt-endgame-begins is a truth state that varies.
 humboldt-endgame-begins is false.
 
 Section 1 - Conversation
+
+Instead of telling humboldt about something: [Writing §7.6. Reading and talking]
+	try asking humboldt about it.
 
 Instead of asking Humboldt about "wells/madman/patient/lunatic": 
 	if humboldt-endgame-begins is false:

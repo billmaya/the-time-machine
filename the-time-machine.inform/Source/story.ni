@@ -8,7 +8,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18259 ] 
+[WORDS - 18445 ] 
 
 Book 1 - Beginning The Story
 
@@ -616,8 +616,6 @@ The pocket watch can be open or closed. The pocket watch is closed.
 Understand "timepiece" or "chronometer" as pocket watch.
 The description of the pocket watch is "Wells[apostrophe] pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanted with the moving hands and its winding mechanism."
 
-[DEL him placing it here before telling his amazing tale. "]
-
 Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"
 
 [The clock is a thing. [https://bit.ly/37AqP7s]
@@ -646,7 +644,6 @@ The description of the newspaper is "Today's newspaper, already read."
 [> examine newspaper vs. > read newspaper]
 [Recipe §9.6. Reading Matter]
 	
-[DEL Instead of reading the newspaper, say "You've already read it."]
 Instead of taking the newspaper, say "You've already read it."
 
 The small table is a thing.
@@ -1191,9 +1188,6 @@ Section 1 - Conversation
 
 Instead of telling Humboldt about something: [Writing §7.6. Reading and talking]
 	try asking humboldt about it.
-
-[DEL Instead of asking Humboldt about something:
-	say "THERE IS NO REPLY."]
 	
 Instead of asking Humboldt about "wells/madman/patient/lunatic": 
 	if humboldt-endgame-begins is false:

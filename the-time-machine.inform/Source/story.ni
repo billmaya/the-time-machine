@@ -1,5 +1,3 @@
-["The Time Machine" by Billy Tenenbaum]
-
 The story title is "The Time Machine".
 The story author is "Billy Tenenbaum".
 The story headline is "A Temporal Investigation".
@@ -8,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18848 ] 
+[WORDS - 18634 ] 
 
 Book 1 - Beginning The Story
 
@@ -184,26 +182,6 @@ Instead of searching the area:
 	
 	Instead of wandering:
 		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider.[line break][line break]You really should get inside since you're not dressed appropriately for this winter weather."
-		
-	[TBD Put all this on one line before release]	
-	[TBD Change the [purely at random]s to something else?]
-	[Instead of wandering:
-		say "You start walking away from the front door towards 
-			[if the noun is west]the intersection
-			[else if the noun is east]
-				[one of]the fountain
-				[or]the cul-de-sac
-				[purely at random]
-			[otherwise]one of the other houses[end if]
-			but a sudden 
-				[one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] 
-				[one of]gust[or]flurry[or]burst[or]blast[purely at random]
-				[one of]of wind[or]of snow[purely at random] 
-				makes you reconsider.
-			[line break]
-			[line break]
-			You really should get inside since you're not dressed appropriately for this winter weather."
-	]
 	
 	The houses are scenery in Woking Street.
 	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights has gone off as those residents have gone back to sleep.[only]"
@@ -321,9 +299,6 @@ Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they s
 Instead of searching the ambulence: try entering the ambulence.
 Instead of entering the ambulence: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
 
-	
-[DEL Instead of looking in the ambulence: try entering the ambulence.]
-
 Section 4 - The Workshop Key
 
 The metal key is a thing.
@@ -334,15 +309,6 @@ Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
 [The printed name of metal key is "workshop key".]
 The metal key unlocks the workshop-door.
-
-[Instead of examining the metal key: 
-	if watchett-key is true: 
-		say "Bending down, you brush the snow away to reveal a small metallic key. Picking it up, you put it in your pocket.";
-		now the player is carrying the metal key;
-	otherwise: 
-		say "Perhaps the extreme cold is affecting your mental faculties. You can't see anything like that in front of you."
-]
-
 		
 Section 5 - The Petal
 	

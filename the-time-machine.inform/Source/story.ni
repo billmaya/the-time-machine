@@ -8,7 +8,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18445 ] 
+[WORDS - 18562 ] 
 
 Book 1 - Beginning The Story
 
@@ -138,12 +138,27 @@ Part 1 - Settings
 Chapter 1 - Woking Street
 
 Woking Street is a room. 
-The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area of the street] directly in front of you[if ambulence is in Woking Street] where the ambulence is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
+The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area] of the street directly in front of you[if ambulence is in Woking Street] where the ambulence is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
 
-	The area of the street is scenery in Woking Street.
-	The description of the area of the street is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago.[if watchett-key is true][paragraph break]Something metallic catches your eye, almost buried under the rapidly falling snow.[otherwise][paragraph break]As you survey the area nothing catches your eye. Of course, it would help if you knew what you were looking for.[end if]"
+Understand "street" as Woking Street. [TBD <- fix it so > search street is recognized]
 
-	Understand "footsteps" or "carriage tracks" or "area" or "street area" as area of the street.
+	The area is scenery in Woking Street.
+	The area is a supporter.
+	The description of the area is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago.[if watchett-key is true][paragraph break]Something metallic catches your eye, almost buried under the rapidly falling snow.[otherwise][paragraph break]As you survey the area nothing catches your eye. Of course, it would help if you knew what you were looking for.[end if]"
+
+	Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" as area.
+
+	[> search area > search street]
+
+	Instead of searching the street:
+		try searching the area.
+
+Instead of searching the area:
+	if watchett-key is true:
+		say "Bending down, you brush the snow away to reveal a small metallic key. Picking it up, you put it in your pocket.";
+		now the player is carrying the metal key;
+	otherwise:
+		say "Despite the cold you bend down and survey the small patch of macadam but nothing catches your eye. Of course, it would help if you knew what you were looking for."
 
 	The gaslights are scenery in Woking Street. [coal gas https://bit.ly/3ijMeoV ] 
 	The description of the gaslights are "Incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which could be product of his overactive intellect, but you would miss the soft green glow of gassified coal that lights your nightime steps."
@@ -306,19 +321,20 @@ Section 1 - The Workshop Key
 The metal key is a thing.
 The metal key is in Woking Street.
 The metal key is undescribed.
+The description of metal key is "A small metal key that you can recall Wells carrying around everywhere he went."
 Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
 [The printed name of metal key is "workshop key".]
 The metal key unlocks the workshop-door.
 
-Instead of examining the metal key: 
+[Instead of examining the metal key: 
 	if watchett-key is true: 
 		say "Bending down, you brush the snow away to reveal a small metallic key. Picking it up, you put it in your pocket.";
 		now the player is carrying the metal key;
 	otherwise: 
 		say "Perhaps the extreme cold is affecting your mental faculties. You can't see anything like that in front of you."
+]
 
-[What about handling > search area ?]
 		
 Section 2 - The Petal
 	

@@ -304,7 +304,7 @@ Before going north in Woking Street:
 	Instead of using the gnomon: say "You reach out and raise the hinged gnomon several times and tap on the brass base underneath. The gentle 'tap, tap, tap' sound is almost lost in the wind but you are sure it is being heard clearly inside."
 	
 The ambulence is a thing in Woking Street.
-The description of the ambulence is "Horse-drawn, the ambulence resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, attendents, and doctor."
+The description of the ambulence is "Horse-drawn, the ambulence resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
 The ambulence is fixed in place.
 The ambulence is undescribed.
 Understand "ambulance" or "cab" as ambulence.
@@ -1334,7 +1334,22 @@ The patiences are accepting, tolerant, impatient, frustrated, angry.
 	
 Humboldt has patience. Humboldt is accepting.
 
-Chapter 3 - Gernsback 
+Chapter 3 - Orderlies
+
+The orderlies are people in Woking Street.
+The orderlies are undescribed.
+Understand "attendant" as orderlies.
+	
+Instead of examining the orderlies: say "They're out of sight, inside the ambulence with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulence against his will."
+
+Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulence against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
+
+Chapter 4 - Wells
+
+Wells is a person in Woking Street.
+Wells is undescribed.
+
+Chapter 5 - Gernsback 
 [https://bit.ly/3rYUPl8]
 
 [Gernsback is a person.

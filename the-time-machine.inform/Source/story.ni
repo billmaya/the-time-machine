@@ -8,7 +8,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18582 62 ] 
+[WORDS - 18848 ] 
 
 Book 1 - Beginning The Story
 
@@ -140,8 +140,6 @@ Chapter 1 - Woking Street
 Woking Street is a room. 
 The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area] of the street directly in front of you[if ambulence is in Woking Street] where the ambulence is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
 
-[Understand "street" as Woking Street.]
-
 	The area is scenery in Woking Street.
 	The area is a supporter.
 	The description of the area is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago.[if watchett-key is true][paragraph break]Something metallic catches your eye, almost buried under the rapidly falling snow.[otherwise][paragraph break]As you survey the area nothing catches your eye. Of course, it would help if you knew what you were looking for.[end if]"
@@ -149,9 +147,6 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" as area.
 
 	[> search street -> YCST https://bit.ly/3tvvi3z]
-
-	[DEL The street is scenery in Woking Street. [Instead of searching the street:]]
-	
 	[> search area]
 
 Instead of searching the area:
@@ -223,7 +218,9 @@ Instead of searching the area:
 	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
 	
 	[TBD - More detailed description of front door? See Victorian doors https://bit.ly/3rOzQkZ and https://bit.ly/3b0ymNP]
-	
+
+Section 1 - Humbolt Exit
+
 Before going north in Woking Street: 
 	if Humboldt is not nowhere:
 		say "Humboldt snaps his pocket watch shut and starts getting into the ambulence. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulence door shut. With the crack of the reins the ambulence starts off down the street, turns the corner, and disappears into the evening traffic.";
@@ -231,6 +228,8 @@ Before going north in Woking Street:
 		now the ambulence is nowhere;
 		now the player is carrying the Petal.	
 
+Section 2 - Front Door
+	
 	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains to one side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
 	
 	The address is a thing.
@@ -303,6 +302,14 @@ Before going north in Woking Street:
 	
 	Instead of using the gnomon: say "You reach out and raise the hinged gnomon several times and tap on the brass base underneath. The gentle 'tap, tap, tap' sound is almost lost in the wind but you are sure it is being heard clearly inside."
 	
+[Sundial links
+victorian	https://bit.ly/3tP1ssg
+image	https://bit.ly/371QTYW
+mottos	https://bit.ly/2Z7bRS4
+parts-of	https://bit.ly/3p83dwZ ]
+	
+Section 3 - Ambulence
+	
 The ambulence is a thing in Woking Street.
 The description of the ambulence is "Horse-drawn, the ambulence resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
 The ambulence is fixed in place.
@@ -310,18 +317,14 @@ The ambulence is undescribed.
 Understand "ambulance" or "cab" as ambulence.
 
 Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
-Instead of entering the ambulence: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
+
 Instead of searching the ambulence: try entering the ambulence.
+Instead of entering the ambulence: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
+
 	
 [DEL Instead of looking in the ambulence: try entering the ambulence.]
 
-[Sundial links
-victorian	https://bit.ly/3tP1ssg
-image	https://bit.ly/371QTYW
-mottos	https://bit.ly/2Z7bRS4
-parts-of	https://bit.ly/3p83dwZ ]
-
-Section 1 - The Workshop Key
+Section 4 - The Workshop Key
 
 The metal key is a thing.
 The metal key is in Woking Street.
@@ -341,7 +344,7 @@ The metal key unlocks the workshop-door.
 ]
 
 		
-Section 2 - The Petal
+Section 5 - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
@@ -1348,6 +1351,19 @@ Chapter 4 - Wells
 
 Wells is a person in Woking Street.
 Wells is undescribed.
+
+Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
+
+Section 1 - Rescuing
+
+Understand "save [someone]" as rescuing.
+
+Rescuing is an action applying to one visible thing.
+Understand "rescue [someone]" as rescuing.
+
+Instead of rescuing Wells: try entering ambulence.
+Instead of rescuing someone: say "It does not look like [the noun] is in need of any rescuing. But the thought is nice."
+
 
 Chapter 5 - Gernsback 
 [https://bit.ly/3rYUPl8]

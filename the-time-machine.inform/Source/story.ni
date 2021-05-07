@@ -8,7 +8,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18562 ] 
+[WORDS - 18582 62 ] 
 
 Book 1 - Beginning The Story
 
@@ -140,7 +140,7 @@ Chapter 1 - Woking Street
 Woking Street is a room. 
 The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area] of the street directly in front of you[if ambulence is in Woking Street] where the ambulence is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
 
-Understand "street" as Woking Street. [TBD <- fix it so > search street is recognized]
+[Understand "street" as Woking Street.]
 
 	The area is scenery in Woking Street.
 	The area is a supporter.
@@ -148,10 +148,11 @@ Understand "street" as Woking Street. [TBD <- fix it so > search street is recog
 
 	Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" as area.
 
-	[> search area > search street]
+	[> search street -> YCST https://bit.ly/3tvvi3z]
 
-	Instead of searching the street:
-		try searching the area.
+	[DEL The street is scenery in Woking Street. [Instead of searching the street:]]
+	
+	[> search area]
 
 Instead of searching the area:
 	if watchett-key is true:
@@ -159,6 +160,8 @@ Instead of searching the area:
 		now the player is carrying the metal key;
 	otherwise:
 		say "Despite the cold you bend down and survey the small patch of macadam but nothing catches your eye. Of course, it would help if you knew what you were looking for."
+
+	[Snow is handled in the Garden]
 
 	The gaslights are scenery in Woking Street. [coal gas https://bit.ly/3ijMeoV ] 
 	The description of the gaslights are "Incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which could be product of his overactive intellect, but you would miss the soft green glow of gassified coal that lights your nightime steps."
@@ -304,11 +307,13 @@ The ambulence is a thing in Woking Street.
 The description of the ambulence is "Horse-drawn, the ambulence resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, attendents, and doctor."
 The ambulence is fixed in place.
 The ambulence is undescribed.
-Understand "ambulance" as ambulence.
+Understand "ambulance" or "cab" as ambulence.
 
 Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
-
 Instead of entering the ambulence: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
+Instead of searching the ambulence: try entering the ambulence.
+	
+[DEL Instead of looking in the ambulence: try entering the ambulence.]
 
 [Sundial links
 victorian	https://bit.ly/3tP1ssg
@@ -692,7 +697,11 @@ The garden walls are scenery in the Garden.
 Understand "walls" as garden walls.
 
 The snow is a thing.
-The snow is scenery in the Garden.
+The snow is backdrop. It is in Woking Street and the Garden.
+The description of snow is "Microscopic flakes of all shapes and sizes [one of]float [or]whirl [or]drift [purely at random]down to cover the street and houses."
+
+Instead of taking snow:
+	say "You grab at a flake or two and watch it melt in your hand."
 
 The gate is a thing.
 The gate is scenery in the Garden.

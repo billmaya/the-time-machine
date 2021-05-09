@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18774 ]
+[WORDS - 18913 ]
 
 Book 1 - Beginning The Story
 
@@ -418,8 +418,6 @@ The library papers are a thing.
 The library papers are on the desk.
 The library papers are portable.
 The library papers are undescribed.
-[DEL The library papers are scenery on the desk.]
-[DEL The library papers are undescribed on the desk.]
 The printed name of library papers is "papers".
 
 Instead of searching the papers: try searching the desk.
@@ -441,14 +439,12 @@ Instead of opening the curtains, say "Pulling a curtain aside, you briefly look 
 
 Instead of pushing the curtains: try opening the curtains.
 Instead of searching the curtains: say "You look in the folds of the fabric but find nothing."
-[DEL "SEARCHING CURTAINS." ]
 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
 
 Section 1 - Reading - Books, Periodicals, Encyclopaedia
 
-[DEL Instead of examining books: say "EXAMINING BOOKS."]
 Instead of examining books: try taking books.
 Instead of examining periodicals: try taking periodicals.
 Instead of examining encyclopaedia: try taking encyclopaedia
@@ -458,10 +454,6 @@ Instead of searching the periodicals: try taking periodicals.
 Instead of searching encyclopaedia: try taking encyclopaedia.
 
 Instead of searching the shelves: say "A frequent visitor, the items on the shelf are vaguely familiar, though nothing really catches your interest."
-[DEL Instead of searching the shelves: say "SEARCHING SHELVES."]
-[DEL Instead of searching the shelves: try taking something.]
-[DEL Instead of searching the shelves: say "You scan the shelves but none of the books or periodicals looks familiar. Given Wells[apostrophe] interests you expect this."]
-[DEL	You would probably have to take something to examine it in more detail."]
 
 [Maybe don't make it random but chose a new one each time and never choose the same one twice?]
 Instead of taking something in the Library:

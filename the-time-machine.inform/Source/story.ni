@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18913 ]
+[WORDS - 19024 ]
 
 Book 1 - Beginning The Story
 
@@ -28,6 +28,8 @@ Wells starts fumbling in one of his vest pockets as Humboldt nods to the two ord
 'Don't worry,' he says, consulting his pocket watch. 'They're professionals. Used to this kind of stuff all the time. They're not as rough as they look.'"
 
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
+
+Chapter 1 - Check For Missing Item Descriptions
 
 [Checks for missing item descriptions]
 [
@@ -384,16 +386,19 @@ Bookness is a kind of value. The booknesses are reference, magazine, and hardcov
 The books are a thing. [What if some of the books are from the future?]
 The books have a bookness called type. The type of the books is hardcover.
 The books are scenery on the shelves.
+The description of books is "BOOKS DESCRIPTION." [Should not be displayed because of > examine books code in Section 1 below (included to keep books from showing up when Missing Item Description code is run).]
 Understand "book" as books.
 
 The periodicals are a thing.
 The periodicals have a bookness called type. The type of the periodicals is magazine.
 The periodicals are scenery on the shelves.
+The description of periodicals is "PERIODICALS DESCRIPTION." [Should not be displayed becuase of > examine periodicals code in Section 1 below (included to keep periodicals from showing up when Missing Item Description code is run).]
 Understand "magazine" or "magazines" as periodicals.
 
 The encyclopaedia are a thing.
 The encyclopaedia are scenery on the shelves.
 The encyclopaedia has a bookness called type. The type of the encyclopaedia is reference.
+The description of encyclopaedia is "ENCYCLOPAEDIA DESCRIPTION." [Should not be displayed becuase of > examine encyclopaedia code in Section 1 below (included to keep encyclopaedia from showing up when Missing Item Description code is run).]
 Understand "encyclopedia" or "encyclopaediae" or "encyclopedias" as encyclopaedia.
 
 [Writing §16.16. Defining things with tables - Thought I had to use this code but didn't have to]
@@ -589,7 +594,7 @@ Chapter 4 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal [fire] blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking. Leaning against the fireplace is a [poker]. Today's [newspaper] sits on one of the armchairs. On top of a small table against the east wall is a [pocket watch]. A set of glass doors to the east lead outside to the garden."
+The description of the Parlor is "A coal [fire] blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Today's [newspaper] sits on one of the armchairs.[if pocket watch is on the small table in Parlor] On top of a small table against the east wall is a [pocket watch].[end if] A set of glass doors to the east lead outside to the garden and the room continues to the north."
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
@@ -622,6 +627,8 @@ Instead of using the fire:
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
 
+Section 1 - Poker
+
 The poker is a thing. [https://bit.ly/3sczKUx]
 The poker is undescribed in the Parlor.
 Understand "fire iron" or "fire hook" as poker.
@@ -642,6 +649,8 @@ Instead of using the poker:
 [The mantle is a thing.
 The mantle is scenery in the Parlor.
 The mantle is a supporter.]
+
+Section 2 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is on the small table.

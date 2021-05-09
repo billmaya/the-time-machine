@@ -328,7 +328,7 @@ The description of the petal is "You can't tell much from a single petal except 
 Chapter 2 - Entryway
 
 The Entryway is a room. 
-The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear the faint wsounds a crackling fire. Down a short hallway to the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
+The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear the faint sounds of a crackling fire. Down a short hallway to the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
 	
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor. You have to admit, you haven't ever been up there."

@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18692 ] 
+[WORDS - 18774 ]
 
 Book 1 - Beginning The Story
 
@@ -82,7 +82,7 @@ Chapter 4 - Conversation
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
 
 [Understand "talk to [someone] about [something]" as a mistake ("AUTOMATICALLY TRY THIS AS 'ask someone about something'").]
-[The "talk to [someone] about [something] as a mistake" line above doesn't work like I I want it to.
+[The "talk to [someone] about [something] as a mistake" line above doesn't work like I want it to.
 
  > talk to humboldt about wells returns "You can't see any such thing."
  > talk to humboldt about ambulance returns the "AUTOMATICALLY TRY..." text
@@ -90,7 +90,19 @@ Understand "talk to [someone]" as a mistake ("To start a conversation, try to AS
 The [something] has to exist for the 2nd part of the Understand/as a mistake statement to be reached. Wells doesn't exist in the game but the ambulence does.]
 
 
-Chapter 5 - Tests
+Chapter 5 - Take All
+
+[https://bit.ly/3xV8H3P]
+
+Rule for deciding whether all includes a thing when taking: it does not.
+Rule for deciding whether all includes a thing when removing from: it does not.
+
+[This changes the default message “There are none at all available!”]
+Rule for printing a parser error when the latest parser error is the nothing to do error:
+	say “Grabbing for everything at once isn't going to help your investigation one bit. A methodical, measured approach is called for.”
+
+
+Chapter 6 - Tests
 
 [In the game type "> test" to see a list of all the available tests]
 

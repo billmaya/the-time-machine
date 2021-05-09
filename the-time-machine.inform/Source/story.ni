@@ -280,6 +280,15 @@ Section 2 - Front Door
 	
 	Instead of using the gnomon: say "You reach out and raise the hinged gnomon several times and tap on the brass base underneath. The gentle 'tap, tap, tap' sound is almost lost in the wind but you are sure it is being heard clearly inside."
 	
+	After going north through the front door:
+		now the front door is closed;
+		continue the action.
+	
+	After going south through the front door:
+		now the front door is closed;
+		continue the action.
+		
+	
 [Sundial links
 victorian	https://bit.ly/3tP1ssg
 image	https://bit.ly/371QTYW
@@ -319,7 +328,7 @@ The description of the petal is "You can't tell much from a single petal except 
 Chapter 2 - Entryway
 
 The Entryway is a room. 
-The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear sounds a crackling fire. Down a short hallway to the north is the [if workshop door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
+The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear the faint wsounds a crackling fire. Down a short hallway to the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
 	
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor. You have to admit, you haven't ever been up there."
@@ -329,14 +338,39 @@ The description of the Entryway is "From here you can reach all other parts of t
 	The description of the banister is "Just a normal handhold for going up and down the steps."
 	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
+
+Section 1 - Workshop Door
 	
 The workshop-door is north of the Entryway and south of the Workshop. 
 The workshop-door is a door. 
 The workshop-door is lockable. The workshop-door is locked.
 The workshop-door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed." See https://bit.ly/3rdieyO ]
 Understand "workshop" or "door" as workshop-door. 
+The printed name of workshop-door is "workshop door".
 
-Instead of examining the workshop-door: say "No one you know has ever been inside, not even Mrs. Watchett."
+Instead of examining the workshop-door:
+	say "An ordinary looking door leading to Wells[apostrophe] workshop. The door is [if workshop-door is open]open[otherwise]closed[end if]."
+
+[Instead of examining the workshop-door: say "An ordinary looking door leading to Wells[apostrophe] workshop.[if workshop-door is locked] No one you know besides Wells has ever been inside, not even Mrs. Watchett.[otherwise] You can only imagine what is inside.[end if]"]
+
+[Instead of examining the workshop-door: say "No one you know has ever been inside, not even Mrs. Watchett."]
+
+[Instead of examining the workshop-door:
+	if the workshop-door is locked and the workshop door is closed:
+		say "No one you know has ever been inside, not even Mrs. Watchett.";
+	if the workshop-door is closed:
+		say "WORKSHOP DOOR CLOSED.";
+	if the workshop-door is open:
+		say "WORKSHOP DOOR OPEN.";]
+
+[Instead of examining the workshop-door:
+	if the workshop-door is:
+		-- locked:
+			say "LOCKED.";
+		-- closed:
+			say "CLOSED.";
+		-- open:
+			say "OPEN."]
 
 Chapter 3 - Library
 

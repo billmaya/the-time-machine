@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 18634 ] 
+[WORDS - 18692 ] 
 
 Book 1 - Beginning The Story
 
@@ -350,27 +350,6 @@ The printed name of workshop-door is "workshop door".
 
 Instead of examining the workshop-door:
 	say "An ordinary looking door leading to Wells[apostrophe] workshop. The door is [if workshop-door is open]open[otherwise]closed[end if]."
-
-[Instead of examining the workshop-door: say "An ordinary looking door leading to Wells[apostrophe] workshop.[if workshop-door is locked] No one you know besides Wells has ever been inside, not even Mrs. Watchett.[otherwise] You can only imagine what is inside.[end if]"]
-
-[Instead of examining the workshop-door: say "No one you know has ever been inside, not even Mrs. Watchett."]
-
-[Instead of examining the workshop-door:
-	if the workshop-door is locked and the workshop door is closed:
-		say "No one you know has ever been inside, not even Mrs. Watchett.";
-	if the workshop-door is closed:
-		say "WORKSHOP DOOR CLOSED.";
-	if the workshop-door is open:
-		say "WORKSHOP DOOR OPEN.";]
-
-[Instead of examining the workshop-door:
-	if the workshop-door is:
-		-- locked:
-			say "LOCKED.";
-		-- closed:
-			say "CLOSED.";
-		-- open:
-			say "OPEN."]
 
 Chapter 3 - Library
 

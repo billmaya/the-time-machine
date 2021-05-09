@@ -367,7 +367,7 @@ Chapter 3 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [periodicals], and [encyclopaedia] is monopolized by a few pieces of [furniture].
+The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [periodicals], and a set of [encyclopaedia] is monopolized by a few pieces of [furniture].
 
 Against the south wall is a small [desk] for note-taking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. A doorway leads north."
 
@@ -394,7 +394,7 @@ Understand "magazine" or "magazines" as periodicals.
 The encyclopaedia are a thing.
 The encyclopaedia are scenery on the shelves.
 The encyclopaedia has a bookness called type. The type of the encyclopaedia is reference.
-Understand "encyclopedia" as encyclopaedia.
+Understand "encyclopedia" or "encyclopaediae" or "encyclopedias" as encyclopaedia.
 
 [Writing §16.16. Defining things with tables - Thought I had to use this code but didn't have to]
 [The encyclopaedia has a number called Volume.
@@ -411,12 +411,20 @@ Instead of examining the furniture, say "You'll have to be more specific about w
 The desk is a thing.
 The desk is scenery in the LIbrary.
 The desk is a supporter.
-The description of the desk is "A standing rolltop desk with a few handwritten papers on it."
-Instead of searching the desk, say "You quickly shuffle through the papers but find nothing of interest."
+The description of the desk is "A standing desk with a few handwritten papers on it."
+Instead of searching the desk, say "You quickly shuffle through the papers on the desk but find nothing of interest."
 	
-[The library papers are a thing.
-The library papers are scenery on the desk.
-The printed name of library papers is "papers".]
+The library papers are a thing.
+The library papers are on the desk.
+The library papers are portable.
+The library papers are undescribed.
+[DEL The library papers are scenery on the desk.]
+[DEL The library papers are undescribed on the desk.]
+The printed name of library papers is "papers".
+
+Instead of searching the papers: try searching the desk.
+Instead of examining the papers: try searching the desk.
+Instead of taking the papers: try searching the desk.
 
 The chair is a thing.
 The chair is scenery in the Library.
@@ -431,10 +439,29 @@ The description of the curtains is "Pulled shut, the floor-to-ceiling dark fabri
 Understand "curtain" as curtains.
 Instead of opening the curtains, say "Pulling a curtain aside, you briefly look at the snow-covered street outside. The continuously falling snow is rapidly covering the disturbed area where the ambulence was a few minutes ago. You let the fabric drop back into place and look around the room."
 
-Instead of pushing the curtains, try opening the curtains.
+Instead of pushing the curtains: try opening the curtains.
+Instead of searching the curtains: say "You look in the folds of the fabric but find nothing."
+[DEL "SEARCHING CURTAINS." ]
 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
+
+Section 1 - Reading - Books, Periodicals, Encyclopaedia
+
+[DEL Instead of examining books: say "EXAMINING BOOKS."]
+Instead of examining books: try taking books.
+Instead of examining periodicals: try taking periodicals.
+Instead of examining encyclopaedia: try taking encyclopaedia
+
+Instead of searching the books: try taking books.
+Instead of searching the periodicals: try taking periodicals.
+Instead of searching encyclopaedia: try taking encyclopaedia.
+
+Instead of searching the shelves: say "A frequent visitor, the items on the shelf are vaguely familiar, though nothing really catches your interest."
+[DEL Instead of searching the shelves: say "SEARCHING SHELVES."]
+[DEL Instead of searching the shelves: try taking something.]
+[DEL Instead of searching the shelves: say "You scan the shelves but none of the books or periodicals looks familiar. Given Wells[apostrophe] interests you expect this."]
+[DEL	You would probably have to take something to examine it in more detail."]
 
 [Maybe don't make it random but chose a new one each time and never choose the same one twice?]
 Instead of taking something in the Library:
@@ -952,9 +979,9 @@ The tools are a thing.
 The tools are scenery in the Workshop.
 The description of tools is "Enough equipment for any crazy experiment Wells could dream up. Hand tools of all types and various functions scattered across the workbench or hanging on the wall. What appears to be a very complicated lathe sits next to a forge for smelting metals."
 	
-The papers are a thing.
-The papers are scenery in the Workshop.
-The description of papers is "You look through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"
+The workshop papers are a thing.
+The workshop papers are scenery in the Workshop.
+The description of workshop papers is "You look through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"
 	
 [ > search papers ?]
 

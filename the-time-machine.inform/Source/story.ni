@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19104 ]
+[WORDS - 19100 ]
 
 Book 1 - Beginning The Story
 
@@ -448,7 +448,7 @@ Instead of searching the curtains: say "You look in the folds of the fabric but 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
 
-Section 1 - Reading - Books, Periodicals, Encyclopaedia
+Section 1 - Reading
 
 Instead of examining books: try taking books.
 Instead of examining periodicals: try taking periodicals.

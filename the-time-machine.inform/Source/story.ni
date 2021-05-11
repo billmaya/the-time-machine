@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19397 100 ]
+[WORDS - 19632 566 19397 ]
 
 Book 1 - Beginning The Story
 
@@ -620,7 +620,8 @@ The newspaper is on the armchairs.
 Understand "news" or "paper" as newspaper.
 The description of the newspaper is "Today's newspaper, already read."
 
-Instead of taking the newspaper, say "You've already read it." [> examine newspaper vs. > read newspaper Recipe §9.6. Reading Matter]
+[> examine newspaper vs. > read newspaper Recipe §9.6. Reading Matter]
+Instead of taking the newspaper, say "You've already read it." 
 
 The small table is a thing.
 The small table is scenery in the Parlor.
@@ -631,10 +632,8 @@ Section 1 - Fireplace
 	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
-The fireplace is a container.
+[The fireplace is a closed locked transparent container.]
 The description of the fireplace is "A firebox set into the wall, protected by a wooden surround with a mantle above it. A fire is burning in the firebox."
-
-Instead of using the fireplace, say "That's not something you can use, but just enjoy."
 
 The firebox is scenery in the parlor. "The interior of the fireplace, lined with fireproof brick."
 The hearth is scenery in the parlor. "The base of the fireplace, divided into an inner hearth, where the fire is burning in a grate, and an outer hearth, which projects slightly into the room and protects the floor."
@@ -646,28 +645,28 @@ The surround is scenery in the parlor. "Like the hearth it serves as protection 
 The grate is scenery in the parlor. "A cast iron basket that holds the burning coals."
 The brick is scenery in the parlor. "Heat-resistent bricks that reflect the fire's heat back into the room."
 
+Instead of using the fireplace, say "That's not something you can use, but just enjoy."
+
 Section 2 - Fire
 
 The fire is a thing.
-The fire is in the fireplace.
+The fire is in the parlor. [fireplace.]
 The fire is undescribed.
 The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn, the embers and ashes fall through the grate onto the brick.."
 
-The coals are scenery in the fireplace. "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
+The coals are undescribed in the parlor. "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
 Understand "coal" or "pile" as coals.
 	
-The flames are scenery in the fireplace. "Hypnotic and mesmerizing if you stare too long at them."
+The flames are scenery in the parlor. "Hypnotic and mesmerizing if you stare too long at them."
 Understand "flame" as flames.
 
-The ashes is scenery in the fireplace. "Embers that have cooled down, piling up beneath the grate."
+The ashes is scenery in the parlor. "Embers that have cooled down, piling up beneath the grate."
 Understand "ash" as ashes.
 
-The embers are scenery in the fireplace. "Small pieces of coal that have fallen through the grate, still quite hot."
+The embers are scenery in the parlor. "Small pieces of coal that have fallen through the grate, still quite hot."
 Understand "ember" as embers.
 
-[> tend the fire]
-
-Understand the command "tend" as something new.
+Understand the command "tend" as something new. [> tend the fire]
 Understand "tend [something]" as using.
 
 Instead of using the fire:
@@ -675,6 +674,49 @@ Instead of using the fire:
 		say "A few sparks rise up the flue and things warm up a bit as you spread the coals a bit more evenly around the grate.";
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
+
+Instead of pushing the coals:
+	if the player has the poker:
+		say "You spread the coals a bit more evenly around the grate.";
+	otherwise:
+		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+
+Instead of pushing the embers:
+	if the player has the poker:
+		say "You spread the embers a bit more evenly around the inner hearth.";
+	otherwise:
+		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+
+Instead of pushing the ashes:
+	if the player has the poker:
+		say "You spread the ashes a bit more evenly around the inner hearth.";
+	otherwise:
+		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+
+Understand the command "poke" as something new.
+Understand "poke [something]" as using.
+
+Instead of using the coals:
+	if the player has the poker:
+		say "You spread the coals a bit more evenly around the grate.";
+	otherwise:
+		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+
+Instead of using the embers:
+	if the player has the poker:
+		say "You spread the embers a bit more evenly around the inner hearth.";
+	otherwise:
+		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+
+Instead of using the ashes:
+	if the player has the poker:
+		say "You spread the ashes a bit more evenly around the inner hearth.";
+	otherwise:
+		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+
+Understand the command "burn" as something new.
+Understand "burn [something]" as burning.
+Instead of burning something: say "That really woudn[apostrophe] accomplish anything productive."
 
 Section 3 - Poker
 
@@ -705,7 +747,6 @@ Understand "timepiece" or "chronometer" as pocket watch.
 The description of the pocket watch is "Wells[apostrophe] pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanted with the moving hands and its winding mechanism."
 
 Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"
-
 
 Chapter 5 - Garden
 

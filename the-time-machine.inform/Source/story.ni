@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19100 ]
+[WORDS - 19397 100 ]
 
 Book 1 - Beginning The Story
 
@@ -594,7 +594,7 @@ Chapter 4 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal [fire] blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Today's [newspaper] sits on one of the armchairs.[if pocket watch is on the small table in Parlor] On top of a small table against the east wall is a [pocket watch].[end if] A set of glass doors to the east lead outside to the garden and the room continues to the north."
+The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Today's [newspaper] sits on one of the armchairs.[if pocket watch is on the small table in Parlor] On top of a small table against the east wall is a [pocket watch].[end if] A set of glass doors to the east lead outside to the garden and the room continues to the north."
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
@@ -611,7 +611,6 @@ The armchairs are enterable.
 Understand "armchair" or "chair"  or "chairs" as armchairs.
 The description of the armchairs are "Like the library chair they are covered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especially positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]"
 
-[> sit in armchair (Which armchair will you sit in? Random?)]
 Instead of entering the armchairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
 	now the player is in the armchairs.
@@ -621,10 +620,7 @@ The newspaper is on the armchairs.
 Understand "news" or "paper" as newspaper.
 The description of the newspaper is "Today's newspaper, already read."
 
-[> examine newspaper vs. > read newspaper]
-[Recipe §9.6. Reading Matter]
-	
-Instead of taking the newspaper, say "You've already read it."
+Instead of taking the newspaper, say "You've already read it." [> examine newspaper vs. > read newspaper Recipe §9.6. Reading Matter]
 
 The small table is a thing.
 The small table is scenery in the Parlor.
@@ -636,30 +632,38 @@ Section 1 - Fireplace
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
 The fireplace is a container.
-The description of the fireplace is "The fire burns in an inner hearth of bricks, protected by a wooden surround and topped with a decorative mantle painted to look like marble."
+The description of the fireplace is "A firebox set into the wall, protected by a wooden surround with a mantle above it. A fire is burning in the firebox."
 
 Instead of using the fireplace, say "That's not something you can use, but just enjoy."
 
-The hearth is scenery in the parlor. "HEARTH DESC."
-The mantle is scenery in the parlor. "MANTLE DESC."
-The damper is scenery in the parlor. "DAMPER DESC."
-The flue is scenery in the parlor. "FLUE DESC."
-The surround is scenery in the parlor. "SURROUND DESC."
-The dump is scenery in the parlor. "DUMP DESC."
-The grate is scenery in the parlor. "GRATE DESC."
-The brick is scenery in the parlor. "BRICK DESC."
+The firebox is scenery in the parlor. "The interior of the fireplace, lined with fireproof brick."
+The hearth is scenery in the parlor. "The base of the fireplace, divided into an inner hearth, where the fire is burning in a grate, and an outer hearth, which projects slightly into the room and protects the floor."
+The mantle is scenery in the parlor. "A decorative piece of wood on top of the surround, painted to look like marble."
+The damper is scenery in the parlor. "This movable door that separates the firebox from the flue and chimney above it. When no fire is burning it is closed and prevents cold air from entering the house."
+The flue is scenery in the parlor. "You can't see it but you know it is beyond the damper, a conduit for smoke and gases."
+The chimney is scenery in the parlor. "Unseen, but you know it surrounds the flue, preventing any heat from contacting flammable house materials."
+The surround is scenery in the parlor. "Like the hearth it serves as protection for the surrounding area, in this case the walls instead of the floor."
+The grate is scenery in the parlor. "A cast iron basket that holds the burning coals."
+The brick is scenery in the parlor. "Heat-resistent bricks that reflect the fire's heat back into the room."
 
 Section 2 - Fire
 
 The fire is a thing.
 The fire is in the fireplace.
 The fire is undescribed.
-The description of the fire is "The fire[apostrophe]s flames reflect off of the hearth brick back into the room. As the coals burn, the embers fall through the grate onto the ash dump."
+The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn, the embers and ashes fall through the grate onto the brick.."
 
-The coal is scenery in the fireplace. "COAL DESC."
-The flames are scenery in the fireplace. "FLAMES DESC."
-The ash is scenery in the fireplace. "ASH DESC."
-The embers are scenery in the fireplace. "EMBERS DESC."
+The coals are scenery in the fireplace. "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
+Understand "coal" or "pile" as coals.
+	
+The flames are scenery in the fireplace. "Hypnotic and mesmerizing if you stare too long at them."
+Understand "flame" as flames.
+
+The ashes is scenery in the fireplace. "Embers that have cooled down, piling up beneath the grate."
+Understand "ash" as ashes.
+
+The embers are scenery in the fireplace. "Small pieces of coal that have fallen through the grate, still quite hot."
+Understand "ember" as embers.
 
 [> tend the fire]
 
@@ -702,15 +706,6 @@ The description of the pocket watch is "Wells[apostrophe] pocket watch, given to
 
 Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"
 
-
-
-[The decanter is a thing.
-The decanter is undescribed on the table.
-Understand "brandy" as decanter.
-
-The snifter is a thing.
-The snifter is a container.
-The snifter is undescribed on the table.]
 
 Chapter 5 - Garden
 

@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19632 566 19397 ]
+[WORDS - 19661 ]
 
 Book 1 - Beginning The Story
 
@@ -754,9 +754,9 @@ The Garden is a room.
 The Garden is east of the Garden Door.
 The description of the Garden is "Set below the level of the road and shielded from the city outside by second floor [walls] to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.
 
-From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration. The hibernating dunes of vegetation continue to the north.
+The hibernating dunes of vegetation surround you on all sides. From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration.
 
-To the north, a [gate] set into that wall looks out onto the snow-covered street beyond. To the south, the dark panes of Wells' workshop [windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
+A [gate] set into that wall looks out onto the snow-covered [street] beyond. To the south, the dark panes of Wells' workshop [windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 
@@ -773,6 +773,16 @@ Instead of taking snow:
 
 The gate is a thing.
 The gate is scenery in the Garden.
+The description of the gate is "The gate is locked and looks out onto a quiet side street."
+
+Before opening the gate:
+	say "The gate is locked.";
+	stop the action.
+
+The garden street is a thing.
+The garden street is scenery in the Garden.
+The printed name of the garden street is the "side street." 
+The description of garden street is "The side street beyond the grate is quiet at this time of night."
 
 The bench is a thing.
 The bench is scenery in the Garden.
@@ -781,7 +791,8 @@ The bench is enterable.
 
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
-Understand "wilderness" or "hollyhocks" or "larkspurs" or "snapdragons" or "rhododendrons" or "tree" or "trees" or "vegetation" as bushes.
+The description of garden bushes is "Covered by snow, they're not much to look at."
+Understand "wilderness" or "hollyhocks" or "larkspurs" or "snapdragons" or "rhododendrons" or "tree" or "trees" or "vegetation" or "dunes" or "dune" as bushes.
 
 Chapter 6 - Dining Room
 

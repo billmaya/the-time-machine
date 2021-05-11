@@ -647,6 +647,8 @@ The brick is scenery in the parlor. "Heat-resistent bricks that reflect the fire
 
 Instead of using the fireplace, say "That's not something you can use, but just enjoy."
 
+[https://bit.ly/33EceFC https://bit.ly/2RO6PJq]
+
 Section 2 - Fire
 
 The fire is a thing.
@@ -984,48 +986,6 @@ The windows are a thing.
 The windows are a backdrop. They are in the Workshop and the Garden.
 Understand "workshop windows" or "window" as windows.
 
-[> look through windows]
-
-Instead of searching the windows: [Recipe §3.6 Windows]
-	if light switch is switched on:
-		if the player is in the Garden:
-			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down the east side of the room, a large blackboard covers the entire west wall, and a strange mechanical device is in the center of the room.";
-			now the player is on the bench;
-			stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]
-		if the player is in the Workshop:
-			say "The workshop lights cast a warm glow onto the snow-covered garden outside.";
-	else if light switch is switched off:
-		if the player is in the Garden:
-			say "Climbing onto the bench, you peer through the glass into the darkened workshop.";
-			now the player is on the bench;
-			stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]
-		else if the player is in the Workshop:
-			say "Through the windows you can see down into the snow-covered garden outside.".
-
-	
-[ With code below, in Garden with lights off, > look through windows says [A].
-  But when you get on the bench and type > look through window [B] is not said.
-  Went with simpler code above, debug below later.
-
-Instead of searching the windows: [Recipe §3.6 Windows]
-	if light switch is switched on:
-		if the player is in the Garden:
-			if the player is on the bench:
-				say "GARDEN -> WORKSHOP, ON BENCH, LIGHTS ON."; 
-			otherwise:
-				say "GARDEN -> WORKSHOP, OFF BENCH, LIGHTS ON.";
-		if the player is in the Workshop:
-			say "WORKSHOP -> GARDEN, LIGHTS ON.";
-	else if light switch is switched off:
-		if the player is in the Garden:
-			if the player is on the bench:
-				say "GARDEN -> WORKSHOP, ON BENCH, LIGHTS OFF."; [B]
-			otherwise:
-				say "GARDEN -> WORKSHOP, OFF BENCH, LIGHTS OFF."; [A]
-		else if the player is in the Workshop:
-			say "WORKSHOP -> GARDEN, LIGHTS OFF.".
-]
-
 The workbench is a thing.
 The workbench is scenery in the Workshop.
 The description of the workbench is "You see nothing special about the workbench."
@@ -1185,6 +1145,58 @@ Instead of inserting the fuse into the time machine:
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
+	
+	
+Section 3 - Windows
+	
+[> look through windows > look in windows]
+
+Instead of searching the windows: [Recipe §3.6 Windows]
+	if light switch is switched on:
+		if the player is in the Garden:
+			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down the east side of the room, a large blackboard covers the entire west wall, and a strange mechanical device is in the center of the room.";
+			move the player to the bench, without printing a room description;
+			[DEL now the player is on the bench;
+			stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]]
+		else if the player is in the Workshop:
+			say "The workshop lights cast a warm glow onto the snow-covered garden outside.";
+		else if the player is on the bench:
+			say "LOOKING THROUGH WINDOW ON BENCH.";
+	else if light switch is switched off:
+		if the player is in the Garden:
+			say "Climbing onto the bench, you peer through the glass into the darkened workshop.";
+			move the player to the bench, without printing a room description;
+			[DEL now the player is on the bench;]
+			[DEL stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]]
+		else if the player is in the Workshop:
+			say "Through the windows you can see down into the snow-covered garden outside.";
+		else if the player is on the bench:
+			say "LOOKING THROUGH WINDOW ON BENCH."
+		
+
+	
+[ With code below, in Garden with lights off, > look through windows says [A].
+  But when you get on the bench and type > look through window [B] is not said.
+  Went with simpler code above, debug below later.
+
+Instead of searching the windows: [Recipe §3.6 Windows]
+	if light switch is switched on:
+		if the player is in the Garden:
+			if the player is on the bench:
+				say "GARDEN -> WORKSHOP, ON BENCH, LIGHTS ON."; 
+			otherwise:
+				say "GARDEN -> WORKSHOP, OFF BENCH, LIGHTS ON.";
+		if the player is in the Workshop:
+			say "WORKSHOP -> GARDEN, LIGHTS ON.";
+	else if light switch is switched off:
+		if the player is in the Garden:
+			if the player is on the bench:
+				say "GARDEN -> WORKSHOP, ON BENCH, LIGHTS OFF."; [B]
+			otherwise:
+				say "GARDEN -> WORKSHOP, OFF BENCH, LIGHTS OFF."; [A]
+		else if the player is in the Workshop:
+			say "WORKSHOP -> GARDEN, LIGHTS OFF.".
+]
 				
 Part 2 - Characters
 

@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19732 664 ]
+[WORDS - 19727 ]
 
 Book 1 - Beginning The Story
 
@@ -1158,7 +1158,7 @@ Instead of opening the windows:
 	if the player is in the Garden:
 		say "It looks like the windows can only be opened from inside the workshop.";
 	otherwise:
-		say "OPENING WINDOWS."
+		say "Opening the windows lets in the cold and snow so you decide to leave them shut for now."
 
 [> look through windows > look in windows]
 

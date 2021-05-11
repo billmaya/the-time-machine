@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19024 ]
+[WORDS - 19032 ]
 
 Book 1 - Beginning The Story
 
@@ -371,7 +371,7 @@ The Library is a room.
 The Library is west of the Entryway. 
 The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [periodicals], and a set of [encyclopaedia] is monopolized by a few pieces of [furniture].
 
-Against the south wall is a small [desk] for note-taking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. A doorway leads north."
+Against the south wall is a small [desk] for note-taking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. The room continues to the north."
 
 The shelves are a thing.
 The shelves are scenery in the Library.
@@ -604,17 +604,50 @@ The description of Garden Door is "[if location is Parlor]A set of glass doors a
 
 Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
+The armchairs are things.
+The armchairs are scenery in the Parlor.
+The armchairs are supporters.
+The armchairs are enterable.
+Understand "armchair" or "chair"  or "chairs" as armchairs.
+The description of the armchairs are "Like the library chair they are covered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especially positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]"
+
+[> sit in armchair (Which armchair will you sit in? Random?)]
+Instead of entering the armchairs:
+	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
+	now the player is in the armchairs.
+
+The newspaper is a thing.
+The newspaper is on the armchairs.
+Understand "news" or "paper" as newspaper.
+The description of the newspaper is "Today's newspaper, already read."
+
+[> examine newspaper vs. > read newspaper]
+[Recipe §9.6. Reading Matter]
+	
+Instead of taking the newspaper, say "You've already read it."
+
+The small table is a thing.
+The small table is scenery in the Parlor.
+The small table is a supporter.
+The description of the small table is "Nothing out of the ordinary, just a small wooden table to the left of the garden doors."
+
+Section 1 - Fireplace & Fire
+	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
-Understand "hearth" and "mantle" or "damper" or "flue" or "surround" or "ash dump" as fireplace.
-The description of the fireplace is "The fire burns in an inner hearth of bricks, protected by a wooden surround that is topped with a decorative wooden mantle painted to look like marble."
+The fireplace is a container.
+Understand "hearth" and "mantle" or "damper" or "flue" or "surround" or "dump" or "grate" or "brick" as fireplace.
+The description of the fireplace is "The fire burns in an inner hearth of bricks, protected by a wooden surround and topped with a decorative mantle painted to look like marble."
 
 Instead of using the fireplace, say "That's not something you can use, but just enjoy."
 
 The fire is a thing.
-The fire is scenery in the Parlor.
-Understand "coal" or "flames" as fire.
-The description of the fire is "Hot, the flames reflect off of the hearth brick back into the room. As the coals burn, the embers fall through the grate onto the ash dump."
+[The fire is scenery in the Parlor.]
+[The fire is scenery in the fireplace.]
+The fire is inside the fireplace.
+The fire is undescribed.
+Understand "coal" or "flames" or "ash" or "embers" as fire.
+The description of the fire is "The fire[apostrophe]s flames reflect off of the hearth brick back into the room. As the coals burn, the embers fall through the grate onto the ash dump."
 
 [> tend the fire]
 
@@ -627,7 +660,7 @@ Instead of using the fire:
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
 
-Section 1 - Poker
+Section 2 - Poker
 
 The poker is a thing. [https://bit.ly/3sczKUx]
 The poker is undescribed in the Parlor.
@@ -646,11 +679,7 @@ Instead of using the poker:
 	
 [Understand "use [something] on [something]" as using.]
 
-[The mantle is a thing.
-The mantle is scenery in the Parlor.
-The mantle is a supporter.]
-
-Section 2 - Pocket Watch
+Section 3 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is on the small table.
@@ -661,38 +690,7 @@ The description of the pocket watch is "Wells[apostrophe] pocket watch, given to
 
 Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"
 
-[The clock is a thing. [https://bit.ly/37AqP7s]
-The clock is scenery on the mantle.]
 
-[The painting is a thing. [Casper David Friedrich's "Wanderer above the Sea of Fog" https://bit.ly/3aEJKQo]
-The painting is scenery in the Parlor.]
-
-The armchairs are things.
-The armchairs are scenery in the Parlor.
-The armchairs are supporters.
-The armchairs are enterable.
-Understand "armchair" or "chair"  or "chairs" as armchairs.
-The description of the armchairs are "Like the library chair they are covered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especially positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]"
-
-[> sit in armchair (Which armchair will you sit in? Random?)]
-Instead of entering the armchairs:
-	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
-	now the player is in the armchairs.
-
-The newspaper is a thing.
-The newspaper is undescribed on the armchairs.
-Understand "news" or "paper" as newspaper.
-The description of the newspaper is "Today's newspaper, already read."
-
-[> examine newspaper vs. > read newspaper]
-[Recipe §9.6. Reading Matter]
-	
-Instead of taking the newspaper, say "You've already read it."
-
-The small table is a thing.
-The small table is scenery in the Parlor.
-The small table is a supporter.
-The description of the small table is "Nothing out of the ordinary, just a small wooden table to the left of the garden doors."
 
 [The decanter is a thing.
 The decanter is undescribed on the table.

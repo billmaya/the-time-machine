@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19661 ]
+[WORDS - 19664 ]
 
 Book 1 - Beginning The Story
 
@@ -982,10 +982,6 @@ The workshop is a room.
 The Workshop is north of the Workshop Door. 
 The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].[paragraph break]Midway down the room, closer to the west wall, is a mechanical device that resembles nothing you have ever seen before anywhere in your entire life.[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."
 
-The windows are a thing.
-The windows are a backdrop. They are in the Workshop and the Garden.
-Understand "workshop windows" or "window" as windows.
-
 The workbench is a thing.
 The workbench is scenery in the Workshop.
 The description of the workbench is "You see nothing special about the workbench."
@@ -1149,54 +1145,32 @@ Instead of inserting the fuse into the time machine:
 	
 Section 3 - Windows
 	
+The windows are a thing.
+The windows are a backdrop. They are in the Workshop and the Garden.
+Understand "workshop windows" or "window" as windows.
+
+The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
+
 [> look through windows > look in windows]
 
 Instead of searching the windows: [Recipe §3.6 Windows]
 	if light switch is switched on:
 		if the player is in the Garden:
-			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down the east side of the room, a large blackboard covers the entire west wall, and a strange mechanical device is in the center of the room.";
+			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down the east side of the room, a large blackboard covers the entire west wall, and a strange mechanical device is in the center of the room, which must be Wells[apostrophe] time machine.";
 			move the player to the bench, without printing a room description;
-			[DEL now the player is on the bench;
-			stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]]
 		else if the player is in the Workshop:
 			say "The workshop lights cast a warm glow onto the snow-covered garden outside.";
 		else if the player is on the bench:
-			say "LOOKING THROUGH WINDOW ON BENCH.";
+			say "Nothing has changed. The workbench, blackboard, and time machine are still where they were when you last looked.";
 	else if light switch is switched off:
 		if the player is in the Garden:
 			say "Climbing onto the bench, you peer through the glass into the darkened workshop.";
 			move the player to the bench, without printing a room description;
-			[DEL now the player is on the bench;]
-			[DEL stop the action; [<- This doesn't stop the Garden description from being printed after you > look through windows]]
 		else if the player is in the Workshop:
 			say "Through the windows you can see down into the snow-covered garden outside.";
 		else if the player is on the bench:
-			say "LOOKING THROUGH WINDOW ON BENCH."
-		
+			say "Nothing has changed. You still can't see anything inside the darkened workshop."
 
-	
-[ With code below, in Garden with lights off, > look through windows says [A].
-  But when you get on the bench and type > look through window [B] is not said.
-  Went with simpler code above, debug below later.
-
-Instead of searching the windows: [Recipe §3.6 Windows]
-	if light switch is switched on:
-		if the player is in the Garden:
-			if the player is on the bench:
-				say "GARDEN -> WORKSHOP, ON BENCH, LIGHTS ON."; 
-			otherwise:
-				say "GARDEN -> WORKSHOP, OFF BENCH, LIGHTS ON.";
-		if the player is in the Workshop:
-			say "WORKSHOP -> GARDEN, LIGHTS ON.";
-	else if light switch is switched off:
-		if the player is in the Garden:
-			if the player is on the bench:
-				say "GARDEN -> WORKSHOP, ON BENCH, LIGHTS OFF."; [B]
-			otherwise:
-				say "GARDEN -> WORKSHOP, OFF BENCH, LIGHTS OFF."; [A]
-		else if the player is in the Workshop:
-			say "WORKSHOP -> GARDEN, LIGHTS OFF.".
-]
 				
 Part 2 - Characters
 

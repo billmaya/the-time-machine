@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19032 ]
+[WORDS - 19104 ]
 
 Book 1 - Beginning The Story
 
@@ -631,23 +631,35 @@ The small table is scenery in the Parlor.
 The small table is a supporter.
 The description of the small table is "Nothing out of the ordinary, just a small wooden table to the left of the garden doors."
 
-Section 1 - Fireplace & Fire
+Section 1 - Fireplace
 	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
 The fireplace is a container.
-Understand "hearth" and "mantle" or "damper" or "flue" or "surround" or "dump" or "grate" or "brick" as fireplace.
 The description of the fireplace is "The fire burns in an inner hearth of bricks, protected by a wooden surround and topped with a decorative mantle painted to look like marble."
 
 Instead of using the fireplace, say "That's not something you can use, but just enjoy."
 
+The hearth is scenery in the parlor. "HEARTH DESC."
+The mantle is scenery in the parlor. "MANTLE DESC."
+The damper is scenery in the parlor. "DAMPER DESC."
+The flue is scenery in the parlor. "FLUE DESC."
+The surround is scenery in the parlor. "SURROUND DESC."
+The dump is scenery in the parlor. "DUMP DESC."
+The grate is scenery in the parlor. "GRATE DESC."
+The brick is scenery in the parlor. "BRICK DESC."
+
+Section 2 - Fire
+
 The fire is a thing.
-[The fire is scenery in the Parlor.]
-[The fire is scenery in the fireplace.]
-The fire is inside the fireplace.
+The fire is in the fireplace.
 The fire is undescribed.
-Understand "coal" or "flames" or "ash" or "embers" as fire.
 The description of the fire is "The fire[apostrophe]s flames reflect off of the hearth brick back into the room. As the coals burn, the embers fall through the grate onto the ash dump."
+
+The coal is scenery in the fireplace. "COAL DESC."
+The flames are scenery in the fireplace. "FLAMES DESC."
+The ash is scenery in the fireplace. "ASH DESC."
+The embers are scenery in the fireplace. "EMBERS DESC."
 
 [> tend the fire]
 
@@ -660,7 +672,7 @@ Instead of using the fire:
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
 
-Section 2 - Poker
+Section 3 - Poker
 
 The poker is a thing. [https://bit.ly/3sczKUx]
 The poker is undescribed in the Parlor.
@@ -679,7 +691,7 @@ Instead of using the poker:
 	
 [Understand "use [something] on [something]" as using.]
 
-Section 3 - Pocket Watch
+Section 4 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is on the small table.

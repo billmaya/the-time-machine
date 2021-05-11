@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19664 ]
+[WORDS - 19732 664 ]
 
 Book 1 - Beginning The Story
 
@@ -1143,13 +1143,22 @@ Instead of inserting the fuse into the time machine:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 	
 	
-Section 3 - Windows
+Section 3 - Workshop Windows
 	
 The windows are a thing.
 The windows are a backdrop. They are in the Workshop and the Garden.
 Understand "workshop windows" or "window" as windows.
 
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
+
+The windows can be open or closed.
+The windows can be openable. The windows are openable.
+
+Instead of opening the windows:
+	if the player is in the Garden:
+		say "It looks like the windows can only be opened from inside the workshop.";
+	otherwise:
+		say "OPENING WINDOWS."
 
 [> look through windows > look in windows]
 

@@ -1876,7 +1876,7 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Mrs. Watchett enters followed by Dr. Humboldt. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. Was afraid something had happened.' His attention is drawn to the time machine behind you. 'Is that the contraption Wells was going on about?'";
+	say "The door to the workshop opens and Mrs. Watchett enters followed by Dr. Humboldt. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. We were afraid something had happened.' His attention is drawn to the time machine behind you. 'Hmm. That must be the contraption Wells was going on about?'";
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 	now Watchett is in the Workshop;

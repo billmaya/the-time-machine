@@ -1024,8 +1024,11 @@ The lights are scenery in the Workshop.
 The description of the lights is "You see nothing special about the lights except [if light switch is switched off]they are turned off (perhaps there's a switch here somewhere)[otherwise]they are turned on[end if]."
 
 The light switch is a device.
-The light switch is scenery in the Workshop.
+The light switch is [scenery] in the Workshop.
 The light switch is switched off.
+
+Instead of examining the light switch:
+	say "A simple switch that you can flip on or off."
 
 [Writing §3.14. Devices and descriptions, Down Below example]
 Carry out switching off the light switch: now the Workshop is dark.
@@ -1036,6 +1039,15 @@ Understand "flip [something switched on]" as switching off.
 
 After deciding the scope of the player when the location is the Workshop:
 	place the light switch in scope.
+	[say "Without light you cannot see anything like a [second noun]."]
+
+[Recipes §3.7. Lighting, Hohmann Transfer example]
+Rule for printing the description of a dark room:
+	if the room is the Workshop:
+		say "The windows at the other end of the room provide some light but without more illuminiation it is impossible to clearly determine what anything is or navigate the room successfully. There is a light switch by the door."
+
+[Perhaps the light switch by the door will illuminate things."]
+	
 	
 Section 2 - The Blueprints
 

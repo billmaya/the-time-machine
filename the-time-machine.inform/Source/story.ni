@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19823 ]
+[WORDS - 19615 ]
 
 Book 1 - Beginning The Story
 
@@ -401,14 +401,6 @@ The encyclopaedia has a bookness called type. The type of the encyclopaedia is r
 The description of encyclopaedia is "ENCYCLOPAEDIA DESCRIPTION." [Should not be displayed becuase of > examine encyclopaedia code in Section 1 below (included to keep encyclopaedia from showing up when Missing Item Description code is run).]
 Understand "encyclopedia" or "encyclopaediae" or "encyclopedias" as encyclopaedia.
 
-[Writing §16.16. Defining things with tables - Thought I had to use this code but didn't have to]
-[The encyclopaedia has a number called Volume.
-The encyclopaedia has a text called Label.
-The encyclopaedia has a text called Start-Word.
-The encyclopaedia has a text called End-Word.
-The encyclopaedia has a number called Publish-Date.
-The encyclopaedia in the Library are defined by the Table of Encyclopaedia Volumes.]
-
 The furniture is a thing.
 The furniture is scenery in the Library.
 Instead of examining the furniture, say "You'll have to be more specific about what you're interested in examining."
@@ -632,7 +624,6 @@ Section 1 - Fireplace
 	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
-[The fireplace is a closed locked transparent container.]
 The description of the fireplace is "A firebox set into the wall, protected by a wooden surround with a mantle above it. A fire is burning in the firebox."
 
 The firebox is scenery in the parlor. "The interior of the fireplace, lined with fireproof brick."
@@ -1161,7 +1152,8 @@ Instead of opening the windows:
 	otherwise:
 		say "Opening the windows lets in the cold and snow so you decide to leave them shut for now."
 
-[> look through windows > look in windows]
+[> look through windows 
+ > look in windows]
 
 Instead of searching the windows: [Recipe §3.6 Windows]
 	if light switch is switched on:
@@ -1191,23 +1183,11 @@ Chapter 1 - Watchett
 Watchett is a person. 
 Watchett is a female. 
 Watchett is fixed.
-[Watchett is in the Entryway.] [Put her in Kitchen at start. Will use movement after Humboldt returns.]
 Watchett is in the Kitchen.
 The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal here away from Wells you would in a heartbeat, but she would never leave him in a million years."
 
 The printed name of Watchett is "Mrs. Watchett". 
-[See Recipe §7.1. Getting Acquainted -> led to reading source of extension "Punctuation Removal" which lead to "printed name of" command.]
 
-[INFO One line doesn't seem to work]
-[Understand "mrs/watchett/cook/maid/housekeeper/old lady" as Mrs Watchett.]
-
-[INFO On separate lines seem to work]
-[Understand "mrs/watchett/old lady" as Mrs Watchett.
-Understand "maid" as Mrs Watchett.
-Understand "housekeeper" as Mrs Watchett.
-Understand "cook" as Mrs Watchett.]
-
-[INFO This seems to work]
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 [See §17.3. Overriding existing commands - New tokens for ^]
 
@@ -1504,7 +1484,6 @@ Part 1 - Settings
 
 Chapter 1 - Clearing
 
-[TBD Figure out how to move the time machine with player from workshop to this room (as part of scene?) ]
 [TBD Substituting different article in clearing description first time or when player in time machine - The time machine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
 
 can-go-clearing-to-river is a truth state that varies.
@@ -1603,10 +1582,6 @@ The stone doors are a thing.
 The stone doors are scenery in the Sphinx Steps.
 The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The doors themselves are carved with line after line of mechanical cuneiform and bas relief mongoloid figures marching down a successive set of ramps to an unpictured subterranean destination."
 
-[The sacrificial alter is a thing.
-The sacrificial alter is scenery in the Sphinx Steps.
-The sacrificial alter is a supporter.]
-
 The pedestal is a thing.
 The pedestal is scenery in the Sphinx Steps.
 The description of the pedestal is "Made of bronze and thick with verdigris, it is the columnar base that supports the statue above."
@@ -1670,12 +1645,7 @@ Understand "concrete" or "pantheon" or "columned" or "columns" or "portico" or "
 
 The description of the Domed Building is "Before you is a weathered concrete building built along the lines of the Pantheon in Rome. A columned portico to the east provides entrance to the inside of the domed building behind it."
 
-[Pantheon
-https://bit.ly/3bQq6jS (wikipedia) 
-https://bit.ly/2NLr9tv (google images)
-https://bit.ly/37WsJPZ
-https://bit.ly/3q3aAq6
-]
+[Pantheon - https://bit.ly/3bQq6jS (wikipedia)  https://bit.ly/2NLr9tv (google images) https://bit.ly/37WsJP Z https://bit.ly/3q3aAq6]
 
 Chapter 6 - Inside Dome
 
@@ -1771,8 +1741,6 @@ Instead of showing the pocket watch to the Eloi:
 	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
 	now the Eloi is carrying the pocket watch.
 
-
-
 Chapter 2 - Weena
 
 Weena is a person.
@@ -1840,7 +1808,6 @@ Weena Gives You Flower ends when the player has the flower.
 
 [When Weena Gives You Flower ends:
 	say "WEENA GIVES YOU FLOWER ENDS."]
-
 
 Book 6 - Ending The Story
 

@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19727 ]
+[WORDS - 19762 ]
 
 Book 1 - Beginning The Story
 
@@ -140,7 +140,7 @@ Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purl
 			
 Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / up / down / test eloi-ask-show-give."
 Test travel-1895 with "go northwest / enter / activate panel."
-Test endgame-humboldt with "test travel-802701 / show eloi watch / test travel-1895 / exit."
+Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena petal / test travel-1895 / exit."
 
 
 Book 3 - 1895
@@ -1876,7 +1876,7 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Mrs. Watchett enters followed by Dr. Humboldt. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. We were afraid something had happened.' His attention is drawn to the time machine behind you. 'Hmm. That must be the contraption Wells was going on about?'";
+	say "The door to the workshop opens and Mrs. Watchett enters followed by Dr. Humboldt. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. We were afraid something had happened.' His attention is drawn to the time machine behind you. 'Hmm. That must be the contraption Wells was going on about.'";
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 	now Watchett is in the Workshop;
@@ -1932,6 +1932,10 @@ endgame-failure is a truth state that varies.
 endgame-failure is false.
 
 Instead of showing the flower to Humboldt:
+	now endgame-success is true.
+
+The block giving rule is not listed in the check giving it to rules. [Recipes §7.4. Barter and Exchange]
+After giving the flower to Humboldt:
 	now endgame-success is true.
 
 Humboldt Endgame ends when endgame-success is true or endgame-failure is true.

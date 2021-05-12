@@ -1059,7 +1059,7 @@ The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-The description of time machine is "Approximately the size of the the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a simple bicycle saddle for the occupant to sit on and a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
+The description of time machine is "Approximately the size of the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a simple bicycle saddle for the occupant to sit on and a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
 Understand "mechanism" or "device" or "temporal" as time machine.
 
 The control panel is a device.
@@ -1086,7 +1086,10 @@ Instead of activating the time machine:
 
 Instead of activating the control panel:
 	if the player is in the time machine:
-		say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
+		if humboldt-endgame-begins is false:
+			say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
+		otherwise:
+			say "TBD - WRITE SOMETHING DESCRIPTIVE HERE.";
 	otherwise:
 		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";
 		now the time machine is nowhere;
@@ -1096,6 +1099,7 @@ Instead of activating the control panel:
 The saddle is a thing.
 The saddle is in the time machine.
 The saddle is undescribed.
+The saddle is fixed in place.
 Understand "bicycle" and "seat" as saddle.
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
@@ -1521,6 +1525,7 @@ Inside from the Clearing is Top Shaft.
 The clearing bushes are a thing.
 The clearing bushes are scenery in the Clearing.
 The description of clearing bushes is "A tangle of bushes on all sides almost obscures the paths leading off in all directions."
+The printed name of clearing bushes is "bushes".
 
 The treetops are a thing.
 The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.

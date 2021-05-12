@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19615 ]
+[WORDS - 19707 ]
 
 Book 1 - Beginning The Story
 
@@ -75,6 +75,8 @@ Instead of going up in the Entryway: say "You wander around upstairs for a few m
 
 Chapter 3 - Every Turn Rules
 
+Section 1 - Workshop
+
 Every turn:
 	if the player is in the Workshop and the player has the flower:
 		now humboldt-should-return is true.
@@ -128,6 +130,8 @@ Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn d
 
 Test switch-examine with " examine orrery's switch / examine orrery switch."
 Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
+
+Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
 
 Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."
 
@@ -966,7 +970,7 @@ Instead of using [things in the Kitchen]: say "Given your gender and dearth of k
 
 Chapter 8 - Workshop  
 
-The workshop is a room. 
+The workshop is a dark room. 
 The Workshop is north of the Workshop Door. 
 The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].[paragraph break]Midway down the room, closer to the west wall, is a mechanical device that resembles nothing you have ever seen before anywhere in your entire life.[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."
 
@@ -1013,6 +1017,8 @@ The eraser is a thing.
 The eraser is scenery in the Workshop.
 The description of eraser is "Rectangular and covered in chalk dust you could erase the blackboard if you dared."
 
+Section 1 - Light Switch
+		
 The lights are a thing.
 The lights are scenery in the Workshop.
 The description of the lights is "You see nothing special about the lights except [if light switch is switched off]they are turned off (perhaps there's a switch here somewhere)[otherwise]they are turned on[end if]."
@@ -1020,8 +1026,18 @@ The description of the lights is "You see nothing special about the lights excep
 The light switch is a device.
 The light switch is scenery in the Workshop.
 The light switch is switched off.
+
+[Writing §3.14. Devices and descriptions, Down Below example]
+Carry out switching off the light switch: now the Workshop is dark.
+Carry out switching on the light switch: now the Workshop is lighted.
+
+Understand "flip [something switched off]" as switching on.
+Understand "flip [something switched on]" as switching off.
+
+After deciding the scope of the player when the location is the Workshop:
+	place the light switch in scope.
 	
-Section 1 - The Blueprints
+Section 2 - The Blueprints
 
 The blueprints are a thing.
 The blueprints are on the workbench.
@@ -1040,8 +1056,7 @@ Instead of examining the blueprints:
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
 
-
-Section 2 - The Time Machine
+Section 3 - The Time Machine
 	
 The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
@@ -1134,8 +1149,7 @@ Instead of inserting the fuse into the time machine:
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 	
-	
-Section 3 - Workshop Windows
+Section 4 - Workshop Windows
 	
 The windows are a thing.
 The windows are a backdrop. They are in the Workshop and the Garden.

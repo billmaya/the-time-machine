@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19762 ]
+[WORDS - 19823 ]
 
 Book 1 - Beginning The Story
 
@@ -764,7 +764,7 @@ Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 
 The garden walls are a thing.
 The garden walls are scenery in the Garden.
-Understand "walls" as garden walls.
+The printed name of garden walls is "walls".
 
 The snow is a thing.
 The snow is backdrop. It is in Woking Street and the Garden.
@@ -809,6 +809,7 @@ The Kitchen Door is scenery.
 
 The dining room walls are a thing.
 The dining room walls are scenery in the Dining Room.
+The printed name of dining room walls is "walls".
 Instead of examining the dining room walls, say "You'll have to be more specific. Are you interested in the wainscot or the wallpaper?"
 
 The wainscot is a thing. [https://bit.ly/3qTcueh]
@@ -859,7 +860,7 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
-	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than one item, it's all one big mysterious conglomeration to you[first time], probably like one of legal documents you usually write up for your clients[only].";
+	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than one item, it's all one big mysterious conglomeration to you[first time], probably like one of legal documents you usually write up for your clients[only]."; [TBD - Should this be conditional based on fuse location?]
 	now the sliding panel is open;
 	now the fuse is in the sliding panel.
 
@@ -907,11 +908,7 @@ Section 2 - The Fuse
 The fuse is a thing.
 The fuse is nowhere.
 
-Instead of examining the fuse:
-	if the sliding panel is open: 
-		say "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end. Each of the metal caps is held in a metal clip.";
-	otherwise: 
-		say "YOU DON'T SEE THE FUSE."
+The description of the fuse is "[if the sliding panel is open]Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[end if][if fuse is in sliding panel] Each of the metal caps is held in a metal clip that connects it to the rest of the orrery mechanism.[end if]"
 	
 [> take fuse]
 	

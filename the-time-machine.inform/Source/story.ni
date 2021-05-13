@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 19963 ]
+[ WORDS - 20069 ]
 
 Book 1 - Beginning The Story
 
@@ -133,14 +133,16 @@ Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch
 
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
 
-Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."
+[Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."]
+Test prepare-time-machine with "test unlock-workshop / go north / flip switch / purloin fuse / examine blueprints / put fuse in time machine."
 
 Test circular-shaft-look with "x shaft / take grate / x shaft."
 
 Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
 Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
 
-Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / gonear river."
+[Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / gonear river."]
+Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / go southeast."
 			
 Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / up / down / test eloi-ask-show-give."
 Test travel-1895 with "go northwest / enter / activate panel."
@@ -903,7 +905,7 @@ Section 2 - The Fuse
 The fuse is a thing.
 The fuse is nowhere.
 
-The description of the fuse is "[if the sliding panel is open]Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[end if][if fuse is in sliding panel] Each of the metal caps is held in a metal clip that connects it to the rest of the orrery mechanism.[end if]"
+The description of the fuse is "[if the sliding panel is open or the player has the fuse]Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[end if][if fuse is in sliding panel] Each of the metal caps is held in a metal clip that connects it to the rest of the orrery mechanism.[end if][if humboldt-endgame-begins is true] The pasteboard cylinder between the metal caps is blackened and burned. Obviously it has shorted out and is useless.[end if]"
 	
 [> take fuse]
 	
@@ -1124,7 +1126,8 @@ Instead of activating the control panel:
 		if humboldt-endgame-begins is false:
 			say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
 		otherwise:
-			say "TBD - WRITE SOMETHING DESCRIPTIVE HERE.";
+			say "You press the button but nothing happens. Smelling someting burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
+			now the player has the fuse;
 	otherwise:
 		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";
 		now the time machine is nowhere;

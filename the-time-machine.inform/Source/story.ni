@@ -6,12 +6,27 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20069 ]
+[ WORDS - 20094 ]
 
 Book 1 - Beginning The Story
 
 The player is in Woking Street.
 The description of the player is ""
+
+[ Rewrite of When play begins text
+"Let me go!
+Wells struggles against the efforts of the two orderlies to drag him into the horse-drawn ambulence parked in the street. With a strength born of desperation he breaks free and crashes into you, almost knocking both of you to the ground.
+
+'My friend, I[apostrophe]m not crazy. You believe me, don[apostrophe]t you?'
+
+Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we believe you. Time travel. Morlocks. Wanna the Eloi...'
+
+'Weena, you fool! Weena!' He turns back to you, fumbling in one of his vest pockets. 'I can prove it, in my workshop...'
+
+He's interrupted as the two orderlies, on Humboldt[apostrophe]s signal, grab Wells and overpower him back towards the ambulence. Wells struggles to free himself, the chain on his pocket watch XYZ.
+
+Humboldt glances as you, shaking his head slightly.
+]
 
 When play begins: say "'Let me go!'
 
@@ -847,13 +862,13 @@ The description of the orrery is "A heliocentric mechanical model of the eight p
 
 Understand "planetarium" or "device" or "mechanism" or "box" or "solar system" as orrery.
 
-[DEL The orrery can be open or closed.
-The orrery can be openable. The orrery is closed.]
+[ > open orrery ]
 
 Before opening the orrery: 
 	try opening the sliding panel;
-	[DEL say "OPENING THE ORRERY.";]
 	stop the action.
+
+[ > close orrery ]
 
 Before closing the orrery:
 	try closing the sliding panel;

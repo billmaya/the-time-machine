@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[WORDS - 19707 ]
+[ WORDS - 19963 ]
 
 Book 1 - Beginning The Story
 
@@ -1038,15 +1038,35 @@ Understand "flip [something switched off]" as switching on.
 Understand "flip [something switched on]" as switching off.
 
 After deciding the scope of the player when the location is the Workshop:
+	[place the blackboard in scope;]
+	[place the workbench in scope;]
 	place the light switch in scope.
-	[say "Without light you cannot see anything like a [second noun]."]
 
 [Recipes §3.7. Lighting, Hohmann Transfer example]
+[Writing §18.22. Printing the description of a dark room]
 Rule for printing the description of a dark room:
 	if the room is the Workshop:
-		say "The windows at the other end of the room provide some light but without more illuminiation it is impossible to clearly determine what anything is or navigate the room successfully. There is a light switch by the door."
+		say "The windows at the other end of the room provide some light but without more illumination it is impossible to clearly determine what anything is or navigate the room successfully. There is a light switch by the door."
 
-[Perhaps the light switch by the door will illuminate things."]
+[Writing §18.19. Printing the announcement of darkness]
+Rule for printing the announcement of darkness:
+	if the room is the Workshop:
+		say "Without light it is impossible to navigate the room without hazard."
+
+[Writing §18.18. Printing a refusal to act in the dark]
+[Objects must be in scope for > examine [object] or > search [object] to return text below instead of "You can't see any such thing."]
+Rule for printing a refusal to act in the dark:
+	if the room is the Workshop:
+		if we are examining something:
+			if we are not examining the light switch:
+				say "You will need a bit more light before you can examine the in any detail.";
+			otherwise:
+				say "A simple switch that you can flip on or off.";
+		if we are searching something:
+			if we are not searching the light switch:
+				say "You could use a little more light before you can do that successfully.";
+			otherwise:
+				say "It is a simple on/off switch. Not much to search."
 	
 	
 Section 2 - The Blueprints

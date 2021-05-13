@@ -847,6 +847,18 @@ The description of the orrery is "A heliocentric mechanical model of the eight p
 
 Understand "planetarium" or "device" or "mechanism" or "box" or "solar system" as orrery.
 
+[DEL The orrery can be open or closed.
+The orrery can be openable. The orrery is closed.]
+
+Before opening the orrery: 
+	try opening the sliding panel;
+	[DEL say "OPENING THE ORRERY.";]
+	stop the action.
+
+Before closing the orrery:
+	try closing the sliding panel;
+	stop the action.
+
 The sliding panel is a thing.
 The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
 The sliding panel is a container.

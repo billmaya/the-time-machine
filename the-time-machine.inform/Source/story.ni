@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20247 ]
+[ WORDS - 20300 ]
 
 Book 1 - Beginning The Story
 
@@ -147,6 +147,7 @@ Test switch-examine with " examine orrery's switch / examine orrery switch."
 Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
 
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
+Test go-workshop with "test unlock-workshop / go north / flip switch."
 
 [Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."]
 Test prepare-time-machine with "test unlock-workshop / go north / flip switch / purloin fuse / examine blueprints / put fuse in time machine."
@@ -1010,19 +1011,21 @@ Understand "bench" as workbench.
 
 [ > search workbench ?]
 
+Instead of searching the workbench: try examining the workshop papers.
+
 The tools are a thing.
 The tools are scenery in the Workshop.
 The description of tools is "Enough equipment for any crazy experiment Wells could dream up. Hand tools of all types and various functions scattered across the workbench or hanging on the wall. What appears to be a very complicated lathe sits next to a forge for smelting metals."
 	
 The workshop papers are a thing.
 The workshop papers are scenery in the Workshop.
-The description of workshop papers is "You look through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"
+The description of workshop papers is "You search through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"
 	
 [ > search papers ?]
 
 The materials are a thing.
 The materials are scenery in the Workshop.
-The description of materials is "Raw materials for Wells[apostrophe] 'experiments' stacked throughout the room and piled on and under the workbench. Metal plates, rods, and alloys in all shapes and sizes. A huge supply of chemicals and minerals, enough to stock a pharmacist's shop. Hundreds of connectors and screws and fasteners. Batteries and wires and power sources you can't even begin to fathom how they are used."
+The description of materials is "The raw materials for Wells[apostrophe] experiments are stacked throughout the room and piled either on or under the workbench. A cursory examination reveals metal plates and rods in all shapes and sizes as well as hundreds of connectors, screws, fasteners, and wires. None of it looks like it will help you in your investigation."
 Understand "battery" or "batteries" or "wires" or "connectors" or "screws" or "fasteners" or "plates" or "rods" or "alloys" or "chemicals" or "minerals" as materials.
 
 The blackboard is a thing.
@@ -1039,8 +1042,11 @@ The description of the diagrams are "It looks like the preliminary sketches on t
 Understand "sketch" or "sketches" as diagrams.
 
 The chalk is a thing.
-The chalk is scenery in the Workshop.
+The chalk is undescribed in the Workshop.
+[The chalk is scenery in the Workshop.]
 The description of the chalk is "It is white and chalky."
+
+Instead of taking the chalk: say "You reach for a piece of chalk but realize you don't have the faintest idea what you would even write on the board. Better to investigate other areas of the workshop."
 
 The eraser is a thing.
 The eraser is scenery in the Workshop.

@@ -1123,6 +1123,7 @@ The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
+[Make it so the time machine is described in initial room description?]
 The description of time machine is "Approximately the size of the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a simple bicycle saddle for the occupant to sit on and a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
 Understand "mechanism" or "device" or "temporal" as time machine.
 
@@ -1172,19 +1173,20 @@ Understand "bicycle" and "seat" as saddle.
 [3.1.8.2-A - Using a boolean examined-blueprints to determine if blueprint has been examined.] 
 [See Section 1 - Blueprints to see where boolean is set.]
 
-Instead of examining the time machine:
+[Replace with Instead of searching the time machine?]
+Instead of searching [examining] the time machine:
 	if the fuse is in the time machine, say "EVERYTHING LOOKS GOOD TO GO.";
 	otherwise:
 		if the player has the fuse:
 			if examined-blueprints is true:
-				say "With what you now know you can see exactly where the fuse needs to go in Wells' time machine.";
+				say "After reviewing the blueprints, you now know exactly where the fuse needs to go in Wells' time machine.";
 			otherwise:
 				say "Looking at the fuse you can't help but deduce that it should go somewhere in the time machine but you don't have the first clue where that would be.";
 		otherwise:
 			if examined-blueprints is true:
 				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
 			otherwise:
-				say "According to the blueprints and Wells' statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens; you have no clue about how to activate it or what the next steps might be.".
+				say "According to Wells[apostrophe] statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens. Right now you have no clue about how to activate it or what the next steps might be.".
 
 [Writing §9.13. The past and perfect tenses]
 

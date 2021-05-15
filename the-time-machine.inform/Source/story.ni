@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20250 ]
+[ WORDS - 20247 ]
 
 Book 1 - Beginning The Story
 
@@ -1173,7 +1173,8 @@ Understand "bicycle" and "seat" as saddle.
 [3.1.8.2-A - Using a boolean examined-blueprints to determine if blueprint has been examined.] 
 [See Section 1 - Blueprints to see where boolean is set.]
 
-[Replace with Instead of searching the time machine?]
+[Replaced "examining" with "searching" in Instead statement]
+[DEL with Instead of searching the time machine?]
 Instead of searching [examining] the time machine:
 	if the fuse is in the time machine, say "EVERYTHING LOOKS GOOD TO GO.";
 	otherwise:
@@ -1181,7 +1182,7 @@ Instead of searching [examining] the time machine:
 			if examined-blueprints is true:
 				say "After reviewing the blueprints, you now know exactly where the fuse needs to go in Wells' time machine.";
 			otherwise:
-				say "Looking at the fuse you can't help but deduce that it should go somewhere in the time machine but you don't have the first clue where that would be.";
+				say "Looking at the fuse you realize that it probalbly should go somewhere in the time machine but you don't have the first clue where that would be.";
 		otherwise:
 			if examined-blueprints is true:
 				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
@@ -1193,20 +1194,7 @@ Instead of opening the time machine: say "The time machine is alread 'open.' All
 [Writing §9.13. The past and perfect tenses]
 
 [3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]
-[See Section 1 - Blueprints to see where the blueprint examining is handled.]
-
-[Instead of examining the time machine:
-	if the player has the fuse:
-		if we have examined the blueprints:
-			say "HAS FUSE; HAS EXAMINED BLUEPRINTS.";
-		otherwise:
-			say "HAS FUSE; HAS NOT EXAMINED BLUEPRINTS.";
-	otherwise:
-		if we have examined the blueprints:
-			say "DOES NOT HAVE FUSE; HAS EXAMINED BLUEPRINTS.";
-		otherwise:
-			say "DOES NOT HAVE FUSE; HAS NOT EXAMINED BLUEPRINTS.";]
-			
+[See Section 1 - Blueprints to see where the blueprint examining is handled.]			
 Instead of inserting the fuse into the time machine:
 	if the player has the fuse:
 		if examined-blueprints is true:

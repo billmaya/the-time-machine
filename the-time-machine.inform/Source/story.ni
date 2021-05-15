@@ -3,44 +3,31 @@ The story author is "Billy Tenenbaum".
 The story headline is "A Temporal Investigation".
 The story genre is "Science Fiction".
 The release number is 1.
-The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
+The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20343 ]
+[ WORDS - 20275 ]
 
 Book 1 - Beginning The Story
 
 The player is in Woking Street.
 The description of the player is ""
 
-[ Rewrite of When play begins text
-"Let me go!
-Wells struggles against the efforts of the two orderlies to drag him into the horse-drawn ambulence parked in the street. With a strength born of desperation he breaks free and crashes into you, almost knocking both of you to the ground.
-
-'My friend, I[apostrophe]m not crazy. You believe me, don[apostrophe]t you?'
-
-Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we believe you. Time travel. Morlocks. Wanna the Eloi...'
-
-'Weena, you fool! Weena!' He turns back to you, fumbling in one of his vest pockets. 'I can prove it, in my workshop...'
-
-He's interrupted as the two orderlies, on Humboldt[apostrophe]s signal, grab Wells and overpower him back towards the ambulence. Wells struggles to free himself, the chain on his pocket watch XYZ.
-
-Humboldt glances as you, shaking his head slightly.
-]
-
 When play begins: say "'Let me go!'
 
-Wells struggles against the two burly orderlies who try and drag him into the horse-drawn ambulence parked in the street. With a strength born of desperation he breaks free and crashes into you, almost dragging both of you to the ground. 
+Wells struggles against the efforts of the two orderlies who are dragging him towards the horse-drawn ambulence parked in the street. Desperate, he pulls himself free and stumbles into you, almost knocking the both of you to the ground.
 
-'Save her,' he says, his voice hoarse, his eyes pleading. 'Save Weena for me. You're my only hope.'
+'My friend, I[apostrophe]m not crazy,' he says, his eyes desperate and pleading. 'I know my story sounds insane,  but it[apostrophe]s true. Every word of it. You believe me, don[apostrophe]t you?'
 
-Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we'll help this 'Wanna.' But first you need to get some rest. Clear your head. Get some perspective on the situation.'
+Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we believe you. You just had a terrible shock; you need to rest after all these...time traveling adventures of yours. Plenty of time to sort it all out after you[apostrophe]ve had a bit of a break. Nothing to worry about.'
 
-'Weena, you fool! Weena!' He twists towards you, attempting to get away from Humboldt. 'I'm not crazy. The Morlocks are going to try and kill her. Use the time machine in my workshop to save her. I've got the key...'
+You look at the doctor and back at Wells, not knowing who to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[apostrophe]ve just heard from Wells[apostrophe] own mouth. Morlocks. Eloi. It sounds fantastical.
 
-Wells starts fumbling in one of his vest pockets as Humboldt nods to the two orderlies behind Wells. Grabbing Wells, they overpower him and manhandle the flailing man into the dark recesses of the ambulence. If you're totally honest, it appears they relish using more force than necessary. Humboldt notices your concerned look.
+'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[apostrophe]ll find...get your bloody hands off of me!' The orderlies have grabbed Wells a second time 'No, damn you! Let me go!' 
 
-'Don't worry,' he says, consulting his pocket watch. 'They're professionals. Used to this kind of stuff all the time. They're not as rough as they look.'"
+Wells forgets whatever he was looking for in his pockets and struggles against the orderlies but they[apostrophe]re prepared this time and manage to overpower your friend and manhandle him into the ambulence. But it[apostrophe]s a near thing, so violent that Wells[apostrophe] pocket watch falls to the ground during the struggle.
+
+Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[apostrophe] professionals, used to dealing with this stuff all the time. It[apostrophe]s not as rough as it looks.'"
 
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 

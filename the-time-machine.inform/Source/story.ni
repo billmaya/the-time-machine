@@ -1188,6 +1188,8 @@ Instead of searching [examining] the time machine:
 			otherwise:
 				say "According to Wells[apostrophe] statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens. Right now you have no clue about how to activate it or what the next steps might be.".
 
+Instead of opening the time machine: say "The time machine is alread 'open.' All you have to do is get inside if you desire."
+
 [Writing §9.13. The past and perfect tenses]
 
 [3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]

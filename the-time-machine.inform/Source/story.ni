@@ -6,14 +6,19 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20275 ]
+[ WORDS - 20320 ]
 
 Book 1 - Beginning The Story
 
 The player is in Woking Street.
 The description of the player is ""
 
-When play begins: say "'Let me go!'
+The current-year is text that varies.
+The current-year is "1895".
+
+When play begins: 
+	now the left hand status line is "[location] - [current-year]";
+	say "'Let me go!'
 
 Wells struggles against the efforts of the two orderlies who are dragging him towards the horse-drawn ambulence parked in the street. Desperate, he pulls himself free and stumbles into you, almost knocking the both of you to the ground.
 
@@ -73,8 +78,6 @@ Instead of going up in Woking Street: say "You jump up and down a few times, try
 
 Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
 
-[TBD - Mrs. Watchett should wander away if you go "up" in the Entryway.]
-
 Chapter 3 - Every Turn Rules
 
 Section 1 - Workshop
@@ -106,6 +109,14 @@ Rule for deciding whether all includes a thing when removing from: it does not.
 [This changes the default message “There are none at all available!”]
 Rule for printing a parser error when the latest parser error is the nothing to do error:
 	say “Grabbing for everything at once isn't going to help your investigation one bit. A methodical, measured approach is called for.”
+
+[Chapter 6 - Exit List
+
+To say exit list:
+	let place be location;
+	repeat with way running through directions:
+		let place be the room way from the location;
+		if place is a room, say " [way]".]
 
 
 Chapter 6 - Tests
@@ -311,7 +322,6 @@ Section 2 - Front Door
 		now the front door is closed;
 		continue the action.
 		
-	
 [Sundial links
 victorian	https://bit.ly/3tP1ssg
 image	https://bit.ly/371QTYW
@@ -339,7 +349,6 @@ The metal key is undescribed.
 The description of metal key is "A small metal key that you can recall Wells carrying around everywhere he went."
 Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
-[The printed name of metal key is "workshop key".]
 The metal key unlocks the workshop-door.
 		
 Section 5 - The Petal
@@ -988,7 +997,7 @@ Instead of using [things in the Kitchen]: say "Given your gender and dearth of k
 Chapter 8 - Workshop  
 
 The workshop is a dark room. 
-The Workshop is north of the Workshop Door. 
+[The Workshop is north of the Workshop Door.] 
 The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].[paragraph break]Midway down the room, closer to the west wall, is a mechanical device that resembles nothing you have ever seen before anywhere in your entire life.[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."
 
 The workbench is a thing.
@@ -1170,7 +1179,6 @@ Understand "bicycle" and "seat" as saddle.
 [See Section 1 - Blueprints to see where boolean is set.]
 
 [Replaced "examining" with "searching" in Instead statement]
-[DEL with Instead of searching the time machine?]
 Instead of searching [examining] the time machine:
 	if the fuse is in the time machine, say "EVERYTHING LOOKS GOOD TO GO.";
 	otherwise:
@@ -1313,7 +1321,7 @@ Humboldt is a person.
 Humboldt is a male.
 Humboldt is fixed.
 Humboldt is in Woking Street.
-The description of Humboldt is "A reputable physician and alienist, he has known Wells for years. You are confident that his methodical nature, combined with his diagnostic skills, will enable him to determine what ails your friend."
+The description of Humboldt is "A reputable physician and alienist, he has also known Wells for years. You are confident that his methodical nature, combined with his diagnostic skills, will enable him to determine what ails your friend."
 
 The printed name of Humboldt is "Dr. Humboldt"
 
@@ -1502,6 +1510,7 @@ Travel To 802,701 begins when the time machine is in the Workshop and player is 
 When Travel To 802,701 begins:
 	[say "TRAVELING TO 802,701 BEGINS.";]
 	say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.[paragraph break]Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.[paragraph break]The peculiar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merge into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.[paragraph break]After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replaced by what appears to be an eternal spring as the machine slows even more. 'The earth seems very fair' is the first conscious thought that you remember thinking as the machine slows down further and comes to a stop.[paragraph break]You have arrived.";
+	now the current-year is "802,701";
 	now the time machine is in the Clearing;
 	now the time machine is described;
 	now the control panel is switched off.
@@ -1532,13 +1541,15 @@ Travel To 1895 begins when the time machine is in the Clearing and the player is
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
 	say "The clearing becomes hazy and dark and the rapidly alternating cycle of night and day becomes a continuous greyness as the machine hurtles back in time. The murmur in your ears and the confusedness in your mind are not as bad as the last time. The dials spin backwards, years melting away in seconds as the machine's operation reaches a crescendo and slows down as you approach your starting point.[paragraph break]You are back.";
+	now the current-year is "1895";
 	now the time machine is in the Workshop;
 	now the control panel is switched off.
 
 Travel To 1895 ends when the time machine is in the Workshop.
 
 [When Travel To 1895 ends:
-	say "TRAVEL TO 1895 ENDS.";]
+	say "TRAVEL TO 1895 ENDS.";]	
+
 
 
 
@@ -1715,6 +1726,7 @@ Chapter 6 - Inside Dome
 
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
+Understand "dome" as Inside Dome.
 
 The description of Inside Dome is "Sunlight streams through the dome's [oculus], illuminating the room below. Low stone [tables] are arranged symmetrically throughout the room, surrounding a central [well] underneath the dome's apex. Mosaic [murals] cover the walls. Sunlight streams through an archway to the south and the exit of the building is to the west."
 	

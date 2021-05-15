@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel to the year of 802,701, a age of Eloi and Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20300 ]
+[ WORDS - 20343 ]
 
 Book 1 - Beginning The Story
 
@@ -147,7 +147,7 @@ Test switch-examine with " examine orrery's switch / examine orrery switch."
 Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
 
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
-Test go-workshop with "test unlock-workshop / go north / flip switch."
+Test goto-workshop with "test unlock-workshop / go north / flip switch."
 
 [Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."]
 Test prepare-time-machine with "test unlock-workshop / go north / flip switch / purloin fuse / examine blueprints / put fuse in time machine."
@@ -1043,7 +1043,6 @@ Understand "sketch" or "sketches" as diagrams.
 
 The chalk is a thing.
 The chalk is undescribed in the Workshop.
-[The chalk is scenery in the Workshop.]
 The description of the chalk is "It is white and chalky."
 
 Instead of taking the chalk: say "You reach for a piece of chalk but realize you don't have the faintest idea what you would even write on the board. Better to investigate other areas of the workshop."
@@ -1059,7 +1058,7 @@ The lights are scenery in the Workshop.
 The description of the lights is "You see nothing special about the lights except [if light switch is switched off]they are turned off (perhaps there's a switch here somewhere)[otherwise]they are turned on[end if]."
 
 The light switch is a device.
-The light switch is [scenery] in the Workshop.
+The light switch is in the Workshop.
 The light switch is switched off.
 
 Instead of examining the light switch:
@@ -1129,7 +1128,6 @@ The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-[Make it so the time machine is described in initial room description?]
 The description of time machine is "Approximately the size of the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a simple bicycle saddle for the occupant to sit on and a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
 Understand "mechanism" or "device" or "temporal" as time machine.
 
@@ -1139,11 +1137,16 @@ The control panel is switched off.
 The control panel is undescribed.
 Understand "controls" as control panel.
 
+The button is a thing in the time machine. [TBD Fix this button/control panel thing up]
+The button is undescribed.
+
+Instead of pushing the button: try activating the control panel.
+
 Instead of examining the control panel:
 	if the player is in the time machine:
 		say "A cursory glance at the two sets of chronometric dials shows them configured for two dates, one today and one far in the future. From the status of the various lights it looks like the control panel is ready to be activated.";
 	otherwise:
-		say "From the outside you can see the control panel is composed of various dials, switches, and lights but you can't make out any greater detail.";
+		say "From the outside you can see the control panel is composed of various dials, switches, lights, and a single button but you would have to be standing in the machine to examine anything in greater detail.";
 	rule succeeds.
 
 [> activate control panel

@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20700 ]
+[ WORDS - 20709 ]
 
 Book 1 - Beginning The Story
 
@@ -1819,6 +1819,7 @@ Understand "circular" or "container" or "depression" as tables.
 
 The well is a thing.
 The well is scenery in the Inside Dome.
+
 The description of the well is "Mirroring the oculus diameter, this circular pool of water ripples, reflecting a slightly distorted image of the room around you."
 
 The water is a thing.

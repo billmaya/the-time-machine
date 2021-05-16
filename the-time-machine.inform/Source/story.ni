@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20709 ]
+[ WORDS - 20766 709 ]
 
 Book 1 - Beginning The Story
 
@@ -1835,18 +1835,15 @@ Instead of eating the water:
 	say "You cup some water in your hands for a quick drink.";
 	stop the action.
 
-[Writing §10.2. Liquids]
-Instead of drinking the water, say "You cup some water in your hand and take a quick drink."
+Instead of drinking the water, say "You cup some water in your hand and take a quick drink." [Writing §10.2. Liquids]
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
 The description of the murals are "Circling the entire dome wall except for the entrances and exits, the pictorial cyclorama displays a day-to-night series of idealized pastoral scenes of a leisurely life. In the various [mosaics], tunicked figures gather fruit, bathe in the river, pick flowers, wander the countryside, and eat, dance, and play in the sunlight. In the dusk scenes you can make out shadowy figures in the background spying on the childish figures in the foreground, hidden in the undergrowth and shadow. Each mural has a title, written in a strange Arabic script that you cannot decipher."
 Understand "cyclorama" or "mural" as murals.
 	
-[Instead of reading the murals: say "You don't understand the writing."]
 Before taking the murals:
 	say "While you have a basic understanding of Latin required for your legal work, the linguistic skills required to decypher the words associated with each mural is quite beyond you.";
-	[say "Foreign languages beyond Latin were never your specialty.";]
 	stop the action.
 
 The mosaics are a thing.

@@ -995,6 +995,11 @@ The work area is scenery in the Kitchen.
 The work area is a supporter.
 The description of the work area is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
+Section 1 - Operating Appliances
+
+Instead of switching on the stove: try using the stove.
+Instead of switching on the sink: try using the sink.
+
 [TBD - This rule is triggered by > use switch in the Workshop]
 Instead of using [things in the Kitchen]: say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with here preparations."
 

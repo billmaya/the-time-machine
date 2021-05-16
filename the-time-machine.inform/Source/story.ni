@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20423 ]
+[ WORDS - 20501 ]
 
 Book 1 - Beginning The Story
 
@@ -36,7 +36,7 @@ Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[a
 
 After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 
-Chapter 1 - Check For Missing Item Descriptions
+Chapter 1 - Missing Item Description Check
 
 [Checks for missing item descriptions]
 [
@@ -176,6 +176,8 @@ Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purl
 Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / up / down / test eloi-ask-show-give."
 Test travel-1895 with "go northwest / enter / activate panel."
 Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena petal / test travel-1895 / exit."
+
+Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with key / n / flip switch / examine blueprints / put fuse in time machine. / get in time machine / press button."
 
 
 Book 3 - 1895
@@ -1664,14 +1666,23 @@ Going southwest in the Clearing is wandering.
 Going west in the Clearing is wandering.
 Going northwest in the Clearing is wandering.
 
-
 Instead of wandering in the Clearing:
-	say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.".		
+	if the player is in the time machine:
+		say "You would have to get out of the time machine first.";
+	otherwise:
+		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.".		
 						
 Before going southeast in the Clearing:
-	if can-go-clearing-to-river is false:
-		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
-		stop the action.
+	if the player is in the time machine:
+		say "You would have to get out of the time machine first.";
+		stop the action;
+	otherwise:
+		if can-go-clearing-to-river is false:
+			say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
+			stop the action;
+		otherwise:
+			continue the action.
+	
 
 Chapter 2 - Sphinx Steps
 

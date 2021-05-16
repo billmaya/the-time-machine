@@ -999,6 +999,8 @@ Section 1 - Operating Appliances
 
 Instead of switching on the stove: try using the stove.
 Instead of switching on the sink: try using the sink.
+		
+Instead of opening the stove: try using the stove.
 
 [TBD - This rule is triggered by > use switch in the Workshop]
 Instead of using [things in the Kitchen]: say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with here preparations."

@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20501 ]
+[ WORDS - 20700 ]
 
 Book 1 - Beginning The Story
 
@@ -90,6 +90,26 @@ Instead of using things:
 Section 4 - Attack
 
 Instead of attacking someone: say "Violence [aren't] the answer here, especially given your years of jurisprudence."
+
+Chapter 2 - Before Rules
+
+Section 1 - Listening
+
+Before listening:
+	if the player is in Woking Street:
+		say "The sound of the wind nearly obscures the normal sounds of the city at this time of night.";
+		stop the action;
+	else if the player is in the Clearing:
+		say "Nature sounds mixed in with the sound of the wind through the trees.";
+		stop the action;
+	else if the player is in the Top Shaft: 
+		say "The faint sounds of machinery from below mingle with the natural sounds of the clearing.";
+		stop the action;
+	else if the player is in the Bottom Shaft:
+		say "The sound of machinery is louder now and seems to come from every direction.";
+		stop the action;
+	otherwise:
+		continue the action.
 
 
 
@@ -858,7 +878,13 @@ The place settings is scenery on the dining table.
 
 The sideboard is a thing.
 The sideboard is scenery in the Dining Room.
-The sideboard is a supporter.
+[The sideboard is a supporter.]
+The sideboard is a container.
+The sideboard can be open or closed.
+The sideboard can be openable. The sideboard is closed.
+
+Instead of opening the sideboard: try searching the sideboard.
+Instead of searching the sideboard: say "I don't think Mrs. Watchett would appreciate you rummaging around in her tableware and place settings."
 
 The tableware is a thing. [https://bit.ly/3dBRN2q]
 The tableware is scenery in the Dining Room.
@@ -984,6 +1010,8 @@ The description of the work table is "It has been modified extensively by Wells 
 The cabinets are a thing.
 The cabinets are scenery in the Kitchen.
 The cabinets are a container.
+The cabinets can be open or closed.
+The cabinets are openable. The cabinets are closed.
 The description of the cabinets is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
 Understand "cabinet" or "storage" or "free-standing" or "free standing" or "standing" as cabinets.
@@ -1020,6 +1048,7 @@ Instead of switching on the stove: try using the stove.
 Instead of switching on the sink: try using the sink.
 		
 Instead of opening the stove: try using the stove.
+Instead of opening the cabinets: try searching the cabinets.
 
 Instead of searching the stove: say "I don't think Mrs. Watchett would appreciate you interfering with her dinner preparations." 
 Instead of searching the cabinets: say "I don't think Mrs. Watchett would appreciate you rummaging around in her cabinets."
@@ -1635,6 +1664,7 @@ The metal grate is undescribed.
 The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of rusted metal welded together in a waffle pattern. Despite the rust, it looks extremely sturdy and heavy."
 
 [ > Remove grate ]
+
 Understand the command "remove" as something new.
 Understand the command "remove" as "take".
 
@@ -1715,7 +1745,7 @@ Chapter 3 - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
-The description of Top Shaft is "You're perched at the the top of the shaft on the ladder leading down. Exiting the shaft will put you back in the Clearing. The faint sound of machinery rises from the darkness below."
+The description of Top Shaft is "You're perched at the the top of the shaft on the ladder leading down. Exiting the shaft will put you back in the Clearing. The faint sound of rhythmic machinery rises from the darkness below."
 
 The printed name of Top Shaft is "Top of the Shaft"
 
@@ -1737,7 +1767,8 @@ Chapter 4 - Bottom Shaft
 
 The Bottom Shaft is a room.
 Up from the Bottom Shaft is the Top Shaft.
-The description of Bottom Shaft is "A small amount of light from above filters down, allowing you to see tunnels sloping down in every direction. The sound of machinery is louder now and seems to come from everywhere."
+The description of Bottom Shaft is "A small amount of light from above filters down, allowing you to see tunnels sloping down in every direction." 
+[The sound of machinery is louder now and seems to come from everywhere."]
 
 The printed name of Bottom Shaft is "Bottom of the Shaft"
 

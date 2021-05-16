@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20320 ]
+[ WORDS - 20423 ]
 
 Book 1 - Beginning The Story
 
@@ -78,6 +78,25 @@ Instead of going up in Woking Street: say "You jump up and down a few times, try
 
 Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
 
+Section 3 - Using
+
+Instead of using things:
+	if the player is in the Kitchen: [TBD - Any object in Kitchen, even if carried by player, will display text below]
+		say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with here preparations.";
+	otherwise:
+		say "You'll have to be more specific."
+		[continue the action.]
+
+Section 4 - Attack
+
+Instead of attacking someone: say "Violence [aren't] the answer here, especially given your years of jurisprudence."
+
+
+
+
+
+
+
 Chapter 3 - Every Turn Rules
 
 Section 1 - Workshop
@@ -110,13 +129,9 @@ Rule for deciding whether all includes a thing when removing from: it does not.
 Rule for printing a parser error when the latest parser error is the nothing to do error:
 	say “Grabbing for everything at once isn't going to help your investigation one bit. A methodical, measured approach is called for.”
 
-[Chapter 6 - Exit List
 
-To say exit list:
-	let place be location;
-	repeat with way running through directions:
-		let place be the room way from the location;
-		if place is a room, say " [way]".]
+
+
 
 
 Chapter 6 - Tests
@@ -995,15 +1010,19 @@ The work area is scenery in the Kitchen.
 The work area is a supporter.
 The description of the work area is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
 
-Section 1 - Operating Appliances
+Section 1 - Actions In Kitchen
+
+[See Book 2, Chapter 2, Section 3 for Using rules]
 
 Instead of switching on the stove: try using the stove.
 Instead of switching on the sink: try using the sink.
 		
 Instead of opening the stove: try using the stove.
 
-[TBD - This rule is triggered by > use switch in the Workshop]
-Instead of using [things in the Kitchen]: say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with here preparations."
+Instead of searching the stove: say "I don't think Mrs. Watchett would appreciate you interfering with her dinner preparations." 
+Instead of searching the cabinets: say "I don't think Mrs. Watchett would appreciate you rummaging around in her cabinets."
+Instead of searching the kitchen shelves: say "You glance briefly at the various items on the shelves but find nothing pertinent to your investigation."
+
 
 Chapter 8 - Workshop  
 
@@ -1279,13 +1298,12 @@ Section 1 - Conversation
 Instead of telling watchett about something: [Writing §7.6. Reading and talking]
 	try asking watchett about it.
 
-[See Writing §7.6. Reading and talking]
-Instead of asking Watchett about "wells": say "Always working too hard on his experiments, he is. Did the doctor say he would be all right?"
-[TBD asking Watchett about "experiments" - don't mention the "workshop door" or change reply]
-Instead of asking Watchett about "experiments": say "'Everything that was done was behind that door.' She points to the workshop door."
+
+Instead of asking Watchett about "wells": say "Always working too hard on his experiments, he is. I'm sure the doctor will make everything right."
+Instead of asking Watchett about "experiments": say "I wouldn't know anything about. Anything like that is in the professor[apostrophe]s workshop."
 Instead of asking Watchett about "workshop door": say "Locked. Always locked. Only Mr. Wells has the key."
 Instead of asking Watchett about "front door": say "Much too cold to be outside the way you're dressed. Best you warm up by the fire first."
-[TBD - Modify or remove?]
+[DEL - Modify or remove?]
 Instead of asking Watchett about "door": say "A puzzled look on her face, Mrs. Watchett looks at both the front door and the workshop door, trying to understand which door you're asking about."
 
 [See Writing §11.5. Conditions and question ]
@@ -1325,6 +1343,8 @@ Library			"reshelves some books"
 Library			"rearranges the chairs"
 Library			"looks out the windows"
 Library			"draws the curtains closed"
+
+
 
 Chapter 2 - Humboldt 
 

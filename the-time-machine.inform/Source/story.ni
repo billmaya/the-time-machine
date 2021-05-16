@@ -1220,7 +1220,7 @@ Instead of activating the control panel:
 		if humboldt-endgame-begins is false:
 			say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
 		otherwise:
-			say "You press the button but nothing happens. Smelling someting burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
+			say "You press the button but nothing happens. Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
 			now the player has the fuse;
 	otherwise:
 		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";

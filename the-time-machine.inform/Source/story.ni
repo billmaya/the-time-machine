@@ -1842,6 +1842,12 @@ The murals are a thing.
 The murals are scenery in the Inside Dome.
 The description of the murals are "Circling the entire dome wall except for the entrances and exits, the pictorial cyclorama displays a day-to-night series of idealized pastoral scenes of a leisurely life. In the various [mosaics], tunicked figures gather fruit, bathe in the river, pick flowers, wander the countryside, and eat, dance, and play in the sunlight. In the dusk scenes you can make out shadowy figures in the background spying on the childish figures in the foreground, hidden in the undergrowth and shadow. Each mural has a title, written in a strange Arabic script that you cannot decipher."
 Understand "cyclorama" or "mural" as murals.
+	
+[Instead of reading the murals: say "You don't understand the writing."]
+Before taking the murals:
+	say "While you have a basic understanding of Latin required for your legal work, the linguistic skills required to decypher the words associated with each mural is quite beyond you.";
+	[say "Foreign languages beyond Latin were never your specialty.";]
+	stop the action.
 
 The mosaics are a thing.
 The mosaics are scenery in the Inside Dome.

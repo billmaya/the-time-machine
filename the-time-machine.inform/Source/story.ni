@@ -356,6 +356,19 @@ Section 5 - The Petal
 The petal is a thing.
 The petal is nowhere.
 The description of the petal is "You can't tell much from a single petal except that it came from a flower. Perhaps the rest of the blossom is inside somewhere."
+		
+Section 6 - Pocket Watch
+
+The pocket watch is a thing.
+The pocket watch is in Woking Street.
+[The pocket watch is undescribed.]
+[The printed name of pocket watch is "Wells[apostrophe] pocket watch".]
+The pocket watch can be open or closed. The pocket watch is closed.
+Understand "timepiece" or "chronometer" as pocket watch.
+
+The description of the pocket watch is "Wells[apostrophe] pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanted with the moving hands and its winding mechanism."
+
+Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"
 
 Chapter 2 - Entryway
 
@@ -748,16 +761,7 @@ Instead of using the poker:
 	
 [Understand "use [something] on [something]" as using.]
 
-Section 4 - Pocket Watch
 
-The pocket watch is a thing.
-The pocket watch is on the small table.
-The pocket watch is undescribed.
-The pocket watch can be open or closed. The pocket watch is closed.
-Understand "timepiece" or "chronometer" as pocket watch.
-The description of the pocket watch is "Wells[apostrophe] pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanted with the moving hands and its winding mechanism."
-
-Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"
 
 Chapter 5 - Garden
 

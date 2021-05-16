@@ -1826,8 +1826,12 @@ The water is scenery in the Inside Dome.
 The water is edible.
 The description of the water is "The water seems fresh, replenished and circulated by some unseen mechanism far below. [first time] (Undoubtably, Wells would be able to elucidate the engineering behind such a feat but you can only wonder at its execution.)[only]."
 
+Before taking the water:
+	try eating the water;
+	stop the action.
+
 Instead of eating the water:
-	say "You cup some water in your hand and take a quick drink.";
+	say "You cup some water in your hands for a quick drink.";
 	stop the action.
 
 [Writing §10.2. Liquids]

@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20747 ]
+[ WORDS - 20704 ]
 
 Book 1 - Beginning The Story
 
@@ -976,7 +976,10 @@ Section 2 - The Fuse
 The fuse is a thing.
 The fuse is nowhere.
 
-The description of the fuse is "[if the sliding panel is open or the player has the fuse]Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[end if][if fuse is in sliding panel] Each of the metal caps is held in a metal clip that connects it to the rest of the orrery mechanism.[end if][if humboldt-endgame-begins is true] The pasteboard cylinder between the metal caps is blackened and burned. Obviously it has shorted out and is useless.[end if]"
+fuse-burnt-out is a truth state that varies.
+fuse-burnt-out is false.
+
+The description of the fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and is useless.[end if]"
 	
 [> take fuse]
 	
@@ -1185,6 +1188,7 @@ The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
+[TBD Rewrite time machine description]
 The description of time machine is "Approximately the size of the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a simple bicycle saddle for the occupant to sit on and a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
 Understand "mechanism" or "device" or "temporal" as time machine.
 
@@ -1217,7 +1221,7 @@ Instead of activating the time machine:
 
 Instead of activating the control panel:
 	if the player is in the time machine:
-		if humboldt-endgame-begins is false:
+		if fuse-burnt-out is false:
 			say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
 		otherwise:
 			say "You press the button but nothing happens. Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
@@ -1334,8 +1338,6 @@ Instead of asking Watchett about "wells": say "Always working too hard on his ex
 Instead of asking Watchett about "experiments": say "I wouldn't know anything about. Anything like that is in the professor[apostrophe]s workshop."
 Instead of asking Watchett about "workshop door": say "Locked. Always locked. Only Mr. Wells has the key."
 Instead of asking Watchett about "front door": say "Much too cold to be outside the way you're dressed. Best you warm up by the fire first."
-[DEL - Modify or remove?]
-Instead of asking Watchett about "door": say "A puzzled look on her face, Mrs. Watchett looks at both the front door and the workshop door, trying to understand which door you're asking about."
 
 [See Writing §11.5. Conditions and question ]
 watchett-key is a truth state that varies.
@@ -1607,6 +1609,7 @@ When Travel To 1895 begins:
 	say "The clearing becomes hazy and dark and the rapidly alternating cycle of night and day becomes a continuous greyness as the machine hurtles back in time. The murmur in your ears and the confusedness in your mind are not as bad as the last time. The dials spin backwards, years melting away in seconds as the machine's operation reaches a crescendo and slows down as you approach your starting point.[paragraph break]You are back.";
 	now the current-year is "1895";
 	now the time machine is in the Workshop;
+	now fuse-burnt-out is true;
 	now the control panel is switched off.
 
 Travel To 1895 ends when the time machine is in the Workshop.
@@ -1815,8 +1818,6 @@ Understand "apex" as oculus.
 The tables are a thing.
 The tables are scenery in the Inside Dome.
 The description of the tables are "The low-slung stone tables are arranged in a circular pattern around the well." 
-[DEL where a group of twdesigned for kneeling or sitting."]
-[DEL It looks like each circular table can seat eight or twelve people. A slight circular depression in the center of each table about four feet in diameter looks like it serves as a container for something."]
 Understand "circular" or "container" or "depression" as tables.
 
 The well is a thing.
@@ -1825,9 +1826,6 @@ The well is open.
 The well is scenery in the Inside Dome.
 
 Instead of inserting things into the well: say "I don't see the purpose of dropping [the noun] in the water."
-
-[The windows can be open or closed.
-The windows can be openable. The windows are openable.]
 
 The description of the well is "Mirroring the oculus diameter, this circular pool of water ripples, reflecting a slightly distorted image of the room around you."
 

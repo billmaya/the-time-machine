@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20706 ]
+[ WORDS - 20759 ]
 
 Book 1 - Beginning The Story
 
@@ -1737,15 +1737,8 @@ The stone doors are scenery in the Sphinx Steps.
 The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The doors themselves are carved with line after line of mechanical cuneiform and bas relief mongoloid figures marching down a successive set of ramps to an unpictured subterranean destination."
 
 Before opening the stone doors:
-	say "[if the player has the poker]CAN'T OPEN WITH POKER.[otherwise]CAN'T OPEN WITH BARE HANDS.";
+	say "[if the player has the poker]Even with the poker you cannot leverage one of the huge stone doors open.[otherwise]You try and drag one of the huge stone doors open with your bare hands but are unsuccessful.";
 	stop the action.
-
-[DEL The stone doors can be open or closed.
-The stone doors can be openable. The stone doors are closed.]
-
-[DEL The stone doors are a door. 
-The stone doors are openable.
-The stone doors are locked.]
 
 The pedestal is a thing.
 The pedestal is scenery in the Sphinx Steps.

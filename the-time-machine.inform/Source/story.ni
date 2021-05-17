@@ -1814,11 +1814,20 @@ Understand "apex" as oculus.
 
 The tables are a thing.
 The tables are scenery in the Inside Dome.
-The description of the tables are "The low-slung metal tables are arranged in a circular pattern around the well, designed for kneeling or sitting. It looks like each circular table can seat eight or twelve people. A slight circular depression in the center of each table about four feet in diameter looks like it serves as a container for something."
+The description of the tables are "The low-slung stone tables are arranged in a circular pattern around the well." 
+[DEL where a group of twdesigned for kneeling or sitting."]
+[DEL It looks like each circular table can seat eight or twelve people. A slight circular depression in the center of each table about four feet in diameter looks like it serves as a container for something."]
 Understand "circular" or "container" or "depression" as tables.
 
 The well is a thing.
+The well is a container.
+The well is open.
 The well is scenery in the Inside Dome.
+
+Instead of inserting things into the well: say "I don't see the purpose of dropping [the noun] in the water."
+
+[The windows can be open or closed.
+The windows can be openable. The windows are openable.]
 
 The description of the well is "Mirroring the oculus diameter, this circular pool of water ripples, reflecting a slightly distorted image of the room around you."
 

@@ -656,14 +656,6 @@ The Parlor is a room.
 The Parlor is north of the Library.
 The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Today's [newspaper] sits on one of the armchairs.[if pocket watch is on the small table in Parlor] On top of a small table against the east wall is a [pocket watch].[end if] A set of glass doors to the east lead outside to the garden and the room continues to the north."
 
-The Garden Door is east of the Parlor and west of the Garden. 
-The Garden Door is a door. 
-The Garden Door is openable and lockable.
-The Garden Door is scenery.
-The description of Garden Door is "[if location is Parlor]A set of glass doors and stone steps lead down into a snow-covered garden.[otherwise]A set of stone steps lead up to glass doors and the inside of the house."
-
-Understand "glass" or "glass door" or "glass doors" as Garden Door.
-
 The armchairs are things.
 The armchairs are scenery in the Parlor.
 The armchairs are supporters.
@@ -688,7 +680,17 @@ The small table is scenery in the Parlor.
 The small table is a supporter.
 The description of the small table is "Nothing out of the ordinary, just a small wooden table to the left of the garden doors."
 
-Section 1 - Fireplace
+Section 1 - Garden Door
+
+The Garden Door is east of the Parlor and west of the Garden. 
+The Garden Door is a door. 
+The Garden Door is openable and lockable.
+The Garden Door is scenery.
+The description of Garden Door is "[if location is Parlor]A set of glass doors and stone steps lead down into a snow-covered garden.[otherwise]A set of stone steps lead up to glass doors and the inside of the house."
+
+Understand "glass" or "glass door" or "glass doors" as Garden Door.
+
+Section 2 - Fireplace
 	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
@@ -708,7 +710,7 @@ Instead of using the fireplace, say "That's not something you can use, but just 
 
 [https://bit.ly/33EceFC https://bit.ly/2RO6PJq]
 
-Section 2 - Fire
+Section 3 - Fire
 
 The fire is a thing.
 The fire is in the parlor. [fireplace.]
@@ -779,7 +781,7 @@ Understand the command "burn" as something new.
 Understand "burn [something]" as burning.
 Instead of burning something: say "That really woudn[apostrophe] accomplish anything productive."
 
-Section 3 - Poker
+Section 4 - Poker
 
 The poker is a thing. [https://bit.ly/3sczKUx]
 The poker is undescribed in the Parlor.
@@ -1733,6 +1735,17 @@ Understand "pyramid" as ziggurat.
 The stone doors are a thing.
 The stone doors are scenery in the Sphinx Steps.
 The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The doors themselves are carved with line after line of mechanical cuneiform and bas relief mongoloid figures marching down a successive set of ramps to an unpictured subterranean destination."
+
+Before opening the stone doors:
+	say "[if the player has the poker]CAN'T OPEN WITH POKER.[otherwise]CAN'T OPEN WITH BARE HANDS.";
+	stop the action.
+
+[DEL The stone doors can be open or closed.
+The stone doors can be openable. The stone doors are closed.]
+
+[DEL The stone doors are a door. 
+The stone doors are openable.
+The stone doors are locked.]
 
 The pedestal is a thing.
 The pedestal is scenery in the Sphinx Steps.

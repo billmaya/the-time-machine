@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20704 ]
+[ WORDS - 20712 ]
 
 Book 1 - Beginning The Story
 
@@ -1189,7 +1189,7 @@ The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
 [TBD Rewrite time machine description]
-The description of time machine is "Approximately the size of the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a simple bicycle saddle for the occupant to sit on and a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
+The description of time machine is "Approximately the size of the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a single normal-sized occupant to stand in front of a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
 Understand "mechanism" or "device" or "temporal" as time machine.
 
 The control panel is a device.
@@ -1232,11 +1232,11 @@ Instead of activating the control panel:
 		now humboldt-should-return is true;
 	now the control panel is switched on.
 
-The saddle is a thing.
+[DEL The saddle is a thing.
 The saddle is in the time machine.
 The saddle is undescribed.
 The saddle is fixed in place.
-Understand "bicycle" and "seat" as saddle.
+Understand "bicycle" and "seat" as saddle.]
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
 

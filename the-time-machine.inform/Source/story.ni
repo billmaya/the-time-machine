@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20831 ]
+[ WORDS - 21011 ]
 
 Book 1 - Beginning The Story
 
@@ -897,16 +897,36 @@ The tableware is scenery in the Dining Room.
 Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" as tableware.
 Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks" or "spoon" or "spoons" as tableware.
 
+Section 1 - Chandelier
+
 The chandelier is a device.
 The chandelier is switched on.
 The chandelier is scenery in the Dining Room.
-The description of the chandelier is "Probably the first of it's kind in the entire city, this crystal monstrosity bathes the entire room in a harsh, yellowish, light."
-	
-Instead of searching the chandelier: say "CAN'T SEARCH."
+The description of the chandelier is "Probably the first of it's kind in the entire city, this glass monstrosity [if the chandelier is switched on]bathes the entire room in a harsh, yellowish, light.[otherwise]is dark.[end if] There is a small [chain] at the bottom of the chandelier."
 			
-[Instead of switching the chane]
+[TBD - Suppress "The chandelier is currently switched on/off" message? See https://bit.ly/3ovZgnb]
+	
+Instead of searching the chandelier: say "Afraid of breaking Wells[apostrophe] latest acquisition, you confine yourself to a quick survey of the latticework of cut glass, wiring, and electric lights. Your cursory search finds nothing out of the ordinary."
 
-Section 1 - The Orrery
+The chain is a thing.
+The chain is scenery in the Dining Room.
+The description of the chain is "You see nothing remarkable about the small chain."
+
+Instead of pulling the chain: 
+	if the chandelier is switched off:
+		try switching on the chandelier;
+	otherwise:
+		try switching off the chandelier.
+
+Instead of switching off the chandelier: 
+	say "Tugging the small chain turns the chandelier off, bathing the room in a darkness that's only slightlyameliorated by the fire in the next room.";
+	now the chandelier is switched off;
+			
+Instead switching on the chandelier: 
+	say "Tugging the small chain turns the chandelier on, bathing the room in that harsh light you dislike so much.";
+	now the chandelier is switched on;
+
+Section 2 - Orrery
 
 The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
 The orrery is scenery on the dining table.
@@ -983,7 +1003,7 @@ Instead of switching off the orrery's switch:
 	now the orrery's switch is switched off;
 	now the orrery is switched off.
 
-Section 2 - The Fuse
+Section 3 - Fuse
 	
 The fuse is a thing.
 The fuse is nowhere.

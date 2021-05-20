@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 20759 ]
+[ WORDS - 20831 ]
 
 Book 1 - Beginning The Story
 
@@ -852,7 +852,7 @@ Chapter 6 - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description of the Dining Room is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. The table currently has four [place settings] at one end for an upcoming meal. At the other end of the table is a clockwork [orrery]. Above the table hangs an electric [chandelier], probably the first of its kind in the entire city, which fills the room and bathes the wainscotted and wallpapered [walls] in what you feel is a harsh, yellowish light.[paragraph break]To the north, to the right of the kitchen door is a [sideboard] used to hold [tableware] and place settings between meals.[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[end if]"
+The description of the Dining Room is "The house's centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that seats eight comfortably. At one end of the table are four [place settings] and chairs; at the other end is a clockwork [orrery] built by Wells. Above the table hangs an electric [chandelier]. To the north, to the right of the kitchen door, is a [sideboard] that holds [tableware] and place settings between meals.[if the location of Watchett is the Kitchen][paragraph break]Through the kitchen door you can hear faint sounds of movement and work.[end if]"
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
@@ -864,25 +864,27 @@ The dining room walls are scenery in the Dining Room.
 The printed name of dining room walls is "walls".
 The description of the dining room walls is "You're not much of an interior decorator so you wouldn't know wainscotting from wallpaper. Your wife, bless her, has her head fulll of little things like nonsensical things like that."
 Understand "wainscotted" or "wainscotting" or "wallpaper" as dining room walls.
-[Instead of examining the dining room walls, say "You'll have to be more specific. Are you interested in the wainscot or the wallpaper?"]
-
-[The wainscot is a thing. [https://bit.ly/3qTcueh]
-The wainscot is scenery in the Dining Room.
-Understand "wainscotting" or "wainscott" or "wainscoting" or "wainscotted" or "wainscoted" as wainscot
-
-The wallpaper is a thing.
-The wallpaper is scenery in the Dining Room.]
 
 The dining table is a thing.
 The dining table is scenery in the Dining Room.
 The dining table is a supporter.
+
+The dining room chair are a thing.
+The dining room chair are scenery in the Dining Room.
+The dining room chair are a container.
+The dining room chair are enterable.
+The description of dining room chair is "TBD."
+Understand "chair" as dining room chair.
+
+Instead of entering the dining room chair:
+	say "Well, maybe just for a minute while you gather your thoughts. You sit in the one of the chairs.";
+	now the player is in the dining room chair.
 
 The place settings is a thing. [https://bit.ly/2P0Izmb]
 The place settings is scenery on the dining table.
 
 The sideboard is a thing.
 The sideboard is scenery in the Dining Room.
-[The sideboard is a supporter.]
 The sideboard is a container.
 The sideboard can be open or closed.
 The sideboard can be openable. The sideboard is closed.
@@ -895,8 +897,14 @@ The tableware is scenery in the Dining Room.
 Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" as tableware.
 Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks" or "spoon" or "spoons" as tableware.
 
-The chandelier is a thing.
+The chandelier is a device.
+The chandelier is switched on.
 The chandelier is scenery in the Dining Room.
+The description of the chandelier is "Probably the first of it's kind in the entire city, this crystal monstrosity bathes the entire room in a harsh, yellowish, light."
+	
+Instead of searching the chandelier: say "CAN'T SEARCH."
+			
+[Instead of switching the chane]
 
 Section 1 - The Orrery
 

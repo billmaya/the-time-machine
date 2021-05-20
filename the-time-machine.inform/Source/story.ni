@@ -862,14 +862,16 @@ The Kitchen Door is scenery.
 The dining room walls are a thing.
 The dining room walls are scenery in the Dining Room.
 The printed name of dining room walls is "walls".
-Instead of examining the dining room walls, say "You'll have to be more specific. Are you interested in the wainscot or the wallpaper?"
+The description of the dining room walls is "You're not much of an interior decorator so you wouldn't know wainscotting from wallpaper. Your wife, bless her, has her head fulll of little things like nonsensical things like that."
+Understand "wainscotted" or "wainscotting" or "wallpaper" as dining room walls.
+[Instead of examining the dining room walls, say "You'll have to be more specific. Are you interested in the wainscot or the wallpaper?"]
 
-The wainscot is a thing. [https://bit.ly/3qTcueh]
+[The wainscot is a thing. [https://bit.ly/3qTcueh]
 The wainscot is scenery in the Dining Room.
 Understand "wainscotting" or "wainscott" or "wainscoting" or "wainscotted" or "wainscoted" as wainscot
 
 The wallpaper is a thing.
-The wallpaper is scenery in the Dining Room.
+The wallpaper is scenery in the Dining Room.]
 
 The dining table is a thing.
 The dining table is scenery in the Dining Room.

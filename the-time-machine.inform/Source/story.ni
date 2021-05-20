@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 21043 ]
+[ WORDS - 21123 ]
 
 Book 1 - Beginning The Story
 
@@ -941,6 +941,9 @@ The description of the orrery is "A heliocentric mechanical model of the eight p
 
 Understand "planetarium" or "device" or "mechanism" or "box" or "solar system" as orrery.
 
+[Suppress "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
+The examine devices rule does nothing when examining the orrery.
+
 [ > open orrery ]
 
 Before opening the orrery: 
@@ -973,6 +976,11 @@ Instead of closing the sliding panel:
 	if the fuse is in the sliding panel in the Dining Room:
 		now the fuse is nowhere.
 
+[> switch orrery on/off > turn orrery on/off ]
+	
+Instead of switching on the orrery: try switching on the orrery's switch.
+Instead of switching off the orrery: try switching off the orrery's switch.
+
 [> flip switch]
 	
 An orrery's switch is a thing.
@@ -995,7 +1003,7 @@ Instead of switching on the orrery's switch:
 			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptabley, the planets on the surface begin their endless journey around the Sun.";
 		now the orrery's switch is switched on;
 		now the orrery is switched on;
-	otherwise:
+	otherwise: [TBD If you try and switch on the orrery when the sliding panel is closed, the fuse is not in the sliding panel]
 		say "It looks like the orrery won't function unless you put the fuse in the sliding panel.".
 	
 Instead of switching off the orrery's switch:

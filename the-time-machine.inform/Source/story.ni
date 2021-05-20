@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21123 ]
+[ WORDS - 21129 ]
 
 Book 1 - Beginning The Story
 
@@ -202,7 +202,12 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 
 	Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" as area.
 
-	[> search street -> YCST https://bit.ly/3tvvi3z]
+	[> search street -> YCST -> https://bit.ly/3tvvi3z]
+
+	The street-search is scenery in Woking Street. ["The street is scenery in Working Street" won't compile]
+	Instead of searching the street-search: try searching the area.
+	Understand "street" as street-search.
+
 	[> search area]
 
 Instead of searching the area:
@@ -211,6 +216,8 @@ Instead of searching the area:
 		now the player is carrying the metal key;
 	otherwise:
 		say "Despite the cold you bend down and survey the small patch of macadam but nothing catches your eye. Of course, it would help if you knew what you were looking for."
+
+Section 1 - Scenery
 
 	[Snow is handled in the Garden]
 
@@ -230,6 +237,13 @@ Instead of searching the area:
 	The description of square is "During the day the road that intersects perpendicularly with Woking Street and the park beyond are live with carriages and pedestrians, even during this season. But now, at night and in this weather, both are empty except for the occasional carriage or pedestrian hurrying to warmer locations."
 	Understand "park" or "open space" or "municipal park" or "intersection" or "urban park" or "crossroads" or "main street" or "common" or "greenery" or "green park" as the square.
 
+	The houses are scenery in Woking Street.
+	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights has gone off as those residents have gone back to sleep.[only]"
+	
+	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "residences" as houses.
+
+Section 2 - Wandering
+
 	Going west in Woking Street is wandering.
 	Going northwest in Woking Street is wandering.
 	Going northeast in Woking Street is wandering.
@@ -240,11 +254,17 @@ Instead of searching the area:
 	
 	Instead of wandering:
 		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider.[line break][line break]You really should get inside since you're not dressed appropriately for this winter weather."
-	
-	The houses are scenery in Woking Street.
-	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights has gone off as those residents have gone back to sleep.[only]"
-	
-	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "residences" as houses.
+
+Section 3 - Humbolt Exit
+
+Before going north in Woking Street: 
+	if Humboldt is not nowhere:
+		say "Humboldt snaps his pocket watch shut and starts getting into the ambulence. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulence door shut. With the crack of the reins the ambulence starts off down the street, turns the corner, and disappears into the evening traffic.";
+		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
+		now the ambulence is nowhere;
+		now the player is carrying the Petal.	
+
+Section 4 - Front Door
 
 	The front door is north of Woking Street and south of the Entryway. 
 	The front door is a door. 
@@ -254,17 +274,6 @@ Instead of searching the area:
 	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
 	
 	[TBD - More detailed description of front door? See Victorian doors https://bit.ly/3rOzQkZ and https://bit.ly/3b0ymNP]
-
-Section 1 - Humbolt Exit
-
-Before going north in Woking Street: 
-	if Humboldt is not nowhere:
-		say "Humboldt snaps his pocket watch shut and starts getting into the ambulence. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulence door shut. With the crack of the reins the ambulence starts off down the street, turns the corner, and disappears into the evening traffic.";
-		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
-		now the ambulence is nowhere;
-		now the player is carrying the Petal.	
-
-Section 2 - Front Door
 	
 	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains to one side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
 	
@@ -352,7 +361,7 @@ image	https://bit.ly/371QTYW
 mottos	https://bit.ly/2Z7bRS4
 parts-of	https://bit.ly/3p83dwZ ]
 	
-Section 3 - Ambulence
+Section 5 - Ambulence
 	
 The ambulence is a thing in Woking Street.
 The description of the ambulence is "Horse-drawn, the ambulence resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
@@ -365,7 +374,7 @@ Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they s
 Instead of searching the ambulence: try entering the ambulence.
 Instead of entering the ambulence: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
 
-Section 4 - The Workshop Key
+Section 6 - The Workshop Key
 
 The metal key is a thing.
 The metal key is in Woking Street.
@@ -375,13 +384,13 @@ Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
 The metal key unlocks the workshop-door.
 		
-Section 5 - The Petal
+Section 7 - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
 The description of the petal is "You can't tell much from a single petal except that it came from a flower. Perhaps the rest of the blossom is inside somewhere."
 		
-Section 6 - Pocket Watch
+Section 8 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.

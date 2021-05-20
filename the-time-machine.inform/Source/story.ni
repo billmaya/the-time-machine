@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
 The story creation year is 2021.
 
-[ WORDS - 21011 ]
+[ WORDS - 21043 ]
 
 Book 1 - Beginning The Story
 
@@ -904,7 +904,10 @@ The chandelier is switched on.
 The chandelier is scenery in the Dining Room.
 The description of the chandelier is "Probably the first of it's kind in the entire city, this glass monstrosity [if the chandelier is switched on]bathes the entire room in a harsh, yellowish, light.[otherwise]is dark.[end if] There is a small [chain] at the bottom of the chandelier."
 			
-[TBD - Suppress "The chandelier is currently switched on/off" message? See https://bit.ly/3ovZgnb]
+[Suppress "The chandelier is currently switched on/off" message? See https://bit.ly/3ovZgnb]
+The examine devices rule does nothing when examining the chandelier.
+The examine devices rule does nothing when switching on the chandelier.
+The examine devices rule does nothing when switching off the chandelier.
 	
 Instead of searching the chandelier: say "Afraid of breaking Wells[apostrophe] latest acquisition, you confine yourself to a quick survey of the latticework of cut glass, wiring, and electric lights. Your cursory search finds nothing out of the ordinary."
 
@@ -919,7 +922,7 @@ Instead of pulling the chain:
 		try switching off the chandelier.
 
 Instead of switching off the chandelier: 
-	say "Tugging the small chain turns the chandelier off, bathing the room in a darkness that's only slightlyameliorated by the fire in the next room.";
+	say "Tugging the small chain turns the chandelier off darkens the room significantly but you can still see because of the fire in the next room.";
 	now the chandelier is switched off;
 			
 Instead switching on the chandelier: 

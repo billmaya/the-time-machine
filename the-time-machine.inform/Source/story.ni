@@ -3,7 +3,7 @@ The story author is "Billy Tenenbaum".
 The story headline is "A Temporal Investigation".
 The story genre is "Science Fiction".
 The release number is 1.
-The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of what he calls the Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is insane.".
+The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
 [ WORDS - 21123 ]
@@ -111,12 +111,6 @@ Before listening:
 	otherwise:
 		continue the action.
 
-
-
-
-
-
-
 Chapter 3 - Every Turn Rules
 
 Section 1 - Workshop
@@ -137,7 +131,6 @@ Understand "talk to [someone]" as a mistake ("To start a conversation, try to AS
 
 The [something] has to exist for the 2nd part of the Understand/as a mistake statement to be reached. Wells doesn't exist in the game but the ambulence does.]
 
-
 Chapter 5 - Take All
 
 [https://bit.ly/3xV8H3P]
@@ -148,11 +141,6 @@ Rule for deciding whether all includes a thing when removing from: it does not.
 [This changes the default message “There are none at all available!”]
 Rule for printing a parser error when the latest parser error is the nothing to do error:
 	say “Grabbing for everything at once isn't going to help your investigation one bit. A methodical, measured approach is called for.”
-
-
-
-
-
 
 Chapter 6 - Tests
 
@@ -198,7 +186,6 @@ Test travel-1895 with "go northwest / enter / activate panel."
 Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena petal / test travel-1895 / exit."
 
 Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with key / n / flip switch / examine blueprints / put fuse in time machine. / get in time machine / press button."
-
 
 Book 3 - 1895
 
@@ -800,8 +787,6 @@ Instead of using the poker:
 	
 [Understand "use [something] on [something]" as using.]
 
-
-
 Chapter 5 - Garden
 
 The Garden is a room.
@@ -1034,7 +1019,6 @@ After taking the fuse:
 	otherwise:
 		say "Taken[paragraph break]".
 
-
 Chapter 7 - Kitchen
 
 The Kitchen is a room. 
@@ -1099,7 +1083,6 @@ Instead of opening the cabinets: try searching the cabinets.
 Instead of searching the stove: say "I don't think Mrs. Watchett would appreciate you interfering with her dinner preparations." 
 Instead of searching the cabinets: say "I don't think Mrs. Watchett would appreciate you rummaging around in her cabinets."
 Instead of searching the kitchen shelves: say "You glance briefly at the various items on the shelves but find nothing pertinent to your investigation."
-
 
 Chapter 8 - Workshop  
 
@@ -1205,7 +1188,6 @@ Rule for printing a refusal to act in the dark:
 			otherwise:
 				say "It is a simple on/off switch. Not much to search."
 	
-	
 Section 2 - The Blueprints
 
 The blueprints are a thing.
@@ -1274,12 +1256,6 @@ Instead of activating the control panel:
 		now the time machine is nowhere;
 		now humboldt-should-return is true;
 	now the control panel is switched on.
-
-[DEL The saddle is a thing.
-The saddle is in the time machine.
-The saddle is undescribed.
-The saddle is fixed in place.
-Understand "bicycle" and "seat" as saddle.]
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
 
@@ -1352,8 +1328,7 @@ Instead of searching the windows: [Recipe §3.6 Windows]
 			say "Through the windows you can see down into the snow-covered garden outside.";
 		else if the player is on the bench:
 			say "Nothing has changed. You still can't see anything inside the darkened workshop."
-
-				
+			
 Part 2 - Characters
 
 A person can be either fixed or mobile. 
@@ -1419,8 +1394,6 @@ Library			"reshelves some books"
 Library			"rearranges the chairs"
 Library			"looks out the windows"
 Library			"draws the curtains closed"
-
-
 
 Chapter 2 - Humboldt 
 
@@ -1639,8 +1612,6 @@ Travel To 802,701 ends when the time machine is in the Clearing.
 “The peculiar risk lay in the possibility of my finding some substance in the space which I, or the machine, occupied. So long as I travelled at a high velocity through time, this scarcely mattered: I was, so to speak, attenuated—was slipping like a vapour through the interstices of intervening substances! But to come to a stop involved the jamming of myself, molecule by molecule, into whatever lay in my way; meant bringing my atoms into such intimate contact with those of the obstacle that a profound chemical reaction—possibly a far-reaching explosion—would result, and blow myself and my apparatus out of all possible dimensions—into the Unknown. This possibility had occurred to me again and again while I was making the machine; but then I had cheerfully accepted it as an unavoidable risk—one of the risks a man has got to take! Now the risk was inevitable, I no longer saw it in the same cheerful light. The fact is that, insensibly, the absolute strangeness of everything, the sickly jarring and swaying of the machine, above all, the feeling of prolonged falling, had absolutely upset my nerves. I told myself that I could never stop, and with a gust of petulance I resolved to stop forthwith. Like an impatient fool, I lugged over the lever, and incontinently the thing went reeling over, and I was flung headlong through the air. 
 ]
 
-
-
 Part 2 - Travel To 1895
 
 Travel To 1895 is a scene.
@@ -1659,9 +1630,6 @@ Travel To 1895 ends when the time machine is in the Workshop.
 
 [When Travel To 1895 ends:
 	say "TRAVEL TO 1895 ENDS.";]	
-
-
-
 
 Book 5 - 802,701
 
@@ -1759,7 +1727,6 @@ Before going southeast in the Clearing:
 		otherwise:
 			continue the action.
 	
-
 Chapter 2 - Sphinx Steps
 
 The Sphinx Steps are a room.
@@ -1789,7 +1756,6 @@ The statue is a thing.
 The statue is scenery in the Sphinx Steps.
 The description of the statue is "A gigantic reclining sphinx made of white marble. Its weather-worn surface carries the unpleasant suggestion of disease and its sightless eyes seem to watch everything. The wings, instead of being carried vertically at the sides spread out so the entire figure seems to hover. You are not sure, but you think you can see the faint shadow of a smile on the lips. It is inhuman, unsympathetic, and overwhelmingly powerful."
 Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
-
 
 Chapter 3 - Top Shaft
 
@@ -2132,9 +2098,6 @@ When Humboldt Endgame ends:
 		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulence outside and cart you off to the hospital to share a ward with Wells.";
 	end the story finally.
 	
-
-
-
 Book 7 - Help
 
 Table of Basic Help Options (continued)

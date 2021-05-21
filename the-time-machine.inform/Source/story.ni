@@ -480,10 +480,11 @@ The library papers are on the desk.
 The library papers are portable.
 The library papers are undescribed.
 The printed name of library papers is "papers".
+Understand "papers" as library papers.
 
-Instead of searching the papers: try searching the desk.
-Instead of examining the papers: try searching the desk.
-Instead of taking the papers: try searching the desk.
+Instead of searching the library papers: try searching the desk.
+Instead of examining the library papers: try searching the desk.
+Instead of taking the library papers: try searching the desk.
 
 The chair is a thing.
 The chair is scenery in the Library.
@@ -804,7 +805,7 @@ The description of the Garden is "Set below the level of the road and shielded f
 
 The hibernating dunes of vegetation surround you on all sides. From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration.
 
-A [gate] set into that wall looks out onto the snow-covered [street] beyond. To the south, the dark panes of Wells' workshop [windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
+A [gate] set into that wall looks out onto the snow-covered [street] beyond. To the south, the dark panes of Wells['] workshop [windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 
@@ -960,7 +961,7 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
-	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than one item, it's all one big mysterious conglomeration to you[first time], probably like one of legal documents you usually write up for your clients[only]."; [TBD - Should this be conditional based on fuse location?]
+	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than one item, it's all one big mysterious conglomeration to you[first time], probably like one of the legal documents you usually write up for your clients[only]."; [TBD - Should this be conditional based on fuse location?]
 	now the sliding panel is open;
 	now the fuse is in the sliding panel.
 
@@ -1115,8 +1116,10 @@ The description of tools is "Enough equipment for any crazy experiment Wells cou
 The workshop papers are a thing.
 The workshop papers are scenery in the Workshop.
 The description of workshop papers is "You search through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"
+Understand "pages" as workshop papers.
 	
 [ > search papers ?]
+Instead of searching the workshop papers: try examining the workshop papers.
 
 The materials are a thing.
 The materials are scenery in the Workshop.
@@ -1348,7 +1351,7 @@ Watchett is a person.
 Watchett is a female. 
 Watchett is fixed.
 Watchett is in the Kitchen.
-The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal here away from Wells you would in a heartbeat, but she would never leave him in a million years."
+The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
 
 The printed name of Watchett is "Mrs. Watchett". 
 

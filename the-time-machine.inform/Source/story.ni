@@ -1698,7 +1698,7 @@ The metal grate is portable.
 The metal grate is on the circular shaft.
 The metal grate is a supporter.
 The metal grate is undescribed.
-The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of rusted metal welded together in a waffle pattern. Despite the rust, it looks extremely sturdy and heavy."
+The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of rusted metal welded together in a waffle pattern. Despite the rust, it looks extremely sturdy and heavy.[if the metal grate is not on the circular shaft] The grate is lying on the ground next to the open shaft.[end if]"
 
 [ > Remove grate ]
 

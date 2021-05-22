@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21211 ]
+[ WORDS - 21473 ]
 
 Book 1 - Beginning The Story
 
@@ -1362,16 +1362,30 @@ Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper"
 
 Section 1 - Conversation
 
-Instead of showing pocket watch to watchett: say "That's Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back."
-Instead of showing something to watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
+Instead of showing pocket watch to Watchett: say "'That[']s Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
+Instead of showing something to Watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
 
-Instead of telling watchett about something: [Writing §7.6. Reading and talking]
-	try asking watchett about it.
+Instead of telling Watchett about something: [Writing §7.6. Reading and talking]
+	try asking Watchett about it.
 
 Instead of asking Watchett about "wells": say "'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"
-Instead of asking Watchett about "experiments": say "'I wouldn't know anything about. Anything like that is in the Mr. Wells[apostrophe] workshop.'"
-Instead of asking Watchett about "workshop door": say "'Locked. Always locked. Only the Mr. Wells has the key.'"
+Instead of asking Watchett about "experiments": say "'I wouldn't know anything about that. Mr. Wells was quite private about his experiments. Did all that in his workshop.'"
+Instead of asking Watchett about "workshop door": say "'Locked. Always locked. Only Mr. Wells had the key.'"
+Instead of asking Watchett about "workshop": say "'Only Mr. Wells had the key.'"
 Instead of asking Watchett about "front door": say "'Much too cold to be outside the way you're dressed. Best you warm up by the fire first.'"
+
+Instead of asking Watchett about "pocket watch": say "'That[']s Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
+Instead of asking Watchett about "watch": say "'That[']s Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
+Instead of asking Watchett about "orrery": say "'Built by Mr. Wells. He['] quite the inventor.'"
+Instead of asking Watchett about "petal": say "'Very pretty, I guess. But you cannot tell much about the flower from a single petal.'"
+
+Instead of asking Watchett about "work": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "food": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "dinner": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "supper": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "meals": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+
+Instead of asking Watchett about something: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
 
 [See Writing §11.5. Conditions and question ]
 watchett-key is a truth state that varies.

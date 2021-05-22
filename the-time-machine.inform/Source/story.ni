@@ -187,6 +187,10 @@ Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena pe
 
 Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with key / n / flip switch / examine blueprints / put fuse in time machine. / get in time machine / press button."
 
+Chapter 7 - Release
+
+[Release along with cover art.]
+
 Book 3 - 1895
 
 Part 1 - Settings
@@ -1366,6 +1370,10 @@ Instead of showing something to Watchett: say "Mrs. Watchett glances at the [nou
 Instead of telling Watchett about something: [Writing §7.6. Reading and talking]
 	try asking Watchett about it.
 
+Instead of asking Watchett about "key": 
+	say "'Mr. Wells always kept it on his person. That's where it still must be.'";
+	now watchett-key is true.
+
 Instead of asking Watchett about "wells": say "'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"
 Instead of asking Watchett about "experiments": say "'I wouldn't know anything about that. Mr. Wells was quite private about his experiments. Did all that in his workshop.'"
 Instead of asking Watchett about "workshop door": say "'Locked. Always locked. Only Mr. Wells had the key.'"
@@ -1389,9 +1397,7 @@ Instead of asking Watchett about something: say "Mrs. Watchett glances at the [n
 watchett-key is a truth state that varies.
 watchett-key is false.
 
-Instead of asking Watchett about "key": 
-	say "'Mr. Wells always kept it on his person. That's where it still must be.'";
-	now watchett-key is true.
+
 
 Section 2 - Movement
 

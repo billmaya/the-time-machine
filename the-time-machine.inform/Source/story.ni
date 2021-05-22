@@ -6,12 +6,12 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21473 ]
+[ WORDS - 21537 ]
 
 Book 1 - Beginning The Story
 
 The player is in Woking Street.
-The description of the player is ""
+The description of the player is "You rarely focus on your appearance, too much work to do, but if you had to describe yourself you would probalby say something like 'middle-age, married, non-descript features, all belying you logical, lawyerly mind and calm demeanor that your profession and your clients demand."
 
 The current-year is text that varies.
 The current-year is "1895".
@@ -2112,6 +2112,7 @@ endgame-failure is false.
 Instead of showing the flower to Humboldt:
 	now endgame-success is true.
 
+[TBD - What about giving things to other characters now that Block Giving rule not listed in Check Giving rules?]
 The block giving rule is not listed in the check giving it to rules. [Recipes §7.4. Barter and Exchange]
 After giving the flower to Humboldt:
 	now endgame-success is true.

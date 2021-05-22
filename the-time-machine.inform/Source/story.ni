@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21172 ]
+[ WORDS - 21161 ]
 
 Book 1 - Beginning The Story
 
@@ -1973,7 +1973,7 @@ Weena Gives You Flower begins when the pocket watch is open.
 
 When Weena Gives You Flower begins:
 	[say "WEENA GIVES YOU FLOWER BEGINS.";]
-	say "Suddenly, Weena presses the watch's fob and the cover springs open, revealing the hands within. She stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers.[paragraph break]Snapping the watch shut she hands it back to you and nods her head."; 
+	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and nods her head."; 
 	now the player is carrying the pocket watch.
 
 Instead of asking Weena about something:
@@ -1992,7 +1992,7 @@ Instead of showing the pocket watch to Weena:
 	say "She cocks her head and smiles back at you, waiting."
 
 Instead of showing the petal to Weena:
-	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. The rest of the Eloi follow her and soon you are alone by the river.";
+	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wellls. The rest of the Eloi follow her and soon you are alone by the river.";
 	now the player is carrying the flower;
 	now the Eloi are nowhere;
 	now Weena is nowhere.

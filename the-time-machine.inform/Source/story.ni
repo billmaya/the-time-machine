@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21153 ]
+[ WORDS - 21172 ]
 
 Book 1 - Beginning The Story
 
@@ -394,18 +394,9 @@ Section 8 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.
-[The pocket watch is undescribed.]
-[The printed name of pocket watch is "Wells[apostrophe] pocket watch".]
-[The pocket watch can be open or closed. The pocket watch is closed.]
-Understand "timepiece" or "chronometer" as pocket watch.
+Understand "timepiece" or "chronometer" or "mechanism" as pocket watch.
 
 The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his tale of time travel, you remember that 'Weena' was particularly enchanted with its moving hands and its winding mechanism."
-
-[The mechanism is a thing.
-The mechanism is scenery in t]
-
-
-[Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"]
 	
 Instead of using the pocket watch: say "It['] getting late. Humboldt will be back soon."
 	

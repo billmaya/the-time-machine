@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21598 ]
+[ WORDS - 21552 ]
 
 Book 1 - Beginning The Story
 
@@ -856,12 +856,6 @@ The Kitchen Door is a door.
 The Kitchen Door is openable.
 The Kitchen Door is scenery.
 
-[The dining room walls are a thing.
-The dining room walls are scenery in the Dining Room.
-The printed name of dining room walls is "walls".
-The description of the dining room walls is "You're not much of an interior decorator so you wouldn't know wainscotting from wallpaper. Your wife, bless her, has her head fulll of little nonsensical things like that."
-Understand "wainscotted" or "wainscotting" or "wallpaper" as dining room walls.]
-
 The dining table is a thing.
 The dining table is scenery in the Dining Room.
 The dining table is a supporter.
@@ -872,7 +866,10 @@ The dining room chairs are scenery in the Dining Room.
 The dining room chairs are a container.
 The dining room chairs are enterable.
 The description of dining room chairs is "Eight mahogany chairs that match the table."
-Understand "chair" as dining room chairs.
+
+The chair-at-table is scenery in the Dining Room.
+Instead of examining chair-at-table: say "One of the eight mahogany chairs around the table."
+Understand "chair" as chair-at-table.
 
 Instead of entering the dining room chairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the one of the chairs.";

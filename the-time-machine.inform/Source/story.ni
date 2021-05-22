@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21548 ]
+[ WORDS - 21597 548 ]
 
 Book 1 - Beginning The Story
 
@@ -849,40 +849,41 @@ Chapter 6 - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description of the Dining Room is "The house['] centerpiece for dining and entertainment, dominated by a dark walnut [dining table] that could seat eight comfotable. Above the table hands and electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals.[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[end if]"
+The description of the Dining Room is "The house['] centerpiece for dining and entertainment, dominated by a mahogany [dining table] that could seat eight comfortably. Above the table hands and electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals.[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[end if]"
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
 The Kitchen Door is openable.
 The Kitchen Door is scenery.
 
-The dining room walls are a thing.
+[The dining room walls are a thing.
 The dining room walls are scenery in the Dining Room.
 The printed name of dining room walls is "walls".
 The description of the dining room walls is "You're not much of an interior decorator so you wouldn't know wainscotting from wallpaper. Your wife, bless her, has her head fulll of little nonsensical things like that."
-Understand "wainscotted" or "wainscotting" or "wallpaper" as dining room walls.
+Understand "wainscotted" or "wainscotting" or "wallpaper" as dining room walls.]
 
 The dining table is a thing.
 The dining table is scenery in the Dining Room.
 The dining table is a supporter.
+The description of the dining table is "An oval mahogany table with three chairs on both sides and a single chair at each head."
 
-The dining room chair are a thing.
-The dining room chair are scenery in the Dining Room.
-The dining room chair are a container.
-The dining room chair are enterable.
-The description of dining room chair is "TBD."
-Understand "chair" as dining room chair.
+The dining room chairs are a thing.
+The dining room chairs are scenery in the Dining Room.
+The dining room chairs are a container.
+The dining room chairs are enterable.
+The description of dining room chairs is "Eight mahogany chairs that match the table."
+Understand "chair" as dining room chairs.
 
-Instead of entering the dining room chair:
+Instead of entering the dining room chairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the one of the chairs.";
-	now the player is in the dining room chair.
+	now the player is in the dining room chairs.
 
 The sideboard is a thing.
 The sideboard is scenery in the Dining Room.
 The sideboard is a container.
 The sideboard can be open or closed.
 The sideboard can be openable. The sideboard is closed.
-The description of the sideboard is "TBD."
+The description of the sideboard is "A matching piece of mahogany furniture with compartments and drawers for holding articles of table service."
 
 Instead of opening the sideboard: try searching the sideboard.
 Instead of searching the sideboard: say "I don't think Mrs. Watchett would appreciate you rummaging around in her sideboard."
@@ -891,7 +892,7 @@ The contents-sideboard is scenery in the Dining Room.
 Instead of examining the contents-sideboard: say "I don't think Mrs. Watchett would appreciate you rummaging through the contents of her sideboard."
 [I would have like to make this "...rummaging through her [noun]" with [noun] being what you typed (forks, glasses, bowls, etc.) understood as contents-sideboard]
 
-Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" or "tableware" as contents-sideboard.
+Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" or "tableware" or "service" or "table service" as contents-sideboard.
 Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks" or "spoon" or "spoons" as contents-sideboard.
 
 Section 1 - Chandelier

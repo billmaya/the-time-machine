@@ -396,12 +396,23 @@ The pocket watch is a thing.
 The pocket watch is in Woking Street.
 [The pocket watch is undescribed.]
 [The printed name of pocket watch is "Wells[apostrophe] pocket watch".]
-The pocket watch can be open or closed. The pocket watch is closed.
+[The pocket watch can be open or closed. The pocket watch is closed.]
 Understand "timepiece" or "chronometer" as pocket watch.
 
-The description of the pocket watch is "Wells[apostrophe] pocket watch, given to him by his father. Thinking back on his amazing tale, you remember that his 'Weena' was particularly enchanted with the moving hands and its winding mechanism."
+The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his tale of time travel, you remember that 'Weena' was particularly enchanted with its moving hands and its winding mechanism."
 
-Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"
+[The mechanism is a thing.
+The mechanism is scenery in t]
+
+
+[Instead of using the pocket watch, say "[one of]You check the time.[or]You wind the watch.[or]It's getting late. Humboldt will be back soon.[purely at random]"]
+	
+Instead of using the pocket watch: say "It['] getting late. Humboldt will be back soon."
+	
+Winding is an action applying to one touchable thing.
+Understand "wind [something]" as winding.
+Instead of winding the watch: say "You turn the stem back and forth a few seconds, killing time and gathering your thoughts."
+
 
 Chapter 2 - Entryway
 

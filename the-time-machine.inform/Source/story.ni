@@ -2,11 +2,11 @@ The story title is "The Time Machine".
 The story author is "Billy Tenenbaum".
 The story headline is "A Temporal Investigation".
 The story genre is "Science Fiction".
-The release number is 1.
+The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21751 ]
+[ WORDS - 21790 ]
 
 Table of Releases
 release	notes
@@ -39,7 +39,8 @@ Wells forgets whatever he was looking for in his pockets and struggles against t
 
 Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[apostrophe]re professionals, used to dealing patients like this all the time. They[apostrophe]re not being as rough with him as they look.'"
 
-After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
+[TBD - Uncomment line below when Help section written]
+[After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."]
 
 Chapter 1 - Missing Item Description Check
 
@@ -1244,7 +1245,7 @@ The control panel is switched off.
 The control panel is undescribed.
 Understand "controls" as control panel.
 
-The button is a thing in the time machine. [TBD Fix this button/control panel thing up]
+The button is a thing in the time machine.
 The button is undescribed.
 
 Instead of examining the control panel:

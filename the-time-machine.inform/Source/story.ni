@@ -6,7 +6,7 @@ The release number is 1.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21551 ]
+[ WORDS - 21739 ]
 
 Book 1 - Beginning The Story
 
@@ -1397,8 +1397,6 @@ Instead of asking Watchett about something: say "Mrs. Watchett glances at the [n
 watchett-key is a truth state that varies.
 watchett-key is false.
 
-
-
 Section 2 - Movement
 
 Every turn:
@@ -1452,9 +1450,13 @@ Section 1 - Conversation
 [Instead of telling someone about something, try asking someone about it.] 
 [According to the compiler, "asking someone about it" is too vague to describe a specific action]
 
+[Telling]
+
 Instead of telling Humboldt about something: [Writing §7.6. Reading and talking]
 	try asking humboldt about it.
-	
+
+[Asking]
+		
 Instead of asking Humboldt about "wells/madman/patient/lunatic": 
 	if humboldt-endgame-begins is false:
 		say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'";
@@ -1485,6 +1487,20 @@ Instead of asking Humboldt about "time machine":
 	otherwise:
 		say "'Outside my area of expertise, I'm afraid.'"
 
+[HACK - Without this > ask humboldt about THE time machine returns "There is no reply."]
+Instead of asking Humboldt about "the time machine": 
+	if humboldt-endgame-begins is false:
+		say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
+	otherwise:
+		say "'Outside my area of expertise, I'm afraid.'"
+		
+[HACK - There should be some way I can write "Instead of asking Humboldt about himself"]	
+Instead of asking Humboldt about "humboldt/doctor/physician/dr/psychologist/alienist/self/himself":
+	say "Dr. Humboldt is much too professional and polite to start rambling on about himself, especially in this sort of situation."
+
+[HACK - There should be some way I can write "Instead of asking Humboldt about yourself"]
+Instead of asking Humboldt about "me/yourself/myself": say "Perhaps you should focus on the situation at hand instead of yourself."	
+
 Instead of showing the time machine to Humboldt: [This doesn't work because the time machine is fixed in place]
 	say "SHOW HUMBOLDT TIME MACHINE."
 
@@ -1499,7 +1515,9 @@ Instead of showing the blueprints to Humboldt:
 
 Instead of showing the fuse to Humboldt:
 	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
-		
+
+[Asking & Telling - Humboldt Endgame]
+
 [Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
 [Instead of showing something to Humboldt, try asking Humboldt about something.]
 

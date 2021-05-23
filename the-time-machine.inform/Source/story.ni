@@ -1247,14 +1247,16 @@ Understand "controls" as control panel.
 The button is a thing in the time machine. [TBD Fix this button/control panel thing up]
 The button is undescribed.
 
-Instead of pushing the button: try activating the control panel.
-
 Instead of examining the control panel:
 	if the player is in the time machine:
 		say "A cursory glance at the two sets of chronometric dials shows them configured for two dates, one today and one far in the future. From the status of the various lights it looks like the control panel is ready to be activated.";
 	otherwise:
 		say "From the outside you can see the control panel is composed of various dials, switches, lights, and a single button but you would have to be standing in the machine to examine anything in greater detail.";
 	rule succeeds.
+
+[> push button]
+
+Instead of pushing the button: try activating the control panel.
 
 [> activate control panel
  > activate time machine]
@@ -1267,15 +1269,20 @@ Instead of activating the time machine:
 
 Instead of activating the control panel:
 	if the player is in the time machine:
-		if fuse-burnt-out is false:
-			say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
-		otherwise:
-			say "You press the button but nothing happens. Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
-			now the player has the fuse;
+		if the fuse is in the time machine:
+			if fuse-burnt-out is false:
+				say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
+			otherwise:
+				say "You press the button but nothing happens. Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
+				now the player has the fuse;
 	otherwise:
-		say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";
-		now the time machine is nowhere;
-		now humboldt-should-return is true;
+		if the fuse is in the time machine:
+			if fuse-burnt-out is false:
+				say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";
+				now the time machine is nowhere;
+				now humboldt-should-return is true;
+		otherwise:
+			say "You press the button on the control panel but nothing happens.";
 	now the control panel is switched on.
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
@@ -1291,7 +1298,7 @@ Instead of searching [examining] the time machine:
 			if examined-blueprints is true:
 				say "After reviewing the blueprints, you now know exactly where the fuse needs to go in Wells' time machine.";
 			otherwise:
-				say "Looking at the fuse you realize that it probalbly should go somewhere in the time machine but you don't have the first clue where that would be.";
+				say "Looking at the fuse you realize that it probably should go somewhere in the time machine but you don't have the first clue where that would be.";
 		otherwise:
 			if examined-blueprints is true:
 				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";

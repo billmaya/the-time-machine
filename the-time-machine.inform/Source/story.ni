@@ -1,5 +1,5 @@
 The story title is "The Time Machine".
-The story author is "Billy Tenenbaum".
+The story author is "'Billy Tenenbaum'".
 The story headline is "A Temporal Investigation".
 The story genre is "Science Fiction".
 The release number is 2.
@@ -25,7 +25,7 @@ When play begins:
 	now the left hand status line is "[location] - [current-year]";
 	say "'Let me go!'
 
-Wells struggles against the efforts of the two orderlies who are dragging him towards the horse-drawn ambulence parked in the street. Desperate, he pulls himself free and stumbles into you, almost knocking the both of you to the ground.
+Wells struggles against the efforts of the two orderlies who are dragging him towards the horse-drawn ambulance parked in the street. Desperate, he pulls himself free and stumbles into you, almost knocking the both of you to the ground.
 
 'My friend, I[apostrophe]m not crazy,' he says, his eyes desperate and pleading. 'I know my story sounds insane,  but it[apostrophe]s true. Every word of it. You believe me, don[apostrophe]t you?'
 
@@ -35,7 +35,7 @@ You look at the doctor and back at Wells, not knowing who to believe. Wells is y
 
 'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[apostrophe]ll find...get your bloody hands off of me!' The orderlies have grabbed Wells a second time 'No, damn you! Let me go!' 
 
-Wells forgets whatever he was looking for in his pockets and struggles against the orderlies but they[apostrophe]re prepared this time and manage to overpower your friend and manhandle him into the ambulence. But it[apostrophe]s a near thing, so violent that Wells[apostrophe] pocket watch falls to the ground during the struggle.
+Wells forgets whatever he was looking for in his pockets and struggles against the orderlies but they[apostrophe]re prepared this time and manage to overpower your friend and manhandle him into the ambulance. But it[apostrophe]s a near thing, so violent that Wells[apostrophe] pocket watch falls to the ground during the struggle.
 
 Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[apostrophe]re professionals, used to dealing patients like this all the time. They[apostrophe]re not being as rough with him as they look.'"
 
@@ -135,7 +135,7 @@ Understand "talk to [someone]" as a mistake ("To start a conversation, try to AS
  > talk to humboldt about wells returns "You can't see any such thing."
  > talk to humboldt about ambulance returns the "AUTOMATICALLY TRY..." text
 
-The [something] has to exist for the 2nd part of the Understand/as a mistake statement to be reached. Wells doesn't exist in the game but the ambulence does.]
+The [something] has to exist for the 2nd part of the Understand/as a mistake statement to be reached. Wells doesn't exist in the game but the ambulance does.]
 
 Chapter 5 - Take All
 
@@ -204,7 +204,7 @@ Part 1 - Settings
 Chapter 1 - Woking Street
 
 Woking Street is a room. 
-The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area] of the street directly in front of you[if ambulence is in Woking Street] where the ambulence is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
+The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area] of the street directly in front of you[if ambulance is in Woking Street] where the ambulance is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
 
 	The area is scenery in Woking Street.
 	The area is a supporter.
@@ -269,9 +269,9 @@ Section 3 - Humbolt Exit
 
 Before going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "Humboldt snaps his pocket watch shut and starts getting into the ambulence. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulence door shut. With the crack of the reins the ambulence starts off down the street, turns the corner, and disappears into the evening traffic.";
+		say "Humboldt snaps his pocket watch shut and starts getting into the ambulance. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulance door shut. With the crack of the reins the ambulance starts off down the street, turns the corner, and disappears into the evening traffic.";
 		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
-		now the ambulence is nowhere;
+		now the ambulance is nowhere;
 		now the player is carrying the Petal.	
 
 Section 4 - Front Door
@@ -371,18 +371,18 @@ image	https://bit.ly/371QTYW
 mottos	https://bit.ly/2Z7bRS4
 parts-of	https://bit.ly/3p83dwZ ]
 	
-Section 5 - Ambulence
+Section 5 - ambulance
 	
-The ambulence is a thing in Woking Street.
-The description of the ambulence is "Horse-drawn, the ambulence resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
-The ambulence is fixed in place.
-The ambulence is undescribed.
-Understand "ambulance" or "cab" as ambulence.
+The ambulance is a thing in Woking Street.
+The description of the ambulance is "Horse-drawn, the ambulance resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
+The ambulance is fixed in place.
+The ambulance is undescribed.
+Understand "ambulence" or "cab" as ambulance.
 
-Instead of taking the ambulence: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
+Instead of taking the ambulance: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
 
-Instead of searching the ambulence: try entering the ambulence.
-Instead of entering the ambulence: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
+Instead of searching the ambulance: try entering the ambulance.
+Instead of entering the ambulance: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
 
 Section 6 - The Workshop Key
 
@@ -509,7 +509,7 @@ The curtains are scenery in the Library.
 The curtains are a container.
 The description of the curtains is "Pulled shut, the floor-to-ceiling dark fabric shields the room from the cold weather outside."
 Understand "curtain" as curtains.
-Instead of opening the curtains, say "Pulling a curtain aside, you briefly look at the snow-covered street outside. The continuously falling snow is rapidly covering the disturbed area where the ambulence was a few minutes ago. You let the fabric drop back into place and look around the room."
+Instead of opening the curtains, say "Pulling a curtain aside, you briefly look at the snow-covered street outside. The continuously falling snow is rapidly covering the disturbed area where the ambulance was a few minutes ago. You let the fabric drop back into place and look around the room."
 
 Instead of pushing the curtains: try opening the curtains.
 Instead of searching the curtains: say "You look in the folds of the fabric but find nothing."
@@ -1612,9 +1612,9 @@ The orderlies are people in Woking Street.
 The orderlies are undescribed.
 Understand "attendant" as orderlies.
 	
-Instead of examining the orderlies: say "They're out of sight, inside the ambulence with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulence against his will."
+Instead of examining the orderlies: say "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
 
-Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulence against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
+Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
 
 Chapter 4 - Wells
 
@@ -1630,7 +1630,7 @@ Understand "save [someone]" as rescuing.
 Rescuing is an action applying to one visible thing.
 Understand "rescue [someone]" as rescuing.
 
-Instead of rescuing Wells: try entering ambulence.
+Instead of rescuing Wells: try entering ambulance.
 Instead of rescuing someone: say "It does not look like [the noun] is in need of any rescuing. But the thought is nice."
 
 
@@ -2161,7 +2161,7 @@ When Humboldt Endgame ends:
 		say "Humboldt studies the flower in amazement. 'I'm just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story. You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
 	if endgame-failure is true:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
-		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulence outside and cart you off to the hospital to share a ward with Wells.";
+		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";
 	end the story finally.
 	
 Book 7 - Help

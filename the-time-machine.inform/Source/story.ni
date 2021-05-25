@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21790 ]
+[ WORDS - 21893 ]
 
 Table of Releases
 release	notes
@@ -1129,7 +1129,6 @@ The description of tools is "Enough equipment for any crazy experiment Wells cou
 The workshop papers are a thing.
 The workshop papers are scenery in the Workshop.
 The description of workshop papers is "WORKSHOP PAPERS DESCRIPTION." [Should not be displayed because of > examine workshop papers code in below (included to keep books from showing up when Missing Item Description code is run).]
-[DEL The description of workshop papers is "You search through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"]
 Understand "pages" or "handwritten" as workshop papers.
 
 Instead of examining the workshop papers:

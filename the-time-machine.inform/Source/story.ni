@@ -221,11 +221,14 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 	[> search area]
 
 Instead of searching the area:
-	if watchett-key is true:
-		say "Bending down, you brush the snow away to reveal a small metallic key. Picking it up, you put it in your pocket.";
-		now the player is carrying the metal key;
+	if the player does not have metal key:
+		if watchett-key is true:
+			say "Bending down, you brush the snow away to reveal a small metallic key. Picking it up, you put it in your pocket.";
+			now the player is carrying the metal key;
+		otherwise:
+			say "Despite the cold you bend down and survey the small patch of macadam but nothing catches your eye. Of course, it would help if you knew what you were looking for.";
 	otherwise:
-		say "Despite the cold you bend down and survey the small patch of macadam but nothing catches your eye. Of course, it would help if you knew what you were looking for."
+		say "You find nothing of interest after searching the area again."
 
 Section 1 - Scenery
 
@@ -371,7 +374,7 @@ image	https://bit.ly/371QTYW
 mottos	https://bit.ly/2Z7bRS4
 parts-of	https://bit.ly/3p83dwZ ]
 	
-Section 5 - ambulance
+Section 5 - Ambulance
 	
 The ambulance is a thing in Woking Street.
 The description of the ambulance is "Horse-drawn, the ambulance resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
@@ -445,9 +448,9 @@ Chapter 3 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and, west walls. The remaining free space not devoted to [books], [periodicals], and a set of [encyclopaedia] is monopolized by a few pieces of [furniture].
+The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and west walls. The remaining free space not devoted to [books], [periodicals], and a set of [encyclopaedia] is monopolized by a few pieces of [furniture].
 
-Against the south wall is a small [desk] for note-taking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more comtemplative research and relaxation. The room continues to the north."
+Against the south wall is a small [desk] for note-taking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more contemplative research and relaxation. The room continues to the north."
 
 The shelves are a thing.
 The shelves are scenery in the Library.
@@ -670,7 +673,7 @@ The armchairs are scenery in the Parlor.
 The armchairs are supporters.
 The armchairs are enterable.
 Understand "armchair" or "chair"  or "chairs" as armchairs.
-The description of the armchairs are "Like the library chair they are covered in worn leather. Larger then their smaller counterpart they look even more inviting and comfortable, especially positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]"
+The description of the armchairs are "Like the library chair they are covered in worn leather. Larger than their counterpart in the library, they look even more inviting and comfortable, especially positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]"
 
 Instead of entering the armchairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
@@ -1125,8 +1128,16 @@ The description of tools is "Enough equipment for any crazy experiment Wells cou
 	
 The workshop papers are a thing.
 The workshop papers are scenery in the Workshop.
-The description of workshop papers is "You search through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"
-Understand "pages" as workshop papers.
+The description of workshop papers is "WORKSHOP PAPERS DESCRIPTION." [Should not be displayed because of > examine workshop papers code in below (included to keep books from showing up when Missing Item Description code is run).]
+[DEL The description of workshop papers is "You search through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the device in the center of the room, clearly marked 'Temporal Mechanism 3.'"]
+Understand "pages" or "handwritten" as workshop papers.
+
+Instead of examining the workshop papers:
+	if the blueprints are undescribed:
+		say "You search through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the time machine in the center of the room, clearly marked 'Temporal Mechanism 3.'";
+		now the blueprints are described;
+	otherwise:
+		say "You find now useful information in the pages scattered across the workbench."
 	
 [ > search papers ?]
 Instead of searching the workshop papers: try examining the workshop papers.
@@ -1142,7 +1153,7 @@ The description of the blackboard is "Spanning the entire west wall, it is cover
 
 The equations are a thing.
 The equations are scenery in the Workshop.
-The description of equations are "You honestly don't know where to start. The writing starts at the left and get increasing complex as you move to the right, but, quite frankly, it's all Greek to you (you never had much of a head for Hellenic Indo-European languages, you're a Latin man)."
+The description of equations are "You honestly don't know where to start. The writing starts at the left and get increasingly complex as you move to the right, but, quite frankly, it's all Greek to you (you never had much of a head for Hellenic Indo-European languages, you're a Latin man)."
 
 The diagrams are a thing.
 The diagrams are scenery in the Workshop.
@@ -1215,7 +1226,8 @@ Section 2 - The Blueprints
 The blueprints are a thing.
 The blueprints are on the workbench.
 The blueprints are undescribed.
-Understand "plans" or "sheets" as blueprints.
+Understand "plans" or "sheets" or "set" as blueprints.
+The printed name of blueprints is "set of blueprints".
 
 examined-blueprints is a truth state that varies.
 examined-blueprints is false.
@@ -1297,7 +1309,7 @@ Instead of searching [examining] the time machine:
 	otherwise:
 		if the player has the fuse:
 			if examined-blueprints is true:
-				say "After reviewing the blueprints, you now know exactly where the fuse needs to go in Wells' time machine.";
+				say "After reviewing the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
 			otherwise:
 				say "Looking at the fuse you realize that it probably should go somewhere in the time machine but you don't have the first clue where that would be.";
 		otherwise:
@@ -1315,7 +1327,7 @@ Instead of opening the time machine: say "The time machine is alread 'open.' All
 Instead of inserting the fuse into the time machine:
 	if the player has the fuse:
 		if examined-blueprints is true:
-			say "You snap the fuse into its appointed slot. With an imperceptible hum, the time machine powers up. Lights appear on the control panel, probably indicating that it is ready to activate.";
+			say "You snap the fuse into its appointed slot. With an barely perceptible hum, the time machine powers up. Lights appear on the control panel, probably indicating that it is ready to activate.";
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
@@ -1734,6 +1746,8 @@ The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
 Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. [if metal grate is on circular shaft]On the shaft a circular grate rests on the top, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]Through the open shaft you can see the rungs of a ladder going down into darkness.[end if]"
+
+Section 1 - Metal Grate
 
 The metal grate is a thing.
 The metal grate is portable.
@@ -2158,7 +2172,7 @@ When Humboldt Endgame ends:
 	[say "HUMBOLDT ENDGAME ENDS."]
 	if endgame-success is true:
 		[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
-		say "Humboldt studies the flower in amazement. 'I'm just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story. You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
+		say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
 	if endgame-failure is true:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
 		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";

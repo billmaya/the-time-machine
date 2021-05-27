@@ -1250,10 +1250,8 @@ The description of the time machine is "Taller than a man by several feet with t
 
 The machine is rectangular in shape, taller than it is wide. Up from a thick square base a latticework of struts, wires, and crystals.
 
+The machine is rectangular in shape, taller than it is wide. A latticework of struts, wires, and crystals rises up from the thick, square base to about a foot and a half above your head, creating a cage to enclose the occupant. It looks like you can enter the machine through an opening in one side."
 
-The machine is rectangular in shape, taller than it is wide. A latticework of struts, wires, and crystals rises up from the thick, square base to about a foot and a half above your head, creating a cage to enclose the occupant. It looks like you can enter the machine through an opening in one side.
-
-"
 Understand "mechanism" or "device" or "temporal" as time machine.
 
 The control panel is a device.
@@ -1671,7 +1669,13 @@ Travel To 802,701 begins when the time machine is in the Workshop and player is 
 
 When Travel To 802,701 begins:
 	[say "TRAVELING TO 802,701 BEGINS.";]
-	say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.[paragraph break]Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.[paragraph break]The peculiar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merge into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.[paragraph break]After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replaced by what appears to be an eternal spring as the machine slows even more. 'The earth seems very fair' is the first conscious thought that you remember thinking as the machine slows down further and comes to a stop.[paragraph break]You have arrived.";
+	say "From Wells['] story you have an idea of what is going to happen but you never expected to see it with your own eyes or experience it yourself.
+
+	As the machine powers up and the chronometric dials start spinning forward through the years, the workshop, its contents, in fact the entire house, fades away to be replace by a shimmering grey void. As you start traveling through the years, vague shadows of various shapes and sizes appear and disappear in the grey surface surrounding you and the machine, future people, places, and things living out their own personal cycle of birth, life, and death.
+
+	A feeling of helplessness and dread makes you grip the time machine[']s framework as it gains velocity, continuing its pre-progammed flight through the centuries and millenia towards the Age of Eloi and Morlocks Wells spoke about.
+	
+	One age passes. Two ages. Five ages. The individual chronometric dials start slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you and the time machine XYZ.";
 	now the current-year is "802,701";
 	now the time machine is in the Clearing;
 	now the time machine is described;
@@ -1681,6 +1685,34 @@ Travel To 802,701 ends when the time machine is in the Clearing.
 
 [When Travel To 802,701 ends:
 	say "TRAVELING TO 802,701 ENDS."]
+
+
+
+[Text from new description
+[leftmost one then the others as From left to right the individual chronometric dials slow down and eventually stop spinning as you approach the year 802,701 A.D. The time machine shifts gears internally 
+
+	You stare at the spinning dials as o
+	As you approach 802,701 A.D. the machine seems to shift gears, slowing down. 
+
+	A feeling of helplessness and dread make you grip the machine's framework,
+
+	(you guess).
+
+	You hurtle into the unknown as the machine gains velocity and you hurtle foward into the unknown a vague feeling of nausea and weakness makes you
+
+	The workshop, its contents, in fact the entire house, fades away to be replaced by a shimmering grey void as the time machine powers up. As the chronometric dials spin forward through the years, vague shadows of various shapes and sizes appear and disappear in the shimmering grey surface that surrounds you and the machine, obviously future people, places, and things experiencing their own birth, life, and death. Overhead the endless cycle of day and night flies by in rapid succession."]
+]
+
+[Original time travel to 802,701 description
+say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.
+
+	Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.
+
+	The peculiar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merge into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.
+
+	After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replaced by what appears to be an eternal spring as the machine slows even more. 'The earth seems very fair' is the first conscious thought that you remember thinking as the machine slows down further and comes to a stop.
+
+	You have arrived.";]
 
 [ From H.G.Wells' "The Time Machine"
  “I drew a breath, set my teeth, gripped the starting lever with both hands, and went off with a thud. The laboratory got hazy and went dark. Mrs. Watchett came in and walked, apparently without seeing me, towards the garden door. I suppose it took her a minute or so to traverse the place, but to me she seemed to shoot across the room like a rocket. I pressed the lever over to its extreme position. The night came like the turning out of a lamp, and in another moment came tomorrow. The laboratory grew faint and hazy, then fainter and ever fainter. Tomorrow night came black, then day again, night again, day again, faster and faster still. An eddying murmur filled my ears, and a strange, dumb confusedness descended on my mind.

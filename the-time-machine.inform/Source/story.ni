@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21893 ]
+[ WORDS - 21925 ]
 
 Table of Releases
 release	notes
@@ -1111,7 +1111,7 @@ Chapter 8 - Workshop
 
 The workshop is a dark room. 
 [The Workshop is north of the Workshop Door.] 
-The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams].[paragraph break]Midway down the room, closer to the west wall, is a mechanical device that resembles nothing you have ever seen before anywhere in your entire life.[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."
+The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams]. In the center of the room is something that can only be Wells['] [time machine].[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.
@@ -1246,8 +1246,14 @@ The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-[TBD Rewrite time machine description]
-The description of time machine is "Approximately the size of the hansom cab that brought you here tonight, the device must be the time machine that Wells was talking about. It can't be anything else. The interior of the time machine appears quite cramped, with space just enough for a single normal-sized occupant to stand in front of a small control panel. Surrounding this cramped interior is an assemblage of struts, wires, and crystals, who purpose you can't fathom, that forms a latticework between the occupant and the exterior environment."
+The description of the time machine is "Taller than a man by several feet with the shape of a rectangular box, taller than it is wide, it looks like you can open it through an opening in one side. About a foot and a half taller than you. In the shape of a rectangular box, taller than it is wide, the 
+
+The machine is rectangular in shape, taller than it is wide. Up from a thick square base a latticework of struts, wires, and crystals.
+
+
+The machine is rectangular in shape, taller than it is wide. A latticework of struts, wires, and crystals rises up from the thick, square base to about a foot and a half above your head, creating a cage to enclose the occupant. It looks like you can enter the machine through an opening in one side.
+
+"
 Understand "mechanism" or "device" or "temporal" as time machine.
 
 The control panel is a device.

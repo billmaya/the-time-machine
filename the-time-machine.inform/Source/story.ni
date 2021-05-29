@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22345 ]
+[ WORDS - 22278 ]
 
 Table of Releases
 release	notes
@@ -1246,13 +1246,9 @@ The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-The description of the time machine is "Taller than a man by several feet with the shape of a rectangular box, taller than it is wide, it looks like you can open it through an opening in one side. About a foot and a half taller than you. In the shape of a rectangular box, taller than it is wide, the 
+The description of the time machine is "The time machine is rectangular in shape, taller than it is wide. A latticework of struts, wires, and crystals rises up from the thick, square base to create a cage to enclose occupants about a foot and a half above your head. It looks like you can enter the machine through an opening in one side."
 
-The machine is rectangular in shape, taller than it is wide. Up from a thick square base a latticework of struts, wires, and crystals.
-
-The machine is rectangular in shape, taller than it is wide. A latticework of struts, wires, and crystals rises up from the thick, square base to about a foot and a half above your head, creating a cage to enclose the occupant. It looks like you can enter the machine through an opening in one side."
-
-Understand "mechanism" or "device" or "temporal" as time machine.
+Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" as time machine.
 
 The control panel is a device.
 The control panel is in the time machine.

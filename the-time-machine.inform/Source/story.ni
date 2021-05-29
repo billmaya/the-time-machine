@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20808 ]
+[ WORDS - 20824 ]
 
 Table of Releases
 release	notes
@@ -1694,7 +1694,7 @@ Travel To 1895 begins when the time machine is in the Clearing and the player is
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
-	say "TBD. The machine powers up and the begins traveling through time again. To your relief the dials start turning backwards through the years as the grey void descends upon you again. The helplessness and dread you felt traveling forward is less than before but still there. XYZ. But you saying a silent prayer to a manufactured deity you wait and watch the dials as time is subtracted one year at a time.
+	say "The machine powers up and the begins traveling through time again. To your relief the dials start turning backwards through the years as the grey void descends upon you again. The helplessness and dread you felt traveling forward is less than before but still there. XYZ. But you saying a silent prayer to a manufactured deity you wait and watch the dials as time is subtracted one year at a time.
 	Again the ages pass in reverse, the shadows and shapes go through their silent pantomime on the grey void that surrounds you and the machine.
 
 	The machine starts to slow, a familiar sensation now, and the grey fog begins to dissipate again, finally disappearing as the time machine stops and the familiar workshop surrounds you.
@@ -2022,7 +2022,9 @@ Introduction Of Weena begins when the Eloi is carrying the pocket watch. [or the
 
 When Introduction Of Weena begins:
 	[say "INTRODUCTION TO WEENA BEGINS.";]
-	say "Suddenly a young girl appears, differing from the other Eloi in demeanor. She seems older though she looks to be the same age as the others and carries herself with a bit more bearing. This must be Wells[apostrophe] Weena.[paragraph break]She gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, remembering.";
+	say "Suddenly a young girl appears. Though her age, appearance and clothing mimics the other Eloi, her demeanor and the way she looks at you is different from the others. Obviously this is Weena and her encounter with Wells has changed her in some way, forced her to 'grow up' for lack of a better word.
+
+	Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
 	now Weena is in the River;
 	now Weena is carrying the pocket watch;
 	now the pocket watch is open.

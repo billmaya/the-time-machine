@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22299 ]
+[ WORDS - 20743 ]
 
 Table of Releases
 release	notes
@@ -1685,45 +1685,6 @@ Travel To 802,701 ends when the time machine is in the Clearing.
 [When Travel To 802,701 ends:
 	say "TRAVELING TO 802,701 ENDS."]
 
-
-
-[Text from new description
-[leftmost one then the others as From left to right the individual chronometric dials slow down and eventually stop spinning as you approach the year 802,701 A.D. The time machine shifts gears internally 
-
-	You stare at the spinning dials as o
-	As you approach 802,701 A.D. the machine seems to shift gears, slowing down. 
-
-	A feeling of helplessness and dread make you grip the machine's framework,
-
-	(you guess).
-
-	You hurtle into the unknown as the machine gains velocity and you hurtle foward into the unknown a vague feeling of nausea and weakness makes you
-
-	The workshop, its contents, in fact the entire house, fades away to be replaced by a shimmering grey void as the time machine powers up. As the chronometric dials spin forward through the years, vague shadows of various shapes and sizes appear and disappear in the shimmering grey surface that surrounds you and the machine, obviously future people, places, and things experiencing their own birth, life, and death. Overhead the endless cycle of day and night flies by in rapid succession."]
-]
-
-[Original time travel to 802,701 description
-say "The workshop goes hazy and dark. Mrs. Watchett comes in, followed by Dr. Humboldt. They talk briefly and then walk towards the workshop windows. While it normally takes a minute to traverse the room, they both shoot across the space like rockets, talk briefly again while looking out at the garden and then, just as quickly, leave the same way they came at the same speed, turning off the lights and shutting the door, leaving you in darkness.
-
-	Night becomes day like turning on a lamp. The workshop becomes faint and hazy, then fainter and ever fainter. Tomorrow night comes black, then day again, night again, day again, faster and faster still as the machine picks up speed. An eddying murmur fills your ears and a strange, dumb confusedness descends on your mind.
-
-	The peculiar sensations of time traveling fade into the background as you hurtle headlong into the future. The dim suggestion of the workshop, the entire house, the entire neighborhood falls away. The sun hops swiftly across the sky, leaping it every minute, with every minute marking a day. The moon spins swiftly through her quarters from new to full, surrounded by faint glimpses of circling stars. Eventually, the night and day merge into one continuous greyness and the sky takes on a wonderful deepness of twilight blue split by a brilliant arch that is the sun.
-
-	After an indeterminate amount of time, as the dials approach your ultimate destination, the machine shifts gears somewhere in its interior and your progress begins to slow gradually and the landscape, first misty and vague, begins reappearing. You're on a hillside, trees growing and changing like puffs of vapor, now brown, now green; they grow, spread, shiver, and pass away. Huge buildings rise up faint and fair and then pass like dreams. The whole surface of the earth seems to change as it melts and flows under your eyes. The white snows of winter flash across the world to be followed by a bright, brief green of spring.  Great architectures shimmer in the distance. Eventually even the winter disappears, replaced by what appears to be an eternal spring as the machine slows even more. 'The earth seems very fair' is the first conscious thought that you remember thinking as the machine slows down further and comes to a stop.
-
-	You have arrived.";]
-
-[ From H.G.Wells' "The Time Machine"
- “I drew a breath, set my teeth, gripped the starting lever with both hands, and went off with a thud. The laboratory got hazy and went dark. Mrs. Watchett came in and walked, apparently without seeing me, towards the garden door. I suppose it took her a minute or so to traverse the place, but to me she seemed to shoot across the room like a rocket. I pressed the lever over to its extreme position. The night came like the turning out of a lamp, and in another moment came tomorrow. The laboratory grew faint and hazy, then fainter and ever fainter. Tomorrow night came black, then day again, night again, day again, faster and faster still. An eddying murmur filled my ears, and a strange, dumb confusedness descended on my mind.
-
-“I am afraid I cannot convey the peculiar sensations of time travelling. They are excessively unpleasant. There is a feeling exactly like that one has upon a switchback—of a helpless headlong motion! I felt the same horrible anticipation, too, of an imminent smash. As I put on pace, night followed day like the flapping of a black wing. The dim suggestion of the laboratory seemed presently to fall away from me, and I saw the sun hopping swiftly across the sky, leaping it every minute, and every minute marking a day. I supposed the laboratory had been destroyed and I had come into the open air. I had a dim impression of scaffolding, but I was already going too fast to be conscious of any moving things. The slowest snail that ever crawled dashed by too fast for me. The twinkling succession of darkness and light was excessively painful to the eye. Then, in the intermittent darknesses, I saw the moon spinning swiftly through her quarters from new to full, and had a faint glimpse of the circling stars. Presently, as I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness; the sky took on a wonderful deepness of blue, a splendid luminous colour like that of early twilight; the jerking sun became a streak of fire, a brilliant arch, in space; the moon a fainter fluctuating band; and I could see nothing of the stars, save now and then a brighter circle flickering in the blue.
-
-“The landscape was misty and vague. I was still on the hillside upon which this house now stands, and the shoulder rose above me grey and dim. I saw trees growing and changing like puffs of vapour, now brown, now green; they grew, spread, shivered, and passed away. I saw huge buildings rise up faint and fair, and pass like dreams. The whole surface of the earth seemed changed—melting and flowing under my eyes. The little hands upon the dials that registered my speed raced round faster and faster. Presently I noted that the sun belt swayed up and down, from solstice to solstice, in a minute or less, and that consequently my pace was over a year a minute; and minute by minute the white snow flashed across the world, and vanished, and was followed by the bright, brief green of spring.
-
-“The unpleasant sensations of the start were less poignant now. They merged at last into a kind of hysterical exhilaration. I remarked, indeed, a clumsy swaying of the machine, for which I was unable to account. But my mind was too confused to attend to it, so with a kind of madness growing upon me, I flung myself into futurity. At first I scarce thought of stopping, scarce thought of anything but these new sensations. But presently a fresh series of impressions grew up in my mind—a certain curiosity and therewith a certain dread—until at last they took complete possession of me. What strange developments of humanity, what wonderful advances upon our rudimentary civilisation, I thought, might not appear when I came to look nearly into the dim elusive world that raced and fluctuated before my eyes! I saw great and splendid architecture rising about me, more massive than any buildings of our own time, and yet, as it seemed, built of glimmer and mist. I saw a richer green flow up the hillside, and remain there, without any wintry intermission. Even through the veil of my confusion the earth seemed very fair. And so my mind came round to the business of stopping.
-
-“The peculiar risk lay in the possibility of my finding some substance in the space which I, or the machine, occupied. So long as I travelled at a high velocity through time, this scarcely mattered: I was, so to speak, attenuated—was slipping like a vapour through the interstices of intervening substances! But to come to a stop involved the jamming of myself, molecule by molecule, into whatever lay in my way; meant bringing my atoms into such intimate contact with those of the obstacle that a profound chemical reaction—possibly a far-reaching explosion—would result, and blow myself and my apparatus out of all possible dimensions—into the Unknown. This possibility had occurred to me again and again while I was making the machine; but then I had cheerfully accepted it as an unavoidable risk—one of the risks a man has got to take! Now the risk was inevitable, I no longer saw it in the same cheerful light. The fact is that, insensibly, the absolute strangeness of everything, the sickly jarring and swaying of the machine, above all, the feeling of prolonged falling, had absolutely upset my nerves. I told myself that I could never stop, and with a gust of petulance I resolved to stop forthwith. Like an impatient fool, I lugged over the lever, and incontinently the thing went reeling over, and I was flung headlong through the air. 
-]
 
 Part 2 - Travel To 1895
 

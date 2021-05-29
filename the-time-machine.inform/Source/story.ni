@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20935 ]
+[ WORDS - 20923 ]
 
 Table of Releases
 release	notes
@@ -1693,17 +1693,16 @@ Travel To 1895 begins when the time machine is in the Clearing and the player is
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
-	say "The machine powers up and the begins traveling through time again. To your relief the dials start turning backwards through the years as the grey void descends upon you again. The helplessness and dread you felt traveling forward is less than before but still there. XYZ. But you saying a silent prayer to a manufactured deity you wait and watch the dials as time is subtracted one year at a time.
-	Again the ages pass in reverse, the shadows and shapes go through their silent pantomime on the grey void that surrounds you and the machine.
+	say "The time machine powers up and the begins traveling through time again. To your relief the dials start turning backwards through the years as the grey void cloaks both you and the machine. The helplessness and dread you felt while traveling forward is less than before but still there but you say a silent prayer and watch the ages pass in reverse on the dials and the shadows and shapes go through their silent pantomime on the grey void that surrounds you and the machine.
 
-	The machine starts to slow, a familiar sensation now, and the grey fog begins to dissipate again, finally disappearing as the time machine stops and the familiar workshop surrounds you.
+	After a time, the machine starts to slow and the grey fog starts to dissipate, finally disappearing completely as the time machine stops and the familiar workshop surrounds you.
 	
 	You have arrived in the year 1895.";
 	now the current-year is "1895";
 	now the time machine is in the Workshop;
 	now fuse-burnt-out is true;
 	now the control panel is switched off.
-
+	
 Travel To 1895 ends when the time machine is in the Workshop.
 
 [When Travel To 1895 ends:

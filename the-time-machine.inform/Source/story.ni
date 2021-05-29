@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20824 ]
+[ WORDS - 20935 ]
 
 Table of Releases
 release	notes
@@ -1234,9 +1234,9 @@ examined-blueprints is false.
 [TBD is [em] not valid for em-dashes?]
 Instead of examining the blueprints:
 	if the player does not have the fuse:
-		say "Spreading out the individual sheets you see that these plans are a one-to-one match for Wells[apostrophe] time machine in the center of the room. While you can identify each actual assemblage to its blueprint counterpart, the names associated with them on the blueprints—plattnerite rods, chronometric dials—make no sense. In fact, the only object you can identify with any surety is the bicycle saddle in the center of the machine where the operator sits. ";
+		say "Spreading out the individual sheets you see that these plans are a one-to-one match for Wells[apostrophe] time machine in the center of the room. While you can identify actual time machine parts with their blueprint counterpart, the names associated with them on the blueprints—plattnerite rods, chronometric dials, temporal flux capacitor—make no sense.";
 	if the player has the fuse:
-		say "Spreading out the individual sheets you see the plans mirror Wells' time machine in the center of the room. While you cannot fathom the function of some of the components—chronometric dials, plattnerite rods—one item stands out, the fuse you took from the orrery.";
+		say "Spreading out the individual sheets you see the plans are a one-to-one match for Wells['] time machine in the center of the room. While you cannot fathom the function of some of the components—chronometric dials, plattnerite rods, temporal flux capacitor—one item does stand out in the drawings—the fuse you took from the orrery.";
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
 
@@ -1246,7 +1246,7 @@ The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-The description of the time machine is "The time machine is rectangular in shape, taller than it is wide. A latticework of struts, wires, and crystals rises up from the thick, square base to create a cage to enclose occupants about a foot and a half above your head. It looks like you can enter the machine through an opening in one side."
+The description of the time machine is "[if the player is not in the time machine]The time machine is rectangular in shape, taller than it is wide. A latticework of struts, wires, and crystals rises up from the thick, square base to create a cage to enclose occupants about a foot and a half above your head. It looks like you can enter the machine through an opening in one side.[otherwise]The inside of the time machine is just as baffling as its outside. While you can get a closer look at the various components that make up the cage that surrounds you, the only object that you recognize is the control panel a waist height."
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" as time machine.
 
@@ -1261,10 +1261,9 @@ The button is undescribed.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "TBD.";
-		[say "A cursory glance at the two sets of chronometric dials shows them configured for two dates, one today and one far in the future. From the status of the various lights it looks like the control panel is ready to be activated.";]
+		say "A series of chronometric dials take up most of the panel space and, by their markings, it looks like they are used to indicate the passage through time. The bottom row of dials are labeled with the intervals that are frequently used in normal, day-to-day conversation—seconds, minutes, hours, days, months, years, and decades—while the top row appears to be reserved for a time scale of a more geological specialization.[paragraph break]To the right of the dials is a large button and, underneath the button, a small light. The light under the button is[if the fuse is in the time machine] lit.[otherwise] not lit.[end if]";
 	otherwise:
-		say "From the outside of the time machine you can see a control panel at waist height containing various dials, switches, lights, and a single button. As far as you can see the panel appears to be wired into various time machine components that make up the lattice.";
+		say "From the outside of the time machine you can see a control panel at waist height containing a series of dials and a single button. As far as you can tell the panel appears to be wired into various components that make up the lattice of the time machine.";
 	rule succeeds.
 
 [> push button]
@@ -1327,7 +1326,7 @@ Instead of opening the time machine: say "The time machine is alread 'open.' All
 Instead of inserting the fuse into the time machine:
 	if the player has the fuse:
 		if examined-blueprints is true:
-			say "You snap the fuse into its appointed slot. With an barely perceptible hum, the time machine powers up. Lights appear on the control panel, probably indicating that it is ready to activate.";
+			say "You snap the fuse into its appointed slot. With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.";
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";

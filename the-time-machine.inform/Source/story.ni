@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22278 ]
+[ WORDS - 22335 278 ]
 
 Table of Releases
 release	notes
@@ -1248,22 +1248,23 @@ The time machine is fixed in place. [This prevents > show time machine to humbol
 The time machine is enterable. 
 The description of the time machine is "The time machine is rectangular in shape, taller than it is wide. A latticework of struts, wires, and crystals rises up from the thick, square base to create a cage to enclose occupants about a foot and a half above your head. It looks like you can enter the machine through an opening in one side."
 
-Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" as time machine.
+Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" as time machine.
 
 The control panel is a device.
 The control panel is in the time machine.
 The control panel is switched off.
 The control panel is undescribed.
-Understand "controls" as control panel.
+Understand "controls" or "switches" or "dials" as control panel.
 
 The button is a thing in the time machine.
 The button is undescribed.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "A cursory glance at the two sets of chronometric dials shows them configured for two dates, one today and one far in the future. From the status of the various lights it looks like the control panel is ready to be activated.";
+		say "TBD.";
+		[say "A cursory glance at the two sets of chronometric dials shows them configured for two dates, one today and one far in the future. From the status of the various lights it looks like the control panel is ready to be activated.";]
 	otherwise:
-		say "From the outside you can see the control panel is composed of various dials, switches, lights, and a single button but you would have to be standing in the machine to examine anything in greater detail.";
+		say "From the outside of the time machine you can see a control panel at waist height containing various dials, switches, lights, and a single button. As far as you can see the panel appears to be wired into various time machine components that make up the lattice.";
 	rule succeeds.
 
 [> push button]

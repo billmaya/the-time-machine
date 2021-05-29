@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20743 ]
+[ WORDS - 20808 ]
 
 Table of Releases
 release	notes
@@ -1674,7 +1674,7 @@ When Travel To 802,701 begins:
 	
 	One age passes. Two ages. Five ages. The blur of the individual chronometric dials start slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you and the time machine starts to dissipate and fade away like an early morning fog burnt off by the sun. Eventually the time machine stops, the dials indicating that 801,006 years have passed from when you started your journey in 1895.
 
-	You have arrived.";
+	You have arrived in the year 802,701 A.D.";
 	now the current-year is "802,701";
 	now the time machine is in the Clearing;
 	now the time machine is described;
@@ -1694,7 +1694,12 @@ Travel To 1895 begins when the time machine is in the Clearing and the player is
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
-	say "The clearing becomes hazy and dark and the rapidly alternating cycle of night and day becomes a continuous greyness as the machine hurtles back in time. The murmur in your ears and the confusedness in your mind are not as bad as the last time. The dials spin backwards, years melting away in seconds as the machine's operation reaches a crescendo and slows down as you approach your starting point.[paragraph break]You are back.";
+	say "TBD. The machine powers up and the begins traveling through time again. To your relief the dials start turning backwards through the years as the grey void descends upon you again. The helplessness and dread you felt traveling forward is less than before but still there. XYZ. But you saying a silent prayer to a manufactured deity you wait and watch the dials as time is subtracted one year at a time.
+	Again the ages pass in reverse, the shadows and shapes go through their silent pantomime on the grey void that surrounds you and the machine.
+
+	The machine starts to slow, a familiar sensation now, and the grey fog begins to dissipate again, finally disappearing as the time machine stops and the familiar workshop surrounds you.
+	
+	You have arrived in the year 1895.";
 	now the current-year is "1895";
 	now the time machine is in the Workshop;
 	now fuse-burnt-out is true;

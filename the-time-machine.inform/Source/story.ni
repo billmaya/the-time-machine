@@ -2024,8 +2024,8 @@ When Introduction Of Weena begins:
 
 	Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
 	now Weena is in the River;
-	now Weena is carrying the pocket watch;
-	now the pocket watch is open.
+	now Weena is carrying the pocket watch.
+	[now the pocket watch is open.]
 
 Introduction Of Weena ends when Weena has the pocket watch.
 

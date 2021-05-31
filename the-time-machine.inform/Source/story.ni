@@ -7,7 +7,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20867 ]
+[ WORDS - 20858 ]
 
 Table of Releases
 release	notes
@@ -277,7 +277,11 @@ Section 4 - Humbolt Exit
 
 Before going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "Humboldt snaps his pocket watch shut and starts getting into the ambulance. 'I'll be back in a few hours after I've gotten him sedated and through the preliminaries.' Humboldt turns back towards you abruptly. 'I nearly forgot. See what you can make of this.'[paragraph break]He hands you a single petal from some flower. You recognize it as Wells[apostrophe] proof of his future trip to the year 802,701, given to him by the girl he called Weena. 'I'm a pretty good amateur botanist but even I can't tell the morphology of this from a single petal. If you find the rest somewhere inside, maybe we can convince your friend that his whole future trip was a figment of his imagination. See what you can dig up until I get back.'[paragraph break]With that Humboldt swings the ambulance door shut. With the crack of the reins the ambulance starts off down the street, turns the corner, and disappears into the evening traffic.";
+		say "Humboldt snaps his pocket watch shut. 'I will return after I get Wells sedated and through the preliminaries.' He climbs into the ambulance but turns back. 'I nearly forgot. See what you can make of this.' He reaches down and hands you a single petal from some strange flower that, according to Wells, was given to him by the girl he called 'Weena' in the year 802,701 A.D.
+		
+		'I was once a pretty good amateur botanist but even I cannot deduce the morphology of this species from a single petal. If you can find the rest of it somewhere inside maybe we can convince your friend that his whole story was a figment of his imagination. See what you can find.'
+
+		With those last words Humboldt swings the ambulance door shut and, with a crack of the reins, the ambulance starts off down the street, turns the corner, and disappears into the sparse evening traffic.";
 		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
 		now the ambulance is nowhere;
 		now the player is carrying the Petal.	

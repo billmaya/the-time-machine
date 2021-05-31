@@ -7,7 +7,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20923 ]
+[ WORDS - 20867 ]
 
 Table of Releases
 release	notes
@@ -205,11 +205,15 @@ Part 1 - Settings
 Chapter 1 - Woking Street
 
 Woking Street is a room. 
-The description of Woking Street is "You're standing halfway down the street. Snow gently wafts down in large amounts, covering what fell minutes before, undisturbed except for the [area] of the street directly in front of you[if ambulance is in Woking Street] where the ambulance is parked[end if].[first time][paragraph break]To the west, the flickering [gaslights] in the square seem much further away than fifty paces. Fifty paces to the east the street dead-ends into a small [cul-de-sac].[only]"
+The description of Woking Street is "You are standing halfway down the street outside of Wells['] house. A heavy snowfall wafts down, undisturbed except for the [area] directly in front of you[if ambulance is in Woking Street] where the ambulance is parked.[otherwise] where the scuffle with Wells happened.[end if] The front door is to the north[first time], the light escaping from the drawn curtains on one side looking invitingly warm.[only][first time] To the west, the flickering [gaslights] in the square seem much further away than fifty paces. To the east, the street dead-ends into a small [cul-de-sac].[only]"
+
+The printed name of Woking Street is "68 Woking Street".
+
+Section 1 - Area
 
 	The area is scenery in Woking Street.
 	The area is a supporter.
-	The description of the area is "Directly in front of you the falling snow is rapidly covering the footsteps and carriage tracks from the scuffle between Wells and the hospital attendants that happened minutes ago.[if watchett-key is true][paragraph break]Something metallic catches your eye, almost buried under the rapidly falling snow.[otherwise][paragraph break]As you survey the area nothing catches your eye. Of course, it would help if you knew what you were looking for.[end if]"
+	The description of the area is "[if watchett-key is false]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise]The glint of something metallic catches your eye.[end if]"
 
 	Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" as area.
 
@@ -224,23 +228,23 @@ The description of Woking Street is "You're standing halfway down the street. Sn
 Instead of searching the area:
 	if the player does not have metal key:
 		if watchett-key is true:
-			say "Bending down, you brush the snow away to reveal a small metallic key. Picking it up, you put it in your pocket.";
+			say "You bend down and brush away the snow to reveal a small metal key that must have fallen out of Wells['] pocket during his struggle. You picking the key up and put it in your pocket.";
 			now the player is carrying the metal key;
 		otherwise:
-			say "Despite the cold you bend down and survey the small patch of macadam but nothing catches your eye. Of course, it would help if you knew what you were looking for.";
+			say "You bend down despite the cold and peer at the ground but nothing catches your eye. Of course, it would help if you knew what you were looking for.";
 	otherwise:
 		say "You find nothing of interest after searching the area again."
 
-Section 1 - Scenery
+Section 2 - Scenery
 
 	[Snow is handled in the Garden]
 
 	The gaslights are scenery in Woking Street. [coal gas https://bit.ly/3ijMeoV ] 
-	The description of the gaslights are "Incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which could be product of his overactive intellect, but you would miss the soft green glow of gassified coal that lights your nightime steps."
+	The description of the gaslights are "The incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which you hope is a product of his overactive imagination, because you would miss the soft green glow of gassified coal that lights your nightime steps."
 	Understand "gas" or "lights" or "gas lights" or "flickering" or "flickering lights" or "flickering gas lights" as gaslights.
 
 	The cul-de-sac is scenery in Woking Street.
-	The description of the cul-de-sac is "A small roundabout with a sputtering [fountain] in the center closes off the street to the east."
+	The description of the cul-de-sac is "A small roundabout with a sputtering [fountain] in the center terminates the street to the east."
 	Understand "close" or "dead end" or "impasse" or "blind alley" or "dead-end" or "dead-end street" or "roundabout" or "cul de sac" or "end of street" as cul-de-sac. 
 	
 	The fountain is scenery in Woking Street.
@@ -248,15 +252,15 @@ Section 1 - Scenery
 	Understand "water" or "sputtering" or "sputtering fountain" or "small fountain" or "small" as fountain.
 	
 	The square is scenery in Woking Street.
-	The description of square is "During the day the road that intersects perpendicularly with Woking Street and the park beyond are live with carriages and pedestrians, even during this season. But now, at night and in this weather, both are empty except for the occasional carriage or pedestrian hurrying to warmer locations."
+	The description of square is "During the day the road that intersects perpendicularly with Woking Street and the park beyond is live with carriages and pedestrians, even during this season. But now, at night and in this weather, both are empty except for the occasional carriage or pedestrian hurrying to a warmer location."
 	Understand "park" or "open space" or "municipal park" or "intersection" or "urban park" or "crossroads" or "main street" or "common" or "greenery" or "green park" as the square.
 
 	The houses are scenery in Woking Street.
-	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights has gone off as those residents have gone back to sleep.[only]"
+	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights have gone off as those residents have gone back to sleep.[only]"
 	
 	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "residences" as houses.
 
-Section 2 - Wandering
+Section 3 - Wandering
 
 	Going west in Woking Street is wandering.
 	Going northwest in Woking Street is wandering.
@@ -267,9 +271,9 @@ Section 2 - Wandering
 	Going southwest in Woking Street is wandering.
 	
 	Instead of wandering:
-		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider.[line break][line break]You really should get inside since you're not dressed appropriately for this winter weather."
+		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider. You really should get inside since you're not dressed appropriately for this winter weather."
 
-Section 3 - Humbolt Exit
+Section 4 - Humbolt Exit
 
 Before going north in Woking Street: 
 	if Humboldt is not nowhere:
@@ -278,18 +282,15 @@ Before going north in Woking Street:
 		now the ambulance is nowhere;
 		now the player is carrying the Petal.	
 
-Section 4 - Front Door
+Section 5 - Front Door
 
 	The front door is north of Woking Street and south of the Entryway. 
 	The front door is a door. 
 	It is openable and lockable. 
 	It is unlocked.
+	The front door is scenery.
 
 	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
-	
-	[TBD - More detailed description of front door? See Victorian doors https://bit.ly/3rOzQkZ and https://bit.ly/3b0ymNP]
-	
-	The initial appearance of the front door is "[if location is Woking Street]The front door to 68 Woking Street is to the north.[first time] The light escaping from the drawn curtains to one side looks invitingly warm.[only][otherwise]The door to the street outside is to the south."
 	
 	The address is a thing.
 	The address is scenery in Woking Street.
@@ -375,7 +376,7 @@ image	https://bit.ly/371QTYW
 mottos	https://bit.ly/2Z7bRS4
 parts-of	https://bit.ly/3p83dwZ ]
 	
-Section 5 - Ambulance
+Section 6 - Ambulance
 	
 The ambulance is a thing in Woking Street.
 The description of the ambulance is "Horse-drawn, the ambulance resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
@@ -388,7 +389,7 @@ Instead of taking the ambulance: say "What delusions of grandeur. Perhaps they s
 Instead of searching the ambulance: try entering the ambulance.
 Instead of entering the ambulance: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
 
-Section 6 - The Workshop Key
+Section 7 - The Workshop Key
 
 The metal key is a thing.
 The metal key is in Woking Street.
@@ -398,13 +399,13 @@ Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
 The metal key unlocks the workshop-door.
 		
-Section 7 - The Petal
+Section 8 - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
 The description of the petal is "You can't tell much from a single petal except that it came from a flower. Perhaps the rest of the blossom is inside somewhere."
 		
-Section 8 - Pocket Watch
+Section 9 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.
@@ -832,6 +833,7 @@ The printed name of garden walls is "walls".
 The snow is a thing.
 The snow is backdrop. It is in Woking Street and the Garden.
 The description of snow is "Microscopic flakes of all shapes and sizes [one of]float [or]whirl [or]drift [purely at random]down to cover the street and houses."
+Understand "snowfall" as snow.
 
 Instead of taking snow:
 	say "You grab at a flake or two and watch it melt in your hand."

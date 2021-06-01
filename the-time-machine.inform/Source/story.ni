@@ -305,7 +305,7 @@ The ambulance is undescribed.
 Understand "ambulence" or "cab" as ambulance.
 
 The driver is scenery in Woking Street.
-The description of the driver is "Trying to stay warm in his glass cab the driver is waiting for Humboldt to signal him to get going."
+The description of the driver is "Trying to stay warm in his glass cab the driver waits for Humboldt to give him the signal to get going."
 
 The rear doors are scenery in Woking Street.
 The description of rear doors is "The ambulence doors are open."
@@ -321,7 +321,7 @@ Section 7 - The Workshop Key
 The metal key is a thing.
 The metal key is in Woking Street.
 The metal key is undescribed.
-The description of metal key is "A small metal key that you can recall Wells carrying around everywhere he went."
+The description of metal key is "A small metal key to his workshop that you can recall Wells carrying around everywhere he went."
 Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
 The metal key unlocks the workshop-door.
@@ -330,7 +330,7 @@ Section 8 - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
-The description of the petal is "You can't tell much from a single petal except that it came from a flower. Perhaps the rest of the blossom is inside somewhere."
+The description of the petal is "It is not like any flower petal you have ever seen with its luminous colors. Still, you can't tell much from a single petal, perhaps the rest of the blossom is inside somewhere."
 		
 Section 9 - Pocket Watch
 
@@ -338,9 +338,9 @@ The pocket watch is a thing.
 The pocket watch is in Woking Street.
 Understand "timepiece" or "chronometer" or "mechanism" as pocket watch.
 
-The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his tale of time travel, you remember that 'Weena' was particularly enchanted with its moving hands and its winding mechanism."
+The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that 'Weena' was particularly enchanted with its moving hands and its winding mechanism."
 	
-Instead of using the pocket watch: say "It['] getting late. Humboldt will be back soon."
+Instead of using the pocket watch: say "It[']s getting late. Doctor Humboldt will be back soon."
 	
 Winding is an action applying to one touchable thing.
 Understand "wind [something]" as winding.

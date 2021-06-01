@@ -277,7 +277,7 @@ Section 4 - Humbolt Exit
 
 Before going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "Humboldt snaps his pocket watch shut. 'I will return after I get Wells sedated and through the preliminaries.' He climbs into the ambulance but turns back. 'I nearly forgot. See what you can make of this.' He reaches down and hands you a single petal from some strange flower that, according to Wells, was given to him by the girl he called 'Weena' in the year 802,701 A.D.
+		say "Humboldt snaps his pocket watch shut. 'I will return after I get Wells sedated and through the preliminaries.' He climbs into the ambulance but turns back. 'I nearly forgot. See what you can make of this.' He reaches down and hands you a single petal from some strange flower that, according to Wells, was given to him by Weena in the year 802,701 A.D.
 		
 		'I was once a pretty good amateur botanist but even I cannot deduce the morphology of this species from a single petal. If you can find the rest of it somewhere inside maybe we can convince your friend that his whole story was a figment of his imagination. See what you can find.'
 
@@ -338,7 +338,7 @@ The pocket watch is a thing.
 The pocket watch is in Woking Street.
 Understand "timepiece" or "chronometer" or "mechanism" as pocket watch.
 
-The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that 'Weena' was particularly enchanted with its moving hands and its winding mechanism."
+The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that Wells['] Weena was particularly enchanted with its moving hands and its winding mechanism."
 	
 Instead of using the pocket watch: say "It[']s getting late. Doctor Humboldt will be back soon."
 	
@@ -350,14 +350,15 @@ Instead of winding the watch: say "You turn the stem back and forth a few second
 Chapter 2 - Entryway
 
 The Entryway is a room. 
-The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels the [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear the faint sounds of a crackling fire. Down a short hallway to the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
+The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels a [staircase] that leads up to the second floor landing. Through an open door to the west you can see shelves of books and hear the faint sounds of a crackling fire. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop."
 	
 	The staircase is fixed in place in the Entryway. 
-	The description of the staircase is "Stairs going up to the second floor. You have to admit, you haven't ever been up there."
+	The description of the staircase is "Stairs going up to the second floor.[first time] You have to admit, you haven't ever been up there.[only]"
+
 	Understand "stairs" or "steps" as staircase.
 	
 	The banister is fixed in place in the Entryway.
-	The description of the banister is "Just a normal handhold for going up and down the steps."
+	The description of the banister is "Just a normal handhold to grasp when going up and down the stairs."
 	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
 
@@ -371,7 +372,7 @@ Understand "workshop" or "door" as workshop-door.
 The printed name of workshop-door is "workshop door".
 
 Instead of examining the workshop-door:
-	say "An ordinary looking door leading to Wells[apostrophe] workshop. The door is [if workshop-door is open]open[otherwise]closed[end if]."
+	say "The door leading to Wells[apostrophe] workshop. The door is [if workshop-door is open]open[otherwise]closed[end if]."
 
 Chapter 3 - Library
 
@@ -400,7 +401,7 @@ Understand "book" as books.
 The periodicals are a thing.
 The periodicals have a bookness called type. The type of the periodicals is magazine.
 The periodicals are scenery on the shelves.
-The description of periodicals is "PERIODICALS DESCRIPTION." [Should not be displayed becuase of > examine periodicals code in Section 1 below (included to keep periodicals from showing up when Missing Item Description code is run).]
+The description of periodicals is "PERIODICALS DESCRIPTION." [Should not be displayed becaase of > examine periodicals code in Section 1 below (included to keep periodicals from showing up when Missing Item Description code is run).]
 Understand "magazine" or "magazines" as periodicals.
 
 The encyclopaedia are a thing.

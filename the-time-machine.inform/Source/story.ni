@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20098 ]
+[ WORDS - 20085 ]
 
 Table of Releases
 release	notes
@@ -1786,8 +1786,7 @@ Chapter 4 - Bottom Shaft
 
 The Bottom Shaft is a room.
 Up from the Bottom Shaft is the Top Shaft.
-The description of Bottom Shaft is "A small amount of light from above filters down, allowing you to see tunnels sloping down in every direction." 
-[The sound of machinery is louder now and seems to come from everywhere."]
+The description of Bottom Shaft is "In the small amount of light that filters down from above you can see tunnels going in every direction."
 
 The printed name of Bottom Shaft is "Bottom of the Shaft"
 

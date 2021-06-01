@@ -1875,7 +1875,10 @@ Chapter 7 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "A small concrete balcony looks down on the treetops below. In the distance, through a break in the foliage, you can see a river to the south and a path winding its way southeast from the clearing where you arrived to the river. To the northwest you can see the head and wings of [if sphinx steps is visited]the[otherwise]a[end if] sphinx poking through the treetops."
+The description of the Balcony is "A small concrete balcony looking down on the treetops below. In the near distance, through a break in the foliage, you can see a river to the south and the path that winds its way northwest from the river to the clearing where you arrived."
+
+
+[ To the northwest you can see the head and wings of [if sphinx steps is visited]the[otherwise]a[end if] sphinx poking through the treetops." where you arrived from the clearing to the river that looks]
 
 Chapter 8 - River
 

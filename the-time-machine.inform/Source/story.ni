@@ -299,10 +299,17 @@ Section 5 - Front Door
 Section 6 - Ambulance
 	
 The ambulance is a thing in Woking Street.
-The description of the ambulance is "Horse-drawn, the ambulance resembles a private carriage tha has been adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
+The description of the ambulance is "The horse-drawn ambulance resembles a private carriage that has been adapted for medical use. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors at the back allow a patient, orderlies, and doctor to enter and exit the vehicle."
 The ambulance is fixed in place.
 The ambulance is undescribed.
 Understand "ambulence" or "cab" as ambulance.
+
+The driver is scenery in Woking Street.
+The description of the driver is "Trying to stay warm in his glass cab the driver is waiting for Humboldt to signal him to get going."
+
+The rear doors are scenery in Woking Street.
+The description of rear doors is "The ambulence doors are open."
+Understand "ambulence doors" or "doors" as rear doors.
 
 Instead of taking the ambulance: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
 

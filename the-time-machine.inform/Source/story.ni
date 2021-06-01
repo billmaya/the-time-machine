@@ -1,4 +1,3 @@
-
 The story title is "The Time Machine".
 The story author is "'Billy Tenenbaum'".
 The story headline is "A Temporal Investigation".
@@ -7,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20138 ]
+[ WORDS - 20177 ]
 
 Table of Releases
 release	notes
@@ -378,13 +377,13 @@ Chapter 3 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on the north, east, and west walls. The remaining free space not devoted to [books], [periodicals], and a set of [encyclopaedia] is monopolized by a few pieces of [furniture].
-
-Against the south wall is a small [desk] for note-taking, correspondence, and reconciling household accounts. A small leather [chair] is positioned near the drawn floor-to-ceiling [curtains] for more contemplative research and relaxation. The room continues to the north."
+The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on all the walls. A [desk] and a leather [chair] positioned near the drawn [curtains] are the only things in the room besides the [books], [periodicals], and a set of [encyclopaedia] on the shelves. The room continues to the north."
 
 The shelves are a thing.
 The shelves are scenery in the Library.
 The shelves are a supporter.
+The description of shelves is "Holding books and periodicals of all types and a set of encyclopaedia."
+Understand "shelf" as shelves.
 
 [Writing §4.5. Kinds of value]
 [Writing §4.8. New value properties, Example 48]
@@ -401,7 +400,7 @@ Understand "book" as books.
 The periodicals are a thing.
 The periodicals have a bookness called type. The type of the periodicals is magazine.
 The periodicals are scenery on the shelves.
-The description of periodicals is "PERIODICALS DESCRIPTION." [Should not be displayed becaase of > examine periodicals code in Section 1 below (included to keep periodicals from showing up when Missing Item Description code is run).]
+The description of periodicals is "PERIODICALS DESCRIPTION." [Should not be displayed because of > examine periodicals code in Section 1 below (included to keep periodicals from showing up when Missing Item Description code is run).]
 Understand "magazine" or "magazines" as periodicals.
 
 The encyclopaedia are a thing.
@@ -417,7 +416,7 @@ Instead of examining the furniture, say "You'll have to be more specific about w
 The desk is a thing.
 The desk is scenery in the LIbrary.
 The desk is a supporter.
-The description of the desk is "A standing desk with a few handwritten papers on it."
+The description of the desk is "A small standing desk with a few handwritten papers on it."
 Instead of searching the desk, say "You quickly shuffle through the papers on the desk but find nothing of interest."
 	
 The library papers are a thing.
@@ -435,14 +434,14 @@ The chair is a thing.
 The chair is scenery in the Library.
 The chair is a supporter.
 The chair is enterable.
-The description of the chair is "Covered in worn leather it looks very comfortable and inviting, angled like it is against the curtained window.[first time] But you don't have time to rest, you have a key to find.[only]"
+The description of the chair is "The small chair covered in worn leather positioned near the curtains."
 
 The curtains are a thing.
 The curtains are scenery in the Library.
 The curtains are a container.
-The description of the curtains is "Pulled shut, the floor-to-ceiling dark fabric shields the room from the cold weather outside."
+The description of the curtains is "Pulled shut, the floor-to-ceiling heavy fabric wards the room from the cold weather outside."
 Understand "curtain" as curtains.
-Instead of opening the curtains, say "Pulling a curtain aside, you briefly look at the snow-covered street outside. The continuously falling snow is rapidly covering the disturbed area where the ambulance was a few minutes ago. You let the fabric drop back into place and look around the room."
+Instead of opening the curtains, say "Pulling a curtain aside you glance at the snow-covered street. The falling snow is rapidly covering the disturbed area where the ambulance was a few minutes ago. You let the fabric drop back into place and look around the room."
 
 Instead of pushing the curtains: try opening the curtains.
 Instead of searching the curtains: say "You look in the folds of the fabric but find nothing."
@@ -749,9 +748,11 @@ Chapter 5 - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
-The description of the Garden is "Set below the level of the road and shielded from the city outside by second floor [walls] to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.
+The description of the Garden is "What Wells calls
 
-The hibernating dunes of vegetation surround you on all sides. From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration.
+Set below the level of the road and shielded from the city outside by second floor [walls] to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.
+
+The snow-covered vegetation surrounds you on all sides. From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration.
 
 A [gate] set into that wall looks out onto the snow-covered [street] beyond. To the south, the dark panes of Wells['] workshop [windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
 

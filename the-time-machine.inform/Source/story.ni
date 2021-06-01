@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20144 ]
+[ WORDS - 20098 ]
 
 Table of Releases
 release	notes
@@ -1770,15 +1770,9 @@ Chapter 3 - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
-The description of Top Shaft is "You're perched at the the top of the shaft on the ladder leading down. Exiting the shaft will put you back in the Clearing. The faint sound of rhythmic machinery rises from the darkness below."
+The description of Top Shaft is "You're hanging at the the top of the shaft on the ladder leading down. Below, the faint sound of rhythmic machinery rises from the darkness. Exiting the shaft will put you back in the Clearing."
 
 The printed name of Top Shaft is "Top of the Shaft"
-
-[This doesn't work, probably because there is no "shaft" thing like there is in the Clearing.]
-[Climbing out is an action applying to one thing.
-Understand "climb out [room]" as climbing out.
-Understand "climb out of [room]" as climbing out.
-Instead of climbing out: try exiting.]
 
 Instead of exiting in the Top Shaft: 
 	say "You carefully climb out of the shaft.";
@@ -1786,7 +1780,7 @@ Instead of exiting in the Top Shaft:
 	
 The ladder is a thing.
 The ladder is a backdrop. It is in the Top Shaft and Bottom Shaft.
-The description of the ladder is "Sunk into the side of the shaft, the series of rusting iron bars lead down into the darkness."
+The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, leading down into the gloom."
 
 Chapter 4 - Bottom Shaft
 

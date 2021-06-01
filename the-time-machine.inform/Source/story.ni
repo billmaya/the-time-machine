@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20177 ]
+[ WORDS - 20144 ]
 
 Table of Releases
 release	notes
@@ -748,13 +748,7 @@ Chapter 5 - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
-The description of the Garden is "What Wells calls
-
-Set below the level of the road and shielded from the city outside by second floor [walls] to the north and east, what Wells calls his ‘sunken urban wilderness’ is currently hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.
-
-The snow-covered vegetation surrounds you on all sides. From past visits you know which white hillock is the hollyhocks, which is the larkspurs, and which is the snapdragons, but it is much too cold now to do any additional exploration.
-
-A [gate] set into that wall looks out onto the snow-covered [street] beyond. To the south, the dark panes of Wells['] workshop [windows] stare silently down on the snow-covered [bench] nestled among some ornamental rhododendron [bushes]. The parlor doors are to the west."
+The description of the Garden is "[first time]What Wells calls his 'sunken urban wilderness' is hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.[only] Snow-covered vegetation[unicode 8212]hollyhocks, larkspurs, snapdragons, and other flora[unicode 8212]surrounds you on all sides. A [gate] set into the north wall looks out onto the snow-covered [street] beyond. To the south, the dark panes of Wells['] workshop [windows] overlook a snow-covered [bench] nestled among some hibernating rhodedendron [bushes]. The parlor doors are to the west."
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 
@@ -764,7 +758,7 @@ The printed name of garden walls is "walls".
 
 The snow is a thing.
 The snow is backdrop. It is in Woking Street and the Garden.
-The description of snow is "Microscopic flakes of all shapes and sizes [one of]float [or]whirl [or]drift [purely at random]down to cover the street and houses."
+The description of snow is "Microscopic flakes of all shapes and sizes [one of]float [or]whirl [or]drift [purely at random]down to cover everything."
 Understand "snowfall" as snow.
 
 Instead of taking snow:
@@ -787,6 +781,7 @@ The bench is a thing.
 The bench is scenery in the Garden.
 The bench is a supporter.
 The bench is enterable.
+The description of the bench is "It[']s a bench, covered in snow but still just a bench."
 
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.

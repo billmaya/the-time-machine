@@ -7,7 +7,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20894 20858 ]
+[ WORDS - 20138 ]
 
 Table of Releases
 release	notes
@@ -299,7 +299,7 @@ Section 5 - Front Door
 Section 6 - Ambulance
 	
 The ambulance is a thing in Woking Street.
-The description of the ambulance is "Horse-drawn, the ambulance resembles a private carriage but is uniquely adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
+The description of the ambulance is "Horse-drawn, the ambulance resembles a private carriage tha has been adapted for its medical function. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors, now open, allow entrance and egress from the vehicle of patient, orderlies, and doctor."
 The ambulance is fixed in place.
 The ambulance is undescribed.
 Understand "ambulence" or "cab" as ambulance.

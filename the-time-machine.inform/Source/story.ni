@@ -7,7 +7,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20858 ]
+[ WORDS - 20894 20858 ]
 
 Table of Releases
 release	notes
@@ -294,91 +294,7 @@ Section 5 - Front Door
 	It is unlocked.
 	The front door is scenery.
 
-	The description of the front door is "[if location is Woking Street]At first glance the door to 68 Woking Street is indistinguishable from every other door that lines the street, except for the unusual [knocker].[otherwise]You see nothing special about the heavy, wooden door leading to the street outside."
-	
-	The address is a thing.
-	The address is scenery in Woking Street.
-	The address is fixed in place.
-	The description of address is "Two brass numbers, a 6 and an 8, fastened to the door underneath the door knocker." 
-	Understand "68" or "street address" or "numbers" or "door address" as address.
-
-	[TBD Would like to make text conditional? - "...[if knocker examined]sundial[otherwise]knocker."]
-	[TBD How do you make a door a supporter, i.e. The address is on the front door. "If a supporter were a kind of a door or vice versa there'd be no problem, but they aren't." See Writing §3.5]
-	
-	The knocker is scenery in Woking Street.
-	The description of the knocker is "Made of brass, this door knocker is in the shape of a sundial. By virtue of its unique design it stands out among all the unexceptional, cast iron lions heads, faces, or simple rings that adorn every other door on the street. It is unique, custom-made, the only one of its kind in the entire city, probably the world, and always brings a smile to your face since it reflects the temporal obsessions of your friend who lives at this address."
-	
-	The sundial is scenery in Woking Street.
-	The sundial is a supporter.
-	The description of the sundial is "Octogon shaped, this custom-made timekeeper is attached vertically to the door. While it has all of the components of it’s horizontal cousins, these componens are arranged in a slightly different configuration to account for its vertical nature and the surrounding buildings.[paragraph break]Roman [numerals] from one to twelve surround a stylized [sun] at the center. A hinged gnomon, which would normally cast a shadow during daylight hours, serves as the knocker. Underneath the sun and gnomon is the [motto] 'Sine Umbra Nihil'. Lightly etched complementary [Babylonian] and [Italian] hour lines cross the sundial's face."
-	
-	Understand "timekeeper" or "timepiece" as sundial.
-	
-		The numerals are a thing.
-		The numerals are on the sundial.
-		The numerals are fixed in place.
-		The numerals are undescribed.
-		The description of the numerals are "Etched Roman numerals from I to XII encircle the stylized sun in a Copernican fashion."
-		Understand "roman numerals" as numerals.
-	
-		The sun is a thing.
-		The sun is on the sundial.
-		The sun is fixed in place.
-		The sun is undescribed.
-	
-		The motto is a thing.
-		The motto is on the sundial.
-		The motto is fixed in place.
-		The motto is undescribed.
-		The description of the motto is "If you remember your school Latin, 'Sine Umbra Nihil' loosely translates into 'Without shadow there is nothing.'"
-	
-		The babylonian line is a thing.
-		The babylonian line is on the sundial.
-		The babylonian line is fixed in place.
-		The babylonian line is undescribed.
-		The description of babylonian is "A sundial's Babylonian line is used to indicate the hours of sunrise."
-		Understand "babylonian line" as babylonian line.
-	
-		The italian line is a thing.
-		The italian line is on the sundial.
-		The italian line is fixed in place.
-		The italian line is undescribed.
-		The description of italian is "A sundial's Italian line is used to indicate the hours of sunset."
-		Understand "italian line" as italian line.
-	
-		The gnomon is a thing.
-		The gnomon is on the sundial.
-		The gnomon is fixed in place.
-		The gnomon is undescribed.
-		The description of the gnomon is "An triangular piece of metal, ornately engraved and hinged at the isosceles' apex."
-		Understand "triangular" or "triangle" or "isosceles" or "piece" or "metal" or "knocker" as gnomon.
-	
-	Knocking is an action applying to one touchable thing.
-	Understand "knock on [something]" as knocking.
-	Understand "knock [something]" as knocking.
-	
-	Instead of knocking front door: try using gnomon.
-	
-	Using is an action applying to one touchable thing. [see Writing 17.1]
-	Understand "use [something]" as using.	
-	
-	Instead of using the knocker: try using gnomon.	
-	
-	Instead of using the gnomon: say "You reach out and raise the hinged gnomon several times and tap on the brass base underneath. The gentle 'tap, tap, tap' sound is almost lost in the wind but you are sure it is being heard clearly inside."
-	
-	After going north through the front door:
-		now the front door is closed;
-		continue the action.
-	
-	After going south through the front door:
-		now the front door is closed;
-		continue the action.
-		
-[Sundial links
-victorian	https://bit.ly/3tP1ssg
-image	https://bit.ly/371QTYW
-mottos	https://bit.ly/2Z7bRS4
-parts-of	https://bit.ly/3p83dwZ ]
+	The description of the front door is "[if location is Woking Street]The door to 68 Woking Street is indistinguishable from every other door that lines the street.[otherwise]You see nothing special about the heavy wooden door leading to the street outside."
 	
 Section 6 - Ambulance
 	
@@ -746,6 +662,9 @@ Understand "ash" as ashes.
 
 The embers are scenery in the parlor. "Small pieces of coal that have fallen through the grate, still quite hot."
 Understand "ember" as embers.
+
+Using is an action applying to one touchable thing. [see Writing 17.1]
+	Understand "use [something]" as using.	
 
 Understand the command "tend" as something new. [> tend the fire]
 Understand "tend [something]" as using.

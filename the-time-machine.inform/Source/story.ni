@@ -378,7 +378,7 @@ Chapter 3 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on all the walls. A [desk] and a leather [chair] positioned near the drawn [curtains] are the only things in the room besides the [books], [periodicals], and a set of [encyclopaedia] on the shelves. The room continues to the north."
+The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on all the walls. A [desk] and a leather [chair] positioned near the drawn [curtains] are the only things in the room besides the [books], [periodicals], and a set of [encyclopaedia] on the shelves. The room continues to the north and the entryway is back east."
 
 The shelves are a thing.
 The shelves are scenery in the Library.

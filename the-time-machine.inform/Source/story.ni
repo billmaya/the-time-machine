@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20035 ]
+[ WORDS - 20210 ]
 
 Table of Releases
 release	notes
@@ -1819,33 +1819,49 @@ The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 Understand "dome" as Inside Dome.
 
-The description of Inside Dome is "Sunlight streams through the dome's [oculus], illuminating the room below. Low stone [tables] are arranged symmetrically throughout the room, surrounding a central [well] underneath the dome's apex. Mosaic [murals] cover the walls. Sunlight streams through an archway to the south and the exit of the building is to the west."
+The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminationg the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. Mosaic [murals] cover the walls. There is an small archway to the south and the main exit to the west."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 
 The oculus is a thing.
 The oculus is scenery in the Inside Dome.
-The description of oculus is "A circular opening at the apex of the dome, it allows sunlight and rain to enter. From this distance it looks small but given the size of the dome it is probably thirty or forty feet in diameter."
+The description of oculus is "A circular opening at the dome[']s apex allowing sunlight and the elements to enter.[first time] From this distance it looks small but given the size of the dome you estimate it to be at least thirty or thirty-five feet in diameter.[only]"
+
 Understand "apex" as oculus.
+
+The sun is scenery in the Inside Dome.
+The description of the sun is "The light from the midday [noun] streams through the opening in the center of the dome and into the room below."
+Understand "sunlight" or "light" as the sun.
+
+The archway is scenery in the Inside Dome.
+The description of the archway is "A small archway to the south leading outside."
+Understand "arch" as archway.
 
 The tables are a thing.
 The tables are scenery in the Inside Dome.
-The description of the tables are "The low-slung stone tables are arranged in a circular pattern around the well." 
-Understand "circular" or "container" or "depression" as tables.
+The description of the tables are "The low-slung stone tables are arranged symmetrically around the well." 
+Understand "circular" or "container" or "depression" or "table" as tables.
+
+Instead of entering the tables: say "You sit briefly on the edge of one of the tables to gather your thoughts."
 
 The well is a thing.
 The well is a container.
 The well is open.
 The well is scenery in the Inside Dome.
+The description of the well is "The well is circular and filled with what appears to be fresh water. It appears to be the same size as the oculus far above it with a knee-high wall running around its circumferance."
 
 Instead of inserting things into the well: say "I don't see the purpose of dropping [the noun] in the water."
 
-The description of the well is "Mirroring the oculus diameter, this circular pool of water ripples, reflecting a slightly distorted image of the room around you."
+The wall is scenery in the Inside Dome.
+The description of the wall is "The wall runs around the entire outer edge of the well."
+
+Instead of entering the well: try entering the wall;
+Instead of entering the wall: say "You rest briefly at the edge of the well to gather your thoughts."
 
 The water is a thing.
 The water is scenery in the Inside Dome.
 The water is edible.
-The description of the water is "The water seems fresh, replenished and circulated by some unseen mechanism far below. [first time] (Undoubtably, Wells would be able to elucidate the engineering behind such a feat but you can only wonder at its execution.)[only]."
+The description of the water is "The water appears fresh, replenished by some unseen mechanism far below.[first time] Of course, if Wells were here he would be able figure out the mechanics of such an engineering feat but you can only puzzle at its' execution.[only]"
 
 Before taking the water:
 	try eating the water;
@@ -1859,17 +1875,21 @@ Instead of drinking the water, say "You cup some water in your hand and take a q
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
-The description of the murals are "Circling the entire dome wall except for the entrances and exits, the pictorial cyclorama displays a day-to-night series of idealized pastoral scenes of a leisurely life. In the various [mosaics], tunicked figures gather fruit, bathe in the river, pick flowers, wander the countryside, and eat, dance, and play in the sunlight. In the dusk scenes you can make out shadowy figures in the background spying on the childish figures in the foreground, hidden in the undergrowth and shadow. Each mural has a title, written in a strange Arabic script that you cannot decipher."
-Understand "cyclorama" or "mural" as murals.
+The description of the murals are "Circling the entire dome wall except for the exits, this pictorial cyclorama displays a series of day-to-night pastoral scenes. Each panel has a title written in some Arabic script below it and depicts to a specific idylic activity[unicode 8212]gathering fruit, bathing in the river, wandering the countryside, eating, dancing, and other questionable pastimes[unicode 8212]being performed by a group of people who must be Wells['] Eloi.
+	
+In one or two of the dusk scenes you can make out small shadowy silhouettes spying on the Eloi[']s foreground activity, hidden in background undergrowth and shadows[unicode 8212]Wells['] Morlocks."
+
+Understand "cyclorama" or "mural" or "panel" or "panels" as murals.
 	
 Before taking the murals:
-	say "While you have a basic understanding of Latin required for your legal work, the linguistic skills required to decypher the words associated with each mural is quite beyond you.";
+	say "While your knowledge of Latin is sufficient for your legal work, the linguistic skills required to decypher each mural[']s title is quite beyond you.";
 	stop the action.
 
 The mosaics are a thing.
 The mosaics are scenery in the Inside Dome.
-The description of the mosaics are "On closer examination it appears that each mural is made up of thousands of small colored pieces of square stone, tile, and glass. However, gaps in sections where the pieces have fallen out show that the original work has not been maintained as it should have been by future generations."
+The description of the mosaics are "Each mural is composed of thousands of small colored pieces of square stone, tile, and glass arranged by the original artisans into individual scenes. Unfortunately, pieces have fallen out in certain places, showing that the work has not been maintained as it should have been by future generations."
 Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored pieces" or "pieces" as mosaics.
+
 
 Chapter 7 - Balcony
 

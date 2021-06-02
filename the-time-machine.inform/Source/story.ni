@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20395 ]
+[ WORDS - 20437 ]
 
 Table of Releases
 release	notes
@@ -792,7 +792,7 @@ Chapter 6 - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description of the Dining Room is "The house['] centerpiece for dining and entertainment, dominated by a mahogany [dining table] that could seat eight comfortably. Above the table hands and electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals.[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[end if]"
+The description of the Dining Room is "The house[']s location for dining and entertainment, dominated by a mahogany [dining table] that could seat eight comfortably. Above the table hangs and electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals.[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[end if]"
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
@@ -860,7 +860,7 @@ Instead of pulling the chain:
 		try switching off the chandelier.
 
 Instead of switching off the chandelier: 
-	say "Tugging the small chain turns the chandelier off darkens the room significantly but you can still see because of the fire in the next room.";
+	say "Tugging the small chain turns the chandelier off, darkening the room significantly. But you can still see and make your way around because of the fire in the parlor.";
 	now the chandelier is switched off;
 			
 Instead switching on the chandelier: 
@@ -916,40 +916,42 @@ Instead of closing the sliding panel:
 
 [> switch orrery on/off > turn orrery on/off ]
 	
-Instead of switching on the orrery: try switching on the orrery's switch.
-Instead of switching off the orrery: try switching off the orrery's switch.
+Instead of switching on the orrery: try switching on the orrery-switch.
+Instead of switching off the orrery: try switching off the orrery-switch.
 
 [> flip switch]
 	
-An orrery's switch is a thing.
-An orrery's switch is scenery in the Dining Room.
-An orrery's switch is a device.
-An orrery's switch is switched off.
-Understand "orrery switch" as orrery's switch.
+An orrery-switch is a thing.
+An orrery-switch is scenery in the Dining Room.
+An orrery-switch is a device.
+An orrery-switch is switched off.
+The description of the orrery-switch is "You see nothing special about the orrery's switch except the fact that you can switch it on and off."
+Understand "orrery switch" and "switch" as orrery-switch.
+The printed name of orrery-switch is "orrery's switch".
 	
-Instead of examining the orrery's switch:
+Instead of examining the orrery-switch:
 	say "There is nothing special about the orrery's switch except the fact that it can be turned on and off."
 
 Understand "flip [a switched off device]" as switching on.
 Understand "flip [a switched on device]" as switching off.
 	
-Instead of switching on the orrery's switch:
+Instead of switching on the orrery-switch:
 	if the fuse is in the sliding panel in the Dining Room:
 		if the sliding panel is open: 
 			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
 		otherwise:
 			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptabley, the planets on the surface begin their endless journey around the Sun.";
-		now the orrery's switch is switched on;
+		now the orrery-switch is switched on;
 		now the orrery is switched on;
 	otherwise: [TBD If you try and switch on the orrery when the sliding panel is closed, the fuse is not in the sliding panel]
 		say "It looks like the orrery won't function unless you put the fuse in the sliding panel.".
 	
-Instead of switching off the orrery's switch:
+Instead of switching off the orrery-switch:
 	if the sliding panel is open:
 		say "The gears inside stop moving and the planet's halt in their orbits.";
 	otherwise:
 		say "The box is silent and the planet's stop their movements around the Sun.";
-	now the orrery's switch is switched off;
+	now the orrery-switch is switched off;
 	now the orrery is switched off.
 
 Section 3 - Fuse
@@ -967,7 +969,7 @@ The description of the fuse is "Almost as big as your thumb, the circular fuse i
 After taking the fuse:
 	if the orrery is switched on:
 		say "The minute you remove the fuse the orrery shuts off and stops its calculations.";
-		now the orrery's switch is switched off;
+		now the orrery-switch is switched off;
 		now the orrery is switched off;
 	otherwise:
 		say "Taken[paragraph break]".

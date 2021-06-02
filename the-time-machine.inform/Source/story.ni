@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20371 ]
+[ WORDS - 20374 ]
 
 Table of Releases
 release	notes
@@ -974,11 +974,11 @@ Chapter 7 - Kitchen
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
 
-The description of the Kitchen is "With enough space for several cooks, the entire room is organized around exterior lines, dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area].[if the location of Watchett is the Kitchen] Mrs. Watchett is in the midst of preparing another one those meals you enjoy so much.[otherwise] You can see the evening meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"
+The description of the Kitchen is "With space for several cooks to work simultaneously, this entire room is dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area].[if the location of Watchett is the Kitchen] Mrs. Watchett is moving around the kitchen, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"
 
 The meals are a thing.
 The meals are scenery in the Kitchen.
-The description of meals is "[if the location of Watchett is the Kitchen] [Watchett] doesn't look like she needs any help right now but she might be able to answer a quesion or two.[otherwise]Best to leave that to Mrs. Watchett.[end if]"
+The description of meals is "[if the location of Watchett is the Kitchen][Watchett] doesn't look like she needs any help right now but she might be able to answer a question or two without stopping her work.[otherwise]Best to leave that to Mrs. Watchett.[end if]"
 
 Understand "meal" or "dinner" or "food" as meals.
 

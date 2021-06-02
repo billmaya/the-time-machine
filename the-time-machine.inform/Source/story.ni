@@ -196,6 +196,7 @@ Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with
 Chapter 7 - Release
 
 [Release along with cover art.]
+Release along with interpreter.
 
 Book 3 - 1895
 
@@ -1733,6 +1734,7 @@ Before going southeast in the Clearing:
 		otherwise:
 			continue the action.
 	
+[ 06/02/21 - Decided to remove this from the game since it really didn't serve any purpose right now. Moved some of the descriptions into Clearing.
 Chapter 2 - Sphinx Steps
 
 The Sphinx Steps are a room.
@@ -1762,8 +1764,9 @@ The statue is a thing.
 The statue is scenery in the Sphinx Steps.
 The description of the statue is "A gigantic reclining sphinx made of white marble. Its weather-worn surface carries the unpleasant suggestion of disease and its sightless eyes seem to watch everything. The wings, instead of being carried vertically at the sides spread out so the entire figure seems to hover. You are not sure, but you think you can see the faint shadow of a smile on the lips. It is inhuman, unsympathetic, and overwhelmingly powerful."
 Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
+]
 
-Chapter 3 - Top Shaft
+Chapter 2 - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
@@ -1779,7 +1782,7 @@ The ladder is a thing.
 The ladder is a backdrop. It is in the Top Shaft and Bottom Shaft.
 The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, leading down into the gloom."
 
-Chapter 4 - Bottom Shaft
+Chapter 3 - Bottom Shaft
 
 The Bottom Shaft is a room.
 Up from the Bottom Shaft is the Top Shaft.
@@ -1802,7 +1805,7 @@ Going southwest in the Bottom Shaft is wandering.
 Going west in the Bottom Shaft is wandering.
 Going northwest in the Bottom is wandering.
 
-Chapter 5 - Domed Building
+Chapter 4 - Domed Building
 
 The Domed Building is a room.
 The Domed Building is east of the Clearing.
@@ -1813,7 +1816,7 @@ Understand "concrete" or "pantheon" or "columned" or "columns" or "portico" or "
 
 The description of the Domed Building is "Before you is a weathered concrete building resembling the Pantheon in Rome. The entrace to the building is through a columned portico to the east."
 
-Chapter 6 - Inside Dome
+Chapter 5 - Inside Dome
 
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
@@ -1894,7 +1897,7 @@ The description of the mosaics are "Each mural is composed of thousands of small
 Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored pieces" or "pieces" as mosaics.
 
 
-Chapter 7 - Balcony
+Chapter 6 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
@@ -1908,7 +1911,7 @@ Understand "river" as balcony-river.
 
 [Treetops, foliage, and forest are handled in the Clearing]
 
-Chapter 8 - River
+Chapter 7 - River
 
 The River is a room.
 The River is southeast of the Clearing.

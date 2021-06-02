@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20210 ]
+[ WORDS - 20334 ]
 
 Table of Releases
 release	notes
@@ -1665,8 +1665,8 @@ The printed name of clearing bushes is "bushes".
 
 The treetops are a thing.
 The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
-Understand "forest" and "trees" as treetops.
-The description of treetops is "Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight."
+Understand "forest" or "trees" or "foliage" or "tree" as treetops.
+The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of the river below."
 
 The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
@@ -1858,20 +1858,23 @@ The description of the wall is "The wall runs around the entire outer edge of th
 Instead of entering the well: try entering the wall;
 Instead of entering the wall: say "You rest briefly at the edge of the well to gather your thoughts."
 
-The water is a thing.
-The water is scenery in the Inside Dome.
-The water is edible.
-The description of the water is "The water appears fresh, replenished by some unseen mechanism far below.[first time] Of course, if Wells were here he would be able figure out the mechanics of such an engineering feat but you can only puzzle at its' execution.[only]"
+The well-water is a thing.
+The well-water is scenery in the Inside Dome.
+The well-water is edible.
+The description of the well-water is "The water appears fresh, replenished by some unseen mechanism far below.[first time] Of course, if Wells were here he would be able figure out the mechanics of such an engineering feat but you can only puzzle at its' execution.[only]"
 
-Before taking the water:
-	try eating the water;
+The printed name of well-water is "water".
+Understand "water" as well-water.
+
+Before taking the well-water:
+	try eating the well-water;
 	stop the action.
 
-Instead of eating the water:
+Instead of eating the well-water:
 	say "You cup some water in your hands for a quick drink.";
 	stop the action.
 
-Instead of drinking the water, say "You cup some water in your hand and take a quick drink." [Writing §10.2. Liquids]
+Instead of drinking the well-water, say "You cup some water in your hand and take a quick drink." [Writing §10.2. Liquids]
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
@@ -1897,11 +1900,34 @@ The Balcony is a room.
 The Balcony is south of Inside Dome.
 The description of the Balcony is "A small concrete balcony looking down on the treetops below. In the near distance, through a break in the foliage, you can see a river to the south and the path that winds its way northwest from the river to the clearing where you arrived."
 
+The balcony-river is scenery in the Balcony.
+The description of the balcony-river is "RIVER."
+The printed name of balcony-river is "river".
+
+Understand "river" as balcony-river.
+
+[Treetops are handled in the Clearing]
+
 Chapter 8 - River
 
 The River is a room.
 The River is southeast of the Clearing.
-The description of the River is "[first time]The path southeast winds its way left and right through dense undergrowth. Finally you pull yourself free from the tangled underbrush into the northwest bank of a sizeable river.[paragraph break][only]The river curves its way from the northeast to the southwest, bisected in its journey by a twelve-foot high stone dam upstream. The water gushes through a open sluice gate next to what looks like a ruined paddle wheel, crashing down to the river below. Moving rapidly away from the dam, the water loses speed until it flows sluggishly to where you stand on the northwest bank, the path back to the clearing behind you."
+The description of the River is "[first time]The southeast path winds its way left and right through dense undergrowth. After a brief hike you pull yourself free from the tangled undergrowth to emerge on the northwest bank of a sizeable river.[paragraph break][only]
+The river curves is way from your left to the southwest, bisected in its journey by a stone dam upstream. Water rushes through the dam[']s open sluice gate and turns a paddle wheel before tumbling into the river below. "
+
+The river-water is scenery in the River.
+The description of the water is "WATER."
+The printed name of river-water is "water".
+
+The dam is scenery in the River.
+The description of the dam is "DAM."
+
+The sluice gate is scenery in the River.
+The description of the sluice gate is "GATE."
+
+The paddle wheel is scenery in the River.
+The description of the paddle wheel is "WHEEL."
+
 
 Part 2 - Characters
 

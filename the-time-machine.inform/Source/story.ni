@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20370 ]
+[ WORDS - 20395 ]
 
 Table of Releases
 release	notes
@@ -1789,6 +1789,9 @@ Up from the Bottom Shaft is the Top Shaft.
 The description of Bottom Shaft is "In the small amount of light that filters down from above you can see tunnels going in every direction."
 
 The printed name of Bottom Shaft is "Bottom of the Shaft"
+
+The tunnels are scenery in the Bottom Shaft.
+The description of the tunnels are "All of the tunnels slope downward slightly and each one is indistinguishable from another."
 
 encounter-morlocks is a truth state that varies.
 encounter-morlocks is false.

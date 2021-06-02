@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20334 ]
+[ WORDS - 20370 ]
 
 Table of Releases
 release	notes
@@ -1898,15 +1898,15 @@ Chapter 7 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "A small concrete balcony looking down on the treetops below. In the near distance, through a break in the foliage, you can see a river to the south and the path that winds its way northwest from the river to the clearing where you arrived."
+The description of the Balcony is "A small concrete balcony that looks down on the treetops below. To the south, through a break in the foliage, you can see a river and glimpses of a path that winds its way northwest from the river to the clearing where your time machine sits."
 
 The balcony-river is scenery in the Balcony.
-The description of the balcony-river is "RIVER."
+The description of the balcony-river is "The river, which travels in a northeast-to-southeast direction, winds its way through the forest. Looking closely, you can see groups of people in the river and on its banks."
 The printed name of balcony-river is "river".
 
 Understand "river" as balcony-river.
 
-[Treetops are handled in the Clearing]
+[Treetops, foliage, and forest are handled in the Clearing]
 
 Chapter 8 - River
 

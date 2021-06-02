@@ -2010,7 +2010,7 @@ Weena Gives You Flower begins when the pocket watch is open.
 
 When Weena Gives You Flower begins:
 	[say "WEENA GIVES YOU FLOWER BEGINS.";]
-	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and nods her head."; 
+	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and smiles."; 
 	now the player is carrying the pocket watch.
 
 Instead of asking Weena about something:

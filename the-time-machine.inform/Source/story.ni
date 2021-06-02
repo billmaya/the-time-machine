@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20437 ]
+[ WORDS - 20371 ]
 
 Table of Releases
 release	notes
@@ -595,14 +595,14 @@ Chapter 4 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Today's [newspaper] sits on one of the armchairs.[if pocket watch is on the small table in Parlor] On top of a small table against the east wall is a [pocket watch].[end if] A set of glass doors to the east lead outside to the garden and the room continues to the north."
+The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Today's [newspaper] sits on one of the armchairs. A set of glass doors to the east lead outside to the garden and the room continues to the north."
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.
 The armchairs are supporters.
 The armchairs are enterable.
 Understand "armchair" or "chair"  or "chairs" as armchairs.
-The description of the armchairs are "Like the library chair they are covered in worn leather. Larger than their counterpart in the library, they look even more inviting and comfortable, especially positioned as they are in front of the crackling fire.[first time] But you don't have time to rest, you have a key to find.[only]"
+The description of the armchairs are "Like the library chair these armchairs are covered in worn leather. Larger than their library counterpart, they look even more inviting and comfortable, especially positioned as they are in front of the fire with the cold weather outside.[first time] But you don't have time to rest, you have a key to find.[only]"
 
 Instead of entering the armchairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
@@ -615,11 +615,6 @@ The description of the newspaper is "Today's newspaper, already read."
 
 [> examine newspaper vs. > read newspaper Recipe §9.6. Reading Matter]
 Instead of taking the newspaper, say "You've already read it." 
-
-The small table is a thing.
-The small table is scenery in the Parlor.
-The small table is a supporter.
-The description of the small table is "Nothing out of the ordinary, just a small wooden table to the left of the garden doors."
 
 Section 1 - Garden Door
 
@@ -647,7 +642,7 @@ The surround is scenery in the parlor. "Like the hearth it serves as protection 
 The grate is scenery in the parlor. "A cast iron basket that holds the burning coals."
 The brick is scenery in the parlor. "Heat-resistent bricks that reflect the fire's heat back into the room."
 
-Instead of using the fireplace, say "That's not something you can use, but just enjoy."
+Instead of using the fireplace, say "That's not something you can use but just enjoy."
 
 [https://bit.ly/33EceFC https://bit.ly/2RO6PJq]
 

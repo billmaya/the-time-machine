@@ -305,11 +305,11 @@ The ambulance is undescribed.
 Understand "ambulence" or "cab" as ambulance.
 
 The driver is scenery in Woking Street.
-The description of the driver is "Trying to stay warm in his glass cab the driver waits for Humboldt to give him the signal to get going."
+The description of the driver is "Trying to stay warm in the front of the ambulance, the driver waits for Humboldt to give him the signal to get going."
 
 The rear doors are scenery in Woking Street.
-The description of rear doors is "The ambulence doors are open."
-Understand "ambulence doors" or "doors" as rear doors.
+The description of rear doors is "The ambulance doors are open."
+Understand "ambulence doors" or "ambulance doors" or "doors" as rear doors.
 
 Instead of taking the ambulance: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
 

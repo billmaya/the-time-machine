@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20384 ]
+[ WORDS - 20476 ]
 
 Table of Releases
 release	notes
@@ -1882,7 +1882,7 @@ Instead of eating the well-water:
 	say "You cup some water in your hands for a quick drink.";
 	stop the action.
 
-Instead of drinking the well-water, say "You cup some water in your hand and take a quick drink." [Writing §10.2. Liquids]
+Instead of drinking the well-water, say "You cup some water in your hand and take a quick drink." [Recipe §10.2. Liquids]
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
@@ -1916,16 +1916,31 @@ Understand "river" as balcony-river.
 
 [Treetops, foliage, and forest are handled in the Clearing]
 
-Chapter 7 - River
+Chapter 7 - River Bank
 
-The River is a room.
+The River Bank is a room.
 The River is southeast of the Clearing.
-The description of the River is "[first time]The southeast path winds its downhill through dense undergrowth. After a brief hike you emerge from the woods onto the northwest bank of a sizeable river.[only] The river curves is way through the forest from the northeast to the southwest."
+The description of the River Bank is "[first time]The southeast path winds its downhill through dense undergrowth. [only]After a brief hike you emerge from the woods onto the northwest bank of a sizeable river."
 
-The river-water is scenery in the River.
-The description of the water is "WATER."
+The river-river is scenery in the River.
+The description of the river-river is "The river curves is way through the forest from the northeast to the southwest."
+The printed name of river-river is "river".
+Understand "river" as river-river.
+
+The river-water is scenery in the River Bank.
+The description of the water is "The rushing water looks cool and inviting."
 The printed name of river-water is "water".
 Understand "water" as river-water.
+
+Before taking the river-water:
+	try eating the river-water;
+	stop the action.
+
+Instead of eating the river-water:
+	try drinking the river-water;
+	stop the action.
+
+Instead of drinking the river-water, say "I don't see why you would choose to drink this dubious liquid when there's a source of fresh water elsewhere." 
 
 
 Part 2 - Characters

@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20463 ]
+[ WORDS - 20384 ]
 
 Table of Releases
 release	notes
@@ -1920,21 +1920,12 @@ Chapter 7 - River
 
 The River is a room.
 The River is southeast of the Clearing.
-The description of the River is "[first time]The southeast path winds its way left and right through dense undergrowth. After a brief hike you pull yourself free from the tangled undergrowth to emerge on the northwest bank of a sizeable river.[paragraph break][only]
-The river curves is way from your left to the southwest, bisected in its journey by a stone dam upstream. Water rushes through the dam[']s open sluice gate and turns a paddle wheel before tumbling into the river below. "
+The description of the River is "[first time]The southeast path winds its downhill through dense undergrowth. After a brief hike you emerge from the woods onto the northwest bank of a sizeable river.[only] The river curves is way through the forest from the northeast to the southwest."
 
 The river-water is scenery in the River.
 The description of the water is "WATER."
 The printed name of river-water is "water".
-
-The dam is scenery in the River.
-The description of the dam is "DAM."
-
-The sluice gate is scenery in the River.
-The description of the sluice gate is "GATE."
-
-The paddle wheel is scenery in the River.
-The description of the paddle wheel is "WHEEL."
+Understand "water" as river-water.
 
 
 Part 2 - Characters

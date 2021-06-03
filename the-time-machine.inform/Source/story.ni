@@ -425,7 +425,7 @@ The library papers are on the desk.
 The library papers are portable.
 The library papers are undescribed.
 The printed name of library papers is "papers".
-Understand "papers" or "handwritten" or "handwritten papers" as library papers.
+Understand "paper" or "papers" or "handwritten" or "handwritten papers" as library papers.
 
 Instead of searching the library papers: try searching the desk.
 Instead of examining the library papers: try searching the desk.

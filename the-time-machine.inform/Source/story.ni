@@ -436,6 +436,7 @@ The chair is scenery in the Library.
 The chair is a supporter.
 The chair is enterable.
 The description of the chair is "The small chair covered in worn leather positioned near the curtains."
+Understand "leather" as chair.
 
 The curtains are a thing.
 The curtains are scenery in the Library.
@@ -631,7 +632,7 @@ Section 2 - Fireplace
 	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
-The description of the fireplace is "A firebox set into the wall, protected by a wooden surround with a mantle above it. A fire is burning in the firebox."
+The description of the fireplace is "A firebox set into the wall, protected by a mantle and surround. A fire is burning in the firebox."
 
 The firebox is scenery in the parlor. "The interior of the fireplace, lined with fireproof brick."
 The hearth is scenery in the parlor. "The base of the fireplace, divided into an inner hearth, where the fire is burning in a grate, and an outer hearth, which projects slightly into the room and protects the floor."
@@ -2086,7 +2087,7 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Mrs. Watchett enters followed by Dr. Humboldt. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. We were afraid something had happened.' His attention is drawn to the time machine behind you. 'Hmm. That must be the contraption Wells was going on about.'";
+	say "The door to the workshop opens and Dr. Humboldt enters. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. We were afraid something had happened.' His attention is drawn to the time machine behind you. 'Hmm. That must be the contraption Wells was going on about.'";
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 

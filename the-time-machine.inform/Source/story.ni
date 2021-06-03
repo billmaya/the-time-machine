@@ -1656,6 +1656,12 @@ The description of the Clearing is "A natural, midsized clearing created by the 
 
 Inside from the Clearing is Top Shaft.
 
+Instead of going down in the Clearing: 
+	if the metal grate is on the circular shaft:
+		say "You might be able to if that grate wasn't in the way.";
+	if the metal grate is not on the circular shaft:
+		try entering the circular shaft.
+
 Section 1 - Scenery
 
 The statue is scenery in the Clearing.

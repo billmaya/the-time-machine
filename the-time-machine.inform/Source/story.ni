@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701, to the age of Eloi and the Morlocks? Only you can get investigate your friend's story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20374 ]
+[ WORDS - 20463 ]
 
 Table of Releases
 release	notes
@@ -1648,34 +1648,39 @@ can-go-clearing-to-river is a truth state that varies.
 can-go-clearing-to-river is false.
 
 Every turn: 
-	if the player is in the Sphinx Steps, now can-go-clearing-to-river is true;
 	if the player is in the Balcony, now can-go-clearing-to-river is true.
 
 The Clearing is a room. 
-The description of the Clearing is "A mid-sized, man-made clearing surrounded by overgrown rhododendrum [bushes]. Paths lead off in all directions but you are not sure where they end up. In the distance, almost totally obscured by the [treetops], is a large white domed structure to the east. A set of stone steps in the tangled [undergrowth] to the north lead up.[paragraph break]In the exact center of the clearing is a [circular shaft] set into the earth, projecting about three feet above the ground."
+The description of the Clearing is "A natural, midsized clearing created by the intersection of multiple paths that lead off in all directions. All of the paths are obscured by overgrown rhododendrum [bushes] and tangled [undergrowth]. In the distance to the east is a large white dome. Above your head, almost totally obscured by the [treetops], the face of a large [statue] looks down on you. In the exact center of the clearing is a [circular shaft] rising about three feet above the ground."
 
 Inside from the Clearing is Top Shaft.
 
+Section 1 - Scenery
+
+The statue is scenery in the Clearing.
+The description of the statue is "The sightless eyes in the weather-worn white marble face of a gigantic reclining sphinx stare down at you. You can't be sure but you would swear that there's the faint shadow of a smile on its lips, inhuman and unsympathetic."
+Understand "sphinx" or "carved figure" or "face" or "marble" as statue.
+
 The clearing bushes are a thing.
 The clearing bushes are scenery in the Clearing.
-The description of clearing bushes is "A tangle of bushes on all sides almost obscures the paths leading off in all directions."
+The description of the clearing bushes are "Overgrown, the bushes make it difficult to see where each path leads."
 The printed name of clearing bushes is "bushes".
 
 The treetops are a thing.
 The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
 Understand "forest" or "trees" or "foliage" or "tree" as treetops.
-The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of the river below."
+The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of parts of the river below."
 
 The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
-The description of undergrowth is "Along with the ungroomed bushes, the tangle of undergrowth helps obscure the few paths you can see."
+The description of the undergrowth is "You do not look forward to trying to make your way through that tangled undergrowth."
 
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
-Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. [if metal grate is on circular shaft]On the shaft a circular grate rests on the top, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]Through the open shaft you can see the rungs of a ladder going down into darkness.[end if]"
+Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. [if metal grate is on circular shaft]A circular grate rests on the top of the shaft, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
 
-Section 1 - Metal Grate
+Section 2 - Metal Grate
 
 The metal grate is a thing.
 The metal grate is portable.
@@ -1734,7 +1739,7 @@ Before going southeast in the Clearing:
 		otherwise:
 			continue the action.
 	
-[ 06/02/21 - Decided to remove this from the game since it really didn't serve any purpose right now. Moved some of the descriptions into Clearing.
+[ 06/02/21 - Decided to comment this out since it really didn't serve any purpose right now (might use later). Moved some of the descriptions into Clearing.
 Chapter 2 - Sphinx Steps
 
 The Sphinx Steps are a room.

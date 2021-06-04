@@ -735,7 +735,7 @@ The description of the poker is "About three feet long, pointed and hooked at on
 
 [> use poker]
 
-Instead of using the poker:
+Instead of using the poker in the Parlor:
 	say "Taking the poker, you stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
 	now the player is carrying the poker.
 

@@ -1717,7 +1717,9 @@ Understand the command "remove" as "take".
 
 Instead of taking the metal grate:
 	if the metal grate is on the circular shaft in the Clearing:
-		say "Interlacing your fingers into the grate openings and bracing yourself against the side of the concrete shaft, you manage to slowly leverage it up and out of its resting position. Carefully you work it off the top of the shaft and manage to drop it with a thud onto the ground without smashing your toes or scuffing your Northampton Barkers. Blazes, that was heavy.";
+		say "Grabbing the grate through its openings, you brace yourself against the side of the shaft and leverage it up and out of its resting position. Blazes, it is heavy. With great physical effort you drop it to one side onto the ground, narrowly missing your feet.";
+		[DEL say "Interlacing your fingers into the grate openings and brace yourself against the side of the concrete shaft. Slowly you manage to leverage the grate up and out of its resting position and drop it to the ground, narrowly missing your toes";]
+		[DEL say "Interlacing your fingers into the grate openings and bracing yourself against the side of the concrete shaft, you manage to slowly leverage it up and out of its resting position. Carefully you work it off the top of the shaft and manage to drop it with a thud onto the ground without smashing your toes or scuffing your Northampton Barkers. Blazes, that was heavy.";]
 		move the metal grate to the Clearing;
 		now the metal grate is described;
 	otherwise:

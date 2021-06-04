@@ -1544,6 +1544,14 @@ After telling Humboldt about "Morlocks":
 	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
 	follow Patience rules.
 
+After telling Humboldt about "river":
+	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After telling Humboldt about "sphinx":
+	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
 Section 2 - Patience
 
 [Writing §4.9. Using new kinds of value in properties]

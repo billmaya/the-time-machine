@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20476 ]
+[ WORDS - 20570 ]
 
 Table of Releases
 release	notes
@@ -80,6 +80,7 @@ Instead of waiting: say
 
 Section 2 - Up
 
+Instead of jumping in Woking Street: try going up.
 Instead of going up in Woking Street: say "You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside."
 
 Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
@@ -196,7 +197,8 @@ Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with
 Chapter 7 - Release
 
 [Release along with cover art.]
-Release along with interpreter.
+[Release along with an interpreter.] 
+[Release along with an interpreter and the source text.]
 
 Book 3 - 1895
 
@@ -234,6 +236,8 @@ Instead of searching the area:
 			say "You bend down despite the cold and peer at the ground but nothing catches your eye. Of course, it would help if you knew what you were looking for.";
 	otherwise:
 		say "You find nothing of interest after searching the area again."
+
+Instead of going down in Woking Street: try searching the area.
 
 Section 2 - Scenery
 
@@ -336,7 +340,7 @@ Section 9 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.
-Understand "timepiece" or "chronometer" or "mechanism" as pocket watch.
+Understand "timepiece" or "chronometer" or "mechanism" or "hands" as pocket watch.
 
 The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that Wells['] Weena was particularly enchanted with its moving hands and its winding mechanism."
 	
@@ -1157,6 +1161,8 @@ The blueprints are undescribed.
 Understand "plans" or "sheets" or "set" as blueprints.
 The printed name of blueprints is "set of blueprints".
 
+Instead of taking the blueprints: try examining the blueprints.
+
 examined-blueprints is a truth state that varies.
 examined-blueprints is false.
 [TBD Missing blank line after paragraph below?]
@@ -1885,11 +1891,16 @@ Before taking the well-water:
 	try eating the well-water;
 	stop the action.
 
+Instead of tasting the well-water:
+	try eating the well-water.
+
 Instead of eating the well-water:
 	say "You cup some water in your hands for a quick drink.";
 	stop the action.
 
 Instead of drinking the well-water, say "You cup some water in your hand and take a quick drink." [Recipe §10.2. Liquids]
+
+Instead of smelling the well-water: say "It smells fine."
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
@@ -2079,7 +2090,7 @@ Instead of wandering in the Bottom Shaft:
 				if a random chance of 2 in 3 succeeds:
 					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
 				otherwise:
-					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but without a weapon you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold. Shivering, you look around in horror at the naked bodies of Eloi, male and female, suspended on meat hooks, future Morlock meals. As you succumb to the numbing cold your multiple failures, both here in 802,701 and back in 1895, drives you to madness.";
+					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but without a weapon you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold. Shivering, you look around in horror at the naked bodies of Eloi, male and female, suspended on meat hooks, future Morlock meals. As you succumb to the numbing cold, your multiple failures, both here in 802,701 and back in 1895, drives you to madness.";
 					end the story finally;
 				now encounter-morlocks is true;
 		otherwise:

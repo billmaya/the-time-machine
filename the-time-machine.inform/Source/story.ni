@@ -637,6 +637,8 @@ The description of Garden Door is "[if location is Parlor]A set of glass doors a
 
 Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
+Instead of searching the Garden Door: say "Through the glass doors you can see steps leading down to the snow-covered garden outside."
+
 Section 2 - Fireplace
 	
 The fireplace is a thing.

@@ -227,6 +227,7 @@ Section 1 - Area
 	The street-search is scenery in Woking Street. ["The street is scenery in Working Street" won't compile]
 	Instead of searching the street-search: try searching the area.
 	Understand "street" as street-search.
+	The printed name of street-search is "street".
 
 	[> search area]
 

@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20648 ]
+[ WORDS - 20835 ]
 
 Table of Releases
 release	notes
@@ -892,7 +892,6 @@ The orrery is switched off.
 The description of the orrery is "A mechanical model our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to it[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"
 
 Understand "planetarium" or "device" or "box" or "inlays" as orrery.
-[DEL Understand "solar system" as orrery.]
 
 orrery-model is scenery in the Dining Room.
 The description of orrery-model is "On the top of the box eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers along one outer edge indicate seasonal and phase information."
@@ -907,12 +906,6 @@ Instead of examining the orrery-mechanism:
 		try opening the sliding panel;
 	otherwise:
 		say "The inner mechanism of the orrery is extremely complicated[if the fuse is in the sliding panel]. The only thing you recognize is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense matrix of gears, slotted pin followers, shafts, and tubes that calculate the orbits of the planets."
-
-[DEL make the planets move in their orbits corre]
-[DEL A small [fuse] sits  between the switch and the rest of the mechanism."]
-[DEL Tiny brass dials and rings on the ]
-
-[DEL The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular wooden box with decorative inlays on short legs built by Wells. On its flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only][paragraph break]There is a switch on the long side of the box. Next to it is[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanism of the box is on display.[end if]" ]
 
 [^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
 
@@ -943,15 +936,11 @@ Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
 	say "You slide open the panel to reveal the inner workings of the orrery mechanism.";
-	[DELsay "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than one item, it's all one big mysterious conglomeration to you[first time], probably like one of the legal documents you usually write up for your clients[only]."; [TBD - Should this be conditional based on fuse location?]]
 	now the sliding panel is open.
-	[DEL now the fuse is in the sliding panel.]
 
 Instead of closing the sliding panel: 
 	say "You slide the panel shut, hiding the inner workings of the device.";
 	now the sliding panel is closed.
-	[DEL if the fuse is in the sliding panel in the Dining Room:
-		now the fuse is nowhere.]
 
 [> switch orrery on/off > turn orrery on/off ]
 	
@@ -982,7 +971,7 @@ Instead of switching on the orrery-switch:
 			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptabley, the planets on the surface begin their endless journey around the Sun.";
 		now the orrery-switch is switched on;
 		now the orrery is switched on;
-	otherwise: [TBD If you try and switch on the orrery when the sliding panel is closed, the fuse is not in the sliding panel]
+	otherwise: 
 		say "It looks like the orrery won't function unless you put the fuse in the sliding panel.".
 	
 Instead of switching off the orrery-switch:

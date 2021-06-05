@@ -123,7 +123,7 @@ Chapter 3 - Every Turn Rules
 Section 1 - Workshop
 
 Every turn:
-	if the player is in the Workshop and the player has the flower:
+	if the player is in the Workshop and travel-to-802701 is true: [DEL the player has the flower:]
 		now humboldt-should-return is true.
 
 Chapter 4 - Conversation
@@ -1606,8 +1606,12 @@ Travel To 802,701 is a scene.
 
 Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the control panel is switched on.
 
+travel-to-802701 is a truth state that varies.
+travel-to-802701 is false.
+
 When Travel To 802,701 begins:
 	[say "TRAVELING TO 802,701 BEGINS.";]
+	now travel-to-802701 is true;
 	say "From Wells['] story you have an idea of what is going to happen but you never expected to see it with your own eyes or experience it yourself.
 
 	As the machine powers up and the chronometric dials start inching forward through the years, the workshop, its contents, in fact the entire house, fades away to be replace by a shimmering grey void. As you start traveling through time, vague shadows of various shapes and sizes appear and disappear in the grey surface surrounding you and the machine, future people, places, and things living out their own personal cycle of birth, life, and death.

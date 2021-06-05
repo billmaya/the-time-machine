@@ -1062,7 +1062,7 @@ Chapter 8 - Workshop
 
 The workshop is a dark room. 
 [The Workshop is north of the Workshop Door.] 
-The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in a several [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams]. In the center of the room is something that can only be Wells['] [time machine].[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."
+The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams]. In the center of the room is something that can only be Wells['] [time machine].[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.

@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20640 ]
+[ WORDS - 20650 ]
 
 Table of Releases
 release	notes
@@ -958,6 +958,7 @@ Instead of switching off the orrery-switch:
 Section 3 - Fuse
 	
 The fuse is a thing.
+The fuse is undescribed.
 The fuse is nowhere.
 
 fuse-burnt-out is a truth state that varies.
@@ -1670,7 +1671,7 @@ Every turn:
 	if the player is in the Balcony, now can-go-clearing-to-river is true.
 
 The Clearing is a room. 
-The description of the Clearing is "A natural, midsized clearing created by the intersection of multiple paths that lead off in all directions. All of the paths are obscured by overgrown rhododendrum [bushes] and tangled [undergrowth]. In the distance to the east is a large white dome. Above your head, almost totally obscured by the [treetops], the face of a large [statue] looks down on you. In the exact center of the clearing is a [circular shaft] rising about three feet above the ground."
+The description of the Clearing is "A midsized clearing dominated by a circular shaft in the center that rises about three feet above the ground. Above your head, almost totally obscured by the treetops, the face of a large statue looks down on you. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] To the southeast, looking closely now, you can just make out the overgrown path that you saw from the balcony, now that you know where it is.[end if]"
 
 Inside from the Clearing is Top Shaft.
 
@@ -1703,7 +1704,7 @@ The description of the undergrowth is "You do not look forward to trying to make
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
-Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of concrete. [if metal grate is on circular shaft]A circular grate rests on the top of the shaft, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
+Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of some unknown metal. [if metal grate is on circular shaft]A circular grate rests on the top of the shaft, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
 
 Section 2 - Metal Grate
 
@@ -1712,7 +1713,7 @@ The metal grate is portable.
 The metal grate is on the circular shaft.
 The metal grate is a supporter.
 The metal grate is undescribed.
-The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of rusted metal welded together in a waffle pattern. Despite the rust, it looks extremely sturdy and heavy.[if the metal grate is not on the circular shaft] The grate is lying on the ground next to the open shaft.[end if]"
+The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of metal welded together in a waffle pattern. Despite the rust, it looks extremely sturdy and heavy.[if the metal grate is not on the circular shaft] The grate is lying on the ground next to the open shaft.[end if]"
 
 [ > Remove grate ]
 
@@ -1721,11 +1722,11 @@ Understand the command "remove" as "take".
 
 Instead of taking the metal grate:
 	if the metal grate is on the circular shaft in the Clearing:
-		say "Grabbing the grate through its openings, you brace yourself against the side of the shaft and leverage it up and out of its resting position. Blazes, it is heavy. With great physical effort you drop it to one side onto the ground, narrowly missing your feet.";
+		say "Grabbing the grate through its openings, you brace yourself against the side of the shaft and leverage the grate up and out of its resting position. The grate is extremely heavy but you manage to manuever it to one side and drop it onto the ground, narrowly missing your feet.";
 		move the metal grate to the Clearing;
 		now the metal grate is described;
 	otherwise:
-		say "No way, it is way too bloody heavy to try and move again."
+		say "No way, it is way too heavy to try and move a second time."
 
 Climbing into is an action applying to one touchable thing.
 Understand "climb in [something]" as climbing into.
@@ -1751,7 +1752,7 @@ Instead of wandering in the Clearing:
 	if the player is in the time machine:
 		say "You would have to get out of the time machine first.";
 	otherwise:
-		say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.".		
+		say "You poke around the bushes and tangled undergrowth to the [noun] but cannot find any path going in that direction."
 						
 Before going southeast in the Clearing:
 	if the player is in the time machine:
@@ -1759,7 +1760,7 @@ Before going southeast in the Clearing:
 		stop the action;
 	otherwise:
 		if can-go-clearing-to-river is false:
-			say "You attempt to find a way out of the clearing by going [noun] but one false path after another leads you right back to where you started.";
+			say "A cursory examination of the tangled undergrowth to the [noun] reveals no visible path.";
 			stop the action;
 		otherwise:
 			continue the action.
@@ -1936,7 +1937,7 @@ Chapter 6 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "A small concrete balcony that looks down on the treetops below. To the south, through a break in the foliage, you can see a river and glimpses of a path that winds its way northwest from the river to the clearing where your time machine sits."
+The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it. From up here you can also make out a partially overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth."
 
 The balcony-river is scenery in the Balcony.
 The description of the balcony-river is "The river, which travels in a northeast-to-southeast direction, winds its way through the forest. Looking closely, you can see groups of people in the river and on its banks."

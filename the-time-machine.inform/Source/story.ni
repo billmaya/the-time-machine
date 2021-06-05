@@ -1239,7 +1239,7 @@ Instead of activating the control panel:
 
 [Replaced "examining" with "searching" in Instead statement]
 Instead of searching [examining] the time machine:
-	if the fuse is in the time machine, say "EVERYTHING LOOKS GOOD TO GO.";
+	if the fuse is in the time machine, say "A cursory search of the time machine like it is ready to operate."; [DEL say "EVERYTHING LOOKS GOOD TO GO.";]
 	otherwise:
 		if the player has the fuse:
 			if examined-blueprints is true:

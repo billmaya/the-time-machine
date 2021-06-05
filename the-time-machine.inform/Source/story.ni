@@ -991,7 +991,7 @@ After taking the fuse:
 		now the orrery-switch is switched off;
 		now the orrery is switched off;
 	otherwise:
-		say "Taken[paragraph break]".
+		say "Taken[paragraph break]."
 
 Chapter 7 - Kitchen
 

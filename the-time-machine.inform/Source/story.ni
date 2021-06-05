@@ -1997,6 +1997,10 @@ The description of the Eloi is "Just as Wells described them, the Eloi are short
 
 The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  You can even see, to your horror, a few couples of both genders in the bushes involved in prurient matters."
 
+eloi-couples are scenery.
+The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
+Understand "couples" as eloi-couples.
+
 ["As you move among them, your clothes and your height bring attention to yourself..."]
 
 [

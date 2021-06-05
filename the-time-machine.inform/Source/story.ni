@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20650 ]
+[ WORDS - 20648 ]
 
 Table of Releases
 release	notes
@@ -354,8 +354,8 @@ Instead of winding the watch: say "You turn the stem back and forth a few second
 Chapter 2 - Entryway
 
 The Entryway is a room. 
-The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels a [staircase] that leads up to the second floor landing. To the west you can see shelves of books and hear the faint sounds of a crackling fire. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
-	
+The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels a [staircase] that leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
+
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor.[first time] You have to admit, you haven't ever been up there.[only]"
 
@@ -365,6 +365,8 @@ The description of the Entryway is "From here you can reach all other parts of t
 	The description of the banister is "Just a normal handhold to grasp when going up and down the stairs."
 	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
+
+Before taking books in the Entryway: say "BOOKS IN NEXT ROOM."
 
 Section 1 - Workshop Door
 	

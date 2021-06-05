@@ -637,7 +637,8 @@ The description of Garden Door is "[if location is Parlor]A set of glass doors a
 
 Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
-Instead of searching the Garden Door: say "Through the glass doors you can see steps leading down to the snow-covered garden outside."
+Instead of searching the Garden Door: say "[if the location is the Parlor]Through the glass doors you can see steps leading down to the snow-covered garden outside.[otherwise]Through the glass doors you can see the parlor inside.[end if]"
+
 
 Section 2 - Fireplace
 	
@@ -759,6 +760,10 @@ The Garden is east of the Garden Door.
 The description of the Garden is "[first time]What Wells calls his 'sunken urban wilderness' is hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.[only] Snow-covered vegetation[unicode 8212]hollyhocks, larkspurs, snapdragons, and other flora[unicode 8212]surrounds you on all sides. A [gate] set into the north wall looks out onto the snow-covered [street] beyond. To the south, the dark panes of Wells['] workshop [windows] overlook a snow-covered [bench] nestled among some hibernating rhodedendron [bushes]. The parlor doors are to the west."
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
+
+The garden steps are scenery in the Garden.
+The garden steps are a backdrop. They are in the Garden and the Parlor.
+The description of garden steps is "[if the location is the Parlor]Three stone steps leading down into the garden.[otherwise]Three stone steps leading up into the parlor.[end if]"
 
 The garden walls are a thing.
 The garden walls are scenery in the Garden.

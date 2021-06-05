@@ -191,7 +191,7 @@ Test clearing-balcony-se with "go southeast / go east / go east / go south / go 
 [Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / gonear river."]
 Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / go southeast."
 			
-Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / up / down / test eloi-ask-show-give."
+Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / east / east / south / north / west / west / test eloi-ask-show-give."
 Test travel-1895 with "go northwest / enter / activate panel."
 Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena petal / test travel-1895 / exit."
 
@@ -805,7 +805,7 @@ Chapter 6 - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description of the Dining Room is "The house[']s location for dining and entertainment, dominated by a mahogany [dining table] that could seat eight comfortably. Above the table hangs and electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals."
+The description of the Dining Room is "A mahogany [dining table] that could seat eight comfortably dominates the space. Above the table hangs an electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals."
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
@@ -886,7 +886,11 @@ The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tb
 The orrery is scenery on the dining table.
 The orrery is a device.
 The orrery is switched off.
-The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular mahogany box with decorative inlays on short legs built by Wells. On its flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only][paragraph break]There is a switch on the long side of the box and, next to it,[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanisms of the box are on display.[end if]" 
+The description of the orrery is "A mechanical model of the Solar System of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Net to it is[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanism of the box is on display.[end if]"
+	
+[DEL Tiny brass dials and rings on the ]
+
+The description of the orrery is "A heliocentric mechanical model of the eight planets in the Solar System contained in a small rectangular wooden box with decorative inlays on short legs built by Wells. On its flat surface, tiny brass dials and rings represent the retrograde motions of the eight planets orbiting the sun, the planets themselves represented by tiny, jeweled half-spheres. Rotating pointers along the outer edge indicate seasonal and phase information as time passes.[first time] While not built to scale the entire mechanism is still a marvel of mechanical engineering and craftsmanship.[only][paragraph break]There is a switch on the long side of the box. Next to it is[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanism of the box is on display.[end if]" 
 
 [^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
 
@@ -1997,7 +2001,7 @@ The description of the Eloi is "Just as Wells described them, the Eloi are short
 
 The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  You can even see, to your horror, a few couples of both genders in the bushes involved in prurient matters."
 
-eloi-couples are scenery.
+eloi-couples are scenery in the River.
 The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
 Understand "couples" as eloi-couples.
 

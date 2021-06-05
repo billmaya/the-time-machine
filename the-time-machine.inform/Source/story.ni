@@ -889,7 +889,7 @@ The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tb
 The orrery is scenery on the dining table.
 The orrery is a device.
 The orrery is switched off.
-The description of the orrery is "A mechanical model of the Solar System of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Net to it is[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanism of the box is on display.[end if]"
+The description of the orrery is "A mechanical model of the Solar System of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to it is[if the sliding panel is closed] a small sliding panel.[otherwise] the inner mechanism of the box is on display.[end if]"
 	
 [DEL Tiny brass dials and rings on the ]
 
@@ -917,6 +917,7 @@ Before closing the orrery:
 The sliding panel is a thing.
 The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
 The sliding panel is a container.
+The sliding panel is opaque.
 The sliding panel is closed.
 The sliding panel is scenery in the Dining Room.
 
@@ -925,14 +926,14 @@ Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
 	say "You slide open the panel to reveal the inner workings of the mechanism. Among the prime gears, slotted pin follower devices, and hollow shafts and tubes you recognize a small [fuse] between the switch and the rest of the mechanism. Other than one item, it's all one big mysterious conglomeration to you[first time], probably like one of the legal documents you usually write up for your clients[only]."; [TBD - Should this be conditional based on fuse location?]
-	now the sliding panel is open;
-	now the fuse is in the sliding panel.
+	now the sliding panel is open.
+	[DEL now the fuse is in the sliding panel.]
 
 Instead of closing the sliding panel: 
 	say "You slide the panel shut, hiding the inner workings of the device.";
-	now the sliding panel is closed;
-	if the fuse is in the sliding panel in the Dining Room:
-		now the fuse is nowhere.
+	now the sliding panel is closed.
+	[DEL if the fuse is in the sliding panel in the Dining Room:
+		now the fuse is nowhere.]
 
 [> switch orrery on/off > turn orrery on/off ]
 	
@@ -978,7 +979,8 @@ Section 3 - Fuse
 	
 The fuse is a thing.
 The fuse is undescribed.
-The fuse is nowhere.
+[The fuse is nowhere.]
+The fuse is in the sliding panel.
 
 fuse-burnt-out is a truth state that varies.
 fuse-burnt-out is false.

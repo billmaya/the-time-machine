@@ -225,9 +225,11 @@ Section 1 - Area
 	[> search street -> YCST -> https://bit.ly/3tvvi3z]
 
 	The street-search is scenery in Woking Street. ["The street is scenery in Working Street" won't compile]
-	Instead of searching the street-search: try searching the area.
 	Understand "street" as street-search.
 	The printed name of street-search is "street".
+
+	Instead of examining the street-search: try searching the area.
+	Instead of searching the street-search: try searching the area.
 
 	[> search area]
 

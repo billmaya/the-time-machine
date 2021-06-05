@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20570 ]
+[ WORDS - 20640 ]
 
 Table of Releases
 release	notes
@@ -123,7 +123,7 @@ Chapter 3 - Every Turn Rules
 Section 1 - Workshop
 
 Every turn:
-	if the player is in the Workshop and travel-to-802701 is true: [DEL the player has the flower:]
+	if the player is in the Workshop and travel-to-802701 is true: 
 		now humboldt-should-return is true.
 
 Chapter 4 - Conversation
@@ -1239,7 +1239,7 @@ Instead of activating the control panel:
 
 [Replaced "examining" with "searching" in Instead statement]
 Instead of searching [examining] the time machine:
-	if the fuse is in the time machine, say "A cursory search of the time machine like it is ready to operate."; [DEL say "EVERYTHING LOOKS GOOD TO GO.";]
+	if the fuse is in the time machine, say "A cursory search of the time machine like it is ready to operate."; 
 	otherwise:
 		if the player has the fuse:
 			if examined-blueprints is true:
@@ -1722,8 +1722,6 @@ Understand the command "remove" as "take".
 Instead of taking the metal grate:
 	if the metal grate is on the circular shaft in the Clearing:
 		say "Grabbing the grate through its openings, you brace yourself against the side of the shaft and leverage it up and out of its resting position. Blazes, it is heavy. With great physical effort you drop it to one side onto the ground, narrowly missing your feet.";
-		[DEL say "Interlacing your fingers into the grate openings and brace yourself against the side of the concrete shaft. Slowly you manage to leverage the grate up and out of its resting position and drop it to the ground, narrowly missing your toes";]
-		[DEL say "Interlacing your fingers into the grate openings and bracing yourself against the side of the concrete shaft, you manage to slowly leverage it up and out of its resting position. Carefully you work it off the top of the shaft and manage to drop it with a thud onto the ground without smashing your toes or scuffing your Northampton Barkers. Blazes, that was heavy.";]
 		move the metal grate to the Clearing;
 		now the metal grate is described;
 	otherwise:

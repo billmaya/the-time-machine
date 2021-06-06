@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20967 ]
+[ WORDS - 20768 ]
 
 Table of Releases
 release	notes
@@ -1072,11 +1072,10 @@ Instead of searching the kitchen shelves: say "You glance briefly at the various
 Chapter 8 - Workshop  
 
 The workshop is a dark room. 
-[The Workshop is north of the Workshop Door.] 
 
-The description of the Workshop is "[if light switch is switched on]The workshop is twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in chalk equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space. But the most striking, out-of-place object in the room is a device almost equidistant between you and the other end of the room[unicode 8212]Wells['] time machine.[otherwise]The lights behind you cast a small amount of illumination into the workshop, revealing dark, shadowy shapes but not much more. There is a light switch immediately to the left of the door.[end if]"
+The description of the Workshop is "The workshop is twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space. But the most striking, out-of-place object in the room is a device almost equidistant between you and the other end of the room[unicode 8212]Wells['] time machine."
 
-[The description of the Workshop is "[if light switch is switched on]Twice as long as it is wide, the workshop ends thirty feet away in [windows] that look out over the garden. A long [workbench] runs down the entire east side of the room, covered in [tools], [papers], and [materials]. The entire west wall is covered by a large [blackboard], covered in [chalk] [equations] and [diagrams]. In the center of the room is something that can only be Wells['] [time machine].[otherwise]The entryway lights behind you cast a small amount of illumination into this room, revealing dark, shadowy shapes on the east and west sides of the room but not much more. You can see the dark shapes of the garden outside the windows at the far end of the room and a switch immediately to the left of the door."]
+Section 1 - Scenery
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.
@@ -1134,7 +1133,7 @@ The eraser is a thing.
 The eraser is scenery in the Workshop.
 The description of eraser is "Rectangular and covered in chalk dust you could erase the blackboard if you dared."
 
-Section 1 - Light Switch
+Section 2 - Light Switch
 		
 The lights are a thing.
 The lights are scenery in the Workshop.
@@ -1143,6 +1142,7 @@ The description of the lights is "You see nothing special about the lights excep
 The light switch is a device.
 The light switch is in the Workshop.
 The light switch is switched off.
+The light switch is undescribed.
 
 Instead of examining the light switch:
 	say "A simple switch that you can flip on or off."
@@ -1163,12 +1163,12 @@ After deciding the scope of the player when the location is the Workshop:
 [Writing §18.22. Printing the description of a dark room]
 Rule for printing the description of a dark room:
 	if the room is the Workshop:
-		say "The windows at the other end of the room provide some light but without more illumination it is impossible to clearly determine what anything is or navigate the room successfully. There is a light switch by the door."
-
+		say "In the dim light you can see dark shapes scattered throughout the workshop and a light switch by the door."
+		
 [Writing §18.19. Printing the announcement of darkness]
 Rule for printing the announcement of darkness:
 	if the room is the Workshop:
-		say "Without light it is impossible to navigate the room without hazard."
+		say "With the lights off you're back to seeing only dark, shadowy shapes instead of details."
 
 [Writing §18.18. Printing a refusal to act in the dark]
 [Objects must be in scope for > examine [object] or > search [object] to return text below instead of "You can't see any such thing."]
@@ -1185,7 +1185,7 @@ Rule for printing a refusal to act in the dark:
 			otherwise:
 				say "It is a simple on/off switch. Not much to search."
 	
-Section 2 - The Blueprints
+Section 3 - The Blueprints
 
 The blueprints are a thing.
 The blueprints are on the workbench.
@@ -1207,7 +1207,7 @@ Instead of examining the blueprints:
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
 
-Section 3 - The Time Machine
+Section 4 - The Time Machine
 	
 The time machine is a thing. [The indefinite article is "the".]
 The time machine is undescribed in the Workshop.
@@ -1298,7 +1298,7 @@ Instead of inserting the fuse into the time machine:
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 	
-Section 4 - Workshop Windows
+Section 5 - Workshop Windows
 	
 The windows are a thing.
 The windows are a backdrop. They are in the Workshop and the Garden.

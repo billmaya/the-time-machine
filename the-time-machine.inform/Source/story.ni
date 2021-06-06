@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20617 ]
+[ WORDS - 20432 ]
 
 Table of Releases
 release	notes
@@ -1079,27 +1079,12 @@ Section 1 - Workbench
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.
-The description of the workbench is "You see nothing special about the workbench."
+The workbench is a supporter.
+The description of the workbench is "[if the player has the blueprints]You see nothing special about the workbench.[otherwise]On the workbench is a set of blueprints."
 Understand "bench" as workbench.
 
-[ > search workbench ?]
+Instead of searching the workbench: try examining the workbench.
 
-Instead of searching the workbench: try examining the workshop papers.
-
-The workshop papers are a thing.
-The workshop papers are scenery in the Workshop.
-The description of workshop papers is "WORKSHOP PAPERS DESCRIPTION." [Should not be displayed because of > examine workshop papers code in below (included to keep books from showing up when Missing Item Description code is run).]
-Understand "pages" or "handwritten" as workshop papers.
-
-Instead of examining the workshop papers:
-	if the blueprints are undescribed:
-		say "You search through the handwritten pages scattered across the workbench and find no useful information. But you do find what appears to be a set of blueprints to the time machine in the center of the room, clearly marked 'Temporal Mechanism 3.'";
-		now the blueprints are described;
-	otherwise:
-		say "You find now useful information in the pages scattered across the workbench."
-	
-[ > search papers ?]
-Instead of searching the workshop papers: try examining the workshop papers.
 
 Section 2 - Scenery
 
@@ -1194,17 +1179,14 @@ The blueprints are undescribed.
 Understand "plans" or "sheets" or "set" as blueprints.
 The printed name of blueprints is "set of blueprints".
 
-Instead of taking the blueprints: try examining the blueprints.
-
 examined-blueprints is a truth state that varies.
 examined-blueprints is false.
-[TBD Missing blank line after paragraph below?]
-[TBD is [em] not valid for em-dashes?]
 Instead of examining the blueprints:
+	say "Spreading out the sheets you see that these are the plans for the time machine in the center of the room. [no line break]";
 	if the player does not have the fuse:
-		say "Spreading out the individual sheets you see that these plans are a one-to-one match for Wells[apostrophe] time machine in the center of the room. While you can identify actual time machine parts with their blueprint counterpart, the names associated with them on the blueprints—plattnerite rods, chronometric dials, temporal flux capacitor—make no sense.";
+		say "While you can match a drawn component to its time machine counterpart, this brings you no closer to figuring out how to make the time machine work.";
 	if the player has the fuse:
-		say "Spreading out the individual sheets you see the plans are a one-to-one match for Wells['] time machine in the center of the room. While you cannot fathom the function of some of the components—chronometric dials, plattnerite rods, temporal flux capacitor—one item does stand out in the drawings—the fuse you took from the orrery.";
+		say "Even though the function of a majority of the components remains a mystery, you can identify one item in the plans[unicode 8212]the fuse you took from the orrery.";
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
 

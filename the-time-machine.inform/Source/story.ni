@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20768 ]
+[ WORDS - 20617 ]
 
 Table of Releases
 release	notes
@@ -1073,9 +1073,9 @@ Chapter 8 - Workshop
 
 The workshop is a dark room. 
 
-The description of the Workshop is "The workshop is twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space. But the most striking, out-of-place object in the room is a device almost equidistant between you and the other end of the room[unicode 8212]Wells['] time machine."
+The description of the Workshop is "The workshop is almost twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space. But the most striking, out-of-place object in the room is a device almost equidistant between you and the other end of the room[unicode 8212]Wells['] time machine."
 
-Section 1 - Scenery
+Section 1 - Workbench
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.
@@ -1086,10 +1086,6 @@ Understand "bench" as workbench.
 
 Instead of searching the workbench: try examining the workshop papers.
 
-The tools are a thing.
-The tools are scenery in the Workshop.
-The description of tools is "Enough equipment for any crazy experiment Wells could dream up. Hand tools of all types and various functions scattered across the workbench or hanging on the wall. What appears to be a very complicated lathe sits next to a forge for smelting metals."
-	
 The workshop papers are a thing.
 The workshop papers are scenery in the Workshop.
 The description of workshop papers is "WORKSHOP PAPERS DESCRIPTION." [Should not be displayed because of > examine workshop papers code in below (included to keep books from showing up when Missing Item Description code is run).]
@@ -1105,33 +1101,38 @@ Instead of examining the workshop papers:
 [ > search papers ?]
 Instead of searching the workshop papers: try examining the workshop papers.
 
+Section 2 - Scenery
+
+The workshop-tools-materials is scenery in the Workshop.
+The description of workshop-tools-materials is "A cursory search of the workshop tools and materials turns up no flower or fauna nor brings you closer to understanding how the time machine operates or how to make it work."
+
+The tools are a thing.
+The tools are scenery in the Workshop.
+Instead of examining the tools: try examining workshop-tools-materials.
+Instead of searching the tools: try examining workshop-tools-materials.
+	
 The materials are a thing.
 The materials are scenery in the Workshop.
-The description of materials is "The raw materials for Wells[apostrophe] experiments are stacked throughout the room and piled either on or under the workbench. A cursory examination reveals metal plates and rods in all shapes and sizes as well as hundreds of connectors, screws, fasteners, and wires. None of it looks like it will help you in your investigation."
-Understand "battery" or "batteries" or "wires" or "connectors" or "screws" or "fasteners" or "plates" or "rods" or "alloys" or "chemicals" or "minerals" as materials.
+Instead of examining the materials: try examining workshop-tools-materials.
+Instead of searching the materials: try examining workshop-tools-materials.
+
+The workshop-blackboard is scenery in the Workshop.
+The description of workshop-blackboard is "You glance at the long series of equations and diagrams but have no luck making sense of anything written there."
 
 The blackboard is a thing.
 The blackboard is scenery in the Workshop.
-The description of the blackboard is "Spanning the entire west wall, it is covered with equations and diagrams of increasing complexity."
-
+Instead of examining the blackboard: try examining workshop-blackboard.
+Instead of searching the blackboard: try examining workshop-blackboard.
+		
 The equations are a thing.
 The equations are scenery in the Workshop.
-The description of equations are "You honestly don't know where to start. The writing starts at the left and get increasingly complex as you move to the right, but, quite frankly, it's all Greek to you (you never had much of a head for Hellenic Indo-European languages, you're a Latin man)."
+Instead of examining the equations: try examining workshop-blackboard.
+Instead of searching the equations: try examining workshop-blackboard.
 
 The diagrams are a thing.
 The diagrams are scenery in the Workshop.
-The description of the diagrams are "It looks like the preliminary sketches on the blackboard are the first inklings of the mechanical device in the center of the room."
-Understand "sketch" or "sketches" as diagrams.
-
-The chalk is a thing.
-The chalk is undescribed in the Workshop.
-The description of the chalk is "It is white and chalky."
-
-Instead of taking the chalk: say "You reach for a piece of chalk but realize you don't have the faintest idea what you would even write on the board. Better to investigate other areas of the workshop."
-
-The eraser is a thing.
-The eraser is scenery in the Workshop.
-The description of eraser is "Rectangular and covered in chalk dust you could erase the blackboard if you dared."
+Instead of examining the diagrams: try examining workshop-blackboard.
+Instead of searching the diagrams: try examining workshop-blackboard.
 
 Section 2 - Light Switch
 		

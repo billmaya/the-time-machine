@@ -1281,7 +1281,7 @@ Instead of opening the time machine: say "The time machine is alread 'open.' All
 Instead of inserting the fuse into the time machine:
 	if the player has the fuse:
 		if examined-blueprints is true:
-			say "Using the blueprints as a guide, you insert the fuse into the time machine in the appropriate spot. With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.";
+			say "Using the blueprints as a guide, you insert the fuse into the time machine in the appropriate spot.[no line break][if fuse-burnt-out is false] With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.[end if]";
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";

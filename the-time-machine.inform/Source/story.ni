@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20485 ]
+[ WORDS - 20479 ]
 
 Table of Releases
 release	notes
@@ -1207,7 +1207,6 @@ Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crys
 
 The control panel is a supporter.
 The control panel is in the time machine.
-[The control panel is switched off.]
 The control panel is undescribed.
 Understand "controls" or "switches" or "dials" as control panel.
 
@@ -1224,7 +1223,6 @@ Instead of examining the control panel:
 
 [> push button]
 
-[Instead of pushing the button: try activating the control panel.]
 Instead of pushing the button: try activating the button.
 
 [> activate control panel
@@ -1236,14 +1234,11 @@ Understand "activate [something]" as activating.
 Instead of activating the time machine: try activating the control panel.
 Instead of activating the control panel: try activating the button.
 
-[Instead of activating the control panel:]
 Instead of activating the button:
 	if the player is in the time machine:
 		if the fuse is in the time machine:
 			if fuse-burnt-out is false:
 				say "You press the button on the control panel.";
-				[DEL say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";]
-				[DEL now the control panel is switched on;]
 				now the button is switched on;
 			otherwise:
 				say "You press the button but nothing happens.[no line break][if fuse-burnt-out is true] Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
@@ -1258,7 +1253,6 @@ Instead of activating the button:
 				now humboldt-should-return is true;
 		otherwise:
 			say "You press the button on the control panel but nothing happens."
-	[now the control panel is switched on.]
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
 
@@ -1632,7 +1626,6 @@ Part 1 - Travel To 802,701
 
 Travel To 802,701 is a scene.
 
-[DEL Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the control panel is switched on.]
 Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the button is switched on.
 
 travel-to-802701 is a truth state that varies.
@@ -1654,7 +1647,6 @@ When Travel To 802,701 begins:
 	now the time machine is in the Clearing;
 	now the time machine is described;
 	now the button is switched off.
-	[DEL now the control panel is switched off.]
 
 Travel To 802,701 ends when the time machine is in the Clearing.
 
@@ -1666,7 +1658,6 @@ Part 2 - Travel To 1895
 
 Travel To 1895 is a scene.
 
-[DEL Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the control panel is switched on.]
 Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the button is switched on.
 
 When Travel To 1895 begins:
@@ -1680,7 +1671,6 @@ When Travel To 1895 begins:
 	now the time machine is in the Workshop;
 	now fuse-burnt-out is true;
 	now the button is switched off.
-	[DEL now the control panel is switched off.]
 	
 Travel To 1895 ends when the time machine is in the Workshop.
 

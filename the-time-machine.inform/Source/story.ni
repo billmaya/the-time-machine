@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20476 ]
+[ WORDS - 20485 ]
 
 Table of Releases
 release	notes
@@ -2144,7 +2144,6 @@ Humboldt's Return begins when humboldt-should-return is true.
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
 	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved to have found you and annoyed at something. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.[no line break][if the time machine is nowhere] TIME MACHINE NOT HERE.[otherwise] TIME MACHINE HERE.[end if]";
-	[say "The door to the workshop opens and Dr. Humboldt enters. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. We were afraid something had happened.' His attention is drawn to the time machine behind you. 'Hmm. That must be the contraption Wells was going on about.'";]
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 

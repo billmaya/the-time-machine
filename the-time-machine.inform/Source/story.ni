@@ -285,7 +285,7 @@ Section 3 - Wandering
 
 Section 4 - Humbolt Exit
 
-Before going north in Woking Street: 
+Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
 		say "Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
 
@@ -294,7 +294,10 @@ Before going north in Woking Street:
 		With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears.";
 		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
 		now the ambulance is nowhere;
-		now the player is carrying the petal.	
+		now the player is carrying the petal;
+		try looking;
+	otherwise:
+		continue the action.
 
 
 Section 5 - Front Door

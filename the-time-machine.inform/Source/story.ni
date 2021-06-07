@@ -39,8 +39,7 @@ Wells forgets whatever he was looking for in his pockets and struggles against t
 
 Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[apostrophe]re professionals, used to dealing patients like this all the time. They[apostrophe]re not being as rough with him as they look.'"
 
-[TBD - Uncomment line below when Help section written]
-[After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."]
+After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
 
 Chapter 1 - Missing Item Description Check
 

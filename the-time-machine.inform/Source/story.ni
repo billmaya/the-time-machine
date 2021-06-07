@@ -2221,7 +2221,7 @@ Table of Basic Help Options (continued)
 title		subtable		description
 "Contact the author"		--		"If you have any difficulties with [story title], please contact me at..."
 "Hints"		Table of Hints		--
-"Settings"		Table of Setting Options		--
+["Settings"		Table of Setting Options		--]
 
 Table of Hints
 title		subtable		description		toggle

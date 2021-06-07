@@ -287,7 +287,7 @@ Section 4 - Humbolt Exit
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
+		say "Before you can move, Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
 
 		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the key is. Finding the rest of the flower might help us convince your friend that all this time travel is just a figment of his imagination. Talk to Mrs. Watchett.'
 
@@ -996,7 +996,7 @@ The fuse is in the sliding panel.
 fuse-burnt-out is a truth state that varies.
 fuse-burnt-out is false.
 
-The description of the fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and is useless.[end if]"
+The description of the fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and useless.[end if]"
 	
 [> take fuse]
 	
@@ -1188,7 +1188,7 @@ examined-blueprints is false.
 Instead of examining the blueprints:
 	say "Spreading out the sheets you see that these are the plans for the time machine in the center of the room. [no line break]";
 	if the player does not have the fuse:
-		say "While you can match a drawn component to its time machine counterpart, this brings you no closer to figuring out how to make the time machine work.";
+		say "While you can match each drawn component to its time machine counterpart, this brings you no closer to figuring out how to make the time machine work.";
 	if the player has the fuse:
 		say "Even though the function of a majority of the components remains a mystery, you can identify one item in the plans[unicode 8212]the fuse you took from the orrery.";
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
@@ -1237,7 +1237,8 @@ Instead of activating the control panel:
 	if the player is in the time machine:
 		if the fuse is in the time machine:
 			if fuse-burnt-out is false:
-				say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";
+				say "You press the button on the control panel.";
+				[DEL say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";]
 			otherwise:
 				say "You press the button but nothing happens. Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
 				now the player has the fuse;
@@ -1258,7 +1259,7 @@ Instead of activating the control panel:
 
 [Replaced "examining" with "searching" in Instead statement]
 Instead of searching [examining] the time machine:
-	if the fuse is in the time machine, say "A cursory search of the time machine like it is ready to operate."; 
+	if the fuse is in the time machine, say "The time machine looks like it is ready to operate."; 
 	otherwise:
 		if the player has the fuse:
 			if examined-blueprints is true:
@@ -1280,7 +1281,7 @@ Instead of opening the time machine: say "The time machine is alread 'open.' All
 Instead of inserting the fuse into the time machine:
 	if the player has the fuse:
 		if examined-blueprints is true:
-			say "You snap the fuse into its appointed slot. With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.";
+			say "Using the blueprints as a guide, you insert the fuse into the time machine in the appropriate spot. With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.";
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";

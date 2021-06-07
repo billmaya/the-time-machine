@@ -1,6 +1,6 @@
 The story title is "The Time Machine".
 The story author is "'Billy Tenenbaum'".
-The story headline is "A Temporal Investigation".
+The story headline is "A Text Adventure".
 The story genre is "Science Fiction".
 The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".

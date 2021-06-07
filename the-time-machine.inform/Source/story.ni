@@ -287,7 +287,7 @@ Section 4 - Humbolt Exit
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "Before you can move, Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
+		say "Before you can leave, Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
 
 		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the key is. Finding the rest of the flower might help us convince your friend that all this time travel is just a figment of his imagination. Talk to Mrs. Watchett.'
 
@@ -1239,9 +1239,12 @@ Instead of activating the control panel:
 			if fuse-burnt-out is false:
 				say "You press the button on the control panel.";
 				[DEL say "Saying a brief prayer and holding your breath, you press the single lit button on the control panel.";]
+				now the control panel is switched on;
 			otherwise:
-				say "You press the button but nothing happens. Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
+				say "You press the button but nothing happens.[no line break][if fuse-burnt-out is true] Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
 				now the player has the fuse;
+		otherwise:
+			say "You press the button but nothing happens.";
 	otherwise:
 		if the fuse is in the time machine:
 			if fuse-burnt-out is false:
@@ -1249,8 +1252,8 @@ Instead of activating the control panel:
 				now the time machine is nowhere;
 				now humboldt-should-return is true;
 		otherwise:
-			say "You press the button on the control panel but nothing happens.";
-	now the control panel is switched on.
+			say "You press the button on the control panel but nothing happens."
+	[now the control panel is switched on.]
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
 

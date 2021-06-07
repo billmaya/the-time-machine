@@ -39,7 +39,7 @@ Wells forgets whatever he was looking for in his pockets and struggles against t
 
 Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[apostrophe]re professionals, used to dealing patients like this all the time. They[apostrophe]re not being as rough with him as they look.'"
 
-After printing the banner text, say "[line break][italic type]First time players should type 'about' or 'help' and then hit the Enter/Return key."
+After printing the banner text, say "[line break][italic type]First time players can type 'about' or 'help' and then hit the Enter/Return key at any time."
 
 Chapter 1 - Missing Item Description Check
 
@@ -2225,21 +2225,19 @@ title		subtable		description
 
 Table of Hints
 title		subtable		description		toggle
-"Key Hints"		Table of Key Hints		""		hint toggle rule
-"Workshop Hints"		Table of Workshop Hints		""		hint toggle rule
-"Time Machine Hints"		Table of Time Machine Hints		""		hint toggle rule
+"How do I find the workshop door key?"		Table of Key Hints		""		hint toggle rule
+"How do I travel to 802,701 A.D."		Table of Time Machine Hints		""		hint toggle rule
+"How do I find the flower?"		Table of 802701 Hints		""		hint toggle rule
 
 Table of Key Hints
-hint		used
-"key-hint-1"		a number
-"key-hint-2"		
-"key-hint-3"		
-
-Table of Workshop Hints
-hint		used
-"workshop-hint-1"		a number
-"workshop-hint-2"		
-"workshop-hint-3"		
+hint											used
+"Have you talked to Dr. Humboldt before he left?"											a number
+"Before he left, Dr. Humboldt gave you some advice on who you should talk to."
+"Talk to Mrs. Watchett. She might know where Wells kept the workshop door key."
+"When you are in the Kitchen with Mrs. Watchett, type 'ask watchett about key.'"
+"So Wells kept the workshop door key on his person at all times. Where did you last see Wells?"
+"Go back to Woking Street and see if you can find the key."
+"After talking to Mrs. Watchett about the key and returning to Woking Street, type 'search area' or 'search street'."	
 
 Table of Time Machine Hints
 hint		used
@@ -2247,5 +2245,10 @@ hint		used
 "time-machine-hint-2"		
 "time-machine-hint-3"		
 
+Table of 802701 Hints
+hint		used
+"workshop-hint-1"		a number
+"workshop-hint-2"		
+"workshop-hint-3"	
 
 

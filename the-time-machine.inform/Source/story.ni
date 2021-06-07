@@ -200,7 +200,7 @@ Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in tim
 Chapter 7 - Release
 
 [Release along with cover art.]
-[Release along with an interpreter.] 
+Release along with an interpreter.
 [Release along with an interpreter and the source text.]
 
 Book 3 - 1895
@@ -2223,11 +2223,13 @@ title		subtable		description
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]
 
+
 Table of Hints
 title		subtable		description		toggle
 "How do I find the workshop door key?"		Table of Key Hints		""		hint toggle rule
 "How do I travel to 802,701 A.D."		Table of Time Machine Hints		""		hint toggle rule
 "How do I find the flower?"		Table of 802701 Hints		""		hint toggle rule
+"Game Walkthrough"		Table of Walkthrough Hints		""		hint toggle rule
 
 Table of Key Hints
 hint											used
@@ -2250,5 +2252,13 @@ hint		used
 "workshop-hint-1"		a number
 "workshop-hint-2"		
 "workshop-hint-3"	
+
+Table of Walkthrough Hints
+hint				used
+"command-1"				a number
+"command-2"		
+"command-3"
+"command-4"
+"command-5"
 
 

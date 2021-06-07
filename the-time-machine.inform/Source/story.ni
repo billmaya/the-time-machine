@@ -2143,7 +2143,7 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved to have found you and annoyed at something. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.[no line break][if the time machine is nowhere] TIME MACHINE NOT HERE.[otherwise] TIME MACHINE HERE.[end if]";
+	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved to have found you and annoyed at something. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be the contraption Wells was going on about.'[end if][line break]";
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 

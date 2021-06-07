@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20432 ]
+[ WORDS - 20422 ]
 
 Table of Releases
 release	notes
@@ -287,14 +287,15 @@ Section 4 - Humbolt Exit
 
 Before going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "Humboldt snaps his pocket watch shut. 'I will return after I get Wells sedated and through the preliminaries.' He climbs into the ambulance but turns back. 'I nearly forgot. See what you can make of this.' He reaches down and hands you a single petal from some strange flower that, according to Wells, was given to him by Weena in the year 802,701 A.D.
-		
-		'I was once a pretty good amateur botanist but even I cannot deduce the morphology of this species from a single petal. If you can find the rest of it somewhere inside maybe we can convince your friend that his whole story was a figment of his imagination. See what you can find.'
+		say "Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
 
-		With those last words Humboldt swings the ambulance door shut and, with a crack of the reins, the ambulance starts off down the street, turns the corner, and disappears into the sparse evening traffic.";
+		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the key is. Finding the rest of the flower might help us convince your friend that all this time travel is just a figment of his imagination. Talk to Mrs. Watchett.'
+
+		With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears.";
 		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
 		now the ambulance is nowhere;
-		now the player is carrying the Petal.	
+		now the player is carrying the petal.	
+
 
 Section 5 - Front Door
 

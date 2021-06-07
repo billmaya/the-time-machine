@@ -176,11 +176,8 @@ Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn d
 Test switch-examine with " examine orrery's switch / examine orrery switch."
 Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
 
-Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
-Test goto-workshop with "test unlock-workshop / go north / flip switch."
-
 [Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."]
-Test prepare-time-machine with "test unlock-workshop / go north / flip switch / purloin fuse / examine blueprints / put fuse in time machine."
+[Test prepare-time-machine with "test unlock-workshop / go north / flip switch / purloin fuse / examine blueprints / put fuse in time machine."]
 
 Test circular-shaft-look with "x shaft / take grate / x shaft."
 
@@ -195,6 +192,10 @@ Test travel-1895 with "go northwest / enter / activate panel."
 Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena petal / test travel-1895 / exit."
 
 Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with key / n / flip switch / examine blueprints / put fuse in time machine. / get in time machine / press button."
+
+Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
+Test goto-workshop with "test unlock-workshop / go north / flip switch."
+Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in time machine."
 
 Chapter 7 - Release
 
@@ -286,7 +287,7 @@ Section 4 - Humbolt Exit
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "Before you can leave, Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
+		say "Before you can leave, Dr. Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
 
 		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the key is. Finding the rest of the flower might help us convince your friend that all this time travel is just a figment of his imagination. Talk to Mrs. Watchett.'
 
@@ -2142,7 +2143,8 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Dr. Humboldt enters. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. We were afraid something had happened.' His attention is drawn to the time machine behind you. 'Hmm. That must be the contraption Wells was going on about.'";
+	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved to have found you and annoyed at something. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.[no line break][if the time machine is nowhere] TIME MACHINE NOT HERE.[otherwise] TIME MACHINE HERE.[end if]";
+	[say "The door to the workshop opens and Dr. Humboldt enters. The doctor appears both relieved and annoyed at the same time. 'Where the bloody hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you. We were afraid something had happened.' His attention is drawn to the time machine behind you. 'Hmm. That must be the contraption Wells was going on about.'";]
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 

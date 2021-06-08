@@ -197,6 +197,8 @@ Test unlock-workshop with "go north / purloin key / unlock workshop door with ke
 Test goto-workshop with "test unlock-workshop / go north / flip switch."
 Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in time machine."
 
+Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in time machine / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
+
 Chapter 7 - Release
 
 [Release along with cover art.]
@@ -2255,10 +2257,49 @@ hint		used
 
 Table of Walkthrough Hints
 hint				used
-"command-1"				a number
-"command-2"		
-"command-3"
-"command-4"
-"command-5"
+"These walkthrough hints should be used only as a last resort."				a number
+"Type each command at the prompt ('>') and hit the Enter/Return key."
+"take pocket watch"		
+"go north"
+"go north"
+"go west"
+"go north"
+"go north"
+"examine orrery"
+"open panel"
+"examine mechanism"
+"take fuse"
+"go north"
+"ask watchett about key"
+"go south"
+"go south"
+"go south"
+"go east"
+"go south"
+"search area"
+"go north"
+"unlock workshop door with key"
+"go north"
+"flip switch"
+"examine blueprints"
+"enter time machine"
+"put fuse in time machine"
+"examine control panel"
+"press button"
+"exit"
+"go east"
+"go east"
+"go south"
+"go north"
+"go west"
+"go west"
+"go southeast"
+"show eloi watch"
+"show weena petal"
+"go northwest"
+"enter time machine"
+"press button"
+"exit"
+"show flower to humboldt"
 
 

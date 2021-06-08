@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21003 ]
+[ WORDS - 21004 ]
 
 Table of Releases
 release	notes
@@ -1229,7 +1229,7 @@ Instead of examining the control panel:
 
 		The upper right section contains two items, a small UNLIT/LIT light and a large round button beneath it. Between the light and the button the label 'DEPART' has been etched into the panel[']s surface.
 
-		The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each number in its own separate window. The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket]
+		The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each series['] number displayed in its own separate window. The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket]
 
 		Underneath the two lines are a series of square buttons and switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket]. Somehow, a time traveler uses these switches and buttons to set their destination year.";
 	otherwise:

@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20616 ]
+[ WORDS - 20828 ]
 
 Table of Releases
 release	notes
@@ -2257,8 +2257,7 @@ hint		used
 
 Table of Walkthrough Hints
 hint				used
-"These walkthrough hints should be used only as a last resort."				a number
-"Type each command at the prompt ('>') and hit the Enter/Return key."
+"Type each of these commands at the prompt in the order they are shown (hit the Enter/Return key after typing each command)."				a number
 "take pocket watch"		
 "go north"
 "go north"

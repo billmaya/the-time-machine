@@ -196,6 +196,7 @@ Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
 Test goto-workshop with "test unlock-workshop / go north / flip switch."
 Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in time machine."
+Test weena-flower with "take watch / go north / test goto-workshop / test prep-time-machine / enter / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show watch to eloi."
 
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in time machine / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
 
@@ -2075,7 +2076,8 @@ Section 3 - Weena Gives You Flower
 
 Weena Gives You Flower is a scene.
 
-Weena Gives You Flower begins when the pocket watch is open.
+[DEL Weena Gives You Flower begins when the pocket watch is open.]
+Weena Gives You Flower begins when Weena has the pocket watch.
 
 When Weena Gives You Flower begins:
 	[say "WEENA GIVES YOU FLOWER BEGINS.";]
@@ -2096,6 +2098,8 @@ Instead of showing something to Weena: [Handles both > show fuse to weena and > 
 
 Instead of showing the pocket watch to Weena:
 	say "She cocks her head and smiles back at you, waiting."
+
+Instead of giving the petal to Weena: try showing the petal to Weena.
 
 Instead of showing the petal to Weena:
 	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wellls. The rest of the Eloi follow her and soon you are alone by the river.";

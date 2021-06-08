@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 20828 ]
+[ WORDS - 20890 ]
 
 Table of Releases
 release	notes
@@ -194,7 +194,7 @@ Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena pe
 Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with key / n / flip switch / examine blueprints / put fuse in time machine. / get in time machine / press button."
 
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
-Test goto-workshop with "test unlock-workshop / go north / flip switch."
+Test goto-workshop with "go north / test unlock-workshop / go north / flip switch."
 Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in time machine."
 Test weena-flower with "take watch / go north / test goto-workshop / test prep-time-machine / enter / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show watch to eloi."
 
@@ -1199,7 +1199,8 @@ Instead of examining the blueprints:
 
 Section 4 - The Time Machine
 	
-The time machine is a thing. [The indefinite article is "the".]
+[The time machine is a thing. [The indefinite article is "the".]]
+The time machine is a opaque container. [thing.] [The indefinite article is "the".]
 The time machine is in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
@@ -2056,7 +2057,7 @@ Section 2 - Introduction Of Weena
 
 Introduction Of Weena is a scene.
 
-Introduction Of Weena begins when the Eloi is carrying the pocket watch. [or the player gives the Eloi the pocket watch.]
+Introduction Of Weena begins when the Eloi is carrying the pocket watch.
 
 When Introduction Of Weena begins:
 	[say "INTRODUCTION TO WEENA BEGINS.";]
@@ -2065,7 +2066,6 @@ When Introduction Of Weena begins:
 	Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
 	now Weena is in the River;
 	now Weena is carrying the pocket watch.
-	[now the pocket watch is open.]
 
 Introduction Of Weena ends when Weena has the pocket watch.
 
@@ -2076,7 +2076,6 @@ Section 3 - Weena Gives You Flower
 
 Weena Gives You Flower is a scene.
 
-[DEL Weena Gives You Flower begins when the pocket watch is open.]
 Weena Gives You Flower begins when Weena has the pocket watch.
 
 When Weena Gives You Flower begins:

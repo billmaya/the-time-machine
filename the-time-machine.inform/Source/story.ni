@@ -1212,7 +1212,7 @@ The description of the time machine is "[if the player is not in the time machin
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" as time machine.
 
-The control panel is a supporter.
+The control panel is a supporter. [<- container for fuse?]
 The control panel is in the time machine.
 The control panel is undescribed.
 Understand "controls" or "switches" or "dials" as control panel.
@@ -1221,20 +1221,36 @@ The button is a device on the control panel.
 The button is switched off.
 The button is undescribed.
 
+Instead of examining the button: try examining the panel-upper-right.
+
 Instead of examining the control panel:
 	if the player is in the time machine:
+		[TBD - Modify Destination dates based on current-year]
 		say "The control panel is divided into three sections.
 
 		The upper left section appears to track time traveled using fourteen dials arranged in two rows of seven dials each. 
 
 		The upper right section contains two items, a small UNLIT/LIT light and a large round button beneath it. Between the light and the button the label 'DEPART' has been etched into the panel[']s surface.
 
-		The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each series['] number displayed in its own separate window. The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket]
+		[current-year] The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each series['] number displayed in its own separate window. The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket]
 
-		Underneath the two lines are a series of square buttons and switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket]. Somehow, a time traveler uses these switches and buttons to set their destination year.";
+		Underneath the two lines are a series switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a single square button. Somehow, a time traveler uses these switches and buttons to set their destination year.";
 	otherwise:
-		say "From the outside of the time machine you can see a control panel at waist height containing a series of dials and a single button. As far as you can tell the panel appears to be wired into various components that make up the lattice of the time machine.";
+		say "TBD Outside-Panel-Description.";
+		[DEL say "From the outside of the time machine you can see a control panel at waist height containing a series of dials and a single button. As far as you can tell the panel appears to be wired into various components that make up the lattice of the time machine.";]
 	rule succeeds.
+	
+The panel-upper-left is scenery on the control panel.
+The description of panel-upper-left is "TBD Panel-Upper-Left description."
+Understand "dial" or "dials" as panel-upper-right.
+
+The panel-upper-right is scenery on the control panel.
+The description of panel-upper-right is "TBD Panel-Upper-Right description."
+Understand "light" or "round button" as panel-upper-right.
+	
+The panel-bottom is scenery on the control panel.
+The description of panel-bottom is "TBD Panel-Bottom description."
+Understand "switch" or "switches" or "square button" as panel-bottom.
 
 [> push button]
 

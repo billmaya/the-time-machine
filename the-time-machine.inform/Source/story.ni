@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21004 ]
+[ WORDS - 21240 ]
 
 Table of Releases
 release	notes
@@ -20,6 +20,9 @@ The description of the player is "You rarely focus on your appearance, too much 
 
 The current-year is text that varies.
 The current-year is "1895".
+
+The numeric-year is a number that varies.
+The numeric-year is 1895.
 
 When play begins: 
 	now the left hand status line is "[location] - [current-year]";
@@ -1232,7 +1235,7 @@ Instead of examining the control panel:
 
 		The upper right section contains two items, a small UNLIT/LIT light and a large round button beneath it. Between the light and the button the label 'DEPART' has been etched into the panel[']s surface.
 
-		[current-year] The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each series['] number displayed in its own separate window. The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket]
+		The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each series['] number displayed in its own separate window.[no line break][if numeric-year is 1895] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket][otherwise] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket][end if]
 
 		Underneath the two lines are a series switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a single square button. Somehow, a time traveler uses these switches and buttons to set their destination year.";
 	otherwise:
@@ -1675,6 +1678,7 @@ When Travel To 802,701 begins:
 
 	You have arrived in the year 802,701 A.D.";
 	now the current-year is "802,701";
+	now the numeric-year is 802701;
 	now the time machine is in the Clearing;
 	now the time machine is described;
 	now the button is switched off.
@@ -1699,6 +1703,7 @@ When Travel To 1895 begins:
 	
 	You have arrived in the year 1895.";
 	now the current-year is "1895";
+	now the numeric-year is 1895;
 	now the time machine is in the Workshop;
 	now fuse-burnt-out is true;
 	now the button is switched off.

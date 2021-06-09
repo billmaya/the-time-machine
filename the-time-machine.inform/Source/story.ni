@@ -200,6 +200,8 @@ Test unlock-workshop with "go north / purloin key / unlock workshop door with ke
 Test goto-workshop with "go north / test unlock-workshop / go north / flip switch."
 Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in time machine."
 Test weena-flower with "take watch / go north / test goto-workshop / test prep-time-machine / enter / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show watch to eloi."
+			
+Test wtm with "test goto-workshop / test prep-time-machine."
 
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in time machine / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
 
@@ -1215,20 +1217,16 @@ The description of the time machine is "[if the player is not in the time machin
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" as time machine.
 
+Section 4.1 - Control Panel
+
 The control panel is a supporter. [<- container for fuse?]
 The control panel is in the time machine.
 The control panel is undescribed.
 Understand "controls" or "switches" or "dials" as control panel.
 
-The button is a device on the control panel.
-The button is switched off.
-The button is undescribed.
-
-Instead of examining the button: try examining the panel-upper-right.
-
 Instead of examining the control panel:
 	if the player is in the time machine:
-		[TBD - Modify Destination dates based on current-year]
+		[DEL - Modify Destination dates based on current-year]
 		say "The control panel is divided into three sections.
 
 		The upper left section appears to track time traveled using fourteen dials arranged in two rows of seven dials each. 
@@ -1239,7 +1237,8 @@ Instead of examining the control panel:
 
 		Underneath the two lines are a series switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a single square button. Somehow, a time traveler uses these switches and buttons to set their destination year.";
 	otherwise:
-		say "TBD Outside-Panel-Description.";
+		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
+		[DEL say "TBD Outside-Panel-Description.";]
 		[DEL say "From the outside of the time machine you can see a control panel at waist height containing a series of dials and a single button. As far as you can tell the panel appears to be wired into various components that make up the lattice of the time machine.";]
 	rule succeeds.
 	
@@ -1253,11 +1252,19 @@ Understand "light" or "round button" as panel-upper-right.
 	
 The panel-bottom is scenery on the control panel.
 The description of panel-bottom is "TBD Panel-Bottom description."
-Understand "switch" or "switches" or "square button" as panel-bottom.
+Understand "switch" or "switches" or "square button" or "square buttons" or "clear button" or "set button" as panel-bottom.
+	
+Section 4.2 - Round Button
+
+The round button is a device on the control panel.
+The round button is switched off.
+The round button is undescribed.
+
+Instead of examining the round button: try examining the panel-upper-right.
 
 [> push button]
 
-Instead of pushing the button: try activating the button.
+Instead of pushing the round button: try activating the round button.
 
 [> activate control panel
  > activate time machine]
@@ -1266,9 +1273,9 @@ Activating is an action applying to one touchable thing.
 Understand "activate [something]" as activating.
 
 Instead of activating the time machine: try activating the control panel.
-Instead of activating the control panel: try activating the button.
+Instead of activating the control panel: try activating the round button.
 
-Instead of activating the button:
+Instead of activating the round button:
 	if the player is in the time machine:
 		if the fuse is in the time machine:
 			if fuse-burnt-out is false:
@@ -1287,6 +1294,8 @@ Instead of activating the button:
 				now humboldt-should-return is true;
 		otherwise:
 			say "You press the button on the control panel but nothing happens."
+
+Section 4.3 - Fuse
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
 

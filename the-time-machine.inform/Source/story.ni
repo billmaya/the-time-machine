@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21240 ]
+[ WORDS - 21258 ]
 
 Table of Releases
 release	notes
@@ -1217,6 +1217,23 @@ The description of the time machine is "[if the player is not in the time machin
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" as time machine.
 
+[Replaced "examining" with "searching" in Instead statement]
+Instead of searching [examining] the time machine:
+	if the fuse is in the time machine, say "The time machine looks like it is ready to operate."; 
+	otherwise:
+		if the player has the fuse:
+			if examined-blueprints is true:
+				say "After reviewing the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
+			otherwise:
+				say "Looking at the fuse you realize that it probably should go somewhere in the time machine but you don't have the first clue where that would be.";
+		otherwise:
+			if examined-blueprints is true:
+				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
+			otherwise:
+				say "According to Wells[apostrophe] statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens. Right now you have no clue about how to activate it or what the next steps might be.".
+
+Instead of opening the time machine: say "The time machine is alread 'open.' All you have to do is get inside if you desire."
+
 Section 4.1 - Control Panel
 
 The control panel is a supporter. [<- container for fuse?]
@@ -1226,7 +1243,6 @@ Understand "controls" or "switches" or "dials" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		[DEL - Modify Destination dates based on current-year]
 		say "The control panel is divided into three sections.
 
 		The upper left section appears to track time traveled using fourteen dials arranged in two rows of seven dials each. 
@@ -1238,8 +1254,6 @@ Instead of examining the control panel:
 		Underneath the two lines are a series switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a single square button. Somehow, a time traveler uses these switches and buttons to set their destination year.";
 	otherwise:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
-		[DEL say "TBD Outside-Panel-Description.";]
-		[DEL say "From the outside of the time machine you can see a control panel at waist height containing a series of dials and a single button. As far as you can tell the panel appears to be wired into various components that make up the lattice of the time machine.";]
 	rule succeeds.
 	
 The panel-upper-left is scenery on the control panel.
@@ -1301,23 +1315,6 @@ Section 4.3 - Fuse
 
 [3.1.8.2-A - Using a boolean examined-blueprints to determine if blueprint has been examined.] 
 [See Section 1 - Blueprints to see where boolean is set.]
-
-[Replaced "examining" with "searching" in Instead statement]
-Instead of searching [examining] the time machine:
-	if the fuse is in the time machine, say "The time machine looks like it is ready to operate."; 
-	otherwise:
-		if the player has the fuse:
-			if examined-blueprints is true:
-				say "After reviewing the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
-			otherwise:
-				say "Looking at the fuse you realize that it probably should go somewhere in the time machine but you don't have the first clue where that would be.";
-		otherwise:
-			if examined-blueprints is true:
-				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
-			otherwise:
-				say "According to Wells[apostrophe] statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens. Right now you have no clue about how to activate it or what the next steps might be.".
-
-Instead of opening the time machine: say "The time machine is alread 'open.' All you have to do is get inside if you desire."
 
 [Writing §9.13. The past and perfect tenses]
 

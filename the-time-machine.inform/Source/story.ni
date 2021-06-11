@@ -2016,7 +2016,7 @@ The River is southeast of the Clearing.
 The description of the River Bank is "[first time]The southeast path winds its downhill through dense undergrowth. [only]After a brief hike you emerge from the woods onto the northwest bank of a sizeable river."
 
 The river-river is scenery in the River.
-The description of the river-river is "The river curves is way through the forest from the northeast to the southwest."
+The description of the river-river is "The river curves its way through the forest from the northeast to the southwest."
 The printed name of river-river is "river".
 Understand "river" as river-river.
 

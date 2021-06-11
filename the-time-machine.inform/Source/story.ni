@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21456 ]
+[ WORDS - 21463 ]
 
 Table of Releases
 release	notes
@@ -16,7 +16,7 @@ release	notes
 Book 1 - Beginning The Story
 
 The player is in Woking Street.
-The description of the player is "You rarely focus on your appearance, too much work to do, but if you had to describe yourself you would probalby say something like 'middle-age, married, non-descript features, all belying you logical, lawyerly mind and calm demeanor that your profession and your clients demand."
+The description of the player is "You rarely focus on your appearance, too much work to do, but if you had to describe yourself you would probably say something like 'middle-age, married, non-descript features, all belying a logical, lawyerly mind and calm demeanor that your profession and your clients demand."
 
 The current-year is text that varies.
 The current-year is "1895".
@@ -648,6 +648,7 @@ The Garden Door is east of the Parlor and west of the Garden.
 The Garden Door is a door. 
 The Garden Door is openable and lockable.
 The Garden Door is scenery.
+The printed name of Garden Door is "garden door".
 The description of Garden Door is "[if location is Parlor]A set of glass doors and stone steps lead down into a snow-covered garden.[otherwise]A set of stone steps lead up to glass doors and the inside of the house."
 
 Understand "glass" or "glass door" or "glass doors" as Garden Door.
@@ -680,7 +681,7 @@ Section 3 - Fire
 The fire is a thing.
 The fire is in the parlor. [fireplace.]
 The fire is undescribed.
-The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn, the embers and ashes fall through the grate onto the brick.."
+The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn, the embers and ashes fall through the grate onto the brick."
 
 The coals are undescribed in the parlor. "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
 Understand "coal" or "pile" as coals.
@@ -1528,7 +1529,7 @@ Instead of showing the key to Humboldt:
 	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [at random]What have you found?'"
 
 Instead of showing the blueprints to Humboldt:
-	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its conterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
+	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its counterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
 
 Instead of showing the fuse to Humboldt:
 	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
@@ -1672,7 +1673,7 @@ When Travel To 802,701 begins:
 	now travel-to-802701 is true;
 	say "From Wells['] story you have an idea of what is going to happen but you never expected to see it with your own eyes or experience it yourself.
 
-	As the machine powers up and the chronometric dials start inching forward through the years, the workshop, its contents, in fact the entire house, fades away to be replace by a shimmering grey void. As you start traveling through time, vague shadows of various shapes and sizes appear and disappear in the grey surface surrounding you and the machine, future people, places, and things living out their own personal cycle of birth, life, and death.
+	As the machine powers up and the chronometric dials start inching forward through the years, the workshop, its contents, in fact the entire house, fades away to be replaced by a shimmering grey void. As you start traveling through time, vague shadows of various shapes and sizes appear and disappear in the grey surface surrounding you and the machine, future people, places, and things living out their own personal cycle of birth, life, and death.
 
 	A feeling of helplessness and dread makes you grip the time machine[']s framework as it gains velocity, continuing its pre-programmed flight through the centuries and millennia towards the Age of Eloi and Morlocks Wells spoke about.
 	
@@ -1699,7 +1700,7 @@ Travel To 1895 begins when the time machine is in the Clearing and the player is
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
-	say "The time machine powers up and the begins traveling through time again. To your relief the dials start turning backwards through the years as the grey void cloaks both you and the machine. The helplessness and dread you felt while traveling forward is less than before but still there but you say a silent prayer and watch the ages pass in reverse on the dials and the shadows and shapes go through their silent pantomime on the grey void that surrounds you and the machine.
+	say "The time machine powers up and the begins traveling through time. To your relief the dials start turning backwards through the years as the grey void cloaks both you and the machine. The helplessness and dread you felt while traveling forward is less than before but still there but you say a silent prayer and watch the ages pass in reverse on the dials and the shadows and shapes go through their silent pantomime on the grey void that surrounds you and the machine.
 
 	After a time, the machine starts to slow and the grey fog starts to dissipate, finally disappearing completely as the time machine stops and the familiar workshop surrounds you.
 	

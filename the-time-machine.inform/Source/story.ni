@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21258 ]
+[ WORDS - 21457 ]
 
 Table of Releases
 release	notes
@@ -1239,33 +1239,29 @@ Section 4.1 - Control Panel
 The control panel is a supporter. [<- container for fuse?]
 The control panel is in the time machine.
 The control panel is undescribed.
-Understand "controls" or "switches" or "dials" as control panel.
+Understand "controls" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
 		say "The control panel is divided into three sections.
 
-		The upper left section appears to track time traveled using fourteen dials arranged in two rows of seven dials each. 
+		The upper left section appears to track time traveled using fourteen dials arranged in two rows of seven dials each. The upper right section looks like it is used to activate the time machine. It contains two items, a small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button beneath it. Between the lamp and the button the label 'DEPART' has been etched into the panel[']s surface.
 
-		The upper right section contains two items, a small UNLIT/LIT light and a large round button beneath it. Between the light and the button the label 'DEPART' has been etched into the panel[']s surface.
-
-		The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each series['] number displayed in its own separate window.[no line break][if numeric-year is 1895] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket][otherwise] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket][end if]
-
-		Underneath the two lines are a series switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a single square button. Somehow, a time traveler uses these switches and buttons to set their destination year.";
+		The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each series['] number displayed in its own separate window.[no line break][if numeric-year is 1895] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket].[no line break][otherwise] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] Underneath these two lines are a series switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a single square button. Somehow, a time traveler must use these switches and square buttons to set their destination year but you haven[']t a clue how.";
 	otherwise:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
 	
 The panel-upper-left is scenery on the control panel.
-The description of panel-upper-left is "TBD Panel-Upper-Left description."
-Understand "dial" or "dials" as panel-upper-right.
+The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
+Understand "dial" or "dials" as panel-upper-left.
 
 The panel-upper-right is scenery on the control panel.
-The description of panel-upper-right is "TBD Panel-Upper-Right description."
-Understand "light" or "round button" as panel-upper-right.
+The description of panel-upper-right is "A small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button underneath it. The word 'DEPART' is etched into the panel surface between the lamp and button."
+Understand "lamp" or "round button" as panel-upper-right.
 	
 The panel-bottom is scenery on the control panel.
-The description of panel-bottom is "TBD Panel-Bottom description."
+The description of panel-bottom is "Below the two rows of numbers and letters are sixteen toggle switches in two rows of eight switches each. The top row is labeled with the numbers 0[unicode 8211]9; the bottom row with the numbers 8 and 9 and the letters A[unicode 8211]F. All of the switches are in the Off position. To the right of the two rows of switches are two square buttons, one labeled 'SET'; the other labeled 'CLEAR'."
 Understand "switch" or "switches" or "square button" or "square buttons" or "clear button" or "set button" as panel-bottom.
 	
 Section 4.2 - Round Button

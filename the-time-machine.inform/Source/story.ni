@@ -2040,9 +2040,13 @@ Part 2 - Characters
 
 Chapter 1 - Eloi
 
-The Eloi are people. The indefinite article is "the".
+The Eloi are people. "INITIAL ELOI DESCRIPTION."
+The indefinite article is "the".
 The Eloi are in the River.
 The Eloi are fixed.
+
+[DEL The initial description of the Eloi is "INITIAL ELOI DESCRIPTION."]
+
 The description of the Eloi is "Just as Wells described them, the Eloi are short, about four feet high, slight, and dressed in tunics belted at the waist and wearing buskins on their feet. The similarity of their features and builds makes it hard to determine individual gender but with some effort you can tell the men from the women. Actually, boys from girls would be better terms to use given their apparent stature, age, and demeanor. 
 
 The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  You can even see, to your horror, a few couples of both genders in the bushes involved in prurient matters."

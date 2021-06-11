@@ -1977,7 +1977,9 @@ Instead of smelling the well-water: say "It smells fine."
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
-The description of the murals are "Circling the entire dome wall except for the exits, this pictorial cyclorama displays a series of day-to-night pastoral scenes. Each panel has a title written in some Arabic script below it and depicts to a specific idylic activity[unicode 8212]gathering fruit, bathing in the river, wandering the countryside, eating, dancing, and other questionable pastimes[unicode 8212]being performed by a group of people who must be Wells['] Eloi.
+The description of the murals are "Circling the entire dome wall except for the exits, this pictorial cyclorama depicts a series of day-to-night pastoral scenes. 
+
+Each panel has a title written in some Arabic script below it and illustrates a specific idylic activity[unicode 8212]gathering fruit, bathing in the river, wandering the countryside, eating, dancing, and other questionable pastimes[unicode 8212]being performed by a group of people who must be Wells['] Eloi.
 	
 In one or two of the dusk scenes you can make out small shadowy silhouettes spying on the Eloi[']s foreground activity, hidden in background undergrowth and shadows[unicode 8212]Wells['] Morlocks."
 

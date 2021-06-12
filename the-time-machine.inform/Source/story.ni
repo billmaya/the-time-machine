@@ -2037,6 +2037,21 @@ Instead of eating the river-water:
 
 Instead of drinking the river-water, say "I don't see why you would choose to drink this dubious liquid when there's a source of fresh water elsewhere." 
 
+The river-things is scenery in the River Bank.
+Understand "flowers" or "flower" or "fruit" as river-things.
+
+Gathering is an action applying to one thing.
+Understand "gather [something]" as gathering.
+Instead of gathering: say "NO GATHERING."
+
+Swimming is an action applying to nothing.
+Understand "swim" as swimming.
+Instead of swimming: say "NO SWIMMING."
+
+Resting is an action applying to nothing.
+Understand "rest" as resting.
+Instead of resting: say "NO RESTING."
+
 
 Part 2 - Characters
 

@@ -1,12 +1,12 @@
 The story title is "The Time Machine".
-The story author is "'Billy Tenenbaum'".
+The story author is "Bill Maya".
 The story headline is "A Text Adventure".
 The story genre is "Science Fiction".
 The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21566 ]
+[ WORDS - 21618 ]
 
 Table of Releases
 release	notes
@@ -1981,7 +1981,7 @@ The murals are a thing.
 The murals are scenery in the Inside Dome.
 The description of the murals are "Circling the entire dome wall except for the exits, this pictorial cyclorama depicts a series of day-to-night pastoral scenes. 
 
-Each panel has a title written in some Arabic script below it and illustrates a specific idylic activity[unicode 8212]gathering fruit, bathing in the river, wandering the countryside, eating, dancing, and other questionable pastimes[unicode 8212]being performed by a group of people who must be Wells['] Eloi.
+Each panel has a title below it written in some script resembling Arabic and illustrates a specific idylic activity[unicode 8212]gathering fruit, bathing in the river, wandering the countryside, eating, dancing, and other questionable pastimes[unicode 8212]being performed by a group of people who must be Wells['] Eloi.
 	
 In one or two of the dusk scenes you can make out small shadowy silhouettes spying on the Eloi[']s foreground activity, hidden in background undergrowth and shadows[unicode 8212]Wells['] Morlocks."
 
@@ -2275,7 +2275,7 @@ Book 7 - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description
-"Contact the author"		--		"If you have any difficulties with [story title], please contact me at..."
+"Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com.[paragraph break]I was originally going to release this game under the pseudonym 'Billy Tenenbaum' (the name I grew up with) but my reasons for doing so are no longer valid. I apologize for any confusion related to my Beta testing posts."
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]
 

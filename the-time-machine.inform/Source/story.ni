@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21541 ]
+[ WORDS - 21566 ]
 
 Table of Releases
 release	notes
@@ -2042,15 +2042,15 @@ Understand "flowers" or "flower" or "fruit" as river-things.
 
 Gathering is an action applying to one thing.
 Understand "gather [something]" as gathering.
-Instead of gathering: say "NO GATHERING."
+Instead of gathering: say "The Eloi don[']t seem to need your help. Perhaps another time."
 
 Swimming is an action applying to nothing.
 Understand "swim" as swimming.
-Instead of swimming: say "NO SWIMMING."
+Instead of swimming: say "You[']re not dressed for swimming. Perhaps another time."
 
 Resting is an action applying to nothing.
 Understand "rest" as resting.
-Instead of resting: say "NO RESTING."
+Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
 
 Part 2 - Characters

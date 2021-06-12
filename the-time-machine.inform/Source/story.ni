@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21463 ]
+[ WORDS - 21471 ]
 
 Table of Releases
 release	notes
@@ -202,6 +202,8 @@ Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in tim
 Test weena-flower with "take watch / go north / test goto-workshop / test prep-time-machine / enter / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show watch to eloi."
 			
 Test wtm with "test goto-workshop / test prep-time-machine."
+Test 802701 with "test wtm / enter / press button."
+Test eloi with "test 802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
 
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in time machine / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
 
@@ -2040,26 +2042,19 @@ Part 2 - Characters
 
 Chapter 1 - Eloi
 
-The Eloi are people. "INITIAL ELOI DESCRIPTION."
+The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells' story.
+
+Noticing your prescence, a few of the Eloi gather around you.[end if]"
+
 The indefinite article is "the".
 The Eloi are in the River.
 The Eloi are fixed.
 
-[DEL The initial description of the Eloi is "INITIAL ELOI DESCRIPTION."]
-
-The description of the Eloi is "Just as Wells described them, the Eloi are short, about four feet high, slight, and dressed in tunics belted at the waist and wearing buskins on their feet. The similarity of their features and builds makes it hard to determine individual gender but with some effort you can tell the men from the women. Actually, boys from girls would be better terms to use given their apparent stature, age, and demeanor. 
-
-The Eloi have spread themselves all along this side of the river and are involved in a variety of activities. Some are swimming in the shallows, others are playing on the banks or gathering flowers or fruit.  You can even see, to your horror, a few couples of both genders in the bushes involved in prurient matters."
+The description of the Eloi is "All of the Eloi are slight and short, about four feet tall. All are dressed in the same type of manufactured tunic, belted at the waist, and wearing buskins on their feet. The homogeneity of their features, their build, and their dress make it hard to distinguish one from the other."
 
 eloi-couples are scenery in the River.
 The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
 Understand "couples" as eloi-couples.
-
-["As you move among them, your clothes and your height bring attention to yourself..."]
-
-[
-The Eloi notice you standing there in your drag nineteenth century clothing. In small groups they approach and circle you, cooing softly in their singsong language that Wells described earlier. They're don't appear afraid, merely curious, 
-]
 
 Instead of asking the Eloi about something:
 	say "Try as you might you can't make the Eloi understand what you are asking about. Some of them laugh at your strange pronunciations while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 

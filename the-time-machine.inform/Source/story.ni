@@ -228,7 +228,7 @@ Section 1 - Area
 
 	The area is scenery in Woking Street.
 	The area is a supporter.
-	The description of the area is "[if watchett-key is false]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise]The glint of something metallic catches your eye.[end if]"
+	The description of the area is "[if watchett-key is false]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise if player has the key]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise]The glint of something metallic catches your eye.[end if]"
 
 	Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" as area.
 

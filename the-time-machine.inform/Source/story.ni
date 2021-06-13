@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21618 ]
+[ WORDS - 21699 ]
 
 Table of Releases
 release	notes
@@ -1239,9 +1239,6 @@ Instead of searching [examining] the time machine:
 				say "You can't make heads nor tails of how the machine operates or how to get it running. If only there was some information that detailed the construction and operation of the time machine in greater detail."
 
 Instead of opening the time machine: say "The time machine is alread 'open.' All you have to do is get inside if you desire."
-
-
-[DEL According to Wells[apostrophe] statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens. Right now you have no clue about how to activate it or what the next steps might be."]
 
 Section 4.1 - Control Panel
 

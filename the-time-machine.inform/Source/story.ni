@@ -1194,8 +1194,11 @@ The blueprints are undescribed.
 Understand "plans" or "sheets" or "set" as blueprints.
 The printed name of blueprints is "set of blueprints".
 
+Instead of taking the blueprints: try examining the blueprints.
+
 examined-blueprints is a truth state that varies.
 examined-blueprints is false.
+
 Instead of examining the blueprints:
 	say "Spreading out the sheets you see that these are the plans for the time machine in the center of the room. [no line break]";
 	if the player does not have the fuse:
@@ -1233,9 +1236,12 @@ Instead of searching [examining] the time machine:
 			if examined-blueprints is true:
 				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
 			otherwise:
-				say "According to Wells[apostrophe] statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens. Right now you have no clue about how to activate it or what the next steps might be.".
+				say "You can't make heads nor tails of how the machine operates or how to get it running. If only there was some information that detailed the construction and operation of the time machine in greater detail."
 
 Instead of opening the time machine: say "The time machine is alread 'open.' All you have to do is get inside if you desire."
+
+
+[DEL According to Wells[apostrophe] statements this must be his 'time machine.' You reach inside it and flip a few switches back and forth but nothing happens. Right now you have no clue about how to activate it or what the next steps might be."]
 
 Section 4.1 - Control Panel
 
@@ -1298,7 +1304,7 @@ Instead of activating the round button:
 				say "You press the button but nothing happens.[no line break][if fuse-burnt-out is true] Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
 				now the player has the fuse;
 		otherwise:
-			say "You press the button but nothing happens.";
+			say "You press the button but nothing happens. There must be a piece missing from the time machine.";
 	otherwise:
 		if the fuse is in the time machine:
 			if fuse-burnt-out is false:
@@ -2299,9 +2305,17 @@ hint											used
 
 Table of Time Machine Hints
 hint		used
-"time-machine-hint-1"		a number
-"time-machine-hint-2"		
-"time-machine-hint-3"		
+"Have you been able to get into the workshop?"		a number
+"You will need to get into the workshop first."		
+"Have you examined the time machine[']s control panel?"
+"Have you pressed the round button?"
+"There must be a piece missing from the time machine."
+"Have you found the orrery?"
+"Have you opened the orrery?"
+"Maybe the fuse will help."
+"But you don[']t know where the fuse should go in the time machine."
+"Have you examined the blueprints?"
+"> put fuse in time machine."		
 
 Table of 802701 Hints
 hint		used

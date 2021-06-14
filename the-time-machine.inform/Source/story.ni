@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21720 ]
+[ WORDS - 21796 ]
 
 Table of Releases
 release	notes
@@ -1264,7 +1264,6 @@ Understand "dial" or "dials" as panel-upper-left.
 
 The panel-upper-right is scenery on the control panel.
 The description of panel-upper-right is "A small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button directly underneath it. Directly beneath the button the word 'DEPART' has been etched into the panel[']s surface."
-[DEL The word 'DEPART' is etched into the panel surface between the lamp and button."]
 Understand "lamp" or "round button" as panel-upper-right.
 	
 The panel-bottom is scenery on the control panel.

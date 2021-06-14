@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21699 ]
+[ WORDS - 21720 ]
 
 Table of Releases
 release	notes
@@ -1263,12 +1263,29 @@ The description of panel-upper-left is "Both rows of dials appear to be used to 
 Understand "dial" or "dials" as panel-upper-left.
 
 The panel-upper-right is scenery on the control panel.
-The description of panel-upper-right is "A small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button underneath it. The word 'DEPART' is etched into the panel surface between the lamp and button."
+The description of panel-upper-right is "A small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button directly underneath it. Directly beneath the button the word 'DEPART' has been etched into the panel[']s surface."
+[DEL The word 'DEPART' is etched into the panel surface between the lamp and button."]
 Understand "lamp" or "round button" as panel-upper-right.
 	
 The panel-bottom is scenery on the control panel.
 The description of panel-bottom is "Below the two rows of numbers and letters are sixteen toggle switches in two rows of eight switches each. The top row is labeled with the numbers 0[unicode 8211]9; the bottom row with the numbers 8 and 9 and the letters A[unicode 8211]F. All of the switches are in the Off position. To the right of the two rows of switches are two square buttons, one labeled 'SET'; the other labeled 'CLEAR'."
 Understand "switch" or "switches" or "square button" or "square buttons" or "clear button" or "set button" as panel-bottom.
+
+The panel-actions is scenery on the control panel.
+Understand "date" or "dates" as panel-actions.
+
+Changing is an action applying to one thing.
+Understand "change [something]" as changing.
+Instead of changing: say "NO CHANGE."
+
+Setting is an action applying to one thing.
+Understand "set [something]" as setting.
+Instead of setting: say "NO SETTING."
+
+Modifying is an action applying to one thing.
+Understand "modify [something]" as modifying.
+Instead of modifying: say "NO MODIFY."
+
 	
 Section 4.2 - Round Button
 

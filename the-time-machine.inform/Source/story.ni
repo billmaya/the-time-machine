@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21796 ]
+[ WORDS - 21895 ]
 
 Table of Releases
 release	notes
@@ -1249,11 +1249,9 @@ Understand "controls" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "The control panel is divided into three sections.
+		say "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven. To the right of the two rows of dials is a small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.
 
-		The upper left section appears to track time traveled using fourteen dials arranged in two rows of seven dials each. The upper right section looks like it is used to activate the time machine. It contains two items, a small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button beneath it. Between the lamp and the button the label 'DEPART' has been etched into the panel[']s surface.
-
-		The bottom section appears to be how you set a destination year. To the right of an etched 'DESTINATION' label are two rows of numbers, one above the other, each series['] number displayed in its own separate window.[no line break][if numeric-year is 1895] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket].[no line break][otherwise] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket]. The second line displays a series of numbers and letter [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] Underneath these two lines are a series switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a single square button. Somehow, a time traveler must use these switches and square buttons to set their destination year but you haven[']t a clue how.";
+		The bottom section has the word 'DESTINATION' etched into the panel above two rows of numbers, one above the other, with each individual digit displayed in its own separate window.[no line break][if numeric-year is 1895] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] and the second line displays a series of numbers and letters [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket].[no line break][otherwise] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket] and the second line displays a series of numbers and letters [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] Underneath the two lines of numbers are a series of switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a two square buttons with the words 'SET' and 'CLEAR' beside them.";
 	otherwise:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
@@ -1270,20 +1268,36 @@ The panel-bottom is scenery on the control panel.
 The description of panel-bottom is "Below the two rows of numbers and letters are sixteen toggle switches in two rows of eight switches each. The top row is labeled with the numbers 0[unicode 8211]9; the bottom row with the numbers 8 and 9 and the letters A[unicode 8211]F. All of the switches are in the Off position. To the right of the two rows of switches are two square buttons, one labeled 'SET'; the other labeled 'CLEAR'."
 Understand "switch" or "switches" or "square button" or "square buttons" or "clear button" or "set button" as panel-bottom.
 
-The panel-actions is scenery on the control panel.
-Understand "date" or "dates" as panel-actions.
+The panel-things is scenery on the control panel.
+Understand "date" or "dates" or "destination" as panel-things.
 
+Adjusting is an action applying to one thing.
+Understand "adjust [something]" as adjusting.
+Instead of adjusting: say "I don['] see how you would do that right now."
+
+Instead of adjusting the panel-things:
+	try modifying panel-things.
+	
 Changing is an action applying to one thing.
 Understand "change [something]" as changing.
-Instead of changing: say "NO CHANGE."
+Instead of changing: say "I don['] see how you would do that right now."
+
+Instead of changing the panel-things: 
+	try modifying panel-things.
 
 Setting is an action applying to one thing.
 Understand "set [something]" as setting.
-Instead of setting: say "NO SETTING."
+Instead of setting: say "I don['] see how you would do that right now."
+	
+Instead of setting the panel-things:
+	try modifying panel-things.
 
 Modifying is an action applying to one thing.
 Understand "modify [something]" as modifying.
-Instead of modifying: say "NO MODIFY."
+Instead of modifying: say "I don['] see how you would do that right now."
+		
+Instead of modifying the panel-things:
+	say "[first time]You reach out to flip some of the switches in the bottom section of the panel but hesitate, realizing that without Wells you have no idea how the time selector works. [only]Best to leave things on the control panel as they are for now."
 
 	
 Section 4.2 - Round Button

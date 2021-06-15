@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21895 ]
+[ WORDS - 21929 ]
 
 Table of Releases
 release	notes
@@ -1204,7 +1204,7 @@ Instead of examining the blueprints:
 	if the player does not have the fuse:
 		say "While you can match each drawn component to its time machine counterpart, this brings you no closer to figuring out how to make the time machine work.";
 	if the player has the fuse:
-		say "Even though the function of a majority of the components remains a mystery, you can identify one item in the plans[unicode 8212]the fuse you took from the orrery.";
+		say "Even though how the time machine functions remains a mystery, the blueprints help you locate where the one item you have[unicode 8212]the fuse from the orrery[unicode 8212]and how it fits into the control panel in the time machine.";
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
 
@@ -1242,7 +1242,7 @@ Instead of opening the time machine: say "The time machine is alread 'open.' All
 
 Section 4.1 - Control Panel
 
-The control panel is a supporter. [<- container for fuse?]
+The control panel is a container.
 The control panel is in the time machine.
 The control panel is undescribed.
 Understand "controls" as control panel.
@@ -1256,19 +1256,19 @@ Instead of examining the control panel:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
 	
-The panel-upper-left is scenery on the control panel.
+The panel-upper-left is scenery in the time machine.
 The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
 Understand "dial" or "dials" as panel-upper-left.
 
-The panel-upper-right is scenery on the control panel.
-The description of panel-upper-right is "A small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button directly underneath it. Directly beneath the button the word 'DEPART' has been etched into the panel[']s surface."
+The panel-upper-right is scenery in the time machine.
+The description of panel-upper-right is "To the right of the dials is a small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."
 Understand "lamp" or "round button" as panel-upper-right.
 	
-The panel-bottom is scenery on the control panel.
+The panel-bottom is scenery in the time machine.
 The description of panel-bottom is "Below the two rows of numbers and letters are sixteen toggle switches in two rows of eight switches each. The top row is labeled with the numbers 0[unicode 8211]9; the bottom row with the numbers 8 and 9 and the letters A[unicode 8211]F. All of the switches are in the Off position. To the right of the two rows of switches are two square buttons, one labeled 'SET'; the other labeled 'CLEAR'."
-Understand "switch" or "switches" or "square button" or "square buttons" or "clear button" or "set button" as panel-bottom.
+Understand "switch" or "switches" or "square button" or "square buttons" or "clear button" or "set button" or "numbers" as panel-bottom.
 
-The panel-things is scenery on the control panel.
+The panel-things is scenery in the time machine.
 Understand "date" or "dates" or "destination" as panel-things.
 
 Adjusting is an action applying to one thing.
@@ -1302,7 +1302,7 @@ Instead of modifying the panel-things:
 	
 Section 4.2 - Round Button
 
-The round button is a device on the control panel.
+The round button is a device in the time machine.
 The round button is switched off.
 The round button is undescribed.
 
@@ -1351,11 +1351,14 @@ Section 4.3 - Fuse
 [Writing §9.13. The past and perfect tenses]
 
 [3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]
-[See Section 1 - Blueprints to see where the blueprint examining is handled.]			
-Instead of inserting the fuse into the time machine:
+[See Section 1 - Blueprints to see where the blueprint examining is handled.]	
+
+Instead of inserting the fuse into the time machine: try inserting the fuse into the control panel.
+		
+Instead of inserting the fuse into the control panel: [time machine:]
 	if the player has the fuse:
 		if examined-blueprints is true:
-			say "Using the blueprints as a guide, you insert the fuse into the time machine in the appropriate spot.[no line break][if fuse-burnt-out is false] With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.[end if]";
+			say "Using the blueprints as a guide, you insert the fuse into the control panel in the appropriate slot.[no line break][if fuse-burnt-out is false] With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.[end if]";
 			now the fuse is in the time machine;
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";

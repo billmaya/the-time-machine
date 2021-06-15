@@ -198,14 +198,14 @@ Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with
 
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
 Test goto-workshop with "go north / test unlock-workshop / go north / flip switch."
-Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in time machine."
+Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in control panel."
 Test weena-flower with "take watch / go north / test goto-workshop / test prep-time-machine / enter / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show watch to eloi."
 			
 Test wtm with "test goto-workshop / test prep-time-machine."
 Test 802701 with "test wtm / enter / press button."
 Test eloi with "test 802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
 
-Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in time machine / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
+Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in control panel / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
 
 Chapter 7 - Release
 
@@ -1249,7 +1249,7 @@ Understand "controls" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven. To the right of the two rows of dials is a small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.
+		say "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven. To the right of the two rows of dials is a small [if the fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.
 
 		The bottom section has the word 'DESTINATION' etched into the panel above two rows of numbers, one above the other, with each individual digit displayed in its own separate window.[no line break][if numeric-year is 1895] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] and the second line displays a series of numbers and letters [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket].[no line break][otherwise] The first line displays the number [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket] and the second line displays a series of numbers and letters [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] Underneath the two lines of numbers are a series of switches labeled [bracket]0[close bracket]-[bracket]9[close bracket] and [bracket]A[close bracket]-[bracket]F[close bracket] and a two square buttons with the words 'SET' and 'CLEAR' beside them.";
 	otherwise:
@@ -1261,7 +1261,7 @@ The description of panel-upper-left is "Both rows of dials appear to be used to 
 Understand "dial" or "dials" as panel-upper-left.
 
 The panel-upper-right is scenery in the time machine.
-The description of panel-upper-right is "To the right of the dials is a small [if the fuse is in the time machine]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."
+The description of panel-upper-right is "To the right of the dials is a small [if the fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."
 Understand "lamp" or "round button" as panel-upper-right.
 	
 The panel-bottom is scenery in the time machine.
@@ -1323,7 +1323,7 @@ Instead of activating the control panel: try activating the round button.
 
 Instead of activating the round button:
 	if the player is in the time machine:
-		if the fuse is in the time machine:
+		if the fuse is in the control panel: 
 			if fuse-burnt-out is false:
 				say "You press the button on the control panel.";
 				now the button is switched on;
@@ -1333,7 +1333,7 @@ Instead of activating the round button:
 		otherwise:
 			say "You press the button but nothing happens. There must be a piece missing from the time machine.";
 	otherwise:
-		if the fuse is in the time machine:
+		if the fuse is in the control panel: 
 			if fuse-burnt-out is false:
 				say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";
 				now the time machine is nowhere;
@@ -1355,11 +1355,11 @@ Section 4.3 - Fuse
 
 Instead of inserting the fuse into the time machine: try inserting the fuse into the control panel.
 		
-Instead of inserting the fuse into the control panel: [time machine:]
+Instead of inserting the fuse into the control panel: 
 	if the player has the fuse:
 		if examined-blueprints is true:
 			say "Using the blueprints as a guide, you insert the fuse into the control panel in the appropriate slot.[no line break][if fuse-burnt-out is false] With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.[end if]";
-			now the fuse is in the time machine;
+			now the fuse is in the control panel; 
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 	
@@ -2380,7 +2380,7 @@ hint				used
 "flip switch"
 "examine blueprints"
 "enter time machine"
-"put fuse in time machine"
+"put fuse in control panel"
 "examine control panel"
 "press button"
 "exit"

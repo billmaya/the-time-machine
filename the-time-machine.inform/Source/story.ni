@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 21950 ]
+[ WORDS - 22167 ]
 
 Table of Releases
 release	notes
@@ -2037,7 +2037,7 @@ Chapter 6 - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it. From up here you can also make out a partially overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth."
+The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it. From up here you can also make out an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth."
 
 The balcony-river is scenery in the Balcony.
 The description of the balcony-river is "The river, which travels in a northeast-to-southeast direction, winds its way through the forest. Looking closely, you can see groups of people in the river and on its banks."
@@ -2319,8 +2319,9 @@ title		subtable		description
 Table of Hints
 title		subtable		description		toggle
 "How do I find the workshop door key?"		Table of Key Hints		""		hint toggle rule
-"How do I travel to 802,701 A.D."		Table of Time Machine Hints		""		hint toggle rule
-"How do I find the flower?"		Table of 802701 Hints		""		hint toggle rule
+"How do I travel to 802,701 A.D.?"		Table of Time Machine Hints		""		hint toggle rule
+"How do I find the flower?"		Table of Flower Hints		""		hint toggle rule
+"What else can I do in 802,701 A.D.?"		Table of 802701 Hints		""		hint toggle rule
 "Game Walkthrough"		Table of Walkthrough Hints		""		hint toggle rule
 
 Table of Key Hints
@@ -2347,11 +2348,30 @@ hint		used
 "Have you examined the blueprints?"
 "> put fuse in time machine."		
 
+Table of Flower Hints
+hint	used
+"Have you met the Eloi at the river bank?"	a number
+"The southeast path from the clearing to the river bank is overgrown..."		
+"So you won[']t be able to go southeast from the clearing to the river bank until..."
+"You discover the southeast path from the balcony inside the dome."
+"From the clearing > go east. go east. go south."
+"Once you can see the southeast path from the balcony you will be able to go southeast from the clearing."
+"Have you tried showing the Eloi various items from your inventory? Do they find any of them interesting?"
+"Show the Eloi the watch."
+"Weena seems to remember Wells['] watch. Have you tried showing her anything else?"
+"Show Weena the petal."
+
 Table of 802701 Hints
-hint		used
-"workshop-hint-1"		a number
-"workshop-hint-2"		
-"workshop-hint-3"	
+hint	used
+"You[']ve explored the Eloi[']s dome. You could see where the Morlocks live."	a number
+"There[']s a circular shaft in the clearing with a metal grate over it."
+"Remove the grate."
+"> enter shaft. or > get in shaft."
+"At the bottom of the shaft you can explore in any direction."
+"But you might get attacked by Morlocks and, without fire or a weapon, you might not escape."
+"But then you might through some stroke of luck."
+"You really shouldn't explore the Morlock[']s tunnels."
+	
 
 Table of Walkthrough Hints
 hint				used

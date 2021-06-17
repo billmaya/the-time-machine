@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22277 ]
+[ WORDS - 22280 ]
 
 Table of Releases
 release	notes
@@ -458,7 +458,9 @@ Understand "paper" or "papers" or "handwritten" or "handwritten papers" as libra
 
 Instead of searching the library papers: try searching the desk.
 Instead of examining the library papers: try searching the desk.
-Instead of taking the library papers: try searching the desk.
+Before taking the library papers:
+	say "That wouldn[']t be appropriate.";
+	stop the action.
 
 The chair is a thing.
 The chair is scenery in the Library.
@@ -626,7 +628,7 @@ Chapter 4 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Today's [newspaper] sits on one of the armchairs. A set of glass doors to the east lead outside to the garden and the room continues to the north."
+The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Todays [newspaper] sits on one of the armchairs. A set of glass doors to the east lead outside to the garden and the room continues to the north."
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.

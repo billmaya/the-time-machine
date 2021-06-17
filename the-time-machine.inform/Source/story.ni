@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22167 ]
+[ WORDS - 22240 ]
 
 Table of Releases
 release	notes
@@ -204,6 +204,7 @@ Test weena-flower with "take watch / go north / test goto-workshop / test prep-t
 Test wtm with "test goto-workshop / test prep-time-machine."
 Test 802701 with "test wtm / enter / press button."
 Test eloi with "test 802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
+Test to-morlocks with "test 802701 / exit / remove grate / get in shaft / go down."
 
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in control panel / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
 
@@ -2220,7 +2221,7 @@ Instead of wandering in the Bottom Shaft:
 				if a random chance of 2 in 3 succeeds:
 					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
 				otherwise:
-					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but without a weapon you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold. Shivering, you look around in horror at the naked bodies of Eloi, male and female, suspended on meat hooks, future Morlock meals. As you succumb to the numbing cold, your multiple failures, both here in 802,701 and back in 1895, drives you to madness.";
+					say "You start down the [noun] tunnel without light or map towards the sound of the nearest machinery. The light fades as you proceed down the tunnel until you are in near absolute darkness. The noise of machinery gets louder and louder with each step you take.[paragraph break]Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but, outnumbered and without a weapon, you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold in some storage room carved out of solid rock. Shivering, you look around. Surrounding you are the naked bodies of Eloi, male and female, suspended on hooks, future fodder for the Morlocks. You bang on the door in horrror but the omnipresent and overwhelming sound of machinery drowns out your screams. Exhausted, you slump against the wall and soon succumb to the freezing cold, wishing you had believed Wells from the start.";
 					end the story finally;
 				now encounter-morlocks is true;
 		otherwise:

@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22280 ]
+[ WORDS - 22293 ]
 
 Table of Releases
 release	notes
@@ -2322,7 +2322,7 @@ Book 7 - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description
-"Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com.[paragraph break]I was originally going to release this game under the pseudonym 'Billy Tenenbaum,' the name I grew up with, but my reasons for doing so are no longer valid. I apologize for any confusion this may have caused."
+"Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com.[paragraph break]I was originally going to release this game under the pseudonym 'Billy Tenenbaum,' the name I grew up with, but I changed my mind. I apologize for any confusion this may have caused.[paragraph break]The source code for this game can be found at https://github.com/billmaya/the-time-machine."
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]
 
@@ -2383,7 +2383,6 @@ hint	used
 "But then you might through some stroke of luck."
 "You really shouldn't explore the Morlock[']s tunnels."
 	
-
 Table of Walkthrough Hints
 hint				used
 "Type each of these commands at the prompt in the order they are shown (hit the Enter/Return key after typing each command)."				a number

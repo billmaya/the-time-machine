@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22240 ]
+[ WORDS - 22277 ]
 
 Table of Releases
 release	notes
@@ -71,6 +71,8 @@ Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mist
 
 After reading a command:
 resolve punctuated titles.
+
+
 
 Chapter 2 - Instead-Of Rules
 
@@ -958,6 +960,10 @@ Instead of closing the sliding panel:
 	say "You slide the panel shut, hiding the inner workings of the device.";
 	now the sliding panel is closed.
 
+Instead of inserting the fuse into the sliding panel:
+	say "You put the fuse back into the orrery.";
+	now the fuse is in the sliding panel.
+
 [> switch orrery on/off > turn orrery on/off ]
 	
 Instead of switching on the orrery: try switching on the orrery-switch.
@@ -988,7 +994,7 @@ Instead of switching on the orrery-switch:
 		now the orrery-switch is switched on;
 		now the orrery is switched on;
 	otherwise: 
-		say "It looks like the orrery won't function unless you put the fuse in the sliding panel.".
+		say "It looks like the orrery won't function unless you put the fuse back in.".
 	
 Instead of switching off the orrery-switch:
 	if the sliding panel is open:
@@ -1002,7 +1008,6 @@ Section 3 - Fuse
 	
 The fuse is a thing.
 The fuse is undescribed.
-[The fuse is nowhere.]
 The fuse is in the sliding panel.
 
 fuse-burnt-out is a truth state that varies.
@@ -1019,6 +1024,9 @@ After taking the fuse:
 		now the orrery is switched off;
 	otherwise:
 		say "Taken."
+
+Instead of inserting the fuse into the orrery:
+	try inserting the fuse into the sliding panel.
 
 Chapter 7 - Kitchen
 

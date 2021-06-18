@@ -206,7 +206,9 @@ Test weena-flower with "take watch / go north / test goto-workshop / test prep-t
 Test wtm with "test goto-workshop / test prep-time-machine."
 Test 802701 with "test wtm / enter / press button."
 Test eloi with "test 802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
+		
 Test to-morlocks with "test 802701 / exit / remove grate / get in shaft / go down."
+Test to-watchett with "go north / take pocket watch / go north / go west / go north / take poker / go north / open panel / take fuse / go north."
 
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in control panel / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
 
@@ -1449,7 +1451,7 @@ Instead of asking Watchett about "front door": say "'Much too cold to be outside
 
 Instead of asking Watchett about "pocket watch": say "'That[']s Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
 Instead of asking Watchett about "watch": say "'That[']s Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
-Instead of asking Watchett about "orrery": say "'Built by Mr. Wells. He['] quite the inventor.'"
+Instead of asking Watchett about "orrery": say "'Built by Mr. Wells. He[']s quite the inventor.'"
 Instead of asking Watchett about "petal": say "'Very pretty, I guess. But you cannot tell much about the flower from a single petal.'"
 
 Instead of asking Watchett about "work": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
@@ -1457,8 +1459,15 @@ Instead of asking Watchett about "food": say "'Getting things ready for tomorrow
 Instead of asking Watchett about "dinner": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
 Instead of asking Watchett about "supper": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
 Instead of asking Watchett about "meals": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "meal": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "herself": say "'I[']m really not one to talk about myself.'"
 
-Instead of asking Watchett about something: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
+Instead of answering Watchett that "hello": say "Mrs. Watchett acknowledges your greeting with a nod. 'Evening, Mr. Filby. Terrible about Mr. Wells, isn[']t it.'"
+
+[DEL Instead of asking Watchett about Watchett: say "'I[']m really not comfortable talking about myself.'"]
+
+Instead of asking Watchett about something: say "Mrs. Watchett thinks for a moment before replying. 'I wouldn['] know anything about that,' she says and continues her work."
+[DEL Instead of asking Watchett about something: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."]
 
 [See Writing §11.5. Conditions and question ]
 watchett-key is a truth state that varies.

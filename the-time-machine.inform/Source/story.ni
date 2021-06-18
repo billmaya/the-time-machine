@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22293 ]
+[ WORDS - 22393 ]
 
 Table of Releases
 release	notes
@@ -1464,10 +1464,7 @@ Instead of asking Watchett about "herself": say "'I[']m really not one to talk a
 
 Instead of answering Watchett that "hello": say "Mrs. Watchett acknowledges your greeting with a nod. 'Evening, Mr. Filby. Terrible about Mr. Wells, isn[']t it.'"
 
-[DEL Instead of asking Watchett about Watchett: say "'I[']m really not comfortable talking about myself.'"]
-
 Instead of asking Watchett about something: say "Mrs. Watchett thinks for a moment before replying. 'I wouldn['] know anything about that,' she says and continues her work."
-[DEL Instead of asking Watchett about something: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."]
 
 [See Writing §11.5. Conditions and question ]
 watchett-key is a truth state that varies.

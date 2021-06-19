@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22409 ]
+[ WORDS - 22493 ]
 
 Table of Releases
 release	notes
@@ -646,10 +646,10 @@ Instead of entering the armchairs:
 The newspaper is a thing.
 The newspaper is on the armchairs.
 Understand "news" or "paper" as newspaper.
-The description of the newspaper is "Today's newspaper, already read."
+The description of the newspaper is "Today's newspaper, which you[']ve already read."
 
 [> examine newspaper vs. > read newspaper Recipe §9.6. Reading Matter]
-Instead of taking the newspaper, say "You've already read it." 
+[Instead of taking the newspaper, say "You've already read it." ]
 
 Section 1 - Garden Door
 
@@ -777,6 +777,25 @@ Instead of using the poker in the Parlor:
  Writing §17.1. Understand]
 	
 [Understand "use [something] on [something]" as using.]
+
+Section 5 - Reading
+
+Instead of searching the newspaper: try taking the newspaper.
+
+Instead of taking the newspaper:
+	choose a random row from Table of Newspaper Stories;
+	say "You read '[Title entry]' about [Summary entry]."
+	[Put counter in her that lets you only read three articles before telling you that you've got to find the flower, etc.]
+
+Table of Newspaper Stories
+Title	Summary
+"Title 1"	"Summary 1"
+"Title 2"	"Summary 2"
+"Title 3"	"Summary 3"
+"Title 4"	"Summary 4"
+"Title 5"	"Summary 5"
+
+
 
 Chapter 5 - Garden
 

@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22393 ]
+[ WORDS - 22408 ]
 
 Table of Releases
 release	notes
@@ -2124,9 +2124,14 @@ eloi-couples are scenery in the River.
 The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
 Understand "couples" as eloi-couples.
 
+Section 1 - Conversation
+
 Instead of asking the Eloi about something:
 	say "Try as you might you can't make the Eloi understand what you are asking about. Some of them laugh at your strange pronunciations while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
 	[say "ASKING [noun] about [second noun]." [second noun = nothing in this example because it is not an object. See Writing §12.20. Stored actions]]
+
+Instead of telling the Eloi about something:
+	say "TBD TRY AS YOU MIGHT..."
 
 Instead of giving something to the Eloi:
 	[say "GIVE [noun] TO [second noun]."]

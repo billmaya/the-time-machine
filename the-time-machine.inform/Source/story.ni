@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22579 ]
+[ WORDS - 22703 ]
 
 Table of Releases
 release	notes
@@ -775,7 +775,7 @@ Section 5 - Newspaper
 The newspaper is a thing.
 The newspaper is on the armchairs.
 Understand "news" or "paper" as newspaper.
-The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read." [DEL Give newspaper a title]
+The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read."
 
 The newspaper-reads is a number that varies.
 The newspaper-reads is 0.
@@ -788,24 +788,22 @@ Instead of searching the newspaper: try taking the newspaper.
 
 Instead of taking the newspaper:
 	if newspaper-reads is greater than penultimate-read:
-		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and drop the paper back onto the armchair.";
+		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop the paper back onto the armchair.";
 	otherwise:
 		choose a random row from Table of Newspaper Stories;
-		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
+		say "You glance again at an article entitled '[Title entry]' about [Summary entry].";
 		now newspaper-reads is newspaper-reads + 1.
 
 Table of Newspaper Stories
 Title	Summary
-"The Railway Mystery"	"Summary 1"
-"Hereford Musical Festival"	"Summary 2"
-"The Engineering Disputes"	"Summary 3"
-"Growth Of Inland Revenue"	"Summary 4"
-"The British Museum"	"Summary 5"
-"The Sanitary Congress"	"Summary 6"
-"The St. Augustine Celebration"	"Summary 7"
-"The Engineering Disputes"	"Summary 8"
-"Alleged Blackmailing In Manchester"	"Summary 9"
-"The Indian Frontier Troubles"	"Summary 10"
+"The Railway Mystery"	"the continuing inquest into the mysterious death of a Mrs. Matilda Bryan on the London and North-western Railway at Tring"
+"The Engineering Disputes"	"an upcoming conference of the Engineering and Shipbuilding Trades on measures to implement a union decision for the reduction of working hours"
+"Growth Of Inland Revenue"	"a report from Commissioners of the Inland Revenue detailed the increase in [unicode 163]1,300,506 over the previous year"
+"The British Museum"	"attendance statistics at the Museum during the past year, the 581,906 total the highest number reached since 1890"
+"The Sanitary Congress"	"the resumption of proceedings at the Sanitary Congress in Leeds"
+"The St. Augustine Celebration"	"continued proceedings in connection with the Roman Catholic Conference commemorating the historical landing of St. Augustin and his companions"
+"Alleged Blackmailing In Manchester"	"the charging of managing directors of The Financial Post with threatening to publish false and defamatory information about the governing director of 'Commerce Limited'"
+"The Indian Frontier Troubles"	"two English officers killed and one severly wounded by some tribe between the Rambat Pass and Danesh Khel in India"
 
 
 

@@ -102,6 +102,7 @@ Section 4 - Attack
 
 Instead of attacking someone: say "Violence [aren't] the answer here, especially given your years of jurisprudence."
 
+
 Chapter 2 - Before Rules
 
 Section 1 - Listening
@@ -405,6 +406,8 @@ The printed name of workshop-door is "workshop door".
 Instead of examining the workshop-door:
 	say "The door leading to Wells[apostrophe] workshop. The door is [if workshop-door is open]open[otherwise]closed[end if]."
 
+
+
 Chapter 3 - Library
 
 The Library is a room. 
@@ -690,6 +693,12 @@ Understand "coal" or "pile" as coals.
 The flames are scenery in the parlor. "Hypnotic and mesmerizing if you stare too long at them."
 Understand "flame" as flames.
 
+Instead of touching the fire: try touching the flames.
+Instead of touching the flames: say "You briefly warm your hands at the fire."
+
+Instead of tasting the fire: try tasting the flames.
+Instead of tasting the flames: say "The warmth on your face is quite pleasant after the cold wind outside."
+
 The ashes is scenery in the parlor. "Embers that have cooled down, piling up beneath the grate."
 Understand "ash" as ashes.
 
@@ -701,6 +710,9 @@ Using is an action applying to one touchable thing. [see Writing 17.1]
 
 Understand the command "tend" as something new. [> tend the fire]
 Understand "tend [something]" as using.
+
+Understand the command "stir" as something new.
+Understand "stir [something]" as pushing.
 
 Instead of using the fire:
 	if the player has the poker:

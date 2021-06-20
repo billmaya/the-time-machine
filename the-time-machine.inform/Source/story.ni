@@ -3,10 +3,10 @@ The story author is "Bill Maya".
 The story headline is "A Text Adventure".
 The story genre is "Science Fiction".
 The release number is 3.
-The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
+The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22971 ]
+[ WORDS - 22963 ]
 
 Table of Releases
 release	notes
@@ -214,9 +214,7 @@ Test walkthrough with "take pocket watch / go north / go north / go west / go no
 
 Chapter 7 - Release
 
-[Release along with cover art.]
-Release along with an interpreter.
-[Release along with an interpreter and the source text.]
+Release along with cover art ("The Time Machine") and an interpreter.
 
 Book 3 - 1895
 

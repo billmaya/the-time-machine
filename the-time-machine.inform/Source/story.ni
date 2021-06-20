@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22703 ]
+[ WORDS - 22764 ]
 
 Table of Releases
 release	notes
@@ -683,7 +683,7 @@ Instead of using the fireplace, say "That's not something you can use but just e
 Section 3 - Fire
 
 The fire is a thing.
-The fire is in the parlor. [fireplace.]
+The fire is in the parlor. 
 The fire is undescribed.
 The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn, the embers and ashes fall through the grate onto the brick."
 

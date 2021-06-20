@@ -2388,7 +2388,7 @@ Book 7 - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description
-"Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com.[paragraph break]I was originally going to release this game under the pseudonym 'Billy Tenenbaum,' the name I grew up with, but I changed my mind. I apologize for any confusion this may have caused.[paragraph break]The source code for this game can be found at https://github.com/billmaya/the-time-machine."
+"Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com.[paragraph break]I was originally going to release this game using the pseudonym 'Billy Tenenbaum,' the name I grew up with, but I changed my mind. I apologize for any confusion this may cause.[paragraph break]The source code for this game can be found at https://github.com/billmaya/the-time-machine."
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]
 

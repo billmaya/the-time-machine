@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22764 ]
+[ WORDS - 22964 ]
 
 Table of Releases
 release	notes
@@ -406,6 +406,21 @@ The printed name of workshop-door is "workshop door".
 Instead of examining the workshop-door:
 	say "The door leading to Wells[apostrophe] workshop. The door is [if workshop-door is open]open[otherwise]closed[end if]."
 
+[ Recipe §7.5. Combat and Death, Example Lanista 2]
+Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreak" as something new.
+Attacking it with is an action applying to one visible thing and one carried thing. 
+Understand "attack [something] with [something preferably held]" as attacking it with.
+Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreak" as "attack".
+
+Hitting it with is an action applying to one visible thing and one carried thing. 
+Understand "hit [something] with [something preferably held]" as hitting it with.
+
+Prying it with is an action applying to one visible thing and one carried thing.
+Understand "pry [something] with [something preferably held]" as prying it with.
+Instead of prying the workshop-door with poker: try attacking the workshop-door with poker.
+
+Instead of attacking the workshop-door with the poker: say "Even if you could somehow manage to open the workshop door this way, you would damage the woodwork beyond repair." ["NO NO NO."]
+Instead of attacking the workshop-door with something: say "Violence isn't the answer here."
 
 
 Chapter 3 - Library

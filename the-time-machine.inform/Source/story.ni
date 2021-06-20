@@ -2,16 +2,17 @@ The story title is "The Time Machine".
 The story author is "Bill Maya".
 The story headline is "A Text Adventure".
 The story genre is "Science Fiction".
-The release number is 2.
+The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22969 ]
+[ WORDS - 22971 ]
 
 Table of Releases
 release	notes
 "1"	"beta-1 release"
 "2"	"beta-2 release"
+"3"	"parsercomp-2021 release"
 
 Book 1 - Beginning The Story
 
@@ -42,7 +43,7 @@ Wells forgets whatever he was looking for in his pockets and struggles against t
 
 Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[apostrophe]re professionals, used to dealing patients like this all the time. They[apostrophe]re not being as rough with him as they look.'"
 
-After printing the banner text, say "[line break][italic type]First time players can type 'about' or 'help' and then hit the Enter/Return key at any time."
+After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
 
 Chapter 1 - Missing Item Description Check
 
@@ -71,8 +72,6 @@ Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mist
 
 After reading a command:
 resolve punctuated titles.
-
-
 
 Chapter 2 - Instead-Of Rules
 

@@ -6,7 +6,7 @@ The release number is 2.
 The story description is "Did your good friend Wells really time travel into the future to the year of 802,701 A.D. to the age of Eloi and Morlocks? Only you can get investigate his story and determine if it is the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22964 ]
+[ WORDS - 22969 ]
 
 Table of Releases
 release	notes
@@ -211,7 +211,7 @@ Test eloi with "test 802701 / exit / go east / go east / go south / go north / g
 Test to-morlocks with "test 802701 / exit / remove grate / get in shaft / go down."
 Test to-watchett with "go north / take pocket watch / go north / go west / go north / take poker / go north / open panel / take fuse / go north."
 
-Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / examine blueprints / enter time machine / put fuse in control panel / examine control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi watch / show weena petal / go northwest / enter time machine / press button / exit / show flower to humboldt."
+Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / search workbench / examine blueprints / enter time machine / examine control panel / put fuse in control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit / show humboldt the flower."
 
 Chapter 7 - Release
 
@@ -366,7 +366,7 @@ Section 9 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.
-Understand "timepiece" or "chronometer" or "mechanism" or "hands" as pocket watch.
+Understand "timepiece" or "chronometer" or "hands" or "stem" as pocket watch.
 
 The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that Wells['] Weena was particularly enchanted with its moving hands and its winding mechanism."
 	
@@ -2314,7 +2314,7 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved to have found you and annoyed at something. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be the contraption Wells was going on about.'[end if][line break]";
+	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved to have found you and annoyed at something. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be the contraption Wells was going on about.'[end if]";
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 
@@ -2477,6 +2477,7 @@ hint				used
 "unlock workshop door with key"
 "go north"
 "flip switch"
+"search workbench"
 "examine blueprints"
 "enter time machine"
 "put fuse in control panel"
@@ -2490,12 +2491,12 @@ hint				used
 "go west"
 "go west"
 "go southeast"
-"show eloi watch"
-"show weena petal"
+"show eloi the watch"
+"show weena the petal"
 "go northwest"
 "enter time machine"
 "press button"
 "exit"
-"show flower to humboldt"
+"show humboldt the flower"
 
 

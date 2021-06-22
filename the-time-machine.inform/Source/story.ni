@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22963 ]
+[ WORDS - 23097 ]
 
 Table of Releases
 release	notes
@@ -1580,8 +1580,15 @@ Section 1 - Conversation
 
 [Telling]
 
-Instead of telling Humboldt about something: [Writing §7.6. Reading and talking]
-	try asking humboldt about it.
+[Commented out this line because it prevented the "follow Patience rules" below from being applied]
+[Instead of telling Humboldt about something: try asking humboldt about it.] [Writing §7.6. Reading and talking]
+
+[Replaced it with specific things to tell Humbolt about ]
+Instead of telling Humboldt about "wells": try asking Humboldt about it.
+Instead of telling Humboldt about "diagnosis": try asking Humboldt about it.
+Instead of telling Humboldt about "examination": try asking Humboldt about it.
+Instead of telling Humboldt about "workshop": try asking Humboldt about it.
+Instead of telling Humboldt about "time machine": try asking Humboldt about it.
 
 [Asking]
 		
@@ -1589,13 +1596,13 @@ Instead of asking Humboldt about "wells/madman/patient/lunatic":
 	if humboldt-endgame-begins is false:
 		say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'";
 	otherwise:
-		say "'He's sedated and resting."
+		say "'He's sedated and resting.'"
 
 Instead of asking Humboldt about "diagnosis": 
 	if humboldt-endgame-begins is false:
 		say "'Too early to tell.'";
 	otherwise:
-		say "Unless you found some new evidence it doesn't look good for Wells. He still believes he travelled to the year 802701."
+		say "Unless you found some new evidence it doesn't look good for Wells. He still believes he travelled to the year 802,701 A.D."
 
 Instead of asking Humboldt about "examination": 
 	if humboldt-endgame-begins is false:
@@ -1607,7 +1614,8 @@ Instead of asking Humboldt about "workshop/shop":
 	if humboldt-endgame-begins is false:
 		say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'";
 	otherwise:
-		say "Humboldt looks around the workshop, poking into odd corners. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]some papers on the workbench[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."
+		say "Humboldt looks around the workshop. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]the workbench[or]the time machine[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."
+		[say "Humboldt looks around the workshop, poking into odd corners. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]some papers on the workbench[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."]
 
 Instead of asking Humboldt about "time machine": 
 	if humboldt-endgame-begins is false:
@@ -1659,7 +1667,7 @@ Instead of asking Humboldt about "flower":
 	now endgame-success is true.
 
 [Writing §7.6. Reading and talking]
-After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry]"
+After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry][line break]"
 
 [16.13 - Topic columns]
 Table of Humboldt Endgame Responses
@@ -1668,10 +1676,10 @@ topic	reply
 "key"	"'Obviously it's the workshop key since we're standing in the bloody place.'"
 "blueprints"	"'Your guess is as good as mine.'"
 "fuse"	"'Looks like it fits into that contraption Wells has constructed.'"
-"weena"	"Figment of Wells[apostrophe] imagination I assume."
-"eloi"	"Figment of Wells[apostrophe] imagination I assume."
-"morlocks"	"Figment of Wells[apostrophe] imagination I assume."
-"time travel"	"Science fiction if you ask me."
+"weena"	"'Figment of Wells[apostrophe] imagination I assume.'"
+"eloi"	"'Figment of Wells[apostrophe] imagination I assume.'"
+"morlocks"	"'Figment of Wells[apostrophe] imagination I assume.'"
+"time travel"	"'Science fiction if you ask me.'"
 
 After telling Humboldt about "petal":
 	say "'I know all that. But did you find the rest of the flower?'"
@@ -1714,11 +1722,11 @@ After telling Humboldt about "Morlocks":
 	follow Patience rules.
 
 After telling Humboldt about "river":
-	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
+	say "Humboldt listens to you recount your experience at the river with a [patience of Humboldt] look on his face.";
 	follow Patience rules.
 
 After telling Humboldt about "sphinx":
-	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
+	say "Humboldt listens to you recount your description of the clearing and the sphinx with a [patience of Humboldt] look on his face.";
 	follow Patience rules.
 
 Section 2 - Patience

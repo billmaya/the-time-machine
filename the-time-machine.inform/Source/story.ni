@@ -815,7 +815,7 @@ Instead of taking the newspaper:
 		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop the paper back onto the armchair.";
 	otherwise:
 		choose a random row from Table of Newspaper Stories;
-		say "You glance again at an article entitled '[Title entry]' about [Summary entry].";
+		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
 		now newspaper-reads is newspaper-reads + 1.
 
 Table of Newspaper Stories

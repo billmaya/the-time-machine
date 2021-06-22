@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23133 ]
+[ WORDS - 23101 ]
 
 Table of Releases
 release	notes
@@ -1841,8 +1841,6 @@ Part 1 - Settings
 
 Chapter 1 - Clearing
 
-[TBD Substituting different article in clearing description first time or when player in time machine - The time machine has 'arrived' in a/A mid-sized, man-made clearing... or rewrite description ]
-
 can-go-clearing-to-river is a truth state that varies.
 can-go-clearing-to-river is false.
 
@@ -2032,7 +2030,7 @@ The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 Understand "dome" as Inside Dome.
 
-The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminating the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. Mosaic [murals] cover the walls. There is an small archway to the south and the main exit to the west."
+The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminating the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. [Murals] cover the walls. There is an small archway to the south and the main exit to the west."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 

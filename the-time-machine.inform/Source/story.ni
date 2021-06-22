@@ -820,13 +820,13 @@ Instead of taking the newspaper:
 
 Table of Newspaper Stories
 Title	Summary
-"The Railway Mystery"	"the continuing inquest into the mysterious death of a Mrs. Matilda Bryan on the London and North-western Railway at Tring"
-"The Engineering Disputes"	"an upcoming conference of the Engineering and Shipbuilding Trades on measures to implement a union decision for the reduction of working hours"
-"Growth Of Inland Revenue"	"a report from Commissioners of the Inland Revenue detailed the increase in [unicode 163]1,300,506 over the previous year"
-"The British Museum"	"attendance statistics at the Museum during the past year, the 581,906 total the highest number reached since 1890"
+"The Railway Mystery"	"the continuing inquest into the mysterious death of a Mrs. Matilda Bryan on the London and North Western Railway at Tring"
+"The Engineering Disputes"	"an upcoming conference of the Engineering and Shipbuilding Trades on implementing a union decision on the reduction of working hours"
+"Growth Of Inland Revenue"	"a report from Commissioners of the Inland Revenue detailed the increase of [unicode 163]1,300,506 in revenue over the previous year"
+"The British Museum"	"the annual attendance at the Museum during the past year, the total of 581,906 the highest number since 1890"
 "The Sanitary Congress"	"the resumption of proceedings at the Sanitary Congress in Leeds"
 "The St. Augustine Celebration"	"continued proceedings in connection with the Roman Catholic Conference commemorating the historical landing of St. Augustin and his companions"
-"Alleged Blackmailing In Manchester"	"the charging of managing directors of The Financial Post with threatening to publish false and defamatory information about the governing director of 'Commerce Limited'"
+"Alleged Blackmailing In Manchester"	"charges levels against the two managing directors of The Financial Post, who threatened to publish false and defamatory information about the governing director of 'Commerce Limited'"
 "The Indian Frontier Troubles"	"two English officers killed and one severly wounded by some tribe between the Rambat Pass and Danesh Khel in India"
 
 

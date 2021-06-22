@@ -982,7 +982,7 @@ Instead of examining the orrery-mechanism:
 	if the sliding panel is closed:
 		try opening the sliding panel;
 	otherwise:
-		say "The inner mechanism of the orrery is extremely complicated[if the fuse is in the sliding panel]. The only thing you recognize is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense matrix of gears, slotted pin followers, shafts, and tubes that calculate the orbits of the planets."
+		say "The inner mechanism of the orrery is extremely complicated[if the fuse is in the sliding panel]. The only thing recognizable is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense collection of gears, slotted pin followers, shafts, and tubes used to calculate the orbits of the planets."
 
 [^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
 

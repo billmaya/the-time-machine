@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23128 ]
+[ WORDS - 23133 ]
 
 Table of Releases
 release	notes
@@ -2024,7 +2024,7 @@ Inside from the Domed Building is Inside Dome.
 
 Understand "concrete" or "pantheon" or "columned" or "columns" or "portico" or "entrance" as Domed Building.
 
-The description of the Domed Building is "Before you is a weathered concrete building resembling the Pantheon in Rome. The entrace to the building is through a columned portico to the east."
+The description of the Domed Building is "Before you is a weathered concrete building with a domed top that vaguely resembles the Pantheon in Rome. The entrace to the building is through a columned portico to the east."
 
 Chapter 5 - Inside Dome
 

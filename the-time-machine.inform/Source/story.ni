@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23196 ]
+[ WORDS - 23204 ]
 
 Table of Releases
 release	notes
@@ -1872,7 +1872,7 @@ Instead of going down in the Clearing:
 Section 1 - Scenery
 
 The statue is scenery in the Clearing.
-The description of the statue is "The sightless eyes in the weather-worn white marble face of a gigantic reclining sphinx stare down at you. You can't be sure but you would swear that there's the faint shadow of a smile on its lips, inhuman and unsympathetic."
+The description of the statue is "The sightless eyes in the weather-worn white marble face of a gigantic reclining sphinx stare down at you. You can't be sure but you would swear that there's the faint shadow of a smile on its lips, inhuman and unsympathetic." [TBD Rewrite this description]
 Understand "sphinx" or "carved figure" or "face" or "marble" as statue.
 
 The clearing bushes are a thing.
@@ -1910,11 +1910,11 @@ Understand the command "remove" as "take".
 
 Instead of taking the metal grate:
 	if the metal grate is on the circular shaft in the Clearing:
-		say "Grabbing the grate through its openings, you brace yourself against the side of the shaft and leverage the grate up and out of its resting position. The grate is extremely heavy but you manage to manuever it to one side and drop it onto the ground, narrowly missing your feet.";
+		say "Grabbing the grate through its openings, you brace yourself against the side of the shaft and manage to leverage it up and out of its resting position. It[']s extremely heavy but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
 		move the metal grate to the Clearing;
 		now the metal grate is described;
 	otherwise:
-		say "No way, it is way too heavy to try and move a second time."
+		say "It is way too heavy to try and move a second time from its position on the ground."
 
 Climbing into is an action applying to one touchable thing.
 Understand "climb in [something]" as climbing into.

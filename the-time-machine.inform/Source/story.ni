@@ -2041,7 +2041,7 @@ The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 Understand "dome" as Inside Dome.
 
-The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminating the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. [Murals] cover the walls. There is an small archway to the south and the main exit to the west."
+The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminating the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. Murals cover the walls. There is an small archway to the south and the main exit to the west."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 

@@ -1998,7 +1998,7 @@ Instead of exiting in the Top Shaft:
 	now the player is in the Clearing.
 	
 The ladder is a thing.
-The ladder is a backdrop. It is in the Top Shaft and Bottom Shaft.
+The ladder is a backdrop. It is in the Clearing, Top Shaft and Bottom Shaft.
 The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, leading down into the gloom."
 
 Chapter 3 - Bottom Shaft

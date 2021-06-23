@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23101 ]
+[ WORDS - 23223 ]
 
 Table of Releases
 release	notes
@@ -229,22 +229,22 @@ The printed name of Woking Street is "68 Woking Street".
 
 Section 1 - Area
 
-	The area is scenery in Woking Street.
-	The area is a supporter.
-	The description of the area is "[if watchett-key is false]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise if player has the key]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise]The glint of something metallic catches your eye.[end if]"
+The area is scenery in Woking Street.
+The area is a supporter.
+The description of the area is "[if watchett-key is false]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise if player has the key]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise]The glint of something metallic catches your eye.[end if]"
 
-	Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" as area.
+Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" as area.
 
-	[> search street -> YCST -> https://bit.ly/3tvvi3z]
+[> search street -> YCST -> https://bit.ly/3tvvi3z]
 
-	The street-search is scenery in Woking Street. ["The street is scenery in Working Street" won't compile]
-	Understand "street" as street-search.
-	The printed name of street-search is "street".
+The street-search is scenery in Woking Street. ["The street is scenery in Working Street" won't compile]
+Understand "street" as street-search.
+The printed name of street-search is "street".
 
-	Instead of examining the street-search: try searching the area.
-	Instead of searching the street-search: try searching the area.
+Instead of examining the street-search: try searching the area.
+Instead of searching the street-search: try searching the area.
 
-	[> search area]
+[> search area]
 
 Instead of searching the area:
 	if the player does not have metal key:
@@ -279,10 +279,19 @@ Section 2 - Scenery
 	Understand "park" or "open space" or "municipal park" or "intersection" or "urban park" or "crossroads" or "main street" or "common" or "greenery" or "green park" as the square.
 
 	The houses are scenery in Woking Street.
-	The description of houses are "Nothing much has changed since you last glanced around.[first time] Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights have gone off as those residents have gone back to sleep.[only]"
+	The printed name of houses are "houses in the cul-de-sac".
+	The description of houses are "[first time]Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. [paragraph break][only]Nothing much has changed since you last glanced around. [first time]Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights have gone off as those residents have gone back to sleep.[only]"
 	
-	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "residences" as houses.
+	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "windows" or "lit windows" [or "residences" or "other residences"] as houses.
+		
+	The wells-house is scenery in Woking Street.
+	The printed name of wells-house is "Wells['] house".
+	The description of wells-house is "68 Woking Street, where your friend Wells has lived for many years, which you have visited many times as friend and solicitor."
+	Understand "building" [or "residence"] or "house" as wells-house.
 
+	[When examining, having "residence" or "residences" or "other residences" as synonyms 
+	made parser ask if you were examining houses or well-house so commented them out for now.]
+	
 Section 3 - Wandering
 
 	Going west in Woking Street is wandering.
@@ -307,6 +316,8 @@ Instead of going north in Woking Street:
 		With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears.";
 		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
 		now the ambulance is nowhere;
+		now the orderlies are nowhere;
+		now the driver is nowhere;
 		now the player is carrying the petal;
 		try looking;
 	otherwise:
@@ -1743,7 +1754,7 @@ Chapter 3 - Orderlies
 
 The orderlies are people in Woking Street.
 The orderlies are undescribed.
-Understand "attendant" as orderlies.
+Understand "attendant" or "attendants" as orderlies.
 	
 Instead of examining the orderlies: say "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
 

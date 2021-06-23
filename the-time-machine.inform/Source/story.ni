@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23240 ]
+[ WORDS - 23196 ]
 
 Table of Releases
 release	notes
@@ -2041,7 +2041,7 @@ The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 Understand "dome" as Inside Dome.
 
-The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminating the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. Murals cover the walls. There is an small archway to the south and the main exit to the west."
+The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminating the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. Circling the entire wall of the dome except for the exits is a series of murals. There is an small archway to the south and the main exit to the west."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 
@@ -2105,21 +2105,20 @@ Instead of smelling the well-water: say "It smells fine."
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.
-The description of the murals are "Circling the entire dome wall except for the exits, this pictorial cyclorama depicts a series of day-to-night pastoral scenes. 
 
-Each panel has a title below it written in some script resembling Arabic and illustrates a specific idylic activity[unicode 8212]gathering fruit, bathing in the river, wandering the countryside, eating, dancing, and other questionable pastimes[unicode 8212]being performed by a group of people who must be Wells['] Eloi.
-	
-In one or two of the dusk scenes you can make out small shadowy silhouettes spying on the Eloi[']s foreground activity, hidden in background undergrowth and shadows[unicode 8212]Wells['] Morlocks."
+The description of the murals are "Each panel is a mosaic devoted to a specific pastoral scene being performed by a group of people who must be Wells['] Eloi[unicode 8212]gathering fruit, bathing and swimming in a river, wandering the countryside, eating, dancing, and other questionable activities.
+
+In one or two of the dusk scenes you can make out small shadowy silhouettes hidden in the background undergrowth and shadows, spying on the Eloi[']s foreground activity[unicode 8212]Wells['] Morlocks."
 
 Understand "cyclorama" or "mural" or "panel" or "panels" as murals.
 	
 Before taking the murals:
-	say "While your knowledge of Latin is sufficient for your legal work, the linguistic skills required to decypher each mural[']s title is quite beyond you.";
+	say "They[']re pictures. You look at them, no reading necessary.";
 	stop the action.
 
 The mosaics are a thing.
 The mosaics are scenery in the Inside Dome.
-The description of the mosaics are "Each mural is composed of thousands of small colored pieces of square stone, tile, and glass arranged by the original artisans into individual scenes. Unfortunately, pieces have fallen out in certain places, showing that the work has not been maintained as it should have been by future generations."
+The description of the mosaics are "Each panel is composed of thousands of small square pieces of colored stone, tile, and glass best viewed at a slight distance. In certain places, individual pieces have fallen out unmaintained by future generations."
 Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored pieces" or "pieces" as mosaics.
 
 

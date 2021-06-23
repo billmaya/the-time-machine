@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23223 ]
+[ WORDS - 23240 ]
 
 Table of Releases
 release	notes
@@ -241,7 +241,7 @@ The street-search is scenery in Woking Street. ["The street is scenery in Workin
 Understand "street" as street-search.
 The printed name of street-search is "street".
 
-Instead of examining the street-search: try searching the area.
+Instead of examining the street-search: say "The falling snow covers the entire street evenly except for the area immediately in front of you." [try searching the area.]
 Instead of searching the street-search: try searching the area.
 
 [> search area]

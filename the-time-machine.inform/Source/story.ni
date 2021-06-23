@@ -1883,7 +1883,7 @@ The printed name of clearing bushes is "bushes".
 The treetops are a thing.
 The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
 Understand "forest" or "trees" or "foliage" or "tree" as treetops.
-The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of parts of the river below."
+The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of the river and the clearing below and the overgrown path between them."
 
 The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
@@ -2124,17 +2124,17 @@ Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored piec
 
 Chapter 6 - Balcony
 
+[Treetops, foliage, and forest are handled in the Clearing]
+
 The Balcony is a room.
 The Balcony is south of Inside Dome.
 The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it. From up here you can also make out an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth."
 
 The balcony-river is scenery in the Balcony.
-The description of the balcony-river is "The river, which travels in a northeast-to-southeast direction, winds its way through the forest. Looking closely, you can see groups of people in the river and on its banks."
+The description of the balcony-river is "The river winds its way through the forest below you. Looking closely, you can see groups of people in the river and on its banks."
 The printed name of balcony-river is "river".
 
 Understand "river" as balcony-river.
-
-[Treetops, foliage, and forest are handled in the Clearing]
 
 Chapter 7 - River Bank
 

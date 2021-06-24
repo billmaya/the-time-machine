@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23170 ]
+[ WORDS - 23169 ]
 
 Table of Releases
 release	notes
@@ -1754,9 +1754,8 @@ Chapter 3 - Orderlies
 
 The orderlies are people in Woking Street.
 The orderlies are undescribed.
+The description of the orderlies is "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
 Understand "attendant" or "attendants" as orderlies.
-	
-Instead of examining the orderlies: say "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
 
 Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
 

@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23178 ]
+[ WORDS - 23170 ]
 
 Table of Releases
 release	notes
@@ -435,12 +435,12 @@ Chapter 3 - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "Hundreds of books on a variety of subjects fill the floor-to-ceiling [shelves] on all the walls. A [desk] and a leather [chair] positioned near the drawn [curtains] are the only things in the room besides the [books], [periodicals], and a set of [encyclopaedia] on the shelves. The room continues to the north and the entryway is back east."
+The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls. The room continues to the north and the entryway is back east."
 
 The shelves are a thing.
 The shelves are scenery in the Library.
 The shelves are a supporter.
-The description of shelves is "Holding books and periodicals of all types and a set of encyclopaedia."
+The description of shelves is "Holding books and periodicals of all types as well as a set of encyclopaedia."
 Understand "shelf" as shelves.
 
 [Writing §4.5. Kinds of value]

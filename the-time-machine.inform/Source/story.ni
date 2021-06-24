@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23165 ]
+[ WORDS - 23160 ]
 
 Table of Releases
 release	notes
@@ -114,7 +114,7 @@ Before listening:
 		say "Nature sounds mixed in with the sound of the wind through the trees.";
 		stop the action;
 	else if the player is in the Top Shaft: 
-		say "The faint sounds of machinery from below mingle with the natural sounds of the clearing.";
+		say "The faint sounds of machinery mingle with the natural sounds of the clearing.";
 		stop the action;
 	else if the player is in the Bottom Shaft:
 		say "The sound of machinery is louder now and seems to come from every direction.";
@@ -1989,7 +1989,7 @@ Chapter 2 - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
-The description of Top Shaft is "You're hanging at the the top of the shaft on the ladder leading down. Below, the faint sound of rhythmic machinery rises from the darkness. Exiting the shaft will put you back in the Clearing."
+The description of Top Shaft is "You[']re hanging at the top of the shaft on the ladder leading down. Faint sounds of machinery rise from the darkness below. Exiting the shaft will put you back in the clearing."
 
 The printed name of Top Shaft is "Top of the Shaft"
 

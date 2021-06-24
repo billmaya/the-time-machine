@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23160 ]
+[ WORDS - 23178 ]
 
 Table of Releases
 release	notes
@@ -2143,10 +2143,11 @@ The River is southeast of the Clearing.
 The description of the River Bank is "[first time]The southeast path winds its downhill through dense undergrowth. [only]After a brief hike you emerge from the woods onto the northwest bank of a sizeable river."
 
 The river-river is scenery in the River.
-The description of the river-river is "The river curves its way through the forest from the northeast to the southwest."
+The description of the river-river is "The river curves its way through the forest from the northeast to the southwest. The rushing water looks cool and inviting."
 The printed name of river-river is "river".
 Understand "river" as river-river.
 
+[Why does this description not display when you >examine water ?]
 The river-water is scenery in the River Bank.
 The description of the water is "The rushing water looks cool and inviting."
 The printed name of river-water is "water".

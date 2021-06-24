@@ -35,7 +35,7 @@ Wells struggles against the efforts of the two orderlies who are dragging him to
 
 Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we believe you. You just had a terrible shock; you need to rest after all these...time traveling adventures of yours. Plenty of time to sort it all out after you[apostrophe]ve had a bit of a break. Nothing to worry about.'
 
-You look at the doctor and back at Wells, not knowing who to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[apostrophe]ve just heard from Wells[apostrophe] own mouth. Morlocks. Eloi. Time travel. It sounds fantastical.
+You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[apostrophe]ve just heard from Wells[apostrophe] own mouth. Morlocks. Eloi. Time travel. It sounds fantastical.
 
 'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[apostrophe]ll find...get your bloody hands off of me!' The orderlies have grabbed Wells a second time 'No, damn you! Let me go!' 
 

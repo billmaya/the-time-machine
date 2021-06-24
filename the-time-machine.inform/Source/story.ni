@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23204 ]
+[ WORDS - 23165 ]
 
 Table of Releases
 release	notes
@@ -1859,7 +1859,7 @@ Every turn:
 	if the player is in the Balcony, now can-go-clearing-to-river is true.
 
 The Clearing is a room. 
-The description of the Clearing is "A midsized clearing dominated by a circular shaft in the center that rises about three feet above the ground. Above your head, almost totally obscured by the treetops, the face of a large statue looks down on you. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] To the southeast, looking closely now, you can just make out the overgrown path that you saw from the balcony, now that you know where it is.[end if]"
+The description of the Clearing is "A midsized clearing dominated by a circular shaft in the center that rises about three feet above the ground. The face of a large statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] Now that you know it exists, you can just make out the overgrown path that you saw from the balcony leading southeast.[end if]"
 
 Inside from the Clearing is Top Shaft.
 
@@ -1871,28 +1871,28 @@ Instead of going down in the Clearing:
 
 Section 1 - Scenery
 
-The statue is scenery in the Clearing.
-The description of the statue is "The sightless eyes in the weather-worn white marble face of a gigantic reclining sphinx stare down at you. You can't be sure but you would swear that there's the faint shadow of a smile on its lips, inhuman and unsympathetic." [TBD Rewrite this description]
-Understand "sphinx" or "carved figure" or "face" or "marble" as statue.
-
-The clearing bushes are a thing.
-The clearing bushes are scenery in the Clearing.
-The description of the clearing bushes are "Overgrown, the bushes make it difficult to see where each path leads."
-The printed name of clearing bushes is "bushes".
-
-The treetops are a thing.
-The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
-Understand "forest" or "trees" or "foliage" or "tree" as treetops.
-The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of the river and the clearing below and the overgrown path between them."
-
-The undergrowth is a thing.
-The undergrowth is scenery in the Clearing.
-The description of the undergrowth is "You do not look forward to trying to make your way through that tangled undergrowth."
-
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
 The circular shaft is a supporter.
 Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of some unknown metal. [if metal grate is on circular shaft]A circular grate rests on the top of the shaft, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
+
+The statue is scenery in the Clearing.
+The description of statue is "The sightless eyes of the weather-worn marble face stare down at you, inhuman and unsympathetic."
+Understand "sphinx" or "carved figure" or "face" or "marble" as statue.
+
+The treetops are a thing.
+The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
+Understand "forest" or "trees" or "tree" or "foliage" as treetops.
+The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of the river and the clearing below and the overgrown path between them."
+
+The clearing bushes are a thing.
+The clearing bushes are scenery in the Clearing.
+The description of the clearing bushes are "The overgrown bushes make it difficult to see what lies beyond the clearing."
+The printed name of clearing bushes is "bushes".
+
+The undergrowth is a thing.
+The undergrowth is scenery in the Clearing.
+The description of the undergrowth is "The undergrowth would make passage in any direction but east difficult."
 
 Section 2 - Metal Grate
 
@@ -1901,7 +1901,7 @@ The metal grate is portable.
 The metal grate is on the circular shaft.
 The metal grate is a supporter.
 The metal grate is undescribed.
-The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of metal welded together in a waffle pattern. Despite the rust, it looks extremely sturdy and heavy.[if the metal grate is not on the circular shaft] The grate is lying on the ground next to the open shaft.[end if]"
+The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal grate is not on the circular shaft] The grate is lying on the ground next to the open shaft.[end if]"
 
 [ > Remove grate ]
 

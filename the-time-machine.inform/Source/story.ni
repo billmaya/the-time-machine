@@ -848,7 +848,7 @@ Chapter 5 - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
-The description of the Garden is "[first time]What Wells calls his 'sunken urban wilderness' is hidden underneath a thick blanket of undisturbed [snow] that continues to fall from the sky.[only] Snow-covered vegetation[unicode 8212]hollyhocks, larkspurs, snapdragons, and other flora[unicode 8212]surrounds you on all sides. A [gate] set into the north wall looks out onto a snow-covered [street]. To the south, the dark panes of Wells['] workshop [windows] overlook a snow-covered [bench] nestled among some hibernating rhodedendron [bushes]. The parlor doors are to the west."
+The description of the Garden is "Vegetation covered in snow surrounds you on all sides. A gate set into the north wall looks out onto a snow-covered side street. To the south, the dark panes of Wells['] workshop windows overlook a bench nestled among some hibernating rhodendron bushes. The parlor doors are to the west."
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 
@@ -862,7 +862,7 @@ The printed name of garden walls is "walls".
 
 The snow is a thing.
 The snow is backdrop. It is in Woking Street and the Garden.
-The description of snow is "Microscopic flakes of all shapes and sizes [one of]float [or]whirl [or]drift [purely at random]down to cover everything."
+The description of snow is "Microscopic flakes of all shapes and sizes [one of]float [or]whirl [or]drift [purely at random]down to continue covering everything."
 Understand "snowfall" as snow.
 
 Instead of taking snow:
@@ -871,6 +871,8 @@ Instead of taking snow:
 The gate is a thing.
 The gate is scenery in the Garden.
 The description of the gate is "The gate is locked and looks out onto a quiet side street."
+
+Instead of going north in the Garden: try examining the gate.
 
 Before opening the gate:
 	say "The gate is locked.";
@@ -887,10 +889,13 @@ The bench is a supporter.
 The bench is enterable.
 The description of the bench is "It[']s a bench, covered in snow but still just a bench."
 
+Instead of going south in the Garden: try entering the bench.
+
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
-The description of garden bushes is "Covered by snow, they're not much to look at."
-Understand "wilderness" or "hollyhocks" or "larkspurs" or "snapdragons" or "rhododendrons" or "tree" or "trees" or "vegetation" or "dunes" or "dune" as bushes.
+The description of garden bushes is "Covered by snow, the hollyhocks, larkspurs, snapdragons, rhododendrons, and other flora you remember are not much to look at right now."
+Understand "wilderness" or "hollyhocks" or "larkspurs" or "snapdragons" or "rhododendrons" or "tree" or "trees" or "vegetation" or "dunes" or "dune" as garden bushes.
+
 
 Chapter 6 - Dining Room
 

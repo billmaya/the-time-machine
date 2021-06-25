@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23188 ]
+[ WORDS - 23193 ]
 
 Table of Releases
 release	notes
@@ -1472,20 +1472,20 @@ Instead of opening the windows:
 Instead of searching the windows: [Recipe §3.6 Windows]
 	if light switch is switched on:
 		if the player is in the Garden:
-			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down the east side of the room, a large blackboard covers the entire west wall, and a strange mechanical device is in the center of the room, which must be Wells[apostrophe] time machine.";
+			say "Climbing onto the bench, you peer through the glass into the workshop. Twice as long as it is wide, it ends thirty feet away in a locked door. A long workbench runs down one side of the room and a large blackboard covers the opposite wall. In the center of the workshop is a strange mechanical device which must be Wells['] time machine.";
 			move the player to the bench, without printing a room description;
 		else if the player is in the Workshop:
 			say "The workshop lights cast a warm glow onto the snow-covered garden outside.";
 		else if the player is on the bench:
-			say "Nothing has changed. The workbench, blackboard, and time machine are still where they were when you last looked.";
+			say "The workbench, blackboard, and time machine are still where they were when you last looked.";
 	else if light switch is switched off:
 		if the player is in the Garden:
 			say "Climbing onto the bench, you peer through the glass into the darkened workshop.";
 			move the player to the bench, without printing a room description;
 		else if the player is in the Workshop:
-			say "Through the windows you can see down into the snow-covered garden outside.";
+			say "Through the windows you can see down into the snow-covered garden outside."; [This never displays since windows are out of scope when workshop lights are off]
 		else if the player is on the bench:
-			say "Nothing has changed. You still can't see anything inside the darkened workshop."
+			say "You can[']t see anything inside the darkened workshop."
 			
 Part 2 - Characters
 

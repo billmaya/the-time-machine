@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23179 ]
+[ WORDS - 23188 ]
 
 Table of Releases
 release	notes
@@ -1829,9 +1829,9 @@ Travel To 1895 begins when the time machine is in the Clearing and the player is
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
-	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the dials on the panel start turning backward, subtracting seconds, minutes, days, weeks, and the rest from your current location. The machine shudders and shakes slightly but the dread you felt on your outward journey is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
+	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
 
-	Ages pass. One by one the dials approach zero and stop their retrograde spin. The time machine starts to slow and, as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop surrounds you and the time machine.
+	Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow and, as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
 
 	You have arrived back in the year 1895.";
 	now the current-year is "1895";
@@ -1844,6 +1844,7 @@ Travel To 1895 ends when the time machine is in the Workshop.
 
 [When Travel To 1895 ends:
 	say "TRAVEL TO 1895 ENDS.";]	
+
 
 Book 5 - 802,701
 

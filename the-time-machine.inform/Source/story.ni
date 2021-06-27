@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22909 ]
+[ WORDS - 22931 ]
 
 Table of Releases
 release	notes
@@ -1189,7 +1189,7 @@ Instead of searching the workbench: try examining the workbench.
 Section 2 - Scenery
 
 The workshop-tools-materials is scenery in the Workshop.
-The description of workshop-tools-materials is "A cursory search of the workshop tools and materials turns up no flower or fauna nor brings you closer to understanding how the time machine operates or how to make it work."
+The description of workshop-tools-materials is "A cursory search of the workshop tools and materials turns up no flower or other fauna or brings you closer to understanding how the time machine operates or how to make it work."
 
 The tools are a thing.
 The tools are scenery in the Workshop.
@@ -1231,7 +1231,7 @@ The light switch is switched off.
 The light switch is undescribed.
 
 Instead of examining the light switch:
-	say "A simple switch that you can flip on or off."
+	say "A simple light switch by the door that you can flip on or off."
 
 [Writing §3.14. Devices and descriptions, Down Below example]
 Carry out switching off the light switch: now the Workshop is dark.
@@ -1264,7 +1264,7 @@ Rule for printing a refusal to act in the dark:
 			if we are not examining the light switch:
 				say "You will need a bit more light before you can examine the in any detail.";
 			otherwise:
-				say "A simple switch that you can flip on or off.";
+				say "A simple light switch by the door that you can flip on or off.";
 		if we are searching something:
 			if we are not searching the light switch:
 				say "You could use a little more light before you can do that successfully.";
@@ -1287,9 +1287,9 @@ examined-blueprints is false.
 Instead of examining the blueprints:
 	say "Spreading out the sheets you see that these are the plans for the time machine in the center of the room. [no line break]";
 	if the player does not have the fuse:
-		say "While you can match each drawn component to its time machine counterpart, this brings you no closer to figuring out how to make the time machine work.";
+		say "Using them, you[']re able to locate actual components in the machine, but this exercise brings you no closer to figuring out how to turn the time machine on.";
 	if the player has the fuse:
-		say "Even though how the time machine functions remains a mystery, the blueprints help you locate where the one item you have[unicode 8212]the fuse from the orrery[unicode 8212]and how it fits into the control panel in the time machine.";
+		say "The blueprints identify where the fuse fits into the control panel of the time machine.";
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
 
@@ -1304,7 +1304,7 @@ The time machine is in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
 The time machine is undescribed.
-The description of the time machine is "[if the player is not in the time machine]The time machine is rectangular in shape, taller than it is wide. A scaffolding of struts, wires, and other mechanisms rises up from the thick, square base to create a cage to enclose one or two occupants. It looks like you can enter the machine through an opening in one side.[otherwise]The inside of the time machine is just as baffling as its outside. While you can get a closer look at the various components that make up the cage that surrounds you, the only object that you can make sense of is a control panel at waist height.[end if][if the player is in the time machine and the time machine is in the workshop] Through gaps in the time machine you can see the workshop.[otherwise] Through gaps in the time machine you can see the clearing.[end if]"
+The description of the time machine is "[if the player is not in the time machine]The time machine is rectangular in shape, taller than it is wide. A scaffolding of struts, wires, and other mechanisms rises up from the thick, square base to create a cage to enclose one or two occupants. It looks like you can enter the machine through an opening in one side.[otherwise]The inside of the time machine is just as baffling as its outside. While you can get a closer look at the various components that make up the cage that surrounds you, the only object that you can make sense of is a control panel at waist height.[end if][if the player is in the time machine and the time machine is in the workshop] Through gaps in the time machine you can see the workshop.[otherwise if the player is in the time machine and the time machine is in the clearing] Through gaps in the time machine you can see the clearing.[end if]"
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" as time machine.
 
@@ -1314,16 +1314,17 @@ Instead of searching [examining] the time machine:
 	otherwise:
 		if the player has the fuse:
 			if examined-blueprints is true:
-				say "After reviewing the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
+				say "Having reviewed the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
 			otherwise:
-				say "Looking at the fuse you realize that it probably should go somewhere in the time machine but you don't have the first clue where that would be.";
+				say "Looking at the fuse you realize that it probably belongs somewhere in the time machine, but you don[']t know where.";
 		otherwise:
 			if examined-blueprints is true:
-				say "According to the blueprints there's one missing component required. You can see where it should go but have no idea what it is.";
+				say "Having reviewed the blueprints, you can see that there[']s one missing component, you can see where it should go, but you have no idea what it is.";
 			otherwise:
-				say "You can't make heads nor tails of how the machine operates or how to get it running. If only there was some information that detailed the construction and operation of the time machine in greater detail."
+				say "A cursory search of the time machine doesn[']t reveal how it operates or how to get it running.[no line break][first time] If only there was some information you had about its construction.[only]".
 
-Instead of opening the time machine: say "The time machine is alread 'open.' All you have to do is get inside if you desire."
+Instead of opening the time machine: say "The time machine is already 'open.' All you have to do is [if the player is in the time machine]get out[otherwise]get inside[end if] if you desire."
+[At some point should implement >climb in/out of time machine.]
 
 Section 4.1 - Control Panel
 
@@ -1351,7 +1352,7 @@ Understand "lamp" or "round button" as panel-upper-right.
 	
 The panel-bottom is scenery in the time machine.
 The description of panel-bottom is "Below the two rows of numbers and letters are sixteen toggle switches in two rows of eight switches each. The top row is labeled with the numbers 0[unicode 8211]9; the bottom row with the numbers 8 and 9 and the letters A[unicode 8211]F. All of the switches are in the Off position. To the right of the two rows of switches are two square buttons, one labeled 'SET'; the other labeled 'CLEAR'."
-Understand "switch" or "switches" or "square button" or "square buttons" or "clear button" or "set button" or "numbers" as panel-bottom.
+Understand "switches" or "square button" or "square buttons" or "clear button" or "set button" or "numbers" as panel-bottom.
 
 The panel-things is scenery in the time machine.
 Understand "date" or "dates" or "destination" as panel-things.

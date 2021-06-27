@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22912 ]
+[ WORDS - 22909 ]
 
 Table of Releases
 release	notes
@@ -95,7 +95,6 @@ Instead of using things:
 		say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with her preparations.";
 	otherwise:
 		say "You'll have to be more specific."
-		[continue the action.]
 
 Section 4 - Attack
 

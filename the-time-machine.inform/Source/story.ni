@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23192 ]
+[ WORDS - 22912 ]
 
 Table of Releases
 release	notes
@@ -92,7 +92,7 @@ Section 3 - Using
 
 Instead of using things:
 	if the player is in the Kitchen: [TBD - Any object in Kitchen, even if carried by player, will display text below]
-		say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with here preparations.";
+		say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with her preparations.";
 	otherwise:
 		say "You'll have to be more specific."
 		[continue the action.]
@@ -658,8 +658,6 @@ The Parlor is a room.
 The Parlor is north of the Library.
 The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather armchairs with todays newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if] A set of glass doors to the east leads outside and the room continues to the north."
 
-[DEL The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Todays [newspaper] sits on one of the armchairs. A set of glass doors to the east lead outside to the garden and the room continues to the north."]
-
 The armchairs are things.
 The armchairs are scenery in the Parlor.
 The armchairs are supporters.
@@ -669,7 +667,6 @@ The description of the armchairs are "Like the library chair these armchairs are
 
 Instead of entering the armchairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
-	[DEL now the player is in the armchairs.]
 	move the player to the armchairs, without printing a room description.
 
 Section 1 - Garden Door
@@ -931,13 +928,11 @@ The chair-at-table is a container.
 The chair-at-table is enterable.
 The printed name of chair-at-table is "chair".
 The description of chair-at-table is "One of the eight mahogany chairs around the table."
-[DEL Instead of examining chair-at-table: say "One of the eight mahogany chairs around the table."]
 Understand "chair" as chair-at-table.
 
 Instead of entering the dining room chairs: try entering the chair-at-table.
 Instead of entering the chair-at-table:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the one of the chairs.";
-	[DEL now the player is in the chair-at-table. [dining room chairs.]]
 	move the player to the chair-at-table, without printing a room description.
 
 The sideboard is a thing.
@@ -1123,8 +1118,6 @@ The Kitchen is north of the Kitchen Door.
 
 The description of the Kitchen is "The room is dominated by a sturdy wooden work table in the center of the room. Surrounding the table are numerous cabinets and shelves. The stove and sink are against the north wall.[if the location of Watchett is the Kitchen][paragraph break]Mrs. Watchett is at the work table, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"
 
-[DEL The description of the Kitchen is "With space for several cooks to work simultaneously, this entire room is dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area].[if the location of Watchett is the Kitchen] Mrs. Watchett is moving around the kitchen, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"]
-
 The meals are a thing.
 The meals are scenery in the Kitchen.
 The description of meals is "[if the location of Watchett is the Kitchen][Watchett] doesn't look like she needs any help right now but she might be able to answer a question or two without stopping her work.[otherwise]Best to leave that to Mrs. Watchett.[end if]"
@@ -1135,7 +1128,6 @@ The work table is a thing.
 The work table is scenery in the Kitchen.
 The work table is a supporter.
 The description of the work table is "A large wooden work table in the center of the room."
-[DEL The description of the work table is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 The cabinets are a thing.
 The cabinets are scenery in the Kitchen.
@@ -1143,7 +1135,6 @@ The cabinets are a container.
 The cabinets can be open or closed.
 The cabinets are openable. The cabinets are closed.
 The description of the cabinets is "Just a series of free-standing cabinets used for storage."
-[DEL The description of the cabinets is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 Understand "cabinet" or "storage" or "free-standing" or "free standing" or "standing" as cabinets.
 
@@ -1151,7 +1142,6 @@ The kitchen shelves are a thing.
 The kitchen shelves are scenery in the Kitchen.
 The kitchen shelves are a supporter.
 The description of the kitchen shelves is "Just a series of shelves piled high with foodstuffs and kitchen implements."
-[DEL The description of the kitchen shelves is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 	
 Understand "shelf" as kitchen shelves.
 
@@ -1159,20 +1149,12 @@ The stove is a thing.
 The stove is scenery in the Kitchen.
 The stove is a supporter.
 The description of the stove is "As far as you can tell this is just a cooking stove, probably better made than most, but still just a stove."
-[DEL The description of the stove is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 The sink is a thing.
 The sink is scenery in the Kitchen.
 The sink is a container.
 The description of the sink is "As far as you can tell this is just a copper sink, probably better made than most, but still just a sink."
-[The description of the sink is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
-
 Understand "copper" as sink.
-
-[DEL The work area is a thing.
-The work area is scenery in the Kitchen.
-The work area is a supporter.
-The description of the work area is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 Section 1 - Actions In Kitchen
 

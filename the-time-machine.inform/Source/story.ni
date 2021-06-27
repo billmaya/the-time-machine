@@ -1121,7 +1121,9 @@ Chapter 7 - Kitchen
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
 
-The description of the Kitchen is "With space for several cooks to work simultaneously, this entire room is dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area].[if the location of Watchett is the Kitchen] Mrs. Watchett is moving around the kitchen, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"
+The description of the Kitchen is "The room is dominated by a sturdy wooden work table in the center of the room. Surrounding the table are numerous cabinets and shelves. The stove and sink are against the north wall.[if the location of Watchett is the Kitchen][paragraph break]Mrs. Watchett is at the work table, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"
+
+[DEL The description of the Kitchen is "With space for several cooks to work simultaneously, this entire room is dominated by a large, sturdy wooden [work table] in the center of the room. Surrounding this table are numerous free-standing [cabinets] and [shelves] for storage. The cooking [stove] and copper [sink] are against the north wall, separated by another small [work area].[if the location of Watchett is the Kitchen] Mrs. Watchett is moving around the kitchen, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"]
 
 The meals are a thing.
 The meals are scenery in the Kitchen.
@@ -1132,40 +1134,45 @@ Understand "meal" or "dinner" or "food" as meals.
 The work table is a thing.
 The work table is scenery in the Kitchen.
 The work table is a supporter.
-The description of the work table is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+The description of the work table is "A large wooden work table in the center of the room."
+[DEL The description of the work table is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 The cabinets are a thing.
 The cabinets are scenery in the Kitchen.
 The cabinets are a container.
 The cabinets can be open or closed.
 The cabinets are openable. The cabinets are closed.
-The description of the cabinets is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+The description of the cabinets is "Just a series of free-standing cabinets used for storage."
+[DEL The description of the cabinets is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 Understand "cabinet" or "storage" or "free-standing" or "free standing" or "standing" as cabinets.
 
 The kitchen shelves are a thing.
 The kitchen shelves are scenery in the Kitchen.
 The kitchen shelves are a supporter.
-The description of the kitchen shelves is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+The description of the kitchen shelves is "Just a series of shelves piled high with foodstuffs and kitchen implements."
+[DEL The description of the kitchen shelves is "They have been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 	
 Understand "shelf" as kitchen shelves.
 
 The stove is a thing.
 The stove is scenery in the Kitchen.
 The stove is a supporter.
-The description of the stove is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+The description of the stove is "As far as you can tell this is just a cooking stove, probably better made than most, but still just a stove."
+[DEL The description of the stove is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 The sink is a thing.
 The sink is scenery in the Kitchen.
 The sink is a container.
-The description of the sink is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+The description of the sink is "As far as you can tell this is just a copper sink, probably better made than most, but still just a sink."
+[The description of the sink is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 Understand "copper" as sink.
 
-The work area is a thing.
+[DEL The work area is a thing.
 The work area is scenery in the Kitchen.
 The work area is a supporter.
-The description of the work area is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"
+The description of the work area is "It has been modified extensively by Wells according to some scientific 'best practice.'[one of] He can't help himself it seems, tinkerer that he is.[or] As his atttorney, you know that some of these modifications are the genesis of several of the patents he holds.[or] Beyond that you are at a loss, both culinary and mechanical.[purely at random]"]
 
 Section 1 - Actions In Kitchen
 
@@ -1507,6 +1514,7 @@ Chapter 1 - Watchett
 Watchett is a person. 
 Watchett is a female. 
 Watchett is fixed.
+Watchett is undescribed.
 Watchett is in the Kitchen.
 The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
 
@@ -1548,7 +1556,7 @@ Instead of asking Watchett about "herself": say "'I[']m really not one to talk a
 
 Instead of answering Watchett that "hello": say "Mrs. Watchett acknowledges your greeting with a nod. 'Evening, Mr. Filby. Terrible about Mr. Wells, isn[']t it.'"
 
-Instead of asking Watchett about something: say "Mrs. Watchett thinks for a moment before replying. 'I wouldn['] know anything about that,' she says and continues her work."
+Instead of asking Watchett about something: say "Mrs. Watchett thinks for a moment before replying. 'I wouldn[']t know anything about that,' she says and continues her work."
 
 [See Writing §11.5. Conditions and question ]
 watchett-key is a truth state that varies.

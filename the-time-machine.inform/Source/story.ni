@@ -656,7 +656,9 @@ Chapter 4 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Todays [newspaper] sits on one of the armchairs. A set of glass doors to the east lead outside to the garden and the room continues to the north."
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather armchairs with todays newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if] A set of glass doors to the east leads outside and the room continues to the north."
+
+[The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Todays [newspaper] sits on one of the armchairs. A set of glass doors to the east lead outside to the garden and the room continues to the north."]
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.
@@ -710,14 +712,16 @@ The fire is in the parlor.
 The fire is undescribed.
 The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn, the embers and ashes fall through the grate onto the brick."
 
-The coals are undescribed in the parlor. "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
+The coals are undescribed in the parlor. 
+The description of the coals is "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
 Understand "coal" or "pile" as coals.
 	
-The flames are scenery in the parlor. "Hypnotic and mesmerizing if you stare too long at them."
+The flames are scenery in the parlor. 
+The description of the flames is "Hypnotic and mesmerizing if you stare too long at them."
 Understand "flame" as flames.
 
 Instead of touching the fire: try touching the flames.
-Instead of touching the flames: say "You briefly warm your hands at the fire."
+Instead of touching the flames: say "You briefly warm your hands in front of the fireplace."
 
 Instead of tasting the fire: try tasting the flames.
 Instead of tasting the flames: say "The warmth on your face is quite pleasant after the cold wind outside."
@@ -809,6 +813,7 @@ Section 5 - Newspaper
 
 The newspaper is a thing.
 The newspaper is on the armchairs.
+The newspaper is undescribed.
 Understand "news" or "paper" as newspaper.
 The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read."
 

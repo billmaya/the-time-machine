@@ -658,7 +658,7 @@ The Parlor is a room.
 The Parlor is north of the Library.
 The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather armchairs with todays newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if] A set of glass doors to the east leads outside and the room continues to the north."
 
-[The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Todays [newspaper] sits on one of the armchairs. A set of glass doors to the east lead outside to the garden and the room continues to the north."]
+[DEL The description of the Parlor is "A coal [fire] blazes away in a large [fireplace] set into the west wall. Directly in front of the hearth are two leather [armchairs] positioned advantageously to view the flames while conversing, drinking, or smoking.[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if] Todays [newspaper] sits on one of the armchairs. A set of glass doors to the east lead outside to the garden and the room continues to the north."]
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.
@@ -669,7 +669,8 @@ The description of the armchairs are "Like the library chair these armchairs are
 
 Instead of entering the armchairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
-	now the player is in the armchairs.
+	[DEL now the player is in the armchairs.]
+	move the player to the armchairs, without printing a room description.
 
 Section 1 - Garden Door
 
@@ -922,15 +923,22 @@ The dining room chairs are a thing.
 The dining room chairs are scenery in the Dining Room.
 The dining room chairs are a container.
 The dining room chairs are enterable.
-The description of dining room chairs is "Eight mahogany chairs that match the table."
+The description of dining room chairs is "Eight mahogany chairs around the table."
+Understand "chairs" as dining room chairs.
 
 The chair-at-table is scenery in the Dining Room.
-Instead of examining chair-at-table: say "One of the eight mahogany chairs around the table."
+The chair-at-table is a container.
+The chair-at-table is enterable.
+The printed name of chair-at-table is "chair".
+The description of chair-at-table is "One of the eight mahogany chairs around the table."
+[DEL Instead of examining chair-at-table: say "One of the eight mahogany chairs around the table."]
 Understand "chair" as chair-at-table.
 
-Instead of entering the dining room chairs:
+Instead of entering the dining room chairs: try entering the chair-at-table.
+Instead of entering the chair-at-table:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the one of the chairs.";
-	now the player is in the dining room chairs.
+	[DEL now the player is in the chair-at-table. [dining room chairs.]]
+	move the player to the chair-at-table, without printing a room description.
 
 The sideboard is a thing.
 The sideboard is scenery in the Dining Room.

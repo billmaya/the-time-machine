@@ -992,7 +992,7 @@ The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tb
 The orrery is scenery on the dining table.
 The orrery is a device.
 The orrery is switched off.
-The description of the orrery is "A mechanical model our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to the switch[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"
+The description of the orrery is "A mechanical model of our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to the switch[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"
 
 Understand "planetarium" or "device" or "box" or "inlays" as orrery.
 

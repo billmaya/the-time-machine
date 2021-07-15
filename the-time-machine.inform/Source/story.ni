@@ -1523,8 +1523,8 @@ Instead of asking Watchett about "workshop door": say "'Locked. Always locked. O
 Instead of asking Watchett about "workshop": say "'Only Mr. Wells had the key.'"
 Instead of asking Watchett about "front door": say "'Much too cold to be outside the way you're dressed. Best you warm up by the fire first.'"
 
-Instead of asking Watchett about "pocket watch": say "'That[']s Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
-Instead of asking Watchett about "watch": say "'That[']s Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
+Instead of asking Watchett about "pocket watch": say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
+Instead of asking Watchett about "watch": say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
 Instead of asking Watchett about "orrery": say "'Built by Mr. Wells. He[']s quite the inventor.'"
 Instead of asking Watchett about "petal": say "'Very pretty, I guess. But you cannot tell much about the flower from a single petal.'"
 

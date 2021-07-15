@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22974 ]
+[ WORDS - 22944 ]
 
 Table of Releases
 release	notes
@@ -17,8 +17,7 @@ release	notes
 Book 1 - Beginning The Story
 
 The player is in Woking Street.
-[TBD - Rewrite this description "You would be at a loss to describe yourself since you rarely notice appearances, prefering instead to focus on logical, lawyerly pursuits with the calm demeanor that your profession and your clients demand."]
-The description of the player is "You rarely focus on your appearance, too much work to do, but if you had to describe yourself you would probably say something like 'middle-age, married, non-descript features, all belying a logical, lawyerly mind and calm demeanor that your profession and your clients demand."
+The description of the player is "You rarely think of yourself in those terms, prefering to focus your prodigious logical and legal faculties on the work that your profession and your clients demand.[first time] But if you had to waste time on something so introspect you might describe yourself as a middle-aged man who has reached a certain station in life where success and social esteem allow you to enjoy all the benefits of this modern age.[only] Truly this is the best of times." [Mention something about Wells here?]
 
 The current-year is text that varies.
 The current-year is "1895".

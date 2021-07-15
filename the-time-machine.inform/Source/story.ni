@@ -373,6 +373,7 @@ Section 9 - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.
+The pocket watch is portable.
 Understand "timepiece" or "chronometer" or "hands" or "stem" as pocket watch.
 
 The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that Wells['] Weena was particularly enchanted with its moving hands and its winding mechanism."
@@ -1507,7 +1508,7 @@ Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper"
 
 Section 1 - Conversation
 
-Instead of showing pocket watch to Watchett: say "'That[']s Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
+Instead of showing pocket watch to Watchett: say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'" [HACK Why can't I simply write "try asking Watchett about it.?]
 Instead of showing something to Watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
 
 Instead of telling Watchett about something: [Writing §7.6. Reading and talking]

@@ -2426,7 +2426,7 @@ Book - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description
-"Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com.[paragraph break]The source code for this game can be found at https://github.com/billmaya/the-time-machine."
+"Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com."
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]
 

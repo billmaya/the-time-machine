@@ -17,6 +17,7 @@ release	notes
 Book 1 - Beginning The Story
 
 The player is in Woking Street.
+[TBD - Rewrite this description "You would be at a loss to describe yourself since you rarely notice appearances, prefering instead to focus on logical, lawyerly pursuits with the calm demeanor that your profession and your clients demand."]
 The description of the player is "You rarely focus on your appearance, too much work to do, but if you had to describe yourself you would probably say something like 'middle-age, married, non-descript features, all belying a logical, lawyerly mind and calm demeanor that your profession and your clients demand."
 
 The current-year is text that varies.
@@ -37,7 +38,7 @@ Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, W
 
 You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[apostrophe]ve just heard from Wells[apostrophe] own mouth. Morlocks. Eloi. Time travel. It sounds fantastical.
 
-'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[apostrophe]ll find...get your bloody hands off of me!' The orderlies have grabbed Wells a second time 'No, damn you! Let me go!' 
+'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[apostrophe]ll find...get your bloody hands off of me!' The orderlies have grabbed Wells a second time. 'No, damn you! Let me go!' 
 
 Wells forgets whatever he was looking for in his pockets and struggles against the orderlies but they[apostrophe]re prepared this time and manage to overpower your friend and manhandle him into the ambulance. But it[apostrophe]s a near thing, so violent that Wells[apostrophe] pocket watch falls to the ground during the struggle.
 

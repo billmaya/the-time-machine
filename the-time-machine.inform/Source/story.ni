@@ -2192,7 +2192,7 @@ Part 2 - Characters
 
 Chapter 1 - Eloi
 
-The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells' story.
+The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.
 
 Noticing your prescence, a few of the Eloi gather around you.[end if]"
 
@@ -2292,7 +2292,7 @@ Instead of showing the pocket watch to Weena:
 Instead of giving the petal to Weena: try showing the petal to Weena.
 
 Instead of showing the petal to Weena:
-	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wellls. The rest of the Eloi follow her and soon you are alone by the river.";
+	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";
 	now the player is carrying the flower;
 	now the Eloi are nowhere;
 	now Weena is nowhere.

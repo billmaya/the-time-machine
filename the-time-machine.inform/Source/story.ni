@@ -658,7 +658,7 @@ Chapter 4 - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather armchairs with todays newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if] A set of glass doors to the east leads outside and the room continues to the north."
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather armchairs with today[']s newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if] A set of glass doors to the east leads outside and the room continues to the north."
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.

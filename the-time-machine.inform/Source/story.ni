@@ -14,7 +14,7 @@ release	notes
 "2"	"beta-2 release"
 "3"	"parsercomp-2021 release"
 
-Book 1 - Beginning The Story
+Book - Beginning The Story
 
 The player is in Woking Street.
 The description of the player is "You rarely think of yourself in those terms, prefering to focus your prodigious logical and legal faculties on the work that your profession and your clients demand.[first time] But if you had to waste time on something so introspect you might describe yourself as a middle-aged man who has reached a certain station in life where success and social esteem allow you to enjoy all the benefits of this modern age.[only] Truly this is the best of times." [Mention something about Wells here?]
@@ -45,7 +45,7 @@ Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[a
 
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
 
-Chapter 1 - Missing Item Description Check
+Chapter - Missing Item Description Check
 
 [Checks for missing item descriptions]
 [
@@ -63,9 +63,9 @@ When play begins (this is the run TBD checks at the start of play rule):
 			say "[item] description TBD."
 ]
 
-Book 2 - Mechanics
+Book - Mechanics
 
-Chapter 1 - Extensions
+Chapter - Extensions
 
 Include Basic Help Menu by Emily Short.
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
@@ -73,22 +73,22 @@ Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mist
 After reading a command:
 resolve punctuated titles.
 
-Chapter 2 - Instead-Of Rules
+Chapter - Instead-Of Rules
 
-Section 1 - Waiting
+Section - Waiting
 
 Instead of waiting: say 
 	"[if location is Woking Street]You shiver in the cold wind, drawing your light jacket closer around you. You really should get inside since you're not dressed appropriately for this winter weather.
 	[otherwise]Time passes."
 
-Section 2 - Up
+Section - Up
 
 Instead of jumping in Woking Street: try going up.
 Instead of going up in Woking Street: say "You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside."
 
 Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
 
-Section 3 - Using
+Section - Using
 
 Instead of using things:
 	if the player is in the Kitchen: [TBD - Any object in Kitchen, even if carried by player, will display text below]
@@ -96,14 +96,14 @@ Instead of using things:
 	otherwise:
 		say "You'll have to be more specific."
 
-Section 4 - Attack
+Section - Attack
 
 Instead of attacking someone: say "Violence [aren't] the answer here, especially given your years of jurisprudence."
 
 
-Chapter 2 - Before Rules
+Chapter - Before Rules
 
-Section 1 - Listening
+Section - Listening
 
 Before listening:
 	if the player is in Woking Street:
@@ -124,15 +124,15 @@ Before listening:
 	otherwise:
 		continue the action.
 
-Chapter 3 - Every Turn Rules
+Chapter - Every Turn Rules
 
-Section 1 - Workshop
+Section - Workshop
 
 Every turn:
 	if the player is in the Workshop and travel-to-802701 is true: 
 		now humboldt-should-return is true.
 
-Chapter 4 - Conversation
+Chapter - Conversation
 
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
 
@@ -144,7 +144,7 @@ Understand "talk to [someone]" as a mistake ("To start a conversation, try to AS
 
 The [something] has to exist for the 2nd part of the Understand/as a mistake statement to be reached. Wells doesn't exist in the game but the ambulance does.]
 
-Chapter 5 - Take All
+Chapter - Take All
 
 [https://bit.ly/3xV8H3P]
 
@@ -155,7 +155,7 @@ Rule for deciding whether all includes a thing when removing from: it does not.
 Rule for printing a parser error when the latest parser error is the nothing to do error:
 	say “Grabbing for everything at once isn't going to help your investigation one bit. A methodical, measured approach is called for.”
 
-Chapter 6 - Tests
+Chapter - Tests
 
 [In the game type "> test" to see a list of all the available tests]
 
@@ -211,22 +211,22 @@ Test to-watchett with "go north / take pocket watch / go north / go west / go no
 
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / search workbench / examine blueprints / enter time machine / examine control panel / put fuse in control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit / show humboldt the flower."
 
-Chapter 7 - Release
+Chapter - Release
 
 Release along with cover art ("The Time Machine") and an interpreter.
 
-Book 3 - 1895
+Book - 1895
 
-Part 1 - Settings
+Part - Settings
 
-Chapter 1 - Woking Street
+Chapter - Woking Street
 
 Woking Street is a room. 
 The description of Woking Street is "You are standing halfway down the street outside of Wells['] house. A heavy snowfall wafts down, undisturbed except for the [area] directly in front of you[if ambulance is in Woking Street] where the ambulance is parked.[otherwise] where the scuffle with Wells happened.[end if] The front door is to the north[first time], the light escaping from the drawn curtains to one side looking invitingly warm[only].[first time] To the west, the flickering [gaslights] in the square seem much further away than fifty paces. To the east, the street dead-ends into a small [cul-de-sac].[only]"
 
 The printed name of Woking Street is "68 Woking Street".
 
-Section 1 - Area
+Section - Area
 
 The area is scenery in Woking Street.
 The area is a supporter.
@@ -257,7 +257,7 @@ Instead of searching the area:
 
 Instead of going down in Woking Street: try searching the area.
 
-Section 2 - Scenery
+Section - Scenery
 
 	[Snow is handled in the Garden]
 
@@ -291,7 +291,7 @@ Section 2 - Scenery
 	[When examining, having "residence" or "residences" or "other residences" as synonyms 
 	made parser ask if you were examining houses or well-house so commented them out for now.]
 	
-Section 3 - Wandering
+Section - Wandering
 
 	Going west in Woking Street is wandering.
 	Going northwest in Woking Street is wandering.
@@ -304,7 +304,7 @@ Section 3 - Wandering
 	Instead of wandering:
 		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider. You really should get inside since you're not dressed appropriately for this winter weather."
 
-Section 4 - Humbolt Exit
+Section - Humbolt Exit
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
@@ -323,7 +323,7 @@ Instead of going north in Woking Street:
 		continue the action.
 
 
-Section 5 - Front Door
+Section - Front Door
 
 	The front door is north of Woking Street and south of the Entryway. 
 	The front door is a door. 
@@ -333,7 +333,7 @@ Section 5 - Front Door
 
 	The description of the front door is "[if location is Woking Street]The door to 68 Woking Street is indistinguishable from every other door that lines the street.[otherwise]You see nothing special about the heavy wooden door leading to the street outside."
 	
-Section 6 - Ambulance
+Section - Ambulance
 	
 The ambulance is a thing in Woking Street.
 The description of the ambulance is "The horse-drawn ambulance resembles a private carriage that has been adapted for medical use. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors at the back allow a patient, orderlies, and doctor to enter and exit the vehicle."
@@ -353,7 +353,7 @@ Instead of taking the ambulance: say "What delusions of grandeur. Perhaps they s
 Instead of searching the ambulance: try entering the ambulance.
 Instead of entering the ambulance: say "With a steady hand Dr. Humboldt stops you. 'Better stay here.'"
 
-Section 7 - The Workshop Key
+Section - The Workshop Key
 
 The metal key is a thing.
 The metal key is in Woking Street.
@@ -363,13 +363,13 @@ Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
 The metal key unlocks the workshop-door.
 		
-Section 8 - The Petal
+Section - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
 The description of the petal is "With its luminous colors it is not like any flower petal you have ever seen. Still, you can't tell much from a single petal. Perhaps the rest of the blossom is inside somewhere." ["...inside somewhere" What if you're inside the house? Or in 802,701? Conditional description?]
 		
-Section 9 - Pocket Watch
+Section - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.
@@ -385,7 +385,7 @@ Understand "wind [something]" as winding.
 Instead of winding the watch: say "You turn the stem back and forth a few seconds, killing time and gathering your thoughts."
 
 
-Chapter 2 - Entryway
+Chapter - Entryway
 
 The Entryway is a room. 
 The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels a [staircase] that leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
@@ -402,7 +402,7 @@ The description of the Entryway is "From here you can reach all other parts of t
 
 Before taking books in the Entryway: say "BOOKS IN NEXT ROOM."
 
-Section 1 - Workshop Door
+Section - Workshop Door
 	
 The workshop-door is north of the Entryway and south of the Workshop. 
 The workshop-door is a door. 
@@ -431,7 +431,7 @@ Instead of attacking the workshop-door with the poker: say "Even if you could so
 Instead of attacking the workshop-door with something: say "Violence isn't the answer here."
 
 
-Chapter 3 - Library
+Chapter - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
@@ -510,7 +510,7 @@ Instead of searching the curtains: say "You look in the folds of the fabric but 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
 
-Section 1 - Reading
+Section - Reading
 
 Instead of examining books: try taking books.
 Instead of examining periodicals: try taking periodicals.
@@ -652,7 +652,7 @@ Name	Author	Publish-Date
 "Phantasmagoria and Other Poems"	"Lewis Carroll"	1869
 "The Life of George Washington"	"Washington Irving"	1859
 
-Chapter 4 - Parlor
+Chapter - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
@@ -669,7 +669,7 @@ Instead of entering the armchairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
 	move the player to the armchairs, without printing a room description.
 
-Section 1 - Garden Door
+Section - Garden Door
 
 The Garden Door is east of the Parlor and west of the Garden. 
 The Garden Door is a door. 
@@ -683,7 +683,7 @@ Understand "glass" or "glass door" or "glass doors" as Garden Door.
 Instead of searching the Garden Door: say "[if the location is the Parlor]Through the glass doors you can see steps leading down to the snow-covered garden outside.[otherwise]Through the glass doors you can see the parlor inside.[end if]"
 
 
-Section 2 - Fireplace
+Section - Fireplace
 	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
@@ -703,7 +703,7 @@ Instead of using the fireplace, say "That's not something you can use but just e
 
 [https://bit.ly/33EceFC https://bit.ly/2RO6PJq]
 
-Section 3 - Fire
+Section - Fire
 
 The fire is a thing.
 The fire is in the parlor. 
@@ -788,7 +788,7 @@ Understand the command "burn" as something new.
 Understand "burn [something]" as burning.
 Instead of burning something: say "That really woudn[apostrophe] accomplish anything productive."
 
-Section 4 - Poker
+Section - Poker
 
 The poker is a thing. [https://bit.ly/3sczKUx]
 The poker is undescribed in the Parlor.
@@ -807,7 +807,7 @@ Instead of using the poker in the Parlor:
 	
 [Understand "use [something] on [something]" as using.]
 
-Section 5 - Newspaper
+Section - Newspaper
 
 The newspaper is a thing.
 The newspaper is on the armchairs.
@@ -847,7 +847,7 @@ Title	Summary
 
 
 
-Chapter 5 - Garden
+Chapter - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
@@ -900,7 +900,7 @@ The description of garden bushes is "Covered by snow, the hollyhocks, larkspurs,
 Understand "wilderness" or "hollyhocks" or "larkspurs" or "snapdragons" or "rhododendrons" or "tree" or "trees" or "vegetation" or "dunes" or "dune" as garden bushes.
 
 
-Chapter 6 - Dining Room
+Chapter - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
@@ -952,7 +952,7 @@ Instead of examining the contents-sideboard: say "I don't think Mrs. Watchett wo
 Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" or "tableware" or "service" or "table service" as contents-sideboard.
 Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks" or "spoon" or "spoons" as contents-sideboard.
 
-Section 1 - Chandelier
+Section - Chandelier
 
 The chandelier is a device.
 The chandelier is switched on.
@@ -984,7 +984,7 @@ Instead switching on the chandelier:
 	say "Tugging the small chain turns the chandelier on, bathing the room in that harsh light you dislike so much.";
 	now the chandelier is switched on;
 
-Section 2 - Orrery
+Section - Orrery
 
 The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
 The orrery is scenery on the dining table.
@@ -1087,7 +1087,7 @@ Instead of switching off the orrery-switch:
 	now the orrery-switch is switched off;
 	now the orrery is switched off.
 
-Section 3 - Fuse
+Section - Fuse
 	
 The fuse is a thing.
 The fuse is undescribed.
@@ -1111,7 +1111,7 @@ After taking the fuse:
 Instead of inserting the fuse into the orrery:
 	try inserting the fuse into the sliding panel.
 
-Chapter 7 - Kitchen
+Chapter - Kitchen
 
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
@@ -1156,7 +1156,7 @@ The sink is a container.
 The description of the sink is "As far as you can tell this is just a copper sink, probably better made than most, but still just a sink."
 Understand "copper" as sink.
 
-Section 1 - Actions In Kitchen
+Section - Actions In Kitchen
 
 [See Book 2, Chapter 2, Section 3 for Using rules]
 
@@ -1170,13 +1170,13 @@ Instead of searching the stove: say "I don't think Mrs. Watchett would appreciat
 Instead of searching the cabinets: say "I don't think Mrs. Watchett would appreciate you rummaging around in her cabinets."
 Instead of searching the kitchen shelves: say "You glance briefly at the various items on the shelves but find nothing pertinent to your investigation."
 
-Chapter 8 - Workshop  
+Chapter - Workshop  
 
 The workshop is a dark room. 
 
 The description of the Workshop is "The workshop is almost twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space. But the most striking, out-of-place object in the room is a device almost equidistant between you and the other end of the room[unicode 8212]Wells['] time machine."
 
-Section 1 - Workbench
+Section - Workbench
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.
@@ -1187,7 +1187,7 @@ Understand "bench" as workbench.
 Instead of searching the workbench: try examining the workbench.
 
 
-Section 2 - Scenery
+Section - Scenery
 
 The workshop-tools-materials is scenery in the Workshop.
 The description of workshop-tools-materials is "A cursory search of the workshop tools and materials turns up no flower or other fauna or brings you closer to understanding how the time machine operates or how to make it work."
@@ -1220,7 +1220,7 @@ The diagrams are scenery in the Workshop.
 Instead of examining the diagrams: try examining workshop-blackboard.
 Instead of searching the diagrams: try examining workshop-blackboard.
 
-Section 2 - Light Switch
+Section - Light Switch
 		
 The lights are a thing.
 The lights are scenery in the Workshop.
@@ -1272,7 +1272,7 @@ Rule for printing a refusal to act in the dark:
 			otherwise:
 				say "It is a simple on/off switch. Not much to search."
 	
-Section 3 - The Blueprints
+Section - The Blueprints
 
 The blueprints are a thing.
 The blueprints are on the workbench.
@@ -1294,7 +1294,7 @@ Instead of examining the blueprints:
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
 
-Section 4 - The Time Machine
+Section - The Time Machine
 
 [ Writing §18.10. Printing the name of something - omit contents in listing ]
 After printing the name of the time machine:
@@ -1327,7 +1327,7 @@ Instead of searching [examining] the time machine:
 Instead of opening the time machine: say "The time machine is already 'open.' All you have to do is [if the player is in the time machine]get out[otherwise]get inside[end if] if you desire."
 [At some point should implement >climb in/out of time machine.]
 
-Section 4.1 - Control Panel
+Section - Control Panel
 
 The control panel is a container.
 The control panel is in the time machine.
@@ -1387,7 +1387,7 @@ Instead of modifying the panel-things:
 	say "[first time]You reach out to flip some of the switches in the bottom section of the panel but hesitate, realizing that without Wells you have no idea how the time selector works. [only]Best to leave things on the control panel as they are for now."
 
 	
-Section 4.2 - Round Button
+Section - Round Button
 
 The round button is a device in the time machine.
 The round button is switched off.
@@ -1428,7 +1428,7 @@ Instead of activating the round button:
 		otherwise:
 			say "You press the button on the control panel but nothing happens."
 
-Section 4.3 - Fuse
+Section - Fuse
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
 
@@ -1450,7 +1450,7 @@ Instead of inserting the fuse into the control panel:
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 	
-Section 5 - Workshop Windows
+Section - Workshop Windows
 	
 The windows are a thing.
 The windows are a backdrop. They are in the Workshop and the Garden.
@@ -1488,11 +1488,11 @@ Instead of searching the windows: [Recipe §3.6 Windows]
 		else if the player is on the bench:
 			say "You can[']t see anything inside the darkened workshop."
 			
-Part 2 - Characters
+Part - Characters
 
 A person can be either fixed or mobile. 
 
-Chapter 1 - Watchett
+Chapter - Watchett
 
 Watchett is a person. 
 Watchett is a female. 
@@ -1506,7 +1506,7 @@ The printed name of Watchett is "Mrs. Watchett".
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 [See §17.3. Overriding existing commands - New tokens for ^]
 
-Section 1 - Conversation
+Section - Conversation
 
 Instead of showing pocket watch to Watchett: say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'" [HACK Why can't I simply write "try asking Watchett about it.?]
 Instead of showing something to Watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
@@ -1545,7 +1545,7 @@ Instead of asking Watchett about something: say "Mrs. Watchett thinks for a mome
 watchett-key is a truth state that varies.
 watchett-key is false.
 
-Section 2 - Movement
+Section - Movement
 
 Every turn:
 	if Watchett is mobile:
@@ -1575,7 +1575,7 @@ Library			"rearranges the chairs"
 Library			"looks out the windows"
 Library			"draws the curtains closed"
 
-Chapter 2 - Humboldt 
+Chapter - Humboldt 
 
 Humboldt is a person.
 Humboldt is a male.
@@ -1593,7 +1593,7 @@ humboldt-should-return is false.
 humboldt-endgame-begins is a truth state that varies.
 humboldt-endgame-begins is false.
 
-Section 1 - Conversation
+Section - Conversation
 
 [Instead of telling someone about something, try asking someone about it.] 
 [According to the compiler, "asking someone about it" is too vague to describe a specific action]
@@ -1762,7 +1762,7 @@ After telling Humboldt about "sphinx":
 	say "Humboldt listens to you recount your description of the clearing and the sphinx with a [patience of Humboldt] look on his face.";
 	follow Patience rules.
 
-Section 2 - Patience
+Section - Patience
 
 [Writing §4.9. Using new kinds of value in properties]
 patience is a kind of a value.
@@ -1770,7 +1770,7 @@ The patiences are accepting, tolerant, impatient, frustrated, angry.
 	
 Humboldt has patience. Humboldt is accepting.
 
-Chapter 3 - Orderlies
+Chapter - Orderlies
 
 The orderlies are people in Woking Street.
 The orderlies are undescribed.
@@ -1779,14 +1779,14 @@ Understand "attendant" or "attendants" as orderlies.
 
 Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
 
-Chapter 4 - Wells
+Chapter - Wells
 
 Wells is a person in Woking Street.
 Wells is undescribed.
 
 Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
 
-Section 1 - Rescuing
+Section - Rescuing
 
 Understand "save [someone]" as rescuing.
 
@@ -1797,7 +1797,7 @@ Instead of rescuing Wells: try entering ambulance.
 Instead of rescuing someone: say "It does not look like [the noun] is in need of any rescuing. But the thought is nice."
 
 
-Chapter 5 - Gernsback 
+Chapter - Gernsback 
 [https://bit.ly/3rYUPl8]
 
 [Gernsback is a person.
@@ -1807,9 +1807,9 @@ Gernsback is in the Entryway.]
 
 [The printed name of Gernsback is "TBD."]
 
-Book 4 - Traveling In Time
+Book - Traveling In Time
 
-Part 1 - Travel To 802,701
+Part - Travel To 802,701
 
 Travel To 802,701 is a scene.
 
@@ -1841,7 +1841,7 @@ Travel To 802,701 ends when the time machine is in the Clearing.
 [When Travel To 802,701 ends:
 	say "TRAVELING TO 802,701 ENDS."]
 
-Part 2 - Travel To 1895
+Part - Travel To 1895
 
 Travel To 1895 is a scene.
 
@@ -1866,11 +1866,11 @@ Travel To 1895 ends when the time machine is in the Workshop.
 	say "TRAVEL TO 1895 ENDS.";]	
 
 
-Book 5 - 802,701
+Book - 802,701
 
-Part 1 - Settings
+Part - Settings
 
-Chapter 1 - Clearing
+Chapter - Clearing
 
 can-go-clearing-to-river is a truth state that varies.
 can-go-clearing-to-river is false.
@@ -1889,7 +1889,7 @@ Instead of going down in the Clearing:
 	if the metal grate is not on the circular shaft:
 		try entering the circular shaft.
 
-Section 1 - Scenery
+Section - Scenery
 
 The circular shaft is a thing.
 The circular shaft is scenery in the Clearing.
@@ -1914,7 +1914,7 @@ The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
 The description of the undergrowth is "The undergrowth would make passage in any direction but east difficult."
 
-Section 2 - Metal Grate
+Section - Metal Grate
 
 The metal grate is a thing.
 The metal grate is portable.
@@ -1974,7 +1974,7 @@ Before going southeast in the Clearing:
 			continue the action.
 	
 [ 06/02/21 - Decided to comment this out since it really didn't serve any purpose right now (might use later). Moved some of the descriptions into Clearing.
-Chapter 2 - Sphinx Steps
+Chapter - Sphinx Steps
 
 The Sphinx Steps are a room.
 The Sphinx Steps are up from the Clearing.
@@ -2005,7 +2005,7 @@ The description of the statue is "A gigantic reclining sphinx made of white marb
 Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
 ]
 
-Chapter 2 - Top Shaft
+Chapter - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
@@ -2021,7 +2021,7 @@ The ladder is a thing.
 The ladder is a backdrop. It is in the Clearing, Top Shaft and Bottom Shaft.
 The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, leading down into the gloom."
 
-Chapter 3 - Bottom Shaft
+Chapter - Bottom Shaft
 
 The Bottom Shaft is a room.
 Up from the Bottom Shaft is the Top Shaft.
@@ -2044,7 +2044,7 @@ Going southwest in the Bottom Shaft is wandering.
 Going west in the Bottom Shaft is wandering.
 Going northwest in the Bottom is wandering.
 
-Chapter 4 - Domed Building
+Chapter - Domed Building
 
 The Domed Building is a room.
 The Domed Building is east of the Clearing.
@@ -2055,7 +2055,7 @@ Understand "concrete" or "pantheon" or "columned" or "columns" or "portico" or "
 
 The description of the Domed Building is "Before you is a weathered concrete building with a domed top that vaguely resembles the Pantheon in Rome. The entrance to the building is through a columned portico to the east."
 
-Chapter 5 - Inside Dome
+Chapter - Inside Dome
 
 The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
@@ -2142,7 +2142,7 @@ The description of the mosaics are "Each panel is composed of thousands of small
 Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored pieces" or "pieces" as mosaics.
 
 
-Chapter 6 - Balcony
+Chapter - Balcony
 
 [Treetops, foliage, and forest are handled in the Clearing]
 
@@ -2156,7 +2156,7 @@ The printed name of balcony-river is "river".
 
 Understand "river" as balcony-river.
 
-Chapter 7 - River Bank
+Chapter - River Bank
 
 The River Bank is a room.
 The River is southeast of the Clearing.
@@ -2199,9 +2199,9 @@ Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
 
-Part 2 - Characters
+Part - Characters
 
-Chapter 1 - Eloi
+Chapter - Eloi
 
 The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.
 
@@ -2217,7 +2217,7 @@ eloi-couples are scenery in the River.
 The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
 Understand "couples" as eloi-couples.
 
-Section 1 - Conversation
+Section - Conversation
 
 Instead of telling the Eloi about something:
 	try asking the Eloi about something.
@@ -2242,20 +2242,20 @@ Instead of showing the pocket watch to the Eloi:
 	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
 	now the Eloi is carrying the pocket watch.
 
-Chapter 2 - Weena
+Chapter - Weena
 
 Weena is a person.
 Weena is nowhere.
 Weena is fixed.
 The description of Weena is "Slightly taller than the other Eloi but dressed as they are and with the same similarity of features and build, this is clearly the girl Wells described."
 
-Section 1 - Flower
+Section - Flower
 
 The flower is a thing.
 The flower is nowhere.
 The description of the flower is "Unlike any vegetation you've ever seen, the petal that Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
 
-Section 2 - Introduction Of Weena
+Section - Introduction Of Weena
 
 Introduction Of Weena is a scene.
 
@@ -2274,7 +2274,7 @@ Introduction Of Weena ends when Weena has the pocket watch.
 [When Introduction Of Weena ends:
 	say "INTRODUCTION TO WEENA ENDS."]
 
-Section 3 - Weena Gives You Flower
+Section - Weena Gives You Flower
 
 Weena Gives You Flower is a scene.
 
@@ -2313,9 +2313,9 @@ Weena Gives You Flower ends when the player has the flower.
 [When Weena Gives You Flower ends:
 	say "WEENA GIVES YOU FLOWER ENDS."]
 
-Book 6 - Ending The Story
+Book - Ending The Story
 
-Chapter 1 - Morlock Endgame
+Chapter - Morlock Endgame
 
 [Writing §8.18. Randomness]
 [Writing §9.4. When play ends]
@@ -2341,7 +2341,7 @@ Instead of wandering in the Bottom Shaft:
 		otherwise:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 
-Chapter 2 - Humboldt's Return
+Chapter - Humboldt's Return
 
 Humboldt's Return is a scene.
 
@@ -2360,7 +2360,7 @@ When Humboldt's Return ends:
 	now humboldt-endgame-begins is true;
 	[say "HUMBOLDT'S RETURN ENDS."]
 
-Chapter 3 - Humbolt Endgame
+Chapter - Humbolt Endgame
 
 Humboldt Endgame is a scene.
 
@@ -2422,7 +2422,7 @@ When Humboldt Endgame ends:
 		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";
 	end the story finally.
 	
-Book 7 - Help
+Book - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description

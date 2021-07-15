@@ -1608,6 +1608,8 @@ Instead of telling Humboldt about "diagnosis": try asking Humboldt about it.
 Instead of telling Humboldt about "examination": try asking Humboldt about it.
 Instead of telling Humboldt about "workshop": try asking Humboldt about it.
 Instead of telling Humboldt about "time machine": try asking Humboldt about it.
+Instead of telling Humboldt about "watch": try asking Humboldt about it.
+Instead of telling Humboldt about "pocket watch": try asking Humboldt about it
 
 [Asking]
 		
@@ -1656,6 +1658,13 @@ Instead of asking Humboldt about "humboldt/doctor/physician/dr/psychologist/alie
 [HACK - There should be some way I can write "Instead of asking Humboldt about yourself"]
 Instead of asking Humboldt about "me/yourself/myself": say "Perhaps you should focus on the situation at hand instead of yourself."	
 
+[Hack. Why can't I just write "Instead of asking Humboldt about "pocket watch/watch"?]
+Instead of asking Humboldt about "pocket watch": say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
+Instead of asking Humboldt about "watch": say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'" 
+[Instead of asking Humboldt about "pocket watch" or "watch" or "timepiece" or "chronometer": say "WHAT POCKET WATCH?".]
+
+Test watch-humboldt with "ask humboldt about watch / ask humboldt about pocket watch / tell humboldt about watch / tell humboldt about pocket watch".
+
 Instead of showing the time machine to Humboldt: [This doesn't work because the time machine is fixed in place]
 	say "SHOW HUMBOLDT TIME MACHINE."
 
@@ -1670,6 +1679,10 @@ Instead of showing the blueprints to Humboldt:
 
 Instead of showing the fuse to Humboldt:
 	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
+		
+Instead of showing the pocket watch to Humboldt: 
+	say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
+	[HACK - Why can't I simply write "try asking Humboldt about it."]
 
 [Asking & Telling - Humboldt Endgame]
 

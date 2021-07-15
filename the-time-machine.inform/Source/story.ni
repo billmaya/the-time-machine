@@ -2042,7 +2042,7 @@ Inside from the Domed Building is Inside Dome.
 
 Understand "concrete" or "pantheon" or "columned" or "columns" or "portico" or "entrance" as Domed Building.
 
-The description of the Domed Building is "Before you is a weathered concrete building with a domed top that vaguely resembles the Pantheon in Rome. The entrace to the building is through a columned portico to the east."
+The description of the Domed Building is "Before you is a weathered concrete building with a domed top that vaguely resembles the Pantheon in Rome. The entrance to the building is through a columned portico to the east."
 
 Chapter 5 - Inside Dome
 

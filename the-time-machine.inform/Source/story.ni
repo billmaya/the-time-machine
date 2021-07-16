@@ -6,7 +6,7 @@ The release number is 3.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 22944 ]
+[ WORDS - 23034 23030 22944 ]
 
 Table of Releases
 release	notes
@@ -373,7 +373,7 @@ Section - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.
-The pocket watch is portable.
+[The pocket watch is portable.]
 Understand "timepiece" or "chronometer" or "hands" or "stem" as pocket watch.
 
 The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that Wells['] Weena was particularly enchanted with its moving hands and its winding mechanism."
@@ -537,7 +537,8 @@ Instead of taking something in the Library:
 		otherwise:
 		 	say "READING [the type of the noun].";
 	otherwise:
-		say "That's hardly portable.".
+		[say "That's hardly portable.".]
+		continue the action.
 
 [> read book / read periodical / read encyclopaedia ]
 		
@@ -2526,7 +2527,7 @@ hint				used
 "go west"
 "go west"
 "go southeast"
-"show eloi the watch"
+"show eloi the s"
 "show weena the petal"
 "go northwest"
 "enter time machine"

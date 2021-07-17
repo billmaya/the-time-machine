@@ -1859,7 +1859,7 @@ When Travel To 1895 begins:
 	now the numeric-year is 1895;
 	now the time machine is in the Workshop;
 	now the time machine is undescribed;
-	now fuse-burnt-out is true; [Commented out so multiple time travel round trips are possible]
+	[now fuse-burnt-out is true;] [Commented out so multiple time travel round trips are possible]
 	now the button is switched off.
 	
 Travel To 1895 ends when the time machine is in the Workshop.

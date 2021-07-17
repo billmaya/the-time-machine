@@ -2,17 +2,18 @@ The story title is "The Time Machine".
 The story author is "Bill Maya".
 The story headline is "A Text Adventure".
 The story genre is "Science Fiction".
-The release number is 3.
+The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23035 ]
+[ WORDS - 23069 ]
 
 Table of Releases
 release	notes
 "1"	"beta-1 release"
 "2"	"beta-2 release"
 "3"	"parsercomp-2021 release"
+"4"	"XYZ"
 
 Book - Beginning The Story
 
@@ -1095,7 +1096,7 @@ The fuse is undescribed.
 The fuse is in the sliding panel.
 
 fuse-burnt-out is a truth state that varies.
-fuse-burnt-out is false.
+fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
 
 The description of the fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and useless.[end if]"
 	
@@ -1415,7 +1416,6 @@ Instead of activating the round button:
 			if fuse-burnt-out is false:
 				say "You press the button on the control panel.";
 				now the button is switched on;
-				[say "fuse-burnt-out is [fuse-burnt-out]. button is switched[if button is switched on] On[otherwise] Off";]
 			otherwise:
 				say "You press the button but nothing happens.[no line break][if fuse-burnt-out is true] Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
 				now the player has the fuse;

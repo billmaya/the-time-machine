@@ -1415,6 +1415,7 @@ Instead of activating the round button:
 			if fuse-burnt-out is false:
 				say "You press the button on the control panel.";
 				now the button is switched on;
+				[say "fuse-burnt-out is [fuse-burnt-out]. button is switched[if button is switched on] On[otherwise] Off";]
 			otherwise:
 				say "You press the button but nothing happens.[no line break][if fuse-burnt-out is true] Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
 				now the player has the fuse;
@@ -1812,7 +1813,7 @@ Book - Traveling In Time
 
 Part - Travel To 802,701
 
-Travel To 802,701 is a scene.
+Travel To 802,701 is a recurring scene.
 
 Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the button is switched on.
 
@@ -1844,7 +1845,7 @@ Travel To 802,701 ends when the time machine is in the Clearing.
 
 Part - Travel To 1895
 
-Travel To 1895 is a scene.
+Travel To 1895 is a recurring scene.
 
 Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the button is switched on.
 

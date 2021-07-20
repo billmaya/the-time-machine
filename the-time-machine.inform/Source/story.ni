@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23115 ]
+[ WORDS - 23206 ]
 
 Table of Releases
 release	notes
@@ -1778,6 +1778,11 @@ Understand "attendant" or "attendants" as orderlies.
 
 Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
 
+Instead of asking the orderlies about anything: say "If they both weren't out of sight in the ambulance you could."
+Instead of telling the orderlies about anything: try asking the orderlies about it.
+Instead of showing something to the orderlies: try asking the orderlies about it.
+
+
 Chapter - Driver
 
 The driver is a person.
@@ -1787,7 +1792,13 @@ The driver is undescribed.
 The driver is in Woking Street.
 The description of the driver is "Trying to stay warm in the front of the ambulance, the driver waits for Humboldt to give him the signal to get going."
 
-Instead of asking the driver about anything: say "Huddled against the cold, the driver looks at you, glances at Dr. Humboldt, and continues looking down the street."
+Instead of asking the driver about anything: say "'I'm just the driver, sir. The doctor there's the one who could answer that for you."
+Instead of telling the driver about anything: say "'Fascinating, sir. I'm sure the doctor would be might interested to hear that.'"
+Instead of showing the pocket watch to the driver: say "Very nice, sir.  I'd hold on to that. I've got one like it that was me granddads."
+
+
+
+
 
 Chapter - Wells
 

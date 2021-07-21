@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23206 ]
+[ WORDS - 23228 ]
 
 Table of Releases
 release	notes
@@ -305,16 +305,19 @@ Section - Wandering
 	Instead of wandering:
 		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider. You really should get inside since you're not dressed appropriately for this winter weather."
 
-Section - Humbolt Exit
+Section - Humbolt's Exit
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
+		if pocket watch is in Woking Street:
+			say "HUMBOLDT PICKS UP WATCH AND HANDS IT TO YOU.[paragraph break]";
+			now the player is carrying the pocket watch;
 		say "Before you can leave, Dr. Humboldt snaps his pocket watch shut and climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
 
-		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the key is. Finding the rest of the flower might help us convince Wells that all this time travel nonsense of his is just a figment of his imagination. Talk to Mrs. Watchett.'
+		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the workshop key is. Finding the rest of the flower might help us convince Wells that all this time travel nonsense of his is just a figment of his imagination. Talk to Mrs. Watchett.'
 
 		With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears.";
-		now Humboldt is nowhere; [Writing §8.10. Removing things from play]
+		now Humboldt is nowhere; 
 		now the ambulance is nowhere;
 		now the orderlies are nowhere;
 		now the driver is nowhere;
@@ -322,6 +325,7 @@ Instead of going north in Woking Street:
 		try looking;
 	otherwise:
 		continue the action.
+
 
 
 Section - Front Door

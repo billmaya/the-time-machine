@@ -6,13 +6,13 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23246 ]
+[ WORDS - 23484 ]
 
 Table of Releases
 release	notes
 "1"	"beta-1 release"
 "2"	"beta-2 release"
-"3"	"parsercomp-2021 release"
+"3"	"v1.0 parsercomp-2021 release"
 "4"	"XYZ"
 
 Book - Beginning The Story
@@ -246,17 +246,50 @@ Instead of searching the street-search: try searching the area.
 
 [> search area]
 
+area-search is a number that varies.
+area-search is 0.
+
 Instead of searching the area:
 	if the player does not have metal key:
-		if watchett-key is true:
-			say "You bend down and brush away the snow to reveal a small metal key that must have fallen out of Wells['] pocket during his struggle. You picking the key up and put it in your pocket.";
+		now area-search is area-search + 1;
+		[say "watchet-key: [watchett-key], area-search [area-search]";]
+		if watchett-key is false:
+			if area-search is 0:
+				if a random chance of 25 in 100 succeeds:
+					say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+				otherwise: 
+					say "NO FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+			otherwise if area-search is 1:
+				if a random chance of 35 in 100 succeeds:
+					say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+				otherwise: 
+					say "NO FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+			otherwise if area-search is 2:
+				if a random chance of 50 in 100 succeeds:
+					say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+				otherwise: 
+					say "NO FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+			otherwise if area-search is 3:
+				say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+		otherwise:
+			if area-search is 0:
+				if a random chance of 75 in 100 succeeds:
+					say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+				otherwise: 
+					say "NO FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+			otherwise if area-search is 1:
+				say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+			otherwise if area-search is greater than 1:
+				say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+			[say "You bend down and brush away the snow to reveal a small metal key that must have fallen out of Wells['] pocket during his struggle. You picking the key up and put it in your pocket.";
 			now the player is carrying the metal key;
 		otherwise:
-			say "You bend down despite the cold and peer at the ground but nothing catches your eye. Of course, it would help if you knew what you were looking for.";
+			say "You bend down despite the cold and peer at the ground but nothing catches your eye. Of course, it would help if you knew what you were looking for.";]
 	otherwise:
 		say "You find nothing of interest after searching the area again."
 
 Instead of going down in Woking Street: try searching the area.
+
 
 Section - Scenery
 

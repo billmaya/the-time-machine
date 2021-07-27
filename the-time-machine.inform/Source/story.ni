@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23560 ]
+[ WORDS - 23626 ]
 
 Table of Releases
 release	notes
@@ -1995,6 +1995,11 @@ The description of the metal grate is "About three feet in diameter, the grate i
 
 Understand the command "remove" as something new.
 Understand the command "remove" as "take".
+
+Instead of pulling the metal grate: try taking the metal grate.
+Instead of pushing the metal grate: try taking the metal grate.
+
+Instead of attacking the metal grate with something: say "The [second noun] has no effect on the metal of the grate, despite its rusted appearance. But you might be able to move the grate out of its current position if you try."
 
 Instead of taking the metal grate:
 	if the metal grate is on the circular shaft in the Clearing:

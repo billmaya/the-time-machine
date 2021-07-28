@@ -252,35 +252,35 @@ area-search is 0.
 Instead of searching the area:
 	if the player does not have metal key:
 		now area-search is area-search + 1;
-		[say "watchet-key: [watchett-key], area-search [area-search]";]
+		[say "watchett-key: [watchett-key], area-search [area-search]";]
 		if watchett-key is false:
 			if area-search is 0:
 				if a random chance of 25 in 100 succeeds:
-					say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 				otherwise: 
-					say "NO FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 			otherwise if area-search is 1:
 				if a random chance of 35 in 100 succeeds:
-					say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 				otherwise: 
-					say "NO FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 			otherwise if area-search is 2:
 				if a random chance of 50 in 100 succeeds:
-					say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 				otherwise: 
-					say "NO FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 			otherwise if area-search is 3:
-				say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 		otherwise:
 			if area-search is 0:
 				if a random chance of 75 in 100 succeeds:
-					say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 				otherwise: 
-					say "NO FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 			otherwise if area-search is 1:
-				say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 			otherwise if area-search is greater than 1:
-				say "FIND KEY - watchet-key: [watchett-key], area-search [area-search]";
+				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
 			[say "You bend down and brush away the snow to reveal a small metal key that must have fallen out of Wells['] pocket during his struggle. You picking the key up and put it in your pocket.";
 			now the player is carrying the metal key;
 		otherwise:
@@ -1549,7 +1549,7 @@ Instead of telling Watchett about something: [Writing §7.6. Reading and talking
 	try asking Watchett about it.
 
 Instead of asking Watchett about "key":
-	say "watchet-key: [watchett-key], area-search [area-search]"; 
+	say "watchett-key: [watchett-key], area-search [area-search]"; 
 	if watchett-key is false:
 		if area-search is 0:
 			say "'Mr. Wells always kept it on his person. That's where it still must be.'";

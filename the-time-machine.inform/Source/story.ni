@@ -744,7 +744,7 @@ The fire is in the parlor.
 The fire is undescribed.
 The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn, the embers and ashes fall through the grate onto the brick."
 
-The coals are undescribed in the parlor. 
+The coals are scenery in the parlor. 
 The description of the coals is "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
 Understand "coal" or "pile" as coals.
 	

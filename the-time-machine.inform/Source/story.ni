@@ -820,7 +820,7 @@ Instead of using the ashes:
 
 Understand the command "burn" as something new.
 Understand "burn [something]" as burning.
-Instead of burning something: say "That really woudn[apostrophe] accomplish anything productive."
+Instead of burning something: say "That really wouldn[apostrophe]t accomplish anything productive."
 
 Section - Poker
 
@@ -1107,7 +1107,7 @@ Instead of switching on the orrery-switch:
 		if the sliding panel is open: 
 			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
 		otherwise:
-			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptabley, the planets on the surface begin their endless journey around the Sun.";
+			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptibly, the planets on the surface begin their endless journey around the Sun.";
 		now the orrery-switch is switched on;
 		now the orrery is switched on;
 	otherwise: 
@@ -1394,28 +1394,28 @@ Understand "date" or "dates" or "destination" as panel-things.
 
 Adjusting is an action applying to one thing.
 Understand "adjust [something]" as adjusting.
-Instead of adjusting: say "I don['] see how you would do that right now."
+Instead of adjusting: say "I don[']t see how you would do that right now."
 
 Instead of adjusting the panel-things:
 	try modifying panel-things.
 	
 Changing is an action applying to one thing.
 Understand "change [something]" as changing.
-Instead of changing: say "I don['] see how you would do that right now."
+Instead of changing: say "I don[']t see how you would do that right now."
 
 Instead of changing the panel-things: 
 	try modifying panel-things.
 
 Setting is an action applying to one thing.
 Understand "set [something]" as setting.
-Instead of setting: say "I don['] see how you would do that right now."
+Instead of setting: say "I don[']t see how you would do that right now."
 	
 Instead of setting the panel-things:
 	try modifying panel-things.
 
 Modifying is an action applying to one thing.
 Understand "modify [something]" as modifying.
-Instead of modifying: say "I don['] see how you would do that right now."
+Instead of modifying: say "I don[']t see how you would do that right now."
 		
 Instead of modifying the panel-things:
 	say "[first time]You reach out to flip some of the switches in the bottom section of the panel but hesitate, realizing that without Wells you have no idea how the time selector works. [only]Best to leave things on the control panel as they are for now."
@@ -2278,7 +2278,7 @@ Chapter - Eloi
 
 The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.
 
-Noticing your prescence, a few of the Eloi gather around you.[end if]"
+Noticing your presence, a few of the Eloi gather around you.[end if]"
 
 The indefinite article is "the".
 The Eloi are in the River.

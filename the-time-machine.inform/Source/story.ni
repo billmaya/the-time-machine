@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23626 ]
+[ WORDS - 23669 ]
 
 Table of Releases
 release	notes
@@ -2082,9 +2082,10 @@ Chapter - Top Shaft
 
 The Top Shaft is a room.
 Down from Top Shaft is the Bottom Shaft.
+Up from Top Shaft is the Clearing.
 The description of Top Shaft is "You[']re hanging at the top of the shaft on the ladder leading down. Faint sounds of machinery rise from the darkness below. Exiting the shaft will put you back in the clearing."
 
-The printed name of Top Shaft is "Top of the Shaft"
+Instead of going up from the Top Shaft: try exiting.
 
 Instead of exiting in the Top Shaft: 
 	say "You carefully climb out of the shaft.";

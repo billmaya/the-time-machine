@@ -2257,6 +2257,7 @@ Instead of eating the river-water:
 Instead of drinking the river-water, say "I don't see why you would choose to drink this dubious liquid when there's a source of fresh water elsewhere." 
 
 The river-things is scenery in the River Bank.
+The description of the river-things is "While the fruit is totally unknown and bizarre, some of the petals on these flowers matches exactly the one you[']ve got in your pocket."
 Understand "flowers" or "flower" or "fruit" as river-things.
 
 Gathering is an action applying to one thing.

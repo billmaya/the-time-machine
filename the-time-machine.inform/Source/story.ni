@@ -6,14 +6,15 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23669 ]
+[ WORDS - 23809 ]
 
 Table of Releases
 release	notes
 "1"	"beta-1.0.1 release"
 "2"	"beta-1.0.2 release"
-"3"	"v1.0 parsercomp-2021 release"
-"4"	"beta-2.0.1 release"
+"3"	"v1.0 parsercomp 2021 release"
+"4"	"v1.1 post-parsercomp 2021 release"
+"5"	"beta-2.0.1 release"
 
 Book - Beginning The Story
 
@@ -160,57 +161,42 @@ Chapter - Tests
 
 [In the game type "> test" to see a list of all the available tests]
 
+[v1.0 Tests]
 Test goto-kitchen with "north / west/ north / north / north." [from Woking Street]
 Test goto-dining with "north / west / north / north." [from Woking Street]
-
 Test house-look with "x other houses / x residences". [from Woking Street]
 Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove / x sink / x work area." [from Kitchen]
-
-Test humboldt-woking-talk with "ask humboldt about wells / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about workshop / ask humboldt about time machine"
-
+Test humboldt-woking-talk with "ask humboldt about wells / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about workshop / ask humboldt about time machine."
 Test take-encyc with "take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia."
 Test take-book with "take book / take book / take book / take book / take book / take book."
 Test take-mag with "take periodical / take periodical / take periodical / take periodical / take periodical."  
-
 Test tend-fire with "tend fire / take poker / tend fire / drop poker / tend fire."
-
 Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
 Test orrery-on-off with "turn orrery on / turn orrery off."
 Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."
-
 Test switch-examine with " examine orrery's switch / examine orrery switch."
 Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
-
-[Test prepare-time-machine with "gonear time machine / purloin fuse / examine blueprints / put fuse in time machine."]
-[Test prepare-time-machine with "test unlock-workshop / go north / flip switch / purloin fuse / examine blueprints / put fuse in time machine."]
-
 Test circular-shaft-look with "x shaft / take grate / x shaft."
-
 Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
 Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
-
-[Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / gonear river."]
 Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / go southeast."
-			
 Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / east / east / south / north / west / west / test eloi-ask-show-give."
 Test travel-1895 with "go northwest / enter / activate panel."
 Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena petal / test travel-1895 / exit."
-
 Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with key / n / flip switch / examine blueprints / put fuse in time machine. / get in time machine / press button."
-
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
 Test goto-workshop with "go north / test unlock-workshop / go north / flip switch."
 Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in control panel."
 Test weena-flower with "take watch / go north / test goto-workshop / test prep-time-machine / enter / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show watch to eloi."
-			
 Test wtm with "test goto-workshop / test prep-time-machine."
 Test 802701 with "test wtm / enter / press button."
 Test eloi with "test 802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
-		
 Test to-morlocks with "test 802701 / exit / remove grate / get in shaft / go down."
 Test to-watchett with "go north / take pocket watch / go north / go west / go north / take poker / go north / open panel / take fuse / go north."
-
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / search workbench / examine blueprints / enter time machine / examine control panel / put fuse in control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit / show humboldt the flower."
+
+[v1.1 Tests]
+Test search-area with "search area / search area / search area / search area."
 
 Chapter - Release
 
@@ -247,40 +233,49 @@ Instead of searching the street-search: try searching the area.
 [> search area]
 
 area-search is a number that varies.
-area-search is 0.
+area-search is 0. [You haven't searched the area yet]
 
 Instead of searching the area:
 	if the player does not have metal key:
 		now area-search is area-search + 1;
 		[say "watchett-key: [watchett-key], area-search [area-search]";]
 		if watchett-key is false:
-			if area-search is 0:
-				if a random chance of 25 in 100 succeeds:
+			if area-search is 1: 
+				if a random chance of 5 in 100 succeeds:
+					[say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";]
+					say "Bending down, you brush away the snow around your feet and, by some stroke of unimaginable luck you see a small metal key that must have fallen out of Wells['] pocket during his struggle. You pick the key up and put it in your pocket.";
+					now the player is carrying the metal key;
+				otherwise: 
+					[say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";]
+					say "Shivering against a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] you kick the snow in various directions, clearing a small area around your feet , but find nothing.";
+			otherwise if area-search is 2: 
+				if a random chance of 15 in 100 succeeds:
 					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					now the player is carrying the metal key;
 				otherwise: 
 					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
-			otherwise if area-search is 1:
-				if a random chance of 35 in 100 succeeds:
+			otherwise if area-search is 3: 
+				if a random chance of 45 in 100 succeeds:
 					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					now the player is carrying the metal key;
 				otherwise: 
 					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
-			otherwise if area-search is 2:
-				if a random chance of 50 in 100 succeeds:
-					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
-				otherwise: 
-					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
-			otherwise if area-search is 3:
+			otherwise if area-search is 4: 
 				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+				now the player is carrying the metal key;				
 		otherwise:
-			if area-search is 0:
+			if area-search is 1: 
 				if a random chance of 75 in 100 succeeds:
 					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					now the player is carrying the metal key;
 				otherwise: 
 					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
-			otherwise if area-search is 1:
+			otherwise if area-search is 2: 
 				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
-			otherwise if area-search is greater than 1:
+				now the player is carrying the metal key;
+			otherwise if area-search is greater than 2: 
 				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+				now the player is carrying the metal key;
 			[say "You bend down and brush away the snow to reveal a small metal key that must have fallen out of Wells['] pocket during his struggle. You picking the key up and put it in your pocket.";
 			now the player is carrying the metal key;
 		otherwise:

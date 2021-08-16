@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23809 ]
+[ WORDS - 23745 ]
 
 Table of Releases
 release	notes
@@ -232,56 +232,61 @@ Instead of searching the street-search: try searching the area.
 
 [> search area]
 
+To say find-key:
+	say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]".
+	
+To say no-find-key:
+	say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]".
+
 area-search is a number that varies.
 area-search is 0. [You haven't searched the area yet]
 
 Instead of searching the area:
 	if the player does not have metal key:
 		now area-search is area-search + 1;
-		[say "watchett-key: [watchett-key], area-search [area-search]";]
 		if watchett-key is false:
 			if area-search is 1: 
 				if a random chance of 5 in 100 succeeds:
-					[say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";]
-					say "Bending down, you brush away the snow around your feet and, by some stroke of unimaginable luck you see a small metal key that must have fallen out of Wells['] pocket during his struggle. You pick the key up and put it in your pocket.";
+					say "[find-key]";
+					[say "Bending down, you brush away the snow around your feet and, by some stroke of unimaginable luck, you see a small metal key that must have fallen out of Wells['] pocket during his struggle. You pick the key up and put it in your pocket.";]
 					now the player is carrying the metal key;
 				otherwise: 
-					[say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";]
-					say "Shivering against a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] you kick the snow in various directions, clearing a small area around your feet , but find nothing.";
+					say "[no-find-key]";
+					[say "Shivering against a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] you kick the snow in various directions, clearing a small area around your feet , but find nothing.";]
 			otherwise if area-search is 2: 
 				if a random chance of 15 in 100 succeeds:
-					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					say "[find-key]";
 					now the player is carrying the metal key;
 				otherwise: 
-					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					say "[no-find-key]";
 			otherwise if area-search is 3: 
 				if a random chance of 45 in 100 succeeds:
-					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					say "[find-key]";
 					now the player is carrying the metal key;
 				otherwise: 
-					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					say "[no-find-key]";
 			otherwise if area-search is 4: 
-				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+				say "[find-key]";
 				now the player is carrying the metal key;				
 		otherwise:
 			if area-search is 1: 
 				if a random chance of 75 in 100 succeeds:
-					say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					say "[find-key]";
 					now the player is carrying the metal key;
 				otherwise: 
-					say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+					say "[no-find-key]";
 			otherwise if area-search is 2: 
-				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+				say "[find-key]";
 				now the player is carrying the metal key;
 			otherwise if area-search is greater than 2: 
-				say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]";
+				say "[find-key]";
 				now the player is carrying the metal key;
 			[say "You bend down and brush away the snow to reveal a small metal key that must have fallen out of Wells['] pocket during his struggle. You picking the key up and put it in your pocket.";
 			now the player is carrying the metal key;
 		otherwise:
 			say "You bend down despite the cold and peer at the ground but nothing catches your eye. Of course, it would help if you knew what you were looking for.";]
 	otherwise:
-		say "You find nothing of interest after searching the area again."
+		say "You find nothing further of interest after searching the area again."
 
 Instead of going down in Woking Street: try searching the area.
 

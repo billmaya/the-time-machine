@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23745 ]
+[ WORDS - 23761 ]
 
 Table of Releases
 release	notes
@@ -232,14 +232,34 @@ Instead of searching the street-search: try searching the area.
 
 [> search area]
 
-To say find-key:
-	say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]".
-	
-To say no-find-key:
-	say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]".
-
 area-search is a number that varies.
 area-search is 0. [You haven't searched the area yet]
+
+To say find-key:
+	[say "FIND KEY - watchett-key: [watchett-key], area-search [area-search]".]
+	say "[fk-weather] [fk-action] [fk-result]".
+	
+To say no-find-key:
+	[say "NO FIND KEY - watchett-key: [watchett-key], area-search [area-search]".]
+	say "Despite a [nfk-weather] [nfk-action] [nfk-result]".
+	
+To say nfk-weather:
+	say "[one of]severe[or]frigid[or]freezing[or]cold[or]bitter[or]bitterly cold[or]frosty[or]icy[or]icey[or]ice-cold[or]numbing[or]wintry[or]wintery[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random] [one of]of wind[or]of snow[or]of wind and snow[purely at random]".
+	
+To say nfk-action:
+	say "you [one of]kick the snow around with your feet[or]bend down and search through the snow[or]shovel some snow to one side to expose the street below[or]push the snow in all directions[purely at random]".
+	
+To say nfk-result:
+	say "without [one of]finding anything.[or]success.[or]any luck.[or]finding anything but the street beneath.[purely at random]".
+	
+To say fk-weather:
+	say "Despite another [nfk-weather]".
+	
+To say fk-action:
+	say "you make one last attempt".
+	
+To say fk-result:
+	say "and find a small metal key that must have fallen out of Wells['] pocket during his struggle. You pick up the key and put it in your pocket.".
 
 Instead of searching the area:
 	if the player does not have metal key:
@@ -248,11 +268,9 @@ Instead of searching the area:
 			if area-search is 1: 
 				if a random chance of 5 in 100 succeeds:
 					say "[find-key]";
-					[say "Bending down, you brush away the snow around your feet and, by some stroke of unimaginable luck, you see a small metal key that must have fallen out of Wells['] pocket during his struggle. You pick the key up and put it in your pocket.";]
 					now the player is carrying the metal key;
 				otherwise: 
 					say "[no-find-key]";
-					[say "Shivering against a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] you kick the snow in various directions, clearing a small area around your feet , but find nothing.";]
 			otherwise if area-search is 2: 
 				if a random chance of 15 in 100 succeeds:
 					say "[find-key]";
@@ -281,10 +299,6 @@ Instead of searching the area:
 			otherwise if area-search is greater than 2: 
 				say "[find-key]";
 				now the player is carrying the metal key;
-			[say "You bend down and brush away the snow to reveal a small metal key that must have fallen out of Wells['] pocket during his struggle. You picking the key up and put it in your pocket.";
-			now the player is carrying the metal key;
-		otherwise:
-			say "You bend down despite the cold and peer at the ground but nothing catches your eye. Of course, it would help if you knew what you were looking for.";]
 	otherwise:
 		say "You find nothing further of interest after searching the area again."
 

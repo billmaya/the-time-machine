@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23761 ]
+[ WORDS - 23782 ]
 
 Table of Releases
 release	notes
@@ -1562,20 +1562,21 @@ Instead of showing something to Watchett: say "Mrs. Watchett glances at the [nou
 Instead of telling Watchett about something: [Writing §7.6. Reading and talking]
 	try asking Watchett about it.
 
-Instead of asking Watchett about "key":
-	say "watchett-key: [watchett-key], area-search [area-search]"; 
-	if watchett-key is false:
-		if area-search is 0:
-			say "'Mr. Wells always kept it on his person. That's where it still must be.'";
-		if area-search is 1:
-			say "'Mr. Wells always kept it on his person. But it never stayed there for long. Always fall out of his pocket at the drop of a hat. The places I'd find it.' ";
-		now watchett-key is true;
-	otherwise:
-		if area-search is 0:
-			say "'WATCHETT KEY REPLY";
-		if area-search is 1:
-			say "WATCHETT KEY REPLY";
+To say key-start:
+	say "Mr. Wells always kept it on his person.".
 
+To say key-middle:
+	say "[one of]That's where it still must be.[or]But it never stayed there for long.[or]But it was always falling out of his pocket at the drop of a hat.[or]But he was always loosing it.[purely at random]".
+
+To say key-end:
+	if the player has the key:
+		say "Looks like you found it.";
+	otherwise:
+		say "[one of]Perhaps it's somewhere around the house.[or]The places I'd find it.[or]Where was the last place you saw Mr. Wells?[purely at random]".
+
+Instead of asking Watchett about "key":
+	say "'[key-start] [key-middle] [key-end]'";
+	now watchett-key is true.
 
 Instead of asking Watchett about "wells": say "'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"
 Instead of asking Watchett about "experiments": say "'I wouldn't know anything about that. Mr. Wells was quite private about his experiments. Did all that in his workshop.'"

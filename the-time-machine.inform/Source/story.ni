@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 23782 ]
+[ WORDS - 23812 ]
 
 Table of Releases
 release	notes
@@ -2516,6 +2516,7 @@ Book - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description
+"What's changed from Release 3 (v1.0)"		--		"Release 3 (v1.0) was the ParserComp 2021 release.[line break][line break]Release 4 (v1.1) is the post-ParserComp 2021 release and has several changes."
 "Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com."
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]

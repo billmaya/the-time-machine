@@ -2514,9 +2514,17 @@ When Humboldt Endgame ends:
 	
 Book - Help
 
+["Release 3 (v1.0) was the ParserComp 2021 release.[line break][line break]Release 4 (v1.1) is the post-ParserComp 2021 release and has several changes."]
+
+To say new-paragraph:
+	say "[line break][line break]".
+
+[To say release-4-notes: [Would like to put text here and substitute below]
+	say ]
+
 Table of Basic Help Options (continued)
 title		subtable		description
-"What's changed from Release 3 (v1.0)"		--		"Release 3 (v1.0) was the ParserComp 2021 release.[line break][line break]Release 4 (v1.1) is the post-ParserComp 2021 release and has several changes."
+"What's changed from the previous release?"		--		"Note: There are Spoilers below! If you have never played this game before I suggest you play it first without reading any of the information below.[new-paragraph]Release 4 Notes (v1.1)[new-paragraph]This release incorporates several fixes based on reviews and feedback from people who played the game during ParserComp 2021 judging.[new-paragraph]• It is now possible to put the watch or any other object down in the Library and retrieve it. In the prior release you were unable to retrieve anything that was put down in the Library, getting a 'It's hardly portable' message when attempting to pickup the previously dropped or place object.[new-paragraph]• Before he leaves, Humboldt will pick up Wells' pocket watch off of the street and hand it to you.[new-paragraph]• The ambulance driver is now a person that you can have limited conversation with.[new-paragraph]• In the Clearing you can now Pull, Push, and attempt to Break the grate with another object (previously only Take Grate worked).[new-paragraph]• The time machine fuse will no longer burn out after a single round trip.[new-paragraph]• You no longer need to talk to Mrs. Watchett before successfully finding the key, but it might take several searches of the area to find it."
 "Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com."
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]

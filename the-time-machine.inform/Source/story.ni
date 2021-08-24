@@ -793,6 +793,8 @@ Instead of using the fire:
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
 
+Instead of taking coals: try pushing coals.
+
 Instead of pushing the coals:
 	if the player has the poker:
 		say "You spread the coals a bit more evenly around the grate.";
@@ -805,6 +807,8 @@ Instead of pushing the embers:
 	otherwise:
 		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
 
+Instead of taking ashes: try pushing ashes.
+		
 Instead of pushing the ashes:
 	if the player has the poker:
 		say "You spread the ashes a bit more evenly around the inner hearth.";
@@ -819,6 +823,8 @@ Instead of using the coals:
 		say "You spread the coals a bit more evenly around the grate.";
 	otherwise:
 		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+
+Instead of taking the embers: try using the embers.
 
 Instead of using the embers:
 	if the player has the poker:
@@ -2522,7 +2528,7 @@ To say new-paragraph:
 
 Table of Basic Help Options (continued)
 title		subtable		description
-"What's changed from the previous release?"		--		"Note: There are Spoilers below! If you have never played this game before I suggest you play it first without reading any of the information below.[new-paragraph]Release 4 Notes (v1.1)[new-paragraph]This release incorporates several fixes based on reviews and feedback from people who played the game during ParserComp 2021 judging.[new-paragraph]• It is now possible to put the watch or any other object down in the Library and retrieve it. In the prior release you were unable to retrieve anything that was put down in the Library, getting a 'It's hardly portable' message when attempting to pickup the previously dropped or place object.[new-paragraph]• Before he leaves, Humboldt will pick up Wells' pocket watch off of the street and hand it to you.[new-paragraph]• The ambulance driver is now a person that you can have limited conversation with.[new-paragraph]• In the Clearing you can now Pull, Push, and attempt to Break the grate with another object (previously only Take Grate worked).[new-paragraph]• The time machine fuse will no longer burn out after a single round trip.[new-paragraph]• You no longer need to talk to Mrs. Watchett before successfully finding the key, but it might take several searches of the area to find it."
+"What's changed from the previous release?"		--		"Note: There are Spoilers below! If you have never played this game before I suggest you play it first without reading any of the information below.[new-paragraph]Release 4 Notes (v1.1)[new-paragraph]This release incorporates several fixes based on reviews and feedback from people who played the game during ParserComp 2021 judging.[new-paragraph]• It is now possible to put the watch or any other object down in the Library and retrieve it. In the prior release you were unable to retrieve anything that was put down in the Library, getting a 'It's hardly portable' message when attempting to pickup the previously dropped or place object.[new-paragraph]• Before he leaves, Humboldt will pick up Wells' pocket watch off of the street and hand it to you.[new-paragraph]• The ambulance driver is now a person that you can have limited conversation with.[new-paragraph]• In the Clearing you can now Pull, Push, and attempt to Break the grate with another object (previously only Take Grate worked).[new-paragraph]• The time machine fuse will no longer burn out after a single round trip.[new-paragraph]• You no longer need to talk to Mrs. Watchett before successfully finding the key, but it might take several searches of the area to find it.[new-paragraph]• In the Parlor, the attempted taking of coals, ashes, or embers from the fireplace returns an appropirate response."
 "Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com."
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]

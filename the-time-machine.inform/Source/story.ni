@@ -1569,19 +1569,19 @@ Instead of telling Watchett about something: [Writing §7.6. Reading and talking
 	try asking Watchett about it.
 
 To say key-start:
-	say "Mr. Wells always kept it on his person.".
+	say "Mr. Wells always kept it on his person.[no line break]".
 
 To say key-middle:
-	say "[one of]That's where it still must be.[or]But it never stayed there for long.[or]But it was always falling out of his pocket at the drop of a hat.[or]But he was always loosing it.[purely at random]".
+	say "[one of]That's where it still must be.[no line break][or]But it never stayed there for long.[no line break][or]But it was always falling out of his pocket at the drop of a hat.[no line break][or]But he was always loosing it.[no line break][at random]".
 
 To say key-end:
 	if the player has the key:
 		say "Looks like you found it.";
 	otherwise:
-		say "[one of]Perhaps it's somewhere around the house.[or]The places I'd find it.[or]Where was the last place you saw Mr. Wells?[purely at random]".
+		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
 
 Instead of asking Watchett about "key":
-	say "'[key-start] [key-middle] [key-end]'";
+	say "'[key-start] [key-middle] [key-end]'[line break]";
 	now watchett-key is true.
 
 Instead of asking Watchett about "wells": say "'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"

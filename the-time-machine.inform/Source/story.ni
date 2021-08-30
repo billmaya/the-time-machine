@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 24058 ]
+[ WORDS - 24280 ]
 
 Table of Releases
 release	notes
@@ -1647,7 +1647,7 @@ Humboldt is a person.
 Humboldt is a male.
 Humboldt is fixed.
 Humboldt is in Woking Street.
-The description of Humboldt is "A reputable physician and alienist, he has also known Wells for years. You are confident that his methodical nature, combined with his diagnostic skills, will enable him to determine what ails your friend."
+The description of Humboldt is "A reputable physician and alienist, he has also known Wells for years. You are confident that his methodical nature, combined with his diagnostic skills, will enable him to determine what ails your friend." [enable him to determine what truth lies at the heart of Wells['] story about time travel. - modify description.]
 
 The printed name of Humboldt is "Dr. Humboldt"
 
@@ -1679,6 +1679,9 @@ Instead of telling Humboldt about "watch": try asking Humboldt about it.
 Instead of telling Humboldt about "pocket watch": try asking Humboldt about it
 
 [Asking]
+
+[Instead of asking Humboldt about "help":
+	say "HUMBOLDT SHOULD COME BACK WITH 'There is something you could do while I'm away...' HE HANDS YOU THE PETAL, ETC. AND LEAVES."]
 		
 Instead of asking Humboldt about "wells/madman/patient/lunatic": 
 	if humboldt-endgame-begins is false:
@@ -2522,7 +2525,8 @@ Book - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description
-"What's changed from the previous release?"		--		"[release-4-notes]"
+"What has changed from previous releases?"		--		"[release-4-notes]"
+"Thanks to my Beta testers"		--		"[beta-testers]"
 "Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com."
 "Hints"		Table of Hints		--
 ["Settings"		Table of Setting Options		--]
@@ -2630,6 +2634,25 @@ hint				used
 "press button"
 "exit"
 "show humboldt the flower"
+
+To say beta-testers:
+	[say "I cannot give enough thanks to the people below who beta tested 'The Time Machine' for me. Without their help the game would not have been as"]
+	say "I cannot thank the seven people listed below who took the time to beta test 'The Time Machine,' some more than once, for ParserComp 2021. Their help and attention to detail, however humbling, made the game much better.
+
+	• Phil Halprin[line break]
+	• Chirstopher Merriner[line break]
+	• Grueslayer[line break]
+	• Mike Carletta[line break]
+	• Javier Garza[line break]
+	• Brian Rushton[line break]
+	• David White[line break]
+
+	I also want to thank the people who not only played the game during ParserComp but wrote reviews of game.
+
+	• Mike Russo - https://intfiction.org/t/mike-russos-parsercomp-2021-reviews/51521/37[line break]
+	• Thomas Mack - https://ifcomprehensive.com/2021/07/17/the-time-machine-by-bill-maya/[line break]
+	• Rovarsson - https://intfiction.org/t/rovarssons-parsercomp-2021/51803[line break]
+	• Leopold Tal - https://itch.io/jam/parsercomp-2021/rate/1095940#post-4143271".
 
 To say release-4-notes:
 	say "Note: There are Spoilers below! If you have never played this game before I suggest you play it first without reading any of the information below.

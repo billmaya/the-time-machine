@@ -2661,7 +2661,7 @@ To say release-4-notes:
 
 	• It is now possible to put the watch or any other object down in the Library and retrieve it. In the prior release you were unable to retrieve anything that was put down in the Library, getting a 'It's hardly portable' message when attempting to pickup the previously dropped or place object.
 		
-	• Before he leaves, Humboldt will pick up Wells' pocket watch off of the street and hand it to you.
+	• Before he leaves, Humboldt will pick up Wells['] pocket watch off of the street and hand it to you if you have not already picked it up.
 		
 	• The ambulance driver is now a person that you can have limited conversation with.
 	

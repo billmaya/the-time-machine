@@ -6,7 +6,7 @@ The release number is 4.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 24280 ]
+[ WORDS - 24234 ]
 
 Table of Releases
 release	notes
@@ -14,7 +14,6 @@ release	notes
 "2"	"beta-1.0.2 release"
 "3"	"v1.0 parsercomp 2021 release"
 "4"	"v1.1 post-parsercomp 2021 release"
-"5"	"beta-2.0.1 release"
 
 Book - Beginning The Story
 
@@ -2525,7 +2524,7 @@ Book - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description
-"What has changed from previous releases?"		--		"[release-4-notes]"
+"Changes from previous releases"		--		"[release-4-notes]"
 "Thanks to my Beta testers"		--		"[beta-testers]"
 "Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com."
 "Hints"		Table of Hints		--
@@ -2636,8 +2635,7 @@ hint				used
 "show humboldt the flower"
 
 To say beta-testers:
-	[say "I cannot give enough thanks to the people below who beta tested 'The Time Machine' for me. Without their help the game would not have been as"]
-	say "I cannot thank the seven people listed below who took the time to beta test 'The Time Machine,' some more than once, for ParserComp 2021. Their help and attention to detail, however humbling, made the game much better.
+	say "I cannot thank the seven people listed below who took the time to beta test Release 3 (v1.0) of 'The Time Machine' for ParserComp 2021 (some of them even tested it more than once). Their effort and attention to detail made the game that was released to the public for the competition much, much better.
 
 	• Phil Halprin[line break]
 	• Chirstopher Merriner[line break]
@@ -2646,16 +2644,16 @@ To say beta-testers:
 	• Javier Garza[line break]
 	• Brian Rushton[line break]
 	• David White[line break]
+	
+I also want to thank the people who took the time to write reviews of the 'The Time Machine' after playing it for ParserComp 2021.
 
-	I also want to thank the people who not only played the game during ParserComp but wrote reviews of game.
-
-	• Mike Russo - https://intfiction.org/t/mike-russos-parsercomp-2021-reviews/51521/37[line break]
-	• Thomas Mack - https://ifcomprehensive.com/2021/07/17/the-time-machine-by-bill-maya/[line break]
-	• Rovarsson - https://intfiction.org/t/rovarssons-parsercomp-2021/51803[line break]
-	• Leopold Tal - https://itch.io/jam/parsercomp-2021/rate/1095940#post-4143271".
+	• Mike Russo[line break]
+	• Thomas Mack[line break]
+	• Rovarsson[line break]
+	• Leopold Tal".
 
 To say release-4-notes:
-	say "Note: There are Spoilers below! If you have never played this game before I suggest you play it first without reading any of the information below.
+	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.
 	
 	Release 4 Notes (v1.1)
 	

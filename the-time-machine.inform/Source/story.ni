@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 24234 ]
+[ WORDS - 24391 ]
 
 Table of Releases
 release	notes
@@ -311,7 +311,7 @@ Section - Scenery
 
 	The gaslights are scenery in Woking Street. [coal gas https://bit.ly/3ijMeoV ] 
 	The description of the gaslights are "The incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which you hope is a product of his overactive imagination, because you would miss the soft green glow of gassified coal that lights your nightime steps."
-	Understand "gas" or "lights" or "gas lights" or "flickering" or "flickering lights" or "flickering gas lights" as gaslights.
+	Understand "gas" or "gas lights" or "flickering" or "flickering lights" or "flickering gas lights" as gaslights.
 
 	The cul-de-sac is scenery in Woking Street.
 	The description of the cul-de-sac is "A small roundabout with a sputtering [fountain] in the center terminates the street to the east."
@@ -1276,9 +1276,14 @@ Instead of searching the diagrams: try examining workshop-blackboard.
 
 Section - Light Switch
 		
-The lights are a thing.
+The lights are a device. [thing.]
 The lights are scenery in the Workshop.
 The description of the lights is "You see nothing special about the lights except [if light switch is switched off]they are turned off (perhaps there's a switch here somewhere)[otherwise]they are turned on[end if]."
+
+The examine devices rule does nothing when examining the lights.
+
+Instead of switching off the lights: try switching off the light switch.
+Instead of switching on the lights: try switching on the light switch.
 
 The light switch is a device.
 The light switch is in the Workshop.
@@ -1289,15 +1294,39 @@ Instead of examining the light switch:
 	say "A simple light switch by the door that you can flip on or off."
 
 [Writing §3.14. Devices and descriptions, Down Below example]
-Carry out switching off the light switch: now the Workshop is dark.
-Carry out switching on the light switch: now the Workshop is lighted.
+Carry out switching off the light switch: 
+	now the lights are switched off;
+	now the Workshop is dark.
+
+Carry out switching on the light switch: 
+	now the lights are switched on;
+	now the Workshop is lighted.
 
 Understand "flip [something switched off]" as switching on.
 Understand "flip [something switched on]" as switching off.
 
+Understand "press [something switched off]" as switching on.
+Understand "press [something switched on]" as switching off.
+
+To say cannot-reach-light-switch: say "You'll have to get out of the time machine if you want to reach the workshop's light switch."
+Before switching on the light switch: 
+	if the player is in the time machine:
+		say "[cannot-reach-light-switch]";
+		stop the action;
+	otherwise:
+		continue the action.
+
+Before switching off the light switch:
+	if the player is in the time machine:
+		say "[cannot-reach-light-switch]";
+		stop the action;
+	otherwise:
+		continue the action.
+
 After deciding the scope of the player when the location is the Workshop:
 	[place the blackboard in scope;]
 	[place the workbench in scope;]
+	place the lights in scope;
 	place the light switch in scope.
 
 [Recipes §3.7. Lighting, Hohmann Transfer example]

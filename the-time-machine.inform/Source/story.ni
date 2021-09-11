@@ -2554,7 +2554,7 @@ Book - Help
 
 Table of Basic Help Options (continued)
 title		subtable		description
-"Changes from previous releases"		--		"[release-4-notes]"
+"Changes from previous releases"		--		"[release-notes]"
 "Thanks to my Beta testers"		--		"[beta-testers]"
 "Contact the author"		--		"If you have any difficulties with [story title] or have any suggestions for improving the game, please contact me at bill.maya@gmail.com."
 "Hints"		Table of Hints		--
@@ -2682,8 +2682,12 @@ I also want to thank the people who took the time to write reviews of the 'The T
 	• Rovarsson[line break]
 	• Leopold Tal".
 
-To say release-4-notes:
+To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.
+	
+	Release 5 Notes (v1.2)
+	
+	• Made >press switch refer to light switch. Cannot reach light switch if you are in time machine. Made lights a device that you can turn on/off by redirecting to light switch.
 	
 	Release 4 Notes (v1.1)
 	

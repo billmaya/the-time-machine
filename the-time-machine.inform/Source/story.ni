@@ -71,6 +71,7 @@ Chapter - Extensions
 
 Include Basic Help Menu by Emily Short.
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
+[Include Flexible Windows by Jon Ingold.]
 
 After reading a command:
 resolve punctuated titles.
@@ -201,6 +202,32 @@ Test search-area with "search area / search area / search area / search area."
 Chapter - Release
 
 Release along with cover art ("The Time Machine") and an interpreter.
+
+[Chapter - User Interface
+
+The carrying window is a text buffer g-window spawned by the main window.
+The position of the carrying window is g-placeright.
+The measurement of the carrying window is 30.
+
+The character window is a text buffer g-window spawned by carrying window.
+The position of the character window is g-placebelow.
+The measurement of the character window is 50.
+
+The topics window is a text buffer g-window spawned by character window.
+The position of topics window is g-placebelow.
+The measurement of the topics window is 50.
+
+Rule for refreshing the carrying window:
+	try taking inventory.
+
+When play begins:
+	open the carrying window;
+	[open the character window;
+	open the topics window.]
+
+Every turn:
+	refresh the carrying window.]
+
 
 Book - 1895
 

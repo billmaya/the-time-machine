@@ -205,7 +205,7 @@ Release along with cover art ("The Time Machine") and an interpreter.
 
 Chapter - User Interface
 
-The carrying window is a text buffer g-window spawned by the main window.
+[The carrying window is a text buffer g-window spawned by the main window.
 The position of the carrying window is g-placeright.
 The measurement of the carrying window is 30.
 
@@ -226,7 +226,7 @@ When play begins:
 	open the topics window.]
 
 Every turn:
-	refresh the carrying window.
+	refresh the carrying window.]
 
 
 Book - 1895
@@ -421,6 +421,10 @@ Understand "ambulence" or "cab" as ambulance.
 The rear doors are scenery in Woking Street.
 The description of rear doors is "The ambulance doors are open."
 Understand "ambulence doors" or "ambulance doors" or "doors" as rear doors.
+
+The horses are scenery in Woking Street.
+The description of horses is "The two horses stand silently in their harnesses between the shafts of the ambulance, waiting for the driver's commands."
+Understand "horse" as horses.
 
 Instead of taking the ambulance: say "What delusions of grandeur. Perhaps they should break out a straightjacket for you."
 
@@ -2205,7 +2209,9 @@ The Domed Building is east of the Clearing.
 The Domed Building is west of the Inside Dome.
 Inside from the Domed Building is Inside Dome.
 
-Understand "concrete" or "pantheon" or "columned" or "columns" or "portico" or "entrance" as Domed Building.
+The dome-outside is scenery in Domed Building.
+Understand "concrete" or "building" or "pantheon" or "columned" or "columns" or "column" or "portico" or "entrance" or "dome" as dome-outside. [Domed Building.]
+Instead of examining dome-outside: try looking.
 
 The description of the Domed Building is "Before you is a weathered concrete building with a domed top that vaguely resembles the Pantheon in Rome. The entrance to the building is through a columned portico to the east."
 
@@ -2215,9 +2221,13 @@ The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 Understand "dome" as Inside Dome.
 
-The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminating the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. Circling the entire wall of the dome except for the exits is a series of murals. There is an small archway to the south and the main exit to the west."
+The description of Inside Dome is "Sunlight streams through the dome[']s [oculus], illuminating the entire room. Low stone [tables] are arranged in a circular pattern around a large central [well] underneath the center of the dome. Circling the entire wall of the dome except for the exits is a series of murals.[paragraph break]There is an small archway to the south and the main exit to the west."
 	
 The printed name of Inside Dome is "Inside the Domed Building"
+
+The dome-inside is scenery in Inside Dome.
+Understand "dome" as dome-inside.
+Instead of examining dome-inside: try looking.
 
 The oculus is a thing.
 The oculus is scenery in the Inside Dome.
@@ -2302,13 +2312,18 @@ Chapter - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it. From up here you can also make out an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth."
+The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it.[paragraph break]From up here you can also make out an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth."
 
 The balcony-river is scenery in the Balcony.
 The description of the balcony-river is "The river winds its way through the forest below you. Looking closely, you can see groups of people in the river and on its banks."
 The printed name of balcony-river is "river".
 
 Understand "river" as balcony-river.
+
+The balcony-people is scenery in the Balcony.
+The description of balcony-people is "From this distance it is difficult to make out specific details about the group gathered at the river below. They all appear to be similar in stature and dressed in the same garments, but you[']ll have to get closer to confirm these initial observations."
+
+Understand "people" or "figures" or "group" as balcony-people.
 
 Chapter - River Bank
 
@@ -2336,6 +2351,10 @@ Instead of eating the river-water:
 	stop the action.
 
 Instead of drinking the river-water, say "I don't see why you would choose to drink this dubious liquid when there's a source of fresh water elsewhere." 
+
+The river-bushes is scenery in the River Bank.
+The description of river-bushes is "The dense and overgrown vegetation parallels the river bank."
+Understand "bush" or "bushes" as river-bushes.
 
 The river-things is scenery in the River Bank.
 The description of the river-things is "While the fruit is totally unknown and bizarre, some of the petals on these flowers matches exactly the one you[']ve got in your pocket."

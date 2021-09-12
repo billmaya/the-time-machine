@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 24555 ]
+[ WORDS - 24758 ]
 
 Table of Releases
 release	notes
@@ -735,7 +735,7 @@ Chapter - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather armchairs with today[']s newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if] A set of glass doors to the east leads outside and the room continues to the north."
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather armchairs with today[']s newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.

@@ -71,7 +71,7 @@ Chapter - Extensions
 
 Include Basic Help Menu by Emily Short.
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
-[Include Flexible Windows by Jon Ingold.]
+Include Flexible Windows by Jon Ingold.
 
 After reading a command:
 resolve punctuated titles.
@@ -203,7 +203,7 @@ Chapter - Release
 
 Release along with cover art ("The Time Machine") and an interpreter.
 
-[Chapter - User Interface
+Chapter - User Interface
 
 The carrying window is a text buffer g-window spawned by the main window.
 The position of the carrying window is g-placeright.
@@ -226,7 +226,7 @@ When play begins:
 	open the topics window.]
 
 Every turn:
-	refresh the carrying window.]
+	refresh the carrying window.
 
 
 Book - 1895
@@ -524,20 +524,20 @@ Understand "shelf" as shelves.
 Bookness is a kind of value. The booknesses are reference, magazine, and hardcover.
 
 The books are a thing. [What if some of the books are from the future?]
-The books have a bookness called type. The type of the books is hardcover.
+The books have a bookness called type-of-reading. The type-of-reading of the books is hardcover.
 The books are scenery on the shelves.
 The description of books is "BOOKS DESCRIPTION." [Should not be displayed because of > examine books code in Section 1 below (included to keep books from showing up when Missing Item Description code is run).]
 Understand "book" as books.
 
 The periodicals are a thing.
-The periodicals have a bookness called type. The type of the periodicals is magazine.
+The periodicals have a bookness called type-of-reading. The type-of-reading of the periodicals is magazine.
 The periodicals are scenery on the shelves.
 The description of periodicals is "PERIODICALS DESCRIPTION." [Should not be displayed because of > examine periodicals code in Section 1 below (included to keep periodicals from showing up when Missing Item Description code is run).]
 Understand "magazine" or "magazines" as periodicals.
 
 The encyclopaedia are a thing.
 The encyclopaedia are scenery on the shelves.
-The encyclopaedia has a bookness called type. The type of the encyclopaedia is reference.
+The encyclopaedia has a bookness called type-of-reading. The type-of-reading of the encyclopaedia is reference.
 The description of encyclopaedia is "ENCYCLOPAEDIA DESCRIPTION." [Should not be displayed becuase of > examine encyclopaedia code in Section 1 below (included to keep encyclopaedia from showing up when Missing Item Description code is run).]
 Understand "encyclopedia" or "encyclopaediae" or "encyclopedias" as encyclopaedia.
 
@@ -598,14 +598,14 @@ Instead of searching the shelves: say "A frequent visitor, the items on the shel
 
 [Maybe don't make it random but chose a new one each time and never choose the same one twice?]
 Instead of taking something in the Library:
-	if the noun provides the property type:
-		if the type of the noun is reference:
+	if the noun provides the property type-of-reading:
+		if the type-of-reading of the noun is reference:
 			choose a random row from Table of Encyclopaedia Volumes; 
 			say "You take the volume labeled '[Label entry]' and leaf through the pages from '[Start-Word entry]' to '[End-Word entry]' until you get bored and place the volume back on the shelf.";
-		else if the type of the noun is magazine:
+		else if the type-of-reading of the noun is magazine:
 			choose a random row from Table of Periodicals;
 			say "You take a copy of '[Name entry]' off the shelf and leaf through [Note entry] before placing it back with the other issues.";
-		else if the type of the noun is hardcover:
+		else if the type-of-reading of the noun is hardcover:
 			choose a random row from Table of Books;
 			say "You take a copy of '[Name entry]' off the shelf and leaf through a few pages before placing it back on the shelf.";
 		otherwise:

@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 24758 ]
+[ WORDS - 24954 ]
 
 Table of Releases
 release	notes
@@ -71,7 +71,8 @@ Chapter - Extensions
 
 Include Basic Help Menu by Emily Short.
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
-Include Flexible Windows by Jon Ingold.
+[Include Flexible Windows by Jon Ingold. ]
+Include Conversation Package by Eric Eve.
 
 After reading a command:
 resolve punctuated titles.
@@ -203,9 +204,9 @@ Chapter - Release
 
 Release along with cover art ("The Time Machine") and an interpreter.
 
-Chapter - User Interface
+Chapter - User Interface (for use with Flexible Windows by Jon Ingold)
 
-[The carrying window is a text buffer g-window spawned by the main window.
+The carrying window is a text buffer g-window spawned by the main window.
 The position of the carrying window is g-placeright.
 The measurement of the carrying window is 30.
 
@@ -226,7 +227,7 @@ When play begins:
 	open the topics window.]
 
 Every turn:
-	refresh the carrying window.]
+	refresh the carrying window.
 
 
 Book - 1895
@@ -613,7 +614,7 @@ Instead of taking something in the Library:
 			choose a random row from Table of Books;
 			say "You take a copy of '[Name entry]' off the shelf and leaf through a few pages before placing it back on the shelf.";
 		otherwise:
-		 	say "READING [the type of the noun].";
+		 	say "READING [the type-of-reading of the noun].";
 	otherwise:
 		[say "That's hardly portable.".]
 		continue the action.
@@ -1201,7 +1202,9 @@ Chapter - Kitchen
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
 
-The description of the Kitchen is "The room is dominated by a sturdy wooden work table in the center of the room. Surrounding the table are numerous cabinets and shelves. The stove and sink are against the north wall.[if the location of Watchett is the Kitchen][paragraph break]Mrs. Watchett is at the work table, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"
+The description of the Kitchen is "The room is dominated by a sturdy wooden work table in the center of the room. Surrounding the table are numerous cabinets and shelves. The stove and sink are against the north wall."
+
+[[if the location of Watchett is the Kitchen][paragraph break]Mrs. Watchett is at the work table, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"]
 
 The meals are a thing.
 The meals are scenery in the Kitchen.
@@ -1605,28 +1608,28 @@ Instead of searching the windows: [Recipe §3.6 Windows]
 Part - Characters
 
 A person can be either fixed or mobile. 
+A person is usually fixed.
+
+Chapter - Familiarity (for use with Conversation Package by Eric Eve)
+
+Wells is a familiar man.
+Humboldt is a familiar man.
+
+experiments are a familiar thing.
 
 Chapter - Watchett
 
-Watchett is a person. 
-Watchett is a female. 
-Watchett is fixed.
-Watchett is undescribed.
+Watchett is a female person. "Watchett is here CLEANING UP."
 Watchett is in the Kitchen.
-The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
-
 The printed name of Watchett is "Mrs. Watchett". 
+The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
 
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 [See §17.3. Overriding existing commands - New tokens for ^]
 
-Section - Conversation
-
-Instead of showing pocket watch to Watchett: say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'" [HACK Why can't I simply write "try asking Watchett about it.?]
-Instead of showing something to Watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
-
-Instead of telling Watchett about something: [Writing §7.6. Reading and talking]
-	try asking Watchett about it.
+[See Writing §11.5. Conditions and question ]
+watchett-key is a truth state that varies.
+watchett-key is false.
 
 To say key-start:
 	say "Mr. Wells always kept it on his person.[no line break]".
@@ -1639,6 +1642,34 @@ To say key-end:
 		say "Looks like you found it.";
 	otherwise:
 		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
+
+Section - Conversation (for use with Conversation Package by Eric Eve)
+
+The ask-suggestions are { Wells, self-suggestion }.
+The tell-suggestions are { Humboldt }.
+[The other-suggestions are { other }.]
+
+After saying hello to Watchett when the greeting type is explicit: 
+	say "'Good evening, Mrs. Watchett.'[paragraph break]'Good evening sir,' she replies."
+
+After saying hello to Watchett when the greeting type is implicit:
+	say "'Excuse me', you say.[paragraph break]'Yes?' she asks, pausing in her cleaning up."
+
+After quizzing watchett about key:
+	say "'[key-start] [key-middle] [key-end]'[line break]";
+	now watchett-key is true.
+
+After quizzing watchett about wells: say "CF 'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"
+
+After quizzing watchett about experiments: say "CF 'I wouldn't know anything about that. Mr. Wells was quite private about his experiments. Did all that in his workshop.'"
+
+Section - Conversation (for use without Conversation Package by Eric Eve)
+
+Instead of showing pocket watch to Watchett: say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'" [HACK Why can't I simply write "try asking Watchett about it.?]
+Instead of showing something to Watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
+
+Instead of telling Watchett about something: [Writing §7.6. Reading and talking]
+	try asking Watchett about it.
 
 Instead of asking Watchett about "key":
 	say "'[key-start] [key-middle] [key-end]'[line break]";
@@ -1667,9 +1698,6 @@ Instead of answering Watchett that "hello": say "Mrs. Watchett acknowledges your
 
 Instead of asking Watchett about something: say "Mrs. Watchett thinks for a moment before replying. 'I wouldn[']t know anything about that,' she says and continues her work."
 
-[See Writing §11.5. Conditions and question ]
-watchett-key is a truth state that varies.
-watchett-key is false.
 
 Section - Movement
 

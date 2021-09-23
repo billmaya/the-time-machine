@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 24954 ]
+[ WORDS - 25039 24954 ]
 
 Table of Releases
 release	notes
@@ -1582,14 +1582,11 @@ The windows can be openable. The windows are openable.
 [Doesn't work. See https://intfiction.org/t/locking-and-unlocking/10921
 The windows can be lockable.
 The windows are locked.]
-[DEL The windows can be locked or unlocked.]
-[DELThe windows are lockable. The windows are locked.]
 
 Instead of opening the windows:
 	if the player is in the Garden:
 		say "From down here you cannot reach the workshop windows but it looks like they can only be unlocked from inside the workshop.";
 	else if the player is on the bench:
-		[DEL say "ON BENCH, AT WINDOW LEVEL.";]
 		say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side.";
 	otherwise:
 		say "Opening the windows lets in the cold and snow so you decide to leave them shut for now."

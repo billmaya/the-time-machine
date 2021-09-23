@@ -72,7 +72,7 @@ Chapter - Extensions
 Include Basic Help Menu by Emily Short.
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
 [Include Flexible Windows by Jon Ingold. ]
-Include Conversation Package by Eric Eve.
+[Include Conversation Package by Eric Eve.]
 
 After reading a command:
 resolve punctuated titles.
@@ -935,9 +935,11 @@ Title	Summary
 
 Chapter - Garden
 
+[The windows are handled in the Workshop]
+
 The Garden is a room.
 The Garden is east of the Garden Door.
-The description of the Garden is "Vegetation covered in snow surrounds you on all sides. A gate set into the north wall looks out onto a snow-covered side street. To the south, the dark panes of Wells['] workshop windows overlook a bench nestled among some hibernating rhodendron bushes. The parlor doors are to the west." [+ "white and featureless" somewhere]
+The description of the Garden is "Vegetation covered in snow surrounds you on all sides. A gate set into the north wall looks out onto a snow-covered side street. To the south, the dark panes of Wells['] workshop windows overlook a bench nestled among some snow-covered rhodendron bushes.[paragraph break]The parlor doors are to the west." [+ "white and featureless" somewhere]
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 
@@ -1577,10 +1579,18 @@ The description of the windows is "[if the player is in the Garden and the light
 
 The windows can be open or closed.
 The windows can be openable. The windows are openable.
+[Doesn't work. See https://intfiction.org/t/locking-and-unlocking/10921
+The windows can be lockable.
+The windows are locked.]
+[DEL The windows can be locked or unlocked.]
+[DELThe windows are lockable. The windows are locked.]
 
 Instead of opening the windows:
 	if the player is in the Garden:
-		say "It looks like the windows can only be opened from inside the workshop.";
+		say "From down here you cannot reach the workshop windows but it looks like they can only be unlocked from inside the workshop.";
+	else if the player is on the bench:
+		[DEL say "ON BENCH, AT WINDOW LEVEL.";]
+		say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side.";
 	otherwise:
 		say "Opening the windows lets in the cold and snow so you decide to leave them shut for now."
 

@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25017 ]
+[ WORDS - 25059 25017 ]
 
 Table of Releases
 release	notes
@@ -1571,9 +1571,11 @@ Instead of inserting the fuse into the control panel:
 	
 Section - Workshop Windows
 	
-The windows are a thing.
-The windows are a backdrop. They are in the Workshop and the Garden.
+The windows are a thing. 
+The windows are a backdrop. The windows are in the Workshop and the Garden.
 Understand "workshop windows" or "window" as windows.
+
+Instead of examining the windows: say "DESCRIBE THE LATCH."
 
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 
@@ -1582,10 +1584,6 @@ The windows can be openable. The windows are openable.
 
 The windows can be locked or unlocked.
 The windows are locked.
-
-[Doesn't work. See https://intfiction.org/t/locking-and-unlocking/10921
-The windows can be lockable.
-The windows are locked.]
 
 Instead of opening the windows:
 	if the player is in the Garden:

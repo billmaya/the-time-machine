@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25020 ]
+[ WORDS - 25211 ]
 
 Table of Releases
 release	notes
@@ -1570,6 +1570,9 @@ Instead of inserting the fuse into the control panel:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 	
 Section - Workshop Windows
+
+window-latch-broken is a truth state that varies.
+window-latch-broken is false.
 	
 The windows are a thing. 
 The windows are a backdrop. The windows are in the Workshop and the Garden.
@@ -1587,27 +1590,6 @@ The windows are locked.
 The latch is part of the windows.
 
 Instead of examining the latch: say "DESCRIBE THE LATCH."
-
-[Unlocking the windows]
-
-After pulling the latch:
-	if the windows are unlocked:
-		now the windows are locked;
-		say "WINDOWS NOW LOCKED.";
-	else:
-		now the windows are unlocked;
-		say "WINDOWS NOW UNLOCKED."
-
-Instead of opening the windows:
-	if the player is in the Garden:
-		say "From down here you cannot reach the workshop windows but it looks like they can only be unlocked from inside the workshop.";
-	else if the player is on the bench:
-		say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side.";
-	otherwise:
-		if the windows are unlocked:
-			say "Opening the windows lets in the cold and snow so you decide to leave them shut for now.";
-		else:
-			say "WINDOWS LOCKED."
 
 [> look through windows 
  > look in windows]
@@ -1629,6 +1611,48 @@ Instead of searching the windows: [Recipe §3.6 Windows]
 			say "Through the windows you can see down into the snow-covered garden outside."; [This never displays since windows are out of scope when workshop lights are off]
 		else if the player is on the bench:
 			say "You can[']t see anything inside the darkened workshop."
+
+[Unlocking the windows]
+
+After pulling the latch:
+	if window-latch-broken is false:
+		if the windows are unlocked:
+			now the windows are locked;
+			say "WINDOWS NOW LOCKED.";
+		else:
+			now the windows are unlocked;
+			say "WINDOWS NOW UNLOCKED.";
+	otherwise:
+		now the windows are unlocked; [<- should this be here or when you break the latch?]
+		say "THE LATCH IS BROKEN."
+
+Instead of opening the windows:
+	if the player is in the Garden:
+		say "From down here you cannot reach the workshop windows but it looks like they can only be unlocked from inside the workshop.";
+	else if the player is on the bench:
+		say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side.";
+	otherwise:
+		if the windows are unlocked:
+			say "Opening the windows will let in the cold and snow so you decide to leave them shut for now.";
+		else:
+			say "WINDOWS LOCKED."
+
+[Getting in through the windows]
+
+[
+  > break windows with poker -> attack windows with poker
+  > smash windows with poker -> attack windows with poker
+  > pry windows with poker -> prying windows with poker
+  > open windows with poker ->unlocking windows with poker "That doesn't seem to be something you can unlock."
+  > use poker on window -> "I only understand you as far as wanting to use the poker."
+	
+  player in workshop - why use poker? just unlatch window
+  player in garden
+]
+
+[Climbing in through the windows]
+
+
 			
 Part - Characters
 

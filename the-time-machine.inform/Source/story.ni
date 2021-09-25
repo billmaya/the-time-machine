@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25059 25017 ]
+[ WORDS - 25020 ]
 
 Table of Releases
 release	notes
@@ -1575,7 +1575,7 @@ The windows are a thing.
 The windows are a backdrop. The windows are in the Workshop and the Garden.
 Understand "workshop windows" or "window" as windows.
 
-Instead of examining the windows: say "DESCRIBE THE LATCH."
+Instead of examining the windows: say "DESCRIBE THE WINDOWS LOCKED BY A LATCH."
 
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 
@@ -1584,6 +1584,19 @@ The windows can be openable. The windows are openable.
 
 The windows can be locked or unlocked.
 The windows are locked.
+The latch is part of the windows.
+
+Instead of examining the latch: say "DESCRIBE THE LATCH."
+
+[Unlocking the windows]
+
+After pulling the latch:
+	if the windows are unlocked:
+		now the windows are locked;
+		say "WINDOWS NOW LOCKED.";
+	else:
+		now the windows are unlocked;
+		say "WINDOWS NOW UNLOCKED."
 
 Instead of opening the windows:
 	if the player is in the Garden:
@@ -1591,7 +1604,10 @@ Instead of opening the windows:
 	else if the player is on the bench:
 		say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side.";
 	otherwise:
-		say "Opening the windows lets in the cold and snow so you decide to leave them shut for now."
+		if the windows are unlocked:
+			say "Opening the windows lets in the cold and snow so you decide to leave them shut for now.";
+		else:
+			say "WINDOWS LOCKED."
 
 [> look through windows 
  > look in windows]

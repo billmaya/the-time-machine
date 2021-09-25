@@ -1579,6 +1579,10 @@ The description of the windows is "[if the player is in the Garden and the light
 
 The windows can be open or closed.
 The windows can be openable. The windows are openable.
+
+The windows can be locked or unlocked.
+The windows are locked.
+
 [Doesn't work. See https://intfiction.org/t/locking-and-unlocking/10921
 The windows can be lockable.
 The windows are locked.]
@@ -2746,7 +2750,7 @@ hint				used
 "show humboldt the flower"
 
 To say beta-testers:
-	say "I cannot thank the seven people listed below who took the time to beta test Release 3 (v1.0) of 'The Time Machine' for ParserComp 2021 (some of them even tested it more than once). Their effort and attention to detail made the game that was released to the public for the competition much, much better.
+	say "I cannot thank enough the seven people listed below who took the time to beta test Release 3 (v1.0) of 'The Time Machine' for ParserComp 2021 (some of them even tested it more than once). Their effort and attention to detail made the game that was released to the public for the competition much, much better.
 
 	• Phil Halprin[line break]
 	• Chirstopher Merriner[line break]

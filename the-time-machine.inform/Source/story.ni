@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25461 ]
+[ WORDS - 25453 ]
 
 Table of Releases
 release	notes
@@ -200,6 +200,7 @@ Test to-watchett with "go north / take pocket watch / go north / go west / go no
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / search workbench / examine blueprints / enter time machine / examine control panel / put fuse in control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit / show humboldt the flower."
 
 Test poker with "go south / go west / go north / take poker / go east."
+Test wtm-poker with "test wtm / test poker."
 
 [v1.1 Tests]
 Test search-area with "search area / search area / search area / search area."
@@ -1640,7 +1641,7 @@ Instead of opening the windows:
 			say "WINDOWS ARE UNLOCKED.";
 	otherwise: [in the Workshop]
 		if the windows are unlocked:
-			[DEL say "Opening the windows will let in the cold and snow so you decide to leave them shut for now.";]
+			[say "Opening the windows will let in the cold and snow so you decide to leave them shut for now.";]
 			say "You swing the windows open, letting in the cold and snow.";
 		else:
 			say "WINDOWS LOCKED."
@@ -1652,7 +1653,7 @@ Instead of opening the windows:
   > smash windows with poker -> attack windows with poker √ 
   > pry windows with poker -> prying windows with poker √
   > open windows with poker ->unlocking windows with poker "That doesn't seem to be something you can unlock." √
-  > use poker on window -> "I only understand you as far as wanting to use the poker."
+  > use poker on window -> "I only understand you as far as wanting to use the poker." √
 	
   player in workshop - why use poker? just unlatch window
   player in garden
@@ -1666,10 +1667,9 @@ To say why-break:
 
 Instead of attacking windows with poker: 
 	if the player is in the Garden:
-		[DEL say "You wave the poker around a few times but don't come close to the window glass.";]
 		say "[cannot-reach-window]";
 	else if the player is on the bench:
-		say "TRIED TO BREAK/SMASH WINDOW WITH POKER."; [DEL Redirect to Instead of prying... below]
+		say "TRIED TO BREAK/SMASH WINDOW WITH POKER.";
 		try prying the windows with poker;
 	otherwise: [in the Workshop]
 		say "[why-break]".
@@ -1679,21 +1679,23 @@ Instead of unlocking windows with poker:
 	
 Instead of prying the windows with poker:
 	if the player is in the Garden:
-		[DEL say "From here you cannot reach the windows with the poker.";]
 		say "[cannot-reach-window]";
 	else if the player is on the bench:
 		say "PRYING WINDOWS WITH POKER.";
 	otherwise: [in the Workshop]
 		say "[why-break]".
 	
-[DEL Instead of using the poker on the windows: say "TRYING TO USE POKER ON WINDOWS."]
+Understand "use [a carried thing] on [something]" as use-on-action. [https://bit.ly/3CMwSDm]
+use-on-action is an action applying to two things.
 		
-Understand "use [a carried thing] on [something]" as angling.
-Angling is an action applying to two things.
+Instead of use-on-action:
+	if noun is poker:
+		say "TRYING TO USE POKER ON WINDOWS.";
+	else if noun is pocket watch:
+		say "TRYING TO USE POCKET WATCH ON WINDOWS.";
+	otherwise:
+		say "USE [noun] ON [second noun]."
 		
-Report angling:
-	say "Angling [noun] with [second noun]."
-
 [Climbing in through the windows]
 
 

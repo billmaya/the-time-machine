@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25453 ]
+[ WORDS - 25554 ]
 
 Table of Releases
 release	notes
@@ -1576,14 +1576,11 @@ Instead of inserting the fuse into the control panel:
 	
 Section - Workshop Windows
 
-window-latch-broken is a truth state that varies.
-window-latch-broken is false.
-	
 The windows are a thing. 
 The windows are a backdrop. The windows are in the Workshop and the Garden.
 Understand "workshop windows" or "window" as windows.
 
-Instead of examining the windows: say "DESCRIBE THE WINDOWS LOCKED BY A LATCH."
+Instead of examining the windows: say "A set of large casement windows hinged on the outer edges and opening inward, consisting of many small panes of leaded glass in a lattice pattern, secured by a single latch."
 
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 
@@ -1592,9 +1589,16 @@ The windows can be openable. The windows are openable.
 
 The windows can be locked or unlocked.
 The windows are locked.
-The latch is part of the windows.
 
-Instead of examining the latch: say "DESCRIBE THE LATCH."
+The latch is a thing.
+The latch is part of the windows.
+The latch can be open or closed.
+The latch can be openable. The latch is closed.
+
+window-latch-broken is a truth state that varies.
+window-latch-broken is false.
+
+Instead of examining the latch: say "A simple but strong latch on the inside of the windows that can be pulled to unlock or lock the windows themselves."
 
 [> look through windows 
  > look in windows]
@@ -1617,47 +1621,82 @@ Instead of searching the windows: [Recipe §3.6 Windows]
 		else if the player is on the bench:
 			say "You can[']t see anything inside the darkened workshop."
 
-[Unlocking the windows]
+[> pull latch
+ > open latch
+ > close latch]
+
+To say latch-broken:
+	say "The latch has been broken and serves no function."
+
+Instead of opening the latch:
+	if window-latch-broken is false:
+		if the windows are unlocked:
+			say "The latch is already open.";
+		otherwise:
+			try pulling the latch;
+	otherwise:
+		say "[latch-broken]".
+
+Instead of closing the latch:
+	if window-latch-broken is false:
+		if the windows are locked:
+			say "The latch is already closed.";
+		otherwise:
+			try pulling the latch;
+	otherwise:
+		say "[latch-broken]".
 
 After pulling the latch:
 	if window-latch-broken is false:
 		if the windows are unlocked:
 			now the windows are locked;
-			say "WINDOWS NOW LOCKED.";
+			say "The windows are now locked.";
 		else:
 			now the windows are unlocked;
-			say "WINDOWS NOW UNLOCKED.";
+			say "The windows are now unlocked.";
 	otherwise:
 		now the windows are unlocked; [<- should this be here or when you break the latch?]
-		say "THE LATCH IS BROKEN."
+		say "[latch-broken]".
+	
+[> unlock windows
+ > lock windows]
+
+[
+Instead of unlocking the windows with the latch:
+	if the windows are unlocked:
+		say "The windows are already unlocked.";
+	otherwise:
+		try pulling the latch.
+
+Instead of locking the windows:
+	if the windows are locked:
+		say "The windows are already locked.";
+	otherwise:
+		try pulling the latch.
+]
+
+[> open windows
+ > close windows]
 
 Instead of opening the windows:
 	if the player is in the Garden:
 		say "From down here you cannot reach the workshop windows but it looks like they can only be unlocked from inside the workshop.";
 	else if the player is on the bench:
-		if the windows are locked:
-			say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side.";
+		if the windows are unlocked:
+			say "Closer examination confirms that the windows are firmly shut but appear to be unlocked.";
 		otherwise:
-			say "WINDOWS ARE UNLOCKED.";
+			say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side."	;	
 	otherwise: [in the Workshop]
 		if the windows are unlocked:
-			[say "Opening the windows will let in the cold and snow so you decide to leave them shut for now.";]
 			say "You swing the windows open, letting in the cold and snow.";
 		else:
-			say "WINDOWS LOCKED."
+			say "The windows are locked."
 
-[Getting in through the windows]
-
-[
-  > break windows with poker -> attack windows with poker √
-  > smash windows with poker -> attack windows with poker √ 
-  > pry windows with poker -> prying windows with poker √
-  > open windows with poker ->unlocking windows with poker "That doesn't seem to be something you can unlock." √
-  > use poker on window -> "I only understand you as far as wanting to use the poker." √
-	
-  player in workshop - why use poker? just unlatch window
-  player in garden
-]
+[> break windows with poker -> attack windows with poker
+ > smash windows with poker -> attack windows with poker
+ > pry windows with poker -> prying windows with poker
+ > open windows with poker ->unlocking windows with poker
+ > use poker on windows]
 
 To say cannot-reach-window:
 	say "You wave the poker around a few times but cannot reach the windows."
@@ -1669,7 +1708,6 @@ Instead of attacking windows with poker:
 	if the player is in the Garden:
 		say "[cannot-reach-window]";
 	else if the player is on the bench:
-		say "TRIED TO BREAK/SMASH WINDOW WITH POKER.";
 		try prying the windows with poker;
 	otherwise: [in the Workshop]
 		say "[why-break]".
@@ -1698,6 +1736,8 @@ Instead of use-on-action:
 		
 [Climbing in through the windows]
 
+[player in workshop
+ player in garden]
 
 			
 Part - Characters

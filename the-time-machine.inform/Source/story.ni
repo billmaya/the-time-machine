@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25554 ]
+[ WORDS - 25777 ]
 
 Table of Releases
 release	notes
@@ -1595,6 +1595,8 @@ The latch is part of the windows.
 The latch can be open or closed.
 The latch can be openable. The latch is closed.
 
+The latch unlocks the windows.
+
 window-latch-broken is a truth state that varies.
 window-latch-broken is false.
 
@@ -1661,7 +1663,19 @@ After pulling the latch:
 [> unlock windows
  > lock windows]
 
-[
+[Various ways to try and handle > unlock windows and have try pulling latch called.
+	
+Understand "unlock [something] with [something]" as unlock-windows-action.
+			
+Instead of unlock-windows-action:
+	say "UNLOCKING WINDOWS.";
+	try pulling the latch.
+		
+		
+Instead of unlocking the windows with the latch: [(first taking the latch) That seems to be part of the windows.]
+	say "UNLOCKING WINDOWS.";
+	try pulling the latch.
+
 Instead of unlocking the windows with the latch:
 	if the windows are unlocked:
 		say "The windows are already unlocked.";
@@ -1682,8 +1696,11 @@ Instead of opening the windows:
 	if the player is in the Garden:
 		say "From down here you cannot reach the workshop windows but it looks like they can only be unlocked from inside the workshop.";
 	else if the player is on the bench:
-		if the windows are unlocked:
-			say "Closer examination confirms that the windows are firmly shut but appear to be unlocked.";
+		if the windows are unlocked: [Need to handle opening windows that are unlocked. Change text and logic.]
+			if window-latch-broken is false:
+				say "Closer examination confirms that the windows are firmly shut but appear to be unlocked.";
+			otherwise:
+				say "LATCH BROKEN, WINDOWS UNLOCKED BUT SHUT.";
 		otherwise:
 			say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side."	;	
 	otherwise: [in the Workshop]
@@ -1714,21 +1731,30 @@ Instead of attacking windows with poker:
 	
 Instead of unlocking windows with poker:
 	try prying windows with poker.
-	
+		
 Instead of prying the windows with poker:
 	if the player is in the Garden:
 		say "[cannot-reach-window]";
 	else if the player is on the bench:
-		say "PRYING WINDOWS WITH POKER.";
+		[say "PRYING WINDOWS WITH POKER.";]
+		say "Looking around quickly, you carefully place the tip of the poker where the windows meet and pry them apart. With a loud snap, the latch that secures them shut breaks. The windows are now unlocked.";
+		now window-latch-broken is true;
+		now the windows are unlocked;
 	otherwise: [in the Workshop]
 		say "[why-break]".
-	
+
 Understand "use [a carried thing] on [something]" as use-on-action. [https://bit.ly/3CMwSDm]
 use-on-action is an action applying to two things.
-		
+			
 Instead of use-on-action:
 	if noun is poker:
-		say "TRYING TO USE POKER ON WINDOWS.";
+		if the player is in the Garden:
+			say "[cannot-reach-window]";
+		else if the player is on the bench:
+			[say "TRYING TO USE POKER ON WINDOWS.";]
+			try prying windows with poker;
+		otherwise: [in the Workshop]
+			say "[why-break]";
 	else if noun is pocket watch:
 		say "TRYING TO USE POCKET WATCH ON WINDOWS.";
 	otherwise:

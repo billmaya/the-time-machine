@@ -1600,7 +1600,11 @@ The latch unlocks the windows.
 window-latch-broken is a truth state that varies.
 window-latch-broken is false.
 
-Instead of examining the latch: say "A simple but strong latch on the inside of the windows that can be pulled to unlock or lock the windows themselves."
+Instead of examining the latch: 
+	if window-latch-broken is false:
+		say "A simple but strong latch on the inside of the windows that can be pulled to unlock or lock the windows themselves.[no line break][if windows are locked] The latch appears to be closed, locking the windows shut.[otherwise] The latch appears to be open, unlocking the windows.";
+	otherwise:
+		say "The latch appears to be broken and hanging down on one side."
 
 [> look through windows 
  > look in windows]

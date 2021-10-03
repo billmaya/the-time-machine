@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25823 ]
+[ WORDS - 25842 ]
 
 Table of Releases
 release	notes
@@ -1602,7 +1602,7 @@ window-latch-broken is false.
 
 Instead of examining the latch: 
 	if window-latch-broken is false:
-		say "A simple but strong latch on the inside of the windows that can be pulled to unlock or lock the windows themselves.[no line break][if windows are locked] The latch appears to be closed, locking the windows shut.[otherwise] The latch appears to be open, unlocking the windows.";
+		say "A simple but strong latch on the inside of the windows that can be pulled to unlock or lock the windows themselves.[no line break][if windows are locked] The latch appears to be closed, locking the windows shut.[otherwise] The latch appears to be open, the windows unlocked.";
 	otherwise:
 		say "The latch appears to be broken and hanging down on one side."
 
@@ -1661,7 +1661,6 @@ After pulling the latch:
 			now the windows are unlocked;
 			say "The windows are now unlocked.";
 	otherwise:
-		now the windows are unlocked; [<- should this be here or when you break the latch?]
 		say "[latch-broken]".
 	
 [> unlock windows
@@ -1696,22 +1695,35 @@ Instead of locking the windows:
 [> open windows
  > close windows]
 
+to say windows-locked:
+	say "The windows are locked."
+
 Instead of opening the windows:
 	if the player is in the Garden:
 		say "From down here you cannot reach the workshop windows but it looks like they can only be unlocked from inside the workshop.";
 	else if the player is on the bench:
-		if the windows are unlocked: [Need to handle opening windows that are unlocked. Change text and logic.]
-			if window-latch-broken is false:
-				say "Closer examination confirms that the windows are firmly shut but appear to be unlocked.";
-			otherwise:
-				say "LATCH BROKEN, WINDOWS UNLOCKED BUT SHUT.";
+		if the windows are unlocked:
+			say "You push the windows open, letting the cold and snow into the workshop.";
+			now the windows are open;
 		otherwise:
-			say "Closer examination confirms that the windows are indeed firmly shut, locked from the other side."	;	
+			say "[windows-locked]";
 	otherwise: [in the Workshop]
 		if the windows are unlocked:
 			say "You swing the windows open, letting in the cold and snow.";
+			now the windows are open;
 		else:
-			say "The windows are locked."
+			say "[windows-locked]".
+		
+Instead of closing the windows:
+	if the windows are closed:
+		say "WINDOWS ALREADY CLOSED.";
+	otherwise:
+		if the player is in the Garden:
+			say "YOU CAN'T REACH THE OPEN WINDOWS FROM HERE.";
+		else if the player is on the bench:
+			say "REACHING INSIDE YOU SWING THE WINDOWS SHUT.";
+		otherwise: [in the Workshop]
+			say "YOU SWING THE WINDOWS SHUT."
 
 [> break windows with poker -> attack windows with poker
  > smash windows with poker -> attack windows with poker

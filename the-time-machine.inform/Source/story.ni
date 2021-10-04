@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25842 ]
+[ WORDS - 25991 ]
 
 Table of Releases
 release	notes
@@ -985,7 +985,11 @@ The bench is a supporter.
 The bench is enterable.
 The description of the bench is "It[']s a bench, covered in snow but still just a bench."
 
-Instead of going south in the Garden: try entering the bench.
+[DEL Instead of going south in the Garden:
+	if the player is not on the bench:
+		try entering the bench;
+	otherwise:
+		try going up.]
 
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
@@ -1752,7 +1756,6 @@ Instead of prying the windows with poker:
 	if the player is in the Garden:
 		say "[cannot-reach-window]";
 	else if the player is on the bench:
-		[say "PRYING WINDOWS WITH POKER.";]
 		say "Looking around quickly, you carefully place the tip of the poker where the windows meet and pry them apart. With a loud snap, the latch that secures them shut breaks. The windows are now unlocked.";
 		now window-latch-broken is true;
 		now the windows are unlocked;
@@ -1767,7 +1770,6 @@ Instead of use-on-action:
 		if the player is in the Garden:
 			say "[cannot-reach-window]";
 		else if the player is on the bench:
-			[say "TRYING TO USE POKER ON WINDOWS.";]
 			try prying windows with poker;
 		otherwise: [in the Workshop]
 			say "[why-break]";
@@ -1776,10 +1778,29 @@ Instead of use-on-action:
 	otherwise:
 		say "USE [noun] ON [second noun]."
 		
-[Climbing in through the windows]
+[Climbing through the windows]
 
-[player in workshop
- player in garden]
+[player in Garden]
+	
+Instead of going south in the Garden:
+	if the player is not on the bench:
+		try entering the bench;
+	else if the player is on the bench:
+		try going up;
+	otherwise:
+		continue the action.
+
+Instead of going up in the Garden:
+	if the player is on the bench:
+		if the windows are open:
+			say "Grabbing onto the sill of the opened windows you manage to hoist yourself into the [if the lights are switched on]lit [otherwise] dark [end if]workshop with some difficulty.[no line break][if the lights are switched off] Stumbling through the darkness you manage to get to the workshop door without too many bumps and bruises.[end if]";
+			now the player is in the Workshop;
+		otherwise:
+			say "The workshop windows are closed.";
+	otherwise:
+		say "You jump up and down a few times in the snow-covered garden, warming yourself slightly but not accomplishing much else."
+
+[player in Workshop]
 
 			
 Part - Characters

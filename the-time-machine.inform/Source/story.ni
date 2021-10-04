@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 25991 ]
+[ WORDS - 26055 ]
 
 Table of Releases
 release	notes
@@ -1780,7 +1780,7 @@ Instead of use-on-action:
 		
 [Climbing through the windows]
 
-[player in Garden]
+[Player in Garden]
 	
 Instead of going south in the Garden:
 	if the player is not on the bench:
@@ -1800,8 +1800,17 @@ Instead of going up in the Garden:
 	otherwise:
 		say "You jump up and down a few times in the snow-covered garden, warming yourself slightly but not accomplishing much else."
 
-[player in Workshop]
+[Player in Workshop]
 
+Instead of going north in the Workshop:
+	try going down.
+
+Instead of going down in the Workshop:
+	if the windows are open:
+		say "Throwing your legs over the sill of the opened windows you carefully lower yourself onto the snow-covered bench in the garden below with some difficulty.";
+		now the player is on the bench;
+	otherwise:
+		say "The workshop windows are closed.".
 			
 Part - Characters
 

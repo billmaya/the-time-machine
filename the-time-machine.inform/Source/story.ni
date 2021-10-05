@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26134 ]
+[ WORDS - 26101 ]
 
 Table of Releases
 release	notes
@@ -1670,31 +1670,23 @@ After pulling the latch:
 [> unlock windows
  > lock windows]
 
-[Various ways to try and handle > unlock windows and have try pulling latch called.
-	
-Understand "unlock [something] with [something]" as unlock-windows-action.
-			
-Instead of unlock-windows-action:
-	say "UNLOCKING WINDOWS.";
-	try pulling the latch.
-		
-		
-Instead of unlocking the windows with the latch: [(first taking the latch) That seems to be part of the windows.]
-	say "UNLOCKING WINDOWS.";
-	try pulling the latch.
+Understand "unlock windows" as unlock-windows-action. 
+unlock-windows-action is an action applying to nothing.
 
-Instead of unlocking the windows with the latch:
+Instead of unlock-windows-action:
 	if the windows are unlocked:
 		say "The windows are already unlocked.";
 	otherwise:
 		try pulling the latch.
 
-Instead of locking the windows:
+Understand "lock windows" as lock-windows-action.
+lock-windows-action is an action applying to nothing.
+	
+Instead of lock-windows-action:
 	if the windows are locked:
 		say "The windows are already locked.";
 	otherwise:
 		try pulling the latch.
-]
 
 [> open windows
  > close windows]

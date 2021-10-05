@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26128 ]
+[ WORDS - 26134 ]
 
 Table of Releases
 release	notes
@@ -1699,8 +1699,11 @@ Instead of locking the windows:
 [> open windows
  > close windows]
 
-to say windows-locked:
+To say windows-locked:
 	say "The windows are locked."
+
+To say windows-closed:
+	say "The workshop windows are closed."
 
 Instead of opening the windows:
 	if the player is in the Garden:
@@ -1720,14 +1723,14 @@ Instead of opening the windows:
 		
 Instead of closing the windows:
 	if the windows are closed:
-		say "WINDOWS ALREADY CLOSED.";
+		say "[windows-closed]";
 	otherwise:
 		if the player is in the Garden:
-			say "YOU CAN'T REACH THE OPEN WINDOWS FROM HERE.";
+			say "You cannot reach the open windows from here.";
 		else if the player is on the bench:
-			say "REACHING INSIDE YOU SWING THE WINDOWS SHUT.";
+			say "Reaching inside you grab both windows and swing them shut.";
 		otherwise: [in the Workshop]
-			say "YOU SWING THE WINDOWS SHUT."
+			say "You swing both windows shut."
 
 [> break windows with poker -> attack windows with poker
  > smash windows with poker -> attack windows with poker
@@ -1796,7 +1799,7 @@ Instead of going up in the Garden:
 			say "Grabbing onto the sill of the opened windows you manage to hoist yourself into the [if the lights are switched on]lit [otherwise] dark [end if]workshop with some difficulty.[no line break][if the lights are switched off] Stumbling through the darkness you manage to get to the workshop door without too many bumps and bruises.[end if]";
 			now the player is in the Workshop;
 		otherwise:
-			say "The workshop windows are closed.";
+			say "[windows-closed]";
 	otherwise:
 		say "You jump up and down a few times in the snow-covered garden, warming yourself slightly but not accomplishing much else."
 
@@ -1810,7 +1813,7 @@ Instead of going down in the Workshop:
 		say "Throwing your legs over the sill of the opened windows you carefully lower yourself onto the snow-covered bench in the garden below with some difficulty.";
 		now the player is on the bench;
 	otherwise:
-		say "The workshop windows are closed.".
+		say "[windows-closed]".
 			
 Part - Characters
 

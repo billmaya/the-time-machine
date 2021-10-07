@@ -1766,8 +1766,18 @@ Instead of use-on-action:
 			say "[cannot-reach-window]";
 		else if the player is on the bench:
 			try prying windows with poker;
-		otherwise: [in the Workshop]
+		else if the player is in the Workshop: [DEL in the Workshop]
 			say "[why-break]";
+		else if the player is in the Entryway:
+			say "USE [noun] ON [second noun].";
+			[Handle workshop door vs. front door]
+			[if [second noun] is the workshop-door:
+				say "USE [noun] ON WORKSHOP DOOR.";
+			else if [second noun] is front door:
+				say "USE [noun] ON FRONT DOOR.";
+			otherwise:]
+		otherwise:
+			say "THAT DOESN'T MAKE SENSE.";
 	else if noun is pocket watch:
 		say "TRYING TO USE POCKET WATCH ON WINDOWS.";
 	otherwise:

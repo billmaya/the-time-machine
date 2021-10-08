@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26101 ]
+[ WORDS - 26161 ]
 
 Table of Releases
 release	notes
@@ -1769,7 +1769,14 @@ Instead of use-on-action:
 		else if the player is in the Workshop: [DEL in the Workshop]
 			say "[why-break]";
 		else if the player is in the Entryway:
-			say "USE [noun] ON [second noun].";
+			if current action involves workshop-door:
+				say "While your initial thought of getting into the workshop by prying open the locked door with the poker has merit, closer examination of the door and frame shows that both are too solidly made. You wouldn't be able to open the door without totally destroying a large section of the surrounding woodwork. Perhaps there's another way in to the workshop.";
+				[say "USE POKER ON WORKSHOP DOOR.";]
+			else if current action involves front door:
+				say "The front door isn't locked so I don't see why you would think you had to pry it open.";
+				[say "USE POKER ON FRONT DOOR.";]
+			otherwise:
+				say "USE [noun] ON [second noun].";
 			[Handle workshop door vs. front door]
 			[if [second noun] is the workshop-door:
 				say "USE [noun] ON WORKSHOP DOOR.";

@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26222 ]
+[ WORDS - 26232 ]
 
 Table of Releases
 release	notes
@@ -2971,6 +2971,7 @@ To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.
 	
 Release 5 Notes (v1.2)[paragraph break]
+• Handled attempting to use poker on doors in Entryway.[line break]
 • Made it so you can climb through open windows into Workshop from Garden and into Garden from Workshop.[line break]	
 • Made it so you can > use poker on windows to break latch.[line break]
 • Made it so workshop windows can be locked or unlocked with latch, opened, and closed.[line break]

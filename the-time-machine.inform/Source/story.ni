@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26161 ]
+[ WORDS - 26222 ]
 
 Table of Releases
 release	notes
@@ -1757,6 +1757,9 @@ Instead of prying the windows with poker:
 	otherwise: [in the Workshop]
 		say "[why-break]".
 
+To say cannot-use:
+	say "I don't think using the [noun] on the [second noun] in this particular situation will be effective."
+
 Understand "use [a carried thing] on [something]" as use-on-action. [https://bit.ly/3CMwSDm]
 use-on-action is an action applying to two things.
 			
@@ -1766,33 +1769,22 @@ Instead of use-on-action:
 			say "[cannot-reach-window]";
 		else if the player is on the bench:
 			try prying windows with poker;
-		else if the player is in the Workshop: [DEL in the Workshop]
+		else if the player is in the Workshop:
 			say "[why-break]";
 		else if the player is in the Entryway:
 			if current action involves workshop-door:
 				say "While your initial thought of getting into the workshop by prying open the locked door with the poker has merit, closer examination of the door and frame shows that both are too solidly made. You wouldn't be able to open the door without totally destroying a large section of the surrounding woodwork. Perhaps there's another way in to the workshop.";
-				[say "USE POKER ON WORKSHOP DOOR.";]
 			else if current action involves front door:
 				say "The front door isn't locked so I don't see why you would think you had to pry it open.";
-				[say "USE POKER ON FRONT DOOR.";]
 			otherwise:
-				say "USE [noun] ON [second noun].";
-			[Handle workshop door vs. front door]
-			[if [second noun] is the workshop-door:
-				say "USE [noun] ON WORKSHOP DOOR.";
-			else if [second noun] is front door:
-				say "USE [noun] ON FRONT DOOR.";
-			otherwise:]
+				say "[cannot-use]";
 		otherwise:
-			say "THAT DOESN'T MAKE SENSE.";
-	else if noun is pocket watch:
-		say "TRYING TO USE POCKET WATCH ON WINDOWS.";
+			say "[cannot-use]";
 	otherwise:
-		say "USE [noun] ON [second noun]."
+		say "[cannot-use]".
 		
 [Climbing through the windows]
-
-[Player in Garden]
+[Player is in Garden]
 	
 Instead of going south in the Garden:
 	if the player is not on the bench:
@@ -1812,7 +1804,7 @@ Instead of going up in the Garden:
 	otherwise:
 		say "You jump up and down a few times in the snow-covered garden, warming yourself slightly but not accomplishing much else."
 
-[Player in Workshop]
+[Player is in Workshop]
 
 Instead of going north in the Workshop:
 	try going down.

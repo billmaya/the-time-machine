@@ -1836,7 +1836,7 @@ Chapter - Watchett
 Watchett is a female person. "Watchett is here CLEANING UP."
 Watchett is in the Kitchen.
 The printed name of Watchett is "Mrs. Watchett". 
-The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been managing his household affairs and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
+The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been cleaning his house and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
 
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 [See §17.3. Overriding existing commands - New tokens for ^]

@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26232 ]
+[ WORDS - 26278 ]
 
 Table of Releases
 release	notes
@@ -416,6 +416,9 @@ Section - Front Door
 
 	The description of the front door is "[if location is Woking Street]The door to 68 Woking Street is indistinguishable from every other door that lines the street.[otherwise]You see nothing special about the heavy wooden door leading to the street outside."
 	
+Instead of attacking the front door with the poker: say "The front door isn't locked so I don't see why you would think you had to pry it open.";
+Instead of attacking the front door with something: say "Violence isn't the answer here."
+	
 Section - Ambulance
 	
 The ambulance is a thing in Woking Street.
@@ -482,7 +485,7 @@ The description of the Entryway is "From here you can reach all other parts of t
 	The banister is fixed in place in the Entryway.
 	The description of the banister is "Just a normal handhold to grasp when going up and down the stairs."
 	
-	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" as banister.
+	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" or "bannister" as banister.
 
 Before taking books in the Entryway: say "BOOKS IN NEXT ROOM."
 

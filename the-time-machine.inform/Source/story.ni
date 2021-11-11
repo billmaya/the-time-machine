@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26422 ]
+[ WORDS - 26516 ]
 
 Table of Releases
 release	notes
@@ -939,8 +939,8 @@ Title	Summary
 
 Section - Orrery
 
-The orrery is a thing. ["Sitting on the top of the mantle is an orrery."] [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
-The orrery is scenery on the mantle. [dining table.]
+The orrery is a thing. "Sitting on the top of the fireplace mantle is an orrery." [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
+The orrery is [scenery] on the mantle. 
 The orrery is a device.
 The orrery is switched off.
 The description of the orrery is "A mechanical model of our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to the switch[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"
@@ -965,11 +965,11 @@ Decorative inlays of ABC adorn the sides of the box. MAYBE ONE OF THE INLAYS IS 
 
 Understand "planetarium" or "device" or "box" or "inlays" as orrery.
 
-orrery-model is scenery in the Parlor. [Dining Room.]
+orrery-model is scenery in the Parlor. 
 The description of orrery-model is "On the top of the box eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers along one outer edge indicate seasonal and phase information."
 Understand "model" or "spheres" or "half-spheres" or "planets" or "brass rings" or "rings" or "pointers" or "solar system" as orrery-model.
 
-orrery-mechanism is scenery in the Parlor. [Dining Room.]
+orrery-mechanism is scenery in the Parlor. 
 The description of orrery-mechanism is "ORRERY-MECHANISM."
 Understand "mechanism" or "gears" or "tubes" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
 
@@ -1001,7 +1001,7 @@ The description of the sliding panel is "You see nothing special about the slidi
 The sliding panel is a container.
 The sliding panel is opaque.
 The sliding panel is closed.
-The sliding panel is scenery in the Parlor. [Dining Room.]
+The sliding panel is scenery in the Parlor. 
 
 Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
@@ -1026,7 +1026,7 @@ Instead of switching off the orrery: try switching off the orrery-switch.
 [> flip switch]
 	
 An orrery-switch is a thing.
-An orrery-switch is scenery in the Parlor. [Dining Room.]
+An orrery-switch is scenery in the Parlor. 
 An orrery-switch is a device.
 An orrery-switch is switched off.
 The description of the orrery-switch is "You see nothing special about the orrery's switch except the fact that you can switch it on and off."

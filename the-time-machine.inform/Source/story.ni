@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26278 ]
+[ WORDS - 26422 ]
 
 Table of Releases
 release	notes
@@ -1092,6 +1092,22 @@ The orrery is a device.
 The orrery is switched off.
 The description of the orrery is "A mechanical model of our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to the switch[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"
 
+[
+
+"A mechanical model of our solar system contained in a small rectangular wooden box with decorative inlays on the sides. On the face of the box eight tiny jeweled half-spheres set into eight brass rings represents the planets and their orbits around our Sun. Rotating pointers to one side indicate seasonal and phase information."
+
+::
+
+The description of the orrery is "A one-foot wooden, triangular-shaped column turned upright on its smaller end, centered on the fireplace mantle.
+Its left face displays the date, hours, minutes, and seconds of the the current day while the right side displays a mechanical model of our solar system.
+
+A rectangular column standing on its smaller end in the center of the fireplace mantle. 
+
+Represented on the XYZ is a mechanical model of our solar system, eight planets tiny jeweled half-spheres set into the eight brass rings representing the planets and their orbits around our Sun. Rotating pointers along the outer edge indicate seasonal and phase information.
+
+Decorative inlays of ABC adorn the sides of the box. MAYBE ONE OF THE INLAYS IS THE SLIDING PANEL > X INLAYS "One of the inlays appears to slide back and forth..."
+]
+
 Understand "planetarium" or "device" or "box" or "inlays" as orrery.
 
 orrery-model is scenery in the Dining Room.
@@ -1853,13 +1869,13 @@ To say key-middle:
 
 To say key-end:
 	if the player has the key:
-		say "Looks like you found it.";
+		say "Looks like you found it.[no line break]";
 	otherwise:
 		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
 
 Section - Conversation (for use with Conversation Package by Eric Eve)
 
-The ask-suggestions are { Wells, self-suggestion }.
+The ask-suggestions are { Wells, key, self-suggestion }.
 The tell-suggestions are { Humboldt }.
 [The other-suggestions are { other }.]
 

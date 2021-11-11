@@ -744,7 +744,7 @@ Chapter - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth are two leather armchairs with today[']s newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Directly in front of the hearth, angled towards one another, are two leather armchairs with today[']s newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.
@@ -937,8 +937,150 @@ Title	Summary
 "Alleged Blackmailing In Manchester"	"charges levels against the two managing directors of The Financial Post, who threatened to publish false and defamatory information about the governing director of 'Commerce Limited'"
 "The Indian Frontier Troubles"	"two English officers killed and one severly wounded by some tribe between the Rambat Pass and Danesh Khel in India"
 
+Section - Orrery
 
+The orrery is a thing. ["Sitting on the top of the mantle is an orrery."] [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
+The orrery is scenery on the mantle. [dining table.]
+The orrery is a device.
+The orrery is switched off.
+The description of the orrery is "A mechanical model of our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to the switch[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"
 
+[
+
+"A mechanical model of our solar system contained in a small rectangular wooden box with decorative inlays on both sides
+
+"A mechanical model of our solar system contained in a small rectangular wooden box with decorative inlays on the sides sitting on top of the fireplace mantle. On the face of the box eight tiny jeweled half-spheres set into eight brass rings represents the planets and their orbits around our Sun. Rotating pointers to one side indicate seasonal and phase information."
+
+::
+
+The description of the orrery is "A one-foot wooden, triangular-shaped column turned upright on its smaller end, centered on the fireplace mantle.
+Its left face displays the date, hours, minutes, and seconds of the the current day while the right side displays a mechanical model of our solar system.
+
+A rectangular column standing on its smaller end in the center of the fireplace mantle. 
+
+Represented on the XYZ is a mechanical model of our solar system, eight planets tiny jeweled half-spheres set into the eight brass rings representing the planets and their orbits around our Sun. Rotating pointers along the outer edge indicate seasonal and phase information.
+
+Decorative inlays of ABC adorn the sides of the box. MAYBE ONE OF THE INLAYS IS THE SLIDING PANEL > X INLAYS "One of the inlays appears to slide back and forth..."
+]
+
+Understand "planetarium" or "device" or "box" or "inlays" as orrery.
+
+orrery-model is scenery in the Parlor. [Dining Room.]
+The description of orrery-model is "On the top of the box eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers along one outer edge indicate seasonal and phase information."
+Understand "model" or "spheres" or "half-spheres" or "planets" or "brass rings" or "rings" or "pointers" or "solar system" as orrery-model.
+
+orrery-mechanism is scenery in the Parlor. [Dining Room.]
+The description of orrery-mechanism is "ORRERY-MECHANISM."
+Understand "mechanism" or "gears" or "tubes" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
+
+Instead of examining the orrery-mechanism:
+	if the sliding panel is closed:
+		try opening the sliding panel;
+	otherwise:
+		say "The inner mechanism of the orrery is extremely complicated[if the fuse is in the sliding panel]. The only thing recognizable is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense collection of gears, slotted pin followers, shafts, and tubes used to calculate the orbits of the planets."
+
+[^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
+
+[Suppress "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
+The examine devices rule does nothing when examining the orrery.
+
+[ > open orrery ]
+
+Before opening the orrery: 
+	try opening the sliding panel;
+	stop the action.
+
+[ > close orrery ]
+
+Before closing the orrery:
+	try closing the sliding panel;
+	stop the action.
+
+The sliding panel is a thing.
+The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
+The sliding panel is a container.
+The sliding panel is opaque.
+The sliding panel is closed.
+The sliding panel is scenery in the Parlor. [Dining Room.]
+
+Understand "slide [a closed container]" as opening.
+Understand "slide [an open container]" as closing.
+
+Instead of opening the sliding panel: 
+	say "You slide open the panel to reveal the inner workings of the orrery mechanism.";
+	now the sliding panel is open.
+
+Instead of closing the sliding panel: 
+	say "You slide the panel shut, hiding the inner workings of the device.";
+	now the sliding panel is closed.
+
+Instead of inserting the fuse into the sliding panel:
+	say "You put the fuse back into the orrery.";
+	now the fuse is in the sliding panel.
+
+[> switch orrery on/off > turn orrery on/off ]
+	
+Instead of switching on the orrery: try switching on the orrery-switch.
+Instead of switching off the orrery: try switching off the orrery-switch.
+
+[> flip switch]
+	
+An orrery-switch is a thing.
+An orrery-switch is scenery in the Parlor. [Dining Room.]
+An orrery-switch is a device.
+An orrery-switch is switched off.
+The description of the orrery-switch is "You see nothing special about the orrery's switch except the fact that you can switch it on and off."
+Understand "orrery switch" and "switch" as orrery-switch.
+The printed name of orrery-switch is "orrery's switch".
+	
+Instead of examining the orrery-switch:
+	say "There is nothing special about the orrery's switch except the fact that it can be turned on and off."
+
+Understand "flip [a switched off device]" as switching on.
+Understand "flip [a switched on device]" as switching off.
+	
+Instead of switching on the orrery-switch:
+	if the fuse is in the sliding panel in the Parlor: [Dining Room:]
+		if the sliding panel is open: 
+			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
+		otherwise:
+			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptibly, the planets on the surface begin their endless journey around the Sun.";
+		now the orrery-switch is switched on;
+		now the orrery is switched on;
+	otherwise: 
+		say "It looks like the orrery won't function unless you put the fuse back in.".
+	
+Instead of switching off the orrery-switch:
+	if the sliding panel is open:
+		say "The gears inside stop moving and the planet's halt in their orbits.";
+	otherwise:
+		say "The box is silent and the planet's stop their movements around the Sun.";
+	now the orrery-switch is switched off;
+	now the orrery is switched off.
+
+Section - Fuse
+	
+The fuse is a thing.
+The fuse is undescribed.
+The fuse is in the sliding panel.
+
+fuse-burnt-out is a truth state that varies.
+fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
+
+The description of the fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and useless.[end if]"
+	
+[> take fuse]
+	
+After taking the fuse:
+	if the orrery is switched on:
+		say "The minute you remove the fuse the orrery shuts off and stops its calculations.";
+		now the orrery-switch is switched off;
+		now the orrery is switched off;
+	otherwise:
+		say "Taken."
+
+Instead of inserting the fuse into the orrery:
+	try inserting the fuse into the sliding panel.
 
 
 Chapter - Garden
@@ -1084,148 +1226,6 @@ Instead switching on the chandelier:
 	say "Tugging the small chain turns the chandelier on, bathing the room in that harsh light you dislike so much.";
 	now the chandelier is switched on;
 
-Section - Orrery
-
-The orrery is a thing. [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
-The orrery is scenery on the dining table.
-The orrery is a device.
-The orrery is switched off.
-The description of the orrery is "A mechanical model of our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to the switch[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"
-
-[
-
-"A mechanical model of our solar system contained in a small rectangular wooden box with decorative inlays on the sides. On the face of the box eight tiny jeweled half-spheres set into eight brass rings represents the planets and their orbits around our Sun. Rotating pointers to one side indicate seasonal and phase information."
-
-::
-
-The description of the orrery is "A one-foot wooden, triangular-shaped column turned upright on its smaller end, centered on the fireplace mantle.
-Its left face displays the date, hours, minutes, and seconds of the the current day while the right side displays a mechanical model of our solar system.
-
-A rectangular column standing on its smaller end in the center of the fireplace mantle. 
-
-Represented on the XYZ is a mechanical model of our solar system, eight planets tiny jeweled half-spheres set into the eight brass rings representing the planets and their orbits around our Sun. Rotating pointers along the outer edge indicate seasonal and phase information.
-
-Decorative inlays of ABC adorn the sides of the box. MAYBE ONE OF THE INLAYS IS THE SLIDING PANEL > X INLAYS "One of the inlays appears to slide back and forth..."
-]
-
-Understand "planetarium" or "device" or "box" or "inlays" as orrery.
-
-orrery-model is scenery in the Dining Room.
-The description of orrery-model is "On the top of the box eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers along one outer edge indicate seasonal and phase information."
-Understand "model" or "spheres" or "half-spheres" or "planets" or "brass rings" or "rings" or "pointers" or "solar system" as orrery-model.
-
-orrery-mechanism is scenery in the Dining Room.
-The description of orrery-mechanism is "ORRERY-MECHANISM."
-Understand "mechanism" or "gears" or "tubes" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
-
-Instead of examining the orrery-mechanism:
-	if the sliding panel is closed:
-		try opening the sliding panel;
-	otherwise:
-		say "The inner mechanism of the orrery is extremely complicated[if the fuse is in the sliding panel]. The only thing recognizable is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense collection of gears, slotted pin followers, shafts, and tubes used to calculate the orbits of the planets."
-
-[^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
-
-[Suppress "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
-The examine devices rule does nothing when examining the orrery.
-
-[ > open orrery ]
-
-Before opening the orrery: 
-	try opening the sliding panel;
-	stop the action.
-
-[ > close orrery ]
-
-Before closing the orrery:
-	try closing the sliding panel;
-	stop the action.
-
-The sliding panel is a thing.
-The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
-The sliding panel is a container.
-The sliding panel is opaque.
-The sliding panel is closed.
-The sliding panel is scenery in the Dining Room.
-
-Understand "slide [a closed container]" as opening.
-Understand "slide [an open container]" as closing.
-
-Instead of opening the sliding panel: 
-	say "You slide open the panel to reveal the inner workings of the orrery mechanism.";
-	now the sliding panel is open.
-
-Instead of closing the sliding panel: 
-	say "You slide the panel shut, hiding the inner workings of the device.";
-	now the sliding panel is closed.
-
-Instead of inserting the fuse into the sliding panel:
-	say "You put the fuse back into the orrery.";
-	now the fuse is in the sliding panel.
-
-[> switch orrery on/off > turn orrery on/off ]
-	
-Instead of switching on the orrery: try switching on the orrery-switch.
-Instead of switching off the orrery: try switching off the orrery-switch.
-
-[> flip switch]
-	
-An orrery-switch is a thing.
-An orrery-switch is scenery in the Dining Room.
-An orrery-switch is a device.
-An orrery-switch is switched off.
-The description of the orrery-switch is "You see nothing special about the orrery's switch except the fact that you can switch it on and off."
-Understand "orrery switch" and "switch" as orrery-switch.
-The printed name of orrery-switch is "orrery's switch".
-	
-Instead of examining the orrery-switch:
-	say "There is nothing special about the orrery's switch except the fact that it can be turned on and off."
-
-Understand "flip [a switched off device]" as switching on.
-Understand "flip [a switched on device]" as switching off.
-	
-Instead of switching on the orrery-switch:
-	if the fuse is in the sliding panel in the Dining Room:
-		if the sliding panel is open: 
-			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
-		otherwise:
-			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptibly, the planets on the surface begin their endless journey around the Sun.";
-		now the orrery-switch is switched on;
-		now the orrery is switched on;
-	otherwise: 
-		say "It looks like the orrery won't function unless you put the fuse back in.".
-	
-Instead of switching off the orrery-switch:
-	if the sliding panel is open:
-		say "The gears inside stop moving and the planet's halt in their orbits.";
-	otherwise:
-		say "The box is silent and the planet's stop their movements around the Sun.";
-	now the orrery-switch is switched off;
-	now the orrery is switched off.
-
-Section - Fuse
-	
-The fuse is a thing.
-The fuse is undescribed.
-The fuse is in the sliding panel.
-
-fuse-burnt-out is a truth state that varies.
-fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
-
-The description of the fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and useless.[end if]"
-	
-[> take fuse]
-	
-After taking the fuse:
-	if the orrery is switched on:
-		say "The minute you remove the fuse the orrery shuts off and stops its calculations.";
-		now the orrery-switch is switched off;
-		now the orrery is switched off;
-	otherwise:
-		say "Taken."
-
-Instead of inserting the fuse into the orrery:
-	try inserting the fuse into the sliding panel.
 
 Chapter - Kitchen
 

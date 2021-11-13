@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26399 ]
+[ WORDS - 26411 ]
 
 Table of Releases
 release	notes
@@ -948,7 +948,7 @@ The description of the orrery is "A mechanical model of our solar system contain
 [OLD The description of the orrery is "A mechanical model of our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to the switch[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"]
 
 [
-WHAT IF THERE WAS A 2ND FUSE IN THE TIME MACHINE BUT IT WAS BURNT OUT? (YOU HAVE TO REPLACE WITH FUSE FROM ORRERY.)
+WHAT IF THERE WAS ANOTHER FUSE ALREADY IN THE TIME MACHINE BUT IT WAS BURNT OUT AND YOU HAVE TO REPLACE THAT FUSE WITH THE FUSE FROM ORRERY?
 
 MAYBE ONE OF THE INLAYS IS THE SLIDING PANEL > X INLAYS "One of the inlays appears to slide back and forth..."
 ]
@@ -958,6 +958,8 @@ Understand "planetarium" or "device" or "box" or "inlays" as orrery.
 orrery-model is scenery in the Parlor. 
 The description of orrery-model is "On the top of the box eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers along one outer edge indicate seasonal and phase information."
 Understand "model" or "spheres" or "half-spheres" or "planets" or "brass rings" or "rings" or "pointers" or "solar system" as orrery-model.
+
+[ORRERY IS SWITCHED ON. REFLECT IN ORRERY-MODEL DESCRIPTION.]
 
 orrery-mechanism is scenery in the Parlor. 
 The description of orrery-mechanism is "ORRERY-MECHANISM."

@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26625 ]
+[ WORDS - 26560 ]
 
 Table of Releases
 release	notes
@@ -943,12 +943,12 @@ The orrery is a thing. "Sitting on the top of the fireplace mantle is an orrery.
 The orrery is [scenery] on the mantle. 
 The orrery is a device.
 The orrery is switched off.
-The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box with decorative inlays on both sides. On the face of the box, eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers to one side indicate seasonal and phase information."
-
-[OLD The description of the orrery is "A mechanical model of our solar system of Wells['] design contained in a small rectangular wooden box with decorative inlays. While not built to scale it is still a marvel of mechanical engineering and craftsmanship. There is a switch on the long side of the box. Next to the switch[if the sliding panel is closed] is a small sliding panel that hides the inner mechanism of the device.[otherwise] the inner mechanism of the device is on display since the sliding panel is open.[end if]"]
+The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box with decorative inlays on both sides. On the face of the box, eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers to one side indicate seasonal and phase information.[if the sliding panel is open] The bottom part of the right inlay has been slide up to expose the inner mechanism of the device.[end if]"
 
 [
-WHAT IF THERE WAS ANOTHER FUSE ALREADY IN THE TIME MACHINE BUT IT WAS BURNT OUT AND YOU HAVE TO REPLACE THAT FUSE WITH THE FUSE FROM ORRERY?
+• THERE IS ALSO A FUSE IN THE TIME MACHINE, BUT IT IS BURNT OUT
+• YOU HAVE TO REPLACE IT WITH THE FUSE FROM THE ORRERY
+- ADDED right-inlay-examined BOOLEAN?
 ]
 
 Understand "planetarium" or "device" or "box" or "inlays" as orrery.
@@ -975,13 +975,11 @@ Instead of examining the orrery-mechanism:
 The examine devices rule does nothing when examining the orrery.
 
 [ > open orrery ]
-
 Before opening the orrery: 
 	try opening the sliding panel;
 	stop the action.
 
 [ > close orrery ]
-
 Before closing the orrery:
 	try closing the sliding panel;
 	stop the action.
@@ -1001,6 +999,16 @@ The right inlay is closed.
 The right inlay is scenery in the Parlor.
 Understand "right inlay" or "right" or "right side" or "left side of orrery" as right inlay.
 
+[ > open right inlay ]
+Before opening the right inlay:
+	try opening the sliding panel;
+	stop the action.
+
+[ > close right inlay ]
+Before closing the right inlay:
+	try closing the sliding panel;
+	stop the action.
+			
 The sliding panel is a thing.
 The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
 The sliding panel is a container.
@@ -1011,19 +1019,7 @@ The sliding panel is scenery in the Parlor.
 Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
-[ > open right inlay ]
-
-Before opening the right inlay:
-	try opening the sliding panel;
-	stop the action.
-
-[ > close right inlay ]
-
-Before closing the right inlay:
-	try closing the sliding panel;
-	stop the action.
-
-[Change sliding panel open/close
+[CHANGE SLIDING PANEL OPEN/CLOSE DESCRIPTION
   > slide inlay "With your finger tips you press and slide the movable section of inlay, exposing the orrery mechanism inside."]
 
 Instead of opening the sliding panel: 

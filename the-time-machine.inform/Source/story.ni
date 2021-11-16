@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26617 ]
+[ WORDS - 26625 ]
 
 Table of Releases
 release	notes
@@ -949,18 +949,6 @@ The description of the orrery is "A mechanical model of our solar system contain
 
 [
 WHAT IF THERE WAS ANOTHER FUSE ALREADY IN THE TIME MACHINE BUT IT WAS BURNT OUT AND YOU HAVE TO REPLACE THAT FUSE WITH THE FUSE FROM ORRERY?
-
-MAYBE ONE OF THE INLAYS IS THE SLIDING PANEL > X INLAYS "One of the inlays appears to slide back and forth..."
-
-> x inlays	
-	"The ivory inlays that coer both sides of the dark wooden box illustrate scenes of XYZ. On the left side, ABC. On the right side, DEF. Looking closer at the right inlay, it appears that one section can slide over the other."
-
-"The ivory inlays that on both sides of the dark wooden box are  offset the dark wood sides of the orreryof the box nicely. Looking closer, it appears that one section of one inlay can slide."
-> slide inlay
-"With your finger tips you slide the movable section of inlay, exposing the orrery mechanism inside."
-
-left-inlay
-right-inlay
 ]
 
 Understand "planetarium" or "device" or "box" or "inlays" as orrery.
@@ -998,20 +986,20 @@ Before closing the orrery:
 	try closing the sliding panel;
 	stop the action.
 			
-The left-inlay is a thing.
-The printed name of left-inlay is "left inlay".
-The description of left-inlay is "THIS IS THE ORRERY'S LEFT INLAY."
-The left-inlay is scenery in the Parlor.
-Understand "left inlay" or "left" as left-inlay.
+The left inlay is a thing.
+The printed name of left inlay is "left inlay".
+The description of the left inlay is "The decorative pattern of inlaid ivory portrays a window scene looking out onto a nightime mosaic of stars of all sizes in the night sky."
+The left inlay is scenery in the Parlor.
+Understand "left inlay" or "left" or "left side" or "left side of orrery" as left inlay.
 	
-The right-inlay is a thing.
-The printed name of right-inlay is "right inlay".
-The description of right-inlay is "THIS IS THE ORRERY'S RIGHT INLAY."
-The right-inlay is a container.
-The right-inlay is opaque.
-The right-inlay is closed.
-The right-inlay is scenery in the Parlor.
-Understand "right inlay" or "right" as right-inlay.
+The right inlay is a thing.
+The printed name of right inlay is "right inlay".
+The description of the right inlay is "The same night sky scene from the left side inlay is duplicated on this side. However, upon closer examination, it appears that one section of the inlay can slide back and forth."
+The right inlay is a container.
+The right inlay is opaque.
+The right inlay is closed.
+The right inlay is scenery in the Parlor.
+Understand "right inlay" or "right" or "right side" or "left side of orrery" as right inlay.
 
 The sliding panel is a thing.
 The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
@@ -1022,6 +1010,21 @@ The sliding panel is scenery in the Parlor.
 
 Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
+
+[ > open right inlay ]
+
+Before opening the right inlay:
+	try opening the sliding panel;
+	stop the action.
+
+[ > close right inlay ]
+
+Before closing the right inlay:
+	try closing the sliding panel;
+	stop the action.
+
+[Change sliding panel open/close
+  > slide inlay "With your finger tips you press and slide the movable section of inlay, exposing the orrery mechanism inside."]
 
 Instead of opening the sliding panel: 
 	say "You slide open the panel to reveal the inner workings of the orrery mechanism.";
@@ -1035,6 +1038,8 @@ Instead of inserting the fuse into the sliding panel:
 	say "You put the fuse back into the orrery.";
 	now the fuse is in the sliding panel.
 
+[REMOVED SWITCH. ORRERY ALWAYS ON WHILE FUSE IS IN IT.]
+		
 [> switch orrery on/off > turn orrery on/off ]
 	
 Instead of switching on the orrery: try switching on the orrery-switch.

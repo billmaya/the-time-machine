@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26560 ]
+[ WORDS - 26689 ]
 
 Table of Releases
 release	notes
@@ -942,7 +942,7 @@ Section - Orrery
 The orrery is a thing. "Sitting on the top of the fireplace mantle is an orrery." [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
 The orrery is [scenery] on the mantle. 
 The orrery is a device.
-The orrery is switched off.
+The orrery is switched on. [off.]
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box with decorative inlays on both sides. On the face of the box, eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers to one side indicate seasonal and phase information.[if the sliding panel is open] The bottom part of the right inlay has been slide up to expose the inner mechanism of the device.[end if]"
 
 [
@@ -986,6 +986,7 @@ Before closing the orrery:
 			
 The left inlay is a thing.
 The printed name of left inlay is "left inlay".
+[WHAT IF INLAY SCENES PORTRAY TIME TRAVELING? ]
 The description of the left inlay is "The decorative pattern of inlaid ivory portrays a window scene looking out onto a nightime mosaic of stars of all sizes in the night sky."
 The left inlay is scenery in the Parlor.
 Understand "left inlay" or "left" or "left side" or "left side of orrery" as left inlay.
@@ -1030,19 +1031,18 @@ Instead of closing the sliding panel:
 	say "You slide the panel shut, hiding the inner workings of the device.";
 	now the sliding panel is closed.
 
-Instead of inserting the fuse into the sliding panel:
-	say "You put the fuse back into the orrery.";
-	now the fuse is in the sliding panel.
-
 [REMOVED SWITCH. ORRERY ALWAYS ON WHILE FUSE IS IN IT.]
 		
 [> switch orrery on/off > turn orrery on/off ]
 	
+[
 Instead of switching on the orrery: try switching on the orrery-switch.
 Instead of switching off the orrery: try switching off the orrery-switch.
-
+]
+	
 [> flip switch]
 	
+[
 An orrery-switch is a thing.
 An orrery-switch is scenery in the Parlor. 
 An orrery-switch is a device.
@@ -1075,6 +1075,7 @@ Instead of switching off the orrery-switch:
 		say "The box is silent and the planet's stop their movements around the Sun.";
 	now the orrery-switch is switched off;
 	now the orrery is switched off.
+]
 
 Section - Fuse
 	
@@ -1092,13 +1093,23 @@ The description of the fuse is "Almost as big as your thumb, the circular fuse i
 After taking the fuse:
 	if the orrery is switched on:
 		say "The minute you remove the fuse the orrery shuts off and stops its calculations.";
-		now the orrery-switch is switched off;
-		now the orrery is switched off;
-	otherwise:
-		say "Taken."
+		[now the orrery-switch is switched off;]
+		now the orrery is switched off.
+	[otherwise:
+		say "Taken."]
 
 Instead of inserting the fuse into the orrery:
 	try inserting the fuse into the sliding panel.
+
+Instead of inserting the fuse into the sliding panel:
+	say "After put the fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
+	now the fuse is in the sliding panel;
+	now the orrery is switched on;
+	[if the sliding panel is open:
+		say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
+	otherwise:
+		say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptibly, the planets on the surface begin their endless journey around the Sun."] [SOUND THAT CAN BE HEARD WHEN YOU > listen IN PARLOR]
+	
 
 
 Chapter - Garden

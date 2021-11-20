@@ -173,11 +173,11 @@ Test take-encyc with "take encyclopaedia / take encyclopaedia / take encyclopaed
 Test take-book with "take book / take book / take book / take book / take book / take book."
 Test take-mag with "take periodical / take periodical / take periodical / take periodical / take periodical."  
 Test tend-fire with "tend fire / take poker / tend fire / drop poker / tend fire."
-Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
+[DEL Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
 Test orrery-on-off with "turn orrery on / turn orrery off."
 Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."
 Test switch-examine with " examine orrery's switch / examine orrery switch."
-Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."
+Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."]
 Test circular-shaft-look with "x shaft / take grate / x shaft."
 Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
 Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
@@ -993,12 +993,12 @@ Understand "left inlay" or "left" or "left side" or "left side of orrery" as lef
 	
 The right inlay is a thing.
 The printed name of right inlay is "right inlay".
-The description of the right inlay is "The same night sky scene from the left side inlay is duplicated on this side. However, upon closer examination, it appears that one section of the inlay can slide back and forth."
+The description of the right inlay is "The same night sky scene from the left side inlay is duplicated on this side. However, upon closer examination, it appears that the bottom half of the right inlay can slide back and forth."
 The right inlay is a container.
 The right inlay is opaque.
 The right inlay is closed.
 The right inlay is scenery in the Parlor.
-Understand "right inlay" or "right" or "right side" or "left side of orrery" as right inlay.
+Understand "right inlay" or "right" or "right side" or "right side of orrery" as right inlay.
 
 [ > open right inlay ]
 Before opening the right inlay:
@@ -1032,17 +1032,25 @@ Instead of closing the sliding panel:
 	now the sliding panel is closed.
 
 [REMOVED SWITCH. ORRERY ALWAYS ON WHILE FUSE IS IN IT.]
+
+Instead of switching off the orrery:
+	if the fuse is in the sliding panel in the Parlor:
+		[DEL say "ORRERY ALWAYS APPEARS ON.";]
+		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
+	otherwise:
+		[DEL say "APPEARS REMOVING THE FUSE HAS TURNED ORRERY OFF."]
+		say "It appears that removing the fuse from the orrery has already done that for you."
 		
 [> switch orrery on/off > turn orrery on/off ]
 	
-[
+[DEL 
 Instead of switching on the orrery: try switching on the orrery-switch.
 Instead of switching off the orrery: try switching off the orrery-switch.
 ]
 	
 [> flip switch]
 	
-[
+[DEL
 An orrery-switch is a thing.
 An orrery-switch is scenery in the Parlor. 
 An orrery-switch is a device.
@@ -1076,6 +1084,13 @@ Instead of switching off the orrery-switch:
 	now the orrery-switch is switched off;
 	now the orrery is switched off.
 ]
+
+[Tests]
+
+Test parlor-orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
+Test orrery-on-off with "turn orrery on / turn orrery off."
+Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."
+
 
 Section - Fuse
 	

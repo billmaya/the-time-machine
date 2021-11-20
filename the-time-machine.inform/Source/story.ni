@@ -1085,8 +1085,6 @@ Instead of switching off the orrery-switch:
 	now the orrery is switched off.
 ]
 
-[Tests]
-
 Test parlor-orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
 Test orrery-on-off with "turn orrery on / turn orrery off."
 Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."

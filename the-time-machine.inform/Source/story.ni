@@ -986,32 +986,54 @@ Before closing the orrery:
 			
 The left inlay is a thing.
 The printed name of left inlay is "left inlay".
-[WHAT IF INLAY SCENES PORTRAY TIME TRAVELING? ]
-The description of the left inlay is "The decorative pattern of inlaid ivory portrays a window scene looking out onto a nightime mosaic of stars of all sizes in the night sky."
+The description of the left inlay is "LEFT INLAY DESCRIPTION." [WHAT IF INLAYS PORTRAY MORLOCK/ELOI SCENES?]
+[DEL WHAT IF INLAY SCENES PORTRAY TIME TRAVELING? ]
+[DEL The description of the left inlay is "The decorative pattern of inlaid ivory portrays a window scene looking out onto a nightime mosaic of stars of all sizes in the night sky."]
 The left inlay is scenery in the Parlor.
 Understand "left inlay" or "left" or "left side" or "left side of orrery" as left inlay.
 	
 The right inlay is a thing.
 The printed name of right inlay is "right inlay".
-The description of the right inlay is "The same night sky scene from the left side inlay is duplicated on this side. However, upon closer examination, it appears that the bottom half of the right inlay can slide back and forth."
+The description of the right inlay is "NO DESCRIPTION NEEDED." ["The same night sky scene from the left side inlay is duplicated on this side. However, upon closer examination, it appears that the bottom half of the right inlay can slide back and forth."]
+[DEL The description of the right inlay is] 
 The right inlay is a container.
 The right inlay is opaque.
 The right inlay is closed.
 The right inlay is scenery in the Parlor.
 Understand "right inlay" or "right" or "right side" or "right side of orrery" as right inlay.
 
+Instead of examining the right inlay:
+	try examining the sliding panel.
+
 [ > open right inlay ]
 Before opening the right inlay:
-	try opening the sliding panel;
-	stop the action.
+	if the right inlay is open:
+		say "RIGHT INLAY ALREADY OPEN.";
+		stop the action;
+	otherwise:
+		try opening the sliding panel;
+		stop the action.
 
 [ > close right inlay ]
 Before closing the right inlay:
-	try closing the sliding panel;
-	stop the action.
+	if the right inlay is closed:
+		say "RIGHT INLAY ALREADY CLOSED.";
+		stop the action;
+	otherwise:
+		try closing the sliding panel;
+		stop the action.
+
+[ > push right inlay <- DEBUG ]
+Instead of switching on the right inlay:
+	if the right inlay is closed: 
+		try opening the sliding panel;
+	if the right inlay is open: 
+		try closing the sliding panel.
 			
 The sliding panel is a thing.
-The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."
+The description of the sliding panel is "[if the sliding panel is closed]The lower half of the right inlay sits slightly higher than its upper half looks like it can slide along tiny grooves carved into the sides.[otherwise]The lower half of the right inlay covers its top half, exposing the inner workings of the orrery's mechanism."
+[DEL SLIDING PANEL OPEN."]
+[DEL The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."]
 The sliding panel is a container.
 The sliding panel is opaque.
 The sliding panel is closed.
@@ -1024,11 +1046,16 @@ Understand "slide [an open container]" as closing.
   > slide inlay "With your finger tips you press and slide the movable section of inlay, exposing the orrery mechanism inside."]
 
 Instead of opening the sliding panel: 
-	say "You slide open the panel to reveal the inner workings of the orrery mechanism.";
+	say "With your fingertips you slide the lower part of the inlay up, covering the upper part and revealing the inner workings of the orrery's mechanism.";
+	[DEL say "[if the sliding panel is closed]With your fingertips you slide the lower part of the inlay up, covering the upper part and revealing the inner workings of the orrery's mechanism.[otherwise]With your fingertips you slide the inlay down, covering the orrery's mechanist.";]
+	[DEL say "You slide open the panel to reveal the inner workings of the orrery mechanism.";]
+	now the right inlay is open;
 	now the sliding panel is open.
 
 Instead of closing the sliding panel: 
-	say "You slide the panel shut, hiding the inner workings of the device.";
+	say "You gently slide the inlay down, covering the orrery's mechanism.";
+	[DEL say "You slide the panel shut, hiding the inner workings of the device.";]
+	now the right inlay is closed;
 	now the sliding panel is closed.
 
 [REMOVED SWITCH. ORRERY ALWAYS ON WHILE FUSE IS IN IT.]

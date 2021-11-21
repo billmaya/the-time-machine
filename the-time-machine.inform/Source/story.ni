@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26827 ]
+[ WORDS - 26915 ]
 
 Table of Releases
 release	notes
@@ -987,15 +987,12 @@ Before closing the orrery:
 The left inlay is a thing.
 The printed name of left inlay is "left inlay".
 The description of the left inlay is "LEFT INLAY DESCRIPTION." [WHAT IF INLAYS PORTRAY MORLOCK/ELOI SCENES?]
-[DEL WHAT IF INLAY SCENES PORTRAY TIME TRAVELING? ]
-[DEL The description of the left inlay is "The decorative pattern of inlaid ivory portrays a window scene looking out onto a nightime mosaic of stars of all sizes in the night sky."]
 The left inlay is scenery in the Parlor.
 Understand "left inlay" or "left" or "left side" or "left side of orrery" as left inlay.
 	
 The right inlay is a thing.
 The printed name of right inlay is "right inlay".
-The description of the right inlay is "NO DESCRIPTION NEEDED." ["The same night sky scene from the left side inlay is duplicated on this side. However, upon closer examination, it appears that the bottom half of the right inlay can slide back and forth."]
-[DEL The description of the right inlay is] 
+The description of the right inlay is "NO DESCRIPTION NEEDED?." ["The same night sky scene from the left side inlay is duplicated on this side. However, upon closer examination, it appears that the bottom half of the right inlay can slide back and forth."]
 The right inlay is a container.
 The right inlay is opaque.
 The right inlay is closed.
@@ -1032,8 +1029,6 @@ Instead of switching on the right inlay:
 			
 The sliding panel is a thing.
 The description of the sliding panel is "[if the sliding panel is closed]The lower half of the right inlay sits slightly higher than its upper half looks like it can slide along tiny grooves carved into the sides.[otherwise]The lower half of the right inlay covers its top half, exposing the inner workings of the orrery's mechanism."
-[DEL SLIDING PANEL OPEN."]
-[DEL The description of the sliding panel is "You see nothing special about the sliding panel except the fact that it can slide."]
 The sliding panel is a container.
 The sliding panel is opaque.
 The sliding panel is closed.
@@ -1042,23 +1037,15 @@ The sliding panel is scenery in the Parlor.
 Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
-[CHANGE SLIDING PANEL OPEN/CLOSE DESCRIPTION
-  > slide inlay "With your finger tips you press and slide the movable section of inlay, exposing the orrery mechanism inside."]
-
 Instead of opening the sliding panel: 
 	say "With your fingertips you slide the lower part of the inlay up, covering the upper part and revealing the inner workings of the orrery's mechanism.";
-	[DEL say "[if the sliding panel is closed]With your fingertips you slide the lower part of the inlay up, covering the upper part and revealing the inner workings of the orrery's mechanism.[otherwise]With your fingertips you slide the inlay down, covering the orrery's mechanist.";]
-	[DEL say "You slide open the panel to reveal the inner workings of the orrery mechanism.";]
 	now the right inlay is open;
 	now the sliding panel is open.
 
 Instead of closing the sliding panel: 
 	say "You gently slide the inlay down, covering the orrery's mechanism.";
-	[DEL say "You slide the panel shut, hiding the inner workings of the device.";]
 	now the right inlay is closed;
 	now the sliding panel is closed.
-
-[REMOVED SWITCH. ORRERY ALWAYS ON WHILE FUSE IS IN IT.]
 
 Instead of switching off the orrery:
 	if the fuse is in the sliding panel in the Parlor:
@@ -1067,6 +1054,8 @@ Instead of switching off the orrery:
 	otherwise:
 		[DEL say "APPEARS REMOVING THE FUSE HAS TURNED ORRERY OFF."]
 		say "It appears that removing the fuse from the orrery has already done that for you."
+
+[REMOVED SWITCH. ORRERY ALWAYS ON WHILE FUSE IS IN IT.]
 		
 [> switch orrery on/off > turn orrery on/off ]
 	

@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26915 ]
+[ WORDS - 26481 ]
 
 Table of Releases
 release	notes
@@ -1049,57 +1049,9 @@ Instead of closing the sliding panel:
 
 Instead of switching off the orrery:
 	if the fuse is in the sliding panel in the Parlor:
-		[DEL say "ORRERY ALWAYS APPEARS ON.";]
 		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
 	otherwise:
-		[DEL say "APPEARS REMOVING THE FUSE HAS TURNED ORRERY OFF."]
 		say "It appears that removing the fuse from the orrery has already done that for you."
-
-[REMOVED SWITCH. ORRERY ALWAYS ON WHILE FUSE IS IN IT.]
-		
-[> switch orrery on/off > turn orrery on/off ]
-	
-[DEL 
-Instead of switching on the orrery: try switching on the orrery-switch.
-Instead of switching off the orrery: try switching off the orrery-switch.
-]
-	
-[> flip switch]
-	
-[DEL
-An orrery-switch is a thing.
-An orrery-switch is scenery in the Parlor. 
-An orrery-switch is a device.
-An orrery-switch is switched off.
-The description of the orrery-switch is "You see nothing special about the orrery's switch except the fact that you can switch it on and off."
-Understand "orrery switch" and "switch" as orrery-switch.
-The printed name of orrery-switch is "orrery's switch".
-	
-Instead of examining the orrery-switch:
-	say "There is nothing special about the orrery's switch except the fact that it can be turned on and off."
-
-Understand "flip [a switched off device]" as switching on.
-Understand "flip [a switched on device]" as switching off.
-	
-Instead of switching on the orrery-switch:
-	if the fuse is in the sliding panel in the Parlor: [Dining Room:]
-		if the sliding panel is open: 
-			say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
-		otherwise:
-			say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptibly, the planets on the surface begin their endless journey around the Sun.";
-		now the orrery-switch is switched on;
-		now the orrery is switched on;
-	otherwise: 
-		say "It looks like the orrery won't function unless you put the fuse back in.".
-	
-Instead of switching off the orrery-switch:
-	if the sliding panel is open:
-		say "The gears inside stop moving and the planet's halt in their orbits.";
-	otherwise:
-		say "The box is silent and the planet's stop their movements around the Sun.";
-	now the orrery-switch is switched off;
-	now the orrery is switched off.
-]
 
 Test parlor-orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
 Test orrery-on-off with "turn orrery on / turn orrery off."
@@ -1121,23 +1073,16 @@ The description of the fuse is "Almost as big as your thumb, the circular fuse i
 	
 After taking the fuse:
 	if the orrery is switched on:
-		say "The minute you remove the fuse the orrery shuts off and stops its calculations.";
-		[now the orrery-switch is switched off;]
+		say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
 		now the orrery is switched off.
-	[otherwise:
-		say "Taken."]
 
 Instead of inserting the fuse into the orrery:
 	try inserting the fuse into the sliding panel.
 
 Instead of inserting the fuse into the sliding panel:
-	say "After put the fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
+	say "After you put the fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
 	now the fuse is in the sliding panel;
 	now the orrery is switched on;
-	[if the sliding panel is open:
-		say "The gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
-	otherwise:
-		say "A slight sound comes from inside the box as the planetary orbits are calculated by the mechanism inside. Imperceptibly, the planets on the surface begin their endless journey around the Sun."] [SOUND THAT CAN BE HEARD WHEN YOU > listen IN PARLOR]
 	
 
 

@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26481 ]
+[ WORDS - 26475 ]
 
 Table of Releases
 release	notes
@@ -942,7 +942,7 @@ Section - Orrery
 The orrery is a thing. "Sitting on the top of the fireplace mantle is an orrery." [https://bit.ly/3s8YLzS  https://www.google.com/search?tbm=isch&q=orrery&tbs=imgo:1]
 The orrery is [scenery] on the mantle. 
 The orrery is a device.
-The orrery is switched on. [off.]
+The orrery is switched on.
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box with decorative inlays on both sides. On the face of the box, eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers to one side indicate seasonal and phase information.[if the sliding panel is open] The bottom part of the right inlay has been slide up to expose the inner mechanism of the device.[end if]"
 
 [
@@ -992,20 +992,17 @@ Understand "left inlay" or "left" or "left side" or "left side of orrery" as lef
 	
 The right inlay is a thing.
 The printed name of right inlay is "right inlay".
-The description of the right inlay is "NO DESCRIPTION NEEDED?." ["The same night sky scene from the left side inlay is duplicated on this side. However, upon closer examination, it appears that the bottom half of the right inlay can slide back and forth."]
+The description of the right inlay is "[if the sliding panel is closed]The lower half of the right inlay sits slightly higher than its upper half and looks like it can slide along tiny grooves cut into the inner sides of its frame.[otherwise]The lower half of the right inlay covers its top half, exposing the inner workings of the orrery's mechanism."
 The right inlay is a container.
 The right inlay is opaque.
 The right inlay is closed.
 The right inlay is scenery in the Parlor.
 Understand "right inlay" or "right" or "right side" or "right side of orrery" as right inlay.
 
-Instead of examining the right inlay:
-	try examining the sliding panel.
-
 [ > open right inlay ]
 Before opening the right inlay:
 	if the right inlay is open:
-		say "RIGHT INLAY ALREADY OPEN.";
+		say "You've already slide the movable part of the right inlay up.";
 		stop the action;
 	otherwise:
 		try opening the sliding panel;
@@ -1014,31 +1011,41 @@ Before opening the right inlay:
 [ > close right inlay ]
 Before closing the right inlay:
 	if the right inlay is closed:
-		say "RIGHT INLAY ALREADY CLOSED.";
+		say "You've already slide the movable part of the right inlay down.";
 		stop the action;
 	otherwise:
 		try closing the sliding panel;
 		stop the action.
 
-[ > push right inlay <- DEBUG ]
-Instead of switching on the right inlay:
-	if the right inlay is closed: 
+[ > pull right inlay ]
+Before pulling the right inlay:
+	try switching on the right inlay;
+	stop the action.
+
+[ > push right inlay ]
+Before switching on the right inlay:
+	if the sliding panel [right inlay] is closed: 
 		try opening the sliding panel;
-	if the right inlay is open: 
-		try closing the sliding panel.
+		stop the action;
+	if the sliding panel [right inlay] is open: 
+		try closing the sliding panel;
+		stop the action.
 			
 The sliding panel is a thing.
-The description of the sliding panel is "[if the sliding panel is closed]The lower half of the right inlay sits slightly higher than its upper half looks like it can slide along tiny grooves carved into the sides.[otherwise]The lower half of the right inlay covers its top half, exposing the inner workings of the orrery's mechanism."
+The description of the sliding panel is "NO DESCRIPTION NEEDED, HANDLED BY RIGHT INLAY DESCRIPTION."
 The sliding panel is a container.
 The sliding panel is opaque.
 The sliding panel is closed.
 The sliding panel is scenery in the Parlor. 
 
+Instead of examining the sliding panel:
+	try examining the right inlay.
+
 Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
-	say "With your fingertips you slide the lower part of the inlay up, covering the upper part and revealing the inner workings of the orrery's mechanism.";
+	say "With your fingertips you gently slide the lower part of the inlay up, covering the upper part, and reveal the inner workings of the orrery's mechanism.";
 	now the right inlay is open;
 	now the sliding panel is open.
 
@@ -1053,9 +1060,8 @@ Instead of switching off the orrery:
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
 
-Test parlor-orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
-Test orrery-on-off with "turn orrery on / turn orrery off."
-Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."
+Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
+Test orrery-right-inlay with "examine right inlay / open right inlay / examine right inlay / close right inlay / push right inlay / push right inlay / slide right inlay / slide right inlay."
 
 
 Section - Fuse

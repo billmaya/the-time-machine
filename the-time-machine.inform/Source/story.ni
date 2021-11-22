@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26475 ]
+[ WORDS - 26500 ]
 
 Table of Releases
 release	notes
@@ -3004,7 +3004,8 @@ Release 5 Notes (v1.2)[paragraph break]
 • Made it so you can > use poker on windows to break latch.[line break]
 • Made it so workshop windows can be locked or unlocked with latch, opened, and closed.[line break]
 • Made > press switch refer to light switch. Cannot reach light switch if you are in time machine.[line break]
-• Made lights a device that you can turn on/off by redirecting to light switch.
+• Made lights a device that you can turn on/off by redirecting to light switch.[line break]
+• Moved orrery to parlor fireplace mantle. Replaced sliding panel and switch with inlays. Part of right inlay can be moved to expose fuse.
 	
 Release 4 Notes (v1.1)[paragraph break]
 This release incorporates several fixes based on reviews and feedback from people who played the game during ParserComp 2021 judging.[paragraph break]

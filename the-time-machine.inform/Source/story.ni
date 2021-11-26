@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26633 ]
+[ WORDS - 26541 ]
 
 Table of Releases
 release	notes
@@ -969,7 +969,6 @@ The inner mechanism of the orrery is extremely complicated, a dense collection o
 [if the orrery is on] which means the fuse is in the sliding panel
 [if time-machine-fuse-found]
 ]
-
 [^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
 
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
@@ -1002,59 +1001,41 @@ Understand "right inlay" or "right" or "right side" or "right side of orrery" as
 [ADD right-inlay-examined BOOLEAN?]
 
 [ > open right panel ]
-Before opening the right panel:
+Instead of opening the right panel:
 	if the right panel is open:
 		say "You've already slid the right panel up as far as it can go.";
-		stop the action;
 	otherwise:
-		try opening the sliding panel;
-		stop the action.
+		continue the action.
 
 [ > close right panel ]
-Before closing the right panel:
+Instead of closing the right panel:
 	if the right panel is closed:
 		say "You've already slid the right panel closed.";
-		stop the action;
 	otherwise:
-		try closing the sliding panel;
-		stop the action.
+		continue the action.
 
 [ > pull right panel ]
-Before pulling the right panel:
+Instead of pulling the right panel:
 	try switching on the right panel;
 	stop the action.
 
-[ > push right inlay ]
-Before switching on the right panel:
-	if the sliding panel [DEL right inlay] is closed: 
-		try opening the sliding panel;
-		stop the action;
-	if the sliding panel [DEL right inlay] is open: 
-		try closing the sliding panel;
-		stop the action.
-			
-The sliding panel is a thing.
-The description of the sliding panel is "NO DESCRIPTION NEEDED, HANDLED BY RIGHT INLAY DESCRIPTION."
-The sliding panel is a container.
-The sliding panel is opaque.
-The sliding panel is closed.
-The sliding panel is scenery in the Parlor. 
-
-Instead of examining the sliding panel:
-	try examining the right panel.
+[ > push right panel ]
+Instead of switching on the right panel:
+	if the right panel is closed: 
+		try opening the right panel;
+	if the right panel is open: 
+		try closing the right panel.
 
 Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
-Instead of opening the sliding panel: 
+Instead of opening the right panel: 
 	say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
-	now the right panel is open;
-	now the sliding panel is open.
+	now the right panel is open.
 
-Instead of closing the sliding panel: 
+Instead of closing the right panel: 
 	say "You gently slide the right panel down, covering the orrery's mechanism.";
-	now the right panel is closed;
-	now the sliding panel is closed.
+	now the right panel is closed.
 
 Instead of switching off the orrery:
 	if the fuse is in the sliding panel in the Parlor:

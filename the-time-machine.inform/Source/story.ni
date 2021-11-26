@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26609 ]
+[ WORDS - 26574 ]
 
 Table of Releases
 release	notes
@@ -986,13 +986,13 @@ Before closing the orrery:
 			
 The left inlay is a thing.
 The printed name of left inlay is "left inlay".
-The description of the left inlay is "The left panel is half the width of the central panel and appears decorative only. It displays a bas-relief illustration carved into the wood. In it a shadowy, ape-like figure crouches in front of a what appears to be a cavernous wall of machinery."
+The description of the left inlay is "The left panel is half the width of the central panel and displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
 The left inlay is scenery in the Parlor.
 Understand "left inlay" or "left" or "left side" or "left side of orrery" or "left panel" as left inlay.
 	
 The right inlay is a thing.
 The printed name of right inlay is "right inlay".
-The description of the right inlay is "The right panel is half the width of the cenral panel and displays a bas-relief illustration carved into the wood. In it a slender androgynous figure reaching up to pick what appears to be an apple from a resplendent, imposing tree. While decorative, it also appears the panel can slide up cut into the inner sides of its frame."
+The description of the right inlay is "The right panel is half the width of the central panel and displays a bas-relief illustration of a slender, androgynous figure stretching upwards to pick what appears to be an apple from a canopy of foliage overhead. On closer examination, it appears that this panel, unlike its counterpart, can slide upwards slightly."
 The right inlay is a container.
 The right inlay is opaque.
 The right inlay is closed.
@@ -1004,8 +1004,7 @@ Understand "right inlay" or "right" or "right side" or "right side of orrery" or
 [ > open right inlay ]
 Before opening the right inlay:
 	if the right inlay is open:
-		say "You've already slide the right panel up.";
-		[DEL say "You've already slide the movable part of the right inlay up.";]
+		say "You've already slide the right panel up as far as it can go.";
 		stop the action;
 	otherwise:
 		try opening the sliding panel;
@@ -1014,8 +1013,7 @@ Before opening the right inlay:
 [ > close right inlay ]
 Before closing the right inlay:
 	if the right inlay is closed:
-		say "You've already slide the right panel down.";
-		[DEL say "You've already slide the movable part of the right inlay down.";]
+		say "You've already slide the right panel closed.";
 		stop the action;
 	otherwise:
 		try closing the sliding panel;
@@ -1049,7 +1047,7 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
-	say "With your fingertips you gently slide the right panel up, revealing the inner workings of the orrery's mechanism.";
+	say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
 	now the right inlay is open;
 	now the sliding panel is open.
 

@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26574 ]
+[ WORDS - 26633 ]
 
 Table of Releases
 release	notes
@@ -940,18 +940,19 @@ Title	Summary
 Section - Orrery
 
 The orrery is a thing. 
-The orrery is [scenery] on the mantle. 
+The orrery is scenery on the mantle. 
 The orrery is a device.
 The orrery is switched on.
-The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box. The central panel of the tryptich has eight tiny jeweled half-spheres set into eight brass rings representing the planets and their orbits around our Sun. Rotating pointers below the solar system display the local time as well as seasonal information and the Moon's phase. To the left and right of the central panel are decorative inlays.[if the sliding panel is open] The right inlay has been slid up to expose the inner mechanism of the device.[end if]"
+The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box. The top half of the central panel of the tryptich contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the sliding panel is open] The right panel has been slid up to expose the inner mechanism of the device.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "tryptich" or "triptych" as orrery.
 
-orrery-model is scenery in the Parlor. 
-The description of orrery-model is "On the top of the central panel eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. Rotating pointers below display the local time as well as seasonal information and the Moon's phase."
-Understand "model" or "spheres" or "half-spheres" or "planets" or "brass rings" or "rings" or "pointers" or "solar system" or "central panel" as orrery-model.
+[Should > x tryptich say "Which panel do you want to examine—central, left, or right?"]
 
-[ORRERY IS SWITCHED ON. REFLECT IN ORRERY-MODEL DESCRIPTION.]
+orrery-model is scenery in the Parlor. 
+The description of orrery-model is "In the top half of the central panel eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the fuse is in the sliding panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
+	
+Understand "model" or "spheres" or "half-spheres" or "planets" or "brass rings" or "rings" or "pointers" or "solar system" or "central panel" as orrery-model.
 
 orrery-mechanism is scenery in the Parlor. 
 The description of orrery-mechanism is "ORRERY-MECHANISM."
@@ -971,7 +972,7 @@ The inner mechanism of the orrery is extremely complicated, a dense collection o
 
 [^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
 
-[Suppress "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
+[Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
 The examine devices rule does nothing when examining the orrery.
 
 [ > open orrery ]
@@ -984,52 +985,51 @@ Before closing the orrery:
 	try closing the sliding panel;
 	stop the action.
 			
-The left inlay is a thing.
-The printed name of left inlay is "left inlay".
-The description of the left inlay is "The left panel is half the width of the central panel and displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
-The left inlay is scenery in the Parlor.
-Understand "left inlay" or "left" or "left side" or "left side of orrery" or "left panel" as left inlay.
+The left panel is a thing.
+The description of the left panel is "The left panel displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
+The left panel is scenery in the Parlor.
+Understand "left inlay" or "left" or "left side" or "left side of orrery" as left panel.		
+		
+The right panel is a thing.
+The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the sliding panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if time-machine-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]"
 	
-The right inlay is a thing.
-The printed name of right inlay is "right inlay".
-The description of the right inlay is "The right panel is half the width of the central panel and displays a bas-relief illustration of a slender, androgynous figure stretching upwards to pick what appears to be an apple from a canopy of foliage overhead. On closer examination, it appears that this panel, unlike its counterpart, can slide upwards slightly."
-The right inlay is a container.
-The right inlay is opaque.
-The right inlay is closed.
-The right inlay is scenery in the Parlor.
-Understand "right inlay" or "right" or "right side" or "right side of orrery" or "right panel" as right inlay.
+The right panel is a container.
+The right panel is opaque.
+The right panel is closed.
+The right panel is scenery in the Parlor.
+Understand "right inlay" or "right" or "right side" or "right side of orrery" as right panel.
 	
 [ADD right-inlay-examined BOOLEAN?]
 
-[ > open right inlay ]
-Before opening the right inlay:
-	if the right inlay is open:
-		say "You've already slide the right panel up as far as it can go.";
+[ > open right panel ]
+Before opening the right panel:
+	if the right panel is open:
+		say "You've already slid the right panel up as far as it can go.";
 		stop the action;
 	otherwise:
 		try opening the sliding panel;
 		stop the action.
 
-[ > close right inlay ]
-Before closing the right inlay:
-	if the right inlay is closed:
-		say "You've already slide the right panel closed.";
+[ > close right panel ]
+Before closing the right panel:
+	if the right panel is closed:
+		say "You've already slid the right panel closed.";
 		stop the action;
 	otherwise:
 		try closing the sliding panel;
 		stop the action.
 
-[ > pull right inlay ]
-Before pulling the right inlay:
-	try switching on the right inlay;
+[ > pull right panel ]
+Before pulling the right panel:
+	try switching on the right panel;
 	stop the action.
 
 [ > push right inlay ]
-Before switching on the right inlay:
-	if the sliding panel [right inlay] is closed: 
+Before switching on the right panel:
+	if the sliding panel [DEL right inlay] is closed: 
 		try opening the sliding panel;
 		stop the action;
-	if the sliding panel [right inlay] is open: 
+	if the sliding panel [DEL right inlay] is open: 
 		try closing the sliding panel;
 		stop the action.
 			
@@ -1041,19 +1041,19 @@ The sliding panel is closed.
 The sliding panel is scenery in the Parlor. 
 
 Instead of examining the sliding panel:
-	try examining the right inlay.
+	try examining the right panel.
 
 Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of opening the sliding panel: 
 	say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
-	now the right inlay is open;
+	now the right panel is open;
 	now the sliding panel is open.
 
 Instead of closing the sliding panel: 
 	say "You gently slide the right panel down, covering the orrery's mechanism.";
-	now the right inlay is closed;
+	now the right panel is closed;
 	now the sliding panel is closed.
 
 Instead of switching off the orrery:
@@ -1072,6 +1072,9 @@ Section - Fuse
 • THERE IS ALSO A FUSE IN THE TIME MACHINE, BUT IT IS BURNT OUT
 • YOU HAVE TO REPLACE IT WITH THE FUSE FROM THE ORRERY
 ]
+
+time-machine-fuse-found is a truth state that varies.
+time-machine-fuse-found is false.	
 
 The fuse is a thing.
 The fuse is undescribed.
@@ -1601,7 +1604,7 @@ Section - Fuse
 [Writing §9.13. The past and perfect tenses]
 
 [3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]
-[See Section 1 - Blueprints to see where the blueprint examining is handled.]	
+[See Section 1 - Blueprints to see where the blueprint examining is handled.]
 
 Instead of inserting the fuse into the time machine: try inserting the fuse into the control panel.
 		

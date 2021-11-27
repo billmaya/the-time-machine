@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26541 ]
+[ WORDS - 26523 ]
 
 Table of Releases
 release	notes
@@ -1005,14 +1005,17 @@ Instead of opening the right panel:
 	if the right panel is open:
 		say "You've already slid the right panel up as far as it can go.";
 	otherwise:
-		continue the action.
+		say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
+		now the right panel is open.
+		[continue the action.]
 
 [ > close right panel ]
 Instead of closing the right panel:
 	if the right panel is closed:
 		say "You've already slid the right panel closed.";
 	otherwise:
-		continue the action.
+		say "You gently slide the right panel down, covering the orrery's mechanism.";
+		now the right panel is closed.
 
 [ > pull right panel ]
 Instead of pulling the right panel:
@@ -1023,19 +1026,11 @@ Instead of pulling the right panel:
 Instead of switching on the right panel:
 	if the right panel is closed: 
 		try opening the right panel;
-	if the right panel is open: 
+	otherwise:
 		try closing the right panel.
 
 Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
-
-Instead of opening the right panel: 
-	say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
-	now the right panel is open.
-
-Instead of closing the right panel: 
-	say "You gently slide the right panel down, covering the orrery's mechanism.";
-	now the right panel is closed.
 
 Instead of switching off the orrery:
 	if the fuse is in the right panel in the Parlor:

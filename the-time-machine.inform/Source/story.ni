@@ -960,11 +960,18 @@ Understand "mechanism" or "gears" or "tubes" or "shafts" or "slotted pin followe
 
 Instead of examining the orrery-mechanism:
 	if the right panel is closed:
+		[if the player knows the right panel can slide]
 		try opening the right panel;
 	otherwise:
-		say "The inner mechanism of the orrery is extremely complicated[if the fuse is in the right panel]. The only thing recognizable is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense collection of gears, slotted pin followers, shafts, and tubes used to calculate the orbits of the planets."
+		say "What you can see of the orrery's inner mechanism is a dense and complicated collection of gears, shafts, and slotted pin followers used to calculate planetary positions and information.[no line break][if the orrery is switched on] Several of the gears turn slowly as you watch them, accompanied by faint whirring and clicking sounds. [end if]A small fuse[if time-machine-fuse-found is true] resembling the one from the time machine[end if] sits nestled among the other mechanism components.".
 
 [
+The inner mechanism of the orrery is extremely complicated[if the fuse is in the right panel]. The only thing recognizable is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense collection of gears, slotted pin followers, shafts, and tubes used to calculate the orbits of the planets.
+
+
+
+The inner mechanism of the orrery is a dense, complicated collection of gears, shafts, and slotted pin followers operating in sync to calculate planetary information.
+
 The inner mechanism of the orrery is extremely complicated, a dense collection of gears, shafts, and tubes used to calculate the orbits of the planets.
 [if the orrery is on] which means the fuse is in the right panel
 [if time-machine-fuse-found]

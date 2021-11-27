@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26640 ]
+[ WORDS - 26710 ]
 
 Table of Releases
 release	notes
@@ -945,38 +945,25 @@ The orrery is a device.
 The orrery is switched on.
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box. The top half of the central panel of the tryptich contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the right panel is open] The right panel has been slid up to expose the inner mechanism of the device.[end if]"
 
-Understand "planetarium" or "device" or "box" or "panels" or "tryptich" or "triptych" as orrery.
+Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 
 [Should > x tryptich say "Which panel do you want to examine—central, left, or right?"]
 
 orrery-model is scenery in the Parlor. 
-The description of orrery-model is "In the top half of the central panel eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
+The description of orrery-model is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
 	
-Understand "model" or "spheres" or "half-spheres" or "planets" or "brass rings" or "rings" or "pointers" or "solar system" or "central panel" as orrery-model.
+Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" or "central panel" as orrery-model.
 
 orrery-mechanism is scenery in the Parlor. 
 The description of orrery-mechanism is "ORRERY-MECHANISM."
-Understand "mechanism" or "gears" or "tubes" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
+Understand "mechanism" or "gears" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
 
 Instead of examining the orrery-mechanism:
-	if the right panel is closed:
-		[if the player knows the right panel can slide]
+	if the right panel is closed: [should display a description "You can't see any such thing."]
+		[but if the player knows the right panel can slide]
 		try opening the right panel;
 	otherwise:
-		say "What you can see of the orrery's inner mechanism is a dense and complicated collection of gears, shafts, and slotted pin followers used to calculate planetary positions and information.[no line break][if the orrery is switched on] Several of the gears turn slowly as you watch them, accompanied by faint whirring and clicking sounds. [end if]A small fuse[if time-machine-fuse-found is true] resembling the one from the time machine[end if] sits nestled among the other mechanism components.".
-
-[
-The inner mechanism of the orrery is extremely complicated[if the fuse is in the right panel]. The only thing recognizable is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense collection of gears, slotted pin followers, shafts, and tubes used to calculate the orbits of the planets.
-
-
-
-The inner mechanism of the orrery is a dense, complicated collection of gears, shafts, and slotted pin followers operating in sync to calculate planetary information.
-
-The inner mechanism of the orrery is extremely complicated, a dense collection of gears, shafts, and tubes used to calculate the orbits of the planets.
-[if the orrery is on] which means the fuse is in the right panel
-[if time-machine-fuse-found]
-]
-[^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
+		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds. [end if]A small fuse[if time-machine-fuse-found is true] resembling the one from the time machine[end if] sits nestled among the other mechanism components.".
 
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
 The examine devices rule does nothing when examining the orrery.
@@ -994,7 +981,7 @@ Before closing the orrery:
 The left panel is a thing.
 The description of the left panel is "The left panel displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
 The left panel is scenery in the Parlor.
-Understand "left inlay" or "left" or "left side" or "left side of orrery" as left panel.		
+Understand "left" or "left side" or "left side of orrery" as left panel.		
 		
 The right panel is a thing.
 The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if time-machine-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]"
@@ -1003,7 +990,7 @@ The right panel is a container.
 The right panel is opaque.
 The right panel is closed.
 The right panel is scenery in the Parlor.
-Understand "right inlay" or "right" or "right side" or "right side of orrery" as right panel.
+Understand "right" or "right side" or "right side of orrery" as right panel.
 	
 [ADD right-inlay-examined BOOLEAN?]
 
@@ -1045,8 +1032,23 @@ Instead of switching off the orrery:
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
 
-Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
-Test orrery-right-inlay with "examine right inlay / open right inlay / examine right inlay / close right inlay / push right inlay / push right inlay / slide right inlay / slide right inlay."
+		
+Test x-orrery with "x orrery / x planetarium / x device / x box."
+Test x-triptych with "x triptych."
+Test x-model with "x orrery-model / x model / x spheres / x jeweled spheres / x planets / x brass rings / x rings / x dials / x solar system / x central panel."
+Test x-mechanism with "x orrery-mechanism / x mechanism / x gears / x shafts / x slotted pin followers / x pin followers."
+Test x-left-panel with "x left panel / x left / x left side / x left side of orrery."
+Test x-right-panel with "x right panel / x right / x right side / x right side of orrery."
+Test open-orrery with "open orrery."
+Test close-orrery with "close orrery."
+Test open-right-panel with "open right panel / open right panel / close right panel."
+Test close-right-panel with "open right panel / close right panel / close right panel."
+Test slide-right-panel with "slide right panel / slide right panel."
+Test pull-right-panel with "pull right panel / pull right panel."
+Test push-right-panel with "push right panel / push right panel."
+Test switch-off-orrery with "switch off orrery / turn off orrery / purloin fuse / switch off orrery / put fuse in right panel / switch off orrery."
+
+Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-mechanism / test x-left-panel / test x-right-panel / test open-orrery / test close-orrery / test open-right-panel / test close-right-panel / test slide-right-panel / test pull-right-panel / test push-right-panel."
 
 
 Section - Fuse
@@ -2981,7 +2983,7 @@ To say beta-testers:
 	• Brian Rushton[line break]
 	• David White[line break]
 	
-I also want to thank the people who took the time to write reviews of the 'The Time Machine' after playing it for ParserComp 2021.
+I also want to thank the people who took the time to write reviews of v1.0 of the 'The Time Machine' after playing it for ParserComp 2021.
 
 	• Mike Russo[line break]
 	• Thomas Mack[line break]

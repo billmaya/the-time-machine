@@ -943,14 +943,14 @@ The orrery is a thing.
 The orrery is scenery on the mantle. 
 The orrery is a device.
 The orrery is switched on.
-The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box. The top half of the central panel of the tryptich contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the sliding panel is open] The right panel has been slid up to expose the inner mechanism of the device.[end if]"
+The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box. The top half of the central panel of the tryptich contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the right panel is open] The right panel has been slid up to expose the inner mechanism of the device.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "tryptich" or "triptych" as orrery.
 
 [Should > x tryptich say "Which panel do you want to examine—central, left, or right?"]
 
 orrery-model is scenery in the Parlor. 
-The description of orrery-model is "In the top half of the central panel eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the fuse is in the sliding panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
+The description of orrery-model is "In the top half of the central panel eight tiny jeweled half-spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
 	
 Understand "model" or "spheres" or "half-spheres" or "planets" or "brass rings" or "rings" or "pointers" or "solar system" or "central panel" as orrery-model.
 
@@ -959,14 +959,14 @@ The description of orrery-mechanism is "ORRERY-MECHANISM."
 Understand "mechanism" or "gears" or "tubes" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
 
 Instead of examining the orrery-mechanism:
-	if the sliding panel is closed:
-		try opening the sliding panel;
+	if the right panel is closed:
+		try opening the right panel;
 	otherwise:
-		say "The inner mechanism of the orrery is extremely complicated[if the fuse is in the sliding panel]. The only thing recognizable is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense collection of gears, slotted pin followers, shafts, and tubes used to calculate the orbits of the planets."
+		say "The inner mechanism of the orrery is extremely complicated[if the fuse is in the right panel]. The only thing recognizable is a small [fuse] that sits between the switch and the[otherwise], a[end if] dense collection of gears, slotted pin followers, shafts, and tubes used to calculate the orbits of the planets."
 
 [
 The inner mechanism of the orrery is extremely complicated, a dense collection of gears, shafts, and tubes used to calculate the orbits of the planets.
-[if the orrery is on] which means the fuse is in the sliding panel
+[if the orrery is on] which means the fuse is in the right panel
 [if time-machine-fuse-found]
 ]
 [^ Optional description if orrery is turned on - [if the orrery is switched on] ORRERY IS ON.[otherwise] ORRERY IS OFF. ]
@@ -976,12 +976,12 @@ The examine devices rule does nothing when examining the orrery.
 
 [ > open orrery ]
 Before opening the orrery: 
-	try opening the sliding panel;
+	try opening the right panel;
 	stop the action.
 
 [ > close orrery ]
 Before closing the orrery:
-	try closing the sliding panel;
+	try closing the right panel;
 	stop the action.
 			
 The left panel is a thing.
@@ -990,7 +990,7 @@ The left panel is scenery in the Parlor.
 Understand "left inlay" or "left" or "left side" or "left side of orrery" as left panel.		
 		
 The right panel is a thing.
-The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the sliding panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if time-machine-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]"
+The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if time-machine-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]"
 	
 The right panel is a container.
 The right panel is opaque.
@@ -1038,7 +1038,7 @@ Instead of closing the right panel:
 	now the right panel is closed.
 
 Instead of switching off the orrery:
-	if the fuse is in the sliding panel in the Parlor:
+	if the fuse is in the right panel in the Parlor:
 		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
@@ -1059,7 +1059,7 @@ time-machine-fuse-found is false.
 
 The fuse is a thing.
 The fuse is undescribed.
-The fuse is in the sliding panel.
+The fuse is in the right panel.
 
 fuse-burnt-out is a truth state that varies.
 fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
@@ -1074,11 +1074,11 @@ After taking the fuse:
 		now the orrery is switched off.
 
 Instead of inserting the fuse into the orrery:
-	try inserting the fuse into the sliding panel.
+	try inserting the fuse into the right panel.
 
-Instead of inserting the fuse into the sliding panel:
+Instead of inserting the fuse into the right panel:
 	say "After you put the fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
-	now the fuse is in the sliding panel;
+	now the fuse is in the right panel;
 	now the orrery is switched on;
 	
 
@@ -2996,7 +2996,7 @@ Release 5 Notes (v1.2)[paragraph break]
 • Made it so workshop windows can be locked or unlocked with latch, opened, and closed.[line break]
 • Made > press switch refer to light switch. Cannot reach light switch if you are in time machine.[line break]
 • Made lights a device that you can turn on/off by redirecting to light switch.[line break]
-• Moved orrery to parlor fireplace mantle. Replaced sliding panel and switch with inlays. Part of right inlay can be moved to expose fuse.
+• Moved orrery to parlor fireplace mantle. Replaced sliding panel and switch with left and right panel. Right inlay can be moved to expose mechanism and fuse.
 	
 Release 4 Notes (v1.1)[paragraph break]
 This release incorporates several fixes based on reviews and feedback from people who played the game during ParserComp 2021 judging.[paragraph break]

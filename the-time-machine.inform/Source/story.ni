@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26710 ]
+[ WORDS - 26798 ]
 
 Table of Releases
 release	notes
@@ -943,7 +943,7 @@ The orrery is a thing.
 The orrery is scenery on the mantle. 
 The orrery is a device.
 The orrery is switched on.
-The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box. The top half of the central panel of the tryptich contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the right panel is open] The right panel has been slid up to expose the inner mechanism of the device.[end if]"
+The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box consisting of three panels. The top half of the central panel of the tryptich contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the right panel is open] The right panel has been slid up to expose the inner mechanism of the orrery.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 
@@ -960,8 +960,12 @@ Understand "mechanism" or "gears" or "shafts" or "slotted pin followers" or "pin
 
 Instead of examining the orrery-mechanism:
 	if the right panel is closed: [should display a description "You can't see any such thing."]
-		[but if the player knows the right panel can slide]
-		try opening the right panel;
+		[unless if the player knows the right panel can slide]
+		if player-knows-right-panel-slideable is true:
+			try opening the right panel;
+			try examining the orrery-mechanism;
+		otherwise:
+			say "You can't see any such thing.";
 	otherwise:
 		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds. [end if]A small fuse[if time-machine-fuse-found is true] resembling the one from the time machine[end if] sits nestled among the other mechanism components.".
 
@@ -969,8 +973,14 @@ Instead of examining the orrery-mechanism:
 The examine devices rule does nothing when examining the orrery.
 
 [ > open orrery ]
-Before opening the orrery: 
-	try opening the right panel;
+Before opening the orrery:
+	if the right panel is closed:
+		if player-knows-right-panel-slideable is true: 
+			try opening the right panel;
+		otherwise:
+			say "It's not apparent how to do that.";
+	otherwise:
+		say "You've already slid the right panel up as far as it can go.";
 	stop the action.
 
 [ > close orrery ]
@@ -991,6 +1001,9 @@ The right panel is opaque.
 The right panel is closed.
 The right panel is scenery in the Parlor.
 Understand "right" or "right side" or "right side of orrery" as right panel.
+			
+player-knows-right-panel-slideable is a truth state that varies.
+player-knows-right-panel-slideable is false.
 	
 [ADD right-inlay-examined BOOLEAN?]
 
@@ -1000,6 +1013,7 @@ Instead of opening the right panel:
 		say "You've already slid the right panel up as far as it can go.";
 	otherwise:
 		say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
+		now player-knows-right-panel-slideable is true;
 		now the right panel is open.
 		[continue the action.]
 

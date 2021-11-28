@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26798 ]
+[ WORDS - 26754 ]
 
 Table of Releases
 release	notes
@@ -947,20 +947,17 @@ The description of the orrery is "A mechanical model of our solar system contain
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 
-[Should > x tryptich say "Which panel do you want to examine—central, left, or right?"]
-
-orrery-model is scenery in the Parlor. 
-The description of orrery-model is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
+The central panel is scenery in the Parlor. 
+The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
 	
-Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" or "central panel" as orrery-model.
+Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" as central panel.
 
 orrery-mechanism is scenery in the Parlor. 
 The description of orrery-mechanism is "ORRERY-MECHANISM."
 Understand "mechanism" or "gears" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
 
 Instead of examining the orrery-mechanism:
-	if the right panel is closed: [should display a description "You can't see any such thing."]
-		[unless if the player knows the right panel can slide]
+	if the right panel is closed:
 		if player-knows-right-panel-slideable is true:
 			try opening the right panel;
 			try examining the orrery-mechanism;
@@ -1004,8 +1001,6 @@ Understand "right" or "right side" or "right side of orrery" as right panel.
 			
 player-knows-right-panel-slideable is a truth state that varies.
 player-knows-right-panel-slideable is false.
-	
-[ADD right-inlay-examined BOOLEAN?]
 
 [ > open right panel ]
 Instead of opening the right panel:
@@ -1015,7 +1010,6 @@ Instead of opening the right panel:
 		say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
 		now player-knows-right-panel-slideable is true;
 		now the right panel is open.
-		[continue the action.]
 
 [ > close right panel ]
 Instead of closing the right panel:

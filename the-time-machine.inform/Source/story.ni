@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26754 ]
+[ WORDS - 26758 ]
 
 Table of Releases
 release	notes
@@ -952,7 +952,7 @@ The description of the central panel is "In the top half of the central panel ei
 	
 Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" as central panel.
 
-orrery-mechanism is scenery in the Parlor. 
+The orrery-mechanism is scenery in the Parlor. 
 The description of orrery-mechanism is "ORRERY-MECHANISM."
 Understand "mechanism" or "gears" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
 
@@ -1043,8 +1043,8 @@ Instead of switching off the orrery:
 		
 Test x-orrery with "x orrery / x planetarium / x device / x box."
 Test x-triptych with "x triptych."
-Test x-model with "x orrery-model / x model / x spheres / x jeweled spheres / x planets / x brass rings / x rings / x dials / x solar system / x central panel."
-Test x-mechanism with "x orrery-mechanism / x mechanism / x gears / x shafts / x slotted pin followers / x pin followers."
+Test x-model with "x central panel / x model / x spheres / x jeweled spheres / x planets / x brass rings / x rings / x dials / x solar system."
+Test x-mechanism with "slide right panel / x orrery-mechanism / x mechanism / x gears / x shafts / x slotted pin followers / x pin followers."
 Test x-left-panel with "x left panel / x left / x left side / x left side of orrery."
 Test x-right-panel with "x right panel / x right / x right side / x right side of orrery."
 Test open-orrery with "open orrery."
@@ -1056,7 +1056,7 @@ Test pull-right-panel with "pull right panel / pull right panel."
 Test push-right-panel with "push right panel / push right panel."
 Test switch-off-orrery with "switch off orrery / turn off orrery / purloin fuse / switch off orrery / put fuse in right panel / switch off orrery."
 
-Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-mechanism / test x-left-panel / test x-right-panel / test open-orrery / test close-orrery / test open-right-panel / test close-right-panel / test slide-right-panel / test pull-right-panel / test push-right-panel."
+Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-mechanism / test x-left-panel / test x-right-panel / test open-orrery / test close-orrery / test open-right-panel / test close-right-panel / test slide-right-panel / test pull-right-panel / test push-right-panel / test switch-off-orrery."
 
 
 Section - Fuse

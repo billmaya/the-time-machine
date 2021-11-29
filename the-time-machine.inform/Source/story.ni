@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26798 ]
+[ WORDS - 26726 ]
 
 Table of Releases
 release	notes
@@ -1246,15 +1246,7 @@ Chapter - Kitchen
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
 
-The description of the Kitchen is "The room is dominated by a sturdy wooden work table in the center of the room. Surrounding the table are numerous cabinets and shelves. The stove and sink are against the north wall."
-
-[[if the location of Watchett is the Kitchen][paragraph break]Mrs. Watchett is at the work table, preparing another one those meals you've enjoy so much in the past.[otherwise] You can see a meal in mid-preparation but Mrs. Watchett is nowhere to be seen.[end if]"]
-
-The meals are a thing.
-The meals are scenery in the Kitchen.
-The description of meals is "[if the location of Watchett is the Kitchen][Watchett] doesn't look like she needs any help right now but she might be able to answer a question or two without stopping her work.[otherwise]Best to leave that to Mrs. Watchett.[end if]"
-
-Understand "meal" or "dinner" or "food" as meals.
+The description of the Kitchen is "[first time]If your memory suffices, which it usually does in most ordinary situations, this is the first time you've been in [Watchett]'s domain. [only]The small room is dominated by a sturdy wooden work table in the center. Surrounding the table are numerous cabinets and shelves. A stove and a sink are set against the north wall.[if the location of Watchett is the Kitchen][paragraph break][Watchett] is at the sink, washing up the supper dishes.[end if]"
 
 The work table is a thing.
 The work table is scenery in the Kitchen.
@@ -1863,7 +1855,7 @@ experiments are a familiar thing.
 
 Chapter - Watchett
 
-Watchett is a female person. "Watchett is here CLEANING UP."
+Watchett is a female person.
 Watchett is in the Kitchen.
 The printed name of Watchett is "Mrs. Watchett". 
 The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been cleaning his house and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."

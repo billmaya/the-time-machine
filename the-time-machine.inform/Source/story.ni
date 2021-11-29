@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26726 ]
+[ WORDS - 26714 ]
 
 Table of Releases
 release	notes
@@ -94,11 +94,7 @@ Instead of going up in the Entryway: say "You wander around upstairs for a few m
 
 Section - Using
 
-Instead of using things:
-	if the player is in the Kitchen: [TBD - Any object in Kitchen, even if carried by player, will display text below]
-		say "Given your gender and dearth of knowledge about things domestic, perhaps it is best if you leave the operation of these devices to Mrs. Watchett. I'm sure she would help you in any way possible as long as it does not interfere with her preparations.";
-	otherwise:
-		say "You'll have to be more specific."
+Instead of using things: say "You'll have to be more specific."
 
 Section - Attack
 
@@ -1282,17 +1278,23 @@ Understand "copper" as sink.
 
 Section - Actions In Kitchen
 
-[See Book 2, Chapter 2, Section 3 for Using rules]
-
 Instead of switching on the stove: try using the stove.
 Instead of switching on the sink: try using the sink.
 		
 Instead of opening the stove: try using the stove.
 Instead of opening the cabinets: try searching the cabinets.
 
-Instead of searching the stove: say "I don't think Mrs. Watchett would appreciate you interfering with her dinner preparations." 
+Instead of searching the stove: say "I don't think Mrs. Watchett would appreciate you getting in the way of her cleaning up."
 Instead of searching the cabinets: say "I don't think Mrs. Watchett would appreciate you rummaging around in her cabinets."
 Instead of searching the kitchen shelves: say "You glance briefly at the various items on the shelves but find nothing pertinent to your investigation."
+
+To say no-concern: say "That's not something you need to concern yourself with since it's not pertinent to your investigation."
+Instead of using the work table: say "[no-concern]".
+Instead of using the cabinets: say "[no-concern]".
+Instead of using the kitchen shelves: say "[no-concern]".
+Instead of using the stove: say "[no-concern]".
+Instead of using the sink: say "[no-concern]".
+
 
 Chapter - Workshop  
 

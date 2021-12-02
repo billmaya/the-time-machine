@@ -785,6 +785,16 @@ The brick is scenery in the parlor. "Heat-resistent bricks that reflect the fire
 
 Instead of using the fireplace, say "That's not something you can use but just enjoy."
 
+Instead of using the firebox: say "USING FIREBOX."
+Instead of using the hearth: say "USING HEARTH."
+Instead of using the mantle: say "USING MANTLE."
+Instead of using the damper: say "USING DAMPER."
+Instead of using the flue: say "USING FLUE."
+Instead of using the chimney: say "USING CHIMNEY."
+Instead of using the surround: say "USING SURROUND."
+Instead of using the grate: say "USING GRATE."
+Instead of using the brick: say "USING BRICK."
+
 [https://bit.ly/33EceFC https://bit.ly/2RO6PJq]
 
 Section - Fire

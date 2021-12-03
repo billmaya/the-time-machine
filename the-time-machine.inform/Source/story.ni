@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26714 ]
+[ WORDS - 26834 ]
 
 Table of Releases
 release	notes
@@ -785,15 +785,17 @@ The brick is scenery in the parlor. "Heat-resistent bricks that reflect the fire
 
 Instead of using the fireplace, say "That's not something you can use but just enjoy."
 
-Instead of using the firebox: say "USING FIREBOX."
-Instead of using the hearth: say "USING HEARTH."
-Instead of using the mantle: say "USING MANTLE."
-Instead of using the damper: say "USING DAMPER."
-Instead of using the flue: say "USING FLUE."
-Instead of using the chimney: say "USING CHIMNEY."
-Instead of using the surround: say "USING SURROUND."
-Instead of using the grate: say "USING GRATE."
-Instead of using the brick: say "USING BRICK."
+To say cannot-use-item: say "That's not something you can 'use.'".
+
+Instead of using the firebox: say "[cannot-use-item]".
+Instead of using the hearth: say "[cannot-use-item]".
+Instead of using the mantle: say "The only way you can 'use' this is by placing things on it." 
+Instead of using the damper: say "Absolutely not. Closing the damper would fill the room with smoke." 
+Instead of using the flue: say "[cannot-use-item]". 
+Instead of using the chimney: say "[cannot-use-item]". 
+Instead of using the surround: say "[cannot-use-item]". 
+Instead of using the grate: say "The grate doesn't need any help from you to do its job." 
+Instead of using the brick: say "[cannot-use-item]". 
 
 [https://bit.ly/33EceFC https://bit.ly/2RO6PJq]
 

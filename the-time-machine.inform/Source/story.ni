@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26834 ]
+[ WORDS - 26762 ]
 
 Table of Releases
 release	notes
@@ -841,19 +841,21 @@ Instead of using the fire:
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
 
+To say bare-hands: say "With your bare hands? You'd have to be as crazy as Humboldt things Wells is to even consider that.".
+
 Instead of taking coals: try pushing coals.
 
 Instead of pushing the coals:
 	if the player has the poker:
 		say "You spread the coals a bit more evenly around the grate.";
 	otherwise:
-		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+		say "[bare-hands]".
 
 Instead of pushing the embers:
 	if the player has the poker:
 		say "You spread the embers a bit more evenly around the inner hearth.";
 	otherwise:
-		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+		say "[bare-hands]".
 
 Instead of taking ashes: try pushing ashes.
 		
@@ -861,7 +863,7 @@ Instead of pushing the ashes:
 	if the player has the poker:
 		say "You spread the ashes a bit more evenly around the inner hearth.";
 	otherwise:
-		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+		say "[bare-hands]".
 
 Understand the command "poke" as something new.
 Understand "poke [something]" as using.
@@ -870,7 +872,7 @@ Instead of using the coals:
 	if the player has the poker:
 		say "You spread the coals a bit more evenly around the grate.";
 	otherwise:
-		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+		say "[bare-hands]".
 
 Instead of taking the embers: try using the embers.
 
@@ -878,13 +880,13 @@ Instead of using the embers:
 	if the player has the poker:
 		say "You spread the embers a bit more evenly around the inner hearth.";
 	otherwise:
-		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+		say "[bare-hands]".
 
 Instead of using the ashes:
 	if the player has the poker:
 		say "You spread the ashes a bit more evenly around the inner hearth.";
 	otherwise:
-		say "With your bare hands? You'd have to be as crazy Humboldt thinks Wells is to even consider that."
+		say "[bare-hands]".
 
 Understand the command "burn" as something new.
 Understand "burn [something]" as burning.

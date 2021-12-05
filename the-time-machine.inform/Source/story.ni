@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26761 ]
+[ WORDS - 26786 ]
 
 Table of Releases
 release	notes
@@ -740,7 +740,7 @@ Chapter - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Sitting on the top of the fireplace mantle is an orrery. Directly in front of the hearth, angled towards one another, are two leather armchairs with today[']s newspaper sitting on one of them.[if poker is in Parlor] Leaning against the fireplace is a poker.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Sitting on the top of the fireplace mantle is an orrery. Directly in front of the hearth, angled towards one another, are two leather armchairs[if newspaper is on the armchairs] with today[']s [newspaper] sitting on one of them[end if].[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.
@@ -912,7 +912,7 @@ Section - Newspaper
 
 The newspaper is a thing.
 The newspaper is on the armchairs.
-The newspaper is undescribed.
+The newspaper is undescribed. [on the armchairs.]
 Understand "news" or "paper" as newspaper.
 The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read."
 
@@ -928,9 +928,11 @@ Instead of searching the newspaper: try taking the newspaper.
 Instead of taking the newspaper:
 	if newspaper-reads is greater than penultimate-read:
 		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop the paper back onto the armchair.";
+		now the newspaper is on the armchairs;
 	otherwise:
 		choose a random row from Table of Newspaper Stories;
 		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
+		now the player has the newspaper;
 		now newspaper-reads is newspaper-reads + 1.
 
 Table of Newspaper Stories

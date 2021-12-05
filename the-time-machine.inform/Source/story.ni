@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26762 ]
+[ WORDS - 26761 ]
 
 Table of Releases
 release	notes
@@ -804,7 +804,7 @@ Section - Fire
 The fire is a thing.
 The fire is in the parlor. 
 The fire is undescribed.
-The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn, the embers and ashes fall through the grate onto the brick."
+The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn to embers and ashes they fall through the grate onto the brick below."
 
 The coals are scenery in the parlor. 
 The description of the coals is "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
@@ -844,21 +844,20 @@ Instead of using the fire:
 To say bare-hands: say "With your bare hands? You'd have to be as crazy as Humboldt things Wells is to even consider that.".
 
 Instead of taking coals: try pushing coals.
-
 Instead of pushing the coals:
 	if the player has the poker:
 		say "You spread the coals a bit more evenly around the grate.";
 	otherwise:
 		say "[bare-hands]".
 
+Instead of taking embers: try pushing embers.
 Instead of pushing the embers:
 	if the player has the poker:
 		say "You spread the embers a bit more evenly around the inner hearth.";
 	otherwise:
 		say "[bare-hands]".
 
-Instead of taking ashes: try pushing ashes.
-		
+Instead of taking ashes: try pushing ashes.	
 Instead of pushing the ashes:
 	if the player has the poker:
 		say "You spread the ashes a bit more evenly around the inner hearth.";
@@ -873,8 +872,6 @@ Instead of using the coals:
 		say "You spread the coals a bit more evenly around the grate.";
 	otherwise:
 		say "[bare-hands]".
-
-Instead of taking the embers: try using the embers.
 
 Instead of using the embers:
 	if the player has the poker:

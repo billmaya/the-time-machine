@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26801 ]
+[ WORDS - 26751 ]
 
 Table of Releases
 release	notes
@@ -98,10 +98,12 @@ Instead of using things: say "You'll have to be more specific."
 
 Section - Attack
 
-Instead of attacking someone: say "Violence [aren't] the answer here, especially given your years of jurisprudence."
+To say no-violence: say "Violence [aren't] the answer here and quite out of character, given your years of jurisprudence and respect for the law."
 
-Instead of attacking something with something: say "That action doesn't seem relevant to your investigation."
+Instead of attacking someone with something: say "[no-violence]".
+Instead of attacking someone: say "[no-violence]".
 
+Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."
 
 Chapter - Before Rules
 
@@ -171,11 +173,6 @@ Test take-encyc with "take encyclopaedia / take encyclopaedia / take encyclopaed
 Test take-book with "take book / take book / take book / take book / take book / take book."
 Test take-mag with "take periodical / take periodical / take periodical / take periodical / take periodical."  
 Test tend-fire with "tend fire / take poker / tend fire / drop poker / tend fire."
-[DEL Test orrery-examine with "examine orrery / examine planetarium / examine device / examine mechanism / examine box / examine solar system."
-Test orrery-on-off with "turn orrery on / turn orrery off."
-Test orrery-syn-on-off with "turn planetarium on / turn planetarium off / turn device on / turn device off / turn mechanism on / turn mechanism off / turn box on / turn box off / turn solar system on / turn solar system off."
-Test switch-examine with " examine orrery's switch / examine orrery switch."
-Test switch-flip with "flip orrery's switch / flip orrery's switch / flip switch / flip switch."]
 Test circular-shaft-look with "x shaft / take grate / x shaft."
 Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
 Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
@@ -866,9 +863,6 @@ Instead of pushing the ashes:
 	otherwise:
 		say "[bare-hands]".
 
-Understand the command "poke" as something new.
-Understand "poke [something]" as using.
-
 Instead of using the coals:
 	if the player has the poker:
 		say "You spread the coals a bit more evenly around the grate.";
@@ -903,6 +897,19 @@ The description of the poker is "About three feet long, pointed and hooked at on
 Instead of using the poker in the Parlor:
 	say "Taking the poker, you stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
 	now the player is carrying the poker.
+
+Section - Poking
+
+Poking is an action applying to one touchable thing and one carried thing.
+
+
+
+[Understand the command "poke" as something new.]
+Understand "poke [someone] with [something]" as poking.
+Understand "poke [something]" as using.
+
+Instead of poking Watchett: say "NO POKE WATCHETT."
+
 
 [> use poker on fire]
 [Writing §12.7. New actions
@@ -1155,12 +1162,6 @@ The bench is a supporter.
 The bench is enterable.
 The description of the bench is "It[']s a bench, covered in snow but still just a bench."
 
-[DEL Instead of going south in the Garden:
-	if the player is not on the bench:
-		try entering the bench;
-	otherwise:
-		try going up.]
-
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
 The description of garden bushes is "Covered by snow, the hollyhocks, larkspurs, snapdragons, rhododendrons, and other flora you remember are not much to look at right now."
@@ -1236,6 +1237,8 @@ Instead of searching the chandelier: say "Afraid of breaking Wells[apostrophe] l
 The chain is a thing.
 The chain is scenery in the Dining Room.
 The description of the chain is "You see nothing remarkable about the small chain."
+
+Instead of using the chandelier: try pulling the chain.
 
 Instead of pulling the chain: 
 	if the chandelier is switched off:

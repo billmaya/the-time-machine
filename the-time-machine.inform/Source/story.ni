@@ -6,7 +6,7 @@ The release number is 5.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26751 ]
+[ WORDS - 26776 ]
 
 Table of Releases
 release	notes
@@ -902,14 +902,13 @@ Section - Poking
 
 Poking is an action applying to one touchable thing and one carried thing.
 
-
-
-[Understand the command "poke" as something new.]
-Understand "poke [someone] with [something]" as poking.
 Understand "poke [something]" as using.
+Understand "poke [someone] with [something]" as poking.
 
-Instead of poking Watchett: say "NO POKE WATCHETT."
+To say no-poke-person: say "I don't see the logic of trying to assault [noun] with the [second noun], no matter how slightly." 
 
+Instead of poking Watchett: say "[no-poke-person]".
+Instead of poking Humboldt: say "[no-poke-person]".
 
 [> use poker on fire]
 [Writing §12.7. New actions

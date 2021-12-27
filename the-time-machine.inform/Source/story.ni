@@ -986,6 +986,10 @@ Instead of examining the orrery-mechanism:
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
 The examine devices rule does nothing when examining the orrery.
 
+[ > use orrery ]
+Instead of using the orrery:
+	say "That's not something that can be used in the normal sense but just observed."
+
 [ > open orrery ]
 Before opening the orrery:
 	if the right panel is closed:

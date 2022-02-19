@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26861 ]
+[ WORDS - 26938 ]
 
 Table of Releases
 release	notes
@@ -191,6 +191,9 @@ Test wtm with "test goto-workshop / test prep-time-machine."
 
 Test 802701 with "test wtm / enter / press button."
 Test eloi with "test 802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
+
+Test weena-endgame with "test eloi / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit."
+
 Test to-morlocks with "test 802701 / exit / remove grate / get in shaft / go down."
 Test to-watchett with "go north / take pocket watch / go north / go west / go north / take poker / go north / open panel / take fuse / go north."
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / search workbench / examine blueprints / enter time machine / examine control panel / put fuse in control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit / show humboldt the flower."
@@ -966,7 +969,7 @@ The description of the orrery is "A mechanical model of our solar system contain
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 
 The central panel is scenery in the Parlor. 
-The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
+The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the working-fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
 	
 Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" as central panel.
 
@@ -1057,7 +1060,7 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of switching off the orrery:
-	if the fuse is in the right panel in the Parlor:
+	if the working-fuse is in the right panel in the Parlor:
 		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
@@ -1093,28 +1096,28 @@ Section - Fuse
 time-machine-fuse-found is a truth state that varies.
 time-machine-fuse-found is false.	
 
-The fuse is a thing.
-The fuse is undescribed.
-The fuse is in the right panel.
+The working-fuse is a thing.
+The working-fuse is undescribed.
+The working-fuse is in the right panel.
 
-fuse-burnt-out is a truth state that varies.
-fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
+working-fuse-burnt-out is a truth state that varies.
+working-fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
 
-The description of the fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and useless.[end if]"
+The description of the working-fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if working-fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if working-fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and useless.[end if]"
 	
 [> take fuse]
 	
-After taking the fuse:
+After taking the working-fuse:
 	if the orrery is switched on:
 		say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
 		now the orrery is switched off.
 
-Instead of inserting the fuse into the orrery:
-	try inserting the fuse into the right panel.
+Instead of inserting the working-fuse into the orrery:
+	try inserting the working-fuse into the right panel.
 
-Instead of inserting the fuse into the right panel:
+Instead of inserting the working-fuse into the right panel:
 	say "After you put the fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
-	now the fuse is in the right panel;
+	now the working-fuse is in the right panel;
 	now the orrery is switched on;
 	
 
@@ -1464,9 +1467,9 @@ examined-blueprints is false.
 
 Instead of examining the blueprints:
 	say "Spreading out the sheets you see that these are the plans for the time machine in the center of the room. [no line break]";
-	if the player does not have the fuse:
+	if the player does not have the working-fuse:
 		say "Using them, you[']re able to locate actual components in the machine, but this exercise brings you no closer to figuring out how to turn the time machine on.";
-	if the player has the fuse:
+	if the player has the working-fuse:
 		say "The blueprints identify where the fuse fits into the control panel of the time machine.";
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
@@ -1488,9 +1491,9 @@ Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crys
 
 [Replaced "examining" with "searching" in Instead statement]
 Instead of searching [examining] the time machine:
-	if the fuse is in the time machine, say "The time machine looks like it is ready to operate."; 
+	if the working-fuse is in the time machine, say "The time machine looks like it is ready to operate."; 
 	otherwise:
-		if the player has the fuse:
+		if the player has the working-fuse:
 			if examined-blueprints is true:
 				say "Having reviewed the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
 			otherwise:
@@ -1513,7 +1516,7 @@ Understand "controls" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven dials each. To the right of the rows of dials is a small [if the fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.
+		say "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven dials each. To the right of the rows of dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.
 
 		The bottom section has the word 'DESTINATION' etched into the panel above two rows of numbers, one above the other, with each number[']s digits displayed in its own tiny window.[no line break][if numeric-year is 1895] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket] [no line break] [otherwise] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] [paragraph break] Underneath the two lines of numbers are a series of switches labeled with the numbers [bracket]0[close bracket] through [bracket]9[close bracket] and the letters [bracket]A[close bracket] through [bracket]F[close bracket]. To the right of these switches are two square buttons with the words 'SET' and 'CLEAR' etched into the panel next to them.";
 	otherwise:
@@ -1525,7 +1528,7 @@ The description of panel-upper-left is "Both rows of dials appear to be used to 
 Understand "dial" or "dials" as panel-upper-left.
 
 The panel-upper-right is scenery in the time machine.
-The description of panel-upper-right is "To the right of the dials is a small [if the fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."
+The description of panel-upper-right is "To the right of the dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."
 Understand "lamp" or "round button" as panel-upper-right.
 	
 The panel-bottom is scenery in the time machine.
@@ -1587,18 +1590,18 @@ Instead of activating the control panel: try activating the round button.
 
 Instead of activating the round button:
 	if the player is in the time machine:
-		if the fuse is in the control panel: 
-			if fuse-burnt-out is false:
+		if the working-fuse is in the control panel: 
+			if working-fuse-burnt-out is false:
 				say "You press the button on the control panel.";
 				now the button is switched on;
 			otherwise:
-				say "You press the button but nothing happens.[no line break][if fuse-burnt-out is true] Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
-				now the player has the fuse;
+				say "You press the button but nothing happens.[no line break][if working-fuse-burnt-out is true] Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
+				now the player has the working-fuse; [ change to burnt out fuse ]
 		otherwise:
 			say "You press the button but nothing happens. There must be a piece missing from the time machine.";
 	otherwise:
-		if the fuse is in the control panel: 
-			if fuse-burnt-out is false:
+		if the working-fuse is in the control panel: 
+			if working-fuse-burnt-out is false:
 				say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";
 				now the time machine is nowhere;
 				now humboldt-should-return is true;
@@ -1617,13 +1620,13 @@ Section - Fuse
 [3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]
 [See Section 1 - Blueprints to see where the blueprint examining is handled.]
 
-Instead of inserting the fuse into the time machine: try inserting the fuse into the control panel.
+Instead of inserting the working-fuse into the time machine: try inserting the working-fuse into the control panel.
 		
-Instead of inserting the fuse into the control panel: 
-	if the player has the fuse:
+Instead of inserting the working-fuse into the control panel: 
+	if the player has the working-fuse:
 		if examined-blueprints is true:
-			say "Using the blueprints as a guide, you insert the fuse into the control panel in the appropriate slot.[no line break][if fuse-burnt-out is false] With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.[end if]";
-			now the fuse is in the control panel; 
+			say "Using the blueprints as a guide, you insert the fuse into the control panel in the appropriate slot.[no line break][if working-fuse-burnt-out is false] With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.[end if]";
+			now the working-fuse is in the control panel; 
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 	
@@ -2009,6 +2012,8 @@ humboldt-endgame-begins is false.
 
 Section - Conversation
 
+
+
 [Instead of telling someone about something, try asking someone about it.] 
 [According to the compiler, "asking someone about it" is too vague to describe a specific action]
 
@@ -2022,7 +2027,7 @@ Instead of telling Humboldt about "wells": try asking Humboldt about it.
 Instead of telling Humboldt about "diagnosis": try asking Humboldt about it.
 Instead of telling Humboldt about "examination": try asking Humboldt about it.
 Instead of telling Humboldt about "workshop": try asking Humboldt about it.
-Instead of telling Humboldt about "time machine": try asking Humboldt about it.
+[Instead of telling Humboldt about "time machine": try asking Humboldt about it.]
 Instead of telling Humboldt about "watch": try asking Humboldt about it.
 Instead of telling Humboldt about "pocket watch": try asking Humboldt about it
 
@@ -2075,7 +2080,7 @@ Instead of asking Humboldt about "humboldt/doctor/physician/dr/psychologist/alie
 
 [HACK - There should be some way I can write "Instead of asking Humboldt about yourself"]
 Instead of asking Humboldt about "me/yourself/myself": say "Perhaps you should focus on the situation at hand instead of yourself."	
-
+	
 [Hack. Why can't I just write "Instead of asking Humboldt about "pocket watch/watch"?]
 Instead of asking Humboldt about "pocket watch": say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
 Instead of asking Humboldt about "watch": say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'" 
@@ -2091,17 +2096,17 @@ Instead of showing the petal to Humboldt:
 	
 Instead of showing the key to Humboldt:
 	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [at random]What have you found?'"
-
+		
 Instead of showing the blueprints to Humboldt:
 	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its counterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
 
-Instead of showing the fuse to Humboldt:
+Instead of showing the working-fuse to Humboldt:
 	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
 		
 Instead of showing the pocket watch to Humboldt: 
 	say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
 	[HACK - Why can't I simply write "try asking Humboldt about it."]
-
+	
 [Asking & Telling - Humboldt Endgame]
 
 [Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
@@ -2130,7 +2135,7 @@ topic	reply
 "eloi"	"'Figment of Wells[apostrophe] imagination I assume.'"
 "morlocks"	"'Figment of Wells[apostrophe] imagination I assume.'"
 "time travel"	"'Science fiction if you ask me.'"
-
+	
 After telling Humboldt about "petal":
 	say "'I know all that. But did you find the rest of the flower?'"
 
@@ -2143,9 +2148,13 @@ After telling Humboldt about "workshop":
 After telling Humboldt about "fuse":
 	say "Humboldt nods slightly as you explain how the fuse is necessary for the time machine[apostrophe]s operation."
 
+[ ⬆️ MIGRATED OVER TO time-machine-conversation ⬆️ ]
+
 [This rule triggers a successful endgame]
 After telling Humboldt about "flower":
 	now endgame-success is true.
+
+[ ⬇️ MIGRATED OVER TO time-machine-conversation ⬇️ ]
 
 [Each of the following rules will increase Humboldt's patience by one step]
 		

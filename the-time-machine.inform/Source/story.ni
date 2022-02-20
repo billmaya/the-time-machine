@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26938 ]
+[ WORDS - 26968 ]
 
 Table of Releases
 release	notes
@@ -76,7 +76,7 @@ Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mist
 [Include Conversation Package by Eric Eve.]
 
 After reading a command:
-resolve punctuated titles.
+	resolve punctuated titles.
 
 Chapter - Instead-Of Rules
 
@@ -985,7 +985,7 @@ Instead of examining the orrery-mechanism:
 		otherwise:
 			say "You can't see any such thing.";
 	otherwise:
-		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds. [end if]A small fuse[if time-machine-fuse-found is true] resembling the one from the time machine[end if] sits nestled among the other mechanism components.".
+		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds. [end if]A small fuse[if working-fuse-found is true] resembling the one from the time machine[end if] sits nestled among the other mechanism components.".
 
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
 The examine devices rule does nothing when examining the orrery.
@@ -1016,7 +1016,7 @@ The left panel is scenery in the Parlor.
 Understand "left" or "left side" or "left side of orrery" as left panel.		
 		
 The right panel is a thing.
-The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if time-machine-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]"
+The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if working-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]"
 	
 The right panel is a container.
 The right panel is opaque.
@@ -1086,15 +1086,15 @@ Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-me
 Test all-text-orrery with "x orrery / x triptych / x central panel / x left panel / x right panel / open right panel / open right panel / x orrery / close right panel / close right panel / switch off orrery / purloin fuse / switch off orrery."
 
 
-Section - Fuse
+Section - Working Fuse
 
 [
 • THERE IS ALSO A FUSE IN THE TIME MACHINE, BUT IT IS BURNT OUT
 • YOU HAVE TO REPLACE IT WITH THE FUSE FROM THE ORRERY
 ]
 
-time-machine-fuse-found is a truth state that varies.
-time-machine-fuse-found is false.	
+working-fuse-found is a truth state that varies.
+working-fuse-found is false.	
 
 The working-fuse is a thing.
 The working-fuse is undescribed.
@@ -1119,6 +1119,15 @@ Instead of inserting the working-fuse into the right panel:
 	say "After you put the fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
 	now the working-fuse is in the right panel;
 	now the orrery is switched on;
+
+Section - Burnt-Out Fuse
+
+burnt-out-fuse-found is a truth state that varies.
+burnt-out-fuse-found is false.
+	
+The burnt-out-fuse is a thing.
+The burnt-out-fuse is undescribed.
+
 	
 
 

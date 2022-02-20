@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 26968 ]
+[ WORDS - 27005 ]
 
 Table of Releases
 release	notes
@@ -1629,6 +1629,12 @@ Section - Fuse
 [3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]
 [See Section 1 - Blueprints to see where the blueprint examining is handled.]
 
+Instead of inserting the burnt-out-fuse into the time machine: 
+	try inserting the burnt-out-fuse into the control panel.
+
+Instead of inserting the burnt-out-fuse into the control panel:
+	say "INSERTING BURNT-OUT FUSE."	
+
 Instead of inserting the working-fuse into the time machine: try inserting the working-fuse into the control panel.
 		
 Instead of inserting the working-fuse into the control panel: 
@@ -1638,6 +1644,7 @@ Instead of inserting the working-fuse into the control panel:
 			now the working-fuse is in the control panel; 
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
+
 	
 Section - Workshop Windows
 

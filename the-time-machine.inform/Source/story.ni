@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 27005 ]
+[ WORDS - 27118 ]
 
 Table of Releases
 release	notes
@@ -130,6 +130,14 @@ Before listening:
 		continue the action.
 
 Chapter - Every Turn Rules
+
+Section - Parlor
+
+Every turn:
+	if the working-fuse is in the right panel:
+		now the orrery is switched on;
+	otherwise:
+		now the orrery is switched off.
 
 Section - Workshop
 
@@ -1099,17 +1107,22 @@ working-fuse-found is false.
 The working-fuse is a thing.
 The working-fuse is undescribed.
 The working-fuse is in the right panel.
+The printed name of working-fuse is "fuse".
+Understand "fuse" as working-fuse.
 
 working-fuse-burnt-out is a truth state that varies.
 working-fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
 
 The description of the working-fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if working-fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if working-fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and useless.[end if]"
-	
-[> take fuse]
-	
+
+Before taking the working-fuse:
+	if the working-fuse is in the right panel:
+		say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
+	if the working-fuse is in the control panel:
+		say "The single light on the control panel dims to black and the barely parceptible hum surrounding the time macihne fades away."
+
 After taking the working-fuse:
 	if the orrery is switched on:
-		say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
 		now the orrery is switched off.
 
 Instead of inserting the working-fuse into the orrery:
@@ -1120,6 +1133,8 @@ Instead of inserting the working-fuse into the right panel:
 	now the working-fuse is in the right panel;
 	now the orrery is switched on;
 
+
+
 Section - Burnt-Out Fuse
 
 burnt-out-fuse-found is a truth state that varies.
@@ -1127,6 +1142,9 @@ burnt-out-fuse-found is false.
 	
 The burnt-out-fuse is a thing.
 The burnt-out-fuse is undescribed.
+[The burnt-out-fuse is in the control panel.]
+The printed name of burnt-out-fuse is "burnt out fuse".
+Understand "burnt fuse" or "burnt out fuse" as working-fuse.
 
 	
 
@@ -1500,7 +1518,8 @@ Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crys
 
 [Replaced "examining" with "searching" in Instead statement]
 Instead of searching [examining] the time machine:
-	if the working-fuse is in the time machine, say "The time machine looks like it is ready to operate."; 
+	if the working-fuse is in the control panel: [time machine,] 
+		say "The time machine looks like it is ready to operate."; 
 	otherwise:
 		if the player has the working-fuse:
 			if examined-blueprints is true:
@@ -1635,7 +1654,8 @@ Instead of inserting the burnt-out-fuse into the time machine:
 Instead of inserting the burnt-out-fuse into the control panel:
 	say "INSERTING BURNT-OUT FUSE."	
 
-Instead of inserting the working-fuse into the time machine: try inserting the working-fuse into the control panel.
+Instead of inserting the working-fuse into the time machine: 
+	try inserting the working-fuse into the control panel.
 		
 Instead of inserting the working-fuse into the control panel: 
 	if the player has the working-fuse:

@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 27118 ]
+[ WORDS - 27603 ]
 
 Table of Releases
 release	notes
@@ -134,10 +134,11 @@ Chapter - Every Turn Rules
 Section - Parlor
 
 Every turn:
-	if the working-fuse is in the right panel:
-		now the orrery is switched on;
-	otherwise:
-		now the orrery is switched off.
+	if a breaker (called fuse) [working-fuse] is in the right panel:
+		if the fuse is working:
+			now the orrery is switched on;
+		otherwise:
+			now the orrery is switched off.
 
 Section - Workshop
 
@@ -524,7 +525,6 @@ Instead of prying the workshop-door with poker: try attacking the workshop-door 
 Instead of attacking the workshop-door with the poker: say "Even if you could somehow manage to open the workshop door this way, you would damage the woodwork beyond repair." ["NO NO NO."]
 Instead of attacking the workshop-door with something: say "Violence isn't the answer here."
 
-
 Chapter - Library
 
 The Library is a room. 
@@ -747,6 +747,8 @@ Name	Author	Publish-Date
 "Phantasmagoria and Other Poems"	"Lewis Carroll"	1869
 "The Life of George Washington"	"Washington Irving"	1859
 
+
+
 Chapter - Parlor
 
 The Parlor is a room. 
@@ -968,22 +970,35 @@ Title	Summary
 
 Section - Orrery
 
-The orrery is a thing. 
+The orrery is a device. The orrery is switched on.
 The orrery is scenery on the mantle. 
-The orrery is a device.
-The orrery is switched on.
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box consisting of three panels. The top half of the central panel of the tryptich contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the right panel is open] The right panel has been slid up to expose the inner mechanism of the orrery.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 
-The central panel is scenery in the Parlor. 
-The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the working-fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]"
-	
+The left panel is a thing.
+The description of the left panel is "The left panel displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
+
+Understand "left" or "left side" or "left side of orrery" as left panel.
+
+The central panel is a thing.
+The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the working-fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
 Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" as central panel.
 
-The orrery-mechanism is scenery in the Parlor. 
+The right panel is a thing.
+The right panel is a container. The right panel is closed.
+The right panel is opaque.
+The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if time-machine-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]".
+Understand "right" or "right side" or "right side of orrery" as right panel.
+
+The left panel, central panel, and right panel are part of the orrery.
+
+[The orrery-mechanism is scenery in the Parlor.] 
+The orrery-mechanism is a thing.
+The orrery-mechanism is part of the right panel.
+The orrery-mechanism is undescribed.
 The description of orrery-mechanism is "ORRERY-MECHANISM."
-Understand "mechanism" or "gears" or "shafts" or "slotted pin followers" or "pin followers" as orrery-mechanism.
+Understand "mechanism" or "gears" or "shafts" or "slotted pin followers" or "pin followers" or "orrery mechanism" as orrery-mechanism.
 
 Instead of examining the orrery-mechanism:
 	if the right panel is closed:
@@ -993,8 +1008,16 @@ Instead of examining the orrery-mechanism:
 		otherwise:
 			say "You can't see any such thing.";
 	otherwise:
-		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds. [end if]A small fuse[if working-fuse-found is true] resembling the one from the time machine[end if] sits nestled among the other mechanism components.".
+		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information, as well as a fuse holder.[if the orrery is switched on][no line break] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds.[end if ]" 
 
+The fuse-holder is a container.
+The fuse-holder is part of the orrery-mechanism.
+The fuse-holder is undescribed.
+The printed name of the fuse-holder is "fuse holder".
+The description of the fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is a breaker in the fuse-holder]THERE IS A FUSE BETWEEN THE CLIPS.[end if]"
+	
+Understand "fuse holder" or "clips" or "clip" as fuse-holder.
+		
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
 The examine devices rule does nothing when examining the orrery.
 
@@ -1017,21 +1040,7 @@ Before opening the orrery:
 Before closing the orrery:
 	try closing the right panel;
 	stop the action.
-			
-The left panel is a thing.
-The description of the left panel is "The left panel displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
-The left panel is scenery in the Parlor.
-Understand "left" or "left side" or "left side of orrery" as left panel.		
-		
-The right panel is a thing.
-The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if working-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]"
-	
-The right panel is a container.
-The right panel is opaque.
-The right panel is closed.
-The right panel is scenery in the Parlor.
-Understand "right" or "right side" or "right side of orrery" as right panel.
-			
+
 player-knows-right-panel-slideable is a truth state that varies.
 player-knows-right-panel-slideable is false.
 
@@ -1068,7 +1077,7 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of switching off the orrery:
-	if the working-fuse is in the right panel in the Parlor:
+	if the orrery-fuse [working-fuse] is in the fuse-holder: [right panel in the Parlor:]
 		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
@@ -1091,62 +1100,75 @@ Test switch-off-orrery with "switch off orrery / turn off orrery / purloin fuse 
 
 Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-mechanism / test x-left-panel / test x-right-panel / test open-orrery / test close-orrery / test open-right-panel / test close-right-panel / test slide-right-panel / test pull-right-panel / test push-right-panel / test switch-off-orrery."
 
-Test all-text-orrery with "x orrery / x triptych / x central panel / x left panel / x right panel / open right panel / open right panel / x orrery / close right panel / close right panel / switch off orrery / purloin fuse / switch off orrery."
+Test all-text-orrery with "x orrery / x triptych / x central panel / x left panel / x right panel / open right panel / open right panel / x orrery / close right panel / close right panel / switch off orrery / purloin orrery fuse / switch off orrery."
 
+Test new-config with "x orrery / slide right panel / x mechanism / x fuse / x fuse-holder / x holder."
 
-Section - Working Fuse
+Section - Breaker | Orrery Fuse
 
-[
-• THERE IS ALSO A FUSE IN THE TIME MACHINE, BUT IT IS BURNT OUT
-• YOU HAVE TO REPLACE IT WITH THE FUSE FROM THE ORRERY
-]
+A breaker is a kind of thing.
+The breaker is either working or not working. A breaker is usually working.
 
-working-fuse-found is a truth state that varies.
-working-fuse-found is false.	
+time-machine-fuse-found is a truth state that varies. [Move these two lines to time machine]
+time-machine-fuse-found is false.	
 
-The working-fuse is a thing.
+The orrery-fuse is a breaker. "pristine".
+The printed name of the orrery-fuse is "orrery fuse".
+The orrery-fuse is working.
+The orrery-fuse is undescribed.
+The orrery-fuse is in the fuse-holder. [DEL right panel. fuse]
+The description of the orrery-fuse is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the orrery-fuse is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
+Understand "orrery fuse" or "pristine fuse" or "fuse" as orrery-fuse.
+
+[DEL When no longer needed]
+The working-fuse is a thing. "WORKING FUSE."
 The working-fuse is undescribed.
-The working-fuse is in the right panel.
+The working-fuse is nowhere. [in theright panel.]
 The printed name of working-fuse is "fuse".
 Understand "fuse" as working-fuse.
-
-working-fuse-burnt-out is a truth state that varies.
+working-fuse-burnt-out is a truth state that varies. 
 working-fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
+	
+Section - Putting Fuse In Orrery
 
-The description of the working-fuse is "Almost as big as your thumb, the circular fuse is made of pasteboard with metal caps on either end.[if working-fuse is in something] Each of the metal caps is held in a metal clip that connects it to the rest of the mechanism.[end if][if working-fuse-burnt-out is true] The pasteboard cylinder between the metal caps is blackened and burned, shorted out and useless.[end if]"
+Before removing a breaker (called fuse) from the orrery:
+	try taking the fuse.
 
-Before taking the working-fuse:
-	if the working-fuse is in the right panel:
+Before removing a breaker (called fuse) from the right panel:
+	try taking the fuse.
+
+After taking a breaker (called fuse): [from the right panel:]
+	if the fuse is working:
 		say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
-	if the working-fuse is in the control panel:
-		say "The single light on the control panel dims to black and the barely parceptible hum surrounding the time macihne fades away."
+		now the orrery is switched off;
+	otherwise:
+		say "NOT WORKING FUSE REMOVED FROM RIGHT PANEL.".
 
-After taking the working-fuse:
-	if the orrery is switched on:
-		now the orrery is switched off.
+Before inserting a breaker (called fuse) into the orrery:
+	try inserting the fuse into the right panel;
+	stop the action.
 
-Instead of inserting the working-fuse into the orrery:
-	try inserting the working-fuse into the right panel.
+Before inserting a breaker (called fuse) into the right panel:
+	if the fuse-holder contains a breaker:
+		say "You will need to remove the other fuse from the orrery first.";
+		stop the action;
+	otherwise:
+		try inserting the fuse into the fuse-holder;
+		stop the action.
 
-Instead of inserting the working-fuse into the right panel:
-	say "After you put the fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
-	now the working-fuse is in the right panel;
-	now the orrery is switched on;
+After inserting a breaker (called fuse) into the fuse-holder: 
+	if the fuse is working:
+		say "After you put that fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
+		now the fuse is in the fuse-holder; 
+		now the orrery is switched on;
+	otherwise:
+		say "DOESN'T LOOK LIKE THE FUSE IS WORKING. Putting that fuse into the orrery doesn't seem to have any effect."		
 
+test prep-fuses-orrery with "north / north / west / north / slide right panel / purloin burnt fuse."
 
+test fuse-orrery with "x mechanism / x fuse-holder / take orrery-fuse / x fuse-holder / x mechanism / put orrery-fuse in fuse-holder / x fuse-holder / x mechanism."
 
-Section - Burnt-Out Fuse
-
-burnt-out-fuse-found is a truth state that varies.
-burnt-out-fuse-found is false.
-	
-The burnt-out-fuse is a thing.
-The burnt-out-fuse is undescribed.
-[The burnt-out-fuse is in the control panel.]
-The printed name of burnt-out-fuse is "burnt out fuse".
-Understand "burnt fuse" or "burnt out fuse" as working-fuse.
-
-	
+test fuse-time-machine with "x mechanism / x fuse-holder / take orrery-fuse / put time-machine-fuse in fuse-holder / x fuse-holder / x mechanism."
 
 
 Chapter - Garden
@@ -1364,7 +1386,6 @@ Understand "bench" as workbench.
 
 Instead of searching the workbench: try examining the workbench.
 
-
 Section - Scenery
 
 The workshop-tools-materials is scenery in the Workshop.
@@ -1494,9 +1515,9 @@ examined-blueprints is false.
 
 Instead of examining the blueprints:
 	say "Spreading out the sheets you see that these are the plans for the time machine in the center of the room. [no line break]";
-	if the player does not have the working-fuse:
+	if the player does not have a breaker [the working-fuse]:
 		say "Using them, you[']re able to locate actual components in the machine, but this exercise brings you no closer to figuring out how to turn the time machine on.";
-	if the player has the working-fuse:
+	if the player has a breaker [the working-fuse]:
 		say "The blueprints identify where the fuse fits into the control panel of the time machine.";
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
@@ -1534,6 +1555,26 @@ Instead of searching [examining] the time machine:
 
 Instead of opening the time machine: say "The time machine is already 'open.' All you have to do is [if the player is in the time machine]get out[otherwise]get inside[end if] if you desire."
 [At some point should implement >climb in/out of time machine.]
+
+Section - Time Machine Fuse
+
+The time-machine-fuse is a breaker. "burnt".
+The printed name of the time-machine-fuse is "time machine fuse".
+The time-machine-fuse is not working.
+The time-machine-fuse is undescribed.
+The time-machine-fuse is in the control panel.
+The description of the time-machine-fuse is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if time-machine-fuse is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance] in places."
+Understand "time machine fuse" or "burnt fuse" or "fuse" as time-machine-fuse.
+
+[DEL]
+burnt-out-fuse-found is a truth state that varies.
+burnt-out-fuse-found is false.
+	
+The burnt-out-fuse is a thing.
+The burnt-out-fuse is undescribed.
+[The burnt-out-fuse is in the control panel.]
+The printed name of burnt-out-fuse is "burnt out fuse".
+[Understand "burnt fuse" or "burnt out fuse" as burnt-out-fuse.]
 
 Section - Control Panel
 
@@ -1636,7 +1677,13 @@ Instead of activating the round button:
 		otherwise:
 			say "You press the button on the control panel but nothing happens."
 
-Section - Fuse
+Section - Putting Fuse In Time Machine
+
+After removing a breaker (called fuse) from the control panel:
+	if the fuse is working:
+		say "The single light on the control panel dims to black and the barely parceptible hum surrounding the time machine fades away.";
+	otherwise:
+		say "NOT WORKING FUSE REMOVED FROM CONTROL PANEL."
 
 [Two different ways to implement. See See https://bit.ly/320owaO]
 
@@ -1654,14 +1701,14 @@ Instead of inserting the burnt-out-fuse into the time machine:
 Instead of inserting the burnt-out-fuse into the control panel:
 	say "INSERTING BURNT-OUT FUSE."	
 
-Instead of inserting the working-fuse into the time machine: 
-	try inserting the working-fuse into the control panel.
+Instead of inserting a breaker (called fuse) [working-fuse] into the time machine: 
+	try inserting the fuse [working-fuse] into the control panel.
 		
-Instead of inserting the working-fuse into the control panel: 
-	if the player has the working-fuse:
+Instead of inserting the a breaker (called fuse) [burnt fuse] [working-fuse] into the control panel: 
+	if the player has a breaker [working-fuse]:
 		if examined-blueprints is true:
 			say "Using the blueprints as a guide, you insert the fuse into the control panel in the appropriate slot.[no line break][if working-fuse-burnt-out is false] With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.[end if]";
-			now the working-fuse is in the control panel; 
+			now the fuse [working-fuse] is in the control panel; 
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 
@@ -2136,7 +2183,7 @@ Instead of showing the key to Humboldt:
 Instead of showing the blueprints to Humboldt:
 	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its counterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
 
-Instead of showing the working-fuse to Humboldt:
+Instead of showing a breaker [the working-fuse] to Humboldt:
 	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
 		
 Instead of showing the pocket watch to Humboldt: 

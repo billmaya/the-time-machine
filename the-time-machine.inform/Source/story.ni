@@ -1010,11 +1010,14 @@ Instead of examining the orrery-mechanism:
 	otherwise:
 		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information, as well as a fuse holder.[if the orrery is switched on][no line break] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds.[end if ]" 
 
-The fuse-holder is a container.
+The fuse-holder is a opaque container.
 The fuse-holder is part of the orrery-mechanism.
 The fuse-holder is undescribed.
 The printed name of the fuse-holder is "fuse holder".
-The description of the fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is a breaker in the fuse-holder]THERE IS A FUSE BETWEEN THE CLIPS.[end if]"
+The description of the fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is a breaker in the fuse-holder] Between the two clips is a fuse.[end if]".
+
+[DEL The examine container rule does nothing when examining the fuse holder.]
+[DEL THERE IS A FUSE BETWEEN THE CLIPS.]
 	
 Understand "fuse holder" or "clips" or "clip" as fuse-holder.
 		

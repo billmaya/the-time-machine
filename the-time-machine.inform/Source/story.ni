@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 27603 ]
+[ WORDS - 27750 ]
 
 Table of Releases
 release	notes
@@ -993,7 +993,6 @@ Understand "right" or "right side" or "right side of orrery" as right panel.
 
 The left panel, central panel, and right panel are part of the orrery.
 
-[The orrery-mechanism is scenery in the Parlor.] 
 The orrery-mechanism is a thing.
 The orrery-mechanism is part of the right panel.
 The orrery-mechanism is undescribed.
@@ -1008,16 +1007,17 @@ Instead of examining the orrery-mechanism:
 		otherwise:
 			say "You can't see any such thing.";
 	otherwise:
-		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information, as well as a fuse holder.[if the orrery is switched on][no line break] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds.[end if ]" 
+		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information, as well as a fuse holder.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds.[otherwise] The gears are still.[end if ]" 
 
 The fuse-holder is a opaque container.
 The fuse-holder is part of the orrery-mechanism.
 The fuse-holder is undescribed.
 The printed name of the fuse-holder is "fuse holder".
-The description of the fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is a breaker in the fuse-holder] Between the two clips is a fuse.[end if]".
-
-[DEL The examine container rule does nothing when examining the fuse holder.]
-[DEL THERE IS A FUSE BETWEEN THE CLIPS.]
+The description of the fuse-holder is "TWO METAL CLIPS.[if there is a breaker in the fuse-holder] IS A FUSE.[end if]". [This description won't be used. Description handled by Instead rule below.]
+[The examine containers rule does nothing when examining the fuse-holder.] [Would this work instead of using the Instead rule below?]
+		
+Instead of examining the fuse-holder:
+	say "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the orrery-fuse in the fuse-holder] Between the two clips is the orrery fuse.[otherwise if the time-machine-fuse is in the fuse-holder] Between the two clips is the time machine fuse.[otherwise] The fuse holder is empty.[end if]"
 	
 Understand "fuse holder" or "clips" or "clip" as fuse-holder.
 		
@@ -1145,19 +1145,22 @@ After taking a breaker (called fuse): [from the right panel:]
 		say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
 		now the orrery is switched off;
 	otherwise:
-		say "NOT WORKING FUSE REMOVED FROM RIGHT PANEL.".
+		continue the action.
 
 Before inserting a breaker (called fuse) into the orrery:
 	try inserting the fuse into the right panel;
 	stop the action.
 
 Before inserting a breaker (called fuse) into the right panel:
+	try inserting the fuse into the fuse-holder;
+	stop the action.
+
+Before inserting a breaker (called fuse) into the fuse-holder: [right panel:]
 	if the fuse-holder contains a breaker:
 		say "You will need to remove the other fuse from the orrery first.";
 		stop the action;
 	otherwise:
-		try inserting the fuse into the fuse-holder;
-		stop the action.
+		continue the action.
 
 After inserting a breaker (called fuse) into the fuse-holder: 
 	if the fuse is working:
@@ -1165,13 +1168,15 @@ After inserting a breaker (called fuse) into the fuse-holder:
 		now the fuse is in the fuse-holder; 
 		now the orrery is switched on;
 	otherwise:
-		say "DOESN'T LOOK LIKE THE FUSE IS WORKING. Putting that fuse into the orrery doesn't seem to have any effect."		
+		say "Putting that fuse into the orrery doesn't seem to have any effect."	
 
-test prep-fuses-orrery with "north / north / west / north / slide right panel / purloin burnt fuse."
+test fuse-prep with "north / north / west / north / slide right panel / purloin burnt fuse."
 
-test fuse-orrery with "x mechanism / x fuse-holder / take orrery-fuse / x fuse-holder / x mechanism / put orrery-fuse in fuse-holder / x fuse-holder / x mechanism."
+test orrery-fuse with "test fuse-prep / x mechanism / x fuse-holder / take orrery-fuse / x fuse-holder / x mechanism / put orrery-fuse in fuse-holder / x fuse-holder / x mechanism."
 
-test fuse-time-machine with "x mechanism / x fuse-holder / take orrery-fuse / put time-machine-fuse in fuse-holder / x fuse-holder / x mechanism."
+test time-machine-fuse with "test fuse-prep / x mechanism / x fuse-holder / take orrery-fuse / put time-machine-fuse in fuse-holder / x fuse-holder / x mechanism."
+
+test two-fuses with "test fuse-prep / put time-machine-fuse in orrery / put time-machine-fuse in right panel / put time-machine-fuse in fuse-holder / take orrery-fuse / put time-machine-fuse in fuse-holder / put orrery-fuse in fuse-holder / take time-machine-fuse / put orrery-fuse in fuse-holder."
 
 
 Chapter - Garden

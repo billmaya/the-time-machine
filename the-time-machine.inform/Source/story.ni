@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 27750 ]
+[ WORDS - 27717 ]
 
 Table of Releases
 release	notes
@@ -1013,12 +1013,9 @@ The fuse-holder is a opaque container.
 The fuse-holder is part of the orrery-mechanism.
 The fuse-holder is undescribed.
 The printed name of the fuse-holder is "fuse holder".
-The description of the fuse-holder is "TWO METAL CLIPS.[if there is a breaker in the fuse-holder] IS A FUSE.[end if]". [This description won't be used. Description handled by Instead rule below.]
-[The examine containers rule does nothing when examining the fuse-holder.] [Would this work instead of using the Instead rule below?]
-		
-Instead of examining the fuse-holder:
-	say "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the orrery-fuse in the fuse-holder] Between the two clips is the orrery fuse.[otherwise if the time-machine-fuse is in the fuse-holder] Between the two clips is the time machine fuse.[otherwise] The fuse holder is empty.[end if]"
-	
+The description of the fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the orrery-fuse in the fuse-holder] Between the two clips is the orrery fuse.[otherwise if the time-machine-fuse is in the fuse-holder] Between the two clips is the time machine fuse.[otherwise] The fuse holder is empty.[end if]"
+
+The examine containers rule does nothing when examining the fuse-holder. [Suppresses "In the fuse holder is an orrery fuse." after description printed] 
 Understand "fuse holder" or "clips" or "clip" as fuse-holder.
 		
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]

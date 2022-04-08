@@ -1,4 +1,4 @@
-The story title is "The Time Machine".
+ The story title is "The Time Machine".
 The story author is "Bill Maya".
 The story headline is "A Text Adventure".
 The story genre is "Science Fiction".
@@ -988,7 +988,7 @@ Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rin
 The right panel is a thing.
 The right panel is a container. The right panel is closed.
 The right panel is opaque.
-The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if time-machine-fuse-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]".
+The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if fuse-time-machine-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]".
 Understand "right" or "right side" or "right side of orrery" as right panel.
 
 The left panel, central panel, and right panel are part of the orrery.
@@ -1009,14 +1009,14 @@ Instead of examining the orrery-mechanism:
 	otherwise:
 		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information, as well as a fuse holder.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds.[otherwise] The gears are still.[end if ]" 
 
-The fuse-holder is a opaque container.
-The fuse-holder is part of the orrery-mechanism.
-The fuse-holder is undescribed.
-The printed name of the fuse-holder is "fuse holder".
-The description of the fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the orrery-fuse in the fuse-holder] Between the two clips is the orrery fuse.[otherwise if the time-machine-fuse is in the fuse-holder] Between the two clips is the time machine fuse.[otherwise] The fuse holder is empty.[end if]"
+The orrery-fuse-holder is a opaque container.
+The orrery-fuse-holder is part of the orrery-mechanism.
+The orrery-fuse-holder is undescribed.
+The printed name of the orrery-fuse-holder is "orrery fuse holder".
+The description of the orrery-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the fuse-orrery in the orrery-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the orrery-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The fuse holder is empty.[end if]"
 
-The examine containers rule does nothing when examining the fuse-holder. [Suppresses "In the fuse holder is an orrery fuse." after description printed] 
-Understand "fuse holder" or "clips" or "clip" as fuse-holder.
+The examine containers rule does nothing when examining the orrery-fuse-holder. [Suppresses "In the fuse holder is an orrery fuse." after description printed] 
+Understand "orrery fuse holder" or "fuse holder" or "clips" or "clip" as orrery-fuse-holder.
 		
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
 The examine devices rule does nothing when examining the orrery.
@@ -1077,7 +1077,7 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of switching off the orrery:
-	if the orrery-fuse [working-fuse] is in the fuse-holder: [right panel in the Parlor:]
+	if the fuse-orrery [working-fuse] is in the orrery-fuse-holder: [right panel in the Parlor:]
 		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
@@ -1109,16 +1109,16 @@ Section - Breaker | Orrery Fuse
 A breaker is a kind of thing.
 The breaker is either working or not working. A breaker is usually working.
 
-time-machine-fuse-found is a truth state that varies. [Move these two lines to time machine]
-time-machine-fuse-found is false.	
+fuse-time-machine-found is a truth state that varies. [Move these two lines to time machine]
+fuse-time-machine-found is false.	
 
-The orrery-fuse is a breaker. "pristine".
-The printed name of the orrery-fuse is "orrery fuse".
-The orrery-fuse is working.
-The orrery-fuse is undescribed.
-The orrery-fuse is in the fuse-holder. [DEL right panel. fuse]
-The description of the orrery-fuse is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the orrery-fuse is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
-Understand "orrery fuse" or "pristine fuse" or "fuse" as orrery-fuse.
+The fuse-orrery is a breaker. "pristine".
+The printed name of the fuse-orrery is "orrery fuse".
+The fuse-orrery is working.
+The fuse-orrery is undescribed.
+The fuse-orrery is in the orrery-fuse-holder. [DEL right panel. fuse]
+The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
+Understand "orrery fuse" or "pristine fuse" or "fuse" as fuse-orrery.
 
 [DEL When no longer needed]
 The working-fuse is a thing. "WORKING FUSE."
@@ -1149,31 +1149,31 @@ Before inserting a breaker (called fuse) into the orrery:
 	stop the action.
 
 Before inserting a breaker (called fuse) into the right panel:
-	try inserting the fuse into the fuse-holder;
+	try inserting the fuse into the orrery-fuse-holder;
 	stop the action.
 
-Before inserting a breaker (called fuse) into the fuse-holder: [right panel:]
-	if the fuse-holder contains a breaker:
+Before inserting a breaker (called fuse) into the orrery-fuse-holder: [right panel:]
+	if the orrery-fuse-holder contains a breaker:
 		say "You will need to remove the other fuse from the orrery first.";
 		stop the action;
 	otherwise:
 		continue the action.
 
-After inserting a breaker (called fuse) into the fuse-holder: 
+After inserting a breaker (called fuse) into the orrery-fuse-holder: 
 	if the fuse is working:
 		say "After you put that fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
-		now the fuse is in the fuse-holder; 
+		now the fuse is in the orrery-fuse-holder; 
 		now the orrery is switched on;
 	otherwise:
 		say "Putting that fuse into the orrery doesn't seem to have any effect."	
 
-test fuse-prep with "north / north / west / north / slide right panel / purloin burnt fuse."
+test fuse-prep with "north / north / west / north / slide right panel / purloin fuse-time-machine."
 
-test orrery-fuse with "test fuse-prep / x mechanism / x fuse-holder / take orrery-fuse / x fuse-holder / x mechanism / put orrery-fuse in fuse-holder / x fuse-holder / x mechanism."
+test orrery-fuse with "test fuse-prep / x mechanism / x orrery-fuse-holder / take fuse-orrery / x fuse-holder / x mechanism / put fuse-orrery in orrery-fuse-holder / x orrery-fuse-holder / x mechanism."
 
-test time-machine-fuse with "test fuse-prep / x mechanism / x fuse-holder / take orrery-fuse / put time-machine-fuse in fuse-holder / x fuse-holder / x mechanism."
+test fuse-time-machine with "test fuse-prep / x mechanism / x orrery-fuse-holder / take fuse-orrery / put fuse-time-machine in orrery-fuse-holder / x orrery-fuse-holder / x mechanism."
 
-test two-fuses with "test fuse-prep / put time-machine-fuse in orrery / put time-machine-fuse in right panel / put time-machine-fuse in fuse-holder / take orrery-fuse / put time-machine-fuse in fuse-holder / put orrery-fuse in fuse-holder / take time-machine-fuse / put orrery-fuse in fuse-holder."
+test two-fuses with "test fuse-prep / put fuse-time-machine in orrery / put fuse-time-machine in right panel / put fuse-time-machine in orrery-fuse-holder / take fuse-orrery / put fuse-time-machine in orrery-fuse-holder / put fuse-orrery in orrery-fuse-holder / take fuse-time-machine / put fuse-orrery in orrery-fuse-holder."
 
 
 Chapter - Garden
@@ -1563,13 +1563,13 @@ Instead of opening the time machine: say "The time machine is already 'open.' Al
 
 Section - Time Machine Fuse
 
-The time-machine-fuse is a breaker. "burnt".
-The printed name of the time-machine-fuse is "time machine fuse".
-The time-machine-fuse is not working.
-The time-machine-fuse is undescribed.
-The time-machine-fuse is in the control panel.
-The description of the time-machine-fuse is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if time-machine-fuse is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance] in places."
-Understand "time machine fuse" or "burnt fuse" or "fuse" as time-machine-fuse.
+The fuse-time-machine is a breaker. "burnt".
+The printed name of the fuse-time-machine is "time machine fuse".
+The fuse-time-machine is not working.
+The fuse-time-machine is undescribed.
+The fuse-time-machine is in the control panel.
+The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance] in places."
+Understand "time machine fuse" or "burnt fuse" or "fuse" as fuse-time-machine.
 
 [DEL]
 burnt-out-fuse-found is a truth state that varies.

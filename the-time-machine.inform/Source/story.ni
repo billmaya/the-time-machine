@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 27717 ]
+[ WORDS - 27895 ]
 
 Table of Releases
 release	notes
@@ -1583,8 +1583,9 @@ The printed name of burnt-out-fuse is "burnt out fuse".
 
 Section - Control Panel
 
-The control panel is a container.
-The control panel is in the time machine.
+The control panel is a thing. [DEL container.]
+The control panel is part of the time machine.
+[DEL The control panel is in the time machine.]
 The control panel is undescribed.
 Understand "controls" as control panel.
 
@@ -1596,6 +1597,33 @@ Instead of examining the control panel:
 	otherwise:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
+
+The elapsed time section is a thing.
+The elapsed time section is part of the control panel.
+
+The destination section is a thing.
+The destination section is part of the control panel.
+
+The origin section is a thing.
+The origin section is part of the control panel.
+
+The light panel is a locked container.
+The light panel is openable.
+The light panel is part of the control panel.
+
+The small light is a thing.
+The small light is part of the light panel.
+
+The keyhole is a thing.
+The keyhole is part of the light panel.
+[DEL The keyhole is lockable.
+The keyhole is locked.]
+
+The time-fuse-holder is a container.
+The time-fuse-holder is in the light panel.
+
+The lever is a thing.
+The lever is part of the control panel.
 	
 The panel-upper-left is scenery in the time machine.
 The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."

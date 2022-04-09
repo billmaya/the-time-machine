@@ -1,4 +1,4 @@
- The story title is "The Time Machine".
+The story title is "The Time Machine".
 The story author is "Bill Maya".
 The story headline is "A Text Adventure".
 The story genre is "Science Fiction".
@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 27895 ]
+[ WORDS - 28206 ]
 
 Table of Releases
 release	notes
@@ -1600,34 +1600,53 @@ Instead of examining the control panel:
 
 The elapsed time section is a thing.
 The elapsed time section is part of the control panel.
+The description of elapsed time section is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
+Understand "dial" or "dials" as elapsed time section.
 
 The destination section is a thing.
 The destination section is part of the control panel.
+The description of the destination section is "DESTINATION SECTION DESCRIPTION."
+[
+Just below the rows of dials a metal label are a row of eight numbers.
+A row of eight single digits underneath the word "Destination" is below the row of Elapsed Time dials above
+Below the Elapsed Time dials is the word "Destination," etched into the panel, and a row of eight single digits, each displayed in its own opening cut into the metal of the panel.
+Below the Elapsed Time dials is the destination year, spelled out in a row of eight individual digits, each displayed by itself with a tiny dial to the right of the number, and, above it, the word 'Destination' etched into the panel.
+]
 
 The origin section is a thing.
 The origin section is part of the control panel.
+The description of the origin section is "ORIGIN SECTION DESCRIPTION."
+[
+Below the Destination section is the origin year, spelled out like the destination in a row of eight individual digits, each displayed on its own with a tiny dial to the right of the number. Above the row of numbers is the word 'Origin' etched into the metal of the panel. 			
+]
+			
 
 The light panel is a locked container.
 The light panel is openable.
 The light panel is part of the control panel.
+The description of the light panel is "LIGHT PANEL DESCRIPTION."
 
 The small light is a thing.
 The small light is part of the light panel.
+The description of the small light is "SMALL LIGHT DESCRIPTION."
 
 The keyhole is a thing.
 The keyhole is part of the light panel.
+The description of the keyhole is "KEYHOLE DESCRIPTION."
 [DEL The keyhole is lockable.
 The keyhole is locked.]
 
 The time-fuse-holder is a container.
 The time-fuse-holder is in the light panel.
+The description of the time-fuse holder is "TIME FUSE HOLDER DESCRIPTION."
 
 The lever is a thing.
 The lever is part of the control panel.
+The description of the lever is "LEVER DESCRIPTION."
 	
-The panel-upper-left is scenery in the time machine.
+[DEL The panel-upper-left is scenery in the time machine.
 The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
-Understand "dial" or "dials" as panel-upper-left.
+Understand "dial" or "dials" as panel-upper-left.]
 
 The panel-upper-right is scenery in the time machine.
 The description of panel-upper-right is "To the right of the dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."

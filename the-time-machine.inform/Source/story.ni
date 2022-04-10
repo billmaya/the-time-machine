@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28206 ]
+[ WORDS - 28285 ]
 
 Table of Releases
 release	notes
@@ -1606,6 +1606,7 @@ Understand "dial" or "dials" as elapsed time section.
 The destination section is a thing.
 The destination section is part of the control panel.
 The description of the destination section is "DESTINATION SECTION DESCRIPTION."
+Understand "destination date" or "date of destination" as destination section.
 [
 Just below the rows of dials a metal label are a row of eight numbers.
 A row of eight single digits underneath the word "Destination" is below the row of Elapsed Time dials above
@@ -1616,11 +1617,11 @@ Below the Elapsed Time dials is the destination year, spelled out in a row of ei
 The origin section is a thing.
 The origin section is part of the control panel.
 The description of the origin section is "ORIGIN SECTION DESCRIPTION."
+Understand "origin date" or "date of origin" as origin section.
 [
 Below the Destination section is the origin year, spelled out like the destination in a row of eight individual digits, each displayed on its own with a tiny dial to the right of the number. Above the row of numbers is the word 'Origin' etched into the metal of the panel. 			
 ]
 			
-
 The light panel is a locked container.
 The light panel is openable.
 The light panel is part of the control panel.
@@ -1658,6 +1659,10 @@ Understand "switches" or "square button" or "square buttons" or "clear button" o
 
 The panel-things is scenery in the time machine.
 Understand "date" or "dates" or "destination" as panel-things.
+		
+[Actions on control panel]
+
+[Adjusting -> Modifying]
 
 Adjusting is an action applying to one thing.
 Understand "adjust [something]" as adjusting.
@@ -1665,13 +1670,17 @@ Instead of adjusting: say "I don[']t see how you would do that right now."
 
 Instead of adjusting the panel-things:
 	try modifying panel-things.
-	
+
+[Changing -> Modifying]
+
 Changing is an action applying to one thing.
 Understand "change [something]" as changing.
 Instead of changing: say "I don[']t see how you would do that right now."
 
 Instead of changing the panel-things: 
 	try modifying panel-things.
+
+[Setting -> Modifying]
 
 Setting is an action applying to one thing.
 Understand "set [something]" as setting.
@@ -1680,12 +1689,23 @@ Instead of setting: say "I don[']t see how you would do that right now."
 Instead of setting the panel-things:
 	try modifying panel-things.
 
+[Modifying]
+
 Modifying is an action applying to one thing.
 Understand "modify [something]" as modifying.
 Instead of modifying: say "I don[']t see how you would do that right now."
 		
 Instead of modifying the panel-things:
 	say "[first time]You reach out to flip some of the switches in the bottom section of the panel but hesitate, realizing that without Wells you have no idea how the time selector works. [only]Best to leave things on the control panel as they are for now."
+
+Instead of modifying the destination section:
+	say "BEST LEAVE THINGS AS THEY ARE FOR NOW."
+
+Instead of modifying the origin section:
+	say "BEST LEAVE THINGS AS THEY ARE FOR NOW."
+
+Instead of modifying the elapsed time section:
+	say "THAT'S READ-ONLY. NOTHING TO CHANGE THERE."
 
 	
 Section - Round Button

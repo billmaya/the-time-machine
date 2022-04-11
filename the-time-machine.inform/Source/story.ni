@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28285 ]
+[ WORDS - 28426 ]
 
 Table of Releases
 release	notes
@@ -1567,7 +1567,7 @@ The fuse-time-machine is a breaker. "burnt".
 The printed name of the fuse-time-machine is "time machine fuse".
 The fuse-time-machine is not working.
 The fuse-time-machine is undescribed.
-The fuse-time-machine is in the control panel.
+The fuse-time-machine is in the time-fuse-holder. [DEL control panel.]
 The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance] in places."
 Understand "time machine fuse" or "burnt fuse" or "fuse" as fuse-time-machine.
 
@@ -1621,11 +1621,18 @@ Understand "origin date" or "date of origin" as origin section.
 [
 Below the Destination section is the origin year, spelled out like the destination in a row of eight individual digits, each displayed on its own with a tiny dial to the right of the number. Above the row of numbers is the word 'Origin' etched into the metal of the panel. 			
 ]
+	
+The lever is a device. [DEL thing.]
+The lever is switched off.
+The lever is part of the control panel.
+The description of the lever is "LEVER DESCRIPTION."
 			
-The light panel is a locked container.
-The light panel is openable.
-The light panel is part of the control panel.
-The description of the light panel is "LIGHT PANEL DESCRIPTION."
+The hinged light panel is a locked container.
+The hinged light panel is openable.
+The hinged light panel is closed.
+The hinged light panel is locked.
+The hinged light panel is part of the control panel.
+The description of the hinged light panel is "LIGHT PANEL DESCRIPTION."
 
 The small light is a thing.
 The small light is part of the light panel.
@@ -1638,27 +1645,23 @@ The description of the keyhole is "KEYHOLE DESCRIPTION."
 The keyhole is locked.]
 
 The time-fuse-holder is a container.
-The time-fuse-holder is in the light panel.
+The time-fuse-holder is in the hinged light panel.
 The description of the time-fuse holder is "TIME FUSE HOLDER DESCRIPTION."
 
-The lever is a thing.
-The lever is part of the control panel.
-The description of the lever is "LEVER DESCRIPTION."
-	
 [DEL The panel-upper-left is scenery in the time machine.
 The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
 Understand "dial" or "dials" as panel-upper-left.]
 
-The panel-upper-right is scenery in the time machine.
+[DEL The panel-upper-right is scenery in the time machine.
 The description of panel-upper-right is "To the right of the dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."
-Understand "lamp" or "round button" as panel-upper-right.
+Understand "lamp" or "round button" as panel-upper-right.]
 	
-The panel-bottom is scenery in the time machine.
+[DEL The panel-bottom is scenery in the time machine.
 The description of panel-bottom is "Below the two rows of numbers and letters are sixteen toggle switches in two rows of eight switches each. The top row is labeled with the numbers 0[unicode 8211]9; the bottom row with the numbers 8 and 9 and the letters A[unicode 8211]F. All of the switches are in the Off position. To the right of the two rows of switches are two square buttons, one labeled 'SET'; the other labeled 'CLEAR'."
-Understand "switches" or "square button" or "square buttons" or "clear button" or "set button" or "numbers" as panel-bottom.
+Understand "switches" or "square button" or "square buttons" or "clear button" or "set button" or "numbers" as panel-bottom.]
 
-The panel-things is scenery in the time machine.
-Understand "date" or "dates" or "destination" as panel-things.
+[DEL The panel-things is scenery in the time machine.
+Understand "date" or "dates" or "destination" as panel-things.]
 		
 [Actions on control panel]
 
@@ -1668,8 +1671,12 @@ Adjusting is an action applying to one thing.
 Understand "adjust [something]" as adjusting.
 Instead of adjusting: say "I don[']t see how you would do that right now."
 
-Instead of adjusting the panel-things:
-	try modifying panel-things.
+Instead of adjusting the destination section: try modifying the destination section.
+Instead of adjusting the origin section: try modifying the origin section.
+Instead of adjusting the elapsed time section: try modifying the elapsed time section.
+
+[DEL Instead of adjusting the panel-things:
+	try modifying panel-things.]
 
 [Changing -> Modifying]
 
@@ -1677,17 +1684,25 @@ Changing is an action applying to one thing.
 Understand "change [something]" as changing.
 Instead of changing: say "I don[']t see how you would do that right now."
 
-Instead of changing the panel-things: 
-	try modifying panel-things.
+Instead of changing the destination section: try modifying the destination section.
+Instead of changing the origin section: try modifying the origin section.
+Instead of changing the elapsed time section: try modifying the elapsed time section.
+
+[DEL Instead of changing the panel-things: 
+	try modifying panel-things.]
 
 [Setting -> Modifying]
 
 Setting is an action applying to one thing.
 Understand "set [something]" as setting.
 Instead of setting: say "I don[']t see how you would do that right now."
-	
-Instead of setting the panel-things:
-	try modifying panel-things.
+
+Instead of setting the destination section: try modifying the destination section.
+Instead of setting the origin section: try modifying the origin section.
+Instead of setting the elapsed time section: try modifying the elapsed time section.
+
+[DEL Instead of setting the panel-things:
+	try modifying panel-things.]
 
 [Modifying]
 
@@ -1695,8 +1710,8 @@ Modifying is an action applying to one thing.
 Understand "modify [something]" as modifying.
 Instead of modifying: say "I don[']t see how you would do that right now."
 		
-Instead of modifying the panel-things:
-	say "[first time]You reach out to flip some of the switches in the bottom section of the panel but hesitate, realizing that without Wells you have no idea how the time selector works. [only]Best to leave things on the control panel as they are for now."
+[DEL Instead of modifying the panel-things:
+	say "[first time]You reach out to flip some of the switches in the bottom section of the panel but hesitate, realizing that without Wells you have no idea how the time selector works. [only]Best to leave things on the control panel as they are for now."]
 
 Instead of modifying the destination section:
 	say "BEST LEAVE THINGS AS THEY ARE FOR NOW."
@@ -1714,7 +1729,7 @@ The round button is a device in the time machine.
 The round button is switched off.
 The round button is undescribed.
 
-Instead of examining the round button: try examining the panel-upper-right.
+[DEL Instead of examining the round button: try examining the panel-upper-right.]
 
 [> push button]
 

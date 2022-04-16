@@ -1731,8 +1731,11 @@ After unlocking the hinged light panel with the metal key:
 
 Section - Lever
 
-The lever is a device. [DEL thing.]
-The lever is switched off.
+The on-off-switch is a kind of device. [DEL thing.]
+The on-off-switch is either forward or backwards. The on-off-switch is usually backwards.
+
+The level is a on-off-switch.
+[The lever is switched off.]
 The lever is part of the control panel.
 The description of the lever is "LEVER DESCRIPTION."
 	

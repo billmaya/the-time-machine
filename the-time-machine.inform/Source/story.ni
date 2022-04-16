@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28426 ]
+[ WORDS - 28496 ]
 
 Table of Releases
 release	notes
@@ -457,6 +457,7 @@ The description of metal key is "A small metal key to his workshop that you can 
 Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
 The metal key unlocks the workshop-door.
+The metal key unlocks the hinged light panel.
 		
 Section - The Petal
 	
@@ -1013,7 +1014,7 @@ The orrery-fuse-holder is a opaque container.
 The orrery-fuse-holder is part of the orrery-mechanism.
 The orrery-fuse-holder is undescribed.
 The printed name of the orrery-fuse-holder is "orrery fuse holder".
-The description of the orrery-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the fuse-orrery in the orrery-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the orrery-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The fuse holder is empty.[end if]"
+The description of the orrery-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the fuse-orrery in the orrery-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the orrery-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
 
 The examine containers rule does nothing when examining the orrery-fuse-holder. [Suppresses "In the fuse holder is an orrery fuse." after description printed] 
 Understand "orrery fuse holder" or "fuse holder" or "clips" or "clip" as orrery-fuse-holder.
@@ -1621,11 +1622,6 @@ Understand "origin date" or "date of origin" as origin section.
 [
 Below the Destination section is the origin year, spelled out like the destination in a row of eight individual digits, each displayed on its own with a tiny dial to the right of the number. Above the row of numbers is the word 'Origin' etched into the metal of the panel. 			
 ]
-	
-The lever is a device. [DEL thing.]
-The lever is switched off.
-The lever is part of the control panel.
-The description of the lever is "LEVER DESCRIPTION."
 			
 The hinged light panel is a locked container.
 The hinged light panel is openable.
@@ -1638,15 +1634,16 @@ The small light is a thing.
 The small light is part of the light panel.
 The description of the small light is "SMALL LIGHT DESCRIPTION."
 
-The keyhole is a thing.
+The keyhole is an open container. [DEL a thing.]
 The keyhole is part of the light panel.
 The description of the keyhole is "KEYHOLE DESCRIPTION."
 [DEL The keyhole is lockable.
 The keyhole is locked.]
 
 The time-fuse-holder is a container.
-The time-fuse-holder is in the hinged light panel.
-The description of the time-fuse holder is "TIME FUSE HOLDER DESCRIPTION."
+The time-fuse-holder is inside the hinged light panel.
+The printed name of time-fuse-holder is "time machine fuse holder".
+The description of the time-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is the fuse-orrery in the time-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the time-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
 
 [DEL The panel-upper-left is scenery in the time machine.
 The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
@@ -1722,6 +1719,22 @@ Instead of modifying the origin section:
 Instead of modifying the elapsed time section:
 	say "THAT'S READ-ONLY. NOTHING TO CHANGE THERE."
 
+[Unlocking the hinged light panel]
+
+Instead of inserting the metal key into the keyhole:
+	say "YOU INSERT KEY IN KEYHOLE AND TURN IT.";
+	now the metal key is in the keyhole;
+	try unlocking the hinged light panel with the metal key.
+
+After unlocking the hinged light panel with the metal key:
+	say "HINGED LIGHT PANEL UNLOCKED."
+
+Section - Lever
+
+The lever is a device. [DEL thing.]
+The lever is switched off.
+The lever is part of the control panel.
+The description of the lever is "LEVER DESCRIPTION."
 	
 Section - Round Button
 
@@ -1764,6 +1777,9 @@ Instead of activating the round button:
 		otherwise:
 			say "You press the button on the control panel but nothing happens."
 
+
+
+
 Section - Putting Fuse In Time Machine
 
 After removing a breaker (called fuse) from the control panel:
@@ -1782,11 +1798,11 @@ After removing a breaker (called fuse) from the control panel:
 [3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]
 [See Section 1 - Blueprints to see where the blueprint examining is handled.]
 
-Instead of inserting the burnt-out-fuse into the time machine: 
+[DEL Instead of inserting the burnt-out-fuse into the time machine: 
 	try inserting the burnt-out-fuse into the control panel.
 
 Instead of inserting the burnt-out-fuse into the control panel:
-	say "INSERTING BURNT-OUT FUSE."	
+	say "INSERTING BURNT-OUT FUSE."	]
 
 Instead of inserting a breaker (called fuse) [working-fuse] into the time machine: 
 	try inserting the fuse [working-fuse] into the control panel.

@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28444 ]
+[ WORDS - 28578 ]
 
 Table of Releases
 release	notes
@@ -1130,20 +1130,34 @@ Understand "fuse" as working-fuse.
 working-fuse-burnt-out is a truth state that varies. 
 working-fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
 	
+Section - Taking A Fuse
+
+[From the orrery]
+Before removing a breaker (called fuse) from the orrery: try taking the fuse.
+Before removing a breaker (called fuse) from the right panel: try taking the fuse.
+Before removing a breaker (called fuse) from the orrery-fuse-holder: try taking the fuse.
+
+[From the time machine]
+Before removing a breaker (called fuse) from the time machine: try taking the fuse.
+Before removing a breaker (called fuse) from the control panel: try taking the fuse.
+Before removing a breaker (called fuse) from the  hinged light panel: try taking the fuse.
+Before removing a breaker (called fuse) from the time-fuse-holder: try taking the fuse.
+
+Before taking a breaker (called fuse):
+	if the fuse is contained in the orrery-fuse-holder:
+		if the fuse is working:
+			say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
+			now the orrery is switched off;
+		otherwise:
+			continue the action;
+	if the fuse is contained in the time-fuse-holder:
+		if the fuse is working:
+			say "TIME MACHINE POWERS DOWN."; 
+			[now the orrery is switched off;]
+		otherwise:
+			continue the action.
+
 Section - Putting Fuse In Orrery
-
-Before removing a breaker (called fuse) from the orrery:
-	try taking the fuse.
-
-Before removing a breaker (called fuse) from the right panel:
-	try taking the fuse.
-
-After taking a breaker (called fuse): [from the right panel:]
-	if the fuse is working:
-		say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
-		now the orrery is switched off;
-	otherwise:
-		continue the action.
 
 Before inserting a breaker (called fuse) into the orrery:
 	try inserting the fuse into the right panel;
@@ -1598,10 +1612,14 @@ Instead of examining the control panel:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
 
+Section - Elapsed Time Section
+
 The elapsed time section is a thing.
 The elapsed time section is part of the control panel.
 The description of elapsed time section is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
 Understand "dial" or "dials" as elapsed time section.
+
+Section - Destination Section
 
 The destination section is a thing.
 The destination section is part of the control panel.
@@ -1613,6 +1631,8 @@ A row of eight single digits underneath the word "Destination" is below the row 
 Below the Elapsed Time dials is the word "Destination," etched into the panel, and a row of eight single digits, each displayed in its own opening cut into the metal of the panel.
 Below the Elapsed Time dials is the destination year, spelled out in a row of eight individual digits, each displayed by itself with a tiny dial to the right of the number, and, above it, the word 'Destination' etched into the panel.
 ]
+		
+Section - Origin Section
 
 The origin section is a thing.
 The origin section is part of the control panel.
@@ -1621,6 +1641,8 @@ Understand "origin date" or "date of origin" as origin section.
 [
 Below the Destination section is the origin year, spelled out like the destination in a row of eight individual digits, each displayed on its own with a tiny dial to the right of the number. Above the row of numbers is the word 'Origin' etched into the metal of the panel. 			
 ]
+	
+Section - Hinged Light Panel
 			
 The hinged light panel is a locked container.
 The hinged light panel is openable.
@@ -1731,10 +1753,6 @@ The lever is part of the control panel.
 The description of the lever is "LEVER DESCRIPTION."
 
 Instead of switching on the lever: try activating the time machine.
-	
-
-
-
 
 
 Section - Putting Fuse In Time Machine

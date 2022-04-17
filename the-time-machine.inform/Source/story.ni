@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28496 ]
+[ WORDS - 28444 ]
 
 Table of Releases
 release	notes
@@ -1568,7 +1568,7 @@ The fuse-time-machine is a breaker. "burnt".
 The printed name of the fuse-time-machine is "time machine fuse".
 The fuse-time-machine is not working.
 The fuse-time-machine is undescribed.
-The fuse-time-machine is in the time-fuse-holder. [DEL control panel.]
+The fuse-time-machine is in the time-fuse-holder.
 The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance] in places."
 Understand "time machine fuse" or "burnt fuse" or "fuse" as fuse-time-machine.
 
@@ -1584,9 +1584,8 @@ The printed name of burnt-out-fuse is "burnt out fuse".
 
 Section - Control Panel
 
-The control panel is a thing. [DEL container.]
+The control panel is a thing.
 The control panel is part of the time machine.
-[DEL The control panel is in the time machine.]
 The control panel is undescribed.
 Understand "controls" as control panel.
 
@@ -1630,11 +1629,12 @@ The hinged light panel is locked.
 The hinged light panel is part of the control panel.
 The description of the hinged light panel is "LIGHT PANEL DESCRIPTION."
 
-The small light is a thing.
+The small light is a device.
 The small light is part of the light panel.
-The description of the small light is "SMALL LIGHT DESCRIPTION."
+The small light is switched off.
+The description of the small light is "SMALL LIGHT DESCRIPTION. LIGHT IS [if small light is switched on]ON.[otherwise]OFF."
 
-The keyhole is an open container. [DEL a thing.]
+The keyhole is an open container.
 The keyhole is part of the light panel.
 The description of the keyhole is "KEYHOLE DESCRIPTION."
 [DEL The keyhole is lockable.
@@ -1672,9 +1672,6 @@ Instead of adjusting the destination section: try modifying the destination sect
 Instead of adjusting the origin section: try modifying the origin section.
 Instead of adjusting the elapsed time section: try modifying the elapsed time section.
 
-[DEL Instead of adjusting the panel-things:
-	try modifying panel-things.]
-
 [Changing -> Modifying]
 
 Changing is an action applying to one thing.
@@ -1685,9 +1682,6 @@ Instead of changing the destination section: try modifying the destination secti
 Instead of changing the origin section: try modifying the origin section.
 Instead of changing the elapsed time section: try modifying the elapsed time section.
 
-[DEL Instead of changing the panel-things: 
-	try modifying panel-things.]
-
 [Setting -> Modifying]
 
 Setting is an action applying to one thing.
@@ -1697,9 +1691,6 @@ Instead of setting: say "I don[']t see how you would do that right now."
 Instead of setting the destination section: try modifying the destination section.
 Instead of setting the origin section: try modifying the origin section.
 Instead of setting the elapsed time section: try modifying the elapsed time section.
-
-[DEL Instead of setting the panel-things:
-	try modifying panel-things.]
 
 [Modifying]
 
@@ -1734,51 +1725,14 @@ Section - Lever
 The on-off-switch is a kind of device. [DEL thing.]
 The on-off-switch is either forward or backwards. The on-off-switch is usually backwards.
 
-The level is a on-off-switch.
-[The lever is switched off.]
+The lever is a on-off-switch.
+The lever is switched off.
 The lever is part of the control panel.
 The description of the lever is "LEVER DESCRIPTION."
+
+Instead of switching on the lever: try activating the time machine.
 	
-Section - Round Button
 
-The round button is a device in the time machine.
-The round button is switched off.
-The round button is undescribed.
-
-[DEL Instead of examining the round button: try examining the panel-upper-right.]
-
-[> push button]
-
-Instead of pushing the round button: try activating the round button.
-
-[> activate control panel
- > activate time machine]
-
-Activating is an action applying to one touchable thing.
-Understand "activate [something]" as activating.
-
-Instead of activating the time machine: try activating the control panel.
-Instead of activating the control panel: try activating the round button.
-
-Instead of activating the round button:
-	if the player is in the time machine:
-		if the working-fuse is in the control panel: 
-			if working-fuse-burnt-out is false:
-				say "You press the button on the control panel.";
-				now the button is switched on;
-			otherwise:
-				say "You press the button but nothing happens.[no line break][if working-fuse-burnt-out is true] Smelling something burning you check the machine's components and find the source of the smell to be the fuse, which you remove from the machine.";
-				now the player has the working-fuse; [ change to burnt out fuse ]
-		otherwise:
-			say "You press the button but nothing happens. There must be a piece missing from the time machine.";
-	otherwise:
-		if the working-fuse is in the control panel: 
-			if working-fuse-burnt-out is false:
-				say "Reaching into the time machine you press the single lit button on the control panel to see what happens. To your horror, the machine shimmers briefly and disappears from the room.";
-				now the time machine is nowhere;
-				now humboldt-should-return is true;
-		otherwise:
-			say "You press the button on the control panel but nothing happens."
 
 
 
@@ -1818,6 +1772,32 @@ Instead of inserting the a breaker (called fuse) [burnt fuse] [working-fuse] int
 		otherwise:
 			say "Despite your best efforts you don't know where the fuse belongs.";
 
+Section - Activating The Time Machine
+
+Activating is an action applying to one touchable thing.
+Understand "activate [something]" as activating.
+
+To say nothing-happens:
+	say "YOU PUSH THE LEVER FORWARD. NOTHING HAPPENS."
+
+Instead of activating the time machine:
+	if the player is in the time machine:
+		if a breaker (called fuse) is contained in the time-fuse-holder:		
+			if the fuse is working: [DEL in the time-fuse-holder is working:] 
+				say "YOU PUSH THE LEVER FORWARD.";
+				now the lever is switched on;
+			otherwise:
+				say "[nothing-happens]";
+		otherwise:
+			say "[nothing-happens]";
+	otherwise:
+		if a breaker (called fuse) is contained in the time-fuse-holder: 
+			if the fuse is working: [DEL in the time-fuse-holder is working:]
+				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers briefly and disappears from the room.";
+				now the time machine is nowhere;
+				now humboldt-should-return is true;
+		otherwise:
+			say "[nothing-happens]".
 	
 Section - Workshop Windows
 
@@ -2450,7 +2430,7 @@ Part - Travel To 802,701
 
 Travel To 802,701 is a recurring scene.
 
-Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the button is switched on.
+Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the lever [DEL button] is switched on.
 
 travel-to-802701 is a truth state that varies.
 travel-to-802701 is false.
@@ -2471,7 +2451,7 @@ When Travel To 802,701 begins:
 	now the numeric-year is 802701;
 	now the time machine is in the Clearing;
 	now the time machine is described;
-	now the button is switched off.
+	now the lever [DEL button] is switched off.
 
 Travel To 802,701 ends when the time machine is in the Clearing.
 
@@ -2482,7 +2462,7 @@ Part - Travel To 1895
 
 Travel To 1895 is a recurring scene.
 
-Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the button is switched on.
+Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the lever [DEL button] is switched on.
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
@@ -2496,7 +2476,7 @@ When Travel To 1895 begins:
 	now the time machine is in the Workshop;
 	now the time machine is undescribed;
 	[now fuse-burnt-out is true;] [Commented out so multiple time travel round trips are possible]
-	now the button is switched off.
+	now the lever [DEL button] is switched off.
 	
 Travel To 1895 ends when the time machine is in the Workshop.
 

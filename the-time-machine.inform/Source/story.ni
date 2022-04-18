@@ -911,7 +911,7 @@ Instead of using the poker in the Parlor:
 	say "Taking the poker, you stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
 	now the player is carrying the poker.
 
-Chapter - Poking
+Section - Poking
 
 Poking is an action applying to one touchable thing and one carried thing.
 
@@ -966,6 +966,11 @@ Title	Summary
 "The St. Augustine Celebration"	"continued proceedings in connection with the Roman Catholic Conference commemorating the historical landing of St. Augustin and his companions"
 "Alleged Blackmailing In Manchester"	"charges levels against the two managing directors of The Financial Post, who threatened to publish false and defamatory information about the governing director of 'Commerce Limited'"
 "The Indian Frontier Troubles"	"two English officers killed and one severly wounded by some tribe between the Rambat Pass and Danesh Khel in India"
+
+Chapter - Breaker 
+
+A breaker is a kind of thing.
+The breaker is either working or not working. A breaker is usually working.
 
 Chapter - Orrery
 
@@ -1080,37 +1085,11 @@ Instead of switching off the orrery:
 		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
+			
 
-		
-Test x-orrery with "x orrery / x planetarium / x device / x box."
-Test x-triptych with "x triptych."
-Test x-model with "x central panel / x model / x spheres / x jeweled spheres / x planets / x brass rings / x rings / x dials / x solar system."
-Test x-mechanism with "slide right panel / x orrery-mechanism / x mechanism / x gears / x shafts / x slotted pin followers / x pin followers."
-Test x-left-panel with "x left panel / x left / x left side / x left side of orrery."
-Test x-right-panel with "x right panel / x right / x right side / x right side of orrery."
-Test open-orrery with "open orrery."
-Test close-orrery with "close orrery."
-Test open-right-panel with "open right panel / open right panel / close right panel."
-Test close-right-panel with "open right panel / close right panel / close right panel."
-Test slide-right-panel with "slide right panel / slide right panel."
-Test pull-right-panel with "pull right panel / pull right panel."
-Test push-right-panel with "push right panel / push right panel."
-Test switch-off-orrery with "switch off orrery / turn off orrery / purloin fuse / switch off orrery / put fuse in right panel / switch off orrery."
 
-Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-mechanism / test x-left-panel / test x-right-panel / test open-orrery / test close-orrery / test open-right-panel / test close-right-panel / test slide-right-panel / test pull-right-panel / test push-right-panel / test switch-off-orrery."
-
-Test all-text-orrery with "x orrery / x triptych / x central panel / x left panel / x right panel / open right panel / open right panel / x orrery / close right panel / close right panel / switch off orrery / purloin orrery fuse / switch off orrery."
-
-Test new-config with "x orrery / slide right panel / x mechanism / x fuse / x fuse-holder / x holder."
-
-Chapter - Breaker | Orrery Fuse
-
-A breaker is a kind of thing.
-The breaker is either working or not working. A breaker is usually working.
-
-fuse-time-machine-found is a truth state that varies. [Move these two lines to time machine]
-fuse-time-machine-found is false.	
-
+Section - Orrery Fuse
+			
 The fuse-orrery is a breaker. "pristine".
 The printed name of the fuse-orrery is "orrery fuse".
 The fuse-orrery is working.
@@ -1119,8 +1098,7 @@ The fuse-orrery is in the orrery-fuse-holder. [DEL right panel. fuse]
 The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
 Understand "orrery fuse" or "pristine fuse" or "fuse" as fuse-orrery.
 
-	
-Chapter - Taking A Fuse
+[Section - Taking A Fuse
 
 [From the orrery]
 Before removing a breaker (called fuse) from the orrery: try taking the fuse.
@@ -1144,9 +1122,9 @@ Before taking a breaker (called fuse):
 		if the fuse is working:
 			say "TIME MACHINE POWERS DOWN."; 
 		otherwise:
-			continue the action.
+			continue the action.]
 
-Chapter - Inserting Fuse In Orrery
+Section - Inserting Fuse In Orrery
 
 Before inserting a breaker (called fuse) into the orrery:
 	try inserting the fuse into the right panel;
@@ -1178,6 +1156,65 @@ test orrery-fuse with "test fuse-prep / x mechanism / x orrery-fuse-holder / tak
 test fuse-time-machine with "test fuse-prep / x mechanism / x orrery-fuse-holder / take fuse-orrery / put fuse-time-machine in orrery-fuse-holder / x orrery-fuse-holder / x mechanism."
 
 test two-fuses with "test fuse-prep / put fuse-time-machine in orrery / put fuse-time-machine in right panel / put fuse-time-machine in orrery-fuse-holder / take fuse-orrery / put fuse-time-machine in orrery-fuse-holder / put fuse-orrery in orrery-fuse-holder / take fuse-time-machine / put fuse-orrery in orrery-fuse-holder."
+
+Section - Removing Fuse From Orrery
+
+Before removing a breaker (called fuse) from the orrery: try taking the fuse.
+Before removing a breaker (called fuse) from the right panel: try taking the fuse.
+
+Before removing a breaker (called fuse) from the orrery-fuse-holder: try taking the fuse.
+
+Before taking a breaker (called fuse):
+	if the fuse is contained in the orrery-fuse-holder:
+		if the fuse is working:
+			say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
+			now the orrery is switched off;
+		otherwise:
+			continue the action.
+
+
+Section - Orrery Tests
+		
+Test x-orrery with "x orrery / x planetarium / x device / x box."
+Test x-triptych with "x triptych."
+Test x-model with "x central panel / x model / x spheres / x jeweled spheres / x planets / x brass rings / x rings / x dials / x solar system."
+Test x-mechanism with "slide right panel / x orrery-mechanism / x mechanism / x gears / x shafts / x slotted pin followers / x pin followers."
+Test x-left-panel with "x left panel / x left / x left side / x left side of orrery."
+Test x-right-panel with "x right panel / x right / x right side / x right side of orrery."
+Test open-orrery with "open orrery."
+Test close-orrery with "close orrery."
+Test open-right-panel with "open right panel / open right panel / close right panel."
+Test close-right-panel with "open right panel / close right panel / close right panel."
+Test slide-right-panel with "slide right panel / slide right panel."
+Test pull-right-panel with "pull right panel / pull right panel."
+Test push-right-panel with "push right panel / push right panel."
+Test switch-off-orrery with "switch off orrery / turn off orrery / purloin fuse / switch off orrery / put fuse in right panel / switch off orrery."
+
+Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-mechanism / test x-left-panel / test x-right-panel / test open-orrery / test close-orrery / test open-right-panel / test close-right-panel / test slide-right-panel / test pull-right-panel / test push-right-panel / test switch-off-orrery."
+
+Test all-text-orrery with "x orrery / x triptych / x central panel / x left panel / x right panel / open right panel / open right panel / x orrery / close right panel / close right panel / switch off orrery / purloin orrery fuse / switch off orrery."
+
+Test new-config with "x orrery / slide right panel / x mechanism / x fuse / x fuse-holder / x holder."
+
+[Chapter - Breaker 
+
+A breaker is a kind of thing.
+The breaker is either working or not working. A breaker is usually working.]
+
+[fuse-time-machine-found is a truth state that varies. [Move these two lines to time machine]
+fuse-time-machine-found is false.]	
+
+[The fuse-orrery is a breaker. "pristine".
+The printed name of the fuse-orrery is "orrery fuse".
+The fuse-orrery is working.
+The fuse-orrery is undescribed.
+The fuse-orrery is in the orrery-fuse-holder. [DEL right panel. fuse]
+The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
+Understand "orrery fuse" or "pristine fuse" or "fuse" as fuse-orrery.]
+
+	
+
+
 
 
 Part - Garden
@@ -1556,6 +1593,34 @@ Instead of searching [examining] the time machine:
 			say "TIME MACHINE READY TO OPERATE."; ["The time machine looks like it is ready to operate.";] 
 		otherwise:
 			say "TIME MACHINE NOT READY TO OPERATE."
+
+Section - Activating The Time Machine
+
+Activating is an action applying to one touchable thing.
+Understand "activate [something]" as activating.
+
+To say nothing-happens:
+	say "YOU PUSH THE LEVER FORWARD. NOTHING HAPPENS."
+
+Instead of activating the time machine:
+	if the player is in the time machine:
+		if a breaker (called fuse) is contained in the time-fuse-holder:		
+			if the fuse is working:
+				say "YOU PUSH THE LEVER FORWARD.";
+				now the lever is switched on;
+			otherwise:
+				say "[nothing-happens]";
+		otherwise:
+			say "[nothing-happens]";
+	otherwise:
+		if a breaker (called fuse) is contained in the time-fuse-holder: 
+			if the fuse is working: [DEL in the time-fuse-holder is working:]
+				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers briefly and disappears from the room.";
+				now the time machine is nowhere;
+				now humboldt-should-return is true;
+		otherwise:
+			say "[nothing-happens]".
+
 [	
 	otherwise:
 		if the player has the working-fuse:
@@ -1580,6 +1645,10 @@ The fuse-time-machine is in the time-fuse-holder.
 The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance] in places."
 Understand "time machine fuse" or "burnt fuse" or "fuse" as fuse-time-machine.
 
+fuse-time-machine-found is a truth state that varies. 
+fuse-time-machine-found is false.	
+
+[
 [DEL]
 burnt-out-fuse-found is a truth state that varies.
 burnt-out-fuse-found is false.
@@ -1588,7 +1657,51 @@ The burnt-out-fuse is a thing.
 The burnt-out-fuse is undescribed.
 [The burnt-out-fuse is in the control panel.]
 The printed name of burnt-out-fuse is "burnt out fuse".
-[Understand "burnt fuse" or "burnt out fuse" as burnt-out-fuse.]
+[Understand "burnt fuse" or "burnt out fuse" as burnt-out-fuse.]]
+
+Section - Inserting Fuse In Time Machine
+
+Before inserting a breaker (called fuse) into the time machine:
+	try inserting the fuse into the time-fuse-holder;
+	stop the action.
+
+Before inserting a breaker (called fuse) into the control panel:
+	try inserting the fuse into the time-fuse-holder;
+	stop the action.
+
+Before inserting a breaker (called fuse) into the time-fuse-holder:
+	if the time-fuse-holder contains a breaker:
+		say "You will need to remove the other fuse from the time machine first.";
+		stop the action;
+	otherwise:
+		continue the action.
+
+After inserting a breaker (called fuse) into the time-fuse-holder:
+	if the fuse is working:
+		say "FUSE GOOD. TIME MACHINE LIGHT ON.";
+		now the fuse is in the time-fuse-holder;
+		now small light is switched on;
+	otherwise:
+		say "FUSE BAD. TIME MACHINE LIGHT OFF.";
+		now small light is switched off.
+
+
+
+Section - Removing Fuse From Time Machine
+
+Before removing a breaker (called fuse) from the time machine: try taking the fuse.
+Before removing a breaker (called fuse) from the control panel: try taking the fuse.
+Before removing a breaker (called fuse) from the  hinged light panel: try taking the fuse.
+
+Before removing a breaker (called fuse) from the time-fuse-holder: try taking the fuse.
+
+Before taking a breaker (called fuse):
+	if the fuse is contained in the time-fuse-holder:
+		if the fuse is working:
+			say "TIME MACHINE POWERS DOWN."; [say "The single light on the control panel dims to black and the barely parceptible hum surrounding the time machine fades away.";]
+		otherwise:
+			continue the action.
+
 
 Chapter - Control Panel
 
@@ -1733,9 +1846,10 @@ Instead of inserting the metal key into the keyhole:
 	try unlocking the hinged light panel with the metal key.
 
 After unlocking the hinged light panel with the metal key:
+	now fuse-time-machine-found is true;
 	say "HINGED LIGHT PANEL UNLOCKED."
 
-Chapter - Lever
+Section - Lever
 
 The on-off-switch is a kind of device. [DEL thing.]
 The on-off-switch is either forward or backwards. The on-off-switch is usually backwards.
@@ -1748,67 +1862,11 @@ The description of the lever is "LEVER DESCRIPTION."
 Instead of switching on the lever: try activating the time machine.
 
 
-Chapter - Inserting Fuse In Time Machine
-
-Before inserting a breaker (called fuse) into the time machine:
-	try inserting the fuse into the time-fuse-holder;
-	stop the action.
-
-Before inserting a breaker (called fuse) into the control panel:
-	try inserting the fuse into the time-fuse-holder;
-	stop the action.
-
-Before inserting a breaker (called fuse) into the time-fuse-holder:
-	if the time-fuse-holder contains a breaker:
-		say "You will need to remove the other fuse from the time machine first.";
-		stop the action;
-	otherwise:
-		continue the action.
-
-After inserting a breaker (called fuse) into the time-fuse-holder:
-	if the fuse is working:
-		say "FUSE GOOD. TIME MACHINE LIGHT ON.";
-		now the fuse is in the time-fuse-holder;
-		now small light is switched on;
-	otherwise:
-		say "FUSE BAD. TIME MACHINE LIGHT OFF.";
-		now small light is switched off.
-
-Chapter - Removing Fuse From Time Machine
-
-After removing a breaker (called fuse) from the control panel:
-	if the fuse is working:
-		say "The single light on the control panel dims to black and the barely parceptible hum surrounding the time machine fades away.";
-	otherwise:
-		say "NOT WORKING FUSE REMOVED FROM CONTROL PANEL."
 
 
-Chapter - Activating The Time Machine
 
-Activating is an action applying to one touchable thing.
-Understand "activate [something]" as activating.
 
-To say nothing-happens:
-	say "YOU PUSH THE LEVER FORWARD. NOTHING HAPPENS."
 
-Instead of activating the time machine:
-	if the player is in the time machine:
-		if a breaker (called fuse) is contained in the time-fuse-holder:		
-			if the fuse is working:
-				say "YOU PUSH THE LEVER FORWARD.";
-				now the lever is switched on;
-			otherwise:
-				say "[nothing-happens]";
-		otherwise:
-			say "[nothing-happens]";
-	otherwise:
-		if a breaker (called fuse) is contained in the time-fuse-holder: 
-			if the fuse is working: [DEL in the time-fuse-holder is working:]
-				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers briefly and disappears from the room.";
-				now the time machine is nowhere;
-				now humboldt-should-return is true;
-		otherwise:
-			say "[nothing-happens]".
 	
 Chapter - Workshop Windows
 

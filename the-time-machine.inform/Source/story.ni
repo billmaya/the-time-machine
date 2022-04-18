@@ -1019,6 +1019,8 @@ The orrery-fuse-holder is undescribed.
 The printed name of the orrery-fuse-holder is "orrery fuse holder".
 The description of the orrery-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the fuse-orrery in the orrery-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the orrery-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
 
+Understand "fuse holder" or "orrery fuse holder" as orrery-fuse-holder.
+
 The examine containers rule does nothing when examining the orrery-fuse-holder. [Suppresses "In the fuse holder is an orrery fuse." after description printed] 
 Understand "orrery fuse holder" or "fuse holder" or "clips" or "clip" as orrery-fuse-holder.
 		
@@ -1121,30 +1123,32 @@ After inserting a breaker (called fuse) into the orrery-fuse-holder:
 	otherwise:
 		say "Putting that fuse into the orrery doesn't seem to have any effect."	
 
-test fuse-prep with "north / north / west / north / slide right panel / purloin fuse-time-machine."
-
-test orrery-fuse with "test fuse-prep / x mechanism / x orrery-fuse-holder / take fuse-orrery / x fuse-holder / x mechanism / put fuse-orrery in orrery-fuse-holder / x orrery-fuse-holder / x mechanism."
-
-test fuse-time-machine with "test fuse-prep / x mechanism / x orrery-fuse-holder / take fuse-orrery / put fuse-time-machine in orrery-fuse-holder / x orrery-fuse-holder / x mechanism."
-
-test two-fuses with "test fuse-prep / put fuse-time-machine in orrery / put fuse-time-machine in right panel / put fuse-time-machine in orrery-fuse-holder / take fuse-orrery / put fuse-time-machine in orrery-fuse-holder / put fuse-orrery in orrery-fuse-holder / take fuse-time-machine / put fuse-orrery in orrery-fuse-holder."
 
 Section - Removing Fuse From Orrery
 
 Before removing a breaker (called fuse) from the orrery: try taking the fuse.
 Before removing a breaker (called fuse) from the right panel: try taking the fuse.
 
-Before removing a breaker (called fuse) from the orrery-fuse-holder: try taking the fuse.
+Before removing a breaker (called fuse) from the orrery-fuse-holder:
+	try taking the fuse;
+	stop the action.
 
 Before taking a breaker (called fuse):
 	if the fuse is contained in the orrery-fuse-holder:
 		if the fuse is working:
 			say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
 			now the orrery is switched off;
+			now the player is carrying the fuse-orrery;
+			stop the action;
 		otherwise:
+			say "Taken.";
 			continue the action.
 
-Section - Orrery Tests
+The standard report taking rule does nothing when taking a breaker.
+[The can't remove what's not inside rule does nothing when taking a breaker.]
+
+
+Section - Tests | Orrery | General
 		
 Test x-orrery with "x orrery / x planetarium / x device / x box."
 Test x-triptych with "x triptych."
@@ -1167,8 +1171,15 @@ Test all-text-orrery with "x orrery / x triptych / x central panel / x left pane
 
 Test new-config with "x orrery / slide right panel / x mechanism / x fuse / x fuse-holder / x holder."
 
+Section - Tests | Orrery | Fuses
 	
+test fuse-prep with "north / north / west / north / slide right panel / purloin fuse-time-machine."
 
+test orrery-fuse with "test fuse-prep / x mechanism / x orrery-fuse-holder / take fuse-orrery / x orrery-fuse-holder / x mechanism / put fuse-orrery in orrery-fuse-holder / x orrery-fuse-holder / x mechanism."
+
+test fuse-time-machine with "test fuse-prep / x mechanism / x orrery-fuse-holder / take fuse-orrery / put fuse-time-machine in orrery-fuse-holder / x orrery-fuse-holder / x mechanism."
+
+test two-fuses with "test fuse-prep / put fuse-time-machine in orrery / put fuse-time-machine in right panel / put fuse-time-machine in orrery-fuse-holder / take fuse-orrery / put fuse-time-machine in orrery-fuse-holder / put fuse-orrery in orrery-fuse-holder / take fuse-time-machine / put fuse-orrery in orrery-fuse-holder."
 
 
 
@@ -1644,8 +1655,14 @@ Before taking a breaker (called fuse):
 		if the fuse is working:
 			say "TIME MACHINE POWERS DOWN."; [say "The single light on the control panel dims to black and the barely parceptible hum surrounding the time machine fades away.";]
 		otherwise:
-			continue the action.
+			say "Taken.";
+		continue the action.
 
+The standard report taking rule does nothing when taking a breaker.
+
+Section - Tests | Time Machine | Fuses
+
+test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse."
 
 Chapter - Control Panel
 
@@ -1710,10 +1727,14 @@ The keyhole is an open container.
 The keyhole is part of the light panel.
 The description of the keyhole is "KEYHOLE DESCRIPTION."
 
+Section - Time Machine Fuse Holder
+
 The time-fuse-holder is a container.
 The time-fuse-holder is inside the hinged light panel.
 The printed name of time-fuse-holder is "time machine fuse holder".
 The description of the time-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is the fuse-orrery in the time-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the time-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
+
+Understand "fuse holder" or "time machine fuse holder" as time-fuse-holder.
 
 [OLD DESC The panel-upper-left is scenery in the time machine.
 The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."

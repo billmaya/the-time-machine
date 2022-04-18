@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28421 ]
+[ WORDS - 28240 ]
 
 Table of Releases
 release	notes
@@ -1086,43 +1086,15 @@ Instead of switching off the orrery:
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
 			
-
-
 Section - Orrery Fuse
 			
 The fuse-orrery is a breaker. "pristine".
 The printed name of the fuse-orrery is "orrery fuse".
 The fuse-orrery is working.
 The fuse-orrery is undescribed.
-The fuse-orrery is in the orrery-fuse-holder. [DEL right panel. fuse]
+The fuse-orrery is in the orrery-fuse-holder.
 The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
 Understand "orrery fuse" or "pristine fuse" or "fuse" as fuse-orrery.
-
-[Section - Taking A Fuse
-
-[From the orrery]
-Before removing a breaker (called fuse) from the orrery: try taking the fuse.
-Before removing a breaker (called fuse) from the right panel: try taking the fuse.
-Before removing a breaker (called fuse) from the orrery-fuse-holder: try taking the fuse.
-
-[From the time machine]
-Before removing a breaker (called fuse) from the time machine: try taking the fuse.
-Before removing a breaker (called fuse) from the control panel: try taking the fuse.
-Before removing a breaker (called fuse) from the  hinged light panel: try taking the fuse.
-Before removing a breaker (called fuse) from the time-fuse-holder: try taking the fuse.
-
-Before taking a breaker (called fuse):
-	if the fuse is contained in the orrery-fuse-holder:
-		if the fuse is working:
-			say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
-			now the orrery is switched off;
-		otherwise:
-			continue the action;
-	if the fuse is contained in the time-fuse-holder:
-		if the fuse is working:
-			say "TIME MACHINE POWERS DOWN."; 
-		otherwise:
-			continue the action.]
 
 Section - Inserting Fuse In Orrery
 
@@ -1172,7 +1144,6 @@ Before taking a breaker (called fuse):
 		otherwise:
 			continue the action.
 
-
 Section - Orrery Tests
 		
 Test x-orrery with "x orrery / x planetarium / x device / x box."
@@ -1195,22 +1166,6 @@ Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-me
 Test all-text-orrery with "x orrery / x triptych / x central panel / x left panel / x right panel / open right panel / open right panel / x orrery / close right panel / close right panel / switch off orrery / purloin orrery fuse / switch off orrery."
 
 Test new-config with "x orrery / slide right panel / x mechanism / x fuse / x fuse-holder / x holder."
-
-[Chapter - Breaker 
-
-A breaker is a kind of thing.
-The breaker is either working or not working. A breaker is usually working.]
-
-[fuse-time-machine-found is a truth state that varies. [Move these two lines to time machine]
-fuse-time-machine-found is false.]	
-
-[The fuse-orrery is a breaker. "pristine".
-The printed name of the fuse-orrery is "orrery fuse".
-The fuse-orrery is working.
-The fuse-orrery is undescribed.
-The fuse-orrery is in the orrery-fuse-holder. [DEL right panel. fuse]
-The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
-Understand "orrery fuse" or "pristine fuse" or "fuse" as fuse-orrery.]
 
 	
 
@@ -1614,7 +1569,7 @@ Instead of activating the time machine:
 			say "[nothing-happens]";
 	otherwise:
 		if a breaker (called fuse) is contained in the time-fuse-holder: 
-			if the fuse is working: [DEL in the time-fuse-holder is working:]
+			if the fuse is working: 
 				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers briefly and disappears from the room.";
 				now the time machine is nowhere;
 				now humboldt-should-return is true;
@@ -1647,17 +1602,6 @@ Understand "time machine fuse" or "burnt fuse" or "fuse" as fuse-time-machine.
 
 fuse-time-machine-found is a truth state that varies. 
 fuse-time-machine-found is false.	
-
-[
-[DEL]
-burnt-out-fuse-found is a truth state that varies.
-burnt-out-fuse-found is false.
-	
-The burnt-out-fuse is a thing.
-The burnt-out-fuse is undescribed.
-[The burnt-out-fuse is in the control panel.]
-The printed name of burnt-out-fuse is "burnt out fuse".
-[Understand "burnt fuse" or "burnt out fuse" as burnt-out-fuse.]]
 
 Section - Inserting Fuse In Time Machine
 
@@ -1713,7 +1657,7 @@ Understand "controls" as control panel.
 Instead of examining the control panel:
 	if the player is in the time machine:
 		say "> EXAMINE CONTROL PANEL.";
-		[say "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven dials each. To the right of the rows of dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.[paragraph break]The bottom section has the word 'DESTINATION' etched into the panel above two rows of numbers, one above the other, with each number[']s digits displayed in its own tiny window.[no line break][if numeric-year is 1895] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket] [no line break] [otherwise] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] [paragraph break] Underneath the two lines of numbers are a series of switches labeled with the numbers [bracket]0[close bracket] through [bracket]9[close bracket] and the letters [bracket]A[close bracket] through [bracket]F[close bracket]. To the right of these switches are two square buttons with the words 'SET' and 'CLEAR' etched into the panel next to them.";]
+		[OLD DESC "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven dials each. To the right of the rows of dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.[paragraph break]The bottom section has the word 'DESTINATION' etched into the panel above two rows of numbers, one above the other, with each number[']s digits displayed in its own tiny window.[no line break][if numeric-year is 1895] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket] [no line break] [otherwise] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] [paragraph break] Underneath the two lines of numbers are a series of switches labeled with the numbers [bracket]0[close bracket] through [bracket]9[close bracket] and the letters [bracket]A[close bracket] through [bracket]F[close bracket]. To the right of these switches are two square buttons with the words 'SET' and 'CLEAR' etched into the panel next to them.";]
 	otherwise:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
@@ -1765,23 +1709,21 @@ The description of the small light is "SMALL LIGHT DESCRIPTION. LIGHT IS [if sma
 The keyhole is an open container.
 The keyhole is part of the light panel.
 The description of the keyhole is "KEYHOLE DESCRIPTION."
-[DEL The keyhole is lockable.
-The keyhole is locked.]
 
 The time-fuse-holder is a container.
 The time-fuse-holder is inside the hinged light panel.
 The printed name of time-fuse-holder is "time machine fuse holder".
 The description of the time-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is the fuse-orrery in the time-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the time-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
 
-[DEL The panel-upper-left is scenery in the time machine.
+[OLD DESC The panel-upper-left is scenery in the time machine.
 The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
 Understand "dial" or "dials" as panel-upper-left.]
 
-[DEL The panel-upper-right is scenery in the time machine.
+[OLD DESC The panel-upper-right is scenery in the time machine.
 The description of panel-upper-right is "To the right of the dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."
 Understand "lamp" or "round button" as panel-upper-right.]
 	
-[DEL The panel-bottom is scenery in the time machine.
+[OLD DESC The panel-bottom is scenery in the time machine.
 The description of panel-bottom is "Below the two rows of numbers and letters are sixteen toggle switches in two rows of eight switches each. The top row is labeled with the numbers 0[unicode 8211]9; the bottom row with the numbers 8 and 9 and the letters A[unicode 8211]F. All of the switches are in the Off position. To the right of the two rows of switches are two square buttons, one labeled 'SET'; the other labeled 'CLEAR'."
 Understand "switches" or "square button" or "square buttons" or "clear button" or "set button" or "numbers" as panel-bottom.]
 
@@ -1791,7 +1733,6 @@ Understand "date" or "dates" or "destination" as panel-things.]
 [Actions on control panel]
 
 [Adjusting -> Modifying]
-
 Adjusting is an action applying to one thing.
 Understand "adjust [something]" as adjusting.
 Instead of adjusting: say "I don[']t see how you would do that right now."
@@ -1801,7 +1742,6 @@ Instead of adjusting the origin section: try modifying the origin section.
 Instead of adjusting the elapsed time section: try modifying the elapsed time section.
 
 [Changing -> Modifying]
-
 Changing is an action applying to one thing.
 Understand "change [something]" as changing.
 Instead of changing: say "I don[']t see how you would do that right now."
@@ -1811,7 +1751,6 @@ Instead of changing the origin section: try modifying the origin section.
 Instead of changing the elapsed time section: try modifying the elapsed time section.
 
 [Setting -> Modifying]
-
 Setting is an action applying to one thing.
 Understand "set [something]" as setting.
 Instead of setting: say "I don[']t see how you would do that right now."
@@ -1821,13 +1760,9 @@ Instead of setting the origin section: try modifying the origin section.
 Instead of setting the elapsed time section: try modifying the elapsed time section.
 
 [Modifying]
-
 Modifying is an action applying to one thing.
 Understand "modify [something]" as modifying.
 Instead of modifying: say "I don[']t see how you would do that right now."
-		
-[DEL Instead of modifying the panel-things:
-	say "[first time]You reach out to flip some of the switches in the bottom section of the panel but hesitate, realizing that without Wells you have no idea how the time selector works. [only]Best to leave things on the control panel as they are for now."]
 
 Instead of modifying the destination section:
 	say "BEST LEAVE THINGS AS THEY ARE FOR NOW."
@@ -1851,7 +1786,7 @@ After unlocking the hinged light panel with the metal key:
 
 Section - Lever
 
-The on-off-switch is a kind of device. [DEL thing.]
+The on-off-switch is a kind of device.
 The on-off-switch is either forward or backwards. The on-off-switch is usually backwards.
 
 The lever is a on-off-switch.
@@ -2494,7 +2429,7 @@ Book - Travel To 802,701
 
 Travel To 802,701 is a recurring scene.
 
-Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the lever [DEL button] is switched on.
+Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the lever is switched on.
 
 travel-to-802701 is a truth state that varies.
 travel-to-802701 is false.
@@ -2515,7 +2450,7 @@ When Travel To 802,701 begins:
 	now the numeric-year is 802701;
 	now the time machine is in the Clearing;
 	now the time machine is described;
-	now the lever [DEL button] is switched off.
+	now the lever is switched off.
 
 Travel To 802,701 ends when the time machine is in the Clearing.
 
@@ -2526,7 +2461,7 @@ Book - Travel To 1895
 
 Travel To 1895 is a recurring scene.
 
-Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the lever [DEL button] is switched on.
+Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the lever is switched on.
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
@@ -2539,8 +2474,7 @@ When Travel To 1895 begins:
 	now the numeric-year is 1895;
 	now the time machine is in the Workshop;
 	now the time machine is undescribed;
-	[now fuse-burnt-out is true;] [Commented out so multiple time travel round trips are possible]
-	now the lever [DEL button] is switched off.
+	now the lever is switched off.
 	
 Travel To 1895 ends when the time machine is in the Workshop.
 

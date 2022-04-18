@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28578 ]
+[ WORDS - 28669 571 ]
 
 Table of Releases
 release	notes
@@ -983,7 +983,7 @@ The description of the left panel is "The left panel displays a bas-relief illus
 Understand "left" or "left side" or "left side of orrery" as left panel.
 
 The central panel is a thing.
-The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the working-fuse is in the right panel] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
+The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the orrery is switched on] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
 Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" as central panel.
 
 The right panel is a thing.
@@ -1121,14 +1121,6 @@ The fuse-orrery is in the orrery-fuse-holder. [DEL right panel. fuse]
 The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
 Understand "orrery fuse" or "pristine fuse" or "fuse" as fuse-orrery.
 
-[DEL When no longer needed]
-The working-fuse is a thing. "WORKING FUSE."
-The working-fuse is undescribed.
-The working-fuse is nowhere. [in theright panel.]
-The printed name of working-fuse is "fuse".
-Understand "fuse" as working-fuse.
-working-fuse-burnt-out is a truth state that varies. 
-working-fuse-burnt-out is false. [Was used in Release 3 but disabled in Release 4 onward. Kept for future use.]
 	
 Section - Taking A Fuse
 
@@ -1153,11 +1145,10 @@ Before taking a breaker (called fuse):
 	if the fuse is contained in the time-fuse-holder:
 		if the fuse is working:
 			say "TIME MACHINE POWERS DOWN."; 
-			[now the orrery is switched off;]
 		otherwise:
 			continue the action.
 
-Section - Putting Fuse In Orrery
+Section - Inserting Fuse In Orrery
 
 Before inserting a breaker (called fuse) into the orrery:
 	try inserting the fuse into the right panel;
@@ -1167,7 +1158,7 @@ Before inserting a breaker (called fuse) into the right panel:
 	try inserting the fuse into the orrery-fuse-holder;
 	stop the action.
 
-Before inserting a breaker (called fuse) into the orrery-fuse-holder: [right panel:]
+Before inserting a breaker (called fuse) into the orrery-fuse-holder:
 	if the orrery-fuse-holder contains a breaker:
 		say "You will need to remove the other fuse from the orrery first.";
 		stop the action;
@@ -1557,10 +1548,17 @@ The description of the time machine is "[if the player is not in the time machin
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" as time machine.
 
+Instead of opening the time machine: say "The time machine is already 'open.' All you have to do is [if the player is in the time machine]get out[otherwise]get inside[end if] if you desire."
+[At some point should implement >climb in/out of time machine.]
+
 [Replaced "examining" with "searching" in Instead statement]
 Instead of searching [examining] the time machine:
-	if the working-fuse is in the control panel: [time machine,] 
-		say "The time machine looks like it is ready to operate."; 
+	if a breaker (called fuse) is contained in the time-fuse-holder:		
+		if the fuse is working:
+			say "TIME MACHINE READY TO OPERATE."; ["The time machine looks like it is ready to operate.";] 
+		otherwise:
+			say "TIME MACHINE NOT READY TO OPERATE."
+[	
 	otherwise:
 		if the player has the working-fuse:
 			if examined-blueprints is true:
@@ -1572,9 +1570,7 @@ Instead of searching [examining] the time machine:
 				say "Having reviewed the blueprints, you can see that there[']s one missing component, you can see where it should go, but you have no idea what it is.";
 			otherwise:
 				say "A cursory search of the time machine doesn[']t reveal how it operates or how to get it running.[no line break][first time] If only there was some information you had about its construction.[only]".
-
-Instead of opening the time machine: say "The time machine is already 'open.' All you have to do is [if the player is in the time machine]get out[otherwise]get inside[end if] if you desire."
-[At some point should implement >climb in/out of time machine.]
+]
 
 Section - Time Machine Fuse
 
@@ -1605,9 +1601,8 @@ Understand "controls" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven dials each. To the right of the rows of dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.
-
-		The bottom section has the word 'DESTINATION' etched into the panel above two rows of numbers, one above the other, with each number[']s digits displayed in its own tiny window.[no line break][if numeric-year is 1895] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket] [no line break] [otherwise] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] [paragraph break] Underneath the two lines of numbers are a series of switches labeled with the numbers [bracket]0[close bracket] through [bracket]9[close bracket] and the letters [bracket]A[close bracket] through [bracket]F[close bracket]. To the right of these switches are two square buttons with the words 'SET' and 'CLEAR' etched into the panel next to them.";
+		say "> EXAMINE CONTROL PANEL.";
+		[say "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven dials each. To the right of the rows of dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.[paragraph break]The bottom section has the word 'DESTINATION' etched into the panel above two rows of numbers, one above the other, with each number[']s digits displayed in its own tiny window.[no line break][if numeric-year is 1895] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket] [no line break] [otherwise] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] [paragraph break] Underneath the two lines of numbers are a series of switches labeled with the numbers [bracket]0[close bracket] through [bracket]9[close bracket] and the letters [bracket]A[close bracket] through [bracket]F[close bracket]. To the right of these switches are two square buttons with the words 'SET' and 'CLEAR' etched into the panel next to them.";]
 	otherwise:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
@@ -1755,7 +1750,33 @@ The description of the lever is "LEVER DESCRIPTION."
 Instead of switching on the lever: try activating the time machine.
 
 
-Section - Putting Fuse In Time Machine
+Section - Inserting Fuse In Time Machine
+
+Before inserting a breaker (called fuse) into the time machine:
+	try inserting the fuse into the time-fuse-holder;
+	stop the action.
+
+Before inserting a breaker (called fuse) into the control panel:
+	try inserting the fuse into the time-fuse-holder;
+	stop the action.
+
+Before inserting a breaker (called fuse) into the time-fuse-holder:
+	if the time-fuse-holder contains a breaker:
+		say "You will need to remove the other fuse from the time machine first.";
+		stop the action;
+	otherwise:
+		continue the action.
+
+After inserting a breaker (called fuse) into the time-fuse-holder:
+	if the fuse is working:
+		say "FUSE GOOD. TIME MACHINE LIGHT ON.";
+		now the fuse is in the time-fuse-holder;
+		now small light is switched on;
+	otherwise:
+		say "FUSE BAD. TIME MACHINE LIGHT OFF.";
+		now small light is switched off.
+
+Section - Removing Fuse From Time Machine
 
 After removing a breaker (called fuse) from the control panel:
 	if the fuse is working:
@@ -1763,32 +1784,6 @@ After removing a breaker (called fuse) from the control panel:
 	otherwise:
 		say "NOT WORKING FUSE REMOVED FROM CONTROL PANEL."
 
-[Two different ways to implement. See See https://bit.ly/320owaO]
-
-[3.1.8.2-A - Using a boolean examined-blueprints to determine if blueprint has been examined.] 
-[See Section 1 - Blueprints to see where boolean is set.]
-
-[Writing §9.13. The past and perfect tenses]
-
-[3.1.8.2-B - Using whether or not an object has been examined instead of setting a boolean value true or false.]
-[See Section 1 - Blueprints to see where the blueprint examining is handled.]
-
-[DEL Instead of inserting the burnt-out-fuse into the time machine: 
-	try inserting the burnt-out-fuse into the control panel.
-
-Instead of inserting the burnt-out-fuse into the control panel:
-	say "INSERTING BURNT-OUT FUSE."	]
-
-Instead of inserting a breaker (called fuse) [working-fuse] into the time machine: 
-	try inserting the fuse [working-fuse] into the control panel.
-		
-Instead of inserting the a breaker (called fuse) [burnt fuse] [working-fuse] into the control panel: 
-	if the player has a breaker [working-fuse]:
-		if examined-blueprints is true:
-			say "Using the blueprints as a guide, you insert the fuse into the control panel in the appropriate slot.[no line break][if working-fuse-burnt-out is false] With an barely perceptible hum, the time machine powers up and the light on the control panel lights up.[end if]";
-			now the fuse [working-fuse] is in the control panel; 
-		otherwise:
-			say "Despite your best efforts you don't know where the fuse belongs.";
 
 Section - Activating The Time Machine
 
@@ -1801,7 +1796,7 @@ To say nothing-happens:
 Instead of activating the time machine:
 	if the player is in the time machine:
 		if a breaker (called fuse) is contained in the time-fuse-holder:		
-			if the fuse is working: [DEL in the time-fuse-holder is working:] 
+			if the fuse is working:
 				say "YOU PUSH THE LEVER FORWARD.";
 				now the lever is switched on;
 			otherwise:

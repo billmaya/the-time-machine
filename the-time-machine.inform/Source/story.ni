@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28360 ]
+[ WORDS - 28445 ]
 
 Table of Releases
 release	notes
@@ -980,6 +980,11 @@ The description of the orrery is "A mechanical model of our solar system contain
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 
+[Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
+The examine devices rule does nothing when examining the orrery.
+
+Section - Orrery Panels
+
 The left panel is a thing.
 The description of the left panel is "The left panel displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
 
@@ -997,6 +1002,8 @@ Understand "right" or "right side" or "right side of orrery" as right panel.
 
 The left panel, central panel, and right panel are part of the orrery.
 
+Section - Orrery Mechanism
+
 The orrery-mechanism is a thing.
 The orrery-mechanism is part of the right panel.
 The orrery-mechanism is undescribed.
@@ -1013,6 +1020,8 @@ Instead of examining the orrery-mechanism:
 	otherwise:
 		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information, as well as a fuse holder.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds.[otherwise] The gears are still.[end if ]" 
 
+Section - Orrery Fuse Holder
+
 The orrery-fuse-holder is a opaque container.
 The orrery-fuse-holder is part of the orrery-mechanism.
 The orrery-fuse-holder is undescribed.
@@ -1023,9 +1032,8 @@ Understand "fuse holder" or "orrery fuse holder" as orrery-fuse-holder.
 
 The examine containers rule does nothing when examining the orrery-fuse-holder. [Suppresses "In the fuse holder is an orrery fuse." after description printed] 
 Understand "orrery fuse holder" or "fuse holder" or "clips" or "clip" as orrery-fuse-holder.
-		
-[Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
-The examine devices rule does nothing when examining the orrery.
+
+Section - Actions On Orrery
 
 [ > use orrery ]
 Instead of using the orrery:
@@ -1088,7 +1096,30 @@ Instead of switching off the orrery:
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
 			
-Section - Orrery Fuse
+Section - Tests | Orrery | General
+		
+Test x-orrery with "x orrery / x planetarium / x device / x box."
+Test x-triptych with "x triptych."
+Test x-model with "x central panel / x model / x spheres / x jeweled spheres / x planets / x brass rings / x rings / x dials / x solar system."
+Test x-mechanism with "slide right panel / x orrery-mechanism / x mechanism / x gears / x shafts / x slotted pin followers / x pin followers."
+Test x-left-panel with "x left panel / x left / x left side / x left side of orrery."
+Test x-right-panel with "x right panel / x right / x right side / x right side of orrery."
+Test open-orrery with "open orrery."
+Test close-orrery with "close orrery."
+Test open-right-panel with "open right panel / open right panel / close right panel."
+Test close-right-panel with "open right panel / close right panel / close right panel."
+Test slide-right-panel with "slide right panel / slide right panel."
+Test pull-right-panel with "pull right panel / pull right panel."
+Test push-right-panel with "push right panel / push right panel."
+Test switch-off-orrery with "switch off orrery / turn off orrery / purloin fuse / switch off orrery / put fuse in right panel / switch off orrery."
+
+Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-mechanism / test x-left-panel / test x-right-panel / test open-orrery / test close-orrery / test open-right-panel / test close-right-panel / test slide-right-panel / test pull-right-panel / test push-right-panel / test switch-off-orrery."
+
+Test all-text-orrery with "x orrery / x triptych / x central panel / x left panel / x right panel / open right panel / open right panel / x orrery / close right panel / close right panel / switch off orrery / purloin orrery fuse / switch off orrery."
+
+Test new-config with "x orrery / slide right panel / x mechanism / x fuse / x fuse-holder / x holder."
+			
+Chapter - Orrery Fuse
 			
 The fuse-orrery is a breaker. "pristine".
 The printed name of the fuse-orrery is "orrery fuse".
@@ -1147,29 +1178,6 @@ Before taking a breaker (called fuse):
 The standard report taking rule does nothing when taking a breaker.
 [The can't remove what's not inside rule does nothing when taking a breaker.]
 
-
-Section - Tests | Orrery | General
-		
-Test x-orrery with "x orrery / x planetarium / x device / x box."
-Test x-triptych with "x triptych."
-Test x-model with "x central panel / x model / x spheres / x jeweled spheres / x planets / x brass rings / x rings / x dials / x solar system."
-Test x-mechanism with "slide right panel / x orrery-mechanism / x mechanism / x gears / x shafts / x slotted pin followers / x pin followers."
-Test x-left-panel with "x left panel / x left / x left side / x left side of orrery."
-Test x-right-panel with "x right panel / x right / x right side / x right side of orrery."
-Test open-orrery with "open orrery."
-Test close-orrery with "close orrery."
-Test open-right-panel with "open right panel / open right panel / close right panel."
-Test close-right-panel with "open right panel / close right panel / close right panel."
-Test slide-right-panel with "slide right panel / slide right panel."
-Test pull-right-panel with "pull right panel / pull right panel."
-Test push-right-panel with "push right panel / push right panel."
-Test switch-off-orrery with "switch off orrery / turn off orrery / purloin fuse / switch off orrery / put fuse in right panel / switch off orrery."
-
-Test all-orrery with "test x-orrery / test x-triptych / test x-model / test x-mechanism / test x-left-panel / test x-right-panel / test open-orrery / test close-orrery / test open-right-panel / test close-right-panel / test slide-right-panel / test pull-right-panel / test push-right-panel / test switch-off-orrery."
-
-Test all-text-orrery with "x orrery / x triptych / x central panel / x left panel / x right panel / open right panel / open right panel / x orrery / close right panel / close right panel / switch off orrery / purloin orrery fuse / switch off orrery."
-
-Test new-config with "x orrery / slide right panel / x mechanism / x fuse / x fuse-holder / x holder."
 
 Section - Tests | Orrery | Fuses
 	
@@ -1571,7 +1579,7 @@ To say nothing-happens:
 Instead of activating the time machine:
 	if the player is in the time machine:
 		if a breaker (called fuse) is contained in the time-fuse-holder:		
-			if the fuse is working:
+			if the small light is switched on:
 				say "YOU PUSH THE LEVER FORWARD.";
 				now the lever is switched on;
 			otherwise:
@@ -1580,7 +1588,7 @@ Instead of activating the time machine:
 			say "[nothing-happens]";
 	otherwise:
 		if a breaker (called fuse) is contained in the time-fuse-holder: 
-			if the fuse is working: 
+			if the small light is switched on:
 				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers briefly and disappears from the room.";
 				now the time machine is nowhere;
 				now humboldt-should-return is true;
@@ -1653,7 +1661,8 @@ Before removing a breaker (called fuse) from the time-fuse-holder: try taking th
 Before taking a breaker (called fuse):
 	if the fuse is contained in the time-fuse-holder:
 		if the fuse is working:
-			say "TIME MACHINE POWERS DOWN."; [say "The single light on the control panel dims to black and the barely parceptible hum surrounding the time machine fades away.";]
+			now the small light is switched off;
+			say "The small light on the control panel dims to black and the barely perceptible hum of the time machine fades away.";
 		otherwise:
 			say "Taken.";
 		continue the action.
@@ -1663,6 +1672,8 @@ The standard report taking rule does nothing when taking a breaker.
 Section - Tests | Time Machine | Fuses
 
 test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse."
+
+test orrery-time with "test fp-time / put orrery fuse in time machine fuse holder / take time machine fuse / put orrery fuse in time machine fuse holder / put time machine fuse in time machine fuse holder / take orrery fuse / put orrery fuse in time machine fuse holder / take orrery fuse from time machine fuse holder / put time machine fuse in time machine fuse holder."
 
 Chapter - Control Panel
 
@@ -1816,12 +1827,6 @@ The lever is part of the control panel.
 The description of the lever is "LEVER DESCRIPTION."
 
 Instead of switching on the lever: try activating the time machine.
-
-
-
-
-
-
 
 	
 Chapter - Workshop Windows

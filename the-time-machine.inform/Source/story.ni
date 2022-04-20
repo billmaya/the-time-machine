@@ -1695,7 +1695,7 @@ Section - Elapsed Time Section
 
 The elapsed time section is a thing.
 The elapsed time section is part of the control panel.
-The description of the elapsed time section is "Two rows of brass dials used to indicate elapsed time. The top row handles time intervals your most familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You very rarely use the intervals called out in the bottom row[unicode 8212]epochs, ages, millennia, centuries, and decades. All of the dial pointers are positioned at zero.".
+The description of the elapsed time section is "Two rows of brass dials used to indicate elapsed time. The top row handles time intervals your most familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You very rarely use the intervals called out in the bottom row[unicode 8212]epochs, ages, millennia, centuries, and decades. [if numeric-year is 1895]All of the dial pointers are positioned at zero.[otherwise]The numbers on the dials indicate that 801,006 years have elapsed.".
 Understand "dial" or "dials" as elapsed time section.
 
 Section - Destination Section

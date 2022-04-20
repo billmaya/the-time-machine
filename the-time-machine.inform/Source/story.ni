@@ -5,8 +5,8 @@ The story genre is "Science Fiction".
 The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
-
-[ WORDS - 27949 ]
+ 
+[ WORDS - 27992 ]
 
 Table of Releases
 release	notes
@@ -1542,6 +1542,20 @@ Instead of examining the blueprints:
 	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
 	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
 
+[ NEED TO REWRITE BLUEPRINTS DESCRIPTION
+	otherwise:
+		if the player has the working-fuse:
+			if examined-blueprints is true:
+				say "Having reviewed the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
+			otherwise:
+				say "Looking at the fuse you realize that it probably belongs somewhere in the time machine, but you don[']t know where.";
+		otherwise:
+			if examined-blueprints is true:
+				say "Having reviewed the blueprints, you can see that there[']s one missing component, you can see where it should go, but you have no idea what it is.";
+			otherwise:
+				say "A cursory search of the time machine doesn[']t reveal how it operates or how to get it running.[no line break][first time] If only there was some information you had about its construction.[only]".
+]
+
 Chapter - The Time Machine
 
 [ Writing §18.10. Printing the name of something - omit contents in listing ]
@@ -1564,9 +1578,9 @@ Instead of opening the time machine: say "The time machine is already 'open.' Al
 Instead of searching [examining] the time machine:
 	if a breaker (called fuse) is contained in the time-fuse-holder:		
 		if the fuse is working:
-			say "TIME MACHINE READY TO OPERATE."; ["The time machine looks like it is ready to operate.";] 
+			say "A barely perceptable hum and the lit light on the control panel makes it look like it is ready to operate.";
 		otherwise:
-			say "TIME MACHINE NOT READY TO OPERATE."
+			say "The time machine sits there in silence."
 
 Section - Activating The Time Machine
 
@@ -1574,13 +1588,13 @@ Activating is an action applying to one touchable thing.
 Understand "activate [something]" as activating.
 
 To say nothing-happens:
-	say "YOU PUSH THE LEVER FORWARD. NOTHING HAPPENS."
+	say "You push the lever foward until it stops but nothing happens."
 
 Instead of activating the time machine:
 	if the player is in the time machine:
 		if a breaker (called fuse) is contained in the time-fuse-holder:		
 			if the small light is switched on:
-				say "YOU PUSH THE LEVER FORWARD.";
+				say "You push the lever forward until it stops.";
 				now the lever is switched on;
 			otherwise:
 				say "[nothing-happens]";
@@ -1595,19 +1609,6 @@ Instead of activating the time machine:
 		otherwise:
 			say "[nothing-happens]".
 
-[	
-	otherwise:
-		if the player has the working-fuse:
-			if examined-blueprints is true:
-				say "Having reviewed the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
-			otherwise:
-				say "Looking at the fuse you realize that it probably belongs somewhere in the time machine, but you don[']t know where.";
-		otherwise:
-			if examined-blueprints is true:
-				say "Having reviewed the blueprints, you can see that there[']s one missing component, you can see where it should go, but you have no idea what it is.";
-			otherwise:
-				say "A cursory search of the time machine doesn[']t reveal how it operates or how to get it running.[no line break][first time] If only there was some information you had about its construction.[only]".
-]
 
 Chapter - Time Machine Fuse
 
@@ -1641,11 +1642,11 @@ Before inserting a breaker (called fuse) into the time-fuse-holder:
 
 After inserting a breaker (called fuse) into the time-fuse-holder:
 	if the fuse is working:
-		say "FUSE GOOD. TIME MACHINE LIGHT ON.";
+		say "The time machine shudders briefly and you hear a barely perceptable hum from the mechanism. The light on the control panel glows brightly.";
 		now the fuse is in the time-fuse-holder;
 		now small light is switched on;
 	otherwise:
-		say "FUSE BAD. TIME MACHINE LIGHT OFF.";
+		[say "FUSE BAD. TIME MACHINE LIGHT OFF.";]
 		now small light is switched off.
 
 
@@ -1750,11 +1751,14 @@ The description of the time-fuse-holder is "Two metal clips that the ends of a f
 Understand "fuse holder" or "time machine fuse holder" as time-fuse-holder.
 		
 [Actions on control panel]
+	
+To say dont-see-how:
+	say "I don[']t see how you would do that right now."
 
 [Adjusting -> Modifying]
 Adjusting is an action applying to one thing.
 Understand "adjust [something]" as adjusting.
-Instead of adjusting: say "I don[']t see how you would do that right now."
+Instead of adjusting: say "[dont-see-how]".
 
 Instead of adjusting the destination section: try modifying the destination section.
 Instead of adjusting the origin section: try modifying the origin section.
@@ -1763,7 +1767,7 @@ Instead of adjusting the elapsed time section: try modifying the elapsed time se
 [Changing -> Modifying]
 Changing is an action applying to one thing.
 Understand "change [something]" as changing.
-Instead of changing: say "I don[']t see how you would do that right now."
+Instead of changing: say "[dont-see-how]".
 
 Instead of changing the destination section: try modifying the destination section.
 Instead of changing the origin section: try modifying the origin section.
@@ -1772,7 +1776,7 @@ Instead of changing the elapsed time section: try modifying the elapsed time sec
 [Setting -> Modifying]
 Setting is an action applying to one thing.
 Understand "set [something]" as setting.
-Instead of setting: say "I don[']t see how you would do that right now."
+Instead of setting: say "[dont-see-how]".
 
 Instead of setting the destination section: try modifying the destination section.
 Instead of setting the origin section: try modifying the origin section.
@@ -1781,27 +1785,30 @@ Instead of setting the elapsed time section: try modifying the elapsed time sect
 [Modifying]
 Modifying is an action applying to one thing.
 Understand "modify [something]" as modifying.
-Instead of modifying: say "I don[']t see how you would do that right now."
+Instead of modifying: say "[dont-see-how]".
+		
+To say leave-alone:
+	say "It would probably be best to leave things as they are for now."
 
 Instead of modifying the destination section:
-	say "BEST LEAVE THINGS AS THEY ARE FOR NOW."
+	say "[leave-alone]".
 
 Instead of modifying the origin section:
-	say "BEST LEAVE THINGS AS THEY ARE FOR NOW."
+	say "[leave-alone]".
 
 Instead of modifying the elapsed time section:
-	say "THAT'S READ-ONLY. NOTHING TO CHANGE THERE."
+	say "It looks like these dials are just for display. You'd have to actual travel in time to chane them."
 
 [Unlocking the hinged panel]
 
 Instead of inserting the metal key into the keyhole:
-	say "YOU INSERT KEY IN KEYHOLE AND TURN IT.";
+	say "Inserting the key into the keyhole you turn it.";
 	now the metal key is in the keyhole;
 	try unlocking the hinged panel with the metal key.
 
 After unlocking the hinged panel with the metal key:
 	now fuse-time-machine-found is true;
-	say "HINGED PANEL UNLOCKED."
+	say "You swing the panel upwards."
 
 Section - Lever
 

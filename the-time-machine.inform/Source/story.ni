@@ -1725,6 +1725,8 @@ The small light is part of the control panel.
 The small light is switched off.
 The description of the small light is "A small light set into the surface just below the hinged panel but above the lever. The light is [if small light is switched on]glowing brightly.[otherwise]off."
 
+The examine devices rule does nothing when examining the small light.
+
 Section - Hinged Panel
 			
 The hinged panel is a locked container.
@@ -1810,6 +1812,8 @@ The lever is a on-off-switch.
 The lever is switched off.
 The lever is part of the control panel.
 The description of the lever is "A small lever that can be pushed vertically from bottom to top."
+
+The examine devices rule does nothing when examining the lever.
 
 Instead of switching on the lever: try activating the time machine.
 

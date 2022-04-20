@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28879 445 ]
+[ WORDS - 27911 ]
 
 Table of Releases
 release	notes
@@ -1810,7 +1810,6 @@ The lever is a on-off-switch.
 The lever is switched off.
 The lever is part of the control panel.
 The description of the lever is "A small lever that can be pushed vertically from bottom to top."
-[DEL The description of the lever is "LEVER DESCRIPTION."]
 
 Instead of switching on the lever: try activating the time machine.
 

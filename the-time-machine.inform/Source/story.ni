@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
 
-[ WORDS - 28445 ]
+[ WORDS - 28879 445 ]
 
 Table of Releases
 release	notes
@@ -455,7 +455,7 @@ The description of metal key is "A small metal key to his workshop that you can 
 Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 
 The metal key unlocks the workshop-door.
-The metal key unlocks the hinged light panel.
+The metal key unlocks the hinged panel.
 		
 Chapter - The Petal
 	
@@ -1654,7 +1654,7 @@ Section - Removing Fuse From Time Machine
 
 Before removing a breaker (called fuse) from the time machine: try taking the fuse.
 Before removing a breaker (called fuse) from the control panel: try taking the fuse.
-Before removing a breaker (called fuse) from the  hinged light panel: try taking the fuse.
+Before removing a breaker (called fuse) from the  hinged panel: try taking the fuse.
 
 Before removing a breaker (called fuse) from the time-fuse-holder: try taking the fuse.
 
@@ -1684,83 +1684,68 @@ Understand "controls" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "> EXAMINE CONTROL PANEL.";
-		[OLD DESC "The control panel can be divided into two sections. The top section has fourteen dials arranged in two rows of seven dials each. To the right of the rows of dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button.  Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface.[paragraph break]The bottom section has the word 'DESTINATION' etched into the panel above two rows of numbers, one above the other, with each number[']s digits displayed in its own tiny window.[no line break][if numeric-year is 1895] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]C[close bracket] [bracket]3[close bracket] [bracket]F[close bracket] [bracket]8[close bracket] [bracket]D[close bracket] [no line break] [otherwise] [paragraph break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket] [line break] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]7[close bracket] [bracket]6[close bracket] [bracket]7[close bracket].[no line break][end if] [paragraph break] Underneath the two lines of numbers are a series of switches labeled with the numbers [bracket]0[close bracket] through [bracket]9[close bracket] and the letters [bracket]A[close bracket] through [bracket]F[close bracket]. To the right of these switches are two square buttons with the words 'SET' and 'CLEAR' etched into the panel next to them.";]
+		say "The control panel is divided into two major sections. To the left, one above the other, are labeled sections that indicate Elapsed time, Destination, and Origin. To the right, from top to bottom, is what appears to be a locked hinged panel, a small light, and a lever.";
 	otherwise:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
+
+Test x-control with "test goto-workshop / get in time machine / x control panel / x elapsed time section / x destination section / x origin section / x hinged panel / x small light / x lever / x time-fuse-holder."
 
 Section - Elapsed Time Section
 
 The elapsed time section is a thing.
 The elapsed time section is part of the control panel.
-The description of elapsed time section is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
+The description of the elapsed time section is "Two rows of brass dials used to indicate elapsed time. The top row handles time intervals your most familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You very rarely use the intervals called out in the bottom row[unicode 8212]epochs, ages, millennia, centuries, and decades. All of the dial pointers are positioned at zero.".
 Understand "dial" or "dials" as elapsed time section.
 
 Section - Destination Section
 
 The destination section is a thing.
 The destination section is part of the control panel.
-The description of the destination section is "DESTINATION SECTION DESCRIPTION."
+The description of the destination section is "This section displays a row of eight numbers, each separate from its neighbor, with a tiny dial to the right of each number. The number displayed is [if numeric-year is 1895][future][otherwise][present]."
 Understand "destination date" or "date of destination" as destination section.
-[
-Just below the rows of dials a metal label are a row of eight numbers.
-A row of eight single digits underneath the word "Destination" is below the row of Elapsed Time dials above
-Below the Elapsed Time dials is the word "Destination," etched into the panel, and a row of eight single digits, each displayed in its own opening cut into the metal of the panel.
-Below the Elapsed Time dials is the destination year, spelled out in a row of eight individual digits, each displayed by itself with a tiny dial to the right of the number, and, above it, the word 'Destination' etched into the panel.
-]
+
+To say present:
+	say "[bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]0[close bracket] [bracket]1[close bracket] [bracket]8[close bracket] [bracket]9[close bracket] [bracket]5[close bracket]".
+
+To say future:
+	say "[bracket]0[close bracket] [bracket]0[close bracket] [bracket]8[close bracket] [bracket]0[close bracket] [bracket]2[close bracket] [bracket]7[close bracket] [bracket]0[close bracket] [bracket]1[close bracket]".
 		
 Section - Origin Section
 
 The origin section is a thing.
 The origin section is part of the control panel.
-The description of the origin section is "ORIGIN SECTION DESCRIPTION."
+The description of the origin section is "This section displays a row of eight numbers, each separate from its neighbor, with a tiny dial to the right of each number. The number displayed is [if numeric-year is 1895][present][otherwise][future]."
 Understand "origin date" or "date of origin" as origin section.
-[
-Below the Destination section is the origin year, spelled out like the destination in a row of eight individual digits, each displayed on its own with a tiny dial to the right of the number. Above the row of numbers is the word 'Origin' etched into the metal of the panel. 			
-]
 	
-Section - Hinged Light Panel
-			
-The hinged light panel is a locked container.
-The hinged light panel is openable.
-The hinged light panel is closed.
-The hinged light panel is locked.
-The hinged light panel is part of the control panel.
-The description of the hinged light panel is "LIGHT PANEL DESCRIPTION."
+Section - Small Light
 
 The small light is a device.
-The small light is part of the light panel.
+The small light is part of the control panel.
 The small light is switched off.
-The description of the small light is "SMALL LIGHT DESCRIPTION. LIGHT IS [if small light is switched on]ON.[otherwise]OFF."
+The description of the small light is "A small light set into the surface just below the hinged panel but above the lever. The light is [if small light is switched on]glowing brightly.[otherwise]off."
+
+Section - Hinged Panel
+			
+The hinged panel is a locked container.
+The hinged panel is openable.
+The hinged panel is closed.
+The hinged panel is locked.
+The hinged panel is part of the control panel.
+The description of the hinged panel is "A small panel, hinged at the top, with a keyhole recessed in the center of its bottom edge."
 
 The keyhole is an open container.
-The keyhole is part of the light panel.
-The description of the keyhole is "KEYHOLE DESCRIPTION."
+The keyhole is part of the hinged panel.
+The description of the keyhole is "The perfect recepticle for just the right key."
 
 Section - Time Machine Fuse Holder
 
 The time-fuse-holder is a container.
-The time-fuse-holder is inside the hinged light panel.
+The time-fuse-holder is inside the hinged panel.
 The printed name of time-fuse-holder is "time machine fuse holder".
 The description of the time-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is the fuse-orrery in the time-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the time-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
 
 Understand "fuse holder" or "time machine fuse holder" as time-fuse-holder.
-
-[OLD DESC The panel-upper-left is scenery in the time machine.
-The description of panel-upper-left is "Both rows of dials appear to be used to indicate elapsed time. The top row displays time intervals that you're familiar with[unicode 8212]years, months, weeks, days, hours, minutes, and seconds. You're not as familiar with the set of intervals displayed in the bottom row[unicode 8212]epochs, ages, 100 millennia, 10 millennia, 1 millennia, centuries, and decades. All of the dial pointers are positioned at zero."
-Understand "dial" or "dials" as panel-upper-left.]
-
-[OLD DESC The panel-upper-right is scenery in the time machine.
-The description of panel-upper-right is "To the right of the dials is a small [if the working-fuse is in the control panel]lit[otherwise]unlit[end if] lamp and a large round button. Directly underneath the button the word 'DEPART' has been etched into the panel[']s surface."
-Understand "lamp" or "round button" as panel-upper-right.]
-	
-[OLD DESC The panel-bottom is scenery in the time machine.
-The description of panel-bottom is "Below the two rows of numbers and letters are sixteen toggle switches in two rows of eight switches each. The top row is labeled with the numbers 0[unicode 8211]9; the bottom row with the numbers 8 and 9 and the letters A[unicode 8211]F. All of the switches are in the Off position. To the right of the two rows of switches are two square buttons, one labeled 'SET'; the other labeled 'CLEAR'."
-Understand "switches" or "square button" or "square buttons" or "clear button" or "set button" or "numbers" as panel-bottom.]
-
-[DEL The panel-things is scenery in the time machine.
-Understand "date" or "dates" or "destination" as panel-things.]
 		
 [Actions on control panel]
 
@@ -1805,16 +1790,16 @@ Instead of modifying the origin section:
 Instead of modifying the elapsed time section:
 	say "THAT'S READ-ONLY. NOTHING TO CHANGE THERE."
 
-[Unlocking the hinged light panel]
+[Unlocking the hinged panel]
 
 Instead of inserting the metal key into the keyhole:
 	say "YOU INSERT KEY IN KEYHOLE AND TURN IT.";
 	now the metal key is in the keyhole;
-	try unlocking the hinged light panel with the metal key.
+	try unlocking the hinged panel with the metal key.
 
-After unlocking the hinged light panel with the metal key:
+After unlocking the hinged panel with the metal key:
 	now fuse-time-machine-found is true;
-	say "HINGED LIGHT PANEL UNLOCKED."
+	say "HINGED PANEL UNLOCKED."
 
 Section - Lever
 
@@ -1824,7 +1809,8 @@ The on-off-switch is either forward or backwards. The on-off-switch is usually b
 The lever is a on-off-switch.
 The lever is switched off.
 The lever is part of the control panel.
-The description of the lever is "LEVER DESCRIPTION."
+The description of the lever is "A small lever that can be pushed vertically from bottom to top."
+[DEL The description of the lever is "LEVER DESCRIPTION."]
 
 Instead of switching on the lever: try activating the time machine.
 

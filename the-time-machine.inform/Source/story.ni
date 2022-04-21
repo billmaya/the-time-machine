@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 27762 ]
+[ WORDS - 27847 ]
 
 Table of Releases
 release	notes
@@ -3196,9 +3196,14 @@ I also want to thank the people who took the time to write reviews of v1.0 of th
 	• Leopold Tal".
 
 To say release-notes:
-	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.
-	
-Release 5 Notes (v1.2)[paragraph break]
+	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.[paragraph break]";
+	say "Release 6 Notes (v1.3)[paragraph break]
+• Added breaker.[line break]
+• Added 2nd fuse so now there's an orrery fuse (working) and a time machine fuse (not working).[line break]
+• Refactored time machine and control panel, adding explicit time machine fuse holder.[line break]
+• Added code so you cannot insert two fuses into one fuse holder.[line break]
+• Added code so devices work with working fuse and don't work with not working fuse.[paragraph break]";
+say "Release 5 Notes (v1.2)[paragraph break]
 • Handled attempting to use poker on doors in Entryway.[line break]
 • Made it so you can climb through open windows into Workshop from Garden and into Garden from Workshop.[line break]	
 • Made it so you can > use poker on windows to break latch.[line break]
@@ -3209,10 +3214,8 @@ Release 5 Notes (v1.2)[paragraph break]
 • Added newspaper to inventory when reading and returned to armchair when done (room description reflects this).[line break]
 • Added code to handle poking.[line break]
 • Added user orrery code.[line break]
-• Refactored Watchett conversation to use Eric Eve's Conversation Package extension in time-machine-conversation storyworld (code to be integrated into time-machine at when all character conversation's refactored.
-		
-	
-Release 4 Notes (v1.1)[paragraph break]
+• Refactored Watchett and Humboldt conversations to use Eric Eve's Conversation Package extension in time-machine-conversation storyworld (code to be integrated into time-machine at when all character conversation's refactored.[paragraph break]";
+say "Release 4 Notes (v1.1)[paragraph break]
 This release incorporates several fixes based on reviews and feedback from people who played the game during ParserComp 2021 judging.[paragraph break]
 • Before he leaves, Humboldt will pick up Wells['] pocket watch off of the street and hand it to you if you have not already picked it up.[line break]
 • The ambulance driver is now a person that you can have limited conversation with.[line break]
@@ -3220,5 +3223,5 @@ This release incorporates several fixes based on reviews and feedback from peopl
 • The time machine fuse will no longer burn out after a single round trip.[line break]
 • You no longer need to talk to Mrs. Watchett before successfully finding the key, but it might take several searches of the area to find it.[line break]
 • In the Parlor, the attempted taking of coals, ashes, or embers from the fireplace returns an appropirate response.[line break]
-• It is now possible to put the watch or any other object down in the Library and retrieve it. In the prior release you were unable to retrieve anything that was put down in the Library, getting a 'It's hardly portable' message when attempting to pickup the previously dropped or place object.[line break]"
+• It is now possible to put the watch or any other object down in the Library and retrieve it. In the prior release you were unable to retrieve anything that was put down in the Library, getting a 'It's hardly portable' message when attempting to pickup the previously dropped or place object.[line break]".
 

@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 27992 ]
+[ WORDS - 28049 27992 ]
 
 Table of Releases
 release	notes
@@ -990,6 +990,8 @@ The description of the left panel is "The left panel displays a bas-relief illus
 
 Understand "left" or "left side" or "left side of orrery" as left panel.
 
+[Instead of examining the left panel for the second time: say "LOOKING AT LEFT PANEL FOR 2ND TIME. FIRMLY FIXED IN PLACE (HINT TO RE-EXAMINE RIGHT PANEL)."]
+
 The central panel is a thing.
 The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the orrery is switched on] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
 Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" as central panel.
@@ -997,8 +999,12 @@ Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rin
 The right panel is a thing.
 The right panel is a container. The right panel is closed.
 The right panel is opaque.
-The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if].[if fuse-time-machine-found is true] On closer examination, it appears that this panel, unlike its leftside counterpart, can be slid upwards.[end if]".
+The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if]."
+
 Understand "right" or "right side" or "right side of orrery" as right panel.
+
+Instead of examining the right panel for the second time:
+	say "On closer examination, it appears that the right panel, unlike its counterpart, can be slid upwards." 
 
 The left panel, central panel, and right panel are part of the orrery.
 

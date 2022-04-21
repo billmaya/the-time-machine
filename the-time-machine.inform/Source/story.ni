@@ -2,7 +2,7 @@ The story title is "The Time Machine".
 The story author is "Bill Maya".
 The story headline is "A Text Adventure".
 The story genre is "Science Fiction".
-The release number is 6.
+The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
@@ -16,6 +16,7 @@ release	notes
 "4"	"v1.1 post-parsercomp 2021 release"
 "5"	"v1.2"
 "6"	"v1.3"
+"7"	"v1.4"
 
 Volume - Beginning The Story
 

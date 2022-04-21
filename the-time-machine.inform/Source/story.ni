@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 28049 27992 ]
+[ WORDS - 27998 ]
 
 Table of Releases
 release	notes
@@ -1626,9 +1626,6 @@ The fuse-time-machine is in the time-fuse-holder.
 The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance] in places."
 Understand "time machine fuse" or "burnt fuse" or "fuse" as fuse-time-machine.
 
-fuse-time-machine-found is a truth state that varies. 
-fuse-time-machine-found is false.	
-
 Section - Inserting Fuse In Time Machine
 
 Before inserting a breaker (called fuse) into the time machine:
@@ -1813,7 +1810,6 @@ Instead of inserting the metal key into the keyhole:
 	try unlocking the hinged panel with the metal key.
 
 After unlocking the hinged panel with the metal key:
-	now fuse-time-machine-found is true;
 	say "You swing the panel upwards."
 
 Section - Lever

@@ -6,7 +6,7 @@ The release number is 6.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 27998 ]
+[ WORDS - 27762 ]
 
 Table of Releases
 release	notes
@@ -1536,31 +1536,9 @@ The printed name of blueprints is "set of blueprints".
 
 Instead of taking the blueprints: try examining the blueprints.
 
-examined-blueprints is a truth state that varies.
-examined-blueprints is false.
-
 Instead of examining the blueprints:
-	say "Spreading out the sheets you see that these are the plans for the time machine in the center of the room. [no line break]";
-	if the player does not have a breaker [the working-fuse]:
-		say "Using them, you[']re able to locate actual components in the machine, but this exercise brings you no closer to figuring out how to turn the time machine on.";
-	if the player has a breaker [the working-fuse]:
-		say "The blueprints identify where the fuse fits into the control panel of the time machine.";
-	now examined-blueprints is true; [see Section 2 - The Time Machine 3.1.8.2-A]
-	rule succeeds. [see Section 2 - The Time Machine 3.1.8.2-B]
+	say "Spreading out the sheets you see that these are obviously the plans for the time machine in the center of the room."
 
-[ NEED TO REWRITE BLUEPRINTS DESCRIPTION
-	otherwise:
-		if the player has the working-fuse:
-			if examined-blueprints is true:
-				say "Having reviewed the blueprints, you now know exactly where the fuse needs to go in Wells['] time machine.";
-			otherwise:
-				say "Looking at the fuse you realize that it probably belongs somewhere in the time machine, but you don[']t know where.";
-		otherwise:
-			if examined-blueprints is true:
-				say "Having reviewed the blueprints, you can see that there[']s one missing component, you can see where it should go, but you have no idea what it is.";
-			otherwise:
-				say "A cursory search of the time machine doesn[']t reveal how it operates or how to get it running.[no line break][first time] If only there was some information you had about its construction.[only]".
-]
 
 Chapter - The Time Machine
 

@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 27847 ]
+[ WORDS - 32188 27847 ]
 
 Table of Releases
 release	notes
@@ -48,7 +48,7 @@ Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[a
 
 When play begins: 
 	now the left hand status line is "[location] - [current-year]";
-	say "[introduction]";
+	[say "[introduction]";]
 	open right-sidebar window;
 	open title-characters window;
 	open list-characters window;
@@ -62,6 +62,16 @@ When play begins:
 	now suggest-on-greeting is false.
 
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
+
+Every turn:
+	if the location of Humboldt is not the location of the player:
+		if the player is not in the Kitchen:
+			let the way be the best route from the location of Humboldt to the location of the player, using doors;
+			try Humboldt going the way;
+	refresh the list-characters window;
+	refresh the talking-to-character window;
+	refresh the character-topics window;
+	refresh the list-inventory window.
 
 Volume - Setup
 
@@ -367,9 +377,9 @@ Every turn:
 	refresh the carrying window.]
 
 
-Volume - 1895
+Volume - Settings
 
-Book - Settings
+Book - 1895
 
 Part - Woking Street
 
@@ -2166,493 +2176,8 @@ Instead of going down in the Workshop:
 		now the player is on the bench;
 	otherwise:
 		say "[windows-closed]".
-			
-Book - Characters
-
-A person can be either fixed or mobile. 
-A person is usually fixed.
-
-Part - Familiarity 
-
-Wells is a familiar man.
-Humboldt is a familiar man.
-Watchett is a familiar woman. [If commented out = "Dr. Humboldt does not respond."]
-
-The key is familiar. The printed name is "workshop key".
-The workshop-room is a familiar thing. Understand "workshop" as workshop-room. The printed name of workshop-room is "workshop".
-The workshop-door is a familiar thing. Understand "workshop door" as workshop-door.
-The front door is a familiar thing.
-The blueprints are a familiar thing.
-
-The pocket watch is familiar.
-The orrery is familiar.
-The petal is familiar.
-Food is familiar.
-The poker is familiar.
-The newspaper is familiar.
-The time machine is familiar.
-The fuse is familiar.
-
-Part - Subjects 
-
-experiments are a subject. The printed name is "Wells['] experiments".
-her-work is a subject. Understand "work" or "her work" as her-work. The printed name of her-work is "her work".
-
-diagnosis is a subject.
-examination is a subject.
-
-future is a subject. The printed name of future is "the future". [Understand "802,701" or "802,701 A.D." as future.] 
-time travel is a subject.
-[Eloi are a subject. The printed name of Eloi is "the Eloi".]
-[Weena is a subject.] 
-Morlocks are a subject. The printed name of Morlocks is "the Morlocks". Understand "morlock" or "morlocks" as Morlocks. 
-	
-[river is a subject.]
-sphinx is a subject.
-dome is a subject. Understand "domed building" as dome.
-shaft is a subject. Understand "tunnels" as shaft.
-
-information is a subject.
-
-[DEL Part - Familiarity (for use with Conversation Package by Eric Eve)
-
-Wells is a familiar man.
-Humboldt is a familiar man.
-
-experiments are a familiar thing.]
-
-Part - Watchett
-
-Watchett is a female person.
-Watchett is in the Kitchen.
-The printed name of Watchett is "Mrs. Watchett". 
-The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been cleaning his house and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
-
-Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
-[See §17.3. Overriding existing commands - New tokens for ^]
-
-[See Writing §11.5. Conditions and question ]
-watchett-key is a truth state that varies.
-watchett-key is false.
-
-To say key-start:
-	say "Mr. Wells always kept it on his person.[no line break]".
-
-To say key-middle:
-	say "[one of]That's where it still must be.[no line break][or]But it never stayed there for long.[no line break][or]But it was always falling out of his pocket at the drop of a hat.[no line break][or]But he was always loosing it.[no line break][at random]".
-
-To say key-end:
-	if the player has the key:
-		say "Looks like you found it.[no line break]";
-	otherwise:
-		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
-
-Chapter - Conversation (for use with Conversation Package by Eric Eve)
-
-The ask-suggestions are { Wells, key, self-suggestion }.
-The tell-suggestions are { Humboldt }.
-[The other-suggestions are { other }.]
-
-After saying hello to Watchett when the greeting type is explicit: 
-	say "'Good evening, Mrs. Watchett.'[paragraph break]'Good evening sir,' she replies."
-
-After saying hello to Watchett when the greeting type is implicit:
-	say "'Excuse me', you say.[paragraph break]'Yes?' she asks, pausing in her cleaning up."
-
-After quizzing watchett about key:
-	say "'[key-start] [key-middle] [key-end]'[line break]";
-	now watchett-key is true.
-
-After quizzing watchett about wells: say "CF 'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"
-
-After quizzing watchett about experiments: say "CF 'I wouldn't know anything about that. Mr. Wells was quite private about his experiments. Did all that in his workshop.'"
-
-Chapter - Conversation (for use without Conversation Package by Eric Eve)
-
-Instead of showing pocket watch to Watchett: say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'" [HACK Why can't I simply write "try asking Watchett about it.?]
-Instead of showing something to Watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
-
-Instead of telling Watchett about something: [Writing §7.6. Reading and talking]
-	try asking Watchett about it.
-
-Instead of asking Watchett about "key":
-	say "'[key-start] [key-middle] [key-end]'[line break]";
-	now watchett-key is true.
-
-Instead of asking Watchett about "wells": say "'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"
-Instead of asking Watchett about "experiments": say "'I wouldn't know anything about that. Mr. Wells was quite private about his experiments. Did all that in his workshop.'"
-Instead of asking Watchett about "workshop door": say "'Locked. Always locked. Only Mr. Wells had the key.'"
-Instead of asking Watchett about "workshop": say "'Only Mr. Wells had the key.'"
-Instead of asking Watchett about "front door": say "'Much too cold to be outside the way you're dressed. Best you warm up by the fire first.'"
-
-Instead of asking Watchett about "pocket watch": say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
-Instead of asking Watchett about "watch": say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
-Instead of asking Watchett about "orrery": say "'Built by Mr. Wells. He[']s quite the inventor.'"
-Instead of asking Watchett about "petal": say "'Very pretty, I guess. But you cannot tell much about the flower from a single petal.'"
-
-Instead of asking Watchett about "work": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "food": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "dinner": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "supper": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "meals": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "meal": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "herself": say "'I[']m really not one to talk about myself.'"
-
-Instead of answering Watchett that "hello": say "Mrs. Watchett acknowledges your greeting with a nod. 'Evening, Mr. Filby. Terrible about Mr. Wells, isn[']t it.'"
-
-Instead of asking Watchett about something: say "Mrs. Watchett thinks for a moment before replying. 'I wouldn[']t know anything about that,' she says and continues her work."
-
-
-Chapter - Movement
-
-Every turn:
-	if Watchett is mobile:
-		repeat through the Table of Watchett's Movement:
-			let the last space be the location of Watchett;
-			if Watchett can be seen by the player, say "Mrs. Watchett heads to [the destination entry].";
-			move Watchett to destination entry;
-			if Watchett can be seen by the player, say "Mrs. Watchett arrives from [the last space].";
-			blank out the whole row;
-			break.
-
-Table of Watchett's Movement
-destination
-Entryway
-Library
-Parlor
-Dining Room
-Kitchen
-
-[TBD Mrs Watchett should linger in rooms along the way to the Kitchen. Give her table of things to do.]
-[? Maybe make it a task table for each room (so I can choose a random column).]
-
-Table of Watchett's Room Tasks
-room			task
-Library			"reshelves some books"
-Library			"rearranges the chairs"
-Library			"looks out the windows"
-Library			"draws the curtains closed"
-
-Part - Humboldt 
-
-Humboldt is a person.
-Humboldt is a male.
-Humboldt is fixed.
-Humboldt is in Woking Street.
-The description of Humboldt is "A reputable physician and alienist, he has also known Wells for years. You are confident that his methodical nature, combined with his diagnostic skills, will enable him to determine what ails your friend." [enable him to determine what truth lies at the heart of Wells['] story about time travel. - modify description.]
-
-The printed name of Humboldt is "Dr. Humboldt"
-
-Understand "doctor" or "physician" or "dr" or "psychologist" or "alienist" or "dr humboldt" as Humboldt.
-
-humboldt-should-return is a truth state that varies.
-humboldt-should-return is false.
-
-humboldt-endgame-begins is a truth state that varies.
-humboldt-endgame-begins is false.
-
-Chapter - Conversation
-
-
-
-[Instead of telling someone about something, try asking someone about it.] 
-[According to the compiler, "asking someone about it" is too vague to describe a specific action]
-
-[Telling]
-
-[Commented out this line because it prevented the "follow Patience rules" below from being applied]
-[Instead of telling Humboldt about something: try asking humboldt about it.] [Writing §7.6. Reading and talking]
-
-[Replaced it with specific things to tell Humbolt about ]
-Instead of telling Humboldt about "wells": try asking Humboldt about it.
-Instead of telling Humboldt about "diagnosis": try asking Humboldt about it.
-Instead of telling Humboldt about "examination": try asking Humboldt about it.
-Instead of telling Humboldt about "workshop": try asking Humboldt about it.
-[Instead of telling Humboldt about "time machine": try asking Humboldt about it.]
-Instead of telling Humboldt about "watch": try asking Humboldt about it.
-Instead of telling Humboldt about "pocket watch": try asking Humboldt about it
-
-[Asking]
-
-[Instead of asking Humboldt about "help":
-	say "HUMBOLDT SHOULD COME BACK WITH 'There is something you could do while I'm away...' HE HANDS YOU THE PETAL, ETC. AND LEAVES."]
 		
-Instead of asking Humboldt about "wells/madman/patient/lunatic": 
-	if humboldt-endgame-begins is false:
-		say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'";
-	otherwise:
-		say "'He's sedated and resting.'"
-
-Instead of asking Humboldt about "diagnosis": 
-	if humboldt-endgame-begins is false:
-		say "'Too early to tell.'";
-	otherwise:
-		say "Unless you found some new evidence it doesn't look good for Wells. He still believes he travelled to the year 802,701 A.D."
-
-Instead of asking Humboldt about "examination": 
-	if humboldt-endgame-begins is false:
-		say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'";
-	otherwise:
-		say "'The preliminaries are already completed. I'll write my summary after you tell me what you found here."
-
-Instead of asking Humboldt about "workshop/shop": 
-	if humboldt-endgame-begins is false:
-		say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'";
-	otherwise:
-		say "Humboldt looks around the workshop. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]the workbench[or]the time machine[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."
-		[say "Humboldt looks around the workshop, poking into odd corners. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]some papers on the workbench[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."]
-
-Instead of asking Humboldt about "time machine": 
-	if humboldt-endgame-begins is false:
-		say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
-	otherwise:
-		say "'Outside my area of expertise, I'm afraid.'"
-
-[HACK - Without this > ask humboldt about THE time machine returns "There is no reply."]
-Instead of asking Humboldt about "the time machine": 
-	if humboldt-endgame-begins is false:
-		say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
-	otherwise:
-		say "'Outside my area of expertise, I'm afraid.'"
-		
-[HACK - There should be some way I can write "Instead of asking Humboldt about himself"]	
-Instead of asking Humboldt about "humboldt/doctor/physician/dr/psychologist/alienist/self/himself":
-	say "Dr. Humboldt is much too professional and polite to start rambling on about himself, especially in this sort of situation."
-
-[HACK - There should be some way I can write "Instead of asking Humboldt about yourself"]
-Instead of asking Humboldt about "me/yourself/myself": say "Perhaps you should focus on the situation at hand instead of yourself."	
-	
-[Hack. Why can't I just write "Instead of asking Humboldt about "pocket watch/watch"?]
-Instead of asking Humboldt about "pocket watch": say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
-Instead of asking Humboldt about "watch": say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'" 
-[Instead of asking Humboldt about "pocket watch" or "watch" or "timepiece" or "chronometer": say "WHAT POCKET WATCH?".]
-
-Test watch-humboldt with "ask humboldt about watch / ask humboldt about pocket watch / tell humboldt about watch / tell humboldt about pocket watch".
-
-Instead of showing the time machine to Humboldt: [This doesn't work because the time machine is fixed in place]
-	say "SHOW HUMBOLDT TIME MACHINE."
-
-Instead of showing the petal to Humboldt:
-	say "'You were supposed to find the rest of it so we could convince Wells that his story was nonsense, a figment of his imagination. Did you find it?'"
-	
-Instead of showing the key to Humboldt:
-	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [at random]What have you found?'"
-		
-Instead of showing the blueprints to Humboldt:
-	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its counterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
-
-Instead of showing a breaker [the working-fuse] to Humboldt:
-	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
-		
-Instead of showing the pocket watch to Humboldt: 
-	say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
-	[HACK - Why can't I simply write "try asking Humboldt about it."]
-	
-[Asking & Telling - Humboldt Endgame]
-
-[Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
-[Instead of showing something to Humboldt, try asking Humboldt about something.]
-
-[Second attempt that also didn't work]
-[Before an actor showing something to Humboldt:
-	[try the second noun examining the noun instead.]
-	[try asking noun about second noun.]]
-
-[This rule triggers a successful endgame]
-Instead of asking Humboldt about "flower":
-	now endgame-success is true.
-
-[Writing §7.6. Reading and talking]
-After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry][line break]"
-
-[16.13 - Topic columns]
-Table of Humboldt Endgame Responses
-topic	reply
-"petal"	"'I gave that to you earlier.'"
-"key"	"'Obviously it's the workshop key since we're standing in the bloody place.'"
-"blueprints"	"'Your guess is as good as mine.'"
-"fuse"	"'Looks like it fits into that contraption Wells has constructed.'"
-"weena"	"'Figment of Wells[apostrophe] imagination I assume.'"
-"eloi"	"'Figment of Wells[apostrophe] imagination I assume.'"
-"morlocks"	"'Figment of Wells[apostrophe] imagination I assume.'"
-"time travel"	"'Science fiction if you ask me.'"
-	
-After telling Humboldt about "petal":
-	say "'I know all that. But did you find the rest of the flower?'"
-
-After telling Humboldt about "time machine":
-	say "'I'd like to believe that it does what you say it does but we've no proof.'"
-
-After telling Humboldt about "workshop":
-	say "Humboldt listens dispassionately as you enthusiastically point out various areas of the workshop, a nonplussed look on his face."
-
-After telling Humboldt about "fuse":
-	say "Humboldt nods slightly as you explain how the fuse is necessary for the time machine[apostrophe]s operation."
-
-[ ⬆️ MIGRATED OVER TO time-machine-conversation ⬆️ ]
-
-[This rule triggers a successful endgame]
-After telling Humboldt about "flower":
-	now endgame-success is true.
-
-[ ⬇️ MIGRATED OVER TO time-machine-conversation ⬇️ ]
-
-[Each of the following rules will increase Humboldt's patience by one step]
-		
-After telling Humboldt about "time travel":
-	say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";
-	follow Patience rules.
-
-[Understand "the future" as 802701. [This doesn't work]]
-After telling Humboldt about "802701":
-	say "Humboldt listens about your adventures in the year 802,701 with a [patience of Humboldt] look on his face.";
-	follow Patience rules.
-
-Understand "eloi" or "the eloi" as Eloi. ["the eloi" doesn't work and "eloi" might be unnecessary]
-After telling Humboldt about "Eloi":
-	say "Humboldt listens as you recount your experience with the Eloi with a [patience of Humboldt] look on his face.";
-	follow Patience rules.
-
-After telling Humboldt about "Weena":
-	say "Humboldt listens to you recount your experience with Weena with a [patience of Humboldt] look on his face.";
-	follow Patience rules.
-	
-After telling Humboldt about "Morlocks":
-	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
-	follow Patience rules.
-
-After telling Humboldt about "river":
-	say "Humboldt listens to you recount your experience at the river with a [patience of Humboldt] look on his face.";
-	follow Patience rules.
-
-After telling Humboldt about "sphinx":
-	say "Humboldt listens to you recount your description of the clearing and the sphinx with a [patience of Humboldt] look on his face.";
-	follow Patience rules.
-
-Chapter - Patience
-
-[Writing §4.9. Using new kinds of value in properties]
-patience is a kind of a value.
-The patiences are accepting, tolerant, impatient, frustrated, angry. 
-	
-Humboldt has patience. Humboldt is accepting.
-
-Part - Orderlies
-
-The orderlies are people in Woking Street.
-The orderlies are undescribed.
-The description of the orderlies is "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
-Understand "attendant" or "attendants" as orderlies.
-
-Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
-
-Instead of asking the orderlies about anything: say "If they both weren't out of sight in the ambulance you could."
-Instead of telling the orderlies about anything: try asking the orderlies about it.
-Instead of showing something to the orderlies: try asking the orderlies about it.
-
-Part - Driver
-
-The driver is a person.
-The driver is a male.
-The driver is fixed.
-The driver is undescribed.
-The driver is in Woking Street.
-The description of the driver is "Trying to stay warm in the front of the ambulance, the driver waits for Humboldt to give him the signal to get going."
-
-Instead of asking the driver about anything: say "'I'm just the driver, sir. The doctor there's the one who could answer that for you."
-Instead of telling the driver about anything: say "'Fascinating, sir. I'm sure the doctor would be might interested to hear that.'"
-Instead of showing the pocket watch to the driver: say "Very nice, sir.  I'd hold on to that. I've got one like it that was me granddads."
-
-Part - Wells
-
-Wells is a person in Woking Street.
-Wells is undescribed.
-
-Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
-
-Chapter - Rescuing
-
-Understand "save [someone]" as rescuing.
-
-Rescuing is an action applying to one visible thing.
-Understand "rescue [someone]" as rescuing.
-
-Instead of rescuing Wells: try entering ambulance.
-Instead of rescuing someone: say "It does not look like [the noun] is in need of any rescuing. But the thought is nice."
-
-
-Part - Gernsback 
-[https://bit.ly/3rYUPl8]
-
-[Gernsback is a person.
-Gernsback is a male.
-Gernsback is fixed.
-Gernsback is in the Entryway.]
-
-[The printed name of Gernsback is "TBD."]
-
-Volume - Traveling In Time
-
-Book - Travel To 802,701
-
-Travel To 802,701 is a recurring scene.
-
-Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the lever is switched on.
-
-travel-to-802701 is a truth state that varies.
-travel-to-802701 is false.
-
-When Travel To 802,701 begins:
-	[say "TRAVELING TO 802,701 BEGINS.";]
-	now travel-to-802701 is true;
-	say "From Wells['] story you have an idea of what is going to happen but you never expected to see it with your own eyes or experience it yourself.
-
-	As the machine powers up and the dials start inching forward through the seconds, minutes, weeks, and months, the workshop and its contents, in fact the entire house, fade away to be replaced by a shimmering grey void. As the dials inch forward through time, vague shapes of all sizes appear and disappear on the surface of the void surrounding you and the time machine[unicode 8212]future people, places, and things living out their own personal cycle of birth, life, and death.
-
-	You grip the time machine[']s framework as it shudders and gains velocity on its pre-programmed flight through the centuries and millennia towards what you suppose is the Age of Eloi and Morlocks that Wells spoke about.
-	
-	One age passes. Two ages. Five ages. The blur of the individual dials starts slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you and the time machine starts to dissipate and fade away like an early morning fog in the face of the sun. Eventually the time machine stops, the dials indicating that 801,006 years have passed from when you started your journey in 1895.
-
-	You have arrived in the year 802,701 A.D.";
-	now the current-year is "802,701";
-	now the numeric-year is 802701;
-	now the time machine is in the Clearing;
-	now the time machine is described;
-	now the lever is switched off.
-
-Travel To 802,701 ends when the time machine is in the Clearing.
-
-[When Travel To 802,701 ends:
-	say "TRAVELING TO 802,701 ENDS."]
-
-Book - Travel To 1895
-
-Travel To 1895 is a recurring scene.
-
-Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the lever is switched on.
-
-When Travel To 1895 begins:
-	[say "TRAVEL TO 1895 BEGINS.";]
-	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
-
-	Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow and, as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
-
-	You have arrived back in the year 1895.";
-	now the current-year is "1895";
-	now the numeric-year is 1895;
-	now the time machine is in the Workshop;
-	now the time machine is undescribed;
-	now the lever is switched off.
-	
-Travel To 1895 ends when the time machine is in the Workshop.
-
-[When Travel To 1895 ends:
-	say "TRAVEL TO 1895 ENDS.";]	
-
-
-Volume - 802,701
-
-Book - Settings
+Book - 802,701
 
 Part - Clearing
 
@@ -3004,63 +2529,6 @@ Resting is an action applying to nothing.
 Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
-
-Book - Characters
-
-Part - Eloi
-
-The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.
-
-Noticing your presence, a few of the Eloi gather around you.[end if]"
-
-The indefinite article is "the".
-The Eloi are in the River.
-The Eloi are fixed.
-
-The description of the Eloi is "All of the Eloi are slight and short, about four feet tall. All are dressed in the same type of manufactured tunic, belted at the waist, and wearing buskins on their feet. The homogeneity of their features, their build, and their dress make it hard to distinguish one from the other."
-
-eloi-couples are scenery in the River.
-The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
-Understand "couples" as eloi-couples.
-
-Chapter - Conversation
-
-Instead of telling the Eloi about something:
-	try asking the Eloi about something.
-
-Instead of asking the Eloi about something:
-	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
-	[say "ASKING [noun] about [second noun]." [second noun = nothing in this example because it is not an object. See Writing §12.20. Stored actions]]
-
-Instead of giving something to the Eloi:
-	[say "GIVE [noun] TO [second noun]."]
-	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few second and, unable to discern its purpose, pass it around the small group gathered until the [noun] is returned to you."	
-		
-Instead of giving the pocket watch to the Eloi:
-	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. The one with the watch turns it over in their hands before another grabs it away from them.[paragraph break]";
-	now the Eloi is carrying the pocket watch.
-	
-Instead of showing something to the Eloi: [Handles both > show fuse to eloi and > show eloi the fuse]
-	[say "SHOWING [noun] TO [second noun]."]
-	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
-
-Instead of showing the pocket watch to the Eloi:
-	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
-	now the Eloi is carrying the pocket watch.
-
-Part - Weena
-
-Weena is a person.
-Weena is nowhere.
-Weena is fixed.
-The description of Weena is "Slightly taller than the other Eloi but dressed as they are and with the same similarity of features and build, this is clearly the girl Wells described."
-
-Chapter - Flower
-
-The flower is a thing.
-The flower is nowhere.
-The description of the flower is "Unlike any vegetation you've ever seen, the petal that Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
-
 Chapter - Introduction Of Weena
 
 Introduction Of Weena is a scene.
@@ -3118,6 +2586,1011 @@ Weena Gives You Flower ends when the player has the flower.
 
 [When Weena Gives You Flower ends:
 	say "WEENA GIVES YOU FLOWER ENDS."]
+			
+Volume - Characters
+
+A person can be either fixed or mobile. 
+A person is usually fixed.
+
+Book - Familiarity 
+
+Wells is a familiar man.
+Humboldt is a familiar man.
+Watchett is a familiar woman. [If commented out = "Dr. Humboldt does not respond."]
+
+The key is familiar. The printed name is "workshop key".
+The workshop-room is a familiar thing. Understand "workshop" as workshop-room. The printed name of workshop-room is "workshop".
+The workshop-door is a familiar thing. Understand "workshop door" as workshop-door.
+The front door is a familiar thing.
+The blueprints are a familiar thing.
+
+The pocket watch is familiar.
+The orrery is familiar.
+The petal is familiar.
+Food is familiar.
+The poker is familiar.
+The newspaper is familiar.
+The time machine is familiar.
+The fuse is familiar.
+
+Book - Subjects 
+
+experiments are a subject. The printed name is "Wells['] experiments".
+her-work is a subject. Understand "work" or "her work" as her-work. The printed name of her-work is "her work".
+
+diagnosis is a subject.
+examination is a subject.
+
+future is a subject. The printed name of future is "the future". [Understand "802,701" or "802,701 A.D." as future.] 
+time travel is a subject.
+[Eloi are a subject. The printed name of Eloi is "the Eloi".]
+[Weena is a subject.] 
+Morlocks are a subject. The printed name of Morlocks is "the Morlocks". Understand "morlock" or "morlocks" as Morlocks. 
+	
+[river is a subject.]
+sphinx is a subject.
+[dome is a subject. Understand "domed building" as dome.]
+[shaft is a subject. Understand "tunnels" as shaft.]
+
+information is a subject.
+
+[DEL Part - Familiarity (for use with Conversation Package by Eric Eve)
+
+Wells is a familiar man.
+Humboldt is a familiar man.
+
+experiments are a familiar thing.]
+
+Book - Watchett
+
+Watchett is a female person.
+Watchett is in the Kitchen.
+The printed name of Watchett is "Mrs. Watchett". 
+The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been cleaning his house and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
+
+Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
+[See §17.3. Overriding existing commands - New tokens for ^]
+
+[See Writing §11.5. Conditions and question ]
+watchett-key is a truth state that varies.
+watchett-key is false.
+
+To say key-start:
+	say "Mr. Wells always kept it on his person.[no line break]".
+
+To say key-middle:
+	say "[one of]That's where it still must be.[no line break][or]But it never stayed there for long.[no line break][or]But it was always falling out of his pocket at the drop of a hat.[no line break][or]But he was always loosing it.[no line break][at random]".
+
+To say key-end:
+	if the player has the key:
+		say "Looks like you found it.[no line break]";
+	otherwise:
+		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
+
+Part - Suggestions 
+
+The ask-suggestions are { Wells, workshop-room, time travel, her-work, self-suggestion }.
+The tell-suggestions are { Humboldt }.
+[The other-suggestions are { xyz-suggestion, abc-suggestion, yes-no-suggestion }.]
+
+Part - Conversation 
+
+Chapter - Hello
+
+After saying hello to Watchett when the greeting type is explicit: 
+	say "Mrs. Watchett pauses in her work. 'Good evening sir,' she replies."
+
+After saying hello to Watchett when the greeting type is implicit:
+	say "Mrs. Watchett pauses in her work and thinks before answering. [run paragraph on]"
+
+Chapter - Goodbye
+
+After saying goodbye to Watchett when the farewell type is explicit: 
+	say "'GOODBYE TO YOU TO, SIR.'"
+	
+After saying goodbye to Watchett when the farewell type is implicit:
+	say "WITH A BRIEF NOD YOU LEAVE THE ROOM. MRS. WATCHETT SAYS 'WELL I NEVER SAW SOMEONE SO RUDE.' AND CONTINUES HER WORK."
+	
+Chapter - In The Kitchen
+
+Section - Requests - "Ask [someone] for [thing]"
+
+After requesting Watchett for the key: say "'I'm sorry sir, I don't have it.'"
+After requesting Watchett for information: say "INFO INFO INFO."
+
+Section - Quizzing - "Ask [someone] about [thing]"
+
+After quizzing Watchett about Wells: say "[remove Wells ask suggestion][add experiments ask suggestion]'Always working too hard on his experiments, he is. He probably just needs a bit of a rest.'"
+After quizzing Watchett about Humboldt: say "'The doctors has been a friend of Mr. Wells for years. Not as long as you but almost as long.'"
+After quizzing Watchett about Watchett: say "[remove self-suggestion ask suggestion]'I[']m really not one to talk about myself,' she says. 'Can I help you in any other way?'"
+
+After quizzing Watchett about the key:
+	say "'[key-start] [key-middle] [key-end]'[line break]";
+	now watchett-key is true.
+
+After quizzing Watchett about workshop-room: 
+	say "[remove workshop-room ask suggestion]";
+	say "'I've never been in there, not even to clean. Mr. Wells had the only key to that door.'"
+
+After quizzing Watchett about the workshop-door: 
+	say "[remove workshop-door ask suggestion]";
+	say "'Locked, always locked. Mr. Wells had the only key.'"
+
+After quizzing Watchett about the front door: say "'Best you warm up by the fire first. Much too cold to be outside the way you're dressed.'"
+After quizzing Watchett about the pocket watch: say "'That looks like Mr. Wells['] watch. I'd put it on the desk in the library for when he gets back.'"
+After quizzing Watchett about the orrery: say "'Built by Mr. Wells,' she says. 'He's quite the inventor, he is.'"
+After quizzing Watchett about the petal: say "'Very pretty, I guess. But you cannot tell much about the flower from a single petal.'"
+After quizzing Watchett about food: say "'Still hungry after that meal all of you had?' she says. 'Perhaps a cup of tea to calm your stomach?'" 
+After quizzing Watchett about her-work: 
+	say "[remove her-work ask suggestion]";
+	say "'Just cleaning up after tonight's meal,' she says. 'Should be done soon.'"
+
+After quizzing Watchett about poker: say "'Perhaps you should put that back by the fire where it belongs. Best place for it, I think.' she says."
+
+After quizzing Watchett about experiments:
+	say "[remove experiments ask suggestion]";
+	say "'I wouldn't know anything about Mr. Wells['] experiments. He never talked to me about his work. Did all his those things in his workshop behind closed doors. Raised a dreadful racket sometimes, I tell you.'"
+
+After quizzing Watchett about time travel:
+	say "[remove time travel ask suggestion]";
+	say "'I wouldn't know anything about that. Running a house, one day at a time, that's my lot in life."
+
+Section - Informing - "Tell [someone] about [thing]"
+
+After informing Watchett about Wells: say "'Very sad,' she says. 'I'm glad the doctor is involved.'"
+After informing Watchett about Humboldt: 
+	say "[remove Humboldt tell suggestion]";
+	say "'That's very interesting. I'm sure the doctor knows what he's doing.'"
+
+After informing Watchett about the key: say "'I told Mr. Wells that he should have a copy of that key made for times just like this,' she says, tutting softly to herself." 
+After informing Watchett about the orrery: say "'Keeps perfect time,' she says. Nothing like it I've ever seen elsewhere."
+
+After informing Watchett about time travel: say "'That's quite the imagination you have sir. You should consider writing books like that Frenchman Mr. Verne does.'"
+
+Section - Imploring - "Ask [someone] for ['text']"
+
+After imploring Watchett for "facts/details/ideas": say "'You'll have to more specific, sir.'"
+
+Section - Showing
+
+After showing noun to Watchett: try quizzing Watchett about noun.
+After showing something to Watchett: say "SHOWING [noun]".
+
+Chapter - Default Responses
+
+Default ask response for Watchett: 
+	say "[one of]'I'm afraid I don't have much to say about that, sir. Anything else I can help you with?'[or]Thinking for a moment, she replies 'I wouldn't know anything about that, sir.'[at random]"
+
+[Default answer response for ]
+
+Default tell response for Watchett: 
+	say "[one of]'That's very interesting, sir.'[or]'I'm not sure I understand what you're talking about, sir.'[at random]"
+
+[Default ask-tell response for ]
+
+[Default give response for ]
+[Default show response for ]
+[Defautl give-show response for ]
+
+Default ask-for response for Watchett: 
+	say "'I am afraid I cannot help you with that, sir.'"
+
+[Default yes-no response for ]
+
+[Default response for ]
+
+Part - Testing
+
+Test ask-watchett with "a key / a workshop-room / a workshop-door / a front door / a pocket watch / a orrery / a petal / a food / a her-work / a poker / a experiments / a time travel".
+Test tell-watchett with "t wells / t humboldt / t key / t orrery / t time travel".
+Test ask-for-watchett with "ask watchett for key / ask watchett for information".
+Test show-watchett with "show watchett poker / show watchett pocket watch / show watchett snow".
+
+Test basic-watchett with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for experiments / show watch to watchett".
+
+Part - ORIGINAL CODE
+
+Chapter - Conversation (for use without Conversation Package by Eric Eve)
+
+Instead of showing pocket watch to Watchett: say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'" [HACK Why can't I simply write "try asking Watchett about it.?]
+Instead of showing something to Watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
+
+Instead of telling Watchett about something: [Writing §7.6. Reading and talking]
+	try asking Watchett about it.
+
+Instead of asking Watchett about "key":
+	say "'[key-start] [key-middle] [key-end]'[line break]";
+	now watchett-key is true.
+
+Instead of asking Watchett about "wells": say "'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"
+Instead of asking Watchett about "experiments": say "'I wouldn't know anything about that. Mr. Wells was quite private about his experiments. Did all that in his workshop.'"
+Instead of asking Watchett about "workshop door": say "'Locked. Always locked. Only Mr. Wells had the key.'"
+Instead of asking Watchett about "workshop": say "'Only Mr. Wells had the key.'"
+Instead of asking Watchett about "front door": say "'Much too cold to be outside the way you're dressed. Best you warm up by the fire first.'"
+
+Instead of asking Watchett about "pocket watch": say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
+Instead of asking Watchett about "watch": say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
+Instead of asking Watchett about "orrery": say "'Built by Mr. Wells. He[']s quite the inventor.'"
+Instead of asking Watchett about "petal": say "'Very pretty, I guess. But you cannot tell much about the flower from a single petal.'"
+
+Instead of asking Watchett about "work": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "food": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "dinner": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "supper": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "meals": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "meal": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
+Instead of asking Watchett about "herself": say "'I[']m really not one to talk about myself.'"
+
+Instead of answering Watchett that "hello": say "Mrs. Watchett acknowledges your greeting with a nod. 'Evening, Mr. Filby. Terrible about Mr. Wells, isn[']t it.'"
+
+Instead of asking Watchett about something: say "Mrs. Watchett thinks for a moment before replying. 'I wouldn[']t know anything about that,' she says and continues her work."
+
+Chapter - Movement
+
+Every turn:
+	if Watchett is mobile:
+		repeat through the Table of Watchett's Movement:
+			let the last space be the location of Watchett;
+			if Watchett can be seen by the player, say "Mrs. Watchett heads to [the destination entry].";
+			move Watchett to destination entry;
+			if Watchett can be seen by the player, say "Mrs. Watchett arrives from [the last space].";
+			blank out the whole row;
+			break.
+
+Table of Watchett's Movement
+destination
+Entryway
+Library
+Parlor
+Dining Room
+Kitchen
+
+[TBD Mrs Watchett should linger in rooms along the way to the Kitchen. Give her table of things to do.]
+[? Maybe make it a task table for each room (so I can choose a random column).]
+
+Table of Watchett's Room Tasks
+room			task
+Library			"reshelves some books"
+Library			"rearranges the chairs"
+Library			"looks out the windows"
+Library			"draws the curtains closed"
+
+Book - Humboldt 
+
+Humboldt is a person.
+Humboldt is a male.
+Humboldt is fixed.
+Humboldt is in Woking Street.
+The description of Humboldt is "A reputable physician and alienist, he has also known Wells for years. You are confident that his methodical nature, combined with his diagnostic skills, will enable him to determine what ails your friend." [enable him to determine what truth lies at the heart of Wells['] story about time travel. - modify description.]
+
+The printed name of Humboldt is "Dr. Humboldt"
+
+Understand "doctor" or "physician" or "dr" or "psychologist" or "alienist" or "dr humboldt" as Humboldt.
+
+humboldt-should-return is a truth state that varies.
+humboldt-should-return is false.
+
+humboldt-endgame-begins is a truth state that varies.
+humboldt-endgame-begins is false.
+
+Part - Suggestions
+
+The ask-suggestions are { self-suggestion, Wells, workshop-room, pocket watch, time travel }.
+[The tell-suggestions are {  }.]
+[The other-suggestions are { }.]
+
+Part - Conversation
+
+Chapter - Hello
+
+After saying hello to Humboldt when the greeting type is explicit: [or the greeting type is implicit:]
+	say "[Humboldt] replies to your greeting and waits expectantly.";
+	if the Ending Scene is happening:
+		say "[add time machine ask suggestion]";
+		say "[add Eloi tell suggestion]";
+		say "[add Weena tell suggestion]";
+		say "[add Morlocks tell suggestion]";
+	[if the Opening Scene is happening:
+		say "OPENING SCENE RUNNING."]
+	
+After saying hello to Humboldt when the greeting type is implicit:
+	say "Dr. Humboldt [one of]pauses [or]thinks [or]clears his throat [or]stares at you [at random]for a moment before answering. [run paragraph on]";
+	if the Ending Scene is happening:
+		say "[add time machine ask suggestion]";
+		say "[add future tell suggestion]";
+		say "[add Eloi tell suggestion]";
+		say "[add Weena tell suggestion]";
+		say "[add Morlocks tell suggestion]";
+
+Chapter - Goodbye
+
+Chapter - Both Opening & Ending Scenes
+
+Section - Requests - "Ask [someone] for [thing]"
+
+Section - Quizzing - "Ask [someone] about [thing]"
+	
+To say science-fiction: say "'Science fiction if you ask me.'"
+
+After quizzing Humboldt about time travel:
+	say "[remove time travel ask suggestion]";
+	say "[add future ask suggestion]";
+	say "[add Eloi ask suggestion]";
+	say "[add Weena ask suggestion]";
+	say "[add Morlocks ask suggestion]";
+	say "[science-fiction]".
+	
+After quizzing Humboldt about the future:
+	say "[remove future ask suggestion]";
+	say "Thinking for a moment, he replies 'In due time.'"
+
+After quizzing Humboldt about the poker: say "'Where did you get that?'"
+	
+After quizzing Humboldt about Humboldt: 
+	say "[remove self-suggestion ask suggestion]";
+	say "Dr. Humboldt is much too professional and polite to start rambling on about himself, especially in this sort of situation."
+
+After quizzing Humboldt about player: say "Perhaps you should focus on the situation at hand instead of yourself."
+After quizzing Humboldt about Watchett: say "I think she is in the kitchen."
+
+Section - Informing - "Tell [someone] about [thing]"	
+	
+After informing Humboldt about Wells:
+	say "Humboldt gives you an increduous look as he listens to your learned but laymans opinion on Wells's condition."
+	
+After informing Humboldt about the workshop-room:
+	try quizzing Humboldt about the second noun.
+
+After informing Humboldt about the time machine:
+	try quizzing Humboldt about the second noun.
+
+Section - Imploring - "Ask [someone] for ['text']"
+
+Section - Showing
+	
+After showing noun to Humboldt: try quizzing Humboldt about noun.
+After showing something to Humboldt: say "SHOWING [noun]".
+	
+Section - Testing
+	
+Test both-humboldt with "say hello to humboldt / ask humboldt about time travel / ask humboldt about poker / ask humboldt about himself / ask humboldt about watchett / ask humboldt about self / tell humboldt about wells / tell humboldt about workshop / tell humboldt about time machine".
+
+Chapter - Opening Scene Only
+
+Section - Requests - "Ask [someone] for [thing]"
+
+Section - Quizzing - "Ask [someone] about [thing]"
+
+After quizzing Humboldt about Wells during Opening Scene: 
+	say "[remove Wells ask suggestion]";
+	say "[add diagnosis ask suggestion]";
+	say "[add examination ask suggestion]";
+	say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'"
+	
+After quizzing Humboldt about workshop-room during Opening Scene: 
+	say "[remove workshop-room ask suggestion]";
+	say "[add key ask suggestion]";
+	say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'"
+	
+After quizzing Humboldt about diagnosis during Opening Scene: 
+	say "[remove diagnosis ask suggestion]";
+	say "'Too early to tell.'"
+
+After quizzing Humboldt about examination during Opening Scene: 
+	say "[remove examination ask suggestion]";
+	say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'";
+
+After quizzing Humboldt about time machine during Opening Scene:
+	say "[remove time machine ask suggestion]"; 
+	say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
+
+After quizzing Humboldt about pocket watch during Opening Scene:
+	say "[remove pocket watch ask suggestion]";
+	say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
+
+After quizzing Humboldt about the petal during Opening Scene: 
+	say "'You going to find the rest of it so we can convince Wells that his story is nonsense, a figment of his imagination.'"
+
+After quizzing Humboldt about the key during Opening Scene: 
+	say "[remove key ask suggestion]";
+	say "'You[']ll have to ask Mrs. Watchett about that.'"
+
+To say figment-imagination: say "'Figment of Wells['] imagination I assume.'"
+
+After quizzing Humboldt about Eloi during the Opening Scene:
+	say "[remove Eloi ask suggestion]";
+	say "[figment-imagination]".
+
+After quizzing Humboldt about Weena during the Opening Scene:
+	say "[remove Weena ask suggestion]";
+	say "[figment-imagination]".
+
+After quizzing Humboldt about Morlocks during the Opening Scene:
+	say "[remove Morlocks ask suggestion]";
+	say "[figment-imagination]".
+				
+Section - Informing - "Tell [someone] about [thing]"
+
+Section - Imploring - "Ask [someone] for ['text']"
+
+Section - Showing
+
+After showing noun to Humboldt during Opening Scene: try quizzing Humboldt about noun.
+After showing something to Humboldt during Opening Scene: say "SHOWING [noun]".
+
+Section - Testing
+
+Test open-humboldt with "say hello to humboldt / ask humboldt about wells / ask humboldt about workshop / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about time machine / ask humboldt about pocket watch / ask humboldt about petal / ask humboldt about key / ask humboldt about eloi / ask humboldt about  weena / ask humboldt about morlocks / show pocket watch to humboldt / show petal to humboldt / show key to humboldt".
+
+Chapter - Ending Scene Only
+
+Section - Requests - "Ask [someone] for [thing]"
+
+Section - Quizzing - "Ask [someone] about [thing]"
+
+After quizzing Humboldt about Wells during Ending Scene: 
+	say "'He's sedated and resting.'"
+
+After quizzing Humboldt about workshop-room during Ending Scene: 
+	say "Humboldt looks around the workshop. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]the workbench[or]the time machine[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."
+
+After quizzing Humboldt about diagnosis during Ending Scene: 
+	say "'Unless you found some new evidence it doesn't look good for Wells. He still insists he travelled to the year 802,701 A.D.'"
+
+After quizzing Humboldt about examination during Ending Scene: 
+	say "'The preliminaries are already completed. I'll write my summary after you tell me what you found here."
+
+After quizzing Humboldt about time machine during Ending Scene:
+	say "[remove time machine ask suggestion]";  
+	say "'Outside my area of expertise, I'm afraid.'"
+
+After quizzing Humboldt about pocket watch during Ending Scene: 
+	say "'I[']m glad to see that you have held onto Wells['] watch.'"
+
+After quizzing Humboldt about the petal during Ending Scene: 
+	say "'I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that his story was nonsense, a figment of his imagination. Did you find it?'"
+
+After quizzing Humboldt about the key during Ending Scene:
+	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [or]Obviously it[']s the workshop key since we[']re standing in the bloody place. [at random]What have you found?'"
+
+[After quizzing Humboldt about the blueprints during the Ending Scene:
+	say "'Your guess is as good as mind.'"]
+
+After quizzing Humboldt about the fuse during the Ending Scene:
+	say "'Looks like it fits into that contraption Wells has constructed.'"
+
+After quizzing Humboldt about Eloi during the Ending Scene:
+	say "[remove Eloi ask suggestion]";
+	say "[figment-imagination]".
+
+After quizzing Humboldt about Weena during the Ending Scene:
+	say "[remove Weena ask suggestion]";
+	say "[figment-imagination]".
+
+After quizzing Humboldt about Morlocks during the Ending Scene:
+	say "[remove Morlocks ask suggestion]";
+	say "[figment-imagination]".
+
+After quizzing Humboldt about the blueprints during Ending Scene: 
+	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its counterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
+
+After quizzing Humboldt about the fuse during the Ending Scene: 
+	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you." [BURNT OUT vs. WORKING ?]
+
+Section - Informing - "Tell [someone] about [thing]"
+
+After informing Humboldt about the petal during the Ending Scene: 
+	say "'I know all that. But did you find the rest of the flower?'"
+
+After informing Humboldt about the time machine during the Ending Scene:
+	say "'I'd like to believe that it does what you say it does but we've no proof.'"
+
+After informing Humboldt about the workshop-room during the Ending Scene: 
+	say "Humboldt listens dispassionately as you enthusiastically point out various areas of the workshop, a nonplussed look on his face."
+
+After informing Humboldt about the fuse during the Ending Scene: 
+	say "Humboldt nods slightly as you explain how the fuse is necessary for the time machine[']s operation."
+
+After informing Humboldt about the pocket watch during the Ending Scene: 
+	say "Humboldt nods slightly as you show him Wells['] pocket watch."
+
+Section - Informing - With Patience Rules
+
+After informing Humboldt about time travel during the Ending Scene:
+	say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After informing Humboldt about the future during the Ending Scene:
+	say "[remove future tell suggestion]";
+	say "Humboldt listens as you recount your experiences in 802,701 A.D. with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After informing Humboldt about Eloi during the Ending Scene:
+	say "[remove Eloi tell suggestion]";
+	say "Humboldt listens as you recount your experience with the Eloi with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After informing Humboldt about Weena during the Ending Scene:
+	say "[remove Weena tell suggestion]";
+	say "Humboldt listens to you recount your experience with Weena with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After informing Humboldt about Morlocks during the Ending Scene:
+	say "[remove Morlocks tell suggestion]";
+	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+	
+After informing Humboldt about river during the Ending Scene:
+	say "Humboldt listens to you recount your experience at the river with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After informing Humboldt about sphinx during the Ending Scene:
+	say "Humboldt listens to you recount your description of the clearing and the sphinx with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+	
+After informing Humboldt about dome during the Ending Scene:
+	say "Humboldt listens to you recount your description of the domed building with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+	
+After informing Humboldt about shaft during the Ending Scene:
+	say "Humboldt listens to you recount your description of the shaft and tunnels with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+Section - Imploring - "Ask [someone] for ['text']"
+
+Section - Showing
+
+After showing noun to Humboldt during Ending Scene: try quizzing Humboldt about noun. 
+After showing something to Humboldt during Ending Scene: say "SHOWING [noun]".
+
+Section - Testing
+
+Test end-humboldt with "say hello to humboldt / ask humboldt about wells / ask humboldt about workshop / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about time machine / ask humboldt about pocket watch / ask humboldt about petal / ask humboldt about key / ask humboldt about fuse / ask humboldt about blueprints / ask humboldt about eloi / ask humboldt about  weena / ask humboldt about morlocks / show poker to humboldt / show pocket watch to humboldt / show petal to humboldt / tell humboldt about petal / tell humboldt about time machine / tell humboldt about workshop / tell humboldt about fuse".
+
+Test patience-humboldt with "say hello to humboldt / tell humboldt about time travel / tell humboldt about future / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks / tell humboldt about river / tell humboldt about sphinx / tell humboldt about dome / tell humboldt about shaft / tell humboldt about tunnels".
+
+Chapter - Default Responses
+
+Default ask response for Humboldt:
+	say "Thinking for a moment, he replies 'XYZ.'"
+	
+[Default answer response for ]
+
+Default tell response for Humboldt:
+	say "'That's very interesting...'"
+
+[Default ask-tell response for ]
+
+[Default give response for ]
+[Default show response for ]
+[Defautl give-show response for ]
+
+Default ask-for response for Humboldt:
+	say "'I[']m afraid I can[']t help you with that.'"
+
+[Default yes-no response for ]
+
+[Default response for ]
+
+Part - Testing
+
+Test basic-humboldt with "say hi to humboldt / ask humboldt about wells / ask humboldt about workshop / ask humboldt about diagnosis / ask humboldt about examination".
+
+Part - Patience
+
+[Writing §4.9. Using new kinds of value in properties]
+patience is a kind of a value.
+
+Humboldt has patience.
+
+Patience rules is a rulebook. [Writing §19. Rulebooks - §19.2, §19.3, §19.8]
+
+The patiences are accepting, tolerant, impatient, frustrated, angry.
+
+Humboldt is accepting.
+	
+A patience rule:
+	if the patience of Humboldt is:
+		-- accepting:
+			now the patience of Humboldt is tolerant;
+		-- tolerant:
+			now the patience of Humboldt is impatient;
+		-- impatient:
+			now the patience of Humboldt is frustrated;
+		-- frustrated:
+			now the patience of Humboldt is angry;
+		-- angry:
+			say "AUTHOR'S NOTE: At this point in the original Time Machine game Humboldt's patience would be exhausted. Deciding that you are as delusional as Wells, he would have you dragged of to his hospital. However, in this mini-game Humboldt's patience is simply reset to 'tolerant.'[paragraph break]";
+			now the patience of Humboldt is tolerant.
+
+[ For testing purposed
+The patiences are trustworthy, loyal, helpful, friendly, courteous, obedient, cheerful, thrifty, brave, clean, reverent. [Inform 7 doesn't like "kind"]
+
+Humboldt is trustworthy.	
+
+A patience rule:
+	if the patience of Humboldt is:
+		-- trustworthy:
+			now the patience of Humboldt is loyal;
+		-- loyal:
+			now the patience of Humboldt is helpful;
+		-- helpful:
+			now the patience of Humboldt is friendly;
+		-- friendly:
+			now the patience of Humboldt is courteous;
+		-- courteous:
+			now the patience of humboldt is obedient;
+		-- obedient:
+			now the patience of humboldt is cheerful; 
+		-- cheerful:
+			now the patience of humboldt is thrifty;
+		-- thrifty:
+			now the patience of humboldt is brave;
+		-- brave:
+			now the patience of humboldt is clean;
+		-- clean:
+			now the patience of humboldt is reverent.
+]
+
+Part - ORIGINAL CODE
+
+[
+Chapter - Conversation
+
+[Instead of telling someone about something, try asking someone about it.] 
+[According to the compiler, "asking someone about it" is too vague to describe a specific action]
+
+[Telling]
+
+[Commented out this line because it prevented the "follow Patience rules" below from being applied]
+[Instead of telling Humboldt about something: try asking humboldt about it.] [Writing §7.6. Reading and talking]
+
+[Replaced it with specific things to tell Humbolt about ]
+Instead of telling Humboldt about "wells": try asking Humboldt about it.
+Instead of telling Humboldt about "diagnosis": try asking Humboldt about it.
+Instead of telling Humboldt about "examination": try asking Humboldt about it.
+Instead of telling Humboldt about "workshop": try asking Humboldt about it.
+[Instead of telling Humboldt about "time machine": try asking Humboldt about it.]
+Instead of telling Humboldt about "watch": try asking Humboldt about it.
+Instead of telling Humboldt about "pocket watch": try asking Humboldt about it
+
+[Asking]
+
+[Instead of asking Humboldt about "help":
+	say "HUMBOLDT SHOULD COME BACK WITH 'There is something you could do while I'm away...' HE HANDS YOU THE PETAL, ETC. AND LEAVES."]
+		
+Instead of asking Humboldt about "wells/madman/patient/lunatic": 
+	if humboldt-endgame-begins is false:
+		say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'";
+	otherwise:
+		say "'He's sedated and resting.'"
+
+Instead of asking Humboldt about "diagnosis": 
+	if humboldt-endgame-begins is false:
+		say "'Too early to tell.'";
+	otherwise:
+		say "Unless you found some new evidence it doesn't look good for Wells. He still believes he travelled to the year 802,701 A.D."
+
+Instead of asking Humboldt about "examination": 
+	if humboldt-endgame-begins is false:
+		say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'";
+	otherwise:
+		say "'The preliminaries are already completed. I'll write my summary after you tell me what you found here."
+
+Instead of asking Humboldt about "workshop/shop": 
+	if humboldt-endgame-begins is false:
+		say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'";
+	otherwise:
+		say "Humboldt looks around the workshop. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]the workbench[or]the time machine[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."
+		[say "Humboldt looks around the workshop, poking into odd corners. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]some papers on the workbench[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."]
+
+Instead of asking Humboldt about "time machine": 
+	if humboldt-endgame-begins is false:
+		say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
+	otherwise:
+		say "'Outside my area of expertise, I'm afraid.'"
+
+[HACK - Without this > ask humboldt about THE time machine returns "There is no reply."]
+Instead of asking Humboldt about "the time machine": 
+	if humboldt-endgame-begins is false:
+		say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
+	otherwise:
+		say "'Outside my area of expertise, I'm afraid.'"
+		
+[HACK - There should be some way I can write "Instead of asking Humboldt about himself"]	
+Instead of asking Humboldt about "humboldt/doctor/physician/dr/psychologist/alienist/self/himself":
+	say "Dr. Humboldt is much too professional and polite to start rambling on about himself, especially in this sort of situation."
+
+[HACK - There should be some way I can write "Instead of asking Humboldt about yourself"]
+Instead of asking Humboldt about "me/yourself/myself": say "Perhaps you should focus on the situation at hand instead of yourself."	
+	
+[Hack. Why can't I just write "Instead of asking Humboldt about "pocket watch/watch"?]
+Instead of asking Humboldt about "pocket watch": say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
+Instead of asking Humboldt about "watch": say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'" 
+[Instead of asking Humboldt about "pocket watch" or "watch" or "timepiece" or "chronometer": say "WHAT POCKET WATCH?".]
+
+Test watch-humboldt with "ask humboldt about watch / ask humboldt about pocket watch / tell humboldt about watch / tell humboldt about pocket watch".
+
+Instead of showing the time machine to Humboldt: [This doesn't work because the time machine is fixed in place]
+	say "SHOW HUMBOLDT TIME MACHINE."
+
+Instead of showing the petal to Humboldt:
+	say "'You were supposed to find the rest of it so we could convince Wells that his story was nonsense, a figment of his imagination. Did you find it?'"
+	
+Instead of showing the key to Humboldt:
+	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [at random]What have you found?'"
+		
+Instead of showing the blueprints to Humboldt:
+	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its counterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
+
+Instead of showing a breaker [the working-fuse] to Humboldt:
+	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
+		
+Instead of showing the pocket watch to Humboldt: 
+	say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
+	[HACK - Why can't I simply write "try asking Humboldt about it."]
+	
+[Asking & Telling - Humboldt Endgame]
+
+[Tried to turn "showing" into "asking" that uses the Table of Humboldt Endgame Responses below but it didn't work]
+[Instead of showing something to Humboldt, try asking Humboldt about something.]
+
+[Second attempt that also didn't work]
+[Before an actor showing something to Humboldt:
+	[try the second noun examining the noun instead.]
+	[try asking noun about second noun.]]
+
+[This rule triggers a successful endgame]
+Instead of asking Humboldt about "flower":
+	now endgame-success is true.
+
+[Writing §7.6. Reading and talking]
+After asking Humboldt about a topic listed in Table of Humboldt Endgame Responses, say "[reply entry][line break]"
+
+[16.13 - Topic columns]
+Table of Humboldt Endgame Responses
+topic	reply
+"petal"	"'I gave that to you earlier.'"
+"key"	"'Obviously it's the workshop key since we're standing in the bloody place.'"
+"blueprints"	"'Your guess is as good as mine.'"
+"fuse"	"'Looks like it fits into that contraption Wells has constructed.'"
+"weena"	"'Figment of Wells[apostrophe] imagination I assume.'"
+"eloi"	"'Figment of Wells[apostrophe] imagination I assume.'"
+"morlocks"	"'Figment of Wells[apostrophe] imagination I assume.'"
+"time travel"	"'Science fiction if you ask me.'"
+	
+After telling Humboldt about "petal":
+	say "'I know all that. But did you find the rest of the flower?'"
+
+After telling Humboldt about "time machine":
+	say "'I'd like to believe that it does what you say it does but we've no proof.'"
+
+After telling Humboldt about "workshop":
+	say "Humboldt listens dispassionately as you enthusiastically point out various areas of the workshop, a nonplussed look on his face."
+
+After telling Humboldt about "fuse":
+	say "Humboldt nods slightly as you explain how the fuse is necessary for the time machine[apostrophe]s operation."
+
+[ ⬆️ MIGRATED OVER TO time-machine-conversation ⬆️ ]
+
+[This rule triggers a successful endgame]
+After telling Humboldt about "flower":
+	now endgame-success is true.
+
+[ ⬇️ MIGRATED OVER TO time-machine-conversation ⬇️ ]
+
+[Each of the following rules will increase Humboldt's patience by one step]
+		
+After telling Humboldt about "time travel":
+	say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+[Understand "the future" as 802701. [This doesn't work]]
+After telling Humboldt about "802701":
+	say "Humboldt listens about your adventures in the year 802,701 with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+Understand "eloi" or "the eloi" as Eloi. ["the eloi" doesn't work and "eloi" might be unnecessary]
+After telling Humboldt about "Eloi":
+	say "Humboldt listens as you recount your experience with the Eloi with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After telling Humboldt about "Weena":
+	say "Humboldt listens to you recount your experience with Weena with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+	
+After telling Humboldt about "Morlocks":
+	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After telling Humboldt about "river":
+	say "Humboldt listens to you recount your experience at the river with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+After telling Humboldt about "sphinx":
+	say "Humboldt listens to you recount your description of the clearing and the sphinx with a [patience of Humboldt] look on his face.";
+	follow Patience rules.
+
+Chapter - Patience
+
+[Writing §4.9. Using new kinds of value in properties]
+[patience is a kind of a value.
+The patiences are accepting, tolerant, impatient, frustrated, angry. 
+	
+Humboldt has patience. Humboldt is accepting.]
+
+]
+			
+Book - Eloi
+
+The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.
+
+Noticing your presence, a few of the Eloi gather around you.[end if]"
+
+The indefinite article is "the".
+The Eloi are in the River.
+The Eloi are fixed.
+
+The description of the Eloi is "All of the Eloi are slight and short, about four feet tall. All are dressed in the same type of manufactured tunic, belted at the waist, and wearing buskins on their feet. The homogeneity of their features, their build, and their dress make it hard to distinguish one from the other."
+
+eloi-couples are scenery in the River.
+The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
+Understand "couples" as eloi-couples.
+
+Chapter - Conversation
+
+Instead of telling the Eloi about something:
+	try asking the Eloi about something.
+
+Instead of asking the Eloi about something:
+	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
+	[say "ASKING [noun] about [second noun]." [second noun = nothing in this example because it is not an object. See Writing §12.20. Stored actions]]
+
+Instead of giving something to the Eloi:
+	[say "GIVE [noun] TO [second noun]."]
+	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few second and, unable to discern its purpose, pass it around the small group gathered until the [noun] is returned to you."	
+		
+Instead of giving the pocket watch to the Eloi:
+	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. The one with the watch turns it over in their hands before another grabs it away from them.[paragraph break]";
+	now the Eloi is carrying the pocket watch.
+	
+Instead of showing something to the Eloi: [Handles both > show fuse to eloi and > show eloi the fuse]
+	[say "SHOWING [noun] TO [second noun]."]
+	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
+
+Instead of showing the pocket watch to the Eloi:
+	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
+	now the Eloi is carrying the pocket watch.
+
+Book - Weena
+
+Weena is a person.
+Weena is nowhere.
+Weena is fixed.
+The description of Weena is "Slightly taller than the other Eloi but dressed as they are and with the same similarity of features and build, this is clearly the girl Wells described."
+
+Chapter - Flower
+
+The flower is a thing.
+The flower is nowhere.
+The description of the flower is "Unlike any vegetation you've ever seen, the petal that Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
+
+Book - Orderlies
+
+The orderlies are people in Woking Street.
+The orderlies are undescribed.
+The description of the orderlies is "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
+Understand "attendant" or "attendants" as orderlies.
+
+Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
+
+Instead of asking the orderlies about anything: say "If they both weren't out of sight in the ambulance you could."
+Instead of telling the orderlies about anything: try asking the orderlies about it.
+Instead of showing something to the orderlies: try asking the orderlies about it.
+
+Book - Driver
+
+The driver is a person.
+The driver is a male.
+The driver is fixed.
+The driver is undescribed.
+The driver is in Woking Street.
+The description of the driver is "Trying to stay warm in the front of the ambulance, the driver waits for Humboldt to give him the signal to get going."
+
+Instead of asking the driver about anything: say "'I'm just the driver, sir. The doctor there's the one who could answer that for you."
+Instead of telling the driver about anything: say "'Fascinating, sir. I'm sure the doctor would be might interested to hear that.'"
+Instead of showing the pocket watch to the driver: say "Very nice, sir.  I'd hold on to that. I've got one like it that was me granddads."
+
+Book - Wells
+
+Wells is a person in Woking Street.
+Wells is undescribed.
+
+Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
+
+Part - Rescuing
+
+Understand "save [someone]" as rescuing.
+
+Rescuing is an action applying to one visible thing.
+Understand "rescue [someone]" as rescuing.
+
+Instead of rescuing Wells: try entering ambulance.
+Instead of rescuing someone: say "It does not look like [the noun] is in need of any rescuing. But the thought is nice."
+
+
+Book - Gernsback 
+[https://bit.ly/3rYUPl8]
+
+[Gernsback is a person.
+Gernsback is a male.
+Gernsback is fixed.
+Gernsback is in the Entryway.]
+
+[The printed name of Gernsback is "TBD."]
+
+Volume - Traveling In Time
+
+Book - Travel To 802,701
+
+Travel To 802,701 is a recurring scene.
+
+Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the lever is switched on.
+
+travel-to-802701 is a truth state that varies.
+travel-to-802701 is false.
+
+When Travel To 802,701 begins:
+	[say "TRAVELING TO 802,701 BEGINS.";]
+	now travel-to-802701 is true;
+	say "From Wells['] story you have an idea of what is going to happen but you never expected to see it with your own eyes or experience it yourself.
+
+	As the machine powers up and the dials start inching forward through the seconds, minutes, weeks, and months, the workshop and its contents, in fact the entire house, fade away to be replaced by a shimmering grey void. As the dials inch forward through time, vague shapes of all sizes appear and disappear on the surface of the void surrounding you and the time machine[unicode 8212]future people, places, and things living out their own personal cycle of birth, life, and death.
+
+	You grip the time machine[']s framework as it shudders and gains velocity on its pre-programmed flight through the centuries and millennia towards what you suppose is the Age of Eloi and Morlocks that Wells spoke about.
+	
+	One age passes. Two ages. Five ages. The blur of the individual dials starts slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you and the time machine starts to dissipate and fade away like an early morning fog in the face of the sun. Eventually the time machine stops, the dials indicating that 801,006 years have passed from when you started your journey in 1895.
+
+	You have arrived in the year 802,701 A.D.";
+	now the current-year is "802,701";
+	now the numeric-year is 802701;
+	now the time machine is in the Clearing;
+	now the time machine is described;
+	now the lever is switched off.
+
+Travel To 802,701 ends when the time machine is in the Clearing.
+
+[When Travel To 802,701 ends:
+	say "TRAVELING TO 802,701 ENDS."]
+
+Book - Travel To 1895
+
+Travel To 1895 is a recurring scene.
+
+Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the lever is switched on.
+
+When Travel To 1895 begins:
+	[say "TRAVEL TO 1895 BEGINS.";]
+	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
+
+	Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow and, as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
+
+	You have arrived back in the year 1895.";
+	now the current-year is "1895";
+	now the numeric-year is 1895;
+	now the time machine is in the Workshop;
+	now the time machine is undescribed;
+	now the lever is switched off.
+	
+Travel To 1895 ends when the time machine is in the Workshop.
+
+[When Travel To 1895 ends:
+	say "TRAVEL TO 1895 ENDS.";]	
+
+
+Volume - 802,701
+
+
 
 Volume - Ending The Story
 
@@ -3227,6 +3700,36 @@ When Humboldt Endgame ends:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
 		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";
 	end the story finally.
+
+Volume - Scenes
+
+Book - Opening Scene
+
+Opening Scene is a recurring scene.
+
+Opening Scene begins when the player is in the Entryway.
+
+[When Opening Scene begins: say "OPENING SCENE BEGINS."]
+
+Opening Scene ends when player is in the Workshop.
+
+[When Opening Scene ends: say "OPENING SCENE ENDS."]
+
+Book - Ending Scene
+
+Ending Scene is a recurring scene.
+
+Ending Scene begins when the player is in the Workshop. 
+
+[When Ending Scene begins:]
+	[say "[add time machine ask suggestion]". [Compiles but throws run-time error]]
+	[say "ENDING SCENE BEGINS."]
+
+Ending Scene ends when the player is in the Entryway.
+
+[When Ending Scene ends:] 
+	[say "[remove time machine ask suggestion]". [Compiles but throws run-time error]]
+	[say "ENDING SCENE ENDS."]
 	
 Volume - Help
 

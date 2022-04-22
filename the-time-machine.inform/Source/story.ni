@@ -29,8 +29,7 @@ The current-year is "1895".
 The numeric-year is a number that varies.
 The numeric-year is 1895.
 
-When play begins: 
-	now the left hand status line is "[location] - [current-year]";
+To say introduction:
 	say "'Let me go!'
 
 Wells struggles against the efforts of the two orderlies who are dragging him towards the horse-drawn ambulance parked in the street. Desperate, he pulls himself free and stumbles into you, almost knocking the both of you to the ground.
@@ -47,7 +46,24 @@ Wells forgets whatever he was looking for in his pockets and struggles against t
 
 Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[apostrophe]re professionals, used to dealing patients like this all the time. They[apostrophe]re not being as rough with him as they look.'"
 
+When play begins: 
+	now the left hand status line is "[location] - [current-year]";
+	say "[introduction]";
+	open right-sidebar window;
+	open title-characters window;
+	open list-characters window;
+	open title-talking-to window;
+	open talking-to-character window;
+	open title-topics window;
+	open character-topics window;
+	open title-inventory window;
+	open list-inventory window;
+	[refresh the list-inventory window; [??? - does not work]]
+	now suggest-on-greeting is false.
+
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
+
+Volume - Setup
 
 Part - Missing Item Description Check
 
@@ -67,17 +83,122 @@ When play begins (this is the run TBD checks at the start of play rule):
 			say "[item] description TBD."
 ]
 
-Volume - Mechanics
-
 Part - Extensions
 
 Include Basic Help Menu by Emily Short.
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
-[Include Flexible Windows by Jon Ingold. ]
-[Include Conversation Package by Eric Eve.]
+
+[Include Epistemology by Eric Eve.
+Include Conversation Framework by Eric Eve.
+Include Conversation Suggestions by Eric Eve.
+Include Conversational Defaults by Eric Eve.]
+Include Conversation Package by Eric Eve. [This extension includes the four extensions above it]
+
+Include Flexible Windows by Jon Ingold.
 
 After reading a command:
 	resolve punctuated titles.
+	
+Part - User Interface
+
+Chapter - Setup
+
+The right-sidebar window is a graphics g-window spawned by the main window.
+The position of the right-sidebar window is g-placeright.
+The scale method of the right-sidebar window is g-fixed-size.
+The measurement of the right-sidebar window is 290.
+
+The title-characters window is a text grid g-window spawned by the right-sidebar window.
+The position of the title-characters window is g-placeabove.
+The scale method of the title-characters window is g-fixed-size.
+The measurement of the title-characters window is 1.
+
+The list-characters window is a text buffer g-window spawned by the right-sidebar window.
+The position of the list-characters window is g-placeabove.
+The scale method of the list-characters window is g-fixed-size.
+The measurement of the list-characters window is 8.
+
+The title-talking-to window is a text grid g-window spawned by the right-sidebar window.
+The position of the title-talking-to window is g-placeabove.
+The scale method of the title-talking-to window is g-fixed-size.
+The measurement of the title-talking-to window is 1.
+
+The talking-to-character window is a text buffer g-window spawned by the right-sidebar window.
+The position of the talking-to-character window is g-placeabove.
+The scale method of the talking-to-character window is g-fixed-size.
+The measurement of the talking-to-character window is 1.
+
+The title-topics window is a text grid g-window spawned by the right-sidebar window.
+The position of the title-topics window is g-placeabove.
+The scale method of the title-topics window is g-fixed-size.
+The measurement of the title-topics window is 1.
+
+The character-topics window is a text buffer g-window spawned by the right-sidebar window.
+The position of the character-topics window is g-placeabove.
+The scale method of the character-topics window is g-fixed-size.
+The measurement of the character-topics window is 9.
+
+The title-inventory window is a text grid g-window spawned by the right-sidebar window.
+The position of the title-inventory window is g-placeabove.
+The scale method of the title-inventory window is g-fixed-size.
+The measurement of the title-inventory window is 1.
+
+The list-inventory window is a text buffer g-window spawned by the right-sidebar window.
+The position of the list-inventory window is g-placeabove.
+The scale method of the list-inventory window is g-fixed-size.
+The measurement of the list-inventory window is 16.
+
+Chapter - Rules
+	
+Rule for refreshing the title-characters window:
+	say "You Can Say Hello To". ["You Can Talk To"] ["Characters In The Room".]
+	
+Rule for refreshing the list-characters window:
+	say "[list of people that are not player in location of player]".
+
+Rule for refreshing the title-talking-to window:
+	say "You Are Talking To".
+	
+Rule for refreshing the talking-to-character window:
+	if current interlocutor is not nothing:
+		say current interlocutor.
+	
+Rule for refreshing the title-topics window:
+	say "Some Things To Talk About".
+	
+Rule for refreshing the character-topics window:
+	try listing suggested topics.
+	
+Rule for refreshing the title-inventory window:
+	say "You Are Carrying".
+	
+Rule for refreshing the list-inventory window:
+	try taking inventory.
+	
+Chapter - Styles
+
+[Table of User Styles (continued)
+window	color	background color	font weight	fixed width
+title-characters	"#FFFFFF"	"#000000"	light-weight	false
+title-talking-to	"#FFFFFF"	"#000000"	light-weight	false
+title-topics	"#FFFFFF"	"#000000"	light-weight	false
+title-inventory	"#FFFFFF"	"#000000"	light-weight	false]
+
+[
+Table of User Styles (continued)
+window (a g-window)    	
+style name (a glulx text style)    	
+background color (a text)    	
+color (a text)    	
+first line indentation (a number)    	
+fixed width (a truth state)    	
+font weight (a font weight)    	
+indentation (a number)    	
+italic (a truth state)    	
+justification (a text justification)    	
+relative size (a number)    	
+reversed (a truth state)
+]
 
 Part - Instead-Of Rules
 
@@ -218,7 +339,7 @@ Part - Release
 
 Release along with cover art ("The Time Machine") and an interpreter.
 
-Part - User Interface (for use with Flexible Windows by Jon Ingold)
+[Part - User Interface (for use with Flexible Windows by Jon Ingold)
 
 The carrying window is a text buffer g-window spawned by the main window.
 The position of the carrying window is g-placeright.
@@ -241,7 +362,7 @@ When play begins:
 	open the topics window.]
 
 Every turn:
-	refresh the carrying window.
+	refresh the carrying window.]
 
 
 Volume - 1895

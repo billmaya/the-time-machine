@@ -2172,12 +2172,54 @@ Book - Characters
 A person can be either fixed or mobile. 
 A person is usually fixed.
 
-Part - Familiarity (for use with Conversation Package by Eric Eve)
+Part - Familiarity 
+
+Wells is a familiar man.
+Humboldt is a familiar man.
+Watchett is a familiar woman. [If commented out = "Dr. Humboldt does not respond."]
+
+The key is familiar. The printed name is "workshop key".
+The workshop-room is a familiar thing. Understand "workshop" as workshop-room. The printed name of workshop-room is "workshop".
+The workshop-door is a familiar thing. Understand "workshop door" as workshop-door.
+The front door is a familiar thing.
+The blueprints are a familiar thing.
+
+The pocket watch is familiar.
+The orrery is familiar.
+The petal is familiar.
+Food is familiar.
+The poker is familiar.
+The newspaper is familiar.
+The time machine is familiar.
+The fuse is familiar.
+
+Part - Subjects 
+
+experiments are a subject. The printed name is "Wells['] experiments".
+her-work is a subject. Understand "work" or "her work" as her-work. The printed name of her-work is "her work".
+
+diagnosis is a subject.
+examination is a subject.
+
+future is a subject. The printed name of future is "the future". [Understand "802,701" or "802,701 A.D." as future.] 
+time travel is a subject.
+[Eloi are a subject. The printed name of Eloi is "the Eloi".]
+[Weena is a subject.] 
+Morlocks are a subject. The printed name of Morlocks is "the Morlocks". Understand "morlock" or "morlocks" as Morlocks. 
+	
+[river is a subject.]
+sphinx is a subject.
+dome is a subject. Understand "domed building" as dome.
+shaft is a subject. Understand "tunnels" as shaft.
+
+information is a subject.
+
+[DEL Part - Familiarity (for use with Conversation Package by Eric Eve)
 
 Wells is a familiar man.
 Humboldt is a familiar man.
 
-experiments are a familiar thing.
+experiments are a familiar thing.]
 
 Part - Watchett
 

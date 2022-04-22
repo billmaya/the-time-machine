@@ -200,6 +200,29 @@ relative size (a number)
 reversed (a truth state)
 ]
 
+Part - Before Rules
+
+Chapter - Listening
+
+Before listening:
+	if the player is in Woking Street:
+		say "The sound of the wind nearly obscures the normal sounds of the city at this time of night.";
+		stop the action;
+	else if the player is in the Clearing:
+		say "Nature sounds mixed in with the sound of the wind through the trees.";
+		stop the action;
+	else if the player is in the Top Shaft: 
+		say "The faint sounds of machinery mingle with the natural sounds of the clearing.";
+		stop the action;
+	else if the player is in the Bottom Shaft:
+		say "The sound of machinery is louder now and seems to come from every direction.";
+		stop the action;
+	else if the player is in the Dining Room:
+		say "[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[otherwise]You hear nothing unexpected.[end if]";
+		stop the action;
+	otherwise:
+		continue the action.
+
 Part - Instead-Of Rules
 
 Chapter - Waiting
@@ -228,28 +251,7 @@ Instead of attacking someone: say "[no-violence]".
 
 Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."
 
-Part - Before Rules
 
-Chapter - Listening
-
-Before listening:
-	if the player is in Woking Street:
-		say "The sound of the wind nearly obscures the normal sounds of the city at this time of night.";
-		stop the action;
-	else if the player is in the Clearing:
-		say "Nature sounds mixed in with the sound of the wind through the trees.";
-		stop the action;
-	else if the player is in the Top Shaft: 
-		say "The faint sounds of machinery mingle with the natural sounds of the clearing.";
-		stop the action;
-	else if the player is in the Bottom Shaft:
-		say "The sound of machinery is louder now and seems to come from every direction.";
-		stop the action;
-	else if the player is in the Dining Room:
-		say "[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[otherwise]You hear nothing unexpected.[end if]";
-		stop the action;
-	otherwise:
-		continue the action.
 
 Part - Every Turn Rules
 

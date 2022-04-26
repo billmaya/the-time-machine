@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 32188 27847 ]
+[ WORDS - 31334 ]
 
 Table of Releases
 release	notes
@@ -64,10 +64,6 @@ When play begins:
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
 
 Every turn:
-	if the location of Humboldt is not the location of the player:
-		if the player is not in the Kitchen:
-			let the way be the best route from the location of Humboldt to the location of the player, using doors;
-			try Humboldt going the way;
 	refresh the list-characters window;
 	refresh the talking-to-character window;
 	refresh the character-topics window;
@@ -161,7 +157,7 @@ The measurement of the list-inventory window is 16.
 Chapter - Rules
 	
 Rule for refreshing the title-characters window:
-	say "You Can Say Hello To". ["You Can Talk To"] ["Characters In The Room".]
+	say "You Can Say Hello To".
 	
 Rule for refreshing the list-characters window:
 	say "[list of people that are not player in location of player]".
@@ -261,8 +257,6 @@ Instead of attacking someone: say "[no-violence]".
 
 Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."
 
-
-
 Part - Every Turn Rules
 
 Chapter - Parlor
@@ -307,8 +301,10 @@ Part - Tests
 
 [In the game type "> test" to see a list of all the available tests]
 
+[Current]
+Test goto-kitchen with "north /north / west/ north / north / north." [from Woking Street]
+
 [v1.0 Tests]
-Test goto-kitchen with "north / west/ north / north / north." [from Woking Street]
 Test goto-dining with "north / west / north / north." [from Woking Street]
 Test house-look with "x other houses / x residences". [from Woking Street]
 Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove / x sink / x work area." [from Kitchen]
@@ -350,32 +346,6 @@ Test search-area with "search area / search area / search area / search area."
 Part - Release
 
 Release along with cover art ("The Time Machine") and an interpreter.
-
-[Part - User Interface (for use with Flexible Windows by Jon Ingold)
-
-The carrying window is a text buffer g-window spawned by the main window.
-The position of the carrying window is g-placeright.
-The measurement of the carrying window is 30.
-
-The character window is a text buffer g-window spawned by carrying window.
-The position of the character window is g-placebelow.
-The measurement of the character window is 50.
-
-The topics window is a text buffer g-window spawned by character window.
-The position of topics window is g-placebelow.
-The measurement of the topics window is 50.
-
-Rule for refreshing the carrying window:
-	try taking inventory.
-
-When play begins:
-	open the carrying window;
-	[open the character window;
-	open the topics window.]
-
-Every turn:
-	refresh the carrying window.]
-
 
 Volume - Settings
 
@@ -536,6 +506,7 @@ Instead of going north in Woking Street:
 		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the workshop key is. Finding the rest of the flower might help us convince Wells that all this time travel nonsense of his is just a figment of his imagination. Talk to Mrs. Watchett.'
 
 		With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears.";
+		reset the interlocutor;
 		now Humboldt is nowhere; 
 		now the ambulance is nowhere;
 		now the orderlies are nowhere;
@@ -561,7 +532,7 @@ Instead of attacking the front door with something: say "Violence isn't the answ
 	
 Chapter - Ambulance
 	
-The ambulance is a thing in Woking Street.
+The ambulance is a opaque container [thing] in Woking Street.
 The description of the ambulance is "The horse-drawn ambulance resembles a private carriage that has been adapted for medical use. The driver waits impatiently in his enclosed glass cab at the front. Large rear doors at the back allow a patient, orderlies, and doctor to enter and exit the vehicle."
 The ambulance is fixed in place.
 The ambulance is undescribed.
@@ -2594,6 +2565,7 @@ A person is usually fixed.
 
 Book - Familiarity 
 
+
 Wells is a familiar man.
 Humboldt is a familiar man.
 Watchett is a familiar woman. [If commented out = "Dr. Humboldt does not respond."]
@@ -2613,6 +2585,10 @@ The newspaper is familiar.
 The time machine is familiar.
 The fuse is familiar.
 
+The Eloi are a familiar people.
+Weena is a familiar woman.
+
+
 Book - Subjects 
 
 experiments are a subject. The printed name is "Wells['] experiments".
@@ -2621,7 +2597,7 @@ her-work is a subject. Understand "work" or "her work" as her-work. The printed 
 diagnosis is a subject.
 examination is a subject.
 
-future is a subject. The printed name of future is "the future". [Understand "802,701" or "802,701 A.D." as future.] 
+future is a subject. The printed name of future is "the future".
 time travel is a subject.
 [Eloi are a subject. The printed name of Eloi is "the Eloi".]
 [Weena is a subject.] 
@@ -2634,38 +2610,15 @@ sphinx is a subject.
 
 information is a subject.
 
-[DEL Part - Familiarity (for use with Conversation Package by Eric Eve)
-
-Wells is a familiar man.
-Humboldt is a familiar man.
-
-experiments are a familiar thing.]
-
 Book - Watchett
 
 Watchett is a female person.
 Watchett is in the Kitchen.
 The printed name of Watchett is "Mrs. Watchett". 
-The description of Watchett is "Wells[apostrophe] steadfast aged housekeeper, she has been cleaning his house and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
+The description of Watchett is "Wells['] steadfast aged housekeeper, she has been cleaning his house and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
 
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 [See §17.3. Overriding existing commands - New tokens for ^]
-
-[See Writing §11.5. Conditions and question ]
-watchett-key is a truth state that varies.
-watchett-key is false.
-
-To say key-start:
-	say "Mr. Wells always kept it on his person.[no line break]".
-
-To say key-middle:
-	say "[one of]That's where it still must be.[no line break][or]But it never stayed there for long.[no line break][or]But it was always falling out of his pocket at the drop of a hat.[no line break][or]But he was always loosing it.[no line break][at random]".
-
-To say key-end:
-	if the player has the key:
-		say "Looks like you found it.[no line break]";
-	otherwise:
-		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
 
 Part - Suggestions 
 
@@ -2678,30 +2631,33 @@ Part - Conversation
 Chapter - Hello
 
 After saying hello to Watchett when the greeting type is explicit: 
-	say "Mrs. Watchett pauses in her work. 'Good evening sir,' she replies."
+	say "[first time]Mrs. Watchett pauses in her work. [only][one of]'Good evening sir,' she replies.[or]'Yes sir?' she replies.[or]'Can I help you sir?' she replies.[at random]"
 
 After saying hello to Watchett when the greeting type is implicit:
-	say "Mrs. Watchett pauses in her work and thinks before answering. [run paragraph on]"
+	say "Mrs. Watchett pauses briefly before answering. [run paragraph on]"
 
 Chapter - Goodbye
 
 After saying goodbye to Watchett when the farewell type is explicit: 
-	say "'GOODBYE TO YOU TO, SIR.'"
+	say "'You have a good evening, sir.'"
 	
 After saying goodbye to Watchett when the farewell type is implicit:
-	say "WITH A BRIEF NOD YOU LEAVE THE ROOM. MRS. WATCHETT SAYS 'WELL I NEVER SAW SOMEONE SO RUDE.' AND CONTINUES HER WORK."
+	say "Mrs. Watchett continues her work."
 	
 Chapter - In The Kitchen
 
 Section - Requests - "Ask [someone] for [thing]"
 
 After requesting Watchett for the key: say "'I'm sorry sir, I don't have it.'"
-After requesting Watchett for information: say "INFO INFO INFO."
+
+After requesting Watchett for information: say "'I'm afraid you'll have to be more specific, sir.'"
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
 After quizzing Watchett about Wells: say "[remove Wells ask suggestion][add experiments ask suggestion]'Always working too hard on his experiments, he is. He probably just needs a bit of a rest.'"
+
 After quizzing Watchett about Humboldt: say "'The doctors has been a friend of Mr. Wells for years. Not as long as you but almost as long.'"
+
 After quizzing Watchett about Watchett: say "[remove self-suggestion ask suggestion]'I[']m really not one to talk about myself,' she says. 'Can I help you in any other way?'"
 
 After quizzing Watchett about the key:
@@ -2717,15 +2673,24 @@ After quizzing Watchett about the workshop-door:
 	say "'Locked, always locked. Mr. Wells had the only key.'"
 
 After quizzing Watchett about the front door: say "'Best you warm up by the fire first. Much too cold to be outside the way you're dressed.'"
+
 After quizzing Watchett about the pocket watch: say "'That looks like Mr. Wells['] watch. I'd put it on the desk in the library for when he gets back.'"
+
 After quizzing Watchett about the orrery: say "'Built by Mr. Wells,' she says. 'He's quite the inventor, he is.'"
-After quizzing Watchett about the petal: say "'Very pretty, I guess. But you cannot tell much about the flower from a single petal.'"
+
+After quizzing Watchett about the petal: say "'Very pretty, I guess. But you cannot tell much about a flower from a single petal.'"
+
 After quizzing Watchett about food: say "'Still hungry after that meal all of you had?' she says. 'Perhaps a cup of tea to calm your stomach?'" 
+
 After quizzing Watchett about her-work: 
 	say "[remove her-work ask suggestion]";
 	say "'Just cleaning up after tonight's meal,' she says. 'Should be done soon.'"
 
-After quizzing Watchett about poker: say "'Perhaps you should put that back by the fire where it belongs. Best place for it, I think.' she says."
+After quizzing Watchett about poker:
+	if the player has the poker:
+		say "'Perhaps you should put that back by the fire where it belongs. Best place for it, I think.' she says.";
+	otherwise:
+		say "'I think that's in the parlor by the fireplace, sir.'".
 
 After quizzing Watchett about experiments:
 	say "[remove experiments ask suggestion]";
@@ -2738,14 +2703,16 @@ After quizzing Watchett about time travel:
 Section - Informing - "Tell [someone] about [thing]"
 
 After informing Watchett about Wells: say "'Very sad,' she says. 'I'm glad the doctor is involved.'"
+			
 After informing Watchett about Humboldt: 
 	say "[remove Humboldt tell suggestion]";
 	say "'That's very interesting. I'm sure the doctor knows what he's doing.'"
 
 After informing Watchett about the key: say "'I told Mr. Wells that he should have a copy of that key made for times just like this,' she says, tutting softly to herself." 
+
 After informing Watchett about the orrery: say "'Keeps perfect time,' she says. Nothing like it I've ever seen elsewhere."
 
-After informing Watchett about time travel: say "'That's quite the imagination you have sir. You should consider writing books like that Frenchman Mr. Verne does.'"
+After informing Watchett about time travel: say "'That's quite the imagination you have sir. You should consider writing books like that Frenchman Mr. Verne.'"
 
 Section - Imploring - "Ask [someone] for ['text']"
 
@@ -2754,7 +2721,7 @@ After imploring Watchett for "facts/details/ideas": say "'You'll have to more sp
 Section - Showing
 
 After showing noun to Watchett: try quizzing Watchett about noun.
-After showing something to Watchett: say "SHOWING [noun]".
+[After showing something to Watchett: say "SHOWING [noun]".]
 
 Chapter - Default Responses
 
@@ -2779,51 +2746,35 @@ Default ask-for response for Watchett:
 
 [Default response for ]
 
+Part - Key
+
+[See Writing §11.5. Conditions and question ]
+watchett-key is a truth state that varies.
+watchett-key is false.
+
+To say key-start:
+	say "Mr. Wells always kept it on his person.[no line break]".
+
+To say key-middle:
+	say "[one of]That's where it still must be.[no line break][or]But it never stayed there for long.[no line break][or]But it was always falling out of his pocket at the drop of a hat.[no line break][or]But he was always loosing it.[no line break][at random]".
+
+To say key-end:
+	if the player has the key:
+		say "Looks like you found it.[no line break]";
+	otherwise:
+		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
+
 Part - Testing
 
-Test ask-watchett with "a key / a workshop-room / a workshop-door / a front door / a pocket watch / a orrery / a petal / a food / a her-work / a poker / a experiments / a time travel".
-Test tell-watchett with "t wells / t humboldt / t key / t orrery / t time travel".
-Test ask-for-watchett with "ask watchett for key / ask watchett for information".
-Test show-watchett with "show watchett poker / show watchett pocket watch / show watchett snow".
+Test ask-w with "a key / a workshop / a workshop door / a front door / a pocket watch / a orrery / a petal / a food / a her work / a poker / purloin poker / a poker / a experiments / a time travel".
 
-Test basic-watchett with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for experiments / show watch to watchett".
+Test tell-w with "t wells / t humboldt / t key / t orrery / t time travel".
 
-Part - ORIGINAL CODE
+Test ask-for-w with "ask watchett for key / ask watchett for information".
 
-Chapter - Conversation (for use without Conversation Package by Eric Eve)
+Test show-w with "show watchett poker / purloin poker / show watchett poker / show watchett pocket watch / show watchett snow".
 
-Instead of showing pocket watch to Watchett: say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'" [HACK Why can't I simply write "try asking Watchett about it.?]
-Instead of showing something to Watchett: say "Mrs. Watchett glances at the [noun], says something noncommittal, and continues with her work."
-
-Instead of telling Watchett about something: [Writing §7.6. Reading and talking]
-	try asking Watchett about it.
-
-Instead of asking Watchett about "key":
-	say "'[key-start] [key-middle] [key-end]'[line break]";
-	now watchett-key is true.
-
-Instead of asking Watchett about "wells": say "'Always working too hard on his experiments, he is. I'm sure the doctor will make everything right.'"
-Instead of asking Watchett about "experiments": say "'I wouldn't know anything about that. Mr. Wells was quite private about his experiments. Did all that in his workshop.'"
-Instead of asking Watchett about "workshop door": say "'Locked. Always locked. Only Mr. Wells had the key.'"
-Instead of asking Watchett about "workshop": say "'Only Mr. Wells had the key.'"
-Instead of asking Watchett about "front door": say "'Much too cold to be outside the way you're dressed. Best you warm up by the fire first.'"
-
-Instead of asking Watchett about "pocket watch": say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
-Instead of asking Watchett about "watch": say "'That looks like Mr. Wells['] watch. I[']d put it on the desk in the library for when he gets back.'"
-Instead of asking Watchett about "orrery": say "'Built by Mr. Wells. He[']s quite the inventor.'"
-Instead of asking Watchett about "petal": say "'Very pretty, I guess. But you cannot tell much about the flower from a single petal.'"
-
-Instead of asking Watchett about "work": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "food": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "dinner": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "supper": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "meals": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "meal": say "'Getting things ready for tomorrow[']s supper. Mr. Wells will probably have a tremendous appetite when he gets back.'"
-Instead of asking Watchett about "herself": say "'I[']m really not one to talk about myself.'"
-
-Instead of answering Watchett that "hello": say "Mrs. Watchett acknowledges your greeting with a nod. 'Evening, Mr. Filby. Terrible about Mr. Wells, isn[']t it.'"
-
-Instead of asking Watchett about something: say "Mrs. Watchett thinks for a moment before replying. 'I wouldn[']t know anything about that,' she says and continues her work."
+Test basic-w with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for experiments / show watch to watchett".
 
 Chapter - Movement
 
@@ -2884,7 +2835,7 @@ Part - Conversation
 Chapter - Hello
 
 After saying hello to Humboldt when the greeting type is explicit: [or the greeting type is implicit:]
-	say "[Humboldt] replies to your greeting and waits expectantly.";
+	say "[Humboldt] returns your greeting and waits expectantly.";
 	if the Ending Scene is happening:
 		say "[add time machine ask suggestion]";
 		say "[add Eloi tell suggestion]";
@@ -2901,6 +2852,8 @@ After saying hello to Humboldt when the greeting type is implicit:
 		say "[add Eloi tell suggestion]";
 		say "[add Weena tell suggestion]";
 		say "[add Morlocks tell suggestion]";
+
+test go-end with "n / test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / take time machine fuse / purloin orrery fuse / put orrery fuse in time machine fuse holder / exit / push lever."
 
 Chapter - Goodbye
 
@@ -3053,22 +3006,19 @@ After quizzing Humboldt about the petal during Ending Scene:
 After quizzing Humboldt about the key during Ending Scene:
 	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [or]Obviously it[']s the workshop key since we[']re standing in the bloody place. [at random]What have you found?'"
 
-[After quizzing Humboldt about the blueprints during the Ending Scene:
-	say "'Your guess is as good as mind.'"]
-
 After quizzing Humboldt about the fuse during the Ending Scene:
 	say "'Looks like it fits into that contraption Wells has constructed.'"
 
 After quizzing Humboldt about Eloi during the Ending Scene:
-	say "[remove Eloi ask suggestion]";
+	say "[remove Eloi ask suggestion]"; [NO ASK SUGGESTION]
 	say "[figment-imagination]".
 
 After quizzing Humboldt about Weena during the Ending Scene:
-	say "[remove Weena ask suggestion]";
+	say "[remove Weena ask suggestion]"; [NO ASK SUGGESTION]
 	say "[figment-imagination]".
 
 After quizzing Humboldt about Morlocks during the Ending Scene:
-	say "[remove Morlocks ask suggestion]";
+	say "[remove Morlocks ask suggestion]"; [NO ASK SUGGESTION]
 	say "[figment-imagination]".
 
 After quizzing Humboldt about the blueprints during Ending Scene: 
@@ -3200,37 +3150,8 @@ A patience rule:
 		-- frustrated:
 			now the patience of Humboldt is angry;
 		-- angry:
-			say "AUTHOR'S NOTE: At this point in the original Time Machine game Humboldt's patience would be exhausted. Deciding that you are as delusional as Wells, he would have you dragged of to his hospital. However, in this mini-game Humboldt's patience is simply reset to 'tolerant.'[paragraph break]";
-			now the patience of Humboldt is tolerant.
+			now endgame-failure is true.
 
-[ For testing purposed
-The patiences are trustworthy, loyal, helpful, friendly, courteous, obedient, cheerful, thrifty, brave, clean, reverent. [Inform 7 doesn't like "kind"]
-
-Humboldt is trustworthy.	
-
-A patience rule:
-	if the patience of Humboldt is:
-		-- trustworthy:
-			now the patience of Humboldt is loyal;
-		-- loyal:
-			now the patience of Humboldt is helpful;
-		-- helpful:
-			now the patience of Humboldt is friendly;
-		-- friendly:
-			now the patience of Humboldt is courteous;
-		-- courteous:
-			now the patience of humboldt is obedient;
-		-- obedient:
-			now the patience of humboldt is cheerful; 
-		-- cheerful:
-			now the patience of humboldt is thrifty;
-		-- thrifty:
-			now the patience of humboldt is brave;
-		-- brave:
-			now the patience of humboldt is clean;
-		-- clean:
-			now the patience of humboldt is reverent.
-]
 
 Part - ORIGINAL CODE
 
@@ -3475,38 +3396,17 @@ The flower is a thing.
 The flower is nowhere.
 The description of the flower is "Unlike any vegetation you've ever seen, the petal that Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
 
-Book - Orderlies
-
-The orderlies are people in Woking Street.
-The orderlies are undescribed.
-The description of the orderlies is "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
-Understand "attendant" or "attendants" as orderlies.
-
-Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
-
-Instead of asking the orderlies about anything: say "If they both weren't out of sight in the ambulance you could."
-Instead of telling the orderlies about anything: try asking the orderlies about it.
-Instead of showing something to the orderlies: try asking the orderlies about it.
-
-Book - Driver
-
-The driver is a person.
-The driver is a male.
-The driver is fixed.
-The driver is undescribed.
-The driver is in Woking Street.
-The description of the driver is "Trying to stay warm in the front of the ambulance, the driver waits for Humboldt to give him the signal to get going."
-
-Instead of asking the driver about anything: say "'I'm just the driver, sir. The doctor there's the one who could answer that for you."
-Instead of telling the driver about anything: say "'Fascinating, sir. I'm sure the doctor would be might interested to hear that.'"
-Instead of showing the pocket watch to the driver: say "Very nice, sir.  I'd hold on to that. I've got one like it that was me granddads."
-
 Book - Wells
 
-Wells is a person in Woking Street.
+Wells is a person. [in Woking Street.]
 Wells is undescribed.
+Wells is in the ambulance.
 
 Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
+
+Before saying hello to Wells when the greeting type is explicit or the greeting type is implicit: 
+	say "CAN'T TALK TO WELLS.";
+	stop the action. 
 
 Part - Rescuing
 
@@ -3517,6 +3417,41 @@ Understand "rescue [someone]" as rescuing.
 
 Instead of rescuing Wells: try entering ambulance.
 Instead of rescuing someone: say "It does not look like [the noun] is in need of any rescuing. But the thought is nice."
+
+Book - Orderlies
+
+The orderlies are people in the ambulance. [Woking Street.]
+The orderlies are undescribed.
+The description of the orderlies is "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
+Understand "attendant" or "attendants" or "orderly" as orderlies.
+
+Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
+
+Before saying hello to the orderlies when the greeting type is explicit or the greeting type is implicit: 
+	say "CAN'T TALK TO ORDERLIES.";
+	stop the action. 
+[
+Instead of asking the orderlies about anything: say "If they both weren't out of sight in the ambulance you could."
+Instead of telling the orderlies about anything: try asking the orderlies about it.
+Instead of showing something to the orderlies: try asking the orderlies about it.]
+
+Book - Driver
+
+The driver is a person.
+The driver is a male.
+The driver is fixed.
+The driver is undescribed.
+The driver is in Woking Street.
+The description of the driver is "Trying to stay warm in the front of the ambulance, the driver waits for Humboldt to give him the signal to get going."
+
+Before saying hello to the driver when the greeting type is explicit or the greeting type is implicit: 
+	say "CAN'T TALK TO DRIVER.";
+	stop the action. 
+[
+Instead of asking the driver about anything: say "'I'm just the driver, sir. The doctor there's the one who could answer that for you."
+Instead of telling the driver about anything: say "'Fascinating, sir. I'm sure the doctor would be might interested to hear that.'"
+Instead of showing the pocket watch to the driver: say "Very nice, sir.  I'd hold on to that. I've got one like it that was me granddads."
+]
 
 
 Book - Gernsback 
@@ -3592,9 +3527,21 @@ Volume - 802,701
 
 
 
-Volume - Ending The Story
+Volume - Scenes
 
-Part - Morlock Endgame
+Book - Opening Scene
+
+Opening Scene is a scene.
+
+Opening Scene begins when the ambulance is in Woking Street.
+
+[When Opening Scene begins: say "OPENING SCENE BEGINS."]
+
+Opening Scene ends when the ambulance is nowhere.
+
+[When Opening Scene ends: say "OPENING SCENE ENDS."]
+
+Book - Morlock Endgame
 
 [Writing §8.18. Randomness]
 [Writing §9.4. When play ends]
@@ -3620,7 +3567,7 @@ Instead of wandering in the Bottom Shaft:
 		otherwise:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 
-Part - Humboldt's Return
+Book - Humboldt's Return
 
 Humboldt's Return is a scene.
 
@@ -3639,14 +3586,14 @@ When Humboldt's Return ends:
 	now humboldt-endgame-begins is true;
 	[say "HUMBOLDT'S RETURN ENDS."]
 
-Part - Humbolt Endgame
+Book - Ending Scene
 
-Humboldt Endgame is a scene.
+Ending Scene is a scene.
 
-Humboldt Endgame begins when humboldt-endgame-begins is true.
+Ending Scene begins when humboldt-endgame-begins is true.
 
-[When Humboldt Endgame begins:
-	say "HUMBOLDT ENDGAME BEGINS."]
+[When Ending Scene begins:
+	say "ENDING SCENE BEGINS."]
 
 [Recipe §7.13. Traveling Characters, Van Helsing example]
 Every turn:
@@ -3657,23 +3604,6 @@ Every turn:
 			[Should Humboldt get annoyed if you walk around and don't tell him what you discovered?]
 		[otherwise:
 			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."]
-
-[Humboldt's patience is changed by various conversation topics (see 1895 • Characters • Humboldt • Conversation)]
-Patience rules is a rulebook. [Writing §19. Rulebooks - §19.2, §19.3, §19.8]
-[This is the increment patience by one rule: ] [Why doesn't this work?]
-[This is the increment patience rule:] [Why doesn't this work?]
-A patience rule:
-	if the patience of Humboldt is:
-		-- accepting:
-			now the patience of Humboldt is tolerant;
-		-- tolerant:
-			now the patience of Humboldt is impatient;
-		-- impatient:
-			now the patience of Humboldt is frustrated;
-		-- frustrated:
-			now the patience of Humboldt is angry;
-		-- angry:
-			now endgame-failure is true.
 
 endgame-success is a truth state that varies.
 endgame-success is false. 
@@ -3689,10 +3619,10 @@ The block giving rule is not listed in the check giving it to rules. [Recipes §
 After giving the flower to Humboldt:
 	now endgame-success is true.
 
-Humboldt Endgame ends when endgame-success is true or endgame-failure is true.
+Ending Scene ends when endgame-success is true or endgame-failure is true.
 
-When Humboldt Endgame ends:
-	[say "HUMBOLDT ENDGAME ENDS."]
+When Ending Scene ends:
+	[say "ENDING SCENE ENDS."]
 	if endgame-success is true:
 		[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
 		say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
@@ -3701,35 +3631,6 @@ When Humboldt Endgame ends:
 		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";
 	end the story finally.
 
-Volume - Scenes
-
-Book - Opening Scene
-
-Opening Scene is a recurring scene.
-
-Opening Scene begins when the player is in the Entryway.
-
-[When Opening Scene begins: say "OPENING SCENE BEGINS."]
-
-Opening Scene ends when player is in the Workshop.
-
-[When Opening Scene ends: say "OPENING SCENE ENDS."]
-
-Book - Ending Scene
-
-Ending Scene is a recurring scene.
-
-Ending Scene begins when the player is in the Workshop. 
-
-[When Ending Scene begins:]
-	[say "[add time machine ask suggestion]". [Compiles but throws run-time error]]
-	[say "ENDING SCENE BEGINS."]
-
-Ending Scene ends when the player is in the Entryway.
-
-[When Ending Scene ends:] 
-	[say "[remove time machine ask suggestion]". [Compiles but throws run-time error]]
-	[say "ENDING SCENE ENDS."]
 	
 Volume - Help
 

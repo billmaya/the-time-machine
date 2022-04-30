@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31334 ]
+[ WORDS - 31451 ]
 
 Table of Releases
 release	notes
@@ -23,6 +23,8 @@ Volume - Beginning The Story
 The player is in Woking Street.
 The description of the player is "You rarely think of yourself in those terms, prefering to focus your prodigious logical and legal faculties on the work that your profession and your clients demand.[first time] But if you had to waste time on something so introspect you might describe yourself as a middle-aged man who has reached a certain station in life where success and social esteem allow you to enjoy all the benefits of this modern age.[only] Truly this is the best of times." [Mention something about Wells here?]
 
+Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
+
 The current-year is text that varies.
 The current-year is "1895".
 
@@ -34,17 +36,17 @@ To say introduction:
 
 Wells struggles against the efforts of the two orderlies who are dragging him towards the horse-drawn ambulance parked in the street. Desperate, he pulls himself free and stumbles into you, almost knocking the both of you to the ground.
 
-'My friend, I[apostrophe]m not crazy,' he says, his eyes desperate and pleading. 'I know my story sounds insane, but it[apostrophe]s true. Every word of it. You believe me, don[apostrophe]t you?'
+'My friend, I[']m not crazy,' he says, his eyes desperate and pleading. 'I know my story sounds insane, but it[']s true. Every word of it. You believe me, don[']t you?'
 
-Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we believe you. You just had a terrible shock; you need to rest after all these...time traveling adventures of yours. Plenty of time to sort it all out after you[apostrophe]ve had a bit of a break. Nothing to worry about.'
+Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we believe you. You just had a terrible shock; you need to rest after all these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a break. Nothing to worry about.'
 
-You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[apostrophe]ve just heard from Wells[apostrophe] own mouth. Morlocks. Eloi. Time travel. It sounds fantastical.
+You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[']ve just heard from Wells['] own mouth. Morlocks. Eloi. Time travel. It sounds fantastical.
 
-'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[apostrophe]ll find...get your bloody hands off of me!' The orderlies have grabbed Wells a second time. 'No, damn you! Let me go!' 
+'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[']ll find...get your bloody hands off of me!' The orderlies have grabbed Wells a second time. 'No, damn you! Let me go!' 
 
-Wells forgets whatever he was looking for in his pockets and struggles against the orderlies but they[apostrophe]re prepared this time and manage to overpower your friend and manhandle him into the ambulance. But it[apostrophe]s a near thing, so violent that Wells[apostrophe] pocket watch falls to the ground during the struggle.
+Wells forgets whatever he was looking for in his pockets and struggles against the orderlies but they[']re prepared this time and manage to overpower your friend and manhandle him into the ambulance. But it[']s a near thing, so violent that Wells['] pocket watch falls to the ground during the struggle.
 
-Humboldt notices your concerned look. 'Don[apostrophe]t worry,' he says. 'They[apostrophe]re professionals, used to dealing patients like this all the time. They[apostrophe]re not being as rough with him as they look.'"
+Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re professionals, used to dealing patients like this all the time. They[']re not being as rough with him as they look.'"
 
 When play begins: 
 	now the left hand status line is "[location] - [current-year]";
@@ -343,6 +345,10 @@ Test wtm-poker with "test wtm / test poker."
 [v1.1 Tests]
 Test search-area with "search area / search area / search area / search area."
 
+[v1.4 Tests]
+Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever."
+Test xpl-802701 with "test go-802701 / exit / x statue / e / e / s / n/ w / w / se / nw / enter time machine / push lever."
+
 Part - Release
 
 Release along with cover art ("The Time Machine") and an interpreter.
@@ -607,7 +613,7 @@ The workshop-door is north of the Entryway and south of the Workshop.
 The workshop-door is a door. 
 The workshop-door is lockable. The workshop-door is locked.
 The workshop-door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed." See https://bit.ly/3rdieyO ]
-Understand "workshop" or "door" as workshop-door. 
+Understand "workshop door" or "door" or "door of workshop" as workshop-door. 
 The printed name of workshop-door is "workshop door".
 
 Instead of examining the workshop-door:
@@ -2599,14 +2605,7 @@ examination is a subject.
 
 future is a subject. The printed name of future is "the future".
 time travel is a subject.
-[Eloi are a subject. The printed name of Eloi is "the Eloi".]
-[Weena is a subject.] 
 Morlocks are a subject. The printed name of Morlocks is "the Morlocks". Understand "morlock" or "morlocks" as Morlocks. 
-	
-[river is a subject.]
-sphinx is a subject.
-[dome is a subject. Understand "domed building" as dome.]
-[shaft is a subject. Understand "tunnels" as shaft.]
 
 information is a subject.
 
@@ -2721,7 +2720,6 @@ After imploring Watchett for "facts/details/ideas": say "'You'll have to more sp
 Section - Showing
 
 After showing noun to Watchett: try quizzing Watchett about noun.
-[After showing something to Watchett: say "SHOWING [noun]".]
 
 Chapter - Default Responses
 
@@ -2826,7 +2824,7 @@ humboldt-endgame-begins is false.
 
 Part - Suggestions
 
-The ask-suggestions are { self-suggestion, Wells, workshop-room, pocket watch, time travel }.
+[The ask-suggestions are { self-suggestion, Wells, workshop-room, pocket watch, time travel }.]
 [The tell-suggestions are {  }.]
 [The other-suggestions are { }.]
 
@@ -2837,21 +2835,32 @@ Chapter - Hello
 After saying hello to Humboldt when the greeting type is explicit: [or the greeting type is implicit:]
 	say "[Humboldt] returns your greeting and waits expectantly.";
 	if the Ending Scene is happening:
-		say "[add time machine ask suggestion]";
+		say "[add time machine tell suggestion]";
 		say "[add Eloi tell suggestion]";
 		say "[add Weena tell suggestion]";
 		say "[add Morlocks tell suggestion]";
-	[if the Opening Scene is happening:
-		say "OPENING SCENE RUNNING."]
+	if the Opening Scene is happening:
+		[say "OPENING SCENE RUNNING."]
+		say "[add self-suggestion ask suggestion]";
+		say "[add Wells ask suggestion]";
+		say "[add workshop-room ask suggestion]";
+		say "[add pocket watch ask suggestion]";
+		say "[add time travel ask suggestion]".
 	
 After saying hello to Humboldt when the greeting type is implicit:
 	say "Dr. Humboldt [one of]pauses [or]thinks [or]clears his throat [or]stares at you [at random]for a moment before answering. [run paragraph on]";
 	if the Ending Scene is happening:
-		say "[add time machine ask suggestion]";
+		say "[add time machine tell suggestion]";
 		say "[add future tell suggestion]";
 		say "[add Eloi tell suggestion]";
 		say "[add Weena tell suggestion]";
 		say "[add Morlocks tell suggestion]";
+	if the Opening Scene is happening:
+		say "[add self-suggestion ask suggestion]";
+		say "[add Wells ask suggestion]";
+		say "[add workshop-room ask suggestion]";
+		say "[add pocket watch ask suggestion]";
+		say "[add time travel ask suggestion]".
 
 test go-end with "n / test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / take time machine fuse / purloin orrery fuse / put orrery fuse in time machine fuse holder / exit / push lever."
 
@@ -2891,8 +2900,8 @@ Section - Informing - "Tell [someone] about [thing]"
 After informing Humboldt about Wells:
 	say "Humboldt gives you an increduous look as he listens to your learned but laymans opinion on Wells's condition."
 	
-After informing Humboldt about the workshop-room:
-	try quizzing Humboldt about the second noun.
+[DEL After informing Humboldt about the workshop-room:
+	try quizzing Humboldt about the second noun.]
 
 After informing Humboldt about the time machine:
 	try quizzing Humboldt about the second noun.
@@ -2964,6 +2973,10 @@ After quizzing Humboldt about Morlocks during the Opening Scene:
 				
 Section - Informing - "Tell [someone] about [thing]"
 
+Before informing Humboldt about the workshop-room during the Opening Scene: 
+	try quizzing Humboldt about the second noun;
+	stop the action.
+
 Section - Imploring - "Ask [someone] for ['text']"
 
 Section - Showing
@@ -3006,7 +3019,7 @@ After quizzing Humboldt about the petal during Ending Scene:
 After quizzing Humboldt about the key during Ending Scene:
 	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [or]Obviously it[']s the workshop key since we[']re standing in the bloody place. [at random]What have you found?'"
 
-After quizzing Humboldt about the fuse during the Ending Scene:
+After quizzing Humboldt about the breaker during the Ending Scene:
 	say "'Looks like it fits into that contraption Wells has constructed.'"
 
 After quizzing Humboldt about Eloi during the Ending Scene:
@@ -3032,13 +3045,17 @@ Section - Informing - "Tell [someone] about [thing]"
 After informing Humboldt about the petal during the Ending Scene: 
 	say "'I know all that. But did you find the rest of the flower?'"
 
-After informing Humboldt about the time machine during the Ending Scene:
-	say "'I'd like to believe that it does what you say it does but we've no proof.'"
+[After informing Humboldt about the time machine during the Ending Scene:
+	say "'I'd like to believe that it does what you say it does but we've no proof.'"]
+
+[Before informing Humboldt about the workshop-room during the Ending Scene: 
+	try quizzing Humboldt about the second noun;
+	stop the action.]
 
 After informing Humboldt about the workshop-room during the Ending Scene: 
 	say "Humboldt listens dispassionately as you enthusiastically point out various areas of the workshop, a nonplussed look on his face."
 
-After informing Humboldt about the fuse during the Ending Scene: 
+After informing Humboldt about the breaker during the Ending Scene: 
 	say "Humboldt nods slightly as you explain how the fuse is necessary for the time machine[']s operation."
 
 After informing Humboldt about the pocket watch during the Ending Scene: 
@@ -3070,7 +3087,7 @@ After informing Humboldt about Morlocks during the Ending Scene:
 	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
 	follow Patience rules.
 	
-After informing Humboldt about river during the Ending Scene:
+After informing Humboldt about River Bank during the Ending Scene:
 	say "Humboldt listens to you recount your experience at the river with a [patience of Humboldt] look on his face.";
 	follow Patience rules.
 
@@ -3592,8 +3609,9 @@ Ending Scene is a scene.
 
 Ending Scene begins when humboldt-endgame-begins is true.
 
-[When Ending Scene begins:
-	say "ENDING SCENE BEGINS."]
+When Ending Scene begins:
+	[say "ENDING SCENE BEGINS."]
+	implicitly greet Humboldt.
 
 [Recipe §7.13. Traveling Characters, Van Helsing example]
 Every turn:

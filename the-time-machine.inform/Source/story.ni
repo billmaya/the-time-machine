@@ -3422,7 +3422,8 @@ Wells is in the ambulance.
 Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
 
 Before saying hello to Wells when the greeting type is explicit or the greeting type is implicit: 
-	say "CAN'T TALK TO WELLS.";
+	say "Wells is inside the ambulance and can't hear you.";
+	[DEL say "CAN'T TALK TO WELLS.";]
 	stop the action. 
 
 Part - Rescuing
@@ -3435,6 +3436,29 @@ Understand "rescue [someone]" as rescuing.
 Instead of rescuing Wells: try entering ambulance.
 Instead of rescuing someone: say "It does not look like [the noun] is in need of any rescuing. But the thought is nice."
 
+Part - Default Responses
+
+Default ask response for Wells: 
+	say "DEFAULT ASK RESPONSE FOR WELLS."
+
+[Default answer response for ]
+
+Default tell response for Wells: 
+	say "DEFAULT TELL RESPONSE FOR WELLS."
+
+[Default ask-tell response for ]
+
+[Default give response for ]
+[Default show response for ]
+[Defautl give-show response for ]
+
+Default ask-for response for Wells: 
+	say "'DEFAULT ASK-FOR RESPONSE FOR WELLS.'"
+
+[Default yes-no response for ]
+[Default response for ]
+
+
 Book - Orderlies
 
 The orderlies are people in the ambulance. [Woking Street.]
@@ -3445,8 +3469,32 @@ Understand "attendant" or "attendants" or "orderly" as orderlies.
 Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
 
 Before saying hello to the orderlies when the greeting type is explicit or the greeting type is implicit: 
-	say "CAN'T TALK TO ORDERLIES.";
+	say "The orderlies are inside the ambulance and can't hear you.";
+	[DEL say "CAN'T TALK TO ORDERLIES.";]
 	stop the action. 
+
+Part - Default Responses
+
+Default ask response for orderlies: 
+	say "DEFAULT ASK RESPONSE FOR ORDERLIES."
+
+[Default answer response for ]
+
+Default tell response for orderlies: 
+	say "DEFAULT TELL RESPONSE FOR ORDERLIES."
+
+[Default ask-tell response for ]
+
+[Default give response for ]
+[Default show response for ]
+[Defautl give-show response for ]
+
+Default ask-for response for orderlies: 
+	say "'DEFAULT ASK-FOR RESPONSE FOR ORDERLIES.'"
+
+[Default yes-no response for ]
+[Default response for ]
+
 [
 Instead of asking the orderlies about anything: say "If they both weren't out of sight in the ambulance you could."
 Instead of telling the orderlies about anything: try asking the orderlies about it.

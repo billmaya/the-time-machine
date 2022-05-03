@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31451 ]
+[ WORDS - 31590 ]
 
 Table of Releases
 release	notes
@@ -3421,10 +3421,8 @@ Wells is in the ambulance.
 
 Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
 
-Before saying hello to Wells when the greeting type is explicit or the greeting type is implicit: 
-	say "Wells is inside the ambulance and can't hear you.";
-	[DEL say "CAN'T TALK TO WELLS.";]
-	stop the action. 
+After saying hello to Wells when the greeting type is explicit or the greeting type is implicit: 
+	say "[default-response]".
 
 Part - Rescuing
 
@@ -3438,30 +3436,25 @@ Instead of rescuing someone: say "It does not look like [the noun] is in need of
 
 Part - Default Responses
 
-Default ask response for Wells: 
-	say "DEFAULT ASK RESPONSE FOR WELLS."
+To say default-response: say "Wells is being held inside the ambulance and can't hear you."
 
+[Default ask response for Wells: ]
 [Default answer response for ]
-
-Default tell response for Wells: 
-	say "DEFAULT TELL RESPONSE FOR WELLS."
-
-[Default ask-tell response for ]
-
+[Default tell response for Wells: ]
+[Default ask-tell response for Wells: ]
 [Default give response for ]
 [Default show response for ]
-[Defautl give-show response for ]
-
-Default ask-for response for Wells: 
-	say "'DEFAULT ASK-FOR RESPONSE FOR WELLS.'"
-
+[Default give-show response for Wells: ]
+[Default ask-for response for Wells: ]
 [Default yes-no response for ]
-[Default response for ]
+
+Default response for Wells:
+	say "[default-response]".
 
 
 Book - Orderlies
 
-The orderlies are people in the ambulance. [Woking Street.]
+The orderlies are people in the ambulance.
 The orderlies are undescribed.
 The description of the orderlies is "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
 Understand "attendant" or "attendants" or "orderly" as orderlies.
@@ -3470,7 +3463,6 @@ Instead of taking the orderlies: say "Given the ease with which they got Wells i
 
 Before saying hello to the orderlies when the greeting type is explicit or the greeting type is implicit: 
 	say "The orderlies are inside the ambulance and can't hear you.";
-	[DEL say "CAN'T TALK TO ORDERLIES.";]
 	stop the action. 
 
 Part - Default Responses

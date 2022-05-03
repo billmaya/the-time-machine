@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31590 ]
+[ WORDS - 31557 ]
 
 Table of Releases
 release	notes
@@ -3422,7 +3422,7 @@ Wells is in the ambulance.
 Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
 
 After saying hello to Wells when the greeting type is explicit or the greeting type is implicit: 
-	say "[default-response]".
+	say "[default-wells-response]".
 
 Part - Rescuing
 
@@ -3436,20 +3436,20 @@ Instead of rescuing someone: say "It does not look like [the noun] is in need of
 
 Part - Default Responses
 
-To say default-response: say "Wells is being held inside the ambulance and can't hear you."
+To say default-wells-response: say "Wells is being held inside the ambulance and can't hear you."
 
 [Default ask response for Wells: ]
 [Default answer response for ]
 [Default tell response for Wells: ]
 [Default ask-tell response for Wells: ]
-[Default give response for ]
-[Default show response for ]
+[Default give response for Wells: ]
+[Default show response for Wells: ]
 [Default give-show response for Wells: ]
 [Default ask-for response for Wells: ]
-[Default yes-no response for ]
+[Default yes-no response for Wells: ]
 
 Default response for Wells:
-	say "[default-response]".
+	say "[default-wells-response]".
 
 
 Book - Orderlies
@@ -3461,36 +3461,26 @@ Understand "attendant" or "attendants" or "orderly" as orderlies.
 
 Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
 
-Before saying hello to the orderlies when the greeting type is explicit or the greeting type is implicit: 
-	say "The orderlies are inside the ambulance and can't hear you.";
-	stop the action. 
+After saying hello to the orderlies when the greeting type is explicit or the greeting type is implicit: 
+	say "If they both weren't out of sight in the ambulance you could." 
 
 Part - Default Responses
 
-Default ask response for orderlies: 
-	say "DEFAULT ASK RESPONSE FOR ORDERLIES."
+To say default-orderlies-response: say "The orderlies are inside the ambulance and can't hear you."
 
-[Default answer response for ]
+[Default ask response for orderlies: ]
+[Default answer response for orderlies: ]
+[Default tell response for orderlies: ]
+[Default ask-tell response for orderlies: ]
+[Default give response for orderlies: ]
+[Default show response for orderlies: ]
+[Defautl give-show response for orderlies: ]
+[Default ask-for response for orderlies: ]
+[Default yes-no response for orderlies: ]
 
-Default tell response for orderlies: 
-	say "DEFAULT TELL RESPONSE FOR ORDERLIES."
+Default response for orderlies: 
+	say "[default-orderlies-response]".
 
-[Default ask-tell response for ]
-
-[Default give response for ]
-[Default show response for ]
-[Defautl give-show response for ]
-
-Default ask-for response for orderlies: 
-	say "'DEFAULT ASK-FOR RESPONSE FOR ORDERLIES.'"
-
-[Default yes-no response for ]
-[Default response for ]
-
-[
-Instead of asking the orderlies about anything: say "If they both weren't out of sight in the ambulance you could."
-Instead of telling the orderlies about anything: try asking the orderlies about it.
-Instead of showing something to the orderlies: try asking the orderlies about it.]
 
 Book - Driver
 

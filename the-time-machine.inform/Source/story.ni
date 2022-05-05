@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31557 ]
+[ WORDS - 31603 ]
 
 Table of Releases
 release	notes
@@ -3491,14 +3491,28 @@ The driver is undescribed.
 The driver is in Woking Street.
 The description of the driver is "Trying to stay warm in the front of the ambulance, the driver waits for Humboldt to give him the signal to get going."
 
-Before saying hello to the driver when the greeting type is explicit or the greeting type is implicit: 
-	say "CAN'T TALK TO DRIVER.";
-	stop the action. 
-[
-Instead of asking the driver about anything: say "'I'm just the driver, sir. The doctor there's the one who could answer that for you."
-Instead of telling the driver about anything: say "'Fascinating, sir. I'm sure the doctor would be might interested to hear that.'"
-Instead of showing the pocket watch to the driver: say "Very nice, sir.  I'd hold on to that. I've got one like it that was me granddads."
-]
+After saying hello to the driver when the greeting type is explicit or the greeting type is implicit: 
+	say "[default-driver-response]".
+
+To say default-driver-response: say "The driver nods silently in your direction."
+
+Default ask response for driver: say "'I'm just a driver, sir. I'm sure the doctor there's the one who could aswer that for you.'"
+
+[Default answer response for driver: ]
+
+Default tell response for driver: say "'Fascinating, sir. I'm sure the doctor would be might interested to hear more about that.'"
+
+[Default ask-tell response for driver: ]
+[Default give response for driver: ]
+[Default show response for driver: ]
+
+Default give-show response for driver: say "'Very nice, sir. I've got one like it that was me granddads. I'd hold on to that.'"
+
+[Default ask-for response for driver: ]
+[Default yes-no response for driver: ]
+
+Default response for driver: 
+	say "[default-driver-response]".
 
 
 Book - Gernsback 

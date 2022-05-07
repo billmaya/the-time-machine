@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31625 ]
+[ WORDS - 31651 ]
 
 Table of Releases
 release	notes
@@ -162,7 +162,11 @@ Rule for refreshing the title-characters window:
 	say "You Can Say Hello To".
 
 Rule for refreshing the list-characters window:
-	say "[list of people who are major that are not player in location of player]".
+	let X be the list of people who are major that are not the player in location of player;
+	if X is not empty:
+		say "[list of people who are major that are not player in location of player]";
+	otherwise:
+		say "".
 
 Rule for refreshing the title-talking-to window:
 	say "You Are Talking To".

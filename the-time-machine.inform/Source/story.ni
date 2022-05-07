@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31603 ]
+[ WORDS - 31625 ]
 
 Table of Releases
 release	notes
@@ -160,9 +160,9 @@ Chapter - Rules
 	
 Rule for refreshing the title-characters window:
 	say "You Can Say Hello To".
-	
+
 Rule for refreshing the list-characters window:
-	say "[list of people that are not player in location of player]".
+	say "[list of people who are major that are not player in location of player]".
 
 Rule for refreshing the title-talking-to window:
 	say "You Are Talking To".
@@ -2569,6 +2569,9 @@ Volume - Characters
 A person can be either fixed or mobile. 
 A person is usually fixed.
 
+A person can be either major or minor.
+A person is usually minor.
+
 Book - Familiarity 
 
 
@@ -2615,6 +2618,8 @@ Watchett is a female person.
 Watchett is in the Kitchen.
 The printed name of Watchett is "Mrs. Watchett". 
 The description of Watchett is "Wells['] steadfast aged housekeeper, she has been cleaning his house and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
+
+Watchett is major.
 
 Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 [See §17.3. Overriding existing commands - New tokens for ^]
@@ -2811,6 +2816,8 @@ Humboldt is a male.
 Humboldt is fixed.
 Humboldt is in Woking Street.
 The description of Humboldt is "A reputable physician and alienist, he has also known Wells for years. You are confident that his methodical nature, combined with his diagnostic skills, will enable him to determine what ails your friend." [enable him to determine what truth lies at the heart of Wells['] story about time travel. - modify description.]
+
+Humboldt is major.
 
 The printed name of Humboldt is "Dr. Humboldt"
 

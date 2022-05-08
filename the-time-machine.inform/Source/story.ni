@@ -6,7 +6,7 @@ The release number is 8.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30077 ]
+[ WORDS - 30064 ]
 
 Table of Releases
 release	notes
@@ -353,6 +353,9 @@ Test search-area with "search area / search area / search area / search area."
 [v1.4 Tests]
 Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever."
 Test xpl-802701 with "test go-802701 / exit / x statue / e / e / s / n/ w / w / se / nw / enter time machine / push lever."
+
+[v1.5 Tests]
+Test eloi-r8 with "test go-802701 / exit / e / e / s / n / w / w / se."
 
 Part - Release
 
@@ -2467,7 +2470,7 @@ Understand "people" or "figures" or "group" as balcony-people.
 Part - River Bank
 
 The River Bank is a room.
-The River is southeast of the Clearing.
+The River Bank is southeast of the Clearing.
 The description of the River Bank is "[first time]The southeast path winds its downhill through dense undergrowth. [only]After a brief hike you emerge from the woods onto the northwest bank of a sizeable river."
 
 The river-river is scenery in the River.
@@ -2511,63 +2514,6 @@ Resting is an action applying to nothing.
 Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
-Chapter - Introduction Of Weena
-
-Introduction Of Weena is a scene.
-
-Introduction Of Weena begins when the Eloi is carrying the pocket watch.
-
-When Introduction Of Weena begins:
-	[say "INTRODUCTION TO WEENA BEGINS.";]
-	say "Suddenly a young girl appears. Though her age, appearance and clothing mimics the other Eloi, her demeanor and the way she looks at you is different from the others. Obviously this is Weena and her encounter with Wells has changed her in some way, forced her to 'grow up' for lack of a better word.
-
-	Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
-	now Weena is in the River;
-	now Weena is carrying the pocket watch.
-
-Introduction Of Weena ends when Weena has the pocket watch.
-
-[When Introduction Of Weena ends:
-	say "INTRODUCTION TO WEENA ENDS."]
-
-Chapter - Weena Gives You Flower
-
-Weena Gives You Flower is a scene.
-
-Weena Gives You Flower begins when Weena has the pocket watch.
-
-When Weena Gives You Flower begins:
-	[say "WEENA GIVES YOU FLOWER BEGINS.";]
-	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and smiles."; 
-	now the player is carrying the pocket watch.
-
-Instead of asking Weena about something:
-	say "Try as you might you can't make Weena understand what you are asking about. At times she laughs at your strange pronunciations." 
-
-Instead of giving something to Weena:
-	say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, passes it around the small group gathered until the [noun] is returned to you."
-
-Instead of giving the pocket watch to Weena:
-	say "She looks at the pocket watch, smiles, and then returns it to you."
-
-Instead of showing something to Weena: [Handles both > show fuse to weena and > show weena the fuse]
-	say "Weena looks at the [noun] with a degree of puzzlement on her face but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
-
-Instead of showing the pocket watch to Weena:
-	say "She cocks her head and smiles back at you, waiting."
-
-Instead of giving the petal to Weena: try showing the petal to Weena.
-
-Instead of showing the petal to Weena:
-	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";
-	now the player is carrying the flower;
-	now the Eloi are nowhere;
-	now Weena is nowhere.
-
-Weena Gives You Flower ends when the player has the flower.
-
-[When Weena Gives You Flower ends:
-	say "WEENA GIVES YOU FLOWER ENDS."]
 			
 Volume - Characters
 
@@ -3189,8 +3135,9 @@ The Eloi are people. "[if the player is in the River Bank for more than the firs
 Noticing your presence, a few of the Eloi gather around you.[end if]"
 
 The indefinite article is "the".
-The Eloi are in the River.
+The Eloi are in the River Bank.
 The Eloi are fixed.
+The Eloi are major.
 
 The description of the Eloi is "All of the Eloi are slight and short, about four feet tall. All are dressed in the same type of manufactured tunic, belted at the waist, and wearing buskins on their feet. The homogeneity of their features, their build, and their dress make it hard to distinguish one from the other."
 
@@ -3198,30 +3145,55 @@ eloi-couples are scenery in the River.
 The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
 Understand "couples" as eloi-couples.
 
-Chapter - Conversation
+Part - Suggestions 
 
-Instead of telling the Eloi about something:
-	try asking the Eloi about something.
+Part - Conversation 
 
-Instead of asking the Eloi about something:
-	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
-	[say "ASKING [noun] about [second noun]." [second noun = nothing in this example because it is not an object. See Writing §12.20. Stored actions]]
+Chapter - Hello
 
-Instead of giving something to the Eloi:
-	[say "GIVE [noun] TO [second noun]."]
-	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few second and, unable to discern its purpose, pass it around the small group gathered until the [noun] is returned to you."	
-		
-Instead of giving the pocket watch to the Eloi:
-	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. The one with the watch turns it over in their hands before another grabs it away from them.[paragraph break]";
-	now the Eloi is carrying the pocket watch.
-	
-Instead of showing something to the Eloi: [Handles both > show fuse to eloi and > show eloi the fuse]
-	[say "SHOWING [noun] TO [second noun]."]
-	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
+Chapter - Goodbye
 
-Instead of showing the pocket watch to the Eloi:
+Chapter - River Bank
+
+Section - Requests - "Ask [someone] for [thing]"
+
+Section - Quizzing - "Ask [someone] about [thing]"
+
+Section - Informing - "Tell [someone] about [thing]"
+
+Section - Imploring - "Ask [someone] for ['text']"
+
+Section - Showing
+
+After showing the pocket watch to the Eloi:
 	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
 	now the Eloi is carrying the pocket watch.
+
+Section - Giving
+		
+Instead of giving the pocket watch to the Eloi:
+	try showing the pocket watch to the Eloi.
+
+Chapter - Default Responses
+
+[Default ask response for Eloi:] 
+[Default answer response for Eloi:]
+[Default tell response for Eloi:]
+	
+Default ask-tell response for Eloi:
+	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
+	
+Default give response for Eloi:
+	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few second and, unable to discern its purpose, pass it around the small group gathered until the [noun] is returned to you."
+	
+Default show response for Eloi:
+	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function."	
+	
+[Default give-show response for Eloi:]
+[Default ask-for response for Eloi:]
+[Default yes-no response for Eloi:]
+[Default response for Eloi:]
+
 
 Book - Weena
 
@@ -3407,10 +3379,6 @@ Travel To 1895 ends when the time machine is in the Workshop.
 	say "TRAVEL TO 1895 ENDS.";]	
 
 
-Volume - 802,701
-
-
-
 Volume - Scenes
 
 Book - Opening Scene
@@ -3450,6 +3418,64 @@ Instead of wandering in the Bottom Shaft:
 				now encounter-morlocks is true;
 		otherwise:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
+
+Book - Introduction Of Weena
+
+Introduction Of Weena is a scene.
+
+Introduction Of Weena begins when the Eloi is carrying the pocket watch.
+
+When Introduction Of Weena begins:
+	[say "INTRODUCTION TO WEENA BEGINS.";]
+	say "Suddenly a young girl appears. Though her age, appearance and clothing mimics the other Eloi, her demeanor and the way she looks at you is different from the others. Obviously this is Weena and her encounter with Wells has changed her in some way, forced her to 'grow up' for lack of a better word.
+
+	Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
+	now Weena is in the River;
+	now Weena is carrying the pocket watch.
+
+Introduction Of Weena ends when Weena has the pocket watch.
+
+[When Introduction Of Weena ends:
+	say "INTRODUCTION TO WEENA ENDS."]
+
+Book - Weena Gives You Flower
+
+Weena Gives You Flower is a scene.
+
+Weena Gives You Flower begins when Weena has the pocket watch.
+
+When Weena Gives You Flower begins:
+	[say "WEENA GIVES YOU FLOWER BEGINS.";]
+	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and smiles."; 
+	now the player is carrying the pocket watch.
+
+Instead of asking Weena about something:
+	say "Try as you might you can't make Weena understand what you are asking about. At times she laughs at your strange pronunciations." 
+
+Instead of giving something to Weena:
+	say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, passes it around the small group gathered until the [noun] is returned to you."
+
+Instead of giving the pocket watch to Weena:
+	say "She looks at the pocket watch, smiles, and then returns it to you."
+
+Instead of showing something to Weena: [Handles both > show fuse to weena and > show weena the fuse]
+	say "Weena looks at the [noun] with a degree of puzzlement on her face but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
+
+Instead of showing the pocket watch to Weena:
+	say "She cocks her head and smiles back at you, waiting."
+
+Instead of giving the petal to Weena: try showing the petal to Weena.
+
+Instead of showing the petal to Weena:
+	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";
+	now the player is carrying the flower;
+	now the Eloi are nowhere;
+	now Weena is nowhere.
+
+Weena Gives You Flower ends when the player has the flower.
+
+[When Weena Gives You Flower ends:
+	say "WEENA GIVES YOU FLOWER ENDS."]
 
 Book - Humboldt's Return
 

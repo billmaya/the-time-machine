@@ -6,7 +6,7 @@ The release number is 7.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31674 ]
+[ WORDS - 31694 ]
 
 Table of Releases
 release	notes
@@ -3840,8 +3840,10 @@ I also want to thank the people who took the time to write reviews of v1.0 of th
 To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.[paragraph break]";
 	say "Release 7 Notes (v1.4)[paragraph break]
-• Added Conversation Packaged extension (Eric Eve)[line break]
-• Added Flexible Window extension (Jon Ingold)[paragraph break]";
+• Added Conversation Package extension (Eric Eve)[line break]
+• Added Flexible Window extension (Jon Ingold)[line break]
+• Updated Watchett conversation to use Conversation Package extension[line break]
+• Updated Humboldt conversation to use Conversation Package extension[paragraph break]";
 	say "Release 6 Notes (v1.3)[paragraph break]
 • Added breaker.[line break]
 • Added 2nd fuse so now there's an orrery fuse (working) and a time machine fuse (not working).[line break]

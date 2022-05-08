@@ -3840,6 +3840,9 @@ I also want to thank the people who took the time to write reviews of v1.0 of th
 
 To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.[paragraph break]";
+	say "Release 8 Notes (v1.5)[paragraph break]
+• XYZ[line break]
+• ABC[paragraph break]";
 	say "Release 7 Notes (v1.4)[paragraph break]
 • Added Conversation Package extension (Eric Eve)[line break]
 • Added Flexible Window extension (Jon Ingold)[line break]

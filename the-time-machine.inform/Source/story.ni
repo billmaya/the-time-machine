@@ -6,7 +6,7 @@ The release number is 8.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30064 ]
+[ WORDS - 30159 ]
 
 Table of Releases
 release	notes
@@ -3200,13 +3200,48 @@ Book - Weena
 Weena is a person.
 Weena is nowhere.
 Weena is fixed.
+Weena is major.
 The description of Weena is "Slightly taller than the other Eloi but dressed as they are and with the same similarity of features and build, this is clearly the girl Wells described."
 
-Chapter - Flower
+Part - Suggestions 
+
+Part - Conversation 
+
+Chapter - Hello
+
+Chapter - Goodbye
+
+Chapter - River Bank
+
+Section - Requests - "Ask [someone] for [thing]"
+
+Section - Quizzing - "Ask [someone] about [thing]"
+
+Section - Informing - "Tell [someone] about [thing]"
+
+Section - Imploring - "Ask [someone] for ['text']"
+
+Section - Showing
+
+Chapter - Default Responses
+
+[Default ask response for Weena:] 
+[Default answer response for Weena:]
+[Default tell response for Weena:]
+[Default ask-tell response for Weena:]
+[Default give response for Weena:]
+[Default show response for Weena:]
+[Default give-show response for Weena:]
+[Default ask-for response for Weena:]
+[Default yes-no response for Weena:]
+[Default response for Weena:]
+
+Part - Flower
 
 The flower is a thing.
 The flower is nowhere.
 The description of the flower is "Unlike any vegetation you've ever seen, the petal that Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
+
 
 Book - Wells
 

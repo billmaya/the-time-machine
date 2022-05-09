@@ -6,7 +6,7 @@ The release number is 8.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30159 ]
+[ WORDS - 30265 ]
 
 Table of Releases
 release	notes
@@ -3161,7 +3161,9 @@ Section - Quizzing - "Ask [someone] about [thing]"
 
 After quizzing the Eloi about Morlocks:
 	say "The Eloi within earshot glance at one another at the word 'Morlocks,' but, after a brief fearful silence, they continue chattering among themselves."
-	[DEL say "ASK ELOI ABOUT MORLOCKS."]
+
+After quizzing the Eloi about Weena:
+	now introduce-weena is true.
 
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -3171,7 +3173,8 @@ Section - Showing
 
 After showing the pocket watch to the Eloi:
 	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
-	now the Eloi is carrying the pocket watch.
+	now the Eloi is carrying the pocket watch;
+	now introduce-weena is true.
 
 Section - Giving
 		
@@ -3462,14 +3465,23 @@ Book - Introduction Of Weena
 
 Introduction Of Weena is a scene.
 
-Introduction Of Weena begins when the Eloi is carrying the pocket watch.
+introduce-weena is a truth state that varies.
+introduce-weena is false.
+
+Introduction Of Weena begins when introduce-weena is true.
+
+To say weena-description:
+	say "Though her age, appearance and clothing mimics the other Eloi, her demeanor and the way she looks at you is different from the others. Obviously this is Weena and her encounter with Wells has changed her in some way, forced her to 'grow up' for lack of a better word."
 
 When Introduction Of Weena begins:
 	[say "INTRODUCTION TO WEENA BEGINS.";]
-	say "Suddenly a young girl appears. Though her age, appearance and clothing mimics the other Eloi, her demeanor and the way she looks at you is different from the others. Obviously this is Weena and her encounter with Wells has changed her in some way, forced her to 'grow up' for lack of a better word.
-
-	Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
-	now Weena is in the River;
+	if the Eloi is carrying the pocket watch:
+		say "Suddenly a young girl appears. [no line break]";
+	otherwise:
+		say "At the word 'Weena' the Eloi begin chattering rapidly among themselves. One of them runs off and returns with a young girl. [no line break]";
+	say "[weena-description][line break]";
+	say "Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
+	now Weena is in the River Bank;
 	now Weena is carrying the pocket watch.
 
 Introduction Of Weena ends when Weena has the pocket watch.

@@ -18,6 +18,7 @@ release	notes
 "6"	"v1.3"
 "7"	"v1.4"
 "8"	"v1.5"
+"9"	"v1.6"
 
 Volume - Beginning The Story
 

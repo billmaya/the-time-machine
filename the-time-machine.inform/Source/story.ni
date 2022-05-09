@@ -3159,6 +3159,10 @@ Section - Requests - "Ask [someone] for [thing]"
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
+After quizzing the Eloi about Morlocks:
+	say "The Eloi within earshot glance at one another at the word 'Morlocks,' but, after a brief fearful silence, they continue chattering among themselves."
+	[DEL say "ASK ELOI ABOUT MORLOCKS."]
+
 Section - Informing - "Tell [someone] about [thing]"
 
 Section - Imploring - "Ask [someone] for ['text']"

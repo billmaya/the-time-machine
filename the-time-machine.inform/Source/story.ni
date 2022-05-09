@@ -6,7 +6,7 @@ The release number is 8.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30265 ]
+[ WORDS - 30270 ]
 
 Table of Releases
 release	notes
@@ -357,6 +357,9 @@ Test xpl-802701 with "test go-802701 / exit / x statue / e / e / s / n/ w / w / 
 
 [v1.5 Tests]
 Test eloi-r8 with "test go-802701 / exit / e / e / s / n / w / w / se."
+	
+[v1.6 Tests]
+Test weena-r9 with "test go-802701 / exit / e / e / s / n / w / w / se / show watch to eloi."
 
 Part - Release
 
@@ -3231,12 +3234,37 @@ Section - Imploring - "Ask [someone] for ['text']"
 
 Section - Showing
 
+After showing something to Weena: 
+	say "Weena looks at the [noun] with a degree of puzzlement on her face but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
+
+Instead of showing the pocket watch to Weena:
+	say "She cocks her head and smiles back at you, waiting."
+
+Instead of showing the petal to Weena:
+	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";
+	now the player is carrying the flower;
+	now the Eloi are nowhere;
+	now Weena is nowhere.
+
+Section - Giving
+
+Instead of giving something to Weena:
+	say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, passes it around the small group gathered until the [noun] is returned to you."
+
+Instead of giving the pocket watch to Weena:
+	say "She looks at the pocket watch, smiles, and then returns it to you."
+
+Instead of giving the petal to Weena: try showing the petal to Weena.
+
 Chapter - Default Responses
 
 [Default ask response for Weena:] 
 [Default answer response for Weena:]
 [Default tell response for Weena:]
-[Default ask-tell response for Weena:]
+
+Default ask-tell response for Weena:
+	say "Try as you might you can't make Weena understand what you are talking about. At times she laughs at your strange pronunciations."
+
 [Default give response for Weena:]
 [Default show response for Weena:]
 [Default give-show response for Weena:]
@@ -3500,29 +3528,6 @@ When Weena Gives You Flower begins:
 	[say "WEENA GIVES YOU FLOWER BEGINS.";]
 	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and smiles."; 
 	now the player is carrying the pocket watch.
-
-Instead of asking Weena about something:
-	say "Try as you might you can't make Weena understand what you are asking about. At times she laughs at your strange pronunciations." 
-
-Instead of giving something to Weena:
-	say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, passes it around the small group gathered until the [noun] is returned to you."
-
-Instead of giving the pocket watch to Weena:
-	say "She looks at the pocket watch, smiles, and then returns it to you."
-
-Instead of showing something to Weena: [Handles both > show fuse to weena and > show weena the fuse]
-	say "Weena looks at the [noun] with a degree of puzzlement on her face but no recognition of the [noun]'s function." [What is best way to handle possesiveness, i.e. "'s"?]
-
-Instead of showing the pocket watch to Weena:
-	say "She cocks her head and smiles back at you, waiting."
-
-Instead of giving the petal to Weena: try showing the petal to Weena.
-
-Instead of showing the petal to Weena:
-	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";
-	now the player is carrying the flower;
-	now the Eloi are nowhere;
-	now Weena is nowhere.
 
 Weena Gives You Flower ends when the player has the flower.
 

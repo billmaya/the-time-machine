@@ -3425,68 +3425,14 @@ Chapter - Default Responses
 
 
 
-Volume - Traveling In Time
 
-Book - Travel To 802,701
-
-Travel To 802,701 is a recurring scene.
-
-Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the lever is switched on.
-
-travel-to-802701 is a truth state that varies.
-travel-to-802701 is false.
-
-When Travel To 802,701 begins:
-	[say "TRAVELING TO 802,701 BEGINS.";]
-	now travel-to-802701 is true;
-	say "From Wells['] story you have an idea of what is going to happen but you never expected to see it with your own eyes or experience it yourself.
-
-	As the machine powers up and the dials start inching forward through the seconds, minutes, weeks, and months, the workshop and its contents, in fact the entire house, fade away to be replaced by a shimmering grey void. As the dials inch forward through time, vague shapes of all sizes appear and disappear on the surface of the void surrounding you and the time machine[unicode 8212]future people, places, and things living out their own personal cycle of birth, life, and death.
-
-	You grip the time machine[']s framework as it shudders and gains velocity on its pre-programmed flight through the centuries and millennia towards what you suppose is the Age of Eloi and Morlocks that Wells spoke about.
-	
-	One age passes. Two ages. Five ages. The blur of the individual dials starts slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you and the time machine starts to dissipate and fade away like an early morning fog in the face of the sun. Eventually the time machine stops, the dials indicating that 801,006 years have passed from when you started your journey in 1895.
-
-	You have arrived in the year 802,701 A.D.";
-	now the current-year is "802,701";
-	now the numeric-year is 802701;
-	now the time machine is in the Clearing;
-	now the time machine is described;
-	now the lever is switched off.
-
-Travel To 802,701 ends when the time machine is in the Clearing.
-
-[When Travel To 802,701 ends:
-	say "TRAVELING TO 802,701 ENDS."]
-
-Book - Travel To 1895
-
-Travel To 1895 is a recurring scene.
-
-Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the lever is switched on.
-
-When Travel To 1895 begins:
-	[say "TRAVEL TO 1895 BEGINS.";]
-	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
-
-	Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow and, as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
-
-	You have arrived back in the year 1895.";
-	now the current-year is "1895";
-	now the numeric-year is 1895;
-	now the time machine is in the Workshop;
-	now the time machine is undescribed;
-	now the lever is switched off.
-	
-Travel To 1895 ends when the time machine is in the Workshop.
-
-[When Travel To 1895 ends:
-	say "TRAVEL TO 1895 ENDS.";]	
 
 
 Volume - Scenes
 
-Book - Opening Scene
+Book - Humboldt
+
+Part - Opening Scene
 
 Opening Scene is a scene.
 
@@ -3498,77 +3444,7 @@ Opening Scene ends when the ambulance is nowhere.
 
 [When Opening Scene ends: say "OPENING SCENE ENDS."]
 
-Book - Morlock Endgame
-
-[Writing §8.18. Randomness]
-[Writing §9.4. When play ends]
-
-Instead of wandering in the Bottom Shaft:
-	if encounter-morlocks is true:
-		if the player has the poker:
-			say "Even with a weapon you shouldn't try your luck, especially without a source of light and possibly some allies. I mean, you barely escaped from your first encounter with these brutish savages.";
-		otherwise:
-			say "I don't fancy you would want to try your luck a second time in that darkness, especially without a weapon. I mean, you barely escaped from your first encounter with those mongoloid underdwellers.";
-	otherwise:
-		if a random chance of 1 in 3 succeeds:
-			if the player has the poker:
-				say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and attempt to grab you. With a strength born of desperation and fear, you flail at them with the poker and drive what must be Morlocks off into the darkness. Retreating in what you hope is the correct direction, you find yourself back at the bottom of the shaft.";
-				now encounter-morlocks is true;
-			otherwise:
-				if a random chance of 2 in 3 succeeds:
-					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
-				otherwise:
-					say "You start down the [noun] tunnel without light or map towards the sound of the nearest machinery. The light fades as you proceed down the tunnel until you are in near absolute darkness. The noise of machinery gets louder and louder with each step you take.[paragraph break]Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but, outnumbered and without a weapon, you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold in some storage room carved out of solid rock. Shivering, you look around. Surrounding you are the naked bodies of Eloi, male and female, suspended on hooks, future fodder for the Morlocks. You bang on the door in horrror but the omnipresent and overwhelming sound of machinery drowns out your screams. Exhausted, you slump against the wall and soon succumb to the freezing cold, wishing you had believed Wells from the start.";
-					end the story finally;
-				now encounter-morlocks is true;
-		otherwise:
-			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
-
-Book - Introduction Of Weena
-
-Introduction Of Weena is a scene.
-
-introduce-weena is a truth state that varies.
-introduce-weena is false.
-
-Introduction Of Weena begins when introduce-weena is true.
-
-To say weena-description:
-	say "Though her age, appearance and clothing mimics the other Eloi, her demeanor and the way she looks at you is different from the others. Obviously this is Weena and her encounter with Wells has changed her in some way, forced her to 'grow up' for lack of a better word."
-
-When Introduction Of Weena begins:
-	[say "INTRODUCTION TO WEENA BEGINS.";]
-	if the Eloi is carrying the pocket watch:
-		say "Suddenly a young girl appears. [no line break]";
-	otherwise:
-		say "At the word 'Weena' the Eloi begin chattering rapidly among themselves. One of them runs off and returns with a young girl. [no line break]";
-	say "[weena-description][line break]";
-	say "Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
-	now Weena is in the River Bank;
-	now Weena is carrying the pocket watch.
-
-Introduction Of Weena ends when Weena has the pocket watch.
-
-[When Introduction Of Weena ends:
-	say "INTRODUCTION TO WEENA ENDS."]
-
-Book - Weena Gives You Flower
-
-Weena Gives You Flower is a scene.
-
-Weena Gives You Flower begins when Weena has the pocket watch.
-
-When Weena Gives You Flower begins:
-	[say "WEENA GIVES YOU FLOWER BEGINS.";]
-	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and smiles."; 
-	now the player is carrying the pocket watch.
-
-Weena Gives You Flower ends when the player has the flower.
-
-[When Weena Gives You Flower ends:
-	say "WEENA GIVES YOU FLOWER ENDS."]
-
-Book - Humboldt's Return
+Part - Humboldt's Return
 
 Humboldt's Return is a scene.
 
@@ -3587,7 +3463,7 @@ When Humboldt's Return ends:
 	now humboldt-endgame-begins is true;
 	[say "HUMBOLDT'S RETURN ENDS."]
 
-Book - Ending Scene
+Part - Ending Scene
 
 Ending Scene is a scene.
 
@@ -3632,6 +3508,138 @@ When Ending Scene ends:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
 		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";
 	end the story finally.
+
+Book - Traveling In Time
+
+Part - Travel To 802,701
+
+Travel To 802,701 is a recurring scene.
+
+Travel To 802,701 begins when the time machine is in the Workshop and player is in the time machine and the lever is switched on.
+
+travel-to-802701 is a truth state that varies.
+travel-to-802701 is false.
+
+When Travel To 802,701 begins:
+	[say "TRAVELING TO 802,701 BEGINS.";]
+	now travel-to-802701 is true;
+	say "From Wells['] story you have an idea of what is going to happen but you never expected to see it with your own eyes or experience it yourself.
+
+	As the machine powers up and the dials start inching forward through the seconds, minutes, weeks, and months, the workshop and its contents, in fact the entire house, fade away to be replaced by a shimmering grey void. As the dials inch forward through time, vague shapes of all sizes appear and disappear on the surface of the void surrounding you and the time machine[unicode 8212]future people, places, and things living out their own personal cycle of birth, life, and death.
+
+	You grip the time machine[']s framework as it shudders and gains velocity on its pre-programmed flight through the centuries and millennia towards what you suppose is the Age of Eloi and Morlocks that Wells spoke about.
+	
+	One age passes. Two ages. Five ages. The blur of the individual dials starts slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you and the time machine starts to dissipate and fade away like an early morning fog in the face of the sun. Eventually the time machine stops, the dials indicating that 801,006 years have passed from when you started your journey in 1895.
+
+	You have arrived in the year 802,701 A.D.";
+	now the current-year is "802,701";
+	now the numeric-year is 802701;
+	now the time machine is in the Clearing;
+	now the time machine is described;
+	now the lever is switched off.
+
+Travel To 802,701 ends when the time machine is in the Clearing.
+
+[When Travel To 802,701 ends:
+	say "TRAVELING TO 802,701 ENDS."]
+
+Part - Travel To 1895
+
+Travel To 1895 is a recurring scene.
+
+Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the lever is switched on.
+
+When Travel To 1895 begins:
+	[say "TRAVEL TO 1895 BEGINS.";]
+	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
+
+	Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow and, as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
+
+	You have arrived back in the year 1895.";
+	now the current-year is "1895";
+	now the numeric-year is 1895;
+	now the time machine is in the Workshop;
+	now the time machine is undescribed;
+	now the lever is switched off.
+	
+Travel To 1895 ends when the time machine is in the Workshop.
+
+[When Travel To 1895 ends:
+	say "TRAVEL TO 1895 ENDS.";]	
+
+Book - Weena
+
+Part - Introduction Of Weena
+
+Introduction Of Weena is a scene.
+
+introduce-weena is a truth state that varies.
+introduce-weena is false.
+
+Introduction Of Weena begins when introduce-weena is true.
+
+To say weena-description:
+	say "Though her age, appearance and clothing mimics the other Eloi, her demeanor and the way she looks at you is different from the others. Obviously this is Weena and her encounter with Wells has changed her in some way, forced her to 'grow up' for lack of a better word."
+
+When Introduction Of Weena begins:
+	[say "INTRODUCTION TO WEENA BEGINS.";]
+	if the Eloi is carrying the pocket watch:
+		say "Suddenly a young girl appears. [no line break]";
+	otherwise:
+		say "At the word 'Weena' the Eloi begin chattering rapidly among themselves. One of them runs off and returns with a young girl. [no line break]";
+	say "[weena-description][line break]";
+	say "Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
+	now Weena is in the River Bank;
+	now Weena is carrying the pocket watch.
+
+Introduction Of Weena ends when Weena has the pocket watch.
+
+[When Introduction Of Weena ends:
+	say "INTRODUCTION TO WEENA ENDS."]
+
+Part - Weena Gives You Flower
+
+Weena Gives You Flower is a scene.
+
+Weena Gives You Flower begins when Weena has the pocket watch.
+
+When Weena Gives You Flower begins:
+	[say "WEENA GIVES YOU FLOWER BEGINS.";]
+	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and smiles."; 
+	now the player is carrying the pocket watch.
+
+Weena Gives You Flower ends when the player has the flower.
+
+[When Weena Gives You Flower ends:
+	say "WEENA GIVES YOU FLOWER ENDS."]
+
+Book - Underground
+
+Part - Morlock Endgame
+
+[Writing §8.18. Randomness]
+[Writing §9.4. When play ends]
+
+Instead of wandering in the Bottom Shaft:
+	if encounter-morlocks is true:
+		if the player has the poker:
+			say "Even with a weapon you shouldn't try your luck, especially without a source of light and possibly some allies. I mean, you barely escaped from your first encounter with these brutish savages.";
+		otherwise:
+			say "I don't fancy you would want to try your luck a second time in that darkness, especially without a weapon. I mean, you barely escaped from your first encounter with those mongoloid underdwellers.";
+	otherwise:
+		if a random chance of 1 in 3 succeeds:
+			if the player has the poker:
+				say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and attempt to grab you. With a strength born of desperation and fear, you flail at them with the poker and drive what must be Morlocks off into the darkness. Retreating in what you hope is the correct direction, you find yourself back at the bottom of the shaft.";
+				now encounter-morlocks is true;
+			otherwise:
+				if a random chance of 2 in 3 succeeds:
+					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
+				otherwise:
+					say "You start down the [noun] tunnel without light or map towards the sound of the nearest machinery. The light fades as you proceed down the tunnel until you are in near absolute darkness. The noise of machinery gets louder and louder with each step you take.[paragraph break]Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but, outnumbered and without a weapon, you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold in some storage room carved out of solid rock. Shivering, you look around. Surrounding you are the naked bodies of Eloi, male and female, suspended on hooks, future fodder for the Morlocks. You bang on the door in horrror but the omnipresent and overwhelming sound of machinery drowns out your screams. Exhausted, you slump against the wall and soon succumb to the freezing cold, wishing you had believed Wells from the start.";
+					end the story finally;
+				now encounter-morlocks is true;
+		otherwise:
+			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 
 	
 Volume - Help

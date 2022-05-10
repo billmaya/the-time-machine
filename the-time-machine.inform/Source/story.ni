@@ -2735,7 +2735,7 @@ Test show-w with "show watchett poker / purloin poker / show watchett poker / sh
 
 Test basic-w with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for experiments / show watch to watchett".
 
-Chapter - Movement
+Part - Movement
 
 Every turn:
 	if Watchett is mobile:
@@ -3424,6 +3424,22 @@ Chapter - Default Responses
 [Default yes-no response for Gernsback:]
 [Default response for Gernsback:]
 
+Part - Movement
+
+Every turn:
+	if Gernsback is mobile:
+		repeat through the Table of Gernsback's Movement:
+			let the last space be the location of Gernsback;
+			if Gernsback can be seen by the player, say "Gernsback heads to [the destination entry].";
+			move Gernsback to destination entry;
+			if Gernsback can be seen by the player, say "Mrs. Watchett arrives from [the last space].";
+			now Gernsback is fixed;
+			blank out the whole row;
+			break.
+
+Table of Gernsback's Movement
+destination
+Parlor
 
 
 
@@ -3519,7 +3535,8 @@ Introduction Of Gernsback is a [recurring] scene.
 Introduction Of Gernsback begins when player is in the Library for the first time.
 
 When Introduction Of Gernsback begins: 
-	say "Introduction Of Gernsback BEGINS."
+	say "Introduction Of Gernsback BEGINS.";
+	now Gernsback is mobile.
 	[move Gernsback to Parlor.]
 
 Introduction Of Gernsback ends when Gernsback is in the Parlor.

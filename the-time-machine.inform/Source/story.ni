@@ -3386,6 +3386,7 @@ Book - Gernsback
 Gernsback is a person.
 Gernsback is a male.
 Gernsback is fixed.
+Gernsback is major.
 Gernsback is in the Library.
 
 [The printed name of Gernsback is "TBD."]
@@ -3508,6 +3509,35 @@ When Ending Scene ends:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
 		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";
 	end the story finally.
+
+Book - Gernsback
+
+Part - Introduction Of Gernsback
+
+Introduction Of Gernsback is a [recurring] scene.
+
+Introduction Of Gernsback begins when player is in the Library for the first time.
+
+When Introduction Of Gernsback begins: 
+	say "Introduction Of Gernsback BEGINS."
+	[move Gernsback to Parlor.]
+
+Introduction Of Gernsback ends when Gernsback is in the Parlor.
+
+When Introduction Of Gernsback ends: say "Introduction Of Gernsback ENDS."
+	
+Part - Gernsback's Comments
+
+Gernsback's Comments is a [recurring] scene.
+
+[Gernsback's Comments begins when CONDITION.]
+
+When Gernsback's Comments begins: say "Gernsback's Comments BEGINS."
+
+[Gernsback's Comments ends when CONDITION.]
+
+When Gernsback's Comments ends: say "Gernsback's Comments ENDS."
+
 
 Book - Traveling In Time
 

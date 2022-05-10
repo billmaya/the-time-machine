@@ -3823,14 +3823,21 @@ I also want to thank the people who took the time to write reviews of v1.0 of th
 
 To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.[paragraph break]";
+	say "Release 10 Notes (v1.7)[paragraph break]
+• Added Morlock Underground locations for exploration.[line break]
+• Added matches, cigar, and book for Gernsback to use.[line break]
+• Created Gernsback conversation using Conversation Package extension.[line break]
+• Added Introduction To Gernsback scene.[line break]
+• Added Gernsback's Comments scene.[paragraph break]";
+	say "Release 9 Notes (v1.6)[paragraph break]
+• Updated old Weena conversation code to use Conversation Package extension.[paragraph break]";
 	say "Release 8 Notes (v1.5)[paragraph break]
-• XYZ[line break]
-• ABC[paragraph break]";
+• Updated old Eloi conversation code to use Conversation Package extension.[paragraph break]";
 	say "Release 7 Notes (v1.4)[paragraph break]
-• Added Conversation Package extension (Eric Eve)[line break]
-• Added Flexible Window extension (Jon Ingold)[line break]
-• Updated Watchett conversation to use Conversation Package extension[line break]
-• Updated Humboldt conversation to use Conversation Package extension[paragraph break]";
+• Added Conversation Package extension (Eric Eve).[line break]
+• Added Flexible Window extension (Jon Ingold).[line break]
+• Updated old Watchett conversation code to use Conversation Package extension.[line break]
+• Updated old Humboldt conversation code to use Conversation Package extension.[paragraph break]";
 	say "Release 6 Notes (v1.3)[paragraph break]
 • Added breaker.[line break]
 • Added 2nd fuse so now there's an orrery fuse (working) and a time machine fuse (not working).[line break]

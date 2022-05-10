@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30249 ]
+[ WORDS - 30344 ]
 
 Table of Releases
 release	notes
@@ -3380,15 +3380,50 @@ Default response for driver:
 	say "[default-driver-response]".
 
 
-Book - Gernsback 
+Book - Gernsback
 [https://bit.ly/3rYUPl8]
 
-[Gernsback is a person.
+Gernsback is a person.
 Gernsback is a male.
 Gernsback is fixed.
-Gernsback is in the Entryway.]
+Gernsback is in the Library.
 
 [The printed name of Gernsback is "TBD."]
+
+Part - Suggestions 
+
+Part - Conversation 
+
+Chapter - Hello
+
+Chapter - Goodbye
+
+Chapter - River Bank
+
+Section - Requests - "Ask [someone] for [thing]"
+
+Section - Quizzing - "Ask [someone] about [thing]"
+
+Section - Informing - "Tell [someone] about [thing]"
+
+Section - Imploring - "Ask [someone] for ['text']"
+
+Section - Showing
+
+Chapter - Default Responses
+
+[Default ask response for Gernsback:] 
+[Default answer response for Gernsback:]
+[Default tell response for Gernsback:]
+[Default ask-tell response for Gernsback:]
+[Default give response for Gernsback:]
+[Default show response for Gernsback:]
+[Default give-show response for Gernsback:]
+[Default ask-for response for Gernsback:]
+[Default yes-no response for Gernsback:]
+[Default response for Gernsback:]
+
+
 
 Volume - Traveling In Time
 

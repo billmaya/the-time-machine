@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30606 ]
+[ WORDS - 30769 ]
 
 Table of Releases
 release	notes
@@ -2553,7 +2553,6 @@ The fuse is familiar.
 The Eloi are a familiar people.
 Weena is a familiar woman.
 
-
 Book - Subjects 
 
 experiments are a subject. The printed name is "Wells['] experiments".
@@ -3386,7 +3385,6 @@ Book - Gernsback
 Gernsback is a person.
 Gernsback is a male.
 Gernsback is fixed.
-Gernsback is major.
 Gernsback is in the Library.
 
 [The printed name of Gernsback is "TBD."]
@@ -3535,25 +3533,29 @@ Introduction Of Gernsback is a [recurring] scene.
 Introduction Of Gernsback begins when player is in the Library for the first time.
 
 When Introduction Of Gernsback begins: 
-	say "Introduction Of Gernsback BEGINS.";
+	say "INTRODUCTION OF GERNSBACK BEGINS.";
+	say "Standing by the desk, looking out the window, is Gernsback. A successful businessman with ownership in several textile mills in the north, he's a frequent visitor at these gatherings. Rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with the box of matches in his hands and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...'[paragraph break]Shaking his head he picks a book off the bookshelf and starts towards the parlor. 'Well, I guess we should wait until Humboldt gets back with more information. Better make ourselves comfortable until then.'";
 	now Gernsback is mobile.
 	[move Gernsback to Parlor.]
 
 Introduction Of Gernsback ends when Gernsback is in the Parlor.
 
-When Introduction Of Gernsback ends: say "Introduction Of Gernsback ENDS."
+When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."
+
 	
 Part - Gernsback's Comments
 
-Gernsback's Comments is a [recurring] scene.
+Gernsback's Comments is a recurring scene.
 
-[Gernsback's Comments begins when CONDITION.]
+Gernsback's Comments begins when Gernsback is in the Parlor and the player is in the Parlor.
 
-When Gernsback's Comments begins: say "Gernsback's Comments BEGINS."
+When Gernsback's Comments begins: 
+	say "GERNSBACK'S COMMENTS BEGINS.";
+	now Gernsback is major.
 
-[Gernsback's Comments ends when CONDITION.]
+Gernsback's Comments ends when the player is not in the Parlor.
 
-When Gernsback's Comments ends: say "Gernsback's Comments ENDS."
+When Gernsback's Comments ends: say "GERNSBACK'S COMMENTS ENDS."
 
 
 Book - Traveling In Time

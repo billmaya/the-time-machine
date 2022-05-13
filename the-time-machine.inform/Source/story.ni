@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30769 ]
+[ WORDS - 30884 ]
 
 Table of Releases
 release	notes
@@ -876,7 +876,10 @@ Part - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Sitting on the top of the fireplace mantle is an orrery. Directly in front of the hearth, angled towards one another, are two leather armchairs[if newspaper is on the armchairs] with today[']s [newspaper] sitting on one of them[end if].[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+
+[The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Sitting on the top of the fireplace mantle is an orrery. Directly in front of the hearth, angled towards one another, are two leather armchairs[if newspaper is on the armchairs] with today[']s [newspaper] sitting on one of them[end if].[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."]
+
+The description of the Parlor is " A coal fire blazes away in a large fireplace set into the west wall. Sitting on the fireplace mantle is an orrery. Directly in front of he hearth, angle towards one another, are two leather armchairs.[if the location of Gernsback is the Parlor][paragraph break]Gernsback is sitting in one of the armchairs, reading; today[']s newspaper is on the other chair.[otherwise]Today[']s newspaper is resting on one of the armchairs.[end if][if poker is in Parlor] Leaning against the fireplace is a [poker].[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.
@@ -3397,7 +3400,7 @@ Chapter - Hello
 
 Chapter - Goodbye
 
-Chapter - River Bank
+Chapter - In The Parlor
 
 Section - Requests - "Ask [someone] for [thing]"
 
@@ -3430,7 +3433,7 @@ Every turn:
 			let the last space be the location of Gernsback;
 			if Gernsback can be seen by the player, say "Gernsback heads to [the destination entry].";
 			move Gernsback to destination entry;
-			if Gernsback can be seen by the player, say "Mrs. Watchett arrives from [the last space].";
+			if Gernsback can be seen by the player, say "Gernsback arrives from [the last space].";
 			now Gernsback is fixed;
 			blank out the whole row;
 			break.
@@ -3536,7 +3539,6 @@ When Introduction Of Gernsback begins:
 	say "INTRODUCTION OF GERNSBACK BEGINS.";
 	say "Standing by the desk, looking out the window, is Gernsback. A successful businessman with ownership in several textile mills in the north, he's a frequent visitor at these gatherings. Rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with the box of matches in his hands and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...'[paragraph break]Shaking his head he picks a book off the bookshelf and starts towards the parlor. 'Well, I guess we should wait until Humboldt gets back with more information. Better make ourselves comfortable until then.'";
 	now Gernsback is mobile.
-	[move Gernsback to Parlor.]
 
 Introduction Of Gernsback ends when Gernsback is in the Parlor.
 
@@ -3551,6 +3553,7 @@ Gernsback's Comments begins when Gernsback is in the Parlor and the player is in
 
 When Gernsback's Comments begins: 
 	say "GERNSBACK'S COMMENTS BEGINS.";
+	now Gernsback is fixed;
 	now Gernsback is major.
 
 Gernsback's Comments ends when the player is not in the Parlor.

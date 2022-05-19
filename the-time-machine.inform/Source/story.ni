@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30884 ]
+[ WORDS - 30818 ]
 
 Table of Releases
 release	notes
@@ -606,7 +606,7 @@ Instead of winding the watch: say "You turn the stem back and forth a few second
 Part - Entryway
 
 The Entryway is a room. 
-The description of the Entryway is "From here you can reach all other parts of the house. To your right, an ornately-carved [banister] parallels a [staircase] that leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
+The description of the Entryway is "From here you can reach all other parts of the house.[paragraph break]To your right, an ornately-carved [banister] parallels a [staircase] that leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
 
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor.[first time] You have to admit, you haven't ever been up there.[only]"
@@ -652,7 +652,7 @@ Part - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls. The room continues to the north and the entryway is back east."
+The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[paragraph break]The room continues to the north and the entryway is back east."
 
 The shelves are a thing.
 The shelves are scenery in the Library.
@@ -877,9 +877,7 @@ Part - Parlor
 The Parlor is a room. 
 The Parlor is north of the Library.
 
-[The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Sitting on the top of the fireplace mantle is an orrery. Directly in front of the hearth, angled towards one another, are two leather armchairs[if newspaper is on the armchairs] with today[']s [newspaper] sitting on one of them[end if].[if poker is in Parlor] Leaning against the fireplace is a [poker].[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."]
-
-The description of the Parlor is " A coal fire blazes away in a large fireplace set into the west wall. Sitting on the fireplace mantle is an orrery. Directly in front of he hearth, angle towards one another, are two leather armchairs.[if the location of Gernsback is the Parlor][paragraph break]Gernsback is sitting in one of the armchairs, reading; today[']s newspaper is on the other chair.[otherwise]Today[']s newspaper is resting on one of the armchairs.[end if][if poker is in Parlor] Leaning against the fireplace is a [poker].[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. Sitting on the fireplace mantle is an orrery. Directly in front of he hearth, angle towards one another, are two leather armchairs.[if the location of Gernsback is the Parlor][paragraph break]Gernsback is sitting in one of the armchairs, reading; today[']s newspaper is on the other chair.[otherwise]Today[']s newspaper is resting on one of the armchairs.[end if][if poker is in Parlor] Leaning against the fireplace is a [poker].[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
 The armchairs are things.
 The armchairs are scenery in the Parlor.
@@ -904,7 +902,6 @@ The description of Garden Door is "[if location is Parlor]A set of glass doors a
 Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
 Instead of searching the Garden Door: say "[if the location is the Parlor]Through the glass doors you can see steps leading down to the snow-covered garden outside.[otherwise]Through the glass doors you can see the parlor inside.[end if]"
-
 
 Chapter - Fireplace
 	
@@ -1381,7 +1378,7 @@ Part - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description of the Dining Room is "A mahogany [dining table] that could seat eight comfortably dominates the space. Above the table hangs an electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals. The parlor is to the south."
+The description of the Dining Room is "A mahogany [dining table] that could seat eight comfortably dominates the space. Above the table hangs an electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals.[paragraph break]The parlor is to the south."
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
@@ -1469,7 +1466,7 @@ Part - Kitchen
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
 
-The description of the Kitchen is "[first time]If your memory suffices, which it usually does in most ordinary situations, this is the first time you've been in [Watchett]'s domain. [only]The small room is dominated by a sturdy wooden work table in the center. Surrounding the table are numerous cabinets and shelves. A stove and a sink are set against the north wall.[if the location of Watchett is the Kitchen][paragraph break][Watchett] is at the sink, washing up the supper dishes.[end if]"
+The description of the Kitchen is "[first time]If your memory suffices, which it usually does in most ordinary situations, this is the first time you've been in [Watchett]'s domain. [only]The small room is dominated by a sturdy wooden work table in the center. Surrounding the table are numerous cabinets and shelves. A stove and a sink are set against the north wall.[if the location of Watchett is the Kitchen][paragraph break][Watchett] is at the sink, washing up the supper dishes.[end if][paragraph break]The dining room is to the south."
 
 The work table is a thing.
 The work table is scenery in the Kitchen.
@@ -3390,6 +3387,8 @@ Gernsback is a male.
 Gernsback is fixed.
 Gernsback is in the Library.
 
+Gernsback is scenery. [This prevents "You can see Gernsback here." being printed out in room descriptions.]
+
 [The printed name of Gernsback is "TBD."]
 
 Part - Suggestions 
@@ -3536,13 +3535,13 @@ Introduction Of Gernsback is a [recurring] scene.
 Introduction Of Gernsback begins when player is in the Library for the first time.
 
 When Introduction Of Gernsback begins: 
-	say "INTRODUCTION OF GERNSBACK BEGINS.";
-	say "Standing by the desk, looking out the window, is Gernsback. A successful businessman with ownership in several textile mills in the north, he's a frequent visitor at these gatherings. Rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with the box of matches in his hands and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...'[paragraph break]Shaking his head he picks a book off the bookshelf and starts towards the parlor. 'Well, I guess we should wait until Humboldt gets back with more information. Better make ourselves comfortable until then.'";
+	[say "INTRODUCTION OF GERNSBACK BEGINS.";]
+	say "Standing by the desk, looking out the window, is Gernsback, a successful businessman with ownership in several textile mills in the north. He['] a frequent visitor at these gatherings and rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with a match and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...' He glances at the window, then shakes his head slowly, lost in thought.[paragraph break]Picking a book off the bookshelf, he turns back to you. 'I guess we had better make ourselves comfortable until Humboldt gets back.'";
 	now Gernsback is mobile.
 
 Introduction Of Gernsback ends when Gernsback is in the Parlor.
 
-When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."
+[When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
 
 	
 Part - Gernsback's Comments
@@ -3552,13 +3551,13 @@ Gernsback's Comments is a recurring scene.
 Gernsback's Comments begins when Gernsback is in the Parlor and the player is in the Parlor.
 
 When Gernsback's Comments begins: 
-	say "GERNSBACK'S COMMENTS BEGINS.";
+	[say "GERNSBACK'S COMMENTS BEGINS.";]
 	now Gernsback is fixed;
 	now Gernsback is major.
 
 Gernsback's Comments ends when the player is not in the Parlor.
 
-When Gernsback's Comments ends: say "GERNSBACK'S COMMENTS ENDS."
+[When Gernsback's Comments ends: say "GERNSBACK'S COMMENTS ENDS."]
 
 
 Book - Traveling In Time

@@ -875,7 +875,7 @@ Name	Author	Publish-Date
 Part - Parlor
 
 The Parlor is a room. 
-The Parlor is north of the Library.r
+The Parlor is north of the Library.
 The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in one of the two armchairs in front of the fireplace, reading. A newspaper rests on the other armchair.[otherwise] A newspaper rests on one of the two armchairs in front of the fireplace.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
 

@@ -878,7 +878,24 @@ The Parlor is a room.
 The Parlor is north of the Library.
 The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in one of the two armchairs in front of the fireplace, reading. A newspaper rests on the other armchair.[otherwise] A newspaper rests on one of the two armchairs in front of the fireplace.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
+Chapter - Armchairs
 
+To say armchair-description:
+	say "Like its counterpart this armchair is covered in worn leather. Larger than its library counterpart, it looks even more inviting and comfortable, especially positioned as it in front of the fire with the cold weather outside.[first time] But you don't have time to rest, you have a key to find.[only]"
+
+The right armchair is a thing.
+The right armchair is scenery in the Parlor.
+The right armchair is a supporter.
+The right armchair is enterable.
+The description of the right armchair is "[armchair-description]".
+
+The left armchair is a thing.
+The left armchair is scenery in the Parlor.
+The left armchair is a supporter.
+The left armchair is enterable.
+The description of the left armchair is "[armchair-description]".
+
+[
 The armchairs are things.
 The armchairs are scenery in the Parlor.
 The armchairs are supporters.
@@ -889,6 +906,8 @@ The description of the armchairs are "Like the library chair these armchairs are
 Instead of entering the armchairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
 	move the player to the armchairs, without printing a room description.
+]
+
 
 Chapter - Garden Door
 
@@ -3435,7 +3454,9 @@ Every turn:
 			if Gernsback can be seen by the player, say "Gernsback arrives from [the last space].";
 			now Gernsback is fixed;
 			blank out the whole row;
-			break.
+			break;
+	if the location of Gernsback is the Parlor:
+		move Gernsback to the right armchair.
 
 Table of Gernsback's Movement
 destination

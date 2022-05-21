@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30812 ]
+[ WORDS - 30954 ]
 
 Table of Releases
 release	notes
@@ -895,14 +895,15 @@ The left armchair is a supporter.
 The left armchair is enterable.
 The description of the left armchair is "[armchair-description]".
 
-[
+[DEL
 The armchairs are things.
 The armchairs are scenery in the Parlor.
 The armchairs are supporters.
 The armchairs are enterable.
 Understand "armchair" or "chair"  or "chairs" as armchairs.
 The description of the armchairs are "Like the library chair these armchairs are covered in worn leather. Larger than their library counterpart, they look even more inviting and comfortable, especially positioned as they are in front of the fire with the cold weather outside.[first time] But you don't have time to rest, you have a key to find.[only]"
-
+]
+[
 Instead of entering the armchairs:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
 	move the player to the armchairs, without printing a room description.

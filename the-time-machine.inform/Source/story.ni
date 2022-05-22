@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30954 ]
+[ WORDS - 30981 ]
 
 Table of Releases
 release	notes
@@ -876,7 +876,7 @@ Part - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in one of the two armchairs in front of the fireplace, reading. A newspaper rests on the other armchair.[otherwise] A newspaper rests on one of the two armchairs in front of the fireplace.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in the right armchair in front of the fireplace, paging through his book. A newspaper rests on the other armchair.[otherwise] A newspaper rests on one of the two armchairs in front of the fireplace.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
 Chapter - Armchairs
 
@@ -895,20 +895,28 @@ The left armchair is a supporter.
 The left armchair is enterable.
 The description of the left armchair is "[armchair-description]".
 
-[DEL
-The armchairs are things.
-The armchairs are scenery in the Parlor.
-The armchairs are supporters.
-The armchairs are enterable.
-Understand "armchair" or "chair"  or "chairs" as armchairs.
-The description of the armchairs are "Like the library chair these armchairs are covered in worn leather. Larger than their library counterpart, they look even more inviting and comfortable, especially positioned as they are in front of the fire with the cold weather outside.[first time] But you don't have time to rest, you have a key to find.[only]"
-]
-[
-Instead of entering the armchairs:
-	say "Well, maybe just for a minute while you gather your thoughts. You sit in the[one of] left [or] right[purely at random] armchair.";
-	move the player to the armchairs, without printing a room description.
-]
+To say armchair-sit:
+	say "Well, maybe just for a minute while you gather your thoughts. You sit in the [noun]."
 
+Before entering the right armchair:
+	if the location of Gernsback is the Parlor:
+		say "Impossible while Gernsback is sitting in it.";
+		stop the action;
+		[move the player to the left armchair, without printing a room description;]
+	otherwise:
+		continue the action.
+
+Instead of entering the right armchair: say "[armchair-sit]".
+Instead of entering the left armchair: say "[armchair-sit]".
+
+[TBD: If the player is sitting in one of the armchairs and tries to sit in anoher armchair, that should be detected and the appropriate text should be printed, i.e. "You get up and move to the other armchair."]
+
+[TBD: >get up "But you aren't in anything at the moment." Response while sitting in left armchair.]
+	
+[
+Force following NPC to sit down on the other chair - https://bit.ly/3wHFbyJ
+Enterable supporters(chairs) - https://bit.ly/3wzXRQY
+]	
 
 Chapter - Garden Door
 

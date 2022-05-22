@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 30981 ]
+[ WORDS - 31003 ]
 
 Table of Releases
 release	notes
@@ -1084,8 +1084,8 @@ Instead of poking Humboldt: say "[no-poke-person]".
 Chapter - Newspaper
 
 The newspaper is a thing.
-The newspaper is on the left armchair. [DEL armchairs.]
-The newspaper is undescribed. [on the armchairs.]
+The newspaper is on the left armchair.
+The newspaper is undescribed. 
 Understand "news" or "paper" as newspaper.
 The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read."
 
@@ -1102,7 +1102,7 @@ Instead of searching the newspaper: try taking the newspaper.
 Instead of taking the newspaper:
 	if newspaper-reads is greater than penultimate-read:
 		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop the paper back onto the armchair.";
-		now the newspaper is on the left armchair; [DEL armchairs;]
+		now the newspaper is on the left armchair; 
 	otherwise:
 		choose a random row from Table of Newspaper Stories;
 		say "You glance at an article entitled '[Title entry]' about [Summary entry].";

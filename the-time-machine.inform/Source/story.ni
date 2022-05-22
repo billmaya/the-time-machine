@@ -1084,7 +1084,7 @@ Instead of poking Humboldt: say "[no-poke-person]".
 Chapter - Newspaper
 
 The newspaper is a thing.
-The newspaper is on the armchairs.
+The newspaper is on the left armchair. [DEL armchairs.]
 The newspaper is undescribed. [on the armchairs.]
 Understand "news" or "paper" as newspaper.
 The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read."
@@ -1098,10 +1098,11 @@ The penultimate-read is 2.
 [> examine newspaper vs. > read newspaper Recipe §9.6. Reading Matter]
 Instead of searching the newspaper: try taking the newspaper.
 
+[05/22/22 - Just realized that you should be able to take newspaper since you can light it and turn it into a torch.]
 Instead of taking the newspaper:
 	if newspaper-reads is greater than penultimate-read:
 		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop the paper back onto the armchair.";
-		now the newspaper is on the armchairs;
+		now the newspaper is on the left armchair; [DEL armchairs;]
 	otherwise:
 		choose a random row from Table of Newspaper Stories;
 		say "You glance at an article entitled '[Title entry]' about [Summary entry].";

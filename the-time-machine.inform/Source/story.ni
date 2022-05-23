@@ -1,12 +1,12 @@
 The story title is "The Time Machine".
 The story author is "Bill Maya".
-The story headline is "A Text Adventure".
+The story headline is "A Interactive Novella".
 The story genre is "Science Fiction".
 The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31003 ]
+[ WORDS - 31102 ]
 
 Table of Releases
 release	notes
@@ -654,6 +654,26 @@ The Library is a room.
 The Library is west of the Entryway. 
 The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[paragraph break]The room continues to the north and the entryway is back east."
 
+Chapter - Printing Library Description
+
+[https://bit.ly/3NyqyEz]
+library-print-description is a truth state that varies.
+library-print-description is true.
+The room description body text rule does nothing when library-print-description is false.
+
+Check going to the Library:
+	if the library has not been visited: 
+		[say "FIRST TIME!";]
+		now library-print-description is false;
+	otherwise: 
+		[say "BEEN HERE BEFORE."]
+		now library-print-description is true.
+
+Check going to the Parlor: now library-print-description is true.
+Check going to the Entryway: now library-print-description is true.
+
+Chapter - Shelves 
+
 The shelves are a thing.
 The shelves are scenery in the Library.
 The shelves are a supporter.
@@ -683,6 +703,8 @@ The encyclopaedia are scenery on the shelves.
 The encyclopaedia has a bookness called type-of-reading. The type-of-reading of the encyclopaedia is reference.
 The description of encyclopaedia is "ENCYCLOPAEDIA DESCRIPTION." [Should not be displayed becuase of > examine encyclopaedia code in Section 1 below (included to keep encyclopaedia from showing up when Missing Item Description code is run).]
 Understand "encyclopedia" or "encyclopaediae" or "encyclopedias" as encyclopaedia.
+
+Chapter - Furniture
 
 The furniture is a thing.
 The furniture is scenery in the Library.
@@ -3568,6 +3590,7 @@ Introduction Of Gernsback begins when player is in the Library for the first tim
 When Introduction Of Gernsback begins: 
 	[say "INTRODUCTION OF GERNSBACK BEGINS.";]
 	say "Standing by the desk, looking out the window, is Gernsback, a successful businessman with ownership in several textile mills in the north. He['] a frequent visitor at these gatherings and rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with a match and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...' He glances at the window, then shakes his head slowly, lost in thought.[paragraph break]Picking a book off the bookshelf, he turns back to you. 'I guess we had better make ourselves comfortable until Humboldt gets back.'";
+	now library-print-description is true;
 	now Gernsback is mobile.
 
 Introduction Of Gernsback ends when Gernsback is in the Parlor.

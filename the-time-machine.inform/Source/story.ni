@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31102 ]
+[ WORDS - 31128 ]
 
 Table of Releases
 release	notes
@@ -168,7 +168,6 @@ Rule for refreshing the list-characters window:
 	let X be the list of people who are major that are not the player in location of player;
 	if X is not empty:
 		say "[X]";
-		[DEL say "[list of people who are major that are not player in location of player]";]
 	otherwise:
 		say "".
 
@@ -1119,22 +1118,6 @@ The newspaper-reads is 0.
 
 The penultimate-read is a number that varies.
 The penultimate-read is 2.
-
-[DEL
-[> examine newspaper vs. > read newspaper Recipe §9.6. Reading Matter]
-Instead of searching the newspaper: try taking the newspaper.
-
-[05/22/22 - Just realized that you should be able to take newspaper since you can light it and turn it into a torch.]
-Instead of taking the newspaper:
-	if newspaper-reads is greater than penultimate-read:
-		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop the paper back onto the armchair.";
-		now the newspaper is on the left armchair; 
-	otherwise:
-		choose a random row from Table of Newspaper Stories;
-		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
-		now the player has the newspaper;
-		now newspaper-reads is newspaper-reads + 1.
-]
 
 Instead of searching the newspaper: try reading the newspaper.
 
@@ -3614,7 +3597,7 @@ When Introduction Of Gernsback begins:
 	now library-print-description is true;
 	now Gernsback is mobile.
 
-Introduction Of Gernsback ends when Gernsback is not in the Library. [DEL is in the Parlor.]
+Introduction Of Gernsback ends when Gernsback is not in the Library.
 
 [When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
 

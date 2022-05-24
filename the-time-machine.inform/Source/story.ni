@@ -167,7 +167,8 @@ Rule for refreshing the title-characters window:
 Rule for refreshing the list-characters window:
 	let X be the list of people who are major that are not the player in location of player;
 	if X is not empty:
-		say "[list of people who are major that are not player in location of player]";
+		say "[X]";
+		[DEL say "[list of people who are major that are not player in location of player]";]
 	otherwise:
 		say "".
 
@@ -3507,8 +3508,8 @@ Every turn:
 			now Gernsback is fixed;
 			blank out the whole row;
 			break;
-	if the location of Gernsback is the Parlor:
-		move Gernsback to the right armchair.
+	[if the location of Gernsback is the Parlor:
+		move Gernsback to the right armchair.] [If Gernsback is in the armchair he is not "in" the Parlor so he won't show up in the Say Hello To window.]
 
 Table of Gernsback's Movement
 destination
@@ -3613,7 +3614,7 @@ When Introduction Of Gernsback begins:
 	now library-print-description is true;
 	now Gernsback is mobile.
 
-Introduction Of Gernsback ends when Gernsback is in the Parlor.
+Introduction Of Gernsback ends when Gernsback is not in the Library. [DEL is in the Parlor.]
 
 [When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
 
@@ -3622,7 +3623,7 @@ Part - Gernsback's Comments
 
 Gernsback's Comments is a recurring scene.
 
-Gernsback's Comments begins when Gernsback is in the Parlor and the player is in the Parlor.
+Gernsback's Comments begins when [Gernsback is on the right armchair [Parlor] and] the player is in the Parlor.
 
 When Gernsback's Comments begins: 
 	[say "GERNSBACK'S COMMENTS BEGINS.";]
@@ -3904,7 +3905,7 @@ To say release-notes:
 	say "Release 10 Notes (v1.7)[paragraph break]
 • Added Morlock Underground locations for exploration.[line break]
 • Added matches, cigar, and book for Gernsback to use.[line break]
-• Made >taking newspaper distinct from >read newspaper.[line break]
+• Made >take newspaper distinct from >read newspaper.[line break]
 • Created Gernsback conversation using Conversation Package extension.[line break]
 • Added Introduction To Gernsback scene.[line break]
 • Added Gernsback's Comments scene.[paragraph break]";

@@ -900,6 +900,8 @@ The Parlor is a room.
 The Parlor is north of the Library.
 The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in the right armchair in front of the fireplace, paging through his book. A newspaper rests on the other armchair.[otherwise] A newspaper rests on one of the two armchairs in front of the fireplace.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
+[The newspaper should not appear in the description if the player has it.]
+
 Chapter - Armchairs
 
 To say armchair-description:
@@ -1117,6 +1119,7 @@ The newspaper-reads is 0.
 The penultimate-read is a number that varies.
 The penultimate-read is 2.
 
+[DEL
 [> examine newspaper vs. > read newspaper Recipe §9.6. Reading Matter]
 Instead of searching the newspaper: try taking the newspaper.
 
@@ -1129,6 +1132,23 @@ Instead of taking the newspaper:
 		choose a random row from Table of Newspaper Stories;
 		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
 		now the player has the newspaper;
+		now newspaper-reads is newspaper-reads + 1.
+]
+
+Instead of searching the newspaper: try reading the newspaper.
+
+Understand the command "read" as something new. [Recipe §9.6. Reading Matter]
+Understand "read [something]" as reading.
+Reading is an action applying to one thing, requiring light.
+
+Carry out reading:
+	if newspaper-reads is greater than penultimate-read:
+		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop it back onto the armchair.";
+		now the newspaper is on the left armchair;
+	otherwise:
+		now the player has the newspaper;
+		choose a random row from Table of Newspaper Stories;
+		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
 		now newspaper-reads is newspaper-reads + 1.
 
 Table of Newspaper Stories
@@ -3884,6 +3904,7 @@ To say release-notes:
 	say "Release 10 Notes (v1.7)[paragraph break]
 • Added Morlock Underground locations for exploration.[line break]
 • Added matches, cigar, and book for Gernsback to use.[line break]
+• Made >taking newspaper distinct from >read newspaper.[line break]
 • Created Gernsback conversation using Conversation Package extension.[line break]
 • Added Introduction To Gernsback scene.[line break]
 • Added Gernsback's Comments scene.[paragraph break]";

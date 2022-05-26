@@ -64,6 +64,8 @@ When play begins:
 	open title-inventory window;
 	open list-inventory window;
 	[refresh the list-inventory window; [??? - does not work]]
+	now Gernsback has the box of matches;
+	now Gernsback has the book;
 	now suggest-on-greeting is false.
 
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
@@ -3498,7 +3500,91 @@ Table of Gernsback's Movement
 destination
 Parlor
 
+Part - Matches
 
+Chapter - Setup
+
+A strikable-match is a kind of thing.
+The plural of strikable-match is s-matches.
+
+A strikable-match has a number called duration.
+The duration of a strikable-match is usually 3.
+
+Rule for printing the name of a strikable-match: say "match".
+Rule for printing the plural name of a strikable-match: say "matches".
+
+Understand "match" as strikable-match. 
+Understand "matches" as strikable-match.
+
+Flame-state is a kind of value.
+The flame-states are burnt, flaming, and new.
+Understand "burning" or "lit" as flaming.
+Understand "unused" as new.
+
+A strikable-match has a flame-state. A strikable-match is usually new.
+Understand the flame-state property as describing a strikable-match.
+
+Before printing the name of a strikable-match while asking which do you mean: say "[flame-state]".
+Before printing the name of a strikable-match while taking inventory: say "[flame-state]".
+Before printing the name of a strikable-match while clarifying the parser's choice of something: if not taking inventory, say "[flame-state]".
+
+After printing the name of a strikable-match (called special-target) while clarifying the parser's choice of something:
+	if the player carries the special-target:
+		say " you're carrying";
+	otherwise if the special-target is in the location:
+		say " on the ground";
+	otherwise:
+		say " [if the holder of the special-target is a container]in[otherwise]on[end if][the holder of the special-target]".
+
+Understand "strike [something]" as attacking.
+Understand "strike [strikable-match]" as striking. Striking is an action applying to one carried thing.
+Understand "burn [strikable-match]" as striking.
+	
+Does the player mean striking a new strikable-match: it is very likely.
+Does the player mean striking a burnt strikable-match: it is unlikely.
+	
+Check striking a strikable-match (this is the strike only new matches rule):
+	if the noun is burnt:
+		say "[The noun] has already burnt down and cannot be relit." instead;
+	if the noun is flaming:
+		say "[The noun] is already burning." instead.
+	
+Carry out striking a strikable-match (this is the standard striking rule):
+	now the noun is flaming;
+	now the noun is lit.
+
+Report striking a strikable-match (this is the standard report striking rule):
+	say "You light [the noun]."
+[
+Before burning something with a new strikable-match (this is the prior lighting rule):
+	say "(first [if the player does not carry the second noun]taking and [end if]lighting [the second noun])[command clarification break]";
+	silently try striking the second noun;
+	if the second noun is not flaming, stop the action.
+]
+Rule for implicitly taking a strikable-match (called target) while striking:
+	try silently taking the target.
+[			
+Does the player mean burning something with a flaming strikable-match:
+	it is very likely.
+
+Does the player mean burning something with a new strikable-match:
+	it is likely.
+
+Does the player mean burning something with a burnt strikable-match:
+	it is unlikely.
+
+Instead of burning a burnt strikable-match with something:
+	say "[The noun] is completely consumed and cannot be relit."
+]
+
+Part - Box Of Matches
+
+The box of matches is a closed openable container.
+The box of matches contains five s-matches.
+
+Part - Book
+
+The book is a thing.
 
 
 

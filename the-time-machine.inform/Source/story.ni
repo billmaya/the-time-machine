@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 31128 ]
+[ WORDS - 32172 ]
 
 Table of Releases
 release	notes
@@ -64,7 +64,8 @@ When play begins:
 	open title-inventory window;
 	open list-inventory window;
 	[refresh the list-inventory window; [??? - does not work]]
-	now Gernsback has the box of matches;
+	now the player has the box of matches; [temporary]
+	[now Gernsback has the box of matches;]
 	now Gernsback has the book;
 	now suggest-on-greeting is false.
 
@@ -3500,9 +3501,47 @@ Table of Gernsback's Movement
 destination
 Parlor
 
-Part - Matches
+Part - Fire
+[This code came from "The Cow Exonerated" example in Chapter 10.8 - Fire.]
+[Currently it is unmodified]
 
-Chapter - Setup
+Chapter - Simple Burning
+
+Understand the commands "light" and "burn" as something new.
+
+Understand "burn [something] with [strikable-match]" as burning it with. 
+Understand "burn [something] with [something preferably held]" as burning it with. Burning it with is an action applying to one thing and one carried thing.
+
+Understand the command "light" as "burn".
+
+A thing can be flammable or impervious. A thing is usually impervious.
+
+Check burning something with something (this is the burn only with flaming matches rule):
+	if the second noun is not a strikable-match, say "You can only light things with matches." instead;
+	if the second noun is not flaming, say "[The second noun] needs to be burning first." instead.
+
+Check burning something with something (this is the burn only flammable things rule):
+	if the noun is impervious, say "[The noun] cannot be burned." instead.
+
+Check burning something with something (this is the burn only things not held rule):
+	say "[one of]It occurs to you to set down [the noun] before burning, just for safety's sake. [or]Again, you decide to put down [the noun] prior to burning. [or]You try setting down [the noun] as usual. [stopping][run paragraph on]";
+	silently try the player dropping the noun;
+	if player encloses the noun, stop the action.
+
+[Add another rule so you are able to hold the newspaper while you light it?]
+
+[Remove or modify Carry/Report to allow newspaper to be used as a torch; give burning newspaper a duration]
+Carry out burning something with something (this is the simplistic burning rule):
+	now the noun is nowhere.
+
+Report burning something with something:
+	say "You burn up [the noun]."
+
+Rule for implicitly taking the second noun while burning something with something which is not a strikable-match:
+	say "You can ony light things with matches.";
+	stop the action.
+
+Chapter - Matches
 
 A strikable-match is a kind of thing.
 The plural of strikable-match is s-matches.
@@ -3524,9 +3563,9 @@ Understand "unused" as new.
 A strikable-match has a flame-state. A strikable-match is usually new.
 Understand the flame-state property as describing a strikable-match.
 
-Before printing the name of a strikable-match while asking which do you mean: say "[flame-state]".
-Before printing the name of a strikable-match while taking inventory: say "[flame-state]".
-Before printing the name of a strikable-match while clarifying the parser's choice of something: if not taking inventory, say "[flame-state]".
+Before printing the name of a strikable-match while asking which do you mean: say "[flame-state] ".
+Before printing the name of a strikable-match while taking inventory: say "[flame-state] ".
+Before printing the name of a strikable-match while clarifying the parser's choice of something: if not taking inventory, say "[flame-state] ".
 
 After printing the name of a strikable-match (called special-target) while clarifying the parser's choice of something:
 	if the player carries the special-target:
@@ -3534,7 +3573,7 @@ After printing the name of a strikable-match (called special-target) while clari
 	otherwise if the special-target is in the location:
 		say " on the ground";
 	otherwise:
-		say " [if the holder of the special-target is a container]in[otherwise]on[end if][the holder of the special-target]".
+		say " [if the holder of the special-target is a container]in[otherwise]on[end if] [the holder of the special-target]".
 
 Understand "strike [something]" as attacking.
 Understand "strike [strikable-match]" as striking. Striking is an action applying to one carried thing.
@@ -3555,15 +3594,15 @@ Carry out striking a strikable-match (this is the standard striking rule):
 
 Report striking a strikable-match (this is the standard report striking rule):
 	say "You light [the noun]."
-[
+
 Before burning something with a new strikable-match (this is the prior lighting rule):
 	say "(first [if the player does not carry the second noun]taking and [end if]lighting [the second noun])[command clarification break]";
 	silently try striking the second noun;
 	if the second noun is not flaming, stop the action.
-]
+
 Rule for implicitly taking a strikable-match (called target) while striking:
 	try silently taking the target.
-[			
+			
 Does the player mean burning something with a flaming strikable-match:
 	it is very likely.
 
@@ -3575,7 +3614,26 @@ Does the player mean burning something with a burnt strikable-match:
 
 Instead of burning a burnt strikable-match with something:
 	say "[The noun] is completely consumed and cannot be relit."
-]
+
+Chapter - Putting The Matches Out
+
+Every turn:
+	let N be 0; [here we track how many matches are being put out during a turn, so that we don't have to mention each match individually if several go out during the same move]
+	repeat with item running through flaming s-matches:
+		decrement the duration of the item;
+		if the duration of the item is 0:
+			now the item is burnt;
+			now the item is unlit;
+			if the item is visible, increment N;
+	if N is 1:
+		say "[if the number of visible flaming s-matches is greater than 0]One of the matches [otherwise if the number of burnt visible s-matches is greater than 1]Your last burning match [otherwise]The match [end if]goes out.";
+		let enumeration be "[N in words]";
+		if N is the number of visible s-matches:
+			if N is two, say "Both";
+			otherwise say "All [enumeration]";
+		otherwise:
+			say "[enumeration in title case]";
+		say " matches go out[if a visible strikable-match is flaming], leaving [number of visible flaming s-matches in words] still let[end if]."
 
 Part - Box Of Matches
 

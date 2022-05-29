@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 32172 ]
+[ WORDS - 32341 ]
 
 Table of Releases
 release	notes
@@ -64,7 +64,7 @@ When play begins:
 	open title-inventory window;
 	open list-inventory window;
 	[refresh the list-inventory window; [??? - does not work]]
-	now the player has the box of matches; [temporary]
+	[now the player has the box of matches;] [box of matches given to player in Book - Box Of Matches]
 	[now Gernsback has the box of matches;]
 	now Gernsback has the book;
 	now suggest-on-greeting is false.
@@ -2537,6 +2537,15 @@ Resting is an action applying to nothing.
 Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
+Book - Regions
+
+[I might be able to give rooms an "inside" and "outside" property and not use regions.]
+
+Year-1895-Outside is a region. Woking Street and Garden are in Year-1895-Outside.
+Year-1895-Inside is a region. Entryway and Library and Parlor and Dining Room and Kitchen and Workshop are in Year-1895-Inside.
+
+Year-802701-Outside is a region. Clearing and Domed Building and River Bank are in Year-802701-Outside.
+Year-802701-Inside is a region. Top Shaft and Bottom Shaft and Inside Dome and Balcony are in Year-802701-Inside.
 			
 Volume - Characters
 
@@ -3584,12 +3593,15 @@ Every turn:
 	let N be 0; [here we track how many matches are being put out during a turn, so that we don't have to mention each match individually if several go out during the same move]
 	repeat with item running through flaming s-matches:
 		decrement the duration of the item;
+		[say "[N] : [duration of the item][paragraph break]";]
 		if the duration of the item is 0:
 			now the item is burnt;
 			now the item is unlit;
 			if the item is visible, increment N;
+			[say "[N] : [duration of the item][paragraph break]";]
 	if N is 1:
 		say "[if the number of visible flaming s-matches is greater than 0]One of the matches [otherwise if the number of burnt visible s-matches is greater than 1]Your last burning match [otherwise]The match [end if]goes out.";
+	otherwise if N is greater than 1:
 		let enumeration be "[N in words]";
 		if N is the number of visible s-matches:
 			if N is two, say "Both";
@@ -3643,6 +3655,11 @@ Book - Box Of Matches
 
 The box of matches is a closed openable container.
 The box of matches contains five s-matches.
+
+Understand "matchbox" as box of matches.
+
+The box of matches is held by the player. [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
+
 
 Book - Book
 

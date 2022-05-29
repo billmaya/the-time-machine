@@ -1108,46 +1108,6 @@ Instead of poking Humboldt: say "[no-poke-person]".
 	
 [Understand "use [something] on [something]" as using.]
 
-Chapter - Newspaper
-
-The newspaper is a thing.
-The newspaper is on the left armchair.
-The newspaper is undescribed. 
-Understand "news" or "paper" as newspaper.
-The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read."
-
-The newspaper-reads is a number that varies.
-The newspaper-reads is 0.
-
-The penultimate-read is a number that varies.
-The penultimate-read is 2.
-
-Instead of searching the newspaper: try reading the newspaper.
-
-Understand the command "read" as something new. [Recipe §9.6. Reading Matter]
-Understand "read [something]" as reading.
-Reading is an action applying to one thing, requiring light.
-
-Carry out reading:
-	if newspaper-reads is greater than penultimate-read:
-		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop it back onto the armchair.";
-		now the newspaper is on the left armchair;
-	otherwise:
-		now the player has the newspaper;
-		choose a random row from Table of Newspaper Stories;
-		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
-		now newspaper-reads is newspaper-reads + 1.
-
-Table of Newspaper Stories
-Title	Summary
-"The Railway Mystery"	"the continuing inquest into the mysterious death of a Mrs. Matilda Bryan on the London and North Western Railway at Tring"
-"The Engineering Disputes"	"an upcoming conference of the Engineering and Shipbuilding Trades on implementing a union decision on the reduction of working hours"
-"Growth Of Inland Revenue"	"a report from Commissioners of the Inland Revenue detailed the increase of [unicode 163]1,300,506 in revenue over the previous year"
-"The British Museum"	"the annual attendance at the Museum during the past year, the total of 581,906 the highest number since 1890"
-"The Sanitary Congress"	"the resumption of proceedings at the Sanitary Congress in Leeds"
-"The St. Augustine Celebration"	"continued proceedings in connection with the Roman Catholic Conference commemorating the historical landing of St. Augustin and his companions"
-"Alleged Blackmailing In Manchester"	"charges levels against the two managing directors of The Financial Post, who threatened to publish false and defamatory information about the governing director of 'Commerce Limited'"
-"The Indian Frontier Troubles"	"two English officers killed and one severly wounded by some tribe between the Rambat Pass and Danesh Khel in India"
 
 Chapter - Breaker 
 
@@ -3501,11 +3461,14 @@ Table of Gernsback's Movement
 destination
 Parlor
 
-Part - Fire
+
+Volume - Things
+
+Book - Fire
 [This code came from "The Cow Exonerated" example in Chapter 10.8 - Fire.]
 [Currently it is unmodified]
 
-Chapter - Simple Burning
+Part - Simple Burning
 
 Understand the commands "light" and "burn" as something new.
 
@@ -3541,7 +3504,7 @@ Rule for implicitly taking the second noun while burning something with somethin
 	say "You can ony light things with matches.";
 	stop the action.
 
-Chapter - Matches
+Part - Matches
 
 A strikable-match is a kind of thing.
 The plural of strikable-match is s-matches.
@@ -3615,7 +3578,7 @@ Does the player mean burning something with a burnt strikable-match:
 Instead of burning a burnt strikable-match with something:
 	say "[The noun] is completely consumed and cannot be relit."
 
-Chapter - Putting The Matches Out
+Part - Putting The Matches Out
 
 Every turn:
 	let N be 0; [here we track how many matches are being put out during a turn, so that we don't have to mention each match individually if several go out during the same move]
@@ -3635,16 +3598,55 @@ Every turn:
 			say "[enumeration in title case]";
 		say " matches go out[if a visible strikable-match is flaming], leaving [number of visible flaming s-matches in words] still let[end if]."
 
-Part - Box Of Matches
+Book - Newspaper
+
+The newspaper is a flammable thing.
+The newspaper is on the left armchair.
+The newspaper is undescribed. 
+Understand "news" or "paper" as newspaper.
+The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read."
+
+The newspaper-reads is a number that varies.
+The newspaper-reads is 0.
+
+The penultimate-read is a number that varies.
+The penultimate-read is 2.
+
+Instead of searching the newspaper: try reading the newspaper.
+
+Understand the command "read" as something new. [Recipe §9.6. Reading Matter]
+Understand "read [something]" as reading.
+Reading is an action applying to one thing, requiring light.
+
+Carry out reading:
+	if newspaper-reads is greater than penultimate-read:
+		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop it back onto the armchair.";
+		now the newspaper is on the left armchair;
+	otherwise:
+		now the player has the newspaper;
+		choose a random row from Table of Newspaper Stories;
+		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
+		now newspaper-reads is newspaper-reads + 1.
+
+Table of Newspaper Stories
+Title	Summary
+"The Railway Mystery"	"the continuing inquest into the mysterious death of a Mrs. Matilda Bryan on the London and North Western Railway at Tring"
+"The Engineering Disputes"	"an upcoming conference of the Engineering and Shipbuilding Trades on implementing a union decision on the reduction of working hours"
+"Growth Of Inland Revenue"	"a report from Commissioners of the Inland Revenue detailed the increase of [unicode 163]1,300,506 in revenue over the previous year"
+"The British Museum"	"the annual attendance at the Museum during the past year, the total of 581,906 the highest number since 1890"
+"The Sanitary Congress"	"the resumption of proceedings at the Sanitary Congress in Leeds"
+"The St. Augustine Celebration"	"continued proceedings in connection with the Roman Catholic Conference commemorating the historical landing of St. Augustin and his companions"
+"Alleged Blackmailing In Manchester"	"charges levels against the two managing directors of The Financial Post, who threatened to publish false and defamatory information about the governing director of 'Commerce Limited'"
+"The Indian Frontier Troubles"	"two English officers killed and one severly wounded by some tribe between the Rambat Pass and Danesh Khel in India"
+
+Book - Box Of Matches
 
 The box of matches is a closed openable container.
 The box of matches contains five s-matches.
 
-Part - Book
+Book - Book
 
 The book is a thing.
-
-
 
 Volume - Scenes
 

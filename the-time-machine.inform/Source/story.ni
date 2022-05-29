@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 32341 ]
+[ WORDS - 32401 ]
 
 Table of Releases
 release	notes
@@ -3608,7 +3608,12 @@ Every turn:
 			otherwise say "All [enumeration]";
 		otherwise:
 			say "[enumeration in title case]";
-		say " matches go out[if a visible strikable-match is flaming], leaving [number of visible flaming s-matches in words] still let[end if]."
+		say " matches go out[if a visible strikable-match is flaming], leaving [number of visible flaming s-matches in words] still let[end if].";
+	repeat with item running through burnt s-matches:
+		if the item is not nowhere:
+			say "You drop the [flame-state of the item] [item][if the player is in Year-1895-Inside or the player is in Year-802701-Inside] on the floor.[otherwise] on the ground.";
+			now the item is nowhere;
+			refresh the list-inventory window.
 
 Book - Newspaper
 
@@ -3656,7 +3661,7 @@ Book - Box Of Matches
 The box of matches is a closed openable container.
 The box of matches contains five s-matches.
 
-Understand "matchbox" as box of matches.
+Understand "matchbox" or "match box" as box of matches.
 
 The box of matches is held by the player. [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
 

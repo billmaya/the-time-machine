@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 32412 ]
+[ WORDS - 32511 ]
 
 Table of Releases
 release	notes
@@ -364,6 +364,9 @@ Test eloi-r8 with "test go-802701 / exit / e / e / s / n / w / w / se."
 	
 [v1.6 Tests]
 Test weena-r9 with "test go-802701 / exit / e / e / s / n / w / w / se / show watch to eloi."
+
+[v1.7 Tests]
+Test newspaper with "look / take newspaper / look / put newspaper on left armchair / look / take newspaper / put newspaper on right armchair / look."
 
 Part - Release
 
@@ -901,7 +904,7 @@ Part - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in the right armchair in front of the fireplace, paging through his book.[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in the right armchair in front of the fireplace, paging through his book.[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[otherwise if the newspaper is on the right armchair] A newspaper rests on the right armchair.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
 
 Chapter - Armchairs
 
@@ -3627,8 +3630,16 @@ The newspaper-reads is 0.
 The penultimate-read is a number that varies.
 The penultimate-read is 2.
 
-[Suppress "On the left armchair is a newspaper."]
+[Suppress "On the left armchair is a newspaper." and "On the right armchair is a newspaper." text]
 The describe what's on scenery supporters in room descriptions rule does nothing when the newspaper is on the left armchair.
+The describe what's on scenery supporters in room descriptions rule does nothing when the newspaper is on the right armchair
+
+Before putting the newspaper on the right armchair:
+	if the location of Gernsback is the Parlor:
+		say "You can't while Gernsback is sitting there.";
+		stop the action;
+	otherwise:
+		continue the action.
 
 Instead of searching the newspaper: try reading the newspaper.
 

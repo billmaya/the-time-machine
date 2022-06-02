@@ -2791,6 +2791,7 @@ Library			"reshelves some books"
 Library			"rearranges the chairs"
 Library			"looks out the windows"
 Library			"draws the curtains closed"
+	
 
 Book - Humboldt 
 
@@ -3184,9 +3185,69 @@ Chapter - In The Parlor
 
 Section - Requests - "Ask [someone] for [thing]"
 
+After requesting Gernsback for the newspaper: say "ASK GERNSBACK FOR NEWSPAPER."
+
+After requesting Gernsback for the book: say "ASK GERNSBACK FOR BOOK."
+
+After requesting Gernsback for the box of matches: say "ASK GERNSBACK FOR BOX OF MATCHES."
+
+After requesting Gernsback for the cigar: say "ASK GERNSBACK FOR CIGAR."
+
 Section - Quizzing - "Ask [someone] about [thing]"
 
+After quizzing Gernsback about Wells: say "ASK GERNSBACK ABOUT WELLS."
+
+After quizzing Gernsback about Humboldt: say "ASK GERNSBACK ABOUT HUMBOLDT."
+
+After quizzing Gernsback about Watchett: say "ASK GERNSBACK ABOUT WATCHETT."
+
+After quizzing Gernsback about Weena: say "ASK GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks]
+
+After quizzing Gernsback about experiments: say "ASK GERNSBACK ABOUT [second noun]." [+his-work, time travel, time machine]
+
+After quizzing Gernsback about orrery: say "ASK GERNSBACK ABOUT ORRERY."
+
+After quizzing Gernsback about workshop-room: say "ASK GERNSBACK ABOUT WORKSHOP."
+
+After quizzing Gernsback about box of matches: say "ASK GERNSBACK ABOUT BOX OF MATCHES."
+
+After quizzing Gernsback about cigar: say "ASK GERNSBACK ABOUT CIGAR."
+
+After quizzing Gernsback about pocket watch: say "ASK GERNSBACK ABOUT POCKET WATCH."
+
+After quizzing Gernsback about petal: say "ASK GERNSBACK ABOUT PETAL."
+
+After quizzing Gernsback about key: say "ASK GERNSBACK ABOUT KEY."
+
+After quizzing Gernsback about newspaper: say "ASK GERNSBACK ABOUT NEWSPAPER."
+
+After quizzing Gernsback about book: say "ASK GERNSBACK ABOUT BOOK."
+
 Section - Informing - "Tell [someone] about [thing]"
+
+After informing Gernsback about Wells: say "TELL GERNSBACK ABOUT WELLS."
+
+After informing Gernsback about Humboldt: say "TELL GERNSBACK ABOUT HUMBOLDT."
+
+After informing Gernsback about Watchett: say "TELL GERNSBACK ABOUT WATCHETT."
+
+After informing Gernsback about Weena: say "TELL GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks]
+
+After informing Gernsback about time machine: say "TELL GERNSBACK ABOUT TIME MACHINE."
+
+After informing Gernsback about orrery: say "TELL GERNSBACK ABOUT ORRERY."
+
+After informing Gernsback about breaker: say "TELL GERNSBACK ABOUT [second noun] ." [+fuse]
+
+After informing Gernsback about blueprints: say "TELL GERNSBACK ABOUT BLUEPRINTS."
+
+After informing Gernsback about experiments: say "TELL GERNSBACK ABOUT [second noun]." [+time travel]
+
+After informing Gernsback about workshop-room: say "TELL GERNSBACK ABOUT WORKSHOP."
+
+After informing Gernsback about petal: say "TELL GERNSBACK ABOUT PETAL."
+
+After informing Gernsback about key: say "TELL GERNSBACK ABOUT KEY."
 
 Section - Imploring - "Ask [someone] for ['text']"
 
@@ -3204,6 +3265,16 @@ Chapter - Default Responses
 [Default ask-for response for Gernsback:]
 [Default yes-no response for Gernsback:]
 [Default response for Gernsback:]
+
+Part - Testing
+
+Test g-convo with "test g-req / test g-quiz / test g-tell."
+	
+Test g-req with "ask gernsback for newspaper / ask gernsback for book / ask gernsback for box of matches / ask gernsback for cigar."
+	
+Test g-quiz with "ask gernsback about wells / ask gernsback about humboldt / ask gernsback about watchett / ask gernsback about weena / ask gernsback about eloi / ask gernsback about morlocks / ask gernsback about experiments / ask gernsback about his-work / ask gernsback about time travel / ask gernsback about time machine / ask gernsback about orrery / ask gernsback about workshop-room / ask gernsback about box of matches / ask gernsback about cigar / ask gernsback about  pocket watch / ask gernsback about petal / ask gernsback about key / ask gernsback about newspaper / ask gernsback about book."
+	
+Test g-tell with "tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about blueprints / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
 
 Part - Movement
 
@@ -3688,6 +3759,12 @@ The description of the book is "You can't make out the entire title from this di
 
 [The book is in the Parlor.]
 The book is held by Gernsback.
+
+Book - Cigar
+
+The cigar is a thing.
+
+The cigar is held by Gernsback.
 
 Volume - Scenes
 

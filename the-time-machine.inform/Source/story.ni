@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 32511 ]
+[ WORDS - 32592 ]
 
 Table of Releases
 release	notes
@@ -66,7 +66,7 @@ When play begins:
 	[refresh the list-inventory window; [??? - does not work]]
 	[now the player has the box of matches;] [box of matches given to player in Book - Box Of Matches]
 	[now Gernsback has the box of matches;]
-	now Gernsback has the book;
+	[now Gernsback has the book;]
 	now suggest-on-greeting is false.
 
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
@@ -3160,6 +3160,70 @@ A patience rule:
 			now endgame-failure is true.
 
 			
+Book - Gernsback
+[https://bit.ly/3rYUPl8]
+
+Gernsback is a person.
+Gernsback is a male.
+Gernsback is fixed.
+Gernsback is in the Library.
+
+Gernsback is scenery. [This prevents "You can see Gernsback here." being printed out in room descriptions.]
+
+[The printed name of Gernsback is "TBD."]
+
+Part - Suggestions 
+
+Part - Conversation 
+
+Chapter - Hello
+
+Chapter - Goodbye
+
+Chapter - In The Parlor
+
+Section - Requests - "Ask [someone] for [thing]"
+
+Section - Quizzing - "Ask [someone] about [thing]"
+
+Section - Informing - "Tell [someone] about [thing]"
+
+Section - Imploring - "Ask [someone] for ['text']"
+
+Section - Showing
+
+Chapter - Default Responses
+
+[Default ask response for Gernsback:] 
+[Default answer response for Gernsback:]
+[Default tell response for Gernsback:]
+[Default ask-tell response for Gernsback:]
+[Default give response for Gernsback:]
+[Default show response for Gernsback:]
+[Default give-show response for Gernsback:]
+[Default ask-for response for Gernsback:]
+[Default yes-no response for Gernsback:]
+[Default response for Gernsback:]
+
+Part - Movement
+
+Every turn:
+	if Gernsback is mobile:
+		repeat through the Table of Gernsback's Movement:
+			let the last space be the location of Gernsback;
+			if Gernsback can be seen by the player, say "Gernsback heads to [the destination entry].";
+			move Gernsback to destination entry;
+			if Gernsback can be seen by the player, say "Gernsback arrives from [the last space].";
+			now Gernsback is fixed;
+			blank out the whole row;
+			break;
+	[if the location of Gernsback is the Parlor:
+		move Gernsback to the right armchair.] [If Gernsback is in the armchair he is not "in" the Parlor so he won't show up in the Say Hello To window.]
+
+Table of Gernsback's Movement
+destination
+Parlor
+
 Book - Eloi
 
 The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.
@@ -3407,70 +3471,6 @@ Default response for driver:
 	say "[default-driver-response]".
 
 
-Book - Gernsback
-[https://bit.ly/3rYUPl8]
-
-Gernsback is a person.
-Gernsback is a male.
-Gernsback is fixed.
-Gernsback is in the Library.
-
-Gernsback is scenery. [This prevents "You can see Gernsback here." being printed out in room descriptions.]
-
-[The printed name of Gernsback is "TBD."]
-
-Part - Suggestions 
-
-Part - Conversation 
-
-Chapter - Hello
-
-Chapter - Goodbye
-
-Chapter - In The Parlor
-
-Section - Requests - "Ask [someone] for [thing]"
-
-Section - Quizzing - "Ask [someone] about [thing]"
-
-Section - Informing - "Tell [someone] about [thing]"
-
-Section - Imploring - "Ask [someone] for ['text']"
-
-Section - Showing
-
-Chapter - Default Responses
-
-[Default ask response for Gernsback:] 
-[Default answer response for Gernsback:]
-[Default tell response for Gernsback:]
-[Default ask-tell response for Gernsback:]
-[Default give response for Gernsback:]
-[Default show response for Gernsback:]
-[Default give-show response for Gernsback:]
-[Default ask-for response for Gernsback:]
-[Default yes-no response for Gernsback:]
-[Default response for Gernsback:]
-
-Part - Movement
-
-Every turn:
-	if Gernsback is mobile:
-		repeat through the Table of Gernsback's Movement:
-			let the last space be the location of Gernsback;
-			if Gernsback can be seen by the player, say "Gernsback heads to [the destination entry].";
-			move Gernsback to destination entry;
-			if Gernsback can be seen by the player, say "Gernsback arrives from [the last space].";
-			now Gernsback is fixed;
-			blank out the whole row;
-			break;
-	[if the location of Gernsback is the Parlor:
-		move Gernsback to the right armchair.] [If Gernsback is in the armchair he is not "in" the Parlor so he won't show up in the Say Hello To window.]
-
-Table of Gernsback's Movement
-destination
-Parlor
-
 
 Volume - Things
 
@@ -3680,7 +3680,14 @@ The box of matches is held by the player. [When assigned this way the box of mat
 
 Book - Book
 
-The book is a thing.
+[The book that Gernsback is reading is from the future. If you take the book and look at the publication date it will be a future date]
+[The book should be an anthology]
+
+The book is a thing. "A thick volume."
+The description of the book is "You can't make out the entire title from this distance but the initial words 'H.G. Wells['] Fantastic Fiction' are clearly visible on the spine of the large book."
+
+[The book is in the Parlor.]
+The book is held by Gernsback.
 
 Volume - Scenes
 

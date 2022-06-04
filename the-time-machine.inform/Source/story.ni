@@ -2580,6 +2580,7 @@ The fuse is familiar.
 
 The Eloi are a familiar people.
 Weena is a familiar woman.
+The Morlocks are a familiar people.
 
 Book - Subjects 
 
@@ -2591,7 +2592,7 @@ examination is a subject.
 
 future is a subject. The printed name of future is "the future".
 time travel is a subject.
-Morlocks are a subject. The printed name of Morlocks is "the Morlocks". Understand "morlock" or "morlocks" as Morlocks. 
+[Morlocks are a subject. The printed name of Morlocks is "the Morlocks". Understand "morlock" or "morlocks" as Morlocks. ]
 
 information is a subject.
 
@@ -3201,7 +3202,11 @@ After quizzing Gernsback about Humboldt: say "ASK GERNSBACK ABOUT HUMBOLDT."
 
 After quizzing Gernsback about Watchett: say "ASK GERNSBACK ABOUT WATCHETT."
 
+[DEL Understand "Eloi" as Weena.]
+To say 802701-people: say "ASK GERNSBACK ABOUT [second noun][line break]";
 After quizzing Gernsback about Weena: say "ASK GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks]
+After quizzing Gernsback about Eloi: say "[802701-people]";
+After quizzing Gernsback about Morlocks: say "[802701-people]";
 
 After quizzing Gernsback about experiments: say "ASK GERNSBACK ABOUT [second noun]." [+his-work, time travel, time machine]
 
@@ -3222,6 +3227,17 @@ After quizzing Gernsback about key: say "ASK GERNSBACK ABOUT KEY."
 After quizzing Gernsback about newspaper: say "ASK GERNSBACK ABOUT NEWSPAPER."
 
 After quizzing Gernsback about book: say "ASK GERNSBACK ABOUT BOOK."
+
+[DEL After quizzing Gernsback about something:
+	repeat through Table of Quizzing Gernsback:
+		if topic understood includes topic entry:
+			say "[response entry][line break]" instead;
+			stop the action.
+
+Table of Quizzing Gernsback
+topic	response
+"Weena"	"ASK GERNSBACK ABOUT WEENA"
+"Eloi"	"ASK GERNSBACK ABOUT ELOI"]
 
 Section - Informing - "Tell [someone] about [thing]"
 

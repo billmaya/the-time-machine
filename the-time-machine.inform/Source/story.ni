@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 33223 ]
+[ WORDS - 33369 ]
 
 Table of Releases
 release	notes
@@ -3180,7 +3180,21 @@ Part - Conversation
 
 Chapter - Hello
 
+After saying hello to Gernsback when the greeting type is explicit: 
+	say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]"
+
+After saying hello to Gernsback when the greeting type is implicit:
+	say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]"
+
 Chapter - Goodbye
+
+After saying goodbye to Gernsback when the farewell type is explicit: 
+	say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading."
+	
+After saying goodbye to Gernsback when the farewell type is implicit:
+	say "Gernsback silently watches you as you leave the parlor and then, with a shrug, goes back to his reading [line break]"
+
+[How would I replace "leave the parlor" with the destination you're going towards?]
 
 Chapter - In The Parlor
 
@@ -3202,13 +3216,14 @@ After quizzing Gernsback about Humboldt: say "ASK GERNSBACK ABOUT HUMBOLDT."
 
 After quizzing Gernsback about Watchett: say "ASK GERNSBACK ABOUT WATCHETT."
 
-[DEL Understand "Eloi" as Weena.]
-To say 802701-people: say "ASK GERNSBACK ABOUT [second noun][line break]";
-After quizzing Gernsback about Weena: say "ASK GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks]
-After quizzing Gernsback about Eloi: say "[802701-people]";
-After quizzing Gernsback about Morlocks: say "[802701-people]";
+After quizzing Gernsback about Weena: say "ASK GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]
+After quizzing Gernsback about Eloi: say "ASK GERNSBACK ABOUT ELOI.";
+After quizzing Gernsback about Morlocks: say "ASK GERNSBACK ABOUT MORLOCKS.";
 
-After quizzing Gernsback about experiments: say "ASK GERNSBACK ABOUT [second noun]." [+his-work, time travel, time machine]
+Understand "his-work" as experiments.
+After quizzing Gernsback about experiments: say "ASK GERNSBACK ABOUT [second noun]." [+his-work, time travel, time machine as part of "about"?]
+After quizzing Gernsback about time travel: try quizzing Gernsback about experiments.
+After quizzing Gernsback about the time machine: say "ASK GERNSBACK ABOUT TIME MACHINE."
 
 After quizzing Gernsback about orrery: say "ASK GERNSBACK ABOUT ORRERY."
 
@@ -3227,17 +3242,6 @@ After quizzing Gernsback about key: say "ASK GERNSBACK ABOUT KEY."
 After quizzing Gernsback about newspaper: say "ASK GERNSBACK ABOUT NEWSPAPER."
 
 After quizzing Gernsback about book: say "ASK GERNSBACK ABOUT BOOK."
-
-[DEL After quizzing Gernsback about something:
-	repeat through Table of Quizzing Gernsback:
-		if topic understood includes topic entry:
-			say "[response entry][line break]" instead;
-			stop the action.
-
-Table of Quizzing Gernsback
-topic	response
-"Weena"	"ASK GERNSBACK ABOUT WEENA"
-"Eloi"	"ASK GERNSBACK ABOUT ELOI"]
 
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -3283,6 +3287,8 @@ Chapter - Default Responses
 [Default response for Gernsback:]
 
 Part - Testing
+	
+Test g-hello with "say hello to gernsback / say goodbye to gernsback / ask gernsback about wells / north."
 
 Test g-convo with "test g-req / test g-quiz / test g-tell."
 	

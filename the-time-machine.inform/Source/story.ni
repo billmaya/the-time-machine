@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 33369 ]
+[ WORDS - 33442 ]
 
 Table of Releases
 release	notes
@@ -55,25 +55,25 @@ When play begins:
 	now the left hand status line is "[location] - [current-year]";
 	[say "[introduction]";]
 	open right-sidebar window;
+	open title-inventory window;
+	open list-inventory window;
 	open title-characters window;
 	open list-characters window;
 	open title-talking-to window;
 	open talking-to-character window;
 	open title-topics window;
 	open character-topics window;
-	open title-inventory window;
-	open list-inventory window;
 	[refresh the list-inventory window; [??? - does not work]]
-	[now the player has the box of matches;] [box of matches given to player in Book - Box Of Matches]
-	[now Gernsback has the box of matches;]
-	[now Gernsback has the book;]
 	now suggest-on-greeting is false.
 
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
 
 Every turn:
+	refresh the title-characters window;
 	refresh the list-characters window;
+	refresh the title-talking-to window;
 	refresh the talking-to-character window;
+	refresh the title-topics window;
 	refresh the character-topics window;
 	refresh the list-inventory window.
 
@@ -125,7 +125,7 @@ The measurement of the right-sidebar window is 290.
 The title-characters window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-characters window is g-placeabove.
 The scale method of the title-characters window is g-fixed-size.
-The measurement of the title-characters window is 1.
+The measurement of the title-characters window is 2. [1.]
 
 The list-characters window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-characters window is g-placeabove.
@@ -135,17 +135,17 @@ The measurement of the list-characters window is 8.
 The title-talking-to window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-talking-to window is g-placeabove.
 The scale method of the title-talking-to window is g-fixed-size.
-The measurement of the title-talking-to window is 1.
+The measurement of the title-talking-to window is 2. [1.]
 
 The talking-to-character window is a text buffer g-window spawned by the right-sidebar window.
 The position of the talking-to-character window is g-placeabove.
 The scale method of the talking-to-character window is g-fixed-size.
-The measurement of the talking-to-character window is 1.
+The measurement of the talking-to-character window is 3. [1.]
 
 The title-topics window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-topics window is g-placeabove.
 The scale method of the title-topics window is g-fixed-size.
-The measurement of the title-topics window is 1.
+The measurement of the title-topics window is 2. [1.]
 
 The character-topics window is a text buffer g-window spawned by the right-sidebar window.
 The position of the character-topics window is g-placeabove.
@@ -155,17 +155,21 @@ The measurement of the character-topics window is 9.
 The title-inventory window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-inventory window is g-placeabove.
 The scale method of the title-inventory window is g-fixed-size.
-The measurement of the title-inventory window is 1.
+The measurement of the title-inventory window is 2. [1.]
 
 The list-inventory window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-inventory window is g-placeabove.
 The scale method of the list-inventory window is g-fixed-size.
 The measurement of the list-inventory window is 16.
 
-Chapter - Rules
+Chapter - Rules 
 	
 Rule for refreshing the title-characters window:
-	say "You Can Say Hello To".
+	let X be the list of people who are major that are not the player in the location of the player;
+	if  X is not empty:
+		say "People You Can Talk To By[line break]Saying 'Hello' To Them";
+	otherwise:
+		say "".
 
 Rule for refreshing the list-characters window:
 	let X be the list of people who are major that are not the player in location of player;
@@ -175,20 +179,23 @@ Rule for refreshing the list-characters window:
 		say "".
 
 Rule for refreshing the title-talking-to window:
-	say "You Are Talking To".
+	say "[if the current interlocutor is not nothing]You Are Now Talking To[line break]This Person[otherwise][end if]".
 	
 Rule for refreshing the talking-to-character window:
 	if current interlocutor is not nothing:
 		say current interlocutor.
 	
 Rule for refreshing the title-topics window:
-	say "Some Things To Talk About".
+	say "[if the current interlocutor is not nothing]Some Things You Can Talk[line break]About With [current interlocutor][otherwise][end if]".
 	
 Rule for refreshing the character-topics window:
-	try listing suggested topics.
+	if current interlocutor is not nothing:
+		try listing suggested topics;
+	otherwise:
+		say "".
 	
 Rule for refreshing the title-inventory window:
-	say "You Are Carrying".
+	say "Possessions". 
 	
 Rule for refreshing the list-inventory window:
 	try taking inventory.
@@ -3251,17 +3258,17 @@ After informing Gernsback about Humboldt: say "TELL GERNSBACK ABOUT HUMBOLDT."
 
 After informing Gernsback about Watchett: say "TELL GERNSBACK ABOUT WATCHETT."
 
-After informing Gernsback about Weena: say "TELL GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks]
+After informing Gernsback about Weena: say "TELL GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]
 
 After informing Gernsback about time machine: say "TELL GERNSBACK ABOUT TIME MACHINE."
 
 After informing Gernsback about orrery: say "TELL GERNSBACK ABOUT ORRERY."
 
-After informing Gernsback about breaker: say "TELL GERNSBACK ABOUT [second noun] ." [+fuse]
+After informing Gernsback about breaker: say "TELL GERNSBACK ABOUT [second noun] ." [+fuse as part of "about"?]
 
 After informing Gernsback about blueprints: say "TELL GERNSBACK ABOUT BLUEPRINTS."
 
-After informing Gernsback about experiments: say "TELL GERNSBACK ABOUT [second noun]." [+time travel]
+After informing Gernsback about experiments: say "TELL GERNSBACK ABOUT [second noun]." [+time travel as part of "about"?]
 
 After informing Gernsback about workshop-room: say "TELL GERNSBACK ABOUT WORKSHOP."
 

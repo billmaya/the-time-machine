@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 33455 ]
+[ WORDS - 33504 ]
 
 Table of Releases
 release	notes
@@ -3715,6 +3715,17 @@ Every turn:
 			say "You drop the [flame-state of the item] [item][if the player is in Year-1895-Inside or the player is in Year-802701-Inside] on the floor.[otherwise] on the ground.";
 			now the item is nowhere;
 			refresh the list-inventory window.
+
+Part - Torch
+
+A torch is a kind of thing.
+The plural of torch is torches.
+
+A torch has a number called duration.
+The duration of a torch is usually 10.
+
+A torch has a flame-state. A torch is usually new.
+Understand the flame-state property as describing a torch.
 
 Book - Newspaper
 

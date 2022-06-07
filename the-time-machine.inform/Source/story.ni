@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 33504 ]
+[ WORDS - 33544 ]
 
 Table of Releases
 release	notes
@@ -3601,8 +3601,6 @@ Check burning something with something (this is the burn only things not held ru
 	silently try the player dropping the noun;
 	if player encloses the noun, stop the action.
 
-[Add another rule so you are able to hold the newspaper while you light it?]
-
 [Remove or modify Carry/Report to allow newspaper to be used as a torch; give burning newspaper a duration]
 Carry out burning something with something (this is the simplistic burning rule):
 	now the noun is nowhere.
@@ -3688,7 +3686,7 @@ Does the player mean burning something with a burnt strikable-match:
 Instead of burning a burnt strikable-match with something:
 	say "[The noun] is completely consumed and cannot be relit."
 
-Part - Putting The Matches Out
+Chapter - Putting The Matches Out
 
 Every turn:
 	let N be 0; [here we track how many matches are being put out during a turn, so that we don't have to mention each match individually if several go out during the same move]
@@ -3721,15 +3719,25 @@ Part - Torch
 A torch is a kind of thing.
 The plural of torch is torches.
 
+A torch is flammable.
+
 A torch has a number called duration.
 The duration of a torch is usually 10.
 
 A torch has a flame-state. A torch is usually new.
 Understand the flame-state property as describing a torch.
 
+Check burning a torch with something (this is the being able to hold a torch rule):
+	say "LIGHTING A TORCH WHILE HOLDING IT.";
+	stop the action.
+
+Chapter - Putting The Torch Out
+
+Test n-torch with "north / north / west / north /take newspaper / open box of matches / take match / light match / light newspaper."
+
 Book - Newspaper
 
-The newspaper is a flammable thing.
+The newspaper is a torch.
 The newspaper is on the left armchair.
 The newspaper is undescribed. 
 Understand "news" or "paper" as newspaper.

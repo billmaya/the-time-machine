@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 33544 ]
+[ WORDS - 33717 ]
 
 Table of Releases
 release	notes
@@ -2603,6 +2603,8 @@ time travel is a subject.
 
 information is a subject.
 
+future-people is a subject.
+
 Book - Watchett
 
 Watchett is a female person.
@@ -3199,9 +3201,7 @@ After saying goodbye to Gernsback when the farewell type is explicit:
 	say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading."
 	
 After saying goodbye to Gernsback when the farewell type is implicit:
-	say "Gernsback silently watches you as you leave the parlor and then, with a shrug, goes back to his reading [line break]"
-
-[How would I replace "leave the parlor" with the destination you're going towards?]
+	say "Gernsback watches you head into the[if the room gone to is the Library] library[otherwise] dining room[end if] for a few moments before going back to his book.[line break]"
 
 Chapter - In The Parlor
 
@@ -3214,6 +3214,22 @@ After requesting Gernsback for the book: say "ASK GERNSBACK FOR BOOK."
 After requesting Gernsback for the box of matches: say "ASK GERNSBACK FOR BOX OF MATCHES."
 
 After requesting Gernsback for the cigar: say "ASK GERNSBACK FOR CIGAR."
+[]
+[
+[Maybe I should put all of Gernsback's replies in a table (separate table required for Request, Quizzing, Informing, etc.?)]
+Instead of requesting it for:
+	repeat through Table of Gernsback Requests:
+		if topic understood includes topic entry:
+			say "[response entry][line break]" instead;
+	say "NO GERNSBACK RESPONSE AVAILABLE.".
+
+Table of Gernsback Requests
+topic	response
+"newspaper"	"GERNSBACK RESPONSE FOR NEWSPAPER REQUEST."
+"book"	"GERNSBACK RESPONSE FOR BOOK REQUEST."
+"box of matches"	"GERNSBACK RESPONSE FOR BOX OF MATCHES REQUEST."
+"cigar"	"GERNSBACK RESPONSE FOR CIGAR REQUEST."
+]
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
@@ -3226,6 +3242,21 @@ After quizzing Gernsback about Watchett: say "ASK GERNSBACK ABOUT WATCHETT."
 After quizzing Gernsback about Weena: say "ASK GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]
 After quizzing Gernsback about Eloi: say "ASK GERNSBACK ABOUT ELOI.";
 After quizzing Gernsback about Morlocks: say "ASK GERNSBACK ABOUT MORLOCKS.";
+
+[
+[future-people defined in Book - Subjects]
+Understand "weena" or "eloi" or "morlocks" as future-people. [>ask gernsback about weena => Which do you mean, Weena or future-people?]
+After quizzing Gernsback about future-people: 
+	if "[second noun]" is "weena":
+		say "GERNSBACK REPLIES ABOUT [second noun].";
+	if "[second noun]" is "eloi":
+ 		say "GERNSBACK REPLIES ABOUT [second noun].";
+	if "[second noun]" is "morlocks":
+		say "GERNSBACK REPLIES ABOUT [second noun]."
+
+[say "Always said Wells had a wonderful imagination."]
+[After quizzing Gernsback about future-people: say "ASK GERNSBACK ABOUT [second noun]."]
+]
 
 Understand "his-work" as experiments.
 After quizzing Gernsback about experiments: say "ASK GERNSBACK ABOUT [second noun]." [+his-work, time travel, time machine as part of "about"?]

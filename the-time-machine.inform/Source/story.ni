@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 33717 ]
+[ WORDS - 33711 ]
 
 Table of Releases
 release	notes
@@ -3201,7 +3201,7 @@ After saying goodbye to Gernsback when the farewell type is explicit:
 	say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading."
 	
 After saying goodbye to Gernsback when the farewell type is implicit:
-	say "Gernsback watches you head into the[if the room gone to is the Library] library[otherwise] dining room[end if] for a few moments before going back to his book.[line break]"
+	say "Gernsback watches you head into the[if the room gone to is the Library] library[otherwise] dining room[end if] before returning to his book.[line break]"
 
 Chapter - In The Parlor
 

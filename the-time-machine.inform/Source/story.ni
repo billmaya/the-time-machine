@@ -3120,7 +3120,7 @@ Test patience-humboldt with "say hello to humboldt / tell humboldt about time tr
 Chapter - Default Responses
 
 Default ask response for Humboldt:
-	say "Thinking for a moment, he replies 'XYZ.'"
+	say "Thinking for a moment, he replies 'I don[']t believe I[']ve got an opinion about that.'"
 	
 [Default answer response for ]
 

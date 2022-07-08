@@ -3313,14 +3313,22 @@ Section - Showing
 
 Chapter - Default Responses
 
-[Default ask response for Gernsback:] 
+Default ask response for Gernsback:
+	say "Thinking for a moment, he replies 'I don[']t believe I[']ve got an opinion about that.'"
+
 [Default answer response for Gernsback:]
-[Default tell response for Gernsback:]
+
+Default tell response for Gernsback:
+	say "'That's very interesting...'"
+
 [Default ask-tell response for Gernsback:]
 [Default give response for Gernsback:]
 [Default show response for Gernsback:]
 [Default give-show response for Gernsback:]
-[Default ask-for response for Gernsback:]
+
+Default ask-for response for Gernsback:
+	say "'I[']m afraid I can[']t help you with that.'"
+
 [Default yes-no response for Gernsback:]
 [Default response for Gernsback:]
 

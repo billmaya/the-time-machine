@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34028 ]
+[ WORDS - 34203 ]
 
 Table of Releases
 release	notes
@@ -665,7 +665,7 @@ Part - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[paragraph break]The room continues to the north and the entryway is back east."
+The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[if the location of Gernsback is the Library] Gernsback is sitting in the chair, paging through his book.[end if][paragraph break]The room continues to the north and the entryway is back east."
 
 Chapter - Printing Library Description
 
@@ -911,7 +911,11 @@ Part - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[otherwise if the newspaper is on the right armchair] A newspaper rests on the right armchair.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+
+[ Description taking Gernsback into account
 The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in the right armchair in front of the fireplace, paging through his book.[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[otherwise if the newspaper is on the right armchair] A newspaper rests on the right armchair.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+]
 
 Chapter - Armchairs
 
@@ -3180,6 +3184,7 @@ Gernsback is fixed.
 Gernsback is in the Library.
 
 Gernsback is scenery. [This prevents "You can see Gernsback here." being printed out in room descriptions.]
+Gernsback is major.
 
 [The printed name of Gernsback is "TBD."]
 
@@ -3299,13 +3304,13 @@ After quizzing Gernsback about book: say "ASK GERNSBACK ABOUT BOOK."
 
 Section - Informing - "Tell [someone] about [thing]"
 
-After informing Gernsback about Wells: say "TELL GERNSBACK ABOUT WELLS."
+[DEL After informing Gernsback about Wells: say "TELL GERNSBACK ABOUT WELLS."
 
-After informing Gernsback about Humboldt: say "TELL GERNSBACK ABOUT HUMBOLDT."
+After informing Gernsback about Humboldt: say "TELL GERNSBACK ABOUT HUMBOLDT."]
 
 After informing Gernsback about Watchett: say "TELL GERNSBACK ABOUT WATCHETT."
 
-After informing Gernsback about Weena: say "TELL GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]
+[DEL After informing Gernsback about Weena: say "TELL GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]]
 
 After informing Gernsback about time machine: say "TELL GERNSBACK ABOUT TIME MACHINE."
 
@@ -3961,9 +3966,9 @@ Introduction Of Gernsback begins when player is in the Library for the first tim
 
 When Introduction Of Gernsback begins: 
 	[say "INTRODUCTION OF GERNSBACK BEGINS.";]
-	say "Standing by the desk, looking out the window, is Gernsback, a successful businessman with ownership in several textile mills in the north. He['] a frequent visitor at these gatherings and rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with a match and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...' He glances at the window, then shakes his head slowly, lost in thought.[paragraph break]Picking a book off the bookshelf, he turns back to you. 'I guess we had better make ourselves comfortable until Humboldt gets back.'";
+	say "Standing by the desk, looking out the window, is Gernsback, a successful businessman with ownership in several textile mills in the north. He[']s a frequent visitor at these gatherings and rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with a match and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...' He glances at the window, then shakes his head slowly, lost in thought.[paragraph break]Picking a book off the bookshelf, he turns back to you. 'I guess we had better make ourselves comfortable until Humboldt gets back.' Settling into the chair, Gernsback begins paging through his book.";
 	now library-print-description is true;
-	now Gernsback is mobile.
+	[now Gernsback is mobile.]
 
 Introduction Of Gernsback ends when Gernsback is not in the Library.
 
@@ -3972,6 +3977,7 @@ Introduction Of Gernsback ends when Gernsback is not in the Library.
 	
 Part - Gernsback's Comments
 
+[Do I even need this scene anymore? 
 Gernsback's Comments is a recurring scene.
 
 Gernsback's Comments begins when [Gernsback is on the right armchair [Parlor] and] the player is in the Parlor.
@@ -3984,6 +3990,7 @@ When Gernsback's Comments begins:
 Gernsback's Comments ends when the player is not in the Parlor.
 
 [When Gernsback's Comments ends: say "GERNSBACK'S COMMENTS ENDS."]
+]
 
 
 Book - Traveling In Time

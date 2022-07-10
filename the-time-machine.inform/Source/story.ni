@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34298 ]
+[ WORDS - 34361 ]
 
 Table of Releases
 release	notes
@@ -3194,14 +3194,19 @@ Part - Conversation
 
 Chapter - Hello
 
+[TBD Need to rework these if Gernsback is going to be in Ending Scene]
 After saying hello to Gernsback when the greeting type is explicit: 
 	say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]"
 
 After saying hello to Gernsback when the greeting type is implicit:
-	say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]"
+	if Ending Scene is not happening:
+		say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]";
+	otherwise:
+		continue the action.
 
 Chapter - Goodbye
 
+[TBD Need to rework these if Gernsback is going to be in Ending Scene]
 After saying goodbye to Gernsback when the farewell type is explicit: 
 	say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading."
 	
@@ -3318,8 +3323,12 @@ After informing Gernsback about Watchett: say "TELL GERNSBACK ABOUT WATCHETT."
 [DEL After informing Gernsback about Weena: say "TELL GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]]
 
 [TMP After informing Gernsback about time machine: say "TELL GERNSBACK ABOUT TIME MACHINE."]
-After informing Gernsback about time machine when Ending Scene is not happening:
-	say "TALK ABOUT THE TIME MACHINE YOU FOUND IN WORKSHOP."
+After informing Gernsback about time machine:
+	if Ending Scene is not happening:
+		say "TALK ABOUT THE TIME MACHINE YOU FOUND IN WORKSHOP.";
+	otherwise:
+		continue the action.
+		[have Default Tell handle it.]
 
 After informing Gernsback about orrery: say "TELL GERNSBACK ABOUT ORRERY."
 
@@ -3909,6 +3918,7 @@ When Humboldt's Return begins:
 	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved and annoyed. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]";
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
+	[now Gernsback is in the Workshop;] [Uncomment if Gernsback is going to be in Ending Scene]
 
 Humboldt's Return ends when Humboldt is in the Workshop.
 

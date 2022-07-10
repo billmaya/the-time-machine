@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 33754 ]
+[ WORDS - 34028 ]
 
 Table of Releases
 release	notes
@@ -3207,9 +3207,11 @@ Chapter - In The Parlor
 
 Section - Requests - "Ask [someone] for [thing]"
 
-After requesting Gernsback for the newspaper: say "ASK GERNSBACK FOR NEWSPAPER."
+After requesting Gernsback for the newspaper: 
+	say "[first time]He nods towards the newspaper on the other chair. [only]'Right there, I've already read it.'"
+	[DEL say "'When I'm done with it. Plenty of books in the library until then.'"]
 
-After requesting Gernsback for the book: say "ASK GERNSBACK FOR BOOK."
+After requesting Gernsback for the book: say "'Plenty of other books in the library for you to look at.'"
 
 After requesting Gernsback for the box of matches: say "ASK GERNSBACK FOR BOX OF MATCHES."
 
@@ -3233,15 +3235,21 @@ topic	response
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
-After quizzing Gernsback about Wells: say "ASK GERNSBACK ABOUT WELLS."
+After quizzing Gernsback about Wells: say "'Sad. If I had known it would have lead to this I never would have given him encouragement.'"
 
-After quizzing Gernsback about Humboldt: say "ASK GERNSBACK ABOUT HUMBOLDT."
+After quizzing Gernsback about Humboldt: say "'Smart man. A bit full of himself though. Not as practical as you and me.'"
 
-After quizzing Gernsback about Watchett: say "ASK GERNSBACK ABOUT WATCHETT."
+After quizzing Gernsback about Watchett: say "'I believe she's still in the kitchen.'"
 
-After quizzing Gernsback about Weena: say "ASK GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]
-After quizzing Gernsback about Eloi: say "ASK GERNSBACK ABOUT ELOI.";
-After quizzing Gernsback about Morlocks: say "ASK GERNSBACK ABOUT MORLOCKS.";
+After quizzing Gernsback about Weena: 
+	say "'Sounds like a bit of a dollymop if you ask me. Bit of wishful thinking on Wells['] part, if you know what I mean.'" [+Eloi, Morlocks as part of "about"?]
+
+After quizzing Gernsback about Eloi: 
+	say "'I only wish it were true. Group like that, probably make excellent factory workers. Sounds like they don[']t need to get paid. Docile, don[']t cause troubles. Could setup a factory in the future and make a mint.'"
+	[DEL with workers who didn't need to get paid.'";]
+
+After quizzing Gernsback about Morlocks: 
+	say "Pretty handy bunch. Sound like those chaps up at the mill who keep the machines running.'";
 
 [
 [future-people defined in Book - Subjects]
@@ -3259,19 +3267,27 @@ After quizzing Gernsback about future-people:
 ]
 
 Understand "his-work" as experiments.
-After quizzing Gernsback about experiments: say "ASK GERNSBACK ABOUT [second noun]." [+his-work, time travel, time machine as part of "about"?]
-After quizzing Gernsback about time travel: try quizzing Gernsback about experiments.
-After quizzing Gernsback about the time machine: say "ASK GERNSBACK ABOUT TIME MACHINE."
+After quizzing Gernsback about experiments: 
+	say "'Told Wells that if he stuck to practical endeavors, like trying to figure out how to increase the yields of my Derbyshire looms, I'd pay him a tidy sum. Enough to fund a lifetime of crazy ideas.'"
+	
+After quizzing Gernsback about time travel:
+	say "'Traveling one way through time is good enough for me.' He turns to the finance page in the paper. 'Though I must admit I wouldn't mind being able to travel a week back to the Exchange after finding out how the market's done today. Know what I mean?' "
+	
+After quizzing Gernsback about the time machine: 
+	say "'I've seen bits and pieces but I can't say I've really understood what I was seeing. I've got my own 'Morlocks' at the mills for things like that.' He chuckles to himself."
 
-After quizzing Gernsback about orrery: say "ASK GERNSBACK ABOUT ORRERY."
+After quizzing Gernsback about orrery: 
+	say "'Only practical thing Wells has made up until now. Tried to get him to patent and sell it. Though what use knowing what the Man in the Moon is up to is beyond me.'."
 
-After quizzing Gernsback about workshop-room: say "ASK GERNSBACK ABOUT WORKSHOP."
+After quizzing Gernsback about workshop-room: 
+	say "'Only been inside a couple of times with Wells. Tools and materials and such. Terrible mess.'"
 
 After quizzing Gernsback about box of matches: say "ASK GERNSBACK ABOUT BOX OF MATCHES."
 
-After quizzing Gernsback about cigar: say "ASK GERNSBACK ABOUT CIGAR."
+After quizzing Gernsback about cigar: 
+	say "'Believe it was Kipling who said 'A woman is only a woman, but a good cigar is a smoke.' Can't disagree with him when it comes to this Partagás.'"
 
-After quizzing Gernsback about pocket watch: say "ASK GERNSBACK ABOUT POCKET WATCH."
+After quizzing Gernsback about pocket watch: say "'That looks like Wells' watch.'"
 
 After quizzing Gernsback about petal: say "ASK GERNSBACK ABOUT PETAL."
 
@@ -3314,7 +3330,8 @@ Section - Showing
 Chapter - Default Responses
 
 Default ask response for Gernsback:
-	say "Thinking for a moment, he replies 'I don[']t believe I[']ve got an opinion about that.'"
+	say "'I don't know anything about that.'"
+	[say "Thinking for a moment, he replies 'I don[']t believe I[']ve got an opinion about that.'"]
 
 [Default answer response for Gernsback:]
 

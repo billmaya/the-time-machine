@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34203 ]
+[ WORDS - 34298 ]
 
 Table of Releases
 release	notes
@@ -3304,15 +3304,22 @@ After quizzing Gernsback about book: say "ASK GERNSBACK ABOUT BOOK."
 
 Section - Informing - "Tell [someone] about [thing]"
 
-[DEL After informing Gernsback about Wells: say "TELL GERNSBACK ABOUT WELLS."
+[I should be able to Tell/Show Gernsback things that I discover before I travel to 802,701 (fuses, time machine, workshop-room, key, etc.)
+ But after I travel back from 802,701 the Endgame begins and, if Gernsback is present, his default responses should handle any tells (he doesn't
+ have much to say in the conversation with Humboldt.
 
+ So I'll probably have to make specific Tells below conditional on Ending Scene not starting]
+
+[DEL After informing Gernsback about Wells: say "TELL GERNSBACK ABOUT WELLS."
 After informing Gernsback about Humboldt: say "TELL GERNSBACK ABOUT HUMBOLDT."]
 
 After informing Gernsback about Watchett: say "TELL GERNSBACK ABOUT WATCHETT."
 
 [DEL After informing Gernsback about Weena: say "TELL GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]]
 
-After informing Gernsback about time machine: say "TELL GERNSBACK ABOUT TIME MACHINE."
+[TMP After informing Gernsback about time machine: say "TELL GERNSBACK ABOUT TIME MACHINE."]
+After informing Gernsback about time machine when Ending Scene is not happening:
+	say "TALK ABOUT THE TIME MACHINE YOU FOUND IN WORKSHOP."
 
 After informing Gernsback about orrery: say "TELL GERNSBACK ABOUT ORRERY."
 

@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34361 ]
+[ WORDS - 34333 ]
 
 Table of Releases
 release	notes
@@ -3218,8 +3218,7 @@ Chapter - In The Parlor
 Section - Requests - "Ask [someone] for [thing]"
 
 After requesting Gernsback for the newspaper: 
-	say "[first time]He nods towards the newspaper on the other chair. [only]'Right there, I've already read it.'"
-	[DEL say "'When I'm done with it. Plenty of books in the library until then.'"]
+	say "'It[']s there in the other room if you want to read it.'"
 
 After requesting Gernsback for the book: say "'Plenty of other books in the library for you to look at.'"
 
@@ -3256,7 +3255,6 @@ After quizzing Gernsback about Weena:
 
 After quizzing Gernsback about Eloi: 
 	say "'I only wish it were true. Group like that, probably make excellent factory workers. Sounds like they don[']t need to get paid. Docile, don[']t cause troubles. Could setup a factory in the future and make a mint.'"
-	[DEL with workers who didn't need to get paid.'";]
 
 After quizzing Gernsback about Morlocks: 
 	say "Pretty handy bunch. Sound like those chaps up at the mill who keep the machines running.'";

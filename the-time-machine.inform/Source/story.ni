@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34145 ]
+[ WORDS - 34248 ]
 
 Table of Releases
 release	notes
@@ -3229,13 +3229,17 @@ After requesting Gernsback for the newspaper:
 
 After requesting Gernsback for the book: say "'Plenty of other books in the library for you to look at.'"
 
-After requesting Gernsback for the box of matches: say "ASK GERNSBACK FOR BOX OF MATCHES."
+After requesting Gernsback for the box of matches:
+	if the player does not have cigar-player:
+		say "A quizzical look crosses Gernsback[']s face. 'Don[']t know why you[']d need those.'";
+	otherwise:
+		say "'Of course, how silly of me to forget. Keep them.'";
+		now the player has box of matches.
 
 After requesting Gernsback for the cigar-gernsback:
 	if the player does not have cigar-player: 
-		say "'Happy to oblige. Didn't know you were a fellow smoker.'";
+		say "'Happy to oblige. Didn't know you were a fellow smoker.' He reaches inside his jacket lapel and hands you a cigar out of his leather case.";
 		now the player has cigar-player;
-		[DEL say "ASK GERNSBACK FOR CIGAR.";]
 	otherwise:
 		stop the action.
 
@@ -3860,7 +3864,8 @@ The box of matches contains five s-matches.
 
 Understand "matchbox" or "match box" as box of matches.
 
-The box of matches is held by the player. [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
+The box of matches is held by Gernsback.
+[The box of matches is held by the player.] [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
 
 
 Book - Book
@@ -3884,7 +3889,7 @@ Book - Gernsback's Cigar
 
 The cigar-gernsback is tobacco.
 The description of cigar-gernsback is "GERNSBACK'S CIGAR."
-The printed name of cigar-gernsback is "Gernsback's cigar."
+The printed name of cigar-gernsback is "Gernsback's cigar".
 
 The cigar-gernsback is held by Gernsback.
 
@@ -3892,7 +3897,7 @@ Book - Player's Cigar
 
 The cigar-player is tobacco.
 The description of cigar-player is "PLAYER'S CIGAR."
-The printed name of cigar-player is "cigar."
+The printed name of cigar-player is "cigar".
 
 The cigar-player is held by Gernsback.
 

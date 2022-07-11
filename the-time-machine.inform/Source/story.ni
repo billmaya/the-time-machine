@@ -3231,7 +3231,13 @@ After requesting Gernsback for the book: say "'Plenty of other books in the libr
 
 After requesting Gernsback for the box of matches: say "ASK GERNSBACK FOR BOX OF MATCHES."
 
-After requesting Gernsback for the cigar-gernsback: say "ASK GERNSBACK FOR CIGAR."
+After requesting Gernsback for the cigar-gernsback:
+	if the player does not have cigar-player: 
+		say "'Happy to oblige. Didn't know you were a fellow smoker.'";
+		now the player has cigar-player;
+		[DEL say "ASK GERNSBACK FOR CIGAR.";]
+	otherwise:
+		stop the action.
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
@@ -3361,6 +3367,9 @@ Test g-req with "ask gernsback for newspaper / ask gernsback for book / ask gern
 Test g-quiz with "ask gernsback about wells / ask gernsback about humboldt / ask gernsback about watchett / ask gernsback about weena / ask gernsback about eloi / ask gernsback about morlocks / ask gernsback about experiments / ask gernsback about his-work / ask gernsback about time travel / ask gernsback about time machine / ask gernsback about orrery / ask gernsback about workshop-room / ask gernsback about box of matches / ask gernsback about cigar / ask gernsback about  pocket watch / ask gernsback about petal / ask gernsback about key / ask gernsback about newspaper / ask gernsback about book."
 	
 Test g-tell with "tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about blueprints / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
+
+[Need to manually travel to 802,701 with >test eloi-r8 before running this test]
+Test g-end with "."
 
 Part - Movement
 
@@ -3883,7 +3892,7 @@ Book - Player's Cigar
 
 The cigar-player is tobacco.
 The description of cigar-player is "PLAYER'S CIGAR."
-The printed name of cigar-player is "Your cigar."
+The printed name of cigar-player is "cigar."
 
 The cigar-player is held by Gernsback.
 

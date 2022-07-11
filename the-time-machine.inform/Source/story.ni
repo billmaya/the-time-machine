@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34333 ]
+[ WORDS - 34476 - 34333 + 143 ]
 
 Table of Releases
 release	notes
@@ -3194,9 +3194,11 @@ Part - Conversation
 
 Chapter - Hello
 
-[TBD Need to rework these if Gernsback is going to be in Ending Scene]
 After saying hello to Gernsback when the greeting type is explicit: 
-	say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]"
+	if Ending Scene is not happening:
+		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
+	otherwise:
+		continue the action.
 
 After saying hello to Gernsback when the greeting type is implicit:
 	if Ending Scene is not happening:
@@ -3206,41 +3208,30 @@ After saying hello to Gernsback when the greeting type is implicit:
 
 Chapter - Goodbye
 
-[TBD Need to rework these if Gernsback is going to be in Ending Scene]
 After saying goodbye to Gernsback when the farewell type is explicit: 
-	say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading."
+	if Ending Scene is not happening:
+		say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading.";
+	otherwise:
+		continue the action.
 	
 After saying goodbye to Gernsback when the farewell type is implicit:
-	say "Gernsback watches you head into the[if the room gone to is the Library] library[otherwise] dining room[end if] before returning to his book.[line break]"
+	if Ending Scene is not happening:
+		say "Gernsback watches you head into the[if the room gone to is the Library] library[otherwise] dining room[end if] before returning to his book.[line break]";
+	otherwise:
+		say "Gernsback watches you abruptly leave the workshop."
 
-Chapter - In The Parlor
+Chapter - In The Library
 
 Section - Requests - "Ask [someone] for [thing]"
 
 After requesting Gernsback for the newspaper: 
-	say "'It[']s there in the other room if you want to read it.'"
+	say "'I don[']t have it.'"
 
 After requesting Gernsback for the book: say "'Plenty of other books in the library for you to look at.'"
 
 After requesting Gernsback for the box of matches: say "ASK GERNSBACK FOR BOX OF MATCHES."
 
-After requesting Gernsback for the cigar: say "ASK GERNSBACK FOR CIGAR."
-[]
-[
-[Maybe I should put all of Gernsback's replies in a table (separate table required for Request, Quizzing, Informing, etc.?)]
-Instead of requesting it for:
-	repeat through Table of Gernsback Requests:
-		if topic understood includes topic entry:
-			say "[response entry][line break]" instead;
-	say "NO GERNSBACK RESPONSE AVAILABLE.".
-
-Table of Gernsback Requests
-topic	response
-"newspaper"	"GERNSBACK RESPONSE FOR NEWSPAPER REQUEST."
-"book"	"GERNSBACK RESPONSE FOR BOOK REQUEST."
-"box of matches"	"GERNSBACK RESPONSE FOR BOX OF MATCHES REQUEST."
-"cigar"	"GERNSBACK RESPONSE FOR CIGAR REQUEST."
-]
+After requesting Gernsback for the cigar-gernsback: say "ASK GERNSBACK FOR CIGAR."
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
@@ -3258,21 +3249,6 @@ After quizzing Gernsback about Eloi:
 
 After quizzing Gernsback about Morlocks: 
 	say "Pretty handy bunch. Sound like those chaps up at the mill who keep the machines running.'";
-
-[
-[future-people defined in Book - Subjects]
-Understand "weena" or "eloi" or "morlocks" as future-people. [>ask gernsback about weena => Which do you mean, Weena or future-people?]
-After quizzing Gernsback about future-people: 
-	if "[second noun]" is "weena":
-		say "GERNSBACK REPLIES ABOUT [second noun].";
-	if "[second noun]" is "eloi":
- 		say "GERNSBACK REPLIES ABOUT [second noun].";
-	if "[second noun]" is "morlocks":
-		say "GERNSBACK REPLIES ABOUT [second noun]."
-
-[say "Always said Wells had a wonderful imagination."]
-[After quizzing Gernsback about future-people: say "ASK GERNSBACK ABOUT [second noun]."]
-]
 
 Understand "his-work" as experiments.
 After quizzing Gernsback about experiments: 
@@ -3292,35 +3268,24 @@ After quizzing Gernsback about workshop-room:
 
 After quizzing Gernsback about box of matches: say "ASK GERNSBACK ABOUT BOX OF MATCHES."
 
-After quizzing Gernsback about cigar: 
+After quizzing Gernsback about cigar-gernsback: 
 	say "'Believe it was Kipling who said 'A woman is only a woman, but a good cigar is a smoke.' Can't disagree with him when it comes to this Partagás.'"
 
 After quizzing Gernsback about pocket watch: say "'That looks like Wells' watch.'"
 
-After quizzing Gernsback about petal: say "ASK GERNSBACK ABOUT PETAL."
-
-After quizzing Gernsback about key: say "ASK GERNSBACK ABOUT KEY."
-
-After quizzing Gernsback about newspaper: say "ASK GERNSBACK ABOUT NEWSPAPER."
+After quizzing Gernsback about newspaper: 
+	say "'It[']s there in the other room if you want to read it.'"
 
 After quizzing Gernsback about book: say "ASK GERNSBACK ABOUT BOOK."
 
 Section - Informing - "Tell [someone] about [thing]"
 
-[I should be able to Tell/Show Gernsback things that I discover before I travel to 802,701 (fuses, time machine, workshop-room, key, etc.)
- But after I travel back from 802,701 the Endgame begins and, if Gernsback is present, his default responses should handle any tells (he doesn't
- have much to say in the conversation with Humboldt.
+After informing Gernsback about Humboldt: 
+	if Ending Scene is not happening:
+		say "TELL GERNSBACK ABOUT HUMBOLDT.";
+	otherwise:
+		continue the action.
 
- So I'll probably have to make specific Tells below conditional on Ending Scene not starting]
-
-[DEL After informing Gernsback about Wells: say "TELL GERNSBACK ABOUT WELLS."
-After informing Gernsback about Humboldt: say "TELL GERNSBACK ABOUT HUMBOLDT."]
-
-After informing Gernsback about Watchett: say "TELL GERNSBACK ABOUT WATCHETT."
-
-[DEL After informing Gernsback about Weena: say "TELL GERNSBACK ABOUT [second noun]." [+Eloi, Morlocks as part of "about"?]]
-
-[TMP After informing Gernsback about time machine: say "TELL GERNSBACK ABOUT TIME MACHINE."]
 After informing Gernsback about time machine:
 	if Ending Scene is not happening:
 		say "TALK ABOUT THE TIME MACHINE YOU FOUND IN WORKSHOP.";
@@ -3328,34 +3293,51 @@ After informing Gernsback about time machine:
 		continue the action.
 		[have Default Tell handle it.]
 
-After informing Gernsback about orrery: say "TELL GERNSBACK ABOUT ORRERY."
+After informing Gernsback about orrery:
+	if Ending Scene is not happening:
+		say "TELL GERNSBACK ABOUT ORRERY.";
+	otherwise:
+		continue the action.
 
 After informing Gernsback about breaker: say "TELL GERNSBACK ABOUT [second noun] ." [+fuse as part of "about"?]
 
-After informing Gernsback about blueprints: say "TELL GERNSBACK ABOUT BLUEPRINTS."
+After informing Gernsback about blueprints:
+	if Ending Scene is not happening:
+		say "TELL GERNSBACK ABOUT BLUEPRINTS.";
+	otherwise:
+		continue the action.
 
-After informing Gernsback about experiments: say "TELL GERNSBACK ABOUT [second noun]." [+time travel as part of "about"?]
+After informing Gernsback about workshop-room:
+	if Ending Scene is not happening:
+		say "TELL GERNSBACK ABOUT WORKSHOP.";
+	otherwise:
+		continue the action.
 
-After informing Gernsback about workshop-room: say "TELL GERNSBACK ABOUT WORKSHOP."
-
-After informing Gernsback about petal: say "TELL GERNSBACK ABOUT PETAL."
-
-After informing Gernsback about key: say "TELL GERNSBACK ABOUT KEY."
+After informing Gernsback about key: 
+	if Ending Scene is not happening:
+		say "TELL GERNSBACK ABOUT KEY.";
+	otherwise:
+		continue the action.
 
 Section - Imploring - "Ask [someone] for ['text']"
 
 Section - Showing
 
+After showing noun to Gernsback: try informing Humboldt about noun.
+After showing something to Gernsback: say "SHOWING [noun]".
+
 Chapter - Default Responses
 
 Default ask response for Gernsback:
 	say "'I don't know anything about that.'"
-	[say "Thinking for a moment, he replies 'I don[']t believe I[']ve got an opinion about that.'"]
 
 [Default answer response for Gernsback:]
 
 Default tell response for Gernsback:
-	say "'That's very interesting...'"
+	if Ending Scene is not happening:
+		say "'That's very interesting...'";
+	otherwise:
+		say "Gernsback listens to what you say about the [second noun], glancing at Humboldt several times as you speak."
 
 [Default ask-tell response for Gernsback:]
 [Default give response for Gernsback:]
@@ -3883,11 +3865,27 @@ The description of the book is "You can't make out the entire title from this di
 [The book is in the Parlor.]
 The book is held by Gernsback.
 
-Book - Cigar
+Book - Tobacco
 
-The cigar is a thing.
+Tobacco is a kind of a thing.
+Tobacco is either lit or unlit.
+Tobacco is usually unlit.
 
-The cigar is held by Gernsback.
+Book - Gernsback's Cigar
+
+The cigar-gernsback is tobacco.
+The description of cigar-gernsback is "GERNSBACK'S CIGAR."
+The printed name of cigar-gernsback is "Gernsback's cigar."
+
+The cigar-gernsback is held by Gernsback.
+
+Book - Player's Cigar
+
+The cigar-player is tobacco.
+The description of cigar-player is "PLAYER'S CIGAR."
+The printed name of cigar-player is "Your cigar."
+
+The cigar-player is held by Gernsback.
 
 Volume - Scenes
 

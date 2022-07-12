@@ -3183,6 +3183,8 @@ Gernsback is a male.
 Gernsback is fixed.
 Gernsback is in the Library.
 
+The description of Gernsback is "GERNSBACK'S DESCRIPTION."
+
 Gernsback is scenery. [This prevents "You can see Gernsback here." being printed out in room descriptions.]
 Gernsback is major.
 

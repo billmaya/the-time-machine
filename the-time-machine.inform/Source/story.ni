@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34248 ]
+[ WORDS - 34276 + 33]
 
 Table of Releases
 release	notes
@@ -3276,7 +3276,8 @@ After quizzing Gernsback about orrery:
 After quizzing Gernsback about workshop-room: 
 	say "'Only been inside a couple of times with Wells. Tools and materials and such. Terrible mess.'"
 
-After quizzing Gernsback about box of matches: say "ASK GERNSBACK ABOUT BOX OF MATCHES."
+After quizzing Gernsback about box of matches: 
+	say "Gernsback briefly opens the box of matches. 'Only [the number of s-matches in words] left. I[']ll have to stop by the divan on the way home and get some more.'"
 
 After quizzing Gernsback about cigar-gernsback: 
 	say "'Believe it was Kipling who said 'A woman is only a woman, but a good cigar is a smoke.' Can't disagree with him when it comes to this Partagás.'"

@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34284 + 0]
+[ WORDS - 34418]
 
 Table of Releases
 release	notes
@@ -3238,12 +3238,15 @@ After requesting Gernsback for the box of matches:
 		say "'Of course, how silly of me to forget. Keep them.'";
 		now the player has box of matches.
 
-After requesting Gernsback for the cigar-gernsback:
+Does the player mean requesting Gernsback for the cigar-gernsback: it is very unlikely.
+Does the player mean requesting Gernsback for the cigar-player: it is very likely.
+
+After requesting Gernsback for the cigar-player:
 	if the player does not have cigar-player: 
 		say "'Happy to oblige. Didn't know you were a fellow smoker.' He reaches inside his jacket lapel and hands you a cigar out of his leather case.";
 		now the player has cigar-player;
 	otherwise:
-		stop the action.
+		say "I think you should finish that one first. Make sure it's to your liking."
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
@@ -3280,6 +3283,9 @@ After quizzing Gernsback about workshop-room:
 
 After quizzing Gernsback about box of matches: 
 	say "Gernsback briefly opens the box of matches. 'Only [the number of s-matches in words] left. I[']ll have to stop by the divan on the way home and get some more.'"
+
+Does the player mean quizzing Gernsback about cigar-player: it is very unlikely.
+Does the player mean quizzing Gernsback about cigar-gernsback: it is very likely.
 
 After quizzing Gernsback about cigar-gernsback: 
 	say "'Believe it was Kipling who said 'A woman is only a woman, but a good cigar is a smoke.' Can't disagree with him when it comes to this Partagás.'"
@@ -3888,7 +3894,9 @@ Tobacco is a kind of a thing.
 Tobacco is either lit or unlit.
 Tobacco is usually unlit.
 
-Book - Gernsback's Cigar
+Part Cigars
+
+Chapter - Gernsback's Cigar
 
 The cigar-gernsback is tobacco.
 The description of cigar-gernsback is "GERNSBACK'S CIGAR."
@@ -3896,13 +3904,21 @@ The printed name of cigar-gernsback is "Gernsback's cigar".
 
 The cigar-gernsback is held by Gernsback.
 
-Book - Player's Cigar
+Understand "his cigar" or "the cigar" or "cigar" as cigar-gernsback.
+
+Chapter - Player's Cigar
 
 The cigar-player is tobacco.
 The description of cigar-player is "PLAYER'S CIGAR."
 The printed name of cigar-player is "cigar".
 
+Understand "a cigar" or "cigar" as cigar-player.
+
 The cigar-player is held by Gernsback.
+
+Chapter - Testing
+
+Test g-cigars with "ask gernsback about cigar / ask gernsback about his cigar / ask gernsback about the cigar / ask gernsback about cigar-gernsback / ask gernsback about cigar-player / ask gernsback for cigar / ask gernsback for cigar-player / ask gernsback for a cigar / ask gernsback for cigar-gernsback ."
 
 Volume - Scenes
 

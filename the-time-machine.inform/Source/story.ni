@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34465]
+[ WORDS - 34701]
 
 Table of Releases
 release	notes
@@ -3295,7 +3295,17 @@ After quizzing Gernsback about pocket watch: say "'That looks like Wells' watch.
 After quizzing Gernsback about newspaper: 
 	say "'It[']s there in the other room if you want to read it.'"
 
-After quizzing Gernsback about book: say "ASK GERNSBACK ABOUT BOOK."
+After quizzing Gernsback about book:
+	choose a random row from Table of Gernsback Book;
+	say "'[one of]Fascinating[or]Interesting[or]Strange[or]Intriguing[or]Engaging[or]Entertaining[or]Amusing[at random] story. Called ['][Title entry].['] About [Comment entry] Never heard of the author though.'"
+
+Table of Gernsback Book
+Title	Comment
+"The Island of Doctor Moreau"	"an exiled scientist on an island turning animals into people. Don’t really understand the reasons why. Doesn’t seem to be money in it unless you can turn them into domestics."
+"The Invisible Man"	"an albino scientist who makes himself invisible. Can’t reverse the process and goes a bit crazy. Shot dead before he can turn himself back. Probably check up on my competitors if I were invisible instead of wasting time terrorizing the nation. No money in it."
+"The War of the Worlds"	"an invasion from Mars by slugs in some sort of walking machines with three legs, if you can believe that. Wouldn’t mind having the patent on those I tell you."
+"When the Sleeper Wakes"	"a man who sleeps for two hundred years. Wakes up to find he’s become the richest man in the world. Wouldn’t mind that happening to me. Richest man in the world, not the sleeping part."
+"The First Men in the Moon"	"a scientist chap like our Wells who invents some of anti-gravity material. Uses it to travel to the Moon instead of making a fortune off of it, if you can believe that."
 
 Section - Informing - "Tell [someone] about [thing]"
 

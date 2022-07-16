@@ -3295,9 +3295,16 @@ After quizzing Gernsback about pocket watch: say "'That looks like Wells' watch.
 After quizzing Gernsback about newspaper: 
 	say "'It[']s there in the other room if you want to read it.'"
 
+ask-about-gernsback-book is a truth state that varies.
+ask-about-gernsback-book is false.
+
 After quizzing Gernsback about book:
-	choose a random row from Table of Gernsback Book;
-	say "'[one of]Fascinating[or]Interesting[or]Strange[or]Intriguing[or]Engaging[or]Entertaining[or]Amusing[at random] story. Called ['][Title entry].['] About [Comment entry] Never heard of the author though.'"
+	if ask-about-gernsback-book is false:
+		choose a random row from Table of Gernsback Book;
+		say "'[one of]Fascinating[or]Interesting[or]Strange[or]Intriguing[or]Engaging[or]Entertaining[or]Amusing[at random] story. Called ['][Title entry].['] About [Comment entry] Never heard of the author though.'";
+		now ask-about-gernsback-book is true;
+	otherwise:
+		say "'I just told you about it.'".
 
 Table of Gernsback Book
 Title	Comment

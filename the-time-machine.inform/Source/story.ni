@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34418]
+[ WORDS - 34465]
 
 Table of Releases
 release	notes
@@ -3904,7 +3904,7 @@ The printed name of cigar-gernsback is "Gernsback's cigar".
 
 The cigar-gernsback is held by Gernsback.
 
-Understand "his cigar" or "the cigar" or "cigar" as cigar-gernsback.
+Understand "his cigar" or "the cigar" or "cigar" or "gernsbacks cigar" as cigar-gernsback.
 
 Chapter - Player's Cigar
 
@@ -3915,6 +3915,12 @@ The printed name of cigar-player is "cigar".
 Understand "a cigar" or "cigar" as cigar-player.
 
 The cigar-player is held by Gernsback.
+
+Chapter - Examining Cigars
+
+[Handling >examine cigar]
+Does the player mean examining cigar-player when the player has cigar-player: it is very likely.
+Does the player mean examining cigar-gernsback when the player does not have cigar-player: it is very likely.
 
 Chapter - Testing
 

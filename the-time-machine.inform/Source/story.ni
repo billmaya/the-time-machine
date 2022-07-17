@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35018 ]
+[ WORDS - 35095 - 35018 ]
 
 Table of Releases
 release	notes
@@ -2586,7 +2586,7 @@ The poker is familiar.
 The newspaper is familiar.
 The time machine is familiar.
 
-[The fuse is familiar.] [DEL Understand "orrery fuse" as fuse.]
+[The fuse is familiar.]
 The fuse-orrery is familiar. 
 
 The Eloi are a familiar people.
@@ -3361,9 +3361,9 @@ After informing Gernsback about orrery:
 	otherwise:
 		continue the action.]
 	
-After informing Gernsback about [fuse:] fuse-orrery:
+After informing Gernsback about fuse-orrery:
 	if Ending Scene is not happening:
-		if fuse-orrery has been seen: [This doesn't appear to work]
+		if fuse-orrery has been seen: 
 			say "TELL GERNSBACK ABOUT ORRERY FUSE.";
 		otherwise:
 			say "[dont-know]";
@@ -3378,8 +3378,6 @@ After informing Gernsback about fuse-time-machine:
 			say "[dont-know]";
 	otherwise:
 		continue the action.
-
-[DEL [second noun] ." [+fuse as part of "about"?]]
 
 After informing Gernsback about blueprints:
 	if Ending Scene is not happening:

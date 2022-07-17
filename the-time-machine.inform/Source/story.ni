@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35075 ]
+[ WORDS - 35126 ]
 
 Table of Releases
 release	notes
@@ -2588,6 +2588,7 @@ The time machine is familiar.
 
 [The fuse is familiar.]
 The fuse-orrery is familiar. 
+The fuse-time-machine is familiar.
 
 The Eloi are a familiar people.
 Weena is a familiar woman.
@@ -3317,7 +3318,7 @@ Title	Comment
 Section - Informing - "Tell [someone] about [thing]"
 
 To say dont-know:
-	say "'Don't know what you're talking about.'" [Can I get rid of this, handling with default Tell response and conditional?]
+	say "'Don't know what you're talking about.'" 
 
 After informing Gernsback about Wells:
 	if Ending Scene is not happening:
@@ -3339,7 +3340,7 @@ After informing Gernsback about Watchett:
 
 After informing Gernsback about time machine:
 	if Ending Scene is not happening:
-		if time machine has been seen: [if the workshop is visited:]
+		if time machine has been seen: 
 			say "TALK ABOUT THE TIME MACHINE YOU FOUND IN WORKSHOP."; 
 		otherwise:
 			say "TALK ABOUT THE TIME MACHINE IN THE ABSTRACT.";
@@ -3354,12 +3355,6 @@ After informing Gernsback about orrery:
 			say "TELL GERNSBACK ABOUT ORRERY YOU HAVEN'T SEEN YET.";
 	otherwise:
 		continue the action.
-
-[After informing Gernsback about breaker: 
-	if Ending Scene is not happening:
-		say "TELL GERNSBACK ABOUT BREAKER.";
-	otherwise:
-		continue the action.]
 	
 After informing Gernsback about fuse-orrery:
 	if Ending Scene is not happening:
@@ -3372,7 +3367,7 @@ After informing Gernsback about fuse-orrery:
 	
 After informing Gernsback about fuse-time-machine:
 	if Ending Scene is not happening:
-		if fuse-time-machine has been seen: [This doesn't appear to work]
+		if fuse-time-machine has been seen: 
 			say "TELL GERNSBACK ABOUT TIME MACHINE FUSE.";
 		otherwise:
 			say "[dont-know]";
@@ -3460,6 +3455,10 @@ Test g-time2 with "go north / go north / purloin key / unlock workshop door with
 
 [Need to >n.n.w before running this test]
 Test g-fuse-orrery with "tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery / go north / slide right panel / take orrery fuse / go south / tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery."
+
+[Need to >n.n.w before running this test]	
+Test g-fuse-time with "tell gernsback about fuse / tell gernsback about time machine fuse / tell gernsback about fuse-time-machine / test see-fuse-time / tell gernsback about fuse / tell gernsback about time machine fuse / tell gernsback about fuse-time-machine."
+Test see-fuse-time with "go east / purloin key / unlock workshop door with key / go north / flip switch / enter time machine / unlock hinged panel with key / open hinged panel / examine time machine fuse holder / exit / go south / go west."
 
 Part - Movement
 

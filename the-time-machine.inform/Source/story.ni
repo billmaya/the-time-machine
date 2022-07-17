@@ -2568,7 +2568,6 @@ A person is usually minor.
 
 Book - Familiarity 
 
-
 Wells is a familiar man.
 Humboldt is a familiar man.
 Watchett is a familiar woman. [If commented out = "Dr. Humboldt does not respond."]
@@ -2586,7 +2585,9 @@ Food is familiar.
 The poker is familiar.
 The newspaper is familiar.
 The time machine is familiar.
-The fuse is familiar.
+
+[The fuse is familiar.] [DEL Understand "orrery fuse" as fuse.]
+The fuse-orrery is familiar. 
 
 The Eloi are a familiar people.
 Weena is a familiar woman.
@@ -3041,7 +3042,7 @@ After quizzing Humboldt about Morlocks during the Ending Scene:
 After quizzing Humboldt about the blueprints during Ending Scene: 
 	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its counterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
 
-After quizzing Humboldt about the fuse during the Ending Scene: 
+After quizzing Humboldt about the fuse-orrery during the Ending Scene: 
 	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you." [BURNT OUT vs. WORKING ?]
 
 Section - Informing - "Tell [someone] about [thing]"
@@ -3217,7 +3218,7 @@ After saying goodbye to Gernsback when the farewell type is explicit:
 	
 After saying goodbye to Gernsback when the farewell type is implicit:
 	if Ending Scene is not happening:
-		say "Gernsback watches you head into the[if the room gone to is the Library] library[otherwise] dining room[end if] before returning to his book.[line break]";
+		say "Gernsback watches you head into the[if the room gone to is the Parlor] parlor[otherwise] entryway[end if] before returning to his book.[line break]";
 	otherwise:
 		say "Gernsback watches you abruptly leave the workshop."
 
@@ -3320,7 +3321,7 @@ To say dont-know:
 
 After informing Gernsback about Wells:
 	if Ending Scene is not happening:
-		say "'I'm not a medical man but I think the best thing you could do, as his attorney, is have him committed. Only my opinion mind you.'";
+		say "'I'm not a medical man but I think the best thing you could do, as his attorney, is have him committed. Protect him from himself. Only my opinion mind you.'";
 	otherwise:
 		continue the action.
 
@@ -3345,10 +3346,6 @@ After informing Gernsback about time machine:
 	otherwise:
 		continue the action.
 
-Test g-time1 with "go north / go north / go west / tell gernsback about time machine."
-[>restart before you run test g-time2]
-Test g-time2 with "go north / go north / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine." 
-
 After informing Gernsback about orrery:
 	if Ending Scene is not happening:
 		if the orrery has been seen:
@@ -3364,7 +3361,7 @@ After informing Gernsback about orrery:
 	otherwise:
 		continue the action.]
 	
-After informing Gernsback about fuse-orrery:
+After informing Gernsback about [fuse:] fuse-orrery:
 	if Ending Scene is not happening:
 		if fuse-orrery has been seen: [This doesn't appear to work]
 			say "TELL GERNSBACK ABOUT ORRERY FUSE.";
@@ -3457,6 +3454,14 @@ Test g-start-tell with "tell gernsback about wells / tell gernsback about humbol
 
 [Need to >restart before running this test]
 Test g-end-tell with "test xpl-802701 / exit / test g-start-tell."
+
+[Testing Telling Gernsback about something before/after you've seen it]
+Test g-time1 with "go north / go north / go west / tell gernsback about time machine."
+[>restart before you run test g-time2]
+Test g-time2 with "go north / go north / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine." 
+
+[Need to >n.n.w before running this test]
+Test g-fuse-orrery with "tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery / go north / slide right panel / take orrery fuse / go south / tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery."
 
 Part - Movement
 

@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34739]
+[ WORDS - 34670]
 
 Table of Releases
 release	notes
@@ -4044,22 +4044,7 @@ Introduction Of Gernsback ends when Gernsback is not in the Library.
 [When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
 
 	
-Part - Gernsback's Comments
 
-[Do I even need this scene anymore? 
-Gernsback's Comments is a recurring scene.
-
-Gernsback's Comments begins when [Gernsback is on the right armchair [Parlor] and] the player is in the Parlor.
-
-When Gernsback's Comments begins: 
-	[say "GERNSBACK'S COMMENTS BEGINS.";]
-	now Gernsback is fixed;
-	now Gernsback is major.
-
-Gernsback's Comments ends when the player is not in the Parlor.
-
-[When Gernsback's Comments ends: say "GERNSBACK'S COMMENTS ENDS."]
-]
 
 
 Book - Traveling In Time

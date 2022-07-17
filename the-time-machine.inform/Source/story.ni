@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 34670]
+[ WORDS - 35018 ]
 
 Table of Releases
 release	notes
@@ -354,6 +354,7 @@ Test weena-endgame with "test eloi / show eloi the watch / show weena the petal 
 
 Test to-morlocks with "test 802701 / exit / remove grate / get in shaft / go down."
 Test to-watchett with "go north / take pocket watch / go north / go west / go north / take poker / go north / open panel / take fuse / go north."
+
 Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / search workbench / examine blueprints / enter time machine / examine control panel / put fuse in control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit / show humboldt the flower."
 
 Test poker with "go south / go west / go north / take poker / go east."
@@ -364,7 +365,7 @@ Test search-area with "search area / search area / search area / search area."
 
 [v1.4 Tests]
 Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever."
-Test xpl-802701 with "test go-802701 / exit / x statue / e / e / s / n/ w / w / se / nw / enter time machine / push lever."
+Test xpl-802701 with "test go-802701 / exit / x statue / e / e / s / n/ w / w / se / nw / enter time machine / push lever." [This will take you to 802,701 and back]
 
 [v1.5 Tests]
 Test eloi-r8 with "test go-802701 / exit / e / e / s / n / w / w / se."
@@ -1783,8 +1784,6 @@ After inserting a breaker (called fuse) into the time-fuse-holder:
 	otherwise:
 		[say "FUSE BAD. TIME MACHINE LIGHT OFF.";]
 		now small light is switched off.
-
-
 
 Section - Removing Fuse From Time Machine
 
@@ -3316,42 +3315,99 @@ Title	Comment
 
 Section - Informing - "Tell [someone] about [thing]"
 
+To say dont-know:
+	say "'Don't know what you're talking about.'" [Can I get rid of this, handling with default Tell response and conditional?]
+
+After informing Gernsback about Wells:
+	if Ending Scene is not happening:
+		say "'I'm not a medical man but I think the best thing you could do, as his attorney, is have him committed. Only my opinion mind you.'";
+	otherwise:
+		continue the action.
+
 After informing Gernsback about Humboldt: 
 	if Ending Scene is not happening:
-		say "TELL GERNSBACK ABOUT HUMBOLDT.";
+		say "'He'll be back soon. Tell us what he's found and we'll decide what to do then.'";
+	otherwise:
+		continue the action.
+
+After informing Gernsback about Watchett: 
+	if Ending Scene is not happening:
+		say "'Wonderful meal that was, as always.  That woman's a treasure. Don't know where Wells found her.'";
 	otherwise:
 		continue the action.
 
 After informing Gernsback about time machine:
 	if Ending Scene is not happening:
-		say "TALK ABOUT THE TIME MACHINE YOU FOUND IN WORKSHOP.";
+		if time machine has been seen: [if the workshop is visited:]
+			say "TALK ABOUT THE TIME MACHINE YOU FOUND IN WORKSHOP."; 
+		otherwise:
+			say "TALK ABOUT THE TIME MACHINE IN THE ABSTRACT.";
 	otherwise:
 		continue the action.
-		[have Default Tell handle it.]
+
+Test g-time1 with "go north / go north / go west / tell gernsback about time machine."
+[>restart before you run test g-time2]
+Test g-time2 with "go north / go north / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine." 
 
 After informing Gernsback about orrery:
 	if Ending Scene is not happening:
-		say "TELL GERNSBACK ABOUT ORRERY.";
+		if the orrery has been seen:
+			say "TELL GERNSBACK ABOUT ORRERY YOU HAVE SEEN.";
+		otherwise:
+			say "TELL GERNSBACK ABOUT ORRERY YOU HAVEN'T SEEN YET.";
 	otherwise:
 		continue the action.
 
-After informing Gernsback about breaker: say "TELL GERNSBACK ABOUT [second noun] ." [+fuse as part of "about"?]
+[After informing Gernsback about breaker: 
+	if Ending Scene is not happening:
+		say "TELL GERNSBACK ABOUT BREAKER.";
+	otherwise:
+		continue the action.]
+	
+After informing Gernsback about fuse-orrery:
+	if Ending Scene is not happening:
+		if fuse-orrery has been seen: [This doesn't appear to work]
+			say "TELL GERNSBACK ABOUT ORRERY FUSE.";
+		otherwise:
+			say "[dont-know]";
+	otherwise:
+		continue the action.
+	
+After informing Gernsback about fuse-time-machine:
+	if Ending Scene is not happening:
+		if fuse-time-machine has been seen: [This doesn't appear to work]
+			say "TELL GERNSBACK ABOUT TIME MACHINE FUSE.";
+		otherwise:
+			say "[dont-know]";
+	otherwise:
+		continue the action.
+
+[DEL [second noun] ." [+fuse as part of "about"?]]
 
 After informing Gernsback about blueprints:
 	if Ending Scene is not happening:
-		say "TELL GERNSBACK ABOUT BLUEPRINTS.";
+		if blueprints have been seen: [This doesn't appear to work]
+			say "TELL GERNSBACK ABOUT BLUEPRINTS YOU HAVE SEEN.";
+		otherwise:
+			say "[dont-know]";
 	otherwise:
 		continue the action.
 
 After informing Gernsback about workshop-room:
 	if Ending Scene is not happening:
-		say "TELL GERNSBACK ABOUT WORKSHOP.";
+		if the workshop is visited:
+			say "TELL GERNSBACK ABOUT WORKSHOP.";
+		otherwise:
+			say "TELL GERNSBACK ABOUT WORKSHOP IN ABSTRACT.";
 	otherwise:
 		continue the action.
 
 After informing Gernsback about key: 
 	if Ending Scene is not happening:
-		say "TELL GERNSBACK ABOUT KEY.";
+		if the key has been seen:
+			say "TELL GERNSBACK ABOUT KEY."; 
+		otherwise:
+			say "TELL GERNSBACK ABOU KEY IN ABSTRACT.";
 	otherwise:
 		continue the action.
 
@@ -3395,11 +3451,12 @@ Test g-convo with "test g-req / test g-quiz / test g-tell."
 Test g-req with "ask gernsback for newspaper / ask gernsback for book / ask gernsback for box of matches / ask gernsback for cigar."
 	
 Test g-quiz with "ask gernsback about wells / ask gernsback about humboldt / ask gernsback about watchett / ask gernsback about weena / ask gernsback about eloi / ask gernsback about morlocks / ask gernsback about experiments / ask gernsback about his-work / ask gernsback about time travel / ask gernsback about time machine / ask gernsback about orrery / ask gernsback about workshop-room / ask gernsback about box of matches / ask gernsback about cigar / ask gernsback about  pocket watch / ask gernsback about petal / ask gernsback about key / ask gernsback about newspaper / ask gernsback about book."
-	
-Test g-tell with "tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about blueprints / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
 
-[Need to manually travel to 802,701 with >test eloi-r8 before running this test]
-Test g-end with "."
+[Need to >n.n.w before running this test]
+Test g-start-tell with "tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about blueprints / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
+
+[Need to >restart before running this test]
+Test g-end-tell with "test xpl-802701 / exit / test g-start-tell."
 
 Part - Movement
 
@@ -3970,7 +4027,7 @@ When Humboldt's Return begins:
 	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved and annoyed. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]";
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
-	[now Gernsback is in the Workshop;] [Uncomment if Gernsback is going to be in Ending Scene]
+	now Gernsback is in the Workshop; [Uncomment if Gernsback is going to be in Ending Scene]
 
 Humboldt's Return ends when Humboldt is in the Workshop.
 

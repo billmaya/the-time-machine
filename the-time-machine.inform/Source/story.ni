@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35251 ]
+[ WORDS - 35269 ]
 
 Table of Releases
 release	notes
@@ -3353,9 +3353,9 @@ After informing Gernsback about time machine:
 After informing Gernsback about orrery:
 	if Ending Scene is not happening:
 		if the orrery has been seen:
-			say "TELL GERNSBACK ABOUT ORRERY YOU HAVE SEEN.";
+			say "[fascinating-but]";
 		otherwise:
-			say "TELL GERNSBACK ABOUT ORRERY YOU HAVEN'T SEEN YET.";
+			say "'I think you'll find what you're looking for in the next room.'";
 	otherwise:
 		continue the action.
 	
@@ -3457,6 +3457,8 @@ Test g-start-tell with "go-gernsback / tell gernsback about wells / tell gernsba
 Test g-end-tell with "test xpl-802701 / exit / test g-start-tell."
 
 Test g-time with "test go-gernsback / tell gernsback about time machine / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine."
+
+Test g-orrery with "test go-gernsback / tell gernsback about orrery / go north / go south / tell gernsback about orrery."
 
 Test g-fuse-orrery with "test go-gernsback / tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery / go north / slide right panel / take orrery fuse / go south / tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery."
 	

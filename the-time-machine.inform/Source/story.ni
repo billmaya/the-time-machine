@@ -3397,7 +3397,7 @@ After informing Gernsback about workshop-room:
 
 After informing Gernsback about key: 
 	if Ending Scene is not happening:
-		if the key has been seen:
+		if the player has the key: [has been seen:]
 			if the workshop is visited:
 				say "'What did you find?'";
 			otherwise:
@@ -3448,23 +3448,30 @@ Test g-req with "ask gernsback for newspaper / ask gernsback for book / ask gern
 	
 Test g-quiz with "ask gernsback about wells / ask gernsback about humboldt / ask gernsback about watchett / ask gernsback about weena / ask gernsback about eloi / ask gernsback about morlocks / ask gernsback about experiments / ask gernsback about his-work / ask gernsback about time travel / ask gernsback about time machine / ask gernsback about orrery / ask gernsback about workshop-room / ask gernsback about box of matches / ask gernsback about cigar / ask gernsback about  pocket watch / ask gernsback about petal / ask gernsback about key / ask gernsback about newspaper / ask gernsback about book."
 
-[Need to >n.n.w before running this test]
-Test g-start-tell with "tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about blueprints / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
+[The game must be restarted before running each of these tests]
 
-[Need to >restart before running this test]
+Test go-gernsback with "go north / go north / go west."
+		
+Test g-start-tell with "go-gernsback / tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about blueprints / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
+
 Test g-end-tell with "test xpl-802701 / exit / test g-start-tell."
 
-[Testing Telling Gernsback about something before/after you've seen it]
+[DEL [Testing Telling Gernsback about something before/after you've seen it]
 Test g-time1 with "go north / go north / go west / tell gernsback about time machine."
-[>restart before you run test g-time2]
-Test g-time2 with "go north / go north / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine." 
+Test g-time2 with "go north / go north / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine."] 
 
-[Need to >n.n.w before running this test]
-Test g-fuse-orrery with "tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery / go north / slide right panel / take orrery fuse / go south / tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery."
+Test g-time with "test go-gernsback / tell gernsback about time machine / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine."
 
-[Need to >n.n.w before running this test]	
-Test g-fuse-time with "tell gernsback about fuse / tell gernsback about time machine fuse / tell gernsback about fuse-time-machine / test see-fuse-time / tell gernsback about fuse / tell gernsback about time machine fuse / tell gernsback about fuse-time-machine."
+Test g-fuse-orrery with "test go-gernsback / tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery / go north / slide right panel / take orrery fuse / go south / tell gernsback about fuse / tell gernsback about orrery fuse / tell gernsback about fuse-orrery."
+	
+Test g-fuse-time with "test go-gernsback / tell gernsback about fuse / tell gernsback about time machine fuse / tell gernsback about fuse-time-machine / test see-fuse-time / tell gernsback about fuse / tell gernsback about time machine fuse / tell gernsback about fuse-time-machine."
 Test see-fuse-time with "go east / purloin key / unlock workshop door with key / go north / flip switch / enter time machine / unlock hinged panel with key / open hinged panel / examine time machine fuse holder / exit / go south / go west."
+
+Test g-blue with "test go-gernsback / tell gernsback about blueprints / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about blueprints."
+
+Test g-work with "test go-gernsback / tell gernsback about workshop / tell gernsback about workshop-room / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about workshop / tell gernsback about workshop-room."
+
+Test g-key with "test go-gernsback / tell gernsback about key / purloin key / tell gernsback about key / go east / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about key."
 
 Part - Movement
 

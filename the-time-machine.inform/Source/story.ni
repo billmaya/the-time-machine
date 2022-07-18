@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35126 ]
+[ WORDS - 35171 ]
 
 Table of Releases
 release	notes
@@ -3320,6 +3320,9 @@ Section - Informing - "Tell [someone] about [thing]"
 To say dont-know:
 	say "'Don't know what you're talking about.'" 
 
+To say fascinating-but:
+	say "'Fascinating. But I don't see how this helps Wells.'"
+
 After informing Gernsback about Wells:
 	if Ending Scene is not happening:
 		say "'I'm not a medical man but I think the best thing you could do, as his attorney, is have him committed. Protect him from himself. Only my opinion mind you.'";
@@ -3341,9 +3344,9 @@ After informing Gernsback about Watchett:
 After informing Gernsback about time machine:
 	if Ending Scene is not happening:
 		if time machine has been seen: 
-			say "TALK ABOUT THE TIME MACHINE YOU FOUND IN WORKSHOP."; 
+			say "'Fascinating. But I don't see how this can help Wells if it doesn't actually work.'"; 
 		otherwise:
-			say "TALK ABOUT THE TIME MACHINE IN THE ABSTRACT.";
+			say "'We'll never know for sure unless you find a way into Wells' workshop.'";
 	otherwise:
 		continue the action.
 
@@ -3359,7 +3362,7 @@ After informing Gernsback about orrery:
 After informing Gernsback about fuse-orrery:
 	if Ending Scene is not happening:
 		if fuse-orrery has been seen: 
-			say "TELL GERNSBACK ABOUT ORRERY FUSE.";
+			say "[fascinating-but]";
 		otherwise:
 			say "[dont-know]";
 	otherwise:
@@ -3367,8 +3370,8 @@ After informing Gernsback about fuse-orrery:
 	
 After informing Gernsback about fuse-time-machine:
 	if Ending Scene is not happening:
-		if fuse-time-machine has been seen: 
-			say "TELL GERNSBACK ABOUT TIME MACHINE FUSE.";
+		if fuse-time-machine has been seen:
+			say "[fascinating-but]"; 
 		otherwise:
 			say "[dont-know]";
 	otherwise:
@@ -3376,8 +3379,8 @@ After informing Gernsback about fuse-time-machine:
 
 After informing Gernsback about blueprints:
 	if Ending Scene is not happening:
-		if blueprints have been seen: [This doesn't appear to work]
-			say "TELL GERNSBACK ABOUT BLUEPRINTS YOU HAVE SEEN.";
+		if blueprints have been seen:
+			say "[fascinating-but]";
 		otherwise:
 			say "[dont-know]";
 	otherwise:
@@ -3386,18 +3389,21 @@ After informing Gernsback about blueprints:
 After informing Gernsback about workshop-room:
 	if Ending Scene is not happening:
 		if the workshop is visited:
-			say "TELL GERNSBACK ABOUT WORKSHOP.";
+			say "'What did you find?'";
 		otherwise:
-			say "TELL GERNSBACK ABOUT WORKSHOP IN ABSTRACT.";
+			say "'Well done. Let me know what you find.'";
 	otherwise:
 		continue the action.
 
 After informing Gernsback about key: 
 	if Ending Scene is not happening:
 		if the key has been seen:
-			say "TELL GERNSBACK ABOUT KEY."; 
+			if the workshop is visited:
+				say "'What did you find?'";
+			otherwise:
+				say "'Well done. Let me know what you find.'";
 		otherwise:
-			say "TELL GERNSBACK ABOU KEY IN ABSTRACT.";
+			say "'The doctor has the right idea. If there's a key to get into that workshop Mrs. Watchett might have a good idea where it might be.'";
 	otherwise:
 		continue the action.
 

@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35171 ]
+[ WORDS - 35251 ]
 
 Table of Releases
 release	notes
@@ -3397,7 +3397,7 @@ After informing Gernsback about workshop-room:
 
 After informing Gernsback about key: 
 	if Ending Scene is not happening:
-		if the player has the key: [has been seen:]
+		if the player has the key: 
 			if the workshop is visited:
 				say "'What did you find?'";
 			otherwise:
@@ -3455,10 +3455,6 @@ Test go-gernsback with "go north / go north / go west."
 Test g-start-tell with "go-gernsback / tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about blueprints / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
 
 Test g-end-tell with "test xpl-802701 / exit / test g-start-tell."
-
-[DEL [Testing Telling Gernsback about something before/after you've seen it]
-Test g-time1 with "go north / go north / go west / tell gernsback about time machine."
-Test g-time2 with "go north / go north / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine."] 
 
 Test g-time with "test go-gernsback / tell gernsback about time machine / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about time machine."
 

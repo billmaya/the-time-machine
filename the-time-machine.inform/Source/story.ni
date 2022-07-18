@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35269 ]
+[ WORDS - 35314 ]
 
 Table of Releases
 release	notes
@@ -3184,12 +3184,10 @@ Gernsback is a male.
 Gernsback is fixed.
 Gernsback is in the Library.
 
-The description of Gernsback is "GERNSBACK'S DESCRIPTION."
+The description of Gernsback is "The perfect picture of Victorian masculinity and success in his double breasted lounge suit, his tailored attire offsets the somewhat brutish features below a high forehead and thinning hair styled in a combover, his only concession to vanity. It's said around town that his piercing gaze misses no chance to increase his family fortunes."
 
 Gernsback is scenery. [This prevents "You can see Gernsback here." being printed out in room descriptions.]
 Gernsback is major.
-
-[The printed name of Gernsback is "TBD."]
 
 Part - Suggestions 
 

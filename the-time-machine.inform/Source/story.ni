@@ -3294,6 +3294,9 @@ After quizzing Gernsback about pocket watch: say "'That looks like Wells' watch.
 After quizzing Gernsback about newspaper: 
 	say "'It[']s there in the other room if you want to read it.'"
 
+After quizzing Gernsback about key:
+	say "'Probably plenty of keys around here. Mrs. Watchett would probably know.'"
+
 ask-about-gernsback-book is a truth state that varies.
 ask-about-gernsback-book is false.
 

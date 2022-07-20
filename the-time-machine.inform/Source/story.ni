@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35536 ]
+[ WORDS - 35552 ]
 
 Table of Releases
 release	notes
@@ -3276,6 +3276,10 @@ After quizzing Gernsback about Humboldt:
 After quizzing Gernsback about Watchett: 
 	say "[remove Watchett ask suggestion]";
 	say "'I believe she's still in the kitchen.'"
+	
+After quizzing Gernsback about Gernsback: 
+	say "[remove self-suggestion ask suggestion]";
+	say "GERNSBACK TALKS ABOUT HIMSELF."
 
 After quizzing Gernsback about Weena: 
 	say "'Sounds like a bit of a dollymop if you ask me. Bit of wishful thinking on Wells['] part, if you know what I mean.'" [+Eloi, Morlocks as part of "about"?]

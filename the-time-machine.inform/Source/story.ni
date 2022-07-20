@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35335 ]
+[ WORDS - 35536 ]
 
 Table of Releases
 release	notes
@@ -3198,12 +3198,29 @@ Chapter - Hello
 After saying hello to Gernsback when the greeting type is explicit: 
 	if Ending Scene is not happening:
 		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
+		say "[add book ask suggestion]";
+		say "[add cigar-gernsback ask suggestion]";
+		say "[add workshop-room ask suggestion]";
+		say "[add key ask suggestion]";
+		say "[add Wells ask suggestion]";
+		say "[add Watchett ask suggestion]";
+		say "[add self-suggestion ask suggestion]";
+		say "[add Wells tell suggestion]";
 	otherwise:
 		continue the action.
 
 After saying hello to Gernsback when the greeting type is implicit:
 	if Ending Scene is not happening:
 		say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]";
+		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
+		say "[add book ask suggestion]";
+		say "[add cigar-gernsback ask suggestion]";
+		say "[add workshop-room ask suggestion]";
+		say "[add key ask suggestion]";
+		say "[add Wells ask suggestion]";
+		say "[add Watchett ask suggestion]";
+		say "[add self-suggestion ask suggestion]";
+		say "[add Wells tell suggestion]";
 	otherwise:
 		continue the action.
 
@@ -3249,11 +3266,16 @@ After requesting Gernsback for the cigar-player:
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
-After quizzing Gernsback about Wells: say "'Sad. If I had known it would have lead to this I never would have given him encouragement.'"
+After quizzing Gernsback about Wells:
+	say "[remove Wells ask suggestion]";
+	say "'Sad. If I had known it would have lead to this I never would have given him encouragement.'"
 
-After quizzing Gernsback about Humboldt: say "'Smart man. A bit full of himself though. Not as practical as you and me.'"
+After quizzing Gernsback about Humboldt:
+	say "'Smart man. A bit full of himself though. Not as practical as you and me.'"
 
-After quizzing Gernsback about Watchett: say "'I believe she's still in the kitchen.'"
+After quizzing Gernsback about Watchett: 
+	say "[remove Watchett ask suggestion]";
+	say "'I believe she's still in the kitchen.'"
 
 After quizzing Gernsback about Weena: 
 	say "'Sounds like a bit of a dollymop if you ask me. Bit of wishful thinking on Wells['] part, if you know what I mean.'" [+Eloi, Morlocks as part of "about"?]
@@ -3278,6 +3300,7 @@ After quizzing Gernsback about orrery:
 	say "'Only practical thing Wells has made up until now. Tried to get him to patent and sell it. Though what use knowing what the Man in the Moon is up to is beyond me.'."
 
 After quizzing Gernsback about workshop-room: 
+	say "[remove workshop-room ask suggestion]";
 	say "'Only been inside a couple of times with Wells. Tools and materials and such. Terrible mess.'"
 
 After quizzing Gernsback about box of matches: 
@@ -3287,6 +3310,7 @@ Does the player mean quizzing Gernsback about cigar-player: it is very unlikely.
 Does the player mean quizzing Gernsback about cigar-gernsback: it is very likely.
 
 After quizzing Gernsback about cigar-gernsback: 
+	say "[remove cigar-gernsback ask suggestion]";
 	say "'Believe it was Kipling who said 'A woman is only a woman, but a good cigar is a smoke.' Can't disagree with him when it comes to this Partagás.'"
 
 After quizzing Gernsback about pocket watch: say "'That looks like Wells' watch.'"
@@ -3295,6 +3319,7 @@ After quizzing Gernsback about newspaper:
 	say "'It[']s there in the other room if you want to read it.'"
 
 After quizzing Gernsback about key:
+	say "[remove key ask suggestion]";
 	say "'Probably plenty of keys around here. Mrs. Watchett would probably know.'"
 
 ask-about-gernsback-book is a truth state that varies.
@@ -3302,6 +3327,7 @@ ask-about-gernsback-book is false.
 
 After quizzing Gernsback about book:
 	if ask-about-gernsback-book is false:
+		say "[remove book ask suggestion]";
 		choose a random row from Table of Gernsback Book;
 		say "'[one of]Fascinating[or]Interesting[or]Strange[or]Intriguing[or]Engaging[or]Entertaining[or]Amusing[at random] story. Called ['][Title entry].['] About [Comment entry] Never heard of the author though.'";
 		now ask-about-gernsback-book is true;
@@ -3326,6 +3352,7 @@ To say fascinating-but:
 
 After informing Gernsback about Wells:
 	if Ending Scene is not happening:
+		say "[remove Wells tell suggestion]";
 		say "'I'm not a medical man but I think the best thing you could do, as his attorney, is have him committed. Protect him from himself. Only my opinion mind you.'";
 	otherwise:
 		continue the action.
@@ -3471,6 +3498,8 @@ Test g-blue with "test go-gernsback / tell gernsback about blueprints / go east 
 Test g-work with "test go-gernsback / tell gernsback about workshop / tell gernsback about workshop-room / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about workshop / tell gernsback about workshop-room."
 
 Test g-key with "test go-gernsback / tell gernsback about key / purloin key / tell gernsback about key / go east / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about key."
+	
+Test g-topics with "test go-gernsback / say hello to gernsback / ask gernsback about book / ask gernsback about cigar / ask gernsback about workshop / ask gernsback about key / ask gernsback about wells / ask gernsback about watchett / tell gernsback about wells / ask gernsback about himself / ask gernsback about gernsback."
 
 Part - Movement
 

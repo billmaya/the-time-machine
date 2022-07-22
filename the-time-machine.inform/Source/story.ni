@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35552 ]
+[ WORDS - 35601 ]
 
 Table of Releases
 release	notes
@@ -3390,6 +3390,11 @@ After informing Gernsback about orrery:
 			say "'I think you'll find what you're looking for in the next room.'";
 	otherwise:
 		continue the action.
+		
+Before informing Gernsback about fuse-orrery:
+	if fuse-orrery has not been seen:
+		say "You can't see any such thing.";
+		stop the action.
 	
 After informing Gernsback about fuse-orrery:
 	if Ending Scene is not happening:
@@ -3399,6 +3404,11 @@ After informing Gernsback about fuse-orrery:
 			say "[dont-know]";
 	otherwise:
 		continue the action.
+
+Before informing Gernsback about fuse-time-machine:
+	if fuse-time-machine has not been seen:
+		say "You can't see any such thing.";
+		stop the action.
 	
 After informing Gernsback about fuse-time-machine:
 	if Ending Scene is not happening:

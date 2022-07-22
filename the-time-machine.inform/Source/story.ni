@@ -6,7 +6,7 @@ The release number is 10.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 35601 ]
+[ WORDS - 35595 ]
 
 Table of Releases
 release	notes
@@ -4429,12 +4429,11 @@ I also want to thank the people who took the time to write reviews of v1.0 of th
 To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.[paragraph break]";
 	say "Release 10 Notes (v1.7)[paragraph break]
-• Added Morlock Underground locations for exploration.[line break]
+• Added Gernsback's Box of Matches, Cigar, Book.[paragraph break]
 • Added matches, cigar, and book for Gernsback to use.[line break]
 • Made >take newspaper distinct from >read newspaper.[line break]
 • Created Gernsback conversation using Conversation Package extension.[line break]
-• Added Introduction To Gernsback scene.[line break]
-• Added Gernsback's Comments scene.[paragraph break]";
+• Added Introduction To Gernsback scene.[line break]";
 	say "Release 9 Notes (v1.6)[paragraph break]
 • Updated old Weena conversation code to use Conversation Package extension.[paragraph break]";
 	say "Release 8 Notes (v1.5)[paragraph break]

@@ -667,7 +667,7 @@ Part - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[if the location of Gernsback is the Library] Gernsback is sitting in the chair, paging through his book.[end if][paragraph break]The room continues to the north and the entryway is back east."
+The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, paging through his book.[end if] The room continues to the north and the entryway is back east."
 
 Chapter - Printing Library Description
 
@@ -2469,7 +2469,7 @@ The murals are scenery in the Inside Dome.
 
 The description of the murals are "Each panel is a mosaic devoted to a specific pastoral scene being performed by a group of people who must be Wells['] Eloi[unicode 8212]gathering fruit, bathing and swimming in a river, wandering the countryside, eating, dancing, and other questionable activities.
 
-In one or two of the dusk scenes you can make out small shadowy silhouettes hidden in the background undergrowth and shadows, spying on the Eloi[']s foreground activity[unicode 8212]Wells['] Morlocks."
+In one or two of the dusk scenes you can make out small shadowy silhouettes hidden in the background undergrowth and shadows, spying on the Eloi[']s foreground activity[unicode 8212]Wells['] Morlocks." [∆ "In one or two of the dusk scenes you can make out small silhouettes hidden in the undergrownth and shadows, spying on the Eloi's activities."]
 
 Understand "cyclorama" or "mural" or "panel" or "panels" as murals.
 	
@@ -2489,7 +2489,7 @@ Part - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it.[paragraph break]From up here you can also make out an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth."
+The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it.[paragraph break]From up here you can also make out an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth." [+ from ground level"]
 
 The balcony-river is scenery in the Balcony.
 The description of the balcony-river is "The river winds its way through the forest below you. Looking closely, you can see groups of people in the river and on its banks."

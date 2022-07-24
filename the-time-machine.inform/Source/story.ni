@@ -1046,7 +1046,7 @@ Instead of using the fire:
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
 
-To say bare-hands: say "With your bare hands? You'd have to be as crazy as Humboldt things Wells is to even consider that.".
+To say bare-hands: say "With your bare hands? You'd have to be as crazy as Humboldt thinks Wells to even consider that.".
 
 Instead of taking coals: try pushing coals.
 Instead of pushing the coals:

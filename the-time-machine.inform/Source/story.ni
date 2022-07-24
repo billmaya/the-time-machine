@@ -667,7 +667,7 @@ Part - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, paging through his book.[end if] The room continues to the north and the entryway is back east."
+The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, reading his book.[end if] The room continues to the north and the entryway is back east."
 
 Chapter - Printing Library Description
 

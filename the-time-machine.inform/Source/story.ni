@@ -116,7 +116,9 @@ After reading a command:
 	
 Part - User Interface
 
-Chapter - Setup
+Chapter - Windows
+
+Section - Setup
 
 The right-sidebar window is a graphics g-window spawned by the main window.
 The position of the right-sidebar window is g-placeright.
@@ -163,7 +165,7 @@ The position of the list-inventory window is g-placeabove.
 The scale method of the list-inventory window is g-fixed-size.
 The measurement of the list-inventory window is 16.
 
-Chapter - Rules 
+Section - Rules 
 	
 Rule for refreshing the title-characters window:
 	let X be the list of people who are major that are not the player in the location of the player;
@@ -201,7 +203,7 @@ Rule for refreshing the title-inventory window:
 Rule for refreshing the list-inventory window:
 	try taking inventory.
 	
-Chapter - Styles
+Section - Styles
 
 [Table of User Styles (continued)
 window	color	background color	font weight	fixed width
@@ -224,6 +226,67 @@ italic (a truth state)
 justification (a text justification)    	
 relative size (a number)    	
 reversed (a truth state)
+]
+
+Chapter - Status Line
+
+[The original code was taken from the Improved Status Line section of "Bronze" by Emily Short and modified slightly. See https://i7-examples.github.io/Bronze/source_43.html for the original code.]
+[
+Table of User Styles (continued)
+window	style name	background color
+all-grid-windows	special-style-1	"#FF0000"
+
+Table of Fancy Status
+left	central	right
+" [if in darkness]Darkness[otherwise][location] - [current-year][end if]"	""	"[top rose]"
+" "	""	"[middle rose]"
+" "	""	"[bottom rose]"
+
+To say red reverse:
+	say special-style-1;
+
+To say default letters:
+	say roman type;
+
+Definition: a room is discernible:
+	[if it is the Dank Room and the trapdoor is scenery, no;
+	if it is lit, yes;
+	if it is the ultimate location of the candle, yes;
+	if in darkness, no;]
+	yes.
+
+To say top rose:
+	let place be the room up from the location;
+	if the place is a discernible room, say "[if the place is unvisited][red reverse][end if]U [default letters]"; otherwise say " ";
+	let place be the room northwest from the location;
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]NW [default letters]"; otherwise say " ";
+	let place be the room north from the location;
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]N [default letters]"; otherwise say " ";
+	let place be the room northeast from the location;
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]NE[default letters]"; otherwise say " ".
+
+To say middle rose:
+	say " ";
+	let place be the room west from the location;
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]W [default letters]"; otherwise say " ";
+	say " . ";
+	let place be the room east from the location;
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if] E[default letters]"; otherwise say " ".
+
+To say bottom rose:
+	let place be the room down from the location;
+	if the place is a discernible room, say "[if the place is unvisited][red reverse][end if]D [default letters]"; otherwise say " ";
+	let place be the room southwest from the location;
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]SW [default letters]"; otherwise say " ";
+	let place be the room south from the location;
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]S [default letters]"; otherwise say " ";
+	let place be the room southeast from the location;
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]SE[default letters]"; otherwise say " ".
+
+Rule for constructing the status line:
+	fill status bar with Table of Fancy Status;
+	say default letters;
+	rule succeeds. 
 ]
 
 Part - Before Rules

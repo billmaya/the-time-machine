@@ -3222,21 +3222,22 @@ Humboldt has patience.
 
 Patience rules is a rulebook. [Writing §19. Rulebooks - §19.2, §19.3, §19.8]
 
-The patiences are accepting, tolerant, impatient, frustrated, angry.
+[The patiences are accepting, tolerant, impatient, frustrated, angry.]
+The patiences are tolerant-1, tolerant-2, frustrated-3, frustrated-4, angry-5.
 
-Humboldt is accepting.
+Humboldt is tolerant-1.
 	
 A patience rule:
 	if the patience of Humboldt is:
-		-- accepting:
-			now the patience of Humboldt is tolerant;
-		-- tolerant:
-			now the patience of Humboldt is impatient;
-		-- impatient:
-			now the patience of Humboldt is frustrated;
-		-- frustrated:
-			now the patience of Humboldt is angry;
-		-- angry:
+		-- tolerant-1:
+			now the patience of Humboldt is tolerant-2;
+		-- tolerant-2:
+			now the patience of Humboldt is frustrated-3;
+		-- frustrated-3:
+			now the patience of Humboldt is frustrated-4;
+		-- frustrated-4:
+			now the patience of Humboldt is angry-5;
+		-- angry-5:
 			now endgame-failure is true.
 
 			

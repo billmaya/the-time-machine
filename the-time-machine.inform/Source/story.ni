@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36372 ]
+[ WORDS - 36508 ]
 
 Table of Releases
 release	notes
@@ -3136,6 +3136,23 @@ After informing Humboldt about the pocket watch during the Ending Scene:
 
 Section - Informing - With Patience Rules
 
+[ How Patience rule works for reference
+Humboldt is tolerant-1.
+	
+A patience rule:
+	if the patience of Humboldt is:
+		-- tolerant-1:
+			now the patience of Humboldt is tolerant-2;
+		-- tolerant-2:
+			now the patience of Humboldt is frustrated-1;
+		-- frustrated-1:
+			now the patience of Humboldt is frustrated-2;
+		-- frustrated-2:
+			now the patience of Humboldt is angry-1;
+		-- angry-1:
+			now endgame-failure is true.
+]
+
 [Modify [second noun] based on what you tell him about, maybe add more descriptive text like replacing "shaft" with "shaft and the underground tunnels"]
 To say reply-intro: 
 	say "Humboldt listens to you talk about [second noun]".
@@ -3149,10 +3166,12 @@ To say reply-response:
 		-- frustrated-1:
 			say ", waiting in frustration for you to finish. 'But any luck finding the rest of that flower?'";
 		-- frustrated-2:
-			say " He stares at you, his annoyance clearly visible on his face as you finish. He looks around the room, not knowing what to say.";
+			say " He stares at you, his annoyance clearly visible on his face as you finish. He looks around the room, his patience obviously exhausted, not knowing what to say.";
 		-- angry-1:
 			let current location be the location of Humboldt;
-			say " but cuts you off before you're finished. 'I know you want to help Wells but regurgitating his delusional nonsense without any proof won't convince me no matter how many times I hear it. In fact, it makes me doubt your own sanity. Good evening.' He turns and storms out of [the current location].".
+			say " but cuts you off before you're finished. 'I know you want to help Wells, we both do. But repeating his delusional nonsense without any proof won't convince me no matter how many times I hear it. In fact, it makes me doubt your own sanity. Good evening.'[paragraph break]Humboldt turns and storms out of [the current location][if Gernsback is in the current location] with Gernsback following close behind. You can't be sure but you think you see a smile of satisfaction on the businessman's face[end if].";
+			now Gernsback is nowhere;
+			now Humboldt is nowhere.
 
 After informing Humboldt about time travel during the Ending Scene:
 	[say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";]
@@ -4175,10 +4194,11 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved and annoyed. 'Where the hell have you been hiding? Mrs. Watchett and I have been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]";
+	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
-	now Gernsback is in the Workshop; [Uncomment if Gernsback is going to be in Ending Scene]
+	now Gernsback is in the Workshop; [Uncomment if Gernsback is in Ending Scene]
+	[now Gernsback is nowhere;] [Comment out if Gernsback is not in the Ending Scene]
 
 Humboldt's Return ends when Humboldt is in the Workshop.
 
@@ -4193,9 +4213,9 @@ Ending Scene is a scene.
 
 Ending Scene begins when humboldt-endgame-begins is true.
 
-When Ending Scene begins:
+[When Ending Scene begins:]
 	[say "ENDING SCENE BEGINS."]
-	implicitly greet Humboldt.
+	[implicitly greet Humboldt.]
 
 [Recipe §7.13. Traveling Characters, Van Helsing example]
 Every turn:
@@ -4230,7 +4250,8 @@ When Ending Scene ends:
 		say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
 	if endgame-failure is true:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
-		say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";
+		[say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";]
+		say "ENDGAME-FAILURE IS TRUE";
 	end the story finally.
 
 Book - Gernsback

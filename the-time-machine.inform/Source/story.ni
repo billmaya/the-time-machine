@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36087 ]
+[ WORDS - 36372 ]
 
 Table of Releases
 release	notes
@@ -439,6 +439,9 @@ Test weena-r9 with "test go-802701 / exit / e / e / s / n / w / w / se / show wa
 
 [v1.7 Tests]
 Test newspaper with "look / take newspaper / look / put newspaper on left armchair / look / take newspaper / put newspaper on right armchair / look."
+			
+[v1.8 Tests]
+Test endgame with "test xpl-802701 / exit."
 
 Part - Release
 
@@ -3133,44 +3136,71 @@ After informing Humboldt about the pocket watch during the Ending Scene:
 
 Section - Informing - With Patience Rules
 
+[Modify [second noun] based on what you tell him about, maybe add more descriptive text like replacing "shaft" with "shaft and the underground tunnels"]
+To say reply-intro: 
+	say "Humboldt listens to you talk about [second noun]".
+
+To say reply-response:
+	if the patience of Humboldt is:
+		-- tolerant-1:
+			say ". Nodding his head as you speak, he waits paitiently until you've finished. 'But what about what I asked you to do?'";
+		-- tolerant-2:
+			say " but it's obvious he's already heard something similar from Wells. 'Obviously you were able to get into the workshop. Did you find anything?'";
+		-- frustrated-1:
+			say ", waiting in frustration for you to finish. 'But any luck finding the rest of that flower?'";
+		-- frustrated-2:
+			say " He stares at you, his annoyance clearly visible on his face as you finish. He looks around the room, not knowing what to say.";
+		-- angry-1:
+			let current location be the location of Humboldt;
+			say " but cuts you off before you're finished. 'I know you want to help Wells but regurgitating his delusional nonsense without any proof won't convince me no matter how many times I hear it. In fact, it makes me doubt your own sanity. Good evening.' He turns and storms out of [the current location].".
+
 After informing Humboldt about time travel during the Ending Scene:
-	say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about the future during the Ending Scene:
 	say "[remove future tell suggestion]";
-	say "Humboldt listens as you recount your experiences in 802,701 A.D. with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens as you recount your experiences in 802,701 A.D. with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about Eloi during the Ending Scene:
 	say "[remove Eloi tell suggestion]";
-	say "Humboldt listens as you recount your experience with the Eloi with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens as you recount your experience with the Eloi with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about Weena during the Ending Scene:
 	say "[remove Weena tell suggestion]";
-	say "Humboldt listens to you recount your experience with Weena with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens to you recount your experience with Weena with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about Morlocks during the Ending Scene:
 	say "[remove Morlocks tell suggestion]";
-	say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 	
 After informing Humboldt about River Bank during the Ending Scene:
-	say "Humboldt listens to you recount your experience at the river with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens to you recount your experience at the river with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about sphinx during the Ending Scene:
-	say "Humboldt listens to you recount your description of the clearing and the sphinx with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens to you recount your description of the clearing and the sphinx with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 	
 After informing Humboldt about dome during the Ending Scene:
-	say "Humboldt listens to you recount your description of the domed building with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens to you recount your description of the domed building with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 	
 After informing Humboldt about shaft during the Ending Scene:
-	say "Humboldt listens to you recount your description of the shaft and tunnels with a [patience of Humboldt] look on his face.";
+	[say "Humboldt listens to you recount your description of the shaft and tunnels with a [patience of Humboldt] look on his face.";]
+	say "[reply-intro][reply-response]";
 	follow Patience rules.
 
 Section - Imploring - "Ask [someone] for ['text']"
@@ -3223,7 +3253,7 @@ Humboldt has patience.
 Patience rules is a rulebook. [Writing §19. Rulebooks - §19.2, §19.3, §19.8]
 
 [The patiences are accepting, tolerant, impatient, frustrated, angry.]
-The patiences are tolerant-1, tolerant-2, frustrated-3, frustrated-4, angry-5.
+The patiences are tolerant-1, tolerant-2, frustrated-1, frustrated-2, angry-1.
 
 Humboldt is tolerant-1.
 	
@@ -3232,14 +3262,13 @@ A patience rule:
 		-- tolerant-1:
 			now the patience of Humboldt is tolerant-2;
 		-- tolerant-2:
-			now the patience of Humboldt is frustrated-3;
-		-- frustrated-3:
-			now the patience of Humboldt is frustrated-4;
-		-- frustrated-4:
-			now the patience of Humboldt is angry-5;
-		-- angry-5:
+			now the patience of Humboldt is frustrated-1;
+		-- frustrated-1:
+			now the patience of Humboldt is frustrated-2;
+		-- frustrated-2:
+			now the patience of Humboldt is angry-1;
+		-- angry-1:
 			now endgame-failure is true.
-
 			
 Book - Gernsback
 [https://bit.ly/3rYUPl8]

@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36508 ]
+[ WORDS - 36392 ]
 
 Table of Releases
 release	notes
@@ -3628,24 +3628,7 @@ Test g-key with "test go-gernsback / tell gernsback about key / purloin key / te
 	
 Test g-topics with "test go-gernsback / say hello to gernsback / ask gernsback about book / ask gernsback about cigar / ask gernsback about workshop / ask gernsback about key / ask gernsback about wells / ask gernsback about watchett / tell gernsback about wells / ask gernsback about himself / ask gernsback about gernsback."
 
-Part - Movement
 
-[DEL Every turn:
-	if Gernsback is mobile:
-		repeat through the Table of Gernsback's Movement:
-			let the last space be the location of Gernsback;
-			if Gernsback can be seen by the player, say "Gernsback heads to [the destination entry].";
-			move Gernsback to destination entry;
-			if Gernsback can be seen by the player, say "Gernsback arrives from [the last space].";
-			now Gernsback is fixed;
-			blank out the whole row;
-			break;]
-	[if the location of Gernsback is the Parlor:
-		move Gernsback to the right armchair.] [If Gernsback is in the armchair he is not "in" the Parlor so he won't show up in the Say Hello To window.]
-
-Table of Gernsback's Movement
-destination
-Parlor
 
 Book - Eloi
 
@@ -4199,8 +4182,6 @@ When Humboldt's Return begins:
 	now Humboldt is mobile;
 	now Gernsback is in the Workshop; 
 	now Gernsback is mobile;
-	[DEL Uncomment if Gernsback is in Ending Scene]
-	[DEL now Gernsback is nowhere;] [Comment out if Gernsback is not in the Ending Scene]
 
 Humboldt's Return ends when Humboldt is in the Workshop.
 
@@ -4229,9 +4210,6 @@ Every turn:
 		if the location of Gernsback is not the location of the player:
 			let the way be the best route from the location of Gernsback to the location of the player, using doors;
 			try Gernsback going the way;
-			[DEL Should Humboldt get annoyed if you walk around and don't tell him what you discovered?]
-		[DELotherwise:
-			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."]
 
 endgame-success is a truth state that varies.
 endgame-success is false. 
@@ -4272,7 +4250,6 @@ When Introduction Of Gernsback begins:
 	[say "INTRODUCTION OF GERNSBACK BEGINS.";]
 	say "Standing by the desk, looking out the window, is Gernsback, a successful businessman with ownership in several textile mills in the north. He[']s a frequent visitor at these gatherings and rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with a match and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...' He glances at the window, then shakes his head slowly, lost in thought.[paragraph break]Picking a book off the bookshelf, he turns back to you. 'I guess we had better make ourselves comfortable until Humboldt gets back.' Settling into the chair, Gernsback begins paging through his book.";
 	now library-print-description is true;
-	[now Gernsback is mobile.]
 
 Introduction Of Gernsback ends when library-print-description is true.
 

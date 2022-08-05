@@ -3630,7 +3630,7 @@ Test g-topics with "test go-gernsback / say hello to gernsback / ask gernsback a
 
 Part - Movement
 
-Every turn:
+[DEL Every turn:
 	if Gernsback is mobile:
 		repeat through the Table of Gernsback's Movement:
 			let the last space be the location of Gernsback;
@@ -3639,7 +3639,7 @@ Every turn:
 			if Gernsback can be seen by the player, say "Gernsback arrives from [the last space].";
 			now Gernsback is fixed;
 			blank out the whole row;
-			break;
+			break;]
 	[if the location of Gernsback is the Parlor:
 		move Gernsback to the right armchair.] [If Gernsback is in the armchair he is not "in" the Parlor so he won't show up in the Say Hello To window.]
 
@@ -4197,8 +4197,10 @@ When Humboldt's Return begins:
 	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
-	now Gernsback is in the Workshop; [Uncomment if Gernsback is in Ending Scene]
-	[now Gernsback is nowhere;] [Comment out if Gernsback is not in the Ending Scene]
+	now Gernsback is in the Workshop; 
+	now Gernsback is mobile;
+	[DEL Uncomment if Gernsback is in Ending Scene]
+	[DEL now Gernsback is nowhere;] [Comment out if Gernsback is not in the Ending Scene]
 
 Humboldt's Return ends when Humboldt is in the Workshop.
 
@@ -4223,8 +4225,12 @@ Every turn:
 		if the location of Humboldt is not the location of the player:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
 			try Humboldt going the way;
-			[Should Humboldt get annoyed if you walk around and don't tell him what you discovered?]
-		[otherwise:
+	if Gernsback is mobile:
+		if the location of Gernsback is not the location of the player:
+			let the way be the best route from the location of Gernsback to the location of the player, using doors;
+			try Gernsback going the way;
+			[DEL Should Humboldt get annoyed if you walk around and don't tell him what you discovered?]
+		[DELotherwise:
 			say "HUMBOLDT WATCHES YOU [patience of Humboldt]."]
 
 endgame-success is a truth state that varies.

@@ -4268,7 +4268,7 @@ When Introduction Of Gernsback begins:
 	now library-print-description is true;
 	[now Gernsback is mobile.]
 
-Introduction Of Gernsback ends when Gernsback is not in the Library.
+Introduction Of Gernsback ends when library-print-description is true.
 
 [When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
 

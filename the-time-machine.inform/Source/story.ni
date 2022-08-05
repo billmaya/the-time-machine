@@ -1564,7 +1564,7 @@ Part - Kitchen
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
 
-The description of the Kitchen is "[first time]If your memory suffices, which it usually does in most ordinary situations, this is the first time you've been in [Watchett]'s domain. [only]The small room is dominated by a sturdy wooden work table in the center. Surrounding the table are numerous cabinets and shelves. A stove and a sink are set against the north wall.[if the location of Watchett is the Kitchen][paragraph break][Watchett] is at the sink, washing up the supper dishes.[end if][paragraph break]The dining room is to the south."
+The description of the Kitchen is "[first time]If your memory suffices, which it usually does in most ordinary situations, this is the first time you've been in [Watchett]'s domain. [only]The small room is dominated by a sturdy wooden work table in the center. Surrounding the table are numerous cabinets and shelves. A stove and a sink are set against the north wall.[if the location of Watchett is the Kitchen][paragraph break][Watchett] is at the sink, washing up the supper dishes. [otherwise][paragraph break]It looks like [Watchett] has finished her work and retired for the evening. [end if]The dining room is to the south."
 
 The work table is a thing.
 The work table is scenery in the Kitchen.
@@ -4182,6 +4182,7 @@ When Humboldt's Return begins:
 	now Humboldt is mobile;
 	now Gernsback is in the Workshop; 
 	now Gernsback is mobile;
+	now Watchett is nowhere.
 
 Humboldt's Return ends when Humboldt is in the Workshop.
 

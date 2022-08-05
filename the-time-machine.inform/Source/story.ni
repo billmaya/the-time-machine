@@ -2969,7 +2969,7 @@ After quizzing Humboldt about Humboldt:
 	say "Dr. Humboldt is much too professional and polite to start rambling on about himself, especially in this sort of situation."
 
 After quizzing Humboldt about player: say "Perhaps you should focus on the situation at hand instead of yourself."
-After quizzing Humboldt about Watchett: say "I think she is in the kitchen."
+After quizzing Humboldt about Watchett: say "'I think she is in the kitchen.'"
 
 Section - Informing - "Tell [someone] about [thing]"	
 	
@@ -4185,7 +4185,8 @@ When Humboldt's Return begins:
 	now Humboldt is mobile;
 	now Gernsback is in the Workshop; 
 	now Gernsback is mobile;
-	now Watchett is nowhere.
+	now Watchett is nowhere;
+	refresh the list-characters window.
 
 Humboldt's Return ends when Humboldt is in the Workshop.
 
@@ -4214,6 +4215,7 @@ Every turn:
 		if the location of Gernsback is not the location of the player:
 			let the way be the best route from the location of Gernsback to the location of the player, using doors;
 			try Gernsback going the way;
+	refresh the list-characters window.
 
 endgame-success is a truth state that varies.
 endgame-success is false. 

@@ -4180,7 +4180,7 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Dr. Humboldt enters. He appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
+	say "The door to the workshop opens and Dr. Humboldt and Gernsback enter. The doctor appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[no line break][if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 	now Gernsback is in the Workshop; 

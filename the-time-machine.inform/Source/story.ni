@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36447 ]
+[ WORDS - 36720 ]
 
 Table of Releases
 release	notes
@@ -3571,6 +3571,34 @@ Section - Showing
 
 After showing noun to Gernsback: try informing Humboldt about noun.
 After showing something to Gernsback: say "SHOWING [noun]".
+
+Chapter - Ending Scene Only
+
+Section - Quizzing - "Ask [someone] about [thing]"
+
+[Provide Ending Scene specific responses]
+
+After quizzing Gernsback about Wells during the Ending Scene:
+	say "[remove Wells ask suggestion]";
+	say "'ENDING SCENE - Sad. If I had known it would have lead to this I never would have given him encouragement.'"
+
+After quizzing Gernsback about Humboldt during the Ending Scene:
+	say "'ENDING SCENE - Smart man. A bit full of himself though. Not as practical as you and me.'"
+
+Understand "his-work" as experiments.
+After quizzing Gernsback about experiments during the Ending Scene: 
+	say "'ENDING SCENE - Told Wells that if he stuck to practical endeavors, like trying to figure out how to increase the yields of my Derbyshire looms, I'd pay him a tidy sum. Enough to fund a lifetime of crazy ideas.'"
+	
+After quizzing Gernsback about time travel during the Ending Scene:
+	say "'ENDING SCENE - Traveling one way through time is good enough for me.' He turns to the finance page in the paper. 'Though I must admit I wouldn't mind being able to travel a week back to the Exchange after finding out how the market's done today. Know what I mean?' "
+	
+After quizzing Gernsback about the time machine during the Ending Scene: 
+	say "'ENDING SCENE - I've seen bits and pieces but I can't say I've really understood what I was seeing. I've got my own 'Morlocks' at the mills for things like that.' He chuckles to himself."
+
+After quizzing Gernsback about workshop-room during the Ending Scene: 
+	say "[remove workshop-room ask suggestion]";
+	say "'ENDING SCENE - Only been inside a couple of times with Wells. Tools and materials and such. Terrible mess.'"
+
 
 Chapter - Default Responses
 

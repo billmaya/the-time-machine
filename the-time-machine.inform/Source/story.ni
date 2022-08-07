@@ -2500,7 +2500,7 @@ The well is a thing.
 The well is a container.
 The well is open.
 The well is scenery in the Inside Dome.
-The description of the well is "The well is circular and filled with what appears to be fresh water. It appears to be the same size as the oculus far above it with a knee-high wall running around its circumferance."
+The description of the well is "The well is circular and filled with what appears to be fresh water. It appears to be the same size as the oculus far above it with a knee-high wall running around its circumference."
 
 Instead of inserting things into the well: say "I don't see the purpose of dropping [the noun] in the water."
 

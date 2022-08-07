@@ -4217,8 +4217,8 @@ Every turn:
 			try Gernsback going the way;
 	refresh the list-characters window.
 
-[After an actor going when the room gone to is the location of the player:
-	say "HUMBOLDT AND GERNSBACK ARRIVE FROM";]
+Before an actor going when the room gone to is the location of the player:
+	say "HUMBOLDT AND GERNSBACK ARRIVE FROM";
 
 endgame-success is a truth state that varies.
 endgame-success is false. 

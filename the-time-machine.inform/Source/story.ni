@@ -4216,6 +4216,7 @@ When Humboldt's Return begins:
 	now Humboldt is mobile;
 	now Gernsback is in the Workshop; 
 	now Gernsback is mobile;
+	now Gernsback is not scenery;
 	now Watchett is nowhere;
 	refresh the list-characters window.
 

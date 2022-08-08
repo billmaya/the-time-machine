@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36720 ]
+[ WORDS - 36890 ]
 
 Table of Releases
 release	notes
@@ -3577,30 +3577,24 @@ Chapter - Ending Scene Only
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
-[Provide Ending Scene specific responses]
-
 After quizzing Gernsback about Wells during the Ending Scene:
-	[DEL say "[remove Wells ask suggestion]";]
-	[DEL say "'ENDING SCENE - Sad. If I had known it would have lead to this I never would have given him encouragement.'"]
-	say "'The doctor is probably in a better position to answer that.'"
+	say "'The doctor is probably in a better position to answer that question.'"
 
 After quizzing Gernsback about Humboldt during the Ending Scene:
-	[DEL say "'ENDING SCENE - Smart man. A bit full of himself though. Not as practical as you and me.'"]
 	say "'Best man in his field, they say.'"
 
 Understand "his-work" as experiments.
 After quizzing Gernsback about experiments during the Ending Scene: 
-	say "'ENDING SCENE - Told Wells that if he stuck to practical endeavors, like trying to figure out how to increase the yields of my Derbyshire looms, I'd pay him a tidy sum. Enough to fund a lifetime of crazy ideas.'"
+	say "Gernsback looks around the room. 'Without Wells we really can't tell what's what.'"
 	
 After quizzing Gernsback about time travel during the Ending Scene:
-	say "'ENDING SCENE - Traveling one way through time is good enough for me.' He turns to the finance page in the paper. 'Though I must admit I wouldn't mind being able to travel a week back to the Exchange after finding out how the market's done today. Know what I mean?' "
+	say "Gernsback looks at his watch. 'The only time travel I've done is about an hour from when we last spoke. The doctor told me about your task. Any luck?'"
 	
 After quizzing Gernsback about the time machine during the Ending Scene: 
-	say "'ENDING SCENE - I've seen bits and pieces but I can't say I've really understood what I was seeing. I've got my own 'Morlocks' at the mills for things like that.' He chuckles to himself."
+	say "[if the time machine is not nowhere]'Outside my area of expertise. I could have one of my chaps from the factory take a look at it if you'd like.'[otherwise]Gernsback looks around the workshop with a puzzled look on his face. 'Don't see anything remotely like that.'[end if]"
 
 After quizzing Gernsback about workshop-room during the Ending Scene: 
-	say "[remove workshop-room ask suggestion]";
-	say "'ENDING SCENE - Only been inside a couple of times with Wells. Tools and materials and such. Terrible mess.'"
+	say "Gernsback looks around the room. 'Pretty much what I expected.'"
 
 
 Chapter - Default Responses

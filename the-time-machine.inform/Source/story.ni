@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36890 ]
+[ WORDS - 36681 ]
 
 Table of Releases
 release	notes
@@ -3085,7 +3085,7 @@ After quizzing Humboldt about examination during Ending Scene:
 
 After quizzing Humboldt about time machine during Ending Scene:
 	say "[remove time machine ask suggestion]";  
-	say "'Outside my area of expertise, I'm afraid.'"
+	say "[if the time machine is not nowhere]'Outside my area of expertise, I'm afraid.'[otherwise]'Don't see anything remotely like that.'[end if]"
 
 After quizzing Humboldt about pocket watch during Ending Scene: 
 	say "'I[']m glad to see that you have held onto Wells['] watch.'"
@@ -3591,7 +3591,7 @@ After quizzing Gernsback about time travel during the Ending Scene:
 	say "Gernsback looks at his watch. 'The only time travel I've done is about an hour from when we last spoke. The doctor told me about your task. Any luck?'"
 	
 After quizzing Gernsback about the time machine during the Ending Scene: 
-	say "[if the time machine is not nowhere]'Outside my area of expertise. I could have one of my chaps from the factory take a look at it if you'd like.'[otherwise]Gernsback looks around the workshop with a puzzled look on his face. 'Don't see anything remotely like that.'[end if]"
+	say "[if the time machine is not nowhere]'Outside my area of expertise. I could have one of my chaps from the factory take a look at it if you'd like.'[otherwise]Gernsback looks around the workshop with a puzzled look on his face. 'Don't see anything remotely like what Wells described.'[end if]"
 
 After quizzing Gernsback about workshop-room during the Ending Scene: 
 	say "Gernsback looks around the room. 'Pretty much what I expected.'"

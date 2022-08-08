@@ -4398,6 +4398,23 @@ Weena Gives You Flower ends when the player has the flower.
 [When Weena Gives You Flower ends:
 	say "WEENA GIVES YOU FLOWER ENDS."]
 
+Part - Weena Appears In 1895
+
+Weena Appears In 1895 is a scene.
+
+weena-appears is a truth state that varies.
+weena-appears is false.
+
+Weena Appears In 1895 begins when weena-appears is true.
+
+When Weena Appears In 1895 begins:
+	say "WEENA APPEARS BEGINS."
+
+
+
+When Weena Appears In 1895 ends:
+	say "WEENA APPEARS ENDS."
+
 Book - Underground
 
 Part - Morlock Endgame

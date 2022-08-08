@@ -444,7 +444,8 @@ Test weena-r9 with "test go-802701 / exit / e / e / s / n / w / w / se / show wa
 Test newspaper with "look / take newspaper / look / put newspaper on left armchair / look / take newspaper / put newspaper on right armchair / look."
 			
 [v1.8 Tests]
-Test endgame with "test xpl-802701 / exit."
+Test end1 with "test xpl-802701 / exit."
+Test end2 with "test fp-time / take time machine fuse / put orrery fuse in fuse holder / close panel / exit."
 
 Part - Release
 
@@ -1625,7 +1626,7 @@ Part - Workshop
 
 The workshop is a dark room. 
 
-The description of the Workshop is "The workshop is almost twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space. But the most striking, out-of-place object in the room is a device almost equidistant between you and the other end of the room[unicode 8212]Wells['] time machine."
+The description of the Workshop is "The workshop is almost twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space.[if the time machine is not nowhere] But the most striking, out-of-place object in the room is a device almost equidistant between you and the other end of the room[unicode 8212]Wells['] time machine.[end if]"
 
 Chapter - Workbench
 
@@ -3579,11 +3580,13 @@ Section - Quizzing - "Ask [someone] about [thing]"
 [Provide Ending Scene specific responses]
 
 After quizzing Gernsback about Wells during the Ending Scene:
-	say "[remove Wells ask suggestion]";
-	say "'ENDING SCENE - Sad. If I had known it would have lead to this I never would have given him encouragement.'"
+	[DEL say "[remove Wells ask suggestion]";]
+	[DEL say "'ENDING SCENE - Sad. If I had known it would have lead to this I never would have given him encouragement.'"]
+	say "'The doctor is probably in a better position to answer that.'"
 
 After quizzing Gernsback about Humboldt during the Ending Scene:
-	say "'ENDING SCENE - Smart man. A bit full of himself though. Not as practical as you and me.'"
+	[DEL say "'ENDING SCENE - Smart man. A bit full of himself though. Not as practical as you and me.'"]
+	say "'Best man in his field, they say.'"
 
 Understand "his-work" as experiments.
 After quizzing Gernsback about experiments during the Ending Scene: 

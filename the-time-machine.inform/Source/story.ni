@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36753 ]
+[ WORDS - 36808 ]
 
 Table of Releases
 release	notes
@@ -3292,6 +3292,7 @@ A patience rule:
 			now the patience of Humboldt is angry-1;
 		-- angry-1:
 			now endgame-failure is true.
+
 			
 Book - Gernsback
 [https://bit.ly/3rYUPl8]
@@ -4233,6 +4234,11 @@ Ending Scene begins when humboldt-endgame-begins is true.
 
 [Recipe §7.13. Traveling Characters, Van Helsing example]
 Every turn:
+	if the patience of Humboldt is frustrated-2:
+		if the time machine is nowhere:
+			now Weena is in the time machine;
+			now the time machine is in the workshop;
+			now weena-appears is true;
 	if Humboldt is mobile:
 		if the location of Humboldt is not the location of the player:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
@@ -4410,7 +4416,7 @@ Weena Appears In 1895 begins when weena-appears is true.
 When Weena Appears In 1895 begins:
 	say "WEENA APPEARS BEGINS."
 
-
+Weena Appears In 1895 ends when Weena is in the time machine and the time machine is in the workshop.
 
 When Weena Appears In 1895 ends:
 	say "WEENA APPEARS ENDS."

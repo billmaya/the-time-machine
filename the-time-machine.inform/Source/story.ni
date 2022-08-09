@@ -4234,7 +4234,7 @@ Ending Scene begins when humboldt-endgame-begins is true.
 
 [Recipe §7.13. Traveling Characters, Van Helsing example]
 Every turn:
-	if the patience of Humboldt is frustrated-2:
+	if the patience of Humboldt is angry-1:
 		if the time machine is nowhere:
 			now Weena is in the time machine;
 			now the time machine is in the workshop;

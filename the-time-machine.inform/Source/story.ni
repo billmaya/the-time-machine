@@ -4271,8 +4271,11 @@ Ending Scene ends when endgame-success is true or endgame-failure is true.
 When Ending Scene ends:
 	[say "ENDING SCENE ENDS."]
 	if endgame-success is true:
-		[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
-		say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
+		if weena-appears is true:
+			say "ENDGAME-SUCCESS = TRUE, WEENA-APPEARS = TRUE.";
+		otherwise:
+			[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
+			say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
 	if endgame-failure is true:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
 		[say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";]
@@ -4414,7 +4417,8 @@ weena-appears is false.
 Weena Appears In 1895 begins when weena-appears is true.
 
 When Weena Appears In 1895 begins:
-	say "WEENA APPEARS BEGINS."
+	say "WEENA APPEARS BEGINS.";
+	now endgame-success is true.
 
 Weena Appears In 1895 ends when Weena is in the time machine and the time machine is in the workshop.
 

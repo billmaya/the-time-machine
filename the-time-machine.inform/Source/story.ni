@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36952 ]
+[ WORDS - 36946 ]
 
 Table of Releases
 release	notes
@@ -4263,7 +4263,6 @@ When Ending Scene ends:
 	if endgame-failure is true:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
 		say "Alone, looking around the workshop, you feel a sense of failure and despair. Your attempt to vidicate your friend Wells has failed and his story of time travel will not be believed.";
-		say "ENDGAME-FAILURE IS TRUE";
 	end the story finally.
 
 Book - Gernsback

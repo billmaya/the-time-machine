@@ -445,7 +445,8 @@ Test newspaper with "look / take newspaper / look / put newspaper on left armcha
 			
 [v1.8 Tests]
 Test end1 with "test xpl-802701 / exit."
-Test end2 with "test fp-time / take time machine fuse / put orrery fuse in fuse holder / close panel / exit."
+Test end2 with "test fp-time / take time machine fuse / put orrery fuse in fuse holder / close panel / exit / push lever."
+Test end3 with "tell humboldt about time travel / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks."
 
 Part - Release
 
@@ -1813,7 +1814,7 @@ Instead of activating the time machine:
 	otherwise:
 		if a breaker (called fuse) is contained in the time-fuse-holder: 
 			if the small light is switched on:
-				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers briefly and disappears from the room.";
+				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers and disappears from the room, accompanied by the distinctive sound of what appears to be a key scraping along the bass string of a piano.";
 				now the time machine is nowhere;
 				now humboldt-should-return is true;
 		otherwise:
@@ -4417,13 +4418,15 @@ weena-appears is false.
 Weena Appears In 1895 begins when weena-appears is true.
 
 When Weena Appears In 1895 begins:
-	say "WEENA APPEARS BEGINS.";
+	[say "WEENA APPEARS BEGINS.";]
+	say "Suddenly, the time machine appears, shimmering into view, accompanied by its distinct vworp-vworp sound. A young girl steps down from inside and stands looking at the three of you, one hand still on the machine. Based on Wells['] description, you decide that this can only be Weena, the girl he met in the year far future.[paragraph break]Humboldt appears to quickly come to the same conclusion. Slowly he approaches the girl and gently takes her hand and in greeting. His eyes go to the flowers in her hair and, with her permission, removes one. Examining it closely, he turns to you in excitement. 'This is it! The rest of the flower that I was talking about earlier. Proof, I tell you, that Wells['] story, however fantastical it sounds, must be true. This flower, and that girl, prove it.'[paragraph break]You glance at Gernsback, who appears a bit disappointed at this turn of events.";
+	now Weena is in the workshop;
 	now endgame-success is true.
 
-Weena Appears In 1895 ends when Weena is in the time machine and the time machine is in the workshop.
+Weena Appears In 1895 ends when Weena is in the workshop [time machine] and the time machine is in the workshop.
 
-When Weena Appears In 1895 ends:
-	say "WEENA APPEARS ENDS."
+[When Weena Appears In 1895 ends:
+	say "WEENA APPEARS ENDS."]
 
 Book - Underground
 

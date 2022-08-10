@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36827 ]
+[ WORDS - 36952 ]
 
 Table of Releases
 release	notes
@@ -3141,23 +3141,6 @@ After informing Humboldt about the pocket watch during the Ending Scene:
 
 Section - Informing - With Patience Rules
 
-[ How Patience rule works for reference
-Humboldt is tolerant-1.
-	
-A patience rule:
-	if the patience of Humboldt is:
-		-- tolerant-1:
-			now the patience of Humboldt is tolerant-2;
-		-- tolerant-2:
-			now the patience of Humboldt is frustrated-1;
-		-- frustrated-1:
-			now the patience of Humboldt is frustrated-2;
-		-- frustrated-2:
-			now the patience of Humboldt is angry-1;
-		-- angry-1:
-			now endgame-failure is true.
-]
-
 [Modify [second noun] based on what you tell him about, maybe add more descriptive text like replacing "shaft" with "shaft and the underground tunnels"]
 To say reply-intro: 
 	say "Humboldt listens to you talk about [second noun]".
@@ -3177,7 +3160,6 @@ To say reply-response:
 			say " but cuts you off before you're finished. 'I know you want to help Wells, we both do. But repeating his delusional nonsense without any proof won't convince me no matter how many times I hear it. In fact, it makes me doubt your own sanity. Good evening.'[paragraph break]Humboldt turns and storms out of [the current location][if Gernsback is in the current location] with Gernsback following close behind. You can't be sure but you think you see a smile of satisfaction on the businessman's face[end if].";
 			now Gernsback is nowhere;
 			now Humboldt is nowhere.
-			[now endgame-failure is true.]
 
 After informing Humboldt about time travel during the Ending Scene:
 	[say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";]
@@ -4281,7 +4263,6 @@ When Ending Scene ends:
 	if endgame-failure is true:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
 		say "Alone, looking around the workshop, you feel a sense of failure and despair. Your attempt to vidicate your friend Wells has failed and his story of time travel will not be believed.";
-		[say "At the end of his patience, Humboldt realizes you have become just as delusional as Wells. Leaving the room abruptly, he returns with his two attendants. Quickly, they manhandle you into the ambulance outside and cart you off to the hospital to share a ward with Wells.";]
 		say "ENDGAME-FAILURE IS TRUE";
 	end the story finally.
 

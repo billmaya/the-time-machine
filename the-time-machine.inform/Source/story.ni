@@ -2623,6 +2623,8 @@ Going northwest in the Bottom is wandering.
 
 Part Bottomless Pit
 
+[Stairway down to lower levels]
+
 Part Wall Of Machinery
 
 Part Holding Pen
@@ -2635,9 +2637,9 @@ Year-1895-Outside is a region. Woking Street and Garden are in Year-1895-Outside
 Year-1895-Inside is a region. Entryway and Library and Parlor and Dining Room and Kitchen and Workshop are in Year-1895-Inside.
 
 Year-802701-Outside is a region. Clearing and Domed Building and River Bank are in Year-802701-Outside.
-Year-802701-Inside is a region. Top Shaft and Bottom Shaft and Inside Dome and Balcony are in Year-802701-Inside.
+Year-802701-Inside is a region. Top Shaft and Inside Dome and Balcony are in Year-802701-Inside.
 
-Morlock-Underground is a region. Botom Shaft is in Morlock-Underground.
+Morlock-Underground is a region. Bottom Shaft is in Morlock-Underground.
 			
 Volume - Characters
 

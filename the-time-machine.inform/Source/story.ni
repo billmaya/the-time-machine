@@ -2427,28 +2427,6 @@ The ladder is a thing.
 The ladder is a backdrop. It is in the Clearing, Top Shaft and Bottom Shaft.
 The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, leading down into the gloom."
 
-Part - Bottom Shaft
-
-The Bottom Shaft is a room.
-Up from the Bottom Shaft is the Top Shaft.
-The description of Bottom Shaft is "In the small amount of light that filters down from above you can see tunnels going in every direction."
-
-The printed name of Bottom Shaft is "Bottom of the Shaft"
-
-The tunnels are scenery in the Bottom Shaft.
-The description of the tunnels are "All of the tunnels slope downward slightly and each one is indistinguishable from another."
-
-encounter-morlocks is a truth state that varies.
-encounter-morlocks is false.
-
-Going north in the Bottom Shaft is wandering.
-Going northeast in the Bottom Shaft is wandering.
-Going east in the Bottom Shaft is wandering.
-Going southeast in the Bottom Shaft is wandering.
-Going south in the Bottom Shaft is wandering.
-Going southwest in the Bottom Shaft is wandering.
-Going west in the Bottom Shaft is wandering.
-Going northwest in the Bottom is wandering.
 
 Part - Domed Building
 
@@ -2619,6 +2597,35 @@ Instead of swimming: say "You[']re not dressed for swimming. Perhaps another tim
 Resting is an action applying to nothing.
 Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
+
+Part - Bottom Shaft
+
+The Bottom Shaft is a room.
+Up from the Bottom Shaft is the Top Shaft.
+The description of Bottom Shaft is "In the small amount of light that filters down from above you can see tunnels going in every direction."
+
+The printed name of Bottom Shaft is "Bottom of the Shaft"
+
+The tunnels are scenery in the Bottom Shaft.
+The description of the tunnels are "All of the tunnels slope downward slightly and each one is indistinguishable from another."
+
+encounter-morlocks is a truth state that varies.
+encounter-morlocks is false.
+
+Going north in the Bottom Shaft is wandering.
+Going northeast in the Bottom Shaft is wandering.
+Going east in the Bottom Shaft is wandering.
+Going southeast in the Bottom Shaft is wandering.
+Going south in the Bottom Shaft is wandering.
+Going southwest in the Bottom Shaft is wandering.
+Going west in the Bottom Shaft is wandering.
+Going northwest in the Bottom is wandering.
+
+Part Bottomless Pit
+
+Part Wall Of Machinery
+
+Part Holding Pen
 
 Book - Regions
 

@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36946 ]
+[ WORDS - 369696 36946 ]
 
 Table of Releases
 release	notes
@@ -2279,22 +2279,22 @@ Every turn:
 	if the player is in the Balcony, now can-go-clearing-to-river is true.
 
 The Clearing is a room. 
-The description of the Clearing is "A midsized clearing dominated by a circular shaft in the center that rises about three feet above the ground. The face of a large statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] Now that you know it exists, you can just make out the overgrown path that you saw from the balcony leading southeast.[end if]"
+The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. The face of a large statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] Now that you know it exists, you can just make out the overgrown path that you saw from the balcony leading southeast.[end if]"
 
 Inside from the Clearing is Top Shaft.
 
 Instead of going down in the Clearing: 
-	if the metal grate is on the circular shaft:
+	if the metal grate is on the circular well:
 		say "You might be able to if that grate wasn't in the way.";
-	if the metal grate is not on the circular shaft:
-		try entering the circular shaft.
+	if the metal grate is not on the circular well:
+		try entering the circular well.
 
 Chapter - Scenery
 
-The circular shaft is a thing.
-The circular shaft is scenery in the Clearing.
-The circular shaft is a supporter.
-Instead of examining the circular shaft: say "About three feet in diameter, the circular shaft appears to be made of some unknown metal. [if metal grate is on circular shaft]A circular grate rests on the top of the shaft, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
+The circular well is a thing.
+The circular well is scenery in the Clearing.
+The circular well is a supporter.
+Instead of examining the circular well: say "About three feet in diameter, the circular well appears to be made of some unknown metal. [if metal grate is on circular well]A circular grate rests on the top of the shaft, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
 
 The statue is scenery in the Clearing.
 The description of statue is "The sightless eyes of the weather-worn marble face stare down at you, inhuman and unsympathetic."
@@ -2318,10 +2318,10 @@ Chapter - Metal Grate
 
 The metal grate is a thing.
 The metal grate is portable.
-The metal grate is on the circular shaft.
+The metal grate is on the circular well.
 The metal grate is a supporter.
 The metal grate is undescribed.
-The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal grate is not on the circular shaft] The grate is lying on the ground next to the open shaft.[end if]"
+The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal grate is not on the circular well] The grate is lying on the ground next to the open shaft.[end if]"
 
 [ > Remove grate ]
 
@@ -2334,7 +2334,7 @@ Instead of pushing the metal grate: try taking the metal grate.
 Instead of attacking the metal grate with something: say "The [second noun] has no effect on the metal of the grate, despite its rusted appearance. But you might be able to move the grate out of its current position if you try."
 
 Instead of taking the metal grate:
-	if the metal grate is on the circular shaft in the Clearing:
+	if the metal grate is on the circular well in the Clearing:
 		say "Grabbing the grate through its openings, you brace yourself against the side of the shaft and manage to leverage it up and out of its resting position. It[']s extremely heavy but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
 		move the metal grate to the Clearing;
 		now the metal grate is described;
@@ -2344,15 +2344,15 @@ Instead of taking the metal grate:
 Climbing into is an action applying to one touchable thing.
 Understand "climb in [something]" as climbing into.
 Understand "climb into [something]" as climbing into.
-Instead of climbing into the circular shaft: try entering the circular shaft.
+Instead of climbing into the circular well: try entering the circular well.
 
-[If you remove the circular grate from the circular shaft you can climb into it]
-Instead of entering the circular shaft:
-	if the metal grate is on the circular shaft:
+[If you remove the circular grate from the circular well you can climb into it]
+Instead of entering the circular well:
+	if the metal grate is on the circular well:
 		say "If the grate wasn't on top of the shaft you might be able to.";
 	otherwise:
 		say "Carefully you climb over the lip of the shaft and onto the ladder.[line break]";
-		now the player is in the Top Shaft.
+		now the player is in the Top Well.
 
 Going north in the Clearing is wandering.
 Going northeast in the Clearing is wandering.
@@ -2410,21 +2410,21 @@ The description of the statue is "A gigantic reclining sphinx made of white marb
 Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
 ]
 
-Part - Top Shaft
+Part - Top Well
 
-The Top Shaft is a room.
-Down from Top Shaft is the Bottom Shaft.
-Up from Top Shaft is the Clearing.
-The description of Top Shaft is "You[']re hanging at the top of the shaft on the ladder leading down. Faint sounds of machinery rise from the darkness below. Exiting the shaft will put you back in the clearing."
+The Top Well is a room.
+Down from Top Well is the Bottom Well.
+Up from Top Well is the Clearing.
+The description of Top Well is "You[']re hanging at the top of the shaft on the ladder leading down. Faint sounds of machinery rise from the darkness below. Exiting the shaft will put you back in the clearing."
 
-Instead of going up from the Top Shaft: try exiting.
+Instead of going up from the Top Well: try exiting.
 
-Instead of exiting in the Top Shaft: 
-	say "You carefully climb out of the shaft.";
+Instead of exiting in the Top Well: 
+	say "You carefully climb out of the well.";
 	now the player is in the Clearing.
 	
 The ladder is a thing.
-The ladder is a backdrop. It is in the Clearing, Top Shaft and Bottom Shaft.
+The ladder is a backdrop. It is in the Clearing, Top Well and Bottom Well.
 The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, leading down into the gloom."
 
 
@@ -2476,19 +2476,19 @@ Understand "circular" or "container" or "depression" or "table" as tables.
 
 Instead of entering the tables: say "You sit briefly on the edge of one of the tables to gather your thoughts."
 
-The well is a thing.
-The well is a container.
-The well is open.
-The well is scenery in the Inside Dome.
-The description of the well is "The well is circular and filled with what appears to be fresh water. It appears to be the same size as the oculus far above it with a knee-high wall running around its circumference."
+The round well is a thing.
+The round well is a container.
+The round well is open.
+The round well is scenery in the Inside Dome.
+The description of the round well is "The well is circular and filled with what appears to be fresh water. It appears to be the same size as the oculus far above it with a knee-high wall running around its circumference."
 
-Instead of inserting things into the well: say "I don't see the purpose of dropping [the noun] in the water."
+Instead of inserting things into the round well: say "I don't see the purpose of dropping [the noun] in the water."
 
 The wall is scenery in the Inside Dome.
 The description of the wall is "The wall runs around the entire outer edge of the well."
 
-Instead of entering the well: try entering the wall;
-Instead of entering the wall: say "You rest briefly at the edge of the well to gather your thoughts."
+Instead of entering the round well: try entering the round well;
+Instead of entering the round well: say "You rest briefly at the edge of the well to gather your thoughts."
 
 The well-water is a thing.
 The well-water is scenery in the Inside Dome.
@@ -2598,28 +2598,28 @@ Resting is an action applying to nothing.
 Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
-Part - Bottom Shaft
+Part - Bottom Well
 
-The Bottom Shaft is a room.
-Up from the Bottom Shaft is the Top Shaft.
-The description of Bottom Shaft is "In the small amount of light that filters down from above you can see tunnels going in every direction."
+The Bottom Well is a room.
+Up from the Bottom Well is the Top Well.
+The description of Bottom Well is "In the small amount of light that filters down from above you can see tunnels going in every direction."
 
-The printed name of Bottom Shaft is "Bottom of the Shaft"
+The printed name of Bottom Well is "Bottom of the Well"
 
-The tunnels are scenery in the Bottom Shaft.
+The tunnels are scenery in the Bottom Well.
 The description of the tunnels are "All of the tunnels slope downward slightly and each one is indistinguishable from another."
 
 encounter-morlocks is a truth state that varies.
 encounter-morlocks is false.
 
-Going north in the Bottom Shaft is wandering.
-Going northeast in the Bottom Shaft is wandering.
-Going east in the Bottom Shaft is wandering.
-Going southeast in the Bottom Shaft is wandering.
-Going south in the Bottom Shaft is wandering.
-Going southwest in the Bottom Shaft is wandering.
-Going west in the Bottom Shaft is wandering.
-Going northwest in the Bottom is wandering.
+Going north in the Bottom Well is wandering.
+Going northeast in the Bottom Well is wandering.
+Going east in the Bottom Well is wandering.
+Going southeast in the Bottom Well is wandering.
+Going south in the Bottom Well is wandering.
+Going southwest in the Bottom Well is wandering.
+Going west in the Bottom Well is wandering.
+Going northwest in the Bottom Well is wandering.
 
 Part Bottomless Pit
 

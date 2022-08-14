@@ -295,7 +295,7 @@ Before listening:
 	else if the player is in the Top Shaft: 
 		say "The faint sounds of machinery mingle with the natural sounds of the clearing.";
 		stop the action;
-	else if the player is in the Bottom Shaft:
+	else if the player is in the Bottom Well:
 		say "The sound of machinery is louder now and seems to come from every direction.";
 		stop the action;
 	else if the player is in the Dining Room:
@@ -2621,7 +2621,7 @@ Going southwest in the Bottom Well is wandering.
 Going west in the Bottom Well is wandering.
 Going northwest in the Bottom Well is wandering.
 
-Part Bottomless Pit
+Part Ladder Shaft
 
 [Stairway down to lower levels]
 
@@ -2639,7 +2639,7 @@ Year-1895-Inside is a region. Entryway and Library and Parlor and Dining Room an
 Year-802701-Outside is a region. Clearing and Domed Building and River Bank are in Year-802701-Outside.
 Year-802701-Inside is a region. Top Shaft and Inside Dome and Balcony are in Year-802701-Inside.
 
-Morlock-Underground is a region. Bottom Shaft is in Morlock-Underground.
+Morlock-Underground-1 is a region. Bottom Well is in Morlock-Underground-1.
 			
 Volume - Characters
 
@@ -4428,7 +4428,7 @@ Part - Morlock Endgame
 [Writing §8.18. Randomness]
 [Writing §9.4. When play ends]
 
-Instead of wandering in the Bottom Shaft:
+Instead of wandering in the Bottom Well:
 	if encounter-morlocks is true:
 		if the player has the poker:
 			say "Even with a weapon you shouldn't try your luck, especially without a source of light and possibly some allies. I mean, you barely escaped from your first encounter with these brutish savages.";

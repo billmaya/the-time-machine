@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 36980 ]
+[ WORDS - 37450 ]
 
 Table of Releases
 release	notes
@@ -292,7 +292,7 @@ Before listening:
 	else if the player is in the Clearing:
 		say "Nature sounds mixed in with the sound of the wind through the trees.";
 		stop the action;
-	else if the player is in the Top Shaft: 
+	else if the player is in the Top Well: 
 		say "The faint sounds of machinery mingle with the natural sounds of the clearing.";
 		stop the action;
 	else if the player is in the Bottom Well:
@@ -2281,7 +2281,7 @@ Every turn:
 The Clearing is a room. 
 The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. The face of a large statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] Now that you know it exists, you can just make out the overgrown path that you saw from the balcony leading southeast.[end if]"
 
-Inside from the Clearing is Top Shaft.
+Inside from the Clearing is Top Well.
 
 Instead of going down in the Clearing: 
 	if the metal grate is on the circular well:
@@ -2598,9 +2598,16 @@ Resting is an action applying to nothing.
 Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
-Part - Bottom Well
+Part - Underground Rooms
 
-The Bottom Well is a room.
+underground is a kind of room.
+
+Part - Level 1
+
+
+Chapter - Bottom Well
+
+The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
 The description of Bottom Well is "In the small amount of light that filters down from above you can see tunnels going in every direction."
 
@@ -2621,25 +2628,145 @@ Going southwest in the Bottom Well is wandering.
 Going west in the Bottom Well is wandering.
 Going northwest in the Bottom Well is wandering.
 
-Part Ladder Shaft
+Chapter - Shaft 1
 
-[Stairway down to lower levels]
+Shaft 1 is underground.
+Shaft 1 is north of Bottom Well.
+Shaft 1 is up from Shaft 2.
 
-Part Wall Of Machinery
+[Ladder down to lower levels]
 
-Part Holding Pen
+Part - Level 2
+
+Chapter - Shaft 2
+
+Shaft 2 is underground.
+Shaft 2 is down from Shaft 1.
+Shaft 2 is up from Shaft 3.
+Shaft 2 is north of the Agora.
+
+Chapter - Agora
+
+The Agora is underground.
+The Agora is south of Shaft 2.
+The Agora is west of the Curia.
+The Agora is north of the Museum.
+The Agora is east of the Temple.
+The Agora is southwest of the Storerooms.
+
+Chapter - Curia
+
+The Curia is underground.
+The Curia is east of the Agora.
+
+Chapter - Museum
+
+The Museum is underground.
+The Museum is south of the Agora.
+
+Chapter - Temple
+
+The Temple is underground.
+The Temple is west of the Agora.
+
+Chapter - Storerooms
+
+The Storerooms are underground.
+The Storerooms are northwest of the Agora.
+
+Part - Level 3
+
+Chapter - Shaft 3
+
+Shaft 3 is underground.
+Shaft 3 is down from Shaft 2.
+Shaft 3 is up from Shaft 4.
+Shaft 3 is north of the Living Quarters.
+
+Chapter - Living Quarters
+
+The Living Quarters are underground.
+The Living Quarters are south of Shaft 3.
+The Living Quarters are up from the Catacombs.
+
+Part - Catacombs
+
+The Catacombs are underground.
+The Catacombs are down from the Living Quarters.
+
+Part - Level 4
+
+Chapter - Shaft 4
+
+Shaft 4 is underground.
+Shaft 4 is down from Shaft 3.
+Shaft 4 is up from Shaft 5.
+Shaft 4 is north of the Eating Area.
+
+Chapter - Eating Area
+
+The Eating Area is underground.
+The Eating Area is south of Shaft 4.
+The Eating Area is north of the Abattoir.
+
+Chapter - Abattoir
+
+The Abattoir is underground.
+The Abattoir is south of the Eating Area.
+The Abattoir is north of the Holding Pen.
+
+Chapter - Holding Pen
+
+The Holding Pen is underground.
+The Holding Pen is south of the Abattoir.
+
+Part - Level 5
+
+Chapter - Shaft 5
+
+Shaft 5 is underground.
+Shaft 5 is down from Shaft 4.
+Shaft 5 is north of the Goggle Room.
+
+Chapter - Goggle Room
+
+The Goggle Room is underground. 
+The Goggle Room is south of Shaft 5.
+The Goggle Room is north of the Heavy Sliding Door.
+
+Section - Heavy Sliding Door
+
+The Heavy Sliding Door is a door.
+The Heavy Sliding Door is south of the Goggle Room and north of the Power Plant.
+
+Chapter - Power Plant
+
+The Power Plant is underground.
+The Power Plant is south of the Heavy Sliding Door.
+
 
 Book - Regions
 
 [I might be able to give rooms an "inside" and "outside" property and not use regions.]
 
-Year-1895-Outside is a region. Woking Street and Garden are in Year-1895-Outside.
-Year-1895-Inside is a region. Entryway and Library and Parlor and Dining Room and Kitchen and Workshop are in Year-1895-Inside.
+Year-1895-Outside is a region.
+Woking Street and Garden are in Year-1895-Outside.
 
-Year-802701-Outside is a region. Clearing and Domed Building and River Bank are in Year-802701-Outside.
-Year-802701-Inside is a region. Top Shaft and Inside Dome and Balcony are in Year-802701-Inside.
+Year-1895-Inside is a region. 
+Entryway and Library and Parlor and Dining Room and Kitchen and Workshop are in Year-1895-Inside.
 
-Morlock-Underground-1 is a region. Bottom Well is in Morlock-Underground-1.
+Year-802701-Outside is a region.
+Clearing and Domed Building and River Bank and Top Well are in Year-802701-Outside.
+
+Year-802701-Inside is a region.
+The Balcony and the Inside Dome are in Year-802701-Inside.
+
+Year-802701-Underground is a region. 
+Shaft 1 and Bottom Well are in Year-802701-Underground.
+Shaft 2 and Agora and Curia and Museum and Temple and Storerooms are in Year-802701-Underground.
+Shaft 3 and Living Quarters and Catacombs are in Year-802701-Underground.
+Shaft 4 and Eating Area and Abattoir and Holding Pen are in Year-802701-Underground.
+Shaft 5 and Goggle Room and Power Plant are in Year-802701-Underground.
 			
 Volume - Characters
 

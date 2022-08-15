@@ -2602,10 +2602,10 @@ Part - Underground Rooms
 
 underground is a kind of room.
 
-Part - Level 1
+Chapter - Level 1
 
 
-Chapter - Bottom Well
+Section - Bottom Well
 
 The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
@@ -2628,7 +2628,7 @@ Going southwest in the Bottom Well is wandering.
 Going west in the Bottom Well is wandering.
 Going northwest in the Bottom Well is wandering.
 
-Chapter - Shaft 1
+Section - Shaft 1
 
 Shaft 1 is underground.
 Shaft 1 is north of Bottom Well.
@@ -2636,16 +2636,16 @@ Shaft 1 is up from Shaft 2.
 
 [Ladder down to lower levels]
 
-Part - Level 2
+Chapter - Level 2
 
-Chapter - Shaft 2
+Section - Shaft 2
 
 Shaft 2 is underground.
 Shaft 2 is down from Shaft 1.
 Shaft 2 is up from Shaft 3.
 Shaft 2 is north of the Agora.
 
-Chapter - Agora
+Section - Agora
 
 The Agora is underground.
 The Agora is south of Shaft 2.
@@ -2654,81 +2654,81 @@ The Agora is north of the Museum.
 The Agora is east of the Temple.
 The Agora is southwest of the Storerooms.
 
-Chapter - Curia
+Section - Curia
 
 The Curia is underground.
 The Curia is east of the Agora.
 
-Chapter - Museum
+Section - Museum
 
 The Museum is underground.
 The Museum is south of the Agora.
 
-Chapter - Temple
+Section - Temple
 
 The Temple is underground.
 The Temple is west of the Agora.
 
-Chapter - Storerooms
+Section - Storerooms
 
 The Storerooms are underground.
 The Storerooms are northwest of the Agora.
 
-Part - Level 3
+Chapter - Level 3
 
-Chapter - Shaft 3
+Section - Shaft 3
 
 Shaft 3 is underground.
 Shaft 3 is down from Shaft 2.
 Shaft 3 is up from Shaft 4.
 Shaft 3 is north of the Living Quarters.
 
-Chapter - Living Quarters
+Section - Living Quarters
 
 The Living Quarters are underground.
 The Living Quarters are south of Shaft 3.
 The Living Quarters are up from the Catacombs.
 
-Part - Catacombs
+Section - Catacombs
 
 The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
 
-Part - Level 4
+Chapter - Level 4
 
-Chapter - Shaft 4
+Section - Shaft 4
 
 Shaft 4 is underground.
 Shaft 4 is down from Shaft 3.
 Shaft 4 is up from Shaft 5.
 Shaft 4 is north of the Eating Area.
 
-Chapter - Eating Area
+Section - Eating Area
 
 The Eating Area is underground.
 The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
-Chapter - Abattoir
+Section - Abattoir
 
 The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Pen.
 
-Chapter - Holding Pen
+Section - Holding Pen
 
 The Holding Pen is underground.
 The Holding Pen is south of the Abattoir.
 
-Part - Level 5
+Chapter - Level 5
 
-Chapter - Shaft 5
+Section - Shaft 5
 
 Shaft 5 is underground.
 Shaft 5 is down from Shaft 4.
 Shaft 5 is north of the Goggle Room.
 
-Chapter - Goggle Room
+Section - Goggle Room
 
 The Goggle Room is underground. 
 The Goggle Room is south of Shaft 5.
@@ -2739,7 +2739,7 @@ Section - Heavy Sliding Door
 The Heavy Sliding Door is a door.
 The Heavy Sliding Door is south of the Goggle Room and north of the Power Plant.
 
-Chapter - Power Plant
+Section - Power Plant
 
 The Power Plant is underground.
 The Power Plant is south of the Heavy Sliding Door.

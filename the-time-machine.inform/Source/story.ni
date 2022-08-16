@@ -2634,6 +2634,8 @@ Shaft 1 is underground.
 Shaft 1 is north of Bottom Well.
 Shaft 1 is up from Shaft 2.
 
+The description of Shaft 1 is "SHAFT 1 DESCRIPTION."
+
 [Ladder down to lower levels]
 
 Chapter - Level 2
@@ -2645,6 +2647,8 @@ Shaft 2 is down from Shaft 1.
 Shaft 2 is up from Shaft 3.
 Shaft 2 is north of the Agora.
 
+The description of Shaft 2 is "SHAFT 2 DESCRIPTION."
+
 Section - Agora
 
 The Agora is underground.
@@ -2653,26 +2657,36 @@ The Agora is west of the Curia.
 The Agora is north of the Museum.
 The Agora is east of the Temple.
 The Agora is southwest of the Storerooms.
+	
+The description of Agora is "AGORA DESCRIPTION."
 
 Section - Curia
 
 The Curia is underground.
 The Curia is east of the Agora.
 
+The description of Curia is "CURIA DESCRIPTION."
+
 Section - Museum
 
 The Museum is underground.
 The Museum is south of the Agora.
+
+The description of Museum is "MUSEUM DESCRIPTION."
 
 Section - Temple
 
 The Temple is underground.
 The Temple is west of the Agora.
 
+The description of Temple is "TEMPLE DESCRIPTION."
+
 Section - Storerooms
 
 The Storerooms are underground.
 The Storerooms are northwest of the Agora.
+
+The description of Storerooms is "STOREROOMS DESCRIPTION."
 
 Chapter - Level 3
 
@@ -2683,16 +2697,22 @@ Shaft 3 is down from Shaft 2.
 Shaft 3 is up from Shaft 4.
 Shaft 3 is north of the Living Quarters.
 
+The description of Shaft 3 is "SHAFT 3 DESCRIPTION."
+
 Section - Living Quarters
 
 The Living Quarters are underground.
 The Living Quarters are south of Shaft 3.
 The Living Quarters are up from the Catacombs.
 
+The description of Living Quarters is "LIVING QUARTERS DESCRIPTION."
+
 Section - Catacombs
 
 The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
+
+The description of Catacombs is "CATACOMBS DESCRIPTION."
 
 Chapter - Level 4
 
@@ -2703,11 +2723,15 @@ Shaft 4 is down from Shaft 3.
 Shaft 4 is up from Shaft 5.
 Shaft 4 is north of the Eating Area.
 
+The description of Shaft 4 is "SHAFT 4 DESCRIPTION."
+
 Section - Eating Area
 
 The Eating Area is underground.
 The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
+
+The description of Eating Area is "EATING AREA DESCRIPTION."
 
 Section - Abattoir
 
@@ -2715,10 +2739,14 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Pen.
 
+The description of Abattoir is "ABATTOIR DESCRIPTION."
+
 Section - Holding Pen
 
 The Holding Pen is underground.
 The Holding Pen is south of the Abattoir.
+
+The description of Holding Pen is "HOLDING PEN DESCRIPTION."
 
 Chapter - Level 5
 
@@ -2728,22 +2756,29 @@ Shaft 5 is underground.
 Shaft 5 is down from Shaft 4.
 Shaft 5 is north of the Goggle Room.
 
+The description of Shaft 5 is "SHAFT 5 DESCRIPTION."
+
 Section - Goggle Room
 
 The Goggle Room is underground. 
 The Goggle Room is south of Shaft 5.
 The Goggle Room is north of the Heavy Sliding Door.
 
+The description of Goggle Room is "GOGGLE ROOM DESCRIPTION."
+
 Section - Heavy Sliding Door
 
 The Heavy Sliding Door is a door.
 The Heavy Sliding Door is south of the Goggle Room and north of the Power Plant.
+	
+The description of Heavy Sliding Door is "HEAVY SLIDING DOOR DESCRIPTION."
 
 Section - Power Plant
 
 The Power Plant is underground.
 The Power Plant is south of the Heavy Sliding Door.
-
+	
+The description of Power Plant is "POWER PLANT DESCRIPTION."
 
 Book - Regions
 

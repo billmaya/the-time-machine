@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 37450 ]
+[ WORDS - 37649 ]
 
 Table of Releases
 release	notes
@@ -2600,16 +2600,25 @@ Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
 Part - Underground Rooms
 
-underground is a kind of room.
+Chapter - Light Level
+
+Light level is a kind of value.
+The light levels are dawn, day, shadow, twilight, dusk, and night.
+
+Chapter - Underground
+
+underground is a kind of dark room.
+underground has a light level called visibility. [By default, visibility set to "dawn". Want to set to dark.]
 
 Chapter - Level 1
-
 
 Section - Bottom Well
 
 The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
 The description of Bottom Well is "In the small amount of light that filters down from above you can see tunnels going in every direction."
+
+The visibility of Bottom Well is day.
 
 The printed name of Bottom Well is "Bottom of the Well"
 

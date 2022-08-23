@@ -360,6 +360,12 @@ Every turn:
 	if the player is in the Workshop and travel-to-802701 is true: 
 		now humboldt-should-return is true.
 
+Chapter - Underground Rooms
+
+Every turn:
+	if the player is in the Year-802701-Underground:
+		say "BE CAREFUL. YOU MIGHT GET ATTACKED BY MORLOCKS!"
+
 Part - Conversation
 
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
@@ -2603,11 +2609,11 @@ Part - Underground Rooms
 Chapter - Light Level
 
 Light level is a kind of value.
-The light levels are night, dusk, twilight, shadow, day, and dawn. 
+The light levels are night, dusk, twilight, shadow, day, and dawn. [If you reverse the order, how do you set default to 'night'?]
 
 Chapter - Underground
 
-underground is a kind of dark room.
+underground is a kind of lighted room.
 underground has a light level called visibility. [By default, visibility set to "night"]
 
 Chapter - Level 1
@@ -2628,14 +2634,14 @@ The description of the tunnels are "All of the tunnels slope downward slightly a
 encounter-morlocks is a truth state that varies.
 encounter-morlocks is false.
 
-Going north in the Bottom Well is wandering.
+[Going north in the Bottom Well is wandering.
 Going northeast in the Bottom Well is wandering.
 Going east in the Bottom Well is wandering.
 Going southeast in the Bottom Well is wandering.
 Going south in the Bottom Well is wandering.
 Going southwest in the Bottom Well is wandering.
 Going west in the Bottom Well is wandering.
-Going northwest in the Bottom Well is wandering.
+Going northwest in the Bottom Well is wandering.]
 
 Section - Shaft 1
 

@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 37643 ]
+[ WORDS - 37682 ]
 
 Table of Releases
 release	notes
@@ -364,7 +364,8 @@ Chapter - Underground Rooms
 
 Every turn:
 	if the player is in the Year-802701-Underground:
-		say "BE CAREFUL. YOU MIGHT GET ATTACKED BY MORLOCKS!"
+		say "BE CAREFUL. YOU MIGHT GET ATTACKED BY MORLOCKS!";
+		say "Room Visibility: [visibility of location of player]".
 
 Part - Conversation
 
@@ -2609,12 +2610,13 @@ Part - Underground Rooms
 Chapter - Light Level
 
 Light level is a kind of value.
-The light levels are night, dusk, twilight, shadow, day, and dawn. [If you reverse the order, how do you set default to 'night'?]
+The light levels are dawn, day, shadow, twilight, dusk, night.
 
 Chapter - Underground
 
 underground is a kind of lighted room.
-underground has a light level called visibility. [By default, visibility set to "night"]
+underground has a light level called visibility.
+The visibility of underground is usually day.
 
 Chapter - Level 1
 
@@ -2650,6 +2652,8 @@ Shaft 1 is north of Bottom Well.
 Shaft 1 is up from Shaft 2.
 
 The description of Shaft 1 is "SHAFT 1 DESCRIPTION."
+
+The visibility of Shaft 1 is shadow.
 
 [Ladder down to lower levels]
 

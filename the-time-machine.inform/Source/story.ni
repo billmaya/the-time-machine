@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 37682 ]
+[ WORDS - 37885 ]
 
 Table of Releases
 release	notes
@@ -2616,7 +2616,7 @@ Chapter - Underground
 
 underground is a kind of lighted room.
 underground has a light level called visibility.
-The visibility of underground is usually day.
+The visibility of underground is usually night.
 
 Chapter - Level 1
 
@@ -2677,35 +2677,35 @@ The Agora is north of the Museum.
 The Agora is east of the Temple.
 The Agora is southwest of the Storerooms.
 	
-The description of Agora is "AGORA DESCRIPTION."
+The description of Agora is "AN UNDERGROUND COMMON AREA LARGE ENOUGH TO ACCOMMODATE HUNDREDS. LIGHT FILTERS DOWN FORM THE WELL GRATING FAR ABOVE YOUR HEAD.[paragraph break]There are exits to the east, south, west, northwest, and north."
 
 Section - Curia
 
 The Curia is underground.
 The Curia is east of the Agora.
 
-The description of Curia is "CURIA DESCRIPTION."
+The description of Curia is "A RAISED AREA WITH SEVERAL LEVELS OF SEMI-CIRCULAR BENCHES  CARVED INTO THE EAST WALL. A RAISED PLATFORM BETWEEN THE BENCHES AND THE LARGER OPEN AREA IS OBVIOUSLY WHERE SOMEONE CAN STAND TO ADDRESS THE AUDIENCE IN EITHER CHAMBER.[paragraph break]You can exit to the west."
 
 Section - Museum
 
 The Museum is underground.
 The Museum is south of the Agora.
 
-The description of Museum is "MUSEUM DESCRIPTION."
+The description of Museum is "A WIDE CIRCULAR RAMP WINDS ITS WAY UP ALONG THE CIRCUMFERENCE OF THIS ROOM PAST WHAT APPEARS TO BE SMASHED DIAORAMAS AND LOOTED EXHIBITS OF YOUR FUTURE, THEIR PAST.[paragraph break]You can exit to the north."
 
 Section - Temple
 
 The Temple is underground.
 The Temple is west of the Agora.
 
-The description of Temple is "TEMPLE DESCRIPTION."
+The description of Temple is "ROWS OF DUST-COVERED PEWS FACE A RAISED ALTER. BEHIND THE ALTER, A GROTESQUE VTRUVIAN MAN IS CRUCIFIED ON AN INTRICATE MESHING OF STYLIZED, INTERLOCKING GEARS OF VARIOUS SIZES.[paragraph break]You can exit to the east."
 
 Section - Storerooms
 
 The Storerooms are underground.
 The Storerooms are northwest of the Agora.
 
-The description of Storerooms is "STOREROOMS DESCRIPTION."
+The description of Storerooms is "EMPTY SHELVES AND BINS FILL ALL OF THE AVAILABLE SPACE AS FAR AS YOUR EYE CAN SEE.[paragraph break]You can exit to the southeast."
 
 Chapter - Level 3
 
@@ -2724,7 +2724,7 @@ The Living Quarters are underground.
 The Living Quarters are south of Shaft 3.
 The Living Quarters are up from the Catacombs.
 
-The description of Living Quarters is "LIVING QUARTERS DESCRIPTION."
+The description of Living Quarters is "FLOOR UPON FLOOR OF INDIVIDUAL CUBBYHOLES CARVED INTO THE WALLS RISE UP TOWARDS THE CEILING HUNDREDS OF FEE ABOVE, CONNECTED BY AN INTRICATE LATICEWORK OF STAIRS AND PLATFORMS.[paragraph break]There are exits to the north and southwest."
 
 Section - Catacombs
 

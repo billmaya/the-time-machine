@@ -361,11 +361,12 @@ Every turn:
 		now humboldt-should-return is true.
 
 Chapter - Underground Rooms
-
+[ Temporarily commented out while working on room descriptions
 Every turn:
 	if the player is in the Year-802701-Underground:
 		say "BE CAREFUL. YOU MIGHT GET ATTACKED BY MORLOCKS!";
 		say "Room Visibility: [visibility of location of player]".
+]
 
 Part - Conversation
 
@@ -2631,22 +2632,56 @@ To say shaft-directions:
 		otherwise:
 			say "up and down".
 
-Chapter - Shaft Glyph
+Chapter - Ladder Glyph
 
 [DEL The shaft-description is a thing.
 shaft-description is scenery.
 The description of shaft-description is "SHAFT DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GLYPH [shaft-glyph]."
 [DEL Want to provide general description of shaft no matter what level you are on plus braille glyph carved into the metal to one side of the tunnel leading into the shaft.]]
 
-To say shaft-glyph:
+To say ladder-glyphs:
 	if the location of the player is:
-		-- Shaft 0: say "000";
-		-- Shaft 1: say "001";
-		-- Shaft 2: say "002";
-		-- Shaft 3: say "003";
-		-- Shaft 4: say "004";
-		-- Shaft 5: say "005";
+		-- Shaft 0: say "000 [unicode 9661][unicode 9665][unicode 9651][unicode 9655]";
+		-- Shaft 1: say "001 [unicode 9681][unicode 9682][unicode 9680][unicode 9683]";
+		-- Shaft 2: say "002 [unicode 11026] [unicode 11027] [unicode 11028] [unicode 11029]";
+		-- Shaft 3: say "003 [unicode 11030] [unicode 11031] [unicode 11032] [unicode 11033]";
+		-- Shaft 4: say "004 [unicode 12400][unicode 12401][unicode 12402][unicode 12404]";
+		-- Shaft 5: say "005 [unicode 10000][unicode 10001][unicode 10002][unicode 10003]";
 		-- otherwise: say "NULL";
+
+Chapter - Shaft Ladder
+
+The shaft-ladder is a backdrop.
+The shaft-ladder is in Shaft 0.
+The shaft-ladder is in Shaft 1.
+The shaft-ladder is in Shaft 2.
+The shaft-ladder is in Shaft 3.
+The shaft-ladder is in Shaft 4.
+The shaft-ladder is in Shaft 5.
+
+The description of the shaft-ladder is "A series of metal rungs set into the metal wall of the shaft. Carved into the metal next to the ladder are a series of glyphs [ladder-glyphs]."
+
+Understand "ladder" as shaft-ladder.
+
+[DEL
+CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph].
+CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph]
+ CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph]
+ CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph]
+CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph] 
+CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph]
+]
+
+[DEL Chapter - Shaft Description
+
+The shaft-description is a thing.
+The shaft-description is scenery.
+
+The description of shaft-description is "GENERAL SHAFT DESCRIPTION."
+
+Understand "shaft" as shaft-description.
+
+Instead of examining shaft-description]
 
 Chapter - Level 0
 
@@ -2655,9 +2690,9 @@ Section - Shaft 0
 Shaft 0 is underground.
 Shaft 0 is up from Shaft 1.
 
-The description of Shaft 0 is "SHAFT 0 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph].[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 0 is "SHAFT 0 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 0 is "Shaft - Level [shaft-glyph]".
+The printed name of Shaft 0 is "Shaft - Level [ladder-glyphs]".
 
 The visibility of Shaft 0 is day.
 
@@ -2700,9 +2735,9 @@ Shaft 1 is north of Bottom Well.
 Shaft 1 is up from Shaft 2.
 Shaft 1 is down from Shaft 0.
 
-The description of Shaft 1 is "You're standing on a small platform anchored to the side of a large cylindrical shaft. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph].[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 1 is "You're standing on a small platform anchored to the side of a large cylindrical shaft.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 1 is "Shaft - Level [shaft-glyph]".
+The printed name of Shaft 1 is "Shaft - Level [ladder-glyphs]".
 
 The visibility of Shaft 1 is shadow.
 
@@ -2719,9 +2754,9 @@ Shaft 2 is down from Shaft 1.
 Shaft 2 is up from Shaft 3.
 Shaft 2 is north of the Agora.
 
-The description of Shaft 2 is "SHAFT 2 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 2 is "SHAFT 2 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 	
-The printed name of Shaft 2 is "Shaft - Level [shaft-glyph]".
+The printed name of Shaft 2 is "Shaft - Level [ladder-glyphs]".
 
 Section - Agora
 
@@ -2771,9 +2806,9 @@ Shaft 3 is down from Shaft 2.
 Shaft 3 is up from Shaft 4.
 Shaft 3 is north of the Living Quarters.
 
-The description of Shaft 3 is "SHAFT 3 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 3 is "SHAFT 3 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 3 is "Shaft - Level [shaft-glyph]".
+The printed name of Shaft 3 is "Shaft - Level [ladder-glyphs]".
 
 Section - Living Quarters
 
@@ -2799,9 +2834,9 @@ Shaft 4 is down from Shaft 3.
 Shaft 4 is up from Shaft 5.
 Shaft 4 is north of the Eating Area.
 
-The description of Shaft 4 is "SHAFT 4 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 4 is "SHAFT 4 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 4 is "Shaft - Level [shaft-glyph]".
+The printed name of Shaft 4 is "Shaft - Level [ladder-glyphs]".
 
 Section - Eating Area
 
@@ -2834,9 +2869,9 @@ Shaft 5 is underground.
 Shaft 5 is down from Shaft 4.
 Shaft 5 is north of the Goggle Room.
 
-The description of Shaft 5 is "SHAFT 5 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 5 is "SHAFT 5 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 	
-The printed name of Shaft 5 is "Shaft - Level [shaft-glyph]".
+The printed name of Shaft 5 is "Shaft - Level [ladder-glyphs]".
 
 Section - Goggle Room
 

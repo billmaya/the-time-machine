@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 38273 ]
+[ WORDS - 38352 ]
 
 Table of Releases
 release	notes
@@ -2634,14 +2634,28 @@ To say shaft-directions:
 
 Chapter - Ladder Glyph
 
+To say level-0-light: say "[unicode 9672][unicode 9677]".
+To say level-1-light: say "[unicode 9675][unicode 9672][unicode 9677]".
+To say level-2-light: say "[unicode 9675][unicode 9672][unicode 9677]".
+To say level-3-light: say "[unicode 9675][unicode 9672][unicode 9677]".
+To say level-4-light: say "[unicode 9677][unicode 9672][unicode 9679]".
+To say level-5-light: say "[unicode 9673][unicode 9672]".
+
+To say tamil-look: say "பார்".
+To say tamil-surface: say "மேற்பரப்பு".
+To say tamil-social: say "சமூக".
+To say tamil-sleep: say "தூங்கு".
+To say tamil-eat: say "சாப்பிடு".
+to say tamil-work: say "வேலை".
+
 To say ladder-glyphs:
 	if the location of the player is:
-		-- Shaft 0: say "000 [unicode 9661][unicode 9665][unicode 9651][unicode 9655]";
-		-- Shaft 1: say "001 [unicode 9681][unicode 9682][unicode 9680][unicode 9683]";
-		-- Shaft 2: say "002 [unicode 11026] [unicode 11027] [unicode 11028] [unicode 11029]";
-		-- Shaft 3: say "003 [unicode 11030] [unicode 11031] [unicode 11032] [unicode 11033]";
-		-- Shaft 4: say "004 [unicode 12400][unicode 12401][unicode 12402][unicode 12404]";
-		-- Shaft 5: say "005 [unicode 10000][unicode 10001][unicode 10002][unicode 10003]";
+		-- Shaft 0: say "[level-0-light] [tamil-look]";
+		-- Shaft 1: say "[level-1-light] [tamil-surface]";
+		-- Shaft 2: say "[level-2-light] [tamil-social]";
+		-- Shaft 3: say "[level-3-light] [tamil-sleep]";
+		-- Shaft 4: say "[level-4-light] [tamil-eat]";
+		-- Shaft 5: say "[level-5-light] [tamil-work]";
 		-- otherwise: say "NULL";
 
 Chapter - Shaft Ladder
@@ -2667,7 +2681,7 @@ Shaft 0 is up from Shaft 1.
 
 The description of Shaft 0 is "SHAFT 0 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 0 is "Shaft - Level [ladder-glyphs]".
+The printed name of Shaft 0 is "Shaft [ladder-glyphs]".
 
 The visibility of Shaft 0 is day.
 
@@ -2699,7 +2713,7 @@ Shaft 1 is down from Shaft 0.
 
 The description of Shaft 1 is "You're standing on a small platform anchored to the side of a large cylindrical shaft.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 1 is "Shaft - Level [ladder-glyphs]".
+The printed name of Shaft 1 is "Shaft | [ladder-glyphs]".
 
 The visibility of Shaft 1 is shadow.
 
@@ -2714,7 +2728,7 @@ Shaft 2 is north of the Agora.
 
 The description of Shaft 2 is "SHAFT 2 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 	
-The printed name of Shaft 2 is "Shaft - Level [ladder-glyphs]".
+The printed name of Shaft 2 is "Shaft | [ladder-glyphs]".
 
 Section - Agora
 
@@ -2766,7 +2780,7 @@ Shaft 3 is north of the Living Quarters.
 
 The description of Shaft 3 is "SHAFT 3 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 3 is "Shaft - Level [ladder-glyphs]".
+The printed name of Shaft 3 is "Shaft | [ladder-glyphs]".
 
 Section - Living Quarters
 
@@ -2794,7 +2808,7 @@ Shaft 4 is north of the Eating Area.
 
 The description of Shaft 4 is "SHAFT 4 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 4 is "Shaft - Level [ladder-glyphs]".
+The printed name of Shaft 4 is "Shaft | [ladder-glyphs]".
 
 Section - Eating Area
 
@@ -2829,7 +2843,7 @@ Shaft 5 is north of the Goggle Room.
 
 The description of Shaft 5 is "SHAFT 5 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 	
-The printed name of Shaft 5 is "Shaft - Level [ladder-glyphs]".
+The printed name of Shaft 5 is "Shaft | [ladder-glyphs]".
 
 Section - Goggle Room
 

@@ -2631,10 +2631,22 @@ To say shaft-directions:
 		otherwise:
 			say "up and down".
 
-Chapter - Shaft Description
+Chapter - Shaft Glyph
 
+[DEL The shaft-description is a thing.
 shaft-description is scenery.
-[Want to provide general description of shaft no matter what level you are on plus braille glyph carved into the metal to one side of the tunnel leading into the shaft.]
+The description of shaft-description is "SHAFT DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GLYPH [shaft-glyph]."
+[DEL Want to provide general description of shaft no matter what level you are on plus braille glyph carved into the metal to one side of the tunnel leading into the shaft.]]
+
+To say shaft-glyph:
+	if the location of the player is:
+		-- Shaft 0: say "000";
+		-- Shaft 1: say "001";
+		-- Shaft 2: say "002";
+		-- Shaft 3: say "003";
+		-- Shaft 4: say "004";
+		-- Shaft 5: say "005";
+		-- otherwise: say "NULL";
 
 Chapter - Level 0
 
@@ -2643,7 +2655,7 @@ Section - Shaft 0
 Shaft 0 is underground.
 Shaft 0 is up from Shaft 1.
 
-The description of Shaft 0 is "SHAFT 0 DESCRIPTION. You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 0 is "SHAFT 0 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph].[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
 The visibility of Shaft 0 is day.
 
@@ -2653,6 +2665,7 @@ Section - Bottom Well
 
 The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
+North from the Bottom Well is Shaft 1.
 [DEL The description of Bottom Well is "In the small amount of light that filters down from above you can see tunnels going in every direction."]
 The description of Bottom Well is "The light from above illuminates the bottom of a what appears to be merely a dry well.[paragraph break]The ladder leads up and there is a opening to the north."
 
@@ -2685,9 +2698,11 @@ Shaft 1 is north of Bottom Well.
 Shaft 1 is up from Shaft 2.
 Shaft 1 is down from Shaft 0.
 
-The description of Shaft 1 is "You're standing on a small platform anchored to the side of a large cylindrical shaft.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 1 is "You're standing on a small platform anchored to the side of a large cylindrical shaft. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph].[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
 The visibility of Shaft 1 is shadow.
+
+[DEL Instead of examining Shaft 1: try examining shaft-description.]
 
 [Ladder down to lower levels]
 
@@ -2700,7 +2715,7 @@ Shaft 2 is down from Shaft 1.
 Shaft 2 is up from Shaft 3.
 Shaft 2 is north of the Agora.
 
-The description of Shaft 2 is "SHAFT 2 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 2 is "SHAFT 2 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
 Section - Agora
 
@@ -2750,7 +2765,7 @@ Shaft 3 is down from Shaft 2.
 Shaft 3 is up from Shaft 4.
 Shaft 3 is north of the Living Quarters.
 
-The description of Shaft 3 is "SHAFT 3 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 3 is "SHAFT 3 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
 Section - Living Quarters
 
@@ -2776,7 +2791,7 @@ Shaft 4 is down from Shaft 3.
 Shaft 4 is up from Shaft 5.
 Shaft 4 is north of the Eating Area.
 
-The description of Shaft 4 is "SHAFT 4 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 4 is "SHAFT 4 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
 Section - Eating Area
 
@@ -2809,7 +2824,7 @@ Shaft 5 is underground.
 Shaft 5 is down from Shaft 4.
 Shaft 5 is north of the Goggle Room.
 
-The description of Shaft 5 is "SHAFT 5 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 5 is "SHAFT 5 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
 Section - Goggle Room
 

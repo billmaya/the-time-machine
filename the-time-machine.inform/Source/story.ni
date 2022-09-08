@@ -2657,6 +2657,8 @@ Shaft 0 is up from Shaft 1.
 
 The description of Shaft 0 is "SHAFT 0 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph].[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
+The printed name of Shaft 0 is "Shaft - Level [shaft-glyph]".
+
 The visibility of Shaft 0 is day.
 
 Chapter - Level 1
@@ -2700,6 +2702,8 @@ Shaft 1 is down from Shaft 0.
 
 The description of Shaft 1 is "You're standing on a small platform anchored to the side of a large cylindrical shaft. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph].[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
+The printed name of Shaft 1 is "Shaft - Level [shaft-glyph]".
+
 The visibility of Shaft 1 is shadow.
 
 [DEL Instead of examining Shaft 1: try examining shaft-description.]
@@ -2716,6 +2720,8 @@ Shaft 2 is up from Shaft 3.
 Shaft 2 is north of the Agora.
 
 The description of Shaft 2 is "SHAFT 2 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+	
+The printed name of Shaft 2 is "Shaft - Level [shaft-glyph]".
 
 Section - Agora
 
@@ -2767,6 +2773,8 @@ Shaft 3 is north of the Living Quarters.
 
 The description of Shaft 3 is "SHAFT 3 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
+The printed name of Shaft 3 is "Shaft - Level [shaft-glyph]".
+
 Section - Living Quarters
 
 The Living Quarters are underground.
@@ -2792,6 +2800,8 @@ Shaft 4 is up from Shaft 5.
 Shaft 4 is north of the Eating Area.
 
 The description of Shaft 4 is "SHAFT 4 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+
+The printed name of Shaft 4 is "Shaft - Level [shaft-glyph]".
 
 Section - Eating Area
 
@@ -2825,6 +2835,8 @@ Shaft 5 is down from Shaft 4.
 Shaft 5 is north of the Goggle Room.
 
 The description of Shaft 5 is "SHAFT 5 DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GYLPH [shaft-glyph][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+	
+The printed name of Shaft 5 is "Shaft - Level [shaft-glyph]".
 
 Section - Goggle Room
 

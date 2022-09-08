@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 38172 ]
+[ WORDS - 38273 ]
 
 Table of Releases
 release	notes
@@ -2634,11 +2634,6 @@ To say shaft-directions:
 
 Chapter - Ladder Glyph
 
-[DEL The shaft-description is a thing.
-shaft-description is scenery.
-The description of shaft-description is "SHAFT DESCRIPTION. CARVED ABOVE THE TUNNEL TO THE SOUTH IS THE GLYPH [shaft-glyph]."
-[DEL Want to provide general description of shaft no matter what level you are on plus braille glyph carved into the metal to one side of the tunnel leading into the shaft.]]
-
 To say ladder-glyphs:
 	if the location of the player is:
 		-- Shaft 0: say "000 [unicode 9661][unicode 9665][unicode 9651][unicode 9655]";
@@ -2663,26 +2658,6 @@ The description of the shaft-ladder is "A series of metal rungs set into the met
 
 Understand "ladder" as shaft-ladder.
 
-[DEL
-CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph].
-CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph]
- CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph]
- CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph]
-CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph] 
-CARVED NEXT TO THE LADDER ARE THE GYLPHS [shaft-glyph]
-]
-
-[DEL Chapter - Shaft Description
-
-The shaft-description is a thing.
-The shaft-description is scenery.
-
-The description of shaft-description is "GENERAL SHAFT DESCRIPTION."
-
-Understand "shaft" as shaft-description.
-
-Instead of examining shaft-description]
-
 Chapter - Level 0
 
 Section - Shaft 0
@@ -2703,27 +2678,14 @@ Section - Bottom Well
 The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
 North from the Bottom Well is Shaft 1.
-[DEL The description of Bottom Well is "In the small amount of light that filters down from above you can see tunnels going in every direction."]
 The description of Bottom Well is "The light from above illuminates the bottom of a what appears to be merely a dry well.[paragraph break]The ladder leads up and there is a opening to the north."
 
 The visibility of Bottom Well is day.
 
 The printed name of Bottom Well is "Bottom of the Well"
 
-[DEL The tunnels are scenery in the Bottom Well.
-The description of the tunnels are "All of the tunnels slope downward slightly and each one is indistinguishable from another."]
-
 encounter-morlocks is a truth state that varies.
 encounter-morlocks is false.
-
-[DEL Going north in the Bottom Well is wandering.
-Going northeast in the Bottom Well is wandering.
-Going east in the Bottom Well is wandering.
-Going southeast in the Bottom Well is wandering.
-Going south in the Bottom Well is wandering.
-Going southwest in the Bottom Well is wandering.
-Going west in the Bottom Well is wandering.
-Going northwest in the Bottom Well is wandering.]
 
 Before going north in the Bottom Well:
 	say "GOING NORTH FROM THE BOTTOM WELL."
@@ -2740,10 +2702,6 @@ The description of Shaft 1 is "You're standing on a small platform anchored to t
 The printed name of Shaft 1 is "Shaft - Level [ladder-glyphs]".
 
 The visibility of Shaft 1 is shadow.
-
-[DEL Instead of examining Shaft 1: try examining shaft-description.]
-
-[Ladder down to lower levels]
 
 Chapter - Level 2
 

@@ -2668,7 +2668,7 @@ The shaft-ladder is in Shaft 3.
 The shaft-ladder is in Shaft 4.
 The shaft-ladder is in Shaft 5.
 
-The description of the shaft-ladder is "A series of metal rungs set into the metal wall of the shaft. Carved into the metal next to the ladder are a series of glyphs [ladder-glyphs]."
+The description of the shaft-ladder is "A series of metal rungs set into the metal wall of the shaft." [Carved into the metal next to the ladder are a series of glyphs [ladder-glyphs]."]
 
 Understand "ladder" as shaft-ladder.
 
@@ -2681,7 +2681,7 @@ Shaft 0 is up from Shaft 1.
 
 The description of Shaft 0 is "SHAFT 0 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 0 is "Shaft [ladder-glyphs]".
+The printed name of Shaft 0 is "Shaft - Level 0". [[ladder-glyphs]".]
 
 The visibility of Shaft 0 is day.
 
@@ -2713,7 +2713,7 @@ Shaft 1 is down from Shaft 0.
 
 The description of Shaft 1 is "You're standing on a small platform anchored to the side of a large cylindrical shaft.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 1 is "Shaft | [ladder-glyphs]".
+The printed name of Shaft 1 is "Shaft - Level 1". [[ladder-glyphs]".]
 
 The visibility of Shaft 1 is shadow.
 
@@ -2728,7 +2728,7 @@ Shaft 2 is north of the Agora.
 
 The description of Shaft 2 is "SHAFT 2 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 	
-The printed name of Shaft 2 is "Shaft | [ladder-glyphs]".
+The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
 Section - Agora
 
@@ -2780,7 +2780,7 @@ Shaft 3 is north of the Living Quarters.
 
 The description of Shaft 3 is "SHAFT 3 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 3 is "Shaft | [ladder-glyphs]".
+The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 
 Section - Living Quarters
 
@@ -2808,7 +2808,7 @@ Shaft 4 is north of the Eating Area.
 
 The description of Shaft 4 is "SHAFT 4 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
-The printed name of Shaft 4 is "Shaft | [ladder-glyphs]".
+The printed name of Shaft 4 is "Shaft - Level 4". [[ladder-glyphs]".]
 
 Section - Eating Area
 
@@ -2843,7 +2843,7 @@ Shaft 5 is north of the Goggle Room.
 
 The description of Shaft 5 is "SHAFT 5 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 	
-The printed name of Shaft 5 is "Shaft | [ladder-glyphs]".
+The printed name of Shaft 5 is "Shaft - Level 5". [[ladder-glyphs]".]
 
 Section - Goggle Room
 

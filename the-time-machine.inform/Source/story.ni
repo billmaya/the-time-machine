@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 38352 ]
+[ WORDS - 38864 ]
 
 Table of Releases
 release	notes
@@ -2621,6 +2621,18 @@ underground is a kind of lighted room.
 underground has a light level called visibility.
 The visibility of underground is usually night.
 
+Chapter - Shaft Description
+
+To say shaft-description:
+	if the location of the player is:
+		-- Shaft 0: say "SHAFT 0 DESCRIPTION. A few of the pipes, obviously for ventilation, extend above your head through the shaft roof. In front of you are two oval openings through which light comes, filling the shaft.[no line break]";
+		-- Shaft 1: say "SHAFT 1 DESCRIPTION. The small tunnel opens up into a larger cylindrical shaft extending above your head and deep into darkness below. Every surface of the shaft walls are lined with pipes and conduits of all sizes. The faint sounds of machinery and rustlings can be heard below.[no line break]";
+		-- Shaft 2: say "SHAFT 2 DESCRIPTION. You're standing on a small platform anchored to the side of the shaft. Some of the pipes and conduits right angle and disappear into the walls but most of them continue downward.[no line break]";
+		-- Shaft 3: say "SHAFT 3 DESCRIPTION. You're standing on a small platform anchored to the side of the shaft. Some of the pipes and conduits right angle into the walls but a majority of them continue down.[no line break]";
+		-- Shaft 4: say "SHAFT 4 DESCRIPTION. You're standing on a small platform anchored to the side of the shaft. A few of the pipes and conduits disappear into the walls while a few continue their journey downward.[no line break]";
+		-- Shaft 5: say "SHAFT 5 DESCRIPTION. You're at the bottom of the shaft. The remaining pipes disappear into the walls. Far above your head a small dot of light shows daylight outside but none of that light penetrates to this depth.[no line break]";
+		-- otherwise: say "NULL";
+
 Chapter - Shaft Directions
 
 To say shaft-directions:
@@ -2632,7 +2644,21 @@ To say shaft-directions:
 		otherwise:
 			say "up and down".
 
-Chapter - Ladder Glyph
+Chapter - Shaft Ladder
+
+The shaft-ladder is a backdrop.
+The shaft-ladder is in Shaft 0.
+The shaft-ladder is in Shaft 1.
+The shaft-ladder is in Shaft 2.
+The shaft-ladder is in Shaft 3.
+The shaft-ladder is in Shaft 4.
+The shaft-ladder is in Shaft 5.
+
+The description of the shaft-ladder is "A series of metal rungs set into the metal wall of the shaft." [Carved into the metal next to the ladder are a series of glyphs [ladder-glyphs]."]
+
+Understand "ladder" as shaft-ladder.
+
+Chapter - Ladder Glyphs
 
 To say level-0-light: say "[unicode 9672][unicode 9677]".
 To say level-1-light: say "[unicode 9675][unicode 9672][unicode 9677]".
@@ -2658,20 +2684,6 @@ To say ladder-glyphs:
 		-- Shaft 5: say "[level-5-light] [tamil-work]";
 		-- otherwise: say "NULL";
 
-Chapter - Shaft Ladder
-
-The shaft-ladder is a backdrop.
-The shaft-ladder is in Shaft 0.
-The shaft-ladder is in Shaft 1.
-The shaft-ladder is in Shaft 2.
-The shaft-ladder is in Shaft 3.
-The shaft-ladder is in Shaft 4.
-The shaft-ladder is in Shaft 5.
-
-The description of the shaft-ladder is "A series of metal rungs set into the metal wall of the shaft." [Carved into the metal next to the ladder are a series of glyphs [ladder-glyphs]."]
-
-Understand "ladder" as shaft-ladder.
-
 Chapter - Level 0
 
 Section - Shaft 0
@@ -2679,7 +2691,7 @@ Section - Shaft 0
 Shaft 0 is underground.
 Shaft 0 is up from Shaft 1.
 
-The description of Shaft 0 is "SHAFT 0 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 0 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
 The printed name of Shaft 0 is "Shaft - Level 0". [[ladder-glyphs]".]
 
@@ -2692,7 +2704,7 @@ Section - Bottom Well
 The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
 North from the Bottom Well is Shaft 1.
-The description of Bottom Well is "The light from above illuminates the bottom of a what appears to be merely a dry well.[paragraph break]The ladder leads up and there is a opening to the north."
+The description of Bottom Well is "The light from above illuminates the bottom of a what appears to be merely a dry well.[paragraph break]The ladder leads up and there is an opening to the north."
 
 The visibility of Bottom Well is day.
 
@@ -2711,11 +2723,11 @@ Shaft 1 is north of Bottom Well.
 Shaft 1 is up from Shaft 2.
 Shaft 1 is down from Shaft 0.
 
-The description of Shaft 1 is "You're standing on a small platform anchored to the side of a large cylindrical shaft.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 1 is "[shaft-description][paragraph break]You're standing on a small platform anchored to the side of a large cylindrical shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 1 is "Shaft - Level 1". [[ladder-glyphs]".]
 
-The visibility of Shaft 1 is shadow.
+The visibility of Shaft 1 is day.
 
 Chapter - Level 2
 
@@ -2726,7 +2738,7 @@ Shaft 2 is down from Shaft 1.
 Shaft 2 is up from Shaft 3.
 Shaft 2 is north of the Agora.
 
-The description of Shaft 2 is "SHAFT 2 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 2 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 	
 The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
@@ -2737,37 +2749,37 @@ The Agora is south of Shaft 2.
 The Agora is west of the Curia.
 The Agora is north of the Museum.
 The Agora is east of the Temple.
-The Agora is southwest of the Storerooms.
+The Agora is southeast of the Storerooms.
 	
-The description of Agora is "AN UNDERGROUND COMMON AREA LARGE ENOUGH TO ACCOMMODATE HUNDREDS. LIGHT FILTERS DOWN FORM THE WELL GRATING FAR ABOVE YOUR HEAD.[paragraph break]There are exits to the east, south, west, northwest, and north."
+The description of Agora is "AGORA DESCRIPTION. What appears to be an underground common area large enough to accommodate hundreds at once. A weak light filters down from the well grating far above your head, illuminating the room.[paragraph break]There are exits to the east, south, west, northwest, and north."
 
 Section - Curia
 
 The Curia is underground.
 The Curia is east of the Agora.
 
-The description of Curia is "A RAISED AREA WITH SEVERAL LEVELS OF SEMI-CIRCULAR BENCHES  CARVED INTO THE EAST WALL. A RAISED PLATFORM BETWEEN THE BENCHES AND THE LARGER OPEN AREA IS OBVIOUSLY WHERE SOMEONE CAN STAND TO ADDRESS THE AUDIENCE IN EITHER CHAMBER.[paragraph break]You can exit to the west."
+The description of Curia is "CURIA DESCRIPTION.  A raised area with several levels of semi-circular benches carved into the east wall, separted from the much larger area to the west by a raised platform where, should the mood strike you, you could stand and address the ghosts of senators past.[paragraph break]You can exit to the west."
 
 Section - Museum
 
 The Museum is underground.
 The Museum is south of the Agora.
 
-The description of Museum is "A WIDE CIRCULAR RAMP WINDS ITS WAY UP ALONG THE CIRCUMFERENCE OF THIS ROOM PAST WHAT APPEARS TO BE SMASHED DIAORAMAS AND LOOTED EXHIBITS OF YOUR FUTURE, THEIR PAST.[paragraph break]You can exit to the north."
+The description of Museum is "MUSEUM DESCRIPTION.  A wide circular ramp winds its way up along the circumference of the circular room past smashed dioramas and looted exhibits of your future, someone's past.[paragraph break]You can exit to the north."
 
 Section - Temple
 
 The Temple is underground.
 The Temple is west of the Agora.
 
-The description of Temple is "ROWS OF DUST-COVERED PEWS FACE A RAISED ALTER. BEHIND THE ALTER, A GROTESQUE VTRUVIAN MAN IS CRUCIFIED ON AN INTRICATE MESHING OF STYLIZED, INTERLOCKING GEARS OF VARIOUS SIZES.[paragraph break]You can exit to the east."
+The description of Temple is "TEMPLE DESCRIPTION. Rows of dust-covered pews face an apse containing a raised alter. Behind the alter, a grotesque charicature of the what appears to be DaVinci's Vitruvian Man is crucified on an intricate mesh of stylized and interlocking gears of various sizes filling the wall behind him.[paragraph break]You can exit to the east."
 
 Section - Storerooms
 
 The Storerooms are underground.
 The Storerooms are northwest of the Agora.
 
-The description of Storerooms is "EMPTY SHELVES AND BINS FILL ALL OF THE AVAILABLE SPACE AS FAR AS YOUR EYE CAN SEE.[paragraph break]You can exit to the southeast."
+The description of Storerooms is "STOREROOM DESCRIPTION. Whatever was contained on and in these empty shelves and bins as far as the eye can see is gone. [paragraph break]You can exit to the southeast."
 
 Chapter - Level 3
 
@@ -2778,7 +2790,7 @@ Shaft 3 is down from Shaft 2.
 Shaft 3 is up from Shaft 4.
 Shaft 3 is north of the Living Quarters.
 
-The description of Shaft 3 is "SHAFT 3 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 3 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 
@@ -2788,14 +2800,16 @@ The Living Quarters are underground.
 The Living Quarters are south of Shaft 3.
 The Living Quarters are up from the Catacombs.
 
-The description of Living Quarters is "FLOOR UPON FLOOR OF INDIVIDUAL CUBBYHOLES CARVED INTO THE WALLS RISE UP TOWARDS THE CEILING HUNDREDS OF FEE ABOVE, CONNECTED BY AN INTRICATE LATICEWORK OF STAIRS AND PLATFORMS.[paragraph break]There are exits to the north and southwest."
+The description of Living Quarters is "LIVING QUARTERS DESCRIPTION. Floor upon floor of individual cubbyholes carved into the walls rise up towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs and platforms.[paragraph break]There are exits to the north and southwest."
 
 Section - Catacombs
 
 The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
 
-The description of Catacombs is "CATACOMBS DESCRIPTION."
+The description of Catacombs is "CATACOMBS DESCRIPTION. You wander briefly through a maze of twisty passages, passing alcoves, sepulchers, and niches stuffed with the cataloged bones and mummified remains of the dead inhabitents of this underground arcology. Eventually, through luck or providence, to your relief, you find yourself back at the tunnel upward."
+		
+[TBD - > Examine bones > Examine mummified remains]
 
 Chapter - Level 4
 
@@ -2806,7 +2820,7 @@ Shaft 4 is down from Shaft 3.
 Shaft 4 is up from Shaft 5.
 Shaft 4 is north of the Eating Area.
 
-The description of Shaft 4 is "SHAFT 4 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 4 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 4 is "Shaft - Level 4". [[ladder-glyphs]".]
 
@@ -2816,7 +2830,9 @@ The Eating Area is underground.
 The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
-The description of Eating Area is "EATING AREA DESCRIPTION."
+The description of Eating Area is "EATING AREA DESCRIPTION. Rows of alternating benches and troughs parallel each other and fill the this room. Only a few of the troughs appear to have been recently used."
+
+[TBD > Examine benches > Examine troughs ]
 
 Section - Abattoir
 
@@ -2824,7 +2840,7 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Pen.
 
-The description of Abattoir is "ABATTOIR DESCRIPTION."
+The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting matter."
 
 Section - Holding Pen
 
@@ -2839,33 +2855,25 @@ Section - Shaft 5
 
 Shaft 5 is underground.
 Shaft 5 is down from Shaft 4.
-Shaft 5 is north of the Goggle Room.
+Shaft 5 is north of the Heavy Sliding Door
 
-The description of Shaft 5 is "SHAFT 5 DESCRIPTION.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 5 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 	
 The printed name of Shaft 5 is "Shaft - Level 5". [[ladder-glyphs]".]
-
-Section - Goggle Room
-
-The Goggle Room is underground. 
-The Goggle Room is south of Shaft 5.
-The Goggle Room is north of the Heavy Sliding Door.
-
-The description of Goggle Room is "GOGGLE ROOM DESCRIPTION."
 
 Section - Heavy Sliding Door
 
 The Heavy Sliding Door is a door.
-The Heavy Sliding Door is south of the Goggle Room and north of the Power Plant.
+The Heavy Sliding Door is south of Shaft 5 and north of the Power Plant.
 	
-The description of Heavy Sliding Door is "HEAVY SLIDING DOOR DESCRIPTION."
+The description of Heavy Sliding Door is "HEAVY SLIDING DOOR DESCRIPTION. A heavy metal door on a track that can slide open and shut."
 
 Section - Power Plant
 
 The Power Plant is underground.
 The Power Plant is south of the Heavy Sliding Door.
 	
-The description of Power Plant is "POWER PLANT DESCRIPTION."
+The description of Power Plant is "POWER PLANT DESCRIPTION. The deafening sound of titanic machinery fills this room. On all sides you can see the shadowy movement of levers, pistons, and gears juxtaposing their operations to sustain life in this underground city."
 
 Book - Regions
 

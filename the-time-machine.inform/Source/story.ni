@@ -2814,7 +2814,7 @@ The Living Quarters are underground.
 The Living Quarters are south of Shaft 3.
 The Living Quarters are up from the Catacombs.
 
-The description of Living Quarters is "LIVING QUARTERS DESCRIPTION. Floor upon floor of individual cubbyholes carved into the walls rise up towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs and platforms.[paragraph break]There are exits to the north and southwest."
+The description of Living Quarters is "LIVING QUARTERS DESCRIPTION. Floor upon floor of individual cubbyholes carved into the walls rise up towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs and platforms.[paragraph break]There are exits to the north and down."
 		
 The visibility of Living Quarters is night.
 
@@ -2850,7 +2850,7 @@ The Eating Area is underground.
 The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
-The description of Eating Area is "EATING AREA DESCRIPTION. Rows of alternating benches and troughs parallel each other and fill the this room. Only a few of the troughs appear to have been recently used."
+The description of Eating Area is "EATING AREA DESCRIPTION. Rows of alternating benches and troughs parallel each other and fill the this room. Only a few of the troughs appear to have been recently used.[paragraph break]There are exits to the north and south."
 
 The visibility of Eating Area is night.
 
@@ -2862,7 +2862,7 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Pen.
 
-The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting matter."
+The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting matter.[paragraph break]There are exits to the north and south."
 	
 The visibility of Abattoir is night.
 
@@ -2871,7 +2871,7 @@ Section - Holding Pen
 The Holding Pen is underground.
 The Holding Pen is south of the Abattoir.
 
-The description of Holding Pen is "HOLDING PEN DESCRIPTION."
+The description of Holding Pen is "HOLDING PEN DESCRIPTION.[paragraph break]There are exits to the north and south."
 	
 The visibility of Holding Pen is night.
 
@@ -2883,7 +2883,7 @@ Shaft 5 is underground.
 Shaft 5 is down from Shaft 4.
 Shaft 5 is north of the Heavy Sliding Door
 
-The description of Shaft 5 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+The description of Shaft 5 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is a heavy sliding door to the south."
 	
 The printed name of Shaft 5 is "Shaft - Level 5". [[ladder-glyphs]".]
 	
@@ -2901,7 +2901,7 @@ Section - Power Plant
 The Power Plant is underground.
 The Power Plant is south of the Heavy Sliding Door.
 	
-The description of Power Plant is "POWER PLANT DESCRIPTION. The deafening sound of titanic machinery fills this room. On all sides you can see the shadowy movement of levers, pistons, and gears juxtaposing their operations to sustain life in this underground city."
+The description of Power Plant is "POWER PLANT DESCRIPTION. The deafening sound of titanic machinery fills this room. On all sides you can see the shadowy movement of levers, pistons, and gears juxtaposing their operations to sustain life in this underground city.[paragraph break]There is a heavy sliding door to the north."
 	
 The visibility of Power Plant is night.
 

@@ -361,8 +361,9 @@ Every turn:
 		now humboldt-should-return is true.
 
 Chapter - Underground Rooms
-[ Temporarily commented out while working on room descriptions
-Every turn:
+
+[ Temporarily commented out while working on room descriptions]
+[Every turn:
 	if the player is in the Year-802701-Underground:
 		say "BE CAREFUL. YOU MIGHT GET ATTACKED BY MORLOCKS!";
 		say "Room Visibility: [visibility of location of player]".
@@ -2613,7 +2614,8 @@ Part - Underground Rooms
 Chapter - Light Level
 
 Light level is a kind of value.
-The light levels are dawn, day, shadow, twilight, dusk, night.
+The light levels are day, shadow, night.
+[The light levels are dawn, day, shadow, twilight, dusk, night.]
 
 Chapter - Underground
 
@@ -2742,6 +2744,8 @@ The description of Shaft 2 is "[shaft-description][paragraph break]You can climb
 	
 The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
+The visibility of Shaft 2 is shadow.
+
 Section - Agora
 
 The Agora is underground.
@@ -2753,12 +2757,16 @@ The Agora is southeast of the Storerooms.
 	
 The description of Agora is "AGORA DESCRIPTION. What appears to be an underground common area large enough to accommodate hundreds at once. A weak light filters down from the well grating far above your head, illuminating the room.[paragraph break]There are exits to the east, south, west, northwest, and north."
 
+The visibility of Agora is shadow.
+
 Section - Curia
 
 The Curia is underground.
 The Curia is east of the Agora.
 
 The description of Curia is "CURIA DESCRIPTION.  A raised area with several levels of semi-circular benches carved into the east wall, separted from the much larger area to the west by a raised platform where, should the mood strike you, you could stand and address the ghosts of senators past.[paragraph break]You can exit to the west."
+
+The visibility of Curia is shadow.
 
 Section - Museum
 
@@ -2767,6 +2775,8 @@ The Museum is south of the Agora.
 
 The description of Museum is "MUSEUM DESCRIPTION.  A wide circular ramp winds its way up along the circumference of the circular room past smashed dioramas and looted exhibits of your future, someone's past.[paragraph break]You can exit to the north."
 
+The visibility of Museum is shadow.
+
 Section - Temple
 
 The Temple is underground.
@@ -2774,12 +2784,16 @@ The Temple is west of the Agora.
 
 The description of Temple is "TEMPLE DESCRIPTION. Rows of dust-covered pews face an apse containing a raised alter. Behind the alter, a grotesque charicature of the what appears to be DaVinci's Vitruvian Man is crucified on an intricate mesh of stylized and interlocking gears of various sizes filling the wall behind him.[paragraph break]You can exit to the east."
 
+The visibility of Temple is shadow.
+
 Section - Storerooms
 
 The Storerooms are underground.
 The Storerooms are northwest of the Agora.
 
 The description of Storerooms is "STOREROOM DESCRIPTION. Whatever was contained on and in these empty shelves and bins as far as the eye can see is gone. [paragraph break]You can exit to the southeast."
+	
+The visibility of Storerooms is shadow.
 
 Chapter - Level 3
 
@@ -2801,6 +2815,8 @@ The Living Quarters are south of Shaft 3.
 The Living Quarters are up from the Catacombs.
 
 The description of Living Quarters is "LIVING QUARTERS DESCRIPTION. Floor upon floor of individual cubbyholes carved into the walls rise up towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs and platforms.[paragraph break]There are exits to the north and southwest."
+		
+The visibility of Living Quarters is night.
 
 Section - Catacombs
 
@@ -2808,6 +2824,8 @@ The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
 
 The description of Catacombs is "CATACOMBS DESCRIPTION. You wander briefly through a maze of twisty passages, passing alcoves, sepulchers, and niches stuffed with the cataloged bones and mummified remains of the dead inhabitents of this underground arcology. Eventually, through luck or providence, to your relief, you find yourself back at the tunnel upward."
+
+The visibility of Catacombs is night.
 		
 [TBD - > Examine bones > Examine mummified remains]
 
@@ -2824,6 +2842,8 @@ The description of Shaft 4 is "[shaft-description][paragraph break]You can climb
 
 The printed name of Shaft 4 is "Shaft - Level 4". [[ladder-glyphs]".]
 
+The visibility of Shaft 4 is night.
+
 Section - Eating Area
 
 The Eating Area is underground.
@@ -2831,6 +2851,8 @@ The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
 The description of Eating Area is "EATING AREA DESCRIPTION. Rows of alternating benches and troughs parallel each other and fill the this room. Only a few of the troughs appear to have been recently used."
+
+The visibility of Eating Area is night.
 
 [TBD > Examine benches > Examine troughs ]
 
@@ -2841,6 +2863,8 @@ The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Pen.
 
 The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting matter."
+	
+The visibility of Abattoir is night.
 
 Section - Holding Pen
 
@@ -2848,6 +2872,8 @@ The Holding Pen is underground.
 The Holding Pen is south of the Abattoir.
 
 The description of Holding Pen is "HOLDING PEN DESCRIPTION."
+	
+The visibility of Holding Pen is night.
 
 Chapter - Level 5
 
@@ -2860,6 +2886,8 @@ Shaft 5 is north of the Heavy Sliding Door
 The description of Shaft 5 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 	
 The printed name of Shaft 5 is "Shaft - Level 5". [[ladder-glyphs]".]
+	
+The visibility of Shaft 5 is night.
 
 Section - Heavy Sliding Door
 
@@ -2874,6 +2902,8 @@ The Power Plant is underground.
 The Power Plant is south of the Heavy Sliding Door.
 	
 The description of Power Plant is "POWER PLANT DESCRIPTION. The deafening sound of titanic machinery fills this room. On all sides you can see the shadowy movement of levers, pistons, and gears juxtaposing their operations to sustain life in this underground city."
+	
+The visibility of Power Plant is night.
 
 Book - Regions
 

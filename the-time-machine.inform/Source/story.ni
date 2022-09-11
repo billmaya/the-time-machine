@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39004 ]
+[ WORDS - 39094 ]
 
 Table of Releases
 release	notes
@@ -369,10 +369,10 @@ Chapter - Underground Rooms
 		say "Room Visibility: [visibility of location of player]".
 ]
 
-Every turn:
+[Every turn:
 	if the player is in the Year-802701-Underground:
 		say "Room Visibility: [visibility of location of player][line break]Lantern Status: [if the brass lantern is switched on]On[otherwise]Off";
-		
+]		
 
 Part - Conversation
 
@@ -2728,6 +2728,9 @@ Before going north in the Bottom Well:
 The brass lantern is a device.
 The brass lantern is in the Bottom Well.
 The description of the brass lantern is "A battered brass lantern that can be turned on or off."
+
+After switching on the brass lantern: now the lantern is lit.
+After switching off the brass lantern: now the lantern is not lit.
 
 
 Section - Shaft 1

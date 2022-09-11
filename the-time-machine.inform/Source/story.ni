@@ -369,6 +369,11 @@ Chapter - Underground Rooms
 		say "Room Visibility: [visibility of location of player]".
 ]
 
+Every turn:
+	if the player is in the Year-802701-Underground:
+		say "Room Visibility: [visibility of location of player][line break]Lantern Status: [if the brass lantern is switched on]On[otherwise]Off";
+		
+
 Part - Conversation
 
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
@@ -2623,7 +2628,9 @@ underground is a kind of lighted room.
 underground has a light level called visibility.
 The visibility of underground is usually night.
 
-Chapter - Shaft Description
+Chapter - Shaft
+
+Section - Shaft Description
 
 To say shaft-description:
 	if the location of the player is:
@@ -2635,7 +2642,7 @@ To say shaft-description:
 		-- Shaft 5: say "SHAFT 5 DESCRIPTION. You're at the bottom of the shaft. The remaining pipes disappear into the walls. Far above your head a small dot of light shows daylight outside but none of that light penetrates to this depth.[no line break]";
 		-- otherwise: say "NULL";
 
-Chapter - Shaft Directions
+Section - Shaft Directions
 
 To say shaft-directions:
 	if the location of the player is Shaft 0:
@@ -2646,7 +2653,7 @@ To say shaft-directions:
 		otherwise:
 			say "up and down".
 
-Chapter - Shaft Ladder
+Section - Shaft Ladder
 
 The shaft-ladder is a backdrop.
 The shaft-ladder is in Shaft 0.
@@ -2660,7 +2667,7 @@ The description of the shaft-ladder is "A series of metal rungs set into the met
 
 Understand "ladder" as shaft-ladder.
 
-Chapter - Ladder Glyphs
+Section - Ladder Glyphs
 
 To say level-0-light: say "[unicode 9672][unicode 9677]".
 To say level-1-light: say "[unicode 9675][unicode 9672][unicode 9677]".
@@ -2717,6 +2724,11 @@ encounter-morlocks is false.
 
 Before going north in the Bottom Well:
 	say "GOING NORTH FROM THE BOTTOM WELL."
+
+The brass lantern is a device.
+The brass lantern is in the Bottom Well.
+The description of the brass lantern is "A battered brass lantern that can be turned on or off."
+
 
 Section - Shaft 1
 

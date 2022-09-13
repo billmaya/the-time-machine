@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39368 244 ]
+[ WORDS - 39472 ]
 
 Table of Releases
 release	notes
@@ -21,6 +21,8 @@ release	notes
 "9"	"v1.6"
 "10"	"v1.7"
 "11"	"v1.8"
+"12"	"v1.9"
+"13"	"v2.0"
 
 Volume - Beginning The Story
 

@@ -397,7 +397,7 @@ Every turn:
 						otherwise:
 							say "SOUNDS AND SCUTTLING IN THE DAR AROUND YOU...";
 
-[ Morlock attack text
+[ MORLOCK ATTACK TEXT
 
 Before you can take another step you're beset from all sides by shadowy figures out of the dark—Morlocks!
 
@@ -405,7 +405,7 @@ Swinging the poker wildly around you manage to drive the Morlocks away, just out
 
 [Withouth the poker ]You strike at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned.
 
-You attempt to struggle to your feet but are knocked down again by the Morlocks. [Dragged off to Holding Pen]
+You attempt to struggle to your feet but are knocked down again by the Morlocks. [Dragged off to Holding Pen (do you loose all your possessions?) ]
 
 
 ]
@@ -458,8 +458,6 @@ Test travel-802701 with "test prepare-time-machine / enter / activate panel / ex
 Test travel-1895 with "go northwest / enter / activate panel."
 Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena petal / test travel-1895 / exit."
 Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with key / n / flip switch / examine blueprints / put fuse in time machine. / get in time machine / press button."
-Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
-Test goto-workshop with "go north / test unlock-workshop / go north / flip switch."
 Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in control panel."
 Test weena-flower with "take watch / go north / test goto-workshop / test prep-time-machine / enter / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show watch to eloi."
 
@@ -482,7 +480,6 @@ Test wtm-poker with "test wtm / test poker."
 Test search-area with "search area / search area / search area / search area."
 
 [v1.4 Tests]
-Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever."
 Test xpl-802701 with "test go-802701 / exit / x statue / e / e / s / n/ w / w / se / nw / enter time machine / push lever." [This will take you to 802,701 and back]
 
 [v1.5 Tests]
@@ -499,6 +496,12 @@ Test end1 with "test xpl-802701 / exit."
 Test end2 with "test fp-time / take time machine fuse / put orrery fuse in fuse holder / close panel / exit / push lever."
 Test end3 with "tell humboldt about time travel / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks."
 
+Test unlock-workshop with "go north / purloin key / unlock workshop door with key." [Moved from v1.0 Tests]
+Test get-matches with "go west / ask gernsback for cigar / ask gernsback for matches / go east."
+Test goto-workshop with "go north / test unlock-workshop / test get-matches / go north / flip switch." [Moved from v1.0 Tests]
+
+test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse." [Moved from Section - Tests | Time Machine | Fuses]
+Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever." [Moved from v1.4 Tests]
 Test go-underground with "test go-802701 / exit / remove grate / climb in well / down."
 
 Part - Release
@@ -1930,8 +1933,6 @@ Before taking a breaker (called fuse):
 The standard report taking rule does nothing when taking a breaker.
 
 Section - Tests | Time Machine | Fuses
-
-test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse."
 
 test orrery-time with "test fp-time / put orrery fuse in time machine fuse holder / take time machine fuse / put orrery fuse in time machine fuse holder / put time machine fuse in time machine fuse holder / take orrery fuse / put orrery fuse in time machine fuse holder / take orrery fuse from time machine fuse holder / put time machine fuse in time machine fuse holder."
 

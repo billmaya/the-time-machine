@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39094 ]
+[ WORDS - 39244 ]
 
 Table of Releases
 release	notes
@@ -373,6 +373,28 @@ Chapter - Underground Rooms
 	if the player is in the Year-802701-Underground:
 		say "Room Visibility: [visibility of location of player][line break]Lantern Status: [if the brass lantern is switched on]On[otherwise]Off";
 ]		
+
+Every turn:
+	if the player is in the Year-802701-Underground:
+		if the visibility of the location of player is not day:
+			if player-has-light is false:
+				if the visibility of the location of player is shadow:
+					if a random chance of 25 in 100 succeeds:
+						say "MORLOCKS ATTACK!";
+					otherwise:
+						say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";
+				otherwise: 
+					if the visibility of the location of player is twilight:
+						if a random chance of 50 in 100 succeeds:
+							say "MORLOCKS ATTACK!";
+						otherwise:
+							say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";
+					otherwise:
+						if a random chance of 75 in 100 succeeds:
+							say "MORLOCKS ATTACK!";
+						otherwise:
+							say "SOUNDS AND SCUTTLING IN THE DAR AROUND YOU...";
+
 
 Part - Conversation
 
@@ -2619,7 +2641,7 @@ Part - Underground Rooms
 Chapter - Light Level
 
 Light level is a kind of value.
-The light levels are day, shadow, night.
+The light levels are day, shadow, twilight, night.
 [The light levels are dawn, day, shadow, twilight, dusk, night.]
 
 Chapter - Underground
@@ -2729,8 +2751,16 @@ The brass lantern is a device.
 The brass lantern is in the Bottom Well.
 The description of the brass lantern is "A battered brass lantern that can be turned on or off."
 
-After switching on the brass lantern: now the lantern is lit.
-After switching off the brass lantern: now the lantern is not lit.
+player-has-light is a truth state that varies.
+player-has-light is false.
+
+After switching on the brass lantern:
+	now player-has-light is true;
+	now the lantern is lit.
+
+After switching off the brass lantern:
+	now player-has-light is false;
+	now the lantern is not lit.
 
 
 Section - Shaft 1
@@ -2759,7 +2789,7 @@ The description of Shaft 2 is "[shaft-description][paragraph break]You can climb
 	
 The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
-The visibility of Shaft 2 is shadow.
+The visibility of Shaft 2 is day.
 
 Section - Agora
 
@@ -2772,7 +2802,7 @@ The Agora is southeast of the Storerooms.
 	
 The description of Agora is "AGORA DESCRIPTION. What appears to be an underground common area large enough to accommodate hundreds at once. A weak light filters down from the well grating far above your head, illuminating the room.[paragraph break]There are exits to the east, south, west, northwest, and north."
 
-The visibility of Agora is shadow.
+The visibility of Agora is day.
 
 Section - Curia
 
@@ -2781,7 +2811,7 @@ The Curia is east of the Agora.
 
 The description of Curia is "CURIA DESCRIPTION.  A raised area with several levels of semi-circular benches carved into the east wall, separted from the much larger area to the west by a raised platform where, should the mood strike you, you could stand and address the ghosts of senators past.[paragraph break]You can exit to the west."
 
-The visibility of Curia is shadow.
+The visibility of Curia is day.
 
 Section - Museum
 
@@ -2790,7 +2820,7 @@ The Museum is south of the Agora.
 
 The description of Museum is "MUSEUM DESCRIPTION.  A wide circular ramp winds its way up along the circumference of the circular room past smashed dioramas and looted exhibits of your future, someone's past.[paragraph break]You can exit to the north."
 
-The visibility of Museum is shadow.
+The visibility of Museum is day.
 
 Section - Temple
 
@@ -2799,7 +2829,7 @@ The Temple is west of the Agora.
 
 The description of Temple is "TEMPLE DESCRIPTION. Rows of dust-covered pews face an apse containing a raised alter. Behind the alter, a grotesque charicature of the what appears to be DaVinci's Vitruvian Man is crucified on an intricate mesh of stylized and interlocking gears of various sizes filling the wall behind him.[paragraph break]You can exit to the east."
 
-The visibility of Temple is shadow.
+The visibility of Temple is day.
 
 Section - Storerooms
 
@@ -2808,7 +2838,7 @@ The Storerooms are northwest of the Agora.
 
 The description of Storerooms is "STOREROOM DESCRIPTION. Whatever was contained on and in these empty shelves and bins as far as the eye can see is gone. [paragraph break]You can exit to the southeast."
 	
-The visibility of Storerooms is shadow.
+The visibility of Storerooms is day.
 
 Chapter - Level 3
 
@@ -2823,6 +2853,8 @@ The description of Shaft 3 is "[shaft-description][paragraph break]You can climb
 
 The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 
+The visibility of Shaft 3 is day.
+
 Section - Living Quarters
 
 The Living Quarters are underground.
@@ -2831,7 +2863,7 @@ The Living Quarters are up from the Catacombs.
 
 The description of Living Quarters is "LIVING QUARTERS DESCRIPTION. Floor upon floor of individual cubbyholes carved into the walls rise up towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs and platforms.[paragraph break]There are exits to the north and down."
 		
-The visibility of Living Quarters is night.
+The visibility of Living Quarters is shadow.
 
 Section - Catacombs
 
@@ -2840,7 +2872,7 @@ The Catacombs are down from the Living Quarters.
 
 The description of Catacombs is "CATACOMBS DESCRIPTION. You wander briefly through a maze of twisty passages, passing alcoves, sepulchers, and niches stuffed with the cataloged bones and mummified remains of the dead inhabitents of this underground arcology. Eventually, through luck or providence, to your relief, you find yourself back at the tunnel upward."
 
-The visibility of Catacombs is night.
+The visibility of Catacombs is shadow.
 		
 [TBD - > Examine bones > Examine mummified remains]
 
@@ -2857,7 +2889,7 @@ The description of Shaft 4 is "[shaft-description][paragraph break]You can climb
 
 The printed name of Shaft 4 is "Shaft - Level 4". [[ladder-glyphs]".]
 
-The visibility of Shaft 4 is night.
+The visibility of Shaft 4 is twilight.
 
 Section - Eating Area
 

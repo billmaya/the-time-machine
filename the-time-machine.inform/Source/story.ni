@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39244 ]
+[ WORDS - 39368 244 ]
 
 Table of Releases
 release	notes
@@ -394,6 +394,19 @@ Every turn:
 							say "MORLOCKS ATTACK!";
 						otherwise:
 							say "SOUNDS AND SCUTTLING IN THE DAR AROUND YOU...";
+
+[ Morlock attack text
+
+Before you can take another step you're beset from all sides by shadowy figures out of the dark—Morlocks!
+
+Swinging the poker wildly around you manage to drive the Morlocks away, just out of reach. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange toungue, obviously regrouping for another attack.
+
+[Withouth the poker ]You strike at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned.
+
+You attempt to struggle to your feet but are knocked down again by the Morlocks. [Dragged off to Holding Pen]
+
+
+]
 
 
 Part - Conversation
@@ -4918,12 +4931,33 @@ I also want to thank the people who took the time to write reviews of v1.0 of th
 
 To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.[paragraph break]";
+	say "Release 13 Notes (v2.0)[paragraph break]
+• [line break]
+• [line break]
+• [line break]
+• [line break]
+• [line break]
+• [paragraph break]";
+	say "Release 12 Notes (v1.9)[paragraph break]
+• [line break]
+• [line break]
+• [line break]
+• [line break]
+• [line break]
+• [paragraph break]";
+	say "Release 11 Notes (v1.8)[paragraph break]
+• Endgame modifications: Added Gernsback, Watchett sent Nowhere, time machine reappears a few turn later with Weena if sent to 802,701 empty.[line break]
+• Added Morlock Underground locations. Added visibility property to Underground rooms, each with its own light level (day, shadow, twilight, night).[line break]
+• Coded up Morlack Attack routine based on Underground room visibility and if player has light source.[line break]
+• [line break]
+• [line break]
+• [paragraph break]";
 	say "Release 10 Notes (v1.7)[paragraph break]
-• Added Gernsback's Box of Matches, Cigar, Book.[paragraph break]
+• Added Gernsback's Box of Matches, Cigar, Book.[line break]
 • Added matches, cigar, and book for Gernsback to use.[line break]
 • Made >take newspaper distinct from >read newspaper.[line break]
 • Created Gernsback conversation using Conversation Package extension.[line break]
-• Added Introduction To Gernsback scene.[line break]";
+• Added Introduction To Gernsback scene.[paragraph break]";
 	say "Release 9 Notes (v1.6)[paragraph break]
 • Updated old Weena conversation code to use Conversation Package extension.[paragraph break]";
 	say "Release 8 Notes (v1.5)[paragraph break]

@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39472 ]
+[ WORDS - 39517 ]
 
 Table of Releases
 release	notes
@@ -395,7 +395,7 @@ Every turn:
 						if a random chance of 75 in 100 succeeds:
 							say "MORLOCKS ATTACK!";
 						otherwise:
-							say "SOUNDS AND SCUTTLING IN THE DAR AROUND YOU...";
+							say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";
 
 [ MORLOCK ATTACK TEXT
 

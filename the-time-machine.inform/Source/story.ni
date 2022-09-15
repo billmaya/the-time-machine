@@ -376,26 +376,38 @@ Chapter - Underground Rooms
 		say "Room Visibility: [visibility of location of player][line break]Lantern Status: [if the brass lantern is switched on]On[otherwise]Off";
 ]		
 
+To say morlocks-attack:
+	say "Before you can take another step you're beset from all sides by shadowy figures from the surrounding darkness—Morlocks!"
+
+To say sounds-scuttling:
+	say "In the darkness around you see and hear dim figures scuttling around in the shadows, muttering among themselves in some strange tongue, just out of reach, almost indistinguishable from the darkness."
+
 Every turn:
 	if the player is in the Year-802701-Underground:
 		if the visibility of the location of player is not day:
 			if player-has-light is false:
 				if the visibility of the location of player is shadow:
 					if a random chance of 25 in 100 succeeds:
-						say "MORLOCKS ATTACK!";
+						say "[morlocks-attack]";
+						[DEL say "MORLOCKS ATTACK!";]
 					otherwise:
-						say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";
+						say "[sounds-scuttling]";
+						[DEL say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";]
 				otherwise: 
 					if the visibility of the location of player is twilight:
 						if a random chance of 50 in 100 succeeds:
-							say "MORLOCKS ATTACK!";
+							say "[morlocks-attack]";
+							[DEL say "MORLOCKS ATTACK!";]
 						otherwise:
-							say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";
+							say "[sounds-scuttling]";
+							[DEL say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";]
 					otherwise:
 						if a random chance of 75 in 100 succeeds:
-							say "MORLOCKS ATTACK!";
+							say "[morlocks-attack]";
+							[DEL say "MORLOCKS ATTACK!";]
 						otherwise:
-							say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";
+							say "[sounds-scuttling]";
+							[DEL say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";]
 
 [ MORLOCK ATTACK TEXT
 

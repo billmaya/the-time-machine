@@ -2931,7 +2931,7 @@ Section - Holding Pen
 The Holding Pen is underground.
 The Holding Pen is south of the Abattoir.
 
-The description of Holding Pen is "HOLDING PEN DESCRIPTION.[paragraph break]There are exits to the north and south."
+The description of Holding Pen is "HOLDING PEN DESCRIPTION.[paragraph break]The exit is to the north"
 	
 The visibility of Holding Pen is night.
 

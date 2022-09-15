@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39517 ]
+[ WORDS - 39490 ]
 
 Table of Releases
 release	notes
@@ -362,19 +362,7 @@ Every turn:
 	if the player is in the Workshop and travel-to-802701 is true: 
 		now humboldt-should-return is true.
 
-Chapter - Underground Rooms
-
-[ Temporarily commented out while working on room descriptions]
-[Every turn:
-	if the player is in the Year-802701-Underground:
-		say "BE CAREFUL. YOU MIGHT GET ATTACKED BY MORLOCKS!";
-		say "Room Visibility: [visibility of location of player]".
-]
-
-[Every turn:
-	if the player is in the Year-802701-Underground:
-		say "Room Visibility: [visibility of location of player][line break]Lantern Status: [if the brass lantern is switched on]On[otherwise]Off";
-]		
+Chapter - Underground Rooms	
 
 To say morlocks-attack:
 	say "Before you can take another step you're beset from all sides by shadowy figures from the surrounding darkness—Morlocks!"
@@ -389,25 +377,19 @@ Every turn:
 				if the visibility of the location of player is shadow:
 					if a random chance of 25 in 100 succeeds:
 						say "[morlocks-attack]";
-						[DEL say "MORLOCKS ATTACK!";]
 					otherwise:
 						say "[sounds-scuttling]";
-						[DEL say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";]
 				otherwise: 
 					if the visibility of the location of player is twilight:
 						if a random chance of 50 in 100 succeeds:
 							say "[morlocks-attack]";
-							[DEL say "MORLOCKS ATTACK!";]
 						otherwise:
 							say "[sounds-scuttling]";
-							[DEL say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";]
 					otherwise:
 						if a random chance of 75 in 100 succeeds:
 							say "[morlocks-attack]";
-							[DEL say "MORLOCKS ATTACK!";]
 						otherwise:
 							say "[sounds-scuttling]";
-							[DEL say "SOUNDS AND SCUTTLING IN THE DARK AROUND YOU...";]
 
 [ MORLOCK ATTACK TEXT
 

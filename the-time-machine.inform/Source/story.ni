@@ -371,6 +371,9 @@ To say sounds-scuttling:
 	say "In the darkness around you see and hear dim figures scuttling around in the shadows, muttering among themselves in some strange tongue, just out of reach, almost indistinguishable from the darkness."
 
 Every turn:
+	follow the morlock attack rule.
+
+This is the morlock attack rule:
 	if the player is in the Year-802701-Underground:
 		if the visibility of the location of player is not day:
 			if player-has-light is false:

@@ -497,7 +497,7 @@ Test unlock-workshop with "go north / purloin key / unlock workshop door with ke
 Test get-matches with "go west / ask gernsback for cigar / ask gernsback for matches / go east."
 Test goto-workshop with "go north / test unlock-workshop / test get-matches / go north / flip switch." [Moved from v1.0 Tests]
 
-test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse." [Moved from Section - Tests | Time Machine | Fuses]
+test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker." [Moved from Section - Tests | Time Machine | Fuses]
 Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever." [Moved from v1.4 Tests]
 Test go-underground with "test go-802701 / exit / remove grate / climb in well / down."
 

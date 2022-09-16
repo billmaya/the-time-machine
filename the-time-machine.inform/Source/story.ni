@@ -332,7 +332,9 @@ To say no-violence: say "Violence [aren't] the answer here and quite out of char
 Instead of attacking someone with something: say "[no-violence]".
 Instead of attacking someone: say "[no-violence]".
 
-Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."
+[Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."]
+
+Instead of attacking morlock-placeholder with something: continue the action. [<- doesn't appear to allow >attack morlocks with poker]
 
 Part - Every Turn Rules
 
@@ -373,6 +375,9 @@ To say sounds-scuttling:
 Every turn:
 	follow the morlock attack rule.
 
+encounter-morlocks is a truth state that varies.
+encounter-morlocks is false.
+
 This is the morlock attack rule:
 	if the player is in the Year-802701-Underground:
 		if the visibility of the location of player is not day:
@@ -380,19 +385,35 @@ This is the morlock attack rule:
 				if the visibility of the location of player is shadow:
 					if a random chance of 25 in 100 succeeds:
 						say "[morlocks-attack]";
+						now encounter-morlocks is true;
+						follow the morlock fight rule;
 					otherwise:
 						say "[sounds-scuttling]";
 				otherwise: 
 					if the visibility of the location of player is twilight:
 						if a random chance of 50 in 100 succeeds:
 							say "[morlocks-attack]";
+							now encounter-morlocks is true;
+							follow the morlock fight rule;
 						otherwise:
 							say "[sounds-scuttling]";
 					otherwise:
 						if a random chance of 75 in 100 succeeds:
 							say "[morlocks-attack]";
+							now encounter-morlocks is true;
+							follow the morlock fight rule;
 						otherwise:
 							say "[sounds-scuttling]";
+
+This is the morlock fight rule:
+	[say "YOU FIGHT THE MORLOCKS."]
+	if the player has the poker:
+		say "Swinging the poker wildly around you manage to drive the Morlocks away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack.";
+	otherwise:
+		say "You strike at the shadowy figures grabbing at you but are soon overposered by sheer numbers and knocked to the ground, stunned."; 
+		[Dragged off to Holding Pen (do you loose all your possessions?) ]
+
+[DEL > attack morlocks => You can't see any such thing. ]
 
 [ MORLOCK ATTACK TEXT
 
@@ -2750,12 +2771,11 @@ Up from the Bottom Well is the Top Well.
 North from the Bottom Well is Shaft 1.
 The description of Bottom Well is "The light from above illuminates the bottom of a what appears to be merely a dry well.[paragraph break]The ladder leads up and there is an opening to the north."
 
+[> x metal grate]
+
 The visibility of Bottom Well is day.
 
 The printed name of Bottom Well is "Bottom of the Well"
-
-encounter-morlocks is a truth state that varies.
-encounter-morlocks is false.
 
 Before going north in the Bottom Well:
 	say "GOING NORTH FROM THE BOTTOM WELL."
@@ -2986,7 +3006,7 @@ Shaft 1 and Bottom Well are in Year-802701-Underground.
 Shaft 2 and Agora and Curia and Museum and Temple and Storerooms are in Year-802701-Underground.
 Shaft 3 and Living Quarters and Catacombs are in Year-802701-Underground.
 Shaft 4 and Eating Area and Abattoir and Holding Pen are in Year-802701-Underground.
-Shaft 5 and Goggle Room and Power Plant are in Year-802701-Underground.
+Shaft 5 and Power Plant are in Year-802701-Underground.
 			
 Volume - Characters
 
@@ -4145,6 +4165,27 @@ The flower is a thing.
 The flower is nowhere.
 The description of the flower is "Unlike any vegetation you've ever seen, the petal that Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
 
+
+Book - Morlocks
+
+morlock-placeholder is a thing.
+morlock-placeholder is scenery.
+
+morlock-placeholder is a backdrop.
+morlock-placeholder is in the Year-802701-Underground.
+
+Understand "morlocks" or "morlock" as morlock-placeholder.
+
+Instead of attacking morlock-placeholder:
+	say "ATTEMPTING TO ATTACK MORLOCKS."
+
+[
+>attack morlocks
+What do you want to attack morlock-placeholder with?
+
+>attack morlocks with poker
+Violence of this sort isn't relevent to your investigation
+]
 
 Book - Wells
 

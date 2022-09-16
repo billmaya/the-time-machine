@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39490 ]
+[ WORDS - 39661 ]
 
 Table of Releases
 release	notes
@@ -409,24 +409,11 @@ This is the morlock fight rule:
 	[say "YOU FIGHT THE MORLOCKS."]
 	if the player has the poker:
 		say "Swinging the poker wildly around you manage to drive the Morlocks away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack.";
+		[See Book-Morlocks]
 	otherwise:
-		say "You strike at the shadowy figures grabbing at you but are soon overposered by sheer numbers and knocked to the ground, stunned."; 
+		say "You strike at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned."; 
 		[Dragged off to Holding Pen (do you loose all your possessions?) ]
 
-[DEL > attack morlocks => You can't see any such thing. ]
-
-[ MORLOCK ATTACK TEXT
-
-Before you can take another step you're beset from all sides by shadowy figures out of the dark—Morlocks!
-
-Swinging the poker wildly around you manage to drive the Morlocks away, just out of reach. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange toungue, obviously regrouping for another attack.
-
-[Withouth the poker ]You strike at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned.
-
-You attempt to struggle to your feet but are knocked down again by the Morlocks. [Dragged off to Holding Pen (do you loose all your possessions?) ]
-
-
-]
 
 
 Part - Conversation
@@ -4185,6 +4172,9 @@ What do you want to attack morlock-placeholder with?
 
 >attack morlocks with poker
 Violence of this sort isn't relevent to your investigation
+
+Need to work on this because Part-Instead Of Rules Chapter-Attack interferes
+
 ]
 
 Book - Wells
@@ -4816,6 +4806,7 @@ Part - Morlock Endgame
 [Writing §8.18. Randomness]
 [Writing §9.4. When play ends]
 
+[Removed the Bottom Well wandering code that kicks this off.]
 Instead of wandering in the Bottom Well:
 	if encounter-morlocks is true:
 		if the player has the poker:

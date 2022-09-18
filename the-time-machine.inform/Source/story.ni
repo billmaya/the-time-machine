@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39703 ]
+[ WORDS - 39815 ]
 
 Table of Releases
 release	notes
@@ -334,7 +334,12 @@ Instead of attacking someone: say "[no-violence]".
 
 [Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."]
 
-Instead of attacking morlock-placeholder with something: continue the action. [<- doesn't appear to allow >attack morlocks with poker]
+[You should be able to attack morlocks only if they have attacked you first]
+Instead of attacking morlock-placeholder with poker:
+	if morlocks-attack is true:
+		say "ATTACKING MORLOCKS WITH POKER.";
+	otherwise:
+		say "DON'T ATTACK IF NOT ATTACKED FIRST.";
 
 Part - Every Turn Rules
 
@@ -365,15 +370,6 @@ Every turn:
 		now humboldt-should-return is true.
 
 Chapter - Underground Rooms	
-
-To say morlocks-attack:
-	say "Before you can take another step you're beset from all sides by shadowy figures from the surrounding darkness—Morlocks!"
-
-To say sounds-scuttling:
-	say "In the darkness around you see and hear dim figures scuttling around in the shadows, muttering among themselves in some strange tongue, just out of reach, almost indistinguishable from the darkness."
-
-To say morlocks-follow:
-	say "MORLOCKS HAVE ATTACKED YOU ONCE ALREADY AND FOLLOW WARILY AT A DISTANCE."
 
 Every turn:
 	follow the morlock attack rule.
@@ -418,18 +414,34 @@ This is the morlock attack rule:
 					if turns-since-attack is 2:
 						now turns-since-attack is 0;
 						now morlocks-attack is false;
-			
+
+number-of-attacks is a number that varies.
+number-of-attacks is 0. [After a certain number of attacks you are tired and they overwhelm you.]
+
+fought-off-morlocks is a number that varies. [Thinking of using this to have you get weaker as you fight off the morlocks and captured despite having poker.]
+fought-off-morlocks is 0.
 
 This is the morlock fight rule:
-	[say "YOU FIGHT THE MORLOCKS."]
+	[say "YOU FIGHT OFF THE MORLOCKS."]
 	if the player has the poker:
 		say "Swinging the poker wildly around you manage to drive the Morlocks away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack.";
+		now fought-off-morlocks is fought-off-morlocks + 1;
 		[See Book-Morlocks for >attack morlocks with poker.]
 	otherwise:
-		say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned."; 
-		[Dragged off to Holding Pen (do you loose all your possessions?) ]
-	
-	
+		[say "YOU ARE CAPTURED."]
+		say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned. MORLOCKS TAKE YOU TO HOLDING PEN.";
+		now the player is in Holding Pen;
+
+[Morlock Underground Substitution Text]
+
+To say morlocks-attack:
+	say "Before you can take another step you're beset from all sides by shadowy figures from the surrounding darkness—Morlocks!"
+
+To say sounds-scuttling:
+	say "In the darkness around you see and hear dim figures scuttling around in the shadows, muttering among themselves in some strange tongue, just out of reach, almost indistinguishable from the darkness."
+
+To say morlocks-follow:
+	say "MORLOCKS HAVE ATTACKED YOU ONCE ALREADY AND FOLLOW WARILY AT A DISTANCE."
 
 Part - Conversation
 
@@ -2948,6 +2960,8 @@ The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more t
 	
 The visibility of Abattoir is night.
 
+[TBD + Pile of bloodstained Eloi clothing]
+
 Section - Holding Pen
 
 The Holding Pen is underground.
@@ -4178,20 +4192,6 @@ morlock-placeholder is in the Year-802701-Underground.
 
 Understand "morlocks" or "morlock" as morlock-placeholder.
 
-Instead of attacking morlock-placeholder:
-	say "ATTEMPTING TO ATTACK MORLOCKS."
-
-[
->attack morlocks
-What do you want to attack morlock-placeholder with?
-
->attack morlocks with poker
-Violence of this sort isn't relevent to your investigation
-
-Need to work on this because Part-Instead Of Rules Chapter-Attack interferes
-
-]
-
 Book - Wells
 
 Wells is a person. [in Woking Street.]
@@ -4815,6 +4815,21 @@ Weena Appears In 1895 ends when Weena is in the workshop [time machine] and the 
 	say "WEENA APPEARS ENDS."]
 
 Book - Underground
+
+Part - Escape The Morlocks
+
+Escape The Morlocks is a recurring scene.
+
+Escape The Morlocks begins when the player is in the Holding Pen.
+
+When Escape The Morlocks begins:
+	say "ESCAPE THE MORLOCKS SCENE BEGINS."
+
+Escape The Morlocks ends when the player is in the Clearing.
+
+When Escape The Morlocks ends:
+	say "ESCAPE THE MORLOCKS SCENE ENDS."
+
 
 Part - Morlock Endgame
 

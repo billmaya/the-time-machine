@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39815 ]
+[ WORDS - 39990 ]
 
 Table of Releases
 release	notes
@@ -422,7 +422,6 @@ This is the morlock attack rule:
 				otherwise:
 					say "[morlocks-follow]";
 					now turns-since-attack is turns-since-attack + 1;
-					[DEL say "TURNS SINCE ATTACK = [turns-since-attack]";]
 					if turns-since-attack is 2:
 						now turns-since-attack is 0;
 						now morlocks-attack is false;
@@ -434,14 +433,19 @@ fought-off-morlocks is a number that varies. [Thinking of using this to have you
 fought-off-morlocks is 0.
 
 This is the morlock fight rule:
-	[say "YOU FIGHT OFF THE MORLOCKS."]
 	if the player has the poker:
-		say "Swinging the poker wildly around you manage to drive the Morlocks away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack.";
-		now fought-off-morlocks is fought-off-morlocks + 1;
-		[See Book-Morlocks for >attack morlocks with poker.]
+		if fought-off-morlocks is 0:
+			say "[attack-morlocks-1]";
+			now fought-off-morlocks is fought-off-morlocks + 1;
+		otherwise if fought-off-morlocks is 1:
+			say "[attack-morlocks-2]";
+			now fought-off-morlocks is fought-off-morlocks + 1;
+		otherwise:
+			say "";
+			now fought-off-morlocks is fought-off-morlocks + 1; [Should I set this to zero? Will I be using this after you escape from Holding Pen?]
+			now the player is in Holding Pen;
 	otherwise:
-		[say "YOU ARE CAPTURED."]
-		say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned. MORLOCKS TAKE YOU TO HOLDING PEN.";
+		say "[captured-by-morlocks]";
 		now the player is in Holding Pen;
 
 [Morlock Underground Substitution Text]
@@ -454,6 +458,18 @@ To say sounds-scuttling:
 
 To say morlocks-follow:
 	say "MORLOCKS HAVE ATTACKED YOU ONCE ALREADY AND FOLLOW WARILY AT A DISTANCE."
+
+To say attack-morlocks-1:
+	say "Swinging the poker wildly around you manage to drive the Morlocks away. But it appears only temporary as they gather just out of reach, muttering and 	gobbling to themselves in their strange tongue, obviously regrouping for another attack."
+	
+To say attack-morlocks-2:
+	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again."
+	
+To say attack-morlocks-3:
+	say "You attempt to drive the Morlocks off again but the poker is knocked from your hand and spins off into the darkness. You are overpowered by their numbers and knocked to the ground, stunned. MORLOCKS TAKE YOU TO HOLDING PEN."
+		
+To say captured-by-morlocks:
+	say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned. MORLOCKS TAKE YOU TO HOLDING PEN."
 
 Part - Conversation
 

@@ -334,12 +334,24 @@ Instead of attacking someone: say "[no-violence]".
 
 [Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."]
 
+To say attack-morlocks-poker:
+	say "YOU ATTEMPT TO ATTACK MORLOCKS WITH POKER."
+
+To say attack-morlocks-barehanded:
+	say "YOU ATTEMPT TO ATTACK MORLOCKS BAREHANDED."
+
+To say attempt-attack-morlocks-before-attacked:
+	say "DON'T ATTACK MORLOCKS IF NOT ATTACKED FIRST."
+
 [You should be able to attack morlocks only if they have attacked you first]
 Instead of attacking morlock-placeholder with poker:
 	if morlocks-attack is true:
-		say "ATTACKING MORLOCKS WITH POKER.";
+		if the player has the poker:
+			say "[attack-morlocks-poker]";
+		otherwise:
+			say "[attack-morlocks-barehanded]";
 	otherwise:
-		say "DON'T ATTACK IF NOT ATTACKED FIRST.";
+		say "[attempt-attack-morlocks-before-attacked]";
 
 Part - Every Turn Rules
 
@@ -410,7 +422,7 @@ This is the morlock attack rule:
 				otherwise:
 					say "[morlocks-follow]";
 					now turns-since-attack is turns-since-attack + 1;
-					[say "TURNS SINCE ATTACK = [turns-since-attack]";]
+					[DEL say "TURNS SINCE ATTACK = [turns-since-attack]";]
 					if turns-since-attack is 2:
 						now turns-since-attack is 0;
 						now morlocks-attack is false;

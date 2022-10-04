@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 39990 ]
+[ WORDS - 40008 ]
 
 Table of Releases
 release	notes
@@ -392,6 +392,10 @@ morlocks-attack is false.
 turns-since-attack is a number that varies.
 turns-since-attack is 0.
 
+[The Morlocks will get bolder after each attack so the time interval between attacks will be less.]
+boldness-morlocks is a number that varies.
+boldness-morlocks is 0.
+
 This is the morlock attack rule:
 	if the player is in the Year-802701-Underground:
 		if the visibility of the location of player is not day:
@@ -401,6 +405,7 @@ This is the morlock attack rule:
 						if a random chance of 25 in 100 succeeds:
 							say "[morlocks-attack]";
 							now morlocks-attack is true;
+							now boldness-morlocks is boldness-morlocks + 1;
 							follow the morlock fight rule;
 						otherwise:
 							say "[sounds-scuttling]";
@@ -409,6 +414,7 @@ This is the morlock attack rule:
 							if a random chance of 50 in 100 succeeds:
 								say "[morlocks-attack]";
 								now morlocks-attack is true;
+								now boldness-morlocks is boldness-morlocks + 1;
 								follow the morlock fight rule;
 							otherwise:
 								say "[sounds-scuttling]";
@@ -416,20 +422,19 @@ This is the morlock attack rule:
 							if a random chance of 75 in 100 succeeds:
 								say "[morlocks-attack]";
 								now morlocks-attack is true;
+								now boldness-morlocks is boldness-morlocks + 1;
 								follow the morlock fight rule;
 							otherwise:
 								say "[sounds-scuttling]";
 				otherwise:
 					say "[morlocks-follow]";
 					now turns-since-attack is turns-since-attack + 1;
-					if turns-since-attack is 2:
+					if turns-since-attack is 3 - boldness-morlocks: [2:]
 						now turns-since-attack is 0;
 						now morlocks-attack is false;
 
-number-of-attacks is a number that varies.
-number-of-attacks is 0. [After a certain number of attacks you are tired and they overwhelm you.]
-
-fought-off-morlocks is a number that varies. [Thinking of using this to have you get weaker as you fight off the morlocks and captured despite having poker.]
+ [You will get weaker as you fight off the morlocks and eventually captured despite having poker.]
+fought-off-morlocks is a number that varies.
 fought-off-morlocks is 0.
 
 This is the morlock fight rule:
@@ -440,12 +445,14 @@ This is the morlock fight rule:
 		otherwise if fought-off-morlocks is 1:
 			say "[attack-morlocks-2]";
 			now fought-off-morlocks is fought-off-morlocks + 1;
-		otherwise:
-			say "";
-			now fought-off-morlocks is fought-off-morlocks + 1; [Should I set this to zero? Will I be using this after you escape from Holding Pen?]
+		otherwise if fought-off-morlocks is 2:
+			say "[attack-morlocks-3]";
+			now fought-off-morlocks is 0; 
+			say "[taken-to-holding-pen]";
 			now the player is in Holding Pen;
 	otherwise:
 		say "[captured-by-morlocks]";
+		say "[taken-to-holding-pen]";
 		now the player is in Holding Pen;
 
 [Morlock Underground Substitution Text]
@@ -460,16 +467,19 @@ To say morlocks-follow:
 	say "MORLOCKS HAVE ATTACKED YOU ONCE ALREADY AND FOLLOW WARILY AT A DISTANCE."
 
 To say attack-morlocks-1:
-	say "Swinging the poker wildly around you manage to drive the Morlocks away. But it appears only temporary as they gather just out of reach, muttering and 	gobbling to themselves in their strange tongue, obviously regrouping for another attack."
+	say "Swinging the poker wildly around you manage to drive the Morlocks away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack."
 	
 To say attack-morlocks-2:
 	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again."
 	
 To say attack-morlocks-3:
-	say "You attempt to drive the Morlocks off again but the poker is knocked from your hand and spins off into the darkness. You are overpowered by their numbers and knocked to the ground, stunned. MORLOCKS TAKE YOU TO HOLDING PEN."
+	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbres and manhandled into the darkness."
 		
 To say captured-by-morlocks:
-	say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned. MORLOCKS TAKE YOU TO HOLDING PEN."
+	say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned."
+
+To say taken-to-holding-pen:
+	say "MORLOCKS TAKE YOU TO HOLDING PEN."
 
 Part - Conversation
 

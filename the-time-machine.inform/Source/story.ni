@@ -4228,6 +4228,8 @@ morlock-placeholder is scenery.
 morlock-placeholder is a backdrop.
 morlock-placeholder is in the Year-802701-Underground.
 
+The printed name of morlock-placeholder is "the Morlocks".
+
 Understand "morlocks" or "morlock" as morlock-placeholder.
 
 Book - Wells

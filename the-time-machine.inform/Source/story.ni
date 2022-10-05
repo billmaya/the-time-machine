@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40147 ]
+[ WORDS - 40169 ]
 
 Table of Releases
 release	notes
@@ -362,7 +362,7 @@ To say attempt-attack-morlocks-before-attacked:
 
 [You should be able to attack morlocks only if they have attacked you first]
 Instead of attacking morlock-placeholder with poker:
-	if morlocks-attack is true:
+	if morlocks-attacking is true:
 		if the player has the poker:
 			say "[attack-morlocks-poker]";
 		otherwise:
@@ -403,8 +403,8 @@ Chapter - Underground Rooms
 Every turn:
 	follow the morlock attack rule.
 
-morlocks-attack is a truth state that varies.
-morlocks-attack is false.
+morlocks-attacking is a truth state that varies.
+morlocks-attacking is false.
 
 turns-since-attack is a number that varies.
 turns-since-attack is 0.
@@ -417,11 +417,11 @@ This is the morlock attack rule:
 	if the player is in the Year-802701-Underground:
 		if the visibility of the location of player is not day:
 			if player-has-light is false:
-				if morlocks-attack is false:
+				if morlocks-attacking is false:
 					if the visibility of the location of player is shadow:
 						if a random chance of 25 in 100 succeeds:
 							say "[morlocks-attack]";
-							now morlocks-attack is true;
+							now morlocks-attacking is true;
 							now boldness-morlocks is boldness-morlocks + 1;
 							follow the morlock fight rule;
 						otherwise:
@@ -430,7 +430,7 @@ This is the morlock attack rule:
 						if the visibility of the location of player is twilight:
 							if a random chance of 50 in 100 succeeds:
 								say "[morlocks-attack]";
-								now morlocks-attack is true;
+								now morlocks-attacking is true;
 								now boldness-morlocks is boldness-morlocks + 1;
 								follow the morlock fight rule;
 							otherwise:
@@ -438,22 +438,17 @@ This is the morlock attack rule:
 						otherwise:
 							if a random chance of 75 in 100 succeeds:
 								say "[morlocks-attack]";
-								now morlocks-attack is true;
+								now morlocks-attacking is true;
 								now boldness-morlocks is boldness-morlocks + 1;
 								follow the morlock fight rule;
 							otherwise:
 								say "[sounds-scuttling]";
-					if debug-mode is true: [Move this out into its own Chapter?]
-						focus debug-info window;
-						clear debug-info window;
-						say "Morlock Boldness = [boldness-morlocks]";
-						focus main window;
 				otherwise:
 					say "[morlocks-follow]";
 					now turns-since-attack is turns-since-attack + 1;
-					if turns-since-attack is 3 - boldness-morlocks: [2:]
+					if turns-since-attack is 3 - boldness-morlocks:
 						now turns-since-attack is 0;
-						now morlocks-attack is false;
+						now morlocks-attacking is false;
 
 [You will get weaker as you fight off the morlocks and eventually captured despite having poker.]
 fought-off-morlocks is a number that varies.
@@ -495,13 +490,25 @@ To say attack-morlocks-2:
 	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again."
 	
 To say attack-morlocks-3:
-	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbres and manhandled into the darkness."
+	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbers and manhandled into the darkness."
 		
 To say captured-by-morlocks:
 	say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned."
 
 To say taken-to-holding-pen:
 	say "MORLOCKS TAKE YOU TO HOLDING PEN."
+
+Chapter - Debug
+
+Every turn:
+	if debug-mode is true: 
+		focus debug-info window;
+		clear debug-info window;
+		say "morlocks-attack: [morlocks-attacking][line break]";
+		say "turns-since-attack: [turns-since-attack][line break]";
+		say "boldness-morlocks: [boldness-morlocks][line break]";
+		say "fought-off-morlocks: [fought-off-morlocks][line break]";
+		focus main window.
 
 Part - Conversation
 
@@ -4900,7 +4907,7 @@ Part - Morlock Endgame
 
 [Removed the Bottom Well wandering code that kicks this off.]
 Instead of wandering in the Bottom Well:
-	if morlocks-attack is true:
+	if morlocks-attacking is true:
 		if the player has the poker:
 			say "Even with a weapon you shouldn't try your luck, especially without a source of light and possibly some allies. I mean, you barely escaped from your first encounter with these brutish savages.";
 		otherwise:
@@ -4909,14 +4916,14 @@ Instead of wandering in the Bottom Well:
 		if a random chance of 1 in 3 succeeds:
 			if the player has the poker:
 				say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and attempt to grab you. With a strength born of desperation and fear, you flail at them with the poker and drive what must be Morlocks off into the darkness. Retreating in what you hope is the correct direction, you find yourself back at the bottom of the shaft.";
-				now morlocks-attack is true;
+				now morlocks-attacking is true;
 			otherwise:
 				if a random chance of 2 in 3 succeeds:
 					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
 				otherwise:
 					say "You start down the [noun] tunnel without light or map towards the sound of the nearest machinery. The light fades as you proceed down the tunnel until you are in near absolute darkness. The noise of machinery gets louder and louder with each step you take.[paragraph break]Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but, outnumbered and without a weapon, you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold in some storage room carved out of solid rock. Shivering, you look around. Surrounding you are the naked bodies of Eloi, male and female, suspended on hooks, future fodder for the Morlocks. You bang on the door in horrror but the omnipresent and overwhelming sound of machinery drowns out your screams. Exhausted, you slump against the wall and soon succumb to the freezing cold, wishing you had believed Wells from the start.";
 					end the story finally;
-				now morlocks-attack is true;
+				now morlocks-attacking is true;
 		otherwise:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 

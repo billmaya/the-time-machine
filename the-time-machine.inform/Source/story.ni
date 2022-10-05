@@ -37,6 +37,9 @@ The current-year is "1895".
 The numeric-year is a number that varies.
 The numeric-year is 1895.
 
+debug-mode is a truth state that varies.
+debug-mode is true.
+
 To say introduction:
 	say "'Let me go!'
 
@@ -64,8 +67,9 @@ When play begins:
 	open list-characters window;
 	open title-topics window;
 	open character-topics window;
-	open debug-title window;
-	open debug-info window;
+	if debug-mode is true:
+		open debug-title window;
+		open debug-info window;
 	[refresh the list-inventory window; [??? - does not work]]
 	now suggest-on-greeting is false.
 

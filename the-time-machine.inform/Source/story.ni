@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40102 ]
+[ WORDS - 40147 ]
 
 Table of Releases
 release	notes
@@ -443,7 +443,7 @@ This is the morlock attack rule:
 								follow the morlock fight rule;
 							otherwise:
 								say "[sounds-scuttling]";
-					if debug-mode is true:
+					if debug-mode is true: [Move this out into its own Chapter?]
 						focus debug-info window;
 						clear debug-info window;
 						say "Morlock Boldness = [boldness-morlocks]";

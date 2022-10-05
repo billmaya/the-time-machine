@@ -443,6 +443,11 @@ This is the morlock attack rule:
 								follow the morlock fight rule;
 							otherwise:
 								say "[sounds-scuttling]";
+					if debug-mode is true:
+						focus debug-info window;
+						clear debug-info window;
+						say "Morlock Boldness = [boldness-morlocks]";
+						focus main window;
 				otherwise:
 					say "[morlocks-follow]";
 					now turns-since-attack is turns-since-attack + 1;

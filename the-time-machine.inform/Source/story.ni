@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40017 ]
+[ WORDS - 40102 ]
 
 Table of Releases
 release	notes
@@ -62,10 +62,10 @@ When play begins:
 	open list-inventory window;
 	open title-characters window;
 	open list-characters window;
-	[open title-talking-to window;] [Maybe I don't need this window?]
-	[open talking-to-character window;] [Maybe I don't need this window?]
 	open title-topics window;
 	open character-topics window;
+	open debug-title window;
+	open debug-info window;
 	[refresh the list-inventory window; [??? - does not work]]
 	now suggest-on-greeting is false.
 
@@ -122,7 +122,7 @@ The measurement of the right-sidebar window is 290.
 The title-characters window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-characters window is g-placeabove.
 The scale method of the title-characters window is g-fixed-size.
-The measurement of the title-characters window is 2. [1.]
+The measurement of the title-characters window is 2. 
 
 The list-characters window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-characters window is g-placeabove.
@@ -132,17 +132,17 @@ The measurement of the list-characters window is 8.
 The title-talking-to window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-talking-to window is g-placeabove.
 The scale method of the title-talking-to window is g-fixed-size.
-The measurement of the title-talking-to window is 2. [1.]
+The measurement of the title-talking-to window is 2. 
 
 The talking-to-character window is a text buffer g-window spawned by the right-sidebar window.
 The position of the talking-to-character window is g-placeabove.
 The scale method of the talking-to-character window is g-fixed-size.
-The measurement of the talking-to-character window is 3. [1.]
+The measurement of the talking-to-character window is 3.
 
 The title-topics window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-topics window is g-placeabove.
 The scale method of the title-topics window is g-fixed-size.
-The measurement of the title-topics window is 2. [1.]
+The measurement of the title-topics window is 2.
 
 The character-topics window is a text buffer g-window spawned by the right-sidebar window.
 The position of the character-topics window is g-placeabove.
@@ -152,15 +152,25 @@ The measurement of the character-topics window is 9.
 The title-inventory window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-inventory window is g-placeabove.
 The scale method of the title-inventory window is g-fixed-size.
-The measurement of the title-inventory window is 2. [1.]
+The measurement of the title-inventory window is 2.
 
 The list-inventory window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-inventory window is g-placeabove.
 The scale method of the list-inventory window is g-fixed-size.
 The measurement of the list-inventory window is 16.
 
+The debug-title window is a text grid g-window spawned by the right-sidebar window.
+The position of the debug-title window is g-placeabove.
+The scale method of the debug-title window is g-fixed-size.
+The measurement of the debug-title window is 2.
+
+The debug-info window is a text buffer g-window spawned by the right-sidebar window.
+The position of the debug-info window is g-placeabove.
+The scale method of the debug-info window is g-fixed-size.
+The measurement of the debug-info window is 9.
+
 Section - Rules 
-	
+
 Rule for refreshing the title-characters window:
 	let X be the list of people who are major that are not the player in the location of the player;
 	if  X is not empty:
@@ -196,6 +206,9 @@ Rule for refreshing the title-inventory window:
 	
 Rule for refreshing the list-inventory window:
 	try taking inventory.
+
+Rule for refreshing the debug-title window:
+	say "DEBUG".
 	
 Section - Styles
 
@@ -433,7 +446,7 @@ This is the morlock attack rule:
 						now turns-since-attack is 0;
 						now morlocks-attack is false;
 
- [You will get weaker as you fight off the morlocks and eventually captured despite having poker.]
+[You will get weaker as you fight off the morlocks and eventually captured despite having poker.]
 fought-off-morlocks is a number that varies.
 fought-off-morlocks is 0.
 

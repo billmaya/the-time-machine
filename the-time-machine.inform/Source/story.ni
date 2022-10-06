@@ -2035,7 +2035,7 @@ Section - Tests | Time Machine | Fuses
 
 test orrery-time with "test fp-time / put orrery fuse in time machine fuse holder / take time machine fuse / put orrery fuse in time machine fuse holder / put time machine fuse in time machine fuse holder / take orrery fuse / put orrery fuse in time machine fuse holder / take orrery fuse from time machine fuse holder / put time machine fuse in time machine fuse holder."
 
-Chapter - Control Panel
+Chapter - Time Machine Control Panel
 
 The control panel is a thing.
 The control panel is part of the time machine.
@@ -2751,7 +2751,7 @@ Resting is an action applying to nothing.
 Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
 
-Part - Underground Rooms
+Part - Underground - General
 
 Chapter - Light Level
 
@@ -2765,9 +2765,9 @@ underground is a kind of lighted room.
 underground has a light level called visibility.
 The visibility of underground is usually night.
 
-Chapter - Shaft
+Part - Underground - Shaft
 
-Section - Shaft Description
+Chapter - Shaft Description
 
 To say shaft-description:
 	if the location of the player is:
@@ -2779,7 +2779,7 @@ To say shaft-description:
 		-- Shaft 5: say "SHAFT 5 DESCRIPTION. You're at the bottom of the shaft. The remaining pipes disappear into the walls. Far above your head a small dot of light shows daylight outside but none of that light penetrates to this depth.[no line break]";
 		-- otherwise: say "NULL";
 
-Section - Shaft Directions
+Chapter - Shaft Directions
 
 To say shaft-directions:
 	if the location of the player is Shaft 0:
@@ -2790,7 +2790,7 @@ To say shaft-directions:
 		otherwise:
 			say "up and down".
 
-Section - Shaft Ladder
+Chapter - Shaft Ladder
 
 The shaft-ladder is a backdrop.
 The shaft-ladder is in Shaft 0.
@@ -2804,7 +2804,7 @@ The description of the shaft-ladder is "A series of metal rungs set into the met
 
 Understand "ladder" as shaft-ladder.
 
-Section - Ladder Glyphs
+Chapter - Ladder Glyphs
 
 To say level-0-light: say "[unicode 9672][unicode 9677]".
 To say level-1-light: say "[unicode 9675][unicode 9672][unicode 9677]".
@@ -2830,9 +2830,9 @@ To say ladder-glyphs:
 		-- Shaft 5: say "[level-5-light] [tamil-work]";
 		-- otherwise: say "NULL";
 
-Chapter - Level 0
+Part - Underground - Level 0
 
-Section - Shaft 0
+Chapter - Shaft 0
 
 Shaft 0 is underground.
 Shaft 0 is up from Shaft 1.
@@ -2843,9 +2843,9 @@ The printed name of Shaft 0 is "Shaft - Level 0". [[ladder-glyphs]".]
 
 The visibility of Shaft 0 is day.
 
-Chapter - Level 1
+Part - Underground - Level 1
 
-Section - Bottom Well
+Chapter - Bottom Well
 
 The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
@@ -2877,7 +2877,7 @@ After switching off the brass lantern:
 	now the lantern is not lit.
 
 
-Section - Shaft 1
+Chapter - Shaft 1
 
 Shaft 1 is underground.
 Shaft 1 is north of Bottom Well.
@@ -2890,9 +2890,9 @@ The printed name of Shaft 1 is "Shaft - Level 1". [[ladder-glyphs]".]
 
 The visibility of Shaft 1 is day.
 
-Chapter - Level 2
+Part - Underground - Level 2
 
-Section - Shaft 2
+Chapter - Shaft 2
 
 Shaft 2 is underground.
 Shaft 2 is down from Shaft 1.
@@ -2905,7 +2905,7 @@ The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
 The visibility of Shaft 2 is day.
 
-Section - Agora
+Chapter - Agora
 
 The Agora is underground.
 The Agora is south of Shaft 2.
@@ -2918,7 +2918,7 @@ The description of Agora is "AGORA DESCRIPTION. What appears to be an undergroun
 
 The visibility of Agora is day.
 
-Section - Curia
+Chapter - Curia
 
 The Curia is underground.
 The Curia is east of the Agora.
@@ -2927,7 +2927,7 @@ The description of Curia is "CURIA DESCRIPTION.  A raised area with several leve
 
 The visibility of Curia is day.
 
-Section - Museum
+Chapter - Museum
 
 The Museum is underground.
 The Museum is south of the Agora.
@@ -2936,7 +2936,7 @@ The description of Museum is "MUSEUM DESCRIPTION.  A wide circular ramp winds it
 
 The visibility of Museum is day.
 
-Section - Temple
+Chapter - Temple
 
 The Temple is underground.
 The Temple is west of the Agora.
@@ -2945,7 +2945,7 @@ The description of Temple is "TEMPLE DESCRIPTION. Rows of dust-covered pews face
 
 The visibility of Temple is day.
 
-Section - Storerooms
+Chapter - Storerooms
 
 The Storerooms are underground.
 The Storerooms are northwest of the Agora.
@@ -2954,9 +2954,9 @@ The description of Storerooms is "STOREROOM DESCRIPTION. Whatever was contained 
 	
 The visibility of Storerooms is day.
 
-Chapter - Level 3
+Part - Underground - Level 3
 
-Section - Shaft 3
+Chapter - Shaft 3
 
 Shaft 3 is underground.
 Shaft 3 is down from Shaft 2.
@@ -2969,7 +2969,7 @@ The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 
 The visibility of Shaft 3 is day.
 
-Section - Living Quarters
+Chapter - Living Quarters
 
 The Living Quarters are underground.
 The Living Quarters are south of Shaft 3.
@@ -2979,7 +2979,7 @@ The description of Living Quarters is "LIVING QUARTERS DESCRIPTION. Floor upon f
 		
 The visibility of Living Quarters is shadow.
 
-Section - Catacombs
+Chapter - Catacombs
 
 The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
@@ -2990,9 +2990,9 @@ The visibility of Catacombs is shadow.
 		
 [TBD - > Examine bones > Examine mummified remains]
 
-Chapter - Level 4
+Part - Underground - Level 4
 
-Section - Shaft 4
+Chapter - Shaft 4
 
 Shaft 4 is underground.
 Shaft 4 is down from Shaft 3.
@@ -3005,7 +3005,7 @@ The printed name of Shaft 4 is "Shaft - Level 4". [[ladder-glyphs]".]
 
 The visibility of Shaft 4 is twilight.
 
-Section - Eating Area
+Chapter - Eating Area
 
 The Eating Area is underground.
 The Eating Area is south of Shaft 4.
@@ -3017,7 +3017,7 @@ The visibility of Eating Area is night.
 
 [TBD > Examine benches > Examine troughs ]
 
-Section - Abattoir
+Chapter - Abattoir
 
 The Abattoir is underground.
 The Abattoir is south of the Eating Area.
@@ -3027,9 +3027,11 @@ The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more t
 	
 The visibility of Abattoir is night.
 
+Section - Eloi Clothing
+
 [TBD + Pile of bloodstained Eloi clothing]
 
-Section - Holding Pen
+Chapter - Holding Pen
 
 The Holding Pen is underground.
 The Holding Pen is south of the Abattoir.
@@ -3038,9 +3040,9 @@ The description of Holding Pen is "HOLDING PEN DESCRIPTION.[paragraph break]The 
 	
 The visibility of Holding Pen is night.
 
-Chapter - Level 5
+Part - Underground - Level 5
 
-Section - Shaft 5
+Chapter - Shaft 5
 
 Shaft 5 is underground.
 Shaft 5 is down from Shaft 4.
@@ -3052,7 +3054,7 @@ The printed name of Shaft 5 is "Shaft - Level 5". [[ladder-glyphs]".]
 	
 The visibility of Shaft 5 is night.
 
-Section - Heavy Sliding Door
+Chapter - Heavy Sliding Door
 
 The Heavy Sliding Door is a door.
 The Heavy Sliding Door is south of Shaft 5 and north of the Power Plant.
@@ -3060,7 +3062,7 @@ The Heavy Sliding Door is scenery.
 	
 The description of Heavy Sliding Door is "HEAVY SLIDING DOOR DESCRIPTION. A heavy metal door on a track that can slide open and shut."
 
-Section - Power Plant
+Chapter - Power Plant
 
 The Power Plant is underground.
 The Power Plant is south of the Heavy Sliding Door.

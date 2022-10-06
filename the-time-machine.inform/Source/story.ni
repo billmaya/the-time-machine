@@ -3056,6 +3056,7 @@ Section - Heavy Sliding Door
 
 The Heavy Sliding Door is a door.
 The Heavy Sliding Door is south of Shaft 5 and north of the Power Plant.
+The Heavy Sliding Door is scenery.
 	
 The description of Heavy Sliding Door is "HEAVY SLIDING DOOR DESCRIPTION. A heavy metal door on a track that can slide open and shut."
 

@@ -482,7 +482,6 @@ To say sounds-scuttling:
 
 To say morlocks-follow:
 	say "[sounds-scuttling]".
-	[DEL say "MORLOCKS HAVE ATTACKED YOU ONCE ALREADY AND FOLLOW WARILY AT A DISTANCE."]
 
 To say attack-morlocks-1:
 	say "Swinging the poker wildly around you manage to drive the loathsome creatures away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack."

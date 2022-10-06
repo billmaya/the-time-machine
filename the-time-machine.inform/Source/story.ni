@@ -478,16 +478,18 @@ This is the morlock fight rule:
 [Morlock Underground Substitution Text]
 
 To say morlocks-attack:
-	say "Before you can take another step you're beset from all sides by shadowy figures from the surrounding darkness—Morlocks!"
+	say "Before you can take another step you're beset from all sides by shadowy brutes from the surrounding darkness—Morlocks!"
 
 To say sounds-scuttling:
-	say "In the darkness around you see and hear dim figures scuttling around in the shadows, muttering among themselves in some strange tongue, just out of reach, almost indistinguishable from the darkness."
+	say "All around you can hear scuttlings and mutterings of vague shadowy figures, almost indistinguishable from the pitch black darkness that surrounds you."
+	[DEL say "In the darkness around you see and hear dim figures scuttling around in the darkness, muttering among themselves in some strange tongue, just out of reach, almost indistinguishable from the darkness."]
 
 To say morlocks-follow:
-	say "MORLOCKS HAVE ATTACKED YOU ONCE ALREADY AND FOLLOW WARILY AT A DISTANCE."
+	say "[sounds-scuttling]".
+	[DEL say "MORLOCKS HAVE ATTACKED YOU ONCE ALREADY AND FOLLOW WARILY AT A DISTANCE."]
 
 To say attack-morlocks-1:
-	say "Swinging the poker wildly around you manage to drive the Morlocks away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack."
+	say "Swinging the poker wildly around you manage to drive the loathsome creatures away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack."
 	
 To say attack-morlocks-2:
 	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again."

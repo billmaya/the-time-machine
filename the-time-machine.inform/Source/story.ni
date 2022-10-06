@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40211 ]
+[ WORDS - 40295 ]
 
 Table of Releases
 release	notes
@@ -3029,12 +3029,12 @@ The visibility of Abattoir is night.
 
 Section - Eloi Clothing
 
-[TBD + Pile of bloodstained Eloi clothing]
-
 The pile of clothing is a thing.
 The pile of clothing is in the Abattoir.
 The pile of clothing is undescribed.
-The description of pile of clothing is "A PILE OF BLOODSTAINED ELOI SMOCKS AND TUNICS."
+The description of pile of clothing is "The pile of clothing turns out to be a collection of bloodstained Eloi smocks and tunics. A few are relatively untouched by blood."
+
+Understand "smocks" or "tunics" as pile of clothing.
 
 Chapter - Holding Pen
 

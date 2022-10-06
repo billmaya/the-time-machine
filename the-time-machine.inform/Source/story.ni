@@ -352,17 +352,20 @@ Instead of attacking someone: say "[no-violence]".
 [Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."]
 
 To say attack-morlocks-poker:
-	say "YOU ATTEMPT TO ATTACK MORLOCKS WITH POKER."
+	say "You attempt to take the battle to these loathsome creatures but they dodge easily around your ineffectual swings with the poker."
+	[DEL say "YOU ATTEMPT TO ATTACK MORLOCKS WITH POKER."]
 
 To say attack-morlocks-barehanded:
-	say "YOU ATTEMPT TO ATTACK MORLOCKS BAREHANDED."
+	say "Your barehand attempts to grapple with these subterraneon dwellers is a failure. They easily avoid your assaults. If only you had some sort of weapon."
+	[DEL say "YOU ATTEMPT TO ATTACK MORLOCKS BAREHANDED."]
 
 To say attempt-attack-morlocks-before-attacked:
-	say "DON'T ATTACK MORLOCKS IF NOT ATTACKED FIRST."
+	say "Why would you provoke the Morlocks when they haven't shown the slightest agression against you. Hardly civilized behavior."
+	[DEL say "DON'T ATTACK MORLOCKS IF NOT ATTACKED FIRST."]
 
 [You should be able to attack morlocks only if they have attacked you first]
 Instead of attacking morlock-placeholder with poker:
-	if morlocks-attacking is true:
+	if morlocks-attacked is true:
 		if the player has the poker:
 			say "[attack-morlocks-poker]";
 		otherwise:
@@ -403,8 +406,8 @@ Chapter - Underground Rooms
 Every turn:
 	follow the morlock attack rule.
 
-morlocks-attacking is a truth state that varies.
-morlocks-attacking is false.
+morlocks-attacked is a truth state that varies.
+morlocks-attacked is false.
 
 turns-since-attack is a number that varies.
 turns-since-attack is 0.
@@ -417,11 +420,11 @@ This is the morlock attack rule:
 	if the player is in the Year-802701-Underground:
 		if the visibility of the location of player is not day:
 			if player-has-light is false:
-				if morlocks-attacking is false:
+				if morlocks-attacked is false:
 					if the visibility of the location of player is shadow:
 						if a random chance of 25 in 100 succeeds:
 							say "[morlocks-attack]";
-							now morlocks-attacking is true;
+							now morlocks-attacked is true;
 							now boldness-morlocks is boldness-morlocks + 1;
 							follow the morlock fight rule;
 						otherwise:
@@ -430,7 +433,7 @@ This is the morlock attack rule:
 						if the visibility of the location of player is twilight:
 							if a random chance of 50 in 100 succeeds:
 								say "[morlocks-attack]";
-								now morlocks-attacking is true;
+								now morlocks-attacked is true;
 								now boldness-morlocks is boldness-morlocks + 1;
 								follow the morlock fight rule;
 							otherwise:
@@ -438,7 +441,7 @@ This is the morlock attack rule:
 						otherwise:
 							if a random chance of 75 in 100 succeeds:
 								say "[morlocks-attack]";
-								now morlocks-attacking is true;
+								now morlocks-attacked is true;
 								now boldness-morlocks is boldness-morlocks + 1;
 								follow the morlock fight rule;
 							otherwise:
@@ -448,7 +451,7 @@ This is the morlock attack rule:
 					now turns-since-attack is turns-since-attack + 1;
 					if turns-since-attack is 3 - boldness-morlocks:
 						now turns-since-attack is 0;
-						now morlocks-attacking is false;
+						now morlocks-attacked is false;
 
 [You will get weaker as you fight off the morlocks and eventually captured despite having poker.]
 fought-off-morlocks is a number that varies.
@@ -504,7 +507,7 @@ Every turn:
 	if debug-mode is true: 
 		focus debug-info window;
 		clear debug-info window;
-		say "morlocks-attack: [morlocks-attacking][line break]";
+		say "morlocks-attacked: [morlocks-attacked][line break]";
 		say "turns-since-attack: [turns-since-attack][line break]";
 		say "boldness-morlocks: [boldness-morlocks][line break]";
 		say "fought-off-morlocks: [fought-off-morlocks][line break]";
@@ -4907,7 +4910,7 @@ Part - Morlock Endgame
 
 [Removed the Bottom Well wandering code that kicks this off.]
 Instead of wandering in the Bottom Well:
-	if morlocks-attacking is true:
+	if morlocks-attacked is true:
 		if the player has the poker:
 			say "Even with a weapon you shouldn't try your luck, especially without a source of light and possibly some allies. I mean, you barely escaped from your first encounter with these brutish savages.";
 		otherwise:
@@ -4916,14 +4919,14 @@ Instead of wandering in the Bottom Well:
 		if a random chance of 1 in 3 succeeds:
 			if the player has the poker:
 				say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and attempt to grab you. With a strength born of desperation and fear, you flail at them with the poker and drive what must be Morlocks off into the darkness. Retreating in what you hope is the correct direction, you find yourself back at the bottom of the shaft.";
-				now morlocks-attacking is true;
+				now morlocks-attacked is true;
 			otherwise:
 				if a random chance of 2 in 3 succeeds:
 					say "You start down the [noun] tunnel without a light or a map towards the sound of the nearest machinery. Suddenly, without warning, mongoloid hands reach out of the darkness and grab you. By some miracle you are able to beat off your attackers and retreat back to the bottom of the shaft.";
 				otherwise:
 					say "You start down the [noun] tunnel without light or map towards the sound of the nearest machinery. The light fades as you proceed down the tunnel until you are in near absolute darkness. The noise of machinery gets louder and louder with each step you take.[paragraph break]Suddenly, without warning, multiple pairs of brutish hands reach out of the darkness and grab at you. You fight back valiently but, outnumbered and without a weapon, you are quickly overwhelmed by the negroid shadows and knocked unconscious.[paragraph break]Later, you regain consciousness in the freezing cold in some storage room carved out of solid rock. Shivering, you look around. Surrounding you are the naked bodies of Eloi, male and female, suspended on hooks, future fodder for the Morlocks. You bang on the door in horrror but the omnipresent and overwhelming sound of machinery drowns out your screams. Exhausted, you slump against the wall and soon succumb to the freezing cold, wishing you had believed Wells from the start.";
 					end the story finally;
-				now morlocks-attacking is true;
+				now morlocks-attacked is true;
 		otherwise:
 			say "You start down the [noun] tunnel but without a light or a map you wander unsuccessfully in the darkness, eventually returning to where you started. Maybe you'll have better luck in another direction.".
 

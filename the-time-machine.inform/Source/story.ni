@@ -368,7 +368,7 @@ Instead of attacking morlock-placeholder with poker:
 	if morlocks-attacked is true:
 		if the player has the poker:
 			say "[attack-morlocks-poker]";
-		otherwise:
+		otherwise: [This will never be reached since if you don't have a weapon you are captured immediately]
 			say "[attack-morlocks-barehanded]";
 	otherwise:
 		say "[attempt-attack-morlocks-before-attacked]";

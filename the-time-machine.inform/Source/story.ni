@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40239 ]
+[ WORDS - 40284 ]
 
 Table of Releases
 release	notes
@@ -353,15 +353,12 @@ Instead of attacking someone: say "[no-violence]".
 
 To say attack-morlocks-poker:
 	say "You attempt to take the battle to these loathsome creatures but they dodge easily around your ineffectual swings with the poker."
-	[DEL say "YOU ATTEMPT TO ATTACK MORLOCKS WITH POKER."]
 
 To say attack-morlocks-barehanded:
 	say "Your barehand attempts to grapple with these subterraneon dwellers is a failure. They easily avoid your assaults. If only you had some sort of weapon."
-	[DEL say "YOU ATTEMPT TO ATTACK MORLOCKS BAREHANDED."]
 
 To say attempt-attack-morlocks-before-attacked:
 	say "Why would you provoke the Morlocks when they haven't shown the slightest agression against you. Hardly civilized behavior."
-	[DEL say "DON'T ATTACK MORLOCKS IF NOT ATTACKED FIRST."]
 
 [You should be able to attack morlocks only if they have attacked you first]
 Instead of attacking morlock-placeholder with poker:
@@ -482,7 +479,6 @@ To say morlocks-attack:
 
 To say sounds-scuttling:
 	say "All around you can hear scuttlings and mutterings of vague shadowy figures, almost indistinguishable from the pitch black darkness that surrounds you."
-	[DEL say "In the darkness around you see and hear dim figures scuttling around in the darkness, muttering among themselves in some strange tongue, just out of reach, almost indistinguishable from the darkness."]
 
 To say morlocks-follow:
 	say "[sounds-scuttling]".

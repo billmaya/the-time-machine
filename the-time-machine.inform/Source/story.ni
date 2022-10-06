@@ -3023,13 +3023,18 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Pen.
 
-The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting matter.[paragraph break]There are exits to the north and south."
+The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting matter.[if pile of clothing is in the Abattoir] PILE OF CLOTHING.[end if][paragraph break]There are exits to the north and south."
 	
 The visibility of Abattoir is night.
 
 Section - Eloi Clothing
 
 [TBD + Pile of bloodstained Eloi clothing]
+
+The pile of clothing is a thing.
+The pile of clothing is in the Abattoir.
+The pile of clothing is undescribed.
+The description of pile of clothing is "A PILE OF BLOODSTAINED ELOI SMOCKS AND TUNICS."
 
 Chapter - Holding Pen
 

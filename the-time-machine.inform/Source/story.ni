@@ -602,6 +602,7 @@ Test goto-workshop with "go north / test unlock-workshop / test get-matches / go
 test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker." [Moved from Section - Tests | Time Machine | Fuses]
 Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever." [Moved from v1.4 Tests]
 Test go-underground with "test go-802701 / exit / remove grate / climb in well / down."
+Test create-torch with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
 
 Part - Release
 
@@ -3027,14 +3028,21 @@ The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more t
 	
 The visibility of Abattoir is night.
 
-Section - Eloi Clothing
+Section - Pile of Bloodstained Clothing
 
-The pile of clothing is a thing.
-The pile of clothing is in the Abattoir.
-The pile of clothing is undescribed.
-The description of pile of clothing is "The pile of clothing turns out to be a collection of bloodstained Eloi smocks and tunics. A few are relatively untouched by blood."
+The pile of bloodstained clothing is a thing.
+The pile of bloodstained clothing is nowhere.
+The pile of bloodstained clothing is undescribed.
+The description of pile of bloodstained clothing is "BLOODSTAINED CLOTHING, NOT GOOD FOR ANYTHING."
 
-Understand "smocks" or "tunics" or "bloodstained" as pile of clothing.
+Section - smocks
+
+The smocks are a thing.
+The smocks are in the Abattoir.
+The smocks are undescribed.
+The description of the smocks are "One or two Eloi tunics and smocks that are relatively untouched by blood."
+
+Understand "smock" or "tunics" or "tunic" as pile of clothing.
 
 Chapter - Holding Pen
 
@@ -4646,6 +4654,32 @@ Does the player mean examining cigar-gernsback when the player does not have cig
 Chapter - Testing
 
 Test g-cigars with "ask gernsback about cigar / ask gernsback about his cigar / ask gernsback about the cigar / ask gernsback about cigar-gernsback / ask gernsback about cigar-player / ask gernsback for cigar / ask gernsback for cigar-player / ask gernsback for a cigar / ask gernsback for cigar-gernsback ."
+
+Book - Torch
+
+Part - With Poker
+
+Before tying smocks to poker:
+	say "BEFORE - TYING SMOCKS TO POKER.";
+	[remove clothing]
+	[remove poker]
+	[stop the action.]
+
+[Instead of tying smocks to poker:
+	say "INSTEAD OF - SMOCKS TIED TO POKER.";
+	continue the action.]
+
+Check tying smocks to poker:
+	say "CHECK - TYING SMOCKS TO POKER.";
+
+Carry out tying smocks to poker:
+	say "CARRY OUT - TYING SMOCKS TO POKER.";
+
+After tying smocks to poker:
+	say "AFTER - TYING SMOCKS TO POKER.";
+	
+Report tying smocks to poker:
+	say "REPORT - TYING SMOCKS TO POKER.";
 
 Volume - Scenes
 

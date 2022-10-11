@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40295 ]
+[ WORDS - 40533 ]
 
 Table of Releases
 release	notes
@@ -3031,18 +3031,18 @@ The visibility of Abattoir is night.
 Section - Pile of Bloodstained Clothing
 
 The pile of bloodstained clothing is a thing.
-The pile of bloodstained clothing is nowhere.
+The pile of bloodstained clothing is in the Abattoir.
 The pile of bloodstained clothing is undescribed.
 The description of pile of bloodstained clothing is "BLOODSTAINED CLOTHING, NOT GOOD FOR ANYTHING."
 
-Section - smocks
+Section - Smocks
 
 The smocks are a thing.
 The smocks are in the Abattoir.
 The smocks are undescribed.
 The description of the smocks are "One or two Eloi tunics and smocks that are relatively untouched by blood."
 
-Understand "smock" or "tunics" or "tunic" as pile of clothing.
+Understand "smock" or "tunics" or "tunic" as smocks.
 
 Chapter - Holding Pen
 
@@ -4655,19 +4655,21 @@ Chapter - Testing
 
 Test g-cigars with "ask gernsback about cigar / ask gernsback about his cigar / ask gernsback about the cigar / ask gernsback about cigar-gernsback / ask gernsback about cigar-player / ask gernsback for cigar / ask gernsback for cigar-player / ask gernsback for a cigar / ask gernsback for cigar-gernsback ."
 
-Book - Torch
+Book - Creating A Torch
+
+The block tying rule is not listed in the check tying it to rulebook.
 
 Part - With Poker
 
 Before tying smocks to poker:
 	say "BEFORE - TYING SMOCKS TO POKER.";
-	[remove clothing]
-	[remove poker]
-	[stop the action.]
+	[make sure smocks are not already tied to poker]
 
-[Instead of tying smocks to poker:
+Instead of tying smocks to poker:
 	say "INSTEAD OF - SMOCKS TIED TO POKER.";
-	continue the action.]
+	[make smocks part of poker]
+	[make smocks flammable]
+	continue the action. [Remove? Stop the action here and get rid of Check/Carry/After/Report?]
 
 Check tying smocks to poker:
 	say "CHECK - TYING SMOCKS TO POKER.";
@@ -4677,9 +4679,13 @@ Carry out tying smocks to poker:
 
 After tying smocks to poker:
 	say "AFTER - TYING SMOCKS TO POKER.";
+	[say that smocks tied to poker and you have created a serviceable torch]
 	
-Report tying smocks to poker:
+Report tying smocks to poker: [Doesn't look like this is hit]
 	say "REPORT - TYING SMOCKS TO POKER.";
+
+Before tying something to something:
+	say "YOU WOULD ACHIEVE NOTHING BY THIS.";
 
 Volume - Scenes
 

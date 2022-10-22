@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40533 ]
+[ WORDS - 40855 40605 ]
 
 Table of Releases
 release	notes
@@ -1323,7 +1323,9 @@ Chapter - Poker
 The poker is a thing. [https://bit.ly/3sczKUx]
 The poker is undescribed in the Parlor.
 Understand "fire iron" or "fire hook" as poker.
-The description of the poker is "About three feet long, pointed and hooked at one end, this weighted implement is used to stir up the coal embers to achieve even burning."
+The description of the poker is "[if the tunic is not part of the poker]About three feet long, pointed and hooked at one end, this weighted implement is used to stir up the coal embers to achieve even burning.[otherwise]With the Eloi tunic wrapped around one end you've turned this weapon into a makeshift torch.[end if]"
+
+The printed name of poker is "[if the tunic is not part of the poker]poker[otherwise]makeshift torch[end if]".
 
 [> use poker]
 
@@ -3033,16 +3035,29 @@ Section - Pile of Bloodstained Clothing
 The pile of bloodstained clothing is a thing.
 The pile of bloodstained clothing is in the Abattoir.
 The pile of bloodstained clothing is undescribed.
-The description of pile of bloodstained clothing is "BLOODSTAINED CLOTHING, NOT GOOD FOR ANYTHING."
+The description of the pile of bloodstained clothing is "A large number of Eloi tunics and smocks piled in a corner. All appear to be covered in blood, some dried, some still wet."
 
-Section - Smocks
+Instead of searching the pile of bloodstained clothing when the tunic is unfound:
+	now the tunic is found;
+	say "Searching through the loathsome pile you find one article of clothing, an Eloi tunic, that is relatively clean and unstained by blood and separate it from the rest.";
+	move the tunic to the player.
 
-The smocks are a thing.
-The smocks are in the Abattoir.
-The smocks are undescribed.
-The description of the smocks are "One or two Eloi tunics and smocks that are relatively untouched by blood."
+Instead of searching the pile of bloodstained clothing:
+	say "Further investigation reveals nothing else of importance."
 
-Understand "smock" or "tunics" or "tunic" as smocks.
+Section - Tunic
+
+The tunic is a thing.
+The tunic is in the Abattoir.
+The tunic is undescribed.
+The description of the tunic is "[if the tunic is not part of the poker]An Eloi tunic that is relatively untouched by blood.[otherwise]Wrapped around the end of the poker.[end if]"
+
+The printed name of tunic is "Eloi tunic".
+
+Understand "smock" as tunic.
+
+The tunic can be found or unfound.
+The tunic are unfound.
 
 Chapter - Holding Pen
 
@@ -4522,8 +4537,9 @@ Every turn:
 			now the item is nowhere;
 			refresh the list-inventory window.
 
-Part - Torch
+Part - Torch (not being used)
 
+[
 A torch is a kind of thing.
 The plural of torch is torches.
 
@@ -4543,9 +4559,12 @@ Chapter - Putting The Torch Out
 
 Test n-torch with "north / north / west / north /take newspaper / open box of matches / take match / light match / light newspaper."
 
+]
+
 Book - Newspaper
 
-The newspaper is a torch.
+The newspaper is a thing.
+The newspaper is flammable.
 The newspaper is on the left armchair.
 The newspaper is undescribed. 
 Understand "news" or "paper" as newspaper.
@@ -4661,31 +4680,33 @@ The block tying rule is not listed in the check tying it to rulebook.
 
 Part - With Poker
 
-Before tying smocks to poker:
-	say "BEFORE - TYING SMOCKS TO POKER.";
-	[make sure smocks are not already tied to poker]
+Chapter - Tying
 
-Instead of tying smocks to poker:
-	say "INSTEAD OF - SMOCKS TIED TO POKER.";
-	[make smocks part of poker]
-	[make smocks flammable]
-	continue the action. [Remove? Stop the action here and get rid of Check/Carry/After/Report?]
+Before tying tunic to poker:
+	if tunic is part of the poker:
+		say "You've already done that.";
+		stop the action;
 
-Check tying smocks to poker:
-	say "CHECK - TYING SMOCKS TO POKER.";
+Instead of tying tunic to poker:
+	say "You deftly wrap the tunic around one end of the poker and tie it in securely in place.";
+	now the tunic is part of the poker;
+	now the tunic is flammable;
 
-Carry out tying smocks to poker:
-	say "CARRY OUT - TYING SMOCKS TO POKER.";
+Chapter - Wrapping
 
-After tying smocks to poker:
-	say "AFTER - TYING SMOCKS TO POKER.";
-	[say that smocks tied to poker and you have created a serviceable torch]
-	
-Report tying smocks to poker: [Doesn't look like this is hit]
-	say "REPORT - TYING SMOCKS TO POKER.";
+Wrapping is an action applying to two things.
 
-Before tying something to something:
-	say "YOU WOULD ACHIEVE NOTHING BY THIS.";
+Understand "wrap [tunic] around [poker]" as wrapping.
+
+Instead of wrapping:
+	try tying tunic to poker;
+
+Part - Makeshift Torch
+
+The makeshift torch is a backdrop.
+The makeshift torch is in Year-802701-Underground.
+
+The description of the makeshift torch is "[if the tunic is not part of the poker]You can't see any such thing.[otherwise]With the Eloi tunic tied to the end of the poker, this could be a serviceable source of portable light.[end if]"
 
 Volume - Scenes
 

@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40693 ]
+[ WORDS - 40807 ]
 
 Table of Releases
 release	notes
@@ -602,7 +602,8 @@ Test goto-workshop with "go north / test unlock-workshop / test get-matches / go
 test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker." [Moved from Section - Tests | Time Machine | Fuses]
 Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever." [Moved from v1.4 Tests]
 Test go-underground with "test go-802701 / exit / remove grate / climb in well / down."
-Test create-torch with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
+Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
+Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."
 
 Part - Release
 
@@ -1325,7 +1326,7 @@ The poker is undescribed in the Parlor.
 Understand "fire iron" or "fire hook" as poker.
 The description of the poker is "[if the tunic is not part of the poker]About three feet long, pointed and hooked at one end, this weighted implement is used to stir up the coal embers to achieve even burning.[otherwise]With the Eloi tunic wrapped around one end you've turned this weapon into a makeshift torch.[end if]"
 
-The printed name of poker is "[if the tunic is not part of the poker]poker[otherwise]makeshift torch[end if]".
+[The printed name of poker is "[if the tunic is not part of the poker]poker[otherwise]makeshift torch[end if]".]
 
 [> use poker]
 
@@ -3050,7 +3051,7 @@ Section - Tunic
 The tunic is a thing.
 The tunic is in the Abattoir.
 The tunic is undescribed.
-The description of the tunic is "[if the tunic is not part of the poker]An Eloi tunic that is relatively untouched by blood.[otherwise]Wrapped around the end of the poker.[end if]"
+The description of the tunic is "[if the tunic is unfound]You can't see any such thing.[otherwise if the tunic is not part of the poker]An Eloi tunic that is relatively untouched by blood.[otherwise]Wrapped around the end of the poker.[end if]"
 
 The printed name of tunic is "Eloi tunic".
 
@@ -4537,28 +4538,6 @@ Every turn:
 			now the item is nowhere;
 			refresh the list-inventory window.
 
-Part - Torch (not being used)
-
-[
-A torch is a kind of thing.
-The plural of torch is torches.
-
-A torch is flammable.
-
-A torch has a number called duration.
-The duration of a torch is usually 10.
-
-A torch has a flame-state. A torch is usually new.
-Understand the flame-state property as describing a torch.
-
-Check burning a torch with something (this is the being able to hold a torch rule):
-	say "LIGHTING A TORCH WHILE HOLDING IT.";
-	stop the action.
-
-Chapter - Putting The Torch Out
-
-Test n-torch with "north / north / west / north /take newspaper / open box of matches / take match / light match / light newspaper."
-]
 
 Book - Newspaper
 
@@ -4689,7 +4668,10 @@ Before tying tunic to poker:
 Instead of tying tunic to poker:
 	say "You deftly wrap the tunic around one end of the poker and tie it in securely in place.";
 	now the tunic is part of the poker;
-	now the tunic is flammable;
+	now the tunic is scenery;
+	now the poker is scenery;
+	try silently dropping the poker;
+	move the makeshift torch to the player;
 
 Chapter - Wrapping
 
@@ -4702,10 +4684,42 @@ Instead of wrapping:
 
 Part - Makeshift Torch
 
-The makeshift torch is a backdrop.
+The makeshift torch is a thing.
+The description of the makeshift torch is "With the Eloi tunic tied to the end of the poker, this could be a serviceable source of portable light."
+The makeshift torch is nowhere.
+
+The makeshift torch is flammable.
+
+The makeshift torch has a number called duration.
+The duration of makeshift torch is usually 10.
+
+
+
+[DEL The makeshift torch is a backdrop.
 The makeshift torch is in Year-802701-Underground.
 
-The description of the makeshift torch is "[if the tunic is not part of the poker]You can't see any such thing.[otherwise]With the Eloi tunic tied to the end of the poker, this could be a serviceable source of portable light.[end if]"
+The description of the makeshift torch is "[if the tunic is not part of the poker]You can't see any such thing.[otherwise]With the Eloi tunic tied to the end of the poker, this could be a serviceable source of portable light.[end if]"]
+
+[
+A torch is a kind of thing.
+The plural of torch is torches.
+
+A torch is flammable.
+
+A torch has a number called duration.
+The duration of a torch is usually 10.
+
+A torch has a flame-state. A torch is usually new.
+Understand the flame-state property as describing a torch.
+
+Check burning a torch with something (this is the being able to hold a torch rule):
+	say "LIGHTING A TORCH WHILE HOLDING IT.";
+	stop the action.
+
+Chapter - Putting The Torch Out
+
+Test n-torch with "north / north / west / north /take newspaper / open box of matches / take match / light match / light newspaper."
+]
 
 Volume - Scenes
 

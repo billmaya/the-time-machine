@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40807 ]
+[ WORDS - 40742 ]
 
 Table of Releases
 release	notes
@@ -604,6 +604,7 @@ Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in 
 Test go-underground with "test go-802701 / exit / remove grate / climb in well / down."
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
 Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."
+Test light-torch with "turn lantern off / open box of matches / take match / light match / light torch with match."
 
 Part - Release
 
@@ -3029,7 +3030,7 @@ The Abattoir is north of the Holding Pen.
 
 The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting flesh.[if pile of clothing is in the Abattoir] There is a pile of bloodstained clothing in one corner.[end if][paragraph break]There are exits to the north and south."
 	
-The visibility of Abattoir is night.
+The visibility of Abattoir is day.
 
 Section - Pile of Bloodstained Clothing
 
@@ -3067,7 +3068,7 @@ The Holding Pen is south of the Abattoir.
 
 The description of Holding Pen is "HOLDING PEN DESCRIPTION.[paragraph break]The exit is to the north"
 	
-The visibility of Holding Pen is night.
+The visibility of Holding Pen is day.
 
 Part - Underground - Level 5
 
@@ -4693,33 +4694,20 @@ The makeshift torch is flammable.
 The makeshift torch has a number called duration.
 The duration of makeshift torch is usually 10.
 
+The makeshift torch has a flame-state. The makeshift torch is new.
+Understand the flame-state property as describing the makeshift torch.
 
-
-[DEL The makeshift torch is a backdrop.
-The makeshift torch is in Year-802701-Underground.
-
-The description of the makeshift torch is "[if the tunic is not part of the poker]You can't see any such thing.[otherwise]With the Eloi tunic tied to the end of the poker, this could be a serviceable source of portable light.[end if]"]
-
-[
-A torch is a kind of thing.
-The plural of torch is torches.
-
-A torch is flammable.
-
-A torch has a number called duration.
-The duration of a torch is usually 10.
-
-A torch has a flame-state. A torch is usually new.
-Understand the flame-state property as describing a torch.
+Chapter - Lighting The Torch
 
 Check burning a torch with something (this is the being able to hold a torch rule):
-	say "LIGHTING A TORCH WHILE HOLDING IT.";
+	say "You rotate the end of your makeshift torch in the flame until the entire surface is aflame.";
+	now player-has-light is true;
+	now the makeshift torch is lit;
 	stop the action.
 
 Chapter - Putting The Torch Out
 
-Test n-torch with "north / north / west / north /take newspaper / open box of matches / take match / light match / light newspaper."
-]
+
 
 Volume - Scenes
 

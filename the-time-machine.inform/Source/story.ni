@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40742 ]
+[ WORDS - 40832 ]
 
 Table of Releases
 release	notes
@@ -605,6 +605,7 @@ Test go-underground with "test go-802701 / exit / remove grate / climb in well /
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
 Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."
 Test light-torch with "turn lantern off / open box of matches / take match / light match / light torch with match."
+Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
 
 Part - Release
 
@@ -4703,10 +4704,23 @@ Check burning a torch with something (this is the being able to hold a torch rul
 	say "You rotate the end of your makeshift torch in the flame until the entire surface is aflame.";
 	now player-has-light is true;
 	now the makeshift torch is lit;
+	now the makeshift torch is flaming;
 	stop the action.
 
 Chapter - Putting The Torch Out
 
+Every turn:
+	let X be 0;
+	repeat with item running through flaming makeshift torch:
+		say "[X] : [duration of the item]";
+		decrement the duration of the item;
+		if item is flaming, increment X;
+		if the duration of the item is 0:
+			say "TORCH SPUTTERS AND GOES OUT.";
+			now the player-has-light is false;
+			now the makeshift torch is nowhere;
+			now the tunic is nowhere;
+			move the poker to the player
 
 
 Volume - Scenes

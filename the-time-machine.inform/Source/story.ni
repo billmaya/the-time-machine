@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40832 ]
+[ WORDS - 40841 ]
 
 Table of Releases
 release	notes
@@ -4710,14 +4710,13 @@ Check burning a torch with something (this is the being able to hold a torch rul
 Chapter - Putting The Torch Out
 
 Every turn:
-	let X be 0;
 	repeat with item running through flaming makeshift torch:
-		say "[X] : [duration of the item]";
+		[say "Torch Duration: [duration of the item][line break]";]
 		decrement the duration of the item;
-		if item is flaming, increment X;
-		if the duration of the item is 0:
-			say "TORCH SPUTTERS AND GOES OUT.";
+		if the duration of the item is less than 0:
+			say "With a last gasp of light the remaining torch sputters and goes out.";
 			now the player-has-light is false;
+			now the makeshift torch is burnt;
 			now the makeshift torch is nowhere;
 			now the tunic is nowhere;
 			move the poker to the player

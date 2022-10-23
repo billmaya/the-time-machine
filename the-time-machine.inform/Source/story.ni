@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40841 ]
+[ WORDS - 40965 ]
 
 Table of Releases
 release	notes
@@ -596,15 +596,18 @@ Test end2 with "test fp-time / take time machine fuse / put orrery fuse in fuse 
 Test end3 with "tell humboldt about time travel / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks."
 
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key." [Moved from v1.0 Tests]
-Test get-matches with "go west / ask gernsback for cigar / ask gernsback for matches / go east."
+Test get-matches with "go west / ask gernsback for cigar / ask gernsback for matches / go north / take newspaper / go south / go east."
 Test goto-workshop with "go north / test unlock-workshop / test get-matches / go north / flip switch." [Moved from v1.0 Tests]
 
 test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker." [Moved from Section - Tests | Time Machine | Fuses]
 Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever." [Moved from v1.4 Tests]
 Test go-underground with "test go-802701 / exit / remove grate / climb in well / down."
+
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
 Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."
 Test light-torch with "turn lantern off / open box of matches / take match / light match / light torch with match."
+Test light-newspaper with "turn lantern off / open box of matches / take match / light match / light newspaper with match."
+
 Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
 
 Part - Release
@@ -4544,7 +4547,6 @@ Every turn:
 Book - Newspaper
 
 The newspaper is a thing.
-The newspaper is flammable.
 The newspaper is on the left armchair.
 The newspaper is undescribed. 
 Understand "news" or "paper" as newspaper.
@@ -4657,6 +4659,28 @@ Test g-cigars with "ask gernsback about cigar / ask gernsback about his cigar / 
 Book - Creating A Torch
 
 The block tying rule is not listed in the check tying it to rulebook.
+
+Part - With Newspaper
+
+The newspaper is flammable.
+The newspaper has a number called duration.
+The duration of newspaper is 3.
+
+The newspaper has a flame-state. The makeshift torch is new.
+Understand the flame-state property as describing the newspaper.
+
+Chapter - Lighting The Newspaper
+
+Check burning a newspaper with something (this is the being able to hold a burning newspaper rule):
+	say "Rolling up the newspaper, you touch the end of it to the flame until it begins burning.";
+	now the player-has-light is true;
+	now the newspaper is lit;
+	now the newspaper is flaming;
+	stop the action.
+
+Chapter - Putting The Newspaper Out
+
+
 
 Part - With Poker
 

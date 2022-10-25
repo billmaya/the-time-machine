@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40965 ]
+[ WORDS - 41063 ]
 
 Table of Releases
 release	notes
@@ -38,7 +38,7 @@ The numeric-year is a number that varies.
 The numeric-year is 1895.
 
 debug-mode is a truth state that varies.
-debug-mode is true.
+debug-mode is [false.] true.
 
 To say introduction:
 	say "'Let me go!'
@@ -502,13 +502,16 @@ Chapter - Debug
 
 Every turn:
 	if debug-mode is true: 
-		focus debug-info window;
-		clear debug-info window;
-		say "morlocks-attacked: [morlocks-attacked][line break]";
-		say "turns-since-attack: [turns-since-attack][line break]";
-		say "boldness-morlocks: [boldness-morlocks][line break]";
-		say "fought-off-morlocks: [fought-off-morlocks][line break]";
-		focus main window.
+		if player is in Year-802701-Underground:
+			focus debug-info window;
+			clear debug-info window;
+			say "location visibility: [visibility of location][line break]";
+			say "player-has-light: [player-has-light][line break]";
+			say "morlocks-attacked: [morlocks-attacked][line break]";
+			say "turns-since-attack: [turns-since-attack][line break]";
+			say "boldness-morlocks: [boldness-morlocks][line break]";
+			say "fought-off-morlocks: [fought-off-morlocks][line break]";
+			focus main window.
 
 Part - Conversation
 
@@ -609,6 +612,7 @@ Test light-torch with "turn lantern off / open box of matches / take match / lig
 Test light-newspaper with "turn lantern off / open box of matches / take match / light match / light newspaper with match."
 
 Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
+Test news-duration with "test go-abattoir / test light-newspaper."
 
 Part - Release
 
@@ -2774,6 +2778,11 @@ underground is a kind of lighted room.
 underground has a light level called visibility.
 The visibility of underground is usually night.
 
+Chapter - Player-Has-Light Variable
+
+player-has-light is a truth state that varies.
+player-has-light is false.
+
 Part - Underground - Shaft
 
 Chapter - Shaft Description
@@ -2870,12 +2879,12 @@ The printed name of Bottom Well is "Bottom of the Well"
 Before going north in the Bottom Well:
 	say "GOING NORTH FROM THE BOTTOM WELL."
 
+Chapter - Brass Lantern (not used)
+
+[
 The brass lantern is a device.
 The brass lantern is in the Bottom Well.
-The description of the brass lantern is "A battered brass lantern that can be turned on or off."
-
-player-has-light is a truth state that varies.
-player-has-light is false.
+The description of the brass lantern is "A battered brass police lantern that can be turned on or off."
 
 After switching on the brass lantern:
 	now player-has-light is true;
@@ -2884,7 +2893,7 @@ After switching on the brass lantern:
 After switching off the brass lantern:
 	now player-has-light is false;
 	now the lantern is not lit.
-
+]
 
 Chapter - Shaft 1
 
@@ -4490,7 +4499,8 @@ Check striking a strikable-match (this is the strike only new matches rule):
 	
 Carry out striking a strikable-match (this is the standard striking rule):
 	now the noun is flaming;
-	now the noun is lit.
+	now the noun is lit;
+	now player-has-light is true.
 
 Report striking a strikable-match (this is the standard report striking rule):
 	say "You light [the noun]."
@@ -4516,6 +4526,8 @@ Instead of burning a burnt strikable-match with something:
 	say "[The noun] is completely consumed and cannot be relit."
 
 Chapter - Putting The Matches Out
+
+[Need to add code to set player-has-light to false when all matches burn out]
 
 Every turn:
 	let N be 0; [here we track how many matches are being put out during a turn, so that we don't have to mention each match individually if several go out during the same move]
@@ -4680,7 +4692,14 @@ Check burning a newspaper with something (this is the being able to hold a burni
 
 Chapter - Putting The Newspaper Out
 
-
+Every turn:
+	repeat with item running through flaming newspaper:
+		if debug-mode is true, say "Newspaper Duration: [duration of the item][line break]";
+		decrement the duration of the item;
+		if the duration of the item is less than 0:
+			say "You hold the burning newsprint until the very last possible minute and drop it as the flame approaches your fingers. The glowing fragments spiral to the floor and die.";
+			now the newspaper is nowhere;
+			now the player-has-light is false;
 
 Part - With Poker
 
@@ -4735,7 +4754,7 @@ Chapter - Putting The Torch Out
 
 Every turn:
 	repeat with item running through flaming makeshift torch:
-		[say "Torch Duration: [duration of the item][line break]";]
+		if debug-mode is true, say "Torch Duration: [duration of the item][line break]";
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
 			say "With a last gasp of light the remaining torch sputters and goes out.";

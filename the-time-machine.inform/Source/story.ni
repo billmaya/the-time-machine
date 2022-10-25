@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41063 ]
+[ WORDS - 41140 ]
 
 Table of Releases
 release	notes
@@ -4527,8 +4527,6 @@ Instead of burning a burnt strikable-match with something:
 
 Chapter - Putting The Matches Out
 
-[Need to add code to set player-has-light to false when all matches burn out]
-
 Every turn:
 	let N be 0; [here we track how many matches are being put out during a turn, so that we don't have to mention each match individually if several go out during the same move]
 	repeat with item running through flaming s-matches:
@@ -4553,7 +4551,12 @@ Every turn:
 		if the item is not nowhere:
 			say "You drop the [flame-state of the item] [item][if the player is in Year-1895-Inside or the player is in Year-802701-Inside] on the floor.[otherwise] on the ground.";
 			now the item is nowhere;
-			refresh the list-inventory window.
+			refresh the list-inventory window;
+	let M be 0; [track lit matches]
+	repeat with item running through flaming s-matches:
+		if the item is visible, increment M;
+	if M is 0: [if no lit matches]
+		now player-has-light is false.
 
 
 Book - Newspaper

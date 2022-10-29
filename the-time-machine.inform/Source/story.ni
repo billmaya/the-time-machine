@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41140 ]
+[ WORDS - 41003 ]
 
 Table of Releases
 release	notes
@@ -2789,12 +2789,12 @@ Chapter - Shaft Description
 
 To say shaft-description:
 	if the location of the player is:
-		-- Shaft 0: say "SHAFT 0 DESCRIPTION. A few of the pipes, obviously for ventilation, extend above your head through the shaft roof. In front of you are two oval openings through which light comes, filling the shaft.[no line break]";
-		-- Shaft 1: say "SHAFT 1 DESCRIPTION. The small tunnel opens up into a larger cylindrical shaft extending above your head and deep into darkness below. Every surface of the shaft walls are lined with pipes and conduits of all sizes. The faint sounds of machinery and rustlings can be heard below.[no line break]";
-		-- Shaft 2: say "SHAFT 2 DESCRIPTION. You're standing on a small platform anchored to the side of the shaft. Some of the pipes and conduits right angle and disappear into the walls but most of them continue downward.[no line break]";
-		-- Shaft 3: say "SHAFT 3 DESCRIPTION. You're standing on a small platform anchored to the side of the shaft. Some of the pipes and conduits right angle into the walls but a majority of them continue down.[no line break]";
-		-- Shaft 4: say "SHAFT 4 DESCRIPTION. You're standing on a small platform anchored to the side of the shaft. A few of the pipes and conduits disappear into the walls while a few continue their journey downward.[no line break]";
-		-- Shaft 5: say "SHAFT 5 DESCRIPTION. You're at the bottom of the shaft. The remaining pipes disappear into the walls. Far above your head a small dot of light shows daylight outside but none of that light penetrates to this depth.[no line break]";
+		-- Shaft 0: say "You're standing on a small platform anchored to the side of the shaft. Light streams through the louvered ceiling and two circular holes set at chest height.";
+		-- Shaft 1: say "The small tunnel opens up into a large shaft that extends high up above your head and down into the darkness below.";
+		-- Shaft 2: say "You're standing on a small platform anchored to the side of the shaft.";
+		-- Shaft 3: say "You're standing on a small platform anchored to the side of the shaft.";
+		-- Shaft 4: say "You're standing on a small platform anchored to the side of the shaft.";
+		-- Shaft 5: say "You're standing at the bottom of the shaft.[first time] Far above your head the small circle marks the waning daytime sky but none of the light penetrates to this depth to illuminate the area around you.[only]";
 		-- otherwise: say "NULL";
 
 Chapter - Shaft Directions
@@ -2855,7 +2855,7 @@ Chapter - Shaft 0
 Shaft 0 is underground.
 Shaft 0 is up from Shaft 1.
 
-The description of Shaft 0 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
+The description of Shaft 0 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
 
 The printed name of Shaft 0 is "Shaft - Level 0". [[ladder-glyphs]".]
 
@@ -2902,7 +2902,7 @@ Shaft 1 is north of Bottom Well.
 Shaft 1 is up from Shaft 2.
 Shaft 1 is down from Shaft 0.
 
-The description of Shaft 1 is "[shaft-description][paragraph break]You're standing on a small platform anchored to the side of a large cylindrical shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+The description of Shaft 1 is "[shaft-description] You're standing on a small platform anchored to the side of a large cylindrical shaft.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 1 is "Shaft - Level 1". [[ladder-glyphs]".]
 
@@ -2917,7 +2917,7 @@ Shaft 2 is down from Shaft 1.
 Shaft 2 is up from Shaft 3.
 Shaft 2 is north of the Agora.
 
-The description of Shaft 2 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+The description of Shaft 2 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 	
 The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
@@ -2981,7 +2981,7 @@ Shaft 3 is down from Shaft 2.
 Shaft 3 is up from Shaft 4.
 Shaft 3 is north of the Living Quarters.
 
-The description of Shaft 3 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+The description of Shaft 3 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 
@@ -3017,7 +3017,7 @@ Shaft 4 is down from Shaft 3.
 Shaft 4 is up from Shaft 5.
 Shaft 4 is north of the Eating Area.
 
-The description of Shaft 4 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+The description of Shaft 4 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 4 is "Shaft - Level 4". [[ladder-glyphs]".]
 
@@ -3043,6 +3043,8 @@ The Abattoir is north of the Holding Pen.
 
 The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting flesh.[if pile of clothing is in the Abattoir] There is a pile of bloodstained clothing in one corner.[end if][paragraph break]There are exits to the north and south."
 	
+[cross between a workshop and a charnal house]
+
 The visibility of Abattoir is day.
 
 Section - Pile of Bloodstained Clothing
@@ -3091,7 +3093,7 @@ Shaft 5 is underground.
 Shaft 5 is down from Shaft 4.
 Shaft 5 is north of the Heavy Sliding Door
 
-The description of Shaft 5 is "[shaft-description][paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is a heavy sliding door to the south."
+The description of Shaft 5 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is a heavy sliding door to the south."
 	
 The printed name of Shaft 5 is "Shaft - Level 5". [[ladder-glyphs]".]
 	

@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41003 ]
+[ WORDS - 40973 ]
 
 Table of Releases
 release	notes
@@ -2931,8 +2931,8 @@ The Agora is west of the Curia.
 The Agora is north of the Museum.
 The Agora is east of the Temple.
 The Agora is southeast of the Storerooms.
-	
-The description of Agora is "AGORA DESCRIPTION. What appears to be an underground common area large enough to accommodate hundreds at once. A weak light filters down from the well grating far above your head, illuminating the room.[paragraph break]There are exits to the east, south, west, northwest, and north."
+
+The description of Agora is "A weak light from above barely illuminates the huge columns that support the vaulted ceiling of this common are large enough to accommodate hundreds at once.[paragraph break]There are exits to the east, south, west, northwest, and north."
 
 The visibility of Agora is day.
 
@@ -2941,7 +2941,7 @@ Chapter - Curia
 The Curia is underground.
 The Curia is east of the Agora.
 
-The description of Curia is "CURIA DESCRIPTION.  A raised area with several levels of semi-circular benches carved into the east wall, separted from the much larger area to the west by a raised platform where, should the mood strike you, you could stand and address the ghosts of senators past.[paragraph break]You can exit to the west."
+The description of Curia is "A raised area off to the east for smaller, more intimate gatherings of a civic nature. Three rows of semi-circular benches carved into the east wall face a raised platform to the west.[paragraph break]You can exit to the west."
 
 The visibility of Curia is day.
 
@@ -2950,8 +2950,7 @@ Chapter - Museum
 The Museum is underground.
 The Museum is south of the Agora.
 
-The description of Museum is "MUSEUM DESCRIPTION.  A wide circular ramp winds its way up along the circumference of the circular room past smashed dioramas and looted exhibits of your future, someone's past.[paragraph break]You can exit to the north."
-
+The description of Museum is "A wide circular ramp windws its way up along the circumference of this room past smashed dioramas and scavanged exchibits of your future, someones past.[paragraph break]You can exit to the north."
 The visibility of Museum is day.
 
 Chapter - Temple
@@ -2959,7 +2958,7 @@ Chapter - Temple
 The Temple is underground.
 The Temple is west of the Agora.
 
-The description of Temple is "TEMPLE DESCRIPTION. Rows of dust-covered pews face an apse containing a raised alter. Behind the alter, a grotesque charicature of the what appears to be DaVinci's Vitruvian Man is crucified on an intricate mesh of stylized and interlocking gears of various sizes filling the wall behind him.[paragraph break]You can exit to the east."
+The description of Temple is "Rows of dust-covered pews face an apse and alter. Behind the alter, a charicature of the Vitruvian Man is crucified on an intricate cross of interlocking gears and levers suspended before a mural of a Boschian apocalypse.[paragraph break]You can exit to the east."
 
 The visibility of Temple is day.
 
@@ -2968,7 +2967,9 @@ Chapter - Storerooms
 The Storerooms are underground.
 The Storerooms are northwest of the Agora.
 
-The description of Storerooms is "STOREROOM DESCRIPTION. Whatever was contained on and in these empty shelves and bins as far as the eye can see is gone. [paragraph break]You can exit to the southeast."
+The description of Storeroom is "Whatever was on these empty shelves and bins that stretch as far as the eye can see is long gone.[paragraph break]You can exit to the sourtheast."
+	
+[collapsed in areas]
 	
 The visibility of Storerooms is day.
 
@@ -2993,7 +2994,7 @@ The Living Quarters are underground.
 The Living Quarters are south of Shaft 3.
 The Living Quarters are up from the Catacombs.
 
-The description of Living Quarters is "LIVING QUARTERS DESCRIPTION. Floor upon floor of individual cubbyholes carved into the walls rise up towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs and platforms.[paragraph break]There are exits to the north and down."
+The description of Living Quarters is "Hundreds upon hundreds of individual cubbyholes carved into the walls rise level by level towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs, ramps, and platforms.[paragraph break]There is an exit to the north and a tunnel leading down."
 		
 The visibility of Living Quarters is shadow.
 
@@ -3002,11 +3003,12 @@ Chapter - Catacombs
 The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
 
-The description of Catacombs is "CATACOMBS DESCRIPTION. You wander briefly through a maze of twisty passages, passing alcoves, sepulchers, and niches stuffed with the cataloged bones and mummified remains of the dead inhabitents of this underground arcology. Eventually, through luck or providence, to your relief, you find yourself back at the tunnel upward."
+The description of Catacombs is "The bones and mummified remains of the dead generations of this underground arcology are carefully arranged in individual alcoves, niches, and sepulchars according to some unknown taxonomy of size, shape, and function.[paragraph break]A tunnel leads back up."
 
 The visibility of Catacombs is shadow.
 		
 [TBD - > Examine bones > Examine mummified remains]
+[+wandering, turn into maze in future version?]
 
 Part - Underground - Level 4
 
@@ -3029,7 +3031,7 @@ The Eating Area is underground.
 The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
-The description of Eating Area is "EATING AREA DESCRIPTION. Rows of alternating benches and troughs parallel each other and fill the this room. Only a few of the troughs appear to have been recently used.[paragraph break]There are exits to the north and south."
+The description of Eating Area is "Rows of parallel troughs in various states of repair fill this room. Only a few are intact and one or two appears to have been used recently.[paragraph break]There are exits to the north and south."
 
 The visibility of Eating Area is night.
 
@@ -3041,9 +3043,7 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Pen.
 
-The description of Abattoir is "ABATTOIR DESCRIPTION. Resembling a morgue more than a kitchen, this room is dominated by a large bloodstained metal table with indented channels cut into its surface for drainage. Hanging on the walls are various knives and implements of bodily dismemberment, also specked with blood and rotting flesh.[if pile of clothing is in the Abattoir] There is a pile of bloodstained clothing in one corner.[end if][paragraph break]There are exits to the north and south."
-	
-[cross between a workshop and a charnal house]
+The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstaind clothing thrown in one corner.[paragraph break]There are exits to the north and south."
 
 The visibility of Abattoir is day.
 
@@ -3080,8 +3080,8 @@ Chapter - Holding Pen
 
 The Holding Pen is underground.
 The Holding Pen is south of the Abattoir.
-
-The description of Holding Pen is "HOLDING PEN DESCRIPTION.[paragraph break]The exit is to the north"
+	
+The description of Holding Pen is "A small alcover large enought to hold two or three captives.[paragraph break]There exit is to the north."
 	
 The visibility of Holding Pen is day.
 

@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40973 ]
+[ WORDS - 41202 ]
 
 Table of Releases
 release	notes
@@ -2902,7 +2902,6 @@ The printed name of Bottom Well is "Bottom of the Well"
 
 Before going north in the Bottom Well:
 	say "Ducking your head you head north."
-	[DEL say "GOING NORTH FROM THE BOTTOM WELL."]
 
 Chapter - Brass Lantern (not used)
 
@@ -3034,6 +3033,22 @@ The visibility of Catacombs is shadow.
 		
 [TBD - > Examine bones > Examine mummified remains]
 [+wandering, turn into maze in future version?]
+
+Section - Bones
+
+Section - Wandering In Catecombs
+
+Going north in the Catacombs is wandering.
+Going west in the Catacombs is wandering.
+Going northwest in the Catacombs is wandering.
+Going northeast in the Catacombs is wandering.
+Going east in the Catacombs is wandering.
+Going southeast in the Catacombs is wandering.
+Going south in the Catacombs is wandering.
+Going southwest in the Catacombs is wandering.
+	
+Instead of wandering in the Catacombs: say "WANDERING [noun] IN THE CATACOMBS." [random descriptions]
+
 
 Part - Underground - Level 4
 

@@ -2789,7 +2789,7 @@ Chapter - Shaft Description
 
 To say shaft-description:
 	if the location of the player is:
-		-- Shaft 0: say "You're standing on a small platform anchored to the side of the shaft. Light streams through the louvered ceiling and two circular holes set at chest height.";
+		-- Shaft 0: say "You're standing on a small platform anchored to the side of the shaft. Light streams down through the louvered ceiling and the two circular holes set into the wall set at chest height.";
 		-- Shaft 1: say "The small tunnel opens up into a large shaft that extends high up above your head and down into the darkness below.";
 		-- Shaft 2: say "You're standing on a small platform anchored to the side of the shaft.";
 		-- Shaft 3: say "You're standing on a small platform anchored to the side of the shaft.";
@@ -2861,6 +2861,30 @@ The printed name of Shaft 0 is "Shaft - Level 0". [[ladder-glyphs]".]
 
 The visibility of Shaft 0 is day.
 
+Section - Louvered Ceiling
+
+The louvered ceiling is a thing.
+The louvered ceiling is in Shaft 0.
+The louvered ceiling is scenery.
+
+The description of louvered ceiling is "Metal slats that look like they automatically adjust to let light into the shaft while keeping out the elements."
+
+Understand "slats" as louvered ceiling.
+
+Instead of adjusting the louvered ceiling: say "You can't see how to do that."
+
+Section - Holes
+
+The holes are a thing.
+The holes are in Shaft 0.
+The holes are scenery.
+
+The description of holes are "Two oval ellipsis carved through the shaft."
+
+Understand "hole" or "ellipse" or "ellipsis" or "oval" or "ovals" as holes.
+
+Instead of searching the holes: say "Bending down slightly you peer through one of the ovals. Far below you can see the clearing with your time machine in the center of it and beyond the forest, a parts of a river."
+
 Part - Underground - Level 1
 
 Chapter - Bottom Well
@@ -2877,7 +2901,8 @@ The visibility of Bottom Well is day.
 The printed name of Bottom Well is "Bottom of the Well"
 
 Before going north in the Bottom Well:
-	say "GOING NORTH FROM THE BOTTOM WELL."
+	say "Ducking your head you head north."
+	[DEL say "GOING NORTH FROM THE BOTTOM WELL."]
 
 Chapter - Brass Lantern (not used)
 

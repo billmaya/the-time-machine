@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41202 ]
+[ WORDS - 41237 ]
 
 Table of Releases
 release	notes
@@ -3027,14 +3027,17 @@ Chapter - Catacombs
 The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
 
-The description of Catacombs is "The bones and mummified remains of the dead generations of this underground arcology are carefully arranged in individual alcoves, niches, and sepulchars according to some unknown taxonomy of size, shape, and function.[paragraph break]A tunnel leads back up."
+The description of Catacombs is "The remains of the dead carefully arranged according to some unknown taxonomy of size, shape, and function.[paragraph break]The tunnel leads back up."
 
 The visibility of Catacombs is shadow.
 		
 [TBD - > Examine bones > Examine mummified remains]
-[+wandering, turn into maze in future version?]
 
 Section - Bones
+
+The bones are a thing.
+The bones are in the Catacombs.
+The bones are scenery.
 
 Section - Wandering In Catecombs
 
@@ -3047,7 +3050,8 @@ Going southeast in the Catacombs is wandering.
 Going south in the Catacombs is wandering.
 Going southwest in the Catacombs is wandering.
 	
-Instead of wandering in the Catacombs: say "WANDERING [noun] IN THE CATACOMBS." [random descriptions]
+Instead of wandering in the Catacombs:
+	say "You wander [noun] past a series of [one of]alcoves[or]niches[or]recesses[or]shrines[then at random] filled to the brim with [one of]bones[or]mummified remains[or]skeletons[then at random] of long-dead inhabitants of this underground arcology before arriving back at the tunnel entrance."
 
 
 Part - Underground - Level 4

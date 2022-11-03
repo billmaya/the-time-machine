@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41237 ]
+[ WORDS - 41281 237 ]
 
 Table of Releases
 release	notes
@@ -3075,11 +3075,19 @@ The Eating Area is underground.
 The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
-The description of Eating Area is "Rows of parallel troughs in various states of repair fill this room. Only a few are intact and one or two appears to have been used recently.[paragraph break]There are exits to the north and south."
+The description of Eating Area is "Rows of parallel troughs in various states of repair fill this room.[paragraph break]There are exits to the north and south."
 
 The visibility of Eating Area is night.
 
-[TBD > Examine benches > Examine troughs ]
+Section - Troughs
+
+The troughs are a thing.
+The troughs are in the Eating Area.
+The troughs are scenery.
+
+The description of the troughs are "Only a few are still intact and only one or two appear to have been used recently."
+
+Understand "trough" as troughs.
 
 Chapter - Abattoir
 

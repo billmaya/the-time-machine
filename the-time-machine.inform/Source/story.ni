@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41281 237 ]
+[ WORDS - 41265 ]
 
 Table of Releases
 release	notes
@@ -316,6 +316,9 @@ Before listening:
 		stop the action;
 	else if the player is in the Bottom Well:
 		say "The sound of machinery is louder now and seems to come from every direction.";
+		stop the action;
+	else if the player is in the Power Plant:
+		say "You can't hear anything beyond the sound of the machines around you.";
 		stop the action;
 	else if the player is in the Dining Room:
 		say "[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[otherwise]You hear nothing unexpected.[end if]";
@@ -3163,8 +3166,8 @@ Chapter - Power Plant
 
 The Power Plant is underground.
 The Power Plant is south of the Heavy Sliding Door.
-	
-The description of Power Plant is "POWER PLANT DESCRIPTION. The deafening sound of titanic machinery fills this room. On all sides you can see the shadowy movement of levers, pistons, and gears juxtaposing their operations to sustain life in this underground city.[paragraph break]There is a heavy sliding door to the north."
+
+The description of Power Plan is "The deafening sound of titanic machinery that sustains life in this underground labyrinth fills this room.[paragraph break]There is a havy sliding door to the north."
 	
 The visibility of Power Plant is night.
 

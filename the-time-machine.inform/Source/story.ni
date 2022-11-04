@@ -6,7 +6,7 @@ The release number is 11.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41265 ]
+[ WORDS - 41286 ]
 
 Table of Releases
 release	notes
@@ -3030,17 +3030,19 @@ Chapter - Catacombs
 The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
 
-The description of Catacombs is "The remains of the dead carefully arranged according to some unknown taxonomy of size, shape, and function.[paragraph break]The tunnel leads back up."
+The description of Catacombs is "The bones and remains of the dead arranged in multiple directions as far as the eye can see.[paragraph break]The tunnel leads back up."
 
 The visibility of Catacombs is shadow.
-		
-[TBD - > Examine bones > Examine mummified remains]
 
 Section - Bones
 
 The bones are a thing.
 The bones are in the Catacombs.
 The bones are scenery.
+
+The description of bones is "They appear to be carefully arranged according to some unknown taxonomy by size, shape, and function."
+
+Understand "remains" or "skeletons" or "mummified" as bones.
 
 Section - Wandering In Catecombs
 

@@ -617,6 +617,9 @@ Test light-newspaper with "turn lantern off / open box of matches / take match /
 Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
 Test news-duration with "test go-abattoir / test light-newspaper."
 
+[v1.9 Tests]
+Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
+
 Part - Release
 
 Release along with cover art ("The Time Machine") and an interpreter.
@@ -4253,9 +4256,11 @@ Section - Imploring - "Ask [someone] for ['text']"
 Section - Showing
 
 After showing the pocket watch to the Eloi:
-	say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];
+	[say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];]
+	say "YOU SHOW POCKET WATCH TO ELOI.";
 	now the Eloi is carrying the pocket watch;
-	now introduce-weena is true.
+	[now introduce-weena is true.]
+	now show-eloi-watch is true.
 
 Section - Giving
 		
@@ -4943,10 +4948,6 @@ Introduction Of Gernsback ends when library-print-description is true.
 
 [When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
 
-	
-
-
-
 Book - Traveling In Time
 
 Part - Travel To 802,701
@@ -5005,6 +5006,25 @@ Travel To 1895 ends when the time machine is in the Workshop.
 [When Travel To 1895 ends:
 	say "TRAVEL TO 1895 ENDS.";]	
 
+Book - Eloi
+	
+Part - Showing Eloi The Watch
+	
+Showing Eloi The Watch is a scene.
+		
+show-eloi-watch is a truth state that varies.
+show-eloi-watch is false.
+		
+Showing Eloi The Watch begins when show-eloi-watch is true.
+		
+When Showing Eloi The Watch begins:
+	say "SHOWING ELOI THE WATCH BEGINS.";
+	
+Showing Eloi The Watch ends when the location of the player is the Clearing.
+	
+When Showing Eloi The Watch ends:
+	say "SHOWING ELOI THE WATCH ENDS.";
+	
 Book - Weena
 
 Part - Introduction Of Weena

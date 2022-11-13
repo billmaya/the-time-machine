@@ -505,16 +505,25 @@ Chapter - Debug
 
 Every turn:
 	if debug-mode is true: 
+		focus debug-info window;
+		clear debug-info window;
 		if player is in Year-802701-Underground:
-			focus debug-info window;
-			clear debug-info window;
+			[focus debug-info window;]
+			[clear debug-info window;]
 			say "location visibility: [visibility of location][line break]";
 			say "player-has-light: [player-has-light][line break]";
 			say "morlocks-attacked: [morlocks-attacked][line break]";
 			say "turns-since-attack: [turns-since-attack][line break]";
 			say "boldness-morlocks: [boldness-morlocks][line break]";
 			say "fought-off-morlocks: [fought-off-morlocks][line break]";
-			focus main window.
+			[focus main window;]
+		otherwise if player is in Year-802701-Outside:
+			[focus debug-info window;]
+			[clear debug-info window;]
+			say "ask-about-weena: [ask-about-weena][line break]";
+			say "show-eloi-watch: [show-eloi-watch]";
+		focus main window.
+		
 
 Part - Conversation
 
@@ -1228,7 +1237,7 @@ The damper is scenery in the parlor. "This movable door that separates the fireb
 The flue is scenery in the parlor. "You can't see it but you know it is beyond the damper, a conduit for smoke and gases."
 The chimney is scenery in the parlor. "Unseen, but you know it surrounds the flue, preventing any heat from contacting flammable house materials."
 The surround is scenery in the parlor. "Like the hearth it serves as protection for the surrounding area, in this case the walls instead of the floor."
-The grate is scenery in the parlor. "A cast iron basket that holds the burning coals."
+The fireplace grate is scenery in the parlor. "A cast iron basket that holds the burning coals."
 The brick is scenery in the parlor. "Heat-resistent bricks that reflect the fire's heat back into the room."
 
 Instead of using the fireplace, say "That's not something you can use but just enjoy."
@@ -1242,7 +1251,7 @@ Instead of using the damper: say "Absolutely not. Closing the damper would fill 
 Instead of using the flue: say "[cannot-use-item]". 
 Instead of using the chimney: say "[cannot-use-item]". 
 Instead of using the surround: say "[cannot-use-item]". 
-Instead of using the grate: say "The grate doesn't need any help from you to do its job." 
+Instead of using the fireplace grate: say "The grate doesn't need any help from you to do its job." 
 Instead of using the brick: say "[cannot-use-item]". 
 
 [https://bit.ly/33EceFC https://bit.ly/2RO6PJq]
@@ -4214,9 +4223,14 @@ Test g-topics with "test go-gernsback / say hello to gernsback / ask gernsback a
 
 Book - Eloi
 
-The Eloi are people. "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.
+The Eloi are people. "[if location of Eloi are River Bank][eloi-initial-appearance][otherwise][eloi-in-clearing][end if]"
 
-Noticing your presence, a few of the Eloi gather around you.[end if]"
+To say eloi-initial-appearance:
+	say "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.[paragraph break]Noticing your presence, a few of the Eloi gather around you.[end if]" 
+
+To say eloi-in-clearing:
+	say "One of the Eloi points at the circular well and grate and back at the watch in your hands."
+	[DEL say "ELOI WITH YOU IN CLEARING."]
 
 The indefinite article is "the".
 The Eloi are in the River Bank.
@@ -4246,8 +4260,27 @@ Section - Quizzing - "Ask [someone] about [thing]"
 After quizzing the Eloi about Morlocks:
 	say "The Eloi within earshot glance at one another at the word 'Morlocks,' but, after a brief fearful silence, they continue chattering among themselves."
 
+ask-about-weena is a truth state that varies.
+ask-about-weena is false.
+
 After quizzing the Eloi about Weena:
-	now introduce-weena is true.
+	[now introduce-weena is true.]
+	if show-eloi-watch is true:
+		say "One of the Eloi points at the metal grate and says a single word - 'Weena.'";
+	otherwise:
+		now ask-about-weena is true;
+		try showing the pocket watch to the Eloi.
+
+To say eloi-say-morlocks:
+	say "One of the Eloi looks apprehensively at the [second noun] and says a single word - 'Morlocks.'"
+
+After quizzing the Eloi about the circular well:
+	say "[eloi-say-morlocks]".
+	[DEL say "ASK ELOI ABOUT CIRCULAR WELL."]
+
+After quizzing the Eloi about metal grate:
+	say "[eloi-say-morlocks]".
+	[DEL say "ASK ELOI ABOUT METAL GRATE."]
 
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -4257,10 +4290,16 @@ Section - Showing
 
 After showing the pocket watch to the Eloi:
 	[say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];]
-	say "YOU SHOW POCKET WATCH TO ELOI.";
-	now the Eloi is carrying the pocket watch;
+	[now the Eloi is carrying the pocket watch;]
 	[now introduce-weena is true.]
-	now show-eloi-watch is true.
+	[DEL say "YOU SHOW POCKET WATCH TO ELOI.";]
+	if the player is in the River Bank:
+		say "Suddenly, all the Eloi stop their chattering when you bring out the pocket watch[if ask-about-weena is true] and mention Weena[end if]. One of them takes it from turns it over in his hands before handing it to another Eloi, who examines it as well. This Eloi hands the pocket watch back to you, looks at the group, and nods briefly.[paragraph break]Several of the Eloi grab you gently and walk with you to the northeast.";
+		now the Eloi are in the Clearing;
+		now the player is in the Clearing;
+		now show-eloi-watch is true;
+	otherwise if the player is in the Clearing:
+		try quizzing the Eloi about Weena.
 
 Section - Giving
 		
@@ -5009,11 +5048,11 @@ Travel To 1895 ends when the time machine is in the Workshop.
 Book - Eloi
 	
 Part - Showing Eloi The Watch
-	
-Showing Eloi The Watch is a scene.
-		
+
 show-eloi-watch is a truth state that varies.
 show-eloi-watch is false.
+	
+Showing Eloi The Watch is a scene.
 		
 Showing Eloi The Watch begins when show-eloi-watch is true.
 		

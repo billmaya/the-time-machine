@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41425 ]
+[ WORDS - 41726 ]
 
 Table of Releases
 release	notes
@@ -4230,7 +4230,6 @@ To say eloi-initial-appearance:
 
 To say eloi-in-clearing:
 	say "One of the Eloi points at the circular well and grate and back at the watch in your hands."
-	[DEL say "ELOI WITH YOU IN CLEARING."]
 
 The indefinite article is "the".
 The Eloi are in the River Bank.
@@ -4276,11 +4275,9 @@ To say eloi-say-morlocks:
 
 After quizzing the Eloi about the circular well:
 	say "[eloi-say-morlocks]".
-	[DEL say "ASK ELOI ABOUT CIRCULAR WELL."]
 
 After quizzing the Eloi about metal cover:
 	say "[eloi-say-morlocks]".
-	[DEL say "ASK ELOI ABOUT METAL GRATE."]
 
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -4292,7 +4289,6 @@ After showing the pocket watch to the Eloi:
 	[say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];]
 	[now the Eloi is carrying the pocket watch;]
 	[now introduce-weena is true.]
-	[DEL say "YOU SHOW POCKET WATCH TO ELOI.";]
 	if the player is in the River Bank:
 		say "Suddenly, all the Eloi stop their chattering when you bring out the pocket watch[if ask-about-weena is true] and mention Weena[end if]. One of them takes it from turns it over in his hands before handing it to another Eloi, who examines it as well. This Eloi hands the pocket watch back to you, looks at the group, and nods briefly.[paragraph break]Several of the Eloi grab you gently and walk with you to the northeast.";
 		now the Eloi are in the Clearing;

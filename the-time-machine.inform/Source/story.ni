@@ -2465,9 +2465,9 @@ The description of the Clearing is "A midsized clearing dominated by a circular 
 Inside from the Clearing is Top Well.
 
 Instead of going down in the Clearing: 
-	if the metal grate is on the circular well:
+	if the metal cover is on the circular well:
 		say "You might be able to if that grate wasn't in the way.";
-	if the metal grate is not on the circular well:
+	if the metal cover is not on the circular well:
 		try entering the circular well.
 
 Chapter - Scenery
@@ -2475,7 +2475,7 @@ Chapter - Scenery
 The circular well is a thing.
 The circular well is scenery in the Clearing.
 The circular well is a supporter.
-Instead of examining the circular well: say "About three feet in diameter, the circular well appears to be made of some unknown metal. [if metal grate is on circular well]A circular grate rests on the top of the shaft, flush with the surface. Through the grate you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
+Instead of examining the circular well: say "About three feet in diameter, the circular well appears to be made of some unknown metal. [if metal cover is on circular well]A circular cover rests on the top of the shaft, flush with the surface. Through the cover you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
 
 The statue is scenery in the Clearing.
 The description of statue is "The sightless eyes of the weather-worn marble face stare down at you, inhuman and unsympathetic."
@@ -2495,30 +2495,30 @@ The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
 The description of the undergrowth is "The undergrowth would make passage in any direction but east difficult."
 
-Chapter - Metal Grate
+Chapter - Metal Cover
 
-The metal grate is a thing.
-The metal grate is portable.
-The metal grate is on the circular well.
-The metal grate is a supporter.
-The metal grate is undescribed.
-The description of the metal grate is "About three feet in diameter, the grate is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal grate is not on the circular well] The grate is lying on the ground next to the open shaft.[end if]"
+The metal cover is a thing.
+The metal cover is portable.
+The metal cover is on the circular well.
+The metal cover is a supporter.
+The metal cover is undescribed.
+The description of the metal cover is "About three feet in diameter, the cover is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal cover is not on the circular well] The cover is lying on the ground next to the open shaft.[end if]"
 
 [ > Remove grate ]
 
 Understand the command "remove" as something new.
 Understand the command "remove" as "take".
 
-Instead of pulling the metal grate: try taking the metal grate.
-Instead of pushing the metal grate: try taking the metal grate.
+Instead of pulling the metal cover: try taking the metal cover.
+Instead of pushing the metal cover: try taking the metal cover.
 
-Instead of attacking the metal grate with something: say "The [second noun] has no effect on the metal of the grate, despite its rusted appearance. But you might be able to move the grate out of its current position if you try."
+Instead of attacking the metal cover with something: say "The [second noun] has no effect on the metal of the cover, despite its rusted appearance. But you might be able to move the cover out of its current position if you try."
 
-Instead of taking the metal grate:
-	if the metal grate is on the circular well in the Clearing:
-		say "Grabbing the grate through its openings, you brace yourself against the side of the shaft and manage to leverage it up and out of its resting position. It[']s extremely heavy but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
-		move the metal grate to the Clearing;
-		now the metal grate is described;
+Instead of taking the metal cover:
+	if the metal cover is on the circular well in the Clearing:
+		say "Grabbing the cover through its openings, you brace yourself against the side of the shaft and manage to leverage it up and out of its resting position. It[']s extremely heavy but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
+		move the metal cover to the Clearing;
+		now the metal cover is described;
 	otherwise:
 		say "It is way too heavy to try and move a second time from its position on the ground."
 
@@ -2527,10 +2527,10 @@ Understand "climb in [something]" as climbing into.
 Understand "climb into [something]" as climbing into.
 Instead of climbing into the circular well: try entering the circular well.
 
-[If you remove the circular grate from the circular well you can climb into it]
+[If you remove the metal cover from the circular well you can climb into it]
 Instead of entering the circular well:
-	if the metal grate is on the circular well:
-		say "If the grate wasn't on top of the shaft you might be able to.";
+	if the metal cover is on the circular well:
+		say "If the cover wasn't on top of the shaft you might be able to.";
 	otherwise:
 		say "Carefully you climb over the lip of the shaft and onto the ladder.[line break]";
 		now the player is in the Top Well.
@@ -4278,7 +4278,7 @@ After quizzing the Eloi about the circular well:
 	say "[eloi-say-morlocks]".
 	[DEL say "ASK ELOI ABOUT CIRCULAR WELL."]
 
-After quizzing the Eloi about metal grate:
+After quizzing the Eloi about metal cover:
 	say "[eloi-say-morlocks]".
 	[DEL say "ASK ELOI ABOUT METAL GRATE."]
 

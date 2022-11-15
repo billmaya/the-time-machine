@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41726 ]
+[ WORDS - 41779 ]
 
 Table of Releases
 release	notes
@@ -2760,16 +2760,8 @@ Instead of eating the river-water:
 Instead of drinking the river-water, say "I don't see why you would choose to drink this dubious liquid when there's a source of fresh water elsewhere." 
 
 The river-bushes is scenery in the River Bank.
-The description of river-bushes is "The dense and overgrown flora parallels the river bank, dense with flowers." [DEL laden with fruit and flowers."]
+The description of river-bushes is "The dense and overgrown flora parallels the river bank, dense with flowers."
 Understand "bush" or "bushes" as river-bushes.
-
-[DEL
-The river-fruit is scenery in the River Bank.
-The description of river-fruit is ""
-[DEL The description of the river-fruit is "While the fruit is totally unknown and bizarre, some of the petals on these flowers matches exactly the one you[']ve got in your pocket."]
-[DEL Understand "flowers" or "flower" or "fruit" as river-things.]
-Understand "fruit" as river-fruit.
-]
 
 Gathering is an action applying to one thing.
 Understand "gather [something]" as gathering.
@@ -2790,18 +2782,18 @@ The flowers are in the River Bank.
 The flowers are undescribed
 
 The description of flowers is "Scattered throughout the bushes, the petals of these flowers seem to match [if the player has the petal]the one you've got in your pocket.[otherwise]the one Humboldt gave you earlier.[end if]"
-[DEL The description of flowers is "FLOWERS DESCRIPTION."]
 
 The flower is a thing.
-[The flower is nowhere.]
 The flower is in the River Bank.
 The flower is undescribed.
 
 The description of the flower is "Unlike any flora you've ever seen, [if the player has the petal]the petal in your pocket[otherwise] the petal that Humboldt gave you earlier[end if] matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
 
 Instead of taking the flower:
-	say "TRYING TO TAKE A FLOWER."
-
+	if the player has the flower:
+		say "One should suffice.";
+	otherwise:
+		continue the action.
 
 Part - Underground - General
 

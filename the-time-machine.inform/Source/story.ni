@@ -2738,14 +2738,14 @@ The River Bank is a room.
 The River Bank is southeast of the Clearing.
 The description of the River Bank is "[first time]The southeast path winds its downhill through dense undergrowth. [only]After a brief hike you emerge from the woods onto the northwest bank of a sizeable river."
 
-The river-river is scenery in the River.
+The river-river is scenery in the River Bank.
 The description of the river-river is "The river curves its way through the forest from the northeast to the southwest. The rushing water looks cool and inviting."
 The printed name of river-river is "river".
 Understand "river" as river-river.
 
-[Why does this description not display when you >examine water ?]
+[DEL Why does this description not display when you >examine water ?]
 The river-water is scenery in the River Bank.
-The description of the water is "The rushing water looks cool and inviting."
+The description of the river-water is "The rushing water looks cool and inviting."
 The printed name of river-water is "water".
 Understand "water" as river-water.
 
@@ -2760,12 +2760,16 @@ Instead of eating the river-water:
 Instead of drinking the river-water, say "I don't see why you would choose to drink this dubious liquid when there's a source of fresh water elsewhere." 
 
 The river-bushes is scenery in the River Bank.
-The description of river-bushes is "The dense and overgrown vegetation parallels the river bank."
+The description of river-bushes is "The dense and overgrown flora parallels the river bank, dense with flowers." [DEL laden with fruit and flowers."]
 Understand "bush" or "bushes" as river-bushes.
 
-The river-things is scenery in the River Bank.
-The description of the river-things is "While the fruit is totally unknown and bizarre, some of the petals on these flowers matches exactly the one you[']ve got in your pocket."
-Understand "flowers" or "flower" or "fruit" as river-things.
+[DEL
+The river-fruit is scenery in the River Bank.
+The description of river-fruit is ""
+[DEL The description of the river-fruit is "While the fruit is totally unknown and bizarre, some of the petals on these flowers matches exactly the one you[']ve got in your pocket."]
+[DEL Understand "flowers" or "flower" or "fruit" as river-things.]
+Understand "fruit" as river-fruit.
+]
 
 Gathering is an action applying to one thing.
 Understand "gather [something]" as gathering.
@@ -2778,6 +2782,26 @@ Instead of swimming: say "You[']re not dressed for swimming. Perhaps another tim
 Resting is an action applying to nothing.
 Understand "rest" as resting.
 Instead of resting: say "You[']re not tired right now. Perhaps another time."
+
+Chapter - Flowers/Flower
+
+The flowers are a thing.
+The flowers are in the River Bank.
+The flowers are undescribed
+
+The description of flowers is "Scattered throughout the bushes, the petals of these flowers seem to match [if the player has the petal]the one you've got in your pocket.[otherwise]the one Humboldt gave you earlier.[end if]"
+[DEL The description of flowers is "FLOWERS DESCRIPTION."]
+
+The flower is a thing.
+[The flower is nowhere.]
+The flower is in the River Bank.
+The flower is undescribed.
+
+The description of the flower is "Unlike any flora you've ever seen, [if the player has the petal]the petal in your pocket[otherwise] the petal that Humboldt gave you earlier[end if] matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
+
+Instead of taking the flower:
+	say "TRYING TO TAKE A FLOWER."
+
 
 Part - Underground - General
 
@@ -4386,12 +4410,6 @@ Default show response for Weena:
 [Default ask-for response for Weena:]
 [Default yes-no response for Weena:]
 [Default response for Weena:]
-
-Part - Flower
-
-The flower is a thing.
-The flower is nowhere.
-The description of the flower is "Unlike any vegetation you've ever seen, the petal that Humboldt gave you matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
 
 
 Book - Morlocks

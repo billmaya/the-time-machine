@@ -636,7 +636,7 @@ Test goto-workshop with "go north / test unlock-workshop / test get-matches / go
 
 test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker." [Moved from Section - Tests | Time Machine | Fuses]
 Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever." [Moved from v1.4 Tests]
-Test go-underground with "test go-802701 / exit / remove grate / climb in well / down."
+Test go-underground with "test go-802701 / exit / remove cover / climb in well / down."
 
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
 Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."

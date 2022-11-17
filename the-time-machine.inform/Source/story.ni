@@ -61,6 +61,8 @@ When play begins:
 	now the left hand status line is "[location] - [current-year]";
 	[say "[introduction]";]
 	open right-sidebar window;
+	open title-exits window;
+	open list-exits window;
 	open title-inventory window;
 	open list-inventory window;
 	open title-characters window;
@@ -173,6 +175,16 @@ The position of the debug-info window is g-placeabove.
 The scale method of the debug-info window is g-fixed-size.
 The measurement of the debug-info window is 9.
 
+The title-exits window is a text grid g-window spawned by the right-sidebar window.
+The position of the title-exits window is g-placeabove.
+The scale method of the title-exits window is g-fixed-size.
+The measurement of the title-exits window is 2.
+
+The list-exits window is a text buffer g-window spawned by the right-sidebar window.
+The position of the list-exits window is g-placeabove.
+The scale method of list-exits window is g-fixed-size.
+The measurement of the list-exits window is 8.
+
 Section - Rules 
 
 Rule for refreshing the title-characters window:
@@ -213,6 +225,12 @@ Rule for refreshing the list-inventory window:
 
 Rule for refreshing the debug-title window:
 	say "DEBUG".
+	
+Rule for refreshing the title-exits window:
+	say "Visible Exits".
+	
+Rule for refreshing the list-exits window:
+	say "Visible Exits Go Here".
 	
 Section - Styles
 
@@ -384,7 +402,9 @@ Every turn:
 	refresh the talking-to-character window;
 	refresh the title-topics window;
 	refresh the character-topics window;
-	refresh the list-inventory window.
+	refresh the list-inventory window;
+	refresh the title-exits window;
+	refresh the list-exits window.
 
 Chapter - Parlor
 

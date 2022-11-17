@@ -163,7 +163,7 @@ The measurement of the title-inventory window is 2.
 The list-inventory window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-inventory window is g-placeabove.
 The scale method of the list-inventory window is g-fixed-size.
-The measurement of the list-inventory window is 13.
+The measurement of the list-inventory window is 11.
 
 The debug-title window is a text grid g-window spawned by the right-sidebar window.
 The position of the debug-title window is g-placeabove.

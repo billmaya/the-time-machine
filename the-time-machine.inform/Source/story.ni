@@ -230,7 +230,27 @@ Rule for refreshing the title-exits window:
 	say "Visible Exits".
 	
 Rule for refreshing the list-exits window:
-	say "Visible Exits Go Here".
+	say "[visible-exits]".
+
+To say visible-exits:
+	let place be the room north from the location;
+	if place is a room, say "North[line break]";
+	let place be the room east from the location;
+	if place is a room, say "East[line break]";
+	let place be the room south from the location;
+	if place is a room, say "South[line break]";
+	let place be the room west from the location;
+	if place is a room, say "West[line break]";
+	let place be the room northeast from the location;
+	if place is a room, say "Northeast[line break]";
+	let place be the room southeast from the location;
+	if place is a room, say "Southwest[line break]";
+	let place be the room northwest from the location;
+	if place is a room, say "Northwest[line break]";
+	let place be the room up from the location;
+	if place is a room, say "Up[line break]";
+	let place be the room down from the location;
+	if place is a room, say "Down";
 	
 Section - Styles
 

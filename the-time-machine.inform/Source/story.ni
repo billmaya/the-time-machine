@@ -244,6 +244,8 @@ To say visible-exits:
 	let place be the room northeast from the location;
 	if place is a room, say "Northeast[line break]";
 	let place be the room southeast from the location;
+	if place is a room, say "Southeast[line break]";
+	let place be the room southwest from the location;
 	if place is a room, say "Southwest[line break]";
 	let place be the room northwest from the location;
 	if place is a room, say "Northwest[line break]";

@@ -3208,7 +3208,7 @@ Chapter - Holding Pen
 The Holding Pen is underground.
 The Holding Pen is south of the Abattoir.
 	
-The description of Holding Pen is "A small alcover large enought to hold two or three captives.[paragraph break]There exit is to the north."
+The description of Holding Pen is "A small alcove large enough to hold two or three Eloi.[paragraph break]There exit is to the north."
 	
 The visibility of Holding Pen is day.
 

@@ -520,28 +520,28 @@ This is the morlock fight rule:
 [Morlock Underground Substitution Text]
 
 To say morlocks-attack:
-	say "Before you can take another step you're beset from all sides by shadowy brutes from the surrounding darkness—Morlocks!"
+	say "Before you can take another step you're beset from all sides by shadowy brutes from the surrounding darkness—Morlocks![no line break]"
 
 To say sounds-scuttling:
-	say "All around you can hear scuttlings and mutterings of vague shadowy figures, almost indistinguishable from the pitch black darkness that surrounds you."
+	say "All around you can hear scuttlings and mutterings of vague shadowy figures, almost indistinguishable from the pitch black darkness that surrounds you.[no line break]"
 
 To say morlocks-follow:
 	say "[sounds-scuttling]".
 
 To say attack-morlocks-1:
-	say "Swinging the poker wildly around you manage to drive the loathsome creatures away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack."
+	say "Swinging the poker wildly around you manage to drive the loathsome creatures away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack.[no line break]"
 	
 To say attack-morlocks-2:
-	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again."
+	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again.[no line break]"
 	
 To say attack-morlocks-3:
-	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbers and manhandled into the darkness."
+	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbers and manhandled into the darkness.[no line break]"
 		
 To say captured-by-morlocks:
 	say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned."
 
 To say taken-to-holding-pen:
-	say "Dragging you through the darkness, the Morlocks throw you into a small cell, slam the gates behind you, and retreat without another word."
+	say "[paragraph break]Dragging you through the darkness, the Morlocks throw you into a small cell, slam the gates behind you, and retreat without another word."
 	[DEL say "MORLOCKS TAKE YOU TO HOLDING CELL."]
 
 Chapter - Debug

@@ -3064,7 +3064,7 @@ Chapter - Storerooms
 The Storerooms are underground.
 The Storerooms are northwest of the Agora.
 
-The description of Storeroom is "Whatever was on these empty shelves and bins that stretch as far as the eye can see is long gone.[paragraph break]You can exit to the sourtheast."
+The description of Storerooms is "Whatever was on these empty shelves and bins that stretch as far as the eye can see is long gone.[paragraph break]You can exit to the sourtheast."
 	
 [collapsed in areas]
 	

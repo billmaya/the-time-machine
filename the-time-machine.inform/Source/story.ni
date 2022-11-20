@@ -511,11 +511,11 @@ This is the morlock fight rule:
 			say "[attack-morlocks-3]";
 			now fought-off-morlocks is 0; 
 			say "[taken-to-holding-pen]";
-			now the player is in Holding Pen;
+			now the player is in Holding Cell;
 	otherwise:
 		say "[captured-by-morlocks]";
 		say "[taken-to-holding-pen]";
-		now the player is in Holding Pen;
+		now the player is in Holding Cell;
 
 [Morlock Underground Substitution Text]
 
@@ -541,7 +541,7 @@ To say captured-by-morlocks:
 	say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned."
 
 To say taken-to-holding-pen:
-	say "MORLOCKS TAKE YOU TO HOLDING PEN."
+	say "MORLOCKS TAKE YOU TO HOLDING CELL."
 
 Chapter - Debug
 
@@ -3168,9 +3168,11 @@ Chapter - Abattoir
 
 The Abattoir is underground.
 The Abattoir is south of the Eating Area.
-The Abattoir is north of the Holding Pen.
+The Abattoir is north of the Holding Cell.
 
-The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstaind clothing thrown in one corner.[paragraph break]There are exits to the north and south."
+The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstaind clothing thrown in one corner.[paragraph break]EXITS."
+
+[DEL There are exits to the north and south."]
 
 The visibility of Abattoir is day.
 
@@ -3203,14 +3205,14 @@ Understand "smock" as tunic.
 The tunic can be found or unfound.
 The tunic are unfound.
 
-Chapter - Holding Pen
+Chapter - Holding Cell
 
-The Holding Pen is underground.
-The Holding Pen is south of the Abattoir.
+The Holding Cell is underground.
+The Holding Cell is south of the Abattoir.
 	
-The description of Holding Pen is "A small alcove large enough to hold two or three Eloi.[paragraph break]There exit is to the north."
+The description of Holding Cell is "A small alcove large enough to hold two or three Eloi.[paragraph break]There exit is to the north."
 	
-The visibility of Holding Pen is day.
+The visibility of Holding Cell is day.
 
 Part - Underground - Level 5
 
@@ -3263,7 +3265,7 @@ Year-802701-Underground is a region.
 Shaft 1 and Bottom Well are in Year-802701-Underground.
 Shaft 2 and Agora and Curia and Museum and Temple and Storerooms are in Year-802701-Underground.
 Shaft 3 and Living Quarters and Catacombs are in Year-802701-Underground.
-Shaft 4 and Eating Area and Abattoir and Holding Pen are in Year-802701-Underground.
+Shaft 4 and Eating Area and Abattoir and Holding Cell are in Year-802701-Underground.
 Shaft 5 and Power Plant are in Year-802701-Underground.
 			
 Volume - Characters
@@ -5184,7 +5186,7 @@ Part - Escape The Morlocks
 
 Escape The Morlocks is a recurring scene.
 
-Escape The Morlocks begins when the player is in the Holding Pen.
+Escape The Morlocks begins when the player is in the Holding Cell.
 
 When Escape The Morlocks begins:
 	say "ESCAPE THE MORLOCKS SCENE BEGINS."

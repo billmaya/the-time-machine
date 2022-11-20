@@ -3210,7 +3210,7 @@ Chapter - Holding Cell
 The Holding Cell is underground.
 The Holding Cell is south of the Abattoir.
 	
-The description of Holding Cell is "A small alcove large enough to hold two or three Eloi.[paragraph break]There exit is to the north."
+The description of Holding Cell is "A small cell large enough to hold two or three Eloi.[paragraph break]There exit is to the north."
 	
 The visibility of Holding Cell is day.
 
@@ -4386,7 +4386,7 @@ Default show response for Eloi:
 Book - Weena
 
 Weena is a person.
-Weena is nowhere.
+Weena is in the Holding Cell. [nowhere.]
 Weena is fixed.
 Weena is major.
 The description of Weena is "Slightly taller than the other Eloi but dressed as they are and with the same similarity of features and build, this is clearly the girl Wells described."
@@ -5188,8 +5188,8 @@ Escape The Morlocks is a recurring scene.
 
 Escape The Morlocks begins when the player is in the Holding Cell.
 
-When Escape The Morlocks begins:
-	say "ESCAPE THE MORLOCKS SCENE BEGINS."
+[When Escape The Morlocks begins:
+	say "ESCAPE THE MORLOCKS SCENE BEGINS."]
 
 Escape The Morlocks ends when the player is in the Clearing.
 

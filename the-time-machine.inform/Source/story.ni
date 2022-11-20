@@ -541,7 +541,8 @@ To say captured-by-morlocks:
 	say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned."
 
 To say taken-to-holding-pen:
-	say "MORLOCKS TAKE YOU TO HOLDING CELL."
+	say "Dragging you through the darkness, the Morlocks throw you into a small cell, slam the gates behind you, and retreat without another word."
+	[DEL say "MORLOCKS TAKE YOU TO HOLDING CELL."]
 
 Chapter - Debug
 

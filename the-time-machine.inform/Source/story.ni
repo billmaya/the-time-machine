@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42091 ]
+[ WORDS - 42275 ]
 
 Table of Releases
 release	notes
@@ -2966,6 +2966,8 @@ Chapter - Bottom Well
 The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
 North from the Bottom Well is Shaft 1.
+[The description of Bottom Well is "The light from above illuminates the bottom of what appears to be merely a dry well."]
+
 The description of Bottom Well is "The light from above illuminates the bottom of a what appears to be merely a dry well.[paragraph break]The ladder leads up and there is an opening to the north."
 
 [> x metal grate]
@@ -4416,10 +4418,11 @@ Instead of showing the pocket watch to Weena:
 	say "She cocks her head and smiles back at you, waiting."
 
 Instead of showing the petal to Weena:
-	say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";
-	now the player is carrying the flower;
-	now the Eloi are nowhere;
-	now Weena is nowhere.
+	say "Weena looks at the petal in your hand. Reaching into her hair, she removes a single flower and hands it to you.";
+	now the player is carrying the flower.
+	[say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";]
+	[now the Eloi are nowhere;]
+	[now Weena is nowhere.]
 
 Section - Giving
 
@@ -4437,8 +4440,14 @@ Chapter - Default Responses
 Default ask-tell response for Weena:
 	say "Try as you might you can't make Weena understand what you are talking about. At times she laughs at your strange pronunciations."
 
+To say default-weena-give-response:
+	if Weena is in the Year-802701-Underground:
+		say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, returns it to you.";
+	otherwise if Weena is in the Year-802701-Outside:
+		say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, passes it around the small group gathered until the [noun] is returned to you." 
+
 Default give response for Weena:
-	say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, passes it around the small group gathered until the [noun] is returned to you."
+	say "[default-weena-give-response]".
 
 Default show response for Weena:
 	say "Weena looks at the [noun] with a degree of puzzlement on her face but no recognition of the [noun]'s function."
@@ -5189,8 +5198,9 @@ Escape The Morlocks is a recurring scene.
 
 Escape The Morlocks begins when the player is in the Holding Cell.
 
-[When Escape The Morlocks begins:
-	say "ESCAPE THE MORLOCKS SCENE BEGINS."]
+When Escape The Morlocks begins:
+	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
+	say "As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you."
 
 Escape The Morlocks ends when the player is in the Clearing.
 

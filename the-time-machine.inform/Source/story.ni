@@ -671,6 +671,7 @@ Test news-duration with "test go-abattoir / test light-newspaper."
 
 [v1.9 Tests]
 Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
+Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
 
 Part - Release
 
@@ -3173,7 +3174,7 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Cell.
 
-The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstaind clothing thrown in one corner.[paragraph break]EXITS."
+The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstained clothing thrown in one corner.[paragraph break] There's a gated exit to the north and another exit to the south."
 
 [DEL There are exits to the north and south."]
 
@@ -3184,7 +3185,7 @@ Section - Pile of Bloodstained Clothing
 The pile of bloodstained clothing is a thing.
 The pile of bloodstained clothing is in the Abattoir.
 The pile of bloodstained clothing is undescribed.
-The description of the pile of bloodstained clothing is "A large number of Eloi tunics and smocks piled in a corner. All appear to be covered in blood, some dried, some still wet."
+The description of the pile of bloodstained clothing is "A large number of Eloi tunics and smocks piled in a corner. At first glance, they all appear to be covered in blood, some dried, some still wet."
 
 Instead of searching the pile of bloodstained clothing when the tunic is unfound:
 	now the tunic is found;
@@ -4910,7 +4911,7 @@ Understand the flame-state property as describing the makeshift torch.
 Chapter - Lighting The Torch
 
 Check burning a torch with something (this is the being able to hold a torch rule):
-	say "You rotate the end of your makeshift torch in the flame until the entire surface is aflame.";
+	say "You rotate the end of your makeshift torch in the flame until the entire end is aflame.";
 	now player-has-light is true;
 	now the makeshift torch is lit;
 	now the makeshift torch is flaming;
@@ -5200,12 +5201,59 @@ Escape The Morlocks begins when the player is in the Holding Cell.
 
 When Escape The Morlocks begins:
 	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
-	say "As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you."
+	say "As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.";
+	now Weena is mobile.
 
 Escape The Morlocks ends when the player is in the Clearing.
 
 When Escape The Morlocks ends:
 	say "ESCAPE THE MORLOCKS SCENE ENDS."
+
+Chapter - Movement
+
+Section - Player's Movement
+
+[DEL Before leaving player location:
+		say "BEFORE - EXITING LOCATION."]
+
+weena-with-you is a truth state that varies.
+weena-with-you is true.
+
+Every turn:
+	If Escape The Morlocks is happening:
+		if the location of Weena is not the location of player:
+			say "WEENA IS IN ANOTHER ROOM."
+
+
+Section - Weena's Movement
+
+[DEL start-out-turn-with is a truth state that varies.
+start-out-turn-with is false.]
+
+[I want to print the Weena Follows/Cowers text before going to the new location]
+
+Every turn:
+	if Weena is mobile:
+		if the location of Weena is not the location of player:
+			if player-has-light is true:
+				[if Weena started out in player location:]
+				say "WEENA FOLLOWS YOU.";
+				move Weena to the location of the player;
+				[otherwise:]
+			otherwise:
+				say "WEENA COWERS BACK.".
+
+[DEL Every turn:
+	if Weena is mobile:
+		if player-has-light is true:
+			if the location of Weena is not the location of player:
+				move Weena to the location of player;
+				say "WEENA FOLLOWS YOU.";
+			[otherwise:]
+				[say "WEENA IS WITH YOU.";]
+		otherwise:
+			say "WEENA COWERS BACK.";
+]
 
 
 Part - Morlock Endgame

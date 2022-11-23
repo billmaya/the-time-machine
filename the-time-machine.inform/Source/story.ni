@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42275 ]
+[ WORDS - 42565 ]
 
 Table of Releases
 release	notes
@@ -5219,13 +5219,17 @@ Section - Player's Movement
 weena-with-you is a truth state that varies.
 weena-with-you is true.
 
-Every turn:
+[Don't think I need this]
+[Every turn:
 	If Escape The Morlocks is happening:
 		if the location of Weena is not the location of player:
-			say "WEENA IS IN ANOTHER ROOM."
+			say "WEENA IS IN ANOTHER ROOM."]
 
 
 Section - Weena's Movement
+
+weena-with-you is a truth state that varies.
+weena-with-you is true.
 
 [DEL start-out-turn-with is a truth state that varies.
 start-out-turn-with is false.]
@@ -5235,13 +5239,19 @@ start-out-turn-with is false.]
 Every turn:
 	if Weena is mobile:
 		if the location of Weena is not the location of player:
+			now weena-with-you is false;
 			if player-has-light is true:
 				[if Weena started out in player location:]
-				say "WEENA FOLLOWS YOU.";
+				say "WEENA FOLLOWS YOU."; ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
 				move Weena to the location of the player;
 				[otherwise:]
 			otherwise:
-				say "WEENA COWERS BACK.".
+				[if player location has not changed:]
+					[Don't print anything]
+				[otherwise:]
+				say "WEENA COWERS BACK."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
+		otherwise:
+			now weena-with-you is true.
 
 [DEL Every turn:
 	if Weena is mobile:

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42565 ]
+[ WORDS - 42837 ]
 
 Table of Releases
 release	notes
@@ -551,18 +551,19 @@ Every turn:
 		focus debug-info window;
 		clear debug-info window;
 		if player is in Year-802701-Underground:
-			[focus debug-info window;]
-			[clear debug-info window;]
-			say "location visibility: [visibility of location][line break]";
+			[DEL focus debug-info window;]
+			[DEL clear debug-info window;]
+			say "weena-with-you: [weena-with-you][line break]";
+			[say "location visibility: [visibility of location][line break]";
 			say "player-has-light: [player-has-light][line break]";
 			say "morlocks-attacked: [morlocks-attacked][line break]";
 			say "turns-since-attack: [turns-since-attack][line break]";
 			say "boldness-morlocks: [boldness-morlocks][line break]";
-			say "fought-off-morlocks: [fought-off-morlocks][line break]";
-			[focus main window;]
+			say "fought-off-morlocks: [fought-off-morlocks][line break]";]
+			[DEL focus main window;]
 		otherwise if player is in Year-802701-Outside:
-			[focus debug-info window;]
-			[clear debug-info window;]
+			[DEL focus debug-info window;]
+			[DEL clear debug-info window;]
 			say "ask-about-weena: [ask-about-weena][line break]";
 			say "show-eloi-watch: [show-eloi-watch]";
 		focus main window.
@@ -5202,6 +5203,7 @@ Escape The Morlocks begins when the player is in the Holding Cell.
 When Escape The Morlocks begins:
 	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
 	say "As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.";
+	now weena-with-you is true;
 	now Weena is mobile.
 
 Escape The Morlocks ends when the player is in the Clearing.
@@ -5216,8 +5218,8 @@ Section - Player's Movement
 [DEL Before leaving player location:
 		say "BEFORE - EXITING LOCATION."]
 
-weena-with-you is a truth state that varies.
-weena-with-you is true.
+[DEL weena-with-you is a truth state that varies.
+weena-with-you is false.]
 
 [Don't think I need this]
 [Every turn:
@@ -5231,12 +5233,53 @@ Section - Weena's Movement
 weena-with-you is a truth state that varies.
 weena-with-you is true.
 
-[DEL start-out-turn-with is a truth state that varies.
+Every turn:
+	if Escape The Morlocks is happening:
+		if Weena is mobile:
+			if the player can see Weena:
+				say "I SEE WEENA.";
+				if player-has-light is true:
+					say "WEENA FOLLOWS YOU."; ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
+					move Weena to the location of the player;
+			otherwise if Weena is in an adjacent room:
+				say "WEENA IN NEXT ROOM";
+				if player-has-light is true:
+					say "WEENA SEES YOUR LIGHT AND COMES TO YOU.";
+					move Weena to the location of the player;
+				otherwise:
+					say "WEENA COWERS BACK."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
+			otherwise:
+				say "I CAN'T SEE WEENA."
+
+[DEL 
+start-out-turn-with is a truth state that varies.
 start-out-turn-with is false.]
 
-[I want to print the Weena Follows/Cowers text before going to the new location]
+[DEL I want to print the Weena Follows/Cowers text before going to the new location]
 
-Every turn:
+[DEL Every turn when the location of the player is in the location of Weena:
+	if the location of Weena is the location of the player:
+		now weena-with-you is true;
+	otherwise:
+		now weena-with-you is false;
+	[if the location of the player has changed since last turn]
+	if Weena is mobile:
+		if weena-with-you is false:
+			if player-has-light is true:
+				say "WEENA FOLLOWS YOU."; ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
+				move Weena to the location of the player;
+			otherwise:
+				say "WEENA COWERS BACK."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
+]
+
+[DEL 
+Every turn when the player can see Weena:
+	say "I SEE WEENA."
+
+Every turn when Weena is in an adjacent room:
+	say "WEENA IN NEXT ROOM."
+]
+[DEL Every turn:
 	if Weena is mobile:
 		if the location of Weena is not the location of player:
 			now weena-with-you is false;
@@ -5252,6 +5295,7 @@ Every turn:
 				say "WEENA COWERS BACK."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
 		otherwise:
 			now weena-with-you is true.
+]
 
 [DEL Every turn:
 	if Weena is mobile:

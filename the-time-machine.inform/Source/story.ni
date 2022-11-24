@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42460 ]
+[ WORDS - 42666 ]
 
 Table of Releases
 release	notes
@@ -4936,7 +4936,6 @@ Every turn (this is the Putting The Torch Out rule):
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
 			say "With a last gasp of light the remaining torch sputters and goes out.";
-			[DEL now the player-has-light is false;]
 			now the makeshift torch is burnt;
 			now the makeshift torch is nowhere;
 			now the tunic is nowhere;

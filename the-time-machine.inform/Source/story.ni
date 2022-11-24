@@ -61,8 +61,8 @@ When play begins:
 	now the left hand status line is "[location] - [current-year]";
 	[say "[introduction]";]
 	open right-sidebar window;
-	open title-exits window;
-	open list-exits window;
+	[open title-exits window;]
+	[open list-exits window;]
 	open title-inventory window;
 	open list-inventory window;
 	open title-characters window;
@@ -163,7 +163,7 @@ The measurement of the title-inventory window is 2.
 The list-inventory window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-inventory window is g-placeabove.
 The scale method of the list-inventory window is g-fixed-size.
-The measurement of the list-inventory window is 11.
+The measurement of the list-inventory window is 16.
 
 The debug-title window is a text grid g-window spawned by the right-sidebar window.
 The position of the debug-title window is g-placeabove.
@@ -4727,7 +4727,7 @@ Every turn (this is the Check For Flaming Things rule):
 			if item is visible, increment L;
 		repeat with item running through flaming makeshift torch:
 			if item is visible, increment L;
-		say "OTHER FLAMING ITEMS: [L]";
+		[say "OTHER FLAMING ITEMS: [L]";]
 		if L is not 0:
 			now player-has-light is true;
 		otherwise:

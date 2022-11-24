@@ -667,6 +667,7 @@ Test news-duration with "test go-abattoir / test light-newspaper."
 [v1.9 Tests]
 Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
 Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
+Test make-torch with "go north / search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match."
 
 Part - Release
 
@@ -4682,9 +4683,9 @@ Does the player mean burning something with a burnt strikable-match:
 Instead of burning a burnt strikable-match with something:
 	say "[The noun] is completely consumed and cannot be relit."
 
-Chapter - Putting The Matches Out
+Part - Putting Matches Out
 
-Every turn:
+Every turn (this is the Putting Matches Out rule):
 	let N be 0; [here we track how many matches are being put out during a turn, so that we don't have to mention each match individually if several go out during the same move]
 	repeat with item running through flaming s-matches:
 		decrement the duration of the item;
@@ -4703,7 +4704,7 @@ Every turn:
 			otherwise say "All [enumeration]";
 		otherwise:
 			say "[enumeration in title case]";
-		say " matches go out[if a visible strikable-match is flaming], leaving [number of visible flaming s-matches in words] still let[end if].";
+		say " matches go out[if a visible strikable-match is flaming],ff leaving [number of visible flaming s-matches in words] still let[end if].";
 	repeat with item running through burnt s-matches:
 		if the item is not nowhere:
 			say "You drop the [flame-state of the item] [item][if the player is in Year-1895-Inside or the player is in Year-802701-Inside] on the floor.[otherwise] on the ground.";
@@ -4715,6 +4716,22 @@ Every turn:
 	if M is 0: [if no lit matches]
 		now player-has-light is false.
 
+Part - Checking For Flaming Things
+
+Every turn (this is the Check For Flaming Things rule):
+	if the player is in the Year-802701-Underground:
+		let L be 0;
+		repeat with item running through flaming s-matches:
+			if the item is visible, increment L;
+		repeat with item running through flaming newspaper:
+			if item is visible, increment L;
+		repeat with item running through flaming makeshift torch:
+			if item is visible, increment L;
+		say "OTHER FLAMING ITEMS: [L]";
+		if L is not 0:
+			now player-has-light is true;
+		otherwise:
+			now player-has-light is false.
 
 Book - Newspaper
 
@@ -4859,7 +4876,8 @@ Every turn (this is the Putting The Newspaper Out rule):
 		if the duration of the item is less than 0:
 			say "You hold the burning newsprint until the very last possible minute and drop it as the flame approaches your fingers. The glowing fragments spiral to the floor and die.";
 			now the newspaper is nowhere;
-			now the player-has-light is false;
+			now player-has-light is false.
+
 
 Part - With Poker
 
@@ -4918,11 +4936,12 @@ Every turn (this is the Putting The Torch Out rule):
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
 			say "With a last gasp of light the remaining torch sputters and goes out.";
-			now the player-has-light is false;
+			[DEL now the player-has-light is false;]
 			now the makeshift torch is burnt;
 			now the makeshift torch is nowhere;
 			now the tunic is nowhere;
-			move the poker to the player
+			move the poker to the player;
+			now player-has-light is false.
 
 
 Volume - Scenes
@@ -5226,6 +5245,7 @@ Every turn (this is the Move Weena Rule):
 					say "WEENA COWERS.";
 		refresh the list-characters window.
 ]
+
 [
 Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:

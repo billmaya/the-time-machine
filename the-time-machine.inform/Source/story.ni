@@ -3172,7 +3172,7 @@ The Abattoir is north of the Holding Cell.
 
 The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstained clothing thrown in one corner.[paragraph break] There's a gated exit to the south and another exit to the north."
 
-The visibility of Abattoir is day.
+The visibility of Abattoir is twilight. [day.]
 
 Section - Pile of Bloodstained Clothing
 
@@ -3210,7 +3210,7 @@ The Holding Cell is south of the Abattoir.
 	
 The description of Holding Cell is "A small cell large enough to hold two or three Eloi.[paragraph break]There exit is to the north."
 	
-The visibility of Holding Cell is day.
+The visibility of Holding Cell is twilight. [day.]
 
 Part - Underground - Level 5
 
@@ -4871,7 +4871,7 @@ Chapter - Putting The Newspaper Out
 
 Every turn (this is the Putting The Newspaper Out rule):
 	repeat with item running through flaming newspaper:
-		if debug-mode is true, say "Debug-Newspaper Duration: [duration of the item][line break]";
+		if debug-mode is true, say "DEBUG Newspaper Duration: [duration of the item][line break]";
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
 			say "You hold the burning newsprint until the very last possible minute and drop it as the flame approaches your fingers. The glowing fragments spiral to the floor and die.";
@@ -4932,7 +4932,7 @@ Chapter - Putting The Torch Out
 
 Every turn (this is the Putting The Torch Out rule):
 	repeat with item running through flaming makeshift torch:
-		if debug-mode is true, say "Debug-Torch Duration: [duration of the item][line break]";
+		if debug-mode is true, say "DEBUG Torch Duration: [duration of the item][line break]";
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
 			say "With a last gasp of light the remaining torch sputters and goes out.";

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42714 ]
+[ WORDS - 42620 ]
 
 Table of Releases
 release	notes
@@ -5238,9 +5238,9 @@ Every turn (this is the Move Weena Rule):
 					if player-has-light is true:
 						let the way be the best route from the location of Weena to the location of the player, using doors;
 						try [silently] Weena going the way;
-						say "(A) WEENA FOLLOWS.";
+						say "(A) WEENA FOLLOWS."; ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
 					otherwise:
-						say "(B) WEENA COWERS.";
+						say "(B) WEENA COWERS."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
 			otherwise:
 				if the location of Weena is not the location of the player:
 					let the way be the best route from the location of Weena to the location of the player, using doors;
@@ -5248,25 +5248,6 @@ Every turn (this is the Move Weena Rule):
 					say "(C) WEENA FOLLOWS.";
 			refresh the list-characters window.
 
-[
-Every turn (this is the Move Weena Rule):
-	if Escape The Morlocks is happening:
-		if the player can see Weena:
-			say "I SEE WEENA.";
-			if player-has-light is true:
-				say "WEENA CLAPS AND DANCES AT THE APPEARANCE OF YOUR LIGHT.";
-		otherwise if Weena is in adjacent room:
-			say "WEENA IN NEXT ROOM.";
-			if player-has-light is true:
-				say "WEENA SEES YOUR LIGHT AND FOLLOWS YOU.";
-				move Weena to the location of the player;
-			otherwise:
-				say "WEENA COWERS BACK."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
-		otherwise:
-			say "I CAN'T SEE WEENA.";
-		if the location of the player is not the player-previous-location:
-			now player-previous-location is the location of the player;
-]
 
 Part - Morlock Endgame
 

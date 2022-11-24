@@ -4871,7 +4871,7 @@ Chapter - Putting The Newspaper Out
 
 Every turn (this is the Putting The Newspaper Out rule):
 	repeat with item running through flaming newspaper:
-		if debug-mode is true, say "Newspaper Duration: [duration of the item][line break]";
+		if debug-mode is true, say "Debug-Newspaper Duration: [duration of the item][line break]";
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
 			say "You hold the burning newsprint until the very last possible minute and drop it as the flame approaches your fingers. The glowing fragments spiral to the floor and die.";
@@ -4932,7 +4932,7 @@ Chapter - Putting The Torch Out
 
 Every turn (this is the Putting The Torch Out rule):
 	repeat with item running through flaming makeshift torch:
-		if debug-mode is true, say "Torch Duration: [duration of the item][line break]";
+		if debug-mode is true, say "Debug-Torch Duration: [duration of the item][line break]";
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
 			say "With a last gasp of light the remaining torch sputters and goes out.";
@@ -5214,7 +5214,6 @@ When Escape The Morlocks begins:
 	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
 	say "As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.";
 	[now the player has the brass lantern;]
-	now player-previous-location is the location of the player;
 	now Weena is mobile.
 
 Escape The Morlocks ends when the player is in the Clearing.
@@ -5222,30 +5221,29 @@ Escape The Morlocks ends when the player is in the Clearing.
 When Escape The Morlocks ends:
 	say "ESCAPE THE MORLOCKS SCENE ENDS."
 
-Chapter - Movement
-
-Section - Player's Movement
-
-player-previous-location is a room that varies.
-
-Section - Weena's Movement
+Chapter - Weena's Movement
 
 Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:
 		if Weena is mobile:
-			if the visibility of the location of player is not day:
-				if the location of Weena is not the location of the player:
-					if player-has-light is true:
+			if the player [Weena] is in the Year-802701-Underground:
+				if the visibility of the location of player is not day:
+					if the location of Weena is not the location of the player:
+						if player-has-light is true:
+							let the way be the best route from the location of Weena to the location of the player, using doors;
+							try [silently] Weena going the way;
+							[say "(A) WEENA FOLLOWS.";] ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
+						[otherwise:]
+							[say "(B) WEENA COWERS.";] ["Without a light, Weena's cowers in fear and doesn't follow you.";]
+				otherwise:
+					if the location of Weena is not the location of the player:
 						let the way be the best route from the location of Weena to the location of the player, using doors;
-						try [silently] Weena going the way;
-						say "(A) WEENA FOLLOWS."; ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
-					otherwise:
-						say "(B) WEENA COWERS."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
-			otherwise:
+						try Weena going the way;
+						[say "(C) WEENA FOLLOWS.";]
+			otherwise if the player is in the Year-802701-Outside:
 				if the location of Weena is not the location of the player:
 					let the way be the best route from the location of Weena to the location of the player, using doors;
 					try Weena going the way;
-					say "(C) WEENA FOLLOWS.";
 			refresh the list-characters window.
 
 

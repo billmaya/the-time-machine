@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42837 ]
+[ WORDS - 42460 ]
 
 Table of Releases
 release	notes
@@ -542,28 +542,22 @@ To say captured-by-morlocks:
 
 To say taken-to-holding-pen:
 	say "[paragraph break]Dragging you through the darkness, the Morlocks throw you into a small cell, slam the gates behind you, and retreat without another word."
-	[DEL say "MORLOCKS TAKE YOU TO HOLDING CELL."]
 
 Chapter - Debug
 
-Every turn:
+Every turn (this is the Update Debug rule):
 	if debug-mode is true: 
 		focus debug-info window;
 		clear debug-info window;
 		if player is in Year-802701-Underground:
-			[DEL focus debug-info window;]
-			[DEL clear debug-info window;]
-			say "weena-with-you: [weena-with-you][line break]";
-			[say "location visibility: [visibility of location][line break]";
+			say "player-previous-location: [player-previous-location][line break]";
+			[say "location visibility: [visibility of location][line break]";]
 			say "player-has-light: [player-has-light][line break]";
-			say "morlocks-attacked: [morlocks-attacked][line break]";
+			[say "morlocks-attacked: [morlocks-attacked][line break]";
 			say "turns-since-attack: [turns-since-attack][line break]";
 			say "boldness-morlocks: [boldness-morlocks][line break]";
 			say "fought-off-morlocks: [fought-off-morlocks][line break]";]
-			[DEL focus main window;]
 		otherwise if player is in Year-802701-Outside:
-			[DEL focus debug-info window;]
-			[DEL clear debug-info window;]
 			say "ask-about-weena: [ask-about-weena][line break]";
 			say "show-eloi-watch: [show-eloi-watch]";
 		focus main window.
@@ -2983,9 +2977,9 @@ Before going north in the Bottom Well:
 
 Chapter - Brass Lantern (not used)
 
-[
+
 The brass lantern is a device.
-The brass lantern is in the Bottom Well.
+[The brass lantern is in the Bottom Well.]
 The description of the brass lantern is "A battered brass police lantern that can be turned on or off."
 
 After switching on the brass lantern:
@@ -2995,7 +2989,7 @@ After switching on the brass lantern:
 After switching off the brass lantern:
 	now player-has-light is false;
 	now the lantern is not lit.
-]
+
 
 Chapter - Shaft 1
 
@@ -3176,8 +3170,6 @@ The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Cell.
 
 The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstained clothing thrown in one corner.[paragraph break] There's a gated exit to the north and another exit to the south."
-
-[DEL There are exits to the north and south."]
 
 The visibility of Abattoir is day.
 
@@ -4920,7 +4912,7 @@ Check burning a torch with something (this is the being able to hold a torch rul
 
 Chapter - Putting The Torch Out
 
-Every turn:
+Every turn (this is the Putting The Torch Out rule):
 	repeat with item running through flaming makeshift torch:
 		if debug-mode is true, say "Torch Duration: [duration of the item][line break]";
 		decrement the duration of the item;
@@ -5203,8 +5195,10 @@ Escape The Morlocks begins when the player is in the Holding Cell.
 When Escape The Morlocks begins:
 	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
 	say "As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.";
-	now weena-with-you is true;
-	now Weena is mobile.
+	[now weena-with-you is true;]
+	now the player has the brass lantern;
+	now player-previous-location is the location of the player;
+	[now Weena is mobile.]
 
 Escape The Morlocks ends when the player is in the Clearing.
 
@@ -5215,100 +5209,27 @@ Chapter - Movement
 
 Section - Player's Movement
 
-[DEL Before leaving player location:
-		say "BEFORE - EXITING LOCATION."]
-
-[DEL weena-with-you is a truth state that varies.
-weena-with-you is false.]
-
-[Don't think I need this]
-[Every turn:
-	If Escape The Morlocks is happening:
-		if the location of Weena is not the location of player:
-			say "WEENA IS IN ANOTHER ROOM."]
-
+player-previous-location is a room that varies.
 
 Section - Weena's Movement
 
-weena-with-you is a truth state that varies.
-weena-with-you is true.
-
-Every turn:
+Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:
-		if Weena is mobile:
-			if the player can see Weena:
-				say "I SEE WEENA.";
-				if player-has-light is true:
-					say "WEENA FOLLOWS YOU."; ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
-					move Weena to the location of the player;
-			otherwise if Weena is in an adjacent room:
-				say "WEENA IN NEXT ROOM";
-				if player-has-light is true:
-					say "WEENA SEES YOUR LIGHT AND COMES TO YOU.";
-					move Weena to the location of the player;
-				otherwise:
-					say "WEENA COWERS BACK."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
-			otherwise:
-				say "I CAN'T SEE WEENA."
-
-[DEL 
-start-out-turn-with is a truth state that varies.
-start-out-turn-with is false.]
-
-[DEL I want to print the Weena Follows/Cowers text before going to the new location]
-
-[DEL Every turn when the location of the player is in the location of Weena:
-	if the location of Weena is the location of the player:
-		now weena-with-you is true;
-	otherwise:
-		now weena-with-you is false;
-	[if the location of the player has changed since last turn]
-	if Weena is mobile:
-		if weena-with-you is false:
+		if the player can see Weena:
+			say "I SEE WEENA.";
 			if player-has-light is true:
-				say "WEENA FOLLOWS YOU."; ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
+				say "WEENA CLAPS AND DANCES AT THE APPEARANCE OF YOUR LIGHT.";
+		otherwise if Weena is in adjacent room:
+			say "WEENA IN NEXT ROOM.";
+			if player-has-light is true:
+				say "WEENA SEES YOUR LIGHT AND FOLLOWS YOU.";
 				move Weena to the location of the player;
 			otherwise:
 				say "WEENA COWERS BACK."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
-]
-
-[DEL 
-Every turn when the player can see Weena:
-	say "I SEE WEENA."
-
-Every turn when Weena is in an adjacent room:
-	say "WEENA IN NEXT ROOM."
-]
-[DEL Every turn:
-	if Weena is mobile:
-		if the location of Weena is not the location of player:
-			now weena-with-you is false;
-			if player-has-light is true:
-				[if Weena started out in player location:]
-				say "WEENA FOLLOWS YOU."; ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
-				move Weena to the location of the player;
-				[otherwise:]
-			otherwise:
-				[if player location has not changed:]
-					[Don't print anything]
-				[otherwise:]
-				say "WEENA COWERS BACK."; ["Without a light, Weena's cowers in fear and doesn't follow you.";]
 		otherwise:
-			now weena-with-you is true.
-]
-
-[DEL Every turn:
-	if Weena is mobile:
-		if player-has-light is true:
-			if the location of Weena is not the location of player:
-				move Weena to the location of player;
-				say "WEENA FOLLOWS YOU.";
-			[otherwise:]
-				[say "WEENA IS WITH YOU.";]
-		otherwise:
-			say "WEENA COWERS BACK.";
-]
-
+			say "I CAN'T SEE WEENA.";
+		if the location of the player is not the player-previous-location:
+			now player-previous-location is the location of the player;
 
 Part - Morlock Endgame
 

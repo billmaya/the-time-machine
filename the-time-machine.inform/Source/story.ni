@@ -5244,6 +5244,7 @@ Every turn (this is the Move Weena Rule):
 				if the location of Weena is not the location of the player:
 					let the way be the best route from the location of Weena to the location of the player, using doors;
 					try Weena going the way;
+			refresh the title-characters window;
 			refresh the list-characters window.
 
 

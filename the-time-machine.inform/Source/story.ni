@@ -550,13 +550,13 @@ Every turn (this is the Update Debug rule):
 		focus debug-info window;
 		clear debug-info window;
 		if player is in Year-802701-Underground:
-			say "player-previous-location: [player-previous-location][line break]";
-			[say "location visibility: [visibility of location][line break]";]
+			[say "player-previous-location: [player-previous-location][line break]";]
+			say "location visibility: [visibility of location][line break]";
 			say "player-has-light: [player-has-light][line break]";
-			[say "morlocks-attacked: [morlocks-attacked][line break]";
+			say "morlocks-attacked: [morlocks-attacked][line break]";
 			say "turns-since-attack: [turns-since-attack][line break]";
 			say "boldness-morlocks: [boldness-morlocks][line break]";
-			say "fought-off-morlocks: [fought-off-morlocks][line break]";]
+			say "fought-off-morlocks: [fought-off-morlocks][line break]";
 		otherwise if player is in Year-802701-Outside:
 			say "ask-about-weena: [ask-about-weena][line break]";
 			say "show-eloi-watch: [show-eloi-watch]";
@@ -3169,7 +3169,7 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Cell.
 
-The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstained clothing thrown in one corner.[paragraph break] There's a gated exit to the north and another exit to the south."
+The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstained clothing thrown in one corner.[paragraph break] There's a gated exit to the south and another exit to the north."
 
 The visibility of Abattoir is day.
 
@@ -4852,7 +4852,7 @@ Check burning a newspaper with something (this is the being able to hold a burni
 
 Chapter - Putting The Newspaper Out
 
-Every turn:
+Every turn (this is the Putting The Newspaper Out rule):
 	repeat with item running through flaming newspaper:
 		if debug-mode is true, say "Newspaper Duration: [duration of the item][line break]";
 		decrement the duration of the item;
@@ -4992,8 +4992,8 @@ Every turn:
 			try Gernsback going the way;
 	refresh the list-characters window.
 
-Before an actor going when the room gone to is the location of the player:
-	say "HUMBOLDT AND GERNSBACK ARRIVE FROM";
+[Before an actor going when the room gone to is the location of the player:
+	say "HUMBOLDT AND GERNSBACK ARRIVE FROM";]
 
 endgame-success is a truth state that varies.
 endgame-success is false. 
@@ -5187,7 +5187,7 @@ Weena Appears In 1895 ends when Weena is in the workshop [time machine] and the 
 Book - Underground
 
 Part - Escape The Morlocks
-
+[
 Escape The Morlocks is a recurring scene.
 
 Escape The Morlocks begins when the player is in the Holding Cell.
@@ -5198,7 +5198,7 @@ When Escape The Morlocks begins:
 	[now weena-with-you is true;]
 	now the player has the brass lantern;
 	now player-previous-location is the location of the player;
-	[now Weena is mobile.]
+	now Weena is mobile.
 
 Escape The Morlocks ends when the player is in the Clearing.
 
@@ -5213,6 +5213,20 @@ player-previous-location is a room that varies.
 
 Section - Weena's Movement
 
+
+Every turn (this is the Move Weena Rule):
+	if Escape The Morlocks is happening:
+		if Weena is mobile:
+			if the location of Weena is not the location of the player:
+				if player-has-light is true:
+					let the way be the best route from the location of Weena to the location of the player, using doors;
+					try silently Weena going the way;
+					say "WEENA FOLLOWS.";
+				otherwise:
+					say "WEENA COWERS.";
+		refresh the list-characters window.
+]
+[
 Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:
 		if the player can see Weena:
@@ -5230,6 +5244,7 @@ Every turn (this is the Move Weena Rule):
 			say "I CAN'T SEE WEENA.";
 		if the location of the player is not the player-previous-location:
 			now player-previous-location is the location of the player;
+]
 
 Part - Morlock Endgame
 

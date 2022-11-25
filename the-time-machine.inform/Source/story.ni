@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42663 ]
+[ WORDS - 42668 ]
 
 Table of Releases
 release	notes
@@ -5216,10 +5216,11 @@ When Escape The Morlocks begins:
 	[now the player has the brass lantern;]
 	now Weena is mobile.
 
-Escape The Morlocks ends when the player is in the Clearing.
+Escape The Morlocks ends when Weena [the player] is in the Clearing.
 
 When Escape The Morlocks ends:
-	say "ESCAPE THE MORLOCKS SCENE ENDS."
+	[say "ESCAPE THE MORLOCKS SCENE ENDS."]
+	now Weena is fixed.
 
 Chapter - Weena's Movement
 

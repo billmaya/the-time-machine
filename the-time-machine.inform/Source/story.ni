@@ -38,7 +38,7 @@ The numeric-year is a number that varies.
 The numeric-year is 1895.
 
 debug-mode is a truth state that varies.
-debug-mode is [false.] true.
+debug-mode is false. [true.]
 
 To say introduction:
 	say "'Let me go!'
@@ -5256,12 +5256,12 @@ Return To Surface is a recurring scene.
 Return To Surface begins when Escape The Morlocks ends.
 
 When Return To Surface begins:
-	say "RETURN TO SURFACE SCENE BEGINS."
+	if debug-mode is true, say "RETURN TO SURFACE SCENE BEGINS. (DEBUG)";
 
 Return To Surface ends when the player is in the time machine.
 
 When Return To Surface ends:
-	say "RETURN TO SURFACE SCENE ENDS."
+	if debug-mode is true, say "RETURN TO SURFACE SCENE ENDS. (DEBUG)";
 
 Part - Morlock Endgame
 

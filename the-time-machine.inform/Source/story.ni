@@ -668,6 +668,7 @@ Test news-duration with "test go-abattoir / test light-newspaper."
 Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
 Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
 Test make-torch with "search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match."
+Test rescue-weena with "test go-underground / go north / go down / go down / go down / go south / go south / search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match / go south / go north / go north / go north / go up / go up / go up / go south / go up / exit."
 
 Part - Release
 
@@ -5248,6 +5249,19 @@ Every turn (this is the Move Weena Rule):
 			refresh the title-characters window;
 			refresh the list-characters window.
 
+Part - Return To Surface
+
+Return To Surface is a recurring scene.
+
+Return To Surface begins when Escape The Morlocks ends.
+
+When Return To Surface begins:
+	say "RETURN TO SURFACE SCENE BEGINS."
+
+Return To Surface ends when the player is in the time machine.
+
+When Return To Surface ends:
+	say "RETURN TO SURFACE SCENE ENDS."
 
 Part - Morlock Endgame
 

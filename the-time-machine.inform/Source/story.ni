@@ -5130,12 +5130,12 @@ Showing Eloi The Watch is a scene.
 Showing Eloi The Watch begins when show-eloi-watch is true.
 		
 When Showing Eloi The Watch begins:
-	say "SHOWING ELOI THE WATCH BEGINS.";
+	if debug-mode is true, say "SHOWING ELOI THE WATCH BEGINS. (DEBUG)";
 	
 Showing Eloi The Watch ends when the location of the player is the Clearing.
 	
 When Showing Eloi The Watch ends:
-	say "SHOWING ELOI THE WATCH ENDS.";
+	if debug-mode is true, say "SHOWING ELOI THE WATCH ENDS. (DEBUG)";
 	
 Book - Weena
 

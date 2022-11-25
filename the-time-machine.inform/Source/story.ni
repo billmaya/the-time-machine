@@ -38,7 +38,7 @@ The numeric-year is a number that varies.
 The numeric-year is 1895.
 
 debug-mode is a truth state that varies.
-debug-mode is false. [true.]
+debug-mode is [false.] true.
 
 To say introduction:
 	say "'Let me go!'
@@ -5204,6 +5204,20 @@ Weena Appears In 1895 ends when Weena is in the workshop [time machine] and the 
 	say "WEENA APPEARS ENDS."]
 
 Book - Underground
+
+Part - Underground Exploration
+
+Underground Exploration is a recurring scene.
+
+Underground Exploration begins when the player is in Shaft 1.
+
+When Underground Exploration begins:
+	if debug-mode is true, say "Underground Exploration Scene Begins (DEBUG)";
+
+Underground Exploration ends when the player is in the Holding Cell.
+
+When Underground Exploration ends:
+	if debug-mode is true, say "Underground Exploration Scene Ends (DEBUG)";
 
 Part - Escape The Morlocks
 

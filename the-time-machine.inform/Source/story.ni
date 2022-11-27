@@ -5213,6 +5213,9 @@ Underground Exploration begins when the player is in Shaft 1.
 
 When Underground Exploration begins:
 	if debug-mode is true, say "Underground Exploration Scene Begins (DEBUG)";
+	if the location of the Eloi is the Clearing:
+		if debug-mode is true, say "Eloi In Clearing (DEBUG)";
+		now the Eloi are nowhere.
 
 Underground Exploration ends when the player is in the Holding Cell.
 

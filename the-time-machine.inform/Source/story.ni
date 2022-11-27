@@ -4282,7 +4282,8 @@ Test g-topics with "test go-gernsback / say hello to gernsback / ask gernsback a
 
 Book - Eloi
 
-The Eloi are people. "[if location of Eloi are River Bank][eloi-initial-appearance][otherwise][eloi-in-clearing][end if]"
+The Eloi are people. "[if location of Eloi is River Bank][eloi-initial-appearance][end if]"
+[DEL The Eloi are people. "[if location of Eloi are River Bank][eloi-initial-appearance][otherwise][eloi-in-clearing][end if]"]
 
 To say eloi-initial-appearance:
 	say "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.[paragraph break]Noticing your presence, a few of the Eloi gather around you.[end if]" 
@@ -4353,6 +4354,7 @@ After showing the pocket watch to the Eloi:
 		now the Eloi are in the Clearing;
 		now the player is in the Clearing;
 		now show-eloi-watch is true;
+		say "[eloi-in-clearing]";
 	otherwise if the player is in the Clearing:
 		try quizzing the Eloi about Weena.
 
@@ -5273,12 +5275,12 @@ Return To Surface is a recurring scene.
 Return To Surface begins when Escape The Morlocks ends.
 
 When Return To Surface begins:
-	if debug-mode is true, say "RETURN TO SURFACE SCENE BEGINS. (DEBUG)";
+	if debug-mode is true, say "Return To Surface Scene Begins (DEBUG)";
 
 Return To Surface ends when the player is in the time machine.
 
 When Return To Surface ends:
-	if debug-mode is true, say "RETURN TO SURFACE SCENE ENDS. (DEBUG)";
+	if debug-mode is true, say "Return To Surface Scene End (DEBUG)";
 
 Part - Morlock Endgame
 

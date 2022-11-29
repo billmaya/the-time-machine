@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42780 ]
+[ WORDS - 42923 ]
 
 Table of Releases
 release	notes
@@ -4283,7 +4283,6 @@ Test g-topics with "test go-gernsback / say hello to gernsback / ask gernsback a
 Book - Eloi
 
 The Eloi are people. "[if location of Eloi is River Bank][eloi-initial-appearance][end if]"
-[DEL The Eloi are people. "[if location of Eloi are River Bank][eloi-initial-appearance][otherwise][eloi-in-clearing][end if]"]
 
 To say eloi-initial-appearance:
 	say "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals, by your count twenty or thirty, are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.[paragraph break]Noticing your presence, a few of the Eloi gather around you.[end if]" 
@@ -4416,11 +4415,16 @@ Instead of showing the pocket watch to Weena:
 	say "She cocks her head and smiles back at you, waiting."
 
 Instead of showing the petal to Weena:
-	say "Weena looks at the petal in your hand. Reaching into her hair, she removes a single flower and hands it to you.";
-	now the player is carrying the flower.
-	[say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";]
-	[now the Eloi are nowhere;]
-	[now Weena is nowhere.]
+	if Weena is in the Year-802701-Outside:
+		say "Weena looks at the petal in your hand. Reaching into her hair, she removes a single flower and hands it to you before running off.";
+		now the player is carrying the flower;
+		[say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";]
+		[now the Eloi are nowhere;]
+		reset the interlocutor;
+		now Weena is nowhere;
+	otherwise:
+		say "Given the circumstances, Weena looks at the petal but is too terrified right now to react.";
+		reset the interlocutor.
 
 Section - Giving
 
@@ -5280,7 +5284,11 @@ When Return To Surface begins:
 Return To Surface ends when the player is in the time machine.
 
 When Return To Surface ends:
-	if debug-mode is true, say "Return To Surface Scene End (DEBUG)";
+	if debug-mode is true, say "Return To Surface Scene Ends (DEBUG)";
+
+
+
+
 
 Part - Morlock Endgame
 

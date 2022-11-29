@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42923 ]
+[ WORDS - 42960 ]
 
 Table of Releases
 release	notes
@@ -5460,10 +5460,10 @@ To say release-notes:
 • [line break]
 • [paragraph break]";
 	say "Release 12 Notes (v1.9)[paragraph break]
-• [line break]
-• [line break]
-• [line break]
-• [line break]
+• Added flower/flowers to River Bank.[line break]
+• Modified Eloi reactions when you show them the watch (Eloi take you to Clearing).[line break]
+• Added Escape The Morlocks scene. Weena follows/doesn't follow you depending if player does/doesn't have light source.[line break]
+• Added Return To Surface scene.[line break]
 • [line break]
 • [paragraph break]";
 	say "Release 11 Notes (v1.8)[paragraph break]
@@ -5471,10 +5471,7 @@ To say release-notes:
 • Added Morlock Underground locations. Added visibility property to Underground rooms, each with its own light level (day, shadow, twilight, night).[line break]
 • Coded up Morlack Attack routine based on Underground room visibility and if player has light source.[line break]
 • Added ability to create a torch by combining Eloi tunics and poker.[line break]
-• Added ability to use burning newspaper as temporary torch.[line break]
-• [line break]
-• [line break]
-• [paragraph break]";
+• Added ability to use burning newspaper as temporary torch.[paragraph break]";
 	say "Release 10 Notes (v1.7)[paragraph break]
 • Added Gernsback's Box of Matches, Cigar, Book.[line break]
 • Added matches, cigar, and book for Gernsback to use.[line break]

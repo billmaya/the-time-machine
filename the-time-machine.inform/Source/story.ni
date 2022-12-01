@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42960 ]
+[ WORDS - 42951 ]
 
 Table of Releases
 release	notes
@@ -1851,7 +1851,7 @@ Part - Workshop
 
 The workshop is a dark room. 
 
-The description of the Workshop is "The workshop is almost twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space.[if the time machine is not nowhere] But the most striking, out-of-place object in the room is a device almost equidistant between you and the other end of the room[unicode 8212]Wells['] time machine.[end if]"
+The description of the Workshop is "The workshop is almost twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space.[if the time machine is not nowhere] In the center of the room is a striking, out-of-place object that can only be Wells['] time machine.[end if]"
 
 Chapter - Workbench
 

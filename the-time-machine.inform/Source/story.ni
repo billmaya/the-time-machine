@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43088 ]
+[ WORDS - 43238 ]
 
 Table of Releases
 release	notes
@@ -2043,7 +2043,7 @@ Instead of activating the time machine:
 	otherwise:
 		if a breaker (called fuse) is contained in the time-fuse-holder: 
 			if the small light is switched on:
-				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers and disappears from the room, accompanied by the distinctive sound of what appears to be a key scraping along the bass string of a piano.";
+				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers and disappears from the room, accompanied by the distinctive sound of what sounds like a key scraping along the bass string of a piano.";
 				now the time machine is nowhere;
 				now humboldt-should-return is true;
 		otherwise:
@@ -5015,6 +5015,7 @@ Every turn:
 	if the location of Humboldt is the Workshop and the location of the time machine is the Clearing:
 		now time-travel-seen is true;
 		now endgame-success is true;
+		[This triggers the ending of the scene while the player is still in 802,701]
 	if Humboldt is mobile:
 		if the location of Humboldt is not the location of the player:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
@@ -5055,8 +5056,11 @@ When Ending Scene ends:
 	if endgame-success is true:
 		if weena-appears is true:
 			if debug-mode is true, say "Endgame-Success = True, Weena-Appears = True (DEBUG).";
+			say "Suddenly the noise of what sounds like a key scraping along the bass string of a piano fills the room, drowning out all conversation. The air in the center of the room shimmers and Wells['] time machine reappears with an unusual occupant, a young girl whom, when she steps down from the machine after it materializes, you realize must be Wells['] Weena.[paragraph break]Humboldt and Gernsback are stunned, the truth behind Wells['] story apparent after what they have just seen. Leaving Gernsback behind Humboldt and you go to the hospital to free Wells.";
 		if time-travel-seen is true:
 			if debug-mode is true, say "Endgame-Success = True, Time-Travel-Seen = True (DEBUG).";
+			say "YOU PUSH THE LEVER AGAIN TO RETURN TO 1895.[paragraph break]";
+			say "Stepping down from the time machine you answer Humboldt and Gernsback's questions, convincing them of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
 		otherwise:
 			[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
 			say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";

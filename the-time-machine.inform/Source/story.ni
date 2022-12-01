@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42951 ]
+[ WORDS - 43088 ]
 
 Table of Releases
 release	notes
@@ -550,16 +550,21 @@ Every turn (this is the Update Debug rule):
 		focus debug-info window;
 		clear debug-info window;
 		if player is in Year-802701-Underground:
-			[say "player-previous-location: [player-previous-location][line break]";]
 			say "location visibility: [visibility of location][line break]";
 			say "player-has-light: [player-has-light][line break]";
 			say "morlocks-attacked: [morlocks-attacked][line break]";
 			say "turns-since-attack: [turns-since-attack][line break]";
 			say "boldness-morlocks: [boldness-morlocks][line break]";
-			say "fought-off-morlocks: [fought-off-morlocks][line break]";
+			say "fought-off-morlocks: [fought-off-morlocks]";
 		otherwise if player is in Year-802701-Outside:
 			say "ask-about-weena: [ask-about-weena][line break]";
 			say "show-eloi-watch: [show-eloi-watch]";
+		otherwise if Ending Scene is happening:
+			say "humbold-endgame-begins: [humboldt-endgame-begins][line break]";
+			say "weena-appears: [weena-appears][line break]";
+			say "time-travel-seen: [time-travel-seen][line break]";
+			say "endgame-success: [endgame-success][line break]";
+			say "endgame-failure: [endgame-failure]";
 		focus main window.
 		
 
@@ -4996,8 +5001,8 @@ Ending Scene is a scene.
 
 Ending Scene begins when humboldt-endgame-begins is true.
 
-[When Ending Scene begins:]
-	[say "ENDING SCENE BEGINS."]
+When Ending Scene begins:
+	if debug-mode is true, say "Ending Scene Begins (DEBUG).";
 	[implicitly greet Humboldt.]
 
 [Recipe §7.13. Traveling Characters, Van Helsing example]
@@ -5007,6 +5012,9 @@ Every turn:
 			now Weena is in the time machine;
 			now the time machine is in the workshop;
 			now weena-appears is true;
+	if the location of Humboldt is the Workshop and the location of the time machine is the Clearing:
+		now time-travel-seen is true;
+		now endgame-success is true;
 	if Humboldt is mobile:
 		if the location of Humboldt is not the location of the player:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
@@ -5019,6 +5027,9 @@ Every turn:
 
 [Before an actor going when the room gone to is the location of the player:
 	say "HUMBOLDT AND GERNSBACK ARRIVE FROM";]
+
+time-travel-seen is a truth state that varies.
+time-travel-seen is false.
 
 endgame-success is a truth state that varies.
 endgame-success is false. 
@@ -5037,16 +5048,21 @@ After giving the flower to Humboldt:
 Ending Scene ends when endgame-success is true or endgame-failure is true.
 
 When Ending Scene ends:
+	if debug-mode is true, say "Ending Scene Ends (DEBUG).";
+
+When Ending Scene ends:
 	[say "ENDING SCENE ENDS."]
 	if endgame-success is true:
 		if weena-appears is true:
-			say "ENDGAME-SUCCESS = TRUE, WEENA-APPEARS = TRUE.";
+			if debug-mode is true, say "Endgame-Success = True, Weena-Appears = True (DEBUG).";
+		if time-travel-seen is true:
+			if debug-mode is true, say "Endgame-Success = True, Time-Travel-Seen = True (DEBUG).";
 		otherwise:
 			[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
 			say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
 	if endgame-failure is true:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
-		say "Alone, looking around the workshop, you feel a sense of failure and despair. Your attempt to vidicate your friend Wells has failed and his story of time travel will not be believed.";
+		say "Alone, looking around the workshop, you feel a sense of failure and despair. Your attempt to vidicate your friend Wells has failed and his story of time travel will not be believed."; [but you can take a small measure of satisfaction having rescued Weena from the Morlocks]
 	end the story finally.
 
 Book - Gernsback

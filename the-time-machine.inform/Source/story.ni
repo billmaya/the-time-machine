@@ -5013,6 +5013,8 @@ Every turn:
 			now the time machine is in the workshop;
 			now weena-appears is true;
 	if the location of Humboldt is the Workshop and the location of the time machine is the Clearing:
+		now Humboldt is fixed;
+		now Gernsback is fixed;
 		now time-travel-seen is true;
 		now endgame-success is true;
 		[This triggers the ending of the scene while the player is still in 802,701]
@@ -5059,8 +5061,8 @@ When Ending Scene ends:
 			say "Suddenly the noise of what sounds like a key scraping along the bass string of a piano fills the room, drowning out all conversation. The air in the center of the room shimmers and Wells['] time machine reappears with an unusual occupant, a young girl whom, when she steps down from the machine after it materializes, you realize must be Wells['] Weena.[paragraph break]Humboldt and Gernsback are stunned, the truth behind Wells['] story apparent after what they have just seen. Leaving Gernsback behind Humboldt and you go to the hospital to free Wells.";
 		if time-travel-seen is true:
 			if debug-mode is true, say "Endgame-Success = True, Time-Travel-Seen = True (DEBUG).";
-			say "YOU PUSH THE LEVER AGAIN TO RETURN TO 1895.[paragraph break]";
-			say "Stepping down from the time machine you answer Humboldt and Gernsback's questions, convincing them of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
+			[say "YOU PUSH THE LEVER AGAIN TO RETURN TO 1895.[paragraph break]";]
+			say "Pushing the lever again you return back to 1895 and the workshop. Stepping down from the time machine you answer the stunned Humboldt and Gernsback's questions, convincing them of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
 		otherwise:
 			[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
 			say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";

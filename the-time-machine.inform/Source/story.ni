@@ -38,7 +38,7 @@ The numeric-year is a number that varies.
 The numeric-year is 1895.
 
 debug-mode is a truth state that varies.
-debug-mode is [false.] true.
+debug-mode is false. [true.]
 
 To say introduction:
 	say "'Let me go!'

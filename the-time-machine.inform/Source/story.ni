@@ -5475,19 +5475,12 @@ I also want to thank the people who took the time to write reviews of v1.0 of th
 To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.[paragraph break]";
 	say "Release 13 Notes (v2.0)[paragraph break]
-• [line break]
-• [line break]
-• [line break]
-• [line break]
-• [line break]
-• [paragraph break]";
+• Changes to be done based on Beta testing results[paragraph break]";
 	say "Release 12 Notes (v1.9)[paragraph break]
-• Added flower/flowers to River Bank.[line break]
+• Added Flower/Flowers to River Bank.[line break]
 • Modified Eloi reactions when you show them the watch (Eloi take you to Clearing).[line break]
 • Added Escape The Morlocks scene. Weena follows/doesn't follow you depending if player does/doesn't have light source.[line break]
-• Added Return To Surface scene.[line break]
-• [line break]
-• [paragraph break]";
+• Added Return To Surface scene.[paragraph break]";
 	say "Release 11 Notes (v1.8)[paragraph break]
 • Endgame modifications: Added Gernsback, Watchett sent Nowhere, time machine reappears a few turn later with Weena if sent to 802,701 empty.[line break]
 • Added Morlock Underground locations. Added visibility property to Underground rooms, each with its own light level (day, shadow, twilight, night).[line break]
@@ -5495,11 +5488,11 @@ To say release-notes:
 • Added ability to create a torch by combining Eloi tunics and poker.[line break]
 • Added ability to use burning newspaper as temporary torch.[paragraph break]";
 	say "Release 10 Notes (v1.7)[paragraph break]
-• Added Gernsback's Box of Matches, Cigar, Book.[line break]
-• Added matches, cigar, and book for Gernsback to use.[line break]
+• Added Matches, Cigar, Book, and Box of Matches for Gernsback to use.[line break]
 • Made >take newspaper distinct from >read newspaper.[line break]
 • Created Gernsback conversation using Conversation Package extension.[line break]
-• Added Introduction To Gernsback scene.[paragraph break]";
+• Added Introduction To Gernsback scene.[line break]
+• Added Gernsback character.[paragraph break]";
 	say "Release 9 Notes (v1.6)[paragraph break]
 • Updated old Weena conversation code to use Conversation Package extension.[paragraph break]";
 	say "Release 8 Notes (v1.5)[paragraph break]
@@ -5514,7 +5507,7 @@ To say release-notes:
 • Added 2nd fuse so now there's an orrery fuse (working) and a time machine fuse (not working).[line break]
 • Refactored time machine and control panel, adding explicit time machine fuse holder.[line break]
 • Added code so you cannot insert two fuses into one fuse holder.[line break]
-• Added code so devices work with working fuse and don't work with not working fuse.[paragraph break]";
+• Added code so Orrery and Time Macine work when working fuse inserted and don't work when not working fuse inserted.[paragraph break]";
 say "Release 5 Notes (v1.2)[paragraph break]
 • Handled attempting to use poker on doors in Entryway.[line break]
 • Made it so you can climb through open windows into Workshop from Garden and into Garden from Workshop.[line break]	
@@ -5526,7 +5519,7 @@ say "Release 5 Notes (v1.2)[paragraph break]
 • Added newspaper to inventory when reading and returned to armchair when done (room description reflects this).[line break]
 • Added code to handle poking.[line break]
 • Added user orrery code.[line break]
-• Refactored Watchett and Humboldt conversations to use Eric Eve's Conversation Package extension in time-machine-conversation storyworld (code to be integrated into time-machine at when all character conversation's refactored.[paragraph break]";
+• Refactored Watchett and Humboldt conversations to use Eric Eve's Conversation Package extension in separate file (code integrated into game in Release 7).[paragraph break]";
 say "Release 4 Notes (v1.1)[paragraph break]
 This release incorporates several fixes based on reviews and feedback from people who played the game during ParserComp 2021 judging.[paragraph break]
 • Before he leaves, Humboldt will pick up Wells['] pocket watch off of the street and hand it to you if you have not already picked it up.[line break]

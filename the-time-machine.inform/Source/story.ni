@@ -5368,6 +5368,7 @@ hint											used
 "So Wells kept the workshop door key on his person at all times. Where did you last see Wells?"
 "Go back to Woking Street and see if you can find the key."
 "After talking to Mrs. Watchett about the key and returning to Woking Street, type 'search area' or 'search street'."	
+"Note: You might have to search for the key more than once. Also, you don't have to talk to Mrs. Watchett to find the key, but it might take longer to find it if you don't."
 
 Table of Time Machine Hints
 hint		used

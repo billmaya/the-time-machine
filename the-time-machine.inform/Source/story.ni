@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43478 ]
+[ WORDS - 43482 ]
 
 Table of Releases
 release	notes
@@ -2240,7 +2240,8 @@ Instead of inserting the metal key into the keyhole:
 	try unlocking the hinged panel with the metal key.
 
 After unlocking the hinged panel with the metal key:
-	say "You swing the panel upwards."
+	[say "You swing the panel upwards.";]
+	try opening the hinged panel.
 
 Section - Lever
 

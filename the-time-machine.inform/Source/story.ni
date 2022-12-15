@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43395 ]
+[ WORDS - 43429 ]
 
 Table of Releases
 release	notes
@@ -5373,16 +5373,20 @@ hint											used
 Table of Time Machine Hints
 hint		used
 "Have you been able to get into the workshop?"		a number
-"You will need to get into the workshop first."		
+"You will need to get into the workshop first."
+"The workshop door is locked. You will need a key."		
 "Have you examined the time machine[']s control panel?"
-"Have you pressed the round button?"
-"There must be a piece missing from the time machine."
-"Have you found the orrery?"
-"Have you opened the orrery?"
-"Maybe the fuse will help."
-"But you don[']t know where the fuse should go in the time machine."
-"Have you examined the blueprints?"
-"> put fuse in time machine."		
+"Have you unlocked the hinged panel?"
+"Have you examined the time machine fuse?"
+"It looks like the time machine fuse is burnt out. You'll need a new one."
+"What other mechanical device have you found elsewhere in the house?"
+"Examine the orrery in the parlor."
+"Examine the orrery's right panel."
+"> slide right panel upward."
+"> take orrery fuse."
+"Got back to the workshop and get in the time machine."
+"> put orrery fuse in fuse holder."
+"> push lever."
 
 Table of Flower Hints
 hint	used

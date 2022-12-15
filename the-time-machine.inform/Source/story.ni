@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43429 ]
+[ WORDS - 43478 ]
 
 Table of Releases
 release	notes
@@ -5398,8 +5398,12 @@ hint	used
 "Once you can see the southeast path from the balcony you will be able to go southeast from the clearing."
 "Have you tried showing the Eloi various items from your inventory? Do they find any of them interesting?"
 "Show the Eloi the watch."
-"Weena seems to remember Wells['] watch. Have you tried showing her anything else?"
-"Show Weena the petal."
+"Shame. It looks like Weena, who might have been able to give you a flower based on the petal, has been captured by the Morlocks."
+"I guess you could go underground and attempt to rescue her."
+"If you decide not to rescue Weena you could search elsewhere for flowers."
+"Go back to the river bank and examine the bushes."
+"> examine flowers."
+"> take flower."
 
 Table of 802701 Hints
 hint	used

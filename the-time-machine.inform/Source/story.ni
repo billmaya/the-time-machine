@@ -5356,7 +5356,7 @@ title		subtable		description		toggle
 "How do I find the workshop door key?"		Table of Key Hints		""		hint toggle rule
 "How do I travel to 802,701 A.D.?"		Table of Time Machine Hints		""		hint toggle rule
 "How do I find the flower?"		Table of Flower Hints		""		hint toggle rule
-"What else can I do in 802,701 A.D.?"		Table of 802701 Hints		""		hint toggle rule
+["What else can I do in 802,701 A.D.?"		Table of 802701 Hints		""		hint toggle rule]
 "Game Walkthrough"		Table of Walkthrough Hints		""		hint toggle rule
 
 Table of Key Hints

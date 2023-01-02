@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43482 ]
+[ WORDS - 43278 ]
 
 Table of Releases
 release	notes
@@ -1710,7 +1710,7 @@ Part - Dining Room
 
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
-The description of the Dining Room is "A mahogany [dining table] that could seat eight comfortably dominates the space. Above the table hangs an electric [chandelier]. On the table is an [orrery]. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals.[paragraph break]The parlor is to the south."
+The description of the Dining Room is "A mahogany [dining table] that could comfortably seat eight dominates the space. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals.[paragraph break]The parlor is to the south."
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 
@@ -1718,11 +1718,20 @@ The Kitchen Door is openable.
 The Kitchen Door is scenery.
 
 The dining table is a thing.
+The dining table is fixed in place.
 The dining table is scenery in the Dining Room.
 The dining table is a supporter.
-The description of the dining table is "An oval mahogany table with three chairs on both sides and a single chair at each head."
+The description of the dining table is "An oval mahogany table with three chairs on both sides, and a single chair at each head."
+
+[SHOULD I MAKE A FURNITURE CLASS? - Fixed in place, scenery, can't be moved (with customized response), Supporter Y/N]
+To say too-heavy-to-move: say "This piece of furniture would required several men more robust than you to move it around the room."
+To say rearranging-deck-chairs: say "REARRANGING DECK CHAIRS ON TITANIC."
+
+Instead of switching off the dining table: say "[too-heavy-to-move]".
+Instead of switching on the dining table: say "[too-heavy-to-move]".
 
 The dining room chairs are a thing.
+The dining room chairs are fixed in place.
 The dining room chairs are scenery in the Dining Room.
 The dining room chairs are a container.
 The dining room chairs are enterable.
@@ -1757,40 +1766,6 @@ Instead of examining the contents-sideboard: say "I don't think Mrs. Watchett wo
 
 Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" or "tableware" or "service" or "table service" as contents-sideboard.
 Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks" or "spoon" or "spoons" as contents-sideboard.
-
-Chapter - Chandelier
-
-The chandelier is a device.
-The chandelier is switched on.
-The chandelier is scenery in the Dining Room.
-The description of the chandelier is "Probably the first of it's kind in the entire city, this glass monstrosity [if the chandelier is switched on]bathes the entire room in a harsh, yellowish, light.[otherwise]is dark.[end if] There is a small [chain] at the bottom of the chandelier."
-			
-[Suppress "The chandelier is currently switched on/off" message? See https://bit.ly/3ovZgnb]
-The examine devices rule does nothing when examining the chandelier.
-The examine devices rule does nothing when switching on the chandelier.
-The examine devices rule does nothing when switching off the chandelier.
-	
-Instead of searching the chandelier: say "Afraid of breaking Wells[apostrophe] latest acquisition, you confine yourself to a quick survey of the latticework of cut glass, wiring, and electric lights. Your cursory search finds nothing out of the ordinary."
-
-The chain is a thing.
-The chain is scenery in the Dining Room.
-The description of the chain is "You see nothing remarkable about the small chain."
-
-Instead of using the chandelier: try pulling the chain.
-
-Instead of pulling the chain: 
-	if the chandelier is switched off:
-		try switching on the chandelier;
-	otherwise:
-		try switching off the chandelier.
-
-Instead of switching off the chandelier: 
-	say "Tugging the small chain turns the chandelier off, darkening the room significantly. But you can still see and make your way around because of the fire in the parlor.";
-	now the chandelier is switched off;
-			
-Instead switching on the chandelier: 
-	say "Tugging the small chain turns the chandelier on, bathing the room in that harsh light you dislike so much.";
-	now the chandelier is switched on;
 
 
 Part - Kitchen

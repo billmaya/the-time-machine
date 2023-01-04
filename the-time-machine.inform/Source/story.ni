@@ -1659,6 +1659,7 @@ The Kitchen Door is north of the Dining Room and south of the Kitchen.
 The Kitchen Door is a door. 
 The Kitchen Door is openable.
 The Kitchen Door is scenery.
+The printed name of Kitchen Door is "kitchen door".
 
 The dining table is a thing.
 The dining table is fixed in place.
@@ -1698,7 +1699,8 @@ The sideboard is scenery in the Dining Room.
 The sideboard is a container.
 The sideboard can be open or closed.
 The sideboard can be openable. The sideboard is closed.
-The description of the sideboard is "A matching piece of mahogany furniture with compartments and drawers for holding articles of table service."
+The description of the sideboard is "The sideboard is matching piece of mahogany furniture with compartments and drawers for holding articles of table service."
+Understand "drawer" or "drawers" or "compartments" or "compartments" as sideboard.
 
 Instead of opening the sideboard: try searching the sideboard.
 Instead of searching the sideboard: say "I don't think Mrs. Watchett would appreciate you rummaging around in her sideboard."

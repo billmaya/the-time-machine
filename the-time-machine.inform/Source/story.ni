@@ -1705,9 +1705,18 @@ Understand "drawer" or "drawers" or "compartments" or "compartments" as sideboar
 Instead of opening the sideboard: try searching the sideboard.
 Instead of searching the sideboard: say "I don't think Mrs. Watchett would appreciate you rummaging around in her sideboard."
 
+To say fooling-around-watchett-stuff:
+	say "I don't think Mrs. Watchett would appreciate you rummaging through the contents of her sideboard."
+
 The contents-sideboard is scenery in the Dining Room. 
-Instead of examining the contents-sideboard: say "I don't think Mrs. Watchett would appreciate you rummaging through the contents of her sideboard."
+
+Instead of examining the contents-sideboard: say "[fooling-around-watchett-stuff]".
+Instead of taking the contents-sideboard: say "[fooling-around-watchett-stuff]".
+Instead of switching on the contents-sideboard: say "[fooling-around-watchett-stuff]".
+Instead of switching off the contents-sideboard: say "[fooling-around-watchett-stuff]".
 [I would have like to make this "...rummaging through her [noun]" with [noun] being what you typed (forks, glasses, bowls, etc.) understood as contents-sideboard]
+	
+["Enough with the sideboard already" after 3 or 4 >takes, >moves, >examines ???]
 
 Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" or "tableware" or "service" or "table service" as contents-sideboard.
 Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks" or "spoon" or "spoons" as contents-sideboard.

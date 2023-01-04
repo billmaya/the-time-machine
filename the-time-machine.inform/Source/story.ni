@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43278 ]
+[ WORDS - 42539 ]
 
 Table of Releases
 release	notes
@@ -595,73 +595,21 @@ Part - Tests
 
 [In the game type "> test" to see a list of all the available tests]
 
-[Current]
-Test goto-kitchen with "north /north / west/ north / north / north." [from Woking Street]
-
-[v1.0 Tests]
-Test goto-dining with "north / west / north / north." [from Woking Street]
-Test house-look with "x other houses / x residences". [from Woking Street]
-Test kitchen-desc with "x work table / x cabinets / x kitchen shelves / x stove / x sink / x work area." [from Kitchen]
-Test humboldt-woking-talk with "ask humboldt about wells / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about workshop / ask humboldt about time machine."
-Test take-encyc with "take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia / take encyclopaedia."
-Test take-book with "take book / take book / take book / take book / take book / take book."
-Test take-mag with "take periodical / take periodical / take periodical / take periodical / take periodical."  
-Test tend-fire with "tend fire / take poker / tend fire / drop poker / tend fire."
-Test circular-shaft-look with "x shaft / take grate / x shaft."
-Test clearing-sphinx-se with "go southeast / go up / go down / go southeast."
-Test clearing-balcony-se with "go southeast / go east / go east / go south / go north / go west / go west / go southeast."
-Test eloi-ask-show-give with "purloin watch / purloin poker / purloin key / purloin petal / go southeast."
-Test travel-802701 with "test prepare-time-machine / enter / activate panel / exit / east / east / south / north / west / west / test eloi-ask-show-give."
-Test travel-1895 with "go northwest / enter / activate panel."
-Test endgame-humboldt with "test travel-802701 / show eloi watch / show weena petal / test travel-1895 / exit."
-Test goto-802701 with "purloin key / purloin fuse / n /unlock workshop door with key / n / flip switch / examine blueprints / put fuse in time machine. / get in time machine / press button."
-Test prep-time-machine with "purloin fuse / examine blueprints / put fuse in control panel."
-Test weena-flower with "take watch / go north / test goto-workshop / test prep-time-machine / enter / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show watch to eloi."
-
-Test wtm with "test goto-workshop / test prep-time-machine."
-
-Test 802701 with "test wtm / enter / press button."
-Test eloi with "test 802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
-
-Test weena-endgame with "test eloi / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit."
-
-Test to-morlocks with "test 802701 / exit / remove grate / get in shaft / go down."
-Test to-watchett with "go north / take pocket watch / go north / go west / go north / take poker / go north / open panel / take fuse / go north."
-
-Test walkthrough with "take pocket watch / go north / go north / go west / go north / go north / examine orrery / open panel / examine mechanism / take fuse / go north / ask watchett about key / go south / go south / go south / go east / go south / search area / go north / unlock workshop door with key / go north / flip switch / search workbench / examine blueprints / enter time machine / examine control panel / put fuse in control panel / press button / exit / go east / go east / go south / go north / go west / go west / go southeast / show eloi the watch / show weena the petal / go northwest / enter time machine / press button / exit / show humboldt the flower."
-
-Test poker with "go south / go west / go north / take poker / go east."
-Test wtm-poker with "test wtm / test poker."
-
-[v1.1 Tests]
-Test search-area with "search area / search area / search area / search area."
-
-[v1.4 Tests]
-Test xpl-802701 with "test go-802701 / exit / x statue / e / e / s / n/ w / w / se / nw / enter time machine / push lever." [This will take you to 802,701 and back]
-
-[v1.5 Tests]
-Test eloi-r8 with "test go-802701 / exit / e / e / s / n / w / w / se."
-	
-[v1.6 Tests]
-Test weena-r9 with "test go-802701 / exit / e / e / s / n / w / w / se / show watch to eloi."
-
-[v1.7 Tests]
-Test newspaper with "look / take newspaper / look / put newspaper on left armchair / look / take newspaper / put newspaper on right armchair / look."
-			
-[v1.8 Tests]
-Test end1 with "test xpl-802701 / exit."
-Test end2 with "test fp-time / take time machine fuse / put orrery fuse in fuse holder / close panel / exit / push lever."
-Test end3 with "tell humboldt about time travel / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks."
-
-Test unlock-workshop with "go north / purloin key / unlock workshop door with key." [Moved from v1.0 Tests]
+[v1.9 Tests]
+Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
 Test get-matches with "go west / ask gernsback for cigar / ask gernsback for matches / go north / take newspaper / go south / go east."
-Test goto-workshop with "go north / test unlock-workshop / test get-matches / go north / flip switch." [Moved from v1.0 Tests]
+Test goto-workshop with "go north / test unlock-workshop / test get-matches / go north / flip switch."
+Test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker."
 
-test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker." [Moved from Section - Tests | Time Machine | Fuses]
-Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever." [Moved from v1.4 Tests]
+Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever."
+Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
 Test go-underground with "test go-802701 / exit / remove cover / climb in well / down."
-
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
+
+Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
+Test rescue-weena with "test go-underground / go north / go down / go down / go down / go south / go south / search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match / go south / go north / go north / go north / go up / go up / go up / go south / go up / exit."
+
+Test make-torch with "search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match."
 Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."
 Test light-torch with "turn lantern off / open box of matches / take match / light match / light torch with match."
 Test light-newspaper with "turn lantern off / open box of matches / take match / light match / light newspaper with match."
@@ -669,11 +617,6 @@ Test light-newspaper with "turn lantern off / open box of matches / take match /
 Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
 Test news-duration with "test go-abattoir / test light-newspaper."
 
-[v1.9 Tests]
-Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
-Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
-Test make-torch with "search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match."
-Test rescue-weena with "test go-underground / go north / go down / go down / go down / go south / go south / search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match / go south / go north / go north / go north / go up / go up / go up / go south / go up / exit."
 
 Part - Release
 

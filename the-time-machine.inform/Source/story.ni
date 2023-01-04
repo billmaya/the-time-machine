@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42560 ]
+[ WORDS - 42606 ]
 
 Table of Releases
 release	notes
@@ -1667,7 +1667,7 @@ The dining table is scenery in the Dining Room.
 The dining table is a supporter.
 The description of the dining table is "An oval mahogany table with three chairs on both sides, and a single chair at each head."
 
-[SHOULD I MAKE A FURNITURE CLASS? - Fixed in place, scenery, can't be moved (with customized response), Supporter Y/N]
+[+ Furniture class?]
 To say too-heavy-to-move: say "This piece of furniture would required several men more robust than you to move it around the room."
 To say rearranging-deck-chairs: say "REARRANGING DECK CHAIRS ON TITANIC."
 

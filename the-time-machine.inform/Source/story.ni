@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42606 ]
+[ WORDS - 42703 ]
 
 Table of Releases
 release	notes
@@ -962,9 +962,30 @@ Understand "encyclopedia" or "encyclopaediae" or "encyclopedias" as encyclopaedi
 
 Chapter - Furniture
 
-The furniture is a thing.
+[The furniture is a thing.
 The furniture is scenery in the Library.
-Instead of examining the furniture, say "You'll have to be more specific about what you're interested in examining."
+Instead of examining the furniture, say "You'll have to be more specific about what you're interested in examining."]
+
+Furniture is a kind of thing.
+Furniture is either unmoveable or moveable. Furniture is usually unmoveable. 
+Furniture is scenery.
+[Furniture is a supporter.]
+
+Before switching on furniture:
+	if furniture is unmoveable: 
+		say "YOU WOULD NEED SERVERAL STRONG MEN TO HELP YOU MOVE THAT.";
+	otherwise: 
+		say "YOU DON'T HAVE TIME NOW TO REARRANGE DECK CHAIRS ON THE TITANIC (FIGURATIVELY SPEAKING).";
+	stop the action.
+
+Before taking furniture:
+	say "THAT'S NOT PORTABLE.";
+	stop the action.
+
+The portmanteau is furniture.
+The portmanteau is in the Library.
+The description of the portmanteau is "Created specifically to try and debug the new Furniture class."
+The portmanteau is moveable.
 
 The desk is a thing.
 The desk is scenery in the LIbrary.

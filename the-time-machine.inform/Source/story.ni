@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42703 ]
+[ WORDS - 41159 ]
 
 Table of Releases
 release	notes
@@ -874,7 +874,7 @@ The description of the Entryway is "From here you can reach all other parts of t
 	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" or "bannister" as banister.
 
-Before taking books in the Entryway: say "BOOKS IN NEXT ROOM."
+Before taking shelf-contents in the Entryway: say "LIBRARY IN NEXT ROOM."
 
 Chapter - Workshop Door
 	
@@ -933,32 +933,15 @@ Chapter - Shelves
 The shelves are a thing.
 The shelves are scenery in the Library.
 The shelves are a supporter.
-The description of shelves is "Holding books and periodicals of all types as well as a set of encyclopaedia."
+The description of shelves is "The shelves are crammed with books and periodicals of all types as well as a set of encyclopaedia."
 Understand "shelf" as shelves.
 
-[Writing §4.5. Kinds of value]
-[Writing §4.8. New value properties, Example 48]
-[Writing §4.9. Using new kinds of value in properties]
+shelf-contents are a thing in the Library.
+shelf-contents are scenery.
+Understand "books" or "book" or "magazines" or "magazine" or "periodicals" or "periodical" or "encyclopedias" or "encyclopedia" or "encyclopaediae" as shelf-contents
 
-Bookness is a kind of value. The booknesses are reference, magazine, and hardcover.
-
-The books are a thing. [What if some of the books are from the future?]
-The books have a bookness called type-of-reading. The type-of-reading of the books is hardcover.
-The books are scenery on the shelves.
-The description of books is "BOOKS DESCRIPTION." [Should not be displayed because of > examine books code in Section 1 below (included to keep books from showing up when Missing Item Description code is run).]
-Understand "book" as books.
-
-The periodicals are a thing.
-The periodicals have a bookness called type-of-reading. The type-of-reading of the periodicals is magazine.
-The periodicals are scenery on the shelves.
-The description of periodicals is "PERIODICALS DESCRIPTION." [Should not be displayed because of > examine periodicals code in Section 1 below (included to keep periodicals from showing up when Missing Item Description code is run).]
-Understand "magazine" or "magazines" as periodicals.
-
-The encyclopaedia are a thing.
-The encyclopaedia are scenery on the shelves.
-The encyclopaedia has a bookness called type-of-reading. The type-of-reading of the encyclopaedia is reference.
-The description of encyclopaedia is "ENCYCLOPAEDIA DESCRIPTION." [Should not be displayed becuase of > examine encyclopaedia code in Section 1 below (included to keep encyclopaedia from showing up when Missing Item Description code is run).]
-Understand "encyclopedia" or "encyclopaediae" or "encyclopedias" as encyclopaedia.
+Instead of searching the shelves: try reading the shelves.
+Instead of searching the shelf-contents: try reading the shelf-contents.
 
 Chapter - Furniture
 
@@ -966,6 +949,7 @@ Chapter - Furniture
 The furniture is scenery in the Library.
 Instead of examining the furniture, say "You'll have to be more specific about what you're interested in examining."]
 
+[START - Furniture Class]
 Furniture is a kind of thing.
 Furniture is either unmoveable or moveable. Furniture is usually unmoveable. 
 Furniture is scenery.
@@ -986,7 +970,8 @@ The portmanteau is furniture.
 The portmanteau is in the Library.
 The description of the portmanteau is "Created specifically to try and debug the new Furniture class."
 The portmanteau is moveable.
-
+[END - Furniture Class]
+	
 The desk is a thing.
 The desk is scenery in the LIbrary.
 The desk is a supporter.
@@ -1026,150 +1011,12 @@ Instead of searching the curtains: say "You look in the folds of the fabric but 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
 
-Chapter - Reading
+Chapter - Shelves
 
-Instead of examining books: try taking books.
-Instead of examining periodicals: try taking periodicals.
-Instead of examining encyclopaedia: try taking encyclopaedia
-
-Instead of searching the books: try taking books.
-Instead of searching the periodicals: try taking periodicals.
-Instead of searching encyclopaedia: try taking encyclopaedia.
-
-Instead of searching the shelves: say "A frequent visitor, the items on the shelf are vaguely familiar, though nothing really catches your interest."
-
-[Maybe don't make it random but chose a new one each time and never choose the same one twice?]
-Instead of taking something in the Library:
-	if the noun provides the property type-of-reading:
-		if the type-of-reading of the noun is reference:
-			choose a random row from Table of Encyclopaedia Volumes; 
-			say "You take the volume labeled '[Label entry]' and leaf through the pages from '[Start-Word entry]' to '[End-Word entry]' until you get bored and place the volume back on the shelf.";
-		else if the type-of-reading of the noun is magazine:
-			choose a random row from Table of Periodicals;
-			say "You take a copy of '[Name entry]' off the shelf and leaf through [Note entry] before placing it back with the other issues.";
-		else if the type-of-reading of the noun is hardcover:
-			choose a random row from Table of Books;
-			say "You take a copy of '[Name entry]' off the shelf and leaf through a few pages before placing it back on the shelf.";
-		otherwise:
-		 	say "READING [the type-of-reading of the noun].";
-	otherwise:
-		[say "That's hardly portable.".]
-		continue the action.
-
-[> read book / read periodical / read encyclopaedia ]
-		
-Understand the command "read" as something new.
-Understand "read [something]" as taking.
-
-Table of Encyclopaedia Volumes [https://bit.ly/2PQqQyo https://bit.ly/31CR89W]
-Volume	Label 	Start-Word	End-Word	Publish-Date
-1	"A-Anatomy"	"A"	"Anatomy"	1875
-2	"Anaxagoras-ATH"	"Anaxagoras"	"Athenry"	1875
-3	"Athens-BOI"	"Athens"	"Boissonade"	1875
-4	"BOK-CAN"	"Bokhara"	"Canoe"	1876
-5	"Canon-Cleves"	"Canon"	"Cleves"	1876
-6	"CLI-DAY"	"Clichy"	"Dayton"	1877
-7	"DEA-ELD"	"Deacon"	"El Dorado"	1877
-8	"ELE-FAI"	"Eleanor"	"Fakir"	1878
-9	"FAL-FYZ"	"Falaba"	"Fyzabad"	1879
-10	"G-GOT"	"G"	"Gotz"	1879
-11	"GOU-Hippopotamus"	"Gouda"	"Hippopotamus"	1880
-12	"HIR-IND"	"Hiring"	"Indus"	1881
-13	"Infant-Kant"	"Infant"	"Kant"	1881
-14	"Kaolin-LON"	"Kaolin"	"Lons-Le-Saulnier"	1882
-15	"Loo-Memphis"	"Loo"	"Memphis"	1883
-16	"MEN-MOS"	"Mena"	"Mosul"	1883
-17	"MOT-ORM"	"Motanabbi"	"Ormuzd"	1884
-18	"Orne-Phthisis"	"Orne"	"Phthisis"	1885
-19	"PHY-PRO"	"Phylactery"	"Provins"	1885
-20	"PRU-ROS"	"Prudentius"	"Rostoff"	1886
-21	"ROT-Siam"	"Rothe"	"Siam"	1886
-22	"SIB-SZO"	"Sibbald"	"Szolnok"	1887
-23	"T-UPS"	"T"	"Upsala"	1888
-24	"URA-ZYM"	"Ural-Altaic"	"Zymotic"	1888
-[25	"Index"	--	--	1889]
-
-Table of Periodicals [https://bit.ly/3sJ5Fwv https://bit.ly/3ftZQiV https://bit.ly/3cIvlnE]
-Name	Start-Date	End-Date	Note
-"Chemist + Druggist"	1859	2016	"articles about pharmacists and pharmacology" [https://bit.ly/3doBN2a]
-"The New Age"	1894	1983	"articles inspired by Fabian socialism" [https://bit.ly/2QSXEHj]
-"The Strand Magazine"	1891	1950	"some short fiction and general interest articles" [https://bit.ly/39AXM4W]
-"The Ludgate Monthly"	1891	1901	"some short fiction and articles of general interest" [https://bit.ly/2R13qqF]
-"The Observatory"	1877	--	"articles devoted to astronomy" [https://bit.ly/3djX5Oo]
-"Mind"	1876	--	"articles about analytic philosophy and psychology" [https://bit.ly/39ymVNx 1895]
-"Amateur Photographer"	1884	--	"articles, like the title says, about amateur photography" [https://bit.ly/3wkC92z]
-"The Railway Magazine"	1897	--	"articles for the railway enthusiast" [https://bit.ly/39AX2fU]
-"The Dome"	1987 	1900	"articles about the 'decadent' visual and verbal arts" [https://bit.ly/2PhTzfD]
-"Model Engineer"	1898	--	"articles about model construction and experimental engineering" [https://bit.ly/2PoC11f]
-"Geological Magazine"	1864	--	"articles on observational geology, mineralogy, and palaeontology" [https://bit.ly/3fETb5g]
-"Scientific American"	1845	--	"articles about patents and popular science" [https://bit.ly/2PsChwf]
-"Nature"	1869	--	"articles about a variety of academic disciplines, mainly science and technology" [https://bit.ly/3duivbP]
-"Philosophical Transactions of the Royal Society: Mathematical, Physical, and Engineering Sciences"	1887	--	"articles focusing on the physical sciences" [https://bit.ly/3sLTaQX]
-"Philosophical Transactions of the Royal Society B: Biological Sciences"	1887	--	"articles focusing on the life sciences" [https://bit.ly/3sLTaQX]
-
-Table of Books
-Name	Author	Publish-Date
-"The Voyage of the Beagle"	"Charles Darwin"	1845
-"The Origin of Species"	"Charles Darwin"	1859
-"Mathimatical Pinciples of Natural Philosophy"	"Isaac Newton"	1687
-"Dialogue Concerning the Two Chief World Systems"	"Galileo Galilei"	1632
-"Physica"	"Aristotle" 	300
-"On the Revolutions of Heavenly Spheres"	"Nicolause Copernicus"	1543
-"The Insect Societies"	"Edward O. Wilson"	1971
-"Relativity: The Special and General Theory"	"Albert Einstein"	1916
-"The Selfish Gene"	"Richard Dawkins"	1976
-"Vestiges of the Natural History of Creation"	"Robert Chambers"	1844
-"The Principles of Geology: Being an Attempt to Explain the Former Changes of the Earth's Surface"	"Charles Lyell"	1833
-"The Student's Elements of Geology"	"Charles Lyell"	1870
-"Travels in North America, Canada, and Nova Scotia: With Geological Observations"	"Charles Lyell"	1855
-"On the Connexion of the Physical Sciences"	"Mary Somerville"	1834
-"Preliminary Discourse on the Study of Natural Philosophy"	"John F.W. Herschel"	1851
-"The Science of Life: An Outline of the History of Biology and its Recent Advances"	"J. Arthur Thomson"	1899
-"Sea-Side Studies at Ilfracombe, Tenby, the Scilly Isles, & Jersey"	"George Henry Lewes"	1858
-"The Warden"	"Anthony Trollope"	1855
-"North and South"	"Elizabeth Gaskell"	1855
-"Jane Eyre"	"Charlotte Brontë"	1847
-"The Tenant of Wildfell Hall"	"Anne Brontë"	1848
-"The Moonstone"	"Wilkie Collins"	1868
-"Vanity Fair"	"William Makepeace Thackeray"	1848
-"Wuthering Heights"	"Emily Brontë"	1847
-"Bleak House"	"Charles Dickens"	1853
-"Tess of the d'Urbervilles"	"Thomas Hardy"	1891
-"Middlemarch"	"George Eliot"	1872
-"Erewhon"	"Samuel Butler"	1872
-"The Coming Race"	"Edward Bulwer-Lytton"	1871
-"The Fixed Period"	"Anthony Trollope"	1882
-"The Land of Darkness"	"Margaret Oliphant"	1887
-"The Old Nurse's Story"	"Elizabeth Gaskell"	1852
-"An Account of Some Strange Disturbances in Aungier Street"	"Sheridan Le Fanu"	1853
-"The Signal-Man"	"Charles Dickens"	1866
-"Was It An Illusion?"	"Amelia B. Edwards"	1881
-"The Open Door"	"Charlotte Riddell"	1882
-"The Body Snatcher"	"Robert Louis Stevenson"	1884
-"The Canterville Ghost"	"Oscar Wilde"	1887
-"At the End of the Passage"	"Rudyard Kipling"	1890
-"The Turn of the Screw"	"Henry James"	1988
-"A Tale of Two Cities"	"Charles Dickens"	1859
-"Our Mutual Friend"	"Charles Dickens"	1865
-"The Pickwick Papers"	"Charles Dickens"	1837
-"A Christmas Carol"	"Charles Dickens"	1843
-"Great Expectations"	"Charles Dickens"	1861
-"David Copperfield"	"Charles Dickens"	1850
-"Rip Van Winkle"	"Washington Irving"	1819
-"A Tale of the Ragged Mountains"	"Edgar Allen Poe"	1844
-"A Connecticut Yankee In King Arthur's Court"	"Mark Twain"	1889
-"Sylvie and Bruno"	"Lewis Carroll"	1889
-"Sylvie and Bruno Concluded"	"Lewis Carroll"	1893
-"Alice's Adventures in Wonderland"	"Lewis Carroll"	1865
-"Through the Looking-Glass"	"Lewis Carroll"	1871
-"The Hunting of the Snark"	"Lewis Carroll"	1876
-"What the Tortoise Said to Achilles"	"Lewis Carroll"	1895
-"Euclid and his Modern Rivals"	"Lewis Carroll"	1979
-"The Game of Logic"	"Lewis Carroll"	1887
-"Phantasmagoria and Other Poems"	"Lewis Carroll"	1869
-"The Life of George Washington"	"Washington Irving"	1859
-
-
+Instead of examining shelf-contents: try taking shelf-contents.
+Instead of searching shelf-contents: try taking shelf-contents.
+Instead of taking shelf-contents:
+	say "CAN'T TAKE ANYTHING OFF OF THE SHELVES. NOT IMPORTANT."
 
 Part - Parlor
 
@@ -4723,30 +4570,17 @@ Before putting the newspaper on the right armchair:
 
 Instead of searching the newspaper: try reading the newspaper.
 
+Book - Reading
+
 Understand the command "read" as something new. [Recipe §9.6. Reading Matter]
 Understand "read [something]" as reading.
 Reading is an action applying to one thing, requiring light.
 
 Carry out reading:
-	if newspaper-reads is greater than penultimate-read:
-		say "You realize that rereading today[']s paper isn[']t going to get you any closer to your goal and you drop it back onto the armchair.";
-		now the newspaper is on the left armchair;
+	if the player is in the Library:
+		say "PLAYER TRYING TO READ BOOK, ETC. IN LIBRARY.";
 	otherwise:
-		now the player has the newspaper;
-		choose a random row from Table of Newspaper Stories;
-		say "You glance at an article entitled '[Title entry]' about [Summary entry].";
-		now newspaper-reads is newspaper-reads + 1.
-
-Table of Newspaper Stories
-Title	Summary
-"The Railway Mystery"	"the continuing inquest into the mysterious death of a Mrs. Matilda Bryan on the London and North Western Railway at Tring"
-"The Engineering Disputes"	"an upcoming conference of the Engineering and Shipbuilding Trades on implementing a union decision on the reduction of working hours"
-"Growth Of Inland Revenue"	"a report from Commissioners of the Inland Revenue detailed the increase of [unicode 163]1,300,506 in revenue over the previous year"
-"The British Museum"	"the annual attendance at the Museum during the past year, the total of 581,906 the highest number since 1890"
-"The Sanitary Congress"	"the resumption of proceedings at the Sanitary Congress in Leeds"
-"The St. Augustine Celebration"	"continued proceedings in connection with the Roman Catholic Conference commemorating the historical landing of St. Augustin and his companions"
-"Alleged Blackmailing In Manchester"	"charges levels against the two managing directors of The Financial Post, who threatened to publish false and defamatory information about the governing director of 'Commerce Limited'"
-"The Indian Frontier Troubles"	"two English officers killed and one severly wounded by some tribe between the Rambat Pass and Danesh Khel in India"
+		say "PLAYER TRYING TO READ NEWSPAPER."
 
 Book - Box Of Matches
 

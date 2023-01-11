@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41159 ]
+[ WORDS - 41408 41159 ]
 
 Table of Releases
 release	notes
@@ -1016,7 +1016,8 @@ Chapter - Shelves
 Instead of examining shelf-contents: try taking shelf-contents.
 Instead of searching shelf-contents: try taking shelf-contents.
 Instead of taking shelf-contents:
-	say "CAN'T TAKE ANYTHING OFF OF THE SHELVES. NOT IMPORTANT."
+	say "I probably shouldn't be telling you this but the shelves and their contents are scenery, just for show."
+
 
 Part - Parlor
 
@@ -4577,10 +4578,19 @@ Understand "read [something]" as reading.
 Reading is an action applying to one thing, requiring light.
 
 Carry out reading:
-	if the player is in the Library:
-		say "PLAYER TRYING TO READ BOOK, ETC. IN LIBRARY.";
+	if the noun is shelf-contents:
+		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
+	otherwise if the noun is shelves:
+		say "You scan the shelves but nothing catches you interest, especially since you've got more pressing concerns.";
+	otherwise if the noun is library papers:
+		say "Reading through the papers quickly you find light correspondence and bills, nothing that would point to Wells['] recent flights of fantasy.";
+	otherwise if the noun is Gernsback book:
+		say "GERNSBACK IS READING IT."; [come up with something better here]
+	otherwise if the noun is newspaper:
+		say "You glance at today's paper but realize the rereading any of the articles isn't going to get you any closer to your goal.";
 	otherwise:
-		say "PLAYER TRYING TO READ NEWSPAPER."
+		say "That's absurd.";
+
 
 Book - Box Of Matches
 
@@ -4598,11 +4608,11 @@ Book - Book
 [The book that Gernsback is reading is from the future. If you take the book and look at the publication date it will be a future date]
 [The book should be an anthology]
 
-The book is a thing. "A thick volume."
-The description of the book is "You can't make out the entire title from this distance but the initial words 'H.G. Wells['] Fantastic Fiction' are clearly visible on the spine of the large book."
+[The] Gernsback book is a thing. "A thick volume."
+The description of Gernsback book is "You can't make out the entire title from this distance but the initial words 'H.G. Wells['] Fantastic Fiction' are clearly visible on the spine of the large book."
 
 [The book is in the Parlor.]
-The book is held by Gernsback.
+[The] Gernsback book is held by Gernsback.
 
 Book - Tobacco
 

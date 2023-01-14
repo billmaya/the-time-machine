@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41274 ]
+[ WORDS - 41271 ]
 
 Table of Releases
 release	notes
@@ -938,7 +938,7 @@ Understand "shelf" as shelves.
 
 shelf-contents are a thing in the Library.
 shelf-contents are scenery.
-Understand "books" or "book" or "magazines" or "magazine" or "periodicals" or "periodical" or "encyclopedias" or "encyclopedia" or "encyclopaediae" as shelf-contents
+Understand "books" or "magazines" or "magazine" or "periodicals" or "periodical" or "encyclopedias" or "encyclopedia" or "encyclopaediae" as shelf-contents
 
 Instead of searching the shelves: try reading the shelves.
 Instead of searching the shelf-contents: try reading the shelf-contents.
@@ -4579,15 +4579,15 @@ Reading is an action applying to one thing, requiring light.
 
 Carry out reading:
 	if the noun is shelf-contents:
-		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
+		say "You scan the contents of the shelves nothing catches your interest, especially since you've got more pressing concerns.";
 	otherwise if the noun is shelves:
 		say "You scan the shelves but nothing catches you interest, especially since you've got more pressing concerns.";
 	otherwise if the noun is library papers:
 		say "Reading through the papers quickly you find light correspondence and bills, nothing that would point to Wells['] recent flights of fantasy.";
 	otherwise if the noun is Gernsback book:
-		say "GERNSBACK IS READING IT."; [come up with something better here]
+		say "Not while Gernsback is reading it.";
 	otherwise if the noun is newspaper:
-		say "You glance at today's paper but realize the rereading any of the articles isn't going to get you any closer to your goal.";
+		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
 	otherwise:
 		say "That's absurd.";
 

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41261 ]
+[ WORDS - 41381 ]
 
 Table of Releases
 release	notes
@@ -874,7 +874,7 @@ The description of the Entryway is "From here you can reach all other parts of t
 	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" or "bannister" as banister.
 
-Before taking shelf-books in the Entryway: say "LIBRARY IN NEXT ROOM."
+Before taking shelved-books in the Entryway: say "LIBRARY IN NEXT ROOM."
 
 Chapter - Workshop Door
 	
@@ -908,7 +908,7 @@ Part - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books, periodicals, and encyclopaedia that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, reading his book.[end if] The room continues to the north and the entryway is back east."
+The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, reading his book.[end if] The room continues to the north and the entryway is back east."
 
 Chapter - Printing Library Description
 
@@ -933,21 +933,27 @@ Chapter - Shelves
 The shelves are a thing.
 The shelves are scenery in the Library.
 The shelves are a supporter.
-The description of shelves is "The shelves are crammed with books of all sizes and types." 
+The description of shelves is "The shelves are crammed with books of all sizes, types, and subjects." 
 Understand "shelf" as shelves.
 
 Instead of searching the shelves: try reading the shelves.
 
 Chapter - Books
 
-shelf-books are a thing in the Library.
-shelf-books are scenery.
-The description of shelf-books are "A variety of titles on various topics, some familiar, some not."
-The printed name of shelf-books is "books".
-Understand "books" as shelf-books.
+shelved-books are a thing in the Library.
+shelved-books are scenery.
+The description of shelved-books are "A variety of titles on various topics, some familiar, some not."
+The printed name of shelved-books is "shelved books".
+Understand "book" or "books" as shelved-books.
 
-Instead of searching the shelf-books: try reading the shelf-books.
-Instead of taking shelf-books: say "I probably shouldn't be telling you this but the shelves and the books are scenery, just for show."
+Instead of searching the shelved-books: try reading the shelved-books.
+
+To say taking-shelved-books: 
+	say "You take [one of]one of the books[or]another book[stopping] off the shelves and leaf through a few of its pages. The subject doesn't[one of] interest you[or] seem relevant to your investigation[in random order] so you return it to its place on the shelf."
+
+Instead of taking shelved-books for the first time: say "[taking-shelved-books]".
+Instead of taking shelved-books for the second time: say "[taking-shelved-books]".
+Instead of taking shelved-books: say "[one of]I probably shouldn't be telling you this but the shelves and the books are scenery, just for show.[or]Again, just scenery.[or]I'd suggest moving along to something more important and relevant to your investigation.[stopping]"
 
 Section - Reading
 
@@ -956,14 +962,14 @@ Understand "read [something]" as reading.
 Reading is an action applying to one thing, requiring light.
 
 Carry out reading:
-	if the noun is shelf-books:
-		say "You scan [printed name] on the shelves but nothing catches your interest, especially since you've got more pressing concerns on your mind.";
+	if the noun is shelved-books:
+		say "You scan the [printed name] but nothing catches your interest, especially since you've got more pressing concerns on your mind.";
 	otherwise if the noun is shelves:
 		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
 	otherwise if the noun is library papers:
 		say "Reading through the papers quickly you find light correspondence and bills, nothing that would point to Wells['] recent flights of fantasy.";
-	otherwise if the noun is Gernsback book:
-		say "Not while Gernsback is reading it.";
+	otherwise if the noun is wells-book:
+		say "You can't do that while Gernsback is reading it.";
 	otherwise if the noun is newspaper:
 		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
 	otherwise:
@@ -3762,7 +3768,7 @@ Chapter - Hello
 After saying hello to Gernsback when the greeting type is explicit: 
 	if Ending Scene is not happening:
 		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
-		say "[add book ask suggestion]";
+		say "[add wells-book ask suggestion]";
 		say "[add cigar-gernsback ask suggestion]";
 		say "[add workshop-room ask suggestion]";
 		say "[add key ask suggestion]";
@@ -3777,7 +3783,7 @@ After saying hello to Gernsback when the greeting type is implicit:
 	if Ending Scene is not happening:
 		say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]";
 		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
-		say "[add book ask suggestion]";
+		say "[add wells-book ask suggestion]";
 		say "[add cigar-gernsback ask suggestion]";
 		say "[add workshop-room ask suggestion]";
 		say "[add key ask suggestion]";
@@ -3809,7 +3815,7 @@ Section - Requests - "Ask [someone] for [thing]"
 After requesting Gernsback for the newspaper: 
 	say "'I don[']t have it.'"
 
-After requesting Gernsback for the book: say "'Plenty of other books in the library for you to look at.'"
+After requesting Gernsback for the wells-book: say "'Plenty of other books in the library for you to look at.'"
 
 After requesting Gernsback for the box of matches:
 	if the player does not have cigar-player:
@@ -3893,9 +3899,9 @@ After quizzing Gernsback about key:
 ask-about-gernsback-book is a truth state that varies.
 ask-about-gernsback-book is false.
 
-After quizzing Gernsback about book:
+After quizzing Gernsback about wells-book:
 	if ask-about-gernsback-book is false:
-		say "[remove book ask suggestion]";
+		say "[remove wells-book ask suggestion]";
 		choose a random row from Table of Gernsback Book;
 		say "'[one of]Fascinating[or]Interesting[or]Strange[or]Intriguing[or]Engaging[or]Entertaining[or]Amusing[at random] story. Called ['][Title entry].['] About [Comment entry] Never heard of the author though.'";
 		now ask-about-gernsback-book is true;
@@ -4606,16 +4612,18 @@ The box of matches is held by Gernsback.
 [The box of matches is held by the player.] [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
 
 
-Book - Book
+Book - HG Wells Book
 
 [The book that Gernsback is reading is from the future. If you take the book and look at the publication date it will be a future date]
 [The book should be an anthology]
 
-[The] Gernsback book is a thing. "A thick volume."
-The description of Gernsback book is "You can't make out the entire title from this distance but the initial words 'H.G. Wells['] Fantastic Fiction' are clearly visible on the spine of the large book."
+[The] wells-book is a thing. "A thick volume."
+The description of wells-book is "You can't make out the entire title from this distance but the initial words 'H.G. Wells['] Fantastic Fiction' are clearly visible on the spine of the large book."
+Understand "gernsback book" or "gernsback's book" as wells-book
 
 [The book is in the Parlor.]
-[The] Gernsback book is held by Gernsback.
+[The] wells-book is held by Gernsback.
+
 
 Book - Tobacco
 

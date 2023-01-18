@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41271 ]
+[ WORDS - 41261 ]
 
 Table of Releases
 release	notes
@@ -874,7 +874,7 @@ The description of the Entryway is "From here you can reach all other parts of t
 	
 	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" or "bannister" as banister.
 
-Before taking shelf-contents in the Entryway: say "LIBRARY IN NEXT ROOM."
+Before taking shelf-books in the Entryway: say "LIBRARY IN NEXT ROOM."
 
 Chapter - Workshop Door
 	
@@ -933,15 +933,41 @@ Chapter - Shelves
 The shelves are a thing.
 The shelves are scenery in the Library.
 The shelves are a supporter.
-The description of shelves is "The shelves are crammed with books and periodicals of all types as well as a set of encyclopaedia."
+The description of shelves is "The shelves are crammed with books of all sizes and types." 
 Understand "shelf" as shelves.
 
-shelf-contents are a thing in the Library.
-shelf-contents are scenery.
-Understand "books" or "magazines" or "magazine" or "periodicals" or "periodical" or "encyclopedias" or "encyclopedia" or "encyclopaediae" as shelf-contents
-
 Instead of searching the shelves: try reading the shelves.
-Instead of searching the shelf-contents: try reading the shelf-contents.
+
+Chapter - Books
+
+shelf-books are a thing in the Library.
+shelf-books are scenery.
+The description of shelf-books are "A variety of titles on various topics, some familiar, some not."
+The printed name of shelf-books is "books".
+Understand "books" as shelf-books.
+
+Instead of searching the shelf-books: try reading the shelf-books.
+Instead of taking shelf-books: say "I probably shouldn't be telling you this but the shelves and the books are scenery, just for show."
+
+Section - Reading
+
+Understand the command "read" as something new. [Recipe §9.6. Reading Matter]
+Understand "read [something]" as reading.
+Reading is an action applying to one thing, requiring light.
+
+Carry out reading:
+	if the noun is shelf-books:
+		say "You scan [printed name] on the shelves but nothing catches your interest, especially since you've got more pressing concerns on your mind.";
+	otherwise if the noun is shelves:
+		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
+	otherwise if the noun is library papers:
+		say "Reading through the papers quickly you find light correspondence and bills, nothing that would point to Wells['] recent flights of fantasy.";
+	otherwise if the noun is Gernsback book:
+		say "Not while Gernsback is reading it.";
+	otherwise if the noun is newspaper:
+		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
+	otherwise:
+		say "That's absurd.";
 
 Chapter - Furniture
 
@@ -1011,12 +1037,7 @@ Instead of searching the curtains: say "You look in the folds of the fabric but 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
 
-Chapter - Shelves
 
-Instead of examining shelf-contents: try taking shelf-contents.
-Instead of searching shelf-contents: try taking shelf-contents.
-Instead of taking shelf-contents:
-	say "I probably shouldn't be telling you this but the shelves and their contents are scenery, just for show."
 
 
 Part - Parlor
@@ -4571,25 +4592,7 @@ Before putting the newspaper on the right armchair:
 
 Instead of searching the newspaper: try reading the newspaper.
 
-Book - Reading
 
-Understand the command "read" as something new. [Recipe §9.6. Reading Matter]
-Understand "read [something]" as reading.
-Reading is an action applying to one thing, requiring light.
-
-Carry out reading:
-	if the noun is shelf-contents:
-		say "You scan the contents of the shelves nothing catches your interest, especially since you've got more pressing concerns.";
-	otherwise if the noun is shelves:
-		say "You scan the shelves but nothing catches you interest, especially since you've got more pressing concerns.";
-	otherwise if the noun is library papers:
-		say "Reading through the papers quickly you find light correspondence and bills, nothing that would point to Wells['] recent flights of fantasy.";
-	otherwise if the noun is Gernsback book:
-		say "Not while Gernsback is reading it.";
-	otherwise if the noun is newspaper:
-		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
-	otherwise:
-		say "That's absurd.";
 
 
 Book - Box Of Matches

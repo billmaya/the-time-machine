@@ -1021,7 +1021,7 @@ The chair is in the Library.
 The chair is furniture.
 The chair is moveable.
 The chair is enterable.
-The description of the chair is "The small chair covered in worn leather positioned near the curtains."
+The description of the chair is "The small chair is covered in worn leather positioned near the curtains."
 Understand "leather" as chair.
 
 Instead of pulling the chair: try switching on the chair.

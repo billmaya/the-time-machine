@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41335 ]
+[ WORDS - 41465 ]
 
 Table of Releases
 release	notes
@@ -601,7 +601,7 @@ To say cannot-move:
 	say "You would need one or two stronger men to help you move that."
 
 To say should-not-move:
-	say "Rearranging the furniture at this time doesn't accomplish anthing constructive."
+	say "Rearranging the furniture at this time doesn't accomplish anything constructive."
 
 Before taking furniture:
 	say "That's not portable.";
@@ -998,12 +998,15 @@ Carry out reading:
 
 Chapter - Library Furniture
 
+Section - Library Desk
+
 The desk is a thing.
 The desk is in the Library.
 The desk is furniture.
 The description of the desk is "A small standing desk with a few handwritten papers on it."
 Instead of searching the desk, say "You quickly shuffle through the papers on the desk but find nothing of interest."
 
+Instead of pulling the desk: try switching on the desk.
 Before switching on the desk:
 	if the desk is unmoveable:
 		say "[cannot-move]";
@@ -1011,6 +1014,8 @@ Before switching on the desk:
 		say "[should-not-move]";
 	stop the action.
 	
+Section - Library Chair
+
 The chair is a thing.
 The chair is in the Library.
 The chair is furniture.
@@ -1019,12 +1024,15 @@ The chair is enterable.
 The description of the chair is "The small chair covered in worn leather positioned near the curtains."
 Understand "leather" as chair.
 
+Instead of pulling the chair: try switching on the chair.
 Before switching on the chair:
 	if the chair is unmoveable:
 		say "[cannot-move]";
 	otherwise:
 		say "[should-not-move]";
 	stop the action.
+
+Section - Library Curtains
 
 The curtains are a thing.
 The curtains are scenery in the Library.
@@ -1567,11 +1575,16 @@ The Kitchen Door is openable.
 The Kitchen Door is scenery.
 The printed name of Kitchen Door is "kitchen door".
 
+Chapter - Dining Room Furniture
+
+Section - Dining Table
+
 The dining table is a thing.
 The dining table is in the Dining Room.
 The dining table is furniture.
 The description of the dining table is "An oval mahogany table with three chairs on both sides, and a single chair at each head."
 
+Instead of pulling the dining table: try switching on the dining table.
 Before switching on the dining table:
 	if the dining table is unmoveable:
 		say "[cannot-move]";
@@ -1579,13 +1592,23 @@ Before switching on the dining table:
 		say "[should-not-move]";
 	stop the action.
 
+Section - Dining Chairs
+
 The dining room chairs are a thing.
-The dining room chairs are fixed in place.
-The dining room chairs are scenery in the Dining Room.
-The dining room chairs are a container.
+The dining room chairs are in the Dining Room.
+The dining room chairs are furniture.
+The dining room chairs are moveable.
 The dining room chairs are enterable.
 The description of dining room chairs is "Eight mahogany chairs around the table."
 Understand "chairs" as dining room chairs.
+
+Instead of pulling the dining room chairs: try switching on the dining room chairs.
+Before switching on the dining room chairs:
+	if the dining room chairs are unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action.
 
 The chair-at-table is scenery in the Dining Room.
 The chair-at-table is a container.
@@ -1594,18 +1617,29 @@ The printed name of chair-at-table is "chair".
 The description of chair-at-table is "One of the eight mahogany chairs around the table."
 Understand "chair" as chair-at-table.
 
+Instead of pulling the chair-at-table: try switching on the dining room chairs.
+Instead of switching on the chair-at-table: try switching on the dining room chairs.
+
 Instead of entering the dining room chairs: try entering the chair-at-table.
 Instead of entering the chair-at-table:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the one of the chairs.";
 	move the player to the chair-at-table, without printing a room description.
 
+Section - Sideboard
+
 The sideboard is a thing.
-The sideboard is scenery in the Dining Room.
-The sideboard is a container.
-The sideboard can be open or closed.
-The sideboard can be openable. The sideboard is closed.
+The sideboard is in the Dining Room.
+The sideboard is furniture.
 The description of the sideboard is "The sideboard is matching piece of mahogany furniture with compartments and drawers for holding articles of table service."
 Understand "drawer" or "drawers" or "compartments" or "compartments" as sideboard.
+
+Instead of pulling the sideboard: try switching on the sideboard.
+Before switching on the sideboard:
+	if the sideboard is unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action.
 
 Instead of opening the sideboard: try searching the sideboard.
 Instead of searching the sideboard: say "I don't think Mrs. Watchett would appreciate you rummaging around in her sideboard."

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41416 ]
+[ WORDS - 41335 ]
 
 Table of Releases
 release	notes
@@ -998,16 +998,9 @@ Carry out reading:
 
 Chapter - Library Furniture
 
-[DEL The furniture is a thing.
-The furniture is scenery in the Library.
-Instead of examining the furniture, say "You'll have to be more specific about what you're interested in examining."]
-
-[The desk is a thing.
-The desk is scenery in the LIbrary.
-The desk is a supporter.]
 The desk is a thing.
-The desk is furniture.
 The desk is in the Library.
+The desk is furniture.
 The description of the desk is "A small standing desk with a few handwritten papers on it."
 Instead of searching the desk, say "You quickly shuffle through the papers on the desk but find nothing of interest."
 
@@ -1018,19 +1011,6 @@ Before switching on the desk:
 		say "[should-not-move]";
 	stop the action.
 	
-The library papers are a thing.
-The library papers are on the desk.
-The library papers are portable.
-The library papers are undescribed.
-The printed name of library papers is "papers".
-Understand "paper" or "papers" or "handwritten" or "handwritten papers" as library papers.
-
-Instead of searching the library papers: try searching the desk.
-Instead of examining the library papers: try searching the desk.
-Before taking the library papers:
-	say "That wouldn[']t be appropriate.";
-	stop the action.
-
 The chair is a thing.
 The chair is in the Library.
 The chair is furniture.
@@ -1060,7 +1040,20 @@ Instead of searching the curtains: say "You look in the folds of the fabric but 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
 
+Chapter - Libary Papers
 
+The library papers are a thing.
+The library papers are on the desk.
+The library papers are portable.
+The library papers are undescribed.
+The printed name of library papers is "papers".
+Understand "paper" or "papers" or "handwritten" or "handwritten papers" as library papers.
+
+Instead of searching the library papers: try searching the desk.
+Instead of examining the library papers: try searching the desk.
+Before taking the library papers:
+	say "That wouldn[']t be appropriate.";
+	stop the action.
 
 
 Part - Parlor
@@ -1575,16 +1568,16 @@ The Kitchen Door is scenery.
 The printed name of Kitchen Door is "kitchen door".
 
 The dining table is a thing.
-The dining table is fixed in place.
-The dining table is scenery in the Dining Room.
-The dining table is a supporter.
+The dining table is in the Dining Room.
+The dining table is furniture.
 The description of the dining table is "An oval mahogany table with three chairs on both sides, and a single chair at each head."
 
-
-To say too-heavy-to-move: say "This piece of furniture would required several men more robust than you to move it around the room."
-
-Instead of switching off the dining table: say "[too-heavy-to-move]".
-Instead of switching on the dining table: say "[too-heavy-to-move]".
+Before switching on the dining table:
+	if the dining table is unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action.
 
 The dining room chairs are a thing.
 The dining room chairs are fixed in place.

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41381 ]
+[ WORDS - 41416 ]
 
 Table of Releases
 release	notes
@@ -590,6 +590,27 @@ Rule for deciding whether all includes a thing when removing from: it does not.
 [This changes the default message “There are none at all available!”]
 Rule for printing a parser error when the latest parser error is the nothing to do error:
 	say “Grabbing for everything at once isn't going to help your investigation one bit. A methodical, measured approach is called for.”
+			
+Part - Furniture Class
+
+Furniture is a kind of supporter.
+Furniture is either unmoveable or moveable. Furniture is usually unmoveable.
+Furniture is scenery.
+
+To say cannot-move:
+	say "You would need one or two stronger men to help you move that."
+
+To say should-not-move:
+	say "Rearranging the furniture at this time doesn't accomplish anthing constructive."
+
+Before taking furniture:
+	say "That's not portable.";
+	stop the action.
+
+[The portmanteau is furniture.
+The portmanteau is in the Library.
+The description of the portmanteau is "Created specifically to try and debug the new Furniture class."
+The portmanteau is moveable.]
 
 Part - Tests
 
@@ -975,40 +996,27 @@ Carry out reading:
 	otherwise:
 		say "That's absurd.";
 
-Chapter - Furniture
+Chapter - Library Furniture
 
-[The furniture is a thing.
+[DEL The furniture is a thing.
 The furniture is scenery in the Library.
 Instead of examining the furniture, say "You'll have to be more specific about what you're interested in examining."]
 
-[START - Furniture Class]
-Furniture is a kind of thing.
-Furniture is either unmoveable or moveable. Furniture is usually unmoveable. 
-Furniture is scenery.
-[Furniture is a supporter.]
-
-Before switching on furniture:
-	if furniture is unmoveable: 
-		say "YOU WOULD NEED SERVERAL STRONG MEN TO HELP YOU MOVE THAT.";
-	otherwise: 
-		say "YOU DON'T HAVE TIME NOW TO REARRANGE DECK CHAIRS ON THE TITANIC (FIGURATIVELY SPEAKING).";
-	stop the action.
-
-Before taking furniture:
-	say "THAT'S NOT PORTABLE.";
-	stop the action.
-
-The portmanteau is furniture.
-The portmanteau is in the Library.
-The description of the portmanteau is "Created specifically to try and debug the new Furniture class."
-The portmanteau is moveable.
-[END - Furniture Class]
-	
-The desk is a thing.
+[The desk is a thing.
 The desk is scenery in the LIbrary.
-The desk is a supporter.
+The desk is a supporter.]
+The desk is a thing.
+The desk is furniture.
+The desk is in the Library.
 The description of the desk is "A small standing desk with a few handwritten papers on it."
 Instead of searching the desk, say "You quickly shuffle through the papers on the desk but find nothing of interest."
+
+Before switching on the desk:
+	if the desk is unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action.
 	
 The library papers are a thing.
 The library papers are on the desk.
@@ -1024,20 +1032,29 @@ Before taking the library papers:
 	stop the action.
 
 The chair is a thing.
-The chair is scenery in the Library.
-The chair is a supporter.
+The chair is in the Library.
+The chair is furniture.
+The chair is moveable.
 The chair is enterable.
 The description of the chair is "The small chair covered in worn leather positioned near the curtains."
 Understand "leather" as chair.
+
+Before switching on the chair:
+	if the chair is unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action.
 
 The curtains are a thing.
 The curtains are scenery in the Library.
 The curtains are a container.
 The description of the curtains is "Pulled shut, the floor-to-ceiling heavy fabric wards the room from the cold weather outside."
 Understand "curtain" as curtains.
-Instead of opening the curtains, say "Pulling a curtain aside you glance at the snow-covered street. The falling snow is rapidly covering the disturbed area where the ambulance was a few minutes ago. You let the fabric drop back into place and look around the room."
 
 Instead of pushing the curtains: try opening the curtains.
+Instead of opening the curtains, say "Pulling a curtain aside you glance at the snow-covered street. The falling snow is rapidly covering the disturbed area where the ambulance was a few minutes ago. You let the fabric drop back into place and look around the room."
+
 Instead of searching the curtains: say "You look in the folds of the fabric but find nothing."
 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
@@ -1563,9 +1580,8 @@ The dining table is scenery in the Dining Room.
 The dining table is a supporter.
 The description of the dining table is "An oval mahogany table with three chairs on both sides, and a single chair at each head."
 
-[+ Furniture class?]
+
 To say too-heavy-to-move: say "This piece of furniture would required several men more robust than you to move it around the room."
-To say rearranging-deck-chairs: say "REARRANGING DECK CHAIRS ON TITANIC."
 
 Instead of switching off the dining table: say "[too-heavy-to-move]".
 Instead of switching on the dining table: say "[too-heavy-to-move]".

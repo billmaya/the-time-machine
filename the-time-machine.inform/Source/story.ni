@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41465 ]
+[ WORDS - 41486 ]
 
 Table of Releases
 release	notes
@@ -596,6 +596,8 @@ Part - Furniture Class
 Furniture is a kind of supporter.
 Furniture is either unmoveable or moveable. Furniture is usually unmoveable.
 Furniture is scenery.
+
+Instead of entering furniture: say "Such an action might make me question your acumen. You don't need to do that."
 
 To say cannot-move:
 	say "You would need one or two stronger men to help you move that."

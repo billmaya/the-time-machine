@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41563 ]
+[ WORDS - 41762563 ]
 
 Table of Releases
 release	notes
@@ -1692,58 +1692,18 @@ Part - Kitchen
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
 
-The description of the Kitchen is "[first time]If your memory suffices, which it usually does in most ordinary situations, this is the first time you've been in [Watchett]'s domain. [only]The small room is dominated by a sturdy wooden work table in the center. Surrounding the table are numerous cabinets and shelves. A stove and a sink are set against the north wall.[if the location of Watchett is the Kitchen][paragraph break][Watchett] is at the sink, washing up the supper dishes. [otherwise][paragraph break]It looks like [Watchett] has finished her work and retired for the evening. [end if]The dining room is to the south."
+The description of the Kitchen is "A small room dominated by a sturdy wooden work table in the center of the room. Surrounding the table are cabinets and shelves with a stove and sink set against one wall. [if the location of Watchett is the Kitchen][Watchett] is at the sink, cleaning up.[otherwise]It looks like [Watchett] has finished her work and retired for the evening. [end if]The dining room is to the south."
 
-The work table is a thing.
-The work table is scenery in the Kitchen.
-The work table is a supporter.
-The description of the work table is "A large wooden work table in the center of the room."
+To say getting-in-watchett-way:
+	say "I don't think [Watchett] would appreciate you getting in the way of her cleaning up, especially at this late hour. She might be willing to talk while she works though.[paragraph break]"
 
-The cabinets are a thing.
-The cabinets are scenery in the Kitchen.
-The cabinets are a container.
-The cabinets can be open or closed.
-The cabinets are openable. The cabinets are closed.
-The description of the cabinets is "Just a series of free-standing cabinets used for storage."
+The contents-of-kitchen is scenery in the Kitchen. 
+Understand "table" or "work table" or "wooden work table" or "sturdy table" or "cabinets" or "shelves" or "stove" or "sink" as contents-of-kitchen.
 
-Understand "cabinet" or "storage" or "free-standing" or "free standing" or "standing" as cabinets.
-
-The kitchen shelves are a thing.
-The kitchen shelves are scenery in the Kitchen.
-The kitchen shelves are a supporter.
-The description of the kitchen shelves is "Just a series of shelves piled high with foodstuffs and kitchen implements."
-	
-Understand "shelf" as kitchen shelves.
-
-The stove is a thing.
-The stove is scenery in the Kitchen.
-The stove is a supporter.
-The description of the stove is "As far as you can tell this is just a cooking stove, probably better made than most, but still just a stove."
-
-The sink is a thing.
-The sink is scenery in the Kitchen.
-The sink is a container.
-The description of the sink is "As far as you can tell this is just a copper sink, probably better made than most, but still just a sink."
-Understand "copper" as sink.
-
-Chapter - Actions In Kitchen
-
-Instead of switching on the stove: try using the stove.
-Instead of switching on the sink: try using the sink.
-		
-Instead of opening the stove: try using the stove.
-Instead of opening the cabinets: try searching the cabinets.
-
-Instead of searching the stove: say "I don't think Mrs. Watchett would appreciate you getting in the way of her cleaning up."
-Instead of searching the cabinets: say "I don't think Mrs. Watchett would appreciate you rummaging around in her cabinets."
-Instead of searching the kitchen shelves: say "You glance briefly at the various items on the shelves but find nothing pertinent to your investigation."
-
-To say no-concern: say "That's not something you need to concern yourself with since it's not pertinent to your investigation."
-Instead of using the work table: say "[no-concern]".
-Instead of using the cabinets: say "[no-concern]".
-Instead of using the kitchen shelves: say "[no-concern]".
-Instead of using the stove: say "[no-concern]".
-Instead of using the sink: say "[no-concern]".
+Instead of examining the contents-of-kitchen: say "[getting-in-watchett-way]".
+Instead of taking the contents-of-kitchen: say "[getting-in-watchett-way]".
+Instead of switching on the contents-of-kitchen: say "[getting-in-watchett-way]".
+Instead of switching off the contents-of-kitchen: say "[getting-in-watchett-way]".
 
 
 Part - Workshop  

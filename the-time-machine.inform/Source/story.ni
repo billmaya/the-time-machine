@@ -1039,7 +1039,7 @@ Section - Library Curtains
 The curtains are a thing.
 The curtains are scenery in the Library.
 The curtains are a container.
-The description of the curtains is "Pulled shut, the floor-to-ceiling heavy fabric wards the room from the cold weather outside."
+The description of the curtains is "Pulled shut, the heavy, floor-to-ceiling fabric wards the room from the cold weather outside."
 Understand "curtain" as curtains.
 
 Instead of pushing the curtains: try opening the curtains.

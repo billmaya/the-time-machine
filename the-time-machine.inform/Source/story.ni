@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41600 ]
+[ WORDS - 41612 ]
 
 Table of Releases
 release	notes
@@ -931,7 +931,7 @@ Part - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, reading his book.[end if] The room continues to the north and the entryway is back east."
+The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, reading his book and smoking his cigar.[end if] The room continues to the north and the entryway is back east."
 
 Chapter - Printing Library Description
 
@@ -1006,7 +1006,7 @@ The desk is a thing.
 The desk is in the Library.
 The desk is furniture.
 The description of the desk is "A small standing desk with a few handwritten papers on it."
-Instead of searching the desk, say "You quickly shuffle through the papers on the desk but find nothing of interest."
+Instead of searching the desk, say "You shuffle through the papers on the desk but find nothing of interest."
 
 Instead of pulling the desk: try switching on the desk.
 Before switching on the desk:
@@ -1047,7 +1047,7 @@ curtains-opened-once is false
 
 Instead of pushing the curtains: try opening the curtains.
 Instead of opening the curtains:
-	say "Pulling the curtains aside, you glance through the window at the snow-covered street[if curtains-opened-once is true] again[end if]. Outside, the falling snow is rapidly covering the disturbed area out front where the ambulance was parked earlier. You let the fabric drop back into place and look around the room.";
+	say "Pulling the curtains aside, you glance through the window at the snow-covered street[if curtains-opened-once is true] again[end if]. Outside, the falling snow is rapidly covering the disturbed area out front where the ambulance was parked earlier. You let the curtains drop back into place and look around the room.";
 		now curtains-opened-once is true.
 
 Instead of closing the curtains, say "They're already closed."
@@ -1063,12 +1063,13 @@ The library window is a thing.
 The library window is in the Library.
 The library window is scenery.
 The description of the library window is "A small paned window looking out onto the street."
+The printed name of library window is "library window".
 
 Instead of searching the library window, try opening the curtains.
 Instead of opening the library window, say "That wouldn't be prudent, given the weather outside."
 Instead of closing the library window, say "It's already closed."
 
-Chapter - Libary Papers
+Chapter - Library Papers
 
 The library papers are a thing.
 The library papers are on the desk.

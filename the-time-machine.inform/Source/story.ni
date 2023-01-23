@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41486 ]
+[ WORDS - 41600 ]
 
 Table of Releases
 release	notes
@@ -1044,9 +1044,6 @@ Understand "curtain" as curtains.
 
 curtains-opened-once is a truth state that varies.
 curtains-opened-once is false
-[DEL To say opening-curtains:
-	now curtains-opened-once is true;
-	say "Pulling the curtains aside, you glance at the snow-covered street. Outside, the falling snow is rapidly covering the disturbed area out front where the ambulence was parked a earlier. You let the fabric drop back into place and look around the room."]
 
 Instead of pushing the curtains: try opening the curtains.
 Instead of opening the curtains:
@@ -1054,15 +1051,6 @@ Instead of opening the curtains:
 		now curtains-opened-once is true.
 
 Instead of closing the curtains, say "They're already closed."
-
-[Instead of opening the curtains at least twice, say "OPENING CURTAINS AGAIN."
-"Pulling the curtains aside, you glance at the snow-covered street again]
-[DEL Instead of opening the curtains:
-	if opening the curtains for the first time:
-		say "FIRST TIME OPENING CURTAINS.";
-	otherwise:
-		say "OPENING CURTAINS EVERY OTHER TIME."]
-[[if the curtains have been opened for the first time]FIRST [first time] TIME[otherwise]AGAIN[end if] [otherwise]SECOND TIME.[end if]  for the first time ]
 
 Instead of searching the curtains: say "You look in the folds of the fabric but find nothing."
 

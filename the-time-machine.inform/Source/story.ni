@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41612 ]
+[ WORDS - 41563 ]
 
 Table of Releases
 release	notes
@@ -1015,24 +1015,33 @@ Before switching on the desk:
 	otherwise:
 		say "[should-not-move]";
 	stop the action.
+
+Instead of opening the desk, say "The desk doesn't have any drawers that you can open, only a writing surface."
 	
 Section - Library Chair
 
-The chair is a thing.
-The chair is in the Library.
-The chair is furniture.
-The chair is moveable.
-The chair is enterable.
-The description of the chair is "The small chair is covered in worn leather positioned near the curtains."
-Understand "leather" as chair.
+The library chair is a thing.
+The library chair is in the Library.
+The library chair is furniture.
+The library chair is moveable.
+The library chair is enterable.
+The description of the library chair is "The small chair is covered in worn leather positioned near the curtains."
+Understand "leather" as library chair.
 
-Instead of pulling the chair: try switching on the chair.
-Before switching on the chair:
-	if the chair is unmoveable:
+Instead of pulling the library chair: try switching on the library chair.
+Before switching on the library chair:
+	if the library chair is unmoveable:
 		say "[cannot-move]";
 	otherwise:
 		say "[should-not-move]";
 	stop the action.
+
+Instead of entering the library chair:
+	if Gernsback is in the Library:
+		say "Impossible while Gernsback is still sitting in it.";
+	otherwise:
+		say "Well, maybe just for a minute while you gather your thoughts.";
+		move the player to the library chair, without printing a room description.
 
 Section - Library Curtains
 
@@ -1090,10 +1099,6 @@ Part - Parlor
 The Parlor is a room. 
 The Parlor is north of the Library.
 The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[otherwise if the newspaper is on the right armchair] A newspaper rests on the right armchair.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
-
-[ Description taking Gernsback into account
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor] and leaning against the fireplace is a poker.[otherwise].[end if][if the location of Gernsback is the Parlor] Gernsback is sitting in the right armchair in front of the fireplace, paging through his book.[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[otherwise if the newspaper is on the right armchair] A newspaper rests on the right armchair.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
-]
 
 Chapter - Armchairs
 

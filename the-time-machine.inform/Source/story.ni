@@ -1042,13 +1042,43 @@ The curtains are a container.
 The description of the curtains is "Pulled shut, the heavy, floor-to-ceiling fabric wards the room from the cold weather outside."
 Understand "curtain" as curtains.
 
+curtains-opened-once is a truth state that varies.
+curtains-opened-once is false
+[DEL To say opening-curtains:
+	now curtains-opened-once is true;
+	say "Pulling the curtains aside, you glance at the snow-covered street. Outside, the falling snow is rapidly covering the disturbed area out front where the ambulence was parked a earlier. You let the fabric drop back into place and look around the room."]
+
 Instead of pushing the curtains: try opening the curtains.
-Instead of opening the curtains, say "Pulling a curtain aside you glance at the snow-covered street. The falling snow is rapidly covering the disturbed area where the ambulance was a few minutes ago. You let the fabric drop back into place and look around the room."
+Instead of opening the curtains:
+	say "Pulling the curtains aside, you glance through the window at the snow-covered street[if curtains-opened-once is true] again[end if]. Outside, the falling snow is rapidly covering the disturbed area out front where the ambulance was parked earlier. You let the fabric drop back into place and look around the room.";
+		now curtains-opened-once is true.
+
+Instead of closing the curtains, say "They're already closed."
+
+[Instead of opening the curtains at least twice, say "OPENING CURTAINS AGAIN."
+"Pulling the curtains aside, you glance at the snow-covered street again]
+[DEL Instead of opening the curtains:
+	if opening the curtains for the first time:
+		say "FIRST TIME OPENING CURTAINS.";
+	otherwise:
+		say "OPENING CURTAINS EVERY OTHER TIME."]
+[[if the curtains have been opened for the first time]FIRST [first time] TIME[otherwise]AGAIN[end if] [otherwise]SECOND TIME.[end if]  for the first time ]
 
 Instead of searching the curtains: say "You look in the folds of the fabric but find nothing."
 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]
+
+Section - Library Window
+
+The library window is a thing.
+The library window is in the Library.
+The library window is scenery.
+The description of the library window is "A small paned window looking out onto the street."
+
+Instead of searching the library window, try opening the curtains.
+Instead of opening the library window, say "That wouldn't be prudent, given the weather outside."
+Instead of closing the library window, say "It's already closed."
 
 Chapter - Libary Papers
 

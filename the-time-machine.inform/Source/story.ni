@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41243 ]
+[ WORDS - 40969 ]
 
 Table of Releases
 release	notes
@@ -1157,33 +1157,19 @@ Chapter - Fireplace
 	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
-The description of the fireplace is "A firebox set into the wall, protected by a mantle and surround. A fire is burning in the firebox."
+The description of the fireplace is "Set into the wall, providing light and heat to the room. A coal fire is burning in the grate."
 
-The firebox is scenery in the parlor. "The interior of the fireplace, lined with fireproof brick."
-The hearth is scenery in the parlor. "The base of the fireplace, divided into an inner hearth, where the fire is burning in a grate, and an outer hearth, which projects slightly into the room and protects the floor."
-The mantle is scenery in the parlor. "A decorative piece of wood on top of the surround, painted to look like marble."
-The damper is scenery in the parlor. "This movable door that separates the firebox from the flue and chimney above it. When no fire is burning it is closed and prevents cold air from entering the house."
-The flue is scenery in the parlor. "You can't see it but you know it is beyond the damper, a conduit for smoke and gases."
-The chimney is scenery in the parlor. "Unseen, but you know it surrounds the flue, preventing any heat from contacting flammable house materials."
-The surround is scenery in the parlor. "Like the hearth it serves as protection for the surrounding area, in this case the walls instead of the floor."
-The fireplace grate is scenery in the parlor. "A cast iron basket that holds the burning coals."
-The brick is scenery in the parlor. "Heat-resistent bricks that reflect the fire's heat back into the room."
+The parts-of-fireplace are scenery in the Parlor.
+Understand "firebox" or "hearth" or "mantle" or "damper" or "flue" or "chimney" or "surround" or "grate" or "brick" as parts-of-fireplace.
+The printed name is "parts of the fireplace".
+
+To say cannot-use-item: say "That's not something you can 'use.'".
+Instead of using parts-of-fireplace: say "[cannot-use-item]".
+
+Instead of examining parts-of-fireplace: say "You see nothing special about the [parts-of-fireplace]."
 
 Instead of using the fireplace, say "That's not something you can use but just enjoy."
 
-To say cannot-use-item: say "That's not something you can 'use.'".
-
-Instead of using the firebox: say "[cannot-use-item]".
-Instead of using the hearth: say "[cannot-use-item]".
-Instead of using the mantle: say "The only way you can 'use' this is by placing things on it." 
-Instead of using the damper: say "Absolutely not. Closing the damper would fill the room with smoke." 
-Instead of using the flue: say "[cannot-use-item]". 
-Instead of using the chimney: say "[cannot-use-item]". 
-Instead of using the surround: say "[cannot-use-item]". 
-Instead of using the fireplace grate: say "The grate doesn't need any help from you to do its job." 
-Instead of using the brick: say "[cannot-use-item]". 
-
-[https://bit.ly/33EceFC https://bit.ly/2RO6PJq]
 
 Chapter - Fire
 
@@ -1314,7 +1300,7 @@ The breaker is either working or not working. A breaker is usually working.
 Chapter - Orrery
 
 The orrery is a device. The orrery is switched on.
-The orrery is scenery on the mantle. 
+The orrery is scenery on the fireplace. [mantle.] 
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box consisting of three panels. The top half of the central panel of the tryptich contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the right panel is open] The right panel has been slid up to expose the inner mechanism of the orrery.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40756 ]
+[ WORDS - 40778 ]
 
 Table of Releases
 release	notes
@@ -1181,9 +1181,10 @@ The description of the fire is "The fire[apostrophe]s flames reflect off of the 
 
 Instead of touching fire: try touching parts-of-fire.
 Instead of tasting fire: try tasting parts-of-fire.
+Instead of searching fire: say "You stare for a moment at the flickering flames."
 
 The parts-of-fire are scenery in the Parlor.
-Understand "coals" or "flames" or "ashes" or "embers" as parts-of-fire.
+Understand "coal" or "coals" or "flame" or "flames" or "ash" or "ashes" or "ember" or "embers" as parts-of-fire.
 The printed name of parts-of-fire is "fire".
 
 Instead of examining parts-of-fire: try examining the fire.

@@ -4472,7 +4472,7 @@ Report burning something with something:
 	say "You burn up [the noun]."
 
 Rule for implicitly taking the second noun while burning something with something which is not a strikable-match:
-	say "You can ony light things with matches.";
+	say "You can only light things with matches.";
 	stop the action.
 
 Part - Matches

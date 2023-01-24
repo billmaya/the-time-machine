@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40969 ]
+[ WORDS - 40756 ]
 
 Table of Releases
 release	notes
@@ -1159,6 +1159,8 @@ The fireplace is a thing.
 The fireplace is scenery in the Parlor.
 The description of the fireplace is "Set into the wall, providing light and heat to the room. A coal fire is burning in the grate."
 
+Instead of using the fireplace, say "That's not something you can use but just enjoy."
+
 The parts-of-fireplace are scenery in the Parlor.
 Understand "firebox" or "hearth" or "mantle" or "damper" or "flue" or "chimney" or "surround" or "grate" or "brick" as parts-of-fireplace.
 The printed name is "parts of the fireplace".
@@ -1167,8 +1169,7 @@ To say cannot-use-item: say "That's not something you can 'use.'".
 Instead of using parts-of-fireplace: say "[cannot-use-item]".
 
 Instead of examining parts-of-fireplace: say "You see nothing special about the [parts-of-fireplace]."
-
-Instead of using the fireplace, say "That's not something you can use but just enjoy."
+Instead of touching parts-of-fireplace: say "Not very likely."
 
 
 Chapter - Fire
@@ -1176,27 +1177,18 @@ Chapter - Fire
 The fire is a thing.
 The fire is in the parlor. 
 The fire is undescribed.
-The description of the fire is "The fire[apostrophe]s flames reflect off of the fireproof brick and back into the room, warming it. As the coals burn to embers and ashes they fall through the grate onto the brick below."
+The description of the fire is "The fire[apostrophe]s flames reflect off of the back of the fireplace and into the room, warming it. As the coals burn to embers and ashes they fall through the grate onto the brick below."
 
-The coals are scenery in the parlor. 
-The description of the coals is "A significant pile of red-hot fossilized plants and amorphous carbon providing heat and light."
-Understand "coal" or "pile" as coals.
-	
-The flames are scenery in the parlor. 
-The description of the flames is "Hypnotic and mesmerizing if you stare too long at them."
-Understand "flame" as flames.
+Instead of touching fire: try touching parts-of-fire.
+Instead of tasting fire: try tasting parts-of-fire.
 
-Instead of touching the fire: try touching the flames.
-Instead of touching the flames: say "You briefly warm your hands in front of the fireplace."
+The parts-of-fire are scenery in the Parlor.
+Understand "coals" or "flames" or "ashes" or "embers" as parts-of-fire.
+The printed name of parts-of-fire is "fire".
 
-Instead of tasting the fire: try tasting the flames.
-Instead of tasting the flames: say "The warmth on your face is quite pleasant after the cold wind outside."
-
-The ashes is scenery in the parlor. "Embers that have cooled down, piling up beneath the grate."
-Understand "ash" as ashes.
-
-The embers are scenery in the parlor. "Small pieces of coal that have fallen through the grate, still quite hot."
-Understand "ember" as embers.
+Instead of examining parts-of-fire: try examining the fire.
+Instead of touching the parts-of-fire: say "You briefly warm your hands in front of the fireplace."
+Instead of tasting the parts-of-fire: say "The warmth on your face is quite pleasant after the cold wind outside."
 
 Using is an action applying to one touchable thing. [see Writing 17.1]
 	Understand "use [something]" as using.	
@@ -1207,50 +1199,18 @@ Understand "tend [something]" as using.
 Understand the command "stir" as something new.
 Understand "stir [something]" as pushing.
 
-Instead of using the fire:
+Instead of using parts-of-fire:
 	if the player has the poker:
-		say "A few sparks rise up the flue and things warm up a bit as you spread the coals a bit more evenly around the grate.";
+		say "You poke around a bit at the fire without effect.";
 	otherwise:
 		say "You will need something to do that with since your bare hands won't suffice.".
 
 To say bare-hands: say "With your bare hands? You'd have to be as crazy as Humboldt thinks Wells to even consider that.".
 
-Instead of taking coals: try pushing coals.
-Instead of pushing the coals:
+Instead of taking parts-of-fire: try pushing parts-of-fire.
+Instead of pushing the parts-of-fire:
 	if the player has the poker:
-		say "You spread the coals a bit more evenly around the grate.";
-	otherwise:
-		say "[bare-hands]".
-
-Instead of taking embers: try pushing embers.
-Instead of pushing the embers:
-	if the player has the poker:
-		say "You spread the embers a bit more evenly around the inner hearth.";
-	otherwise:
-		say "[bare-hands]".
-
-Instead of taking ashes: try pushing ashes.	
-Instead of pushing the ashes:
-	if the player has the poker:
-		say "You spread the ashes a bit more evenly around the inner hearth.";
-	otherwise:
-		say "[bare-hands]".
-
-Instead of using the coals:
-	if the player has the poker:
-		say "You spread the coals a bit more evenly around the grate.";
-	otherwise:
-		say "[bare-hands]".
-
-Instead of using the embers:
-	if the player has the poker:
-		say "You spread the embers a bit more evenly around the inner hearth.";
-	otherwise:
-		say "[bare-hands]".
-
-Instead of using the ashes:
-	if the player has the poker:
-		say "You spread the ashes a bit more evenly around the inner hearth.";
+		say "You poke around a bit at the fire without effect.";
 	otherwise:
 		say "[bare-hands]".
 

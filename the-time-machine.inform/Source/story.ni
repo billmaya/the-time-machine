@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40857 ]
+[ WORDS - 40953 ]
 
 Table of Releases
 release	notes
@@ -1103,8 +1103,24 @@ The description of the Parlor is "A coal fire blazes away in a large fireplace s
 
 Chapter - Armchairs
 
+The class-armchairs is a thing.
+The class-armchairs is in the Parlor.
+The class-armchairs is furniture.
+The class-armchairs is moveable.
+The description of class-armchairs is "Covered in worn leather and larger than their library counterpart, they are positioned directly in front of the fireplace."
+The printed name of class-armchairs is "armchairs".
+Understand "armchairs" as class-armchairs.
+
+Instead of pulling the class-armchairs: try switching on the class-armchairs.
+Before switching on the class-armchairs:
+	if the class-armchairs is unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action.
+
 To say armchair-description:
-	say "The armchair is covered in worn leather and, larger than its library counterpart, it looks even more inviting and comfortable given the cold weather outside and its position in front of the fire.[first time] But you have no time to rest, you have a key to find.[only]"
+	say "This armchair is covered in worn leather and, larger than its library counterpart, it looks even more inviting and comfortable given the cold weather outside and its position in front of the fire. [first time]But you have no time to rest, you have a key to find.[only]"
 
 The right armchair is a thing.
 The right armchair is in the Parlor.

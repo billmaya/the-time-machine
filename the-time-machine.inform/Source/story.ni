@@ -1120,7 +1120,7 @@ Before switching on the class-armchairs:
 	stop the action.
 
 To say armchair-description:
-	say "This armchair is covered in worn leather and, larger than its library counterpart, it looks even more inviting and comfortable given the cold weather outside and its position in front of the fire. [first time]But you have no time to rest, you have a key to find.[only]"
+	say "This armchair is covered in worn leather and, larger than its library counterpart, it looks even more inviting and comfortable given the cold weather outside and its position in front of the fire. [first time]But you have no time to rest, you have a key to find.[no line break][only]"
 
 The right armchair is a thing.
 The right armchair is in the Parlor.

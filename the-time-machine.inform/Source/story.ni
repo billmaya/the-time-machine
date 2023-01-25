@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40778 ]
+[ WORDS - 40857 ]
 
 Table of Releases
 release	notes
@@ -994,6 +994,7 @@ Carry out reading:
 	otherwise if the noun is wells-book:
 		say "You can't do that while Gernsback is reading it.";
 	otherwise if the noun is newspaper:
+		move the newspaper to the player;
 		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
 	otherwise:
 		say "That's absurd.";
@@ -1103,19 +1104,37 @@ The description of the Parlor is "A coal fire blazes away in a large fireplace s
 Chapter - Armchairs
 
 To say armchair-description:
-	say "Like its counterpart this armchair is covered in worn leather. Larger than its library counterpart, it looks even more inviting and comfortable, especially positioned as it in front of the fire with the cold weather outside.[first time] But you don't have time to rest, you have a key to find.[only]"
+	say "The armchair is covered in worn leather and, larger than its library counterpart, it looks even more inviting and comfortable given the cold weather outside and its position in front of the fire.[first time] But you have no time to rest, you have a key to find.[only]"
 
 The right armchair is a thing.
-The right armchair is scenery in the Parlor.
-The right armchair is a supporter.
+The right armchair is in the Parlor.
+The right armchair is furniture.
+The right armchair is moveable.
 The right armchair is enterable.
 The description of the right armchair is "[armchair-description]".
 
+Instead of pulling the right armchair: try switching on the right armchair.
+Before switching on the right armchair:
+	if the right armchair is unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action.
+
 The left armchair is a thing.
-The left armchair is scenery in the Parlor.
-The left armchair is a supporter.
+The left armchair is in the Parlor.
+The left armchair is furniture.
+The left armchair is moveable.
 The left armchair is enterable.
 The description of the left armchair is "[armchair-description]".
+
+Instead of pulling the left armchair: try switching on the left armchair.
+Before switching on the left armchair:
+	if the left armchair is unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action.
 
 To say armchair-sit:
 	say "Well, maybe just for a minute while you gather your thoughts. You sit in the [noun]."

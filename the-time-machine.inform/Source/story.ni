@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40999 ]
+[ WORDS - 40938 ]
 
 Table of Releases
 release	notes
@@ -1162,15 +1162,6 @@ To say armchair-sit:
 To say armchair-move:
 	say "You get up and move to the [noun]."
 
-[DEL Before entering the right armchair:
-	if the location of Gernsback is the Parlor:
-		say "Impossible while Gernsback is sitting in it.";
-		stop the action;
-		[move the player to the left armchair, without printing a room description;]
-	otherwise:
-		continue the action.]
-
-
 Instead of entering the right armchair:
 	if the player is on the left armchair:
 		say "[armchair-move]";
@@ -1184,12 +1175,7 @@ Instead of entering the left armchair:
 	otherwise:
 		say "[armchair-sit]";
 	move the player to the left armchair, without printing a room description;
-
 	
-[
-Force following NPC to sit down on the other chair - https://bit.ly/3wHFbyJ
-Enterable supporters(chairs) - https://bit.ly/3wzXRQY
-]	
 
 Chapter - Garden Door
 

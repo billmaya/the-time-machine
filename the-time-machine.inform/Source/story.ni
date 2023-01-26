@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40953 ]
+[ WORDS - 40999 ]
 
 Table of Releases
 release	notes
@@ -1152,23 +1152,39 @@ Before switching on the left armchair:
 		say "[should-not-move]";
 	stop the action.
 
-To say armchair-sit:
-	say "Well, maybe just for a minute while you gather your thoughts. You sit in the [noun]."
+Section - Sitting In Armchairs
 
-Before entering the right armchair:
+Does the player mean entering the left armchair when the player is in the parlor: it is very likely.
+
+To say armchair-sit:
+	say "[first time]Well, maybe just for a minute while you gather your thoughts. [only]You sit in the [noun]."
+
+To say armchair-move:
+	say "You get up and move to the [noun]."
+
+[DEL Before entering the right armchair:
 	if the location of Gernsback is the Parlor:
 		say "Impossible while Gernsback is sitting in it.";
 		stop the action;
 		[move the player to the left armchair, without printing a room description;]
 	otherwise:
-		continue the action.
+		continue the action.]
 
-Instead of entering the right armchair: say "[armchair-sit]".
-Instead of entering the left armchair: say "[armchair-sit]".
 
-[TBD: If the player is sitting in one of the armchairs and tries to sit in anoher armchair, that should be detected and the appropriate text should be printed, i.e. "You get up and move to the other armchair."]
+Instead of entering the right armchair:
+	if the player is on the left armchair:
+		say "[armchair-move]";
+	otherwise:
+		say "[armchair-sit]";
+	move the player to the right armchair, without printing a room description;
 
-[TBD: >get up "But you aren't in anything at the moment." Response while sitting in left armchair.]
+Instead of entering the left armchair:
+	if the player is on the right armchair:
+		say "[armchair-move]";
+	otherwise:
+		say "[armchair-sit]";
+	move the player to the left armchair, without printing a room description;
+
 	
 [
 Force following NPC to sit down on the other chair - https://bit.ly/3wHFbyJ

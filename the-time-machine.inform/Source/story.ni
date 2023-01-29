@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 40967 ]
+[ WORDS - 41044 ]
 
 Table of Releases
 release	notes
@@ -392,7 +392,13 @@ To say no-violence: say "Violence [aren't] the answer here and quite out of char
 Instead of attacking someone with something: say "[no-violence]".
 Instead of attacking someone: say "[no-violence]".
 
-[Instead of attacking something with something: say "Violence of this sort isn't relevent to your investigation."]
+Instead of attacking something with the poker:
+	if noun is orrery:
+		say "Attempting to break such a marvelous device is criminal and against everything you stand for.";
+	otherwise if noun is fireplace:
+		say "Ludicrous. Why not keep your actions to the realm of the possible.";
+	otherwise:
+		say "You can't attack [the noun] with the poker in this game.[no line break][first time] Violence of this sort isn't relevent to your investigation.[only]";
 
 To say attack-morlocks-poker:
 	say "You attempt to take the battle to these loathsome creatures but they dodge easily around your ineffectual swings with the poker."
@@ -404,7 +410,7 @@ To say attempt-attack-morlocks-before-attacked:
 	say "Why would you provoke the Morlocks when they haven't shown the slightest agression against you. Hardly civilized behavior."
 
 [You should be able to attack morlocks only if they have attacked you first]
-Instead of attacking morlock-placeholder with poker:
+Instead of attacking morlock-placeholder with poker: [<- Does this code need to be merged into the 'Instead of attacking something with the poker' code above? TEST]
 	if morlocks-attacked is true:
 		if the player has the poker:
 			say "[attack-morlocks-poker]";

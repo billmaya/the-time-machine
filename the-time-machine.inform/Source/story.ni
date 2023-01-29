@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41044 ]
+[ WORDS - 41072 ]
 
 Table of Releases
 release	notes
@@ -397,6 +397,8 @@ Instead of attacking something with the poker:
 		say "Attempting to break such a marvelous device is criminal and against everything you stand for.";
 	otherwise if noun is fireplace:
 		say "Ludicrous. Why not keep your actions to the realm of the possible.";
+	otherwise if noun is fire:
+		say "You stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
 	otherwise:
 		say "You can't attack [the noun] with the poker in this game.[no line break][first time] Violence of this sort isn't relevent to your investigation.[only]";
 

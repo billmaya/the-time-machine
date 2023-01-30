@@ -1328,7 +1328,7 @@ Understand "left" or "left side" or "left side of orrery" as left panel.
 
 The central panel is a thing.
 The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the orrery is switched on] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
-Understand "model" or "spheres" or " jeweled spheres" or "planets" or "brass rings" or "rings" or "pointers" or "dials" or "solar system" as central panel.
+Understand "model" or "spheres" or " jeweled spheres" or "planets" or "phases" or "brass rings" or "rings" or "pointer" or "pointers" or "dial" or "dials" or "solar system" or "center panel" as central panel.
 
 The right panel is a thing.
 The right panel is a container. The right panel is closed.

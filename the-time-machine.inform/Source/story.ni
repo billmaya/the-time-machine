@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41081 ]
+[ WORDS - 41059 ]
 
 Table of Releases
 release	notes
@@ -664,8 +664,6 @@ The description of Woking Street is "You are standing halfway down the street ou
 
 The printed name of Woking Street is "68 Woking Street".
 
-[DEL escaping from the drawn curtains to one side looking]
-
 Chapter - Area
 
 The area is scenery in Woking Street.
@@ -824,11 +822,6 @@ Instead of going north in Woking Street:
 		try looking;
 	otherwise:
 		continue the action.
-
-[DEL While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
-
-		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the workshop key is. Finding the rest of the flower might help us convince Wells that all this time travel nonsense of his is just a figment of his imagination. Talk to Mrs. Watchett.'
-'I[']ll return after I get Wells sedated and through the preliminaries.]		
 
 Chapter - Front Door
 

@@ -786,7 +786,7 @@ Chapter - Scenery
 		
 	The wells-house is scenery in Woking Street.
 	The printed name of wells-house is "Wells['] house".
-	The description of wells-house is "68 Woking Street, where your friend Wells has lived for many years, which you have visited many times as friend and solicitor."
+	The description of wells-house is "68 Woking Street, where your friend Wells has lived for many years, and which you have visited many times as friend and solicitor."
 	Understand "building" [or "residence"] or "house" as wells-house.
 
 	[When examining, having "residence" or "residences" or "other residences" as synonyms 
@@ -809,10 +809,10 @@ Chapter - Humbolt's Exit
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "Before you can leave, [if player is not carrying the pocket watch]Humboldt bends down and picks up Wells pocket watch from the street and hands it to you. 'Better hold on to this until I get back.' He [otherwise]Dr. Humboldt snaps his pocket watch shut and [end if]climbs into the ambulance. 'I[']ll return after I get Wells sedated and through the preliminaries. While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
-
-		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the workshop key is. Finding the rest of the flower might help us convince Wells that all this time travel nonsense of his is just a figment of his imagination. Talk to Mrs. Watchett.'
-
+		say "Before you can leave, [if player is not carrying the pocket watch]Humboldt bends down and picks up Wells pocket watch from the street and hands it to you. 'Better hold on to this until I get back.' He [otherwise]Dr. Humboldt snaps his pocket watch shut and [end if]climbs into the ambulance.  
+		
+		'While I[']m gone, see if you can find the rest of this flower somewhere inside.' He reaches into one of his pockets and hands you a single petal from a flower that Wells said was given to him by Weena in 802,701 A.D. 'Finding the rest of the flower might help us convince him that all this time travel nonsense is just a figment of his imagination.  Maybe it[']s in that workshop of his. Talk to Mrs. Watchett, she should know where the key is.'
+		
 		With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears.";
 		reset the interlocutor;
 		now Humboldt is nowhere; 
@@ -824,6 +824,11 @@ Instead of going north in Woking Street:
 		try looking;
 	otherwise:
 		continue the action.
+
+[DEL While I[']m gone, see if you can find the rest of this.' He hands you a single petal from a flower that Wells says was given to him by Weena in 802,701 A.D.
+
+		'See if you can find the rest of this flower somewhere inside. Maybe it[']s in that workshop of his. Check with Mrs. Watchett, she should know where the workshop key is. Finding the rest of the flower might help us convince Wells that all this time travel nonsense of his is just a figment of his imagination. Talk to Mrs. Watchett.'
+'I[']ll return after I get Wells sedated and through the preliminaries.]		
 
 Chapter - Front Door
 

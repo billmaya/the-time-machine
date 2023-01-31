@@ -805,7 +805,7 @@ Chapter - Wandering
 
 Chapter - Humbolt's Exit
 
-Instead of entering the front door: try going north.
+Instead of entering the front door in Woking Street: try going north.
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:

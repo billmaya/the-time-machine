@@ -807,6 +807,7 @@ Chapter - Humbolt's Exit
 
 Instead of entering the front door in Woking Street: try going north.
 Instead of going inside in Woking Street: try going north.
+Instead of entering wells-house in Woking Street: try going north.
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:

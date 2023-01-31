@@ -805,6 +805,8 @@ Chapter - Wandering
 
 Chapter - Humbolt's Exit
 
+Instead of entering the front door: try going north.
+
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
 		say "Before you can leave, [if player is not carrying the pocket watch]Humboldt bends down and picks up Wells pocket watch from the street and hands it to you. 'Better hold on to this until I get back.' He [otherwise]Dr. Humboldt snaps his pocket watch shut and [end if]climbs into the ambulance.  

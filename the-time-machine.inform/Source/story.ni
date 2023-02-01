@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41091 ]
+[ WORDS - 41166 ]
 
 Table of Releases
 release	notes
@@ -679,8 +679,6 @@ The description of the area is "
 [if watchett-key is false][generic-area-description]
 [otherwise if player has the key][generic-area-description]
 [otherwise][key-area-description][end if]"
-
-[DEL The description of the area is "[if watchett-key is false]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise if player has the key]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise]The glint of something metallic catches your eye.[end if]"]
 
 Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" or "scuffle" or "struggle" as area.
 

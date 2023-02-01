@@ -868,9 +868,12 @@ The metal key is in Woking Street.
 The metal key is undescribed.
 The description of metal key is "A small metal key to his workshop that you can recall Wells carrying around everywhere he went."
 Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
+The indefinite article of the metal key is "the".
 
 The metal key unlocks the workshop-door.
 The metal key unlocks the hinged panel.
+
+[Note: You can just >take metal key if you know it's there.]
 		
 Chapter - The Petal
 	

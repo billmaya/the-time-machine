@@ -666,9 +666,21 @@ The printed name of Woking Street is "68 Woking Street".
 
 Chapter - Area
 
+To say generic-area-description:
+	say "Directly in front of you the falling show is rapidly covering the signs of the struggle."
+
+To say key-area-description:
+	say "While you immediately can't see anything but the falling snow that rapidly covers the signs of struggle, you can't help but feel that a further search of this area is warranted."
+	[say "While the falling snow rapidly covers the signs of struggle, the glint of something metallic catches your eye as well."]
+
 The area is scenery in Woking Street.
 The area is a supporter.
-The description of the area is "[if watchett-key is false]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise if player has the key]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise]The glint of something metallic catches your eye.[end if]"
+The description of the area is "
+[if watchett-key is false][generic-area-description]
+[otherwise if player has the key][generic-area-description]
+[otherwise][key-area-description][end if]"
+
+[DEL The description of the area is "[if watchett-key is false]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise if player has the key]Directly in front of you the falling snow is rapidly covering the signs of the struggle.[otherwise]The glint of something metallic catches your eye.[end if]"]
 
 Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" or "scuffle" or "struggle" as area.
 

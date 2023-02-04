@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41396 ]
+[ WORDS - 41364 ]
 
 Table of Releases
 release	notes
@@ -931,17 +931,12 @@ Instead of winding the watch: say "You turn the stem back and forth a few second
 Part - Entryway
 
 The Entryway is a room. 
-The description of the Entryway is "From here you can reach all other parts of the house.[paragraph break]To your right, an ornately-carved [banister] parallels a [staircase] that leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
+The description of the Entryway is "From here you can reach all other parts of the house.[paragraph break]To your right a staircase leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
 
 	The staircase is fixed in place in the Entryway. 
 	The description of the staircase is "Stairs going up to the second floor.[first time] You haven't ever been up there.[only]"
 
 	Understand "stairs" or "steps" as staircase.
-	
-	The banister is fixed in place in the Entryway.
-	The description of the banister is "Just a normal handhold to grasp when going up and down the stairs."
-	
-	Understand "handrail" or "rail" or "railing" or "balustrade" or "guardrail" or "handhold" or "bannister" as banister.
 
 Before taking shelved-books in the Entryway: say "LIBRARY IN NEXT ROOM."
 

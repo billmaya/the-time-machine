@@ -379,6 +379,9 @@ Chapter - Up
 Instead of jumping in Woking Street: try going up.
 Instead of going up in Woking Street: say "You jump up and down a few times, trying to warm yourself up, but it's a lost cause. Better get inside."
 
+Instead of climbing the staircase in the Entryway: try going up.
+Instead of taking the staircase in the Entryway: try going up.
+
 Instead of going up in the Entryway: say "You wander around upstairs for a few minutes but find nothing of interest and return downstairs."
 
 Chapter - Using

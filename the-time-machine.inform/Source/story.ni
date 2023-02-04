@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41364 ]
+[ WORDS - 41297 ]
 
 Table of Releases
 release	notes
@@ -681,7 +681,6 @@ To say generic-area-description:
 
 To say key-area-description:
 	say "While you immediately can't see anything but the falling snow that rapidly covers the signs of struggle, you can't help but feel that a further search of this area is warranted."
-	[say "While the falling snow rapidly covers the signs of struggle, the glint of something metallic catches your eye as well."]
 
 The area is scenery in Woking Street.
 The area is a supporter.
@@ -787,7 +786,7 @@ Chapter - Scenery
 
 	[Snow is handled in the Garden]
 
-	The gaslights are scenery in Woking Street. [coal gas https://bit.ly/3ijMeoV ] 
+	The gaslights are scenery in Woking Street. 
 	The description of the gaslights are "The incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which you hope is a product of his overactive imagination, because you would miss the soft green glow of gassified coal that lights your nightime steps."
 	Understand "gas" or "gas lights" or "flickering" or "flickering lights" or "flickering gas lights" as gaslights.
 
@@ -812,10 +811,7 @@ Chapter - Scenery
 	The wells-house is scenery in Woking Street.
 	The printed name of wells-house is "Wells['] house".
 	The description of wells-house is "68 Woking Street, where your friend Wells has lived for many years, and which you have visited many times as friend and solicitor."
-	Understand "building" [or "residence"] or "house" as wells-house.
-
-	[When examining, having "residence" or "residences" or "other residences" as synonyms 
-	made parser ask if you were examining houses or well-house so commented them out for now.]
+	Understand "building" or "house" as wells-house.
 	
 Chapter - Wandering
 
@@ -903,8 +899,6 @@ The indefinite article of the metal key is "the".
 
 The metal key unlocks the workshop-door.
 The metal key unlocks the hinged panel.
-
-[Note: You can just >take metal key if you know it's there.]
 		
 Chapter - The Petal
 	
@@ -916,7 +910,6 @@ Chapter - Pocket Watch
 
 The pocket watch is a thing.
 The pocket watch is in Woking Street.
-[The pocket watch is portable.]
 Understand "timepiece" or "chronometer" or "hands" or "stem" as pocket watch.
 
 The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that Wells['] Weena was particularly enchanted with its moving hands and its winding mechanism."
@@ -938,7 +931,21 @@ The description of the Entryway is "From here you can reach all other parts of t
 
 	Understand "stairs" or "steps" as staircase.
 
-Before taking shelved-books in the Entryway: say "LIBRARY IN NEXT ROOM."
+After deciding the scope of the player when the location is the Entryway:
+	place the Library in scope;
+	place the shelved-books in scope.
+
+Instead of examining west: try examining the Library.
+
+Before examining the Library when the player is in the Entryway:
+	say "Through the soft archway to the west you can see shelves of books and someone standing near the window.";
+	stop the action.
+
+Instead of examining the shelved-books: try taking the shelved-books.
+
+Before taking shelved-books in the Entryway: 
+	say "You'd have to be in the library to do anything with the books.";
+	stop the action.
 
 Chapter - Workshop Door
 	
@@ -965,7 +972,7 @@ Prying it with is an action applying to one visible thing and one carried thing.
 Understand "pry [something] with [something preferably held]" as prying it with.
 Instead of prying the workshop-door with poker: try attacking the workshop-door with poker.
 
-Instead of attacking the workshop-door with the poker: say "Even if you could somehow manage to open the workshop door this way, you would damage the woodwork beyond repair." ["NO NO NO."]
+Instead of attacking the workshop-door with the poker: say "Even if you could somehow manage to open the workshop door this way, you would damage the woodwork beyond repair."
 Instead of attacking the workshop-door with something: say "Violence isn't the answer here."
 
 Part - Library
@@ -1307,11 +1314,7 @@ The poker is undescribed in the Parlor.
 Understand "fire iron" or "fire hook" as poker.
 The description of the poker is "[if the tunic is not part of the poker]About three feet long, pointed and hooked at one end, this weighted implement is used to stir up the coal embers to achieve even burning.[otherwise]With the Eloi tunic wrapped around one end you've turned this weapon into a makeshift torch.[end if]"
 
-[The printed name of poker is "[if the tunic is not part of the poker]poker[otherwise]makeshift torch[end if]".]
-
-[> use poker]
-
-Instead of using the poker in the Parlor:
+Instead of using the poker in the Parlor: [> use poker]
 	say "Taking the poker, you stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
 	now the player is carrying the poker.
 
@@ -1356,8 +1359,6 @@ The left panel is a thing.
 The description of the left panel is "The left panel displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
 
 Understand "left" or "left side" or "left side of orrery" as left panel.
-
-[Instead of examining the left panel for the second time: say "LOOKING AT LEFT PANEL FOR 2ND TIME. FIRMLY FIXED IN PLACE (HINT TO RE-EXAMINE RIGHT PANEL)."]
 
 The central panel is a thing.
 The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the orrery is switched on] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
@@ -1464,7 +1465,7 @@ Understand "slide [a closed container]" as opening.
 Understand "slide [an open container]" as closing.
 
 Instead of switching off the orrery:
-	if the fuse-orrery [working-fuse] is in the orrery-fuse-holder: [right panel in the Parlor:]
+	if the fuse-orrery is in the orrery-fuse-holder:
 		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
 	otherwise:
 		say "It appears that removing the fuse from the orrery has already done that for you."
@@ -1549,8 +1550,6 @@ Before taking a breaker (called fuse):
 			continue the action.
 
 The standard report taking rule does nothing when taking a breaker.
-[The can't remove what's not inside rule does nothing when taking a breaker.]
-
 
 Section - Tests | Orrery | Fuses
 	
@@ -1833,8 +1832,6 @@ Before switching off the light switch:
 		continue the action.
 
 After deciding the scope of the player when the location is the Workshop:
-	[place the blackboard in scope;]
-	[place the workbench in scope;]
 	place the lights in scope;
 	place the light switch in scope.
 

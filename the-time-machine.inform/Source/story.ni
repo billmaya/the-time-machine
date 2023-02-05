@@ -923,12 +923,13 @@ Instead of winding the watch: say "You turn the stem back and forth a few second
 Part - Entryway
 
 The Entryway is a room. 
-The description of the Entryway is "From here you can reach all other parts of the house.[paragraph break]To your right a staircase leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
+The description of the Entryway is "From here you can reach all other parts of the house. To your right a staircase leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
 
-	The staircase is fixed in place in the Entryway. 
-	The description of the staircase is "Stairs going up to the second floor.[first time] You haven't ever been up there.[only]"
+The staircase is fixed in place in the Entryway.
+The staircase is scenery. 
+The description of the staircase is "Stairs going up to the second floor.[first time] You haven't ever been up there.[only]"
 
-	Understand "stairs" or "steps" as staircase.
+Understand "stairs" or "steps" as staircase.
 
 After deciding the scope of the player when the location is the Entryway:
 	place the Library in scope;

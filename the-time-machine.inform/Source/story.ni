@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41292 ]
+[ WORDS - 41277 ]
 
 Table of Releases
 release	notes
@@ -952,12 +952,12 @@ Chapter - Workshop Door
 The workshop-door is north of the Entryway and south of the Workshop. 
 The workshop-door is a door. 
 The workshop-door is lockable. The workshop-door is locked.
-The workshop-door is scenery. [Not "undescribed." Couldn't walk through it if it was "undescribed." See https://bit.ly/3rdieyO ]
+The workshop-door is scenery. 
 Understand "workshop door" or "door" or "door of workshop" as workshop-door. 
 The printed name of workshop-door is "workshop door".
 
 Instead of examining the workshop-door:
-	say "The [if workshop-door is open]open[otherwise]closed[end if] door leading to Wells[apostrophe] workshop." [DEL The door is ."]
+	say "The [if workshop-door is open]open[otherwise]closed[end if] door leading to Wells[apostrophe] workshop."
 
 [ Recipe §7.5. Combat and Death, Example Lanista 2]
 Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreak" as something new.

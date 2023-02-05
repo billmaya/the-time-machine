@@ -856,13 +856,12 @@ Instead of going north in Woking Street:
 
 Chapter - Front Door
 
-	The front door is north of Woking Street and south of the Entryway. 
-	The front door is a door. 
-	It is openable and lockable. 
-	It is unlocked.
-	The front door is scenery.
+The front door is north of Woking Street and south of the Entryway. 
+The front door is a door. 
+It is openable. 
+The front door is scenery.
 
-	The description of the front door is "[if location is Woking Street]The door to 68 Woking Street is indistinguishable from every other door that lines the street.[otherwise]You see nothing special about the heavy wooden door leading to the street outside."
+The description of the front door is "[if location is Woking Street]The door to 68 Woking Street is indistinguishable from every other door that lines the street.[otherwise]You see nothing special about the heavy wooden door leading to the street outside."
 	
 Instead of attacking the front door with the poker: say "The front door isn't locked so I don't see why you would think you had to pry it open.";
 Instead of attacking the front door with something: say "Violence isn't the answer here."

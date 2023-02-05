@@ -957,7 +957,7 @@ Understand "workshop door" or "door" or "door of workshop" as workshop-door.
 The printed name of workshop-door is "workshop door".
 
 Instead of examining the workshop-door:
-	say "The door leading to Wells[apostrophe] workshop. The door is [if workshop-door is open]open[otherwise]closed[end if]."
+	say "The [if workshop-door is open]open[otherwise]closed[end if] door leading to Wells[apostrophe] workshop." [DEL The door is ."]
 
 [ Recipe §7.5. Combat and Death, Example Lanista 2]
 Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreak" as something new.

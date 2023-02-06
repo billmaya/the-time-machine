@@ -5388,7 +5388,7 @@ To say release-notes:
 	say "Release 11 Notes (v1.8)[paragraph break]
 • Endgame modifications: Added Gernsback, Watchett sent Nowhere, time machine reappears a few turn later with Weena if sent to 802,701 empty.[line break]
 • Added Morlock Underground locations. Added visibility property to Underground rooms, each with its own light level (day, shadow, twilight, night).[line break]
-• Coded up Morlack Attack routine based on Underground room visibility and if player has light source.[line break]
+• Coded up Morlock Attack routine based on Underground room visibility and if player has light source.[line break]
 • Added ability to create a torch by combining Eloi tunics and poker.[line break]
 • Added ability to use burning newspaper as temporary torch.[paragraph break]";
 	say "Release 10 Notes (v1.7)[paragraph break]
@@ -5431,6 +5431,6 @@ This release incorporates several fixes based on reviews and feedback from peopl
 • In the Clearing you can now Pull, Push, and attempt to Break the grate with another object (previously only Take Grate worked).[line break]
 • The time machine fuse will no longer burn out after a single round trip.[line break]
 • You no longer need to talk to Mrs. Watchett before successfully finding the key, but it might take several searches of the area to find it.[line break]
-• In the Parlor, the attempted taking of coals, ashes, or embers from the fireplace returns an appropirate response.[line break]
-• It is now possible to put the watch or any other object down in the Library and retrieve it. In the prior release you were unable to retrieve anything that was put down in the Library, getting a 'It's hardly portable' message when attempting to pickup the previously dropped or place object.[line break]".
+• In the Parlor, the attempted taking of coals, ashes, or embers from the fireplace returns an appropriate response.[line break]
+• It is now possible to put the watch or any other object down in the Library and retrieve it. In the prior release you were unable to retrieve anything that was put down in the Library, getting a 'It's hardly portable' message when attempting to pick up the previously dropped or place object.[line break]".
 

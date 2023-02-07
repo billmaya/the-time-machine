@@ -1357,6 +1357,11 @@ Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrer
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
 The examine devices rule does nothing when examining the orrery.
 
+Instead of turning the orrery: try switching off the orrery.
+Instead of switching off the orrery: say "The orrery appears to be firmly fixed in place."
+
+Instead of searching the orrery: say "Nothing but what you can see on the outside."
+
 Section - Orrery Panels
 
 The left panel is a thing.
@@ -1364,9 +1369,17 @@ The description of the left panel is "The left panel displays a bas-relief illus
 
 Understand "left" or "left side" or "left side of orrery" as left panel.
 
+Instead of opening the left panel: try switching on the left panel.
+Instead of switching on the left panel: say "The left panel appears to be firmly fixed in place."
+
 The central panel is a thing.
 The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the orrery is switched on] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
 Understand "model" or "spheres" or " jeweled spheres" or "planets" or "phases" or "brass rings" or "rings" or "pointer" or "pointers" or "dial" or "dials" or "solar system" or "center panel" or "local date" or "date" or "local time" or "time" as central panel.
+
+Instead of turning the central panel: try switching on the central panel.
+Instead of switching on the central panel: say "All of the items in the central panel appear to be for viewing only."
+
+Instead of opening the central panel: say "The central panel appears to be firemly fixed in place."
 
 The right panel is a thing.
 The right panel is a container. The right panel is closed.
@@ -1423,7 +1436,7 @@ Before opening the orrery:
 		if player-knows-right-panel-slideable is true: 
 			try opening the right panel;
 		otherwise:
-			say "It's not apparent how to do that.";
+			say "It's not apparent how to do that.[no line break][first time] Maybe one of the panels...[only]";
 	otherwise:
 		say "You've already slid the right panel up as far as it can go.";
 	stop the action.

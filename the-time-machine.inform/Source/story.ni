@@ -1044,6 +1044,10 @@ Carry out reading:
 	otherwise if the noun is newspaper:
 		move the newspaper to the player;
 		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
+	otherwise if the noun is orrery:
+		say "TRYING TO READ ORRERY.";
+	otherwise if the noun is central panel:
+		say "TRYING TO READ CENTRAL PANEL.";
 	otherwise:
 		say "That's absurd.";
 
@@ -1362,7 +1366,7 @@ Understand "left" or "left side" or "left side of orrery" as left panel.
 
 The central panel is a thing.
 The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the orrery is switched on] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
-Understand "model" or "spheres" or " jeweled spheres" or "planets" or "phases" or "brass rings" or "rings" or "pointer" or "pointers" or "dial" or "dials" or "solar system" or "center panel" as central panel.
+Understand "model" or "spheres" or " jeweled spheres" or "planets" or "phases" or "brass rings" or "rings" or "pointer" or "pointers" or "dial" or "dials" or "solar system" or "center panel" or "local date" or "date" or "local time" or "time" as central panel.
 
 The right panel is a thing.
 The right panel is a container. The right panel is closed.

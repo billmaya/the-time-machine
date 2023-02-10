@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41508 ]
+[ WORDS - 41578 ]
 
 Table of Releases
 release	notes
@@ -4514,7 +4514,13 @@ Report burning something with something:
 	say "You burn up [the noun]."
 
 Rule for implicitly taking the second noun while burning something with something which is not a strikable-match:
-	say "You can only light things with matches.";
+	[say "You can only light things with matches.";]
+	if the second noun is not a strikable-match:
+		if the second noun is the fire: 
+			say "The newspaper ignites and is quickly reduced to ashes.";
+			now the newspaper is nowhere;
+		otherwise: 
+			say "You can only light things with matches.";
 	stop the action.
 
 Part - Matches

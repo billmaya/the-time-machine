@@ -1617,8 +1617,9 @@ The description of the gate is "The gate is locked and looks out onto a quiet si
 
 Instead of going north in the Garden: try examining the gate.
 
+Instead of unlocking the gate with something: try opening the gate.
 Before opening the gate:
-	say "The gate is locked.";
+	say "It looks like the gate's lock is rusted shut.";
 	stop the action.
 
 The garden street is a thing.

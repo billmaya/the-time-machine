@@ -1618,6 +1618,8 @@ The description of the gate is "The gate is locked and looks out onto a quiet si
 Instead of going north in the Garden: try examining the gate.
 
 Instead of unlocking the gate with something: try opening the gate.
+Instead of switching on the gate: try opening the gate.
+Instead of pulling the gate: try opening the gate.
 Before opening the gate:
 	say "It looks like the gate's lock is rusted shut.";
 	stop the action.

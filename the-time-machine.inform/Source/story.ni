@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41578 ]
+[ WORDS - 41591 ]
 
 Table of Releases
 release	notes
@@ -657,6 +657,10 @@ Test light-newspaper with "turn lantern off / open box of matches / take match /
 
 Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
 Test news-duration with "test go-abattoir / test light-newspaper."
+
+[v2.0 Tests]
+Test go-library with "go north / go north / go west."
+Test go-garden with "go north / go north / go west / go north / go east."
 
 
 Part - Release
@@ -1586,7 +1590,7 @@ Part - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
-The description of the Garden is "Vegetation covered in snow surrounds you on all sides. A gate set into the north wall looks out onto a snow-covered side street. To the south, the dark panes of Wells['] workshop windows overlook a bench nestled among some snow-covered rhodendron bushes.[paragraph break]The parlor doors are to the west." [+ "white and featureless" somewhere]
+The description of the Garden is "White and featureless mounds of flora covered in snow surround you on all sides. A gate set into the north wall looks out onto a snow-covered side street. To the south, the dark panes of the workshop windows overlook a bench nestled among some snow-covered rhododendron bushes.[paragraph break]The parlor doors are to the west." 
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 
@@ -1625,12 +1629,12 @@ The bench is a thing.
 The bench is scenery in the Garden.
 The bench is a supporter.
 The bench is enterable.
-The description of the bench is "It[']s a bench, covered in snow but still just a bench."
+The description of the bench is "It's a bench, covered in snow, but still just a bench."
 
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
-The description of garden bushes is "Covered by snow, the hollyhocks, larkspurs, snapdragons, rhododendrons, and other flora you remember are not much to look at right now."
-Understand "wilderness" or "hollyhocks" or "larkspurs" or "snapdragons" or "rhododendrons" or "tree" or "trees" or "vegetation" or "dunes" or "dune" as garden bushes.
+The description of garden bushes is "Covered by snow, the flora you never knew much about is probably not much to look at right now."
+Understand "mounds" or "bushes" or "flora" or "vegetation" or "plants" as garden bushes.
 
 
 Part - Dining Room

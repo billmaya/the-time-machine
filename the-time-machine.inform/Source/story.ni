@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41591 ]
+[ WORDS - 41607 ]
 
 Table of Releases
 release	notes
@@ -2192,8 +2192,7 @@ Instead of examining the latch:
 	otherwise:
 		say "The latch appears to be broken and hanging down on one side."
 
-[> look through windows 
- > look in windows]
+Section - Look Through/In Windows
 
 Instead of searching the windows: [Recipe §3.6 Windows]
 	if light switch is switched on:
@@ -2213,9 +2212,7 @@ Instead of searching the windows: [Recipe §3.6 Windows]
 		else if the player is on the bench:
 			say "You can[']t see anything inside the darkened workshop."
 
-[> pull latch
- > open latch
- > close latch]
+Section - Pull/Open/Close Latch
 
 To say latch-broken:
 	say "The latch has been broken and serves no function."
@@ -2248,9 +2245,8 @@ After pulling the latch:
 			say "The windows are now unlocked.";
 	otherwise:
 		say "[latch-broken]".
-	
-[> unlock windows
- > lock windows]
+
+Section - Unlock/Lock Windows
 
 Understand "unlock windows" as unlock-windows-action. 
 unlock-windows-action is an action applying to nothing.
@@ -2270,8 +2266,7 @@ Instead of lock-windows-action:
 	otherwise:
 		try pulling the latch.
 
-[> open windows
- > close windows]
+Section - Open/Close Windows
 
 To say windows-locked:
 	say "The windows are locked."
@@ -2305,6 +2300,9 @@ Instead of closing the windows:
 			say "Reaching inside you grab both windows and swing them shut.";
 		otherwise: [in the Workshop]
 			say "You swing both windows shut."
+
+
+Section - Using Poker On Windows
 
 [> break windows with poker -> attack windows with poker
  > smash windows with poker -> attack windows with poker
@@ -2364,9 +2362,8 @@ Instead of use-on-action:
 			say "[cannot-use]";
 	otherwise:
 		say "[cannot-use]".
-		
-[Climbing through the windows]
-[Player is in Garden]
+
+Section - Climbing Through Windows From Garden	
 	
 Instead of going south in the Garden:
 	if the player is not on the bench:
@@ -2386,7 +2383,7 @@ Instead of going up in the Garden:
 	otherwise:
 		say "You jump up and down a few times in the snow-covered garden, warming yourself slightly but not accomplishing much else."
 
-[Player is in Workshop]
+Section - Climbing Through Windows From Workshop
 
 Instead of going north in the Workshop:
 	try going down.

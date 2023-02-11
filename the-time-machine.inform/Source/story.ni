@@ -1631,6 +1631,8 @@ The bench is a supporter.
 The bench is enterable.
 The description of the bench is "It's a bench, covered in snow, but still just a bench."
 
+Instead of rubbing the bench: say "You brush some snow off the surface of the bench but it's quick covered up again."
+
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
 The description of garden bushes is "Covered by snow, the flora you never knew much about is probably not much to look at right now."

@@ -1621,6 +1621,8 @@ Instead of unlocking the gate with something: try opening the gate.
 Before opening the gate:
 	say "It looks like the gate's lock is rusted shut.";
 	stop the action.
+	
+Instead of climbing the gate: say "You're in no shape to attempt that."
 
 The garden street is a thing.
 The garden street is scenery in the Garden.

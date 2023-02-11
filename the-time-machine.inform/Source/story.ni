@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41607 ]
+[ WORDS - 41655 ]
 
 Table of Releases
 release	notes
@@ -661,6 +661,7 @@ Test news-duration with "test go-abattoir / test light-newspaper."
 [v2.0 Tests]
 Test go-library with "go north / go north / go west."
 Test go-garden with "go north / go north / go west / go north / go east."
+Test go-workshop with "n / n / purloin key / unlock workshop door with key / n / flip switch / unlock windows."
 
 
 Part - Release
@@ -2274,9 +2275,12 @@ To say windows-locked:
 To say windows-closed:
 	say "The workshop windows are closed."
 
+to say cannot-reach:
+	say "You cannot reach the workshop windows from here."
+
 Instead of opening the windows:
 	if the player is in the Garden:
-		say "From down here you cannot reach the workshop windows but it looks like they can only be unlocked from inside the workshop.";
+		say "[cannot-reach]";
 	else if the player is on the bench:
 		if the windows are unlocked:
 			say "You push the windows open, letting the cold and snow into the workshop.";
@@ -2285,7 +2289,7 @@ Instead of opening the windows:
 			say "[windows-locked]";
 	otherwise: [in the Workshop]
 		if the windows are unlocked:
-			say "You swing the windows open, letting in the cold and snow.";
+			say "You pull the windows open, letting in the cold and snow.";
 			now the windows are open;
 		else:
 			say "[windows-locked]".
@@ -2295,11 +2299,23 @@ Instead of closing the windows:
 		say "[windows-closed]";
 	otherwise:
 		if the player is in the Garden:
-			say "You cannot reach the open windows from here.";
-		else if the player is on the bench:
-			say "Reaching inside you grab both windows and swing them shut.";
-		otherwise: [in the Workshop]
-			say "You swing both windows shut."
+			say "[cannot-reach]";
+		otherwise:
+			if the player is on the bench:
+				say "Reaching inside you grab both windows and swing them shut.";
+			otherwise: [in the Workshop]
+				say "You push both windows shut.";
+			now the windows are closed.
+
+Instead of switching on the windows: try pulling the windows.
+Instead of pulling the windows: 
+	if the windows are unlocked:
+		if the windows are open:
+			try closing the windows;
+		otherwise:
+			try opening the windows;
+	otherwise:
+		say "[windows-locked]";
 
 
 Section - Using Poker On Windows

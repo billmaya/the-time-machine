@@ -2279,6 +2279,9 @@ Instead of lock-windows-action:
 	otherwise:
 		try pulling the latch.
 
+Instead of unlocking the windows with the key:
+	say "You can unlock the windows with the latch. The workshop key is not needed."
+
 Section - Open/Close Windows
 
 To say windows-locked:

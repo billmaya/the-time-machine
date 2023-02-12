@@ -2397,7 +2397,7 @@ Instead of going south in the Garden:
 Instead of going up in the Garden:
 	if the player is on the bench:
 		if the windows are open:
-			say "Grabbing onto the sill of the opened windows you manage to hoist yourself into the [if the lights are switched on]lit [otherwise] dark [end if]workshop with some difficulty.[no line break][if the lights are switched off] Stumbling through the darkness you manage to get to the workshop door without too many bumps and bruises.[end if]";
+			say "Grabbing onto the sill of the opened windows you manage to hoist yourself into the [if the lights are switched on]lit [otherwise] dark [end if]workshop with some difficulty.[if the lights are switched off] Stumbling through the darkness you manage to get to the workshop door without too many bumps and bruises.[end if]";
 			now the player is in the Workshop;
 		otherwise:
 			say "[windows-closed]";

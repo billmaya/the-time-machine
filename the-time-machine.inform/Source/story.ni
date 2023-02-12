@@ -2200,6 +2200,12 @@ Instead of examining the latch:
 
 Section - Look Through/In Windows
 
+After deciding the scope of the player when the location is the Garden:
+	place the Workshop in scope.
+
+Instead of examining the Workshop when the player is on the bench:
+	try searching the windows.
+
 Instead of searching the windows: [Recipe §3.6 Windows]
 	if light switch is switched on:
 		if the player is in the Garden:
@@ -2217,6 +2223,7 @@ Instead of searching the windows: [Recipe §3.6 Windows]
 			say "Through the windows you can see down into the snow-covered garden outside."; [This never displays since windows are out of scope when workshop lights are off]
 		else if the player is on the bench:
 			say "You can[']t see anything inside the darkened workshop."
+
 
 Section - Pull/Open/Close Latch
 

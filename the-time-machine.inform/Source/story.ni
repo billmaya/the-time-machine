@@ -2170,7 +2170,7 @@ Chapter - Workshop Windows
 
 The windows are a thing. 
 The windows are a backdrop. The windows are in the Workshop and the Garden.
-Understand "workshop windows" or "window" as windows.
+Understand "workshop windows" or "window" or "hinge" or "hinges" or "pane" or "panes" or "leaded" or "lead" or "glass" as windows.
 
 Instead of examining the windows: say "A set of large casement windows hinged on the outer edges and opening inward, secured by a single latch. The windows are constructed from many small panes of leaded glass in a lattice pattern."
 

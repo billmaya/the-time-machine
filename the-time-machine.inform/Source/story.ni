@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41774 ]
+[ WORDS - 41792 ]
 
 Table of Releases
 release	notes
@@ -2376,6 +2376,7 @@ Understand "use [a carried thing] on [something]" as use-on-action. [https://bit
 use-on-action is an action applying to two things.
 			
 Instead of use-on-action:
+	say "TRYING TO USE [noun] ON [second noun]";
 	if noun is poker:
 		if the player is in the Garden:
 			say "[cannot-reach-window]";

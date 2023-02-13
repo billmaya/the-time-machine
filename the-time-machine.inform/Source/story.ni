@@ -2248,6 +2248,7 @@ Instead of closing the latch:
 	otherwise:
 		say "[latch-broken]".
 
+Instead of switching on the latch: try pulling the latch.
 After pulling the latch:
 	if window-latch-broken is false:
 		if the windows are unlocked:

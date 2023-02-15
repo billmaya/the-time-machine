@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41792 ]
+[ WORDS - 41805 ]
 
 Table of Releases
 release	notes
@@ -2359,15 +2359,19 @@ Instead of attacking windows with poker:
 Instead of unlocking windows with poker:
 	try prying windows with poker.
 		
-Instead of prying the windows with poker:
-	if the player is in the Garden:
-		say "[cannot-reach-window]";
-	else if the player is on the bench:
-		say "Looking around quickly, you carefully place the tip of the poker where the windows meet and pry them apart. With a loud snap, the latch that secures them shut breaks. The windows are now unlocked.";
-		now window-latch-broken is true;
-		now the windows are unlocked;
-	otherwise: [in the Workshop]
-		say "[why-break]".
+Instead of prying the windows with something:
+	if the second noun is poker:
+		if the player is in the Garden:
+			say "[cannot-reach-window]";
+		else if the player is on the bench:
+			[Should probably check here to see if latch is already broken]
+			say "Looking around quickly, you carefully place the tip of the poker where the windows meet and pry them apart. With a loud snap, the latch that secures them shut breaks. The windows are now unlocked.";
+			now window-latch-broken is true;
+			now the windows are unlocked;
+		otherwise: [in the Workshop]
+			say "[why-break]";
+	otherwise:
+		say "[cannot-use]".
 
 To say cannot-use:
 	say "I don't think using the [noun] on the [second noun] in this particular situation will be effective."
@@ -2376,7 +2380,6 @@ Understand "use [a carried thing] on [something]" as use-on-action. [https://bit
 use-on-action is an action applying to two things.
 			
 Instead of use-on-action:
-	say "TRYING TO USE [noun] ON [second noun]";
 	if noun is poker:
 		if the player is in the Garden:
 			say "[cannot-reach-window]";

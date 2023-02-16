@@ -2230,6 +2230,14 @@ Section - Pull/Open/Close Latch
 To say latch-broken:
 	say "The latch has been broken and serves no function."
 
+To say latch-unreachable:
+	say "You cannot reach the latch from outside the workshop."
+
+Before opening the latch:
+	if the player is not in the Workshop:
+		say "[latch-unreachable]";
+		stop the action.
+
 Instead of opening the latch:
 	if window-latch-broken is false:
 		if the windows are unlocked:
@@ -2238,6 +2246,11 @@ Instead of opening the latch:
 			try pulling the latch;
 	otherwise:
 		say "[latch-broken]".
+
+Before closing the latch:
+	if the player is not in the Workshop:
+		say "[latch-unreachable]";
+		stop the action.
 
 Instead of closing the latch:
 	if window-latch-broken is false:
@@ -2249,6 +2262,12 @@ Instead of closing the latch:
 		say "[latch-broken]".
 
 Instead of switching on the latch: try pulling the latch.
+
+Before pulling the latch:
+	if the player is not in the Workshop:
+		say "[latch-unreachable]";
+		stop the action.
+
 After pulling the latch:
 	if window-latch-broken is false:
 		if the windows are unlocked:

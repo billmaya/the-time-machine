@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41988 ]
+[ WORDS - 41789 ]
 
 Table of Releases
 release	notes
@@ -1773,7 +1773,7 @@ Chapter - Workbench
 The workbench is a thing.
 The workbench is scenery in the Workshop.
 The workbench is a supporter.
-The description of the workbench is "[if the player has the blueprints]You see nothing special about the workbench.[otherwise]On the workbench is a set of blueprints."
+The description of the workbench is "You see nothing special about the workbench."
 Understand "bench" as workbench.
 
 Instead of searching the workbench: try examining the workbench.
@@ -1890,19 +1890,6 @@ Rule for printing a refusal to act in the dark:
 			otherwise:
 				say "It is a simple on/off switch. Not much to search."
 	
-Chapter - The Blueprints
-
-The blueprints are a thing.
-The blueprints are on the workbench.
-The blueprints are undescribed.
-Understand "plans" or "sheets" or "set" as blueprints.
-The printed name of blueprints is "set of blueprints".
-
-Instead of taking the blueprints: try examining the blueprints.
-
-Instead of examining the blueprints:
-	say "Spreading out the sheets you see that these are obviously the plans for the time machine in the center of the room."
-
 
 Chapter - The Time Machine
 
@@ -3272,7 +3259,6 @@ The key is familiar. The printed name is "workshop key".
 The workshop-room is a familiar thing. Understand "workshop" as workshop-room. The printed name of workshop-room is "workshop".
 The workshop-door is a familiar thing. Understand "workshop door" as workshop-door.
 The front door is a familiar thing.
-The blueprints are a familiar thing.
 
 The pocket watch is familiar.
 The orrery is familiar.
@@ -3736,9 +3722,6 @@ After quizzing Humboldt about Morlocks during the Ending Scene:
 	say "[remove Morlocks ask suggestion]"; [NO ASK SUGGESTION]
 	say "[figment-imagination]".
 
-After quizzing Humboldt about the blueprints during Ending Scene: 
-	say "Humboldt takes the blueprints and walks over to the time machine. Shuffling the pages he manages to tie each blueprint diagram with its counterpart on the physical machine. After satisfying himself he returns the blueprints to you. 'Impressive workmanship. But there's no proof that it does what Wells says it does,' he says."
-
 After quizzing Humboldt about the fuse-orrery during the Ending Scene: 
 	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you." [BURNT OUT vs. WORKING ?]
 
@@ -3843,7 +3826,7 @@ After showing something to Humboldt during Ending Scene: say "SHOWING [noun]".
 
 Section - Testing
 
-Test end-humboldt with "say hello to humboldt / ask humboldt about wells / ask humboldt about workshop / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about time machine / ask humboldt about pocket watch / ask humboldt about petal / ask humboldt about key / ask humboldt about fuse / ask humboldt about blueprints / ask humboldt about eloi / ask humboldt about  weena / ask humboldt about morlocks / show poker to humboldt / show pocket watch to humboldt / show petal to humboldt / tell humboldt about petal / tell humboldt about time machine / tell humboldt about workshop / tell humboldt about fuse".
+Test end-humboldt with "say hello to humboldt / ask humboldt about wells / ask humboldt about workshop / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about time machine / ask humboldt about pocket watch / ask humboldt about petal / ask humboldt about key / ask humboldt about fuse / ask humboldt about eloi / ask humboldt about  weena / ask humboldt about morlocks / show poker to humboldt / show pocket watch to humboldt / show petal to humboldt / tell humboldt about petal / tell humboldt about time machine / tell humboldt about workshop / tell humboldt about fuse".
 
 Test patience-humboldt with "say hello to humboldt / tell humboldt about time travel / tell humboldt about future / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks / tell humboldt about river / tell humboldt about sphinx / tell humboldt about dome / tell humboldt about shaft / tell humboldt about tunnels".
 
@@ -4145,15 +4128,6 @@ After informing Gernsback about fuse-time-machine:
 	otherwise:
 		continue the action.
 
-After informing Gernsback about blueprints:
-	if Ending Scene is not happening:
-		if blueprints have been seen:
-			say "[fascinating-but]";
-		otherwise:
-			say "[dont-know]";
-	otherwise:
-		continue the action.
-
 After informing Gernsback about workshop-room:
 	if Ending Scene is not happening:
 		if the workshop is visited:
@@ -4244,7 +4218,7 @@ Test g-quiz with "ask gernsback about wells / ask gernsback about humboldt / ask
 
 Test go-gernsback with "go north / go north / go west."
 		
-Test g-start-tell with "go-gernsback / tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about blueprints / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
+Test g-start-tell with "go-gernsback / tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
 
 Test g-end-tell with "test xpl-802701 / exit / test g-start-tell."
 
@@ -4257,7 +4231,7 @@ Test g-fuse-orrery with "test go-gernsback / tell gernsback about fuse / tell ge
 Test g-fuse-time with "test go-gernsback / tell gernsback about fuse / tell gernsback about time machine fuse / tell gernsback about fuse-time-machine / test see-fuse-time / tell gernsback about fuse / tell gernsback about time machine fuse / tell gernsback about fuse-time-machine."
 Test see-fuse-time with "go east / purloin key / unlock workshop door with key / go north / flip switch / enter time machine / unlock hinged panel with key / open hinged panel / examine time machine fuse holder / exit / go south / go west."
 
-Test g-blue with "test go-gernsback / tell gernsback about blueprints / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about blueprints."
+Test g-blue with "test go-gernsback / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west."
 
 Test g-work with "test go-gernsback / tell gernsback about workshop / tell gernsback about workshop-room / go east / purloin key / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about workshop / tell gernsback about workshop-room."
 

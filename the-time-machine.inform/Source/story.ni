@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41965 ]
+[ WORDS - 41988 ]
 
 Table of Releases
 release	notes
@@ -2448,6 +2448,12 @@ Instead of going south in the Garden:
 		try going up;
 	otherwise:
 		continue the action.
+
+Instead of going inside when the player is on the bench:
+	try going up.
+
+Instead of climbing into the windows:
+	try going up.
 
 Instead of going up in the Garden:
 	if the player is on the bench:

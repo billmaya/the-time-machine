@@ -1053,6 +1053,8 @@ Carry out reading:
 		try reading the central panel;
 	otherwise if the noun is central panel:
 		say "It's midwinter, just past the winter solstice, the date is December 28th, the Moon is waxing gibbous, and the time is later than you think.";
+	otherwise if the noun is equations or the noun is diagrams:
+		try examining the blackboard;
 	otherwise:
 		say "That's absurd.";
 

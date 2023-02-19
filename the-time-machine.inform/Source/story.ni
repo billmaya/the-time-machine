@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41789 ]
+[ WORDS - 41821 ]
 
 Table of Releases
 release	notes
@@ -1057,7 +1057,6 @@ Carry out reading:
 		try reading the equations;
 	otherwise if the noun is equations or the noun is diagrams:
 		say "You glance at the long series of equations and diagrams but have no luck making sense of anything written there.";
-		[DEL try examining the blackboard;]
 	otherwise:
 		say "That's absurd.";
 
@@ -1800,7 +1799,6 @@ Instead of searching the materials: try examining workshop-tools-materials.
 
 The workshop-blackboard is scenery in the Workshop.
 The description of workshop-blackboard is "Fastened to the wall and covered with equations and diagrams."
-[DEL The description of workshop-blackboard is "You glance at the long series of equations and diagrams but have no luck making sense of anything written there."]
 
 The blackboard is a thing.
 The blackboard is scenery in the Workshop.
@@ -1809,13 +1807,13 @@ Instead of searching the blackboard: try examining workshop-blackboard.
 		
 The equations are a thing.
 The equations are scenery in the Workshop.
-Instead of examining the equations: try reading the equations. [DEL examining workshop-blackboard.]
-Instead of searching the equations: try reading the equations. [DEL examining workshop-blackboard.]
+Instead of examining the equations: try reading the equations.
+Instead of searching the equations: try reading the equations.
 
 The diagrams are a thing.
 The diagrams are scenery in the Workshop.
-Instead of examining the diagrams: try reading the diagrams. [DEL examining workshop-blackboard.]
-Instead of searching the diagrams: try reading the diagrams. [DEL examining workshop-blackboard.]
+Instead of examining the diagrams: try reading the diagrams.
+Instead of searching the diagrams: try reading the diagrams.
 
 Chapter - Light Switch
 		

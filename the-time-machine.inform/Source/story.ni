@@ -1053,8 +1053,11 @@ Carry out reading:
 		try reading the central panel;
 	otherwise if the noun is central panel:
 		say "It's midwinter, just past the winter solstice, the date is December 28th, the Moon is waxing gibbous, and the time is later than you think.";
+	otherwise if the noun is blackboard:
+		try reading the equations;
 	otherwise if the noun is equations or the noun is diagrams:
-		try examining the blackboard;
+		say "You glance at the long series of equations and diagrams but have no luck making sense of anything written there.";
+		[DEL try examining the blackboard;]
 	otherwise:
 		say "That's absurd.";
 
@@ -1796,7 +1799,8 @@ Instead of examining the materials: try examining workshop-tools-materials.
 Instead of searching the materials: try examining workshop-tools-materials.
 
 The workshop-blackboard is scenery in the Workshop.
-The description of workshop-blackboard is "You glance at the long series of equations and diagrams but have no luck making sense of anything written there."
+The description of workshop-blackboard is "Fastened to the wall and covered with equations and diagrams."
+[DEL The description of workshop-blackboard is "You glance at the long series of equations and diagrams but have no luck making sense of anything written there."]
 
 The blackboard is a thing.
 The blackboard is scenery in the Workshop.
@@ -1805,13 +1809,13 @@ Instead of searching the blackboard: try examining workshop-blackboard.
 		
 The equations are a thing.
 The equations are scenery in the Workshop.
-Instead of examining the equations: try examining workshop-blackboard.
-Instead of searching the equations: try examining workshop-blackboard.
+Instead of examining the equations: try reading the equations. [DEL examining workshop-blackboard.]
+Instead of searching the equations: try reading the equations. [DEL examining workshop-blackboard.]
 
 The diagrams are a thing.
 The diagrams are scenery in the Workshop.
-Instead of examining the diagrams: try examining workshop-blackboard.
-Instead of searching the diagrams: try examining workshop-blackboard.
+Instead of examining the diagrams: try reading the diagrams. [DEL examining workshop-blackboard.]
+Instead of searching the diagrams: try reading the diagrams. [DEL examining workshop-blackboard.]
 
 Chapter - Light Switch
 		

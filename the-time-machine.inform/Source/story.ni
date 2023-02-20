@@ -1784,19 +1784,6 @@ Instead of searching the workbench: try examining the workbench.
 
 Chapter - Scenery
 
-The workshop-tools-materials is scenery in the Workshop.
-The description of workshop-tools-materials is "A cursory search of the workshop tools and materials turns up no flower or other fauna or brings you closer to understanding how the time machine operates or how to make it work."
-
-The tools are a thing.
-The tools are scenery in the Workshop.
-Instead of examining the tools: try examining workshop-tools-materials.
-Instead of searching the tools: try examining workshop-tools-materials.
-	
-The materials are a thing.
-The materials are scenery in the Workshop.
-Instead of examining the materials: try examining workshop-tools-materials.
-Instead of searching the materials: try examining workshop-tools-materials.
-
 The workshop-blackboard is scenery in the Workshop.
 The description of workshop-blackboard is "Fastened to the wall and covered with equations and diagrams."
 

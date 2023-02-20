@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41686 ]
+[ WORDS - 41770 ]
 
 Table of Releases
 release	notes
@@ -2303,6 +2303,24 @@ unlatch-windows-action is an action applying to nothing.
 Instead of unlatch-windows-action:
 	if the windows are unlocked:
 		say "The windows are already unlocked.";
+	otherwise:
+		try pulling the latch.
+
+Understand "unlock windows with latch" as unlock-windows-latch-action.
+unlock-windows-latch-action is an action applying to nothing.
+
+Instead of unlock-windows-latch-action:
+	if the windows are unlocked:
+		say "The windows are already unlocked.";
+	otherwise:
+		try pulling the latch.
+
+Understand "lock windows with latch" as lock-windows-latch-action.
+lock-windows-latch-action is an action applying to nothing.
+
+Instead of lock-windows-latch-action:
+	if the windows are locked:
+		say "The windows are already locked.";
 	otherwise:
 		try pulling the latch.
 

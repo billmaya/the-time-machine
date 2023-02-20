@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41662 ]
+[ WORDS - 41686 ]
 
 Table of Releases
 release	notes
@@ -1800,6 +1800,11 @@ The diagrams are scenery in the Workshop.
 Instead of examining the diagrams: try reading the diagrams.
 Instead of searching the diagrams: try reading the diagrams.
 
+The shapes are a thing.
+The shapes are scenery in the Workshop.
+
+Instead of examining the shapes: try looking.
+
 Chapter - Light Switch
 		
 The lights are a device. [thing.]
@@ -1851,6 +1856,7 @@ Before switching off the light switch:
 
 After deciding the scope of the player when the location is the Workshop:
 	place the lights in scope;
+	place the shapes in scope;
 	place the light switch in scope.
 
 [Recipes §3.7. Lighting, Hohmann Transfer example]
@@ -1870,7 +1876,7 @@ Rule for printing a refusal to act in the dark:
 	if the room is the Workshop:
 		if we are examining something:
 			if we are not examining the light switch:
-				say "You will need a bit more light before you can examine the in any detail.";
+				say "You will need a bit more light before you can examine them in any detail.";
 			otherwise:
 				say "A simple light switch by the door that you can flip on or off.";
 		if we are searching something:

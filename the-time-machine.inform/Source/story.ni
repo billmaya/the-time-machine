@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41821 ]
+[ WORDS - 41792 ]
 
 Table of Releases
 release	notes
@@ -1768,9 +1768,9 @@ Instead of switching off the contents-of-kitchen: say "[getting-in-watchett-way]
 
 Part - Workshop  
 
-The workshop is a dark room. 
+The Workshop is a dark room. 
 
-The description of the Workshop is "The workshop is almost twice as long as it is wide and ends in windows that look down into the garden. A long workbench runs down one side of the room; a large blackboard covered in equations and diagrams runs down the other. Tools and materials for Wells['] experiments fill the rest of the space.[if the time machine is not nowhere] In the center of the room is a striking, out-of-place object that can only be Wells['] time machine.[end if]"
+The description of the Workshop is "Almost twice as long as it is wide, a long workbench runs down one side of the room; a large blackboard down the other. The workshop windows at the far end of the room look down into[if the Garden has been visited] the[otherwise] a[end if] garden."
 
 Chapter - Workbench
 
@@ -1905,7 +1905,8 @@ The time machine is a opaque container. [thing.] [The indefinite article is "the
 The time machine is in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-The time machine is undescribed.
+The printed name of the time machine is "Wells['] time machine".
+
 The description of the time machine is "[if the player is not in the time machine]The time machine is rectangular in shape, taller than it is wide. A scaffolding of struts, wires, and other mechanisms rises up from the thick, square base to create a cage to enclose one or two occupants. It looks like you can enter the machine through an opening in one side.[otherwise]The inside of the time machine is just as baffling as its outside. While you can get a closer look at the various components that make up the cage that surrounds you, the only object that you can make sense of is a control panel at waist height.[end if][if the player is in the time machine and the time machine is in the workshop] Through gaps in the time machine you can see the workshop.[otherwise if the player is in the time machine and the time machine is in the clearing] Through gaps in the time machine you can see the clearing.[end if]"
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" as time machine.

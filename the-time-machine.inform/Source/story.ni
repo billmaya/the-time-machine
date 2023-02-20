@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41679 ]
+[ WORDS - 41662 ]
 
 Table of Releases
 release	notes
@@ -1784,13 +1784,11 @@ Instead of searching the workbench: try examining the workbench.
 
 Chapter - Scenery
 
-The workshop-blackboard is scenery in the Workshop.
-The description of workshop-blackboard is "Fastened to the wall and covered with equations and diagrams."
-
 The blackboard is a thing.
 The blackboard is scenery in the Workshop.
-Instead of examining the blackboard: try examining workshop-blackboard.
-Instead of searching the blackboard: try examining workshop-blackboard.
+The description of the blackboard is "Fastened to the wall and covered with equations and diagrams."
+
+Instead of searching the blackboard: try reading the equations.
 		
 The equations are a thing.
 The equations are scenery in the Workshop.

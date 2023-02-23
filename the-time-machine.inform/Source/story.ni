@@ -1919,7 +1919,7 @@ Activating is an action applying to one touchable thing.
 Understand "activate [something]" as activating.
 
 To say nothing-happens:
-	say "You push the lever foward until it stops but nothing happens."
+	say "You push the lever forward until it stops but nothing happens."
 
 Instead of activating the time machine:
 	if the player is in the time machine:

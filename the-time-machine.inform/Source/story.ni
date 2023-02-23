@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41770 ]
+[ WORDS - 41821 ]
 
 Table of Releases
 release	notes
@@ -2051,6 +2051,13 @@ The small light is switched off.
 The description of the small light is "A small light set into the surface just below the hinged panel but above the lever. The light is [if small light is switched on]glowing brightly.[otherwise]off."
 
 The examine devices rule does nothing when examining the small light.
+
+Instead of switching on the small light: 
+	if the hinged panel is open:
+		say "Glancing over the control panel you don't see an obvious way to do that. Maybe a closer look at the fuse...";
+	otherwise:
+		say "Glancing over the control panel you don't see an obvious way to do that."
+
 
 Section - Hinged Panel
 			

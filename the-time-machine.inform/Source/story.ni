@@ -2130,7 +2130,7 @@ Instead of modifying the origin section:
 	say "[leave-alone]".
 
 Instead of modifying the elapsed time section:
-	say "It looks like these dials are just for display. You'd have to actual travel in time to chane them."
+	say "It looks like these dials are just for display. You'd have to actually travel in time to change them."
 
 [Unlocking the hinged panel]
 

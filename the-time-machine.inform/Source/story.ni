@@ -2009,7 +2009,7 @@ Understand "controls" as control panel.
 
 Instead of examining the control panel:
 	if the player is in the time machine:
-		say "The control panel is divided into two major sections. To the left, one above the other, are labeled sections that indicate Elapsed time, Destination, and Origin. To the right, from top to bottom, is what appears to be a locked hinged panel, a small light, and a lever.";
+		say "The control panel is divided into two major sections. To the left, one above the other, are labeled sections that indicate Elapsed time, Destination, and Origin. To the right, from top to bottom, are what appear to be a locked hinged panel, a small light, and a lever.";
 	otherwise:
 		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.

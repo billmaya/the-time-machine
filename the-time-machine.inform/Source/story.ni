@@ -2072,7 +2072,7 @@ The description of the hinged panel is "A small panel, hinged at the top, with a
 
 The keyhole is an open container.
 The keyhole is part of the hinged panel.
-The description of the keyhole is "The perfect recepticle for just the right key."
+The description of the keyhole is "The perfect receptacle for just the right key."
 
 Section - Time Machine Fuse Holder
 

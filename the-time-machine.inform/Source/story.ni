@@ -1909,7 +1909,7 @@ Instead of opening the time machine: say "The time machine is already 'open.' Al
 Instead of searching [examining] the time machine:
 	if a breaker (called fuse) is contained in the time-fuse-holder:		
 		if the fuse is working:
-			say "A barely perceptable hum and the lit light on the control panel makes it look like it is ready to operate.";
+			say "A barely perceptible hum and the lit light on the control panel makes it look like it is ready to operate.";
 		otherwise:
 			say "The time machine sits there in silence."
 
@@ -1970,7 +1970,7 @@ Before inserting a breaker (called fuse) into the time-fuse-holder:
 
 After inserting a breaker (called fuse) into the time-fuse-holder:
 	if the fuse is working:
-		say "The time machine shudders briefly and you hear a barely perceptable hum from the mechanism. The light on the control panel glows brightly.";
+		say "The time machine shudders briefly and you hear a barely perceptible hum from the mechanism. The light on the control panel glows brightly.";
 		now the fuse is in the time-fuse-holder;
 		now small light is switched on;
 	otherwise:

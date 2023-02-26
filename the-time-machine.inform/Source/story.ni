@@ -2504,6 +2504,12 @@ The description of the Clearing is "A midsized clearing dominated by a circular 
 
 Inside from the Clearing is Top Well.
 
+Instead of going inside in the Clearing:
+	if the metal cover is on the circular well:
+		try entering the time machine;
+	otherwise:
+		continue the action.
+
 Instead of going down in the Clearing: 
 	if the metal cover is on the circular well:
 		say "You might be able to if that grate wasn't in the way.";

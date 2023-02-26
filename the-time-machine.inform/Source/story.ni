@@ -1902,7 +1902,7 @@ The description of the time machine is "[if the player is not in the time machin
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" or "cage" or "components" or "mechanisms" as time machine.
 
-Instead of opening the time machine: say "The time machine is already 'open.' All you have to do is [if the player is in the time machine]get out[otherwise]get inside[end if] if you desire."
+Instead of opening the time machine: say "The time machine is already open. All you have to do is [if the player is in the time machine]get out[otherwise]get inside[end if] if you desire."
 [At some point should implement >climb in/out of time machine.]
 
 [Replaced "examining" with "searching" in Instead statement]

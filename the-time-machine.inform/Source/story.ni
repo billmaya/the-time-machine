@@ -1913,6 +1913,8 @@ Instead of searching [examining] the time machine:
 		otherwise:
 			say "The time machine sits there in silence."
 
+Instead of going inside in the Workshop: try entering the time machine.
+
 Section - Activating The Time Machine
 
 Activating is an action applying to one touchable thing.

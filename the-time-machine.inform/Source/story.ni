@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41871 ]
+[ WORDS - 41875 ]
 
 Table of Releases
 release	notes
@@ -1428,7 +1428,7 @@ The orrery-fuse-holder is undescribed.
 The printed name of the orrery-fuse-holder is "orrery fuse holder".
 The description of the orrery-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[no line break][if there is the fuse-orrery in the orrery-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the orrery-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
 
-Understand "fuse holder" or "orrery fuse holder" as orrery-fuse-holder.
+Understand "fuse holder" or "orrery fuse holder" or "holder" as orrery-fuse-holder.
 
 The examine containers rule does nothing when examining the orrery-fuse-holder. [Suppresses "In the fuse holder is an orrery fuse." after description printed] 
 Understand "orrery fuse holder" or "fuse holder" or "clips" or "clip" as orrery-fuse-holder.
@@ -2083,7 +2083,7 @@ The time-fuse-holder is inside the hinged panel.
 The printed name of time-fuse-holder is "time machine fuse holder".
 The description of the time-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is the fuse-orrery in the time-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the time-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
 
-Understand "fuse holder" or "time machine fuse holder" or "clip" or "clips" as time-fuse-holder.
+Understand "fuse holder" or "time machine fuse holder" or "clip" or "clips" or "holder" as time-fuse-holder.
 		
 [Actions on control panel]
 	

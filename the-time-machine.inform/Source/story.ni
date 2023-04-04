@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41875 ]
+[ WORDS - 41905 ]
 
 Table of Releases
 release	notes
@@ -1963,6 +1963,10 @@ Before inserting a breaker (called fuse) into the control panel:
 	try inserting the fuse into the time-fuse-holder;
 	stop the action.
 
+Before inserting a breaker (called fuse) into the hinged panel:
+	try inserting the fuse into the time-fuse-holder;
+	stop the action.
+
 Before inserting a breaker (called fuse) into the time-fuse-holder:
 	if the time-fuse-holder contains a breaker:
 		say "You will need to remove the other fuse from the time machine first.";
@@ -1976,6 +1980,7 @@ After inserting a breaker (called fuse) into the time-fuse-holder:
 		now the fuse is in the time-fuse-holder;
 		now small light is switched on;
 	otherwise:
+		say "You insert the [fuse] but nothing happens.";
 		[say "FUSE BAD. TIME MACHINE LIGHT OFF.";]
 		now small light is switched off.
 

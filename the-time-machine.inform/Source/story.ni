@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41970 ]
+[ WORDS - 41984 ]
 
 Table of Releases
 release	notes
@@ -1928,7 +1928,7 @@ Activating is an action applying to one touchable thing.
 Understand "activate [something]" as activating.
 
 To say nothing-happens:
-	say "You push the lever forward until it stops but nothing happens."
+	say "You push the lever forward until it stops but nothing happens. Once you let go of it the lever slowly returns to its starting position."
 
 Instead of activating the time machine:
 	if the player is in the time machine:

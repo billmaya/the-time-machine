@@ -2027,6 +2027,8 @@ The controls are a thing.
 The controls are part of the time machine.
 The controls are undescribed.
 
+Understand "control" as controls.
+
 Instead of examining the controls:
 	if the player is in the time machine:
 		say "The time machine controls are divided into two major sections. To the left, one above the other, are labeled sections that indicate Elapsed time, Destination, and Origin. To the right, from top to bottom, are what appear to be a hinged panel, a small light, and a lever.";

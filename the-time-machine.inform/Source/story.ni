@@ -1905,7 +1905,7 @@ The time machine is fixed in place. [This prevents > show time machine to humbol
 The time machine is enterable. 
 The printed name of the time machine is "Wells['] time machine".
 
-The description of the time machine is "[if the player is not in the time machine]The time machine is rectangular in shape, taller than it is wide. A scaffolding of struts, wires, and other mechanisms rises up from the thick, square base to create a cage to enclose one or two occupants. It looks like you can enter the machine through an opening in one side.[otherwise]The inside of the time machine is just as baffling as its outside. While you can get a closer look at the various components that make up the cage that surrounds you, the only object that you can make sense of is a control panel at waist height.[end if][if the player is in the time machine and the time machine is in the workshop] Through gaps in the time machine you can see the workshop.[otherwise if the player is in the time machine and the time machine is in the clearing] Through gaps in the time machine you can see the clearing.[end if]"
+The description of the time machine is "[if the player is not in the time machine]The time machine is rectangular in shape, taller than it is wide. A scaffolding of struts, wires, and other mechanisms rises up from the thick, square base to create a cage to enclose one or two occupants. It looks like you can enter the machine through an opening in one side.[otherwise]The inside of the time machine is just as baffling as its outside. While you can get a closer look at the various components that make up the cage that surrounds you, the only object that you can make sense of is a set of controls at waist height.[end if][if the player is in the time machine and the time machine is in the workshop] Through gaps in the time machine you can see the workshop.[otherwise if the player is in the time machine and the time machine is in the clearing] Through gaps in the time machine you can see the clearing.[end if]"
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" or "cage" or "components" or "mechanisms" as time machine.
 
@@ -1916,7 +1916,7 @@ Instead of opening the time machine: say "The time machine is already open. All 
 Instead of searching [examining] the time machine:
 	if a breaker (called fuse) is contained in the time-fuse-holder:		
 		if the fuse is working:
-			say "A barely perceptible hum and the lit light on the control panel makes it look like it is ready to operate.";
+			say "A barely perceptible hum and the lit light among the controls makes it look like the time machine is ready to operate.";
 		otherwise:
 			say "The time machine sits there in silence."
 
@@ -1966,7 +1966,7 @@ Before inserting a breaker (called fuse) into the time machine:
 	try inserting the fuse into the time-fuse-holder;
 	stop the action.
 
-Before inserting a breaker (called fuse) into the control panel:
+Before inserting a breaker (called fuse) into the controls:
 	try inserting the fuse into the time-fuse-holder;
 	stop the action.
 
@@ -1990,7 +1990,7 @@ Before inserting a breaker (called fuse) into the time-fuse-holder:
 
 After inserting a breaker (called fuse) into the time-fuse-holder:
 	if the fuse is working:
-		say "The time machine shudders briefly and you hear a barely perceptible hum from the mechanism. The light on the control panel glows brightly.";
+		say "The time machine shudders briefly and you hear a barely perceptible hum from the mechanism. The light among the controls glows brightly.";
 		now the fuse is in the time-fuse-holder;
 		now small light is switched on;
 	otherwise:
@@ -2001,7 +2001,7 @@ After inserting a breaker (called fuse) into the time-fuse-holder:
 Section - Removing Fuse From Time Machine
 
 Before removing a breaker (called fuse) from the time machine: try taking the fuse.
-Before removing a breaker (called fuse) from the control panel: try taking the fuse.
+Before removing a breaker (called fuse) from the controls: try taking the fuse.
 Before removing a breaker (called fuse) from the  hinged panel: try taking the fuse.
 
 Before removing a breaker (called fuse) from the time-fuse-holder: try taking the fuse.
@@ -2010,7 +2010,7 @@ Before taking a breaker (called fuse):
 	if the fuse is contained in the time-fuse-holder:
 		if the fuse is working:
 			now the small light is switched off;
-			say "The small light on the control panel dims to black and the barely perceptible hum of the time machine fades away.";
+			say "The small light among the controls dims to black and the barely perceptible hum of the time machine fades away.";
 		otherwise:
 			say "Taken.";
 		continue the action.
@@ -2021,26 +2021,25 @@ Section - Tests | Time Machine | Fuses
 
 test orrery-time with "test fp-time / put orrery fuse in time machine fuse holder / take time machine fuse / put orrery fuse in time machine fuse holder / put time machine fuse in time machine fuse holder / take orrery fuse / put orrery fuse in time machine fuse holder / take orrery fuse from time machine fuse holder / put time machine fuse in time machine fuse holder."
 
-Chapter - Time Machine Control Panel
+Chapter - Time Machine Controls 
 
-The control panel is a thing.
-The control panel is part of the time machine.
-The control panel is undescribed.
-Understand "controls" as control panel.
+The controls are a thing.
+The controls are part of the time machine.
+The controls are undescribed.
 
-Instead of examining the control panel:
+Instead of examining the controls:
 	if the player is in the time machine:
-		say "The control panel is divided into two major sections. To the left, one above the other, are labeled sections that indicate Elapsed time, Destination, and Origin. To the right, from top to bottom, are what appear to be a hinged panel, a small light, and a lever.";
+		say "The time machine controls are divided into two major sections. To the left, one above the other, are labeled sections that indicate Elapsed time, Destination, and Origin. To the right, from top to bottom, are what appear to be a hinged panel, a small light, and a lever.";
 	otherwise:
-		say "From the outside you can see the control panel is wired into various components of the time machine and contains a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
+		say "From the outside you can see that the controls are wired into various components of the time machine and consist of a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
 	rule succeeds.
 
-Test x-control with "test goto-workshop / get in time machine / x control panel / x elapsed time section / x destination section / x origin section / x hinged panel / x small light / x lever / x time-fuse-holder."
+Test x-control with "test goto-workshop / get in time machine / x controls / x elapsed time section / x destination section / x origin section / x hinged panel / x small light / x lever / x time-fuse-holder."
 
 Section - Elapsed Time Section
 
 The elapsed time section is a thing.
-The elapsed time section is part of the control panel.
+The elapsed time section is part of the controls.
 
 The description of the elapsed time section is "Two rows of brass dials used to indicate elapsed time. The top row displays time intervals you are most familiar with[unicode 8212]seconds, minutes, hours, days, all the way up to years. The bottom row list intervals not so often used in daily conversation[unicode 8212]epochs, ages, millennia, centuries, and decades. [if numeric-year is 1895]All of the dial pointers are positioned at zero.[otherwise]The numbers on the dials indicate that 801,006 years have elapsed."
 
@@ -2049,7 +2048,7 @@ Understand "dial" or "dials" as elapsed time section.
 Section - Destination Section
 
 The destination section is a thing.
-The destination section is part of the control panel.
+The destination section is part of the controls.
 The description of the destination section is "This section displays a row of eight numbers, each separate from its neighbor, with a tiny dial to the right of each number. The number displayed is [if numeric-year is 1895][future][otherwise][present]."
 Understand "destination date" or "date of destination" as destination section.
 
@@ -2062,14 +2061,14 @@ To say future:
 Section - Origin Section
 
 The origin section is a thing.
-The origin section is part of the control panel.
+The origin section is part of the controls.
 The description of the origin section is "This section displays a row of eight numbers, each separate from its neighbor, with a tiny dial to the right of each number. The number displayed is [if numeric-year is 1895][present][otherwise][future]."
 Understand "origin date" or "date of origin" as origin section.
 	
 Section - Small Light
 
 The small light is a device.
-The small light is part of the control panel.
+The small light is part of the controls.
 The small light is switched off.
 The description of the small light is "A small light set into the surface just below the hinged panel but above the lever. The light is [if small light is switched on]glowing brightly.[otherwise]off."
 
@@ -2077,9 +2076,9 @@ The examine devices rule does nothing when examining the small light.
 
 Instead of switching on the small light: 
 	if the hinged panel is open:
-		say "Glancing over the control panel you don't see an obvious way to do that. Maybe a closer look at the fuse...";
+		say "Glancing over the controls you don't see an obvious way to do that. Maybe a closer look at the fuse...";
 	otherwise:
-		say "Glancing over the control panel you don't see an obvious way to do that."
+		say "Glancing over the controls you don't see an obvious way to do that."
 
 
 Section - Hinged Panel
@@ -2088,7 +2087,7 @@ The hinged panel is a locked container.
 The hinged panel is openable.
 The hinged panel is closed.
 The hinged panel is locked.
-The hinged panel is part of the control panel.
+The hinged panel is part of the controls.
 The description of the hinged panel is "A small panel, hinged at the top, with a keyhole recessed in the center of its bottom edge."
 
 The keyhole is an open container.
@@ -2104,7 +2103,7 @@ The description of the time-fuse-holder is "Two metal clips that the ends of a f
 
 Understand "fuse holder" or "time machine fuse holder" or "clip" or "clips" or "holder" as time-fuse-holder.
 		
-[Actions on control panel]
+[Actions on controls]
 	
 To say dont-see-how:
 	say "I don[']t see how you would do that right now."
@@ -2171,7 +2170,7 @@ The on-off-switch is either forward or backwards. The on-off-switch is usually b
 
 The lever is a on-off-switch.
 The lever is switched off.
-The lever is part of the control panel.
+The lever is part of the controls.
 The description of the lever is "A small lever that can be pushed vertically from bottom to top."
 
 The examine devices rule does nothing when examining the lever.
@@ -5378,7 +5377,7 @@ hint		used
 "Have you been able to get into the workshop?"		a number
 "You will need to get into the workshop first."
 "The workshop door is locked. You will need a key."		
-"Have you examined the time machine[']s control panel?"
+"Have you examined the time machine[']s controls?"
 "Have you unlocked the hinged panel?"
 "Have you examined the time machine fuse?"
 "It looks like the time machine fuse is burnt out. You'll need a new one."
@@ -5450,7 +5449,7 @@ hint				used
 "flip switch"
 "examine time machine"
 "enter time machine"
-"examine control panel"
+"examine controls"
 "unlock hinged panel with key (DOESN'T OPEN IT BUT SAYS IT DOES)"
 "open hinged panel (REMOVE)"
 "examine fuse holder"
@@ -5552,7 +5551,7 @@ To say release-notes:
 	say "Release 6 Notes (v1.3)[paragraph break]
 • Added breaker.[line break]
 • Added 2nd fuse so now there's an orrery fuse (working) and a time machine fuse (not working).[line break]
-• Refactored time machine and control panel, adding explicit time machine fuse holder.[line break]
+• Refactored time machine and controls, adding explicit time machine fuse holder.[line break]
 • Added code so you cannot insert two fuses into one fuse holder.[line break]
 • Added code so Orrery and Time Macine work when working fuse inserted and don't work when not working fuse inserted.[paragraph break]";
 say "Release 5 Notes (v1.2)[paragraph break]

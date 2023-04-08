@@ -2156,10 +2156,16 @@ Instead of modifying the elapsed time section:
 
 [Unlocking the hinged panel]
 
+Instead of unlocking the keyhole with the metal key:
+	try inserting the metal key into the keyhole.
+
 Instead of inserting the metal key into the keyhole:
-	say "Inserting the key into the keyhole you turn it.";
-	now the metal key is in the keyhole;
-	try unlocking the hinged panel with the metal key.
+	if the hinged panel is unlocked:
+		say "The hinged panel is already unlocked.";
+	otherwise:
+		say "Inserting the key into the keyhole you turn it.";
+		now the metal key is in the keyhole;
+		try unlocking the hinged panel with the metal key.
 
 After unlocking the hinged panel with the metal key:
 	[say "You swing the panel upwards.";]

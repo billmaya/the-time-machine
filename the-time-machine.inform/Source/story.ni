@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42012 ]
+[ WORDS - 42040 ]
 
 Table of Releases
 release	notes
@@ -3437,11 +3437,11 @@ After quizzing Watchett about poker:
 
 After quizzing Watchett about experiments:
 	say "[remove experiments ask suggestion]";
-	say "'I wouldn't know anything about Mr. Wells['] experiments. He never talked to me about his work. Did all his those things in his workshop behind closed doors. Raised a dreadful racket sometimes, I tell you.'"
+	say "'I wouldn't know anything about Mr. Wells['] experiments. He never talked to me about his work. Did all those things in his workshop behind closed doors. Raised a dreadful racket sometimes, I tell you.'"
 
 After quizzing Watchett about time travel:
 	say "[remove time travel ask suggestion]";
-	say "'I wouldn't know anything about that. Running a house, one day at a time, that's my lot in life."
+	say "'I wouldn't know anything about that. Running a house, one day at a time, that's my lot in life.'"
 
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -3464,6 +3464,8 @@ After imploring Watchett for "facts/details/ideas": say "'You'll have to more sp
 Section - Showing
 
 After showing noun to Watchett: try quizzing Watchett about noun.
+
+After showing key to Watchett: say "[one of]'Looks like you've found it.'[or]'I knew you'd find it if you looked.'[or]'Good for you, sir.'[at random]"
 
 Chapter - Default Responses
 
@@ -3498,7 +3500,7 @@ To say key-start:
 	say "Mr. Wells always kept it on his person.[no line break]".
 
 To say key-middle:
-	say "[one of]That's where it still must be.[no line break][or]But it never stayed there for long.[no line break][or]But it was always falling out of his pocket at the drop of a hat.[no line break][or]But he was always loosing it.[no line break][at random]".
+	say "[one of]That's where it still must be.[no line break][or]But it never stayed there for long.[no line break][or]But it was always falling out of his pocket at the drop of a hat.[no line break][or]But he was always losing it.[no line break][at random]".
 
 To say key-end:
 	if the player has the key:

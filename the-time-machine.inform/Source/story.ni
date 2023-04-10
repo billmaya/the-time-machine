@@ -3647,7 +3647,7 @@ After quizzing Humboldt about Watchett: say "'I think she is in the kitchen.'"
 Section - Informing - "Tell [someone] about [thing]"	
 	
 After informing Humboldt about Wells:
-	say "Humboldt gives you an increduous look as he listens to your learned but laymans opinion on Wells's condition."
+	say "Humboldt gives you an incredulous look as he listens to your laymans opinion on Wells's condition."
 	
 [DEL After informing Humboldt about the workshop-room:
 	try quizzing Humboldt about the second noun.]

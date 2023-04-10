@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41977 ]
+[ WORDS - 41958 ]
 
 Table of Releases
 release	notes
@@ -588,10 +588,10 @@ Every turn (this is the Update Debug rule):
 
 Part - Conversation
 
-Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
+Understand "talk to [someone]" as saying hello to.
 
-Understand "talk to [someone] about [any known thing]" as quizzing it about. [about it.]
-Understand "speak to [someone] about [any known thing]" as quizzing it about.  [it.]
+Understand "talk to [someone] about [any known thing]" as quizzing it about.
+Understand "speak to [someone] about [any known thing]" as quizzing it about.
 
 Part - Take All
 
@@ -3801,6 +3801,9 @@ After informing Humboldt about the breaker during the Ending Scene:
 
 After informing Humboldt about the pocket watch during the Ending Scene: 
 	say "Humboldt nods slightly as you show him Wells['] pocket watch."
+	
+Instead of informing Humboldt about the key during the Ending Scene:
+	try quizzing Humboldt about the second noun.
 
 Section - Informing - With Patience Rules
 

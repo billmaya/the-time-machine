@@ -903,7 +903,7 @@ Chapter - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
-The description of the petal is "With its luminous colors it is not like any flower petal you have ever seen. Still, you can't tell much from a single petal. Perhaps the rest of the blossom is inside somewhere." ["...inside somewhere" What if you're inside the house? Or in 802,701? Conditional description?]
+The description of the petal is "With its luminous colors, it is not like any flower petal you have ever seen. Still, you can't tell much from a single petal. Perhaps the rest of the blossom is inside somewhere." ["...inside somewhere" What if you're inside the house? Or in 802,701? Conditional description?]
 		
 Chapter - Pocket Watch
 

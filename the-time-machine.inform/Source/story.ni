@@ -1350,6 +1350,7 @@ Chapter - Breaker
 A breaker is a kind of thing.
 The breaker is either working or not working. A breaker is usually working.
 
+
 Chapter - Orrery
 
 The orrery is a device. The orrery is switched on.
@@ -1521,7 +1522,7 @@ The printed name of the fuse-orrery is "orrery fuse".
 The fuse-orrery is working.
 The fuse-orrery is undescribed.
 The fuse-orrery is in the orrery-fuse-holder.
-The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance]."
+The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine.[end if] The pasteboard of the fuse looks [initial appearance]."
 Understand "orrery fuse" or "pristine fuse" or "fuse" as fuse-orrery.
 
 Section - Inserting Fuse In Orrery
@@ -1952,7 +1953,7 @@ The printed name of the fuse-time-machine is "time machine fuse".
 The fuse-time-machine is not working.
 The fuse-time-machine is undescribed.
 The fuse-time-machine is in the time-fuse-holder.
-The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine[end if] The pasteboard of the fuse looks [initial appearance] in places."
+The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine.[end if] The pasteboard of the fuse looks [initial appearance] in places."
 Understand "time machine fuse" or "burnt fuse" or "fuse" as fuse-time-machine.
 
 Section - Inserting Fuse In Time Machine

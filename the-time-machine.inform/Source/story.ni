@@ -27,7 +27,7 @@ release	notes
 Volume - Beginning The Story
 
 The player is in Woking Street.
-The description of the player is "You rarely think of yourself in those terms, prefering to focus your prodigious logical and legal faculties on the work that your profession and your clients demand.[first time] But if you had to waste time on something so introspect you might describe yourself as a middle-aged man who has reached a certain station in life where success and social esteem allow you to enjoy all the benefits of this modern age.[only] Truly this is the best of times." [Mention something about Wells here?]
+The description of the player is "You rarely think of yourself in those terms, preferring to focus your prodigious logical and legal faculties on the work that your profession and your clients demand.[first time] But if you had to waste time on something so introspective, you might describe yourself as a middle-aged man who has reached a certain station in life where success and social esteem allow you to enjoy all the benefits of this modern age.[only] Truly, this is the best of times." [Mention something about Wells here?]
 
 Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
 

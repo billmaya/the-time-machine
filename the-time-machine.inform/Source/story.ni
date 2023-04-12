@@ -4085,7 +4085,7 @@ After quizzing Gernsback about cigar-gernsback:
 	say "[remove cigar-gernsback ask suggestion]";
 	say "'Believe it was Kipling who said 'A woman is only a woman, but a good cigar is a smoke.' Can't disagree with him when it comes to this Partagás.'"
 
-After quizzing Gernsback about pocket watch: say "'That looks like Wells' watch.'"
+After quizzing Gernsback about pocket watch: say "'That looks like Wells['] watch.'"
 
 After quizzing Gernsback about newspaper: 
 	say "'It[']s there in the other room if you want to read it.'"

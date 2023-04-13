@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41976 ]
+[ WORDS - 42019 ]
 
 Table of Releases
 release	notes
@@ -4221,6 +4221,13 @@ Section - Showing
 
 After showing noun to Gernsback: try informing Gernsback about noun.
 [DEL After showing something to Gernsback: say "SHOWING [noun]".]
+	
+[
+Section - Answering
+	
+Instead of answering Gernsback about something:
+	say "BLAH, BLAH, BLAH."
+]
 
 Chapter - Ending Scene Only
 

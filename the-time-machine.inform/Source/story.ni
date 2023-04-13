@@ -4037,7 +4037,7 @@ Section - Quizzing - "Ask [someone] about [thing]"
 
 After quizzing Gernsback about Wells:
 	say "[remove Wells ask suggestion]";
-	say "'Sad. If I had known it would have lead to this I never would have given him encouragement.'"
+	say "'Sad. If I had known it would have led to this I never would have given him encouragement.'"
 
 After quizzing Gernsback about Humboldt:
 	say "'Smart man. A bit full of himself though. Not as practical as you and me.'"

@@ -4126,7 +4126,7 @@ To say fascinating-but:
 After informing Gernsback about Wells:
 	if Ending Scene is not happening:
 		say "[remove Wells tell suggestion]";
-		say "'I'm not a medical man but I think the best thing you could do, as his attorney, is have him committed. Protect him from himself. Only my opinion mind you.'";
+		say "'I'm not a medical man, but I think the best thing you could do as his attorney is have him committed. Protect him from himself. Only my opinion mind you.'";
 	otherwise:
 		continue the action.
 
@@ -4213,8 +4213,8 @@ Section - Imploring - "Ask [someone] for ['text']"
 
 Section - Showing
 
-After showing noun to Gernsback: try informing Humboldt about noun.
-After showing something to Gernsback: say "SHOWING [noun]".
+After showing noun to Gernsback: try informing Gernsback about noun.
+[DEL After showing something to Gernsback: say "SHOWING [noun]".]
 
 Chapter - Ending Scene Only
 

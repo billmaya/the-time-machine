@@ -4093,7 +4093,13 @@ After quizzing Gernsback about newspaper:
 
 After quizzing Gernsback about key:
 	say "[remove key ask suggestion]";
-	say "'Probably plenty of keys around here. Mrs. Watchett would probably know.'"
+	if the player has the key:
+		if the workshop is visited:
+			say "'What did you find?'";
+		otherwise:
+			say "'Well done. Let me know what you find.'";
+	otherwise:
+		say "'Probably plenty of keys around here. Mrs. Watchett would probably know where they are.'"
 
 ask-about-gernsback-book is a truth state that varies.
 ask-about-gernsback-book is false.

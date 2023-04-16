@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42023 ]
+[ WORDS - 42175 ]
 
 Table of Releases
 release	notes
@@ -933,7 +933,7 @@ Understand "stairs" or "steps" as staircase.
 
 After deciding the scope of the player when the location is the Entryway:
 	place the Library in scope;
-	place the shelved-books in scope.
+	place the library-books in scope.
 
 Instead of examining west: try examining the Library.
 
@@ -941,9 +941,9 @@ Before examining the Library when the player is in the Entryway:
 	say "Through the soft archway to the west you can see shelves of books and someone standing near the window.";
 	stop the action.
 
-Instead of examining the shelved-books: try taking the shelved-books.
+Instead of examining the library-books: try taking the library-books.
 
-Before taking shelved-books in the Entryway: 
+Before taking library-books in the Entryway: 
 	say "You'd have to be in the library to do anything with the books.";
 	stop the action.
 
@@ -1011,20 +1011,21 @@ Instead of searching the shelves: try reading the shelves.
 
 Chapter - Books
 
-shelved-books are a thing in the Library.
-shelved-books are scenery.
-The description of shelved-books are "A variety of titles on various topics, some familiar, some not."
-The printed name of shelved-books is "shelved books".
-Understand "book" or "books" as shelved-books.
+library-books are a thing in the Library.
+library-books are scenery.
+The description of library-books are "A variety of titles on various topics, some familiar, some not."
+The printed name of library-books is "library books".
+Understand "books" or "books on shelf" or "books on shelves" or "library books" or "library book" or "shelved books" or "shelved book" as library-books.
+[TBD - Is it possible to create an Understand with something like "library book/books" or "shelved book/books"]
 
-Instead of searching the shelved-books: try reading the shelved-books.
+Instead of searching the library-books: try reading the library-books.
 
-To say taking-shelved-books: 
+To say taking-library-books: 
 	say "You take [one of]one of the books[or]another book[stopping] off the shelves and leaf through a few of its pages. The subject doesn't[one of] interest you[or] seem relevant to your investigation[in random order] so you return it to its place on the shelf."
 
-Instead of taking shelved-books for the first time: say "[taking-shelved-books]".
-Instead of taking shelved-books for the second time: say "[taking-shelved-books]".
-Instead of taking shelved-books: say "[one of]I probably shouldn't be telling you this but the shelves and the books are scenery, just for show.[or]Again, just scenery.[or]I'd suggest moving along to something more important and relevant to your investigation.[stopping]"
+Instead of taking library-books for the first time: say "[taking-library-books]".
+Instead of taking library-books for the second time: say "[taking-library-books]".
+Instead of taking library-books: say "[one of]I probably shouldn't be telling you this but the shelves and the books are scenery, just for show.[or]Again, just scenery.[or]I'd suggest moving along to something more important and relevant to your investigation.[stopping]"
 
 Section - Reading
 
@@ -1033,7 +1034,7 @@ Understand "read [something]" as reading.
 Reading is an action applying to one thing, requiring light.
 
 Carry out reading:
-	if the noun is shelved-books:
+	if the noun is library-books:
 		say "You scan the [printed name] but nothing catches your interest, especially since you've got more pressing concerns on your mind.";
 	otherwise if the noun is shelves:
 		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
@@ -4014,7 +4015,13 @@ Section - Requests - "Ask [someone] for [thing]"
 After requesting Gernsback for the newspaper: 
 	say "'I don[']t have it.'"
 
+Does the player mean requesting Gernsback for the wells-book: it is very likely.
+Does the player mean requesting Gernsback for the library-books: it is very unlikely.
+
 After requesting Gernsback for the wells-book: say "'Plenty of other books in the library for you to look at.'"
+
+After requesting Gernsback for the library-books:
+	say "[first time]Without pausing his reading, he motions towards the shelves with a wave of his hand. [only][one of]'I would think you would want to pick out something for yourself.'[or]'Plenty to choose from.'[or]'I'm sure you can find something that interests you on the shelves.'[in random order]"
 
 After requesting Gernsback for the box of matches:
 	if the player does not have cigar-player:
@@ -4105,7 +4112,7 @@ ask-about-gernsback-book is a truth state that varies.
 ask-about-gernsback-book is false.
 	
 Does the player mean quizzing Gernsback about the wells-book: it is very likely.
-Does the player mean quizzing Gernsback about the shelved-books: it is very unlikely.
+Does the player mean quizzing Gernsback about the library-books: it is very unlikely.
 
 After quizzing Gernsback about wells-book:
 	if ask-about-gernsback-book is false:
@@ -4823,15 +4830,20 @@ The box of matches is held by Gernsback.
 
 Book - HG Wells Book
 
-[The book that Gernsback is reading is from the future. If you take the book and look at the publication date it will be a future date]
-[The book should be an anthology]
-
 [The] wells-book is a thing. "A thick volume."
 The description of wells-book is "You can't make out the entire title from this distance but the initial words 'H.G. Wells['] Fantastic Fiction' are clearly visible on the spine of the large book."
 Understand "gernsback book" or "gernsback's book" or "book" as wells-book
 
-[The book is in the Parlor.]
 [The] wells-book is held by Gernsback.
+
+Instead of taking wells-book:
+	if the wells-book is held by Gernsback:
+		say "Gernsback is currently reading it. Perhaps you should find another book if you want to read something.";
+	otherwise:
+		say "YOU CAN TAKE THE BOOK." [<- TBD when the book is on the desk]
+
+Instead of asking Gernsback to try giving wells-book to yourself:
+	try requesting Gernsback for the wells-book.
 
 
 Book - Tobacco

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42175 ]
+[ WORDS - 42177 ]
 
 Table of Releases
 release	notes
@@ -1008,53 +1008,6 @@ The description of shelves is "The shelves are crammed with books of all sizes, 
 Understand "shelf" as shelves.
 
 Instead of searching the shelves: try reading the shelves.
-
-Chapter - Books
-
-library-books are a thing in the Library.
-library-books are scenery.
-The description of library-books are "A variety of titles on various topics, some familiar, some not."
-The printed name of library-books is "library books".
-Understand "books" or "books on shelf" or "books on shelves" or "library books" or "library book" or "shelved books" or "shelved book" as library-books.
-[TBD - Is it possible to create an Understand with something like "library book/books" or "shelved book/books"]
-
-Instead of searching the library-books: try reading the library-books.
-
-To say taking-library-books: 
-	say "You take [one of]one of the books[or]another book[stopping] off the shelves and leaf through a few of its pages. The subject doesn't[one of] interest you[or] seem relevant to your investigation[in random order] so you return it to its place on the shelf."
-
-Instead of taking library-books for the first time: say "[taking-library-books]".
-Instead of taking library-books for the second time: say "[taking-library-books]".
-Instead of taking library-books: say "[one of]I probably shouldn't be telling you this but the shelves and the books are scenery, just for show.[or]Again, just scenery.[or]I'd suggest moving along to something more important and relevant to your investigation.[stopping]"
-
-Section - Reading
-
-Understand the command "read" as something new. [Recipe §9.6. Reading Matter]
-Understand "read [something]" as reading.
-Reading is an action applying to one thing, requiring light.
-
-Carry out reading:
-	if the noun is library-books:
-		say "You scan the [printed name] but nothing catches your interest, especially since you've got more pressing concerns on your mind.";
-	otherwise if the noun is shelves:
-		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
-	otherwise if the noun is library papers:
-		say "Reading through the papers quickly you find light correspondence and bills, nothing that would point to Wells['] recent flights of fantasy.";
-	otherwise if the noun is wells-book:
-		say "You can't do that while Gernsback is reading it.";
-	otherwise if the noun is newspaper:
-		move the newspaper to the player;
-		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
-	otherwise if the noun is orrery:
-		try reading the central panel;
-	otherwise if the noun is central panel:
-		say "It's midwinter, just past the winter solstice, the date is December 28th, the Moon is waxing gibbous, and the time is later than you think.";
-	otherwise if the noun is blackboard:
-		try reading the equations;
-	otherwise if the noun is equations or the noun is diagrams:
-		say "You glance at the long series of equations and diagrams but have no luck making sense of anything written there.";
-	otherwise:
-		say "That's absurd.";
 
 Chapter - Library Furniture
 
@@ -4827,8 +4780,27 @@ Understand "matchbox" or "match box" as box of matches.
 The box of matches is held by Gernsback.
 [The box of matches is held by the player.] [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
 
+Book - Books
 
-Book - HG Wells Book
+Part - Library Books
+
+library-books are a thing in the Library.
+library-books are scenery.
+The description of library-books are "A variety of titles on various topics, some familiar, some not."
+The printed name of library-books is "library books".
+Understand "books" or "books on shelf" or "books on shelves" or "library books" or "library book" or "shelved books" or "shelved book" as library-books.
+[TBD - Is it possible to create an Understand with something like "library book/books" or "shelved book/books"]
+
+Instead of searching the library-books: try reading the library-books.
+
+To say taking-library-books: 
+	say "You take [one of]one of the books[or]another book[stopping] off the shelves and leaf through a few of its pages. The subject doesn't[one of] interest you[or] seem relevant to your investigation[in random order] so you return it to its place on the shelf."
+
+Instead of taking library-books for the first time: say "[taking-library-books]".
+Instead of taking library-books for the second time: say "[taking-library-books]".
+Instead of taking library-books: say "[one of]I probably shouldn't be telling you this but the shelves and the books are scenery, just for show.[or]Again, just scenery.[or]I'd suggest moving along to something more important and relevant to your investigation.[stopping]"
+
+Part - HG Wells Book
 
 [The] wells-book is a thing. "A thick volume."
 The description of wells-book is "You can't make out the entire title from this distance but the initial words 'H.G. Wells['] Fantastic Fiction' are clearly visible on the spine of the large book."
@@ -4844,6 +4816,37 @@ Instead of taking wells-book:
 
 Instead of asking Gernsback to try giving wells-book to yourself:
 	try requesting Gernsback for the wells-book.
+
+Part - Reading
+
+Understand the command "read" as something new. [Recipe §9.6. Reading Matter]
+Understand "read [something]" as reading.
+Reading is an action applying to one thing, requiring light.
+
+Carry out reading:
+	if the noun is library-books:
+		say "You scan the [printed name] but nothing catches your interest, especially since you've got more pressing concerns on your mind.";
+	otherwise if the noun is shelves:
+		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
+	otherwise if the noun is library papers:
+		say "Reading through the papers quickly you find light correspondence and bills, nothing that would point to Wells['] recent flights of fantasy.";
+	otherwise if the noun is wells-book:
+		say "You can't do that while Gernsback is reading it.";
+	otherwise if the noun is newspaper:
+		move the newspaper to the player;
+		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
+	otherwise if the noun is orrery:
+		try reading the central panel;
+	otherwise if the noun is central panel:
+		say "It's midwinter, just past the winter solstice, the date is December 28th, the Moon is waxing gibbous, and the time is later than you think.";
+	otherwise if the noun is blackboard:
+		try reading the equations;
+	otherwise if the noun is equations or the noun is diagrams:
+		say "You glance at the long series of equations and diagrams but have no luck making sense of anything written there.";
+	otherwise:
+		say "That's absurd.";
+
+
 
 
 Book - Tobacco

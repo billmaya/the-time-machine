@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42177 ]
+[ WORDS - 42173 ]
 
 Table of Releases
 release	notes
@@ -4803,8 +4803,8 @@ Instead of taking library-books: say "[one of]I probably shouldn't be telling yo
 Part - HG Wells Book
 
 [The] wells-book is a thing. "A thick volume."
-The description of wells-book is "You can't make out the entire title from this distance but the initial words 'H.G. Wells['] Fantastic Fiction' are clearly visible on the spine of the large book."
-Understand "gernsback book" or "gernsback's book" or "book" as wells-book
+The description of wells-book is "You can't make out the author's name from this distance but the title 'Fantastic Fiction' is clearly visible on the spine."
+Understand "gernsback book" or "gernsback's book" or "book" or "fantastic fiction" as wells-book
 
 [The] wells-book is held by Gernsback.
 

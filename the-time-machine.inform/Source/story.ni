@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42173 ]
+[ WORDS - 42233 ]
 
 Table of Releases
 release	notes
@@ -392,8 +392,10 @@ Chapter - Attack
 
 To say no-violence: say "Violence [aren't] the answer here and quite out of character, given your years of jurisprudence and respect for the law."
 
-Instead of attacking someone with something: say "[no-violence]".
 Instead of attacking someone: say "[no-violence]".
+Instead of attacking someone with something: say "[no-violence]".
+
+Instead of attacking Gernsback: say "[no-violence]".
 
 Instead of attacking something with the poker:
 	if noun is orrery:
@@ -4008,7 +4010,7 @@ After quizzing Gernsback about Watchett:
 	
 After quizzing Gernsback about Gernsback: 
 	say "[remove self-suggestion ask suggestion]";
-	say "GERNSBACK TALKS ABOUT HIMSELF."
+	say "[one of]'Business is good. Having a few labor problems but profits are up.'[or]'Never really felt comfortable talking about myself. Rather stay focused on business.'[or]'Not much more to say.'[stopping]"
 
 After quizzing Gernsback about Weena: 
 	say "'Sounds like a bit of a dollymop if you ask me. Bit of wishful thinking on Wells['] part, if you know what I mean.'" [+Eloi, Morlocks as part of "about"?]
@@ -4816,6 +4818,11 @@ Instead of taking wells-book:
 
 Instead of asking Gernsback to try giving wells-book to yourself:
 	try requesting Gernsback for the wells-book.
+
+[Instead of asking Gernsback to try [something]:
+	say "ASKING GERNSBACK TO TRY SOMETHING..."]
+
+[How do you trap "Gernsback, XYZ" at the highest level?]
 
 Part - Reading
 

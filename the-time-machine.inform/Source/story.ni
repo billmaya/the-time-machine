@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42234 ]
+[ WORDS - 42125 ]
 
 Table of Releases
 release	notes
@@ -1090,21 +1090,6 @@ The printed name of library window is "library window".
 Instead of searching the library window, try opening the curtains.
 Instead of opening the library window, say "That wouldn't be prudent, given the weather outside."
 Instead of closing the library window, say "It's already closed."
-
-Chapter - Library Papers
-
-The library papers are a thing.
-The library papers are on the desk.
-The library papers are portable.
-The library papers are undescribed.
-The printed name of library papers is "papers".
-Understand "paper" or "papers" or "handwritten" or "handwritten papers" as library papers.
-
-Instead of searching the library papers: try searching the desk.
-Instead of examining the library papers: try searching the desk.
-Before taking the library papers:
-	say "That wouldn[']t be appropriate.";
-	stop the action.
 
 
 Part - Parlor
@@ -4835,8 +4820,6 @@ Carry out reading:
 		say "You scan the [printed name] but nothing catches your interest, especially since you've got more pressing concerns on your mind.";
 	otherwise if the noun is shelves:
 		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
-	otherwise if the noun is library papers:
-		say "Reading through the papers quickly you find light correspondence and bills, nothing that would point to Wells['] recent flights of fantasy.";
 	otherwise if the noun is wells-book:
 		say "You can't do that while Gernsback is reading it.";
 	otherwise if the noun is newspaper:

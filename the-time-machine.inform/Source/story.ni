@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42162 ]
+[ WORDS - 42159 ]
 
 Table of Releases
 release	notes
@@ -3964,21 +3964,10 @@ After requesting Gernsback for the library-books:
 	say "[first time]Without pausing his reading, he motions towards the shelves with a wave of his hand. [only][one of]'I would think you would want to pick out something for yourself.'[or]'Plenty to choose from.'[or]'I'm sure you can find something that interests you on the shelves.'[in random order]"
 
 After requesting Gernsback for the box of matches:
-	if the player does not have cigar-player:
-		say "A quizzical look crosses Gernsback[']s face. 'Don[']t know why you[']d need those.'";
-	otherwise:
-		say "'Of course, how silly of me to forget. Keep them.'";
-		now the player has box of matches.
+	say "'Of course, how silly of me to forget. Keep them.'";
+	now the player has box of matches.
 
 Does the player mean requesting Gernsback for the cigar-gernsback: it is very unlikely.
-Does the player mean requesting Gernsback for the cigar-player: it is very likely.
-
-After requesting Gernsback for the cigar-player:
-	if the player does not have cigar-player: 
-		say "'Happy to oblige. Didn't know you were a fellow smoker.' He reaches inside his jacket lapel and hands you a cigar out of his leather case.";
-		now the player has cigar-player;
-	otherwise:
-		say "I think you should finish that one first. Make sure it's to your liking."
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
@@ -4025,9 +4014,6 @@ After quizzing Gernsback about workshop-room:
 
 After quizzing Gernsback about box of matches: 
 	say "Gernsback briefly opens the box of matches. 'Only [the number of s-matches in words] left. I[']ll have to stop by the divan on the way home and get some more.'"
-
-Does the player mean quizzing Gernsback about cigar-player: it is very unlikely.
-Does the player mean quizzing Gernsback about cigar-gernsback: it is very likely.
 
 After quizzing Gernsback about cigar-gernsback: 
 	say "[remove cigar-gernsback ask suggestion]";
@@ -4840,9 +4826,6 @@ Carry out reading:
 	otherwise:
 		say "That's absurd.";
 
-
-
-
 Book - Tobacco
 
 Tobacco is a kind of a thing.
@@ -4861,25 +4844,15 @@ The cigar-gernsback is held by Gernsback.
 
 Understand "his cigar" or "the cigar" or "cigar" or "gernsbacks cigar" as cigar-gernsback.
 
-Chapter - Player's Cigar
-
-The cigar-player is tobacco.
-The description of cigar-player is "PLAYER'S CIGAR."
-The printed name of cigar-player is "cigar".
-
-Understand "a cigar" or "cigar" as cigar-player.
-
-The cigar-player is held by Gernsback.
-
 Chapter - Examining Cigars
 
 [Handling >examine cigar]
-Does the player mean examining cigar-player when the player has cigar-player: it is very likely.
-Does the player mean examining cigar-gernsback when the player does not have cigar-player: it is very likely.
+[Does the player mean examining cigar-player when the player has cigar-player: it is very likely.
+Does the player mean examining cigar-gernsback when the player does not have cigar-player: it is very likely.]
 
 Chapter - Testing
 
-Test g-cigars with "ask gernsback about cigar / ask gernsback about his cigar / ask gernsback about the cigar / ask gernsback about cigar-gernsback / ask gernsback about cigar-player / ask gernsback for cigar / ask gernsback for cigar-player / ask gernsback for a cigar / ask gernsback for cigar-gernsback ."
+Test g-cigars with "ask gernsback about cigar / ask gernsback about his cigar / ask gernsback about the cigar / ask gernsback about cigar-gernsback / ask gernsback for cigar / ask gernsback for a cigar / ask gernsback for cigar-gernsback ."
 
 Book - Creating A Torch
 

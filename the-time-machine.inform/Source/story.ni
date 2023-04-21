@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42143 ]
+[ WORDS - 42162 ]
 
 Table of Releases
 release	notes
@@ -4854,7 +4854,7 @@ Part Cigars
 Chapter - Gernsback's Cigar
 
 The cigar-gernsback is tobacco.
-The description of cigar-gernsback is "GERNSBACK'S CIGAR."
+The description of cigar-gernsback is "You don't know much about cigars but you know that Gernsback say he only smokes only the best."
 The printed name of cigar-gernsback is "Gernsback's cigar".
 
 The cigar-gernsback is held by Gernsback.

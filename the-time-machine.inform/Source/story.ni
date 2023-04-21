@@ -3894,7 +3894,7 @@ Gernsback is a male.
 Gernsback is fixed.
 Gernsback is in the Library.
 
-The description of Gernsback is "The perfect picture of Victorian masculinity and success in his double breasted lounge suit, his tailored attire offsets the somewhat brutish features below a high forehead and thinning hair styled in a combover, his only concession to vanity. It's said around town that his piercing gaze misses no chance to increase his family fortunes."
+The description of Gernsback is "The perfect picture of Victorian masculinity and success in his double breasted lounge suit, his tailored attire offsets the somewhat brutish features below a high forehead and thinning hair styled in a combover, his only concession to vanity. It's said around town that his piercing gaze misses no chance to increase his family fortunes. He is reading a book and smoking a cigar."
 
 Gernsback is scenery. [This prevents "You can see Gernsback here." being printed out in room descriptions.]
 Gernsback is major.

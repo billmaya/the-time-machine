@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41990 ]
+[ WORDS - 41921 ]
 
 Table of Releases
 release	notes
@@ -4976,7 +4976,7 @@ Humboldt's Return begins when humboldt-should-return is true.
 
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens and Dr. Humboldt and Gernsback enter. The doctor appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
+	say "The door to the workshop opens Dr. Humboldt enters. The doctor appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
 	now Gernsback is in the Workshop; 
@@ -5011,7 +5011,6 @@ Every turn:
 			now weena-appears is true;
 	if the location of Humboldt is the Workshop and the location of the time machine is the Clearing:
 		now Humboldt is fixed;
-		now Gernsback is fixed;
 		now time-travel-seen is true;
 		now endgame-success is true;
 		[This triggers the ending of the scene while the player is still in 802,701]
@@ -5019,14 +5018,7 @@ Every turn:
 		if the location of Humboldt is not the location of the player:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
 			try Humboldt going the way;
-	if Gernsback is mobile:
-		if the location of Gernsback is not the location of the player:
-			let the way be the best route from the location of Gernsback to the location of the player, using doors;
-			try Gernsback going the way;
 	refresh the list-characters window.
-
-[Before an actor going when the room gone to is the location of the player:
-	say "HUMBOLDT AND GERNSBACK ARRIVE FROM";]
 
 time-travel-seen is a truth state that varies.
 time-travel-seen is false.

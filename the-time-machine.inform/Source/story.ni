@@ -3965,10 +3965,10 @@ Section - Quizzing - "Ask [someone] about [thing]"
 
 After quizzing Gernsback about Wells:
 	say "[remove Wells ask suggestion]";
-	say "'Sad. If I had known it would have led to this I never would have given him encouragement.'"
+	say "'[one of]Sad. If I had known it would have led to this I never would have given him encouragement.'[or]'The doctor is probably in a better position to answer that question.'[in random order]"
 
 After quizzing Gernsback about Humboldt:
-	say "'Smart man. A bit full of himself though. Not as practical as you and me.'"
+	say "'[one of]Smart man. A bit full of himself though. Not as practical as you and me.'[or]'Best man in his field, they say.'[in random order]"
 
 After quizzing Gernsback about Watchett: 
 	say "[remove Watchett ask suggestion]";
@@ -4132,16 +4132,6 @@ Section - Imploring - "Ask [someone] for ['text']"
 Section - Showing
 
 After showing noun to Gernsback: try informing Gernsback about noun.
-
-Chapter - Ending Scene Only
-
-Section - Quizzing - "Ask [someone] about [thing]"
-
-After quizzing Gernsback about Wells during the Ending Scene:
-	say "'The doctor is probably in a better position to answer that question.'"
-
-After quizzing Gernsback about Humboldt during the Ending Scene:
-	say "'Best man in his field, they say.'"
 
 Chapter - Default Responses
 

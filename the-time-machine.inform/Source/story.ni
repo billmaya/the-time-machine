@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41921 ]
+[ WORDS - 41689 ]
 
 Table of Releases
 release	notes
@@ -3916,8 +3916,6 @@ After saying hello to Gernsback when the greeting type is explicit:
 		say "[add Watchett ask suggestion]";
 		say "[add self-suggestion ask suggestion]";
 		say "[add Wells tell suggestion]";
-	otherwise:
-		continue the action.
 
 After saying hello to Gernsback when the greeting type is implicit:
 	if Ending Scene is not happening:
@@ -3931,22 +3929,16 @@ After saying hello to Gernsback when the greeting type is implicit:
 		say "[add Watchett ask suggestion]";
 		say "[add self-suggestion ask suggestion]";
 		say "[add Wells tell suggestion]";
-	otherwise:
-		continue the action.
 
 Chapter - Goodbye
 
 After saying goodbye to Gernsback when the farewell type is explicit: 
 	if Ending Scene is not happening:
 		say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading.";
-	otherwise:
-		continue the action.
 	
 After saying goodbye to Gernsback when the farewell type is implicit:
 	if Ending Scene is not happening:
 		say "Gernsback watches you head into the[if the room gone to is the Parlor] parlor[otherwise] entryway[end if] before returning to his book.[line break]";
-	otherwise:
-		say "Gernsback watches you abruptly leave the workshop but stays to look around."
 
 Chapter - In The Library
 
@@ -4069,20 +4061,14 @@ After informing Gernsback about Wells:
 	if Ending Scene is not happening:
 		say "[remove Wells tell suggestion]";
 		say "'I'm not a medical man, but I think the best thing you could do as his attorney is have him committed. Protect him from himself. Only my opinion mind you.'";
-	otherwise:
-		continue the action.
 
 After informing Gernsback about Humboldt: 
 	if Ending Scene is not happening:
 		say "'He'll be back soon. Tell us what he's found and we'll decide what to do then.'";
-	otherwise:
-		continue the action.
 
 After informing Gernsback about Watchett: 
 	if Ending Scene is not happening:
 		say "'Wonderful meal that was, as always.  That woman's a treasure. Don't know where Wells found her.'";
-	otherwise:
-		continue the action.
 
 After informing Gernsback about time machine:
 	if Ending Scene is not happening:
@@ -4090,8 +4076,6 @@ After informing Gernsback about time machine:
 			say "'Fascinating. But I don't see how this can help Wells if it doesn't actually work.'"; 
 		otherwise:
 			say "'We'll never know for sure unless you find a way into Wells' workshop.'";
-	otherwise:
-		continue the action.
 
 After informing Gernsback about orrery:
 	if Ending Scene is not happening:
@@ -4099,8 +4083,6 @@ After informing Gernsback about orrery:
 			say "[fascinating-but]";
 		otherwise:
 			say "'I think you'll find what you're looking for in the next room.'";
-	otherwise:
-		continue the action.
 		
 Before informing Gernsback about fuse-orrery:
 	if the player does not have fuse-orrery:
@@ -4113,8 +4095,6 @@ After informing Gernsback about fuse-orrery:
 			say "[fascinating-but]";
 		otherwise:
 			say "[dont-know]";
-	otherwise:
-		continue the action.
 
 Before informing Gernsback about fuse-time-machine:
 	if fuse-time-machine has not been seen:
@@ -4127,8 +4107,6 @@ After informing Gernsback about fuse-time-machine:
 			say "[fascinating-but]"; 
 		otherwise:
 			say "[dont-know]";
-	otherwise:
-		continue the action.
 
 After informing Gernsback about workshop-room:
 	if Ending Scene is not happening:
@@ -4148,8 +4126,6 @@ After informing Gernsback about key:
 				say "'Well done. Let me know what you find.'";
 		otherwise:
 			say "'The doctor has the right idea. If there's a key to get into that workshop Mrs. Watchett might have a good idea where it might be.'";
-	otherwise:
-		continue the action.
 
 Section - Imploring - "Ask [someone] for ['text']"
 
@@ -4167,20 +4143,6 @@ After quizzing Gernsback about Wells during the Ending Scene:
 After quizzing Gernsback about Humboldt during the Ending Scene:
 	say "'Best man in his field, they say.'"
 
-Understand "his-work" as experiments.
-After quizzing Gernsback about experiments during the Ending Scene: 
-	say "Gernsback looks around the room. 'Without Wells we really can't tell what's what.'"
-	
-After quizzing Gernsback about time travel during the Ending Scene:
-	say "Gernsback looks at his watch. 'The only time travel I've done is about an hour from when we last spoke. The doctor told me about your task. Any luck?'"
-	
-After quizzing Gernsback about the time machine during the Ending Scene: 
-	say "[if the time machine is not nowhere]'Outside my area of expertise. I could have one of my chaps from the factory take a look at it if you'd like.'[otherwise]Gernsback looks around the workshop with a puzzled look on his face. 'Don't see anything remotely like what Wells described.'[end if]"
-
-After quizzing Gernsback about workshop-room during the Ending Scene: 
-	say "Gernsback looks around the room. 'Pretty much what I expected.'"
-
-
 Chapter - Default Responses
 
 Default ask response for Gernsback:
@@ -4189,8 +4151,6 @@ Default ask response for Gernsback:
 Default tell response for Gernsback:
 	if Ending Scene is not happening:
 		say "'That's very interesting...'";
-	otherwise:
-		say "Gernsback listens to what you say about the [second noun], glancing at Humboldt several times as you speak."
 
 [Default ask-tell response for Gernsback:]
 [Default give response for Gernsback:]

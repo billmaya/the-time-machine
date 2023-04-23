@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41671 ]
+[ WORDS - 41859 ]
 
 Table of Releases
 release	notes
@@ -4032,7 +4032,11 @@ ask-about-gernsback-book is false.
 Does the player mean quizzing Gernsback about the wells-book: it is very likely.
 Does the player mean quizzing Gernsback about the library-books: it is very unlikely.
 
+[TBD - Fix line breaks]
 After quizzing Gernsback about wells-book:
+	say "[first time]Gernsback marks his place with a finger and glances at the spine. [no line break][only][one of]'The title pretty much says it all if the rest of the stories in this book are like the one I'm reading.[no line break][or]'Based on the story I'm reading I'd say the title is pretty accurate.[no line break][or]'Scientific romance I think they call it. Like some of the stuff I read as a boy, Verne and Doyle you know, if this story is any indication.[no line break][in random order][first time] Hope the chap who wrote it made some money off of it, unlike our poor friend' He nods his head in the direction of the workshop and continues reading.[only]"
+
+After quizzing Gernsback about story-being-read:
 	if ask-about-gernsback-book is false:
 		say "[remove wells-book ask suggestion]";
 		choose a random row from Table of Gernsback Book;
@@ -4048,6 +4052,9 @@ Title	Comment
 "The War of the Worlds"	"an invasion from Mars by slugs in some sort of walking machines with three legs, if you can believe that. Wouldn’t mind having the patent on those I tell you."
 "When the Sleeper Wakes"	"a man who sleeps for two hundred years. Wakes up to find he’s become the richest man in the world. Wouldn’t mind that happening to me. Richest man in the world, not the sleeping part."
 "The First Men in the Moon"	"a scientist chap like our Wells who invents some of anti-gravity material. Uses it to travel to the Moon instead of making a fortune off of it, if you can believe that."
+	
+After quizzing Gernsback about library-books:
+	say "Looking around at the shelves Gernsback says 'Quite a nice collection, though a lot of the stuff is over my head.'"
 
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -4731,7 +4738,7 @@ Part - HG Wells Book
 
 [The] wells-book is a thing. "A thick volume."
 The description of wells-book is "You can't make out the author's name from this distance but the title 'Fantastic Fiction' is clearly visible on the spine."
-Understand "gernsback book" or "gernsback's book" or "book" or "fantastic fiction" as wells-book
+Understand "gernsback book" or "gernsback's book" or "book" or "fantastic fiction" or "stories" or "title" as wells-book
 
 [The] wells-book is held by Gernsback.
 
@@ -4748,6 +4755,9 @@ Instead of asking Gernsback to try giving wells-book to yourself:
 	say "ASKING GERNSBACK TO TRY SOMETHING..."]
 
 [How do you trap "Gernsback, XYZ" at the highest level?]
+
+The story-being-read is scenery in the Library.
+Understand "story" as story-being-read.
 
 Part - Reading
 

@@ -4161,7 +4161,7 @@ Default ask-for response for Gernsback:
 [Default response for Gernsback:]
 	
 Section - Commands To Gernsback
-	
+
 Instead of asking Gernsback to try going somewhere: say "'Maybe after I finish this.'"
 
 Part - Testing
@@ -4939,9 +4939,6 @@ When Humboldt's Return begins:
 	say "The door to the workshop opens Dr. Humboldt enters. The doctor appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
 	now Humboldt is in the Workshop;
 	now Humboldt is mobile;
-	now Gernsback is in the Workshop; 
-	now Gernsback is mobile;
-	now Gernsback is not scenery;
 	now Watchett is nowhere;
 	refresh the list-characters window.
 

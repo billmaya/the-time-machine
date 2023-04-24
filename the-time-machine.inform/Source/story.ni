@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41844 ]
+[ WORDS - 41874 ]
 
 Table of Releases
 release	notes
@@ -4938,7 +4938,7 @@ When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
 	say "The door to the workshop opens Dr. Humboldt enters. The doctor appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
 	now Humboldt is in the Workshop;
-	now Humboldt is mobile;
+	[now Humboldt is mobile;]
 	now Watchett is nowhere;
 	refresh the list-characters window.
 
@@ -4976,6 +4976,12 @@ Every turn:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
 			try Humboldt going the way;
 	refresh the list-characters window.
+
+Instead of going south:
+	if the Ending Scene is happening:
+		say "[first time]Humboldt stops you from leaving. [only]'Wait a minute, what have you found?'";
+	otherwise:
+		continue the action.
 
 time-travel-seen is a truth state that varies.
 time-travel-seen is false.

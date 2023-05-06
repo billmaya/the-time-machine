@@ -465,8 +465,8 @@ Every turn:
 
 Chapter - Underground Rooms	
 
-Every turn:
-	follow the morlock attack rule.
+[Every turn:
+	follow the morlock attack rule.]
 
 morlocks-attacked is a truth state that varies.
 morlocks-attacked is false.
@@ -4350,6 +4350,9 @@ Instead of showing the petal to Weena:
 	otherwise:
 		say "Given the circumstances, Weena looks at the petal but is too terrified right now to react.";
 		reset the interlocutor.
+		
+Instead of showing the tunic to Weena:
+	say "Weena glances at the [noun] and then at her own clothes but says nothing."
 
 Section - Giving
 

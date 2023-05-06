@@ -3150,7 +3150,7 @@ Section - Pile of Bloodstained Clothing
 The pile of bloodstained clothing is a thing.
 The pile of bloodstained clothing is in the Abattoir.
 The pile of bloodstained clothing is undescribed.
-The description of the pile of bloodstained clothing is "A large number of Eloi tunics and smocks piled in a corner. At first glance, they all appear to be covered in blood, some dried, some still wet."
+The description of the pile of bloodstained clothing is "A large number of Eloi tunics and smocks piled in a corner. At first glance, they all appear to be covered in blood: some dried, some still wet."
 
 Instead of searching the pile of bloodstained clothing when the tunic is unfound:
 	now the tunic is found;

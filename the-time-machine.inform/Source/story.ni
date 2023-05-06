@@ -2951,7 +2951,7 @@ Chapter - Brass Lantern (not used)
 
 
 The brass lantern is a device.
-[The brass lantern is in the Bottom Well.]
+The brass lantern is in the Bottom Well.
 The description of the brass lantern is "A battered brass police lantern that can be turned on or off."
 
 After switching on the brass lantern:
@@ -3151,6 +3151,7 @@ The pile of bloodstained clothing is a thing.
 The pile of bloodstained clothing is in the Abattoir.
 The pile of bloodstained clothing is undescribed.
 The description of the pile of bloodstained clothing is "A large number of Eloi tunics and smocks piled in a corner. At first glance, they all appear to be covered in blood: some dried, some still wet."
+Understand "clothes" as pile of bloodstained clothing.
 
 Instead of searching the pile of bloodstained clothing when the tunic is unfound:
 	now the tunic is found;
@@ -3172,7 +3173,10 @@ The printed name of tunic is "Eloi tunic".
 Understand "smock" as tunic.
 
 The tunic can be found or unfound.
-The tunic are unfound.
+The tunic is unfound.
+
+Instead of wearing the tunic:
+	say "It's not your size. And frankly, you'd look ridiculous wearing it if it was."
 
 Chapter - Holding Cell
 

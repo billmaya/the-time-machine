@@ -3166,7 +3166,7 @@ Section - Tunic
 The tunic is a thing.
 The tunic is in the Abattoir.
 The tunic is undescribed.
-The description of the tunic is "[if the tunic is unfound]You can't see any such thing.[otherwise if the tunic is not part of the poker]An Eloi tunic that is relatively untouched by blood.[otherwise]Wrapped around the end of the poker.[end if]"
+The description of the tunic is "[if the tunic is unfound]You can't see any such thing.[otherwise if the tunic is not part of the poker]A small Eloi tunic, somehow untouched by blood, made up a dense weave of cottoney fibers.[otherwise]Wrapped around the end of the poker.[end if]"
 
 The printed name of tunic is "Eloi tunic".
 

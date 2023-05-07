@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41923 ]
+[ WORDS - 41949 ]
 
 Table of Releases
 release	notes
@@ -906,6 +906,9 @@ Chapter - The Petal
 The petal is a thing.
 The petal is nowhere.
 The description of the petal is "With its luminous colors, it is not like any flower petal you have ever seen. Still, you can't tell much from a single petal. Perhaps the rest of the blossom is inside somewhere." ["...inside somewhere" What if you're inside the house? Or in 802,701? Conditional description?]
+
+Instead of smelling the petal:
+	say "It has no smell."
 		
 Chapter - Pocket Watch
 
@@ -2807,6 +2810,9 @@ Instead of taking the flower:
 		say "One should suffice to convince the doctor of Wells[apostrophe] sanity.";
 	otherwise:
 		continue the action.
+
+Instead of smelling the flower:
+	say "The blossom has a delicate perfumed fragrance that you can't place."
 
 Part - Underground - General
 

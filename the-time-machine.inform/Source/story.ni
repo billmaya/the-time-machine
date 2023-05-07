@@ -2959,7 +2959,7 @@ Chapter - Brass Lantern (not used)
 
 
 The brass lantern is a device.
-The brass lantern is in the Bottom Well.
+[The brass lantern is in the Bottom Well.]
 The description of the brass lantern is "A battered brass police lantern that can be turned on or off."
 
 After switching on the brass lantern:

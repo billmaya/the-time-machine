@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41930 ]
+[ WORDS - 41923 ]
 
 Table of Releases
 release	notes
@@ -2792,17 +2792,19 @@ The flowers are a thing.
 The flowers are in the River Bank.
 The flowers are undescribed
 
-The description of flowers is "Scattered throughout the bushes, the petals of these flowers seem to match [if the player has the petal]the one you've got in your pocket.[otherwise]the one Humboldt gave you earlier.[end if]"
+The description of flowers is "The petals of these flowers seem to match [if the player has the petal]the one you've got in your pocket.[otherwise]the one Humboldt gave you earlier.[end if]"
+
+Understand "flora" as flowers.
 
 The flower is a thing.
 The flower is in the River Bank.
 The flower is undescribed.
 
-The description of the flower is "Unlike any flora you've ever seen, [if the player has the petal]the petal in your pocket[otherwise] the petal that Humboldt gave you earlier[end if] matches those on this flower's blossom exactly. If this won't convince the doctor of Wells[apostrophe] sanity then nothing will."
+The description of the flower is "The petals of this flower's blossom exactly match the the one that Humboldt gave you earlier. If this complete speciman won't convince the doctor of Wells[apostrophe] sanity then nothing will."
 
 Instead of taking the flower:
 	if the player has the flower:
-		say "One should suffice.";
+		say "One should suffice to convince the doctor of Wells[apostrophe] sanity.";
 	otherwise:
 		continue the action.
 

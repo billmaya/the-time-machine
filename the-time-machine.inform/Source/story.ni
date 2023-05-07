@@ -2999,55 +2999,9 @@ The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
 The visibility of Shaft 2 is day.
 
-Chapter - Agora
+Instead of going south in Shaft 2:
+	say "YOU CAN'T GO THAT WAY - TUNNEL COLLAPSE."
 
-The Agora is underground.
-The Agora is south of Shaft 2.
-The Agora is west of the Curia.
-The Agora is north of the Museum.
-The Agora is east of the Temple.
-The Agora is southeast of the Storerooms.
-
-The description of Agora is "A weak light from above barely illuminates the huge columns that support the vaulted ceiling of this common are large enough to accommodate hundreds at once.[paragraph break]There are exits to the east, south, west, northwest, and north."
-
-The visibility of Agora is day.
-
-Chapter - Curia
-
-The Curia is underground.
-The Curia is east of the Agora.
-
-The description of Curia is "A raised area off to the east for smaller, more intimate gatherings of a civic nature. Three rows of semi-circular benches carved into the east wall face a raised platform to the west.[paragraph break]You can exit to the west."
-
-The visibility of Curia is day.
-
-Chapter - Museum
-
-The Museum is underground.
-The Museum is south of the Agora.
-
-The description of Museum is "A wide circular ramp windws its way up along the circumference of this room past smashed dioramas and scavanged exchibits of your future, someones past.[paragraph break]You can exit to the north."
-The visibility of Museum is day.
-
-Chapter - Temple
-
-The Temple is underground.
-The Temple is west of the Agora.
-
-The description of Temple is "Rows of dust-covered pews face an apse and alter. Behind the alter, a charicature of the Vitruvian Man is crucified on an intricate cross of interlocking gears and levers suspended before a mural of a Boschian apocalypse.[paragraph break]You can exit to the east."
-
-The visibility of Temple is day.
-
-Chapter - Storerooms
-
-The Storerooms are underground.
-The Storerooms are northwest of the Agora.
-
-The description of Storerooms is "Whatever was on these empty shelves and bins that stretch as far as the eye can see is long gone.[paragraph break]You can exit to the sourtheast."
-	
-[collapsed in areas]
-	
-The visibility of Storerooms is day.
 
 Part - Underground - Level 3
 

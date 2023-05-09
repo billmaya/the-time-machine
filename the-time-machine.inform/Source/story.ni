@@ -2518,6 +2518,8 @@ The metal cover is a supporter.
 The metal cover is undescribed.
 The description of the metal cover is "About three feet in diameter, the cover is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal cover is not on the circular well] The cover is lying on the ground next to the open shaft.[end if]"
 
+Understand "grate" as metal cover.
+
 [ > Remove grate ]
 
 Understand the command "remove" as something new.

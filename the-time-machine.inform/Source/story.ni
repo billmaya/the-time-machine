@@ -2527,6 +2527,9 @@ Instead of pulling the metal cover: try taking the metal cover.
 Instead of pushing the metal cover: try taking the metal cover.
 
 Instead of attacking the metal cover with something: say "The [second noun] has no effect on the metal of the cover, despite its rusted appearance. But you might be able to move the cover out of its current position if you try."
+		
+Instead of switching on the metal cover:
+	try taking the metal cover.
 
 Instead of taking the metal cover:
 	if the metal cover is on the circular well in the Clearing:

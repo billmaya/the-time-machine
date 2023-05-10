@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41642 ]
+[ WORDS - 41662 ]
 
 Table of Releases
 release	notes
@@ -2534,12 +2534,15 @@ Instead of switching on the metal cover:
 	try taking the metal cover.
 
 Instead of taking the metal cover:
-	if the metal cover is on the circular well in the Clearing:
-		say "Grabbing the cover through its openings, you brace yourself against the side of the shaft and manage to lever it up and out of its resting position. It[']s extremely heavy, but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
-		move the metal cover to the Clearing;
-		now the metal cover is described;
+	if the player is in the time machine:
+		say "You'll have to get out of the time machine first.";
 	otherwise:
-		say "It is way too heavy to try and move a second time from its position on the ground."
+		if the metal cover is on the circular well in the Clearing:
+			say "Grabbing the cover through its openings, you brace yourself against the side of the shaft and manage to lever it up and out of its resting position. It[']s extremely heavy, but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
+			move the metal cover to the Clearing;
+			now the metal cover is described;
+		otherwise:
+			say "It is way too heavy to try and move a second time from its position on the ground."
 
 Climbing into is an action applying to one touchable thing.
 Understand "climb in [something]" as climbing into.

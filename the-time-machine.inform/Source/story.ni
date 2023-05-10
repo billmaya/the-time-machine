@@ -2535,7 +2535,7 @@ Instead of switching on the metal cover:
 
 Instead of taking the metal cover:
 	if the metal cover is on the circular well in the Clearing:
-		say "Grabbing the cover through its openings, you brace yourself against the side of the shaft and manage to lever it up and out of its resting position. It[']s extremely heavy but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
+		say "Grabbing the cover through its openings, you brace yourself against the side of the shaft and manage to lever it up and out of its resting position. It[']s extremely heavy, but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
 		move the metal cover to the Clearing;
 		now the metal cover is described;
 	otherwise:

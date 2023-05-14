@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41792 ]
+[ WORDS - 41301 ]
 
 Table of Releases
 release	notes
@@ -2588,38 +2588,7 @@ Before going southeast in the Clearing:
 			stop the action;
 		otherwise:
 			continue the action.
-	
-[ 06/02/21 - Decided to comment this out since it really didn't serve any purpose right now (might use later). Moved some of the descriptions into Clearing.
-Chapter - Sphinx Steps
 
-The Sphinx Steps are a room.
-The Sphinx Steps are up from the Clearing.
-The description of the Sphinx Steps is "The set of stone steps winds its way around the [ziggurat] until you are above the treetops, plateauing  in front of two large closed [stone doors] set into a [pedestal]. On the pedestal is a carved [statue] of a sphinx, its impassive face surveying a countryside you cannot see, its outstretched wings poised to take flight against some unknown prey.[paragraph break]In the distance you can see a domed building to the east far below and, beyond it, other gargantuan buildings of stone. Also at this height, you can see a path down below winding its way southeast to a river in the distance."
-
-The printed name of Sphinx Steps are "Top of Sphinx Steps"
-
-The ziggurat is a thing.
-The ziggurat is scenery in the Sphinx Steps.
-The description of the ziggurat is "A rectangular stepped tower built in successive stages with an outside staircase that winds its way around the sides to forest below. First seeen in ancient Mesopotamia, they usually have some shrine at the top."
-Understand "pyramid" as ziggurat.
-
-The stone doors are a thing.
-The stone doors are scenery in the Sphinx Steps.
-The description of the stone doors are "Closed right now. Set into the pedestal, it looks like they're opened from the inside so it is unlikely you would be able to open them from this side. The doors themselves are carved with line after line of mechanical cuneiform and bas relief mongoloid figures marching down a successive set of ramps to an unpictured subterranean destination."
-
-Before opening the stone doors:
-	say "[if the player has the poker]Even with the poker you cannot leverage one of the huge stone doors open.[otherwise]You try and drag one of the huge stone doors open with your bare hands but are unsuccessful.";
-	stop the action.
-
-The pedestal is a thing.
-The pedestal is scenery in the Sphinx Steps.
-The description of the pedestal is "Made of bronze and thick with verdigris, it is the columnar base that supports the statue above."
-
-The statue is a thing.
-The statue is scenery in the Sphinx Steps.
-The description of the statue is "A gigantic reclining sphinx made of white marble. Its weather-worn surface carries the unpleasant suggestion of disease and its sightless eyes seem to watch everything. The wings, instead of being carried vertically at the sides spread out so the entire figure seems to hover. You are not sure, but you think you can see the faint shadow of a smile on the lips. It is inhuman, unsympathetic, and overwhelmingly powerful."
-Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
-]
 
 Part - Top Well
 

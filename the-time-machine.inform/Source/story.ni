@@ -2962,7 +2962,7 @@ Up from the Bottom Well is the Top Well.
 North from the Bottom Well is Shaft 1.
 [The description of Bottom Well is "The light from above illuminates the bottom of what appears to be merely a dry well."]
 
-The description of Bottom Well is "The light from above illuminates the bottom of a what appears to be merely a dry well.[paragraph break]The ladder leads up and there is an opening to the north."
+The description of Bottom Well is "The light from above illuminates the bottom of what appears to be merely a dry well.[paragraph break]The ladder leads up and there is an opening to the north."
 
 [> x metal grate]
 

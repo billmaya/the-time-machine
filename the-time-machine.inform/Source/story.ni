@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41747 ]
+[ WORDS - 41792 ]
 
 Table of Releases
 release	notes
@@ -404,6 +404,8 @@ Instead of attacking something with the poker:
 		say "Ludicrous. Why not keep your actions to the realm of the possible.";
 	otherwise if noun is fire:
 		say "You stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
+	otherwise if the noun is statue:
+		say "[statue-far-away]";
 	otherwise:
 		say "You can't attack [the noun] with the poker in this game.[no line break][first time] Violence of this sort isn't relevent to your investigation.[only]";
 
@@ -2468,7 +2470,7 @@ Every turn:
 	if the player is in the Balcony, now can-go-clearing-to-river is true.
 
 The Clearing is a room. 
-The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. The face of a large statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] Now that you know it exists, you can just make out the overgrown path that you saw from the balcony leading southeast.[end if]"
+The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. High above you, the face of a large statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] Now that you know it exists, you can just make out the overgrown path that you saw from the balcony leading southeast.[end if]"
 
 Inside from the Clearing is Top Well.
 
@@ -2494,6 +2496,12 @@ Instead of examining the circular well: say "About three feet in diameter, the c
 The statue is scenery in the Clearing.
 The description of statue is "The sightless eyes of the weather-worn marble face stare down at you, inhuman and unsympathetic."
 Understand "sphinx" or "carved figure" or "face" or "marble" as statue.
+
+To say statue-far-away:
+	say "High above your head, surrounded by trees and dense undergrowth, the statue is out of reach."
+
+Instead of doing something with the statue:
+	say "[statue-far-away]".
 
 The treetops are a thing.
 The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.

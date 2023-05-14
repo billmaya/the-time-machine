@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41662 ]
+[ WORDS - 41747 ]
 
 Table of Releases
 release	notes
@@ -2616,7 +2616,7 @@ Understand "sphinx" or "carved figure" or "face" or "wings" as the sphinx.
 Part - Top Well
 
 The Top Well is a room.
-Down from Top Well is the Bottom Well.
+Down from Top Well is the Bottom Well. [Located in Underground - Level 1]
 Up from Top Well is the Clearing.
 The description of Top Well is "You[']re hanging at the top of the shaft on the ladder leading down. Faint sounds of machinery rise from the darkness below. Exiting the shaft will put you back in the clearing."
 
@@ -2628,11 +2628,16 @@ Instead of exiting in the Top Well:
 	
 The ladder is a thing.
 The ladder is a backdrop. It is in the Clearing, Top Well and Bottom Well.
-The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, leading down into the gloom."
+The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, [if location of player is Clearing or location of player is Top Well]leading down into the gloom.[otherwise]leading up into the sunlight."
 
 Understand "rungs" or "rung" or "bars" or "bar" as ladder.
 
-
+Instead of climbing the ladder:
+	if the location of the player is Top Well:
+		now the player is in Bottom Well;
+	otherwise if the location of the player is Bottom Well:
+		now the player is in Top Well.
+	
 Part - Domed Building
 
 The Domed Building is a room.
@@ -2881,6 +2886,9 @@ The shaft-ladder is in Shaft 5.
 The description of the shaft-ladder is "A series of metal rungs set into the metal wall of the shaft." [Carved into the metal next to the ladder are a series of glyphs [ladder-glyphs]."]
 
 Understand "ladder" as shaft-ladder.
+	
+Instead of climbing the shaft-ladder:
+	say "HANDLE >CLIMB LADDER IN UNDERGROUND."
 
 Chapter - Ladder Glyphs
 

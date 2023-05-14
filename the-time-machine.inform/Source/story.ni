@@ -2516,7 +2516,7 @@ The metal cover is portable.
 The metal cover is on the circular well.
 The metal cover is a supporter.
 The metal cover is undescribed.
-The description of the metal cover is "About three feet in diameter, the cover is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal cover is not on the circular well] The cover is lying on the ground next to the open shaft.[end if]"
+The description of the metal cover is "About three feet in diameter, the cover is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal cover is not on the circular well] The cover is lying on the ground next to the open well.[end if]"
 
 Understand "grate" as metal cover.
 
@@ -2538,7 +2538,7 @@ Instead of taking the metal cover:
 		say "You'll have to get out of the time machine first.";
 	otherwise:
 		if the metal cover is on the circular well in the Clearing:
-			say "Grabbing the cover through its openings, you brace yourself against the side of the shaft and manage to lever it up and out of its resting position. It[']s extremely heavy, but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
+			say "Grabbing the cover through its openings, you brace yourself against the side of the well and manage to lever it up and out of its resting position. It[']s extremely heavy, but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
 			move the metal cover to the Clearing;
 			now the metal cover is described;
 		otherwise:
@@ -2552,9 +2552,9 @@ Instead of climbing into the circular well: try entering the circular well.
 [If you remove the metal cover from the circular well you can climb into it]
 Instead of entering the circular well:
 	if the metal cover is on the circular well:
-		say "If the cover wasn't on top of the shaft you might be able to.";
+		say "If the cover wasn't on top of the well you might be able to.";
 	otherwise:
-		say "Carefully you climb over the lip of the shaft and onto the ladder.[line break]";
+		say "Carefully you climb over the lip of the well and onto the ladder.[line break]";
 		now the player is in the Top Well.
 
 Going north in the Clearing is wandering.
@@ -2629,6 +2629,8 @@ Instead of exiting in the Top Well:
 The ladder is a thing.
 The ladder is a backdrop. It is in the Clearing, Top Well and Bottom Well.
 The description of the ladder is "A series of rusting iron bars sunk into the side of the shaft, leading down into the gloom."
+
+Understand "rungs" or "rung" or "bars" or "bar" as ladder.
 
 
 Part - Domed Building

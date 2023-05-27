@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41274 ]
+[ WORDS - 41041 ]
 
 Table of Releases
 release	notes
@@ -3870,7 +3870,6 @@ After saying hello to Gernsback when the greeting type is explicit:
 	if Ending Scene is not happening:
 		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
 		say "[add wells-book ask suggestion]";
-		say "[add cigar-gernsback ask suggestion]";
 		say "[add workshop-room ask suggestion]";
 		say "[add key ask suggestion]";
 		say "[add Wells ask suggestion]";
@@ -3883,7 +3882,6 @@ After saying hello to Gernsback when the greeting type is implicit:
 		say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]";
 		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
 		say "[add wells-book ask suggestion]";
-		say "[add cigar-gernsback ask suggestion]";
 		say "[add workshop-room ask suggestion]";
 		say "[add key ask suggestion]";
 		say "[add Wells ask suggestion]";
@@ -3920,7 +3918,6 @@ After requesting Gernsback for the box of matches:
 	say "'Of course, how silly of me to forget. Keep them.'";
 	now the player has box of matches.
 
-Does the player mean requesting Gernsback for the cigar-gernsback: it is very unlikely.
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
@@ -3967,10 +3964,6 @@ After quizzing Gernsback about workshop-room:
 
 After quizzing Gernsback about box of matches: 
 	say "Gernsback briefly opens the box of matches. 'Only [the number of s-matches in words] left. I[']ll have to stop by the divan on the way home and get some more.'"
-
-After quizzing Gernsback about cigar-gernsback: 
-	say "[remove cigar-gernsback ask suggestion]";
-	say "'Believe it was Kipling who said 'A woman is only a woman, but a good cigar is a smoke.' Can't disagree with him when it comes to this Partagás.'"
 
 After quizzing Gernsback about pocket watch: say "'That looks like Wells['] watch.'"
 
@@ -4750,33 +4743,7 @@ Carry out reading:
 	otherwise:
 		say "That's absurd.";
 
-Book - Tobacco
 
-Tobacco is a kind of a thing.
-Tobacco is either lit or unlit.
-Tobacco is usually unlit.
-
-Part Cigars
-
-Chapter - Gernsback's Cigar
-
-The cigar-gernsback is tobacco.
-The description of cigar-gernsback is "You don't know much about cigars but you know that Gernsback say he only smokes only the best."
-The printed name of cigar-gernsback is "Gernsback's cigar".
-
-The cigar-gernsback is held by Gernsback.
-
-Understand "his cigar" or "the cigar" or "cigar" or "gernsbacks cigar" as cigar-gernsback.
-
-Chapter - Examining Cigars
-
-[Handling >examine cigar]
-[Does the player mean examining cigar-player when the player has cigar-player: it is very likely.
-Does the player mean examining cigar-gernsback when the player does not have cigar-player: it is very likely.]
-
-Chapter - Testing
-
-Test g-cigars with "ask gernsback about cigar / ask gernsback about his cigar / ask gernsback about the cigar / ask gernsback about cigar-gernsback / ask gernsback for cigar / ask gernsback for a cigar / ask gernsback for cigar-gernsback ."
 
 Book - Creating A Torch
 

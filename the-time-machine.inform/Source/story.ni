@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41301 ]
+[ WORDS - 41278 ]
 
 Table of Releases
 release	notes
@@ -4997,7 +4997,7 @@ Introduction Of Gernsback begins when player is in the Library for the first tim
 
 When Introduction Of Gernsback begins: 
 	[say "INTRODUCTION OF GERNSBACK BEGINS.";]
-	say "Standing by the desk, looking out the window, is Gernsback, a successful businessman with ownership in several textile mills in the north. He[']s a frequent visitor at these gatherings and rumor has it he[']s also contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback lights his cigar with a match and gets it going with a few puffs. He gestures with the cigar as he speaks. 'I wouldn[']t believe it if I didn[']t see it with my own eyes. One minute he[']s sitting at the dining room table, explaining the...science of it all. The next minute...' He glances at the window, then shakes his head slowly, lost in thought.[paragraph break]Picking a book off the bookshelf, he turns back to you. 'I guess we had better make ourselves comfortable until Humboldt gets back.' Settling into the chair, Gernsback begins paging through his book.";
+	say "Standing by the desk, looking out the window, is Gernsback, a frequent visitor at these gatherings. A successful businessman with ownership in several textile mills in the north, it's rumored he's contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback turns towards you, a book in his hand. 'I wouldn't believe it if I didn't see it with my own eyes. One minute he's sitting at the dining room table, explaining the...' He gestures with the book. '...science of it all. The next minute...' He glances at the window and shakes his head slowly, lost in thought for a moment.[paragraph break]'I guess we had better make ourselves comfortable until the doctor gets back.' Settling into the library's only chair, Gernsback begins paging through the book.";
 	now library-print-description is true;
 
 Introduction Of Gernsback ends when library-print-description is true.

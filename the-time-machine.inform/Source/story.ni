@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41278 ]
+[ WORDS - 41274 ]
 
 Table of Releases
 release	notes
@@ -986,7 +986,7 @@ Part - Library
 
 The Library is a room. 
 The Library is west of the Entryway. 
-The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, reading his book and smoking his cigar.[end if] The room continues to the north and the entryway is back east."
+The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides a variety of books that fill the floor-to-ceiling shelves on the three walls.[paragraph break][if the location of Gernsback is the Library]Gernsback is sitting in the chair, reading his book.[end if] The room continues to the north and the entryway is back east."
 
 Chapter - Printing Library Description
 

@@ -58,7 +58,7 @@ Wells forgets whatever he was looking for in his pockets and struggles against t
 Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re professionals, used to dealing patients like this all the time. They[']re not being as rough with him as they look.'"
 
 When play begins: 
-	now the left hand status line is "[location] - [current-year]";
+	now the left hand status line is "[location] - [current-year] - [time of day]";
 	say "[introduction]";
 	open right-sidebar window;
 	[open title-exits window;]
@@ -4970,6 +4970,20 @@ When Introduction Of Gernsback begins:
 Introduction Of Gernsback ends when library-print-description is true.
 
 [When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
+
+Part - Gernsback Leaves
+
+Gernsback Leaves is a scene.
+
+Gernsback Leaves begins when player is in the Library and player has fuse-time-machine.
+
+When Gernsback Leaves begins:
+	say "GERNSBACK LEAVES BEGINS.";
+
+Gernsback Leaves ends when Gernsback is nowhere.
+
+When Gernsback Leaves ends:
+	say "GERNSBACK LEAVES ENDS.";
 
 Book - Traveling In Time
 

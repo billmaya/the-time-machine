@@ -4977,6 +4977,16 @@ Introduction Of Gernsback ends when library-print-description is true.
 
 [When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
 
+Part - Gernsback Shows You Orrery Fuse
+
+Gernsback Shows You Orrery Fuse is a scene.
+
+[Gernsback Shows You Orrery Fuse begins XYZ]
+
+When Gernsback Shows You Orrery Fuse begins: say "GERNSBACK SHOWS YOU ORRERY FUSE BEGINS."
+
+When Gernsback Shows You Orrery Fuse ends: say "GERNSBACK SHOWS YOU ORRERY FUSE ENDS."
+
 Part - Gernsback Leaves
 
 Gernsback Leaves is a scene.
@@ -4991,8 +5001,7 @@ When Gernsback Leaves begins:
 
 Gernsback Leaves ends when Gernsback is nowhere.
 
-[When Gernsback Leaves ends:
-	say "GERNSBACK LEAVES ENDS.";]
+[When Gernsback Leaves ends: say "GERNSBACK LEAVES ENDS."]
 
 Book - Traveling In Time
 

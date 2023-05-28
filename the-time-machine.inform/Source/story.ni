@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41041 ]
+[ WORDS - 41138 ]
 
 Table of Releases
 release	notes
@@ -1024,7 +1024,12 @@ The desk is a thing.
 The desk is in the Library.
 The desk is furniture.
 The description of the desk is "A small standing desk with a few handwritten papers on it."
-Instead of searching the desk, say "You shuffle through the papers on the desk but find nothing of interest."
+
+Instead of searching the desk: 
+	if the desk supports the box of matches:
+		say "Shuffling through the papers on the desk you find a box of matches.";
+	otherwise:
+		say "You shuffle through the papers on the desk but find nothing of interest."
 
 Instead of pulling the desk: try switching on the desk.
 Before switching on the desk:
@@ -4975,10 +4980,12 @@ Part - Gernsback Leaves
 
 Gernsback Leaves is a scene.
 
-Gernsback Leaves begins when player is in the Library and player has fuse-time-machine.
+Gernsback Leaves begins when player is in the Library and the time of day is greater than 9:05 AM. [<- 9:05 AM for debugging purposes only]
 
 When Gernsback Leaves begins:
 	say "GERNSBACK LEAVES BEGINS.";
+	move the box of matches to the desk;
+	now Gernsback is nowhere.
 
 Gernsback Leaves ends when Gernsback is nowhere.
 

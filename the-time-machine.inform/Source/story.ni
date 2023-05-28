@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41138 ]
+[ WORDS - 41202 ]
 
 Table of Releases
 release	notes
@@ -58,6 +58,7 @@ Wells forgets whatever he was looking for in his pockets and struggles against t
 Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re professionals, used to dealing patients like this all the time. They[']re not being as rough with him as they look.'"
 
 When play begins: 
+	now the time of day is 10:00 PM;
 	now the left hand status line is "[location] - [current-year] - [time of day]";
 	say "[introduction]";
 	open right-sidebar window;
@@ -4980,17 +4981,18 @@ Part - Gernsback Leaves
 
 Gernsback Leaves is a scene.
 
-Gernsback Leaves begins when player is in the Library and the time of day is greater than 9:05 AM. [<- 9:05 AM for debugging purposes only]
+Gernsback Leaves begins when player is in the Library and the time of day is greater than 11:00 PM. [<- 10:05 PM for debugging purposes only]
 
 When Gernsback Leaves begins:
-	say "GERNSBACK LEAVES BEGINS.";
+	[say "GERNSBACK LEAVES BEGINS.";]
+	say "Getting up, Gernsback closes his book, replaces it on the shelf, and lights a cigar. Turning to you, he says, 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he drops something on the desk and is gone without another word.";
 	move the box of matches to the desk;
 	now Gernsback is nowhere.
 
 Gernsback Leaves ends when Gernsback is nowhere.
 
-When Gernsback Leaves ends:
-	say "GERNSBACK LEAVES ENDS.";
+[When Gernsback Leaves ends:
+	say "GERNSBACK LEAVES ENDS.";]
 
 Book - Traveling In Time
 

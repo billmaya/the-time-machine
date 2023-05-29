@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41244 ]
+[ WORDS - 41251 ]
 
 Table of Releases
 release	notes
@@ -3873,37 +3873,33 @@ Part - Conversation
 Chapter - Hello
 
 After saying hello to Gernsback when the greeting type is explicit: 
-	if Ending Scene is not happening:
-		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
-		say "[add wells-book ask suggestion]";
-		say "[add workshop-room ask suggestion]";
-		say "[add key ask suggestion]";
-		say "[add Wells ask suggestion]";
-		say "[add Watchett ask suggestion]";
-		say "[add self-suggestion ask suggestion]";
-		say "[add Wells tell suggestion]";
+	say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
+	say "[add wells-book ask suggestion]";
+	say "[add workshop-room ask suggestion]";
+	say "[add key ask suggestion]";
+	say "[add Wells ask suggestion]";
+	say "[add Watchett ask suggestion]";
+	say "[add self-suggestion ask suggestion]";
+	say "[add Wells tell suggestion]";
 
 After saying hello to Gernsback when the greeting type is implicit:
-	if Ending Scene is not happening:
-		say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]";
-		say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
-		say "[add wells-book ask suggestion]";
-		say "[add workshop-room ask suggestion]";
-		say "[add key ask suggestion]";
-		say "[add Wells ask suggestion]";
-		say "[add Watchett ask suggestion]";
-		say "[add self-suggestion ask suggestion]";
-		say "[add Wells tell suggestion]";
+	say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]";
+	say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
+	say "[add wells-book ask suggestion]";
+	say "[add workshop-room ask suggestion]";
+	say "[add key ask suggestion]";
+	say "[add Wells ask suggestion]";
+	say "[add Watchett ask suggestion]";
+	say "[add self-suggestion ask suggestion]";
+	say "[add Wells tell suggestion]";
 
 Chapter - Goodbye
 
 After saying goodbye to Gernsback when the farewell type is explicit: 
-	if Ending Scene is not happening:
-		say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading.";
+	say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading.";
 	
 After saying goodbye to Gernsback when the farewell type is implicit:
-	if Ending Scene is not happening:
-		say "Gernsback watches you head into the[if the room gone to is the Parlor] parlor[otherwise] entryway[end if] before returning to his book.[line break]";
+	say "Gernsback watches you head into the[if the room gone to is the Parlor] parlor[otherwise] entryway[end if] before returning to his book.[line break]";
 
 Chapter - In The Library
 
@@ -4099,8 +4095,7 @@ Default ask response for Gernsback:
 	say "'I don't know anything about that.'"
 
 Default tell response for Gernsback:
-	if Ending Scene is not happening:
-		say "'That's very interesting...'";
+	say "'That's very interesting...'";
 
 [Default ask-tell response for Gernsback:]
 [Default give response for Gernsback:]
@@ -4981,6 +4976,7 @@ Gernsback Reveals Orrery Fuse begins when gernsback-shows-fuse is true.
 
 When Gernsback Reveals Orrery Fuse begins: 
 	say "GERNSBACK SHOWS YOU ORRERY FUSE BEGINS.";
+	now the player is in the Parlor;
 	now fuse-orrery-revealed is true.
 
 Gernsback Reveals Orrery Fuse ends when fuse-orrery-revealed is true.

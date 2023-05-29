@@ -1412,6 +1412,7 @@ Instead of opening the right panel:
 		say "You've already slid the right panel up as far as it can go.";
 	otherwise:
 		say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
+		now the time of day is 11:00 PM;
 		now player-knows-right-panel-slideable is true;
 		now the right panel is open.
 

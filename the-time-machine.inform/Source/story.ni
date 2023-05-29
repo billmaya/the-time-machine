@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41199 ]
+[ WORDS - 41244 ]
 
 Table of Releases
 release	notes
@@ -4061,10 +4061,14 @@ Before informing Gernsback about fuse-time-machine:
 	if fuse-time-machine has not been seen:
 		say "You can't see any such thing.";
 		stop the action.
+
+gernsback-shows-fuse is a truth state that varies.
+gernsback-shows-fuse is false.
 	
 After informing Gernsback about fuse-time-machine:
 	if fuse-time-machine has been seen:
-		say "[fascinating-but]"; 
+		[say "[fascinating-but]";]
+		now gernsback-shows-fuse is true;
 	otherwise:
 		say "[dont-know]";
 
@@ -4966,15 +4970,22 @@ Introduction Of Gernsback ends when library-print-description is true.
 
 [When Introduction Of Gernsback ends: say "INTRODUCTION OF GERNSBACK ENDS."]
 
-Part - Gernsback Shows You Orrery Fuse
+Part - Gernsback Reveals Orrery Fuse
 
-Gernsback Shows You Orrery Fuse is a scene.
+Gernsback Reveals Orrery Fuse is a scene.
 
-[Gernsback Shows You Orrery Fuse begins XYZ]
+fuse-orrery-revealed is a truth state that varies.
+fuse-orrery-revealed is false.
 
-When Gernsback Shows You Orrery Fuse begins: say "GERNSBACK SHOWS YOU ORRERY FUSE BEGINS."
+Gernsback Reveals Orrery Fuse begins when gernsback-shows-fuse is true.
 
-When Gernsback Shows You Orrery Fuse ends: say "GERNSBACK SHOWS YOU ORRERY FUSE ENDS."
+When Gernsback Reveals Orrery Fuse begins: 
+	say "GERNSBACK SHOWS YOU ORRERY FUSE BEGINS.";
+	now fuse-orrery-revealed is true.
+
+Gernsback Reveals Orrery Fuse ends when fuse-orrery-revealed is true.
+
+When Gernsback Reveals Orrery Fuse ends: say "GERNSBACK SHOWS YOU ORRERY FUSE ENDS."
 
 Part - Gernsback Leaves
 

@@ -4025,31 +4025,26 @@ To say fascinating-but:
 	say "'Fascinating. But I don't see how this helps Wells.'"
 
 After informing Gernsback about Wells:
-	if Ending Scene is not happening:
-		say "[remove Wells tell suggestion]";
-		say "'I'm not a medical man, but I think the best thing you could do as his attorney is have him committed. Protect him from himself. Only my opinion mind you.'";
+	say "[remove Wells tell suggestion]";
+	say "'I'm not a medical man, but I think the best thing you could do as his attorney is have him committed. Protect him from himself. Only my opinion mind you.'";
 
 After informing Gernsback about Humboldt: 
-	if Ending Scene is not happening:
-		say "'He'll be back soon. Tell us what he's found and we'll decide what to do then.'";
+	say "'He'll be back soon. Tell us what he's found and we'll decide what to do then.'";
 
 After informing Gernsback about Watchett: 
-	if Ending Scene is not happening:
-		say "'Wonderful meal that was, as always.  That woman's a treasure. Don't know where Wells found her.'";
+	say "'Wonderful meal that was, as always.  That woman's a treasure. Don't know where Wells found her.'";
 
 After informing Gernsback about time machine:
-	if Ending Scene is not happening:
-		if time machine has been seen: 
-			say "'Fascinating. But I don't see how this can help Wells if it doesn't actually work.'"; 
-		otherwise:
-			say "'We'll never know for sure unless you find a way into Wells' workshop.'";
+	if time machine has been seen: 
+		say "'Fascinating. But I don't see how this can help Wells if it doesn't actually work.'"; 
+	otherwise:
+		say "'We'll never know for sure unless you find a way into Wells' workshop.'";
 
 After informing Gernsback about orrery:
-	if Ending Scene is not happening:
-		if the orrery has been seen:
-			say "[fascinating-but]";
-		otherwise:
-			say "'I think you'll find what you're looking for in the next room.'";
+	if the orrery has been seen:
+		say "[fascinating-but]";
+	otherwise:
+		say "'I think you'll find what you're looking for in the next room.'";
 		
 Before informing Gernsback about fuse-orrery:
 	if the player does not have fuse-orrery:
@@ -4057,11 +4052,10 @@ Before informing Gernsback about fuse-orrery:
 		stop the action.
 	
 After informing Gernsback about fuse-orrery:
-	if Ending Scene is not happening:
-		if fuse-orrery has been seen: 
-			say "[fascinating-but]";
-		otherwise:
-			say "[dont-know]";
+	if fuse-orrery has been seen: 
+		say "[fascinating-but]";
+	otherwise:
+		say "[dont-know]";
 
 Before informing Gernsback about fuse-time-machine:
 	if fuse-time-machine has not been seen:
@@ -4076,23 +4070,19 @@ After informing Gernsback about fuse-time-machine:
 			say "[dont-know]";
 
 After informing Gernsback about workshop-room:
-	if Ending Scene is not happening:
+	if the workshop is visited:
+		say "'What did you find?'";
+	otherwise:
+		say "'Well done. Let me know what you find.'";
+
+After informing Gernsback about key: 
+	if the player has the key: 
 		if the workshop is visited:
 			say "'What did you find?'";
 		otherwise:
 			say "'Well done. Let me know what you find.'";
 	otherwise:
-		continue the action.
-
-After informing Gernsback about key: 
-	if Ending Scene is not happening:
-		if the player has the key: 
-			if the workshop is visited:
-				say "'What did you find?'";
-			otherwise:
-				say "'Well done. Let me know what you find.'";
-		otherwise:
-			say "'The doctor has the right idea. If there's a key to get into that workshop Mrs. Watchett might have a good idea where it might be.'";
+		say "'The doctor has the right idea. If there's a key to get into that workshop Mrs. Watchett might have a good idea where it might be.'";
 
 Section - Imploring - "Ask [someone] for ['text']"
 

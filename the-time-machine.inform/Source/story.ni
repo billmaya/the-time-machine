@@ -4063,11 +4063,10 @@ Before informing Gernsback about fuse-time-machine:
 		stop the action.
 	
 After informing Gernsback about fuse-time-machine:
-	if Ending Scene is not happening:
-		if fuse-time-machine has been seen:
-			say "[fascinating-but]"; 
-		otherwise:
-			say "[dont-know]";
+	if fuse-time-machine has been seen:
+		say "[fascinating-but]"; 
+	otherwise:
+		say "[dont-know]";
 
 After informing Gernsback about workshop-room:
 	if the workshop is visited:

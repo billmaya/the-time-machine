@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41251 ]
+[ WORDS - 41350 ]
 
 Table of Releases
 release	notes
@@ -4975,13 +4975,17 @@ fuse-orrery-revealed is false.
 Gernsback Reveals Orrery Fuse begins when gernsback-shows-fuse is true.
 
 When Gernsback Reveals Orrery Fuse begins: 
-	say "GERNSBACK SHOWS YOU ORRERY FUSE BEGINS.";
+	[say "GERNSBACK SHOWS YOU ORRERY FUSE BEGINS.";]
+	say "Seeing the time machine fuse a look on interest appears on Gernsback's face. 'I have seen something like that before, though not in that condition.' He stands up and leads you into the parlor to a the orrery above the fireplace.[paragraph break]'When I asked Wells to show me how this contraption worked he did this.' Gernsback reaches out and with his fingertips slides the orrery's right panel up, exposing the inner mechanism.[paragraph break]'That should help you out.' Without another word Gernsback returns to the library and sits in the chair to continue his reading.";
 	now the player is in the Parlor;
+	now the right panel is open;
+	now player-knows-right-panel-slideable is true;
+	now the time of day is 11:00 PM;
 	now fuse-orrery-revealed is true.
 
 Gernsback Reveals Orrery Fuse ends when fuse-orrery-revealed is true.
 
-When Gernsback Reveals Orrery Fuse ends: say "GERNSBACK SHOWS YOU ORRERY FUSE ENDS."
+[When Gernsback Reveals Orrery Fuse ends: say "GERNSBACK SHOWS YOU ORRERY FUSE ENDS."]
 
 Part - Gernsback Leaves
 
@@ -4991,7 +4995,7 @@ Gernsback Leaves begins when player is in the Library and the time of day is gre
 
 When Gernsback Leaves begins:
 	[say "GERNSBACK LEAVES BEGINS.";]
-	say "Getting up, Gernsback closes his book, replaces it on the shelf, and lights a cigar. Turning to you, he says, 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he drops something on the desk and is gone without another word.";
+	say "Getting up, Gernsback closes his book, replaces it on the shelf, and lights a cigar. Turning to you, he says, 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he quickly lights his cigar, drops the box of matches on the desk, and is gone without another word.";
 	move the box of matches to the desk;
 	now Gernsback is nowhere.
 

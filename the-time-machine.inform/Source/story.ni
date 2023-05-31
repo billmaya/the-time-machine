@@ -638,7 +638,7 @@ Part - Tests
 
 [v1.9 Tests]
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
-Test get-matches with "go west / ask gernsback for cigar / ask gernsback for matches / go north / take newspaper / go south / go east."
+[DEL Test get-matches with "go west / ask gernsback for cigar / ask gernsback for matches / go north / take newspaper / go south / go east."]
 Test goto-workshop with "go north / test unlock-workshop / test get-matches / go north / flip switch."
 Test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker."
 
@@ -662,6 +662,8 @@ Test news-duration with "test go-abattoir / test light-newspaper."
 Test go-library with "go north / go north / go west."
 Test go-garden with "go north / go north / go west / go north / go east."
 Test go-workshop with "n / n / purloin key / unlock workshop door with key / n / flip switch / unlock windows."
+
+Test get-matches with "go north / go north / go west / go north / purloin time machine fuse / go south / show time machine fuse to gernsback / go south / take box of matches."
 
 
 Part - Release
@@ -4658,13 +4660,15 @@ Instead of inserting the newspaper into the fire:
 
 Book - Box Of Matches
 
-The box of matches is a closed openable container.
+The box of matches is a closed openable transparent container.
 The box of matches contains five s-matches.
 
 Understand "matchbox" or "match box" as box of matches.
 
 The box of matches is held by Gernsback.
 [The box of matches is held by the player.] [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
+
+[Instead of taking the match: say "BOX CLOSED."]
 
 Book - Books
 
@@ -4998,6 +5002,7 @@ When Gernsback Leaves begins:
 	[say "GERNSBACK LEAVES BEGINS.";]
 	say "Getting up, Gernsback closes his book, replaces it on the shelf, and lights a cigar. Turning to you, he says, 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he quickly lights his cigar, drops the box of matches on the desk, and is gone without another word.";
 	move the box of matches to the desk;
+	reset the interlocutor;
 	now Gernsback is nowhere.
 
 Gernsback Leaves ends when Gernsback is nowhere.

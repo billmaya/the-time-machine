@@ -59,7 +59,7 @@ Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re profe
 
 When play begins: 
 	now the time of day is 10:00 PM;
-	now the left hand status line is "[location] - [current-year] - [time of day]";
+	now the left hand status line is "[location] - [current-year]"; [ - [time of day]";]
 	say "[introduction]";
 	open right-sidebar window;
 	[open title-exits window;]

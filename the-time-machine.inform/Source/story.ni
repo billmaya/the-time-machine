@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41350 ]
+[ WORDS - 41646 ]
 
 Table of Releases
 release	notes
@@ -632,13 +632,52 @@ The portmanteau is in the Library.
 The description of the portmanteau is "Created specifically to try and debug the new Furniture class."
 The portmanteau is moveable.]
 
+Part - Inventory
+
+[This code came from the "Oyster Wide Shut" example.] 
+[Note: The "Equipment List" example lists additional ways to modify the standard format of an inventory list.]
+
+[Also see https://intfiction.org/t/overriding-the-display-of-a-containers-status/3644]
+
+The print standard inventory rule is not listed in any rulebook.
+
+Carry out taking inventory (this is the new print inventory rule):
+	say "You are carrying: [line break]";
+	list the contents of the player, with newlines, indented, including contents, with extra indentation.
+
+After printing the name of something (called target) while taking inventory:
+	follow the property-aggregation rules for the target.
+
+The property-aggregation rules are an object-based rulebook.
+The property-aggregation rulebook has a list of text called the tagline.
+
+A first property-aggregation rule for an openable open thing (this is the mention open openables rule): 
+    add "open" to the tagline.
+
+A first property-aggregation rule for an openable closed thing (this is the mention closed openables rule): 
+    add "closed" to the tagline.
+
+A property-aggregation rule for a closed transparent container which contains nothing (this is the mention empty transparent containers rule):
+	add "empty" to the tagline.
+
+A property-aggregation rule for an open container which contains nothing (this is the mention empty open containers rule):
+	add "empty" to the tagline.
+
+A property-aggregation rule for a lit thing (this is the mention lit objects rule): 
+    add "providing light" to the tagline.
+
+The last property-aggregation rule (this is the print aggregated properties rule): 
+	if the number of entries in the tagline is greater than 0: 
+		say " ([tagline])"; 
+		rule succeeds; 
+	rule fails.
+
 Part - Tests
 
 [In the game type "> test" to see a list of all the available tests]
 
 [v1.9 Tests]
 Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
-[DEL Test get-matches with "go west / ask gernsback for cigar / ask gernsback for matches / go north / take newspaper / go south / go east."]
 Test goto-workshop with "go north / test unlock-workshop / test get-matches / go north / flip switch."
 Test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker."
 

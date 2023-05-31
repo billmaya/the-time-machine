@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41646 ]
+[ WORDS - 41654 ]
 
 Table of Releases
 release	notes
@@ -650,13 +650,13 @@ After printing the name of something (called target) while taking inventory:
 
 The property-aggregation rules are an object-based rulebook.
 The property-aggregation rulebook has a list of text called the tagline.
-
+[
 A first property-aggregation rule for an openable open thing (this is the mention open openables rule): 
     add "open" to the tagline.
 
 A first property-aggregation rule for an openable closed thing (this is the mention closed openables rule): 
     add "closed" to the tagline.
-
+]
 A property-aggregation rule for a closed transparent container which contains nothing (this is the mention empty transparent containers rule):
 	add "empty" to the tagline.
 
@@ -4595,6 +4595,9 @@ Before burning something with a new strikable-match (this is the prior lighting 
 
 Rule for implicitly taking a strikable-match (called target) while striking:
 	try silently taking the target.
+
+Rule for implicitly taking a strikable-match (called target):
+	try silently taking the target.
 			
 Does the player mean burning something with a flaming strikable-match:
 	it is very likely.
@@ -4699,7 +4702,7 @@ Instead of inserting the newspaper into the fire:
 
 Book - Box Of Matches
 
-The box of matches is a closed openable transparent container.
+The box of matches is an open [a closed] openable transparent container.
 The box of matches contains five s-matches.
 
 Understand "matchbox" or "match box" as box of matches.
@@ -4707,7 +4710,6 @@ Understand "matchbox" or "match box" as box of matches.
 The box of matches is held by Gernsback.
 [The box of matches is held by the player.] [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
 
-[Instead of taking the match: say "BOX CLOSED."]
 
 Book - Books
 

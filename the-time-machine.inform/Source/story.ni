@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41654 ]
+[ WORDS - 41734 ]
 
 Table of Releases
 release	notes
@@ -4690,13 +4690,29 @@ Instead of searching the newspaper: try reading the newspaper.
 
 Part - Putting Newspaper in Fireplace
 
+To say newspaper-into-fire:
+	say "The newspaper ignites and is quickly reduced to ashes."
+
+To say burning-newspaper-into-fire:
+	say "You throw the burning newspaper into the fire, where it is consumed."
+
+Instead of dropping the newspaper:
+	if the flame-state of the newspaper is flaming:
+		say "[burning-newspaper-into-fire]";
+		now the newspaper is nowhere;
+	otherwise:
+		continue the action.
+
 Instead of inserting the newspaper into the fireplace: try inserting the newspaper into the fire.
 
 Instead of putting the newspaper on the fire: try inserting the newspaper into the fire.
 Instead of burning the newspaper with the fire: try inserting the newspaper into the fire.
 
 Instead of inserting the newspaper into the fire: 
-	say "The newspaper ignites and is quickly reduced to ashes.";
+	if the flame-state of the newspaper is new:
+		say "[newspaper-into-fire]";
+	otherwise if the flame-state of the newspaper is flaming:
+		say "[burning-newspaper-into-fire]";
 	now the newspaper is nowhere.
 
 

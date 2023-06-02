@@ -4795,7 +4795,7 @@ The newspaper is flammable.
 The newspaper has a number called duration.
 The duration of newspaper is 5.
 
-The newspaper has a flame-state. The makeshift torch is new.
+The newspaper has a flame-state. The newspaper is new.
 Understand the flame-state property as describing the newspaper.
 
 Chapter - Lighting The Newspaper

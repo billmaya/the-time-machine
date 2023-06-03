@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41723 ]
+[ WORDS - 41529 ]
 
 Table of Releases
 release	notes
@@ -3195,36 +3195,7 @@ The description of Holding Cell is "A small cell large enough to hold two or thr
 	
 The visibility of Holding Cell is twilight. [day.]
 
-Part - Underground - Level 5
 
-Chapter - Shaft 5
-
-Shaft 5 is underground.
-Shaft 5 is down from Shaft 4.
-Shaft 5 is north of the Heavy Sliding Door
-
-The description of Shaft 5 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is a heavy sliding door to the south."
-	
-The printed name of Shaft 5 is "Shaft - Level 5". [[ladder-glyphs]".]
-	
-The visibility of Shaft 5 is night.
-
-Chapter - Heavy Sliding Door
-
-The Heavy Sliding Door is a door.
-The Heavy Sliding Door is south of Shaft 5 and north of the Power Plant.
-The Heavy Sliding Door is scenery.
-	
-The description of Heavy Sliding Door is "HEAVY SLIDING DOOR DESCRIPTION. A heavy metal door on a track that can slide open and shut."
-
-Chapter - Power Plant
-
-The Power Plant is underground.
-The Power Plant is south of the Heavy Sliding Door.
-
-The description of Power Plan is "The deafening sound of titanic machinery that sustains life in this underground labyrinth fills this room.[paragraph break]There is a havy sliding door to the north."
-	
-The visibility of Power Plant is night.
 
 Book - Regions
 

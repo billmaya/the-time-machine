@@ -1910,6 +1910,10 @@ Instead of searching [examining] the time machine:
 		otherwise:
 			say "The time machine sits there in silence."
 
+Instead of switching on the time machine: try taking the time machine.
+Instead of taking the time machine:
+	say "That's too heavy for you to move."
+
 Instead of going inside in the Workshop: try entering the time machine.
 
 Section - Activating The Time Machine

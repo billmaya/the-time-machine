@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41529 ]
+[ WORDS - 41665 ]
 
 Table of Releases
 release	notes
@@ -2674,9 +2674,16 @@ The Domed Building is east of the Clearing.
 The Domed Building is west of the Inside Dome.
 Inside from the Domed Building is Inside Dome.
 
-The dome-outside is scenery in Domed Building.
-Understand "concrete" or "building" or "pantheon" or "columned" or "columns" or "column" or "portico" or "entrance" or "dome" as dome-outside. [Domed Building.]
-Instead of examining dome-outside: try looking.
+The dome-outside is a backdrop. It is in the Clearing and the Domed Building.
+Understand "concrete" or "building" or "pantheon" or "columned" or "columns" or "column" or "portico" or "entrance" or "dome" as dome-outside.
+
+To say dome-from-clearing:
+	say "What you can see through the trees appears to be an arrangement of triagular facets in a curved shape[first time]. You won't be able to tell more until you get closer[only]."
+
+To say dome-from-building:
+	say "From this distance, you can definitely make out the individual interlocking triangular panels fastened together into a dome that extends down to the foundation around it[first time]. It's unlike any other dome you have every seen and you can't fathom the material it's made of[only]."
+
+Instead of examining dome-outside: say "[if the player is in the Clearing][dome-from-clearing][otherwise][dome-from-building]" 
 
 The description of the Domed Building is "Before you is a weathered concrete building with a domed top that vaguely resembles the Pantheon in Rome. The entrance to the building is through a columned portico to the east."
 

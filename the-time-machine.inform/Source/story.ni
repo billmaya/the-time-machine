@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41734 ]
+[ WORDS - 41723 ]
 
 Table of Releases
 release	notes
@@ -677,11 +677,7 @@ Part - Tests
 [In the game type "> test" to see a list of all the available tests]
 
 [v1.9 Tests]
-Test unlock-workshop with "go north / purloin key / unlock workshop door with key."
-Test goto-workshop with "go north / test unlock-workshop / test get-matches / go north / flip switch."
-Test fp-time with " test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / purloin poker."
 
-Test go-802701 with "test fp-time / take time machine fuse / put orrery fuse in time machine fuse holder / push lever."
 Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
 Test go-underground with "test go-802701 / exit / remove cover / climb in well / down."
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
@@ -700,9 +696,13 @@ Test news-duration with "test go-abattoir / test light-newspaper."
 [v2.0 Tests]
 Test go-library with "go north / go north / go west."
 Test go-garden with "go north / go north / go west / go north / go east."
-Test go-workshop with "n / n / purloin key / unlock workshop door with key / n / flip switch / unlock windows."
+Test go-workshop with "purloin key / unlock workshop door with key / n / flip switch."
 
-Test get-matches with "go north / go north / go west / go north / purloin time machine fuse / go south / show time machine fuse to gernsback / go south / take box of matches."
+Test get-matches with "go north / go north / go west / go north / purloin time machine fuse / go south / show time machine fuse to gernsback / go south / take box of matches / east."
+
+Test prep-time with "get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / take time machine fuse / put orrery fuse in time machine fuse holder."
+
+Test go-802701 with "test get-matches / test go-workshop /  test prep-time / purloin poker / push lever."
 
 
 Part - Release
@@ -3110,9 +3110,12 @@ Part - Underground - Level 4
 Chapter - Shaft 4
 
 Shaft 4 is underground.
-Shaft 4 is down from Shaft 3.
-Shaft 4 is up from Shaft 5.
+[Shaft 4 is down from Shaft 3.
+Shaft 4 is up from Shaft 5.]
 Shaft 4 is north of the Eating Area.
+
+Instead of going down in Shaft 4:
+	say "THE LADDER IS BROKEN. THE SHAFT CONTINUES DOWN INTO THE DARKNESS."
 
 The description of Shaft 4 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 

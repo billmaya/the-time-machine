@@ -2568,6 +2568,10 @@ The undergrowth is a thing.
 The undergrowth is scenery in the Clearing.
 The description of the undergrowth is "The undergrowth would make passage in any direction but east difficult."
 
+To say attempt-cutting-foliage: say "[if the player has the poker]You swing the poker at the [noun] a few times but it is too dull to accomplish anything.[otherwise]You have nothing in your hands that could be used to attempt that."
+Instead of cutting the clearing bushes: say "[attempt-cutting-foliage]".
+instead of cutting the undergrowth: say "[attempt-cutting-foliage]".
+
 Chapter - Metal Cover
 
 The metal cover is a thing.

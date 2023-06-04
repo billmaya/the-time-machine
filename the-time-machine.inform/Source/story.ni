@@ -2792,6 +2792,7 @@ The description of the Balcony is "This small concrete balcony looks down on the
 
 The balcony-river is scenery in the Balcony.
 The description of the balcony-river is "The river winds its way through the forest below you. Looking closely, you can see groups of people in the river and on its banks."
+
 The printed name of balcony-river is "river".
 
 Understand "river" as balcony-river.
@@ -2799,7 +2800,9 @@ Understand "river" as balcony-river.
 The balcony-people is scenery in the Balcony.
 The description of balcony-people is "From this distance it is difficult to make out specific details about the group gathered at the river below. They all appear to be similar in stature and dressed in the same garments, but you[']ll have to get closer to confirm these initial observations."
 
-Understand "people" or "figures" or "group" as balcony-people.
+Understand "people" or "figures" or "group" or "groups" as balcony-people.
+
+
 
 Part - River Bank
 

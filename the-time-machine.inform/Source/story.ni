@@ -2516,13 +2516,12 @@ Book - 802,701
 Part - Clearing
 
 can-go-clearing-to-river is a truth state that varies.
-can-go-clearing-to-river is false.
+can-go-clearing-to-river is true.
 
-Every turn: 
-	if the player is in the Balcony, now can-go-clearing-to-river is true.
+[Every turn: if the player is in the Balcony, now can-go-clearing-to-river is true.]
 
 The Clearing is a room. 
-The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. High above you, the face of a large statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if can-go-clearing-to-river is true] Now that you know it exists, you can just make out the overgrown path that you saw from the balcony leading southeast.[end if]"
+The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. High above you, the face of a foreboding statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if the Balcony has been visited] Now that you know it exists, you can clearly see the overgrown path that you saw from the balcony leading southeast.[end if]"
 
 Inside from the Clearing is Top Well.
 
@@ -2635,7 +2634,7 @@ Before going southeast in the Clearing:
 		say "You would have to get out of the time machine first.";
 		stop the action;
 	otherwise:
-		if can-go-clearing-to-river is false:
+		if can-go-clearing-to-river is false: [This variable is always set to "true"]
 			say "A cursory examination of the tangled undergrowth to the [noun] reveals no visible path.";
 			stop the action;
 		otherwise:

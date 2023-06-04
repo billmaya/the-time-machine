@@ -2557,7 +2557,7 @@ Instead of doing something with the statue:
 The treetops are a thing.
 The treetops are backdrop. They are in the Clearing and the Sphinx Steps and the Balcony.
 Understand "forest" or "trees" or "tree" or "foliage" as treetops.
-The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of the river and the clearing below and the overgrown path between them."
+The description of treetops is "[if the location is the Clearing]Above your head the leafy canopy of deciduous and evergreen trees filters the midday sunlight.[otherwise]Below you the leafy canopy of deciduous and evergreen trees covers everything except your view of the river, the clearing below and the overgrown path connecting them."
 
 The clearing bushes are a thing.
 The clearing bushes are scenery in the Clearing.

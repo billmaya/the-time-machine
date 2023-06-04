@@ -2802,6 +2802,17 @@ The description of balcony-people is "From this distance it is difficult to make
 
 Understand "people" or "figures" or "group" or "groups" as balcony-people.
 
+The balcony-clearing is scenery in the Balcony.
+The description of balcony-clearing is "The sunlight reflecting off the time machine almost obscures it from view but you can just make the machine out in the clearing next to the circular well."
+Understand "clearing" as balcony-clearing.
+
+The balcony-path is scenery in the Balcony.
+The description of balcony-path is "Though overgrown, the path clearly makes its way southeast from the clearing to the river."
+Understand "path" as balcony-path.
+	
+The balcony-statue is scenery in the Balcony.
+The description of balcony-statue is "Dark and alien, the statue towers over the treetops, its sinister gaze casting a dark pall over the sunlit landscape below."
+Understand "statue" as balcony-statue.
 
 
 Part - River Bank

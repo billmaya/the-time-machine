@@ -5073,7 +5073,7 @@ When Travel To 802,701 begins:
 	
 	One age passes. Two ages. Five ages. The blur of the individual dials starts slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you and the time machine starts to dissipate and fade away like an early morning fog in the face of the sun. Eventually the time machine stops, the dials indicating that 801,006 years have passed from when you started your journey in 1895.
 
-	You have arrived in the year 802,701 A.D.";
+	Apparently you have arrived in the year 802,701 A.D.";
 	now the current-year is "802,701";
 	now the numeric-year is 802701;
 	now the time machine is in the Clearing;

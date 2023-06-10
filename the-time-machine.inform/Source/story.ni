@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41851 ]
+[ WORDS - 41922 ]
 
 Table of Releases
 release	notes
@@ -2738,7 +2738,7 @@ instead of drinking the round well: try eating the well-water.
 
 Instead of searching the round well: say "You see nothing unusual in the well's water."
 
-Instead of entering the round well: say "The logic behind that action escapes me." [DEL  "CAN'T DO THAT."]
+Instead of entering the round well: say "The logic behind that action escapes me."
 
 The wall is scenery in the Inside Dome.
 The description of the wall is "The wall runs around the entire outer edge of the well."
@@ -2770,6 +2770,8 @@ Instead of drinking the well-water, say "You cup some water in your hand and tak
 Instead of smelling the well-water: say "It smells fine."
 	
 Instead of touching the well-water: say "It feels cool and wet like you would expect."
+	
+Instead of inserting things into the well-water: say "I don't see the purpose of dropping [the noun] in the water."
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.

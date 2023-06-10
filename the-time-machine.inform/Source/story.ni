@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41728 ]
+[ WORDS - 41849 ]
 
 Table of Releases
 release	notes
@@ -2770,7 +2770,7 @@ The description of the murals are "Each panel is a mosaic devoted to a specific 
 
 In one or two of the dusk scenes you can make out small shadowy silhouettes hidden in the background undergrowth and shadows, spying on the Eloi[']s foreground activity[unicode 8212]Wells['] Morlocks." [∆ "In one or two of the dusk scenes you can make out small silhouettes hidden in the undergrownth and shadows, spying on the Eloi's activities."]
 
-Understand "cyclorama" or "mural" or "panel" or "panels" as murals.
+Understand "cyclorama" or "mural" or "panel" or "panels" or "walls" as murals.
 	
 Before taking the murals:
 	say "They[']re pictures. You look at them, no reading necessary.";

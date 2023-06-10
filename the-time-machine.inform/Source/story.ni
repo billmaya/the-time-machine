@@ -2730,9 +2730,15 @@ The round well is a thing.
 The round well is a container.
 The round well is open.
 The round well is scenery in the Inside Dome.
-The description of the round well is "The well is circular and filled with what appears to be fresh water. It appears to be the same size as the oculus far above it with a knee-high wall running around its circumference."
+The description of the round well is "The well is circular and filled with what appears to be fresh water. The same size as the oculus far above, a knee-high wall runs around its circumference."
 
 Instead of inserting things into the round well: say "I don't see the purpose of dropping [the noun] in the water."
+
+instead of drinking the round well: try eating the well-water.
+
+Instead of searching the round well: say "You see nothing unusual in the well's water."
+
+Instead of entering the round well: say "The logic behind that action escapes me." [DEL  "CAN'T DO THAT."]
 
 The wall is scenery in the Inside Dome.
 The description of the wall is "The wall runs around the entire outer edge of the well."
@@ -2762,6 +2768,8 @@ Instead of eating the well-water:
 Instead of drinking the well-water, say "You cup some water in your hand and take a quick drink." [Recipe §10.2. Liquids]
 
 Instead of smelling the well-water: say "It smells fine."
+	
+Instead of touching the well-water: say "It feels cool and wet like you would expect."
 
 The murals are a thing.
 The murals are scenery in the Inside Dome.

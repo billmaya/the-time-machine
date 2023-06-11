@@ -2789,6 +2789,8 @@ Before taking the murals:
 
 Instead of searching the murals: say "They're mosaics. You look at them, no searching necessary."
 
+instead of touching the murals: try examining the mosaics.
+
 The mosaics are a thing.
 The mosaics are scenery in the Inside Dome.
 The description of the mosaics are "Each panel is composed of thousands of small square pieces of colored stone, tile, and glass best viewed at a slight distance. In certain places, individual pieces have fallen out unmaintained by future generations."

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41922 ]
+[ WORDS - 41918 ]
 
 Table of Releases
 release	notes
@@ -2778,13 +2778,16 @@ The murals are scenery in the Inside Dome.
 
 The description of the murals are "Each panel is a mosaic devoted to a specific pastoral scene being performed by a group of people who must be Wells['] Eloi[unicode 8212]gathering fruit, bathing and swimming in a river, wandering the countryside, eating, dancing, and other questionable activities.
 
-In one or two of the dusk scenes you can make out small shadowy silhouettes hidden in the background undergrowth and shadows, spying on the Eloi[']s foreground activity[unicode 8212]Wells['] Morlocks." [∆ "In one or two of the dusk scenes you can make out small silhouettes hidden in the undergrownth and shadows, spying on the Eloi's activities."]
+In one or two of the dusk scenes you can make out small silhouettes hidden in the undergrowth and shadows, spying on the Eloi's activities[unicode 8212]Wells['] Morlocks."
 
 Understand "cyclorama" or "mural" or "panel" or "panels" or "walls" as murals.
-	
+
+Instead of switching on the murals: try taking the murals.
 Before taking the murals:
-	say "They[']re pictures. You look at them, no reading necessary.";
+	say "They're fastened to the walls of the dome.";
 	stop the action.
+
+Instead of searching the murals: say "They're mosaics. You look at them, no searching necessary."
 
 The mosaics are a thing.
 The mosaics are scenery in the Inside Dome.

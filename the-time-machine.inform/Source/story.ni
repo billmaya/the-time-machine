@@ -2855,7 +2855,7 @@ Instead of eating the river-water:
 	try drinking the river-water;
 	stop the action.
 
-Instead of drinking the river-water, say "I don't see why you would choose to drink this dubious liquid when there's a source of fresh water elsewhere." 
+Instead of drinking the river-water, say "I don't see why you would choose to drink out of this murky river when [if the Inside Dome has been visited]there's[otherwise]there might be[end if] a source of fresh water elsewhere." 
 
 The river-bushes is scenery in the River Bank.
 The description of river-bushes is "The dense and overgrown flora parallels the river bank, dense with flowers."

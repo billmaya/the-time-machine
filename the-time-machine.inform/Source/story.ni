@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41719 ]
+[ WORDS - 41738 ]
 
 Table of Releases
 release	notes
@@ -2841,9 +2841,8 @@ The description of the river-river is "The river curves its way through the fore
 The printed name of river-river is "river".
 Understand "river" as river-river.
 
-[DEL Why does this description not display when you >examine water ?]
 The river-water is scenery in the River Bank.
-The description of the river-water is "The rushing water looks cool and inviting."
+The description of the river-water is "The rushing water is cloudy and filled with debris from somewhere upstream."
 The printed name of river-water is "water".
 Understand "water" as river-water.
 

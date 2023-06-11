@@ -2707,7 +2707,7 @@ Instead of examining dome-inside: try looking.
 
 The oculus is a thing.
 The oculus is scenery in the Inside Dome.
-The description of oculus is "A circular opening at the dome[']s apex allowing sunlight and the elements to enter.[first time] From this distance it looks small but given the size of the dome you estimate it to be at least thirty or thirty-five feet in diameter.[only]"
+The description of oculus is "A circular opening at the dome's apex far above your head allowing sunlight and the elements to enter.[first time] From this distance it looks small, but given the size of the dome you estimate it to be at least thirty or thirty-five feet in diameter.[only]"
 
 Understand "apex" as oculus.
 

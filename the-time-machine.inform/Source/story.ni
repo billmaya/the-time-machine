@@ -2834,7 +2834,7 @@ Part - River Bank
 
 The River Bank is a room.
 The River Bank is southeast of the Clearing.
-The description of the River Bank is "[first time]The southeast path winds its downhill through dense undergrowth. [only]After a brief hike you emerge from the woods onto the northwest bank of a sizeable river."
+The description of the River Bank is "[first time]The southeast path winds its way downhill through dense undergrowth. [only]After a brief hike, you emerge from the woods onto the northwest bank of a sizeable river."
 
 The river-river is scenery in the River Bank.
 The description of the river-river is "The river curves its way through the forest from the northeast to the southwest. The rushing water looks cool and inviting."

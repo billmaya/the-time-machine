@@ -2934,10 +2934,10 @@ To say shaft-description:
 Chapter - Shaft Directions
 
 To say shaft-directions:
-	if the location of the player is Shaft 0:
+	if the location of the player is Shaft 1:
 		say "down";
 	otherwise:
-		if the location of the player is Shaft 5:
+		if the location of the player is Shaft 4:
 			say "up";
 		otherwise:
 			say "up and down".
@@ -2985,42 +2985,7 @@ To say ladder-glyphs:
 		-- Shaft 5: say "[level-5-light] [tamil-work]";
 		-- otherwise: say "NULL";
 
-Part - Underground - Level 0
 
-Chapter - Shaft 0
-
-Shaft 0 is underground.
-Shaft 0 is up from Shaft 1.
-
-The description of Shaft 0 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall."
-
-The printed name of Shaft 0 is "Shaft - Level 0". [[ladder-glyphs]".]
-
-The visibility of Shaft 0 is day.
-
-Section - Louvered Ceiling
-
-The louvered ceiling is a thing.
-The louvered ceiling is in Shaft 0.
-The louvered ceiling is scenery.
-
-The description of louvered ceiling is "Metal slats that look like they automatically adjust to let light into the shaft while keeping out the elements."
-
-Understand "slats" as louvered ceiling.
-
-Instead of adjusting the louvered ceiling: say "You can't see how to do that."
-
-Section - Holes
-
-The holes are a thing.
-The holes are in Shaft 0.
-The holes are scenery.
-
-The description of holes are "Two oval ellipsis carved through the shaft."
-
-Understand "hole" or "ellipse" or "ellipsis" or "oval" or "ovals" as holes.
-
-Instead of searching the holes: say "Bending down slightly you peer through one of the ovals. Far below you can see the clearing with your time machine in the center of it and beyond the forest, a parts of a river."
 
 Part - Underground - Level 1
 

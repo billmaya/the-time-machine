@@ -2865,6 +2865,8 @@ Gathering is an action applying to one thing.
 Understand "gather [something]" as gathering.
 Instead of gathering: say "The Eloi don[']t seem to need your help. Perhaps another time."
 
+Instead of going southeast in the River Bank: try swimming.
+
 Swimming is an action applying to nothing.
 Understand "swim" as swimming.
 Instead of swimming: say "You[']re not dressed for swimming. Perhaps another time."

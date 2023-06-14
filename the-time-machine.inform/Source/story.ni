@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41886 ]
+[ WORDS - 41924 ]
 
 Table of Releases
 release	notes
@@ -2666,9 +2666,15 @@ Understand "rungs" or "rung" or "bars" or "bar" as ladder.
 
 Instead of climbing the ladder:
 	if the location of the player is Top Well:
-		now the player is in Bottom Well;
+		say "You can't climb up any further.";
 	otherwise if the location of the player is Bottom Well:
 		now the player is in Top Well.
+
+Instead of descending the ladder:
+	if the location of the player is Top Well:
+		now the player is in Bottom Well;
+	otherwise if the location of the player is Bottom Well:
+		say "You can't climb down any further."
 	
 Part - Domed Building
 

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41800 ]
+[ WORDS - 41886 ]
 
 Table of Releases
 release	notes
@@ -2959,13 +2959,26 @@ Understand "ladder" or "rungs" as shaft-ladder.
 	
 Instead of climbing the shaft-ladder:
 	if the location of the player is Shaft 1:
-		now the player is in Shaft 2;
+		say "You can't climb up any further.";
 	otherwise if the location of the player is Shaft 2:
 		now the player is in Shaft 1;
 	otherwise if the location of the player is Shaft 3:
 		now the player is in Shaft 2;
 	otherwise if the location of the player is Shaft 4: 
 		now the player is in Shaft 3.	
+
+Descending is an action applying to one touchable thing.
+Understand "descend [something]" as descending.
+
+Instead of descending shaft-ladder:
+	if the location of the player is Shaft 1:
+		now the player is in Shaft 2;
+	otherwise if the location of the player is Shaft 2:
+		now the player is in Shaft 3;
+	otherwise if the location of the player is Shaft 3:
+		now the player is in Shaft 4;
+	otherwise if the location of the player is Shaft 4: 
+		say "You can't climb down any further."
 
 Chapter - Ladder Glyphs
 

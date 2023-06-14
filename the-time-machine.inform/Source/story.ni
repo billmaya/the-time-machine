@@ -2955,7 +2955,7 @@ The shaft-ladder is in Shaft 5.
 
 The description of the shaft-ladder is "A series of metal rungs set into the metal wall of the shaft." [Carved into the metal next to the ladder are a series of glyphs [ladder-glyphs]."]
 
-Understand "ladder" as shaft-ladder.
+Understand "ladder" or "rungs" as shaft-ladder.
 	
 Instead of climbing the shaft-ladder:
 	say "HANDLE >CLIMB LADDER IN UNDERGROUND."

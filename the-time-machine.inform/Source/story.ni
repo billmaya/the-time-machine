@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 41924 ]
+[ WORDS - 41992 ]
 
 Table of Releases
 release	notes
@@ -2985,6 +2985,18 @@ Instead of descending shaft-ladder:
 		now the player is in Shaft 4;
 	otherwise if the location of the player is Shaft 4: 
 		say "You can't climb down any further."
+
+Chapter - Shaft Platform
+
+The shaft-platform is a backdrop.
+The shaft-platform is in Shaft 1.
+The shaft-platform is in Shaft 2.
+The shaft-platform is in Shaft 3.
+The shaft-platform is in Shaft 4.
+
+The description of shaft-platform is "Anchored to the side of the shaft, the small platform gives you a bit of room to move around carefully."
+
+Understand "platform" as shaft-platform.
 
 Chapter - Ladder Glyphs
 

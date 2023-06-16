@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42073 ]
+[ WORDS - 42124 ]
 
 Table of Releases
 release	notes
@@ -2950,9 +2950,9 @@ The description of generic-shaft is "[generic-shaft-description]".
 
 To say generic-shaft-description:
 	if the location of the player is:
-		-- Shaft 1: say  "SHAFT 1";
-		-- Shaft 4: say "SHAFT 4";
-		-- otherwise: say "SHAFT 2 | SHAFT 3".
+		-- Shaft 1: say  "Carved out of solid rock, the circular shaft surrounds you on all sides and continues down into the darkness below.";
+		-- Shaft 4: say "Carved out of solid rock, the circular shaft surrounds you on all sides and continues down into the darkness below.";
+		-- otherwise: say "Carved out of solid rock, the circular shaft surrounds you on all sides and continues down into the darkness below.";
 
 Understand "shaft" as generic-shaft.
 

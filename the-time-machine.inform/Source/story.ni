@@ -4320,7 +4320,7 @@ Chapter - Default Responses
 [Default tell response for Eloi:]
 	
 Default ask-tell response for Eloi:
-	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits while still others walk over to see the new oddity." 
+	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits, while still others walk over to see the new oddity." 
 	
 Default give response for Eloi:
 	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few second and, unable to discern its purpose, pass it around the small group gathered until the [noun] is returned to you."

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42124 ]
+[ WORDS - 42149 ]
 
 Table of Releases
 release	notes
@@ -2544,12 +2544,6 @@ clearing-print-description is a truth state that varies.
 clearing-print-description is true.
 The room description body text rule does nothing when clearing-print-description is false.
 
-[DEL Check going to the Clearing:
-	if the Eloi are in the Clearing:
-		now clearing-print-description is false;
-	otherwise: 
-		now library-print-description is true.]
-
 Check going to the River Bank: now clearing-print-description is true.
 Check going to the Domed Building: now clearing-print-description is true.
 
@@ -4312,9 +4306,6 @@ Section - Imploring - "Ask [someone] for ['text']"
 Section - Showing
 
 After showing the pocket watch to the Eloi:
-	[say "Suddenly all the Eloi stop their chattering and silently focus on the pocket watch. One of them grabs it from you and turns it over in their hands. They show it to another Eloi who grabs it from them."[paragraph break];]
-	[now the Eloi is carrying the pocket watch;]
-	[now introduce-weena is true.]
 	if the player is in the River Bank:
 		say "Suddenly, all the Eloi stop their chattering when you bring out the pocket watch[if ask-about-weena is true] and mention Weena[end if]. One of them takes it from turns it over in his hands before handing it to another Eloi, who examines it as well. This Eloi hands the pocket watch back to you, looks at the group, and nods briefly.[paragraph break]Several of the Eloi grab you gently and walk with you to the northwest.";
 		now clearing-print-description is false;
@@ -4341,8 +4332,8 @@ Default ask-tell response for Eloi:
 	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits, while still others walk over to see the new oddity." 
 	
 Default give response for Eloi:
-	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few seconds before passing it around the group. Finally, it's returned to you." [DEL and, unable to discern its purpose, pass it around the small group gathered around you until finally returning it to you."]
-	
+	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few seconds before passing it around the group. Finally, it's returned to you." 
+		
 Default show response for Eloi:
 	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function."	
 	

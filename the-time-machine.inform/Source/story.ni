@@ -2537,6 +2537,22 @@ Instead of going down in the Clearing:
 	if the metal cover is not on the circular well:
 		try entering the circular well.
 
+Chapter - Printing Clearing Description
+
+[https://bit.ly/3NyqyEz]
+clearing-print-description is a truth state that varies.
+clearing-print-description is true.
+The room description body text rule does nothing when clearing-print-description is false.
+
+[DEL Check going to the Clearing:
+	if the Eloi are in the Clearing:
+		now clearing-print-description is false;
+	otherwise: 
+		now library-print-description is true.]
+
+Check going to the River Bank: now clearing-print-description is true.
+Check going to the Domed Building: now clearing-print-description is true.
+
 Chapter - Scenery
 
 The circular well is a thing.
@@ -4301,12 +4317,14 @@ After showing the pocket watch to the Eloi:
 	[now introduce-weena is true.]
 	if the player is in the River Bank:
 		say "Suddenly, all the Eloi stop their chattering when you bring out the pocket watch[if ask-about-weena is true] and mention Weena[end if]. One of them takes it from turns it over in his hands before handing it to another Eloi, who examines it as well. This Eloi hands the pocket watch back to you, looks at the group, and nods briefly.[paragraph break]Several of the Eloi grab you gently and walk with you to the northwest.";
+		now clearing-print-description is false;
 		now the Eloi are in the Clearing;
 		now the player is in the Clearing;
 		now show-eloi-watch is true;
 		say "[eloi-in-clearing]";
+		now clearing-print-description is true;
 	otherwise if the player is in the Clearing:
-		try quizzing the Eloi about Weena.
+		try quizzing the Eloi about Weena. [Should use this to give better explanation of Weena's situation and that player is supposed to rescue her.]
 
 Section - Giving
 		

@@ -4300,7 +4300,7 @@ After showing the pocket watch to the Eloi:
 	[now the Eloi is carrying the pocket watch;]
 	[now introduce-weena is true.]
 	if the player is in the River Bank:
-		say "Suddenly, all the Eloi stop their chattering when you bring out the pocket watch[if ask-about-weena is true] and mention Weena[end if]. One of them takes it from turns it over in his hands before handing it to another Eloi, who examines it as well. This Eloi hands the pocket watch back to you, looks at the group, and nods briefly.[paragraph break]Several of the Eloi grab you gently and walk with you to the northeast.";
+		say "Suddenly, all the Eloi stop their chattering when you bring out the pocket watch[if ask-about-weena is true] and mention Weena[end if]. One of them takes it from turns it over in his hands before handing it to another Eloi, who examines it as well. This Eloi hands the pocket watch back to you, looks at the group, and nods briefly.[paragraph break]Several of the Eloi grab you gently and walk with you to the northwest.";
 		now the Eloi are in the Clearing;
 		now the player is in the Clearing;
 		now show-eloi-watch is true;

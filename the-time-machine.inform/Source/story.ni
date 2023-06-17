@@ -5050,7 +5050,7 @@ When Ending Scene ends:
 		if time-travel-seen is true:
 			if debug-mode is true, say "Endgame-Success = True, Time-Travel-Seen = True (DEBUG).";
 			[say "YOU PUSH THE LEVER AGAIN TO RETURN TO 1895.[paragraph break]";]
-			say "Pushing the lever again you return back to 1895 and the workshop. Stepping down from the time machine you answer the stunned Humboldt and Gernsback's questions, convincing them of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
+			say "Pushing the lever again you return back to 1895 and the workshop. Stepping down from the time machine you answer the stunned Humboldt's questions, convincing him of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
 		otherwise:
 			[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
 			say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";

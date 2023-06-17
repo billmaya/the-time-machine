@@ -4323,7 +4323,7 @@ Default ask-tell response for Eloi:
 	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits, while still others walk over to see the new oddity." 
 	
 Default give response for Eloi:
-	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few second and, unable to discern its purpose, pass it around the small group gathered until the [noun] is returned to you."
+	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few seconds before passing it around the group. Finally, it's returned to you." [DEL and, unable to discern its purpose, pass it around the small group gathered around you until finally returning it to you."]
 	
 Default show response for Eloi:
 	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function."	

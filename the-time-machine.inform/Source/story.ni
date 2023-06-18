@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42149 ]
+[ WORDS - 42142 ]
 
 Table of Releases
 release	notes
@@ -5046,7 +5046,7 @@ When Ending Scene ends:
 	if endgame-success is true:
 		if weena-appears is true:
 			if debug-mode is true, say "Endgame-Success = True, Weena-Appears = True (DEBUG).";
-			say "Suddenly the noise of what sounds like a key scraping along the bass string of a piano fills the room, drowning out all conversation. The air in the center of the room shimmers and Wells['] time machine reappears with an unusual occupant, a young girl whom, when she steps down from the machine after it materializes, you realize must be Wells['] Weena.[paragraph break]Humboldt and Gernsback are stunned, the truth behind Wells['] story apparent after what they have just seen. Leaving Gernsback behind Humboldt and you go to the hospital to free Wells.";
+			say "Suddenly the noise of what sounds like a key scraping along the bass string of a piano fills the room, drowning out all conversation. The air in the center of the room shimmers and Wells['] time machine reappears with an unusual occupant, a young girl whom, when she steps down from the machine after it materializes, you realize must be Wells['] Weena.[paragraph break]Humboldt is stunned, the truth behind Wells['] story apparent after what he has just seen. Humboldt and you go to the hospital to free Wells.";
 		if time-travel-seen is true:
 			if debug-mode is true, say "Endgame-Success = True, Time-Travel-Seen = True (DEBUG).";
 			[say "YOU PUSH THE LEVER AGAIN TO RETURN TO 1895.[paragraph break]";]

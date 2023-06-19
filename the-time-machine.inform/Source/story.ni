@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42233 ]
+[ WORDS - 42336 ]
 
 Table of Releases
 release	notes
@@ -4392,8 +4392,6 @@ Instead of showing the petal to Weena:
 	if Weena is in the Year-802701-Outside:
 		say "Weena looks at the petal in your hand. Reaching into her hair, she removes a single flower and hands it to you before running off.";
 		now the player is carrying the flower;
-		[say "Weena looks at the petal in your hand and, reaching up into her hair, she remove a single flower and hands it to you before running off. It must be a game she played with Wells. The rest of the Eloi follow her and soon you are alone by the river.";]
-		[now the Eloi are nowhere;]
 		reset the interlocutor;
 		now Weena is nowhere;
 	otherwise:
@@ -4439,21 +4437,22 @@ Default show response for Weena:
 [Default yes-no response for Weena:]
 [Default response for Weena:]
 
-Chapter - Coercing Weena
+Chapter - Push Weena
 
-Instead of switching on Weena: say "CAN'T SWITCH ON WEENA."
-Instead of switching off Weena: say "CAN'T SWITCH OFF WEENA."
+Instead of switching on Weena: say "CAN'T SWITCH ON WEENA." [response when >push Weena]
 
-Instead of pulling Weena: say "CAN'T PULL WEENA."
+Instead of pulling Weena: say "CAN'T PULL WEENA." [response when >pull Weena"]
 
-Instead of pushing Weena: say "CAN'T PUSH WEENA."
+Check the player pushing Weena to (this is the push weena rule):
+	if the noun is not pushable between rooms:
+		say "CAN'T PUSH WEENA IN SPECIFIC DIRECTION."; [response when >push weena north]
+	stop the action.
+	
+The push weena rule substitutes for the can't push unpushable things rule.
 
-The can't push what's fixed in place rule is not listed in the check pushing rulebook.
-The can't push people rule is not listed in the check pushing rulebook.
-Instead of pushing Weena in a direction: say "CAN'T PUSH WEENA IN DIRECTION."
-
-
-Instead of asking Weena to try going in a direction: say "WEENA WANTS TO BUT TOO TERRIFIED TO FOLLOW YOU."
+Instead of asking Weena to try going in a direction: say "WEENA WANTS TO BUT TOO TERRIFIED TO FOLLOW YOU." 
+[action is "asking Weena to try going north"
+ respose is "Weena has better things to do."]
 
 
 Book - Morlocks

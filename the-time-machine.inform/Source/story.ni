@@ -4401,7 +4401,7 @@ Instead of showing the petal to Weena:
 		reset the interlocutor.
 		
 Instead of showing the tunic to Weena:
-	say "Weena glances at the [noun] and then at her own clothes but says nothing."
+	say "Weena glances at the tunic and then at her own clothes but says nothing."
 
 Section - Giving
 
@@ -4409,6 +4409,9 @@ Instead of giving the pocket watch to Weena:
 	say "She looks at the pocket watch, smiles, and then returns it to you."
 
 Instead of giving the petal to Weena: try showing the petal to Weena.
+
+Instead of giving the tunic to Weena:
+	say "You hand the tunic to Weena. Puzzled, she compares it her own clothing, before returning the tunic to you [if the player has the poker]and pointing to the poker in your hand.[otherwise].[end if]"
 
 Chapter - Default Responses
 

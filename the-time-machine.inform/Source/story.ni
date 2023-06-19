@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42058 ]
+[ WORDS - 42234 ]
 
 Table of Releases
 release	notes
@@ -4275,10 +4275,31 @@ After quizzing the Eloi about Morlocks:
 ask-about-weena is a truth state that varies.
 ask-about-weena is false.
 
+asked-about-weena is a number that varies.
+asked-about-weena is 0.
+
+[To say weena-needs-rescuing:
+	if we had quizzed the Eloi about Weena for the second time:
+		say "QUIZZING ELOI ABOUT WEENA 2ND TIME.";
+	otherwise:
+		say "One of the Eloi points at the metal cover of the well and says a single word - 'Weena.'";]
+
+To say weena-needs-rescuing:
+	if asked-about-weena is 0:
+		say "One of the Eloi points at the metal cover of the well and says a single word - 'Weena.'";
+	otherwise if asked-about-weena is 1:
+		say "The Eloi spokesperson points at the metal cover of the well a second time and says the words 'Weena...Morlocks' followed by a grabbing motion with both hands.";
+	otherwise if asked-about-weena is 2:
+		say "The look of frustration clearly visible in their face, the Eloi pleads with you one last time. 'Rescue Weena.'";
+	otherwise:
+		say "Obvious frustrated with your lack of understanding, the Eloi says something to the group and they quickly disappear into the forest.";
+		now the Eloi are nowhere;
+	now asked-about-weena is asked-about-weena + 1.
+
 After quizzing the Eloi about Weena:
 	[now introduce-weena is true.]
 	if show-eloi-watch is true:
-		say "One of the Eloi points at the metal grate and says a single word - 'Weena.'";
+		say "[weena-needs-rescuing]";
 	otherwise:
 		now ask-about-weena is true;
 		try showing the pocket watch to the Eloi.

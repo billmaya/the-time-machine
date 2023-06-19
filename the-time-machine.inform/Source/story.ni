@@ -4397,7 +4397,7 @@ Instead of showing the petal to Weena:
 		reset the interlocutor;
 		now Weena is nowhere;
 	otherwise:
-		say "Given the circumstances, Weena looks at the petal but is too terrified right now to react.";
+		say "Given the circumstances, Weena looks at the petal, but is too terrified right now to react appropriately.";
 		reset the interlocutor.
 		
 Instead of showing the tunic to Weena:

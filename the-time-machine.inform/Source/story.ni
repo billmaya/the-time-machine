@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42234 ]
+[ WORDS - 42233 ]
 
 Table of Releases
 release	notes
@@ -4278,7 +4278,8 @@ ask-about-weena is false.
 asked-about-weena is a number that varies.
 asked-about-weena is 0.
 
-[To say weena-needs-rescuing:
+[This doesn't compile. Why?]
+[To say weena-needs-rescuing: 
 	if we had quizzed the Eloi about Weena for the second time:
 		say "QUIZZING ELOI ABOUT WEENA 2ND TIME.";
 	otherwise:
@@ -4297,7 +4298,6 @@ To say weena-needs-rescuing:
 	now asked-about-weena is asked-about-weena + 1.
 
 After quizzing the Eloi about Weena:
-	[now introduce-weena is true.]
 	if show-eloi-watch is true:
 		say "[weena-needs-rescuing]";
 	otherwise:

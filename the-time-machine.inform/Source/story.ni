@@ -2940,7 +2940,6 @@ Chapter - Shaft Description
 
 To say shaft-description:
 	if the location of the player is:
-		-- Shaft 0: say "You're standing on a small platform anchored to the side of the shaft. Light streams down through the louvered ceiling and the two circular holes set into the wall set at chest height.";
 		-- Shaft 1: say "The small tunnel opens up into a large shaft that extends high up above your head and down into the darkness below.";
 		-- Shaft 2: say "You're standing on a small platform anchored to the side of the shaft.";
 		-- Shaft 3: say "You're standing on a small platform anchored to the side of the shaft.";
@@ -3044,7 +3043,6 @@ to say tamil-work: say "வேலை".
 
 To say ladder-glyphs:
 	if the location of the player is:
-		-- Shaft 0: say "[level-0-light] [tamil-look]";
 		-- Shaft 1: say "[level-1-light] [tamil-surface]";
 		-- Shaft 2: say "[level-2-light] [tamil-social]";
 		-- Shaft 3: say "[level-3-light] [tamil-sleep]";
@@ -3095,7 +3093,6 @@ Chapter - Shaft 1
 Shaft 1 is underground.
 Shaft 1 is north of Bottom Well.
 Shaft 1 is up from Shaft 2.
-Shaft 1 is down from Shaft 0.
 
 The description of Shaft 1 is "[shaft-description] You're standing on a small platform anchored to the side of a large cylindrical shaft.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 

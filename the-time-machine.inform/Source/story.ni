@@ -4439,6 +4439,22 @@ Default show response for Weena:
 [Default yes-no response for Weena:]
 [Default response for Weena:]
 
+Chapter - Coercing Weena
+
+Instead of switching on Weena: say "CAN'T SWITCH ON WEENA."
+Instead of switching off Weena: say "CAN'T SWITCH OFF WEENA."
+
+Instead of pulling Weena: say "CAN'T PULL WEENA."
+
+Instead of pushing Weena: say "CAN'T PUSH WEENA."
+
+The can't push what's fixed in place rule is not listed in the check pushing rulebook.
+The can't push people rule is not listed in the check pushing rulebook.
+Instead of pushing Weena in a direction: say "CAN'T PUSH WEENA IN DIRECTION."
+
+
+Instead of asking Weena to try going in a direction: say "WEENA WANTS TO BUT TOO TERRIFIED TO FOLLOW YOU."
+
 
 Book - Morlocks
 

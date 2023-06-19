@@ -2944,7 +2944,6 @@ To say shaft-description:
 		-- Shaft 2: say "You're standing on a small platform anchored to the side of the shaft.";
 		-- Shaft 3: say "You're standing on a small platform anchored to the side of the shaft.";
 		-- Shaft 4: say "You're standing on a small platform anchored to the side of the shaft.";
-		-- Shaft 5: say "You're standing at the bottom of the shaft.[first time] Far above your head the small circle marks the waning daytime sky but none of the light penetrates to this depth to illuminate the area around you.[only]";
 		-- otherwise: say "NULL";
 
 Section - Generic Shaft Description
@@ -2984,7 +2983,6 @@ The shaft-ladder is in Shaft 1.
 The shaft-ladder is in Shaft 2.
 The shaft-ladder is in Shaft 3.
 The shaft-ladder is in Shaft 4.
-The shaft-ladder is in Shaft 5.
 
 The description of the shaft-ladder is "A series of metal rungs set into the metal wall of the shaft." [Carved into the metal next to the ladder are a series of glyphs [ladder-glyphs]."]
 
@@ -3107,7 +3105,6 @@ Chapter - Shaft 2
 Shaft 2 is underground.
 Shaft 2 is down from Shaft 1.
 Shaft 2 is up from Shaft 3.
-Shaft 2 is north of the Agora.
 
 The description of Shaft 2 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 	
@@ -3183,8 +3180,7 @@ Part - Underground - Level 4
 Chapter - Shaft 4
 
 Shaft 4 is underground.
-[Shaft 4 is down from Shaft 3.
-Shaft 4 is up from Shaft 5.]
+Shaft 4 is down from Shaft 3.
 Shaft 4 is north of the Eating Area.
 
 Instead of going down in Shaft 4:

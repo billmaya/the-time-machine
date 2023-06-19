@@ -2819,7 +2819,7 @@ Part - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river with many tiny figures around it.[first time] From up here you can also see an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth at ground level.[only]"
+The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river[if the location of the Eloi is not nowhere] with many tiny figures around it.[otherwise].[end if][first time] From up here you can also see an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth at ground level.[only]"
 
 The balcony-river is scenery in the Balcony.
 The description of the balcony-river is "The river winds its way through the forest below you. Looking closely, you can see groups of people in the river and on its banks."

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42336 ]
+[ WORDS - 42324 ]
 
 Table of Releases
 release	notes
@@ -4439,8 +4439,6 @@ Default show response for Weena:
 
 Chapter - Push Weena
 
-[Weena is pushable between rooms.]
-
 Instead of switching on Weena: say "CAN'T SWITCH ON WEENA." [response when >push Weena.]
 
 Instead of pulling Weena: say "CAN'T PULL WEENA." [response when >pull Weena.]
@@ -4453,8 +4451,6 @@ Check the player pushing Weena to (this is the push weena rule):
 The push weena rule substitutes for the can't push unpushable things rule.
 
 Instead of asking Weena to try going somewhere: say "WEENA WANTS TO BUT TOO TERRIFIED TO FOLLOW YOU." [response when >weena, go north.]
-[action is "asking Weena to try going north"
- respose is "Weena has better things to do."]
 
 
 Book - Morlocks

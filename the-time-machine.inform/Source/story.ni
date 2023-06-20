@@ -4439,18 +4439,20 @@ Default show response for Weena:
 
 Chapter - Push Weena
 
-Instead of switching on Weena: say "CAN'T SWITCH ON WEENA." [response when >push Weena]
+[Weena is pushable between rooms.]
 
-Instead of pulling Weena: say "CAN'T PULL WEENA." [response when >pull Weena"]
+Instead of switching on Weena: say "CAN'T SWITCH ON WEENA." [response when >push Weena.]
+
+Instead of pulling Weena: say "CAN'T PULL WEENA." [response when >pull Weena.]
 
 Check the player pushing Weena to (this is the push weena rule):
 	if the noun is not pushable between rooms:
-		say "CAN'T PUSH WEENA IN SPECIFIC DIRECTION."; [response when >push weena north]
+		say "CAN'T PUSH WEENA IN SPECIFIC DIRECTION."; [response when >push weena north.]
 	stop the action.
 	
 The push weena rule substitutes for the can't push unpushable things rule.
 
-Instead of asking Weena to try going in a direction: say "WEENA WANTS TO BUT TOO TERRIFIED TO FOLLOW YOU." 
+Instead of asking Weena to try going somewhere: say "WEENA WANTS TO BUT TOO TERRIFIED TO FOLLOW YOU." [response when >weena, go north.]
 [action is "asking Weena to try going north"
  respose is "Weena has better things to do."]
 

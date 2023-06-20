@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42319 ]
+[ WORDS - 42348 ]
 
 Table of Releases
 release	notes
@@ -2505,11 +2505,20 @@ Instead of going north in the Workshop:
 	try going down.
 
 Instead of going down in the Workshop:
-	if the windows are open:
+	if the Ending Scene is happening:
+		say "[first time]Humboldt stops you from leaving. [only]'Wait a minute, what have you found?'";
+		stop the action;
+	otherwise if the windows are open:
 		say "Throwing your legs over the sill of the opened windows you carefully lower yourself onto the snow-covered bench in the garden below with some difficulty.";
 		now the player is on the bench;
 	otherwise:
 		say "[windows-closed]".
+
+Instead of going south in the Workshop:
+	if the Ending Scene is happening:
+		say "[first time]Humboldt stops you from leaving. [only]'Wait a minute, what have you found?'";
+	otherwise:
+		continue the action.
 		
 Book - 802,701
 
@@ -5043,12 +5052,6 @@ Every turn:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
 			try Humboldt going the way;
 	refresh the list-characters window.
-
-Instead of going south:
-	if the Ending Scene is happening:
-		say "[first time]Humboldt stops you from leaving. [only]'Wait a minute, what have you found?'";
-	otherwise:
-		continue the action.
 
 time-travel-seen is a truth state that varies.
 time-travel-seen is false.

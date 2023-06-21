@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42353 ]
+[ WORDS - 42328 ]
 
 Table of Releases
 release	notes
@@ -3758,10 +3758,10 @@ After quizzing Humboldt about time machine during Ending Scene:
 	say "[if the time machine is not nowhere]'Outside my area of expertise, I'm afraid.'[otherwise]'Don't see anything remotely like that.'[end if]"
 
 After quizzing Humboldt about pocket watch during Ending Scene: 
-	say "'I[']m glad to see that you have held onto Wells['] watch.'"
+	say "'I[']m glad to see that you have held onto Wells['] watch. He was asking about it.'"
 
 After quizzing Humboldt about the petal during Ending Scene: 
-	say "'I gave that to you earlier. You were supposed to find the rest of it so we could convince Wells that his story was nonsense, a figment of his imagination. Did you find it?'"
+	say "'I gave that to you earlier. You were supposed to find the rest of the flower so we could convince Wells that his story was nonsense, a figment of his imagination. Did you find it?'"
 
 After quizzing Humboldt about the key during Ending Scene:
 	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [or]Obviously it[']s the workshop key since we[']re standing in the bloody place. [at random]What have you found?'"
@@ -3819,14 +3819,14 @@ To say reply-response:
 		-- tolerant-1:
 			say ". Nodding his head as you speak, he waits paitiently until you've finished. 'But what about what I asked you to do?'";
 		-- tolerant-2:
-			say " but it's obvious he's already heard something similar from Wells. 'Obviously you were able to get into the workshop. Did you find anything?'";
+			say ", but it's obvious he's already heard something similar from Wells. 'Obviously you were able to get into the workshop. Did you find anything?'";
 		-- frustrated-1:
 			say ", waiting in frustration for you to finish. 'But any luck finding the rest of that flower?'";
 		-- frustrated-2:
-			say " He stares at you, his annoyance clearly visible on his face as you finish. He looks around the room, his patience obviously exhausted, not knowing what to say.";
+			say ". He stares at you, his annoyance clearly visible on his face as you finish. He looks around the room, his patience obviously exhausted, not knowing what to say.";
 		-- angry-1:
 			let current location be the location of Humboldt;
-			say " but cuts you off before you're finished. 'I know you want to help Wells, we both do. But repeating his delusional nonsense without any proof won't convince me no matter how many times I hear it. In fact, it makes me doubt your own sanity. Good evening.'[paragraph break]Humboldt turns and storms out of [the current location][if Gernsback is in the current location] with Gernsback following close behind. You can't be sure but you think you see a smile of satisfaction on the businessman's face[end if].";
+			say " but cuts you off before you're finished. 'I know you want to help Wells, we both do. But repeating his delusional nonsense without any proof won't convince me no matter how many times I hear it. In fact, it makes me doubt your own sanity. Good evening.'[paragraph break]Humboldt turns and storms out of [the current location].";
 			now Gernsback is nowhere;
 			now Humboldt is nowhere.
 

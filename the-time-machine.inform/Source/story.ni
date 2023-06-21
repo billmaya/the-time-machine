@@ -5191,9 +5191,9 @@ Travel To 1895 begins when the time machine is in the Clearing and the player is
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
-	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
+	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey, but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
 
-	Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow and, as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
+	Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow, and as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
 
 	You have arrived back in the year 1895.";
 	now the current-year is "1895";

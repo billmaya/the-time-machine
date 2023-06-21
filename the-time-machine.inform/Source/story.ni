@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42348 ]
+[ WORDS - 42353 ]
 
 Table of Releases
 release	notes
@@ -5163,15 +5163,15 @@ travel-to-802701 is false.
 When Travel To 802,701 begins:
 	[say "TRAVELING TO 802,701 BEGINS.";]
 	now travel-to-802701 is true;
-	say "From Wells['] story you have an idea of what is going to happen but you never expected to see it with your own eyes or experience it yourself.
+	say "From Wells['] story you have an idea of what is going to happen, but you never expected to see it with your own eyes or experience it yourself.
 
-	As the machine powers up and the dials start inching forward through the seconds, minutes, weeks, and months, the workshop and its contents, in fact the entire house, fade away to be replaced by a shimmering grey void. As the dials inch forward through time, vague shapes of all sizes appear and disappear on the surface of the void surrounding you and the time machine[unicode 8212]future people, places, and things living out their own personal cycle of birth, life, and death.
+	As the machine powers up and the dials start inching forward through the seconds, minutes, weeks, and months, the workshop and its contents[unicode 8212]in fact the entire house[unicode 8212]fade away to be replaced by a shimmering grey void. Vague shapes of all sizes appear and disappear on the surface of the void that surrounds you as the millennia, ages, and epochs pass[unicode 8212]future people, places, and things living out their personal cycles of birth, life, and death.
 
 	You grip the time machine[']s framework as it shudders and gains velocity on its pre-programmed flight through the centuries and millennia towards what you suppose is the Age of Eloi and Morlocks that Wells spoke about.
 	
-	One age passes. Two ages. Five ages. The blur of the individual dials starts slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you and the time machine starts to dissipate and fade away like an early morning fog in the face of the sun. Eventually the time machine stops, the dials indicating that 800,806 years have passed from when you started your journey in 1895.
+	One age passes. Two ages. Five ages. The blur of the individual dials starts slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you starts to dissipate and fade away like an early morning fog in the face of the sun. Eventually the time machine stops, the dials indicating that 800,806 years have passed from when you started your journey in 1895.
 
-	Apparently you have arrived in the year 802,701 A.D.";
+	Apparently, as best you can tell, you have travelled through time and arrived in the year 802,701 A.D.";
 	now the current-year is "802,701";
 	now the numeric-year is 802701;
 	now the time machine is in the Clearing;

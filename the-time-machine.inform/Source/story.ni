@@ -3641,6 +3641,8 @@ After quizzing Humboldt about Humboldt:
 
 After quizzing Humboldt about player: say "Perhaps you should focus on the situation at hand instead of yourself."
 After quizzing Humboldt about Watchett: say "'I think she is in the kitchen.'"
+	
+After quizzing Humboldt about the newspaper: say "He throws it on the workbench without a second glance. 'I've already read it.'"
 
 Section - Informing - "Tell [someone] about [thing]"	
 	
@@ -3730,6 +3732,11 @@ Section - Showing
 
 After showing noun to Humboldt during Opening Scene: try quizzing Humboldt about noun.
 After showing something to Humboldt during Opening Scene: say "SHOWING [noun]".
+
+Section - Giving
+		
+Instead of giving something to Humboldt:
+	try showing the noun to Humboldt.
 
 Section - Testing
 

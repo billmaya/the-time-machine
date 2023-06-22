@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42407 ]
+[ WORDS - 42449 ]
 
 Table of Releases
 release	notes
@@ -3796,8 +3796,8 @@ Section - Informing - "Tell [someone] about [thing]"
 After informing Humboldt about the petal during the Ending Scene: 
 	say "'I know all that. But did you find the rest of the flower?'"
 
-[After informing Humboldt about the time machine during the Ending Scene:
-	say "'I'd like to believe that it does what you say it does but we've no proof.'"]
+After informing Humboldt about the time machine during the Ending Scene:
+	say "'Impressive.'[no line break] [first time] Humboldt glances over the product of Wells['] experiments. 'If we could only prove it does what Wells say it's designed to do then our problems would be solved.[no line break][only] He turns back towards you. 'But what about finding that flower that goes with the petal I gave you earlier?'"
 
 [Before informing Humboldt about the workshop-room during the Ending Scene: 
 	try quizzing Humboldt about the second noun;

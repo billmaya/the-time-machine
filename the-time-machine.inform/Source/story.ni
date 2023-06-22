@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42328 ]
+[ WORDS - 42407 ]
 
 Table of Releases
 release	notes
@@ -5094,7 +5094,7 @@ When Ending Scene ends:
 			say "Pushing the lever again you return back to 1895 and the workshop. Stepping down from the time machine you answer the stunned Humboldt's questions, convincing him of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
 		otherwise:
 			[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
-			say "Humboldt studies the flower in amazement. 'I[']m just an amateur botanist but this morphology is unique,' he says. 'There must be some truth to Wells[apostrophe] story.' You recount your adventures in the future and take the doctor for a brief journey to the year 802,701 before the both of you go to the hospital to free Wells.";
+			say "Humboldt studies the flower with growing amazement. 'I'm just an amateur botanist but even I can say that this morphology is unique, nothing like it in this world...' He studies the flower for a few seconds more before looking at you with a sober rationalization on his face. '...or this time.' He nods slightly. 'There must be some truth to Wells' story.'[paragraph break]Now that the doctor is willing to admit his error, he's more receptive to hearing the brief synopsis of your adventures in the year 802,701 before both of you leave for the hospital to get your friend Wells released.";
 	if endgame-failure is true:
 		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
 		say "Alone, looking around the workshop, you feel a sense of failure and despair. Your attempt to vidicate your friend Wells has failed and his story of time travel will not be believed."; [but you can take a small measure of satisfaction having rescued Weena from the Morlocks]

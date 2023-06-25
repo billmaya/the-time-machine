@@ -38,7 +38,7 @@ The numeric-year is a number that varies.
 The numeric-year is 1895.
 
 debug-mode is a truth state that varies.
-debug-mode is false. [true.]
+debug-mode is [false.] true.
 
 To say introduction:
 	say "'Let me go!'
@@ -358,9 +358,9 @@ Before listening:
 	else if the player is in the Bottom Well:
 		say "The sound of machinery is louder now and seems to come from every direction.";
 		stop the action;
-	else if the player is in the Power Plant:
+	[DEL else if the player is in the Power Plant:
 		say "You can't hear anything beyond the sound of the machines around you.";
-		stop the action;
+		stop the action;]
 	else if the player is in the Dining Room:
 		say "[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[otherwise]You hear nothing unexpected.[end if]";
 		stop the action;
@@ -481,6 +481,43 @@ turns-since-attack is 0.
 boldness-morlocks is a number that varies.
 boldness-morlocks is 0.
 
+This is the morlock defend rule:
+	if the player is in the Year-802701-Underground:
+		if the player is in Shaft 3:
+			if the player-has-light is false:
+				now fought-off-morlocks is fought-off-morlocks + 1;
+				say "[morlocks-prevent-entry]";
+				if fought-off-morlocks is 3:
+					now fought-off-morlocks is 0;
+					say "MORLOCKS KNOCK YOU UNCONSCIOUSS; TAKE YOU TO HOLDING CELL.";
+					say "[captured-by-morlocks]";
+					say "[taken-to-holding-pen]";
+					now the player is in Holding Cell;
+					
+This is the morlock attack rule:
+	if the player is in the Year-802701-Underground:
+		if the player is in Shaft 3:
+			if the player-has-light is false:
+				say "[morlocks-attack]";
+				follow the morlock fight rule;
+			otherwise:
+				continue the action;
+		otherwise if the player is in Living Quarters or the player is in Catacombs:
+			if player-has-light is false:
+				if morlocks-attacked is false:
+					say "[morlocks-attack]";
+					now morlocks-attacked is true;
+					now boldness-morlocks is boldness-morlocks + 1;
+					follow the morlock fight rule;
+				otherwise:
+					now turns-since-attack is turns-since-attack + 1;
+					if turns-since-attack is 3 - boldness-morlocks:
+						now turns-since-attack is 0;
+						now morlocks-attacked is false;
+			otherwise:
+				continue the action.
+
+[
 This is the morlock attack rule:
 	if the player is in the Year-802701-Underground:
 		if the visibility of the location of player is not day:
@@ -517,6 +554,7 @@ This is the morlock attack rule:
 					if turns-since-attack is 3 - boldness-morlocks:
 						now turns-since-attack is 0;
 						now morlocks-attacked is false;
+]
 
 [You will get weaker as you fight off the morlocks and eventually captured despite having poker.]
 fought-off-morlocks is a number that varies.
@@ -541,6 +579,13 @@ This is the morlock fight rule:
 		now the player is in Holding Cell;
 
 [Morlock Underground Substitution Text]
+
+To say morlocks-prevent-entry:
+	if fought-off-morlocks is:
+		-- 1: say "As you attempt to enter the darkness. MORLOCKS PREVENT ENTRY [fought-off-morlocks]";
+		-- 2: say "As you attempt to enter the darkness. MORLOCKS PREVENT ENTRY [fought-off-morlocks]";
+		-- 3: say "As you attempt to enter the darkness. MORLOCKS PREVENT ENTRY [fought-off-morlocks]";
+		
 
 To say morlocks-attack:
 	say "Before you can take another step you're beset from all sides by shadowy brutes from the surrounding darkness—Morlocks![no line break]"
@@ -3054,7 +3099,7 @@ To say ladder-glyphs:
 		-- Shaft 2: say "[level-2-light] [tamil-social]";
 		-- Shaft 3: say "[level-3-light] [tamil-sleep]";
 		-- Shaft 4: say "[level-4-light] [tamil-eat]";
-		-- Shaft 5: say "[level-5-light] [tamil-work]";
+		[DEL -- Shaft 5: say "[level-5-light] [tamil-work]";]
 		-- otherwise: say "NULL";
 
 
@@ -3140,6 +3185,11 @@ The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 
 The visibility of Shaft 3 is day.
 
+Before going south in Shaft 3:
+	if player-has-light is false:
+		follow morlock defend rule;
+		stop the action.
+
 Chapter - Living Quarters
 
 The Living Quarters are underground.
@@ -3148,7 +3198,7 @@ The Living Quarters are up from the Catacombs.
 
 The description of Living Quarters is "Hundreds upon hundreds of individual cubbyholes carved into the walls rise level by level towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs, ramps, and platforms.[paragraph break]There is an exit to the north and a tunnel leading down."
 		
-The visibility of Living Quarters is shadow.
+The visibility of Living Quarters is night. [shadow.]
 
 Chapter - Catacombs
 
@@ -3157,7 +3207,7 @@ The Catacombs are down from the Living Quarters.
 
 The description of Catacombs is "The bones and remains of the dead arranged in multiple directions as far as the eye can see.[paragraph break]The tunnel leads back up."
 
-The visibility of Catacombs is shadow.
+The visibility of Catacombs is night. [shadow.]
 
 Section - Bones
 
@@ -3293,10 +3343,10 @@ The Balcony and the Inside Dome are in Year-802701-Inside.
 
 Year-802701-Underground is a region. 
 Shaft 1 and Bottom Well are in Year-802701-Underground.
-Shaft 2 and Agora and Curia and Museum and Temple and Storerooms are in Year-802701-Underground.
+[DEL Shaft 2 and Agora and Curia and Museum and Temple and Storerooms are in Year-802701-Underground.]
 Shaft 3 and Living Quarters and Catacombs are in Year-802701-Underground.
 Shaft 4 and Eating Area and Abattoir and Holding Cell are in Year-802701-Underground.
-Shaft 5 and Power Plant are in Year-802701-Underground.
+[DEL Shaft 5 and Power Plant are in Year-802701-Underground.]
 			
 Volume - Characters
 

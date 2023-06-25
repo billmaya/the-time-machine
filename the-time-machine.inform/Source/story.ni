@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42449 ]
+[ WORDS - 42652 ]
 
 Table of Releases
 release	notes
@@ -358,9 +358,6 @@ Before listening:
 	else if the player is in the Bottom Well:
 		say "The sound of machinery is louder now and seems to come from every direction.";
 		stop the action;
-	[DEL else if the player is in the Power Plant:
-		say "You can't hear anything beyond the sound of the machines around you.";
-		stop the action;]
 	else if the player is in the Dining Room:
 		say "[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[otherwise]You hear nothing unexpected.[end if]";
 		stop the action;
@@ -3099,7 +3096,6 @@ To say ladder-glyphs:
 		-- Shaft 2: say "[level-2-light] [tamil-social]";
 		-- Shaft 3: say "[level-3-light] [tamil-sleep]";
 		-- Shaft 4: say "[level-4-light] [tamil-eat]";
-		[DEL -- Shaft 5: say "[level-5-light] [tamil-work]";]
 		-- otherwise: say "NULL";
 
 
@@ -3343,10 +3339,8 @@ The Balcony and the Inside Dome are in Year-802701-Inside.
 
 Year-802701-Underground is a region. 
 Shaft 1 and Bottom Well are in Year-802701-Underground.
-[DEL Shaft 2 and Agora and Curia and Museum and Temple and Storerooms are in Year-802701-Underground.]
 Shaft 3 and Living Quarters and Catacombs are in Year-802701-Underground.
 Shaft 4 and Eating Area and Abattoir and Holding Cell are in Year-802701-Underground.
-[DEL Shaft 5 and Power Plant are in Year-802701-Underground.]
 			
 Volume - Characters
 
@@ -3698,9 +3692,6 @@ Section - Informing - "Tell [someone] about [thing]"
 	
 After informing Humboldt about Wells:
 	say "Humboldt gives you an incredulous look as he listens to your laymans opinion on Wells's condition."
-	
-[DEL After informing Humboldt about the workshop-room:
-	try quizzing Humboldt about the second noun.]
 
 After informing Humboldt about the time machine:
 	try quizzing Humboldt about the second noun.

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42652 ]
+[ WORDS - 42709 ]
 
 Table of Releases
 release	notes
@@ -478,15 +478,24 @@ turns-since-attack is 0.
 boldness-morlocks is a number that varies.
 boldness-morlocks is 0.
 
+max-morlock-defends is a number that varies.
+max-morlock-defends is 3
+
 This is the morlock defend rule:
 	if the player is in the Year-802701-Underground:
 		if the player is in Shaft 3:
 			if the player-has-light is false:
-				now fought-off-morlocks is fought-off-morlocks + 1;
-				say "[morlocks-prevent-entry]";
-				if fought-off-morlocks is 3:
-					now fought-off-morlocks is 0;
-					say "MORLOCKS KNOCK YOU UNCONSCIOUSS; TAKE YOU TO HOLDING CELL.";
+				if the player has the poker:
+					now fought-off-morlocks is fought-off-morlocks + 1;
+					say "[morlocks-prevent-entry]";
+					if fought-off-morlocks is max-morlock-defends:
+						now fought-off-morlocks is 0;
+						say "MORLOCKS KNOCK YOU UNCONSCIOUS; TAKE YOU TO HOLDING CELL.";
+						say "[captured-by-morlocks]";
+						say "[taken-to-holding-pen]";
+						now the player is in Holding Cell;
+				otherwise:
+					say "MORLOCKS KNOCK YOU UNCONSCIOUS; TAKE YOU TO HOLDING CELL.";
 					say "[captured-by-morlocks]";
 					say "[taken-to-holding-pen]";
 					now the player is in Holding Cell;
@@ -620,7 +629,8 @@ Every turn (this is the Update Debug rule):
 			say "morlocks-attacked: [morlocks-attacked][line break]";
 			say "turns-since-attack: [turns-since-attack][line break]";
 			say "boldness-morlocks: [boldness-morlocks][line break]";
-			say "fought-off-morlocks: [fought-off-morlocks]";
+			say "fought-off-morlocks: [fought-off-morlocks][line break]";
+			say "max-morlock-defends: [max-morlock-defends]";
 		otherwise if player is in Year-802701-Outside:
 			say "ask-about-weena: [ask-about-weena][line break]";
 			say "show-eloi-watch: [show-eloi-watch]";

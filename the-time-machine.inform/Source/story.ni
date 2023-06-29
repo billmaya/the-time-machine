@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42709 ]
+[ WORDS - 42503 ]
 
 Table of Releases
 release	notes
@@ -465,8 +465,8 @@ Every turn:
 
 Chapter - Underground Rooms	
 
-[Every turn:
-	follow the morlock attack rule.]
+Every turn:
+	follow the morlock attack rule.
 
 morlocks-attacked is a truth state that varies.
 morlocks-attacked is false.
@@ -502,65 +502,20 @@ This is the morlock defend rule:
 					
 This is the morlock attack rule:
 	if the player is in the Year-802701-Underground:
-		if the player is in Shaft 3:
-			if the player-has-light is false:
-				say "[morlocks-attack]";
-				follow the morlock fight rule;
-			otherwise:
-				continue the action;
-		otherwise if the player is in Living Quarters or the player is in Catacombs:
+		if the player is in Living Quarters or the player is in Catacombs:
 			if player-has-light is false:
 				if morlocks-attacked is false:
 					say "[morlocks-attack]";
 					now morlocks-attacked is true;
-					now boldness-morlocks is boldness-morlocks + 1;
+					now boldness-morlocks is boldness-morlocks + 1; [DO I NEED THIS?]
 					follow the morlock fight rule;
 				otherwise:
 					now turns-since-attack is turns-since-attack + 1;
-					if turns-since-attack is 3 - boldness-morlocks:
+					if turns-since-attack is 2: [(3 - boldness-morlocks):] [SHOULD I MAKE THIS 1?]
 						now turns-since-attack is 0;
 						now morlocks-attacked is false;
 			otherwise:
 				continue the action.
-
-[
-This is the morlock attack rule:
-	if the player is in the Year-802701-Underground:
-		if the visibility of the location of player is not day:
-			if player-has-light is false:
-				if morlocks-attacked is false:
-					if the visibility of the location of player is shadow:
-						if a random chance of 25 in 100 succeeds:
-							say "[morlocks-attack]";
-							now morlocks-attacked is true;
-							now boldness-morlocks is boldness-morlocks + 1;
-							follow the morlock fight rule;
-						otherwise:
-							say "[sounds-scuttling]";
-					otherwise: 
-						if the visibility of the location of player is twilight:
-							if a random chance of 50 in 100 succeeds:
-								say "[morlocks-attack]";
-								now morlocks-attacked is true;
-								now boldness-morlocks is boldness-morlocks + 1;
-								follow the morlock fight rule;
-							otherwise:
-								say "[sounds-scuttling]";
-						otherwise:
-							if a random chance of 75 in 100 succeeds:
-								say "[morlocks-attack]";
-								now morlocks-attacked is true;
-								now boldness-morlocks is boldness-morlocks + 1;
-								follow the morlock fight rule;
-							otherwise:
-								say "[sounds-scuttling]";
-				otherwise:
-					say "[morlocks-follow]";
-					now turns-since-attack is turns-since-attack + 1;
-					if turns-since-attack is 3 - boldness-morlocks:
-						now turns-since-attack is 0;
-						now morlocks-attacked is false;
-]
 
 [You will get weaker as you fight off the morlocks and eventually captured despite having poker.]
 fought-off-morlocks is a number that varies.
@@ -3134,6 +3089,7 @@ Chapter - Brass Lantern (not used)
 
 
 The brass lantern is a device.
+The brass lantern is nowhere.
 [The brass lantern is in the Bottom Well.]
 The description of the brass lantern is "A battered brass police lantern that can be turned on or off."
 
@@ -4785,11 +4741,11 @@ Every turn (this is the Putting Matches Out rule):
 			say "You drop the [flame-state of the item] [item][if the player is in Year-1895-Inside or the player is in Year-802701-Inside] on the floor.[otherwise] on the ground.";
 			now the item is nowhere;
 			refresh the list-inventory window;
-	let M be 0; [track lit matches]
+[	let M be 0; [track lit matches]
 	repeat with item running through flaming s-matches:
 		if the item is visible, increment M;
 	if M is 0: [if no lit matches]
-		now player-has-light is false.
+		now player-has-light is false. ]
 
 Part - Checking For Flaming Things
 

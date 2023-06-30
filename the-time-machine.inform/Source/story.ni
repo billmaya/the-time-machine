@@ -3158,7 +3158,15 @@ The Living Quarters are underground.
 The Living Quarters are south of Shaft 3.
 The Living Quarters are up from the Catacombs.
 
-The description of Living Quarters is "Hundreds upon hundreds of individual cubbyholes carved into the walls rise level by level towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs, ramps, and platforms.[paragraph break]There is an exit to the north and a tunnel leading down."
+To say living-quarters-description:
+	if player-has-light is true:
+		say "LIVING QUARTERS DESCRIPTION IF PLAYER HAS LIGHT.";
+	otherwise:
+		say "LIVING QUARTERS DESCRIPTION IF PLAYER DOES NOT HAVE LIGHT.";
+
+The description of Living Quarters is "[living-quarters-description]".
+
+[The description of Living Quarters is "Hundreds upon hundreds of individual cubbyholes carved into the walls rise level by level towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs, ramps, and platforms.[paragraph break]There is an exit to the north and a tunnel leading down."]
 		
 The visibility of Living Quarters is night. [shadow.]
 
@@ -3167,7 +3175,15 @@ Chapter - Catacombs
 The Catacombs are underground.
 The Catacombs are down from the Living Quarters.
 
-The description of Catacombs is "The bones and remains of the dead arranged in multiple directions as far as the eye can see.[paragraph break]The tunnel leads back up."
+To say catacombs-description:
+	if player-has-light is true:
+		say "CATACOMBS DESCRIPTION IF PLAYER HAS LIGHT.";
+	otherwise:
+		say "CATACOMBS DESCRIPTION IF PLAYER DOES NOT HAVE LIGHT.";
+
+The description of Catacombs is "[catacombs-description]".
+
+[The description of Catacombs is "The bones and remains of the dead arranged in multiple directions as far as the eye can see.[paragraph break]The tunnel leads back up."]
 
 The visibility of Catacombs is night. [shadow.]
 

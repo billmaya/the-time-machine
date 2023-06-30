@@ -3160,15 +3160,33 @@ The Living Quarters are up from the Catacombs.
 
 To say living-quarters-description:
 	if player-has-light is true:
-		say "LIVING QUARTERS DESCRIPTION IF PLAYER HAS LIGHT.";
+		[DEL say "LIVING QUARTERS DESCRIPTION IF PLAYER HAS LIGHT.";]
+		say "In the flickering light, you see hundreds of individual cubbyholes carved into the walls around you ascending in symmetrical rows into the darkness above, connected by an intricate cats cradle of ropes and platforms. There's an exit north and a small tunnel leading down.";
 	otherwise:
-		say "LIVING QUARTERS DESCRIPTION IF PLAYER DOES NOT HAVE LIGHT.";
+		[DEL say "LIVING QUARTERS DESCRIPTION IF PLAYER DOES NOT HAVE LIGHT.";]
+		say "Without light it is almost impossible to make out any details in this room except for the exit north and a small tunnel leading down.";
 
 The description of Living Quarters is "[living-quarters-description]".
 
-[The description of Living Quarters is "Hundreds upon hundreds of individual cubbyholes carved into the walls rise level by level towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs, ramps, and platforms.[paragraph break]There is an exit to the north and a tunnel leading down."]
+Understand "cubbyholes" or "rows" as Living Quarters
+
+[DEL The description of Living Quarters is "Hundreds upon hundreds of individual cubbyholes carved into the walls rise level by level towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs, ramps, and platforms.[paragraph break]There is an exit to the north and a tunnel leading down."]
 		
 The visibility of Living Quarters is night. [shadow.]
+
+Section - Cats Cradle
+
+The Cats Cradle is scenery in the Living Quarters.
+
+To say cats-cradle-description:
+	if player-has-light is true:
+		say "CATS CRADLE LIGHT.";
+	otherwise:
+		say "CATS CRADLE NO LIGHT.";
+
+The description of Cats Cradle is "[cats-cradle-description]".
+
+Understand "rope" or "ropes" or "platform" or "platforms" as Cats Cradle.
 
 Chapter - Catacombs
 
@@ -3177,13 +3195,15 @@ The Catacombs are down from the Living Quarters.
 
 To say catacombs-description:
 	if player-has-light is true:
-		say "CATACOMBS DESCRIPTION IF PLAYER HAS LIGHT.";
+		[DEL say "CATACOMBS DESCRIPTION IF PLAYER HAS LIGHT.";]
+		say "In the flickering light, you see the bones of dead Morlocks arranged in rows extending into the distance as far as the eye can see.";
 	otherwise:
-		say "CATACOMBS DESCRIPTION IF PLAYER DOES NOT HAVE LIGHT.";
+		[DEL say "CATACOMBS DESCRIPTION IF PLAYER DOES NOT HAVE LIGHT.";]
+		say "Without light it is almost impossible to make out any details in this room except for the tunnel leading back up.";
 
 The description of Catacombs is "[catacombs-description]".
 
-[The description of Catacombs is "The bones and remains of the dead arranged in multiple directions as far as the eye can see.[paragraph break]The tunnel leads back up."]
+[DEL The description of Catacombs is "The bones and remains of the dead arranged in multiple directions as far as the eye can see.[paragraph break]The tunnel leads back up."]
 
 The visibility of Catacombs is night. [shadow.]
 
@@ -3195,7 +3215,7 @@ The bones are scenery.
 
 The description of bones is "They appear to be carefully arranged according to some unknown taxonomy by size, shape, and function."
 
-Understand "remains" or "skeletons" or "mummified" as bones.
+Understand "remains" or "skeletons" or "mummified" or "dead" as bones.
 
 Section - Wandering In Catecombs
 
@@ -3207,9 +3227,17 @@ Going east in the Catacombs is wandering.
 Going southeast in the Catacombs is wandering.
 Going south in the Catacombs is wandering.
 Going southwest in the Catacombs is wandering.
+
+To say catacombs-wandering:
+	if player-has-light is true:
+		say "LIGHT.";
+	otherwise:
+		say "NO LIGHT.";
 	
 Instead of wandering in the Catacombs:
-	say "You wander [noun] past a series of [one of]alcoves[or]niches[or]recesses[or]shrines[then at random] filled to the brim with [one of]bones[or]mummified remains[or]skeletons[then at random] of long-dead inhabitants of this underground arcology before arriving back at the tunnel entrance."
+	say "[catacombs-wandering]";
+
+[DEL 	say "You wander [noun] past a series of [one of]alcoves[or]niches[or]recesses[or]shrines[then at random] filled to the brim with [one of]bones[or]mummified remains[or]skeletons[then at random] of long-dead inhabitants of this underground arcology before arriving back at the tunnel entrance."]
 
 
 Part - Underground - Level 4

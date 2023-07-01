@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42783 ]
+[ WORDS - 42790 ]
 
 Table of Releases
 release	notes
@@ -3160,17 +3160,13 @@ The Living Quarters are up from the Catacombs.
 
 To say living-quarters-description:
 	if player-has-light is true:
-		[DEL say "LIVING QUARTERS DESCRIPTION IF PLAYER HAS LIGHT.";]
-		say "In the flickering light, you see hundreds of individual cubbyholes carved into the walls around you ascending in symmetrical rows into the darkness above, connected by an intricate cats cradle of ropes and platforms. There's an exit north and a small tunnel leading down.";
+		say "In the flickering light, you see hundreds of individual cubbyholes carved into the walls around you ascending in symmetrical rows into the darkness above, connected by an intricate cats cradle of ropes and platforms that rises up the wall. There's an exit north and a small tunnel leading down.";
 	otherwise:
-		[DEL say "LIVING QUARTERS DESCRIPTION IF PLAYER DOES NOT HAVE LIGHT.";]
 		say "Without light it is almost impossible to make out any details in this room except for the exit north and a small tunnel leading down.";
 
 The description of Living Quarters is "[living-quarters-description]".
 
-Understand "cubbyholes" or "rows" as Living Quarters
-
-[DEL The description of Living Quarters is "Hundreds upon hundreds of individual cubbyholes carved into the walls rise level by level towards the ceiling hundreds of feet above your head, connected by an intricate latticework of stairs, ramps, and platforms.[paragraph break]There is an exit to the north and a tunnel leading down."]
+Understand "cubbyholes" or "rows" or "wall" or "walls" as Living Quarters
 		
 The visibility of Living Quarters is night. [shadow.]
 
@@ -3180,13 +3176,21 @@ The Cats Cradle is scenery in the Living Quarters.
 
 To say cats-cradle-description:
 	if player-has-light is true:
-		say "CATS CRADLE LIGHT.";
+		say "Obvious designed to allow vertical ascent, the intricate ropework is obviously the product of generations of Morlock ingenuity and craftsmanship.";
 	otherwise:
-		say "CATS CRADLE NO LIGHT.";
+		say "Without light it is almost impossible to make out the details of this intricate ropework.";
 
 The description of Cats Cradle is "[cats-cradle-description]".
 
 Understand "rope" or "ropes" or "platform" or "platforms" as Cats Cradle.
+
+To say climbing-cats-cradle:
+	if player-has-light is true:
+		say "It would require someone more dexterous than yourself, with both hands free, to even begin such an ascent.";
+	otherwise:
+		say "In the dark? Not likely.";
+
+Instead of climbing the Cats Cradle: say "[climbing-cats-cradle]".
 
 Chapter - Catacombs
 
@@ -3195,15 +3199,13 @@ The Catacombs are down from the Living Quarters.
 
 To say catacombs-description:
 	if player-has-light is true:
-		[DEL say "CATACOMBS DESCRIPTION IF PLAYER HAS LIGHT.";]
-		say "In the flickering light, you see the bones of dead Morlocks arranged in rows extending into the distance as far as the eye can see.";
+		say "In the flickering light, you see the bones of dead Morlocks arranged in tunnels extending into the distance as far as the eye can see.";
 	otherwise:
-		[DEL say "CATACOMBS DESCRIPTION IF PLAYER DOES NOT HAVE LIGHT.";]
 		say "Without light it is almost impossible to make out any details in this room except for the tunnel leading back up.";
 
 The description of Catacombs is "[catacombs-description]".
 
-[DEL The description of Catacombs is "The bones and remains of the dead arranged in multiple directions as far as the eye can see.[paragraph break]The tunnel leads back up."]
+Understand "tunnels" as Catacombs.
 
 The visibility of Catacombs is night. [shadow.]
 
@@ -3215,9 +3217,12 @@ The bones are scenery.
 
 The description of bones is "They appear to be carefully arranged according to some unknown taxonomy by size, shape, and function."
 
-Understand "remains" or "skeletons" or "mummified" or "dead" as bones.
+Understand "remains" or "skeletons" or "mummified" or "dead" or "tombs" as bones.
+	
+Instead of searching the bones: try taking the bones.
+Instead of taking the bones: say "Graverobbing is probably as much a sacrilege now as it is in your time."
 
-Section - Wandering In Catecombs
+Section - Wandering In Catacombs
 
 Going north in the Catacombs is wandering.
 Going west in the Catacombs is wandering.
@@ -3230,14 +3235,12 @@ Going southwest in the Catacombs is wandering.
 
 To say catacombs-wandering:
 	if player-has-light is true:
-		say "LIGHT.";
+		say "You wander [noun] past a series of [one of]alcoves[or]niches[or]recesses[or]shrines[then at random] filled to the brim with [one of]bones[or]mummified remains[or]skeletons[then at random] of long-dead inhabitants of this underground arcology before arriving back at the tunnel entrance.";
 	otherwise:
-		say "NO LIGHT.";
+		say "Without light you stumble around the oppressive tunnels until somehow you arrive back at the entrance.";
 	
 Instead of wandering in the Catacombs:
 	say "[catacombs-wandering]";
-
-[DEL 	say "You wander [noun] past a series of [one of]alcoves[or]niches[or]recesses[or]shrines[then at random] filled to the brim with [one of]bones[or]mummified remains[or]skeletons[then at random] of long-dead inhabitants of this underground arcology before arriving back at the tunnel entrance."]
 
 
 Part - Underground - Level 4

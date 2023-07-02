@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42842 ]
+[ WORDS - 42529 ]
 
 Table of Releases
 release	notes
@@ -62,8 +62,6 @@ When play begins:
 	now the left hand status line is "[location] - [current-year]"; [ - [time of day]";]
 	say "[introduction]";
 	open right-sidebar window;
-	[open title-exits window;]
-	[open list-exits window;]
 	open title-inventory window;
 	open list-inventory window;
 	open title-characters window;
@@ -178,16 +176,6 @@ The position of the debug-info window is g-placeabove.
 The scale method of the debug-info window is g-fixed-size.
 The measurement of the debug-info window is 9.
 
-The title-exits window is a text grid g-window spawned by the right-sidebar window.
-The position of the title-exits window is g-placeabove.
-The scale method of the title-exits window is g-fixed-size.
-The measurement of the title-exits window is 2.
-
-The list-exits window is a text buffer g-window spawned by the right-sidebar window.
-The position of the list-exits window is g-placeabove.
-The scale method of list-exits window is g-fixed-size.
-The measurement of the list-exits window is 8.
-
 Section - Rules 
 
 Rule for refreshing the title-characters window:
@@ -228,34 +216,6 @@ Rule for refreshing the list-inventory window:
 
 Rule for refreshing the debug-title window:
 	say "DEBUG".
-	
-Rule for refreshing the title-exits window:
-	say "Visible Exits".
-	
-Rule for refreshing the list-exits window:
-	say "[visible-exits]".
-
-To say visible-exits:
-	let place be the room north from the location;
-	if place is a room, say "North[line break]";
-	let place be the room east from the location;
-	if place is a room, say "East[line break]";
-	let place be the room south from the location;
-	if place is a room, say "South[line break]";
-	let place be the room west from the location;
-	if place is a room, say "West[line break]";
-	let place be the room northeast from the location;
-	if place is a room, say "Northeast[line break]";
-	let place be the room southeast from the location;
-	if place is a room, say "Southeast[line break]";
-	let place be the room southwest from the location;
-	if place is a room, say "Southwest[line break]";
-	let place be the room northwest from the location;
-	if place is a room, say "Northwest[line break]";
-	let place be the room up from the location;
-	if place is a room, say "Up[line break]";
-	let place be the room down from the location;
-	if place is a room, say "Down";
 	
 Section - Styles
 
@@ -438,9 +398,7 @@ Every turn:
 	refresh the talking-to-character window;
 	refresh the title-topics window;
 	refresh the character-topics window;
-	refresh the list-inventory window;
-	refresh the title-exits window;
-	refresh the list-exits window.
+	refresh the list-inventory window.
 
 Chapter - Woking Street
 

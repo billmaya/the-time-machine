@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42845 ]
+[ WORDS - 42842 ]
 
 Table of Releases
 release	notes
@@ -284,7 +284,8 @@ reversed (a truth state)
 
 Chapter - Status Line
 
-[The original code was taken from the Improved Status Line section of "Bronze" by Emily Short and modified slightly. See https://i7-examples.github.io/Bronze/source_43.html for the original code.]
+[The original code was taken from the Improved Status Line section of "Bronze" by Emily Short and modified slightly. 
+ See https://i7-examples.github.io/Bronze/source_43.html for the original code.]
 
 Table of User Styles (continued)
 window	style name	background color
@@ -303,10 +304,8 @@ To say default letters:
 	say roman type;
 
 Definition: a room is discernible:
-	[if it is the Dank Room and the trapdoor is scenery, no;
-	if it is lit, yes;
-	if it is the ultimate location of the candle, yes;
-	if in darkness, no;]
+	if it is the River Bank and the Balcony is unvisited, no;
+	if it is the Top Well and the metal cover is on the circular well, no;
 	yes.
 
 To say top rose:

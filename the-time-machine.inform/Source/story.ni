@@ -272,6 +272,7 @@ To say default letters:
 Definition: a room is discernible:
 	if it is the River Bank and the Balcony is unvisited, no;
 	if it is the Top Well and the metal cover is on the circular well, no;
+	if it is the Domed Building and the player is in the time machine, no;
 	yes.
 
 To say top rose:

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42790 ]
+[ WORDS - 42845 ]
 
 Table of Releases
 release	notes
@@ -111,6 +111,8 @@ Include Conversational Defaults by Eric Eve.]
 Include Conversation Package by Eric Eve. [This extension includes the four extensions above it]
 
 Include Flexible Windows by Jon Ingold.
+
+Include Basic Screen Effects by Emily Short.
 
 After reading a command:
 	resolve punctuated titles.
@@ -283,15 +285,15 @@ reversed (a truth state)
 Chapter - Status Line
 
 [The original code was taken from the Improved Status Line section of "Bronze" by Emily Short and modified slightly. See https://i7-examples.github.io/Bronze/source_43.html for the original code.]
-[
+
 Table of User Styles (continued)
 window	style name	background color
 all-grid-windows	special-style-1	"#FF0000"
 
 Table of Fancy Status
 left	central	right
-" [if in darkness]Darkness[otherwise][location] - [current-year][end if]"	""	"[top rose]"
-" "	""	"[middle rose]"
+" [if in darkness]Darkness[otherwise][location][end if]"	""	"[top rose]"
+" [current-year]"	""	"[middle rose]"
 " "	""	"[bottom rose]"
 
 To say red reverse:
@@ -309,29 +311,29 @@ Definition: a room is discernible:
 
 To say top rose:
 	let place be the room up from the location;
-	if the place is a discernible room, say "[if the place is unvisited][red reverse][end if]U [default letters]"; otherwise say " ";
+	if the place is a discernible room, say "[if the place is unvisited][red reverse][end if]U [default letters]"; otherwise say "  "; [Added one additional space to otherwise say]
 	let place be the room northwest from the location;
-	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]NW [default letters]"; otherwise say " ";
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]NW [default letters]"; otherwise say "   "; [Added two additional spaces to otherwise say]
 	let place be the room north from the location;
-	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]N [default letters]"; otherwise say " ";
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]N [default letters]"; otherwise say "  "; [Added one additional space to otherwise say]
 	let place be the room northeast from the location;
 	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]NE[default letters]"; otherwise say " ".
 
 To say middle rose:
-	say " ";
+	say "  "; [Added one additional space to say]
 	let place be the room west from the location;
-	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]W [default letters]"; otherwise say " ";
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]W [default letters]"; otherwise say "  ";
 	say " . ";
 	let place be the room east from the location;
-	if place is a discernible room, say "[if the place is unvisited][red reverse][end if] E[default letters]"; otherwise say " ".
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if] E[default letters]"; otherwise say "  ".
 
 To say bottom rose:
 	let place be the room down from the location;
-	if the place is a discernible room, say "[if the place is unvisited][red reverse][end if]D [default letters]"; otherwise say " ";
+	if the place is a discernible room, say "[if the place is unvisited][red reverse][end if]D [default letters]"; otherwise say "  "; [Added one additional space to otherwise say]
 	let place be the room southwest from the location;
-	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]SW [default letters]"; otherwise say " ";
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]SW [default letters]"; otherwise say "   "; [Added two additional spaces to otherwise say]
 	let place be the room south from the location;
-	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]S [default letters]"; otherwise say " ";
+	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]S [default letters]"; otherwise say "  "; [Added one additional space to otherwise say]
 	let place be the room southeast from the location;
 	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]SE[default letters]"; otherwise say " ".
 
@@ -339,7 +341,7 @@ Rule for constructing the status line:
 	fill status bar with Table of Fancy Status;
 	say default letters;
 	rule succeeds. 
-]
+
 
 Part - Before Rules
 

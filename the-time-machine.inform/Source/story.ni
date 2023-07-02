@@ -59,8 +59,12 @@ Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re profe
 
 When play begins: 
 	now the time of day is 10:00 PM;
-	now the left hand status line is "[location] - [current-year]"; [ - [time of day]";]
-	say "[introduction]";
+	[now the left hand status line is "[location] - [current-year]"; [ - [time of day]";]]
+	if compass-test is true:	
+		now the player is in the Main Room;
+	otherwise:
+		now the player is in Woking Street;
+		say "[introduction]";
 	open right-sidebar window;
 	open title-inventory window;
 	open list-inventory window;
@@ -249,13 +253,15 @@ Chapter - Status Line
 
 Table of User Styles (continued)
 window	style name	background color
-all-grid-windows	special-style-1	"#FF0000"
+all-grid-windows	special-style-1	"#FFFFFF" ["#FF0000" - Red]
 
 Table of Fancy Status
 left	central	right
 " [if in darkness]Darkness[otherwise][location][end if]"	""	"[top rose]"
 " [current-year]"	""	"[middle rose]"
 " "	""	"[bottom rose]"
+
+When play begins: now right alignment depth is 25;
 
 To say red reverse:
 	say special-style-1;
@@ -269,6 +275,7 @@ Definition: a room is discernible:
 	yes.
 
 To say top rose:
+	say "Exits    "; [Added]
 	let place be the room up from the location;
 	if the place is a discernible room, say "[if the place is unvisited][red reverse][end if]U [default letters]"; otherwise say "  "; [Added one additional space to otherwise say]
 	let place be the room northwest from the location;
@@ -279,7 +286,7 @@ To say top rose:
 	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]NE[default letters]"; otherwise say " ".
 
 To say middle rose:
-	say "  "; [Added one additional space to say]
+	say "           "; [Added one additional space to say; added nine additional spaces]
 	let place be the room west from the location;
 	if place is a discernible room, say "[if the place is unvisited][red reverse][end if]W [default letters]"; otherwise say "  ";
 	say " . ";
@@ -287,6 +294,7 @@ To say middle rose:
 	if place is a discernible room, say "[if the place is unvisited][red reverse][end if] E[default letters]"; otherwise say "  ".
 
 To say bottom rose:
+	say "         "; [Added nine additional spaces]
 	let place be the room down from the location;
 	if the place is a discernible room, say "[if the place is unvisited][red reverse][end if]D [default letters]"; otherwise say "  "; [Added one additional space to otherwise say]
 	let place be the room southwest from the location;
@@ -300,6 +308,28 @@ Rule for constructing the status line:
 	fill status bar with Table of Fancy Status;
 	say default letters;
 	rule succeeds. 
+
+Section - Compass Test Room
+
+[This code is used just to test the positioning and appearance of the compass rose.]
+
+compass-test is a truth state that varies.
+compass-test is false. [true.] [Set value to true to use the code below instead of game code] 
+
+Main Room is a room.
+
+To The North is a room. To The North is north of the Main Room.
+To The South is a room. To The South is south of the Main Room.
+To The West is a room. To The West is west of the Main Room.
+To The East is a room. To The East is east of the Main Room.
+
+To The Northeast is a room. To The Northeast is northeast of the Main Room.
+To The Northwest is a room. To The Northwest is northwest of the Main Room.
+To The Southeast is a room. To The Southeast is southeast of the Main Room.
+To The Southwest is a room. To The Southwest is southwest of the Main Room.
+
+Up Above is a room. Up Above is up from the Main Room.
+Down Below is a room. Down Below is down from the Main Room.
 
 
 Part - Before Rules

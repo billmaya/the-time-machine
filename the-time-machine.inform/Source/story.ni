@@ -2929,7 +2929,14 @@ Light level is a kind of value.
 The light levels are day, shadow, twilight, night.
 [The light levels are dawn, day, shadow, twilight, dusk, night.]
 
-Chapter - Underground
+Chapter - Visibility
+
+Section - Room Visibility
+
+A room has a light level called visibility.
+The visibility of a room is usually day.
+
+Section - Underground Visibility
 
 underground is a kind of lighted room.
 underground has a light level called visibility.

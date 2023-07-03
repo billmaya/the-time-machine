@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43001 ]
+[ WORDS - 42775 ]
 
 Table of Releases
 release	notes
@@ -461,6 +461,9 @@ Every turn:
 morlocks-attacked is a truth state that varies.
 morlocks-attacked is false.
 
+morlocks-capture-you is a truth state that varies.
+morlocks-capture-you is false.
+
 turns-since-attack is a number that varies.
 turns-since-attack is 0.
 
@@ -483,11 +486,13 @@ This is the morlock defend rule:
 						say "MORLOCKS KNOCK YOU UNCONSCIOUS; TAKE YOU TO HOLDING CELL.";
 						say "[captured-by-morlocks]";
 						say "[taken-to-holding-pen]";
+						now morlocks-capture-you is true;
 						now the player is in Holding Cell;
 				otherwise:
 					say "MORLOCKS KNOCK YOU UNCONSCIOUS; TAKE YOU TO HOLDING CELL.";
 					say "[captured-by-morlocks]";
 					say "[taken-to-holding-pen]";
+					now morlocks-capture-you is true;
 					now the player is in Holding Cell;
 					
 This is the morlock attack rule:
@@ -523,10 +528,12 @@ This is the morlock fight rule:
 			say "[attack-morlocks-3]";
 			now fought-off-morlocks is 0; 
 			say "[taken-to-holding-pen]";
+			now morlocks-capture-you is true;
 			now the player is in Holding Cell;
 	otherwise:
 		say "[captured-by-morlocks]";
 		say "[taken-to-holding-pen]";
+		now morlocks-capture-you is true;
 		now the player is in Holding Cell;
 
 [Morlock Underground Substitution Text]
@@ -680,7 +687,6 @@ Test go-underground with "test go-802701 / exit / remove cover / climb in well /
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
 
 Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
-[DEL Test rescue-weena with "test go-underground / go north / go down / go down / go down / go south / go south / search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match / go south / go north / go north / go north / go up / go up / go up / go south / go up / exit."]
 
 Test make-torch with "search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match."
 Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."
@@ -700,7 +706,7 @@ Test get-matches with "go north / go north / go west / go north / purloin time m
 Test prep-time with "get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / take time machine fuse / put orrery fuse in time machine fuse holder."
 
 Test go-802701 with "test get-matches / test go-workshop /  test prep-time / purloin poker / push lever."
-Test rescue-weena with "down / down / north / down / down / down / south / south / search pile / wrap tunic around poker / south / light torch / north / north / north / up / up / up / south" [DEL / up / up."]
+Test rescue-weena with "down / down / north / down / down / down / south / south / search pile / wrap tunic around poker / south / light torch / north / north / north / up / up / up / south" 
 
 
 Part - Release
@@ -5373,13 +5379,12 @@ Part - Escape The Morlocks
 
 Escape The Morlocks is a recurring scene.
 
-Escape The Morlocks begins when the player is in the Holding Cell.
+Escape The Morlocks begins when the player is in the Holding Cell;
 
 When Escape The Morlocks begins:
 	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
 	say "As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.";
-	[now the player has the brass lantern;]
-	now Weena is mobile.
+	now Weena is mobile. 	
 
 Escape The Morlocks ends when Weena [the player] is in the Clearing.
 
@@ -5389,7 +5394,6 @@ When Escape The Morlocks ends:
 
 Chapter - Weena's Movement
 
-[
 Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:
 		if Weena is mobile:
@@ -5406,30 +5410,6 @@ Every turn (this is the Move Weena Rule):
 					let the way be the best route from the location of Weena to the location of the player, using doors;
 					try Weena going the way;
 					[say "(C) WEENA FOLLOWS.";]
-			refresh the title-characters window;
-			refresh the list-characters window.
-]
-Every turn (this is the Move Weena Rule):
-	if Escape The Morlocks is happening:
-		if Weena is mobile:
-			if the player [Weena] is in the Year-802701-Underground:
-				if the visibility of the location of player is not day:
-					if the location of Weena is not the location of the player:
-						if player-has-light is true:
-							let the way be the best route from the location of Weena to the location of the player, using doors;
-							try [silently] Weena going the way;
-							[say "(A) WEENA FOLLOWS.";] ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
-						[otherwise:]
-							[say "(B) WEENA COWERS.";] ["Without a light, Weena's cowers in fear and doesn't follow you.";]
-				otherwise:
-					if the location of Weena is not the location of the player:
-						let the way be the best route from the location of Weena to the location of the player, using doors;
-						try Weena going the way;
-						[say "(C) WEENA FOLLOWS.";]
-			otherwise if the player is in the Year-802701-Outside:
-				if the location of Weena is not the location of the player:
-					let the way be the best route from the location of Weena to the location of the player, using doors;
-					try Weena going the way;
 			refresh the title-characters window;
 			refresh the list-characters window.
 

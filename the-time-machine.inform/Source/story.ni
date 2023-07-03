@@ -5383,7 +5383,7 @@ Escape The Morlocks begins when the player is in the Holding Cell;
 
 When Escape The Morlocks begins:
 	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
-	say "As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.";
+	say "[if Weena is in the Holding Cell]As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.[otherwise]The gate clangs shut.[end if]";
 	now Weena is mobile. 	
 
 Escape The Morlocks ends when Weena [the player] is in the Clearing.
@@ -5396,22 +5396,23 @@ Chapter - Weena's Movement
 
 Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:
-		if Weena is mobile:
-			if the visibility of the location of player is not day: [<- This caused run-time error when >up from Bottom Well because Top Well doesn't have visibility.]
-				if the location of Weena is not the location of the player:
-					if player-has-light is true:
+		if Weena is not nowhere:
+			if Weena is mobile:
+				if the visibility of the location of player is not day: [<- This caused run-time error when >up from Bottom Well because Top Well doesn't have visibility.]
+					if the location of Weena is not the location of the player:
+						if player-has-light is true:
+							let the way be the best route from the location of Weena to the location of the player, using doors;
+							try [silently] Weena going the way;
+							[say "(A) WEENA FOLLOWS.";] ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
+						[otherwise:]
+							[say "(B) WEENA COWERS.";] ["Without a light, Weena's cowers in fear and doesn't follow you.";]
+				otherwise:
+					if the location of Weena is not the location of the player:
 						let the way be the best route from the location of Weena to the location of the player, using doors;
-						try [silently] Weena going the way;
-						[say "(A) WEENA FOLLOWS.";] ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
-					[otherwise:]
-						[say "(B) WEENA COWERS.";] ["Without a light, Weena's cowers in fear and doesn't follow you.";]
-			otherwise:
-				if the location of Weena is not the location of the player:
-					let the way be the best route from the location of Weena to the location of the player, using doors;
-					try Weena going the way;
-					[say "(C) WEENA FOLLOWS.";]
-			refresh the title-characters window;
-			refresh the list-characters window.
+						try Weena going the way;
+						[say "(C) WEENA FOLLOWS.";]
+				refresh the title-characters window;
+				refresh the list-characters window.
 
 
 Part - Return To Surface

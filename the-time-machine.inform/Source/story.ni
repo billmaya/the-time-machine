@@ -680,7 +680,7 @@ Test go-underground with "test go-802701 / exit / remove cover / climb in well /
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
 
 Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
-Test rescue-weena with "test go-underground / go north / go down / go down / go down / go south / go south / search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match / go south / go north / go north / go north / go up / go up / go up / go south / go up / exit."
+[DEL Test rescue-weena with "test go-underground / go north / go down / go down / go down / go south / go south / search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match / go south / go north / go north / go north / go up / go up / go up / go south / go up / exit."]
 
 Test make-torch with "search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match."
 Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."
@@ -700,6 +700,7 @@ Test get-matches with "go north / go north / go west / go north / purloin time m
 Test prep-time with "get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / take time machine fuse / put orrery fuse in time machine fuse holder."
 
 Test go-802701 with "test get-matches / test go-workshop /  test prep-time / purloin poker / push lever."
+Test rescue-weena with "down / down / north / down / down / down / south / south / search pile / wrap tunic around poker / south / light torch / north / north / north / up / up / up / south" [DEL / up / up."]
 
 
 Part - Release
@@ -2659,7 +2660,6 @@ Before going southeast in the Clearing:
 			stop the action;
 		otherwise:
 			continue the action.
-
 
 Part - Top Well
 
@@ -5349,7 +5349,7 @@ Part - Underground Exploration
 
 Underground Exploration is a recurring scene.
 
-Underground Exploration begins when the player is in Shaft 1.
+Underground Exploration begins when the player is in Shaft 1 and Weena is in the Holding Cell.
 
 When Underground Exploration begins:
 	if debug-mode is true, say "Underground Exploration Scene Begins (DEBUG)";
@@ -5382,6 +5382,26 @@ When Escape The Morlocks ends:
 
 Chapter - Weena's Movement
 
+[
+Every turn (this is the Move Weena Rule):
+	if Escape The Morlocks is happening:
+		if Weena is mobile:
+			if the visibility of the location of player is not day: [<- This caused run-time error when >up from Bottom Well because Top Well doesn't have visibility.]
+				if the location of Weena is not the location of the player:
+					if player-has-light is true:
+						let the way be the best route from the location of Weena to the location of the player, using doors;
+						try [silently] Weena going the way;
+						[say "(A) WEENA FOLLOWS.";] ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
+					[otherwise:]
+						[say "(B) WEENA COWERS.";] ["Without a light, Weena's cowers in fear and doesn't follow you.";]
+			otherwise:
+				if the location of Weena is not the location of the player:
+					let the way be the best route from the location of Weena to the location of the player, using doors;
+					try Weena going the way;
+					[say "(C) WEENA FOLLOWS.";]
+			refresh the title-characters window;
+			refresh the list-characters window.
+]
 Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:
 		if Weena is mobile:
@@ -5405,6 +5425,7 @@ Every turn (this is the Move Weena Rule):
 					try Weena going the way;
 			refresh the title-characters window;
 			refresh the list-characters window.
+
 
 Part - Return To Surface
 

@@ -3292,16 +3292,38 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Cell.
 
-The description of Abattoir is "A cross between a workshop and a charnel house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstained clothing thrown in one corner. There's a gated exit to the south and another exit to the north."
+The description of Abattoir is "A cross between a workshop and a charnel house, this room is dominated by a large metal table. There is a pile of bloodstained clothing at the base of the table. There's a gated exit to the south and another exit to the north."
 
 The visibility of Abattoir is twilight. [day.]
+
+Section - Table
+
+The metal table is a thing.
+The metal table is in the Abattoir.
+The metal table is furniture.
+The description of metal table is "Stained with blood, the metal table has what appear to be drainage channels cut into its surface."
+
+Instead of pulling the metal table: try switching on the metal table.
+Before switching on the metal table:
+	if the metal table is unmoveable:
+		say "[cannot-move]";
+	otherwise:
+		say "[should-not-move]";
+	stop the action. 
+
+Section - Channels
+
+The channels are a thing.
+The channels are in the Abattoir.
+The channels are scenery. 
+The description of channels are "Cut into the surface of the metal table, the channels appear to be designed to drain excess liquid off the table.[first time] The pile of bloodstained clothing just happens to be underneath the channel exit point.[only]"
 
 Section - Pile of Bloodstained Clothing
 
 The pile of bloodstained clothing is a thing.
 The pile of bloodstained clothing is in the Abattoir.
 The pile of bloodstained clothing is undescribed.
-The description of the pile of bloodstained clothing is "A large number of Eloi tunics and smocks piled in a corner. At first glance, they all appear to be covered in blood: some dried, some still wet."
+The description of the pile of bloodstained clothing is "A large number of Eloi tunics and smocks piled together. At first glance, they all appear to be covered in blood: some dried, some still wet."
 Understand "clothes" as pile of bloodstained clothing.
 
 Instead of searching the pile of bloodstained clothing when the tunic is unfound:
@@ -3321,7 +3343,7 @@ The description of the tunic is "[if the tunic is unfound]You can't see any such
 
 The printed name of tunic is "Eloi tunic".
 
-Understand "smock" or "dress" as tunic.
+Understand "smock" or "cotton" or "weave" as tunic.
 
 The tunic can be found or unfound.
 The tunic is unfound.

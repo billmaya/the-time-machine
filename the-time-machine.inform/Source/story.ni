@@ -5389,7 +5389,7 @@ Escape The Morlocks begins when the player is in the Holding Cell;
 
 When Escape The Morlocks begins:
 	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
-	say "[if Weena is in the Holding Cell]As the gate clangs shut Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.[otherwise]The gate clangs shut.[end if]";
+	say "[if Weena is in the Holding Cell]As the gate clangs shut, Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.[otherwise]The gate clangs shut.[end if]";
 	now Weena is mobile. 	
 
 Escape The Morlocks ends when Weena [the player] is in the Clearing.

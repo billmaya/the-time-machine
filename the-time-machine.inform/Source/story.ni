@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42905 ]
+[ WORDS - 43116 ]
 
 Table of Releases
 release	notes
@@ -3291,11 +3291,6 @@ Instead of examining the troughs: try searching the troughs.
 Instead of searching the troughs for the first time, say "Aside from the grisly remains of a recent meal you find nothing else even remotely interesting."
 Instead of searching the troughs for the second time, say "You fined nothing else of interest."
 Instead of searching the troughs for more than two times, say "There really isn't anything else to find here."
-
-[DEL 
-	say "Examining the troughs you find [if first time]nothing[otherwise]nothing else[end if] of remote interest.[no line break][first time]..besides the grisly remains of a recent meal.[only]";
-	[DEL say "[if first time]Aside from the grisly remains of a recent meal you find nothing else of remote interest."]
-]
 
 Chapter - Abattoir
 

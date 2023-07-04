@@ -3284,7 +3284,18 @@ The troughs are scenery.
 
 The description of the troughs are "Only a few are still intact and only one or two appear to have been used recently."
 
-Understand "trough" as troughs.
+Understand "trough" or "meal" or "remains" or "recent meal" or "grisly" as troughs.
+
+Instead of examining the troughs: try searching the troughs.
+
+Instead of searching the troughs for the first time, say "Aside from the grisly remains of a recent meal you find nothing else even remotely interesting."
+Instead of searching the troughs for the second time, say "You fined nothing else of interest."
+Instead of searching the troughs for more than two times, say "There really isn't anything else to find here."
+
+[DEL 
+	say "Examining the troughs you find [if first time]nothing[otherwise]nothing else[end if] of remote interest.[no line break][first time]..besides the grisly remains of a recent meal.[only]";
+	[DEL say "[if first time]Aside from the grisly remains of a recent meal you find nothing else of remote interest."]
+]
 
 Chapter - Abattoir
 

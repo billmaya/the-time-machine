@@ -3338,6 +3338,9 @@ The description of Holding Cell is "A small cell large enough to hold two or thr
 	
 The visibility of Holding Cell is twilight. [day.]
 
+Instead of exiting when the player is in the Holding Cell:
+	try going north.
+
 
 
 Book - Regions

@@ -4442,7 +4442,7 @@ Weena is a person.
 Weena is in the Holding Cell. [nowhere.]
 Weena is fixed.
 Weena is major.
-The description of Weena is "Slightly taller than the other Eloi, but dressed as they are and with the same similarity of features and build, this is clearly the girl Wells described."
+The description of Weena is "[if the River Bank is visited]Slightly taller than the other Eloi, but dressed as they are and with the same similarity of features and build, t[otherwise]Slight, just over four feet tall, and dressed in some type of manufactured tunic, belted at the waist, and wearing buskins on her feet, t[end if]his is clearly the girl Wells described." 
 
 Part - Suggestions 
 

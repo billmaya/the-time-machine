@@ -3292,7 +3292,7 @@ The Abattoir is underground.
 The Abattoir is south of the Eating Area.
 The Abattoir is north of the Holding Cell.
 
-The description of Abattoir is "A cross between a workshop and a charnal house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstained clothing thrown in one corner.[paragraph break] There's a gated exit to the south and another exit to the north."
+The description of Abattoir is "A cross between a workshop and a charnel house, this room is dominated by a large bloodstained metal table with drainage channels cut into its surface. There is a pile of bloodstained clothing thrown in one corner. There's a gated exit to the south and another exit to the north."
 
 The visibility of Abattoir is twilight. [day.]
 

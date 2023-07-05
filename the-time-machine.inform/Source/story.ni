@@ -4474,6 +4474,19 @@ The description of Weena is "[if the River Bank is visited]Slightly taller than 
 
 Understand "girl" or "features" as Weena.
 
+weena-tunic is a thing.
+weena-tunic is part of Weena.
+The printed name of weena-tunic is "Weena's tunic".
+
+The description of weena-tunic is "WEENA'S TUNIC."
+
+Understand "tunic" or "weena's tunic" as weena-tunic. [<- This might handle the condition below]
+
+[ Implement something like this when you're with Weena and are also carrying the Eloi tunic
+Does the player mean quizzing Gernsback about cigar-player: it is very unlikely.
+Does the player mean quizzing Gernsback about cigar-gernsback: it is very likely.
+]
+
 Part - Suggestions 
 
 Part - Conversation 

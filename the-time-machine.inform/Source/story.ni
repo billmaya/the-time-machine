@@ -4546,7 +4546,7 @@ Default show response for Weena:
 [Default yes-no response for Weena:]
 [Default response for Weena:]
 
-Chapter - Pushing Weena
+Part - Pushing Weena
 
 To say immovable-weena:
 	say "She obviously wants to go but is too terrified to move without some sort of light to protect you both."

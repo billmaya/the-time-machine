@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43210 ]
+[ WORDS - 43182 ]
 
 Table of Releases
 release	notes
@@ -3349,7 +3349,7 @@ The description of the tunic is "[if the tunic is unfound]You can't see any such
 
 The printed name of tunic is "Eloi tunic".
 
-Understand "smock" or "cotton" or "weave" as tunic.
+Understand "smock" or "cotton" or "weave" or "eloi tunic" as tunic.
 
 The tunic can be found or unfound.
 The tunic is unfound.
@@ -4478,14 +4478,9 @@ weena-tunic is a thing.
 weena-tunic is part of Weena.
 The printed name of weena-tunic is "Weena's tunic".
 
-The description of weena-tunic is "WEENA'S TUNIC."
+The description of weena-tunic is "A dense weave of cottoney fibers,[first time] obviously machine made, and[only] cinched at the waist."
 
-Understand "tunic" or "weena's tunic" as weena-tunic. [<- This might handle the condition below]
-
-[ Implement something like this when you're with Weena and are also carrying the Eloi tunic
-Does the player mean quizzing Gernsback about cigar-player: it is very unlikely.
-Does the player mean quizzing Gernsback about cigar-gernsback: it is very likely.
-]
+Understand "tunic" or "dress" or "weena's tunic" as weena-tunic. 
 
 Part - Suggestions 
 

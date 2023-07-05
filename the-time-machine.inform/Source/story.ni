@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43182 ]
+[ WORDS - 43280 ]
 
 Table of Releases
 release	notes
@@ -3296,7 +3296,7 @@ Chapter - Abattoir
 
 The Abattoir is underground.
 The Abattoir is south of the Eating Area.
-The Abattoir is north of the Holding Cell.
+The Abattoir is north of the holding-cell-gate. [Holding Cell.]
 
 The description of Abattoir is "A cross between a workshop and a charnel house, this room is dominated by a large metal table. There is a pile of bloodstained clothing at the base of the table. There's a gated exit to the south and another exit to the north."
 
@@ -3356,11 +3356,26 @@ The tunic is unfound.
 
 Instead of wearing the tunic:
 	say "It's not your size. And frankly, you'd look ridiculous wearing it if it was."
+	
+Chapter - Gate
+	
+The holding-cell-gate is a door.
+The holding-cell-gate is north of the Holding Cell and south of the Abattoir.
+The holding-cell-gate is closed.
+The holding-cell-gate is unlocked.
+The holding-cell-gate is openable.
+	
+The holding-cell-gate is scenery.
+Understand "gate" or "rusted gate" or "rust" as holding-cell-gate.
+			
+The description of holding-cell-gate is "Despite the lock having rusted away, the gate is still capable of being opened and closed."
+			
+The printed name of holding-cell-gate is "rusted gate".
 
 Chapter - Holding Cell
 
 The Holding Cell is underground.
-The Holding Cell is south of the Abattoir.
+The Holding Cell is south of the holding-cell-gate. [Abattoir.]
 	
 The description of Holding Cell is "A small cell large enough to hold two or three Eloi. The exit is to the north."
 	
@@ -3368,7 +3383,6 @@ The visibility of Holding Cell is twilight. [day.]
 
 Instead of exiting when the player is in the Holding Cell:
 	try going north.
-
 
 
 Book - Regions

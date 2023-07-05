@@ -4472,7 +4472,7 @@ Weena is fixed.
 Weena is major.
 The description of Weena is "[if the River Bank is visited]Slightly taller than the other Eloi, but dressed as they are and with the same similarity of features and build, t[otherwise]Slight, just over four feet tall, and dressed in some type of manufactured tunic, belted at the waist, and wearing buskins on her feet, t[end if]his is clearly the girl Wells described." 
 
-Understand "girl" as Weena.
+Understand "girl" or "features" as Weena.
 
 Part - Suggestions 
 
@@ -5329,6 +5329,8 @@ When Showing Eloi The Watch ends:
 Book - Weena
 
 Part - Introduction Of Weena
+
+[I don't think this scene is used anymore.]
 
 Introduction Of Weena is a scene.
 

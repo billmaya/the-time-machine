@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43335 ]
+[ WORDS - 43345 ]
 
 Table of Releases
 release	notes
@@ -585,7 +585,8 @@ Every turn (this is the Update Debug rule):
 			say "turns-since-attack: [turns-since-attack][line break]";
 			say "boldness-morlocks: [boldness-morlocks][line break]";
 			say "fought-off-morlocks: [fought-off-morlocks][line break]";
-			say "max-morlock-defends: [max-morlock-defends]";
+			say "max-morlock-defends: [max-morlock-defends][line break]";
+			say "morlocks-capture-you: [morlocks-capture-you]";
 		otherwise if player is in Year-802701-Outside:
 			say "ask-about-weena: [ask-about-weena][line break]";
 			say "show-eloi-watch: [show-eloi-watch]";
@@ -3151,7 +3152,7 @@ The description of Shaft 3 is "[shaft-description][line break]You can climb [sha
 
 The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 
-The visibility of Shaft 3 is day.
+The visibility of Shaft 3 is twilight. [day.]
 
 Before going south in Shaft 3:
 	if player-has-light is false:

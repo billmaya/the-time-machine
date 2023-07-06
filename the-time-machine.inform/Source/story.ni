@@ -715,7 +715,7 @@ Test rescue-weena with "down / down / north / down / down / down / south / south
 
 Part - Release
 
-Release along with cover art ("The Time Machine") and an interpreter.
+Release along with cover art ("The Time Machine") and an interpreter. [and the source text.]
 
 Volume - Settings
 
@@ -4722,12 +4722,12 @@ Check burning something with something (this is the burn only with flaming match
 
 Check burning something with something (this is the burn only flammable things rule):
 	if the noun is impervious, say "[The noun] cannot be burned." instead.
-
+[
 Check burning something with something (this is the burn only things not held rule):
 	say "[one of]It occurs to you to set down [the noun] before burning, just for safety's sake. [or]Again, you decide to put down [the noun] prior to burning. [or]You try setting down [the noun] as usual. [stopping][run paragraph on]";
 	silently try the player dropping the noun;
 	if player encloses the noun, stop the action.
-
+]
 [Remove or modify Carry/Report to allow newspaper to be used as a torch; give burning newspaper a duration]
 Carry out burning something with something (this is the simplistic burning rule):
 	now the noun is nowhere.
@@ -5089,11 +5089,12 @@ Understand the flame-state property as describing the makeshift torch.
 
 Chapter - Lighting The Torch
 
-Check burning a torch with something (this is the being able to hold a torch rule):
+[Check] After burning a makeshift torch with a something (this is the being able to hold a torch rule):
 	say "You rotate the end of your makeshift torch in the flame until the entire end is aflame.";
 	now player-has-light is true;
 	now the makeshift torch is lit;
 	now the makeshift torch is flaming;
+	now the player has the makeshift torch;
 	stop the action.
 
 Chapter - Putting The Torch Out

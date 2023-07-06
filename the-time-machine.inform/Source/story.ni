@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43345 ]
+[ WORDS - 43379 ]
 
 Table of Releases
 release	notes
@@ -5069,6 +5069,10 @@ Chapter - Wrapping
 Wrapping is an action applying to two things.
 
 Understand "wrap [tunic] around [poker]" as wrapping.
+Understand "wrap [tunic] on [poker]" as wrapping.
+
+Understand "put [tunic] around [poker]" as wrapping.
+Understand "put [tunic] on [poker]" as wrapping.
 
 Instead of wrapping:
 	try tying tunic to poker;
@@ -5089,7 +5093,7 @@ Understand the flame-state property as describing the makeshift torch.
 
 Chapter - Lighting The Torch
 
-[Check] After burning a makeshift torch with a something (this is the being able to hold a torch rule):
+After burning a makeshift torch with a something (this is the being able to hold a torch rule):
 	say "You rotate the end of your makeshift torch in the flame until the entire end is aflame.";
 	now player-has-light is true;
 	now the makeshift torch is lit;

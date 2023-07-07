@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43473 ]
+[ WORDS - 43430 ]
 
 Table of Releases
 release	notes
@@ -5452,10 +5452,7 @@ When Escape The Morlocks begins:
 	now Weena is mobile. 	
 
 To say escape-morlocks-begin-text:
-	if morlocks-capture-you is true:
-		if Weena is in the Holding Cell:
-			say "As the gate clangs shut, Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.";
-	otherwise:
+	if morlocks-capture-you is false:
 		if Weena is in the Holding Cell:
 			say "Weena looks up, startled, her eyes wide and fearful. She gets to her feet, arms wrapped around her sides, backing into a corner while fixing her gaze on you.";
 

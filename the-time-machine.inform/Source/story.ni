@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43379 ]
+[ WORDS - 43539 ]
 
 Table of Releases
 release	notes
@@ -38,7 +38,7 @@ The numeric-year is a number that varies.
 The numeric-year is 1895.
 
 debug-mode is a truth state that varies.
-debug-mode is [false.] true.
+debug-mode is false. [true.]
 
 To say introduction:
 	say "'Let me go!'
@@ -486,15 +486,10 @@ This is the morlock defend rule:
 					say "[morlocks-prevent-entry]";
 					if fought-off-morlocks is max-morlock-defends:
 						now fought-off-morlocks is 0;
-						say "MORLOCKS KNOCK YOU UNCONSCIOUS; TAKE YOU TO HOLDING CELL.";
-						say "[captured-by-morlocks]";
-						say "[taken-to-holding-pen]";
 						now morlocks-capture-you is true;
 						now the player is in Holding Cell;
 				otherwise:
-					say "MORLOCKS KNOCK YOU UNCONSCIOUS; TAKE YOU TO HOLDING CELL.";
 					say "[captured-by-morlocks]";
-					say "[taken-to-holding-pen]";
 					now morlocks-capture-you is true;
 					now the player is in Holding Cell;
 					
@@ -530,12 +525,11 @@ This is the morlock fight rule:
 		otherwise if fought-off-morlocks is 2:
 			say "[attack-morlocks-3]";
 			now fought-off-morlocks is 0; 
-			say "[taken-to-holding-pen]";
 			now morlocks-capture-you is true;
 			now the player is in Holding Cell;
 	otherwise:
 		say "[captured-by-morlocks]";
-		say "[taken-to-holding-pen]";
+		[say "[taken-to-holding-pen]";]
 		now morlocks-capture-you is true;
 		now the player is in Holding Cell;
 
@@ -543,9 +537,12 @@ This is the morlock fight rule:
 
 To say morlocks-prevent-entry:
 	if fought-off-morlocks is:
-		-- 1: say "As you attempt to enter the darkness. MORLOCKS PREVENT ENTRY [fought-off-morlocks]";
-		-- 2: say "As you attempt to enter the darkness. MORLOCKS PREVENT ENTRY [fought-off-morlocks]";
-		-- 3: say "As you attempt to enter the darkness. MORLOCKS PREVENT ENTRY [fought-off-morlocks]";
+		-- 1: 
+			say "As you enter the darkened tunnel you're assaulted out of the darkness by shadowy figures. Swinging the poker at the Morlocks you manage to beat your attackers back and retreat to the north, tired but victorious.";
+		-- 2: 
+			say "Again you are attacked by the Morlocks. In the darkness, you manage to drive off a a few of them with your poker but more take their place and drive you back to the north, almost spent.";
+		-- 3: 
+			say "This time the Morlocks are ready for you and, despite your weapon, they surround you in the darkness and knock you to the ground, unconscious.";
 		
 
 To say morlocks-attack:
@@ -558,19 +555,19 @@ To say morlocks-follow:
 	say "[sounds-scuttling]".
 
 To say attack-morlocks-1:
-	say "Swinging the poker wildly around you manage to drive the loathsome creatures away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack.[no line break]"
+	say "Swinging the poker wildly around, you manage to drive the loathsome creatures away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack."
 	
 To say attack-morlocks-2:
-	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again.[no line break]"
+	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again."
 	
 To say attack-morlocks-3:
-	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbers and manhandled into the darkness.[no line break]"
+	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbers and knocked unconcious to the ground."
 		
 To say captured-by-morlocks:
-	say "You strike back at the shadowy figures grabbing at you but are soon overpowered by sheer numbers and knocked to the ground, stunned."
-
-To say taken-to-holding-pen:
-	say "[paragraph break]Dragging you through the darkness, the Morlocks throw you into a small cell, slam the gates behind you, and retreat without another word."
+	if the player is in Shaft 3:
+		say "As you enter the darkened tunnel you're assaulted out of the darkness by shadowy figures. Barehanded, you attempt to fight back, but are knocked unconcious to the ground.";
+	otherwise if the player is in Living Quarters or the player is in Catacombs:
+		say "You strike back at them but you but are soon overpowered by sheer numbers and knocked to the ground, unconcious."
 
 Chapter - Debug
 
@@ -3384,6 +3381,33 @@ The visibility of Holding Cell is twilight. [day.]
 
 Instead of exiting when the player is in the Holding Cell:
 	try going north.
+
+Section - Print Holding Cell Description
+
+holding-cell-print-description is a truth state that varies.
+holding-cell-print-description is true.
+The room description body text rule does nothing when holding-cell-print-description is false.
+
+Check going to the Holding Cell:
+	if morlocks-capture-you is true:
+		now holding-cell-print-description is false;
+		say "DRAGGED UNCONSCIOUS TO CELL; REGAIN CONSCIOUSNESS LATER.";
+	otherwise:
+		now holding-cell-print-description is true;
+
+[
+Check going to the Holding Cell:
+	if the Holding Cell has not been visited: 
+		if morlocks-capture-you is true:
+			[say "FIRST TIME!";]
+			now holding-cell-print-description is false;
+		otherwise:
+			now holding-cell-print-description is true;
+	otherwise: 
+		[say "BEEN HERE BEFORE."]
+		now holding-cell-print-description is true.
+]
+Check going to the Abattoir: now holding-cell-print-description is true.
 
 
 Book - Regions

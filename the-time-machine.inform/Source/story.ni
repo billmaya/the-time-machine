@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43458 ]
+[ WORDS - 43483 ]
 
 Table of Releases
 release	notes
@@ -3390,6 +3390,10 @@ The visibility of Holding Cell is twilight. [day.]
 
 Instead of exiting when the player is in the Holding Cell:
 	try going north.
+	
+Before going north when the player is in the Holding Cell:
+	if player-has-light is false:
+		say "Weena grabs at you as you attempt to leave, obviously wanting to follow you into the darkness but terrified to do so without a light."
 
 
 Book - Regions
@@ -5476,7 +5480,7 @@ Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:
 		if Weena is not nowhere:
 			if Weena is mobile:
-				if the visibility of the location of player is not day: [<- This caused run-time error when >up from Bottom Well because Top Well doesn't have visibility.]
+				if the visibility of the location of player is not day:
 					if the location of Weena is not the location of the player:
 						if player-has-light is true:
 							let the way be the best route from the location of Weena to the location of the player, using doors;

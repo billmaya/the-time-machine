@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43470 ]
+[ WORDS - 43473 ]
 
 Table of Releases
 release	notes
@@ -356,6 +356,9 @@ Before listening:
 	else if the player is in the Dining Room:
 		say "[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[otherwise]You hear nothing unexpected.[end if]";
 		stop the action;
+	else if the player is in the Living Quarters or the player is in the Catacombs:
+		say "[morlock-sounds]";
+		stop the action;
 	otherwise:
 		continue the action.
 
@@ -546,11 +549,8 @@ To say morlocks-prevent-entry:
 To say morlocks-attack:
 	say "Before you can take another step you're beset from all sides by shadowy brutes from the surrounding darkness—Morlocks![no line break]"
 
-To say sounds-scuttling:
-	say "All around you can hear scuttlings and mutterings of vague shadowy figures, almost indistinguishable from the pitch black darkness that surrounds you.[no line break]"
-
-To say morlocks-follow:
-	say "[sounds-scuttling]".
+To say morlock-sounds:
+	say "In the surrounding darkness you can hear scuttlings and mutterings of the Morlocks.";
 
 To say attack-morlocks-1:
 	say "Swinging the poker wildly around, you manage to drive the loathsome creatures away. But it appears only temporary as they gather just out of reach, muttering and gobbling to themselves in their strange tongue, obviously regrouping for another attack."

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43539 ]
+[ WORDS - 43438 ]
 
 Table of Releases
 release	notes
@@ -529,7 +529,6 @@ This is the morlock fight rule:
 			now the player is in Holding Cell;
 	otherwise:
 		say "[captured-by-morlocks]";
-		[say "[taken-to-holding-pen]";]
 		now morlocks-capture-you is true;
 		now the player is in Holding Cell;
 
@@ -542,8 +541,7 @@ To say morlocks-prevent-entry:
 		-- 2: 
 			say "Again you are attacked by the Morlocks. In the darkness, you manage to drive off a a few of them with your poker but more take their place and drive you back to the north, almost spent.";
 		-- 3: 
-			say "This time the Morlocks are ready for you and, despite your weapon, they surround you in the darkness and knock you to the ground, unconscious.";
-		
+			say "This time the Morlocks are ready for you and, despite your weapon, they surround you in the darkness and knock you to the ground, unconscious.[time-passes]";
 
 To say morlocks-attack:
 	say "Before you can take another step you're beset from all sides by shadowy brutes from the surrounding darkness—Morlocks![no line break]"
@@ -561,13 +559,16 @@ To say attack-morlocks-2:
 	say "Slightly weaker now, you still manage to drive the Morlocks away temporarily. They retreat, wary but ready to attack again."
 	
 To say attack-morlocks-3:
-	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbers and knocked unconcious to the ground."
+	say "You attempt to drive the Morlocks off again but in your tired condition you are overpowered by their boldness and their sheer numbers and knocked unconscious to the ground.[time-passes]"
 		
 To say captured-by-morlocks:
 	if the player is in Shaft 3:
-		say "As you enter the darkened tunnel you're assaulted out of the darkness by shadowy figures. Barehanded, you attempt to fight back, but are knocked unconcious to the ground.";
+		say "As you enter the darkened tunnel you're assaulted out of the darkness by shadowy figures. Barehanded, you attempt to fight back, but are knocked unconscious to the ground.[time-passes]";
 	otherwise if the player is in Living Quarters or the player is in Catacombs:
-		say "You strike back at them but you but are soon overpowered by sheer numbers and knocked to the ground, unconcious."
+		say "You strike back at them but you but are soon overpowered by sheer numbers and knocked to the ground, unconscious.[time-passes]"
+
+To say time-passes:
+	say "[line break]An unknown amount of time passes. You regain consciousness, unaware of where you are.[paragraph break]"
 
 Chapter - Debug
 
@@ -3375,39 +3376,12 @@ Chapter - Holding Cell
 The Holding Cell is underground.
 The Holding Cell is south of the holding-cell-gate. [Abattoir.]
 	
-The description of Holding Cell is "A small cell large enough to hold two or three Eloi. The exit is to the north."
+The description of Holding Cell is "A small cell large enough to hold two or three Eloi. The exit is to the north through a rusted gate."
 	
 The visibility of Holding Cell is twilight. [day.]
 
 Instead of exiting when the player is in the Holding Cell:
 	try going north.
-
-Section - Print Holding Cell Description
-
-holding-cell-print-description is a truth state that varies.
-holding-cell-print-description is true.
-The room description body text rule does nothing when holding-cell-print-description is false.
-
-Check going to the Holding Cell:
-	if morlocks-capture-you is true:
-		now holding-cell-print-description is false;
-		say "DRAGGED UNCONSCIOUS TO CELL; REGAIN CONSCIOUSNESS LATER.";
-	otherwise:
-		now holding-cell-print-description is true;
-
-[
-Check going to the Holding Cell:
-	if the Holding Cell has not been visited: 
-		if morlocks-capture-you is true:
-			[say "FIRST TIME!";]
-			now holding-cell-print-description is false;
-		otherwise:
-			now holding-cell-print-description is true;
-	otherwise: 
-		[say "BEEN HERE BEFORE."]
-		now holding-cell-print-description is true.
-]
-Check going to the Abattoir: now holding-cell-print-description is true.
 
 
 Book - Regions

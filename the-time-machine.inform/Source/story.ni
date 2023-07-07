@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43483 ]
+[ WORDS - 43494 ]
 
 Table of Releases
 release	notes
@@ -5484,15 +5484,15 @@ Every turn (this is the Move Weena Rule):
 					if the location of Weena is not the location of the player:
 						if player-has-light is true:
 							let the way be the best route from the location of Weena to the location of the player, using doors;
-							try [silently] Weena going the way;
-							[say "(A) WEENA FOLLOWS.";] ["Weena follows you into the next room, her fears assuaged by the light you carry.";]
-						[otherwise:]
-							[say "(B) WEENA COWERS.";] ["Without a light, Weena's cowers in fear and doesn't follow you.";]
+							try silently Weena going the way;
+							say "Staying close to you and your source of light, Weena follows you into the [location of the player].";
+						otherwise:
+							say "Terrified by the dark, Weena cowers in fear and stays behind.";
 				otherwise:
 					if the location of Weena is not the location of the player:
 						let the way be the best route from the location of Weena to the location of the player, using doors;
-						try Weena going the way;
-						[say "(C) WEENA FOLLOWS.";]
+						try silently Weena going the way;
+						say "Feeling more adventurous in the increasing daylight, Weena follows you into the [location of the player].";
 				refresh the title-characters window;
 				refresh the list-characters window.
 

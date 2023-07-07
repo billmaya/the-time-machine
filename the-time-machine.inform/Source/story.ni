@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43438 ]
+[ WORDS - 43470 ]
 
 Table of Releases
 release	notes
@@ -4588,13 +4588,14 @@ Book - Morlocks
 
 morlock-placeholder is a thing.
 morlock-placeholder is scenery.
+The description of morlock-placeholder is "The pallid skin, luminous eyes, and hunched posture of these pale, ape-like creatures attacking you engenders a visceral reaction of horror and disgust in you."
 
 morlock-placeholder is a backdrop.
 morlock-placeholder is in the Year-802701-Underground.
 
 The printed name of morlock-placeholder is "the Morlocks".
 
-Understand "morlocks" or "morlock" as morlock-placeholder.
+Understand "morlocks" or "morlock" or "figures" as morlock-placeholder.
 
 Book - Wells
 

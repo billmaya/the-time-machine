@@ -4224,7 +4224,7 @@ Title	Comment
 "The Invisible Man"	"an albino scientist who makes himself invisible. Can’t reverse the process and goes a bit crazy. Shot dead before he can turn himself back. Probably check up on my competitors if I were invisible instead of wasting time terrorizing the nation. No money in it."
 "The War of the Worlds"	"an invasion from Mars by slugs in some sort of walking machines with three legs, if you can believe that. Wouldn’t mind having the patent on those, I tell you."
 "When the Sleeper Wakes"	"a man who sleeps for two hundred years. Wakes up to find he’s become the richest man in the world. Wouldn’t mind that happening to me. Richest man in the world, not the sleeping part."
-"The First Men in the Moon"	"a scientist chap like our Wells who invents some of anti-gravity material. Uses it to travel to the Moon instead of making a fortune off of it, if you can believe that."
+"The First Men in the Moon"	"a scientist chap like Wells who invents some of anti-gravity material. Uses it to travel to the Moon instead of making a fortune off of it, if you can believe that."
 	
 After quizzing Gernsback about library-books:
 	say "Looking around at the shelves Gernsback says 'Quite a nice collection, though a lot of the stuff is over my head.'"

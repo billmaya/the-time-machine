@@ -49,11 +49,11 @@ Wells struggles against the efforts of the two orderlies who are dragging him to
 
 Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we believe you. You just had a terrible shock; you need to rest after all these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a break. Nothing to worry about.'
 
-You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[']ve just heard from Wells['] own mouth. Morlocks. Eloi. Time travel. It sounds fantastical.
+You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend, but the doctor makes a good point, especially after the story you[']ve just heard from Wells['] own mouth. Morlocks. Eloi. Time travel. It sounds fantastical.
 
-'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[']ll find...get your bloody hands off of me!' The orderlies have grabbed Wells a second time. 'No, damn you! Let me go!' 
+'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[']ll find[unicode 8212]Get your bloody hands off of me!' The orderlies have grabbed Wells a second time. 'No, damn you! Let me go!' 
 
-Wells forgets whatever he was looking for in his pockets and struggles against the orderlies but they[']re prepared this time and manage to overpower your friend and manhandle him into the ambulance. But it[']s a near thing, so violent that Wells['] pocket watch falls to the ground during the struggle.
+Wells forgets whatever he was looking for in his pockets and struggles against the orderlies, but they[']re prepared this time, and manage to overpower your friend and manhandle him into the ambulance. But it[']s a near thing: So violent is Wells['] struggle that his pocket watch falls to the ground.
 
 Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re professionals, used to dealing patients like this all the time. They[']re not being as rough with him as they look.'"
 
@@ -4222,7 +4222,7 @@ Table of Gernsback Book
 Title	Comment
 "The Island of Doctor Moreau"	"an exiled scientist on an island turning animals into people. Don’t really understand the reasons why. Doesn’t seem to be money in it unless you can turn them into domestics."
 "The Invisible Man"	"an albino scientist who makes himself invisible. Can’t reverse the process and goes a bit crazy. Shot dead before he can turn himself back. Probably check up on my competitors if I were invisible instead of wasting time terrorizing the nation. No money in it."
-"The War of the Worlds"	"an invasion from Mars by slugs in some sort of walking machines with three legs, if you can believe that. Wouldn’t mind having the patent on those I tell you."
+"The War of the Worlds"	"an invasion from Mars by slugs in some sort of walking machines with three legs, if you can believe that. Wouldn’t mind having the patent on those, I tell you."
 "When the Sleeper Wakes"	"a man who sleeps for two hundred years. Wakes up to find he’s become the richest man in the world. Wouldn’t mind that happening to me. Richest man in the world, not the sleeping part."
 "The First Men in the Moon"	"a scientist chap like our Wells who invents some of anti-gravity material. Uses it to travel to the Moon instead of making a fortune off of it, if you can believe that."
 	

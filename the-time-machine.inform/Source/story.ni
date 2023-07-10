@@ -22,7 +22,7 @@ release	notes
 "10"	"v1.7"
 "11"	"v1.8"
 "12"	"v1.9"
-"13"	"v2.0"
+"13"	"v2.0 alpha"
 
 Volume - Beginning The Story
 

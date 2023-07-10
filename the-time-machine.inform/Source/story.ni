@@ -5052,7 +5052,8 @@ Every turn (this is the Putting The Newspaper Out rule):
 		if debug-mode is true, say "DEBUG Newspaper Duration: [duration of the item][line break]";
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
-			say "You hold the burning newsprint until the very last possible minute and drop it as the flame approaches your fingers. The glowing fragments spiral to the floor and die.";
+			if the newspaper is not nowhere:
+				say "You hold the burning newsprint until the very last possible minute and drop it as the flame approaches your fingers. The glowing fragments spiral to the floor and die.";
 			now the newspaper is nowhere;
 			now player-has-light is false.
 

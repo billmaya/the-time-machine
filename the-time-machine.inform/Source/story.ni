@@ -138,7 +138,7 @@ The measurement of the title-characters window is 2.
 The list-characters window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-characters window is g-placeabove.
 The scale method of the list-characters window is g-fixed-size.
-The measurement of the list-characters window is 8.
+The measurement of the list-characters window is 4. [8.]
 
 The title-talking-to window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-talking-to window is g-placeabove.
@@ -168,7 +168,7 @@ The measurement of the title-inventory window is 2.
 The list-inventory window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-inventory window is g-placeabove.
 The scale method of the list-inventory window is g-fixed-size.
-The measurement of the list-inventory window is 16.
+The measurement of the list-inventory window is 12. [16.]
 
 The debug-title window is a text grid g-window spawned by the right-sidebar window.
 The position of the debug-title window is g-placeabove.
@@ -706,7 +706,7 @@ Test light-newspaper with "turn lantern off / open box of matches / take match /
 Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
 Test news-duration with "test go-abattoir / test light-newspaper."
 
-[v2.0 Tests]
+[v2.0 alpha Tests]
 Test go-library with "go north / go north / go west."
 Test go-garden with "go north / go north / go west / go north / go east."
 Test go-workshop with "purloin key / unlock workshop door with key / n / flip switch."
@@ -717,6 +717,8 @@ Test prep-time with "get in time machine / unlock hinged panel with key / open h
 
 Test go-802701 with "test get-matches / test go-workshop /  test prep-time / purloin poker / push lever."
 Test rescue-weena with "down / down / north / down / down / down / south / south / search pile / wrap tunic around poker / south / light torch / north / north / north / up / up / up / south" 
+
+Test take-all with "purloin petal / purloin pocket watch / purloin key / purloin poker / purloin newspaper / purloin time machine fuse / purloin orrery fuse / purloin box of matches / purloin Eloi tunic / wait."
 
 
 Part - Release

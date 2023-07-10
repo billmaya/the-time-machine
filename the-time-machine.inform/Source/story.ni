@@ -4986,15 +4986,10 @@ Instead of taking wells-book:
 	if the wells-book is held by Gernsback:
 		say "Gernsback is currently reading it. Perhaps you should find another book if you want to read something.";
 	otherwise:
-		say "YOU CAN TAKE THE BOOK." [Gernsback is either reading the book or puts it back on shelf when you leave so you can never take it]
+		say "YOU CAN TAKE THE BOOK." [Gernsback reading book or puts it back on shelf when he leaves so it can never be taken]
 
 Instead of asking Gernsback to try giving wells-book to yourself:
 	try requesting Gernsback for the wells-book.
-
-[Instead of asking Gernsback to try [something]:
-	say "ASKING GERNSBACK TO TRY SOMETHING..."]
-
-[How do you trap "Gernsback, XYZ" at the highest level?]
 
 The story-being-read is scenery in the Library.
 Understand "story" as story-being-read.

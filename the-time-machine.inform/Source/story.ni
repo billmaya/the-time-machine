@@ -4978,13 +4978,15 @@ Part - HG Wells Book
 The description of wells-book is "You can't make out the author's name from this distance but the title 'Fantastic Fiction' is clearly visible on the spine."
 Understand "gernsback book" or "gernsback's book" or "book" or "fantastic fiction" or "stories" or "title" as wells-book
 
+The printed name of wells-book is "book he is reading".
+
 [The] wells-book is held by Gernsback.
 
 Instead of taking wells-book:
 	if the wells-book is held by Gernsback:
 		say "Gernsback is currently reading it. Perhaps you should find another book if you want to read something.";
 	otherwise:
-		say "YOU CAN TAKE THE BOOK." [<- TBD when the book is on the desk]
+		say "YOU CAN TAKE THE BOOK." [Gernsback is either reading the book or puts it back on shelf when you leave so you can never take it]
 
 Instead of asking Gernsback to try giving wells-book to yourself:
 	try requesting Gernsback for the wells-book.
@@ -5284,6 +5286,7 @@ When Gernsback Leaves begins:
 	say "Getting up, Gernsback closes his book, replaces it on the shelf, and lights a cigar. Turning to you, he says, 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he quickly lights his cigar, drops the box of matches on the desk, and is gone without another word.";
 	move the box of matches to the desk;
 	reset the interlocutor;
+	now the wells-book is nowhere;
 	now Gernsback is nowhere.
 
 Gernsback Leaves ends when Gernsback is nowhere.

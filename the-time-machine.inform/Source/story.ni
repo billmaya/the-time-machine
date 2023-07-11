@@ -259,7 +259,7 @@ Table of Fancy Status
 left	central	right
 " [if in darkness]Darkness[otherwise][location][end if]"	""	"[top rose]"
 " [current-year]"	""	"[middle rose]"
-" "	""	"[bottom rose]"
+" [time of day]"	""	"[bottom rose]"
 
 When play begins: now right alignment depth is 25;
 
@@ -690,7 +690,7 @@ Part - Tests
 
 [In the game type "> test" to see a list of all the available tests]
 
-[v1.9 Tests]
+[v1.9]
 
 Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
 Test go-underground with "test go-802701 / exit / remove cover / climb in well / down."
@@ -706,7 +706,7 @@ Test light-newspaper with "turn lantern off / open box of matches / take match /
 Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
 Test news-duration with "test go-abattoir / test light-newspaper."
 
-[v2.0 alpha Tests]
+[v2.0]
 Test go-library with "go north / go north / go west."
 Test go-garden with "go north / go north / go west / go north / go east."
 Test go-workshop with "purloin key / unlock workshop door with key / n / flip switch."
@@ -720,10 +720,44 @@ Test rescue-weena with "down / down / north / down / down / down / south / south
 
 Test take-all with "purloin petal / purloin pocket watch / purloin key / purloin poker / purloin newspaper / purloin time machine fuse / purloin orrery fuse / purloin box of matches / purloin Eloi tunic / wait."
 
+[v2.0 alpha]
+
+Test key-1 with "north / north / west / north / north / north / ask watchett about key / south / south / take poker / take newspaper / south / east / south / search area / search area / search area."
+
+Test key-2 with "north / north / west / north / take poker / take newspaper / south / east / south / search area / search area / search area."
+
+Test fuse-t with "north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse."
+
+Test fuse-o1 with "exit / south / west / north / examine orrery / examine right panel / examine right panel / slide right panel / take orrery fuse."
+
+Test fuse-o2 with "exit / south / west / show time machine fuse to gernsback / take orrery fuse."
+
+Test prep with "south / take box of matches / east / north / enter time machine / put orrery fuse in fuse holder."
+
+Test success-4 with "exit / push lever / say hello to humboldt / tell humboldt about time machine / tell humboldt about time travel / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks."
+	
+Test success-5 with "push lever / push lever / exit / enter time machine / push lever."
+		
+Test 802701 with "push lever / exit."
+		
+Test underground with "remove cover / down / down / north / down / down / down / down / south / south."
+	
+Test rescue-1 with "search pile / south / tie tunic to poker / light torch with match / north / north / north / up / up / up / south / up / up."
+
+Test success-1 with "show weena the petal / enter time machine / push lever / exit / show flower to humboldt."
+		
+Test rescue-2 with "south / light newspaper with match / north / north / north / up / up / up / south / up / up."
+
+Test success-2 with "show weena the petal / enter time machine / push lever / exit / show flower to humboldt."
+	
+Test rescue-3 with "south / light match / north / north / south / light match / north / up / light match / north / up / down / light match / up / up / up / south / up / up."
+
+Test success-3 with "show weena the petal / enter time machine / push lever / exit / show flower to humboldt."
+
 
 Part - Release
 
-Release along with cover art ("The Time Machine") and an interpreter. [and the source text.]
+Release along with cover art ("The Time Machine") and an interpreter. [and a solution. [and the source text.]]
 
 Volume - Settings
 

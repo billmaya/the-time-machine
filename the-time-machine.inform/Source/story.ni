@@ -3673,36 +3673,6 @@ Test show-w with "show watchett poker / purloin poker / show watchett poker / sh
 
 Test basic-w with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for experiments / show watch to watchett".
 
-Part - Movement
-
-Every turn:
-	if Watchett is mobile:
-		repeat through the Table of Watchett's Movement:
-			let the last space be the location of Watchett;
-			if Watchett can be seen by the player, say "Mrs. Watchett heads to [the destination entry].";
-			move Watchett to destination entry;
-			if Watchett can be seen by the player, say "Mrs. Watchett arrives from [the last space].";
-			blank out the whole row;
-			break.
-
-Table of Watchett's Movement
-destination
-Entryway
-Library
-Parlor
-Dining Room
-Kitchen
-
-[TBD Mrs Watchett should linger in rooms along the way to the Kitchen. Give her table of things to do.]
-[? Maybe make it a task table for each room (so I can choose a random column).]
-
-Table of Watchett's Room Tasks
-room			task
-Library			"reshelves some books"
-Library			"rearranges the chairs"
-Library			"looks out the windows"
-Library			"draws the curtains closed"
-	
 
 Book - Humboldt 
 

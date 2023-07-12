@@ -4416,13 +4416,6 @@ ask-about-weena is false.
 asked-about-weena is a number that varies.
 asked-about-weena is 0.
 
-[This doesn't compile. Why?]
-[To say weena-needs-rescuing: 
-	if we had quizzed the Eloi about Weena for the second time:
-		say "QUIZZING ELOI ABOUT WEENA 2ND TIME.";
-	otherwise:
-		say "One of the Eloi points at the metal cover of the well and says a single word - 'Weena.'";]
-
 To say weena-needs-rescuing:
 	if asked-about-weena is 0:
 		say "One of the Eloi points at the metal cover of the well and says a single word - 'Weena.'";

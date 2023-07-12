@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43495 ]
+[ WORDS - 43129 ]
 
 Table of Releases
 release	notes
@@ -415,7 +415,7 @@ To say attempt-attack-morlocks-before-attacked:
 	say "Why would you provoke the Morlocks when they haven't shown the slightest agression against you. Hardly civilized behavior."
 
 [You should be able to attack morlocks only if they have attacked you first]
-Instead of attacking morlock-placeholder with poker: [<- Does this code need to be merged into the 'Instead of attacking something with the poker' code above? TEST]
+Instead of attacking morlock-placeholder with poker:
 	if morlocks-attacked is true:
 		if the player has the poker:
 			say "[attack-morlocks-poker]";
@@ -693,7 +693,6 @@ Part - Tests
 [v1.9]
 
 Test go-eloi with "test go-802701 / exit / go east / go east / go south / go north / go west / go west / go southeast."
-Test go-underground with "test go-802701 / exit / remove cover / climb in well / down."
 Test go-abattoir with "test go-underground / take lantern / turn on lantern / go north / go down / go down / go down / go south /go south."
 
 Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
@@ -706,21 +705,10 @@ Test light-newspaper with "turn lantern off / open box of matches / take match /
 Test torch-duration with "test go-abattoir / test create-torch / test light-torch."
 Test news-duration with "test go-abattoir / test light-newspaper."
 
-[v2.0]
-Test go-library with "go north / go north / go west."
-Test go-garden with "go north / go north / go west / go north / go east."
-Test go-workshop with "purloin key / unlock workshop door with key / n / flip switch."
-
-Test get-matches with "go north / go north / go west / go north / purloin time machine fuse / go south / show time machine fuse to gernsback / go south / take box of matches / east."
-
-Test prep-time with "get in time machine / unlock hinged panel with key / open hinged panel / purloin orrery fuse / take time machine fuse / put orrery fuse in time machine fuse holder."
-
-Test go-802701 with "test get-matches / test go-workshop /  test prep-time / purloin poker / push lever."
-Test rescue-weena with "down / down / north / down / down / down / south / south / search pile / wrap tunic around poker / south / light torch / north / north / north / up / up / up / south" 
-
-Test take-all with "purloin petal / purloin pocket watch / purloin key / purloin poker / purloin newspaper / purloin time machine fuse / purloin orrery fuse / purloin box of matches / purloin Eloi tunic / wait."
-
 [v2.0 alpha]
+
+Test go-802701 with "test key-1 / test fuse-t / test fuse-o1 / test prep / test 802701."
+Test go-underground with "test key-1 / test fuse-t / test fuse-o1 / test prep / test 802701 / test underground."
 
 Test key-1 with "north / north / west / north / north / north / ask watchett about key / south / south / take poker / take newspaper / south / east / south / search area / search area / search area."
 
@@ -1786,9 +1774,6 @@ Instead of examining the contents-sideboard: say "[fooling-around-watchett-stuff
 Instead of taking the contents-sideboard: say "[fooling-around-watchett-stuff]".
 Instead of switching on the contents-sideboard: say "[fooling-around-watchett-stuff]".
 Instead of switching off the contents-sideboard: say "[fooling-around-watchett-stuff]".
-[I would have like to make this "...rummaging through her [noun]" with [noun] being what you typed (forks, glasses, bowls, etc.) understood as contents-sideboard]
-	
-["Enough with the sideboard already" after 3 or 4 >takes, >moves, >examines ???]
 
 Understand "dishes" or "plates" or "bowls" or "glassware" or "glass" or "glasses" or "tableware" or "service" or "table service" as contents-sideboard.
 Understand "silverware" or "knive" or "knives" or "cutlery" or "fork" or "forks" or "spoon" or "spoons" as contents-sideboard.
@@ -4211,7 +4196,7 @@ ask-about-gernsback-book is false.
 Does the player mean quizzing Gernsback about the wells-book: it is very likely.
 Does the player mean quizzing Gernsback about the library-books: it is very unlikely.
 
-[TBD - Fix line breaks]
+[TBD - Fix Gernsback responses about wells-book]
 After quizzing Gernsback about wells-book:
 	say "[first time]Gernsback marks his place with a finger and glances at the spine. [no line break][only][one of]'The title pretty much says it all if the rest of the stories in this book are like the one I'm reading.[no line break][or]'Based on the story I'm reading I'd say the title is pretty accurate.[no line break][or]'Scientific romance I think they call it. Like some of the stuff I read as a boy, Verne and Doyle you know, if this story is any indication.[no line break][in random order][first time] Hope the chap who wrote it made some money off of it, unlike our poor friend' He nods his head in the direction of the workshop and continues reading.[only]"
 
@@ -4957,8 +4942,7 @@ library-books are a thing in the Library.
 library-books are scenery.
 The description of library-books are "A variety of titles on various topics, some familiar, some not."
 The printed name of library-books is "library books".
-Understand "books" or "books on shelf" or "books on shelves" or "library books" or "library book" or "shelved books" or "shelved book" as library-books.
-[TBD - Is it possible to create an Understand with something like "library book/books" or "shelved book/books"]
+Understand "book/books" or "books on shelf/shelves"  or "library book/books" or "shelved book/books"  as library-books. [§17.12. This/that]
 
 Instead of searching the library-books: try reading the library-books.
 
@@ -5201,7 +5185,6 @@ endgame-failure is false.
 Instead of showing the flower to Humboldt:
 	now endgame-success is true.
 
-[TBD - What about giving things to other characters now that Block Giving rule not listed in Check Giving rules?]
 The block giving rule is not listed in the check giving it to rules. [Recipes §7.4. Barter and Exchange]
 After giving the flower to Humboldt:
 	now endgame-success is true.

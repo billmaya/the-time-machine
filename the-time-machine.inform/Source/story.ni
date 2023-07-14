@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42939 ]
+[ WORDS - 43105 ]
 
 Table of Releases
 release	notes
@@ -697,7 +697,6 @@ Test go-abattoir with "test go-underground / take lantern / turn on lantern / go
 
 Test escape-morlock with "test go-underground / go north / go down / go down / go down / go south / go south / go south."
 
-Test make-torch with "search clothing / open box of matches / take match / close box / wrap tunic around poker / light match / light torch with match."
 Test create-torch with "examine tunic / search pile / examine poker / examine tunic / examine makeshift torch / tie tunic to poker / wrap tunic around poker / examine poker / examine tunic / examine makeshift torch."
 Test light-torch with "turn lantern off / open box of matches / take match / light match / light torch with match."
 Test light-newspaper with "turn lantern off / open box of matches / take match / light match / light newspaper with match."
@@ -709,6 +708,14 @@ Test news-duration with "test go-abattoir / test light-newspaper."
 
 Test go-802701 with "test key-1 / test fuse-t / test fuse-o1 / test prep / test 802701."
 Test go-underground with "test key-1 / test fuse-t / test fuse-o1 / test prep / test 802701 / test underground."
+
+[Testing for trying to get poker to show up in location when torch burns out]
+Test make-torch with "search pile / wrap tunic around poker."
+Test ttorch1 with "light torch with matches / wait / wait / wait / wait / wait / wait / wait / wait / wait / wait / wait / showme poker."
+Test ttorch2 with "light torch with matches / wait / wait / wait / wait / wait / wait / wait / drop torch / wait / wait / wait / showme poker / look."
+Test ttorch3 with "light torch with matches / wait / wait / wait / wait / wait / wait / wait / drop torch / north / wait / wait / south / showme poker / look."
+
+[----------]
 
 Test key-1 with "north / north / west / north / north / north / ask watchett about key / south / south / take poker / take newspaper / south / east / south / search area / search area / search area."
 
@@ -728,7 +735,7 @@ Test success-5 with "push lever / push lever / exit / enter time machine / push 
 		
 Test 802701 with "push lever / exit."
 		
-Test underground with "remove cover / down / down / north / down / down / down / down / south / south."
+Test underground with "remove cover / down / down / north / down / down / down / south / south."
 	
 Test rescue-1 with "search pile / south / tie tunic to poker / light torch with match / north / north / north / up / up / up / south / up / up."
 
@@ -1349,7 +1356,8 @@ Instead of burning something: say "That really wouldn[apostrophe]t accomplish an
 Chapter - Poker
 
 The poker is a thing. [https://bit.ly/3sczKUx]
-The poker is undescribed in the Parlor.
+The poker is in the Parlor.
+[The poker is undescribed.]
 Understand "fire iron" or "fire hook" as poker.
 The description of the poker is "[if the tunic is not part of the poker]About three feet long, pointed and hooked at one end, this weighted implement is used to stir up the coal embers to achieve even burning.[otherwise]With the Eloi tunic wrapped around one end you've turned this weapon into a makeshift torch.[end if]"
 
@@ -5095,17 +5103,30 @@ After burning a makeshift torch with a something (this is the being able to hold
 
 Chapter - Putting The Torch Out
 
+holding-torch is a truth state that varies.
+
 Every turn (this is the Putting The Torch Out rule):
 	repeat with item running through flaming makeshift torch:
 		if debug-mode is true, say "DEBUG Torch Duration: [duration of the item][line break]";
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
-			say "With a last gasp of light the remaining torch sputters and goes out.";
+			[TBD - Torch message should only display if player is in same location as torch]
+			if the makeshift torch is in location of player or makeshift torch is carried by player:
+				say "With a last gasp of light the remaining torch sputters and goes out.";
+			now player-has-light is false; [Also, if the player walks away from the torch then they don't have light]
+			if the player is holding the makeshift torch:
+				now holding-torch is true;
+			otherwise:
+				now holding-torch is false;
 			now the makeshift torch is burnt;
-			now the makeshift torch is nowhere;
 			now the tunic is nowhere;
-			move the poker to the player;
-			now player-has-light is false.
+			if holding-torch is true:
+				move the poker to the player;
+			otherwise:
+				move the poker to the location of the makeshift torch;
+				[now the poker is described;] [This doesn't appear to work]
+			now the makeshift torch is nowhere.
+
 
 
 Volume - Scenes

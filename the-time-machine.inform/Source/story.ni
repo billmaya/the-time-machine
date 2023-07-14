@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43105 ]
+[ WORDS - 43100 ]
 
 Table of Releases
 release	notes
@@ -5110,10 +5110,9 @@ Every turn (this is the Putting The Torch Out rule):
 		if debug-mode is true, say "DEBUG Torch Duration: [duration of the item][line break]";
 		decrement the duration of the item;
 		if the duration of the item is less than 0:
-			[TBD - Torch message should only display if player is in same location as torch]
-			if the makeshift torch is in location of player or makeshift torch is carried by player:
+			if the makeshift torch is in location of player or makeshift torch is carried by player: [Only if player is in same location as torch]
 				say "With a last gasp of light the remaining torch sputters and goes out.";
-			now player-has-light is false; [Also, if the player walks away from the torch then they don't have light]
+			now player-has-light is false; [TBD Also, if the player walks away from the torch then they don't have light]
 			if the player is holding the makeshift torch:
 				now holding-torch is true;
 			otherwise:

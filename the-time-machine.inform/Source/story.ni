@@ -63,8 +63,8 @@ When play begins:
 	if compass-test is true:	
 		now the player is in the Main Room;
 	otherwise:
-		now the player is in Woking Street;
 		say "[introduction]";
+		now the player is in Woking Street;
 	open right-sidebar window;
 	open title-inventory window;
 	open list-inventory window;

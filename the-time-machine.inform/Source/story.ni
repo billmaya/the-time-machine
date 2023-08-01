@@ -59,7 +59,6 @@ Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re profe
 
 When play begins: 
 	now the time of day is 10:00 PM;
-	[now the left hand status line is "[location] - [current-year]"; [ - [time of day]";]]
 	if compass-test is true:	
 		now the player is in the Main Room;
 	otherwise:
@@ -75,7 +74,6 @@ When play begins:
 	if debug-mode is true:
 		open debug-title window;
 		open debug-info window;
-	[refresh the list-inventory window; [??? - does not work]]
 	now suggest-on-greeting is false.
 
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
@@ -106,11 +104,7 @@ Part - Extensions
 Include Basic Help Menu by Emily Short.
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
 
-[Include Epistemology by Eric Eve.
-Include Conversation Framework by Eric Eve.
-Include Conversation Suggestions by Eric Eve.
-Include Conversational Defaults by Eric Eve.]
-Include Conversation Package by Eric Eve. [This extension includes the four extensions above it]
+Include Conversation Package by Eric Eve. [This Epistemology, Conversation Framework, Conversation Suggestions and Conversasional Defaults extensions]
 
 Include Flexible Windows by Jon Ingold.
 

@@ -102,9 +102,10 @@ When play begins (this is the run TBD checks at the start of play rule):
 Part - Extensions
 
 Include Basic Help Menu by Emily Short.
+
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
 
-Include Conversation Package by Eric Eve. [This Epistemology, Conversation Framework, Conversation Suggestions and Conversasional Defaults extensions]
+Include Conversation Package by Eric Eve. [Contains Epistemology, Conversation Framework, Conversation Suggestions and Conversasional Defaults extensions]
 
 Include Flexible Windows by Jon Ingold.
 

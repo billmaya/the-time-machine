@@ -918,23 +918,29 @@ Instead of entering the front door in Woking Street: try going north.
 Instead of going inside in Woking Street: try going north.
 Instead of entering wells-house in Woking Street: try going north.
 
-To say humboldt-exit-general:
-	say "Before you can leave, [if player is not carrying the pocket watch]Humboldt bends down, picks up the pocket watch, and hands it to you. 'Better hold on to this until I get back.' He [otherwise]Dr. Humboldt snaps his pocket watch shut and [end if]climbs into the ambulance.
+[To say humboldt-exit-general:
+	say "Before you can leave, Humboldt stops you. 'While I'm gone, see if you can find the rest of this.' He hands you a single petal. 'If we can find the rest of this flower we can convince Wells that all this time travel nonsense is just a figment of his imagination. Maybe it's in that workshop of his. Talk to Mrs. Watchett, she should have the key.'
 
-'While I[']m gone, see if you can find the rest of this flower somewhere inside.' He reaches into one of his pockets and hands you a single petal from some futuristic flower. 'Finding the rest of this might convince Wells that all this time travel nonsense is a figment of his imagination.  Maybe it[']s in that workshop of his. Talk to Mrs. Watchett, she should know where the key is.'
+[if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."]
 
-With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
 
 [+petal description "that Wells said was given to him by Weena in 802,701 A.D"]
 
-To say humboldt-exit-key-found:
-	say "Humboldt sees the key and says 'Marvelous! While I'm gone I want you to find the rest of this flower.' He hands you a single petal. 'Wells is fixated that this was given to him by that girl he met in the future.  If we can find the rest of it we can convince Wells that all this time travel nonsense is just a figment of his imagination. Check out that workhop of his.'
+[To say humboldt-exit-key-found:
+	say "Humboldt sees the key and says 'Marvelous! While I'm gone see if you can find the rest of this.' He hands you a single petal. 'If we can find the rest of this flower we can convince Wells that all this time travel nonsense is just a figment of his imagination. Check out that workhop of his.'
 
-[if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
+[if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."]
+
+To say humboldt-exit:
+	say "[if found-key is true]Humboldt sees the key and says 'Marvelous! W[no line break][otherwise]Before you can leave, Humboldt stops you. 'W[no line break][end if]hile I'm gone see if you can find the rest of this.' He hands you a single petal. 'If we can find the rest of this flower we can convince Wells that all this time travel nonsense is just a figment of his imagination. Check out that workhop of his.'
+
+[if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He[otherwise]Humboldt[end if] climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
+
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
-		say "[if found-key is true][humboldt-exit-key-found][otherwise][humboldt-exit-general]";
+		[say "[if found-key is true][humboldt-exit-key-found][otherwise][humboldt-exit-general]";]
+		say "[humboldt-exit]"; [<- write test]
 		reset the interlocutor;
 		now Humboldt is nowhere; 
 		now the ambulance is nowhere;
@@ -945,6 +951,18 @@ Instead of going north in Woking Street:
 		try looking;
 	otherwise:
 		continue the action.
+
+[
+[if player is not carrying the pocket watch]Humboldt bends down, picks up the pocket watch, and hands it to you. 'Better hold on to this until I get back.' He [otherwise]Dr. Humboldt snaps his pocket watch shut and [end if]climbs into the ambulance.
+ somewhere inside reaches into one of his pockets and  from some futuristic flower
+'Finding the rest of this might convince Wells that all this time travel nonsense is a figment of his imagination.
+With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
+Wells is fixated that this was given to him by that girl he met in the future.  
+Wells is fixated that this was given to him by that girl he met in the future. 
+ flower  know where
+I want you to find the rest of this flower
+
+]
 
 Chapter - Front Door
 

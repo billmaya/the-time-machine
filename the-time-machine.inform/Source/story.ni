@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43198 ]
+[ WORDS - 43197 ]
 
 Table of Releases
 release	notes
@@ -919,14 +919,18 @@ Instead of going inside in Woking Street: try going north.
 Instead of entering wells-house in Woking Street: try going north.
 
 To say humboldt-exit-general:
-	say "Before you can leave, [if player is not carrying the pocket watch]Humboldt bends down, picks up the pocket watch, and hands it to you. 'Better hold on to this until I get back.' He [otherwise]Dr. Humboldt snaps his pocket watch shut and [end if]climbs into the ambulance.[paragraph break]'While I[']m gone, see if you can find the rest of this flower somewhere inside.' He reaches into one of his pockets and hands you a single petal from some futuristic flower. 'Finding the rest of this might convince Wells that all this time travel nonsense is a figment of his imagination.  Maybe it[']s in that workshop of his. Talk to Mrs. Watchett, she should know where the key is.'[paragraph break]With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
+	say "Before you can leave, [if player is not carrying the pocket watch]Humboldt bends down, picks up the pocket watch, and hands it to you. 'Better hold on to this until I get back.' He [otherwise]Dr. Humboldt snaps his pocket watch shut and [end if]climbs into the ambulance.
+
+'While I[']m gone, see if you can find the rest of this flower somewhere inside.' He reaches into one of his pockets and hands you a single petal from some futuristic flower. 'Finding the rest of this might convince Wells that all this time travel nonsense is a figment of his imagination.  Maybe it[']s in that workshop of his. Talk to Mrs. Watchett, she should know where the key is.'
+
+With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
 
 [+petal description "that Wells said was given to him by Weena in 802,701 A.D"]
 
 To say humboldt-exit-key-found:
-	say "Humboldt sees the key and says 'Marvelous, now you can try and find the rest of this.' He hands you a single petal from a flower that Wells said was given to him by Weena in 802,701 A.D. 'Finding the rest of this flower might help us convince him that all this time travel nonsense is just a figment of his imagination. It's probably in that workhop of his.
+	say "Humboldt sees the key and says 'Marvelous! While I'm gone I want you to find the rest of this flower.' He hands you a single petal. 'Wells is fixated that this was given to him by that girl he met in the future.  If we can find the rest of it we can convince Wells that all this time travel nonsense is just a figment of his imagination. Check out that workhop of his.'
 
-[if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it ot you. 'Better hold on to this until I get back.' With that he gets in the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
+[if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
 
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43197 ]
+[ WORDS - 43041 ]
 
 Table of Releases
 release	notes
@@ -918,29 +918,14 @@ Instead of entering the front door in Woking Street: try going north.
 Instead of going inside in Woking Street: try going north.
 Instead of entering wells-house in Woking Street: try going north.
 
-[To say humboldt-exit-general:
-	say "Before you can leave, Humboldt stops you. 'While I'm gone, see if you can find the rest of this.' He hands you a single petal. 'If we can find the rest of this flower we can convince Wells that all this time travel nonsense is just a figment of his imagination. Maybe it's in that workshop of his. Talk to Mrs. Watchett, she should have the key.'
-
-[if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."]
-
-
-[+petal description "that Wells said was given to him by Weena in 802,701 A.D"]
-
-[To say humboldt-exit-key-found:
-	say "Humboldt sees the key and says 'Marvelous! While I'm gone see if you can find the rest of this.' He hands you a single petal. 'If we can find the rest of this flower we can convince Wells that all this time travel nonsense is just a figment of his imagination. Check out that workhop of his.'
-
-[if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."]
-
 To say humboldt-exit:
 	say "[if found-key is true]Humboldt sees the key and says 'Marvelous! W[no line break][otherwise]Before you can leave, Humboldt stops you. 'W[no line break][end if]hile I'm gone see if you can find the rest of this.' He hands you a single petal. 'If we can find the rest of this flower we can convince Wells that all this time travel nonsense is just a figment of his imagination. Check out that workhop of his.'
 
 [if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He[otherwise]Humboldt[end if] climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
 
-
 Instead of going north in Woking Street: 
 	if Humboldt is not nowhere:
-		[say "[if found-key is true][humboldt-exit-key-found][otherwise][humboldt-exit-general]";]
-		say "[humboldt-exit]"; [<- write test]
+		say "[humboldt-exit]";
 		reset the interlocutor;
 		now Humboldt is nowhere; 
 		now the ambulance is nowhere;
@@ -952,17 +937,6 @@ Instead of going north in Woking Street:
 	otherwise:
 		continue the action.
 
-[
-[if player is not carrying the pocket watch]Humboldt bends down, picks up the pocket watch, and hands it to you. 'Better hold on to this until I get back.' He [otherwise]Dr. Humboldt snaps his pocket watch shut and [end if]climbs into the ambulance.
- somewhere inside reaches into one of his pockets and  from some futuristic flower
-'Finding the rest of this might convince Wells that all this time travel nonsense is a figment of his imagination.
-With that he swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
-Wells is fixated that this was given to him by that girl he met in the future.  
-Wells is fixated that this was given to him by that girl he met in the future. 
- flower  know where
-I want you to find the rest of this flower
-
-]
 
 Chapter - Front Door
 
@@ -1014,6 +988,8 @@ Chapter - The Petal
 The petal is a thing.
 The petal is nowhere.
 The description of the petal is "With its luminous colors, it is not like any flower petal you have ever seen. Still, you can't tell much from a single petal. Perhaps the rest of the blossom is inside somewhere." ["...inside somewhere" What if you're inside the house? Or in 802,701? Conditional description?]
+
+[+petal description "that Wells said was given to him by Weena in 802,701 A.D"]
 
 Instead of smelling the petal:
 	say "It has no smell."

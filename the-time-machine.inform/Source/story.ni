@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43025 ]
+[ WORDS - 43023 ]
 
 Table of Releases
 release	notes
@@ -998,9 +998,9 @@ The pocket watch is a thing.
 The pocket watch is in Woking Street.
 Understand "timepiece" or "chronometer" or "hands" or "stem" as pocket watch.
 
-The description of the pocket watch is "A simple pocket watch, given to Wells by his father. Thinking back on his story about time travel, you remember that Wells['] Weena was particularly enchanted with its moving hands and its winding mechanism."
+The description of the pocket watch is "A simple pocket watch, given to Wells by his father.[first time] Thinking back, you recall Wells telling the group that Weena was particularly enchanted by its moving hands and winding mechanism.[only]".
 	
-Instead of using the pocket watch: say "It[']s getting late. Doctor Humboldt will be back soon."
+Instead of using the pocket watch: say "It's getting late. Doctor Humboldt will be back soon."
 	
 Winding is an action applying to one touchable thing.
 Understand "wind [something]" as winding.

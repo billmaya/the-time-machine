@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43039 ]
+[ WORDS - 43025 ]
 
 Table of Releases
 release	notes
@@ -986,9 +986,8 @@ Chapter - The Petal
 	
 The petal is a thing.
 The petal is nowhere.
-The description of the petal is "With its luminous colors, it is not like any flower petal you have ever seen. Still, you can't tell much from a single petal. Perhaps the rest of the blossom is inside somewhere." ["...inside somewhere" What if you're inside the house? Or in 802,701? Conditional description?]
 
-[+petal description "that Wells said was given to him by Weena in 802,701 A.D"]
+The description of the petal is "Even with its faded luminous colors, it doesn't resemble any flower petal you have ever seen. Wells said the flower was given to him by the girl he called Weena in 802,701 A.D.[first time] Perhaps the rest of the flower is somewhere in the house.[only]".
 
 Instead of smelling the petal:
 	say "It has no smell."

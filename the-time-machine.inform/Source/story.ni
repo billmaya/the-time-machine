@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43023 ]
+[ WORDS - 43033 ]
 
 Table of Releases
 release	notes
@@ -975,7 +975,8 @@ Chapter - The Workshop Key
 The metal key is a thing.
 The metal key is in Woking Street.
 The metal key is undescribed.
-The description of metal key is "A small metal key to his workshop that you can recall Wells carrying around everywhere he went."
+The description of metal key is "A small metal key to Wells['] workshop.[first time] You recall he always carried it around on his person, never letting it out of his sight.[only]".
+
 Understand "glint" or "key" or "metallic" or "metallic object" as metal key.
 The indefinite article of the metal key is "the".
 

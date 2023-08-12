@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43029 ]
+[ WORDS - 43048 ]
 
 Table of Releases
 release	notes
@@ -940,11 +940,11 @@ Instead of going north in Woking Street:
 Chapter - Front Door
 
 The front door is north of Woking Street and south of the Entryway. 
-The front door is a door. 
-It is openable. 
+The front door is a door. It is openable. 
 The front door is scenery.
+Understand "wooden door" or "heavy wooden door" or "68 Woking Street" or "68" as front door.
 
-The description of the front door is "[if location is Woking Street]The door to 68 Woking Street is indistinguishable from every other door that lines the street.[otherwise]You see nothing special about the heavy wooden door leading to the street outside."
+The description of the front door is "[if location is Woking Street]The door [first time]to 68 Woking Street [only]is indistinguishable from every other door that lines the street.[otherwise]You see nothing special about the heavy wooden door leading to the street outside."
 	
 Instead of attacking the front door with the poker: say "The front door isn't locked so I don't see why you would think you had to pry it open.";
 Instead of attacking the front door with something: say "Violence isn't the answer here."

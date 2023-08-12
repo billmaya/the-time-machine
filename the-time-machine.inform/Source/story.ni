@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43048 ]
+[ WORDS - 43061 ]
 
 Table of Releases
 release	notes
@@ -901,16 +901,23 @@ Chapter - Scenery
 	
 Chapter - Wandering
 
-	Going west in Woking Street is wandering.
-	Going northwest in Woking Street is wandering.
-	Going northeast in Woking Street is wandering.
-	Going east in Woking Street is wandering.
-	Going southeast in Woking Street is wandering.
-	Going south in Woking Street is wandering.
-	Going southwest in Woking Street is wandering.
-	
-	Instead of wandering:
-		say "You start walking away from the front door towards [if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[purely at random][otherwise]one of the other houses[end if] but a sudden [one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random][one of] of wind[or] of snow[purely at random] makes you reconsider. You really should get inside since you're not dressed appropriately for this winter weather."
+Going west in Woking Street is wandering.
+Going northwest in Woking Street is wandering.
+Going northeast in Woking Street is wandering.
+Going east in Woking Street is wandering.
+Going southeast in Woking Street is wandering.
+Going south in Woking Street is wandering.
+Going southwest in Woking Street is wandering.
+
+To say specific-destination:
+	say "[if the noun is west]the intersection[else if the noun is east][one of]the fountain[or]the cul-de-sac[at random][otherwise]one of the other houses[end if]".
+
+To say weather-adjectives:
+	say "[one of]frigid[or]cold[or]bitter[or]frosty[or]ice-cold[or]numbing[or]wintery[or]icy[at random] [one of]gust[or]flurry[or]burst[or]blast[at random][one of] of wind[or] of snow[at random]".
+
+Instead of wandering:
+	say "You start walking away from the front door towards [specific-destination] but a sudden [weather-adjectives] makes you reconsider.[first time] You really should get inside since you're not dressed appropriately for this winter weather.[only]".
+
 
 Chapter - Humbolt's Exit
 

@@ -865,7 +865,7 @@ Chapter - Scenery
 [Snow is handled in the Garden]
 
 The gaslights are scenery in Woking Street. 
-The description of the gaslights are "The incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which you hope is a product of his overactive imagination, because you would miss the soft green glow of gassified coal that lights your nightime steps."
+The description of the gaslights are "The incandescent globes of light hold steady against the early winter darkness and swirling snow.[first time] You recall Wells saying there's talk of replacing them with something he calls 'electrical fixtures.' You hope this is a product of his overactive imagination, since you would miss the soft green glow of gassified coal that lights your nightime steps.[only]".
 Understand "gas" or "gas lights" or "flickering" or "flickering lights" or "flickering gas lights" as gaslights.
 
 The cul-de-sac is scenery in Woking Street.

@@ -897,7 +897,7 @@ Chapter - Scenery
 	The wells-house is scenery in Woking Street.
 	The printed name of wells-house is "Wells['] house".
 	The description of wells-house is "68 Woking Street, where your friend Wells has lived for many years, and which you have visited many times as friend and solicitor."
-	Understand "building" or "house" as wells-house.
+	Understand "building" or "house" or "68 Woking Street" or "68" as wells-house.
 	
 Chapter - Wandering
 
@@ -949,7 +949,7 @@ Chapter - Front Door
 The front door is north of Woking Street and south of the Entryway. 
 The front door is a door. It is openable. 
 The front door is scenery.
-Understand "wooden door" or "heavy wooden door" or "68 Woking Street" or "68" as front door.
+Understand "wooden door" or "heavy wooden door" as front door.
 
 The description of the front door is "[if location is Woking Street]The door [first time]to 68 Woking Street [only]is indistinguishable from every other door that lines the street.[otherwise]You see nothing special about the heavy wooden door leading to the street outside."
 	

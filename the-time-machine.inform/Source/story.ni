@@ -869,7 +869,7 @@ The description of the gaslights are "The incandescent globes of light hold stea
 Understand "gas" or "gas lights" or "flickering" or "flickering lights" or "flickering gas lights" as gaslights.
 
 The cul-de-sac is scenery in Woking Street.
-The description of the cul-de-sac is "A small roundabout with a sputtering fountain in the center terminates the street to the east."
+The description of the cul-de-sac is "A small roundabout with a fountain in the center terminates the street to the east."
 Understand "close" or "dead end" or "impasse" or "blind alley" or "dead-end" or "dead-end street" or "roundabout" or "cul de sac" or "end of street" as cul-de-sac. 
 	
 The fountain is scenery in Woking Street.

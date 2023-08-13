@@ -896,7 +896,7 @@ Chapter - Scenery
 		
 	The wells-house is scenery in Woking Street.
 	The printed name of wells-house is "Wells['] house".
-	The description of wells-house is "68 Woking Street, where your friend Wells has lived for many years, and which you have visited many times as friend and solicitor."
+	The description of wells-house is "This is the house where your friend Wells has lived for many years, and which you have visited many times as friend and solicitor."
 	Understand "building" or "house" or "68 Woking Street" or "68" as wells-house.
 	
 Chapter - Wandering

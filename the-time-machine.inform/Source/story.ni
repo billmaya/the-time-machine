@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43061 ]
+[ WORDS - 43008 ]
 
 Table of Releases
 release	notes
@@ -873,8 +873,7 @@ The description of the cul-de-sac is "A small roundabout with a sputtering fount
 Understand "close" or "dead end" or "impasse" or "blind alley" or "dead-end" or "dead-end street" or "roundabout" or "cul de sac" or "end of street" as cul-de-sac. 
 	
 The fountain is scenery in Woking Street.
-
-The description of the fountain is "The water in the small fountain vainly battles to remain upright against the frigid winter wind that swirls around the enclosed area."
+The description of the fountain is "The fountain squats forlorn in the center of the roundabout, covered in snow."
 Understand "water" or "sputtering" or "sputtering fountain" or "small fountain" or "small" as fountain.
 	
 The square is scenery in Woking Street.

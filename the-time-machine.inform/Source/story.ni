@@ -862,34 +862,35 @@ Instead of going down in Woking Street: try searching the area.
 
 Chapter - Scenery
 
-	[Snow is handled in the Garden]
+[Snow is handled in the Garden]
 
-	The gaslights are scenery in Woking Street. 
-	The description of the gaslights are "The incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which you hope is a product of his overactive imagination, because you would miss the soft green glow of gassified coal that lights your nightime steps."
-	Understand "gas" or "gas lights" or "flickering" or "flickering lights" or "flickering gas lights" as gaslights.
+The gaslights are scenery in Woking Street. 
+The description of the gaslights are "The incandescent globes of light hold steady against the early winter darkness and swirling snow. Wells says there is talk of replacing them with something called electrical fixtures, which you hope is a product of his overactive imagination, because you would miss the soft green glow of gassified coal that lights your nightime steps."
+Understand "gas" or "gas lights" or "flickering" or "flickering lights" or "flickering gas lights" as gaslights.
 
-	The cul-de-sac is scenery in Woking Street.
-	The description of the cul-de-sac is "A small roundabout with a sputtering [fountain] in the center terminates the street to the east."
-	Understand "close" or "dead end" or "impasse" or "blind alley" or "dead-end" or "dead-end street" or "roundabout" or "cul de sac" or "end of street" as cul-de-sac. 
+The cul-de-sac is scenery in Woking Street.
+The description of the cul-de-sac is "A small roundabout with a sputtering fountain in the center terminates the street to the east."
+Understand "close" or "dead end" or "impasse" or "blind alley" or "dead-end" or "dead-end street" or "roundabout" or "cul de sac" or "end of street" as cul-de-sac. 
 	
-	The fountain is scenery in Woking Street.
-	The description of the fountain is "The water in the small, sputtering fountain vainly battles to remain upright against the frigid winter wind that swirls around the enclosed area."
-	Understand "water" or "sputtering" or "sputtering fountain" or "small fountain" or "small" as fountain.
-	
-	The square is scenery in Woking Street.
-	The description of square is "During the day the road that intersects perpendicularly with Woking Street and the park beyond is live with carriages and pedestrians, even during this season. But now, at night and in this weather, both are empty except for the occasional carriage or pedestrian hurrying to a warmer location."
-	Understand "park" or "open space" or "municipal park" or "intersection" or "urban park" or "crossroads" or "main street" or "common" or "greenery" or "green park" as the square.
+The fountain is scenery in Woking Street.
 
-	The houses are scenery in Woking Street.
-	The printed name of houses are "houses in the cul-de-sac".
-	The description of houses are "[first time]Twenty or thirty terraced houses ring the circular cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. [paragraph break][only]Nothing much has changed since you last glanced around. [first time]Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights have gone off as those residents have gone back to sleep.[only]"
+The description of the fountain is "The water in the small fountain vainly battles to remain upright against the frigid winter wind that swirls around the enclosed area."
+Understand "water" or "sputtering" or "sputtering fountain" or "small fountain" or "small" as fountain.
 	
-	Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "windows" or "lit windows" [or "residences" or "other residences"] as houses.
+The square is scenery in Woking Street.
+The description of square is "During the day the road perpendicular to Woking Street and the park beyond is filled with carriages and pedestrians, even during this season. But now, at night and in this weather, both are empty except for the occasional carriage or pedestrian hurrying to a warmer location."
+Understand "park" or "open space" or "municipal park" or "intersection" or "urban park" or "crossroads" or "main street" or "common" or "greenery" or "green park" as the square.
+
+The houses are scenery in Woking Street.
+The printed name of houses are "houses in the cul-de-sac".
+The description of houses are "[first time]Twenty or thirty terraced houses ring the cul-de-sac, uniform in height and facade, each sharing walls with their neighbors except for the end-terrace units to the west. [paragraph break][only]Nothing much has changed since you last glanced around. [first time]Most of the houses are dark at this time of night, though scattered lights show in the odd window, probably due to the recent commotion. Maybe one or two of the lights have gone off as those residents have gone back to sleep.[only]"
+	
+Understand "other houses" or "dark houses" or "buildings" or "other buildings" or "windows" or "lit windows" [or "residences" or "other residences"] as houses.
 		
-	The wells-house is scenery in Woking Street.
-	The printed name of wells-house is "Wells['] house".
-	The description of wells-house is "This is the house where your friend Wells has lived for many years, and which you have visited many times as friend and solicitor."
-	Understand "building" or "house" or "68 Woking Street" or "68" as wells-house.
+The wells-house is scenery in Woking Street.
+The printed name of wells-house is "Wells['] house".
+The description of wells-house is "This is the house where your friend Wells has lived for many years, and which you have visited many times as friend and solicitor."
+Understand "building" or "house" or "68 Woking Street" or "68" as wells-house.
 	
 Chapter - Wandering
 

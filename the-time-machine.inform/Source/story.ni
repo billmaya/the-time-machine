@@ -26,7 +26,7 @@ release	notes
 
 Volume - Beginning The Story
 
-The player is in Woking Street.
+The player is in Woking Street. [the Main Room. [for compass test] ]
 The description of the player is "You rarely think of yourself in those terms, preferring to focus your prodigious logical and legal faculties on the work that your profession and your clients demand.[first time] But if you had to waste time on something so introspective, you might describe yourself as a middle-aged man who has reached a certain station in life where success and social esteem allow you to enjoy all the benefits of this modern age.[only] Truly, this is the best of times." [Mention something about Wells here?]
 
 Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
@@ -59,11 +59,7 @@ Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re profe
 
 When play begins: 
 	now the time of day is 10:00 PM;
-	if compass-test is true:	
-		now the player is in the Main Room;
-	otherwise:
-		say "[introduction]";
-		now the player is in Woking Street;
+	say "[introduction]";
 	open right-sidebar window;
 	open title-inventory window;
 	open list-inventory window;
@@ -77,7 +73,6 @@ When play begins:
 	now suggest-on-greeting is false.
 
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
-
 
 Volume - Setup
 
@@ -311,9 +306,6 @@ Rule for constructing the status line:
 Section - Compass Test Room
 
 [This code is used just to test the positioning and appearance of the compass rose.]
-
-compass-test is a truth state that varies.
-compass-test is false. [true.] [Set value to true to use the code below instead of game code] 
 
 Main Room is a room.
 

@@ -792,13 +792,13 @@ To say no-find-key:
 	say "Despite a [nfk-weather] [nfk-action] [nfk-result]".
 	
 To say nfk-weather:
-	say "[one of]severe[or]frigid[or]freezing[or]cold[or]bitter[or]bitterly cold[or]frosty[or]icy[or]icey[or]ice-cold[or]numbing[or]wintry[or]wintery[purely at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random] [one of]of wind[or]of snow[or]of wind and snow[purely at random]".
+	say "[one of]severe[or]frigid[or]freezing[or]cold[or]bitter[or]bitterly cold[or]frosty[or]icy[or]icey[or]ice-cold[or]numbing[or]wintry[or]wintery[at random] [one of]gust[or]flurry[or]burst[or]blast[purely at random] [one of]of wind[or]of snow[or]of wind and snow[at random]".
 	
 To say nfk-action:
-	say "you [one of]kick the snow around with your feet[or]bend down and search through the snow[or]shovel some snow to one side to expose the street below[or]push the snow in all directions[purely at random]".
+	say "you [one of]kick the snow around with your feet[or]bend down and search through the snow[or]shovel some snow to one side to expose the street below[or]push the snow in all directions[at random]".
 	
 To say nfk-result:
-	say "without [one of]finding anything.[or]success.[or]any luck.[or]finding anything but the street beneath.[purely at random]".
+	say "without [one of]finding anything.[or]success.[or]any luck.[or]finding anything but the street beneath.[at random]".
 	
 To say fk-weather:
 	say "Despite another [nfk-weather]".

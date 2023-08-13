@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43008 ]
+[ WORDS - 42990 ]
 
 Table of Releases
 release	notes
@@ -755,10 +755,10 @@ The printed name of Woking Street is "68 Woking Street".
 Chapter - Area
 
 To say generic-area-description:
-	say "Directly in front of you the falling show is rapidly covering the signs of the struggle."
+	say "Directly in front of you the falling snow is rapidly covering the signs of the earlier struggle."
 
 To say key-area-description:
-	say "While you immediately can't see anything but the falling snow that rapidly covers the signs of struggle, you can't help but feel that a further search of this area is warranted."
+	say "Directly in front of you the falling snow is rapidly covering the signs of the earlier struggle, but you can't help but feel that a further search of the area might be warrented."
 
 The area is scenery in Woking Street.
 The area is a supporter.
@@ -766,13 +766,11 @@ The description of the area is "[if watchett-key is false][generic-area-descript
 
 Understand "footsteps" or "carriage tracks" or "area of the street" or "street area" or "scuffle" or "struggle" as area.
 
-[> search street -> YCST -> https://bit.ly/3tvvi3z]
-
-The street-search is scenery in Woking Street. ["The street is scenery in Working Street" won't compile]
+The street-search is scenery in Woking Street. [https://bit.ly/3tvvi3z]
 Understand "street" as street-search.
 The printed name of street-search is "street".
 
-Instead of examining the street-search: say "The falling snow covers the entire street evenly except for the area immediately in front of you." [try searching the area.]
+Instead of examining the street-search: say "The falling snow covers the entire street evenly except for the area immediately in front of you." 
 Instead of searching the street-search: try searching the area.
 
 [> search area]

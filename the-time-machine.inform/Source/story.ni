@@ -1023,7 +1023,7 @@ After deciding the scope of the player when the location is the Entryway:
 Instead of examining west: try examining the Library.
 
 Before examining the Library when the player is in the Entryway:
-	say "Through the soft archway to the west you can see shelves of books and someone standing near the window.";
+	say "To the west you can see shelves of books and someone standing near the window.";
 	stop the action.
 
 Instead of examining the library-books: try taking the library-books.

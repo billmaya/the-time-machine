@@ -1149,7 +1149,7 @@ Section - Library Curtains
 The curtains are a thing.
 The curtains are scenery in the Library.
 The curtains are a container.
-The description of the curtains is "Pulled shut, the heavy, floor-to-ceiling fabric wards the room from the cold weather outside."
+The description of the curtains is "Pulled shut, the heavy floor-to-ceiling fabric wards the room from the cold weather outside."
 Understand "curtain" as curtains.
 
 curtains-opened-once is a truth state that varies.
@@ -1157,12 +1157,12 @@ curtains-opened-once is false
 
 Instead of pushing the curtains: try opening the curtains.
 Instead of opening the curtains:
-	say "Pulling the curtains aside, you glance through the window at the snow-covered street[if curtains-opened-once is true] again[end if]. Outside, the falling snow is rapidly covering the disturbed area out front where the ambulance was parked earlier. You let the curtains drop back into place and look around the room.";
-		now curtains-opened-once is true.
+	say "Pulling the curtains aside, you glance[if curtains-opened-once is true] one more time[end if] at the snow-covered street outside before letting them fall back into place[first time]. The only change is that the falling snow that is rapidly covering the disturbed area out front where the ambulance was parked earlier[only].";
+	now curtains-opened-once is true.
 
 Instead of closing the curtains, say "They're already closed."
 
-Instead of searching the curtains: say "You look in the folds of the fabric but find nothing."
+Instead of searching the curtains: say "You examine the folds of the fabric but find nothing."
 
 [Writing §4.3. Degrees of certainty, Example 44 - different default messages for something nondescript]
 [Writing §7.1. Actions]

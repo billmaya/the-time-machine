@@ -622,7 +622,7 @@ To say cannot-move:
 	say "You would need one or two stronger men to help you move that."
 
 To say should-not-move:
-	say "Rearranging the furniture at this time doesn't accomplish anything constructive."
+	say "Rearranging the furniture at this time won't accomplish anything constructive."
 
 Before taking furniture:
 	say "That's not portable.";

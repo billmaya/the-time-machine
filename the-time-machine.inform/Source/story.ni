@@ -1120,6 +1120,8 @@ Before switching on the desk:
 
 Instead of opening the desk, say "The desk doesn't have any drawers that you can open, only a writing surface."
 
+Section - Desk Papers
+
 The desk-papers are a thing.
 The desk-papers are on the desk.
 The desk-papers are scenery.
@@ -1132,7 +1134,6 @@ Understand "paper" or "papers" or "letter" as desk-papers.
 Instead of taking desk-papers:
 	say "If the papers were relevant to your task at hand you might, but since you can't come up a valid reason you leave them where they are."
 
-	
 Section - Library Chair
 
 The library chair is a thing.

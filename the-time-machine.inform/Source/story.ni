@@ -1057,7 +1057,7 @@ Prying it with is an action applying to one visible thing and one carried thing.
 Understand "pry [something] with [something preferably held]" as prying it with.
 Instead of prying the workshop-door with poker: try attacking the workshop-door with poker.
 
-Instead of attacking the workshop-door with the poker: say "Even if you could somehow manage to open the workshop door this way, you would damage the woodwork beyond repair."
+Instead of attacking the workshop-door with the poker: say "There's got to be a better way to get into the workshop.[no line break][first time] Even if you could somehow open the this way, you would damage the woodwork beyond repair.[only]".
 Instead of attacking the workshop-door with something: say "Violence isn't the answer here."
 
 Part - Library

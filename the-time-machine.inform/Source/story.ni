@@ -1101,6 +1101,7 @@ Section - Library Desk
 The desk is a thing.
 The desk is in the Library.
 The desk is furniture.
+The desk is moveable.
 The description of the desk is "A small standing desk with a few handwritten papers on it."
 
 Instead of searching the desk: 
@@ -1126,7 +1127,7 @@ The library chair is in the Library.
 The library chair is furniture.
 The library chair is moveable.
 The library chair is enterable.
-The description of the library chair is "The small chair is covered in worn leather positioned near the curtains."
+The description of the library chair is "A small chair covered in worn leather[first time], positioned near the window[only]."
 Understand "leather" as library chair.
 
 Instead of pulling the library chair: try switching on the library chair.

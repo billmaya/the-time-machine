@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42990 ]
+[ WORDS - 43118 ]
 
 Table of Releases
 release	notes
@@ -1119,6 +1119,19 @@ Before switching on the desk:
 	stop the action.
 
 Instead of opening the desk, say "The desk doesn't have any drawers that you can open, only a writing surface."
+
+The desk-papers are a thing.
+The desk-papers are on the desk.
+The desk-papers are scenery.
+The printed name of desk-papers is "papers".
+
+The description of desk-papers are "At first glance, the writing appears to be some of Wells[apostrophe] scientific correspondence.".
+
+Understand "paper" or "papers" or "letter" as desk-papers.
+
+Instead of taking desk-papers:
+	say "If the papers were relevant to your task at hand you might, but since you can't come up a valid reason you leave them where they are."
+
 	
 Section - Library Chair
 
@@ -4999,6 +5012,8 @@ Carry out reading:
 		try reading the equations;
 	otherwise if the noun is equations or the noun is diagrams:
 		say "You glance at the long series of equations and diagrams but have no luck making sense of anything written there.";
+	otherwise if the noun is desk-papers:
+		say "You glance at the pages but can't fathom the scientific jargon and formula written there.";
 	otherwise:
 		say "That's absurd.";
 

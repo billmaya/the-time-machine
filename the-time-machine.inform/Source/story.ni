@@ -1068,7 +1068,7 @@ The description of the Library is "A desk and a leather chair positioned near th
 
 Chapter - Printing Library Description
 
-[https://bit.ly/3NyqyEz]
+[https://bit.ly/3NyqyEz - Suppressing the printed name of a room]
 library-print-description is a truth state that varies.
 library-print-description is true.
 The room description body text rule does nothing when library-print-description is false.
@@ -1199,7 +1199,8 @@ Part - Parlor
 
 The Parlor is a room. 
 The Parlor is north of the Library.
-The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor], and leaning against the fireplace is a poker.[otherwise].[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[otherwise if the newspaper is on the right armchair] A newspaper rests on the right armchair.[otherwise] Two large armchairs are positioned in front of the fireplace.[end if][paragraph break]A set of glass doors to the east leads outside and the room continues to the north."
+
+The description of the Parlor is "A coal fire blazes away in a large fireplace set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor], and leaning against the fireplace is a poker.[otherwise].[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[otherwise if the newspaper is on the right armchair] A newspaper rests on the right armchair.[otherwise] Two large armchairs are positioned in front of the fireplace.[end if] A set of glass doors to the east leads outside and the room continues to the north."
 
 Chapter - Armchairs
 
@@ -1220,7 +1221,7 @@ Before switching on the class-armchairs:
 	stop the action.
 
 To say armchair-description:
-	say "This armchair is covered in worn leather and, larger than its library counterpart, it looks even more inviting and comfortable given the cold weather outside and its position in front of the fire. [first time]But you have no time to rest, you have a key to find.[no line break][only]"
+	say "It looks extremely inviting and comfortable given the cold weather outside and its position in front of the fire. [first time]But you have no time to rest, you have a key to find.[no line break][only]"
 
 The right armchair is a thing.
 The right armchair is in the Parlor.
@@ -1363,13 +1364,21 @@ Chapter - Poker
 
 The poker is a thing. [https://bit.ly/3sczKUx]
 The poker is in the Parlor.
-[The poker is undescribed.]
+The poker is undescribed.
 Understand "fire iron" or "fire hook" as poker.
 The description of the poker is "[if the tunic is not part of the poker]About three feet long, pointed and hooked at one end, this weighted implement is used to stir up the coal embers to achieve even burning.[otherwise]With the Eloi tunic wrapped around one end you've turned this weapon into a makeshift torch.[end if]"
 
 Instead of using the poker in the Parlor: [> use poker]
-	say "Taking the poker, you stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
+	say "[if the player is not carrying the poker]Taking the poker, y[otherwise]Y[end if]ou stir the coals a bit, spreading them evenly around the grate, causing a few sparks to rise up through the flue.";
 	now the player is carrying the poker.
+
+Instead of dropping the poker:
+	if the location of the player is the Parlor:
+		say "You lean the poker back against the fireplace where you found it.";
+		now the poker is in the Parlor;
+		now the poker is undescribed; [undescribed property automatically removed from anything carried by player - Writing §3.24]
+	otherwise:
+		continue the action.
 
 Section - Poking
 

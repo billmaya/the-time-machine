@@ -1288,11 +1288,11 @@ The Garden Door is a door.
 The Garden Door is openable and lockable.
 The Garden Door is scenery.
 The printed name of Garden Door is "garden door".
-The description of Garden Door is "[if location is Parlor]A set of glass doors and stone steps lead down into a snow-covered garden.[otherwise]A set of stone steps lead up to glass doors and the inside of the house."
+The description of Garden Door is "[if location is Parlor]A set of glass doors leading outside.[otherwise]A pair of glass doors at the top of some stone steps leading inside."
 
 Understand "glass" or "glass door" or "glass doors" as Garden Door.
 
-Instead of searching the Garden Door: say "[if the location is the Parlor]Through the glass doors you can see steps leading down to the snow-covered garden outside.[otherwise]Through the glass doors you can see the parlor inside.[end if]"
+Instead of searching the Garden Door: say "[if the location is the Parlor]Through the glass doors you can see a set of steps leading down into the garden.[otherwise]Through the glass doors you can see the parlor and fire inside.[end if]"
 
 Chapter - Fireplace
 	

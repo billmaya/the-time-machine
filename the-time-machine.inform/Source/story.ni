@@ -1317,11 +1317,12 @@ Chapter - Fire
 The fire is a thing.
 The fire is in the parlor. 
 The fire is undescribed.
-The description of the fire is "The fire[apostrophe]s flames reflect off of the back of the fireplace and into the room, warming it. As the coals burn to embers and ashes they fall through the grate onto the brick below."
+The description of the fire is "The flames reflect off of the back of the fireplace and into the room, warming it.[first time] As the coals burn to embers the ashes fall through the grate onto the brick below.[only]"
 
 Instead of touching fire: try touching parts-of-fire.
 Instead of tasting fire: try tasting parts-of-fire.
 Instead of searching fire: say "You stare for a moment at the flickering flames."
+Instead of using the fire: try using parts-of-fire.
 
 The parts-of-fire are scenery in the Parlor.
 Understand "coal" or "coals" or "flame" or "flames" or "ash" or "ashes" or "ember" or "embers" as parts-of-fire.
@@ -1355,9 +1356,6 @@ Instead of pushing the parts-of-fire:
 	otherwise:
 		say "[bare-hands]".
 
-Understand the command "burn" as something new.
-Understand "burn [something]" as burning.
-Instead of burning something: say "That really wouldn[apostrophe]t accomplish anything productive."
 
 Chapter - Poker
 

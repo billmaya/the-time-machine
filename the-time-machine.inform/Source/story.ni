@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43121 ]
+[ WORDS - 43156 ]
 
 Table of Releases
 release	notes
@@ -1298,18 +1298,17 @@ Chapter - Fireplace
 	
 The fireplace is a thing.
 The fireplace is scenery in the Parlor.
-The description of the fireplace is "Set into the wall, providing light and heat to the room. A coal fire is burning in the grate."
+The description of the fireplace is "A coal fire is burning in the grate[first time], providing light and heat[only]."
 
 Instead of using the fireplace, say "That's not something you can use but just enjoy."
 
 The parts-of-fireplace are scenery in the Parlor.
 Understand "firebox" or "hearth" or "mantle" or "damper" or "flue" or "chimney" or "surround" or "grate" or "brick" as parts-of-fireplace.
-The printed name is "parts of the fireplace".
+The printed name is "that part of the fireplace".
 
-To say cannot-use-item: say "That's not something you can 'use.'".
-Instead of using parts-of-fireplace: say "[cannot-use-item]".
+Instead of using parts-of-fireplace: say "That's not something you can use.".
 
-Instead of examining parts-of-fireplace: say "You see nothing special about the [parts-of-fireplace]."
+Instead of examining parts-of-fireplace: say "You see nothing special about [parts-of-fireplace]."
 Instead of touching parts-of-fireplace: say "Not very likely."
 
 

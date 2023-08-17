@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43135 ]
+[ WORDS - 43118 ]
 
 Table of Releases
 release	notes
@@ -671,6 +671,7 @@ The last property-aggregation rule (this is the print aggregated properties rule
 		say " ([tagline])"; 
 		rule succeeds; 
 	rule fails.
+	
 
 Part - Tests
 
@@ -1398,7 +1399,7 @@ The breaker is either working or not working. A breaker is usually working.
 Chapter - Orrery
 
 The orrery is a device. The orrery is switched on.
-The orrery is scenery on the fireplace. [mantle.] 
+The orrery is scenery on the fireplace.
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box consisting of three panels. The top half of the central panel of the triptych contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the right panel is open] The right panel has been slid up to expose the inner mechanism of the orrery.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.

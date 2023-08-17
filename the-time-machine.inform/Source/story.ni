@@ -354,8 +354,7 @@ Part - Instead-Of Rules
 Chapter - Waiting
 
 Instead of waiting: say 
-	"[if location is Woking Street]You shiver in the cold wind, drawing your light jacket closer around you. You really should get inside since you're not dressed appropriately for this winter weather.
-	[otherwise]Time passes."
+	"[if location is Woking Street]You shiver in the cold wind, drawing your light jacket closer around you. You really should get inside since you're not dressed appropriately for this winter weather.[otherwise]Time passes."
 
 Chapter - Up
 

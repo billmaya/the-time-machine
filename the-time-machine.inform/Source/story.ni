@@ -1380,7 +1380,6 @@ Section - Poking
 
 Poking is an action applying to one touchable thing and one carried thing.
 
-Understand "poke [something]" as using.
 Understand "poke [someone] with [something]" as poking.
 
 To say no-poke-person: say "I don't see the logic of trying to assault [noun] with the [second noun], no matter how slightly." 
@@ -1388,11 +1387,6 @@ To say no-poke-person: say "I don't see the logic of trying to assault [noun] wi
 Instead of poking Watchett: say "[no-poke-person]".
 Instead of poking Humboldt: say "[no-poke-person]".
 
-[> use poker on fire]
-[Writing §12.7. New actions
- Writing §17.1. Understand]
-	
-[Understand "use [something] on [something]" as using.]
 
 
 Chapter - Breaker 

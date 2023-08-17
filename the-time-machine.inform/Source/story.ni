@@ -1386,7 +1386,7 @@ To say no-poke-person: say "I don't see the logic of trying to assault [noun] wi
 
 Instead of poking Watchett: say "[no-poke-person]".
 Instead of poking Humboldt: say "[no-poke-person]".
-
+Instead of poking Gernsback: say "[no-poke-person]".
 
 
 Chapter - Breaker 

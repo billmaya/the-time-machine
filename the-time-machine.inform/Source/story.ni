@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43025 ]
+[ WORDS - 43000 ]
 
 Table of Releases
 release	notes
@@ -1461,7 +1461,7 @@ Instead of examining the orrery-mechanism:
 		otherwise:
 			say "You can't see any such thing.";
 	otherwise:
-		say "All you can see is a dense, complicated collection of gears, shafts, and slotted pin followers, much like the inside of a pocket watch, used to calculate planetary positions and information, as well as a fuse holder.[no line break][if the orrery is switched on] Several of the gears turn slowly in clockwork precision as you watch them, accompanied by faint whirring and clicking sounds.[otherwise] The gears are still.[end if ]" 
+		say "A dense and complicated collection of interwoven gears, shafts, and slotted pin followers, much like the inside of a pocket watch, [if the orrery is switched on]calculating[otherwise]used to calculate[end if] planetary positions and celestial information. In the lower right corner is a fuse holder." 
 
 Section - Orrery Fuse Holder
 

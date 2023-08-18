@@ -1400,7 +1400,8 @@ Chapter - Orrery
 
 The orrery is a device. The orrery is switched on.
 The orrery is scenery on the fireplace.
-The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box consisting of three panels. The top half of the central panel of the triptych contains a miniature model of the Sun and planets. Dials and pointers below this model display seasonal information, the Moon's phases, and the local time. The left and right panels are half the width of the central panel and are illustrated.[if the right panel is open] The right panel has been slid up to expose the inner mechanism of the orrery.[end if]"
+
+The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box divided into three panels. The top half of the triptych's central panel contains a miniature model of our Sun and its planets with the local time, seasonal information, and the phases of the Moon displayed below. The left and right panels are illustrated and half the width of the central panel.[if the right panel is open] The right panel has been slid up to expose the orrery's.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 

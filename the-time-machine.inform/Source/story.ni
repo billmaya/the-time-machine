@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43118 ]
+[ WORDS - 43025 ]
 
 Table of Releases
 release	notes
@@ -1401,7 +1401,7 @@ Chapter - Orrery
 The orrery is a device. The orrery is switched on.
 The orrery is scenery on the fireplace.
 
-The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box divided into three panels. The top half of the triptych's central panel contains a miniature model of our Sun and its planets with the local time, seasonal information, and the phases of the Moon displayed below. The left and right panels are illustrated and half the width of the central panel.[if the right panel is open] The right panel has been slid up to expose the orrery's.[end if]"
+The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box divided into three panels. The left and right panels of the tryptich are illustrated and half the width of the central panel.[if the right panel is open] The right panel has been slid up to expose the orrery's.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 
@@ -1416,7 +1416,7 @@ Instead of searching the orrery: say "Nothing but what you can see on the outsid
 Section - Orrery Panels
 
 The left panel is a thing.
-The description of the left panel is "The left panel displays a bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
+The description of the left panel is "The left panel is a stylized bas-relief illustration of a shadowy, ape-like figure crouched in front of what appears to be a cavernous wall of machinery."
 
 Understand "left" or "left side" or "left side of orrery" as left panel.
 
@@ -1424,23 +1424,24 @@ Instead of opening the left panel: try switching on the left panel.
 Instead of switching on the left panel: say "The left panel appears to be firmly fixed in place."
 
 The central panel is a thing.
-The description of the central panel is "In the top half of the central panel eight tiny jeweled spheres set into eight brass rings represent the planets and their orbits around our Sun. A row of dials underneath the model of the solar system display seasonal information and the Moon's phases. Underneath this row of dials, another row of pointers indicate the current date and time.[if the orrery is switched on] The second and minute hands spin slowly in a clockwise direction, accompanied by a faint whir and click from inside the box.[end if]".
+The description of the central panel is "The top half of the triptych's central panel contains a miniature model of our Sun and planets with the local time, seasonal information, and the phases of the Moon displayed below."
+
 Understand "model" or "spheres" or " jeweled spheres" or "planets" or "phases" or "brass rings" or "rings" or "pointer" or "pointers" or "dial" or "dials" or "solar system" or "center panel" or "local date" or "date" or "local time" or "time" as central panel.
 
 Instead of turning the central panel: try switching on the central panel.
 Instead of switching on the central panel: say "All of the items in the central panel appear to be for viewing only."
 
-Instead of opening the central panel: say "The central panel appears to be firemly fixed in place."
+Instead of opening the central panel: say "The central panel appears to be firmly fixed in place."
 
 The right panel is a thing.
 The right panel is a container. The right panel is closed.
 The right panel is opaque.
-The description of the right panel is "The right panel displays a bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if]."
+The description of the right panel is "The right panel is a stylized bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slide up halfway to expose the inner workings of the orrery.[end if]."
 
 Understand "right" or "right side" or "right side of orrery" as right panel.
 
 Instead of examining the right panel for the second time:
-	say "On closer examination, it appears that the right panel, unlike its counterpart, can be slid upwards." 
+	say "On closer examination, it appears that the right panel, unlike its counterparts, can be slid upwards." 
 
 The left panel, central panel, and right panel are part of the orrery.
 

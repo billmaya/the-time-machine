@@ -1506,7 +1506,7 @@ Instead of opening the right panel:
 	if the right panel is open:
 		say "You've already slid the right panel up as far as it can go.";
 	otherwise:
-		say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery's mechanism.";
+		say "You gently slide the right panel up until it stops halfway, revealing the inner workings of the orrery mechanism.";
 		now the time of day is 11:00 PM;
 		now player-knows-right-panel-slideable is true;
 		now the right panel is open.
@@ -1516,7 +1516,7 @@ Instead of closing the right panel:
 	if the right panel is closed:
 		say "You've already slid the right panel closed.";
 	otherwise:
-		say "You gently slide the right panel down, covering the orrery's mechanism.";
+		say "You gently slide the right panel down.";
 		now the right panel is closed.
 
 [ > pull right panel ]

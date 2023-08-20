@@ -26,7 +26,7 @@ release	notes
 
 Volume - Beginning The Story
 
-The player is in Woking Street. [ the Main Room. [for compass test] ]
+The player is in Woking Street.  [the Main Room. [for compass test] ]
 The description of the player is "You rarely think of yourself in those terms, preferring to focus your prodigious logical and legal faculties on the work that your profession and your clients demand.[first time] But if you had to waste time on something so introspective, you might describe yourself as a middle-aged man who has reached a certain station in life where success and social esteem allow you to enjoy all the benefits of this modern age.[only] Truly, this is the best of times." [Mention something about Wells here?]
 
 Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
@@ -1408,11 +1408,6 @@ Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrer
 [Suppresses "The orrery is currently switched on/off" message? See https://bit.ly/3ovZgnb]
 The examine devices rule does nothing when examining the orrery.
 
-Instead of turning the orrery: try switching off the orrery.
-Instead of switching off the orrery: say "The orrery appears to be firmly fixed in place."
-
-Instead of searching the orrery: say "Nothing but what you can see on the outside."
-
 Section - Orrery Panels
 
 The left panel is a thing.
@@ -1477,6 +1472,11 @@ The examine containers rule does nothing when examining the orrery-fuse-holder. 
 Understand "orrery fuse holder" or "fuse holder" or "clips" or "clip" as orrery-fuse-holder.
 
 Section - Actions On Orrery
+			
+Instead of turning the orrery: try switching off the orrery.
+Instead of switching off the orrery: say "The orrery appears to be firmly fixed in place."
+
+Instead of searching the orrery: say "Nothing but what you can see on the outside."
 
 [ > use orrery ]
 Instead of using the orrery:

@@ -1476,6 +1476,7 @@ Section - Actions On Orrery
 Instead of turning the orrery: try switching off the orrery.
 Instead of switching off the orrery: say "The orrery appears to be firmly fixed in place."
 
+[ > search orrery ]
 Instead of searching the orrery: say "Nothing but what you can see on the outside."
 
 [ > use orrery ]
@@ -1483,6 +1484,8 @@ Instead of using the orrery:
 	say "That's not something that can be used in the normal sense but just observed."
 
 [ > open orrery ]
+Understand "slide [a closed container]" as opening.
+
 Before opening the orrery:
 	if the right panel is closed:
 		if player-knows-right-panel-slideable is true: 
@@ -1494,6 +1497,8 @@ Before opening the orrery:
 	stop the action.
 
 [ > close orrery ]
+Understand "slide [an open container]" as closing.
+
 Before closing the orrery:
 	try closing the right panel;
 	stop the action.
@@ -1530,15 +1535,6 @@ Instead of switching on the right panel:
 		try opening the right panel;
 	otherwise:
 		try closing the right panel.
-
-Understand "slide [a closed container]" as opening.
-Understand "slide [an open container]" as closing.
-
-Instead of switching off the orrery:
-	if the fuse-orrery is in the orrery-fuse-holder:
-		say "Without any visible switch it isn't immediately apparent how to turn the device off.";
-	otherwise:
-		say "It appears that removing the fuse from the orrery has already done that for you."
 			
 Section - Tests | Orrery | General
 		

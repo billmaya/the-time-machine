@@ -1472,12 +1472,13 @@ The examine containers rule does nothing when examining the orrery-fuse-holder. 
 Understand "orrery fuse holder" or "fuse holder" or "clips" or "clip" as orrery-fuse-holder.
 
 Section - Actions On Orrery
-			
+
+[ > move orrery ]	
 Instead of turning the orrery: try switching off the orrery.
 Instead of switching off the orrery: say "The orrery appears to be firmly fixed in place."
 
 [ > search orrery ]
-Instead of searching the orrery: say "Nothing but what you can see on the outside."
+Instead of searching the orrery: say "Nothing extraordinary except for the device itself."
 
 [ > use orrery ]
 Instead of using the orrery:

@@ -1567,7 +1567,7 @@ The printed name of the fuse-orrery is "orrery fuse".
 The fuse-orrery is working.
 The fuse-orrery is undescribed.
 The fuse-orrery is in the orrery-fuse-holder.
-The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine.[end if] The pasteboard of the fuse looks [initial appearance]."
+The description of the fuse-orrery is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if the fuse-orrery is in something] Each of the metal caps is held securely in a metal clip that makes contact with the rest of the machine.[end if] The pasteboard of the fuse looks [initial appearance]."
 Understand "orrery fuse" or "pristine fuse" or "fuse" as fuse-orrery.
 
 Section - Inserting Fuse In Orrery
@@ -1596,7 +1596,7 @@ Before inserting a breaker (called fuse) into the orrery-fuse-holder:
 
 After inserting a breaker (called fuse) into the orrery-fuse-holder: 
 	if the fuse is working:
-		say "After you put that fuse back into the orrery, the gears inside begin turning slowly at various speeds as the mechanism begins calculating the positions of each planetary body, updating each planet's orbital position around the Sun on the surface display.";
+		say "The gears inside begin turning slowly when you put that fuse back into the orrery[first time]. The planets on the front of the device begin their slow orbits around the Sun again[only].";
 		now the fuse is in the orrery-fuse-holder; 
 		now the orrery is switched on;
 	otherwise:
@@ -1615,7 +1615,7 @@ Before removing a breaker (called fuse) from the orrery-fuse-holder:
 Before taking a breaker (called fuse):
 	if the fuse is contained in the orrery-fuse-holder:
 		if the fuse is working:
-			say "The minute you remove the fuse the gears inside stop moving and, with no calculations being made, the planets on the front halt in their orbits."; 
+			say "The minute you remove the fuse the gears inside stop moving[first time]. With no calculations being made, the planets on the front halt in their orbits[only]."; 
 			now the orrery is switched off;
 			now the player is carrying the fuse-orrery;
 			stop the action;

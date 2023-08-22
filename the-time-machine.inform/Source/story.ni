@@ -1657,7 +1657,7 @@ The printed name of garden walls is "walls".
 
 The snow is a thing.
 The snow is backdrop. It is in Woking Street and the Garden.
-The description of snow is "Microscopic flakes of all shapes and sizes [one of]float [or]whirl [or]drift [purely at random]down to continue covering everything."
+The description of snow is "Microscopic flakes of all shapes and sizes[one of] float [or] whirl [or] drift [at random]down to continue covering everything."
 Understand "snowfall" as snow.
 
 Instead of taking snow:

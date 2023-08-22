@@ -1643,7 +1643,7 @@ Part - Garden
 
 The Garden is a room.
 The Garden is east of the Garden Door.
-The description of the Garden is "White and featureless mounds of flora covered in snow surround you on all sides. A gate set into the north wall looks out onto a snow-covered side street. To the south, the dark panes of the workshop windows overlook a bench nestled among some snow-covered rhododendron bushes.[paragraph break]The parlor doors are to the west." 
+The description of the Garden is "White and featureless mounds of flora covered in snow surround you on all sides. A gate set into the north wall looks out onto a snow-covered side street. To the south, the dark panes of the workshop windows overlook a bench nestled among some snow-covered rhododendron bushes. The parlor doors are to the west." 
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 

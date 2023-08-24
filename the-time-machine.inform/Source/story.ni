@@ -1797,7 +1797,7 @@ Part - Kitchen
 The Kitchen is a room. 
 The Kitchen is north of the Kitchen Door.
 
-The description of the Kitchen is "A small room dominated by a sturdy wooden work table in the center of the room. Surrounding the table are cabinets and shelves with a stove and sink set against one wall. [if the location of Watchett is the Kitchen][Watchett] is at the sink, cleaning up.[otherwise]It looks like [Watchett] has finished her work and retired for the evening. [end if]The dining room is to the south."
+The description of the Kitchen is "A small room dominated by a sturdy wooden work table in the center of the room. Surrounding the table are cabinets and shelves with a stove and sink set against one wall. [if the location of Watchett is the Kitchen][Watchett] is at the sink, cleaning up.[otherwise]It looks like [Watchett] has finished her work and retired for the evening. [end if] The dining room is to the south."
 
 To say getting-in-watchett-way:
 	say "I don't think [Watchett] would appreciate you getting in the way of her cleaning up, especially at this late hour. She might be willing to talk while she works though.[paragraph break]"

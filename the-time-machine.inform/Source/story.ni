@@ -1764,7 +1764,7 @@ Section - Sideboard
 The sideboard is a thing.
 The sideboard is in the Dining Room.
 The sideboard is furniture.
-The description of the sideboard is "The sideboard is matching piece of mahogany furniture with compartments and drawers for holding articles of table service."
+The description of the sideboard is "A matching piece of furniture with compartments and drawers for holding articles of table service."
 Understand "drawer" or "drawers" or "compartments" or "compartments" as sideboard.
 
 Instead of pulling the sideboard: try switching on the sideboard.

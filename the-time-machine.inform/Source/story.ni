@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 42947 ]
+[ WORDS - 42960 ]
 
 Table of Releases
 release	notes
@@ -5011,7 +5011,9 @@ Carry out reading:
 	otherwise if the noun is blackboard:
 		try reading the equations;
 	otherwise if the noun is equations or the noun is diagrams:
-		say "You glance at the long series of equations and diagrams but have no luck making sense of anything written there.";
+		say "You glance at the long series of equations but have no luck making sense of anything written there.";
+	otherwise if the noun is diagrams:
+		say "You glance at a few of the diagrams but can't make heads or tails of them.";
 	otherwise if the noun is desk-papers:
 		say "You glance at the pages but can't fathom the scientific jargon and formula written there.";
 	otherwise:

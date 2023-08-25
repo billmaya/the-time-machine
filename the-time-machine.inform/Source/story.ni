@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43181 ]
+[ WORDS - 43248 196 ]
 
 Table of Releases
 release	notes
@@ -1943,22 +1943,18 @@ The time machine is fixed in place. [This prevents > show time machine to humbol
 The time machine is enterable. 
 [The printed name of the time machine is "Wells['] time machine".]
 
-[ This implementation prints an extra blank line 
+[ This implementation prints an extra blank line ]
 To say time-machine-description:
 	if the player is not in the time machine:
-		say "Rectangular in shape, the time machine is taller than it is wide, with a scaffolding of struts, wires, and other mechanisms rises up from a thick, square base to create a cage big enough for one or two occupants[first time]. It looks like you can enter the machine through an opening in one side[only].";
+		say "Rectangular in shape, the time machine is taller than it is wide, with a scaffolding of struts, wires, and other mechanisms rises up from a thick, square base to create a cage big enough for one or two occupants[first time]. It looks like you can enter the machine through an opening in one side[only][run paragraph on].";
 	if the player is in the time machine:
-		say "The inside of the time machine is just as baffling as its outside. While you can get a closer look at the various components that make up the cage that surrounds you, the only object that you can make sense of is a set of controls at waist height.[no line break]";
+		say "Inside the time machine is even more baffling than its outside. While you can look closer at the various components of the machine, the only one that makes the slightest send is a set of controls at waist height.[no line break]";
 		if the time machine is in the Workshop:
-			say " Through gaps in the time machine's frame you can see the workshop.[no line break]";
+			say "[first time] Through gaps in the time machine's frame you can see the workshop.[no line break][only]";
 		if the time machine is in the Clearing:
-			say " Through gaps in the time machine's frame you can see the clearing.[no line break]";
+			say "[first time] Through gaps in the time machine's frame you can see the clearing.[no line break][only]";
 
 The description of the time machine is "[time-machine-description]".
-]
-
-[ This implementation doesn't print an extra blank line]
-The description of the time machine is "[if the player is not in the time machine]The time machine is rectangular in shape, taller than it is wide. A scaffolding of struts, wires, and other mechanisms rises up from the thick, square base to create a cage to enclose one or two occupants. It looks like you can enter the machine through an opening in one side.[otherwise]The inside of the time machine is just as baffling as its outside. While you can get a closer look at the various components that make up the cage that surrounds you, the only object that you can make sense of is a set of controls at waist height.[end if][if the player is in the time machine and the time machine is in the workshop] Through gaps in the time machine you can see the workshop.[otherwise if the player is in the time machine and the time machine is in the clearing] Through gaps in the time machine you can see the clearing.[end if]"
 
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" or "cage" or "components" or "mechanisms" as time machine.
 

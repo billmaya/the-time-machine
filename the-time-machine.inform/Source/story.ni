@@ -5197,9 +5197,11 @@ Humboldt's Return is a scene.
 
 Humboldt's Return begins when humboldt-should-return is true.
 
+[Should Humboldt's speech reflect two situations - (A) you are there without the time machine and (B) you've visited 802,701 and returned with the time machine? The elapsed time for A should be less than B.]
+
 When Humboldt's Return begins:
 	[say "HUMBOLDT'S RETURN BEGINS.";]
-	say "The door to the workshop opens Dr. Humboldt enters. The doctor appears both relieved and annoyed. 'Where the hell have you been hiding? We've been through the entire house looking for you.'[if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
+	say "The door to the workshop opens Dr. Humboldt enters, appearing both relieved and annoyed. 'Where the hell have you been hiding? I've been through the entire house looking for you.'[if the time machine is not nowhere] He looks over your shoulder at the time machine. 'So that must be Wells['] time machine contraption.'[end if]"; ["Strange, that wasn't here before. Don't know how we missed it."]
 	now Humboldt is in the Workshop;
 	[now Humboldt is mobile;]
 	now Watchett is nowhere;

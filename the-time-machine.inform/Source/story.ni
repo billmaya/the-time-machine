@@ -2048,7 +2048,7 @@ Before inserting a breaker (called fuse) into the time-fuse-holder:
 
 After inserting a breaker (called fuse) into the time-fuse-holder:
 	if the fuse is working:
-		say "The time machine shudders briefly and you hear a barely perceptible hum from the mechanism. The light among the controls glows brightly.";
+		say "The time machine shudders briefly and you hear a barely perceptible hum from the mechanism. [if we have examined the small light]The[otherwise]A[end if] small light among the controls glows brightly.";
 		now the fuse is in the time-fuse-holder;
 		now small light is switched on;
 	otherwise:

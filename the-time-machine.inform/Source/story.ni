@@ -2008,7 +2008,6 @@ Instead of activating the time machine:
 		otherwise:
 			say "[nothing-happens]".
 
-
 Chapter - Time Machine Fuse
 
 The fuse-time-machine is a breaker. "burnt".
@@ -2016,7 +2015,7 @@ The printed name of the fuse-time-machine is "time machine fuse".
 The fuse-time-machine is not working.
 The fuse-time-machine is undescribed.
 The fuse-time-machine is in the time-fuse-holder.
-The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the fuse's ends is held securely in a metal clip that makes contact with the rest of the machine.[end if] The pasteboard of the fuse looks [initial appearance] in places."
+The description of the fuse-time-machine is "Almost as big as your thumb, this cylindrical fuse is made of pasteboard with metal caps on either end.[if fuse-time-machine is in something] Each of the metal caps is held securely in a metal clip that makes contact with the rest of the machine.[end if] The pasteboard of the fuse looks [initial appearance] in places."
 Understand "time machine fuse" or "burnt fuse" or "fuse" as fuse-time-machine.
 
 Section - Inserting Fuse In Time Machine

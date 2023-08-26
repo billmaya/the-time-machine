@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43054 ]
+[ WORDS - 43196 ]
 
 Table of Releases
 release	notes
@@ -2085,11 +2085,20 @@ The controls are undescribed.
 
 Understand "control" as controls.
 
+[ Examining the controls for the first time from outside the time machine has to be different than examining the controls for the first time from inside the time machine. Commenting out this code for now. ]
+[To say controls-overview-internal:
+	if we have examined the controls:
+		say "What part of the controls would you like to examine in greater detail: the Elapsed Time dials, the Destination numbers, the Origin numbers, the hinged panel, the small light, or the lever?";
+	otherwise:
+		say "The controls of the time machine are divided into two major sections. On the left, from top to bottom, are sections labeled Elapsed Time, Destination, and Origin. On the right, from top to bottom, are a hinged panel and a small light and a lever underneath it."
+]
+	
 Instead of examining the controls:
 	if the player is in the time machine:
+		[say "[controls-overview-internal]";]
 		say "The time machine controls are divided into two major sections. To the left, one above the other, are labeled sections that indicate Elapsed time, Destination, and Origin. To the right, from top to bottom, are what appear to be a hinged panel, a small light, and a lever.";
 	otherwise:
-		say "From the outside you can see that the controls are wired into various components of the time machine and consist of a menagerie of dials, switches, and buttons. You would have to enter the time machine to get a closer look at it.";
+		say "From here you see that the controls[first time] are wired in some unfathomable way into the time machine components and[only] consist of a menagerie of dials, numbers, a small light, and a lever[first time]. You would have to enter the time machine to get a closer look at them[only].";
 	rule succeeds.
 
 Test x-control with "test goto-workshop / get in time machine / x controls / x elapsed time section / x destination section / x origin section / x hinged panel / x small light / x lever / x time-fuse-holder."

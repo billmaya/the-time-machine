@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43005 ]
+[ WORDS - 43043 ]
 
 Table of Releases
 release	notes
@@ -1933,7 +1933,6 @@ Rule for printing a refusal to act in the dark:
 			otherwise:
 				say "It is a simple on/off switch. Not much to search."
 	
-
 Chapter - The Time Machine
 
 [ Writing §18.10. Printing the name of something - omit contents in listing ]
@@ -2053,7 +2052,6 @@ After inserting a breaker (called fuse) into the time-fuse-holder:
 		now small light is switched on;
 	otherwise:
 		say "You insert the [fuse] but nothing happens.";
-		[say "FUSE BAD. TIME MACHINE LIGHT OFF.";]
 		now small light is switched off.
 
 Section - Removing Fuse From Time Machine
@@ -2068,7 +2066,7 @@ Before taking a breaker (called fuse):
 	if the fuse is contained in the time-fuse-holder:
 		if the fuse is working:
 			now the small light is switched off;
-			say "The small light among the controls dims to black and the barely perceptible hum of the time machine fades away.";
+			say "[if we have examined the small light]The[otherwise]A[end if] small light among the controls dims to black and the barely perceptible hum of the time machine fades away.";
 		otherwise:
 			say "Taken.";
 		continue the action.

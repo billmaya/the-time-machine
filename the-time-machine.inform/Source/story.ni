@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43011 ]
+[ WORDS - 43005 ]
 
 Table of Releases
 release	notes
@@ -60,6 +60,9 @@ Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re profe
 When play begins: 
 	now the time of day is 10:00 PM;
 	say "[introduction]";
+	[center "Press SPACE to continue.";
+	wait for the SPACE key;
+	clear only the main screen;]
 	open right-sidebar window;
 	open title-inventory window;
 	open list-inventory window;
@@ -1941,9 +1944,7 @@ The time machine is a opaque container. [thing.] [The indefinite article is "the
 The time machine is in the Workshop.
 The time machine is fixed in place. [This prevents > show time machine to humboldt]
 The time machine is enterable. 
-[The printed name of the time machine is "Wells['] time machine".]
 
-[ This implementation prints an extra blank line ]
 To say time-machine-description:
 	if the player is not in the time machine:
 		say "Rectangular in shape, the time machine is taller than it is wide, with a scaffolding of struts, wires, and other mechanisms rises up from a thick, square base to create a cage big enough for one or two occupants[first time]. It looks like you can enter the machine through an opening in one side[only][run paragraph on].";
@@ -1986,7 +1987,7 @@ Activating is an action applying to one touchable thing.
 Understand "activate [something]" as activating.
 
 To say nothing-happens:
-	say "You push the lever forward until it stops but nothing happens. Once you let go of it the lever slowly returns to its starting position."
+	say "You push the lever forward until it stops but nothing happens[first time]. When you let go of the lever it returns slowly to its initial position[only]."
 
 Instead of activating the time machine:
 	if the player is in the time machine:
@@ -2001,7 +2002,7 @@ Instead of activating the time machine:
 	otherwise:
 		if a breaker (called fuse) is contained in the time-fuse-holder: 
 			if the small light is switched on:
-				say "Reaching into the time machine you push the lever forward. To your horror, the machine shimmers and disappears from the room, accompanied by the distinctive sound of what sounds like a key scraping along the bass string of a piano.";
+				say "Reaching into the time machine, you push the lever forward. To your amazement and horror, the machine shimmers and disappears from the room, accompanied by a distinctive bass sound of metal grinding on metal.";
 				now the time machine is nowhere;
 				now humboldt-should-return is true;
 		otherwise:

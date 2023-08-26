@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43043 ]
+[ WORDS - 43054 ]
 
 Table of Releases
 release	notes
@@ -2099,7 +2099,7 @@ Section - Elapsed Time Section
 The elapsed time section is a thing.
 The elapsed time section is part of the controls.
 
-The description of the elapsed time section is "Two rows of brass dials used to indicate elapsed time. The top row displays time intervals you are most familiar with[unicode 8212]seconds, minutes, hours, days, all the way up to years. The bottom row list intervals not so often used in daily conversation[unicode 8212]epochs, ages, millennia, centuries, and decades. [if numeric-year is 1895]All of the dial pointers are positioned at zero.[otherwise]The numbers on the dials indicate that 801,006 years have elapsed."
+The description of the elapsed time section is "Two rows of brass dials used to indicate elapsed time. The top row displays time intervals you are most familiar with[unicode 8212]seconds, minutes, hours, days, all the way up to years. The bottom row list intervals not so often used in daily conversation[unicode 8212]epochs, ages, millennia, centuries, and decades. [if numeric-year is 1895]All of the dial pointers are positioned at zero.[otherwise]The numbers on the dials indicate that 800,806 years have elapsed."
 
 Understand "dial" or "dials" as elapsed time section.
 

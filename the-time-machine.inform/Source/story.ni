@@ -2113,7 +2113,7 @@ Section - Elapsed Time Section
 The elapsed time section is a thing.
 The elapsed time section is part of the controls.
 
-The description of the elapsed time section is "Two rows of brass dials used to indicate elapsed time. The top row displays time intervals you are most familiar with[unicode 8212]seconds, minutes, hours, days, all the way up to years. The bottom row list intervals not so often used in daily conversation[unicode 8212]epochs, ages, millennia, centuries, and decades. [if numeric-year is 1895]All of the dial pointers are positioned at zero.[otherwise]The numbers on the dials indicate that 800,806 years have elapsed."
+The description of the elapsed time section is "Two rows of brass dials indicate elapsed time. The top row displays seconds, minutes, hours, days, all the way up to years. The bottom row lists intervals of a more unwonted nature[unicode 8212]epochs, ages, millennia, centuries, and decades. [if numeric-year is 1895]All of the dial pointers are positioned at zero.[otherwise]The numbers on the dials indicate that 800,806 years have elapsed."
 
 Understand "dial" or "dials" as elapsed time section.
 
@@ -2152,7 +2152,6 @@ Instead of switching on the small light:
 	otherwise:
 		say "Glancing over the controls you don't see an obvious way to do that."
 
-
 Section - Hinged Panel
 			
 The hinged panel is a locked container.
@@ -2160,7 +2159,7 @@ The hinged panel is openable.
 The hinged panel is closed.
 The hinged panel is locked.
 The hinged panel is part of the controls.
-The description of the hinged panel is "A small panel, hinged at the top, with a keyhole recessed in the center of its bottom edge."
+The description of the hinged panel is "A small panel, hinged at the top, with a keyhole recessed in the center of its bottom edge. The panel is [if the hinged panel is open]open[otherwise]shut."
 
 The keyhole is an open container.
 The keyhole is part of the hinged panel.
@@ -2213,7 +2212,7 @@ Understand "modify [something]" as modifying.
 Instead of modifying: say "[dont-see-how]".
 		
 To say leave-alone:
-	say "It would probably be best to leave things as they are for now."
+	say "It would probably be best to leave the settings as they are for now."
 
 Instead of modifying the destination section:
 	say "[leave-alone]".
@@ -2257,7 +2256,6 @@ Instead of pulling the lever: say "The lever is designed to be pushed instead of
 
 Instead of switching on the lever: try activating the time machine.
 
-	
 Chapter - Workshop Windows
 
 The windows are a thing. 

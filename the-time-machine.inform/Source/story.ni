@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43196 ]
+[ WORDS - 43198 ]
 
 Table of Releases
 release	notes
@@ -2084,19 +2084,24 @@ The controls are part of the time machine.
 The controls are undescribed.
 
 Understand "control" as controls.
-
-[ Examining the controls for the first time from outside the time machine has to be different than examining the controls for the first time from inside the time machine. Commenting out this code for now. ]
-[To say controls-overview-internal:
-	if we have examined the controls:
+	
+[Whether of not you have examined the controls for the first time should only be valid when you are inside the time machine. The response "The controls of the time machine..." should only be displayed if the controls haven't been examined a first time. ]
+controls-examined-already is a truth state that varies.
+controls-examined-already is false.
+	
+[Every turn when the player is inside the time machine:] [ Code doesn't compile with this line ]
+	Understand "[something]" as examining. [ Writing §17.10 ]
+	
+To say controls-examine-internal:
+	if controls-examined-already is true:
 		say "What part of the controls would you like to examine in greater detail: the Elapsed Time dials, the Destination numbers, the Origin numbers, the hinged panel, the small light, or the lever?";
 	otherwise:
+		now controls-examined-already is true;
 		say "The controls of the time machine are divided into two major sections. On the left, from top to bottom, are sections labeled Elapsed Time, Destination, and Origin. On the right, from top to bottom, are a hinged panel and a small light and a lever underneath it."
-]
 	
 Instead of examining the controls:
 	if the player is in the time machine:
-		[say "[controls-overview-internal]";]
-		say "The time machine controls are divided into two major sections. To the left, one above the other, are labeled sections that indicate Elapsed time, Destination, and Origin. To the right, from top to bottom, are what appear to be a hinged panel, a small light, and a lever.";
+		say "[controls-examine-internal]";
 	otherwise:
 		say "From here you see that the controls[first time] are wired in some unfathomable way into the time machine components and[only] consist of a menagerie of dials, numbers, a small light, and a lever[first time]. You would have to enter the time machine to get a closer look at them[only].";
 	rule succeeds.

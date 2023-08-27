@@ -2264,6 +2264,7 @@ Understand "workshop windows" or "window" or "hinge" or "hinges" or "pane" or "p
 
 Instead of examining the windows: say "Large casement windows hinged on the outer edges and opening inward, secured by a single latch[first time]. The windows are constructed from many small panes of leaded glass in a lattice pattern[only]."
 
+[Is this code even used? >search the windows is handled in Look Through/In Windows section below so probably not]
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 
 The windows can be open or closed.
@@ -2284,7 +2285,7 @@ window-latch-broken is false.
 
 Instead of examining the latch: 
 	if window-latch-broken is false:
-		say "A simple but strong latch on the inside of the windows that can be pulled to unlock or lock the windows themselves.[no line break][if windows are locked] The latch appears to be closed, locking the windows shut.[otherwise] The latch appears to be open, the windows unlocked.";
+		say "A simple but strong latch on the inside of the windows that can be pulled to unlock or lock the windows themselves.[no line break][if windows are locked] The latch appears to be closed, locking the windows shut.[otherwise] The latch appears to be open; the windows unlocked.";
 	otherwise:
 		say "The latch appears to be broken and hanging down on one side."
 
@@ -2480,7 +2481,6 @@ Instead of pulling the windows:
 			try opening the windows;
 	otherwise:
 		say "[windows-locked]";
-
 
 Section - Using Poker On Windows
 

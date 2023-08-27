@@ -2262,7 +2262,7 @@ The windows are a thing.
 The windows are a backdrop. The windows are in the Workshop and the Garden.
 Understand "workshop windows" or "window" or "hinge" or "hinges" or "pane" or "panes" or "leaded" or "lead" or "glass" as windows.
 
-Instead of examining the windows: say "A set of large casement windows hinged on the outer edges and opening inward, secured by a single latch. The windows are constructed from many small panes of leaded glass in a lattice pattern."
+Instead of examining the windows: say "Large casement windows hinged on the outer edges and opening inward, secured by a single latch[first time]. The windows are constructed from many small panes of leaded glass in a lattice pattern[only]."
 
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 

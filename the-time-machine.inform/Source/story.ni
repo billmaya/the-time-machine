@@ -1855,7 +1855,7 @@ Instead of examining the shapes: try looking.
 
 Chapter - Light Switch
 		
-The lights are a device. [thing.]
+The lights are a device. 
 The lights are scenery in the Workshop.
 The description of the lights is "You see nothing special about the lights except [if light switch is switched off]they are turned off (perhaps there's a switch here somewhere)[otherwise]they are turned on[end if]."
 
@@ -1959,7 +1959,7 @@ The description of the time machine is "[time-machine-description]".
 Understand "mechanism" or "device" or "temporal" or "struts" or "wires" or "crystals" or "base" or "opening" or "latticework" or "lattice" or "cage" or "components" or "mechanisms" as time machine.
 
 Instead of opening the time machine: say "The time machine is already open. All you have to do is [if the player is in the time machine]get out[otherwise]get inside[end if] if you desire."
-[At some point should implement >climb in/out of time machine.]
+[At some point should implement >climb in/out of time machine. TBD]
 
 [Replaced "examining" with "searching" in Instead statement]
 Instead of searching [examining] the time machine:
@@ -2089,15 +2089,15 @@ Understand "control" as controls.
 controls-examined-already is a truth state that varies.
 controls-examined-already is false.
 
-[ This code won't compile. Why? TBD ]
+[This code won't compile. Why? TBD]
 [Every turn when the player is inside the time machine:
 	Understand "[something]" as examining. [ Writing §17.10 ] ]
 
-[ This code won't compile. Why? TBD ]		
+[This code won't compile. Why? TBD]		
 [Every turn:
 	Understand "[something]" as examining when the player is inside the time machine.]
 
-[ This code will compile ]	
+[This code will compile]	
 Understand "[something]" as examining when the player is inside the time machine. [ Writing §17.10 ]
 	
 To say controls-examine-internal:
@@ -2274,7 +2274,7 @@ Instead of examining the windows: say "Large casement windows hinged on the oute
 
 [This code isn't used because of the "Instead of examining the windows:" clause above.]
 [>search the windows is handled in Look Through/In Windows section below.]
-[Should I incorporate this description code into the Instead of code above? TBD]
+[Should I incorporate this description code into the Instead response above? TBD]
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 
 The windows can be open or closed.

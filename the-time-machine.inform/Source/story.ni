@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43252 ]
+[ WORDS - 43245 ]
 
 Table of Releases
 release	notes
@@ -2084,8 +2084,8 @@ The controls are part of the time machine.
 The controls are undescribed.
 
 Understand "control" as controls.
-	
-[Whether of not you have examined the controls for the first time should only be valid when you are inside the time machine. The response "The controls of the time machine..." should only be displayed if the controls haven't been examined a first time. ]
+
+[Tracking how many times you have examined the controls is only relevant when you are inside the time machine.] 	
 controls-examined-already is a truth state that varies.
 controls-examined-already is false.
 
@@ -2272,7 +2272,9 @@ Understand "workshop windows" or "window" or "hinge" or "hinges" or "pane" or "p
 
 Instead of examining the windows: say "Large casement windows hinged on the outer edges and opening inward, secured by a single latch[first time]. The windows are constructed from many small panes of leaded glass in a lattice pattern[only]."
 
-[Is this code even used? >search the windows is handled in Look Through/In Windows section below so probably not TBD]
+[This code isn't used because of the "Instead of examining the windows:" clause above.]
+[>search the windows is handled in Look Through/In Windows section below.]
+[Should I incorporate this description code into the Instead of code above? TBD]
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 
 The windows can be open or closed.

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43198 ]
+[ WORDS - 43252 ]
 
 Table of Releases
 release	notes
@@ -2088,9 +2088,17 @@ Understand "control" as controls.
 [Whether of not you have examined the controls for the first time should only be valid when you are inside the time machine. The response "The controls of the time machine..." should only be displayed if the controls haven't been examined a first time. ]
 controls-examined-already is a truth state that varies.
 controls-examined-already is false.
-	
-[Every turn when the player is inside the time machine:] [ Code doesn't compile with this line ]
-	Understand "[something]" as examining. [ Writing §17.10 ]
+
+[ This code won't compile. Why? TBD ]
+[Every turn when the player is inside the time machine:
+	Understand "[something]" as examining. [ Writing §17.10 ] ]
+
+[ This code won't compile. Why? TBD ]		
+[Every turn:
+	Understand "[something]" as examining when the player is inside the time machine.]
+
+[ This code will compile ]	
+Understand "[something]" as examining when the player is inside the time machine. [ Writing §17.10 ]
 	
 To say controls-examine-internal:
 	if controls-examined-already is true:
@@ -2264,7 +2272,7 @@ Understand "workshop windows" or "window" or "hinge" or "hinges" or "pane" or "p
 
 Instead of examining the windows: say "Large casement windows hinged on the outer edges and opening inward, secured by a single latch[first time]. The windows are constructed from many small panes of leaded glass in a lattice pattern[only]."
 
-[Is this code even used? >search the windows is handled in Look Through/In Windows section below so probably not]
+[Is this code even used? >search the windows is handled in Look Through/In Windows section below so probably not TBD]
 The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 
 The windows can be open or closed.
@@ -2512,10 +2520,12 @@ Instead of prying the windows with something:
 		if the player is in the Garden:
 			say "[cannot-reach-window]";
 		else if the player is on the bench:
-			[Should probably check here to see if latch is already broken]
-			say "Looking around quickly, you carefully place the tip of the poker where the windows meet and pry them apart. With a loud snap, the latch that secures them shut breaks. The windows are now unlocked.";
-			now window-latch-broken is true;
-			now the windows are unlocked;
+			if window-latch-broken is false:
+				say "Looking around quickly, you carefully place the tip of the poker where the windows meet and pry them apart. With a loud snap, the latch that secures them shut breaks. The windows are now unlocked.";
+				now window-latch-broken is true;
+				now the windows are unlocked;
+			otherwise:
+				say "[latch-broken]";
 		otherwise: [in the Workshop]
 			say "[why-break]";
 	otherwise:
@@ -2537,7 +2547,7 @@ Instead of use-on-action:
 			say "[why-break]";
 		else if the player is in the Entryway:
 			if current action involves workshop-door:
-				say "While your initial thought of getting into the workshop by prying open the locked door with the poker has merit, closer examination of the door and frame shows that both are too solidly made. You wouldn't be able to open the door without totally destroying a large section of the surrounding woodwork. Perhaps there's another way in to the workshop.";
+				say "The [first time]initial [only]thought of prying open the locked door with the poker might have worked, but the door and its frame are solidly made[first time]. You wouldn't be able to get into the workshop without destroying a large section of the surrounding woodwork. Perhaps there's another way into Wells['] workshop[only].";
 			else if current action involves front door:
 				say "The front door isn't locked so I don't see why you would think you had to pry it open.";
 			otherwise:

@@ -436,7 +436,7 @@ Every turn:
 Chapter - Parlor
 
 Every turn:
-	if a breaker (called fuse) [working-fuse] is in the right panel:
+	if a breaker (called fuse) is in the right panel:
 		if the fuse is working:
 			now the orrery is switched on;
 		otherwise:

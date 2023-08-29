@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43245 ]
+[ WORDS - 43258 ]
 
 Table of Releases
 release	notes
@@ -332,19 +332,19 @@ Chapter - Listening
 
 Before listening:
 	if the player is in Woking Street:
-		say "The sound of the wind nearly obscures the normal sounds of the city at this time of night.";
+		say "You hear the normal sounds of the city at this time of night along with the occassional gust of wind through the streets.";
 		stop the action;
 	else if the player is in the Clearing:
-		say "Nature sounds mixed in with the sound of the wind through the trees.";
+		say "You hear the wind through the trees as well as the sound of runnnig water to the southeast.";
 		stop the action;
-	else if the player is in the Top Well: 
-		say "The faint sounds of machinery mingle with the natural sounds of the clearing.";
+	else if the player is in the Top Well:
+		say "You hear the faint sounds of machinery coming up from below.";
 		stop the action;
 	else if the player is in the Bottom Well:
-		say "The sound of machinery is louder now and seems to come from every direction.";
+		say "The soundof machinery is louder now and seems to come from the north.";
 		stop the action;
 	else if the player is in the Dining Room:
-		say "[if the location of Watchett is the Kitchen] Through the kitchen door you can hear faint sounds of movement and work.[otherwise]You hear nothing unexpected.[end if]";
+		say "[if the location of Watchett is the Kitchen] You hear faint sounds of movement through the kitchen door to the north.[otherwise]You hear nothing except the faint sounds of the fire to the south.[end if]";
 		stop the action;
 	else if the player is in the Living Quarters or the player is in the Catacombs:
 		say "[morlock-sounds]";

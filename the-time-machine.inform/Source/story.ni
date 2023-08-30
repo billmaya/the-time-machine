@@ -2752,7 +2752,7 @@ Part - Top Well
 The Top Well is a room.
 Down from Top Well is the Bottom Well. [Located in Underground - Level 1]
 Up from Top Well is the Clearing.
-The description of Top Well is "You[']re hanging at the top of the shaft on the ladder leading down [first time]. Exiting the shaft will put you back in the clearing[only]."
+The description of Top Well is "You[']re hanging at the top of the shaft on the ladder leading down[first time]. Exiting the shaft will put you back in the clearing[only]."
 
 Instead of going up from the Top Well: try exiting.
 

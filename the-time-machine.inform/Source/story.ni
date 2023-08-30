@@ -2777,6 +2777,8 @@ Instead of descending the ladder:
 		now the player is in Bottom Well;
 	otherwise if the location of the player is Bottom Well:
 		say "You can't climb down any further."
+
+Instead of going down in the Bottom Well, try descending the ladder.
 	
 Part - Domed Building
 

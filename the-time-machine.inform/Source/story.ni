@@ -2682,7 +2682,7 @@ The metal cover is portable.
 The metal cover is on the circular well.
 The metal cover is a supporter.
 The metal cover is undescribed.
-The description of the metal cover is "About three feet in diameter, the cover is made of wide slats of metal welded together in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal cover is not on the circular well] The cover is lying on the ground next to the open well.[end if]"
+The description of the metal cover is "About three feet in diameter, the cover is made of wide slats of metal arranged in a waffle pattern. Despite the patina of rust, it looks extremely sturdy and heavy.[if the metal cover is not on the circular well] The cover is lying on the ground next to the open well.[end if]"
 
 Understand "grate" as metal cover.
 
@@ -2704,7 +2704,7 @@ Instead of taking the metal cover:
 		say "You'll have to get out of the time machine first.";
 	otherwise:
 		if the metal cover is on the circular well in the Clearing:
-			say "Grabbing the cover through its openings, you brace yourself against the side of the well and manage to lever it up and out of its resting position. It[']s extremely heavy, but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
+			say "Grabbing the cover at the edges and bracing yourself against the side of the well, you manage to lever it up and out of its resting position. It's extremely heavy, but you succeed in toppling it to one side and onto the ground, narrowly missing your feet.";
 			move the metal cover to the Clearing;
 			now the metal cover is described;
 		otherwise:

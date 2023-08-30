@@ -2798,7 +2798,7 @@ To say dome-from-building:
 
 Instead of examining dome-outside: say "[if the player is in the Clearing][dome-from-clearing][otherwise][dome-from-building]" 
 
-The description of the Domed Building is "The massive dome squats among the encroaching vegetation. The entrance to the dome is to the east up some steps and through a columned portico."
+The description of the Domed Building is "The massive geodesic dome squats among the encroaching vegetation. The entrance to the dome is to the east up some steps and through a columned portico."
 
 
 Part - Inside Dome

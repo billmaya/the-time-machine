@@ -2613,10 +2613,8 @@ Part - Clearing
 can-go-clearing-to-river is a truth state that varies.
 can-go-clearing-to-river is true.
 
-[Every turn: if the player is in the Balcony, now can-go-clearing-to-river is true.]
-
 The Clearing is a room. 
-The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. High above you, the face of a foreboding statue looks down on you through a gap in the trees. There is a path to the east leading to a white dome in the distance.[if the Balcony has been visited] Now that you know it exists, you can clearly see the overgrown path that you saw from the balcony leading southeast.[end if]"
+The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. High above you, the face of a foreboding statue looks down on you through a gap in the trees. A path to the east leads to a white dome in the distance.[if the Balcony has been visited] Now that you know it exists, you can clearly see the overgrown path that you saw from the balcony leading southeast.[end if]"
 
 Inside from the Clearing is Top Well.
 
@@ -2647,7 +2645,7 @@ Chapter - Scenery
 The circular well is a thing.
 The circular well is scenery in the Clearing.
 The circular well is a supporter.
-Instead of examining the circular well: say "About three feet in diameter, the circular well appears to be made of some unknown metal. [if metal cover is on circular well]A circular cover rests on the top of the shaft, flush with the surface. Through the cover you can see the rungs of a ladder going down into darkness.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
+Instead of examining the circular well: say "Three feet in diameter, the circular well appears to be made of some unknown metal. [if metal cover is on circular well]A circular cover rests on the top of the shaft, flush with the surface.[otherwise]You can see the rungs of a ladder going down into darkness.[end if]"
 
 The statue is scenery in the Clearing.
 The description of statue is "The sightless eyes of the weather-worn marble face stare down at you, inhuman and unsympathetic."

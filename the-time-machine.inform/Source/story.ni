@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43291 ]
+[ WORDS - 43217 ]
 
 Table of Releases
 release	notes
@@ -2914,7 +2914,7 @@ Part - Balcony
 
 The Balcony is a room.
 The Balcony is south of Inside Dome.
-The description of the Balcony is "This small concrete balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river[if the location of the Eloi is not nowhere] with many tiny figures around it.[otherwise].[end if][first time] From up here you can also see an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth at ground level.[only]"
+The description of the Balcony is "This small balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river[if the location of the Eloi is not nowhere] with many tiny figures clustered around it.[otherwise].[end if][first time] From up here you can also see an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth at ground level.[only]"
 
 The balcony-river is scenery in the Balcony.
 The description of the balcony-river is "The river winds its way through the forest below you. Looking closely, you can see groups of people in the river and on its banks."
@@ -2929,7 +2929,7 @@ The description of balcony-people is "From this distance it is difficult to make
 Understand "people" or "figures" or "group" or "groups" as balcony-people.
 
 The balcony-clearing is scenery in the Balcony.
-The description of balcony-clearing is "The sunlight reflecting off the time machine almost obscures it from view but you can just make the machine out in the clearing next to the circular well."
+The description of balcony-clearing is "The sunlight reflecting off the time machine almost obscures the rest of the clearing but you can just make the machine next to the circular well."
 Understand "clearing" as balcony-clearing.
 
 The balcony-path is scenery in the Balcony.

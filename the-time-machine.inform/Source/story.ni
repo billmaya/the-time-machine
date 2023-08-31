@@ -2861,7 +2861,9 @@ Instead of entering the round well: say "You rest briefly at the edge of the wel
 The well-water is a thing.
 The well-water is scenery in the Inside Dome.
 The well-water is edible.
-The description of the well-water is "The water appears fresh, replenished by some unseen mechanism far below.[first time] Of course, if Wells were here he would be able figure out the mechanics of such an engineering feat but you can only puzzle at its' execution.[only]"
+The description of the well-water is "The water appears fresh, replenished and recirculated by some unseen mechanism."
+
+[DEL  far below.[first time] Of course, if Wells were here he would be able figure out the mechanics of such an engineering feat but you can only puzzle at its' execution.[only]"]
 
 The printed name of well-water is "water".
 Understand "water" as well-water.

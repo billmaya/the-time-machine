@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43213 ]
+[ WORDS - 43190 ]
 
 Table of Releases
 release	notes
@@ -3056,7 +3056,7 @@ The generic-shaft is in Shaft 2.
 The generic-shaft is in Shaft 3.
 The generic-shaft is in Shaft 4.
 
-The description of generic-shaft is "[generic-shaft-description]".
+The description of generic-shaft is "[generic-shaft-description][run paragraph on]".
 
 To say generic-shaft-description:
 	if the location of the player is:
@@ -3158,9 +3158,8 @@ Chapter - Bottom Well
 The Bottom Well is underground.
 Up from the Bottom Well is the Top Well.
 North from the Bottom Well is Shaft 1.
-[The description of Bottom Well is "The light from above illuminates the bottom of what appears to be merely a dry well."]
 
-The description of Bottom Well is "The light from above illuminates the bottom of what appears to be merely a dry well.[paragraph break]The ladder leads up and there is an opening to the north."
+The description of Bottom Well is "The light from above illuminates the bottom of what appears to be merely a dry well. The ladder leads up and there is an opening to the north."
 
 [> x metal grate]
 
@@ -3171,12 +3170,11 @@ The printed name of Bottom Well is "Bottom of the Well"
 Before going north in the Bottom Well:
 	say "Ducking your head you head north."
 
-Chapter - Brass Lantern (not used)
-
+Chapter - Brass Lantern
 
 The brass lantern is a device.
 The brass lantern is nowhere.
-[The brass lantern is in the Bottom Well.]
+[The brass lantern is in the Bottom Well.] [for testing only]
 The description of the brass lantern is "A battered brass police lantern that can be turned on or off."
 
 After switching on the brass lantern:
@@ -3187,14 +3185,13 @@ After switching off the brass lantern:
 	now player-has-light is false;
 	now the lantern is not lit.
 
-
 Chapter - Shaft 1
 
 Shaft 1 is underground.
 Shaft 1 is north of Bottom Well.
 Shaft 1 is up from Shaft 2.
 
-The description of Shaft 1 is "[shaft-description] You're standing on a small platform anchored to the side of a large cylindrical shaft.[paragraph break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+The description of Shaft 1 is "You're standing on a small platform anchored to the side of the shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 1 is "Shaft - Level 1". [[ladder-glyphs]".]
 

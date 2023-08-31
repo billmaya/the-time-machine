@@ -3060,9 +3060,9 @@ The description of generic-shaft is "[generic-shaft-description]".
 
 To say generic-shaft-description:
 	if the location of the player is:
-		-- Shaft 1: say  "Carved out of solid rock, the circular shaft surrounds you on all sides and continues down into the darkness below.";
-		-- Shaft 4: say "Carved out of solid rock, the circular shaft surrounds you on all sides and continues down into the darkness below.";
-		-- otherwise: say "Carved out of solid rock, the circular shaft surrounds you on all sides and continues down into the darkness below.";
+		-- Shaft 1: say  "Carved out of solid rock, the circular metal shaft surrounds you on all sides and continues down into the darkness below.";
+		-- Shaft 4: say "Carved out of solid rock, the circular metal shaft surrounds you on all sides and continues down into the darkness below.";
+		-- otherwise: say "Carved out of solid rock, the circular metal shaft surrounds you on all sides and continues down into the darkness below.";
 
 Understand "shaft" as generic-shaft.
 

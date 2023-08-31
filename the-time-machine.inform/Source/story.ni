@@ -2890,11 +2890,16 @@ Instead of inserting things into the well-water: say "I don't see the purpose of
 The murals are a thing.
 The murals are scenery in the Inside Dome.
 
-The description of the murals are "Each of the panels is a mosaic of a pastoral scene by groups of people who must be Wells['] 'Eloi' engaged in various activities[unicode 8212]gathering fruit, bathing or swimming in a river, wandering the countryside, eating, or dancing. In one or two of the evening scenes you can make out small silhouettes in the background, almost hidden by undergrowth and shadows, spying on the Eloi activites[unicode 8212]Wells['] 'Morlocks.'"
+To say mural-description:
+	say "Each of the panels is a mosaic of a pastoral scene of a group of people[first time], who must be Wells['] 'Eloi',[only] engaged in a variety of activities. One particular scene depicts a group [one of]gathering fruit[or]bathing[or]swimming in a river[or]wandering the countryside[or]dancing[or]eating[then at random][if a random chance of 45 in 100 succeeds]. It's an evening scene and in the background you can make out small brutish silhouettes, almost hidden by undergrowth or shadows, spying on the Eloi[end if]."
+	
+The description of the murals are "[mural-description]".
+
+[DEL The description of the murals are "Each of the panels is a mosaic of a pastoral scene by groups of people who must be Wells['] 'Eloi' engaged in various activities[unicode 8212]gathering fruit, bathing or swimming in a river, wandering the countryside, eating, or dancing. In one or two of the evening scenes you can make out small silhouettes in the background, almost hidden by undergrowth and shadows, spying on the Eloi activites[unicode 8212]Wells['] 'Morlocks.'"]
 
 [DEL The description of the murals are "Each panel is a mosaic devoted to a specific pastoral scene being performed by a groups of people who must be Wells['] Eloi[unicode 8212]gathering fruit, bathing and swimming in a river, wandering the countryside, eating, dancing, and other questionable activities. In one or two of the evening scenes you can make out small silhouettes hidden in the undergrowth and shadows, spying on the Eloi's activities[unicode 8212]Wells['] Morlocks."]
 
-Understand "cyclorama" or "mural" or "panel" or "panels" or "walls" as murals.
+Understand "cyclorama" or "mural" or "panel" or "panels" or "walls" or "scene" as murals.
 
 Instead of switching on the murals: try taking the murals.
 Before taking the murals:

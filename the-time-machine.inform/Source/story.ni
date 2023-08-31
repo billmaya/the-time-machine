@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43228 ]
+[ WORDS - 43225 ]
 
 Table of Releases
 release	notes
@@ -2808,8 +2808,6 @@ The Inside Dome is north of the Balcony.
 Understand "dome" as Inside Dome.
 
 The description of Inside Dome is "Sunlight streams through the dome's oculus, illuminating the entire room. Low stone tables are arranged in a circular pattern around a large central well at the center of the dome. A series of murals circles the perimeter of the dome except for the exits. There is an small archway to the south and the main exit to the west."
-
-[DEL Circling the entire wall of the dome except for the exits is a series of murals.]
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 
@@ -2863,8 +2861,6 @@ The well-water is scenery in the Inside Dome.
 The well-water is edible.
 The description of the well-water is "The water appears fresh, replenished and recirculated by some unseen mechanism."
 
-[DEL  far below.[first time] Of course, if Wells were here he would be able figure out the mechanics of such an engineering feat but you can only puzzle at its' execution.[only]"]
-
 The printed name of well-water is "water".
 Understand "water" as well-water.
 
@@ -2894,10 +2890,6 @@ To say mural-description:
 	say "Each of the panels is a mosaic of a pastoral scene of a group of people[first time], who must be Wells['] 'Eloi',[only] engaged in a variety of activities. One particular scene depicts a group [one of]gathering fruit[or]bathing[or]swimming in a river[or]wandering the countryside[or]dancing[or]eating[then at random][if a random chance of 45 in 100 succeeds]. It's an evening scene and in the background you can make out small brutish silhouettes, almost hidden by undergrowth or shadows, spying on the Eloi[end if]."
 	
 The description of the murals are "[mural-description]".
-
-[DEL The description of the murals are "Each of the panels is a mosaic of a pastoral scene by groups of people who must be Wells['] 'Eloi' engaged in various activities[unicode 8212]gathering fruit, bathing or swimming in a river, wandering the countryside, eating, or dancing. In one or two of the evening scenes you can make out small silhouettes in the background, almost hidden by undergrowth and shadows, spying on the Eloi activites[unicode 8212]Wells['] 'Morlocks.'"]
-
-[DEL The description of the murals are "Each panel is a mosaic devoted to a specific pastoral scene being performed by a groups of people who must be Wells['] Eloi[unicode 8212]gathering fruit, bathing and swimming in a river, wandering the countryside, eating, dancing, and other questionable activities. In one or two of the evening scenes you can make out small silhouettes hidden in the undergrowth and shadows, spying on the Eloi's activities[unicode 8212]Wells['] Morlocks."]
 
 Understand "cyclorama" or "mural" or "panel" or "panels" or "walls" or "scene" as murals.
 

@@ -2948,12 +2948,12 @@ The River Bank is southeast of the Clearing.
 The description of the River Bank is "[first time]The southeast path winds its way downhill through dense undergrowth. [only]After a brief hike, you emerge from the woods onto the northwest bank of a sizeable river."
 
 The river-river is scenery in the River Bank.
-The description of the river-river is "The river curves its way through the forest from the northeast to the southwest. The rushing water looks cool and inviting."
+The description of the river-river is "The river curves its way through the forest from the northeast to the southwest."
 The printed name of river-river is "river".
 Understand "river" as river-river.
 
 The river-water is scenery in the River Bank.
-The description of the river-water is "The rushing water is cloudy and filled with debris from somewhere upstream."
+The description of the river-water is "The rushing water looks cool and inviting."
 The printed name of river-water is "water".
 Understand "water" as river-water.
 
@@ -2965,25 +2965,25 @@ Instead of eating the river-water:
 	try drinking the river-water;
 	stop the action.
 
-Instead of drinking the river-water, say "I don't see why you would choose to drink out of this murky river when [if the Inside Dome has been visited]there's[otherwise]there might be[end if] a source of fresh water elsewhere." 
+Instead of drinking the river-water, say "I don't see why you would choose to drink out of this river when [if the Inside Dome has been visited]there's[otherwise]there might be[end if] a source of fresh water elsewhere." 
 
 The river-bushes is scenery in the River Bank.
-The description of river-bushes is "The dense and overgrown flora parallels the river bank, dense with flowers."
+The description of river-bushes is "The overgrown flora parallels the river bank, dense with flowers."
 Understand "bush" or "bushes" as river-bushes.
 
 Gathering is an action applying to one thing.
 Understand "gather [something]" as gathering.
-Instead of gathering: say "The Eloi don[']t seem to need your help. Perhaps another time."
+Instead of gathering: say "The Eloi don't seem to need your help[first time]. Perhaps another time[only]."
 
 Instead of going southeast in the River Bank: try swimming.
 
 Swimming is an action applying to nothing.
 Understand "swim" as swimming.
-Instead of swimming: say "You[']re not dressed for swimming. Perhaps another time."
+Instead of swimming: say "You're not dressed for swimming[first time]. Perhaps another time[only]."
 
 Resting is an action applying to nothing.
 Understand "rest" as resting.
-Instead of resting: say "You[']re not tired right now. Perhaps another time."
+Instead of resting: say "You're not tired right now[first time]. Perhaps another time[only]."
 
 Chapter - Flowers/Flower
 
@@ -2999,11 +2999,11 @@ The flower is a thing.
 The flower is in the River Bank.
 The flower is undescribed.
 
-The description of the flower is "The petals of this flower's blossom exactly match the the one that Humboldt gave you earlier. If this complete speciman won't convince the doctor of Wells[apostrophe] sanity then nothing will."
+The description of the flower is "The petals of this flower's blossom exactly match the one that Humboldt gave you earlier[first time]. If this complete speciman won't convince the doctor of Wells[apostrophe] sanity then nothing will[only]."
 
 Instead of taking the flower:
 	if the player has the flower:
-		say "One should suffice to convince the doctor of Wells[apostrophe] sanity.";
+		say "One should suffice[first time] to convince the doctor of Wells[apostrophe] sanity[only].";
 	otherwise:
 		continue the action.
 

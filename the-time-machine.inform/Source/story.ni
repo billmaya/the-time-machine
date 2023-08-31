@@ -2890,9 +2890,9 @@ Instead of inserting things into the well-water: say "I don't see the purpose of
 The murals are a thing.
 The murals are scenery in the Inside Dome.
 
-The description of the murals are "Each panel is a mosaic devoted to a specific pastoral scene being performed by a group of people who must be Wells['] Eloi[unicode 8212]gathering fruit, bathing and swimming in a river, wandering the countryside, eating, dancing, and other questionable activities.
+The description of the murals are "Each of the panels is a mosaic of a pastoral scene by groups of people who must be Wells['] 'Eloi' engaged in various activities[unicode 8212]gathering fruit, bathing or swimming in a river, wandering the countryside, eating, or dancing. In one or two of the evening scenes you can make out small silhouettes in the background, almost hidden by undergrowth and shadows, spying on the Eloi activites[unicode 8212]Wells['] 'Morlocks.'"
 
-In one or two of the dusk scenes you can make out small silhouettes hidden in the undergrowth and shadows, spying on the Eloi's activities[unicode 8212]Wells['] Morlocks."
+[DEL The description of the murals are "Each panel is a mosaic devoted to a specific pastoral scene being performed by a groups of people who must be Wells['] Eloi[unicode 8212]gathering fruit, bathing and swimming in a river, wandering the countryside, eating, dancing, and other questionable activities. In one or two of the evening scenes you can make out small silhouettes hidden in the undergrowth and shadows, spying on the Eloi's activities[unicode 8212]Wells['] Morlocks."]
 
 Understand "cyclorama" or "mural" or "panel" or "panels" or "walls" as murals.
 

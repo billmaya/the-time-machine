@@ -2904,7 +2904,7 @@ instead of touching the murals: try examining the mosaics.
 
 The mosaics are a thing.
 The mosaics are scenery in the Inside Dome.
-The description of the mosaics are "Each panel is composed of thousands of small square pieces of colored stone, tile, and glass best viewed at a slight distance. In certain places, individual pieces have fallen out unmaintained by future generations."
+The description of the mosaics are "Each panel is composed of thousands of small square pieces of colored stone, tile, and glass. In certain places, individual pieces have fallen out, unmaintained by future generations."
 Understand "mosaic" or "square" or "stone" or "tile" or "glass" or "colored pieces" or "pieces" as mosaics.
 
 

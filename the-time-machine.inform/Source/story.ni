@@ -3276,13 +3276,15 @@ The Catacombs are down from the Living Quarters.
 
 To say catacombs-description:
 	if player-has-light is true:
-		say "In the flickering light, you see the bones of dead Morlocks arranged in tunnels extending into the distance as far as the eye can see.";
+		say "A subterranean cemetary with galleries and recesses as far as the eye can see for the bones of what appear thousands of dead Morlocks.[run paragraph on]";
+		[say "In the flickering light, you see the bones of dead Morlocks arranged in tunnels extending into the distance as far as the eye can see.";]
 	otherwise:
-		say "Without light it is almost impossible to make out any details in this room except for the tunnel leading back up.";
+		say "It's impossible to make out any room details except for the tunnel leading back up without light.[run paragraph on]";
+		[say "Without light it is almost impossible to make out any details in this room except for the tunnel leading back up.";]
 
 The description of Catacombs is "[catacombs-description]".
 
-Understand "tunnels" as Catacombs.
+Understand "tunnels/cemetary/galleries/gallery/recesses/recess/niches/niche/alcoves/alcove/shines/shrine" as Catacombs.
 
 The visibility of Catacombs is night. [shadow.]
 
@@ -3292,12 +3294,12 @@ The bones are a thing.
 The bones are in the Catacombs.
 The bones are scenery.
 
-The description of bones is "They appear to be carefully arranged according to some unknown taxonomy by size, shape, and function."
+The description of bones is "Carefully arranged according to some unknown taxonomy by size, shape, and function."
 
 Understand "remains" or "skeletons" or "mummified" or "dead" or "tombs" as bones.
 	
 Instead of searching the bones: try taking the bones.
-Instead of taking the bones: say "Graverobbing is probably as much a sacrilege now as it is in your time."
+Instead of taking the bones: say "Best not[first time]. Grave robbery is probably as much a sacrilege now as it is in your time[only]."
 
 Section - Wandering In Catacombs
 
@@ -3312,7 +3314,7 @@ Going southwest in the Catacombs is wandering.
 
 To say catacombs-wandering:
 	if player-has-light is true:
-		say "You wander [noun] past a series of [one of]alcoves[or]niches[or]recesses[or]shrines[then at random] filled to the brim with [one of]bones[or]mummified remains[or]skeletons[then at random] of long-dead inhabitants of this underground arcology before arriving back at the tunnel entrance.";
+		say "You briefly wander [noun] past a series of [one of]alcoves[or]niches[or]recesses[or]shrines[then at random] filled to the brim with [one of]bones[or]mummified remains[or]skeletons[then at random] of long-dead inhabitants of this underground arcology before arriving back at the tunnel entrance.";
 	otherwise:
 		say "Without light you stumble around the oppressive tunnels until somehow you arrive back at the entrance.";
 	

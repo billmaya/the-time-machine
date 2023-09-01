@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43124 ]
+[ WORDS - 43159 ]
 
 Table of Releases
 release	notes
@@ -3195,15 +3195,18 @@ The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
 The visibility of Shaft 2 is day.
 
-Instead of going south in Shaft 2:
-	say "A few steps in your continued progress is obstructed by a tunnel collapse that blocks further progress." 
+Chapter - Collapsed Tunnel
 
-Section - Tunnel Collapse
+The collapsed tunnel is underground.
+The collapsed tunnel is south of Shaft 2.
+The visibility of collapsed tunnel is day.
+The description of collapsed tunnel is "[first time]After a few steps you have to stop. [only]The tunnel ends abruptly in a pile of collapsed rock and dirt that fills it entirely, preventing further progress."
+The printed name of collapsed tunnel is "Tunnel Collapse".
 
-The tunnel-collapse is scenery in Shaft 2.
-The description of tunnel-collapse is "Rocks of various sizes, dirt, and debris that blocks any further progress[first time]. Quite impassible[only]."
-Understand "tunnel/collapse/rock/rocks/dirt/debris" or "tunnel collapse" as tunnel-collapse.
-The printed name of tunnel-collapse is "rock slide".
+tunnel-debris is scenery in the collapsed tunnel.
+The description of tunnel-debris is "Rocks of various sizes prevent any further prevent any progress[first time], obscuring what might lie beyond[only]."
+Understand "rock/rocks/dirt/collapse" as tunnel-debris.
+The printed name of tunnel-debris is "obstruction".
 
 
 Part - Underground - Level 3

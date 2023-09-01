@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43190 ]
+[ WORDS - 43058 ]
 
 Table of Releases
 release	notes
@@ -3040,29 +3040,13 @@ Part - Underground - Shaft
 
 Chapter - Shaft Description
 
-To say shaft-description:
-	if the location of the player is:
-		-- Shaft 1: say "The small tunnel opens up into a large shaft that extends high up above your head and down into the darkness below.";
-		-- Shaft 2: say "You're standing on a small platform anchored to the side of the shaft.";
-		-- Shaft 3: say "You're standing on a small platform anchored to the side of the shaft.";
-		-- Shaft 4: say "You're standing on a small platform anchored to the side of the shaft.";
-		-- otherwise: say "NULL";
-
-Section - Generic Shaft Description
-
 The generic-shaft is a backdrop.
 The generic-shaft is in Shaft 1.
 The generic-shaft is in Shaft 2.
 The generic-shaft is in Shaft 3.
 The generic-shaft is in Shaft 4.
 
-The description of generic-shaft is "[generic-shaft-description][run paragraph on]".
-
-To say generic-shaft-description:
-	if the location of the player is:
-		-- Shaft 1: say  "Carved out of solid rock, the circular metal shaft surrounds you on all sides and continues down into the darkness below.";
-		-- Shaft 4: say "Carved out of solid rock, the circular metal shaft surrounds you on all sides and continues down into the darkness below.";
-		-- otherwise: say "Carved out of solid rock, the circular metal shaft surrounds you on all sides and continues down into the darkness below.";
+The description of generic-shaft is "Carved out of solid rock, the circular metal shaft surrounds you on all sides and continues down into the darkness below."
 
 Understand "shaft" as generic-shaft.
 

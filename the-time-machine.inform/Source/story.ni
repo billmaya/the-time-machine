@@ -3224,7 +3224,7 @@ Shaft 3 is down from Shaft 2.
 Shaft 3 is up from Shaft 4.
 Shaft 3 is north of the Living Quarters.
 
-The description of Shaft 3 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+The description of Shaft 3 is "You're standing on a small platform anchored to the side of the shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 

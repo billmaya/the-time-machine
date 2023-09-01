@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43058 ]
+[ WORDS - 43124 ]
 
 Table of Releases
 release	notes
@@ -3196,7 +3196,14 @@ The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 The visibility of Shaft 2 is day.
 
 Instead of going south in Shaft 2:
-	say "YOU CAN'T GO THAT WAY - TUNNEL COLLAPSE."
+	say "A few steps in your continued progress is obstructed by a tunnel collapse that blocks further progress." 
+
+Section - Tunnel Collapse
+
+The tunnel-collapse is scenery in Shaft 2.
+The description of tunnel-collapse is "Rocks of various sizes, dirt, and debris that blocks any further progress[first time]. Quite impassible[only]."
+Understand "tunnel/collapse/rock/rocks/dirt/debris" or "tunnel collapse" as tunnel-collapse.
+The printed name of tunnel-collapse is "rock slide".
 
 
 Part - Underground - Level 3

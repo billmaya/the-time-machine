@@ -4789,7 +4789,8 @@ A strikable-match is a kind of thing.
 The plural of strikable-match is s-matches.
 
 A strikable-match has a number called duration.
-The duration of a strikable-match is usually 3. [00.]
+The duration of a strikable-match is usually 3.
+[The duration of a strikable-match is usually 300.]
 
 Rule for printing the name of a strikable-match: say "match".
 Rule for printing the plural name of a strikable-match: say "matches".

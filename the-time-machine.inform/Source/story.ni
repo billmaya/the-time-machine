@@ -3237,9 +3237,9 @@ The Living Quarters are up from the Catacombs.
 
 To say living-quarters-description:
 	if player-has-light is true:
-		say "In the flickering light, you see hundreds of individual cubbyholes carved into the walls around you ascending in symmetrical rows into the darkness above, connected by an intricate cats cradle of ropes and platforms that rises up the wall. There's an exit north and a small tunnel leading down.";
+		say "Hundreds of individual cubbyholes carved into the walls ascend in symmetrical rows above you, connected by an intricate cats cradle of ropes and platfoms that rises with them. There's an exit north and a small tunnel leading down.[run paragraph on]";
 	otherwise:
-		say "Without light it is almost impossible to make out any details in this room except for the exit north and a small tunnel leading down.";
+		say "It's impossible to make out any room details except for the exit north and a small tunnel leading down without light.[run paragraph on]";
 
 The description of Living Quarters is "[living-quarters-description]".
 
@@ -3253,17 +3253,17 @@ The Cats Cradle is scenery in the Living Quarters.
 
 To say cats-cradle-description:
 	if player-has-light is true:
-		say "Obvious designed to allow vertical ascent, the intricate ropework is obviously the product of generations of Morlock ingenuity and craftsmanship.";
+		say "The intricate ropework is obviously the product of generations of Morlock ingenuity and craftsmanship[first time], designed to allow vertical ascent[only].";
 	otherwise:
-		say "Without light it is almost impossible to make out the details of this intricate ropework.";
+		say "It's impossible to make out the details of this intricate ropework without light.";
 
-The description of Cats Cradle is "[cats-cradle-description]".
+The description of Cats Cradle is "[cats-cradle-description][run paragraph on]".
 
 Understand "rope" or "ropes" or "platform" or "platforms" as Cats Cradle.
 
 To say climbing-cats-cradle:
 	if player-has-light is true:
-		say "It would require someone more dexterous than yourself, with both hands free, to even begin such an ascent.";
+		say "Even if you had both hands free, it would require someone more dexerous than yourself to even begin such an ascent.";
 	otherwise:
 		say "In the dark? Not likely.";
 
@@ -4789,7 +4789,7 @@ A strikable-match is a kind of thing.
 The plural of strikable-match is s-matches.
 
 A strikable-match has a number called duration.
-The duration of a strikable-match is usually 3.
+The duration of a strikable-match is usually 3. [00.]
 
 Rule for printing the name of a strikable-match: say "match".
 Rule for printing the plural name of a strikable-match: say "matches".

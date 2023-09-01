@@ -3337,7 +3337,7 @@ Shaft 4 is north of the Eating Area.
 Instead of going down in Shaft 4:
 	say "THE LADDER IS BROKEN. THE SHAFT CONTINUES DOWN INTO THE DARKNESS."
 
-The description of Shaft 4 is "[shaft-description][line break]You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+The description of Shaft 4 is "You're standing on a small platform anchored to the side of the shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
 The printed name of Shaft 4 is "Shaft - Level 4". [[ladder-glyphs]".]
 

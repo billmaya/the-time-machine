@@ -3345,7 +3345,7 @@ The Eating Area is underground.
 The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
-The description of Eating Area is "Rows of parallel troughs in various states of repair fill this room.[paragraph break]There are exits to the north and south."
+The description of Eating Area is "Rows of parallel troughs in various states of repair fill this room. There are exits to the north and south."
 
 The visibility of Eating Area is night.
 

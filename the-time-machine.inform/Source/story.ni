@@ -3512,7 +3512,6 @@ The poker is familiar.
 The newspaper is familiar.
 The time machine is familiar.
 
-[The fuse is familiar.]
 The fuse-orrery is familiar. 
 The fuse-time-machine is familiar.
 
@@ -3530,7 +3529,6 @@ examination is a subject.
 
 future is a subject. The printed name of future is "the future".
 time travel is a subject.
-[Morlocks are a subject. The printed name of Morlocks is "the Morlocks". Understand "morlock" or "morlocks" as Morlocks. ]
 
 information is a subject.
 

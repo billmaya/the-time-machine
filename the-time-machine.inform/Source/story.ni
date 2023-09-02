@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43228]
+[ WORDS - 43268]
 
 Table of Releases
 release	notes
@@ -3330,8 +3330,8 @@ Shaft 4 is underground.
 Shaft 4 is down from Shaft 3.
 Shaft 4 is north of the Eating Area.
 
-Instead of going down in Shaft 4:
-	say "THE LADDER IS BROKEN. THE SHAFT CONTINUES DOWN INTO THE DARKNESS."
+Instead of going down in Shaft 4, say "The shaft continues down into darkness but the ladder is broken[first time], which prevents you from climbing down any further[only]."
+Instead of going down in Shaft 4 for more than two times, say "The broken ladder prevents you from climbing down any further."
 
 The description of Shaft 4 is "You're standing on a small platform anchored to the side of the shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
@@ -3355,8 +3355,6 @@ The troughs are a thing.
 The troughs are in the Eating Area.
 The troughs are scenery.
 
-[The description of the troughs are "Only a few are still intact[first time]. One or two appear to have been used recently[only]."]
-
 Understand "trough" or "meal" or "remains" or "recent meal" or "grisly" as troughs.
 
 Instead of examining the troughs: try searching the troughs.
@@ -3369,7 +3367,7 @@ Chapter - Abattoir
 
 The Abattoir is underground.
 The Abattoir is south of the Eating Area.
-The Abattoir is north of the holding-cell-gate. [Holding Cell.]
+The Abattoir is north of the holding-cell-gate.
 
 The description of Abattoir is "A cross between a workshop and a charnel house, this room is dominated by a large metal table. There is a pile of bloodstained clothing at the base of the table. There's a gated exit to the south and another exit to the north."
 

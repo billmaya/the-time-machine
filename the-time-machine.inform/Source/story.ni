@@ -3594,53 +3594,57 @@ After quizzing Watchett about the key:
 
 After quizzing Watchett about workshop-room: 
 	say "[remove workshop-room ask suggestion]";
-	say "'I've never been in there, not even to clean. Mr. Wells had the only key.'"
+	say "'I've never been in there, not even to clean[first time]. Mr. Wells had the only key[only].'"
 
 After quizzing Watchett about the workshop-door: 
 	say "[remove workshop-door ask suggestion]";
-	say "'Locked, always locked. Mr. Wells had the only key.'"
+	say "'[first time]Locked, always locked. [only]Mr. Wells had the only key.'"
 
+Understand "outside" as front door.
 After quizzing Watchett about the front door: say "'Best you warm up by the fire first[first time]. Much too cold to be outside the way you're dressed[only].'"
 
 After quizzing Watchett about the pocket watch: say "'That looks like Mr. Wells['] watch[first time]. I'd put it on the desk in the library for when he gets back, if I were you[only].'"
 
-After quizzing Watchett about the orrery: say "'Built by Mr. Wells,' she says. 'He's quite the inventor, he is.'"
+After quizzing Watchett about the orrery: say "'Built by Mr. Wells[first time],' she says. 'He's quite the inventor, he is[only].'"
 
-After quizzing Watchett about the petal: say "'Very pretty, I guess. But you cannot tell much about a flower from a single petal.'"
+After quizzing Watchett about the petal: say "'Very pretty, I guess[first time]. But you cannot tell much about a flower from a single petal[only].'"
 
-After quizzing Watchett about food: say "'Still hungry after that meal all of you had?' she says. 'Perhaps a cup of tea to calm your stomach?'" 
+After quizzing Watchett about food: say "[first time]'Still hungry after that meal all of you had?' she says. [only]'Perhaps a cup of tea to calm your nerves?'" 
 
 After quizzing Watchett about her-work: 
 	say "[remove her-work ask suggestion]";
-	say "'Just cleaning up after tonight's meal,' she says. 'Should be done soon.'"
+	say "'Just cleaning up after tonight's meal[first time]. 'Should be done soon[only].'"
 
 After quizzing Watchett about poker:
 	if the player has the poker:
-		say "'Perhaps you should put that back by the fire where it belongs. Best place for it, I think.' she says.";
+		say "'Perhaps you should put that back by the fire where it belongs[first time]. Best place for it, I think.' she says[only].";
 	otherwise:
 		say "'I think that's in the parlor by the fireplace, sir.'".
 
 After quizzing Watchett about experiments:
 	say "[remove experiments ask suggestion]";
-	say "'I wouldn't know anything about Mr. Wells['] experiments. He never talked to me about his work. Did all those things in his workshop behind closed doors. Raised a dreadful racket sometimes, I tell you.'"
+	say "'I wouldn't know anything about Mr. Wells['] experiments[first time]. He never talked to me about the work he did in his workshop[only].'"
+	[DEL say "'I wouldn't know anything about Mr. Wells['] experiments. He never talked to me about his work. Did all those things in his workshop behind closed doors. Raised a dreadful racket sometimes, I tell you.'"]
 
 After quizzing Watchett about time travel:
 	say "[remove time travel ask suggestion]";
-	say "'I wouldn't know anything about that. Running a house, one day at a time, that's my lot in life.'"
+	say "'I wouldn't know anything about that[first time]. Running a house, one day at a time, that's my lot in life[only].'"
 
 Section - Informing - "Tell [someone] about [thing]"
 
-After informing Watchett about Wells: say "'Very sad,' she says. 'I'm glad the doctor is involved.'"
+After informing Watchett about Wells: say "'[first time]Very sad,' she says. '[only]I'm glad the doctor is involved.'"
 			
 After informing Watchett about Humboldt: 
 	say "[remove Humboldt tell suggestion]";
-	say "'That's very interesting. I'm sure the doctor knows what he's doing.'"
+	say "'[first time]That's very interesting. [only]I'm sure the doctor knows what he's doing.'"
 
-After informing Watchett about the key: say "'I told Mr. Wells that he should have a copy of that key made for times just like this,' she says, tutting softly to herself." 
+After informing Watchett about the key: say "'I always told Mr. Wells we should have had a copy made for times just like this,' she says[first time], tutting softly to herself[only]." 
 
-After informing Watchett about the orrery: say "'Keeps perfect time,' she says. Nothing like it I've ever seen elsewhere."
+After informing Watchett about the orrery: say "[first time]'Keeps perfect time,' she says. [only]'Nothing like it in all of London.'"
 
-After informing Watchett about time travel: say "'That's quite the imagination you have sir. You should consider writing books like that Frenchman Mr. Verne.'"
+After informing Watchett about time travel: say "'That's quite the imagination you have, sir[first time]. Perhaps you should consider writing books like that Frenchman, Mr. Verne[only].'"
+
+Instead of informing Watchett about Gernsback: try quizzing Watchett about Gernsback.
 
 Section - Imploring - "Ask [someone] for ['text']"
 
@@ -3699,19 +3703,19 @@ Test exam-w with "examine watchett / examine watchet / examine mrs / examine mai
 
 Test greet-w with "say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett".
 
-Test ask-w with "a key / a workshop / a workshop door / a front door / a pocket watch / a orrery / a petal / a food / a her work / a poker / purloin poker / a poker / a experiments / a time travel".
+Test ask-w with "say hello to watchett / a workshop / ask watchett about workshop /a workshop door / ask watchett about workshop door / a front door / ask watchett about front door / ask watchett about outside / a pocket watch / ask watchett about pocket watch / a orrery / ask watchett about orrery / a petal / ask watchett about petal / a food / ask watchett about food / a her work / ask watchett about her work / a poker / purloin poker / ask watchett about poker / ask watchett about poker / a experiments / ask watchett about experiments / a time travel / ask watchett about time travel".
 
 Test ask-w-people with "say hello to watchett / ask watchett about wells / ask watchett about wells / ask watchett about humboldt / ask watchett about humboldt / ask watchett about gernsback / ask watchett about gernsback / ask watchett about watchett / ask watchett about watchett / ask watchett about herself."
 
-Test ask-w-key with "ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key."
+Test ask-w-key with "say hello to watchett / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key."
 
-Test tell-w with "t wells / t humboldt / t key / t orrery / t time travel".
+Test tell-w with "say hello to watchett / t wells / tell watchet about wells / t humboldt / tell watchett about humboldt / tell watchett about gernsback / t gernsback / t key / tell watchett about key / t orrery / tell watchett about orrery / t time travel / tell watchett about time travel".
 
 Test ask-for-w with "ask watchett for key / ask watchett for information".
 
-Test show-w with "show watchett poker / purloin poker / show watchett poker / show watchett pocket watch / show watchett snow".
+Test show-w with "say hi to watchett / show watchett poker / purloin poker / show watchett poker / show watchett poker / show watchett pocket watch / show watch to watchett / show watchett snow / purloin key / show key to watchett / show key to watchett / show key to watchett".
 
-Test basic-w with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for facts / ask watchett for details / ask watchett for ideas / ask watchett about experiments / show watch to watchett".
+Test basic-w with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for facts / ask watchett for details / ask watchett for ideas / ask watchett about experiments / ask watchett about experiments".
 
 
 Book - Humboldt 

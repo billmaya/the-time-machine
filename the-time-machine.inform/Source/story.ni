@@ -3539,12 +3539,11 @@ Book - Watchett
 Watchett is a female person.
 Watchett is in the Kitchen.
 The printed name of Watchett is "Mrs. Watchett". 
-The description of Watchett is "Wells['] steadfast aged housekeeper, she has been cleaning his house and cooking his meals for years. If you could steal her away from Wells you would in a heartbeat, but she would never leave him in a million years."
+The description of Watchett is "Wells['] steadfast housekeeper[first time]. Advanced in years, she has been cleaning his house and cooking his meals for years[only]."
 
 Watchett is major.
 
-Understand "mrs" or "watchett" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
-[See §17.3. Overriding existing commands - New tokens for ^]
+Understand "mrs" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
 
 Part - Suggestions 
 
@@ -3692,6 +3691,8 @@ To say key-end:
 		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
 
 Part - Testing
+
+Test greet-w with "say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett".
 
 Test ask-w with "a key / a workshop / a workshop door / a front door / a pocket watch / a orrery / a petal / a food / a her work / a poker / purloin poker / a poker / a experiments / a time travel".
 

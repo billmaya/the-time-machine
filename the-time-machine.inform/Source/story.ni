@@ -3543,7 +3543,7 @@ The description of Watchett is "Wells['] steadfast housekeeper[first time]. Elde
 
 Watchett is major.
 
-Understand "mrs" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" as Watchett.
+Understand "mrs" or "watchet" or "cook" or "maid" or "housekeeper" or "old lady" or "herself" as Watchett.
 
 Part - Suggestions 
 
@@ -3581,13 +3581,12 @@ Section - Quizzing - "Ask [someone] about [thing]"
 
 After quizzing Watchett about Wells: say "[remove Wells ask suggestion][add experiments ask suggestion]'Always working too hard on his experiments, he is[first time]. He probably just needs a bit of a rest[only].'"
 
-After quizzing Watchett about Humboldt: say "'The doctors has been a friend of Mr. Wells for years[first time]. Not as long as you but almost as long[only].'"
+After quizzing Watchett about Humboldt: say "'I know of no one better qualified to help Mr. Wells with his medical condition[first time]. You know, he's known Mr. Wells for quite a while, almost as long as you[only].'"
 
-After quizzing Watchett about Gernsback: say "WATCHETT'S RESPONSE ABOUT GERNSBACK."
+After quizzing Watchett about Gernsback: say "'I'd keep my eye on that one if I were you[first time]. Quite the successful businessman, he is, but some of the things I've heard make me wonder if he wouldn't sell his own mother for a pound[only].'"
 
-After quizzing Watchett about Watchett: say "[remove self-suggestion ask suggestion]'Can I help you in any other way?' she says, almost apologizing[first time]. 'I'm not really one to talk about myself.'[only]
-
-'I[']m really not one to talk about myself,' she says.[run paragraph on][first time]'Can I help you in any other way?'[only]"
+After quizzing Watchett about Watchett for the first time: say "[remove self-suggestion ask suggestion]'Can I help you in any other way?' she says. 'I'm not really one to talk about myself.'"
+After quizzing Watchett about Watchett for more than one time: say "[remove self-suggestion ask suggestion]'Can I help you in any other way?'"
 
 After quizzing Watchett about the key:
 	say "'[key-start] [key-middle] [key-end]'[line break]";
@@ -3712,7 +3711,7 @@ Test ask-for-w with "ask watchett for key / ask watchett for information".
 
 Test show-w with "show watchett poker / purloin poker / show watchett poker / show watchett pocket watch / show watchett snow".
 
-Test basic-w with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for experiments / show watch to watchett".
+Test basic-w with "say hi to watchett / ask watchett for key / ask watchett about wells / tell watchett about wells / ask watchett for information / ask watchett for facts / ask watchett for details / ask watchett for ideas / ask watchett about experiments / show watch to watchett".
 
 
 Book - Humboldt 

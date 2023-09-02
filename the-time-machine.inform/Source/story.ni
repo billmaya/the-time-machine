@@ -3556,7 +3556,7 @@ Part - Conversation
 Chapter - Hello
 
 After saying hello to Watchett when the greeting type is explicit: 
-	say "[first time]Mrs. Watchett pauses in her work. [only][one of]'Good evening sir,' she replies.[or]'Yes sir?' she replies.[or]'Can I help you sir?' she replies.[at random]"
+	say "[first time]Mrs. Watchett pauses in her work. [only][one of]'Good evening sir.'[or]'Yes sir?'[or]'Can I help you sir?'[at random]"
 
 After saying hello to Watchett when the greeting type is implicit:
 	say "Mrs. Watchett pauses briefly before answering. [run paragraph on]"
@@ -3585,7 +3585,7 @@ After quizzing Watchett about Humboldt: say "'I know of no one better qualified 
 
 After quizzing Watchett about Gernsback: say "'I'd keep my eye on that one if I were you[first time]. Quite the successful businessman, he is, but some of the things I've heard make me wonder if he wouldn't sell his own mother for a pound[only].'"
 
-After quizzing Watchett about Watchett for the first time: say "[remove self-suggestion ask suggestion]'Can I help you in any other way?' she says. 'I'm not really one to talk about myself.'"
+After quizzing Watchett about Watchett for the first time: say "[remove self-suggestion ask suggestion]'Can I help you in any other way? I'm not really one to talk about myself.'"
 After quizzing Watchett about Watchett for more than one time: say "[remove self-suggestion ask suggestion]'Can I help you in any other way?'"
 
 After quizzing Watchett about the key:
@@ -3605,11 +3605,11 @@ After quizzing Watchett about the front door: say "'Best you warm up by the fire
 
 After quizzing Watchett about the pocket watch: say "'That looks like Mr. Wells['] watch[first time]. I'd put it on the desk in the library for when he gets back, if I were you[only].'"
 
-After quizzing Watchett about the orrery: say "'Built by Mr. Wells[first time],' she says. 'He's quite the inventor, he is[only].'"
+Instead of quizzing Watchett about the orrery: try informing Watchett about the orrery.
 
 After quizzing Watchett about the petal: say "'Very pretty, I guess[first time]. But you cannot tell much about a flower from a single petal[only].'"
 
-After quizzing Watchett about food: say "[first time]'Still hungry after that meal all of you had?' she says. [only]'Perhaps a cup of tea to calm your nerves?'" 
+After quizzing Watchett about food: say "'[first time]Still hungry after that meal all of you had? [only]Perhaps a cup of tea to calm your nerves?'" 
 
 After quizzing Watchett about her-work: 
 	say "[remove her-work ask suggestion]";
@@ -3624,7 +3624,6 @@ After quizzing Watchett about poker:
 After quizzing Watchett about experiments:
 	say "[remove experiments ask suggestion]";
 	say "'I wouldn't know anything about Mr. Wells['] experiments[first time]. He never talked to me about the work he did in his workshop[only].'"
-	[DEL say "'I wouldn't know anything about Mr. Wells['] experiments. He never talked to me about his work. Did all those things in his workshop behind closed doors. Raised a dreadful racket sometimes, I tell you.'"]
 
 After quizzing Watchett about time travel:
 	say "[remove time travel ask suggestion]";
@@ -3632,13 +3631,15 @@ After quizzing Watchett about time travel:
 
 Section - Informing - "Tell [someone] about [thing]"
 
-After informing Watchett about Wells: say "'[first time]Very sad,' she says. '[only]I'm glad the doctor is involved.'"
+After informing Watchett about Wells: say "'[first time]Very sad,' she says. [only]I'm glad the doctor is involved.'"
 			
 After informing Watchett about Humboldt: 
 	say "[remove Humboldt tell suggestion]";
 	say "'[first time]That's very interesting. [only]I'm sure the doctor knows what he's doing.'"
 
-After informing Watchett about the key: say "'I always told Mr. Wells we should have had a copy made for times just like this,' she says[first time], tutting softly to herself[only]." 
+After informing Watchett about the key for the first time: say "'I always told Mr. Wells we should have had a copy made for times just like this.'" 
+Understand "copy" as key.
+After informing Watchett about the key for more than one time: say "'There's no copy so you'll just have to find the original.'"
 
 After informing Watchett about the orrery: say "[first time]'Keeps perfect time,' she says. [only]'Nothing like it in all of London.'"
 

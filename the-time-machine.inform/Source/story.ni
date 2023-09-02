@@ -3496,7 +3496,8 @@ Book - Familiarity
 
 Wells is a familiar man.
 Humboldt is a familiar man.
-Watchett is a familiar woman. [If commented out = "Dr. Humboldt does not respond."]
+Watchett is a familiar woman.
+Gernsback is a familiar man.
 
 The key is familiar. The printed name is "workshop key".
 The workshop-room is a familiar thing. Understand "workshop" as workshop-room. The printed name of workshop-room is "workshop".

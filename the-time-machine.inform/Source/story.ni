@@ -3345,7 +3345,7 @@ The Eating Area is underground.
 The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
-The description of Eating Area is "Rows of parallel troughs in various states of repair fill this room. There are exits to the north and south."
+The description of Eating Area is "Rows of parallel troughs in various states of repair fill this room[first time]. Only a few are still intact and one or two appear to have been used recently[only]. There are exits to the north and south."
 
 The visibility of Eating Area is night.
 
@@ -3355,14 +3355,14 @@ The troughs are a thing.
 The troughs are in the Eating Area.
 The troughs are scenery.
 
-The description of the troughs are "Only a few are still intact and only one or two appear to have been used recently."
+[The description of the troughs are "Only a few are still intact[first time]. One or two appear to have been used recently[only]."]
 
 Understand "trough" or "meal" or "remains" or "recent meal" or "grisly" as troughs.
 
 Instead of examining the troughs: try searching the troughs.
 
 Instead of searching the troughs for the first time, say "Aside from the grisly remains of a recent meal you find nothing else even remotely interesting."
-Instead of searching the troughs for the second time, say "You fined nothing else of interest."
+Instead of searching the troughs for the second time, say "You find nothing else of interest."
 Instead of searching the troughs for more than two times, say "There really isn't anything else to find here."
 
 Chapter - Abattoir
@@ -3395,7 +3395,9 @@ Section - Channels
 The channels are a thing.
 The channels are in the Abattoir.
 The channels are scenery. 
-The description of channels are "Cut into the surface of the metal table, the channels appear to be designed to drain excess liquid off the table.[first time] The pile of bloodstained clothing just happens to be underneath the channel exit point.[only]"
+The description of channels are "Cut into the surface of the metal table, the channels appear to be designed to let excess liquid drain off the table.[first time] The pile of bloodstained clothing just happens to be underneath one of the channel exit points.[only]"
+
+Understand "blood" as channels.
 
 Section - Pile of Bloodstained Clothing
 
@@ -3418,7 +3420,7 @@ Section - Tunic
 The tunic is a thing.
 The tunic is in the Abattoir.
 The tunic is undescribed.
-The description of the tunic is "[if the tunic is unfound]You can't see any such thing.[otherwise if the tunic is not part of the poker]A small Eloi tunic, somehow untouched by blood, made up a dense weave of cottoney fibers.[otherwise]Wrapped around the end of the poker.[end if]"
+The description of the tunic is "[if the tunic is unfound]You can't see any such thing.[otherwise if the tunic is not part of the poker]A small Eloi tunic, untouched by blood, made up of a dense weave of cottoney fibers.[otherwise]Wrapped around the end of the poker.[end if]"
 
 The printed name of tunic is "Eloi tunic".
 
@@ -3448,7 +3450,7 @@ The printed name of holding-cell-gate is "rusted gate".
 Chapter - Holding Cell
 
 The Holding Cell is underground.
-The Holding Cell is south of the holding-cell-gate. [Abattoir.]
+The Holding Cell is south of the holding-cell-gate.
 	
 The description of Holding Cell is "A small cell large enough to hold two or three Eloi. The exit is to the north through a rusted gate."
 	
@@ -3457,7 +3459,7 @@ The visibility of Holding Cell is twilight. [day.]
 Instead of exiting when the player is in the Holding Cell:
 	try going north.
 	
-Before going north when the player is in the Holding Cell:
+Before going north when the player is in the Holding Cell: [TBD I don't think this code is used]
 	if player-has-light is false:
 		say "Weena grabs at you as you attempt to leave, obviously wanting to follow you into the darkness but terrified to do so without a light."
 

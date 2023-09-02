@@ -3539,7 +3539,7 @@ Book - Watchett
 Watchett is a female person.
 Watchett is in the Kitchen.
 The printed name of Watchett is "Mrs. Watchett". 
-The description of Watchett is "Wells['] steadfast housekeeper[first time]. Advanced in years, she has been cleaning his house and cooking his meals for years[only]."
+The description of Watchett is "Wells['] steadfast housekeeper[first time]. Elderly, she has been cleaning house and cooking meals for his family for years[only]."
 
 Watchett is major.
 
@@ -3579,11 +3579,15 @@ After requesting Watchett for information: say "'I'm afraid you'll have to be mo
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
-After quizzing Watchett about Wells: say "[remove Wells ask suggestion][add experiments ask suggestion]'Always working too hard on his experiments, he is. He probably just needs a bit of a rest.'"
+After quizzing Watchett about Wells: say "[remove Wells ask suggestion][add experiments ask suggestion]'Always working too hard on his experiments, he is[first time]. He probably just needs a bit of a rest[only].'"
 
-After quizzing Watchett about Humboldt: say "'The doctors has been a friend of Mr. Wells for years. Not as long as you but almost as long.'"
+After quizzing Watchett about Humboldt: say "'The doctors has been a friend of Mr. Wells for years[first time]. Not as long as you but almost as long[only].'"
 
-After quizzing Watchett about Watchett: say "[remove self-suggestion ask suggestion]'I[']m really not one to talk about myself,' she says. 'Can I help you in any other way?'"
+After quizzing Watchett about Gernsback: say "WATCHETT'S RESPONSE ABOUT GERNSBACK."
+
+After quizzing Watchett about Watchett: say "[remove self-suggestion ask suggestion]'Can I help you in any other way?' she says, almost apologizing[first time]. 'I'm not really one to talk about myself.'[only]
+
+'I[']m really not one to talk about myself,' she says.[run paragraph on][first time]'Can I help you in any other way?'[only]"
 
 After quizzing Watchett about the key:
 	say "'[key-start] [key-middle] [key-end]'[line break]";
@@ -3591,15 +3595,15 @@ After quizzing Watchett about the key:
 
 After quizzing Watchett about workshop-room: 
 	say "[remove workshop-room ask suggestion]";
-	say "'I've never been in there, not even to clean. Mr. Wells had the only key to that door.'"
+	say "'I've never been in there, not even to clean. Mr. Wells had the only key.'"
 
 After quizzing Watchett about the workshop-door: 
 	say "[remove workshop-door ask suggestion]";
 	say "'Locked, always locked. Mr. Wells had the only key.'"
 
-After quizzing Watchett about the front door: say "'Best you warm up by the fire first. Much too cold to be outside the way you're dressed.'"
+After quizzing Watchett about the front door: say "'Best you warm up by the fire first[first time]. Much too cold to be outside the way you're dressed[only].'"
 
-After quizzing Watchett about the pocket watch: say "'That looks like Mr. Wells['] watch. I'd put it on the desk in the library for when he gets back.'"
+After quizzing Watchett about the pocket watch: say "'That looks like Mr. Wells['] watch[first time]. I'd put it on the desk in the library for when he gets back, if I were you[only].'"
 
 After quizzing Watchett about the orrery: say "'Built by Mr. Wells,' she says. 'He's quite the inventor, he is.'"
 
@@ -3692,9 +3696,15 @@ To say key-end:
 
 Part - Testing
 
+Test exam-w with "examine watchett / examine watchet / examine mrs / examine maid / examine cook / examine housekeeper / examine old lady."
+
 Test greet-w with "say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett / say hello to watchett / say goodbye to watchett".
 
 Test ask-w with "a key / a workshop / a workshop door / a front door / a pocket watch / a orrery / a petal / a food / a her work / a poker / purloin poker / a poker / a experiments / a time travel".
+
+Test ask-w-people with "say hello to watchett / ask watchett about wells / ask watchett about wells / ask watchett about humboldt / ask watchett about humboldt / ask watchett about gernsback / ask watchett about gernsback / ask watchett about watchett / ask watchett about watchett / ask watchett about herself."
+
+Test ask-w-key with "ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key."
 
 Test tell-w with "t wells / t humboldt / t key / t orrery / t time travel".
 

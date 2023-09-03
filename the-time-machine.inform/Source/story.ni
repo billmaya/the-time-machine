@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43647]
+[ WORDS - 43611]
 
 Table of Releases
 release	notes
@@ -3588,10 +3588,6 @@ After quizzing Watchett about Gernsback: say "'I'd keep my eye on that one if I 
 After quizzing Watchett about Watchett for the first time: say "[remove self-suggestion ask suggestion]'Can I help you in any other way? I'm not really one to talk about myself.'"
 After quizzing Watchett about Watchett for more than one time: say "[remove self-suggestion ask suggestion]'Can I help you in any other way?'"
 
-After quizzing Watchett about the key:
-	say "'[key-start] [key-middle] [key-end]'[line break]";
-	now watchett-key is true.
-
 After quizzing Watchett about workshop-room: 
 	say "[remove workshop-room ask suggestion]";
 	say "'I've never been in there, not even to clean[first time]. Mr. Wells had the only key[only].'"
@@ -3682,21 +3678,26 @@ Default ask-for response for Watchett:
 
 Part - Key
 
-[See Writing §11.5. Conditions and question ]
+[Writing §11.5. Conditions and question ]
 watchett-key is a truth state that varies.
 watchett-key is false.
 
-To say key-start:
-	say "Mr. Wells always kept it on his person.[no line break]".
-
 To say key-middle:
-	say "[one of]That's where it still must be.[no line break][or]But it never stayed there for long.[no line break][or]But it was always falling out of his pocket at the drop of a hat.[no line break][or]But he was always losing it.[no line break][at random]".
+	say "[one of]But he was always misplacing it[or]But it was always falling out of his pocket[or]But it never stayed there for long[then at random]".
 
-To say key-end:
-	if the player has the key:
-		say "Looks like you found it.[no line break]";
-	otherwise:
-		say "[one of]Perhaps it's somewhere around the house.[no line break][or]The places I'd find it.[no line break][or]Where was the last place you saw Mr. Wells?[no line break][at random]".
+After quizzing Watchett about the key for the first time: 
+	say "'Mr. Wells always kept it on his person. [key-middle]. Where was the last place you saw Mr. Wells?'";
+	now watchett-key is true. 
+
+After quizzing Watchett about the key for the second time:
+	say "'Mr. Wells always kept it on his person. [key-middle].'";
+
+After quizzing Watchett about the key for the third time:
+	say "'Mr. Wells always kept it on his person. [key-middle].'";
+
+After quizzing Watchett about the key for more than three times:
+	say "'Mr. Wells always kept it on his person.'".
+
 
 Part - Testing
 
@@ -3708,7 +3709,7 @@ Test ask-w with "say hello to watchett / a workshop / ask watchett about worksho
 
 Test ask-w-people with "say hello to watchett / ask watchett about wells / ask watchett about wells / ask watchett about humboldt / ask watchett about humboldt / ask watchett about gernsback / ask watchett about gernsback / ask watchett about watchett / ask watchett about watchett / ask watchett about herself."
 
-Test ask-w-key with "say hello to watchett / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key."
+Test ask-w-key with "say hello to watchett / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key / ask watchett about key."
 
 Test tell-w with "say hello to watchett / t wells / tell watchet about wells / t humboldt / tell watchett about humboldt / tell watchett about gernsback / t gernsback / t key / tell watchett about key / t orrery / tell watchett about orrery / t time travel / tell watchett about time travel".
 

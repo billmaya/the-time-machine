@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[ WORDS - 43611]
+[WORDS - 43610]
 
 Table of Releases
 release	notes
@@ -738,6 +738,10 @@ Test success-2 with "show weena the petal / enter time machine / push lever / ex
 Test rescue-3 with "south / light match / north / north / south / light match / north / up / light match / north / up / down / light match / up / up / up / south / up / up."
 
 Test success-3 with "show weena the petal / enter time machine / push lever / exit / show flower to humboldt."
+	
+[----------]
+
+Test go-end with "north / purloin key / purloin orrery fuse / north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse / put orrery fuse in fuse holder / push lever / push lever / exit."
 
 
 Part - Release
@@ -3758,7 +3762,6 @@ After saying hello to Humboldt when the greeting type is explicit: [or the greet
 		say "[add Weena tell suggestion]";
 		say "[add Morlocks tell suggestion]";
 	if the Opening Scene is happening:
-		[say "OPENING SCENE RUNNING."]
 		say "[add self-suggestion ask suggestion]";
 		say "[add Wells ask suggestion]";
 		say "[add workshop-room ask suggestion]";
@@ -3780,7 +3783,6 @@ After saying hello to Humboldt when the greeting type is implicit:
 		say "[add pocket watch ask suggestion]";
 		say "[add time travel ask suggestion]".
 
-test go-end with "n / test goto-workshop / get in time machine / unlock hinged panel with key / open hinged panel / take time machine fuse / purloin orrery fuse / put orrery fuse in time machine fuse holder / exit / push lever."
 
 Chapter - Goodbye
 

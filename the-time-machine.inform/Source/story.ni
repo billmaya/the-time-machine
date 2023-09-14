@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43648]
+[WORDS - 43617]
 
 Table of Releases
 release	notes
@@ -3746,8 +3746,8 @@ humboldt-endgame-begins is false.
 
 Part - Suggestions
 
-The ask-suggestions are { [if the Opening Scene is happening] self-suggestion, Wells, workshop-room, pocket watch, time travel [end if] }.
-The tell-suggestions are { [if the Ending Scene is happening] time machine, future, Eloi, Weena, Morlocks [end if] }.
+[The ask-suggestions are { }.]
+[The tell-suggestions are { }.]
 [The other-suggestions are { }.]
 
 Part - Conversation
@@ -3770,21 +3770,19 @@ After saying hello to Humboldt when the greeting type is explicit: [or the greet
 
 [Unnecessary line break between implicit greeting of Humboldt and his response TBD]
 After saying hello to Humboldt when the greeting type is implicit:
-	say "Dr. Humboldt pauses for a moment before answering. [run paragraph on]".
-
-[	if the Ending Scene is happening:
+	say "Dr. Humboldt pauses for a moment before answering. [run paragraph on]";
+	if the Ending Scene is happening:
 		say "[add time machine tell suggestion]";
 		say "[add future tell suggestion]";
 		say "[add Eloi tell suggestion]";
 		say "[add Weena tell suggestion]";
-		say "[add Morlocks tell suggestion]".
+		say "[add Morlocks tell suggestion]";
 	if the Opening Scene is happening:
 		say "[add self-suggestion ask suggestion]";
 		say "[add Wells ask suggestion]";
 		say "[add workshop-room ask suggestion]";
 		say "[add pocket watch ask suggestion]";
 		say "[add time travel ask suggestion]".
-]
 
 Section - Tests
 

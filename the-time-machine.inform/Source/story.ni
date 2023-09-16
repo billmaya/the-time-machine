@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43683]
+[WORDS - 43689]
 
 Table of Releases
 release	notes
@@ -3908,9 +3908,6 @@ After quizzing Humboldt about Weena during the Opening Scene:
 After quizzing Humboldt about Morlocks during the Opening Scene:
 	say "[remove Morlocks ask suggestion]";
 	say "[figment-imagination]".
-
-[DEL After quizzing Humboldt about future-people during the Opening Scene:
-	say "FUTURE PEOPLE."]
 				
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -3921,6 +3918,10 @@ Before informing Humboldt about the workshop-room during the Opening Scene:
 Section - Imploring - "Ask [someone] for ['text']"
 
 Section - Showing
+
+Before showing the key to Humboldt during the Opening Scene: 
+	say "You can't see any such thing.";
+	stop the action.
 
 After showing noun to Humboldt during Opening Scene: try quizzing Humboldt about noun.
 After showing something to Humboldt during Opening Scene: say "SHOWING [noun]".

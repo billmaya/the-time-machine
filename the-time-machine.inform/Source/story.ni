@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43617]
+[WORDS - 43683]
 
 Table of Releases
 release	notes
@@ -3538,6 +3538,7 @@ information is a subject.
 
 future-people is a subject.
 
+
 Book - Watchett
 
 Watchett is a female person.
@@ -3850,12 +3851,12 @@ After quizzing Humboldt about Wells during Opening Scene:
 	say "[remove Wells ask suggestion]";
 	say "[add diagnosis ask suggestion]";
 	say "[add examination ask suggestion]";
-	say "'I don't know enough to make a proper diagnosis right now. I'll know more after we get him to the hospital, calm him down, and do a proper examination.'"
+	say "'I'll need to make a proper diagnosis after I get him to the hospital and do a proper examination.'"
 	
 After quizzing Humboldt about workshop-room during Opening Scene: 
 	say "[remove workshop-room ask suggestion]";
 	say "[add key ask suggestion]";
-	say "'Never seen the inside of it. I don't think anyone has. Best to ask Mrs. Watchett. She might have a key.'"
+	say "'I don't think anyone has ever seen the inside of it[first time]. Best to ask Mrs. Watchett. She might have a key[only].'"
 	
 After quizzing Humboldt about diagnosis during Opening Scene: 
 	say "[remove diagnosis ask suggestion]";
@@ -3863,25 +3864,39 @@ After quizzing Humboldt about diagnosis during Opening Scene:
 
 After quizzing Humboldt about examination during Opening Scene: 
 	say "[remove examination ask suggestion]";
-	say "'First thing to do is get him to my hospital. Get him admitted and sedated. Probably won't be able to do a proper examination until he's calmed down.'";
+	say "'Once I get him get him to the hospital, admitted and sedated.'";
 
 After quizzing Humboldt about time machine during Opening Scene:
 	say "[remove time machine ask suggestion]"; 
-	say "'Nonsense,' Humboldt says. 'Some scientific figmant of his imagination he's dreamed up to make up for some failed hypothesis. I've seen it a hundred times with these scientific types when one of their pet theories goes wrong. Never underestimate the mind's power to deceive and reprogram itself, my friend.'";
+	say "'A figmant of his imagination dreamed up to compensate for a pet theory gone wrong, I believe. Seen it a hundred times with these tightly wound chaps.' He gives you a condescenting pat on the shoulder. 'Never underestimate the mind's power to deceive itself, my friend.'";
 
 After quizzing Humboldt about pocket watch during Opening Scene:
 	say "[remove pocket watch ask suggestion]";
-	say "'Looks like Wells['] watch. I[']ll have my hands full with him so why don't you hold onto it until we get back.'"
+	say "'I[']ll have my hands full with Wells so why don't you hold onto his watch until I get back.'"
 
 After quizzing Humboldt about the petal during Opening Scene: 
-	say "'You going to find the rest of it so we can convince Wells that his story is nonsense, a figment of his imagination.'"
-
+	if the player has the petal:
+		say "'Find the rest of that flower so we can convince Wells that his story is nonsense.'";
+	otherwise:
+		say "You can't see any such thing."
+	
 After quizzing Humboldt about the key during Opening Scene: 
 	say "[remove key ask suggestion]";
 	say "'You[']ll have to ask Mrs. Watchett about that.'"
 
-To say figment-imagination: say "'Figment of Wells['] imagination I assume.'"
-
+ask-imagination is a number that varies.
+ask-imagination is 0.
+To say figment-imagination: 
+	now ask-imagination is ask-imagination + 1;
+	if ask-imagination is 1:
+		say "'A figment of Wells['] imagination, I assume.'";
+	if ask-imagination is 2:
+		say "'Another manufactured delusion, I imagine.'";
+	if ask-imagination is 3:
+		say "'All part of his sickness.'";
+	if ask-imagination is greater than 3:
+		say "A concerned look crosses [Humboldt]'s face. 'Your obsession with Wells' story is starting to worry me a bit.'"
+	
 After quizzing Humboldt about Eloi during the Opening Scene:
 	say "[remove Eloi ask suggestion]";
 	say "[figment-imagination]".
@@ -3893,6 +3908,9 @@ After quizzing Humboldt about Weena during the Opening Scene:
 After quizzing Humboldt about Morlocks during the Opening Scene:
 	say "[remove Morlocks ask suggestion]";
 	say "[figment-imagination]".
+
+[DEL After quizzing Humboldt about future-people during the Opening Scene:
+	say "FUTURE PEOPLE."]
 				
 Section - Informing - "Tell [someone] about [thing]"
 

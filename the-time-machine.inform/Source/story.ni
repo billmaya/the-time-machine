@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43689]
+[WORDS - 43703 ]
 
 Table of Releases
 release	notes
@@ -3815,10 +3815,15 @@ After quizzing Humboldt about the poker: say "'Where did you get that?'"
 	
 After quizzing Humboldt about Humboldt: 
 	say "[remove self-suggestion ask suggestion]";
-	say "Dr. Humboldt is much too professional and polite to start rambling on about himself, especially in this sort of situation."
+	say "[first time]From past experience, you know that [only][Humboldt] is extremely reticent when it comes to discussing things outside his profession." 
 
 After quizzing Humboldt about player: say "Perhaps you should focus on the situation at hand instead of yourself."
-After quizzing Humboldt about Watchett: say "'I think she is in the kitchen.'"
+
+After quizzing Humboldt about Watchett: 
+	if Watchett is nowhere:
+		say "'I think she has retired for the evening.'";
+	otherwise:
+		say "'I think she is in the kitchen.'"
 	
 After quizzing Humboldt about the newspaper: say "He throws it on the workbench without a second glance. 'I've already read it.'"
 
@@ -3839,7 +3844,7 @@ After showing something to Humboldt: say "SHOWING [noun]".
 	
 Section - Testing
 	
-Test both-h with "say hello to humboldt / ask humboldt about time travel / ask humboldt about poker / ask humboldt about himself / ask humboldt about watchett / ask humboldt about self / tell humboldt about wells / tell humboldt about workshop / tell humboldt about time machine".
+Test both-h with "say hello to humboldt / ask humboldt about time travel / ask humboldt about the future / ask humboldt about poker / ask humboldt about himself / ask humboldt about watchett / ask humboldt about self / tell humboldt about wells / tell humboldt about workshop / tell humboldt about time machine".
 
 Chapter - Opening Scene Only
 
@@ -3868,7 +3873,7 @@ After quizzing Humboldt about examination during Opening Scene:
 
 After quizzing Humboldt about time machine during Opening Scene:
 	say "[remove time machine ask suggestion]"; 
-	say "'A figmant of his imagination dreamed up to compensate for a pet theory gone wrong, I believe. Seen it a hundred times with these tightly wound chaps.' He gives you a condescenting pat on the shoulder. 'Never underestimate the mind's power to deceive itself, my friend.'";
+	say "'A figmant of his imagination dreamed up to compensate for a pet theory gone wrong, I believe. [first time].' He gives you a condescenting pat on the shoulder. 'Never underestimate the mind's power to deceive itself, my friend[only].'";
 
 After quizzing Humboldt about pocket watch during Opening Scene:
 	say "[remove pocket watch ask suggestion]";

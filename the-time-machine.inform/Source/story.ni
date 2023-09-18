@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43718 ]
+[WORDS - 43859 ]
 
 Table of Releases
 release	notes
@@ -3850,6 +3850,10 @@ Section - Showing
 	
 After showing noun to Humboldt: try quizzing Humboldt about noun.
 After showing something to Humboldt: say "SHOWING [noun]".
+
+Test show-h with "say hello to humboldt / show poker to humboldt / purloin poker / show poker to humboldt / show petal to humboldt / purloin petal / show petal to humboldt / show fuse to humboldt / purloin time machine fuse / show fuse to humboldt / show watch to humboldt / take watch / show watch to humboldt / show key to humboldt / show key to humboldt / show key to humboldt /show key to humboldt / show key to humboldt."
+
+Test show-f with "say hello to humboldt / show time machine fuse to humboldt / show orrery fuse to humboldt / show fuse to humboldt / purloin time machine fuse / purloin orrery fuse / show time machine fuse to humboldt / show orrery fuse to humboldt / show fuse to humboldt."
 	
 Section - Testing
 	
@@ -3972,16 +3976,16 @@ After quizzing Humboldt about time machine during Ending Scene:
 	say "[if the time machine is not nowhere]'Outside my area of expertise, I'm afraid.'[otherwise]'Don't see anything remotely like that.'[end if]"
 
 After quizzing Humboldt about pocket watch during Ending Scene: 
-	say "'I[']m glad to see that you have held onto Wells['] watch. He was asking about it.'"
+	say "'I'm glad to see that you have held onto that[first time]. Wells was asking about it[only].'"
 
 After quizzing Humboldt about the petal during Ending Scene: 
-	say "'I gave that to you earlier. You were supposed to find the rest of the flower so we could convince Wells that his story was nonsense, a figment of his imagination. Did you find it?'"
+	say "'You were supposed to find the rest of the flower so we could convince Wells that his story was nonsense. Did you find it?'"
 
 After quizzing Humboldt about the key during Ending Scene:
-	say "'[one of]I knew you would find it. [or]Mrs. Watchett knew where it was, I bet. [or]Good job. [or]Obviously it[']s the workshop key since we[']re standing in the bloody place. [at random]What have you found?'"
+	say "'[one of]I knew you would find it[or]Good job[or]Mrs. Watchett knew where it was, I bet[or]Obviously it's the workshop key since we're standing in the bloody place[then at random]. What have you found?'"
 
 After quizzing Humboldt about the breaker during the Ending Scene:
-	say "'Looks like it fits into that contraption Wells has constructed.'"
+	say "Humboldt briefly examines the fuse, turning it over in his hands, before returning it to you. 'For all I know it's part of that machine of Wells.'"
 
 After quizzing Humboldt about Eloi during the Ending Scene:
 	say "[remove Eloi ask suggestion]"; [NO ASK SUGGESTION]
@@ -3996,7 +4000,7 @@ After quizzing Humboldt about Morlocks during the Ending Scene:
 	say "[figment-imagination]".
 
 After quizzing Humboldt about the fuse-orrery during the Ending Scene: 
-	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you." [BURNT OUT vs. WORKING ?]
+	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
 
 Section - Informing - "Tell [someone] about [thing]"
 

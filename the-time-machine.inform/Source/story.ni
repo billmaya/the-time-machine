@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43859 ]
+[WORDS - 43967 ]
 
 Table of Releases
 release	notes
@@ -741,7 +741,9 @@ Test success-3 with "show weena the petal / enter time machine / push lever / ex
 	
 [----------]
 
-Test go-end with "north / purloin key / purloin orrery fuse / north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse / put orrery fuse in fuse holder / push lever / push lever / exit."
+Test go-end1 with "north / purloin key / purloin orrery fuse / north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse / put orrery fuse in fuse holder / push lever / push lever / exit."
+
+Test go-end2 with "north / purloin key / purloin orrery fuse / north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse / put orrery fuse in fuse holder / exit / push lever."
 
 
 Part - Release
@@ -3926,6 +3928,12 @@ After quizzing Humboldt about Weena during the Opening Scene:
 After quizzing Humboldt about Morlocks during the Opening Scene:
 	say "[remove Morlocks ask suggestion]";
 	say "[figment-imagination]".
+
+After quizzing Humboldt about the fuse-time-machine during the Opening Scene:
+	say "Humboldt briefly examines the fuse before returning it to you. 'I've never seen anything like this before.'"
+
+After quizzing Humboldt about the fuse-orrery during the Opening Scene: 
+	try quizzing Humboldt about the fuse-time-machine.
 				
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -3984,9 +3992,6 @@ After quizzing Humboldt about the petal during Ending Scene:
 After quizzing Humboldt about the key during Ending Scene:
 	say "'[one of]I knew you would find it[or]Good job[or]Mrs. Watchett knew where it was, I bet[or]Obviously it's the workshop key since we're standing in the bloody place[then at random]. What have you found?'"
 
-After quizzing Humboldt about the breaker during the Ending Scene:
-	say "Humboldt briefly examines the fuse, turning it over in his hands, before returning it to you. 'For all I know it's part of that machine of Wells.'"
-
 After quizzing Humboldt about Eloi during the Ending Scene:
 	say "[remove Eloi ask suggestion]"; [NO ASK SUGGESTION]
 	say "[figment-imagination]".
@@ -3999,8 +4004,14 @@ After quizzing Humboldt about Morlocks during the Ending Scene:
 	say "[remove Morlocks ask suggestion]"; [NO ASK SUGGESTION]
 	say "[figment-imagination]".
 
+After quizzing Humboldt about the fuse-time-machine during the Ending Scene:
+	if the time machine is not nowhere:
+		say "Humboldt briefly examines the fuse before returning it to you. 'I've never seen anything like that before. For all I know it's part of that machine over there.'";
+	otherwise:
+		say "Humboldt briefly examines the fuse before returning it to you. 'I've never seen anything like that before.'"
+		
 After quizzing Humboldt about the fuse-orrery during the Ending Scene: 
-	say "Humbold briefly examines the fuse, turning it over in his hands, before returning it to you."
+	try quizzing Humboldt about the fuse-time-machine.
 
 Section - Informing - "Tell [someone] about [thing]"
 

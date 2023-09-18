@@ -3823,6 +3823,12 @@ After quizzing Humboldt about Watchett:
 		say "'I think she has retired for the evening.'";
 	otherwise:
 		say "'I think she is in the kitchen.'"
+
+After quizzing Humboldt about Gernsback:
+	if Gernsback is nowhere:
+		say "'He's left for the evening.'";
+	otherwise:
+		say "'He's inside somewhere.'"
 	
 After quizzing Humboldt about the newspaper: 
 	if the player has the newspaper:
@@ -5266,6 +5272,7 @@ When Humboldt's Return begins:
 	now Humboldt is in the Workshop;
 	[now Humboldt is mobile;]
 	now Watchett is nowhere;
+	now Gernsback is nowhere;
 	refresh the list-characters window.
 
 Humboldt's Return ends when Humboldt is in the Workshop.

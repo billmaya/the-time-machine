@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43703 ]
+[WORDS - 43718 ]
 
 Table of Releases
 release	notes
@@ -3797,25 +3797,24 @@ Section - Requests - "Ask [someone] for [thing]"
 
 Section - Quizzing - "Ask [someone] about [thing]"
 	
-To say science-fiction: say "'Science fiction if you ask me.'"
+To say science-fiction: say "[one of]'Science fiction, if you ask me.'[or]'I haven't seen anything that makes me think it's all nothing but science fiction.'[at random]"
 
 After quizzing Humboldt about time travel:
 	say "[remove time travel ask suggestion]";
-	say "[add future ask suggestion]";
 	say "[add Eloi ask suggestion]";
 	say "[add Weena ask suggestion]";
 	say "[add Morlocks ask suggestion]";
 	say "[science-fiction]".
-	
-After quizzing Humboldt about the future:
-	say "[remove future ask suggestion]";
-	say "Thinking for a moment, he replies 'In due time.'"
 
-After quizzing Humboldt about the poker: say "'Where did you get that?'"
+After quizzing Humboldt about the poker: 
+	if the player has the poker:
+		say "'Best place for that is back by the fireplace.'";
+	otherwise:
+		say "You can't see any such thing."
 	
 After quizzing Humboldt about Humboldt: 
 	say "[remove self-suggestion ask suggestion]";
-	say "[first time]From past experience, you know that [only][Humboldt] is extremely reticent when it comes to discussing things outside his profession." 
+	say "[first time]From past experience, you know that [only][Humboldt][one of] is extremely reticent when it comes to discussing things outside his profession.[or] rarely discusses his personal matters with anyone outside his family.[at random]" 
 
 After quizzing Humboldt about player: say "Perhaps you should focus on the situation at hand instead of yourself."
 
@@ -3825,12 +3824,16 @@ After quizzing Humboldt about Watchett:
 	otherwise:
 		say "'I think she is in the kitchen.'"
 	
-After quizzing Humboldt about the newspaper: say "He throws it on the workbench without a second glance. 'I've already read it.'"
+After quizzing Humboldt about the newspaper: 
+	if the player has the newspaper:
+		say "'I've already read it.'";
+	otherwise:
+		say "You can't see any such thing."
 
 Section - Informing - "Tell [someone] about [thing]"	
 	
 After informing Humboldt about Wells:
-	say "Humboldt gives you an incredulous look as he listens to your laymans opinion on Wells's condition."
+	say "Humboldt has an incredulous look on his face as he listens to you laymans opinion on Wells['] condition."
 
 After informing Humboldt about the time machine:
 	try quizzing Humboldt about the second noun.
@@ -3844,7 +3847,7 @@ After showing something to Humboldt: say "SHOWING [noun]".
 	
 Section - Testing
 	
-Test both-h with "say hello to humboldt / ask humboldt about time travel / ask humboldt about the future / ask humboldt about poker / ask humboldt about himself / ask humboldt about watchett / ask humboldt about self / tell humboldt about wells / tell humboldt about workshop / tell humboldt about time machine".
+Test both-h with "say hello to humboldt / ask humboldt about time travel / ask humboldt about the future / ask humboldt about poker / ask humboldt about himself / ask humboldt about watchett / ask humboldt about gernsback / ask humboldt about self / tell humboldt about wells / tell humboldt about workshop / tell humboldt about time machine".
 
 Chapter - Opening Scene Only
 
@@ -3873,7 +3876,7 @@ After quizzing Humboldt about examination during Opening Scene:
 
 After quizzing Humboldt about time machine during Opening Scene:
 	say "[remove time machine ask suggestion]"; 
-	say "'A figmant of his imagination dreamed up to compensate for a pet theory gone wrong, I believe. [first time].' He gives you a condescenting pat on the shoulder. 'Never underestimate the mind's power to deceive itself, my friend[only].'";
+	say "'Probably a figmant of the imagination dreamed up to compensate for a theory gone wrong[first time].' He gives you a condescenting pat on the shoulder. 'Never underestimate the mind's power to deceive itself, my friend[only].'";
 
 After quizzing Humboldt about pocket watch during Opening Scene:
 	say "[remove pocket watch ask suggestion]";
@@ -3994,12 +3997,8 @@ Section - Informing - "Tell [someone] about [thing]"
 After informing Humboldt about the petal during the Ending Scene: 
 	say "'I know all that. But did you find the rest of the flower?'"
 
-After informing Humboldt about the time machine during the Ending Scene:
-	say "'Impressive.'[no line break] [first time] Humboldt glances over the product of Wells['] experiments. 'If we could only prove it does what Wells say it's designed to do then our problems would be solved.[no line break][only] He turns back towards you. 'But what about finding that flower that goes with the petal I gave you earlier?'"
-
-[Before informing Humboldt about the workshop-room during the Ending Scene: 
-	try quizzing Humboldt about the second noun;
-	stop the action.]
+After informing Humboldt about the time machine during the Ending Scene: [Line break not added after 2nd response TBD]
+	say "[first time]Humboldt glances over the apparatus. [only]'[first time]Impressive. [only]If we could only prove it does what Wells says it's designed to do than our problem would be solved.'[no line break][first time] He turns back towards you. 'But what about finding the rest of that flower?[only]".
 
 After informing Humboldt about the workshop-room during the Ending Scene: 
 	say "Humboldt listens dispassionately as you enthusiastically point out various areas of the workshop, a nonplussed look on his face."

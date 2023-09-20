@@ -3971,13 +3971,13 @@ After quizzing Humboldt about Wells during Ending Scene:
 	say "'He's sedated and resting.'"
 
 After quizzing Humboldt about workshop-room during Ending Scene: 
-	say "Humboldt looks around the workshop. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]the workbench[or]the time machine[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random]' is his only comment."
+	say "Humboldt looks around the workshop. He examines [one of]some machinery[or]some tools[or]the blackboard equations[or]the blackboard diagrams[or]the workbench[or]the time machine[at random]. '[one of]Interesting[or]Fascinating[or]Hmm[or]That's odd[at random].'"
 
 After quizzing Humboldt about diagnosis during Ending Scene: 
-	say "'Unless you found some new evidence it doesn't look good for Wells. He still insists he travelled to the year 802,701 A.D.'"
+	say "'Wells is still convinced that he traveled through time to the year 802,701 A.D[first time]. Unless you found some new evidence to help prove that it doesn't look good for him[only].'"
 
 After quizzing Humboldt about examination during Ending Scene: 
-	say "'The preliminaries are already completed. I'll write my summary after you tell me what you found here."
+	say "'I'll write my summary after you tell me what you found here[first time], but the preliminaries are complete[only].'"
 
 After quizzing Humboldt about time machine during Ending Scene:
 	say "[remove time machine ask suggestion]";  

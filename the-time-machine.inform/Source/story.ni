@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43977 ]
+[WORDS - 44128 ]
 
 Table of Releases
 release	notes
@@ -741,9 +741,9 @@ Test success-3 with "show weena the petal / enter time machine / push lever / ex
 	
 [----------]
 
-Test go-end1 with "north / purloin key / purloin orrery fuse / north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse / put orrery fuse in fuse holder / push lever / push lever / exit."
+Test go-end1 with "north / purloin key / purloin orrery fuse / north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse / put orrery fuse in fuse holder / push lever / push lever / exit / say hello to humboldt."
 
-Test go-end2 with "north / purloin key / purloin orrery fuse / north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse / put orrery fuse in fuse holder / exit / push lever."
+Test go-end2 with "north / purloin key / purloin orrery fuse / north / unlock workshop door with key / north / flip switch / enter time machine / unlock panel with key / take time machine fuse / put orrery fuse in fuse holder / exit / push lever / say hello to humboldt."
 
 
 Part - Release
@@ -3983,14 +3983,14 @@ After quizzing Humboldt about time machine during Ending Scene:
 	say "[remove time machine ask suggestion]";  
 	say "[if the time machine is not nowhere]'Outside my area of expertise, I'm afraid.'[otherwise]'Don't see anything remotely like that.'[end if]"
 
-After quizzing Humboldt about pocket watch during Ending Scene: 
-	say "'I'm glad to see that you have held onto that[first time]. Wells was asking about it[only].'"
+After quizzing Humboldt about pocket watch during Ending Scene:
+	say "'Wells was asking about that[first time]. I'm glad you've held onto it[only].'"
 
 After quizzing Humboldt about the petal during Ending Scene: 
-	say "'You were supposed to find the rest of the flower so we could convince Wells that his story was nonsense. Did you find it?'"
+	say "'Did you find the rest of the flower?'"
 
 After quizzing Humboldt about the key during Ending Scene:
-	say "'[one of]I knew you would find it[or]Good job[or]Mrs. Watchett knew where it was, I bet[or]Obviously it's the workshop key since we're standing in the bloody place[then at random]. What have you found?'"
+	say "'[one of]I knew you would discover it[or]Good job[or]Mrs. Watchett knew where it was, I bet[or]Obviously it's the workshop key since we're standing in the bloody place[then at random]. What have you found?'"
 
 After quizzing Humboldt about Eloi during the Ending Scene:
 	say "[remove Eloi ask suggestion]"; [NO ASK SUGGESTION]
@@ -4004,14 +4004,32 @@ After quizzing Humboldt about Morlocks during the Ending Scene:
 	say "[remove Morlocks ask suggestion]"; [NO ASK SUGGESTION]
 	say "[figment-imagination]".
 
-After quizzing Humboldt about the fuse-time-machine during the Ending Scene:
-	if the time machine is not nowhere:
-		say "Humboldt briefly examines the fuse before returning it to you. 'I've never seen anything like that before. For all I know it's part of that machine over there.'";
+examine-fuse is a number that varies.
+examine-fuse is 0.
+To say fuse-response: 
+	now examine-fuse is examine-fuse + 1;
+	if examine-fuse is 1:
+		say "Humboldt briefly examines the fuse before returning it to you. 'I've never seen anything like this before. What does it do?'";
+	if examine-fuse is 2:
+		say "'I've never seen anything like this before. What does it do?'";
+	if examine-fuse is greater than 2:
+		say "'What does it do?'"
+
+After quizzing Humboldt about the fuse-orrery during the Ending Scene:
+	if the player has fuse-orrery:
+		say "O [fuse-response]";
 	otherwise:
-		say "Humboldt briefly examines the fuse before returning it to you. 'I've never seen anything like that before.'"
+		say "O You can't see any such thing."
 		
-After quizzing Humboldt about the fuse-orrery during the Ending Scene: 
-	try quizzing Humboldt about the fuse-time-machine.
+After quizzing Humboldt about the fuse-time-machine during the Ending Scene: 
+	if the player has fuse-time-machine:
+		say "TM [fuse-response]";
+	otherwise:
+		say "TM You can't see any such thing."
+
+Test fuse1 with "ask humboldt about orrery fuse / ask humboldt about time machine fuse / ask humboldt about time machine fuse / enter / take orrery fuse / drop time machine fuse / exit / ask humboldt about time machine fuse / ask humboldt about orrery fuse / enter / take time machine fuse / exit / tell humboldt about orrery fuse / tell humboldt about time machine fuse."
+
+Test fuse2 with "ask humboldt about orrery fuse / ask humboldt about time machine fuse / ask humboldt about time machine fuse / ask humboldt about time machine fuse / ask humboldt about orrery fuse / tell humboldt about orrery fuse / tell humboldt about time machine fuse."
 
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -4024,8 +4042,9 @@ After informing Humboldt about the time machine during the Ending Scene: [Line b
 After informing Humboldt about the workshop-room during the Ending Scene: 
 	say "Humboldt listens dispassionately as you enthusiastically point out various areas of the workshop, a nonplussed look on his face."
 
+[This handles both orrery fuse and time machine fuse]
 After informing Humboldt about the breaker during the Ending Scene: 
-	say "Humboldt nods slightly as you explain how the fuse is necessary for the time machine[']s operation."
+	say "Humboldt nods slightly as you explain how a fuse is necessary for the time machine[']s operation."
 
 After informing Humboldt about the pocket watch during the Ending Scene: 
 	say "Humboldt nods slightly as you show him Wells['] pocket watch."

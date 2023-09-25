@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44128 ]
+[WORDS - 44136 ]
 
 Table of Releases
 release	notes
@@ -4039,15 +4039,15 @@ After informing Humboldt about the petal during the Ending Scene:
 After informing Humboldt about the time machine during the Ending Scene: [Line break not added after 2nd response TBD]
 	say "[first time]Humboldt glances over the apparatus. [only]'[first time]Impressive. [only]If we could only prove it does what Wells says it's designed to do than our problem would be solved.'[no line break][first time] He turns back towards you. 'But what about finding the rest of that flower?[only]".
 
-After informing Humboldt about the workshop-room during the Ending Scene: 
-	say "Humboldt listens dispassionately as you enthusiastically point out various areas of the workshop, a nonplussed look on his face."
+After informing Humboldt about the workshop-room during the Ending Scene:
+	say "Humboldt listens as you point out various things in the workshop[first time], a dispassionate look on his face[only]."		
 
 [This handles both orrery fuse and time machine fuse]
 After informing Humboldt about the breaker during the Ending Scene: 
 	say "Humboldt nods slightly as you explain how a fuse is necessary for the time machine[']s operation."
 
 After informing Humboldt about the pocket watch during the Ending Scene: 
-	say "Humboldt nods slightly as you show him Wells['] pocket watch."
+	say "[first time]Humboldt nods as you talk about Wells['] pocket watch. [only]'Wells was asking about that.'"
 	
 Instead of informing Humboldt about the key during the Ending Scene:
 	try quizzing Humboldt about the second noun.

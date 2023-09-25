@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44136 ]
+[WORDS - 44146 ]
 
 Table of Releases
 release	notes
@@ -4017,15 +4017,15 @@ To say fuse-response:
 
 After quizzing Humboldt about the fuse-orrery during the Ending Scene:
 	if the player has fuse-orrery:
-		say "O [fuse-response]";
+		say "[fuse-response]";
 	otherwise:
-		say "O You can't see any such thing."
+		say "You can't see any such thing."
 		
 After quizzing Humboldt about the fuse-time-machine during the Ending Scene: 
 	if the player has fuse-time-machine:
-		say "TM [fuse-response]";
+		say "[fuse-response]";
 	otherwise:
-		say "TM You can't see any such thing."
+		say "You can't see any such thing."
 
 Test fuse1 with "ask humboldt about orrery fuse / ask humboldt about time machine fuse / ask humboldt about time machine fuse / enter / take orrery fuse / drop time machine fuse / exit / ask humboldt about time machine fuse / ask humboldt about orrery fuse / enter / take time machine fuse / exit / tell humboldt about orrery fuse / tell humboldt about time machine fuse."
 

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43947 ]
+[WORDS - 44021 ]
 
 Table of Releases
 release	notes
@@ -2793,8 +2793,10 @@ The Domed Building is east of the Clearing.
 The Domed Building is west of the Inside Dome.
 Inside from the Domed Building is Inside Dome.
 
+The dome-outside is scenery. [Added to help with familiarity]
 The dome-outside is a backdrop. It is in the Clearing and the Domed Building.
 Understand "concrete" or "building" or "pantheon" or "columned" or "columns" or "column" or "portico" or "entrance" or "dome" as dome-outside.
+The printed name of dome-outside is "Eloi dome".
 
 To say dome-from-clearing:
 	say "What you can see through the trees appears to be an arrangement of triagular facets in a curved shape[first time]. You won't be able to tell more until you get closer[only]."
@@ -2955,7 +2957,7 @@ The description of the River Bank is "[first time]The southeast path winds its w
 
 The river-river is scenery in the River Bank.
 The description of the river-river is "The river curves its way through the forest from the northeast to the southwest."
-The printed name of river-river is "river".
+The printed name of river-river is "the river".
 Understand "river" as river-river.
 
 The river-water is scenery in the River Bank.
@@ -3046,6 +3048,7 @@ Part - Underground - Shaft
 
 Chapter - Shaft Description
 
+The generic-shaft is scenery.
 The generic-shaft is a backdrop.
 The generic-shaft is in Shaft 1.
 The generic-shaft is in Shaft 2.
@@ -3055,6 +3058,8 @@ The generic-shaft is in Shaft 4.
 The description of generic-shaft is "Carved out of solid rock, the circular metal shaft surrounds you on all sides and continues down into the darkness below."
 
 Understand "shaft" as generic-shaft.
+
+The printed name of generic-shaft is "Morlock underground tunnels".
 
 Chapter - Shaft Directions
 
@@ -3527,6 +3532,11 @@ Weena is a familiar woman.
 The Morlocks are a familiar people.
 The printed name of Morlocks is "the Morlocks".
 
+[Uncomment when testing Humboldt Patience responses with testing commands when you haven't seen the actual locations.]
+The river-river is a familiar thing.
+The statue is a familiar thing.
+The dome-outside is familiar.
+The generic-shaft is familiar.
 
 Book - Subjects 
 
@@ -4101,19 +4111,19 @@ After informing Humboldt about Morlocks during the Ending Scene:
 	say "[reply-response]";
 	follow Patience rules.
 	
-After informing Humboldt about River Bank during the Ending Scene:
+After informing Humboldt about river-river [River Bank] during the Ending Scene:
 	say "[reply-response]";
 	follow Patience rules.
 
-After informing Humboldt about sphinx during the Ending Scene:
+After informing Humboldt about statue during the Ending Scene:
 	say "[reply-response]";
 	follow Patience rules.
 	
-After informing Humboldt about dome during the Ending Scene:
+After informing Humboldt about dome-outside during the Ending Scene:
 	say "[reply-response]";
 	follow Patience rules.
 	
-After informing Humboldt about shaft during the Ending Scene:
+After informing Humboldt about generic-shaft during the Ending Scene:
 	say "[reply-response]";
 	follow Patience rules.
 
@@ -4131,7 +4141,8 @@ Test end-h with "say hello to humboldt / ask humboldt about wells / ask humboldt
 
 Test p1-h with "tell humboldt about time travel / tell humboldt about future / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks".
 
-Test p2-h with "tell humboldt about river / tell humboldt about sphinx / tell humboldt about dome / tell humboldt about shaft / tell humboldt about tunnels".
+Test p2-h with "tell humboldt about river / tell humboldt about sphinx / tell humboldt about dome / tell humboldt about shaft".
+
 
 Chapter - Default Responses
 

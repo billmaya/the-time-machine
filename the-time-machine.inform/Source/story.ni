@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44146 ]
+[WORDS - 43947 ]
 
 Table of Releases
 release	notes
@@ -3523,7 +3523,10 @@ The fuse-time-machine is familiar.
 
 The Eloi are a familiar people.
 Weena is a familiar woman.
+
 The Morlocks are a familiar people.
+The printed name of Morlocks is "the Morlocks".
+
 
 Book - Subjects 
 
@@ -4058,73 +4061,62 @@ Instead of informing Humboldt about the key during the Ending Scene:
 Section - Informing - With Patience Rules
 
 [Modify [second noun] based on what you tell him about, maybe add more descriptive text like replacing "shaft" with "shaft and the underground tunnels"]
-To say reply-intro: 
-	say "Humboldt listens to you talk about [second noun]".
 
 To say reply-response:
 	if the patience of Humboldt is:
 		-- tolerant-1:
-			say ". Nodding his head as you speak, he waits paitiently until you've finished. 'But what about what I asked you to do?'";
+			say "Nodding his head as you speak, Humboldt waits patiently until you finish talking about [second noun]. 'But what about what I asked you to do?'";
 		-- tolerant-2:
-			say ", but it's obvious he's already heard something similar from Wells. 'Obviously you were able to get into the workshop. Did you find anything?'";
+			say "As you talk about [second noun] it's obvious from the look on Humboldt's face that he's already heard something similar from Wells. 'Without proof that's just so much nonsense. Did you find anything?'";
 		-- frustrated-1:
-			say ", waiting in frustration for you to finish. 'But any luck finding the rest of that flower?'";
+			say "Humboldt waits in frustration for you to finish talking about [second noun]. 'Have you had any luck finding the rest of that flower?'";
 		-- frustrated-2:
-			say ". He stares at you, his annoyance clearly visible on his face as you finish. He looks around the room, his patience obviously exhausted, not knowing what to say.";
+			say "The annoyance is clear visible on Humboldt's face as you finish. He looks around the room, not knowing what to say, his patience obviously exhausted.";
 		-- angry-1:
 			let current location be the location of Humboldt;
-			say " but cuts you off before you're finished. 'I know you want to help Wells, we both do. But repeating his delusional nonsense without any proof won't convince me no matter how many times I hear it. In fact, it makes me doubt your own sanity. Good evening.'[paragraph break]Humboldt turns and storms out of [the current location].";
-			now Gernsback is nowhere;
+			say "Humboldt cuts you off before you can finish talking about [second noun]. 'I know you want to help Wells, we both do, but repeating his delusional nonsense without proof won't convince me no matter how many times I hear it. In fact, your repetition makes me doubt your own sanity. Good evening.' Humboldt turns and storms out of [the current location].";
 			now Humboldt is nowhere.
 
 After informing Humboldt about time travel during the Ending Scene:
-	[say "Humboldt listens as you try to expain your time travel experience in the future as best you can with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about the future during the Ending Scene:
 	say "[remove future tell suggestion]";
-	[say "Humboldt listens as you recount your experiences in 802,701 A.D. with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about Eloi during the Ending Scene:
 	say "[remove Eloi tell suggestion]";
-	[say "Humboldt listens as you recount your experience with the Eloi with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about Weena during the Ending Scene:
 	say "[remove Weena tell suggestion]";
-	[say "Humboldt listens to you recount your experience with Weena with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about Morlocks during the Ending Scene:
 	say "[remove Morlocks tell suggestion]";
-	[say "Humboldt listens to you recount your experience with the Morlocks with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
 	
 After informing Humboldt about River Bank during the Ending Scene:
-	[say "Humboldt listens to you recount your experience at the river with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
 
 After informing Humboldt about sphinx during the Ending Scene:
-	[say "Humboldt listens to you recount your description of the clearing and the sphinx with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
 	
 After informing Humboldt about dome during the Ending Scene:
-	[say "Humboldt listens to you recount your description of the domed building with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
 	
 After informing Humboldt about shaft during the Ending Scene:
-	[say "Humboldt listens to you recount your description of the shaft and tunnels with a [patience of Humboldt] look on his face.";]
-	say "[reply-intro][reply-response]";
+	say "[reply-response]";
 	follow Patience rules.
+
 
 Section - Imploring - "Ask [someone] for ['text']"
 
@@ -4137,7 +4129,9 @@ Section - Testing
 
 Test end-h with "say hello to humboldt / ask humboldt about wells / ask humboldt about workshop / ask humboldt about diagnosis / ask humboldt about examination / ask humboldt about time machine / ask humboldt about pocket watch / ask humboldt about petal / ask humboldt about key / ask humboldt about fuse / ask humboldt about eloi / ask humboldt about  weena / ask humboldt about morlocks / show poker to humboldt / show pocket watch to humboldt / show petal to humboldt / tell humboldt about petal / tell humboldt about time machine / tell humboldt about workshop / tell humboldt about fuse".
 
-Test patience-h with "say hello to humboldt / tell humboldt about time travel / tell humboldt about future / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks / tell humboldt about river / tell humboldt about sphinx / tell humboldt about dome / tell humboldt about shaft / tell humboldt about tunnels".
+Test p1-h with "tell humboldt about time travel / tell humboldt about future / tell humboldt about eloi / tell humboldt about weena / tell humboldt about morlocks".
+
+Test p2-h with "tell humboldt about river / tell humboldt about sphinx / tell humboldt about dome / tell humboldt about shaft / tell humboldt about tunnels".
 
 Chapter - Default Responses
 
@@ -4492,15 +4486,17 @@ Test g-topics with "test go-gernsback / say hello to gernsback / ask gernsback a
 
 Book - Eloi
 
-The Eloi are people. "[if location of Eloi is River Bank][eloi-initial-appearance][end if]"
+The [Some] Eloi are people. "[if location of Eloi is River Bank][eloi-initial-appearance][end if]"
 
 To say eloi-initial-appearance:
 	say "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals—twenty or thirty by your count—are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit, and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.[paragraph break]Noticing your presence, a few of the Eloi gather around you.[end if]" 
 
+The printed name of Eloi is "the Eloi".
+
 To say eloi-in-clearing:
 	say "One of the Eloi points at the circular well and cover and back at the watch in your hands."
 
-The indefinite article is "the".
+[The indefinite article is "the".]
 The Eloi are in the River Bank.
 The Eloi are fixed.
 The Eloi are major.
@@ -4721,8 +4717,6 @@ The description of morlock-placeholder is "The pallid skin, luminous eyes, and h
 
 morlock-placeholder is a backdrop.
 morlock-placeholder is in the Year-802701-Underground.
-
-The printed name of morlock-placeholder is "the Morlocks".
 
 Understand "morlocks" or "morlock" or "figures" as morlock-placeholder.
 

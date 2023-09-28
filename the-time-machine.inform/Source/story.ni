@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44074 ]
+[WORDS - 43995 ]
 
 Table of Releases
 release	notes
@@ -3522,6 +3522,7 @@ Food is familiar.
 The poker is familiar.
 The newspaper is familiar.
 The time machine is familiar.
+The wells-book is familiar.
 
 The fuse-orrery is familiar. 
 The fuse-time-machine is familiar.
@@ -4222,35 +4223,25 @@ Gernsback is major.
 
 Part - Suggestions 
 
+The ask-suggestions are { wells-book, workshop-room, key, Wells, Watchett, self-suggestion }.
+The tell-suggestions are { Wells }.
+[The other-suggestions are { xyz-suggestion, abc-suggestion, yes-no-suggestion }.]
+
 Part - Conversation 
 
 Chapter - Hello
 
 After saying hello to Gernsback when the greeting type is explicit: 
-	say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
-	say "[add wells-book ask suggestion]";
-	say "[add workshop-room ask suggestion]";
-	say "[add key ask suggestion]";
-	say "[add Wells ask suggestion]";
-	say "[add Watchett ask suggestion]";
-	say "[add self-suggestion ask suggestion]";
-	say "[add Wells tell suggestion]";
+	say "Gernsback marks his place in his book and looks up at you.";
 
 After saying hello to Gernsback when the greeting type is implicit:
-	say "Gernsback pauses in his reading and marks his place in his book before answering. [run paragraph on]";
-	say "[first time]Gernsback marks his place in his book and looks up at you. [only][one of]'Evening Filby.'[or]'How can I help you Filby?[or]'Filby.'[at random]";
-	say "[add wells-book ask suggestion]";
-	say "[add workshop-room ask suggestion]";
-	say "[add key ask suggestion]";
-	say "[add Wells ask suggestion]";
-	say "[add Watchett ask suggestion]";
-	say "[add self-suggestion ask suggestion]";
-	say "[add Wells tell suggestion]";
+	say "Gernsback marks his place in his book before answering. [run paragraph on]";
 
 Chapter - Goodbye
 
 After saying goodbye to Gernsback when the farewell type is explicit: 
-	say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading.";
+	say "Let me know if I can help in any way.' He goes back to his reading.";
+	[DEL say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading.";]
 	
 After saying goodbye to Gernsback when the farewell type is implicit:
 	say "Gernsback watches you head into the[if the room gone to is the Parlor] parlor[otherwise] entryway[end if] before returning to his book.[line break]";
@@ -4279,7 +4270,7 @@ Section - Quizzing - "Ask [someone] about [thing]"
 
 After quizzing Gernsback about Wells:
 	say "[remove Wells ask suggestion]";
-	say "'[one of]Sad. If I had known it would have led to this I never would have given him encouragement.'[or]'The doctor is probably in a better position to answer that question.'[in random order]"
+	say "[one of]'If I had known it would have led to this I never would have given him encouragement.'[or]'The doctor is probably in a better position to answer that question.'[in random order]"
 
 After quizzing Gernsback about Humboldt:
 	say "'[one of]Smart man. A bit full of himself though. Not as practical as you and me.'[or]'Best man in his field, they say.'[in random order]"

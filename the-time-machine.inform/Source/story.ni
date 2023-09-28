@@ -4241,7 +4241,6 @@ Chapter - Goodbye
 
 After saying goodbye to Gernsback when the farewell type is explicit: 
 	say "Let me know if I can help in any way.' He goes back to his reading.";
-	[DEL say "'Mmph...Let me know if I can help in any way,' he says, going back to his reading.";]
 	
 After saying goodbye to Gernsback when the farewell type is implicit:
 	say "Gernsback watches you head into the[if the room gone to is the Parlor] parlor[otherwise] entryway[end if] before returning to his book.[line break]";

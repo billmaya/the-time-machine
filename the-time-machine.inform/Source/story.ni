@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43995 ]
+[WORDS - 43896 ]
 
 Table of Releases
 release	notes
@@ -4260,11 +4260,6 @@ After requesting Gernsback for the wells-book: say "'Plenty of other books in th
 After requesting Gernsback for the library-books:
 	say "[first time]Without pausing his reading, he motions towards the shelves with a wave of his hand. [only][one of]'I would think you would want to pick out something for yourself.'[or]'Plenty to choose from.'[or]'I'm sure you can find something that interests you on the shelves.'[in random order]"
 
-After requesting Gernsback for the box of matches:
-	say "'Of course, how silly of me to forget. Keep them.'";
-	now the player has box of matches.
-
-
 Section - Quizzing - "Ask [someone] about [thing]"
 
 After quizzing Gernsback about Wells:
@@ -4296,20 +4291,17 @@ After quizzing Gernsback about experiments:
 	say "'Told Wells that if he stuck to practical endeavors, like trying to figure out how to increase the yields of my Derbyshire looms, I'd pay him a tidy sum. Enough to fund a lifetime of crazy ideas.'"
 	
 After quizzing Gernsback about time travel:
-	say "'Traveling one way through time is good enough for me.' He turns to the finance page in the paper. 'Though I must admit I wouldn't mind being able to travel a week back to the Exchange after finding out how the market's done today. Know what I mean?' "
+	say "'Traveling one way through time is good enough for me.' He thinks for a moment. 'Though I wouldn't mind traveling back in time a week after finding out how the market's done today. Know what I mean?'"
 	
 After quizzing Gernsback about the time machine: 
-	say "'I've seen bits and pieces but I can't say I've really understood what I was seeing. I've got my own 'Morlocks' at the mills for things like that.' He chuckles to himself."
+	say "'I've seen bits and pieces but I can't say I've really understood what I was seeing. He chuckles to himself. 'Got my own 'Morlocks' at the mills for things like that.'"
 
 After quizzing Gernsback about orrery: 
-	say "'Only practical thing Wells has made up until now. Tried to get him to patent and sell it. Though what use knowing what the Man in the Moon is up to is beyond me.'."
+	say "'Only practical thing Wells has made up until now. Told him he should patent and sell it. Though what use knowing what the Man in the Moon is up to is beyond me.'."
 
 After quizzing Gernsback about workshop-room: 
 	say "[remove workshop-room ask suggestion]";
 	say "'Only been inside a couple of times with Wells. Tools and materials and such. Terrible mess.'"
-
-After quizzing Gernsback about box of matches: 
-	say "Gernsback briefly opens the box of matches. 'Only [the number of s-matches in words] left. I[']ll have to stop by the divan on the way home and get some more.'"
 
 After quizzing Gernsback about pocket watch: say "'That looks like Wells['] watch.'"
 

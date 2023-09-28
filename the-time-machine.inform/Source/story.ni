@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43896 ]
+[WORDS - 43886 ]
 
 Table of Releases
 release	notes
@@ -5428,7 +5428,7 @@ Gernsback Leaves begins when player is in the Library and the time of day is gre
 
 When Gernsback Leaves begins:
 	[say "GERNSBACK LEAVES BEGINS.";]
-	say "Getting up, Gernsback closes his book, replaces it on the shelf, and lights a cigar. Turning to you, he says, 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he quickly lights his cigar, drops the box of matches on the desk, and is gone without another word.";
+	say "Gernsback closes his book and replaces it on the shelf. 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he quickly lights his cigar, drops the box of matches on the desk, and is gone without another word.";
 	move the box of matches to the desk;
 	reset the interlocutor;
 	now the wells-book is nowhere;

@@ -4361,16 +4361,16 @@ After informing Gernsback about Wells:
 	say "'I'm not a medical man, but I think the best thing you could do as his attorney is have him committed. Protect him from himself. Only my opinion mind you.'";
 
 After informing Gernsback about Humboldt: 
-	say "'He'll be back soon. Tell us what he's found and we'll decide what to do then.'";
+	say "'He'll be back soon[first time]. Then we can decide what to do[only].'";
 
 After informing Gernsback about Watchett: 
-	say "'Wonderful meal that was, as always.  That woman's a treasure. Don't know where Wells found her.'";
+	say "'That woman's a treasure[first time]. Don't know where Wells found her[only].'";
 
 After informing Gernsback about time machine:
 	if time machine has been seen: 
-		say "'Fascinating. But I don't see how this can help Wells if it doesn't actually work.'"; 
+		say "'Fascinating. But if the machine doesn't do anything I don't see how that helps Wells.'";
 	otherwise:
-		say "'We'll never know for sure unless you find a way into Wells' workshop.'";
+		say "'We'll never know if any of that's true unless you find a way into Wells['] workshop.'";
 
 After informing Gernsback about orrery:
 	if the orrery has been seen:

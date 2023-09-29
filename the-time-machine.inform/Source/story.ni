@@ -5415,7 +5415,7 @@ Gernsback Reveals Orrery Fuse begins when gernsback-shows-fuse is true.
 
 When Gernsback Reveals Orrery Fuse begins: 
 	[say "GERNSBACK SHOWS YOU ORRERY FUSE BEGINS.";]
-	say "Seeing the time machine fuse a look on interest appears on Gernsback's face. 'I have seen something like that before, though not in that condition.' He stands up and leads you into the parlor to a the orrery above the fireplace.[paragraph break]'When I asked Wells to show me how this contraption worked he did this.' Gernsback reaches out and with his fingertips slides the orrery's right panel up, exposing the inner mechanism.[paragraph break]'That should help you out.' Without another word Gernsback returns to the library and sits in the chair to continue his reading.";
+	say "Seeing the time machine fuse a look on interest appears on Gernsback's face. 'I have seen something like that before, though not in that condition.' He stands up and leads you into the parlor to the orrery above the fireplace.[paragraph break]'When I asked Wells to show me how this contraption worked he did this.' Gernsback reaches out and with his fingertips slides the orrery's right panel up, exposing the inner mechanism.[paragraph break]'That should help you out.' Without another word Gernsback returns to the library and sits in the chair to continue his reading.";
 	now the player is in the Parlor;
 	now the right panel is open;
 	now player-knows-right-panel-slideable is true;

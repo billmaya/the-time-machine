@@ -4416,6 +4416,12 @@ Section - Imploring - "Ask [someone] for ['text']"
 Section - Showing
 
 After showing noun to Gernsback: try informing Gernsback about noun.
+	
+After showing fuse-time-machine to Gernsback:
+	now gernsback-shows-fuse is true.
+	
+Instead of giving fuse-time-machine to Gernsback:
+	try showing fuse-time-machine to Gernsback.
 
 Chapter - Default Responses
 
@@ -4452,7 +4458,7 @@ Test g-quiz with "ask gernsback about wells / ask gernsback about humboldt / ask
 
 [The game must be restarted before running each of these tests]
 
-Test go-gernsback with "go north / go north / go west."
+Test go-gernsback with "go north / go north / go west / say hello to gernsback."
 		
 Test g-start-tell with "go-gernsback / tell gernsback about wells / tell gernsback about humboldt / tell gernsback about watchett / tell gernsback about weena / tell gernsback about eloi / tell gernsback about morlocks / tell gernsback about time machine / tell gernsback about orrery / tell gernsback about breaker / tell gernsback about fuse / tell gernsback about experiments / tell gernsback about time travel / tell gernsback about workshop-room / tell gernsback about petal / tell gernsback about key."
 
@@ -4474,7 +4480,15 @@ Test g-work with "test go-gernsback / tell gernsback about workshop / tell gerns
 Test g-key with "test go-gernsback / tell gernsback about key / purloin key / tell gernsback about key / go east / unlock workshop door with key / go north / flip switch / go south / go west / tell gernsback about key."
 	
 Test g-topics with "test go-gernsback / say hello to gernsback / ask gernsback about book / ask gernsback about cigar / ask gernsback about workshop / ask gernsback about key / ask gernsback about wells / ask gernsback about watchett / tell gernsback about wells / ask gernsback about himself / ask gernsback about gernsback."
+		
+[>epistat time machine fuse]
+Test g-workshop with "north / north / purloin key / open workshop door with key / north / flip switch." [unseen / familiar / known]
+		
+Test s-fuse-tm with "test g-workshop / enter / unlock panel with key." [seen / familiar / known]
 
+Test g-fuse-tm with "test s-fuse-tm / take time machine fuse." [seen / familiar / known]
+
+Test go-g-work with "exit / south / west / say hello to gernsback."
 
 
 Book - Eloi

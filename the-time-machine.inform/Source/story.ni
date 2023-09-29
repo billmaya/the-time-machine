@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43886 ]
+[WORDS - 43872 ]
 
 Table of Releases
 release	notes
@@ -251,7 +251,7 @@ all-grid-windows	special-style-1	"#FFFFFF" ["#FF0000" - Red]
 Table of Fancy Status
 left	central	right
 " [if in darkness]Darkness[otherwise][location][end if]"	""	"[top rose]"
-" [current-year]"	""	"[middle rose]"
+" [current-year] [time of day]"	""	"[middle rose]"
 " "	""	"[bottom rose]"
 
 When play begins: now right alignment depth is 25;
@@ -4354,11 +4354,11 @@ To say dont-know:
 	say "'Don't know what you're talking about.'" 
 
 To say fascinating-but:
-	say "'Fascinating. But I don't see how this helps Wells.'"
+	say "'[first time]Fascinating. But [only]I don't see how this helps Wells.'"
 
 After informing Gernsback about Wells:
 	say "[remove Wells tell suggestion]";
-	say "'I'm not a medical man, but I think the best thing you could do as his attorney is have him committed. Protect him from himself. Only my opinion mind you.'";
+	say "'I think the best thing you could do as his attorney is have the man committed. Protect him from himself[first time]. I'm not a medical man, mind you, only my opinion[only].'";
 
 After informing Gernsback about Humboldt: 
 	say "'He'll be back soon[first time]. Then we can decide what to do[only].'";
@@ -4377,17 +4377,9 @@ After informing Gernsback about orrery:
 		say "[fascinating-but]";
 	otherwise:
 		say "'I think you'll find what you're looking for in the next room.'";
-		
-Before informing Gernsback about fuse-orrery:
-	if the player does not have fuse-orrery:
-		say "You can't see any such thing.";
-		stop the action.
-	
-After informing Gernsback about fuse-orrery:
-	if fuse-orrery has been seen: 
-		say "[fascinating-but]";
-	otherwise:
-		say "[dont-know]";
+
+After informing Gernsback about fuse-orrery: [Gernsback will never know about orrery fuse because he leaves when it's revealed.]
+	say "[dont-know]";
 
 Before informing Gernsback about fuse-time-machine:
 	if fuse-time-machine has not been seen:
@@ -4408,7 +4400,7 @@ After informing Gernsback about workshop-room:
 	if the workshop is visited:
 		say "'What did you find?'";
 	otherwise:
-		say "'Well done. Let me know what you find.'";
+		say "'Let me know what you find.'";
 
 After informing Gernsback about key: 
 	if the player has the key: 
@@ -4417,7 +4409,7 @@ After informing Gernsback about key:
 		otherwise:
 			say "'Well done. Let me know what you find.'";
 	otherwise:
-		say "'The doctor has the right idea. If there's a key to get into that workshop Mrs. Watchett might have a good idea where it might be.'";
+		say "'The doctor has the right idea. If there's a key to to that workshop around here, Mrs. Watchett will have a good idea where it might be.'";
 
 Section - Imploring - "Ask [someone] for ['text']"
 

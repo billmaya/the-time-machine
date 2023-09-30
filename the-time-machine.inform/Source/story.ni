@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44007 ]
+[WORDS - 44004 ]
 
 Table of Releases
 release	notes
@@ -4278,13 +4278,13 @@ After quizzing Gernsback about Gernsback:
 	say "[one of]'Business is good. Having a few labor problems but profits are up.'[or]'Never really felt comfortable talking about myself. Rather stay focused on business.'[or]'Not much more to say.'[stopping]"
 
 After quizzing Gernsback about Weena: 
-	say "'Sounds like a bit of a dollymop if you ask me. Bit of wishful thinking on Wells['] part, if you know what I mean.'" [+Eloi, Morlocks as part of "about"?]
+	say "'Sounds like a bit of a dollymop if you ask me. Bit of wishful thinking on Wells['] part, if you know what I mean.'"
 
 After quizzing Gernsback about Eloi: 
-	say "'I only wish it were true. Group like that, probably make excellent factory workers. Sounds like they don[']t need to get paid. Docile, don[']t cause troubles. Could setup a factory in the future and make a mint.'"
+	say "'Probably make excellent factory workers. Docile, don't cause trouble, and don't have to be paid. I should setup a factory in the future and make a ton of money.' He chuckles to himself at the idea and goes back to his reading."
 
 After quizzing Gernsback about Morlocks: 
-	say "Pretty handy bunch. Sound like those chaps up at the mill who keep the machines running.'";
+	say "'Pretty handy bunch. Remind me of those chaps up at my mills who keep the machines running.'"
 
 Understand "his-work" as experiments.
 After quizzing Gernsback about experiments: 

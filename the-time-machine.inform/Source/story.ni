@@ -251,7 +251,7 @@ all-grid-windows	special-style-1	"#FFFFFF" ["#FF0000" - Red]
 Table of Fancy Status
 left	central	right
 " [if in darkness]Darkness[otherwise][location][end if]"	""	"[top rose]"
-" [current-year] [time of day]"	""	"[middle rose]"
+" [current-year]"	""	"[middle rose]"
 " "	""	"[bottom rose]"
 
 When play begins: now right alignment depth is 25;

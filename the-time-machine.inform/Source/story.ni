@@ -4347,6 +4347,15 @@ Title	Comment
 	
 After quizzing Gernsback about library-books:
 	say "Looking around at the shelves Gernsback says 'Quite a nice collection, though a lot of the stuff is over my head.'"
+	
+After quizzing Gernsback about fuse-time-machine:
+	if fuse-time-machine has been seen:
+		if the player has fuse-time-machine:
+			now gernsback-shows-fuse is true;
+		otherwise:
+			say "'I don't know anything about that.'";
+	otherwise:
+		say "'I don't know anything about that.'"
 
 Section - Informing - "Tell [someone] about [thing]"
 
@@ -4381,20 +4390,17 @@ After informing Gernsback about orrery:
 After informing Gernsback about fuse-orrery: [Gernsback will never know about orrery fuse because he leaves when it's revealed.]
 	say "[dont-know]";
 
-Before informing Gernsback about fuse-time-machine:
-	if fuse-time-machine has not been seen:
-		say "You can't see any such thing.";
-		stop the action.
-
 gernsback-shows-fuse is a truth state that varies.
 gernsback-shows-fuse is false.
-	
+
 After informing Gernsback about fuse-time-machine:
 	if fuse-time-machine has been seen:
-		[say "[fascinating-but]";]
-		now gernsback-shows-fuse is true;
+		if the player has fuse-time-machine:
+			now gernsback-shows-fuse is true;
+		otherwise:
+			say "That sounds interesting. I'd like to take a look at it.";
 	otherwise:
-		say "[dont-know]";
+		say "You can't see any such thing."
 
 After informing Gernsback about workshop-room:
 	if the workshop is visited:

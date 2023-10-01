@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43675 ]
+[WORDS - 43696 ]
 
 Table of Releases
 release	notes
@@ -4745,6 +4745,10 @@ Wells is in the ambulance.
 
 Instead of examining Wells: say "Your friend actions are unbalanced and estranged, so unlike his usual composed and methodical self[first time]. You want to believe his story but without proof or witnesses you don't know what to think[only]."
 
+After saying hello to Wells when the greeting type is explicit or the greeting type is implicit: 
+	say "If he wasn't out of sight in the ambulance you could.";
+	reset the interlocutor.
+
 Part - Rescuing
 
 Understand "save [someone]" as rescuing.
@@ -4777,13 +4781,14 @@ Book - Orderlies
 
 The orderlies are people in the ambulance.
 The orderlies are undescribed.
-The description of the orderlies is "They're out of sight, inside the ambulance with Wells but, from what you remember, the two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
+The description of the orderlies is "The two men were entirely professional, stronger than they looked, and had no trouble getting Wells into the ambulance against his will."
 Understand "attendant" or "attendants" or "orderly" as orderlies.
 
 Instead of taking the orderlies: say "Given the ease with which they got Wells into the ambulance against his will, you chance of overpowering even one of them against his will is slight. Best stick to the intellectual pursuits you're known for."
 
 After saying hello to the orderlies when the greeting type is explicit or the greeting type is implicit: 
-	say "If they both weren't out of sight in the ambulance you could." 
+	say "If they both weren't out of sight in the ambulance you could.";
+	reset the interlocutor.
 
 Part - Default Responses
 

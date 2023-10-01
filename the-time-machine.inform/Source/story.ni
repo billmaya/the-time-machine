@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43644 ]
+[WORDS - 43658 ]
 
 Table of Releases
 release	notes
@@ -4489,10 +4489,10 @@ Test go-g-work with "exit / south / west / say hello to gernsback."
 
 Book - Eloi
 
-The [Some] Eloi are people. "[if location of Eloi is River Bank][eloi-initial-appearance][end if]"
+The Eloi are people. "[if location of Eloi is River Bank][eloi-initial-appearance][end if]"
 
 To say eloi-initial-appearance:
-	say "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you.[otherwise]A small group of individuals—twenty or thirty by your count—are spread out along this section of the river bank, involved in a variety of activities. Some are swimming in the shallows, others are resting on the river bank, a few gather flowers or fruit, and, to your horror, a few are involved in prurient matters in the shadows of nearby bushes. These must be the Eloi from Wells['] story.[paragraph break]Noticing your presence, a few of the Eloi gather around you.[end if]" 
+	say "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you[otherwise]A small group of individuals are spread out along this section of the river bank, involved in a variety of activities. Obviously, these are the Eloi that Wells talked about. Noticing your presence, a few of the Eloi gather around you[end if]." 
 
 The printed name of Eloi is "the Eloi".
 
@@ -4509,6 +4509,10 @@ The description of the Eloi is "All of the Eloi are slight and short, about four
 eloi-couples are scenery in the River.
 The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
 Understand "couples" as eloi-couples.
+
+eloi-activities are scenery in the River.
+The description of eloi-activities are "Some of the Eloi are splashing in the shallows while others rest on the river bank. A few gather flowers or fruit among the bushes and, to your horror, a few couples are involved in prurient matters in the shadows."
+Understand "activities" as eloi-activities.
 
 Part - Suggestions 
 

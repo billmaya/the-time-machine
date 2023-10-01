@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43756 ]
+[WORDS - 43869 ]
 
 Table of Releases
 release	notes
@@ -4669,7 +4669,10 @@ Section - Imploring - "Ask [someone] for ['text']"
 Section - Showing
 
 Instead of showing the pocket watch to Weena:
-	say "She cocks her head and smiles back at you, waiting."
+	if Weena is in the Year-802701-Outside:
+		say "She cocks her head and smiles back at you, waiting.";
+	otherwise:
+		say "Weena looks at the pocket watch but appears too terrified right now to do anything."	
 
 Instead of showing the petal to Weena:
 	if Weena is in the Year-802701-Outside:
@@ -4678,21 +4681,26 @@ Instead of showing the petal to Weena:
 		reset the interlocutor;
 		now Weena is nowhere;
 	otherwise:
-		say "Given the circumstances, Weena looks at the petal, but is too terrified right now to react appropriately.";
+		say "Weena looks at the petal but appears too terrified right now to do anything.";
 		reset the interlocutor.
 		
 Instead of showing the tunic to Weena:
-	say "Weena glances at the tunic and then at her own clothes but says nothing."
+	if Weena is in the Year-802701-Outside:
+		say "THERE SHOULD BE NO TUNIC AROUND IF IT'S BURNED."; [Instead of showing the tunic to Weena: TBD]
+	otherwise:
+		say "Weena glances at the tunic and then at her own clothes but appears too terrified right now to do anything."
 
 Section - Giving
 
-Instead of giving the pocket watch to Weena:
-	say "She looks at the pocket watch, smiles, and then returns it to you."
+Instead of giving the pocket watch to Weena: try showing the pocket watch to Weena.
 
 Instead of giving the petal to Weena: try showing the petal to Weena.
 
 Instead of giving the tunic to Weena:
-	say "You hand the tunic to Weena. Puzzled, she compares it her own clothing, before returning the tunic to you [if the player has the poker]and pointing to the poker in your hand.[otherwise].[end if]"
+	if Weena is in the Year-802701-Outside:
+		say "THERE SHOULD BE NO TUNIC AROUND IF IT'S BURNED."; [Instead of giving the tunic to Weena: TBD]
+	otherwise:
+		say "You hand the tunic to Weena. Puzzled, she compares it her own clothing before returning giving it back to you[if the player has the poker] and pointing to the poker in your hand[end if]."
 
 Chapter - Default Responses
 
@@ -4701,19 +4709,25 @@ Chapter - Default Responses
 [Default tell response for Weena:]
 
 Default ask-tell response for Weena:
-	say "Try as you might you can't make Weena understand what you are talking about. At times she laughs at your strange pronunciations."
+	if Weena is in the Year-802701-Outside:
+		say "Try as you might you can't make Weena understand what you are talking about. At times she laughs at your strange pronunciations.";
+	otherwise:
+		say "Weena appears too terrified right now to try and understand what you are saying."
 
 To say default-weena-give-response:
 	if Weena is in the Year-802701-Underground:
-		say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, returns it to you.";
+		say "You attempt to hand the [noun] to Weena but she appear too terrified to do more than cower in the dark.";
 	otherwise if Weena is in the Year-802701-Outside:
-		say "You hand the [noun] to Weena. Puzzled, she looks at it a for a few seconds and, unable to discern its purpose, passes it around the small group gathered until the [noun] is returned to you." 
+		say "You hand the [noun] to Weena. She examines it with a puzzled look on her face but no inkling of it's function before handing it back to you."
 
 Default give response for Weena:
 	say "[default-weena-give-response]".
 
 Default show response for Weena:
-	say "Weena looks at the [noun] with a degree of puzzlement on her face but no recognition of the [noun]'s function."
+	if Weena is in the Year-802701-Underground:
+		say "You attempt to show Weena the [noun] but she appears too terrified to do more than cower in the dark.";
+	otherwise:
+		say "You show Weena the [noun], which she examines at with a puzzled look on her face."
 
 [Default give-show response for Weena:]
 [Default ask-for response for Weena:]
@@ -4723,7 +4737,7 @@ Default show response for Weena:
 Part - Pushing Weena
 
 To say immovable-weena:
-	say "She obviously wants to go but is too terrified to move without some sort of light to protect you both."
+	say "She obviously wants to leave this place but is too terrified to move without some sort of light to protect you both."
 
 Instead of switching on Weena: say "[immovable-weena]" [for >push Weena.]
 

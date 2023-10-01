@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43744 ]
+[WORDS - 43706 ]
 
 Table of Releases
 release	notes
@@ -4497,7 +4497,7 @@ To say eloi-initial-appearance:
 The printed name of Eloi is "the Eloi".
 
 To say eloi-in-clearing:
-	say "One of the Eloi points at the circular well and cover and back at the watch in your hands."
+	say "One of the Eloi points at the circular well cover and back at the watch in your hands."
 
 [The indefinite article is "the".]
 The Eloi are in the River Bank.
@@ -4539,7 +4539,7 @@ Section - Requests - "Ask [someone] for [thing]"
 Section - Quizzing - "Ask [someone] about [thing]"
 
 After quizzing the Eloi about Morlocks:
-	say "The Eloi within earshot glance at one another at the word 'Morlocks,' but, after a brief fearful silence, they continue chattering among themselves."
+	say "The Eloi glance at one another at the word 'Morlocks,' but reply with a fearful silence."
 
 ask-about-weena is a truth state that varies.
 ask-about-weena is false.
@@ -4549,13 +4549,13 @@ asked-about-weena is 0.
 
 To say weena-needs-rescuing:
 	if asked-about-weena is 0:
-		say "One of the Eloi points at the metal cover of the well and says a single word - 'Weena.'";
+		say "One of the Eloi points at the cover of the well and says a single word. 'Weena.'";
 	otherwise if asked-about-weena is 1:
-		say "The Eloi spokesperson points at the metal cover of the well a second time and says the words 'Weena...Morlocks' followed by a grabbing motion with both hands.";
+		say "The Eloi points at the cover a second time. 'Weena...Morlocks.' He makes a grabbing motion with both hands.";
 	otherwise if asked-about-weena is 2:
-		say "The look of frustration clearly visible in their face, the Eloi pleads with you one last time. 'Rescue Weena.'";
+		say "The look of frustration clearly visible in his face, the Eloi pleads one last time. 'Rescue Weena.'";
 	otherwise:
-		say "Obvious frustrated with your lack of understanding, the Eloi says something to the group and they quickly disappear into the forest.";
+		say "Frustrated with your lack of understanding, the Eloi says something to the rest of the group and they quickly disappear into the forest.";
 		now the Eloi are nowhere;
 	now asked-about-weena is asked-about-weena + 1.
 
@@ -4583,7 +4583,7 @@ Section - Showing
 
 After showing the pocket watch to the Eloi:
 	if the player is in the River Bank:
-		say "Suddenly, all the Eloi stop their chattering when you bring out the pocket watch[if ask-about-weena is true] and mention Weena[end if]. One of them takes the pocket watch from you and turns it over in his hands before handing it to another Eloi, who examines it as well. This Eloi hands the pocket watch back to you, looks at the group, and nods briefly.[paragraph break]Several of the Eloi grab you gently and walk with you to the northwest.";
+		say "Suddenly, all the Eloi stop their chattering when you bring out the pocket watch[if ask-about-weena is true] and mention Weena[end if].[paragraph break]One of them takes the pocket watch from you and turns it over in his hands before handing it to another Eloi, who examines it as well. This Eloi hands the pocket watch back to you, looks at the rest of the group, and nods hesitantly.[paragraph break]Several of the Eloi grab you gently and walk you away from the river, back towards the clearing.";
 		now clearing-print-description is false;
 		now the Eloi are in the Clearing;
 		now the player is in the Clearing;
@@ -4605,13 +4605,13 @@ Chapter - Default Responses
 [Default tell response for Eloi:]
 	
 Default ask-tell response for Eloi:
-	say "Try as you might you can[']t make the Eloi understand what you are saying. Some of them laugh at your strange pronunciation while others coo and chatter among themselves quietly. Others become bored and drift off into other pursuits, while still others walk over to see the new oddity." 
+	say "Try as you might you can't make the Eloi understand you. Some laugh at your strange pronunciation while others coo and chatter among themselves quietly." 
 	
 Default give response for Eloi:
 	say "You hand the [noun] to one of the Eloi. Puzzled, they look at it a for a few seconds before passing it around the group. Finally, it's returned to you." 
 		
 Default show response for Eloi:
-	say "The group looks at the [noun] with various degrees of puzzlement on their faces but no recognition of the [noun]'s function."	
+	say "The group looks at the [noun], puzzlement on their faces but no recognition of the [noun]'s function."	
 	
 [Default give-show response for Eloi:]
 [Default ask-for response for Eloi:]

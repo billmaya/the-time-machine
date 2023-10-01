@@ -4822,7 +4822,7 @@ After saying hello to the driver when the greeting type is explicit or the greet
 
 To say default-driver-response: say "The driver nods silently in your direction."
 
-Default ask response for driver: say "'I'm just a driver, sir. I'm sure the doctor there's the one who could aswer that for you.'"
+Default ask response for driver: say "'I'm just a driver, sir. I'm sure the doctor there's the one who could answer that for you.'"
 
 [Default answer response for driver: ]
 

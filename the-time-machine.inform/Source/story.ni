@@ -4730,7 +4730,7 @@ Book - Morlocks
 
 morlock-placeholder is a thing.
 morlock-placeholder is scenery.
-The description of morlock-placeholder is "The pallid skin, luminous eyes, and hunched posture of these pale, ape-like creatures attacking you engenders a visceral reaction of horror and disgust in you."
+The description of morlock-placeholder is "The pallid skin, luminous eyes, and hunched posture of these pale, ape-like creatures attacking you engenders a visceral reaction of horror and disgust."
 
 morlock-placeholder is a backdrop.
 morlock-placeholder is in the Year-802701-Underground.

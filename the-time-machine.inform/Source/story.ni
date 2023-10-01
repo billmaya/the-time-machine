@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43658 ]
+[WORDS - 43744 ]
 
 Table of Releases
 release	notes
@@ -4504,13 +4504,23 @@ The Eloi are in the River Bank.
 The Eloi are fixed.
 The Eloi are major.
 
-The description of the Eloi is "All of the Eloi are slight and short, about four feet tall. All are dressed in the same type of manufactured tunic, belted at the waist, and wearing buskins on their feet. The homogeneity of their features, their build, and their dress make it hard to distinguish one from the other."
+The description of the Eloi is "All of the Eloi are slight and short, about four feet tall, dressed in the same type of tunic, which is belted at the waist, and wearing buskins on their feet. The homogeneity of their features, their build, and their dress make it hard to distinguish one from the other."
 
-eloi-couples are scenery in the River.
+eloi-buskins are scenery.
+eloi-buskins are backdrop. They are in the River Bank and the Clearing.
+The description of eloi-buskins is "A knee-high book of leather."
+Understand "buskin" or "buskins" as eloi-buskins.
+
+eloi-tunic is scenery.
+eloi-tunic is backdrop. It is in the River Bank and the Clearing.
+The description of eloi-tunic is "A loose sleeveless garment that reaches their knees[first time], resembling those worn in ancient Greece and Rome[only]."
+Understand "tunic" or "tunics" as eloi-tunic.
+
+eloi-couples are scenery in the River Bank.
 The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."
 Understand "couples" as eloi-couples.
 
-eloi-activities are scenery in the River.
+eloi-activities are scenery in the River Bank.
 The description of eloi-activities are "Some of the Eloi are splashing in the shallows while others rest on the river bank. A few gather flowers or fruit among the bushes and, to your horror, a few couples are involved in prurient matters in the shadows."
 Understand "activities" as eloi-activities.
 

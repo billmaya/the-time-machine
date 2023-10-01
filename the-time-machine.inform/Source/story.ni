@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43706 ]
+[WORDS - 43675 ]
 
 Table of Releases
 release	notes
@@ -4739,14 +4739,11 @@ Understand "morlocks" or "morlock" or "figures" as morlock-placeholder.
 
 Book - Wells
 
-Wells is a person. [in Woking Street.]
+Wells is a person. 
 Wells is undescribed.
 Wells is in the ambulance.
 
-Instead of examining Wells: say "Your last glimpse of your friend was so unlike his usual composed and methodical self that it was like seeing another person entirely. You want to believe his story but without proof or witnesses you don't know what to think."
-
-After saying hello to Wells when the greeting type is explicit or the greeting type is implicit: 
-	say "[default-wells-response]".
+Instead of examining Wells: say "Your friend actions are unbalanced and estranged, so unlike his usual composed and methodical self[first time]. You want to believe his story but without proof or witnesses you don't know what to think[only]."
 
 Part - Rescuing
 

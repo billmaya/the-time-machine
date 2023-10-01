@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43696 ]
+[WORDS - 43756 ]
 
 Table of Releases
 release	notes
@@ -4508,7 +4508,7 @@ The description of the Eloi is "All of the Eloi are slight and short, about four
 
 eloi-buskins are scenery.
 eloi-buskins are backdrop. They are in the River Bank and the Clearing.
-The description of eloi-buskins is "A knee-high book of leather."
+The description of eloi-buskins is "Knee-high boots of leather."
 Understand "buskin" or "buskins" as eloi-buskins.
 
 eloi-tunic is scenery.
@@ -4622,10 +4622,16 @@ Default show response for Eloi:
 Book - Weena
 
 Weena is a person.
-Weena is in the Holding Cell. [nowhere.]
+Weena is in the Holding Cell.
 Weena is fixed.
 Weena is major.
-The description of Weena is "[if the River Bank is visited]Slightly taller than the other Eloi, but dressed as they are and with the same similarity of features and build, t[otherwise]Slight, just over four feet tall, and dressed in some type of manufactured tunic, belted at the waist, and wearing buskins on her feet, t[end if]his is clearly the girl Wells described." 
+The description of Weena is "[weena-description]".
+
+To say weena-description:
+	if the River Bank is visited:
+		say "Slightly taller than the other Eloi but with the same similarity of features and build and dressed as they are, this is clearly the girl Wells described.";
+	otherwise:
+		say "Slight, just over four feet tall and dressed in a belted tunic with buskins on her feet, this is clearly the girl Wells described."
 
 Understand "girl" or "features" as Weena.
 
@@ -4633,9 +4639,14 @@ weena-tunic is a thing.
 weena-tunic is part of Weena.
 The printed name of weena-tunic is "Weena's tunic".
 
-The description of weena-tunic is "A dense weave of cottoney fibers,[first time] obviously machine made, and[only] cinched at the waist."
+The description of weena-tunic is "[if the Eloi have been seen]Like the other Eloi, her tunic is a[otherwise]A[end if] loose sleeveless garment that reaches her knees."
 
 Understand "tunic" or "dress" or "weena's tunic" as weena-tunic. 
+
+weena-buskins are a thing.
+weena-buskins are part of Weena.
+The description of weena-buskins are "[if the Eloi have been seen]Like the other Eloi, she is wearing k[otherwise]K[end if]nee-high boots of leather."
+Understand "buskin" or "buskins" or "weena's buskins" as weena-buskins.
 
 Part - Suggestions 
 
@@ -5538,7 +5549,7 @@ Book - Weena
 Part - Introduction Of Weena
 
 [I don't think this scene is used anymore.]
-
+[
 Introduction Of Weena is a scene.
 
 introduce-weena is a truth state that varies.
@@ -5564,6 +5575,7 @@ Introduction Of Weena ends when Weena has the pocket watch.
 
 [When Introduction Of Weena ends:
 	say "INTRODUCTION TO WEENA ENDS."]
+]
 
 Part - Weena Gives You Flower
 

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43869 ]
+[WORDS - 43847 ]
 
 Table of Releases
 release	notes
@@ -4894,6 +4894,7 @@ Check burning something with something (this is the burn only things not held ru
 	silently try the player dropping the noun;
 	if player encloses the noun, stop the action.
 ]
+
 [Remove or modify Carry/Report to allow newspaper to be used as a torch; give burning newspaper a duration]
 Carry out burning something with something (this is the simplistic burning rule):
 	now the noun is nowhere.
@@ -5046,24 +5047,13 @@ The newspaper is a thing.
 The newspaper is on the left armchair.
 The newspaper is undescribed. 
 Understand "news" or "paper" as newspaper.
-The description of the newspaper is "Today[']s edition of 'The Guardian,' which you[']ve already read."
 
-The newspaper-reads is a number that varies.
-The newspaper-reads is 0.
-
-The penultimate-read is a number that varies.
-The penultimate-read is 2.
+Instead of examining the newspaper for the first time: say "Today's edition of 'The Guardian,' which you've already read."
+Instead of examining the newspaper for more than one time: say "Today's edition of 'The Guardian.'"
 
 [Suppress "On the left armchair is a newspaper." and "On the right armchair is a newspaper." text]
 The describe what's on scenery supporters in room descriptions rule does nothing when the newspaper is on the left armchair.
 The describe what's on scenery supporters in room descriptions rule does nothing when the newspaper is on the right armchair
-
-Before putting the newspaper on the right armchair:
-	if the location of Gernsback is the Parlor:
-		say "You can't while Gernsback is sitting there.";
-		stop the action;
-	otherwise:
-		continue the action.
 
 Instead of searching the newspaper: try reading the newspaper.
 
@@ -5162,7 +5152,8 @@ Carry out reading:
 		say "You can't do that while Gernsback is reading it.";
 	otherwise if the noun is newspaper:
 		move the newspaper to the player;
-		say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";
+		say "Rereading any of the articles isn't going to get you any closer to your goal.";
+		[DEL say "You glance at today's paper but realize that rereading any of the articles isn't going to get you any closer to your goal.";]
 	otherwise if the noun is orrery:
 		try reading the central panel;
 	otherwise if the noun is central panel:

@@ -5093,7 +5093,6 @@ The box of matches contains five s-matches.
 Understand "matchbox" or "match box" as box of matches.
 
 The box of matches is held by Gernsback.
-[The box of matches is held by the player.] [When assigned this way the box of matches show up in the visible inventory right away instead of needing to type >wait]
 
 
 Book - Books

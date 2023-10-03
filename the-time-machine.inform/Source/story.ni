@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43790 ]
+[WORDS - 43767 ]
 
 Table of Releases
 release	notes
@@ -5107,11 +5107,8 @@ Understand "book/books" or "books on shelf/shelves"  or "library book/books" or 
 
 Instead of searching the library-books: try reading the library-books.
 
-To say taking-library-books: 
-	say "You take [one of]one of the books[or]another book[stopping] off the shelves and leaf through a few of its pages. The subject doesn't[one of] interest you[or] seem relevant to your investigation[in random order] so you return it to its place on the shelf."
-
-Instead of taking library-books for the first time: say "[taking-library-books]".
-Instead of taking library-books for the second time: say "[taking-library-books]".
+Instead of taking library-books for the first time: say "You examine the variety of titles on various topics. Some are familiar, some not."
+Instead of taking library-books for the second time: say "You take one of the books off the shelf and leaf through a few of it's pages. The subject doesn't interest you so you return it to its place on the shelf."
 Instead of taking library-books: say "[one of]I probably shouldn't be telling you this but the shelves and the books are scenery, just for show.[or]Again, just scenery.[or]I'd suggest moving along to something more important and relevant to your investigation.[stopping]"
 
 Part - HG Wells Book
@@ -5144,9 +5141,9 @@ Reading is an action applying to one thing, requiring light.
 
 Carry out reading:
 	if the noun is library-books:
-		say "You scan the [printed name] but nothing catches your interest, especially since you've got more pressing concerns on your mind.";
+		say "You scan the rows of books but nothing catches your interest[first time], especially since you've got more  pressing concerns on your mind[only].";
 	otherwise if the noun is shelves:
-		say "You scan the shelves but nothing catches your interest, especially since you've got more pressing concerns.";
+		try reading the library-books;
 	otherwise if the noun is wells-book:
 		say "You can't do that while Gernsback is reading it.";
 	otherwise if the noun is newspaper:

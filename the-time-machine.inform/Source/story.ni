@@ -1098,7 +1098,7 @@ Chapter - Shelves
 The shelves are a thing.
 The shelves are scenery in the Library.
 The shelves are a supporter.
-The description of shelves is "The shelves contain books of all sizes, types, and subjects." 
+The description of shelves is "The shelves contain a variety of titles on various topics, some familiar, some not." 
 Understand "shelf" as shelves.
 
 Instead of searching the shelves: try reading the shelves.

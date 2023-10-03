@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43767 ]
+[WORDS - 43773 ]
 
 Table of Releases
 release	notes
@@ -1098,7 +1098,7 @@ Chapter - Shelves
 The shelves are a thing.
 The shelves are scenery in the Library.
 The shelves are a supporter.
-The description of shelves is "The shelves contain a variety of titles on various topics, some familiar, some not." 
+The description of shelves is "The shelves contain a variety of titles on various topics[first time], some familiar, some not[only]." 
 Understand "shelf" as shelves.
 
 Instead of searching the shelves: try reading the shelves.
@@ -5143,7 +5143,7 @@ Carry out reading:
 	if the noun is library-books:
 		say "You scan the rows of books but nothing catches your interest[first time], especially since you've got more  pressing concerns on your mind[only].";
 	otherwise if the noun is shelves:
-		try reading the library-books;
+		try examining the shelves;
 	otherwise if the noun is wells-book:
 		say "You can't do that while Gernsback is reading it.";
 	otherwise if the noun is newspaper:

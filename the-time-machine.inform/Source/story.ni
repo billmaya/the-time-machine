@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43773 ]
+[WORDS - 43593 ]
 
 Table of Releases
 release	notes
@@ -5205,18 +5205,11 @@ Part - With Poker
 
 Chapter - Tying
 
-Before tying tunic to poker:
-	if tunic is part of the poker:
-		say "You've already done that.";
-		stop the action;
-
 Instead of tying tunic to poker:
 	say "You deftly wrap the tunic around one end of the poker and tie it in securely in place.";
 	now the tunic is part of the poker;
 	now the tunic is nowhere; [scenery;]
 	now the poker is nowhere;
-	[now the poker is scenery;
-	try silently dropping the poker;]
 	move the makeshift torch to the player;
 
 Chapter - Wrapping
@@ -5228,6 +5221,8 @@ Understand "wrap [tunic] on [poker]" as wrapping.
 
 Understand "put [tunic] around [poker]" as wrapping.
 Understand "put [tunic] on [poker]" as wrapping.
+
+Understand "tie [tunic] around [poker]" as wrapping.
 
 Instead of wrapping:
 	try tying tunic to poker;
@@ -5279,28 +5274,6 @@ Every turn (this is the Putting The Torch Out rule):
 			otherwise:
 				move the poker to the location of the player.
 		now the makeshift torch is nowhere.
-
-[
-Every turn (this is the Putting The Torch Out rule):
-	repeat with item running through flaming makeshift torch:
-		if debug-mode is true, say "DEBUG Torch Duration: [duration of the item][line break]";
-		decrement the duration of the item;
-		if the duration of the item is less than 0:
-			if the makeshift torch is in location of player or makeshift torch is carried by player:
-				say "With a last gasp of light the remaining torch sputters and goes out.";
-			now player-has-light is false; [TBD Also, if the player walks away from the torch then they don't have light]
-			if the player is holding the makeshift torch:
-				now holding-torch is true;
-			otherwise:
-				now holding-torch is false;	
-			now the makeshift torch is burnt;
-			now the tunic is nowhere;	
-			if holding-torch is true:
-				move the poker to the player;
-			otherwise:
-				move the poker to the location of the player.
-			now the makeshift torch is nowhere.
-]
 
 
 Volume - Scenes

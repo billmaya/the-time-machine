@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43603 ]
+[WORDS - 43675 ]
 
 Table of Releases
 release	notes
@@ -2007,9 +2007,12 @@ Instead of activating the time machine:
 	otherwise:
 		if a breaker (called fuse) is contained in the time-fuse-holder: 
 			if the small light is switched on:
-				say "Reaching into the time machine, you push the lever forward. To your amazement and horror, the machine shimmers and disappears from the room, accompanied by a distinctive bass sound of metal grinding on metal.";
-				now the time machine is nowhere;
-				now humboldt-should-return is true;
+				if Ending Scene is not happening:
+					say "Reaching into the time machine, you push the lever forward. To your amazement and horror, the machine shimmers and disappears from the room, accompanied by a distinctive bass sound of metal grinding on metal.";
+					now the time machine is nowhere;
+					now humboldt-should-return is true;
+				otherwise:
+					say "You reach into the time machine to push the lever but hesitate[first time]. Sending the time machine by itself into the future would show Humboldt it works but then it would then forever lost[only].";
 		otherwise:
 			say "[nothing-happens]".
 
@@ -5337,6 +5340,9 @@ Every turn:
 		now time-travel-seen is true;
 		now endgame-success is true;
 		[This triggers the ending of the scene while the player is still in 802,701]
+	if the location of Humboldt is the Workshop and the location of the time machine is nowhere:
+		now time-travel-seen is true;
+		now endgame-success is true;
 	if Humboldt is mobile:
 		if the location of Humboldt is not the location of the player:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
@@ -5372,8 +5378,8 @@ When Ending Scene ends:
 			say "Suddenly the noise of what sounds like a key scraping along the bass string of a piano fills the room, drowning out all conversation. The air in the center of the room shimmers and Wells['] time machine reappears with an unusual occupant, a young girl whom, when she steps down from the machine after it materializes, you realize must be Wells['] Weena.[paragraph break]Humboldt is stunned, the truth behind Wells['] story apparent after what he has just seen. Humboldt and you go to the hospital to free Wells.";
 		if time-travel-seen is true:
 			if debug-mode is true, say "Endgame-Success = True, Time-Travel-Seen = True (DEBUG).";
-			[say "YOU PUSH THE LEVER AGAIN TO RETURN TO 1895.[paragraph break]";]
-			say "Pushing the lever again you return back to 1895 and the workshop. Stepping down from the time machine you answer the stunned Humboldt's questions, convincing him of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
+				[say "YOU PUSH THE LEVER AGAIN TO RETURN TO 1895.[paragraph break]";]
+				say "Pushing the lever again you return back to 1895 and the workshop. Stepping down from the time machine you answer the stunned Humboldt's questions, convincing him of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
 		otherwise:
 			[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
 			say "Humboldt studies the flower with growing amazement. 'I'm just an amateur botanist but even I can say that this morphology is unique, nothing like it in this world...' He studies the flower for a few seconds more before looking at you with a sober rationalization on his face. '...or this time.' He nods slightly. 'There must be some truth to Wells' story.'[paragraph break]Now that the doctor is willing to admit his error, he's more receptive to hearing the brief synopsis of your adventures in the year 802,701 before both of you leave for the hospital to get your friend Wells released.";

@@ -5530,37 +5530,6 @@ When Showing Eloi The Watch ends:
 	
 Book - Weena
 
-Part - Introduction Of Weena
-
-[I don't think this scene is used anymore.]
-[
-Introduction Of Weena is a scene.
-
-introduce-weena is a truth state that varies.
-introduce-weena is false.
-
-Introduction Of Weena begins when introduce-weena is true.
-
-To say weena-description:
-	say "Though her age, appearance and clothing mimics the other Eloi, her demeanor and the way she looks at you is different from the others. Obviously this is Weena and her encounter with Wells has changed her in some way, forced her to 'grow up' for lack of a better word."
-
-When Introduction Of Weena begins:
-	[say "INTRODUCTION TO WEENA BEGINS.";]
-	if the Eloi is carrying the pocket watch:
-		say "Suddenly a young girl appears. [no line break]";
-	otherwise:
-		say "At the word 'Weena' the Eloi begin chattering rapidly among themselves. One of them runs off and returns with a young girl. [no line break]";
-	say "[weena-description][line break]";
-	say "Weena gently takes the pocket watch from the Eloi who has it and turns it over slowly in her hands, her brow furrowed in thought.";
-	now Weena is in the River Bank;
-	now Weena is carrying the pocket watch.
-
-Introduction Of Weena ends when Weena has the pocket watch.
-
-[When Introduction Of Weena ends:
-	say "INTRODUCTION TO WEENA ENDS."]
-]
-
 Part - Weena Gives You Flower
 
 Weena Gives You Flower is a scene.

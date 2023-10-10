@@ -5328,26 +5328,25 @@ When Ending Scene begins:
 	if debug-mode is true, say "Ending Scene Begins (DEBUG).";
 	[implicitly greet Humboldt.]
 
-[Recipe §7.13. Traveling Characters, Van Helsing example]
 Every turn:
 	if the patience of Humboldt is angry-1:
 		if the time machine is nowhere:
 			now Weena is in the time machine;
 			now the time machine is in the workshop;
-			now weena-appears is true;
-	if the location of Humboldt is the Workshop and the location of the time machine is the Clearing:
-		now Humboldt is fixed;
-		now time-travel-seen is true;
-		now endgame-success is true;
-		[This triggers the ending of the scene while the player is still in 802,701]
-	if the location of Humboldt is the Workshop and the location of the time machine is nowhere:
-		now time-travel-seen is true;
-		now endgame-success is true;
-	if Humboldt is mobile:
+			now weena-appears is true; [This will start the Weena Appears In 1895 scene]
+	if the location of Humboldt is the Workshop:
+		if location of the time machine is the Clearing: [This triggers the ending of the scene while the player is still in 802,701]
+			now Humboldt is fixed;
+			now time-travel-seen is true;
+			now endgame-success is true;
+
+[
+	if Humboldt is mobile: [Recipe §7.13. Traveling Characters, Van Helsing example]
 		if the location of Humboldt is not the location of the player:
 			let the way be the best route from the location of Humboldt to the location of the player, using doors;
 			try Humboldt going the way;
 	refresh the list-characters window.
+]
 
 time-travel-seen is a truth state that varies.
 time-travel-seen is false.
@@ -5366,27 +5365,26 @@ After giving the flower to Humboldt:
 	now endgame-success is true.
 
 Ending Scene ends when endgame-success is true or endgame-failure is true.
-
+	
 When Ending Scene ends:
 	if debug-mode is true, say "Ending Scene Ends (DEBUG).";
-
-When Ending Scene ends:
 	[say "ENDING SCENE ENDS."]
 	if endgame-success is true:
-		if weena-appears is true:
-			if debug-mode is true, say "Endgame-Success = True, Weena-Appears = True (DEBUG).";
-			say "Suddenly the noise of what sounds like a key scraping along the bass string of a piano fills the room, drowning out all conversation. The air in the center of the room shimmers and Wells['] time machine reappears with an unusual occupant, a young girl whom, when she steps down from the machine after it materializes, you realize must be Wells['] Weena.[paragraph break]Humboldt is stunned, the truth behind Wells['] story apparent after what he has just seen. Humboldt and you go to the hospital to free Wells.";
+		if debug-mode is true, say "Endgame-Success = True (DEBUG).";
+		if weena-appears is true: 
+			if debug-mode is true, say "Weena-Appears = True (DEBUG).";
 		if time-travel-seen is true:
-			if debug-mode is true, say "Endgame-Success = True, Time-Travel-Seen = True (DEBUG).";
-				[say "YOU PUSH THE LEVER AGAIN TO RETURN TO 1895.[paragraph break]";]
+			if debug-mode is true, say "Time-Travel-Seen = True (DEBUG).";
 				say "Pushing the lever again you return back to 1895 and the workshop. Stepping down from the time machine you answer the stunned Humboldt's questions, convincing him of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
 		otherwise:
-			[say "SUCCESS. HUMBOLDT REALIZES THAT WELLS IS NOT INSANE.";]
-			say "Humboldt studies the flower with growing amazement. 'I'm just an amateur botanist but even I can say that this morphology is unique, nothing like it in this world...' He studies the flower for a few seconds more before looking at you with a sober rationalization on his face. '...or this time.' He nods slightly. 'There must be some truth to Wells' story.'[paragraph break]Now that the doctor is willing to admit his error, he's more receptive to hearing the brief synopsis of your adventures in the year 802,701 before both of you leave for the hospital to get your friend Wells released.";
+			 say "Humboldt studies the flower. 'I'm just an amateur botanist but even I can see that this morphology is unique, not from this world or...this time' He grabs your arm. 'There must be some truth to Wells['] story. We must get him released at once.'";
+		end the story saying "You have proved Wells['] sanity and saves him from the insane asylum.";
 	if endgame-failure is true:
-		[say "FAILURE. YOU ARE DRAGGED OFF TO THE ASYLUM."]
+		if debug-mode is true, say "Endgame-Success = False, Endgame-Failure = True (DEBUG).";
 		say "Alone, looking around the workshop, you feel a sense of failure and despair. Your attempt to vidicate your friend Wells has failed and his story of time travel will not be believed."; [but you can take a small measure of satisfaction having rescued Weena from the Morlocks]
-	end the story finally.
+		end the story saying "You have failed to prove Wells['] sanity and save him from the insane asylum.".
+	
+
 
 Book - Gernsback
 
@@ -5582,11 +5580,12 @@ Weena Appears In 1895 begins when weena-appears is true.
 
 When Weena Appears In 1895 begins:
 	[say "WEENA APPEARS BEGINS.";]
-	say "Suddenly, the time machine appears, shimmering into view, accompanied by its distinct vworp-vworp sound. A young girl steps down from inside and stands looking at the three of you, one hand still on the machine. Based on Wells['] description, you decide that this can only be Weena, the girl he met in the year far future.[paragraph break]Humboldt appears to quickly come to the same conclusion. Slowly he approaches the girl and gently takes her hand and in greeting. His eyes go to the flowers in her hair and, with her permission, removes one. Examining it closely, he turns to you in excitement. 'This is it! The rest of the flower that I was talking about earlier. Proof, I tell you, that Wells['] story, however fantastical it sounds, must be true. This flower, and that girl, prove it.'[paragraph break]You glance at Gernsback, who appears a bit disappointed at this turn of events.";
+	say "Suddenly a deep bass noise fills the room, drowning out all conversation. The air in the center of the room shimmers and the time machine reappears, occupied by a young girl. She steps down from inside the machine and stands beside it, hesitantly eyeing the both of you. Based on Wells['] description, this must be Weena.[paragraph break]Humboldt is stunned. He looks at you and back at Weena. His eyes go to the flowers in her hair. Gently, he removes one and examines it closely.";
 	now Weena is in the workshop;
+	now Humboldt has the flower;
 	now endgame-success is true.
 
-Weena Appears In 1895 ends when Weena is in the workshop [time machine] and the time machine is in the workshop.
+Weena Appears In 1895 ends when Weena is in the workshop and the time machine is in the workshop.
 
 [When Weena Appears In 1895 ends:
 	say "WEENA APPEARS ENDS."]

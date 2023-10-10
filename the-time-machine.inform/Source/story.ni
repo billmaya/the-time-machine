@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43675 ]
+[WORDS - 43499 ]
 
 Table of Releases
 release	notes
@@ -1996,14 +1996,18 @@ To say nothing-happens:
 
 Instead of activating the time machine:
 	if the player is in the time machine:
-		if a breaker (called fuse) is contained in the time-fuse-holder:		
-			if the small light is switched on:
-				say "You push the lever forward until it stops.";
-				now the lever is switched on;
+		if Ending Scene is not happening:
+			if a breaker (called fuse) is contained in the time-fuse-holder:		
+				if the small light is switched on:
+					say "You push the lever forward until it stops.";
+					now the lever is switched on;
+				otherwise:
+					say "[nothing-happens]";
 			otherwise:
 				say "[nothing-happens]";
 		otherwise:
-			say "[nothing-happens]";
+			now time-travel-seen is true;
+			now endgame-success is true;
 	otherwise:
 		if a breaker (called fuse) is contained in the time-fuse-holder: 
 			if the small light is switched on:
@@ -2012,7 +2016,8 @@ Instead of activating the time machine:
 					now the time machine is nowhere;
 					now humboldt-should-return is true;
 				otherwise:
-					say "You reach into the time machine to push the lever but hesitate[first time]. Sending the time machine by itself into the future would show Humboldt it works but then it would then forever lost[only].";
+					if the player is not in the time machine:
+						say "You reach into the time machine to push the lever but hesitate[first time]. Sending the time machine by itself into the future would show Humboldt it works but then it would then forever lost[only].";
 		otherwise:
 			say "[nothing-happens]".
 
@@ -5334,11 +5339,11 @@ Every turn:
 			now Weena is in the time machine;
 			now the time machine is in the workshop;
 			now weena-appears is true; [This will start the Weena Appears In 1895 scene]
-	if the location of Humboldt is the Workshop:
+	[if the location of Humboldt is the Workshop:
 		if location of the time machine is the Clearing: [This triggers the ending of the scene while the player is still in 802,701]
 			now Humboldt is fixed;
 			now time-travel-seen is true;
-			now endgame-success is true;
+			now endgame-success is true;]
 
 [
 	if Humboldt is mobile: [Recipe §7.13. Traveling Characters, Van Helsing example]
@@ -5367,7 +5372,6 @@ After giving the flower to Humboldt:
 Ending Scene ends when endgame-success is true or endgame-failure is true.
 	
 When Ending Scene ends:
-	if debug-mode is true, say "Ending Scene Ends (DEBUG).";
 	[say "ENDING SCENE ENDS."]
 	if endgame-success is true:
 		if debug-mode is true, say "Endgame-Success = True (DEBUG).";
@@ -5375,14 +5379,15 @@ When Ending Scene ends:
 			if debug-mode is true, say "Weena-Appears = True (DEBUG).";
 		if time-travel-seen is true:
 			if debug-mode is true, say "Time-Travel-Seen = True (DEBUG).";
-				say "Pushing the lever again you return back to 1895 and the workshop. Stepping down from the time machine you answer the stunned Humboldt's questions, convincing him of Wells['] sanity, before you and the doctor go to the hospital to free Wells.";
+			say "Pushing the lever you travel back to the year 802,701 and then return quickly to 1895. Stepping down from the time machine you answer the stunned Humboldt's questions as best you can, managing to convincw him of the truth of Wells['] story. Within the hour you and the doctor are on your way to the hospital to free Wells.";
 		otherwise:
 			 say "Humboldt studies the flower. 'I'm just an amateur botanist but even I can see that this morphology is unique, not from this world or...this time' He grabs your arm. 'There must be some truth to Wells['] story. We must get him released at once.'";
-		end the story saying "You have proved Wells['] sanity and saves him from the insane asylum.";
+		end the story saying "You have proved Wells['] sanity and saved him from the insane asylum.";
 	if endgame-failure is true:
 		if debug-mode is true, say "Endgame-Success = False, Endgame-Failure = True (DEBUG).";
 		say "Alone, looking around the workshop, you feel a sense of failure and despair. Your attempt to vidicate your friend Wells has failed and his story of time travel will not be believed."; [but you can take a small measure of satisfaction having rescued Weena from the Morlocks]
-		end the story saying "You have failed to prove Wells['] sanity and save him from the insane asylum.".
+		end the story saying "You have failed to prove Wells['] sanity and save him from the insane asylum.";
+	if debug-mode is true, say "Ending Scene Ends (DEBUG).".
 	
 
 

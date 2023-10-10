@@ -5530,22 +5530,6 @@ When Showing Eloi The Watch ends:
 	
 Book - Weena
 
-Part - Weena Gives You Flower
-
-Weena Gives You Flower is a scene.
-
-Weena Gives You Flower begins when Weena has the pocket watch.
-
-When Weena Gives You Flower begins:
-	[say "WEENA GIVES YOU FLOWER BEGINS.";]
-	say "Weena stares at the second hand making its way around the dial and taps at the crystal with her finger. Looking up, she smiles. She remembers. She hands the watch back to you and smiles."; 
-	now the player is carrying the pocket watch.
-
-Weena Gives You Flower ends when the player has the flower.
-
-[When Weena Gives You Flower ends:
-	say "WEENA GIVES YOU FLOWER ENDS."]
-
 Part - Weena Appears In 1895
 
 Weena Appears In 1895 is a scene.

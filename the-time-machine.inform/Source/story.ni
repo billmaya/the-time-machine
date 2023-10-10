@@ -2012,9 +2012,12 @@ Instead of activating the time machine:
 		if a breaker (called fuse) is contained in the time-fuse-holder: 
 			if the small light is switched on:
 				if Ending Scene is not happening:
-					say "Reaching into the time machine, you push the lever forward. To your amazement and horror, the machine shimmers and disappears from the room, accompanied by a distinctive bass sound of metal grinding on metal.";
-					now the time machine is nowhere;
-					now humboldt-should-return is true;
+					if the player is in the Workshop:
+						say "Reaching into the time machine, you push the lever forward. To your amazement and horror, the machine shimmers and disappears from the room, accompanied by a distinctive bass sound of metal grinding on metal.";
+						now the time machine is nowhere;
+						now humboldt-should-return is true;
+					if the player is in the Clearing:
+						say "You reach into the time machine to push the lever but hesitate[first time]. Sending the time machine by itself back to 1895 would strand you here forever[only].";
 				otherwise:
 					if the player is not in the time machine:
 						say "You reach into the time machine to push the lever but hesitate[first time]. Sending the time machine by itself into the future would show Humboldt it works but then it would then forever lost[only].";

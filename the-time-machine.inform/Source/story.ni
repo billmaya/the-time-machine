@@ -5441,7 +5441,7 @@ Gernsback Leaves begins when player is in the Library and the time of day is gre
 
 When Gernsback Leaves begins:
 	[say "GERNSBACK LEAVES BEGINS.";]
-	say "Gernsback closes his book and replaces it on the shelf. 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he quickly lights his cigar, drops the box of matches on the desk, and is gone without another word.";
+	say "Gernsback closes his book and replaces it on the shelf. 'Looks like the good doctor is going to be longer than expected. I'll check in with you tomorrow.' Putting on his coat, he quickly lights his cigar, drops the box of matches on the desk, and is gone out the front door without another word.";
 	move the box of matches to the desk;
 	reset the interlocutor;
 	now the wells-book is nowhere;

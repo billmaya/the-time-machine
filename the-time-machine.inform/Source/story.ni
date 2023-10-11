@@ -5342,11 +5342,6 @@ Every turn:
 			now Weena is in the time machine;
 			now the time machine is in the workshop;
 			now weena-appears is true; [This will start the Weena Appears In 1895 scene]
-	[if the location of Humboldt is the Workshop:
-		if location of the time machine is the Clearing: [This triggers the ending of the scene while the player is still in 802,701]
-			now Humboldt is fixed;
-			now time-travel-seen is true;
-			now endgame-success is true;]
 
 [
 	if Humboldt is mobile: [Recipe §7.13. Traveling Characters, Van Helsing example]

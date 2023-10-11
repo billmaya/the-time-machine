@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43227 ]
+[WORDS - 43221 ]
 
 Table of Releases
 release	notes
@@ -5474,10 +5474,8 @@ To say to-the-future:
 		One age passes. Two ages. Five ages. Beneath your feet the time machine shifts gears internally. The blur of individual dials starts to slow as you approach your final destination. The shimmering grey curtain surrounding you starts to dissapate and fade away like an early morning fog in the sun. The time machine has stopped; the dials indicating that 800,806 years have passed from when you started your journey in 1895. 
 
 		Apparently, from what you've seen, you have traveled through time and arrived in the year 802,701 A.D.";
-	otherwise if visited-802701 is 2:
-		say "TRAVELED TO 802,701 2ND TIME.";
 	otherwise:
-		say "TRAVELLED TO 802,701 [visited-802701 in words] TIME."
+		say "Pushing the lever again you travel forward through time to the year 802,701 A.D.".
 		
 When Travel To 802,701 begins:
 	[say "TRAVELING TO 802,701 BEGINS.";]

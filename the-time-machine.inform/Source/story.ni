@@ -5462,10 +5462,12 @@ Travel To 802,701 begins when the time machine is in the Workshop and player is 
 travel-to-802701 is a truth state that varies.
 travel-to-802701 is false.
 
-When Travel To 802,701 begins:
-	[say "TRAVELING TO 802,701 BEGINS.";]
-	now travel-to-802701 is true;
-	say "From Wells['] story you have an idea of what is going to happen, but you never expected to see it with your own eyes or experience it yourself.
+visited-802701 is a number that varies.
+visited-802701 is 0.
+
+To say to-the-future:
+	if visited-802701 is 1:
+		say "From Wells['] story you have an idea of what is going to happen, but you never expected to see it with your own eyes or experience it yourself.
 
 	As the machine powers up and the dials start inching forward through the seconds, minutes, weeks, and months, the workshop and its contents[unicode 8212]in fact the entire house[unicode 8212]fade away to be replaced by a shimmering grey void. Vague shapes of all sizes appear and disappear on the surface of the void that surrounds you as the millennia, ages, and epochs pass[unicode 8212]future people, places, and things living out their personal cycles of birth, life, and death.
 
@@ -5474,6 +5476,16 @@ When Travel To 802,701 begins:
 	One age passes. Two ages. Five ages. The blur of the individual dials starts slowing down and stopping left to right—first the one on the far left and then the others—one by one, as your final destination approaches. Beneath your feet the time machine shifts gears internally and slows. The shimmering grey curtain surrounding you starts to dissipate and fade away like an early morning fog in the face of the sun. Eventually the time machine stops, the dials indicating that 800,806 years have passed from when you started your journey in 1895.
 
 	Apparently, as best you can tell, you have travelled through time and arrived in the year 802,701 A.D.";
+	otherwise if visited-802701 is 2:
+		say "TRAVELED TO 802,701 2ND TIME.";
+	otherwise:
+		say "TRAVELLED TO 802,701 [visited-802701 in words] TIME."
+		
+When Travel To 802,701 begins:
+	[say "TRAVELING TO 802,701 BEGINS.";]
+	now travel-to-802701 is true;
+	now visited-802701 is visited-802701 + 1;
+	say "[to-the-future]";
 	now the current-year is "802,701";
 	now the numeric-year is 802701;
 	now the time machine is in the Clearing;

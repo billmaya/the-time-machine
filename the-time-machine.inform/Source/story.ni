@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43235 ]
+[WORDS - 43283 ]
 
 Table of Releases
 release	notes
@@ -5507,13 +5507,23 @@ Travel To 1895 is a recurring scene.
 
 Travel To 1895 begins when the time machine is in the Clearing and the player is in the time machine and the lever is switched on.
 
+travel-to-1895 is a number that varies.
+travel-to-1895 is 0.
+
+To say to-the-past:
+	if travel-to-1895 is 1:
+		say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey, but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
+
+		Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow, and as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
+
+		You have arrived back in the year 1895.";
+	otherwise:
+		say "You push the lever and return to 1895.".
+
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]
-	say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey, but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
-
-	Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow, and as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
-
-	You have arrived back in the year 1895.";
+	now travel-to-1895 is travel-to-1895 + 1;
+	say "[to-the-past]";
 	now the current-year is "1895";
 	now the numeric-year is 1895;
 	now the time machine is in the Workshop;

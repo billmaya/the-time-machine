@@ -5469,7 +5469,7 @@ To say to-the-future:
 
 		Apparently, from what you've seen, you have traveled through time and arrived in the year 802,701 A.D.";
 	otherwise if visited-802701 is greater than 1 and visited-802701 is less than 6:
-		say "Pushing the lever a[visits] time you travel forward through time to the year 802,701 A.D.";
+		say "Pushing the lever a [visits] time you travel forward through time to the year 802,701 A.D.";
 	otherwise:
 		say "Pushing the lever another time you travel forward through time.".
 
@@ -5480,10 +5480,10 @@ To say visits:
 
 Table of Visits
 threshold	ordinal-text
-2	" second"
-3	" third"
-4	" fourth"
-5	" fifth"
+2	"second"
+3	"third"
+4	"fourth"
+5	"fifth"
 		
 When Travel To 802,701 begins:
 	[say "TRAVELING TO 802,701 BEGINS.";]

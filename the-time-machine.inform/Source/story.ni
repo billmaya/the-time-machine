@@ -5577,7 +5577,7 @@ Escape The Morlocks is a recurring scene.
 Escape The Morlocks begins when the player is in the Holding Cell and Weena is in the Holding Cell;
 
 When Escape The Morlocks begins:
-	[say "ESCAPE THE MORLOCKS SCENE BEGINS."]
+	if debug-mode is true, say "Escape The Morlock Scene Begins (DEBUG).";
 	say "[escape-morlocks-begin-text]";
 	now Weena is mobile. 	
 
@@ -5589,7 +5589,7 @@ To say escape-morlocks-begin-text:
 Escape The Morlocks ends when Weena [the player] is in the Clearing.
 
 When Escape The Morlocks ends:
-	[say "ESCAPE THE MORLOCKS SCENE ENDS."]
+	if debug-mode is true, say "Escape The Morlocks Scene Ends. (DEBUG)";
 	now Weena is fixed.
 
 Chapter - Weena's Movement

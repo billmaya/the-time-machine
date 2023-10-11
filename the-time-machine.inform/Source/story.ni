@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43210 ]
+[WORDS - 43235 ]
 
 Table of Releases
 release	notes
@@ -1999,7 +1999,6 @@ Instead of activating the time machine:
 		if Ending Scene is not happening:
 			if a breaker (called fuse) is contained in the time-fuse-holder:		
 				if the small light is switched on:
-					say "You push the lever forward until it stops.";
 					now the lever is switched on;
 				otherwise:
 					say "[nothing-happens]";
@@ -5462,15 +5461,17 @@ visited-802701 is 0.
 
 To say to-the-future:
 	if visited-802701 is 1:
-		say "From Wells['] story you have an idea of what's going to happen but you never expected to experience it yourself.
+		say "You push the lever forward until it stops. From Wells['] story you have an idea of what's going to happen but you never expected to experience it yourself.
 
 		The dials start inching forward through the seconds, minutes, weeks, and months as the machine powers up. The workshop and then the house itself fades away, replaced by a shimmering grey void. You grip the time machine's framework as it shudders and gains velocity on its pre-programmed flight through the years, centuries, and millenia towards the Age of Eloi and Morlocks that Wells described. As you travel, vague shapes of various sizes appear on the void's surface[unicode 8212]future people, places, and things living out their personal cycles of birth, life, and death.
 
 		One age passes. Two ages. Five ages. Beneath your feet the time machine shifts gears internally. The blur of individual dials starts to slow as you approach your final destination. The shimmering grey curtain surrounding you starts to dissapate and fade away like an early morning fog in the sun. The time machine has stopped; the dials indicating that 800,806 years have passed from when you started your journey in 1895. 
 
 		Apparently, from what you've seen, you have traveled through time and arrived in the year 802,701 A.D.";
+	otherwise if visited-802701 is greater than 1 and visited-802701 is less than 6:
+		say "Pushing the lever a[visits] time you travel forward through time to the year 802,701 A.D.";
 	otherwise:
-		say "Pushing the lever a[visits] time you travel forward through time to the year 802,701 A.D.".
+		say "Pushing the lever another time you travel forward through time.".
 
 To say visits:
 	repeat through the Table of Visits:

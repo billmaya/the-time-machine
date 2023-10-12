@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43283 ]
+[WORDS - 43272 ]
 
 Table of Releases
 release	notes
@@ -5512,11 +5512,11 @@ travel-to-1895 is 0.
 
 To say to-the-past:
 	if travel-to-1895 is 1:
-		say "The time machine powers up and the grey void once again cloaks you and the machine in a temporal shroud. To your relief, the hands on the dials on the panel start turning backwards, one second at a time as you return to your point of origin. The time machine shudders and shakes slightly on its journey, but the dread you felt on your outward trip is less than before as you watch the silent shapes perform their temporal pantomime on the grey surface surrounding you.
+		say "The time machine powers up, cloaking you in its temporal shroud. To your relief, the dial hands start turn backwards, one second at a time, as you return to your point of origin. Though the time machine shudders and shakes like it did on its outward journey, the dread you feel is less than before as you watch the silent shapes perform their temporal pantomime on the grey void surrounding you and the machine.
 
-		Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow, and as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
+		Ages pass. One by one the dial hands approach zero and stop their retrograde spin. The time machine starts to slow and, as the last dial hits zero, it stops. The grey fog dissipates and the familiar workshop appears around you and the time machine.
 
-		You have arrived back in the year 1895.";
+		You have arrived back in the year 1895 A.D.";
 	otherwise:
 		say "You push the lever and return to 1895.".
 

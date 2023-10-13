@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43306 ]
+[WORDS - 43240 ]
 
 Table of Releases
 release	notes
@@ -41,28 +41,23 @@ debug-mode is a truth state that varies.
 debug-mode is false. [true.]
 
 To say introduction:
-	say "'Let me go!'
+	say "'Let me go!' Wells fights against the orderlies attempting to drag him to the horse-drawn ambulance parked in the street. He pulls himself free, stumbling into you, almost knocking both of you to the ground.
 
-Wells struggles against the efforts of the two orderlies who are dragging him towards the horse-drawn ambulance parked in the street. Desperate, he pulls himself free and stumbles into you, almost knocking the both of you to the ground.
+	'I[']m not crazy,' he says, his eyes DESPERATE AND PLEADING. 'I know my story sounds insane, but every word of it is true. You believe me, don[']t you?'
 
-'My friend, I[']m not crazy,' he says, his eyes desperate and pleading. 'I know my story sounds insane, but it[']s true. Every word of it. You believe me, don[']t you?'
+	Dr. Humboldt intervenes. 'Wells, of course we believe you. You[']ve just had a terrible shock; you need to rest after all of these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a rest. Nothing to worry about.' He motions to the two orderlies.
 
-Dr. Humboldt intervenes, placing himself between you and Wells. 'There, there, Wells. Of course we believe you. You just had a terrible shock; you need to rest after all these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a break. Nothing to worry about.'
+	You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[']ve just heard. Morlocks. Eloi. Time travel. It sounds like fantasy.
 
-You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend, but the doctor makes a good point, especially after the story you[']ve just heard from Wells['] own mouth. Morlocks. Eloi. Time travel. It sounds fantastical.
+	'I can prove it all,' Wells says. He fumbles in his vest pockets as the orderlies grab him once again. 'In my workshop you[']ll find...get your bloody hands off of me! Damn you! Let me go!'
 
-'I can prove it all,' Wells says. He starts fumbling in his vest pockets, looking for something. 'In my workshop you[']ll find[unicode 8212]Get your bloody hands off of me!' The orderlies have grabbed Wells a second time. 'No, damn you! Let me go!' 
+	Wells struggles against the orderlies but they[']re prepared and overpower him into the ambulance. So violent is Wells['] struggle that his pocket watch falls to the street.
 
-Wells forgets whatever he was looking for in his pockets and struggles against the orderlies, but they[']re prepared this time, and manage to overpower your friend and manhandle him into the ambulance. But it[']s a near thing: So violent is Wells['] struggle that his pocket watch falls to the ground.
-
-Humboldt notices your concerned look. 'Don[']t worry,' he says. 'They[']re professionals, used to dealing patients like this all the time. They[']re not being as rough with him as they look.'"
+	Humboldt notices your concern. 'Don[']t worry,' he says. 'They're professionals, not a rough as they look. Used to dealing with patients like this all the time.'"
 
 When play begins: 
 	now the time of day is 10:00 PM;
 	say "[introduction]";
-	[center "Press SPACE to continue.";
-	wait for the SPACE key;
-	clear only the main screen;]
 	open right-sidebar window;
 	open title-inventory window;
 	open list-inventory window;

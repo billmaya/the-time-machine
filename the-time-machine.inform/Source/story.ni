@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43240 ]
+[WORDS - 43209 ]
 
 Table of Releases
 release	notes
@@ -27,7 +27,7 @@ release	notes
 Volume - Beginning The Story
 
 The player is in Woking Street.  [the Main Room. [for compass test] ]
-The description of the player is "You rarely think of yourself in those terms, preferring to focus your prodigious logical and legal faculties on the work that your profession and your clients demand.[first time] But if you had to waste time on something so introspective, you might describe yourself as a middle-aged man who has reached a certain station in life where success and social esteem allow you to enjoy all the benefits of this modern age.[only] Truly, this is the best of times." [Mention something about Wells here?]
+The description of the player is "You[']re not very introspective, preferring to focus your analytical talents on your clients and your legal work[first time]. However, if you were in the mood to indulge yourself, the description of a middle-aged man whose hard work and successes allow them to enjoy all the benefits of this modern age would be appropriate[only]."
 
 Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
 
@@ -43,7 +43,7 @@ debug-mode is false. [true.]
 To say introduction:
 	say "'Let me go!' Wells fights against the orderlies attempting to drag him to the horse-drawn ambulance parked in the street. He pulls himself free, stumbling into you, almost knocking both of you to the ground.
 
-	'I[']m not crazy,' he says, his eyes DESPERATE AND PLEADING. 'I know my story sounds insane, but every word of it is true. You believe me, don[']t you?'
+	'I[']m not crazy,' he says, his eyes frantic. 'I know my story sounds insane, but every word of it is true. You believe me, don[']t you?'
 
 	Dr. Humboldt intervenes. 'Wells, of course we believe you. You[']ve just had a terrible shock; you need to rest after all of these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a rest. Nothing to worry about.' He motions to the two orderlies.
 

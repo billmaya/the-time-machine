@@ -5277,8 +5277,8 @@ Every turn (this is the Putting The Torch Out rule):
 			if holding-torch is true:
 				move the poker to the player;
 			otherwise:
-				move the poker to the location of the player.
-		now the makeshift torch is nowhere.
+				move the poker to the location of the player;
+			now the makeshift torch is nowhere.
 
 
 Volume - Scenes

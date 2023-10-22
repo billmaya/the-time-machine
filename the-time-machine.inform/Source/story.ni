@@ -5267,7 +5267,7 @@ Every turn (this is the Putting The Torch Out rule):
 			decrement the duration of the item;
 		if the duration of the item is 0:
 			if the makeshift torch is in location of player or makeshift torch is carried by player:
-				say "With a last gasp of light the remaining torch sputters and goes out.";
+				say "With a last gasp of light the torch sputters and goes out.";
 				now player-has-light is false; [TBD Also, if the player walks away from the torch then they don't have light]
 				now the makeshift torch is burnt;
 			if the player is holding the makeshift torch:

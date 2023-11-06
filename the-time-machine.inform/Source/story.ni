@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43208 ]
+[WORDS - 43255 ]
 
 Table of Releases
 release	notes
@@ -4646,7 +4646,7 @@ The printed name of weena-tunic is "Weena's tunic".
 
 The description of weena-tunic is "[if the Eloi have been seen]Like the other Eloi, her tunic is a[otherwise]A[end if] loose sleeveless garment that reaches her knees."
 
-Understand "tunic" or "dress" or "weena's tunic" as weena-tunic. 
+Understand "dress" or "weena's tunic" or "weena tunic" or "weenas tunic" as weena-tunic.
 
 weena-buskins are a thing.
 weena-buskins are part of Weena.
@@ -4688,12 +4688,15 @@ Instead of showing the petal to Weena:
 	otherwise:
 		say "Weena looks at the petal but appears too terrified right now to do anything.";
 		reset the interlocutor.
-		
+
 Instead of showing the tunic to Weena:
-	if Weena is in the Year-802701-Outside:
-		say "THERE SHOULD BE NO TUNIC AROUND IF IT'S BURNED."; [Instead of showing the tunic to Weena: TBD]
+	if the tunic is not nowhere:
+		if the player has the tunic:
+			say "Weena glances at the tunic and then at her own clothes but appears too terrified right now to do anything.";
+		otherwise:
+			say "You can't see any such thing.";
 	otherwise:
-		say "Weena glances at the tunic and then at her own clothes but appears too terrified right now to do anything."
+		say "You can't see any such thing."
 
 Section - Giving
 
@@ -4702,10 +4705,13 @@ Instead of giving the pocket watch to Weena: try showing the pocket watch to Wee
 Instead of giving the petal to Weena: try showing the petal to Weena.
 
 Instead of giving the tunic to Weena:
-	if Weena is in the Year-802701-Outside:
-		say "THERE SHOULD BE NO TUNIC AROUND IF IT'S BURNED."; [Instead of giving the tunic to Weena: TBD]
+	if the tunic is not nowhere:
+		if the player has the tunic:
+			say "You hand the tunic to Weena. Puzzled, she compares it her own clothing before returning giving it back to you[if the player has the poker] and pointing to the poker in your hand[end if].";
+		otherwise:
+			say "You can't see any such thing.";
 	otherwise:
-		say "You hand the tunic to Weena. Puzzled, she compares it her own clothing before returning giving it back to you[if the player has the poker] and pointing to the poker in your hand[end if]."
+		say "You can't see any such thing."
 
 Chapter - Default Responses
 

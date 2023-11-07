@@ -3473,7 +3473,7 @@ The visibility of Holding Cell is twilight. [day.]
 Instead of exiting when the player is in the Holding Cell:
 	try going north.
 	
-Before going north when the player is in the Holding Cell: [TBD I don't think this code is used]
+Before going north when the player is in the Holding Cell:
 	if player-has-light is false:
 		say "Weena grabs at you as you attempt to leave, obviously wanting to follow you into the darkness but terrified to do so without a light."
 

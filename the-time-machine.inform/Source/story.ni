@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43255 ]
+[WORDS - 43096 ]
 
 Table of Releases
 release	notes
@@ -2108,7 +2108,7 @@ controls-examined-already is false.
 [Every turn:
 	Understand "[something]" as examining when the player is inside the time machine.]
 
-[This code will compile]	
+[This code will compile. Why? TBD]	
 Understand "[something]" as examining when the player is inside the time machine. [ Writing §17.10 ]
 	
 To say controls-examine-internal:
@@ -2282,11 +2282,6 @@ The windows are a backdrop. The windows are in the Workshop and the Garden.
 Understand "workshop windows" or "window" or "hinge" or "hinges" or "pane" or "panes" or "leaded" or "lead" or "glass" as windows.
 
 Instead of examining the windows: say "Large casement windows hinged on the outer edges and opening inward, secured by a single latch[first time]. The windows are constructed from many small panes of leaded glass in a lattice pattern[only]."
-
-[This code isn't used because of the "Instead of examining the windows:" clause above.]
-[>search the windows is handled in Look Through/In Windows section below.]
-[Should I incorporate this description code into the Instead response above? TBD]
-The description of the windows is "[if the player is in the Garden and the light switch is switched off]Above the bench you can see the darkened workshop windows.[else if the player is in the Garden and the light switch is switched on]Above you the lit windows of the workshop cast a warm light over the snow-covered garden.[else if the player is in the Workshop and the light switch is switched off]The windows look down into the snow-covered garden below.[else if the player is in the workshop and the light switch is switched on]The warm glow from the lights illuminates the snow-covered garden below."
 
 The windows can be open or closed.
 The windows can be openable. The windows are openable.

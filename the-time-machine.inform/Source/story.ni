@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43096 ]
+[WORDS - 43091 ]
 
 Table of Releases
 release	notes
@@ -4511,10 +4511,10 @@ eloi-buskins are backdrop. They are in the River Bank and the Clearing.
 The description of eloi-buskins is "Knee-high boots of leather."
 Understand "buskin" or "buskins" as eloi-buskins.
 
-eloi-tunic is scenery.
-eloi-tunic is backdrop. It is in the River Bank and the Clearing.
-The description of eloi-tunic is "A loose sleeveless garment that reaches their knees[first time], resembling those worn in ancient Greece and Rome[only]."
-Understand "tunic" or "tunics" as eloi-tunic.
+eloi-tunics are scenery.
+eloi-tunics are part of the Eloi.
+The description of eloi-tunics is "A loose sleeveless garment that reaches their knees[first time], resembling those worn in ancient Greece and Rome[only]."
+Understand "tunics" or "eloi tunics" as eloi-tunics.
 
 eloi-couples are scenery in the River Bank.
 The description of eloi-couples are "Best to focus on the task at hand, which is finding Weena."

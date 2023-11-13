@@ -322,6 +322,35 @@ Up Above is a room. Up Above is up from the Main Room.
 Down Below is a room. Down Below is down from the Main Room.
 
 
+Part - Out Of World Actions
+
+graphics-mode is a truth state that varies.
+graphics-mode is false.
+[
+Request graphics mode is an action out of world.
+Report request graphics mode: 
+	if graphics-mode is false:
+		now graphics-mode is true;
+	otherwise:
+		now graphics-mode is false;
+	say "GRAPHICS TURNED [if graphics-mode is false]OFF[otherwise]ON[end if]."
+
+Understand "graphics" as request graphics mode.
+]
+Request graphics mode on is an action out of world.
+Report request graphics mode on: 
+	now graphics-mode is true;
+	say "GRAPHICS TURNED [if graphics-mode is false]OFF[otherwise]ON[end if]."
+
+Understand "graphics on" as request graphics mode on.
+
+Request graphics mode off is an action out of world.
+Report request graphics mode off: 
+	now graphics-mode is false;
+	say "GRAPHICS TURNED [if graphics-mode is false]OFF[otherwise]ON[end if]."
+
+Understand "graphics off" as request graphics mode on.
+
 Part - Before Rules
 
 Chapter - Listening

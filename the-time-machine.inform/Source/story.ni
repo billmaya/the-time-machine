@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43091 ]
+[WORDS - 43070 ]
 
 Table of Releases
 release	notes
@@ -3531,7 +3531,6 @@ The Eloi are a familiar people.
 Weena is a familiar woman.
 
 The Morlocks are a familiar people.
-The printed name of Morlocks is "the Morlocks".
 
 [Uncomment when testing Humboldt Patience responses with testing commands when you haven't seen the actual locations.]
 The river-river is a familiar thing.
@@ -4494,12 +4493,9 @@ The Eloi are people. "[if location of Eloi is River Bank][eloi-initial-appearanc
 To say eloi-initial-appearance:
 	say "[if the player is in the River Bank for more than the first time]A few of the Eloi gather around you[otherwise]A small group of individuals are spread out along this section of the river bank, involved in a variety of activities. Obviously, these are the Eloi that Wells talked about. Noticing your presence, a few of the Eloi gather around you[end if]." 
 
-The printed name of Eloi is "the Eloi".
-
 To say eloi-in-clearing:
 	say "One of the Eloi points at the circular well cover and back at the watch in your hands."
 
-[The indefinite article is "the".]
 The Eloi are in the River Bank.
 The Eloi are fixed.
 The Eloi are major.

@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43138 ]
+[WORDS - 43729 ]
 [BRANCH - add-graphics]
 
 Table of Releases
@@ -26,6 +26,9 @@ release	notes
 "13"	"v2.0 alpha"
 
 Volume - Beginning The Story
+
+[Before starting the virtual machine:
+	now the current graphics drawing rule is the centered scaled drawing rule;]
 
 The player is in Woking Street.  [the Main Room. [for compass test] ]
 The description of the player is "You[']re not very introspective, preferring to focus your analytical talents on your clients and your legal work[first time]. However, if you were in the mood to indulge yourself, the description of a middle-aged man whose hard work and successes allow them to enjoy all the benefits of this modern age would be appropriate[only]."
@@ -57,9 +60,13 @@ To say introduction:
 	Humboldt notices your concern. 'Don[']t worry,' he says. 'They're professionals, not a rough as they look. Used to dealing with patients like this all the time.'"
 
 When play begins: 
+	close the graphics window; [Since we're not using this window]
 	now the time of day is 10:00 PM;
 	say "[introduction]";
 	open right-sidebar window;
+	if graphics-mode is true:
+		open character-graphics window;
+		refresh the character-graphics window;
 	open title-inventory window;
 	open list-inventory window;
 	open title-characters window;
@@ -69,6 +76,7 @@ When play begins:
 	if debug-mode is true:
 		open debug-title window;
 		open debug-info window;
+		follow Update Debug rule;
 	now suggest-on-greeting is false.
 
 After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
@@ -105,6 +113,8 @@ Include Flexible Windows by Jon Ingold.
 
 Include Basic Screen Effects by Emily Short.
 
+Include Simple Graphical Window by Emily Short. [Requires v10/161003 to display images correctly; v15/170131 of Flexible Windows]
+
 After reading a command:
 	resolve punctuated titles.
 	
@@ -118,6 +128,11 @@ The right-sidebar window is a graphics g-window spawned by the main window.
 The position of the right-sidebar window is g-placeright.
 The scale method of the right-sidebar window is g-fixed-size.
 The measurement of the right-sidebar window is 290.
+
+The character-graphics window is a graphics g-window spawned by the right-sidebar window.
+The position of the character-graphics window is g-placeabove.
+The scale method of the character-graphics window is g-fixed-size.
+The measurement of the character-graphics window is 250.
 
 The title-characters window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-characters window is g-placeabove.
@@ -209,6 +224,20 @@ Rule for refreshing the list-inventory window:
 
 Rule for refreshing the debug-title window:
 	say "DEBUG".
+
+Rule for refreshing the character-graphics window:
+	if graphics-mode is true:
+		let people-in-room be the list of people who are major that are not the player in the location of the player;
+		if people-in-room is not empty:
+			if entry 1 of people-in-room is Weena, draw Figure of Weena in character-graphics window;
+			if entry 1 of people-in-room is Humboldt, draw Figure of Humboldt in character-graphics window;
+			if entry 1 of people-in-room is Gernsback, draw Figure of Gernsback in character-graphics window;
+		otherwise:
+			if the numeric-year is 1895, draw Figure of 1895 in character-graphics window;
+			if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
+	otherwise:
+		if the numeric-year is 1895, draw Figure of 1895 in character-graphics window;
+		if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
 	
 Section - Styles
 
@@ -325,17 +354,49 @@ Down Below is a room. Down Below is down from the Main Room.
 Part - Out Of World Actions
 
 graphics-mode is a truth state that varies.
-graphics-mode is false.
+graphics-mode is true.
 
 Request graphics mode is an action out of world.
 Report request graphics mode: 
 	if graphics-mode is false:
 		now graphics-mode is true;
+		follow the restore graphics rules;
 	otherwise:
 		now graphics-mode is false;
+		close character-graphics window;
+	follow Update Debug rule;
 	say "GRAPHICS TURNED [if graphics-mode is false]OFF[otherwise]ON[end if]."
 
 Understand "graphics" as request graphics mode.
+
+Chapter - Restore Graphics Rulebook
+
+Restore Graphics is a rulebook.
+A restore graphics rule:
+	[Close all sub-windows]
+	close debug-info window;
+	close debug-title window;
+	close character-topics window;
+	close title-topics window;
+	close list-characters window;
+	close title-characters window;
+	close list-inventory window;
+	close title-inventory window;
+	[Re-open all sub windows]
+	open right-sidebar window; 
+	if graphics-mode is true:
+		open character-graphics window;
+		refresh the character-graphics window;
+	open title-inventory window;
+	open list-inventory window;
+	open title-characters window;
+	open list-characters window;
+	open title-topics window;
+	open character-topics window;
+	if debug-mode is true:
+		open debug-title window;
+		open debug-info window;
+		follow Update Debug rule;
 
 
 Part - Before Rules
@@ -429,14 +490,17 @@ Part - Every Turn Rules
 
 Chapter - User Interface
 
-Every turn:
+Every turn (this is the Refresh Windows rule):
 	refresh the title-characters window;
 	refresh the list-characters window;
 	refresh the title-talking-to window;
 	refresh the talking-to-character window;
 	refresh the title-topics window;
 	refresh the character-topics window;
-	refresh the list-inventory window.
+	refresh the list-inventory window;
+	if graphics-mode is true:
+		refresh the character-graphics window;
+		
 
 Chapter - Woking Street
 
@@ -603,6 +667,10 @@ Every turn (this is the Update Debug rule):
 			say "time-travel-seen: [time-travel-seen][line break]";
 			say "endgame-success: [endgame-success][line break]";
 			say "endgame-failure: [endgame-failure]";
+		otherwise if graphics-mode is true:
+			say "GRAPHICS-MODE: [graphics-mode][line break]";
+			let people-in-room be the list of people who are major that are not the player in the location of the player;
+			say "PEOPLE-IN-ROOM: [if people-in-room is not empty][people-in-room][otherwise]None[end if][line break]";
 		focus main window.
 		
 
@@ -761,6 +829,40 @@ Test go-end2 with "north / purloin key / purloin orrery fuse / north / unlock wo
 Part - Release
 
 Release along with cover art ("The Time Machine") and an interpreter. [and a solution. [and the source text.]]
+
+Volume - Figures
+
+A room has a figure name called illustration.
+
+First carry out looking when the illustration of the location is not Figure of cover (this is the Display Illustration rule):
+	if graphics-mode is true:
+		display the illustration of the location.
+
+A thing has a figure name called illustration.
+
+Before examining the noun:
+	if graphics-mode is true:
+		if the noun is not a person:
+			display the illustration of the noun.
+
+Book - Settings
+
+Figure of 1895 is the file "silhouette-london-1895-3.png".
+Figure of 802701 is the file "silhouette-802701-0.png".
+
+Part - 1895
+
+Part - 802,701
+
+Book - Characters
+
+Figure of Weena is the file "weena-0.png".
+Figure of Humboldt is the file "humboldt-3.png".
+Figure of Gernsback is the file "gernsback-3.png".
+
+Book - Things
+
+Book - Scenes
 
 Volume - Settings
 

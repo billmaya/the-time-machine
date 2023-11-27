@@ -25,61 +25,7 @@ release	notes
 "12"	"v1.9"
 "13"	"v2.0 alpha"
 
-Volume - Beginning The Story
 
-[Before starting the virtual machine:
-	now the current graphics drawing rule is the centered scaled drawing rule;]
-
-The player is in Woking Street.  [the Main Room. [for compass test] ]
-The description of the player is "You[']re not very introspective, preferring to focus your analytical talents on your clients and your legal work[first time]. However, if you were in the mood to indulge yourself, the description of a middle-aged man whose hard work and successes allow them to enjoy all the benefits of this modern age would be appropriate[only]."
-
-Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
-
-The current-year is text that varies.
-The current-year is "1895".
-
-The numeric-year is a number that varies.
-The numeric-year is 1895.
-
-debug-mode is a truth state that varies.
-debug-mode is false. [true.]
-
-To say introduction:
-	say "'Let me go!' Wells fights against the orderlies attempting to drag him to the horse-drawn ambulance parked in the street. He pulls himself free, stumbling into you, almost knocking both of you to the ground.
-
-	'I[']m not crazy,' he says, his eyes frantic. 'I know my story sounds insane, but every word of it is true. You believe me, don[']t you?'
-
-	Dr. Humboldt intervenes. 'Wells, of course we believe you. You[']ve just had a terrible shock; you need to rest after all of these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a rest. Nothing to worry about.' He motions to the two orderlies.
-
-	You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[']ve just heard. Morlocks. Eloi. Time travel. It sounds like fantasy.
-
-	'I can prove it all,' Wells says. He fumbles in his vest pockets as the orderlies grab him once again. 'In my workshop you[']ll find...get your bloody hands off of me! Damn you! Let me go!'
-
-	Wells struggles against the orderlies but they[']re prepared and overpower him into the ambulance. So violent is Wells['] struggle that his pocket watch falls to the street.
-
-	Humboldt notices your concern. 'Don[']t worry,' he says. 'They're professionals, not a rough as they look. Used to dealing with patients like this all the time.'"
-
-When play begins: 
-	close the graphics window; [Since we're not using this window]
-	now the time of day is 10:00 PM;
-	say "[introduction]";
-	open right-sidebar window;
-	if graphics-mode is true:
-		open character-graphics window;
-		refresh the character-graphics window;
-	open title-inventory window;
-	open list-inventory window;
-	open title-characters window;
-	open list-characters window;
-	open title-topics window;
-	open character-topics window;
-	if debug-mode is true:
-		open debug-title window;
-		open debug-info window;
-		follow Update Debug rule;
-	now suggest-on-greeting is false.
-
-After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
 
 Volume - Setup
 
@@ -103,20 +49,15 @@ When play begins (this is the run TBD checks at the start of play rule):
 
 Part - Extensions
 
+Include Flexible Windows by Jon Ingold.
+Include Simple Graphical Window by Emily Short. [Requires v10/161003 to display images correctly; v15/170131 of Flexible Windows]
+Include Basic Screen Effects by Emily Short. [Required to change status bar and display compass rose]
 Include Basic Help Menu by Emily Short.
-
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
-
 Include Conversation Package by Eric Eve. [Contains Epistemology, Conversation Framework, Conversation Suggestions and Conversasional Defaults extensions]
 
-Include Flexible Windows by Jon Ingold.
-
-Include Basic Screen Effects by Emily Short.
-
-Include Simple Graphical Window by Emily Short. [Requires v10/161003 to display images correctly; v15/170131 of Flexible Windows]
-
 After reading a command:
-	resolve punctuated titles.
+ 	 resolve punctuated titles.
 	
 Part - User Interface
 
@@ -374,8 +315,9 @@ Chapter - Restore Graphics Rulebook
 Restore Graphics is a rulebook.
 A restore graphics rule:
 	[Close all sub-windows]
-	close debug-info window;
-	close debug-title window;
+	if debug-mode is true:
+		close debug-info window;
+		close debug-title window;
 	close character-topics window;
 	close title-topics window;
 	close list-characters window;
@@ -829,6 +771,62 @@ Test go-end2 with "north / purloin key / purloin orrery fuse / north / unlock wo
 Part - Release
 
 Release along with cover art ("The Time Machine") and an interpreter. [and a solution. [and the source text.]]
+
+Volume - Beginning The Story
+
+[Before starting the virtual machine:
+	now the current graphics drawing rule is the centered scaled drawing rule;]
+
+The player is in Woking Street.  [the Main Room. [for compass test] ]
+The description of the player is "You[']re not very introspective, preferring to focus your analytical talents on your clients and your legal work[first time]. However, if you were in the mood to indulge yourself, the description of a middle-aged man whose hard work and successes allow them to enjoy all the benefits of this modern age would be appropriate[only]."
+
+Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
+
+The current-year is text that varies.
+The current-year is "1895".
+
+The numeric-year is a number that varies.
+The numeric-year is 1895.
+
+debug-mode is a truth state that varies.
+debug-mode is false. [true.]
+
+To say introduction:
+	say "'Let me go!' Wells fights against the orderlies attempting to drag him to the horse-drawn ambulance parked in the street. He pulls himself free, stumbling into you, almost knocking both of you to the ground.
+
+	'I[']m not crazy,' he says, his eyes frantic. 'I know my story sounds insane, but every word of it is true. You believe me, don[']t you?'
+
+	Dr. Humboldt intervenes. 'Wells, of course we believe you. You[']ve just had a terrible shock; you need to rest after all of these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a rest. Nothing to worry about.' He motions to the two orderlies.
+
+	You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[']ve just heard. Morlocks. Eloi. Time travel. It sounds like fantasy.
+
+	'I can prove it all,' Wells says. He fumbles in his vest pockets as the orderlies grab him once again. 'In my workshop you[']ll find...get your bloody hands off of me! Damn you! Let me go!'
+
+	Wells struggles against the orderlies but they[']re prepared and overpower him into the ambulance. So violent is Wells['] struggle that his pocket watch falls to the street.
+
+	Humboldt notices your concern. 'Don[']t worry,' he says. 'They're professionals, not a rough as they look. Used to dealing with patients like this all the time.'"
+
+When play begins: 
+	close the graphics window; [Since we're not using this window]
+	open right-sidebar window;
+	if graphics-mode is true:
+		open character-graphics window;
+		refresh the character-graphics window;
+	open title-inventory window; 
+	open list-inventory window;
+	open title-characters window;
+	open list-characters window;
+	open title-topics window;
+	open character-topics window;
+	if debug-mode is true:
+		open debug-title window;
+		open debug-info window;
+		follow Update Debug rule;
+	now the time of day is 10:00 PM;
+	say "[introduction]";
+	now suggest-on-greeting is false.
+
+After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
 
 Volume - Figures
 
@@ -5779,12 +5777,6 @@ Return To Surface ends when the player is in the time machine.
 
 When Return To Surface ends:
 	if debug-mode is true, say "Return To Surface Scene Ends (DEBUG)";
-
-
-
-
-
-
 	
 Volume - Help
 

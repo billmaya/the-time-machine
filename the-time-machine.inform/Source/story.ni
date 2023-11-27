@@ -837,16 +837,20 @@ First carry out looking when the illustration of the location is not Figure of c
 		display the illustration of the location.
 
 A thing has a figure name called illustration.
+The illustration of thing is usually Figure of cover.
 
 Before examining the noun:
 	if graphics-mode is true:
 		if the noun is not a person:
-			display the illustration of the noun.
+			if the illustration of the noun is not Figure of cover:
+				display the illustration of the noun.
 
 Book - Settings
 
 Figure of 1895 is the file "silhouette-london-1895-3.png".
 Figure of 802701 is the file "silhouette-802701-0.png".
+
+Figure of Woking Street is the file "woking-street-0.png".
 
 Part - 1895
 
@@ -872,6 +876,8 @@ Woking Street is a room.
 The description of Woking Street is "You are standing halfway down the street outside of Wells['] house. A heavy snowfall wafts down, undisturbed except for the [area] directly in front of you[if ambulance is in Woking Street] where the ambulance is parked.[otherwise] where the scuffle with Wells happened.[end if] The front door is to the north[first time] and the light from behind the curtains looks invitingly warm[only].[first time] To the west, the flickering [gaslights] in the square seem much further away than fifty paces. To the east, the street dead-ends into a small cul-de-sac.[only]"
 
 The printed name of Woking Street is "68 Woking Street".
+
+The illustration of Woking Street is Figure of Woking Street.
 
 Chapter - Area
 

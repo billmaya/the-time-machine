@@ -6,7 +6,8 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43070 ]
+[WORDS - 43729 ]
+[BRANCH - add-graphics]
 
 Table of Releases
 release	notes
@@ -24,53 +25,7 @@ release	notes
 "12"	"v1.9"
 "13"	"v2.0 alpha"
 
-Volume - Beginning The Story
 
-The player is in Woking Street.  [the Main Room. [for compass test] ]
-The description of the player is "You[']re not very introspective, preferring to focus your analytical talents on your clients and your legal work[first time]. However, if you were in the mood to indulge yourself, the description of a middle-aged man whose hard work and successes allow them to enjoy all the benefits of this modern age would be appropriate[only]."
-
-Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
-
-The current-year is text that varies.
-The current-year is "1895".
-
-The numeric-year is a number that varies.
-The numeric-year is 1895.
-
-debug-mode is a truth state that varies.
-debug-mode is false. [true.]
-
-To say introduction:
-	say "'Let me go!' Wells fights against the orderlies attempting to drag him to the horse-drawn ambulance parked in the street. He pulls himself free, stumbling into you, almost knocking both of you to the ground.
-
-	'I[']m not crazy,' he says, his eyes frantic. 'I know my story sounds insane, but every word of it is true. You believe me, don[']t you?'
-
-	Dr. Humboldt intervenes. 'Wells, of course we believe you. You[']ve just had a terrible shock; you need to rest after all of these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a rest. Nothing to worry about.' He motions to the two orderlies.
-
-	You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[']ve just heard. Morlocks. Eloi. Time travel. It sounds like fantasy.
-
-	'I can prove it all,' Wells says. He fumbles in his vest pockets as the orderlies grab him once again. 'In my workshop you[']ll find...get your bloody hands off of me! Damn you! Let me go!'
-
-	Wells struggles against the orderlies but they[']re prepared and overpower him into the ambulance. So violent is Wells['] struggle that his pocket watch falls to the street.
-
-	Humboldt notices your concern. 'Don[']t worry,' he says. 'They're professionals, not a rough as they look. Used to dealing with patients like this all the time.'"
-
-When play begins: 
-	now the time of day is 10:00 PM;
-	say "[introduction]";
-	open right-sidebar window;
-	open title-inventory window;
-	open list-inventory window;
-	open title-characters window;
-	open list-characters window;
-	open title-topics window;
-	open character-topics window;
-	if debug-mode is true:
-		open debug-title window;
-		open debug-info window;
-	now suggest-on-greeting is false.
-
-After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
 
 Volume - Setup
 
@@ -94,18 +49,15 @@ When play begins (this is the run TBD checks at the start of play rule):
 
 Part - Extensions
 
+Include Flexible Windows by Jon Ingold.
+Include Simple Graphical Window by Emily Short. [Requires v10/161003 to display images correctly; v15/170131 of Flexible Windows]
+Include Basic Screen Effects by Emily Short. [Required to change status bar and display compass rose]
 Include Basic Help Menu by Emily Short.
-
 Include Punctuation Removal by Emily Short. [Writing §17.21. Understanding mistakes]
-
 Include Conversation Package by Eric Eve. [Contains Epistemology, Conversation Framework, Conversation Suggestions and Conversasional Defaults extensions]
 
-Include Flexible Windows by Jon Ingold.
-
-Include Basic Screen Effects by Emily Short.
-
 After reading a command:
-	resolve punctuated titles.
+ 	 resolve punctuated titles.
 	
 Part - User Interface
 
@@ -117,6 +69,11 @@ The right-sidebar window is a graphics g-window spawned by the main window.
 The position of the right-sidebar window is g-placeright.
 The scale method of the right-sidebar window is g-fixed-size.
 The measurement of the right-sidebar window is 290.
+
+The character-graphics window is a graphics g-window spawned by the right-sidebar window.
+The position of the character-graphics window is g-placeabove.
+The scale method of the character-graphics window is g-fixed-size.
+The measurement of the character-graphics window is 250.
 
 The title-characters window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-characters window is g-placeabove.
@@ -208,6 +165,20 @@ Rule for refreshing the list-inventory window:
 
 Rule for refreshing the debug-title window:
 	say "DEBUG".
+
+Rule for refreshing the character-graphics window:
+	if graphics-mode is true:
+		let people-in-room be the list of people who are major that are not the player in the location of the player;
+		if people-in-room is not empty:
+			if entry 1 of people-in-room is Weena, draw Figure of Weena in character-graphics window;
+			if entry 1 of people-in-room is Humboldt, draw Figure of Humboldt in character-graphics window;
+			if entry 1 of people-in-room is Gernsback, draw Figure of Gernsback in character-graphics window;
+		otherwise:
+			if the numeric-year is 1895, draw Figure of 1895 in character-graphics window;
+			if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
+	otherwise:
+		if the numeric-year is 1895, draw Figure of 1895 in character-graphics window;
+		if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
 	
 Section - Styles
 
@@ -321,6 +292,56 @@ Up Above is a room. Up Above is up from the Main Room.
 Down Below is a room. Down Below is down from the Main Room.
 
 
+Part - Out Of World Actions
+
+graphics-mode is a truth state that varies.
+graphics-mode is true.
+
+Request graphics mode is an action out of world.
+Report request graphics mode: 
+	if graphics-mode is false:
+		now graphics-mode is true;
+		follow the Restore Graphics rules;
+	otherwise:
+		now graphics-mode is false;
+		close character-graphics window;
+	follow Update Debug rule;
+	say "Graphics Mode has been turned [if graphics-mode is false]off[otherwise]on[end if]."
+	[say "GRAPHICS TURNED [if graphics-mode is false]OFF[otherwise]ON[end if]."]
+
+Understand "graphics" as request graphics mode.
+
+Chapter - Restore Graphics Rulebook
+
+Restore Graphics is a rulebook.
+A restore graphics rule:
+	[Close all sub-windows]
+	if debug-mode is true:
+		close debug-info window;
+		close debug-title window;
+	close character-topics window;
+	close title-topics window;
+	close list-characters window;
+	close title-characters window;
+	close list-inventory window;
+	close title-inventory window;
+	[Re-open all sub windows]
+	open right-sidebar window; 
+	if graphics-mode is true:
+		open character-graphics window;
+		refresh the character-graphics window;
+	open title-inventory window;
+	open list-inventory window;
+	open title-characters window;
+	open list-characters window;
+	open title-topics window;
+	open character-topics window;
+	if debug-mode is true:
+		open debug-title window;
+		open debug-info window;
+		follow Update Debug rule;
+
+
 Part - Before Rules
 
 Chapter - Listening
@@ -412,14 +433,17 @@ Part - Every Turn Rules
 
 Chapter - User Interface
 
-Every turn:
+Every turn (this is the Refresh Windows rule):
 	refresh the title-characters window;
 	refresh the list-characters window;
 	refresh the title-talking-to window;
 	refresh the talking-to-character window;
 	refresh the title-topics window;
 	refresh the character-topics window;
-	refresh the list-inventory window.
+	refresh the list-inventory window;
+	if graphics-mode is true:
+		refresh the character-graphics window;
+		
 
 Chapter - Woking Street
 
@@ -586,6 +610,10 @@ Every turn (this is the Update Debug rule):
 			say "time-travel-seen: [time-travel-seen][line break]";
 			say "endgame-success: [endgame-success][line break]";
 			say "endgame-failure: [endgame-failure]";
+		otherwise if graphics-mode is true:
+			say "GRAPHICS-MODE: [graphics-mode][line break]";
+			let people-in-room be the list of people who are major that are not the player in the location of the player;
+			say "PEOPLE-IN-ROOM: [if people-in-room is not empty][people-in-room][otherwise]None[end if][line break]";
 		focus main window.
 		
 
@@ -745,6 +773,100 @@ Part - Release
 
 Release along with cover art ("The Time Machine") and an interpreter. [and a solution. [and the source text.]]
 
+Volume - Beginning The Story
+
+[Before starting the virtual machine:
+	now the current graphics drawing rule is the centered scaled drawing rule;]
+
+The player is in Woking Street.  [the Main Room. [for compass test] ]
+The description of the player is "You[']re not very introspective, preferring to focus your analytical talents on your clients and your legal work[first time]. However, if you were in the mood to indulge yourself, the description of a middle-aged man whose hard work and successes allow them to enjoy all the benefits of this modern age would be appropriate[only]."
+
+Understand "player" or "protagonist" or "lawyer" as yourself. [https://intfiction.org/t/understand-something-else-as-the-player/54102]
+
+The current-year is text that varies.
+The current-year is "1895".
+
+The numeric-year is a number that varies.
+The numeric-year is 1895.
+
+debug-mode is a truth state that varies.
+debug-mode is false. [true.]
+
+To say introduction:
+	say "'Let me go!' Wells fights against the orderlies attempting to drag him to the horse-drawn ambulance parked in the street. He pulls himself free, stumbling into you, almost knocking both of you to the ground.
+
+	'I[']m not crazy,' he says, his eyes frantic. 'I know my story sounds insane, but every word of it is true. You believe me, don[']t you?'
+
+	Dr. Humboldt intervenes. 'Wells, of course we believe you. You[']ve just had a terrible shock; you need to rest after all of these...time traveling adventures of yours. Plenty of time to sort it all out after you[']ve had a bit of a rest. Nothing to worry about.' He motions to the two orderlies.
+
+	You look at the doctor and back at Wells, not knowing whom to believe. Wells is your oldest friend but the doctor makes a good point, especially after the story you[']ve just heard. Morlocks. Eloi. Time travel. It sounds like fantasy.
+
+	'I can prove it all,' Wells says. He fumbles in his vest pockets as the orderlies grab him once again. 'In my workshop you[']ll find...get your bloody hands off of me! Damn you! Let me go!'
+
+	Wells struggles against the orderlies but they[']re prepared and overpower him into the ambulance. So violent is the struggle that Wells['] pocket watch falls to the street."
+
+When play begins: 
+	close the graphics window; [Since we're not using this window]
+	open right-sidebar window;
+	if graphics-mode is true:
+		open character-graphics window;
+		refresh the character-graphics window;
+	open title-inventory window; 
+	open list-inventory window;
+	open title-characters window;
+	open list-characters window;
+	open title-topics window;
+	open character-topics window;
+	if debug-mode is true:
+		open debug-title window;
+		open debug-info window;
+		follow Update Debug rule;
+	now the time of day is 10:00 PM;
+	say "[introduction]";
+	now suggest-on-greeting is false.
+
+After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time to see additional information about the game. Type 'graphics' and hit Enter/Return at any time to turn Graphics Mode on or off (it is currently [if graphics-mode is true]on[otherwise]off[end if])."
+
+Volume - Figures
+
+A room has a figure name called illustration.
+
+First carry out looking when the illustration of the location is not Figure of cover (this is the Display Illustration rule):
+	if graphics-mode is true:
+		display the illustration of the location.
+
+A thing has a figure name called illustration.
+The illustration of thing is usually Figure of cover.
+
+Before examining the noun:
+	if graphics-mode is true:
+		if the noun is not a person:
+			if the illustration of the noun is not Figure of cover:
+				display the illustration of the noun.
+
+Book - Settings
+
+Figure of 1895 is the file "silhouette-london-1895-3.png".
+Figure of 802701 is the file "silhouette-802701-0.png".
+
+Figure of Woking Street is the file "woking-street-0.png".
+
+Part - 1895
+
+Part - 802,701
+
+Book - Characters
+
+Figure of Weena is the file "weena-0.png".
+Figure of Humboldt is the file "humboldt-3.png".
+Figure of Gernsback is the file "gernsback-3.png".
+
+Book - Things
+
+Figure of Orrery is the file "orrery-0a.png".
+
+Book - Scenes
+
 Volume - Settings
 
 Book - 1895
@@ -755,6 +877,8 @@ Woking Street is a room.
 The description of Woking Street is "You are standing halfway down the street outside of Wells['] house. A heavy snowfall wafts down, undisturbed except for the [area] directly in front of you[if ambulance is in Woking Street] where the ambulance is parked.[otherwise] where the scuffle with Wells happened.[end if] The front door is to the north[first time] and the light from behind the curtains looks invitingly warm[only].[first time] To the west, the flickering [gaslights] in the square seem much further away than fifty paces. To the east, the street dead-ends into a small cul-de-sac.[only]"
 
 The printed name of Woking Street is "68 Woking Street".
+
+The illustration of Woking Street is Figure of Woking Street.
 
 Chapter - Area
 
@@ -1404,6 +1528,7 @@ Chapter - Orrery
 
 The orrery is a device. The orrery is switched on.
 The orrery is scenery on the fireplace.
+The illustration of the orrery is Figure of Orrery.
 
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box divided into three panels. The left and right panels of the tryptich are illustrated and half the width of the central panel.[if the right panel is open] The right panel has been slid up to expose the orrery's mechanism.[end if]"
 
@@ -5660,12 +5785,6 @@ Return To Surface ends when the player is in the time machine.
 
 When Return To Surface ends:
 	if debug-mode is true, say "Return To Surface Scene Ends (DEBUG)";
-
-
-
-
-
-
 	
 Volume - Help
 

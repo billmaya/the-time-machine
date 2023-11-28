@@ -6,8 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43729 ]
-[BRANCH - add-graphics]
+[WORDS - 43810 ]
 
 Table of Releases
 release	notes
@@ -307,7 +306,6 @@ Report request graphics mode:
 		close character-graphics window;
 	follow Update Debug rule;
 	say "Graphics Mode has been turned [if graphics-mode is false]off[otherwise]on[end if]."
-	[say "GRAPHICS TURNED [if graphics-mode is false]OFF[otherwise]ON[end if]."]
 
 Understand "graphics" as request graphics mode.
 
@@ -615,7 +613,6 @@ Every turn (this is the Update Debug rule):
 			let people-in-room be the list of people who are major that are not the player in the location of the player;
 			say "PEOPLE-IN-ROOM: [if people-in-room is not empty][people-in-room][otherwise]None[end if][line break]";
 		focus main window.
-		
 
 Part - Conversation
 

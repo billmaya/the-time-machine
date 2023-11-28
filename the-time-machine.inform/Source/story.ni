@@ -802,9 +802,7 @@ To say introduction:
 
 	'I can prove it all,' Wells says. He fumbles in his vest pockets as the orderlies grab him once again. 'In my workshop you[']ll find...get your bloody hands off of me! Damn you! Let me go!'
 
-	Wells struggles against the orderlies but they[']re prepared and overpower him into the ambulance. So violent is Wells['] struggle that his pocket watch falls to the street.
-
-	Humboldt notices your concern. 'Don[']t worry,' he says. 'They're professionals, not a rough as they look. Used to dealing with patients like this all the time.'"
+	Wells struggles against the orderlies but they[']re prepared and overpower him into the ambulance. So violent is the struggle that Wells['] pocket watch falls to the street."
 
 When play begins: 
 	close the graphics window; [Since we're not using this window]
@@ -826,7 +824,7 @@ When play begins:
 	say "[introduction]";
 	now suggest-on-greeting is false.
 
-After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time."
+After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time to see additional information about the game. Type 'graphics'  and hit Enter/Return at any time to turn Graphics Mode on or off (it is currently [if graphics-mode is true]On[otherwise]Off[end if])."
 
 Volume - Figures
 

@@ -301,12 +301,13 @@ Request graphics mode is an action out of world.
 Report request graphics mode: 
 	if graphics-mode is false:
 		now graphics-mode is true;
-		follow the restore graphics rules;
+		follow the Restore Graphics rules;
 	otherwise:
 		now graphics-mode is false;
 		close character-graphics window;
 	follow Update Debug rule;
-	say "GRAPHICS TURNED [if graphics-mode is false]OFF[otherwise]ON[end if]."
+	say "Graphics Mode has been turned [if graphics-mode is false]off[otherwise]on[end if]."
+	[say "GRAPHICS TURNED [if graphics-mode is false]OFF[otherwise]ON[end if]."]
 
 Understand "graphics" as request graphics mode.
 
@@ -824,7 +825,7 @@ When play begins:
 	say "[introduction]";
 	now suggest-on-greeting is false.
 
-After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time to see additional information about the game. Type 'graphics'  and hit Enter/Return at any time to turn Graphics Mode on or off (it is currently [if graphics-mode is true]On[otherwise]Off[end if])."
+After printing the banner text, say "[line break][italic type]Players can type 'about' or 'help' and then hit the Enter/Return key at any time to see additional information about the game. Type 'graphics' and hit Enter/Return at any time to turn Graphics Mode on or off (it is currently [if graphics-mode is true]on[otherwise]off[end if])."
 
 Volume - Figures
 

@@ -862,6 +862,8 @@ Figure of Gernsback is the file "gernsback-3.png".
 
 Book - Things
 
+Figure of Orrery is the file "orrery-0a.png".
+
 Book - Scenes
 
 Volume - Settings
@@ -1525,6 +1527,7 @@ Chapter - Orrery
 
 The orrery is a device. The orrery is switched on.
 The orrery is scenery on the fireplace.
+The illustration of the orrery is Figure of Orrery.
 
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box divided into three panels. The left and right panels of the tryptich are illustrated and half the width of the central panel.[if the right panel is open] The right panel has been slid up to expose the orrery's mechanism.[end if]"
 

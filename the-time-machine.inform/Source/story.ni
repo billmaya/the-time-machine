@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43810 ]
+[WORDS - 43827 ]
 
 Table of Releases
 release	notes
@@ -846,9 +846,10 @@ Book - Settings
 Figure of 1895 is the file "silhouette-london-1895-3.png".
 Figure of 802701 is the file "silhouette-802701-0.png".
 
-Figure of Woking Street is the file "woking-street-0.png".
-
 Part - 1895
+
+Figure of Woking Street is the file "woking-street-4aef9_0_1.png".
+Figure of Garden is the file "garden-477e2_0_1.png".
 
 Part - 802,701
 
@@ -1770,6 +1771,8 @@ Part - Garden
 The Garden is a room.
 The Garden is east of the Garden Door.
 The description of the Garden is "White and featureless mounds of flora covered in snow surround you on all sides. A gate set into the north wall looks out onto a snow-covered side street. To the south, the dark panes of the workshop windows overlook a bench nestled among some snow-covered rhododendron bushes. The parlor doors are to the west." 
+
+The illustration of Garden is Figure of Garden.
 
 Understand "parlor" or "parlor doors" or "parlor door" as Garden Door.
 

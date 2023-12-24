@@ -850,6 +850,7 @@ Part - 1895
 
 Figure of Woking Street is the file "woking-street-4aef9_0_1.png".
 Figure of Garden is the file "garden-477e2_0_1.png".
+Figure of Entryway is the file "entryway-f2e78_0_0.png".
 
 Part - 802,701
 
@@ -1135,6 +1136,8 @@ Part - Entryway
 
 The Entryway is a room. 
 The description of the Entryway is "From here you can reach all other parts of the house. To your right a staircase leads up to the second floor landing. To the west is the library. To the north is the [if workshop-door is open]open[otherwise]closed[end if] door of Wells[apostrophe] workshop. The front door is to the south."
+
+The illustration of Entryway is Figure of Entryway.
 
 The staircase is fixed in place in the Entryway.
 The staircase is scenery. 

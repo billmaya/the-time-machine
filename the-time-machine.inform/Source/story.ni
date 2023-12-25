@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43827 ]
+[WORDS - 43933 ]
 
 Table of Releases
 release	notes
@@ -852,7 +852,9 @@ Figure of Woking Street is the file "woking-street-4aef9_0_1.png".
 Figure of Garden is the file "garden-477e2_0_1.png".
 Figure of Entryway is the file "entryway-f2e78_0_0.png".
 Figure of Library is the file "library-c7e5c_0_3.png".
+
 Figure of Workshop is the file "workshop-c3206_0_2.png".
+Figure of Dark-Workshop is the file "workshop-dark-c3206_0_2.png".
 
 Part - 802,701
 
@@ -1954,6 +1956,15 @@ The Workshop is a dark room.
 The description of the Workshop is "Almost twice as long as it is wide, a long workbench runs down one side of the room; a large blackboard down the other. The workshop windows at the far end of the room look down into[if the Garden has been visited] the[otherwise] a[end if] garden."
 
 The illustration of Workshop is Figure of Workshop.
+
+Every turn (this is the Dark Workshop rule):
+	if the player is in the Workshop:
+		if the Workshop is dark:
+			say "WORKSHOP DARK";
+			[The illustration of Workshop is Figure of Dark-Workshop;]
+		otherwise:
+			say "WORKSHOP LIT";
+			[The illustration of Workshop is Figure of Workshop;]
 
 Chapter - Workbench
 

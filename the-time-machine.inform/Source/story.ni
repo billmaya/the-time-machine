@@ -851,6 +851,7 @@ Part - 1895
 Figure of Woking Street is the file "woking-street-4aef9_0_1.png".
 Figure of Garden is the file "garden-477e2_0_1.png".
 Figure of Entryway is the file "entryway-f2e78_0_0.png".
+Figure of Library is the file "library-c7e5c_0_3.png".
 
 Part - 802,701
 
@@ -1194,6 +1195,8 @@ Part - Library
 The Library is a room. 
 The Library is west of the Entryway. 
 The description of the Library is "A desk and a leather chair positioned near the drawn curtains are the only things in the room besides hundreds of books that fill the floor-to-ceiling shelves on three of the walls. The room continues to the north and the entryway is back east.[if the location of Gernsback is the Library][paragraph break]Gernsback is sitting in the chair, reading his book.[end if] "
+
+The illustration of Library is Figure of Library.
 
 Chapter - Printing Library Description
 

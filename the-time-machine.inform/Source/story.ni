@@ -852,6 +852,7 @@ Figure of Woking Street is the file "woking-street-4aef9_0_1.png".
 Figure of Garden is the file "garden-477e2_0_1.png".
 Figure of Entryway is the file "entryway-f2e78_0_0.png".
 Figure of Library is the file "library-c7e5c_0_3.png".
+Figure of Workshop is the file "workshop-c3206_0_2.png".
 
 Part - 802,701
 
@@ -1951,6 +1952,8 @@ Part - Workshop
 The Workshop is a dark room. 
 
 The description of the Workshop is "Almost twice as long as it is wide, a long workbench runs down one side of the room; a large blackboard down the other. The workshop windows at the far end of the room look down into[if the Garden has been visited] the[otherwise] a[end if] garden."
+
+The illustration of Workshop is Figure of Workshop.
 
 Chapter - Workbench
 

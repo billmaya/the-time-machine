@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 43933 ]
+[WORDS - 44006 ]
 
 Table of Releases
 release	notes
@@ -858,6 +858,7 @@ Figure of Dark-Workshop is the file "workshop-dark-c3206_0_2.png".
 			
 Figure of Parlor is the file "parlor-a8d34_0_1.png".
 Figure of Dining Room is the file "dining-room-ebdd3_0_3.png".
+Figure of Kitchen is the file "kitchen-aa1a8_0_0.png".
 
 Part - 802,701
 
@@ -1943,6 +1944,8 @@ The Kitchen is a room.
 The Kitchen is north of the Kitchen Door.
 
 The description of the Kitchen is "A small room dominated by a sturdy wooden work table in the center of the room. Surrounding the table are cabinets and shelves with a stove and sink set against one wall. [if the location of Watchett is the Kitchen][Watchett] is at the sink, cleaning up.[otherwise]It looks like [Watchett] has finished her work and retired for the evening. [end if] The dining room is to the south."
+
+The illustration of Kitchen is Figure of Kitchen.
 
 To say getting-in-watchett-way:
 	say "I don't think [Watchett] would appreciate you getting in the way of her cleaning up, especially at this late hour. She might be willing to talk while she works though.[paragraph break]"

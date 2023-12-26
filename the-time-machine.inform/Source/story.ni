@@ -855,6 +855,8 @@ Figure of Library is the file "library-c7e5c_0_3.png".
 
 Figure of Workshop is the file "workshop-c3206_0_2.png".
 Figure of Dark-Workshop is the file "workshop-dark-c3206_0_2.png".
+			
+Figure of Parlor is the file "parlor-a8d34_0_1.png".
 
 Part - 802,701
 
@@ -1336,6 +1338,8 @@ The Parlor is a room.
 The Parlor is north of the Library.
 
 The description of the Parlor is "A large fireplace is set into the west wall. On the fireplace mantle is an orrery[if poker is in Parlor], and leaning against the fireplace is a poker.[otherwise].[end if][if the newspaper is on the left armchair] A newspaper rests on the left armchair.[otherwise if the newspaper is on the right armchair] A newspaper rests on the right armchair.[otherwise] Two large armchairs are positioned in front of the fireplace.[end if] A set of glass doors to the east leads outside and the room continues to the north."
+
+The illustration of Parlor is Figure of Parlor.
 
 Chapter - Armchairs
 
@@ -1955,7 +1959,7 @@ The Workshop is a dark room.
 
 The description of the Workshop is "Almost twice as long as it is wide, a long workbench runs down one side of the room; a large blackboard down the other. The workshop windows at the far end of the room look down into[if the Garden has been visited] the[otherwise] a[end if] garden."
 
-The illustration of Workshop is Figure of Workshop.
+The illustration of Workshop is Figure of Dark-Workshop.
 
 Every turn (this is the Dark Workshop rule):
 	if the player is in the Workshop:
@@ -2021,10 +2025,12 @@ Instead of examining the light switch:
 [Writing §3.14. Devices and descriptions, Down Below example]
 Carry out switching off the light switch: 
 	now the lights are switched off;
+	[The illustration of Workshop is Figure of Dark-Workshop;]
 	now the Workshop is dark.
 
 Carry out switching on the light switch: 
 	now the lights are switched on;
+	[The illustration of Workshop is Figure of Workshop;]
 	now the Workshop is lighted.
 
 Understand "flip [something switched off]" as switching on.

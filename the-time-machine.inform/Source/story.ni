@@ -857,6 +857,7 @@ Figure of Workshop is the file "workshop-c3206_0_2.png".
 Figure of Dark-Workshop is the file "workshop-dark-c3206_0_2.png".
 			
 Figure of Parlor is the file "parlor-a8d34_0_1.png".
+Figure of Dining Room is the file "dining-room-ebdd3_0_3.png".
 
 Part - 802,701
 
@@ -1844,6 +1845,8 @@ Part - Dining Room
 The Dining Room is a room. 
 The Dining Room is north of the Parlor.
 The description of the Dining Room is "A mahogany dining table that could comfortably seat eight dominates the space. To the north, to the right of the kitchen door, is a [sideboard] that holds tableware, cutlery, and place settings between meals. The parlor is to the south."
+
+The illustration of Dining Room is Figure of Dining Room.
 
 The Kitchen Door is north of the Dining Room and south of the Kitchen. 
 The Kitchen Door is a door. 

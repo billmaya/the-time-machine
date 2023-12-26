@@ -861,6 +861,8 @@ Figure of Dining Room is the file "dining-room-ebdd3_0_3.png".
 Figure of Kitchen is the file "kitchen-aa1a8_0_0.png".
 
 Part - 802,701
+		
+Figure of Clearing is the file "clearing-fd353_0_2.png".
 
 Book - Characters
 
@@ -2778,6 +2780,8 @@ can-go-clearing-to-river is true.
 
 The Clearing is a room. 
 The description of the Clearing is "A midsized clearing dominated by a circular well in the center that rises about three feet above the ground. High above you, the face of a foreboding statue looks down on you through a gap in the trees. A path to the east leads to a white dome in the distance.[if the Balcony has been visited] Now that you know it exists, you can clearly see the overgrown path that you saw from the balcony leading southeast.[end if]"
+
+The illustration of Clearing is Figure of Clearing.
 
 Inside from the Clearing is Top Well.
 

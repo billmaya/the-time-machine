@@ -868,13 +868,22 @@ Figure of Domed Building is the file "domed-building-fd353_0_2.png".
 
 Book - Characters
 
-Figure of Weena is the file "weena-0.png".
+Part - 1895
+
 Figure of Humboldt is the file "humboldt-3.png".
 Figure of Gernsback is the file "gernsback-3.png".
 
+Part - 802,701
+
+Figure of Weena is the file "weena-0.png".
+
 Book - Things
 
+Part - 1895
+
 Figure of Orrery is the file "orrery-0a.png".
+
+Part - 802,701
 
 Book - Scenes
 

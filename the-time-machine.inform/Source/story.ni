@@ -867,7 +867,7 @@ Figure of Top Well is the file "top-well-b889e_0_0.png".
 Figure of Domed Building is the file "domed-building-fd353_0_2.png".
 Figure of River Bank is the file "river-bank-61f36_0_0.png".
 
-
+Figure of Inside Dome is the file "inside-dome-3da44_0_1.png".
 Figure of Bottom Well is the file "bottom-well-b889e_0_1.png".
 
 Book - Characters
@@ -2996,6 +2996,8 @@ The Inside Dome is north of the Balcony.
 Understand "dome" as Inside Dome.
 
 The description of Inside Dome is "Sunlight streams through the dome's oculus, illuminating the entire room. Low stone tables are arranged in a circular pattern around a large central well at the center of the dome. A series of murals circles the perimeter of the dome except for the exits. There is an small archway to the south and the main exit to the west."
+
+The illustration of Inside Dome is Figure of Inside Dome.
 	
 The printed name of Inside Dome is "Inside the Domed Building"
 

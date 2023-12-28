@@ -863,7 +863,7 @@ Figure of Kitchen is the file "kitchen-aa1a8_0_0.png".
 Part - 802,701
 		
 Figure of Clearing is the file "clearing-ff916_0_2.png".
-
+Figure of Top Well is the file "top-well-b889e_0_0.png".
 Figure of Domed Building is the file "domed-building-fd353_0_2.png".
 Figure of River Bank is the file "river-bank-61f36_0_0.png".
 
@@ -2935,6 +2935,8 @@ The Top Well is a room.
 Down from Top Well is the Bottom Well. [Located in Underground - Level 1]
 Up from Top Well is the Clearing.
 The description of Top Well is "You[']re hanging at the top of the shaft on the ladder leading down[first time]. Exiting the shaft will put you back in the clearing[only]."
+
+The illustration of Top Well is Figure of Top Well.
 
 Instead of going up from the Top Well: try exiting.
 

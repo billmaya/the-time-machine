@@ -867,6 +867,9 @@ Figure of Clearing is the file "clearing-ff916_0_2.png".
 Figure of Domed Building is the file "domed-building-fd353_0_2.png".
 Figure of River Bank is the file "river-bank-61f36_0_0.png".
 
+
+Figure of Bottom Well is the file "bottom-well-b889e_0_1.png".
+
 Book - Characters
 
 Part - 1895
@@ -3332,6 +3335,8 @@ Up from the Bottom Well is the Top Well.
 North from the Bottom Well is Shaft 1.
 
 The description of Bottom Well is "The light from above illuminates the bottom of what appears to be merely a dry well. The ladder leads up and there is an opening to the north."
+
+The illustration of Bottom Well is Figure of Bottom Well.
 
 [> x metal grate]
 

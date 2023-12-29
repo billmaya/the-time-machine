@@ -866,9 +866,13 @@ Figure of Clearing is the file "clearing-ff916_0_2.png".
 Figure of Top Well is the file "top-well-b889e_0_0.png".
 Figure of Domed Building is the file "domed-building-fd353_0_2.png".
 Figure of River Bank is the file "river-bank-61f36_0_0.png".
-
+Figure of Balcony is the file "balcony-a9139_0_1.png".
 Figure of Inside Dome is the file "inside-dome-3da44_0_1.png".
 Figure of Bottom Well is the file "bottom-well-b889e_0_1.png".
+Figure of Shaft 1 is the file "shaft-1-ae0f1_0_1.png".
+Figure of Shaft 2 is the file "shaft-2-f174d_0_2.png".
+Figure of Shaft 3 is the file "shaft-3-a5dcb_0_2.png".
+Figure of Shaft 4 is the file "shaft-4-f174d_0_3.png".
 
 Book - Characters
 
@@ -3106,6 +3110,8 @@ The Balcony is a room.
 The Balcony is south of Inside Dome.
 The description of the Balcony is "This small balcony looks down on the treetops below. To the south, through a break in the foliage, you can see a river[if the location of the Eloi is not nowhere] with many tiny figures clustered around it.[otherwise].[end if][first time] From up here you can also see an overgrown path leading southeast from the clearing to the river, probably obscured by undergrowth at ground level.[only]"
 
+The illustration of Balcony is Figure of Balcony.
+
 The balcony-river is scenery in the Balcony.
 The description of the balcony-river is "The river winds its way through the forest below you. Looking closely, you can see groups of people in the river and on its banks."
 
@@ -3374,6 +3380,8 @@ Shaft 1 is up from Shaft 2.
 
 The description of Shaft 1 is "You're standing on a small platform anchored to the side of the shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
 
+The illustration of Shaft 1 is Figure of Shaft 1.
+
 The printed name of Shaft 1 is "Shaft - Level 1". [[ladder-glyphs]".]
 
 The visibility of Shaft 1 is day.
@@ -3387,6 +3395,8 @@ Shaft 2 is down from Shaft 1.
 Shaft 2 is up from Shaft 3.
 
 The description of Shaft 2 is "You're standing on a small platform anchored to the side of the shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+
+The illustration of Shaft 2 is Figure of Shaft 2.
 	
 The printed name of Shaft 2 is "Shaft - Level 2". [[ladder-glyphs]".]
 
@@ -3416,6 +3426,8 @@ Shaft 3 is up from Shaft 4.
 Shaft 3 is north of the Living Quarters.
 
 The description of Shaft 3 is "You're standing on a small platform anchored to the side of the shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+
+The illustration of Shaft 3 is Figure of Shaft 3.
 
 The printed name of Shaft 3 is "Shaft - Level 3". [[ladder-glyphs]".]
 
@@ -3531,6 +3543,8 @@ Instead of going down in Shaft 4, say "The shaft continues down into darkness bu
 Instead of going down in Shaft 4 for more than two times, say "The broken ladder prevents you from climbing down any further."
 
 The description of Shaft 4 is "You're standing on a small platform anchored to the side of the shaft. You can climb [shaft-directions] the shaft using the ladder embedded in the wall and there is an opening to the south."
+
+The illustration of Shaft 4 is Figure of Shaft 4.
 
 The printed name of Shaft 4 is "Shaft - Level 4". [[ladder-glyphs]".]
 

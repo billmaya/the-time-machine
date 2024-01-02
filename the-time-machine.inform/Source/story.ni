@@ -873,6 +873,7 @@ Figure of Shaft 1 is the file "shaft-1-ae0f1_0_1.png".
 Figure of Shaft 2 is the file "shaft-2-f174d_0_2.png".
 Figure of Shaft 3 is the file "shaft-3-a5dcb_0_2.png".
 Figure of Shaft 4 is the file "shaft-4-f174d_0_3.png".
+Figure of Catacombs is the file "catacombs-78b3c_0_2.png".
 
 Book - Characters
 
@@ -1986,7 +1987,8 @@ The Workshop is a dark room.
 
 The description of the Workshop is "Almost twice as long as it is wide, a long workbench runs down one side of the room; a large blackboard down the other. The workshop windows at the far end of the room look down into[if the Garden has been visited] the[otherwise] a[end if] garden."
 
-The illustration of Workshop is Figure of Dark-Workshop.
+The illustration of Workshop is Figure of Workshop.
+[The illustration of Workshop is Figure of Dark-Workshop.]
 
 Every turn (this is the Dark Workshop rule):
 	if the player is in the Workshop:
@@ -3490,6 +3492,8 @@ To say catacombs-description:
 	otherwise:
 		say "It's impossible to make out any room details except for the tunnel leading back up without light.[run paragraph on]";
 		[say "Without light it is almost impossible to make out any details in this room except for the tunnel leading back up.";]
+
+Illustration of Catacombs is Figure of Catacombs.
 
 The description of Catacombs is "[catacombs-description]".
 

@@ -3485,7 +3485,7 @@ The Catacombs are down from the Living Quarters.
 
 To say catacombs-description:
 	if player-has-light is true:
-		say "A subterranean cemetary with galleries and recesses as far as the eye can see for the bones of what appear thousands of dead Morlocks.[run paragraph on]";
+		say "A subterranean cemetery with galleries and recesses as far as the eye can see for the bones of what appear thousands of dead Morlocks.[run paragraph on]";
 		[say "In the flickering light, you see the bones of dead Morlocks arranged in tunnels extending into the distance as far as the eye can see.";]
 	otherwise:
 		say "It's impossible to make out any room details except for the tunnel leading back up without light.[run paragraph on]";

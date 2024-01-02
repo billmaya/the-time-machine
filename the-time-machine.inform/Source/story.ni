@@ -873,8 +873,12 @@ Figure of Shaft 1 is the file "shaft-1-ae0f1_0_1.png".
 Figure of Shaft 2 is the file "shaft-2-f174d_0_2.png".
 Figure of Shaft 3 is the file "shaft-3-a5dcb_0_2.png".
 Figure of Shaft 4 is the file "shaft-4-f174d_0_3.png".
-Figure of Catacombs is the file "catacombs-78b3c_0_2.png".
 
+
+
+Figure of Catacombs is the file "catacombs-78b3c_0_2.png".
+Figure of Eating Area is the file "eating-area-7d609_0_0.png".
+	
 Book - Characters
 
 Part - 1895
@@ -3561,6 +3565,8 @@ The Eating Area is south of Shaft 4.
 The Eating Area is north of the Abattoir.
 
 The description of Eating Area is "Rows of parallel troughs in various states of repair fill this room[first time]. Only a few are still intact and one or two appear to have been used recently[only]. There are exits to the north and south."
+	
+The illustration of Eating Area is Figure of Eating Area.
 
 The visibility of Eating Area is night.
 

@@ -878,6 +878,8 @@ Figure of Shaft 4 is the file "shaft-4-f174d_0_3.png".
 
 Figure of Catacombs is the file "catacombs-78b3c_0_2.png".
 Figure of Eating Area is the file "eating-area-7d609_0_0.png".
+
+Figure of Holding Cell is the file "holding-cell-5ea83_0_2.png".
 	
 Book - Characters
 
@@ -3672,6 +3674,8 @@ The Holding Cell is underground.
 The Holding Cell is south of the holding-cell-gate.
 	
 The description of Holding Cell is "A small cell large enough to hold two or three Eloi. The exit is to the north through a rusted gate."
+	
+The illustration of Holding Cell is Figure of Holding Cell.
 	
 The visibility of Holding Cell is twilight. [day.]
 

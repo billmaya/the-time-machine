@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44303 ]
+[WORDS - 44321 ]
 
 Table of Releases
 release	notes
@@ -878,7 +878,7 @@ Figure of Shaft 4 is the file "shaft-4-f174d_0_3.png".
 
 Figure of Catacombs is the file "catacombs-78b3c_0_2.png".
 Figure of Eating Area is the file "eating-area-7d609_0_0.png".
-
+Figure of Abattoir is the file "abattoir-81e33_0_0.png".
 Figure of Holding Cell is the file "holding-cell-5ea83_0_2.png".
 	
 Book - Characters
@@ -3499,7 +3499,7 @@ To say catacombs-description:
 		say "It's impossible to make out any room details except for the tunnel leading back up without light.[run paragraph on]";
 		[say "Without light it is almost impossible to make out any details in this room except for the tunnel leading back up.";]
 
-Illustration of Catacombs is Figure of Catacombs.
+The illustration of Catacombs is Figure of Catacombs.
 
 The description of Catacombs is "[catacombs-description]".
 
@@ -3593,6 +3593,8 @@ The Abattoir is south of the Eating Area.
 The Abattoir is north of the holding-cell-gate.
 
 The description of Abattoir is "A cross between a workshop and a charnel house, this room is dominated by a large metal table. There is a pile of bloodstained clothing at the base of the table. There's a gated exit to the south and another exit to the north."
+
+The illustration of Abattoir is Figure of Abattoir.
 
 The visibility of Abattoir is twilight. [day.]
 

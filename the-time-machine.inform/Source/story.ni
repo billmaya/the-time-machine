@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44321 ]
+[WORDS - 44342 ]
 
 Table of Releases
 release	notes
@@ -873,9 +873,7 @@ Figure of Shaft 1 is the file "shaft-1-ae0f1_0_1.png".
 Figure of Shaft 2 is the file "shaft-2-f174d_0_2.png".
 Figure of Shaft 3 is the file "shaft-3-a5dcb_0_2.png".
 Figure of Shaft 4 is the file "shaft-4-f174d_0_3.png".
-
-
-
+Figure of Living Quarters is the file "living-quarters-d77be_0_1.png".
 Figure of Catacombs is the file "catacombs-78b3c_0_2.png".
 Figure of Eating Area is the file "eating-area-7d609_0_0.png".
 Figure of Abattoir is the file "abattoir-81e33_0_0.png".
@@ -3457,6 +3455,8 @@ To say living-quarters-description:
 		say "Hundreds of individual cubbyholes carved into the walls ascend in symmetrical rows above you, connected by an intricate cats cradle of ropes and platfoms that rises with them. There's an exit north and a small tunnel leading down.[run paragraph on]";
 	otherwise:
 		say "It's impossible to make out any room details except for the exit north and a small tunnel leading down without light.[run paragraph on]";
+			
+The illustration of Living Quarters is Figure of Living Quarters.
 
 The description of Living Quarters is "[living-quarters-description]".
 

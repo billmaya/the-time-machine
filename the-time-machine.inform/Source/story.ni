@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44350 ]
+[WORDS - 44329 ]
 
 Table of Releases
 release	notes
@@ -869,12 +869,17 @@ Figure of River Bank is the file "river-bank-61f36_0_0.png".
 Figure of Balcony is the file "balcony-a9139_0_1.png".
 Figure of Inside Dome is the file "inside-dome-3da44_0_1.png".
 Figure of Bottom Well is the file "bottom-well-b889e_0_1.png".
+
 Figure of Shaft 1 is the file "shaft-1-ae0f1_0_1.png".
+ 
 Figure of Shaft 2 is the file "shaft-2-f174d_0_2.png".
+Figure of Collapsed Tunnel is the file "collapsed-tunnel.png".
+
 Figure of Shaft 3 is the file "shaft-3-a5dcb_0_2.png".
-Figure of Shaft 4 is the file "shaft-4-f174d_0_3.png".
 Figure of Living Quarters is the file "living-quarters-d77be_0_1.png".
 Figure of Catacombs is the file "catacombs-78b3c_0_2.png".
+
+Figure of Shaft 4 is the file "shaft-4-f174d_0_3.png".
 Figure of Eating Area is the file "eating-area-7d609_0_0.png".
 Figure of Abattoir is the file "abattoir-81e33_0_0.png".
 Figure of Holding Cell is the file "holding-cell-5ea83_0_2.png".
@@ -3405,13 +3410,15 @@ The visibility of Shaft 2 is day.
 
 Chapter - Collapsed Tunnel
 
-The collapsed tunnel is underground.
-The collapsed tunnel is south of Shaft 2.
-The visibility of collapsed tunnel is day.
-The description of collapsed tunnel is "[first time]After a few steps you have to stop. [only]The tunnel ends abruptly in a pile of collapsed rock and dirt that fills it entirely, preventing further progress."
-The printed name of collapsed tunnel is "Tunnel Collapse".
+The Collapsed Tunnel is underground.
+The Collapsed Tunnel is south of Shaft 2.
+The visibility of Collapsed Tunnel is day.
+The description of Collapsed Tunnel is "[first time]After a few steps you have to stop. [only]The tunnel ends abruptly in a pile of collapsed rock and dirt that fills it entirely, preventing further progress."
+The printed name of Collapsed Tunnel is "Tunnel Collapse".
 
-tunnel-debris is scenery in the collapsed tunnel.
+The illustration of Collapsed Tunnel is Figure of Collapsed Tunnel.
+
+tunnel-debris is scenery in the Collapsed Tunnel.
 The description of tunnel-debris is "Rocks of various sizes prevent any further prevent any progress[first time], obscuring what might lie beyond[only]."
 Understand "rock/rocks/dirt/collapse" as tunnel-debris.
 The printed name of tunnel-debris is "obstruction".

@@ -172,6 +172,7 @@ Rule for refreshing the character-graphics window:
 			if entry 1 of people-in-room is Weena, draw Figure of Weena in character-graphics window;
 			if entry 1 of people-in-room is Humboldt, draw Figure of Humboldt in character-graphics window;
 			if entry 1 of people-in-room is Gernsback, draw Figure of Gernsback in character-graphics window;
+			if entry 1 of people-in-room is Eloi, draw Figure of Eloi in character-graphics window;
 		otherwise:
 			if the numeric-year is 1895, draw Figure of 1895 in character-graphics window;
 			if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
@@ -894,6 +895,7 @@ Figure of Gernsback is the file "gernsback-3.png".
 Part - 802,701
 
 Figure of Weena is the file "weena-0.png".
+Figure of Eloi is the file "eloi-61ba7_0_3.png".
 
 Book - Things
 

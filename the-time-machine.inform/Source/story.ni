@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44355 ]
+[WORDS - 44381 ]
 
 Table of Releases
 release	notes
@@ -173,6 +173,7 @@ Rule for refreshing the character-graphics window:
 			if entry 1 of people-in-room is Humboldt, draw Figure of Humboldt in character-graphics window;
 			if entry 1 of people-in-room is Gernsback, draw Figure of Gernsback in character-graphics window;
 			if entry 1 of people-in-room is Eloi, draw Figure of Eloi in character-graphics window;
+			if entry 1 of people-in-room is Watchett, draw Figure of Watchett in character-graphics window;
 		otherwise:
 			if the numeric-year is 1895, draw Figure of 1895 in character-graphics window;
 			if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
@@ -891,6 +892,7 @@ Part - 1895
 
 Figure of Humboldt is the file "humboldt-3ed25_0_3.png".
 Figure of Gernsback is the file "gernsback-3.png".
+Figure of Watchett is the file "watchett-7a90a_0_3.png".
 
 Part - 802,701
 

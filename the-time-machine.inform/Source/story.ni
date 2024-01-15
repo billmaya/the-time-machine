@@ -894,7 +894,7 @@ Figure of Gernsback is the file "gernsback-3.png".
 
 Part - 802,701
 
-Figure of Weena is the file "weena-0.png".
+Figure of Weena is the file "weena-bc3a7_0_0.png".
 Figure of Eloi is the file "eloi-61ba7_0_3.png".
 
 Book - Things

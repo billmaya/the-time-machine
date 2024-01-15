@@ -891,7 +891,7 @@ Book - Characters
 Part - 1895
 
 Figure of Humboldt is the file "humboldt-3ed25_0_3.png".
-Figure of Gernsback is the file "gernsback-3.png".
+Figure of Gernsback is the file "gernsback-40b2b_0_0.png".
 Figure of Watchett is the file "watchett-7a90a_0_3.png".
 
 Part - 802,701

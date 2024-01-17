@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44381 ]
+[WORDS - 44424 ]
 
 Table of Releases
 release	notes
@@ -168,18 +168,16 @@ Rule for refreshing the debug-title window:
 Rule for refreshing the character-graphics window:
 	if graphics-mode is true:
 		let people-in-room be the list of people who are major that are not the player in the location of the player;
-		if people-in-room is not empty:
+		if the number of entries in people-in-room is greater than zero:
 			if entry 1 of people-in-room is Weena, draw Figure of Weena in character-graphics window;
 			if entry 1 of people-in-room is Humboldt, draw Figure of Humboldt in character-graphics window;
 			if entry 1 of people-in-room is Gernsback, draw Figure of Gernsback in character-graphics window;
 			if entry 1 of people-in-room is Eloi, draw Figure of Eloi in character-graphics window;
 			if entry 1 of people-in-room is Watchett, draw Figure of Watchett in character-graphics window;
 		otherwise:
-			if the numeric-year is 1895, draw Figure of 1895 in character-graphics window;
+			if the numeric-year is 1895, draw Figure of 1895 in character-graphics window; [TBD Why are these draw lines necessary to clear the character-graphics window?]
 			if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
-	otherwise:
-		if the numeric-year is 1895, draw Figure of 1895 in character-graphics window;
-		if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
+			clear character-graphics window;
 	
 Section - Styles
 
@@ -492,6 +490,7 @@ This is the morlock defend rule:
 	if the player is in the Year-802701-Underground:
 		if the player is in Shaft 3:
 			if the player-has-light is false:
+				draw Figure of Morlocks in character-graphics window; [<- This doesn't display]
 				if the player has the poker:
 					now fought-off-morlocks is fought-off-morlocks + 1;
 					say "[morlocks-prevent-entry]";
@@ -613,7 +612,8 @@ Every turn (this is the Update Debug rule):
 		otherwise if graphics-mode is true:
 			say "GRAPHICS-MODE: [graphics-mode][line break]";
 			let people-in-room be the list of people who are major that are not the player in the location of the player;
-			say "PEOPLE-IN-ROOM: [if people-in-room is not empty][people-in-room][otherwise]None[end if][line break]";
+			say "PEOPLE-IN-ROOM: [if people-in-room is not empty][people-in-room][otherwise]none[end if][line break]";
+			say "ENTRIES - PEOPLE-IN-ROOM: [the number of entries in people-in-room]";
 		focus main window.
 
 Part - Conversation
@@ -898,6 +898,8 @@ Part - 802,701
 
 Figure of Weena is the file "weena-bc3a7_0_0.png".
 Figure of Eloi is the file "eloi-61ba7_0_3.png".
+[Figure of Morlocks is the file "morlocks-044d5_0_3.png". [character window image]]
+Figure of Morlocks is the file "morlocks-534d2_0_2.png" [main window image]
 
 Book - Things
 

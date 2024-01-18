@@ -293,6 +293,8 @@ Down Below is a room. Down Below is down from the Main Room.
 
 Part - Out Of World Actions
 
+Chapter - Graphics Mode
+
 graphics-mode is a truth state that varies.
 graphics-mode is true.
 
@@ -309,7 +311,7 @@ Report request graphics mode:
 
 Understand "graphics" as request graphics mode.
 
-Chapter - Restore Graphics Rulebook
+Section - Restore Graphics Rulebook
 
 Restore Graphics is a rulebook.
 A restore graphics rule:
@@ -338,6 +340,8 @@ A restore graphics rule:
 		open debug-title window;
 		open debug-info window;
 		follow Update Debug rule;
+			
+Chapter - Debug Mode (TBD)
 
 
 Part - Before Rules

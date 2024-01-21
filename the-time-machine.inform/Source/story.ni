@@ -175,8 +175,8 @@ Rule for refreshing the character-graphics window:
 			if entry 1 of people-in-room is Eloi, draw Figure of Eloi in character-graphics window;
 			if entry 1 of people-in-room is Watchett, draw Figure of Watchett in character-graphics window;
 		otherwise:
-			if the numeric-year is 1895, draw Figure of 1895 in character-graphics window; [TBD Why are these draw lines necessary to clear the character-graphics window?]
-			if the numeric-year is 802701, draw Figure of 802701 in character-graphics window;
+			if the numeric-year is 1895, draw Figure of 1895 in character-graphics window; [TBD Why are these two draw lines necessary]
+			if the numeric-year is 802701, draw Figure of 802701 in character-graphics window; [to clear the character-graphics window?]
 			clear character-graphics window;
 	
 Section - Styles
@@ -497,6 +497,7 @@ This is the morlock defend rule:
 				draw Figure of Morlocks in character-graphics window; [<- This doesn't display]
 				if the player has the poker:
 					now fought-off-morlocks is fought-off-morlocks + 1;
+					display Figure of Morlocks;
 					say "[morlocks-prevent-entry]";
 					if fought-off-morlocks is max-morlock-defends:
 						now fought-off-morlocks is 0;

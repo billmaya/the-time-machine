@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44424 ]
+[WORDS - 44464 ]
 
 Table of Releases
 release	notes
@@ -494,10 +494,12 @@ This is the morlock defend rule:
 	if the player is in the Year-802701-Underground:
 		if the player is in Shaft 3:
 			if the player-has-light is false:
-				[DELdraw Figure of Morlocks in character-graphics window; [<- This doesn't display]]
 				if the player has the poker:
 					now fought-off-morlocks is fought-off-morlocks + 1;
-					display Figure of Morlocks-1;
+					if fought-off-morlocks is:
+						-- 1: display Figure of Morlocks-1;
+						-- 2: display Figure of Morlocks-2;
+						-- otherwise: display Figure of Morlocks-3;
 					say "[morlocks-prevent-entry]";
 					if fought-off-morlocks is max-morlock-defends:
 						now fought-off-morlocks is 0;
@@ -906,8 +908,10 @@ Figure of Eloi is the file "eloi-61ba7_0_3.png".
 
 [Figure of Morlocks is the file "morlocks-044d5_0_3.png". [character window image]]
 
-Figure of Morlocks-1 is the file "morlocks-534d2_0_2.png". [main window image]
+[Main window images]
+Figure of Morlocks-1 is the file "morlocks-534d2_0_2.png".
 Figure of Morlocks-2 is the file "morlocks-495e6_0_2.png".
+Figure of Morlocks-3 is the file "morlocks-e1f93_0_0.png".
 
 Book - Things
 

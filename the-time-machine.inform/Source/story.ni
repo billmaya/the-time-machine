@@ -494,10 +494,10 @@ This is the morlock defend rule:
 	if the player is in the Year-802701-Underground:
 		if the player is in Shaft 3:
 			if the player-has-light is false:
-				draw Figure of Morlocks in character-graphics window; [<- This doesn't display]
+				[DELdraw Figure of Morlocks in character-graphics window; [<- This doesn't display]]
 				if the player has the poker:
 					now fought-off-morlocks is fought-off-morlocks + 1;
-					display Figure of Morlocks;
+					display Figure of Morlocks-1;
 					say "[morlocks-prevent-entry]";
 					if fought-off-morlocks is max-morlock-defends:
 						now fought-off-morlocks is 0;
@@ -903,8 +903,11 @@ Part - 802,701
 
 Figure of Weena is the file "weena-bc3a7_0_0.png".
 Figure of Eloi is the file "eloi-61ba7_0_3.png".
+
 [Figure of Morlocks is the file "morlocks-044d5_0_3.png". [character window image]]
-Figure of Morlocks is the file "morlocks-534d2_0_2.png" [main window image]
+
+Figure of Morlocks-1 is the file "morlocks-534d2_0_2.png". [main window image]
+Figure of Morlocks-2 is the file "morlocks-495e6_0_2.png".
 
 Book - Things
 

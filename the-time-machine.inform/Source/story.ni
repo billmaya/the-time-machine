@@ -6,7 +6,7 @@ The release number is 12.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 44464 ]
+[WORDS - 44510 ]
 
 Table of Releases
 release	notes
@@ -6056,18 +6056,28 @@ hint				used
 
 
 To say beta-testers:
-	say "I cannot thank enough the seven people listed below who took the time to beta test Release 3 (v1.0) of 'The Time Machine' for ParserComp 2021 (some of them even tested it more than once). Their effort and attention to detail made the game that was released to the public for the competition much, much better.
-
+	say "I cannot thank the people listed below who beta tested various versions of this game enough. Their efforts and their attention to detail made this game much, much better.[line break][line break]
+	v2.0 Beta Testers[line break][line break]
+	• Phil Halprin[line break]
+	• John Ziegler[line break]
+	• Brian Rushton[line break]
+	• David White[line break]
+	• Mike Russo[line break]
+	• Rovarsson[line break]
+	• Javier Garza[line break][line break]
+	v1.9 Beta Testers[line break][line break]
+ 	• Mike Carletta[line break]
+	• Brian Rushton[line break]
+	• John Ziegler[line break][line break]
+	v1.0 Beta Testers[line break][line break]
 	• Phil Halprin[line break]
 	• Chirstopher Merriner[line break]
 	• Grueslayer[line break]
 	• Mike Carletta[line break]
 	• Javier Garza[line break]
 	• Brian Rushton[line break]
-	• David White[line break]
-	
-I also want to thank the people who took the time to write reviews of v1.0 of the 'The Time Machine' after playing it for ParserComp 2021.
-
+	• David White[line break][line break]
+	I also want to thank the people who took the time to write a review of 'The Time Machine' v1.0 after playing it during ParserComp 2021.[line break][line break]
 	• Mike Russo[line break]
 	• Thomas Mack[line break]
 	• Rovarsson[line break]

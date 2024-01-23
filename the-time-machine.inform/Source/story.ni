@@ -6,7 +6,7 @@ The release number is 13.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 45251 ]
+[WORDS - 45306 ]
 
 Table of Releases
 release	notes
@@ -23,8 +23,6 @@ release	notes
 "11"	"v1.8"
 "12"	"v1.9"
 "13"	"v2.0"
-
-
 
 Volume - Setup
 
@@ -72,7 +70,7 @@ The measurement of the right-sidebar window is 290.
 The character-graphics window is a graphics g-window spawned by the right-sidebar window.
 The position of the character-graphics window is g-placeabove.
 The scale method of the character-graphics window is g-fixed-size.
-The measurement of the character-graphics window is 250.
+The measurement of the character-graphics window is 187. [250.]
 
 The title-characters window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-characters window is g-placeabove.
@@ -82,7 +80,7 @@ The measurement of the title-characters window is 2.
 The list-characters window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-characters window is g-placeabove.
 The scale method of the list-characters window is g-fixed-size.
-The measurement of the list-characters window is 4. [8.]
+The measurement of the list-characters window is 2. [4.] [8.]
 
 The title-talking-to window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-talking-to window is g-placeabove.
@@ -160,6 +158,9 @@ Rule for refreshing the title-inventory window:
 	say "Possessions". 
 	
 Rule for refreshing the list-inventory window:
+	[let L be the list of things carried by the player;
+	Let N be the number of entries in L;
+	now the measurement of the list-inventory window is N + 2;]
 	try taking inventory.
 
 Rule for refreshing the debug-title window:
@@ -618,9 +619,11 @@ Every turn (this is the Update Debug rule):
 			say "endgame-failure: [endgame-failure]";
 		otherwise if graphics-mode is true:
 			say "GRAPHICS-MODE: [graphics-mode][line break]";
-			let people-in-room be the list of people who are major that are not the player in the location of the player;
-			say "PEOPLE-IN-ROOM: [if people-in-room is not empty][people-in-room][otherwise]none[end if][line break]";
-			say "ENTRIES - PEOPLE-IN-ROOM: [the number of entries in people-in-room]";
+			[let people-in-room be the list of people who are major that are not the player in the location of the player;]
+			[say "PEOPLE-IN-ROOM: [if people-in-room is not empty][people-in-room][otherwise]none[end if][line break]";]
+			[say "ENTRIES - PEOPLE-IN-ROOM: [the number of entries in people-in-room]";]
+			[let L be the list of things carried by the player;
+			say "ENTRIES IN INVENTORY: [the number of entries in L]";]
 		focus main window.
 
 Part - Conversation

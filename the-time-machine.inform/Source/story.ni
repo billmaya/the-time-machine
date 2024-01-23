@@ -2,7 +2,7 @@ The story title is "The Time Machine".
 The story author is "Bill Maya".
 The story headline is "A Interactive Novella [unicode 169] 2021-2023".
 The story genre is "Science Fiction".
-The release number is 12.
+The release number is 13.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  

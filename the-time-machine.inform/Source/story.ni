@@ -100,7 +100,7 @@ The measurement of the title-topics window is 2.
 The character-topics window is a text buffer g-window spawned by the right-sidebar window.
 The position of the character-topics window is g-placeabove.
 The scale method of the character-topics window is g-fixed-size.
-The measurement of the character-topics window is 9.
+The measurement of the character-topics window is 6. [9.]
 
 The title-inventory window is a text grid g-window spawned by the right-sidebar window.
 The position of the title-inventory window is g-placeabove.
@@ -920,8 +920,6 @@ Book - Things
 
 Part - 1895
 
-Figure of Orrery is the file "orrery-0a.png".
-
 Part - 802,701
 
 Book - Scenes
@@ -1593,7 +1591,6 @@ Chapter - Orrery
 
 The orrery is a device. The orrery is switched on.
 The orrery is scenery on the fireplace.
-The illustration of the orrery is Figure of Orrery.
 
 The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box divided into three panels. The left and right panels of the tryptich are illustrated and half the width of the central panel.[if the right panel is open] The right panel has been slid up to expose the orrery's mechanism.[end if]"
 

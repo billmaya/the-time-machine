@@ -5862,18 +5862,30 @@ When Escape The Morlocks ends:
 
 Chapter - Weena's Movement
 
+weena-distance is a number that varies.
+weena-distance is 0.
+
 Every turn (this is the Move Weena Rule):
 	if Escape The Morlocks is happening:
 		if Weena is not nowhere:
 			if Weena is mobile:
 				if the visibility of the location of player is not day:
-					if the location of Weena is not the location of the player:
-						if player-has-light is true:
-							let the way be the best route from the location of Weena to the location of the player, using doors;
-							try silently Weena going the way;
-							say "Staying close to you and your source of light, Weena follows you into the [location of the player].";
+					if the location of the player is not the Holding Cell:
+						if the location of Weena is not the location of the player:
+							if player-has-light is true:
+								let the way be the best route from the location of Weena to the location of the player, using doors;
+								try silently Weena going the way;
+								say "Staying close to you and your source of light, Weena follows you into the [location of the player].";
+							otherwise:
+								if weena-distance is 0:
+									say "Terrified by the dark, Weena cowers in fear and stays behind.";
+									now weena-distance is 1;
 						otherwise:
-							say "Terrified by the dark, Weena cowers in fear and stays behind.";
+							now weena-distance is 0;
+							continue the action;
+					otherwise:
+						now weena-distance is 0;
+						continue the action;
 				otherwise:
 					if the location of Weena is not the location of the player:
 						let the way be the best route from the location of Weena to the location of the player, using doors;
@@ -5980,8 +5992,6 @@ hint				used
 "go north"
 "go north"
 "go west"
-"ask gernsback for cigar"
-"ask gernsback for matches"
 "go north"
 "examine orrery"
 "push right panel"
@@ -5995,6 +6005,7 @@ hint				used
 "go south"
 "go south"
 "go south"
+"take box of matches"
 "go east"
 "go south"
 "search area (as many times as it takes to find the key)"
@@ -6005,8 +6016,7 @@ hint				used
 "examine time machine"
 "enter time machine"
 "examine controls"
-"unlock hinged panel with key (DOESN'T OPEN IT BUT SAYS IT DOES)"
-"open hinged panel (REMOVE)"
+"unlock hinged panel with key"
 "examine fuse holder"
 "take time machine fuse"
 "examine time machine fuse"
@@ -6022,6 +6032,9 @@ hint				used
 "go west"
 "go southeast"
 "ask eloi about weena"
+"ask eloi about weena (optional)"
+"ask eloi about weena (optional)"
+"ask eloi about weena (optional)"
 "remove cover"
 "climb in well"
 "go down"
@@ -6035,7 +6048,6 @@ hint				used
 "go north"
 "search clothing"
 "wrap tunic around poker"
-"open box of matches"
 "take match"
 "light match"
 "light torch"

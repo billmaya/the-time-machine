@@ -6051,6 +6051,7 @@ hint				used
 "take match"
 "light match"
 "light torch"
+"go south"
 "go north"
 "go north"
 "go north"

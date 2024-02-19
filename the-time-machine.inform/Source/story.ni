@@ -4451,7 +4451,7 @@ Gernsback is a male.
 Gernsback is fixed.
 Gernsback is in the Library.
 
-The description of Gernsback is "The picture of Victorian success, his tailored attire offsetting brutish features below a high forehead and thinning hair styled in a combover[first time], his only concession to vanity. It's said that his piercing gaze misses no change to increase his family foutunes[only]."
+The description of Gernsback is "The picture of Victorian success, his tailored attire offsetting brutish features below a high forehead and thinning hair styled in a combover[first time], his only concession to vanity. It's said that his piercing gaze misses no chance to increase his family fortunes[only]."
 
 Gernsback is scenery. [This prevents "You can see Gernsback here." being printed out in room descriptions.]
 Gernsback is major.

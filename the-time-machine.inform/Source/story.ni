@@ -218,7 +218,7 @@ Table of Fancy Status
 left	central	right
 " [if in darkness]Darkness[otherwise][location][end if]"	""	"[top rose]"
 " [current-year]"	""	"[middle rose]"
-" [time of day]"	""	"[bottom rose]"
+" "	""	"[bottom rose]"
 
 When play begins: now right alignment depth is 25;
 

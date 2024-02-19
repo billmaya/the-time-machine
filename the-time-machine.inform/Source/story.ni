@@ -218,7 +218,7 @@ Table of Fancy Status
 left	central	right
 " [if in darkness]Darkness[otherwise][location][end if]"	""	"[top rose]"
 " [current-year]"	""	"[middle rose]"
-" "	""	"[bottom rose]"
+" [time of day]"	""	"[bottom rose]"
 
 When play begins: now right alignment depth is 25;
 
@@ -1592,7 +1592,7 @@ Chapter - Orrery
 The orrery is a device. The orrery is switched on.
 The orrery is scenery on the fireplace.
 
-The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box divided into three panels. The left and right panels of the tryptich are illustrated and half the width of the central panel.[if the right panel is open] The right panel has been slid up to expose the orrery's mechanism.[end if]"
+The description of the orrery is "A mechanical model of our solar system contained in a rectangular wooden box divided into three panels. The left and right panels of the triptych are illustrated and half the width of the central panel.[if the right panel is open] The right panel has been slid up to expose the orrery's mechanism.[end if]"
 
 Understand "planetarium" or "device" or "box" or "panels" or "triptych" as orrery.
 

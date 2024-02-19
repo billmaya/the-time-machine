@@ -943,7 +943,7 @@ To say generic-area-description:
 	say "Directly in front of you the falling snow is rapidly covering the signs of the earlier struggle."
 
 To say key-area-description:
-	say "Directly in front of you the falling snow is rapidly covering the signs of the earlier struggle, but you can't help but feel that a further search of the area might be warrented."
+	say "Directly in front of you the falling snow is rapidly covering the signs of the earlier struggle, but you can't help but feel that a further search of the area might be warranted."
 
 The area is scenery in Woking Street.
 The area is a supporter.

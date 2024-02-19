@@ -3221,7 +3221,7 @@ The flower is a thing.
 The flower is in the River Bank.
 The flower is undescribed.
 
-The description of the flower is "The petals of this flower's blossom exactly match the one that Humboldt gave you earlier[first time]. If this complete speciman won't convince the doctor of Wells[apostrophe] sanity then nothing will[only]."
+The description of the flower is "The petals of this flower's blossom exactly match the one that Humboldt gave you earlier[first time]. If this complete specimen won't convince the doctor of Wells[apostrophe] sanity then nothing will[only]."
 
 Instead of taking the flower:
 	if the player has the flower:

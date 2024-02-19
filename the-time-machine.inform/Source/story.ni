@@ -411,7 +411,7 @@ Instead of attacking something with the poker:
 	otherwise if the noun is statue:
 		say "[statue-far-away]";
 	otherwise:
-		say "You can't attack [the noun] with the poker in this game[first time]. Violence of this sort isn't relevent to your investigation[only].";
+		say "You can't attack [the noun] with the poker in this game[first time]. Violence of this sort isn't relevant to your investigation[only].";
 
 To say attack-morlocks-poker:
 	say "You attempt to take the battle to these loathsome creatures but they dodge easily around your ineffectual swings with the poker."

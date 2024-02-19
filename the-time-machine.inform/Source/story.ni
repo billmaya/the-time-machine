@@ -110,7 +110,7 @@ The measurement of the title-inventory window is 2.
 The list-inventory window is a text buffer g-window spawned by the right-sidebar window.
 The position of the list-inventory window is g-placeabove.
 The scale method of the list-inventory window is g-fixed-size.
-The measurement of the list-inventory window is 10. [12.] [16.]
+The measurement of the list-inventory window is [10.] 12. [16.]
 
 The debug-title window is a text grid g-window spawned by the right-sidebar window.
 The position of the debug-title window is g-placeabove.
@@ -351,7 +351,7 @@ Chapter - Listening
 
 Before listening:
 	if the player is in Woking Street:
-		say "You hear the normal sounds of the city at this time of night along with the occassional gust of wind through the streets.";
+		say "You hear the normal sounds of the city at this time of night along with the occasional gust of wind through the streets.";
 		stop the action;
 	else if the player is in the Clearing:
 		say "You hear the wind through the trees as well as the sound of runnnig water to the southeast.";

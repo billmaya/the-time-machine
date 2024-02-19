@@ -4954,7 +4954,7 @@ Default ask-tell response for Weena:
 
 To say default-weena-give-response:
 	if Weena is in the Year-802701-Underground:
-		say "You attempt to hand the [noun] to Weena but she appear too terrified to do more than cower in the dark.";
+		say "You attempt to hand the [noun] to Weena but she appears too terrified to do more than cower in the dark.";
 	otherwise if Weena is in the Year-802701-Outside:
 		say "You hand the [noun] to Weena. She examines it with a puzzled look on her face but no inkling of it's function before handing it back to you."
 

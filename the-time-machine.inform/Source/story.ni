@@ -3437,7 +3437,7 @@ The printed name of Collapsed Tunnel is "Tunnel Collapse".
 The illustration of Collapsed Tunnel is Figure of Collapsed Tunnel.
 
 tunnel-debris is scenery in the Collapsed Tunnel.
-The description of tunnel-debris is "Rocks of various sizes prevent any further prevent any progress[first time], obscuring what might lie beyond[only]."
+The description of tunnel-debris is "Rocks of various sizes prevent any further progress[first time], obscuring what might lie beyond[only]."
 Understand "rock/rocks/dirt/collapse" as tunnel-debris.
 The printed name of tunnel-debris is "obstruction".
 

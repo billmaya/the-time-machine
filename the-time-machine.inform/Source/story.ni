@@ -1361,7 +1361,7 @@ curtains-opened-once is false
 
 Instead of pushing the curtains: try opening the curtains.
 Instead of opening the curtains:
-	say "Pulling the curtains aside, you glance[if curtains-opened-once is true] one more time[end if] at the snow-covered street outside before letting them fall back into place[first time]. The only change is that the falling snow that is rapidly covering the disturbed area out front where the ambulance was parked earlier[only].";
+	say "Pulling the curtains aside, you glance[if curtains-opened-once is true] one more time[end if] at the snow-covered street outside before letting them fall back into place[first time]. The only change is that the falling snow is rapidly covering the disturbed area out front where the ambulance was parked earlier[only].";
 	now curtains-opened-once is true.
 
 Instead of closing the curtains, say "They're already closed."

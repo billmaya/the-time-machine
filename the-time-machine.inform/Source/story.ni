@@ -1622,7 +1622,7 @@ Instead of opening the central panel: say "The central panel appears to be firml
 The right panel is a thing.
 The right panel is a container. The right panel is closed.
 The right panel is opaque.
-The description of the right panel is "The right panel is a stylized bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slid up halfway to expose the inner workings of the orrery.[end if]."
+The description of the right panel is "The right panel is a stylized bas-relief illustration of a slender, androgynous figure stretching upwards to grab what appears to be an apple from a canopy of foliage overhead[if the right panel is open] and has been slid up halfway to expose the inner workings of the orrery[end if]."
 
 Understand "right" or "right side" or "right side of orrery" as right panel.
 

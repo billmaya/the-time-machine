@@ -5716,11 +5716,11 @@ travel-to-802701 is false.
 
 To say to-the-future:
 	if lever-push is 1:
-		say "You push the lever forward until it stops. From Wells['] story you have an idea of what's going to happen but you never expected to experience it yourself.
+		say "You push the lever forward until it stops. From Wells['] story you have an idea of what's going to happen, but you never expected to experience it yourself.
 
 		The dials start inching forward through the seconds, minutes, weeks, and months as the machine powers up. The workshop and then the house itself fades away, replaced by a shimmering grey void. You grip the time machine's framework as it shudders and gains velocity on its pre-programmed flight through the years, centuries, and millennia towards the Age of Eloi and Morlocks that Wells described. As you travel, vague shapes of various sizes appear on the void's surface[unicode 8212]future people, places, and things living out their personal cycles of birth, life, and death.
 
-		One age passes. Two ages. Five ages. Beneath your feet the time machine shifts gears internally. The blur of individual dials starts to slow as you approach your final destination. The shimmering grey curtain surrounding you starts to dissipate and fade away like an early morning fog in the sun. The time machine has stopped; the dials indicating that 800,806 years have passed from when you started your journey in 1895. 
+		One age passes. Two ages. Five ages. Beneath your feet the time machine shifts gears internally. The blur of individual dials starts to slow as you approach your final destination. The shimmering grey curtain surrounding you starts to dissipate and fade away like an early morning fog in the sun. The time machine has stopped; the dials indicate that 800,806 years have passed from when you started your journey in 1895. 
 
 		Apparently, from what you've seen, you have traveled through time and arrived in the year 802,701 A.D.";
 	otherwise if lever-push is greater than 1 and lever-push is less than 10:

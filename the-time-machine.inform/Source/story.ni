@@ -3869,7 +3869,7 @@ After quizzing Watchett about her-work:
 
 After quizzing Watchett about poker:
 	if the player has the poker:
-		say "'Perhaps you should put that back by the fire where it belongs[first time]. Best place for it, I think.' she says[only].";
+		say "'Perhaps you should put that back by the fire where it belongs[first time]. Best place for it, I think,' she says[only].";
 	otherwise:
 		say "'I think that's in the parlor by the fireplace, sir.'".
 

@@ -5354,7 +5354,7 @@ Instead of searching the library-books: try reading the library-books.
 
 Instead of taking library-books for the first time: say "You examine the variety of titles on various topics. Some are familiar, some not."
 Instead of taking library-books for the second time: say "You take one of the books off the shelf and leaf through a few of its pages. The subject doesn't interest you so you return it to its place on the shelf."
-Instead of taking library-books: say "[one of]I probably shouldn't be telling you this but the shelves and the books are scenery, just for show.[or]Again, just scenery.[or]I'd suggest moving along to something more important and relevant to your investigation.[stopping]"
+Instead of taking library-books: say "[one of]I probably shouldn't be telling you this, but the shelves and the books are scenery, just for show.[or]Again, just scenery.[or]I'd suggest moving along to something more important and relevant to your investigation.[stopping]"
 
 Part - HG Wells Book
 

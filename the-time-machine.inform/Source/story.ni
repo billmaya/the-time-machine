@@ -2151,7 +2151,7 @@ To say time-machine-description:
 	if the player is not in the time machine:
 		say "Rectangular in shape, the time machine is taller than it is wide, with a scaffolding of struts, wires, and other mechanisms that rise up from a thick, square base to create a cage big enough for one or two occupants[first time]. It looks like you can enter the machine through an opening in one side[only][run paragraph on].";
 	if the player is in the time machine:
-		say "Inside the time machine is even more baffling than its outside. While you can look closer at the various components of the machine, the only one that makes the slightest send is a set of controls at waist height.[no line break]";
+		say "Inside the time machine is even more baffling than its outside. While you can look closer at the various components of the machine, the only one that makes the slightest sense is a set of controls at waist height.[no line break]";
 		if the time machine is in the Workshop:
 			say "[first time] Through gaps in the time machine's frame you can see the workshop.[no line break][only]";
 		if the time machine is in the Clearing:

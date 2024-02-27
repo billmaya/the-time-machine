@@ -3008,7 +3008,7 @@ To say dome-from-clearing:
 	say "What you can see through the trees appears to be an arrangement of triangular facets in a curved shape[first time]. You won't be able to tell more until you get closer[only]."
 
 To say dome-from-building:
-	say "From this distance, you can definitely make out the individual interlocking triangular panels fastened together into a dome that extends down to the foundation around it[first time]. It's unlike any other dome you have every seen and you can't fathom the weathered material it's made of[only]."
+	say "From this distance, you can definitely make out the individual interlocking triangular panels fastened together into a dome that extends down to the foundation around it[first time]. It's unlike any other dome you have ever seen and you can't fathom the weathered material it's made of[only]."
 
 Instead of examining dome-outside: say "[if the player is in the Clearing][dome-from-clearing][otherwise][dome-from-building]" 
 

@@ -4048,7 +4048,7 @@ Section - Requests - "Ask [someone] for [thing]"
 
 Section - Quizzing - "Ask [someone] about [thing]"
 	
-To say science-fiction: say "[one of]'Science fiction, if you ask me.'[or]'I haven't seen anything that makes me think it's all nothing but science fiction.'[at random]"
+To say science-fiction: say "[one of]'Science fiction, if you ask me.'[or]'I haven't seen anything that makes me believe it's all nothing but science fiction.'[at random]"
 
 After quizzing Humboldt about time travel:
 	say "[remove time travel ask suggestion]";

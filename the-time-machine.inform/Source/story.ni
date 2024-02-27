@@ -3023,7 +3023,7 @@ The Inside Dome is a room.
 The Inside Dome is north of the Balcony.
 Understand "dome" as Inside Dome.
 
-The description of Inside Dome is "Sunlight streams through the dome's oculus, illuminating the entire room. Low stone tables are arranged in a circular pattern around a large central well at the center of the dome. A series of murals circles the perimeter of the dome except for the exits. There is an small archway to the south and the main exit to the west."
+The description of Inside Dome is "Sunlight streams through the dome's oculus, illuminating the entire room. Low stone tables are arranged in a circular pattern around a large central well at the center of the dome. A series of murals circles the perimeter of the dome except for the exits. There is a small archway to the south and the main exit to the west."
 
 The illustration of Inside Dome is Figure of Inside Dome.
 	

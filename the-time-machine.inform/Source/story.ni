@@ -5633,7 +5633,7 @@ Introduction Of Gernsback begins when player is in the Library for the first tim
 
 When Introduction Of Gernsback begins: 
 	[say "INTRODUCTION OF GERNSBACK BEGINS.";]
-	say "Standing by the desk, looking out the window, is Gernsback, a frequent visitor at these gatherings. He's a successful businessman who owns several textile mills in the north and it's rumored he's contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback turns towards you, a book in his hand. 'I wouldn't believe it if I didn't see it with my own eyes. One minute he's sitting at the dining room table, explaining the 'science' of it all. The next minute...' He gestures towards the window with the book as he settles into the library's only chair. 'I guess we had better make ourselves comfortable until the doctor gets back.' He begins reading his book.";
+	say "Standing by the desk, looking out the window, is Gernsback, a frequent visitor at these gatherings. He's a successful businessman who owns several textile mills in the north and it's rumored he's contributed money to Wells['] experiments.[paragraph break]Dropping the curtain, Gernsback turns towards you, a book in his hand. 'I wouldn't believe it if I didn't see it with my own eyes. One minute he's sitting at the dining room table, explaining the [']science['] of it all. The next minute...' He gestures towards the window with the book as he settles into the library's only chair. 'I guess we had better make ourselves comfortable until the doctor gets back.' He begins reading his book.";
 	now library-print-description is true;
 
 Introduction Of Gernsback ends when library-print-description is true.

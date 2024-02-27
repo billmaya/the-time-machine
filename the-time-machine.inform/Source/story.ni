@@ -4141,7 +4141,7 @@ After quizzing Humboldt about time machine during Opening Scene:
 
 After quizzing Humboldt about pocket watch during Opening Scene:
 	say "[remove pocket watch ask suggestion]";
-	say "'I[']ll have my hands full with Wells so why don't you hold onto his watch until I get back.'"
+	say "'I[']ll have my hands full with Wells, so why don't you hold onto his watch until I get back.'"
 
 After quizzing Humboldt about the petal during Opening Scene: 
 	if the player has the petal:

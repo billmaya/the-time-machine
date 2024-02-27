@@ -394,7 +394,7 @@ Instead of using things: say "You'll have to be more specific."
 
 Chapter - Attack
 
-To say no-violence: say "Violence [aren't] the answer here and quite out of character, given your years of jurisprudence and respect for the law."
+To say no-violence: say "Violence [aren't] the answer here, and is quite out of character, given your years of jurisprudence and respect for the law."
 
 Instead of attacking someone: say "[no-violence]".
 Instead of attacking someone with something: say "[no-violence]".

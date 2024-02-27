@@ -1997,7 +1997,7 @@ The description of the Kitchen is "A small room dominated by a sturdy wooden wor
 The illustration of Kitchen is Figure of Kitchen.
 
 To say getting-in-watchett-way:
-	say "I don't think [Watchett] would appreciate you getting in the way of her cleaning up, especially at this late hour. She might be willing to talk while she works though.[paragraph break]"
+	say "I don't think [Watchett] would appreciate you getting in the way of her cleaning up, especially at this late hour. She might be willing to talk while she works, though.[paragraph break]"
 
 The contents-of-kitchen is scenery in the Kitchen. 
 Understand "table" or "work table" or "wooden work table" or "sturdy table" or "cabinets" or "shelves" or "stove" or "sink" as contents-of-kitchen.

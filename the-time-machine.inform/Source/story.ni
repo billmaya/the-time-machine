@@ -5006,7 +5006,7 @@ Wells is a person.
 Wells is undescribed.
 Wells is in the ambulance.
 
-Instead of examining Wells: say "Your friend actions are unbalanced and estranged, so unlike his usual composed and methodical self[first time]. You want to believe his story but without proof or witnesses you don't know what to think[only]."
+Instead of examining Wells: say "Your friend's actions are unbalanced and estranged, so unlike his usual composed and methodical self[first time]. You want to believe his story but without proof or witnesses you don't know what to think[only]."
 
 After saying hello to Wells when the greeting type is explicit or the greeting type is implicit: 
 	say "If he wasn't out of sight in the ambulance you could.";

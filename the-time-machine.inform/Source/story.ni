@@ -6,7 +6,7 @@ The release number is 13.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 45339 ]
+[WORDS - 45361 339 ]
 
 Table of Releases
 release	notes
@@ -2019,9 +2019,14 @@ Every turn (this is the Dark Workshop rule):
 		if the Workshop is dark:
 			display Figure of Dark-Workshop;
 		otherwise:
-			display Figure of Workshop;
+			if player's command matches "look" or player's command matches "flip switch":
+				display Figure of Workshop;
+			otherwise:
+				continue the action;
+	otherwise:
+		continue the action; 
 
-Chapter - Workbench
+Chapter - Workbench 
 
 The workbench is a thing.
 The workbench is scenery in the Workshop.

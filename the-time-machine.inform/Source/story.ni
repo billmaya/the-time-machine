@@ -1101,7 +1101,7 @@ Instead of going inside in Woking Street: try going north.
 Instead of entering wells-house in Woking Street: try going north.
 
 To say humboldt-exit:
-	say "[if found-key is true]Humboldt sees the key and says 'Marvelous! W[no line break][otherwise]Before you can leave, Humboldt stops you. 'W[no line break][end if]hile I'm gone see if you can find the rest of this.' He hands you a single petal. 'If we can find the rest of this flower we can convince Wells that all this time travel nonsense is just a figment of his imagination. Check out that workshop of his.'
+	say "[if found-key is true]Humboldt sees the key and says 'Marvelous! W[no line break][otherwise]Before you can leave, Humboldt stops you. 'W[no line break][end if]hile I'm gone, see if you can find the rest of this.' He hands you a single petal. 'If we can find the rest of this flower we can convince Wells that all this time travel nonsense is just a figment of his imagination. Check out that workshop of his.'
 
 [if player is not carrying the pocket watch]Humboldt bends down and picks up the pocket watch and hands it to you. 'Better hold on to this until I get back.' He[otherwise]Humboldt[end if] climbs into the ambulance and swings the rear doors shut. The driver cracks the reins and the ambulance starts down the street, turns the corner, and disappears."
 

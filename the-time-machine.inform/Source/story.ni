@@ -3870,7 +3870,7 @@ After quizzing Watchett about food: say "'[first time]Still hungry after that me
 
 After quizzing Watchett about her-work: 
 	say "[remove her-work ask suggestion]";
-	say "'Just cleaning up after tonight's meal[first time]. 'Should be done soon[only].'"
+	say "'Just cleaning up after tonight's meal[first time]. Should be done soon[only].'"
 
 After quizzing Watchett about poker:
 	if the player has the poker:

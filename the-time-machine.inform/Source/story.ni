@@ -4292,7 +4292,7 @@ After informing Humboldt about the petal during the Ending Scene:
 
 After informing Humboldt about the time machine during the Ending Scene: 
 	if time machine is not nowhere: [Line break not added after 2nd response TBD]
-		say "[first time]Humboldt glances over the machine. [only]'[first time]Impressive. [only]If we could only prove it does what Wells says it's designed to do than our problem would be solved.'[no line break][first time] He turns back towards you. 'But what about finding the rest of that flower?[only]";
+		say "[first time]Humboldt glances over the machine. [only]'[first time]Impressive. [only]If we could only prove it does what Wells says it's designed to do then our problem would be solved.'[no line break][first time] He turns back towards you. 'But what about finding the rest of that flower?[only]";
 	otherwise:
 		say "You can't see any such thing."
 

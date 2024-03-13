@@ -1508,7 +1508,7 @@ Chapter - Fire
 The fire is a thing.
 The fire is in the parlor. 
 The fire is undescribed.
-The description of the fire is "The flames reflect off of the back of the fireplace and into the room, warming it.[first time] As the coals burn to embers the ashes fall through the grate onto the brick below.[only]"
+The description of the fire is "The flames reflect off of the back of the fireplace and into the room, warming it.[first time] As the coals burn to embers, the ashes fall through the grate onto the brick below.[only]"
 
 Instead of touching fire: try touching parts-of-fire.
 Instead of tasting fire: try tasting parts-of-fire.
@@ -1854,7 +1854,7 @@ The description of snow is "Microscopic flakes of all shapes and sizes[one of] f
 Understand "snowfall" as snow.
 
 Instead of taking snow:
-	say "You grab at a flake or two and watch it melt in your hand."
+	say "You grab at a flake and watch it melt in your hand."
 
 The gate is a thing.
 The gate is scenery in the Garden.

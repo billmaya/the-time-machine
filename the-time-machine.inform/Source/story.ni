@@ -1170,7 +1170,7 @@ Chapter - The Petal
 The petal is a thing.
 The petal is nowhere.
 
-The description of the petal is "Even with its faded luminous colors, it doesn't resemble any flower petal you have ever seen. Wells said the flower was given to him by the girl he called Weena in 802,701 A.D.[first time] Perhaps the rest of the flower is somewhere in the house.[only]".
+The description of the petal is "Even with its once luminous colors faded, it doesn't resemble any flower petal you have ever seen. Wells said the flower was given to him by the girl he called Weena in 802,701 A.D.[first time] Perhaps the rest of the flower is somewhere in the house.[only]".
 
 Instead of smelling the petal:
 	say "It has no smell."

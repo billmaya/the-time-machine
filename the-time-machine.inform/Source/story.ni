@@ -5765,7 +5765,7 @@ To say to-the-past:
 	otherwise if lever-push is greater than 2  and lever-push is less than 11:
 		say "Pushing the lever a [pushes] time, you travel backward through time to the year 1895 A.D.";
 	otherwise:
-		say "Push the lever another time you travel backward through time.".
+		say "Pushing the lever another time you travel backward through time.".
 
 When Travel To 1895 begins:
 	[say "TRAVEL TO 1895 BEGINS.";]

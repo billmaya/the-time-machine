@@ -5391,7 +5391,7 @@ Reading is an action applying to one thing, requiring light.
 
 Carry out reading:
 	if the noun is library-books:
-		say "You scan the rows of books but nothing catches your interest[first time], especially since you've got more  pressing concerns on your mind[only].";
+		say "You scan the rows of books but nothing catches your interest[first time], especially since you've got more pressing concerns on your mind[only].";
 	otherwise if the noun is shelves:
 		try examining the shelves;
 	otherwise if the noun is wells-book:

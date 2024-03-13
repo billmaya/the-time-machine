@@ -2347,7 +2347,7 @@ Section - Destination Section
 
 The destination section is a thing.
 The destination section is part of the controls.
-The description of the destination section is "This section displays a row of eight numbers, each separate from its neighbor, with a tiny dial to the right of each number. The number displayed is [if numeric-year is 1895][future][otherwise][present]."
+The description of the destination section is "This section displays a row of eight numbers, each separate from its neighbor, with a tiny dial to the right of each number. The number displayed is [if numeric-year is 1895][future].[otherwise][present]."
 Understand "destination date" or "date of destination" as destination section.
 
 To say present:
@@ -2360,7 +2360,7 @@ Section - Origin Section
 
 The origin section is a thing.
 The origin section is part of the controls.
-The description of the origin section is "This section displays a row of eight numbers, each separate from its neighbor, with a tiny dial to the right of each number. The number displayed is [if numeric-year is 1895][present][otherwise][future]."
+The description of the origin section is "This section displays a row of eight numbers, each separate from its neighbor, with a tiny dial to the right of each number. The number displayed is [if numeric-year is 1895][present].[otherwise][future]."
 Understand "origin date" or "date of origin" as origin section.
 	
 Section - Small Light

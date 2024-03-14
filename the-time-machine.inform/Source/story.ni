@@ -1882,7 +1882,7 @@ The bench is a supporter.
 The bench is enterable.
 The description of the bench is "It's a bench, covered in snow, but still just a bench."
 
-Instead of rubbing the bench: say "You brush some snow off the surface of the bench but it's quick covered up again."
+Instead of rubbing the bench: say "You brush some snow off the surface of the bench but it's quickly covered up again."
 
 The garden bushes are a thing.
 The garden bushes are scenery in the Garden.
@@ -4939,7 +4939,7 @@ Instead of giving the petal to Weena: try showing the petal to Weena.
 Instead of giving the tunic to Weena:
 	if the tunic is not nowhere:
 		if the player has the tunic:
-			say "You hand the tunic to Weena. Puzzled, she compares it her own clothing before returning giving it back to you[if the player has the poker] and pointing to the poker in your hand[end if].";
+			say "You hand the tunic to Weena. Puzzled, she compares it her own clothing before returning it back to you[if the player has the poker] and pointing to the poker in your hand[end if].";
 		otherwise:
 			say "You can't see any such thing.";
 	otherwise:

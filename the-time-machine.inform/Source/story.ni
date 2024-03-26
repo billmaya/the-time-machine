@@ -6,7 +6,7 @@ The release number is 13.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 45393 ]
+[WORDS - 45423 ]
 
 Table of Releases
 release	notes
@@ -4907,6 +4907,9 @@ Section - Requests - "Ask [someone] for [thing]"
 
 Section - Quizzing - "Ask [someone] about [thing]"
 
+After quizzing Weena about morlock-placeholder:
+	say "Weena appears too terrified right now to try and understand what you are saying."
+
 Section - Informing - "Tell [someone] about [thing]"
 
 Section - Imploring - "Ask [someone] for ['text']"
@@ -5012,6 +5015,8 @@ morlock-placeholder is a backdrop.
 morlock-placeholder is in the Year-802701-Underground.
 
 Understand "morlocks" or "morlock" or "figures" as morlock-placeholder.
+
+The printed name of morlock-placeholder is "The Morlocks".
 
 Book - Wells
 

@@ -6,7 +6,7 @@ The release number is 13.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 45354 ]
+[WORDS - 45375 ]
 
 Table of Releases
 release	notes
@@ -2399,6 +2399,10 @@ The printed name of time-fuse-holder is "time machine fuse holder".
 The description of the time-fuse-holder is "Two metal clips that the ends of a fuse can snap in to.[if there is the fuse-orrery in the time-fuse-holder] Between the two clips is the orrery fuse.[otherwise if the fuse-time-machine is in the time-fuse-holder] Between the two clips is the time machine fuse.[otherwise] The [noun] is empty.[end if]"
 
 Understand "fuse holder" or "time machine fuse holder" or "clip" or "clips" or "holder" as time-fuse-holder.
+	
+Instead of taking the time-fuse-holder: 
+	say "That seems to be part of the controls[paragraph break]";
+	stop the action.
 		
 [Actions on controls]
 	

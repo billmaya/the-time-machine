@@ -6,7 +6,7 @@ The release number is 13.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 45423 ]
+[WORDS - 45450 ]
 
 Table of Releases
 release	notes
@@ -6091,11 +6091,10 @@ To say beta-testers:
 	v2.0 Beta Testers[line break][line break]
 	• Phil Halprin[line break]
 	• John Ziegler[line break]
-	• Brian Rushton[line break]
 	• David White[line break]
 	• Mike Russo[line break]
 	• Rovarsson[line break]
-	• Javier Garza[line break][line break]
+	• Mike Carletta[line break][line break]
 	v1.9 Beta Testers[line break][line break]
  	• Mike Carletta[line break]
 	• Brian Rushton[line break]
@@ -6118,6 +6117,8 @@ To say release-notes:
 	say "NOTE: If you have never played this game before I suggest you play it first without reading any of this information below since individual items may contain Spoilers.[paragraph break]";
 	say "Release 13 Notes (v2.0)[paragraph break]
 	- Added images to game for all rooms.[line break]
+	- Made it not possible to take time machine fuse holder or pile of bloody clothing.[line break]
+	- Added printed name for morlock-placeholder and Morlock conversation item for Weena.[line break]
 	- Fixed bug where character image didn’t disappear when character not in room.[line break]
 	- Figured out how to display 'dark' Workshop image when lights are off.[paragraph break]
 	- Added graphics mode on/off out-of-world action[line break]

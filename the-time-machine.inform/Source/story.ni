@@ -6,7 +6,7 @@ The release number is 13.
 The story description is "Did your good friend Wells really time travel into the future to the year 802,701 A.D. to the age of Eloi and Morlocks? Only you can investigate his story and determine if he is telling the truth or if he is delusional.".
 The story creation year is 2021.
  
-[WORDS - 45450 ]
+[WORDS - 45459 ]
 
 Table of Releases
 release	notes
@@ -1638,6 +1638,8 @@ The orrery-mechanism is part of the right panel.
 The orrery-mechanism is undescribed.
 The description of orrery-mechanism is "ORRERY-MECHANISM."
 Understand "mechanism" or "gears" or "shafts" or "slotted pin followers" or "pin followers" or "orrery mechanism" as orrery-mechanism.
+
+The printed name of orrery-mechanism is "orrery mechanism".
 
 Instead of examining the orrery-mechanism:
 	if the right panel is closed:
